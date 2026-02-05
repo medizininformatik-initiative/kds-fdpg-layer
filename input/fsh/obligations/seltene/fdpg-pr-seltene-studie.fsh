@@ -6,11 +6,3 @@ Description: "FDPG Profil - MII PR SE Studie"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, MII PR SE Studie)
 * insert Translation(^title, en-US, FDPG PR SE Studie)
-
-// MustSupport flags
-* ResearchStudy.identifier MS
-
-// Obligations
-// ObligationBidirectional
-* insert ObligationBidirectional(ResearchStudy.identifier)
-

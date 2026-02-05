@@ -6,11 +6,3 @@ Description: "FDPG Profil - MII PR ICU Bilanz Ausfuhr Opdrainage"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, MII PR ICU Bilanz Ausfuhr Opdrainage)
 * insert Translation(^title, en-US, FDPG PR ICU Bilanz Ausfuhr Opdrainage)
-
-// MustSupport flags
-* Observation.value[x].code MS
-
-// Obligations
-// ObligationBidirectional
-* insert ObligationBidirectional(Observation.value[x].code)
-

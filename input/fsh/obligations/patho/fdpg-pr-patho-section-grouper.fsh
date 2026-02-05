@@ -6,15 +6,3 @@ Description: "FDPG Profil - MII PR Patho Section Grouper"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, MII PR Patho Section Grouper)
 * insert Translation(^title, en-US, FDPG PR Patho Section Grouper)
-
-// MustSupport flags
-* Observation.text MS
-* Observation.hasMember MS
-
-// Obligations
-// ObligationBidirectional
-* insert ObligationBidirectional(Observation.hasMember)
-
-// ObligationInformational
-* insert ObligationInformational(Observation.text)
-

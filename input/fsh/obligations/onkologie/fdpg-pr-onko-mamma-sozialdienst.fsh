@@ -6,13 +6,3 @@ Description: "FDPG Profil - MII PR Onkologie Präoperative Drahtmarkierung Mamma
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, MII PR Onkologie Präoperative Drahtmarkierung Mamma)
 * insert Translation(^title, en-US, FDPG PR Onkologie Präoperative Drahtmarkierung Mamma)
-
-// MustSupport flags
-* Procedure.performed[x] MS
-
-// Obligations
-// ObligationBidirectional
-* insert ObligationBidirectional(Procedure.performed[x])
-
-// Translations
-* insert Translation(Procedure.performed[x] ^short, de-DE, Datum)

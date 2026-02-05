@@ -1,6 +1,6 @@
 Profile: FDPG_PR_ICU_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss
 Parent: MII_PR_ICU_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss
-Id: fdpg-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss
+Id: fdpg-pr-icu-vent-atemwegsdruck-mittl-expirat-gasfluss
 Title: "FDPG PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss"
 Description: "FDPG Profil - MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss"
 * insert FDPGMetadata

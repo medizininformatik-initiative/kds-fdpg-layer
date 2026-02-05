@@ -6,11 +6,3 @@ Description: "FDPG Profil - MII PR ICU Bilanz Gesamte Tages Bilanz"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, MII PR ICU Bilanz Gesamte Tages Bilanz)
 * insert Translation(^title, en-US, FDPG PR ICU Bilanz Gesamte Tages Bilanz)
-
-// MustSupport flags
-* Observation.value[x].code MS
-
-// Obligations
-// ObligationBidirectional
-* insert ObligationBidirectional(Observation.value[x].code)
-
