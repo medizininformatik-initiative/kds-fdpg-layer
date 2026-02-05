@@ -47,17 +47,28 @@ Die MII KDS-Module werden von verschiedenen Arbeitsgruppen gepflegt. Eine zentra
 
 ## Module Coverage
 
-Diese Layer unterstützt alle 21 MII Kerndatensatz Module mit insgesamt 327 Profilen:
+Diese Layer deckt 16 MII Kerndatensatz Module mit insgesamt 244 Profilen ab (1 weiteres Modul ist ausstehend):
 
-| Modul | Profile | Status |
-|-------|---------|--------|
-| Basis (Person, Diagnose, Prozedur, Fall) | 8 | ✓ |
-| Labor | 3 | ✓ |
-| Medikation | 5 | Geplant |
-| Biobank | 11 | Geplant |
-| Onkologie | 75 | Geplant |
-| ICU | 80 | Geplant |
-| ... | ... | ... |
+| Modul | Profile | Quellpaket-Version | Status |
+|-------|---------|-------------------|--------|
+| [Person](modul-person.html) | 4 | base 2026.0.0 | Aktiv |
+| [Diagnose](modul-diagnose.html) | 1 | base 2026.0.0 | Aktiv |
+| [Prozedur](modul-prozedur.html) | 1 | base 2026.0.0 | Aktiv |
+| [Fall](modul-fall.html) | 1 | base 2026.0.0 | Aktiv |
+| [Laborbefund](modul-labor.html) | 3 | laborbefund 2026.0.1 | Aktiv |
+| [Medikation](modul-medikation.html) | 5 | medikation 2026.0.0 | Aktiv |
+| [Biobank](modul-biobank.html) | 11 | biobank 2026.0.0 | Aktiv |
+| [Studie](modul-studie.html) | 7 | studie 2026.0.2 | Aktiv |
+| [Molekulargenetik](modul-molgen.html) | 16 | molgen 2026.0.4 | Aktiv |
+| [Pathologiebefund](modul-patho.html) | 17 | patho 2026.0.1 | Aktiv |
+| [Intensivmedizin](modul-icu.html) | 72 | icu 2026.0.1-rc1 | Aktiv |
+| [Bildgebung](modul-bildgebung.html) | 11 | bildgebung 2026.0.0 | Aktiv |
+| [Seltene Erkrankungen](modul-seltene.html) | 18 | seltene 2026.0.0 | Aktiv |
+| [Onkologie](modul-onkologie.html) | 73 | onkologie 2026.0.1 | Aktiv |
+| [Einwilligung](modul-consent.html) | 3 | consent 2026.0.1-rc-1 | Aktiv |
+| [Dokument](modul-dokument.html) | 1 | dokument 2026.0.0 | Aktiv |
+| [Symptom](modul-symptom.html) | -- | symptom 2026.0.0 | Ausstehend |
+| **Gesamt** | **244** | | |
 
 ## Verwendung
 
