@@ -1,0 +1,11 @@
+{
+  "name": "fdpg-kds-obligations",
+  "version": "2026.0.0",
+  "description": "FDPG KDS Obligations Layer",
+  "scripts": {
+    "sushi": "sushi .",
+    "build": "sushi . && ./_genonce.sh"
+  },
+  "author": "FDPG / Medizininformatik-Initiative",
+  "license": "CC-BY-4.0"
+}

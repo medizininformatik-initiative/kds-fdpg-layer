@@ -1,0 +1,123 @@
+id: fdpg-kds-obligations
+canonical: https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations
+name: FDPGKDSObligations
+title: FDPG KDS Obligations Layer
+description: FDPG-spezifische Obligations und Anforderungen für MII Kerndatensatz Profile
+status: active
+version: 2026.0.0
+fhirVersion: 4.0.1
+language: de-DE
+copyrightYear: 2025+
+releaseLabel: trial-use
+license: CC-BY-4.0
+jurisdiction: urn:iso:std:iso:3166#DE "Germany"
+
+publisher:
+  name: FDPG / Medizininformatik-Initiative
+  url: https://forschen-fuer-gesundheit.de
+
+dependencies:
+  # FHIR Extensions (REQUIRED for Obligations)
+  hl7.fhir.uv.extensions.r4: 5.1.0
+
+  # German Base Profiles
+  de.basisprofil.r4: 1.5.0
+
+  # MII Kerndatensatz Meta
+  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
+
+  # MII Kerndatensatz Base (Person, Diagnose, Prozedur, Fall)
+  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.0
+
+  # MII Kerndatensatz Core Modules
+  de.medizininformatikinitiative.kerndatensatz.laborbefund: 2026.0.1
+  de.medizininformatikinitiative.kerndatensatz.medikation: 2026.0.0
+
+  # MII Kerndatensatz Extended Modules
+  de.medizininformatikinitiative.kerndatensatz.biobank: 2026.0.0
+  de.medizininformatikinitiative.kerndatensatz.studie: 2026.0.2
+  de.medizininformatikinitiative.kerndatensatz.molgen: 2026.0.4
+  de.medizininformatikinitiative.kerndatensatz.patho: 2026.0.1
+  de.medizininformatikinitiative.kerndatensatz.icu: 2026.0.1-rc1
+  de.medizininformatikinitiative.kerndatensatz.bildgebung: 2026.0.0
+  de.medizininformatikinitiative.kerndatensatz.seltene: 2026.0.0
+  de.medizininformatikinitiative.kerndatensatz.onkologie: 2026.0.1
+  de.medizininformatikinitiative.kerndatensatz.consent: 2026.0.1-rc-1
+  # de.medizininformatikinitiative.kerndatensatz.symptom: 2026.0.0  # Not yet on registry as 2026.0.0
+  de.medizininformatikinitiative.kerndatensatz.dokument: 2026.0.0
+
+  # Not yet published / deferred:
+  # de.medizininformatikinitiative.kerndatensatz.mikrobio: 2026.0.0  # In the making, only 2025.0.1 available
+  # de.medizininformatikinitiative.kerndatensatz.pro: 2026.0.0       # Not yet published
+  # de.medizininformatikinitiative.kerndatensatz.mtb: 2026.0.0       # Not yet published
+
+parameters:
+  show-inherited-invariants: false
+  apply-jurisdiction: true
+  apply-publisher: true
+
+pages:
+  index.md:
+    title: Home
+  obligations.md:
+    title: FDPG Obligations
+  actors.md:
+    title: Actor Definitions
+  modul-person.md:
+    title: Modul Person
+  modul-diagnose.md:
+    title: Modul Diagnose
+  modul-prozedur.md:
+    title: Modul Prozedur
+  modul-fall.md:
+    title: Modul Fall
+  modul-labor.md:
+    title: Modul Laborbefund
+  modul-medikation.md:
+    title: Modul Medikation
+  modul-biobank.md:
+    title: Modul Biobank
+  modul-studie.md:
+    title: Modul Studie
+  modul-molgen.md:
+    title: Modul Molekulargenetik
+  modul-patho.md:
+    title: Modul Pathologiebefund
+  modul-icu.md:
+    title: Modul Intensivmedizin
+  modul-bildgebung.md:
+    title: Modul Bildgebung
+  modul-seltene.md:
+    title: Modul Seltene Erkrankungen
+  modul-onkologie.md:
+    title: Modul Onkologie
+  modul-consent.md:
+    title: Modul Einwilligung
+  modul-symptom.md:
+    title: Modul Symptom
+  modul-dokument.md:
+    title: Modul Dokument
+
+menu:
+  Home: index.html
+  Obligations: obligations.html
+  Actors: actors.html
+  Module:
+    Person: modul-person.html
+    Diagnose: modul-diagnose.html
+    Prozedur: modul-prozedur.html
+    Fall: modul-fall.html
+    Laborbefund: modul-labor.html
+    Medikation: modul-medikation.html
+    Biobank: modul-biobank.html
+    Studie: modul-studie.html
+    Molekulargenetik: modul-molgen.html
+    Pathologiebefund: modul-patho.html
+    Intensivmedizin: modul-icu.html
+    Bildgebung: modul-bildgebung.html
+    Seltene Erkrankungen: modul-seltene.html
+    Onkologie: modul-onkologie.html
+    Einwilligung: modul-consent.html
+    Symptom: modul-symptom.html
+    Dokument: modul-dokument.html
+  Artifacts: artifacts.html
