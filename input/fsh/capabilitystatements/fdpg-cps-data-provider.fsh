@@ -26,45 +26,41 @@ FDPG-spezifische Obligations.
 * rest.mode = #server
 * rest.documentation = "FDPG Datenlieferanten-Endpunkt für MII Kerndatensatz"
 
-// === CORE MODULES (Basis) ===
-* insert FDPG_CPS_Patient_Resource
-* insert FDPG_CPS_Condition_Resource
-* insert FDPG_CPS_Procedure_Resource
-* insert FDPG_CPS_Encounter_Resource
-* insert FDPG_CPS_Observation_Resource
-
-// === LABOR ===
-* insert FDPG_CPS_Labor_Resources
-
-// === MEDIKATION ===
-* insert FDPG_CPS_Medikation_Resources
-
-// === BIOBANK ===
-* insert FDPG_CPS_Biobank_Resources
-
-// === STUDIE ===
-* insert FDPG_CPS_Studie_Resources
-
-// === MOLGEN ===
-* insert FDPG_CPS_MolGen_Resources
-
-// === PATHO ===
-* insert FDPG_CPS_Patho_Resources
-
-// === ICU ===
-* insert FDPG_CPS_ICU_Resources
-
-// === BILDGEBUNG ===
-* insert FDPG_CPS_Bildgebung_Resources
-
-// === SELTENE ERKRANKUNGEN ===
-* insert FDPG_CPS_Seltene_Resources
-
-// === ONKOLOGIE ===
-* insert FDPG_CPS_Onkologie_Resources
-
-// === CONSENT ===
-* insert FDPG_CPS_Consent_Resources
-
-// === DOKUMENT ===
-* insert FDPG_CPS_Dokument_Resources
+// === Resource-type-based RuleSets (one per FHIR resource type) ===
+* insert FDPG_CPS_Patient
+* insert FDPG_CPS_Condition
+* insert FDPG_CPS_Procedure
+* insert FDPG_CPS_Encounter
+* insert FDPG_CPS_Observation
+* insert FDPG_CPS_DiagnosticReport
+* insert FDPG_CPS_ServiceRequest
+* insert FDPG_CPS_List
+* insert FDPG_CPS_Medication
+* insert FDPG_CPS_MedicationAdministration
+* insert FDPG_CPS_MedicationRequest
+* insert FDPG_CPS_MedicationStatement
+* insert FDPG_CPS_Organization
+* insert FDPG_CPS_Specimen
+* insert FDPG_CPS_Substance
+* insert FDPG_CPS_DocumentReference
+* insert FDPG_CPS_EvidenceVariable
+* insert FDPG_CPS_Library
+* insert FDPG_CPS_PractitionerRole
+* insert FDPG_CPS_ResearchStudy
+* insert FDPG_CPS_ResearchSubject
+* insert FDPG_CPS_FamilyMemberHistory
+* insert FDPG_CPS_RiskAssessment
+* insert FDPG_CPS_Task
+* insert FDPG_CPS_Bundle
+* insert FDPG_CPS_Composition
+* insert FDPG_CPS_Media
+* insert FDPG_CPS_Device
+* insert FDPG_CPS_DeviceMetric
+* insert FDPG_CPS_BodyStructure
+* insert FDPG_CPS_CarePlan
+* insert FDPG_CPS_ImagingStudy
+* insert FDPG_CPS_ClinicalImpression
+* insert FDPG_CPS_RequestGroup
+* insert FDPG_CPS_AdverseEvent
+* insert FDPG_CPS_Consent
+* insert FDPG_CPS_Provenance

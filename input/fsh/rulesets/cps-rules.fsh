@@ -41,11 +41,17 @@ RuleSet: CommonSearchParams
 * insert SupportSearchParam(_profile, http://hl7.org/fhir/SearchParameter/Resource-profile, #uri, #SHALL)
 
 // ============================================================================
-// Basis Module - Core Resource RuleSets
+// Resource-Type-Based RuleSets (consolidated from all modules)
+// ============================================================================
+// Each resource type appears exactly once, with all profiles from all modules.
+// This avoids duplicate resource entries in the CapabilityStatement (cpb-9).
 // ============================================================================
 
-RuleSet: FDPG_CPS_Patient_Resource
+// --- Patient (from: Basis) ---
+
+RuleSet: FDPG_CPS_Patient
 * insert SupportResource(Patient, #SHALL)
+// Profiles from: Basis
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-person-patient-pseudonymisiert)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-person-patient)
 * insert SupportInteraction(#read, #SHALL)
@@ -56,10 +62,22 @@ RuleSet: FDPG_CPS_Patient_Resource
 * insert SupportSearchParam(gender, http://hl7.org/fhir/SearchParameter/individual-gender, #token, #SHALL)
 * insert SupportSearchParam(deceased, http://hl7.org/fhir/SearchParameter/Patient-deceased, #token, #SHALL)
 
-RuleSet: FDPG_CPS_Condition_Resource
+// --- Condition (from: Basis, Patho, Seltene Erkrankungen, Onkologie) ---
+
+RuleSet: FDPG_CPS_Condition
 * insert SupportResource(Condition, #SHALL)
+// Basis
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-diagnose-condition)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-person-todesursache)
+// Patho
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-problem-list-item)
+// Seltene Erkrankungen
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-clinical-diagnosis)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-genetic-diagnosis)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-symptom-condition)
+// Onkologie
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-diagnose-primaertumor)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-fruehere-tumorerkrankung)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams
@@ -69,9 +87,36 @@ RuleSet: FDPG_CPS_Condition_Resource
 * insert SupportSearchParam(clinical-status, http://hl7.org/fhir/SearchParameter/Condition-clinical-status, #token, #SHALL)
 * insert SupportSearchParam(recorded-date, http://hl7.org/fhir/SearchParameter/Condition-recorded-date, #date, #SHALL)
 
-RuleSet: FDPG_CPS_Procedure_Resource
+// --- Procedure (from: Basis, MolGen, ICU, Bildgebung, Seltene Erkrankungen, Onkologie) ---
+
+RuleSet: FDPG_CPS_Procedure
 * insert SupportResource(Procedure, #SHALL)
+// Basis
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-prozedur-procedure)
+// MolGen
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-genomic-study-analysis)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-genomic-study)
+// ICU
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-ect-extrakorporales-verfahren)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-vent-beatmung)
+// Bildgebung
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-bildgebungsprozedur)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-radiologische-befundungsprozedur)
+// Seltene Erkrankungen
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapie-durchgefuehrt)
+// Onkologie
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-krk-operation)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-krk-stoma-markierung)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-mamma-operation)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-mamma-praeoperative-markierung)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-mamma-sozialdienst)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-melanom-exzision)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-operation)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-prostata-operation)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-strahlentherapie-bestrahlung-strahlentherapie)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-strahlentherapie)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-systemische-therapie)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams
@@ -81,8 +126,11 @@ RuleSet: FDPG_CPS_Procedure_Resource
 * insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
 * insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Procedure-status, #token, #SHALL)
 
-RuleSet: FDPG_CPS_Encounter_Resource
+// --- Encounter (from: Basis) ---
+
+RuleSet: FDPG_CPS_Encounter
 * insert SupportResource(Encounter, #SHALL)
+// Profiles from: Basis
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-fall-kontakt-gesundheitseinrichtung)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
@@ -94,268 +142,22 @@ RuleSet: FDPG_CPS_Encounter_Resource
 * insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Encounter-status, #token, #SHALL)
 * insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/clinical-type, #token, #SHALL)
 
-RuleSet: FDPG_CPS_Observation_Resource
+// --- Observation (from: Basis, Labor, Biobank, MolGen, Patho, ICU, Bildgebung, Seltene Erkrankungen, Onkologie) ---
+
+RuleSet: FDPG_CPS_Observation
 * insert SupportResource(Observation, #SHALL)
+// Basis
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-person-vitalstatus)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Observation-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Observation-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/Observation-category, #token, #SHALL)
-
-// ============================================================================
-// Labor Module
-// ============================================================================
-
-RuleSet: FDPG_CPS_Labor_Resources
-* insert SupportResource(DiagnosticReport, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-labor-laborbefund)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/DiagnosticReport-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/DiagnosticReport-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/DiagnosticReport-category, #token, #SHALL)
-
-* insert SupportResource(Observation, #SHALL)
+// Labor
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-labor-laboruntersuchung)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Observation-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Observation-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/Observation-category, #token, #SHALL)
-
-* insert SupportResource(ServiceRequest, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-labor-laboranforderung)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/ServiceRequest-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(authored, http://hl7.org/fhir/SearchParameter/ServiceRequest-authored, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ServiceRequest-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/ServiceRequest-category, #token, #SHALL)
-
-// ============================================================================
-// Medikation Module
-// ============================================================================
-
-RuleSet: FDPG_CPS_Medikation_Resources
-* insert SupportResource(List, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-medikation-medikationsliste)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/List-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/List-status, #token, #SHALL)
-
-* insert SupportResource(Medication, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-medikation-medication)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Medication-status, #token, #SHALL)
-
-* insert SupportResource(MedicationAdministration, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-medikation-medication-administration)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/MedicationAdministration-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(effective-time, http://hl7.org/fhir/SearchParameter/MedicationAdministration-effective-time, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/medications-status, #token, #SHALL)
-
-* insert SupportResource(MedicationRequest, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-medikation-medication-request)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/MedicationRequest-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(authoredon, http://hl7.org/fhir/SearchParameter/MedicationRequest-authoredon, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/medications-status, #token, #SHALL)
-
-* insert SupportResource(MedicationStatement, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-medikation-medication-statement)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/MedicationStatement-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(effective, http://hl7.org/fhir/SearchParameter/MedicationStatement-effective, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/medications-status, #token, #SHALL)
-
-// ============================================================================
-// Biobank Module
-// ============================================================================
-
-RuleSet: FDPG_CPS_Biobank_Resources
-* insert SupportResource(Observation, #SHALL)
+// Biobank
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-observation-dna-konzentration)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-observation-karyotyp)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-observation-morphologie)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-observation-proliferation)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-observation-qualitaetspruefung)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-observation-wachstumstyp)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Observation-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Observation-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/Observation-category, #token, #SHALL)
-
-* insert SupportResource(Organization, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-organization)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(name, http://hl7.org/fhir/SearchParameter/Organization-name, #string, #SHALL)
-* insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/Organization-type, #token, #SHALL)
-* insert SupportSearchParam(identifier, http://hl7.org/fhir/SearchParameter/Organization-identifier, #token, #SHALL)
-
-* insert SupportResource(Specimen, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-specimen-core)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-specimen)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-zellinie-organoid)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/Specimen-type, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Specimen-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(collected, http://hl7.org/fhir/SearchParameter/Specimen-collected, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Specimen-status, #token, #SHALL)
-
-* insert SupportResource(Substance, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-substance-additiv)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/Substance-code, #token, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Substance-status, #token, #SHALL)
-
-// ============================================================================
-// Studie Module
-// ============================================================================
-
-RuleSet: FDPG_CPS_Studie_Resources
-* insert SupportResource(DocumentReference, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-dokument)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/clinical-type, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/DocumentReference-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/DocumentReference-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/DocumentReference-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/DocumentReference-category, #token, #SHALL)
-
-* insert SupportResource(EvidenceVariable, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-ein-auschluss-kriterium)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(name, http://hl7.org/fhir/SearchParameter/EvidenceVariable-name, #string, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/EvidenceVariable-status, #token, #SHALL)
-
-* insert SupportResource(Library, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-register)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(name, http://hl7.org/fhir/SearchParameter/Library-name, #string, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Library-status, #token, #SHALL)
-
-* insert SupportResource(PractitionerRole, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-beteiligte-person)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(practitioner, http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner, #reference, #SHALL)
-* insert SupportSearchParam(role, http://hl7.org/fhir/SearchParameter/PractitionerRole-role, #token, #SHALL)
-
-* insert SupportResource(ResearchStudy, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-studie)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(title, http://hl7.org/fhir/SearchParameter/ResearchStudy-title, #string, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ResearchStudy-status, #token, #SHALL)
-* insert SupportSearchParam(identifier, http://hl7.org/fhir/SearchParameter/ResearchStudy-identifier, #token, #SHALL)
-
-* insert SupportResource(ResearchSubject, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-proband)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/ResearchSubject-patient, #reference, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ResearchSubject-status, #token, #SHALL)
-* insert SupportSearchParam(study, http://hl7.org/fhir/SearchParameter/ResearchSubject-study, #reference, #SHALL)
-
-* insert SupportResource(ServiceRequest, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-studieneinschluss-anfrage)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/ServiceRequest-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(authored, http://hl7.org/fhir/SearchParameter/ServiceRequest-authored, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ServiceRequest-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/ServiceRequest-category, #token, #SHALL)
-
-// ============================================================================
-// MolGen Module
-// ============================================================================
-
-RuleSet: FDPG_CPS_MolGen_Resources
-* insert SupportResource(DiagnosticReport, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-molekulargenetischer-befundbericht)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/DiagnosticReport-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/DiagnosticReport-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/DiagnosticReport-category, #token, #SHALL)
-
-* insert SupportResource(FamilyMemberHistory, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-familienanamnese)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/FamilyMemberHistory-status, #token, #SHALL)
-
-* insert SupportResource(Observation, #SHALL)
+// MolGen
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-diagnostische-implikation)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-genotyp)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-mikrosatelliteninstabilitaet)
@@ -364,129 +166,7 @@ RuleSet: FDPG_CPS_MolGen_Resources
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-mutationslast)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-therapeutische-implikation)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-variante)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Observation-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Observation-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/Observation-category, #token, #SHALL)
-
-* insert SupportResource(Procedure, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-genomic-study-analysis)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-genomic-study)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Procedure-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Procedure-status, #token, #SHALL)
-
-* insert SupportResource(RiskAssessment, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-polygener-risiko-score)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/RiskAssessment-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-
-* insert SupportResource(ServiceRequest, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-anforderung-genetischer-test)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/ServiceRequest-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(authored, http://hl7.org/fhir/SearchParameter/ServiceRequest-authored, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ServiceRequest-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/ServiceRequest-category, #token, #SHALL)
-
-* insert SupportResource(Task, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-empfohlene-folgemassnahme)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-medikationsempfehlung)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/Task-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Task-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/Task-patient, #reference, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Task-status, #token, #SHALL)
-
-// ============================================================================
-// Patho Module
-// ============================================================================
-
-RuleSet: FDPG_CPS_Patho_Resources
-* insert SupportResource(Bundle, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-bundle)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/Bundle-type, #token, #SHALL)
-* insert SupportSearchParam(identifier, http://hl7.org/fhir/SearchParameter/Bundle-identifier, #token, #SHALL)
-
-* insert SupportResource(Composition, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-composition)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/clinical-type, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Composition-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Composition-status, #token, #SHALL)
-
-* insert SupportResource(Condition, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-problem-list-item)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Condition-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(clinical-status, http://hl7.org/fhir/SearchParameter/Condition-clinical-status, #token, #SHALL)
-* insert SupportSearchParam(recorded-date, http://hl7.org/fhir/SearchParameter/Condition-recorded-date, #date, #SHALL)
-
-* insert SupportResource(DiagnosticReport, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-report)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/DiagnosticReport-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/DiagnosticReport-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/DiagnosticReport-category, #token, #SHALL)
-
-* insert SupportResource(List, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-active-problems-list)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-history-of-present-illness)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/List-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/List-status, #token, #SHALL)
-
-* insert SupportResource(Media, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-attached-image)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Media-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Media-status, #token, #SHALL)
-
-* insert SupportResource(Observation, #SHALL)
+// Patho
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-additional-specified-grouper)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-base-observation)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-diagnostic-conclusion-grouper)
@@ -495,64 +175,7 @@ RuleSet: FDPG_CPS_Patho_Resources
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-macroscopic-grouper)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-microscopic-grouper)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-section-grouper)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Observation-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Observation-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/Observation-category, #token, #SHALL)
-
-* insert SupportResource(ServiceRequest, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-service-request)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/ServiceRequest-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(authored, http://hl7.org/fhir/SearchParameter/ServiceRequest-authored, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ServiceRequest-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/ServiceRequest-category, #token, #SHALL)
-
-* insert SupportResource(Specimen, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-specimen)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/Specimen-type, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Specimen-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(collected, http://hl7.org/fhir/SearchParameter/Specimen-collected, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Specimen-status, #token, #SHALL)
-
-// ============================================================================
-// ICU Module
-// ============================================================================
-
-RuleSet: FDPG_CPS_ICU_Resources
-* insert SupportResource(Device, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-device)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/Device-type, #token, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/Device-patient, #reference, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Device-status, #token, #SHALL)
-
-* insert SupportResource(DeviceMetric, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-ect-dm-eingest-param-extrakorporale-verfahren)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/DeviceMetric-type, #token, #SHALL)
-* insert SupportSearchParam(source, http://hl7.org/fhir/SearchParameter/DeviceMetric-source, #reference, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/DeviceMetric-category, #token, #SHALL)
-
-* insert SupportResource(Observation, #SHALL)
+// ICU
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-drainage-generisch)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt)
@@ -620,344 +243,16 @@ RuleSet: FDPG_CPS_ICU_Resources
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-vent-icu-dynamische-kompliance)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-vent-icu-parameter-von-beatmung)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-vent-provided-icu-druckdifferenz-beatmung)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Observation-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Observation-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/Observation-category, #token, #SHALL)
-
-* insert SupportResource(Procedure, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-ect-extrakorporales-verfahren)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-vent-beatmung)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Procedure-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Procedure-status, #token, #SHALL)
-
-// ============================================================================
-// Bildgebung Module
-// ============================================================================
-
-RuleSet: FDPG_CPS_Bildgebung_Resources
-* insert SupportResource(BodyStructure, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-koerperstruktur)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/BodyStructure-patient, #reference, #SHALL)
-* insert SupportSearchParam(location, http://hl7.org/fhir/SearchParameter/BodyStructure-location, #token, #SHALL)
-
-* insert SupportResource(CarePlan, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-behandlungsempfehlung)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/CarePlan-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/CarePlan-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/CarePlan-category, #token, #SHALL)
-
-* insert SupportResource(Composition, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-semistrukt-befundbericht)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/clinical-type, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Composition-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Composition-status, #token, #SHALL)
-
-* insert SupportResource(Device, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-geraet)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/Device-type, #token, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/Device-patient, #reference, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Device-status, #token, #SHALL)
-
-* insert SupportResource(DiagnosticReport, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-radiologischer-befund)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/DiagnosticReport-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/DiagnosticReport-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/DiagnosticReport-category, #token, #SHALL)
-
-* insert SupportResource(ImagingStudy, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-bildgebungsstudie)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/ImagingStudy-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(started, http://hl7.org/fhir/SearchParameter/ImagingStudy-started, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ImagingStudy-status, #token, #SHALL)
-* insert SupportSearchParam(modality, http://hl7.org/fhir/SearchParameter/ImagingStudy-modality, #token, #SHALL)
-
-* insert SupportResource(MedicationAdministration, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-kontrastmittelgabe)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/MedicationAdministration-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(effective-time, http://hl7.org/fhir/SearchParameter/MedicationAdministration-effective-time, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/medications-status, #token, #SHALL)
-
-* insert SupportResource(Observation, #SHALL)
+// Bildgebung
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-radiologische-beobachtung)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Observation-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Observation-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/Observation-category, #token, #SHALL)
-
-* insert SupportResource(Procedure, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-bildgebungsprozedur)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-radiologische-befundungsprozedur)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Procedure-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Procedure-status, #token, #SHALL)
-
-* insert SupportResource(ServiceRequest, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-anforderung-bildgebung)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/ServiceRequest-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(authored, http://hl7.org/fhir/SearchParameter/ServiceRequest-authored, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ServiceRequest-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/ServiceRequest-category, #token, #SHALL)
-
-// ============================================================================
-// Seltene Erkrankungen Module
-// ============================================================================
-
-RuleSet: FDPG_CPS_Seltene_Resources
-* insert SupportResource(CarePlan, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapieplan)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/CarePlan-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/CarePlan-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/CarePlan-category, #token, #SHALL)
-
-* insert SupportResource(ClinicalImpression, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-clinical-impression)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/ClinicalImpression-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ClinicalImpression-status, #token, #SHALL)
-
-* insert SupportResource(Condition, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-clinical-diagnosis)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-genetic-diagnosis)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-symptom-condition)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Condition-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(clinical-status, http://hl7.org/fhir/SearchParameter/Condition-clinical-status, #token, #SHALL)
-* insert SupportSearchParam(recorded-date, http://hl7.org/fhir/SearchParameter/Condition-recorded-date, #date, #SHALL)
-
-* insert SupportResource(FamilyMemberHistory, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-familienanamnese)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/FamilyMemberHistory-status, #token, #SHALL)
-
-* insert SupportResource(MedicationRequest, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapieempfehlung)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/MedicationRequest-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(authoredon, http://hl7.org/fhir/SearchParameter/MedicationRequest-authoredon, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/medications-status, #token, #SHALL)
-
-* insert SupportResource(Observation, #SHALL)
+// Seltene Erkrankungen
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-blutgruppe)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-bodymassindex)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-hpo-assessment)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-hueftumfang)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-kopfumfang)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-taillenumfang)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Observation-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Observation-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/Observation-category, #token, #SHALL)
-
-* insert SupportResource(Procedure, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapie-durchgefuehrt)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Procedure-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Procedure-status, #token, #SHALL)
-
-* insert SupportResource(RequestGroup, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapieempfehlung-kombination)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/RequestGroup-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/RequestGroup-patient, #reference, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/RequestGroup-status, #token, #SHALL)
-
-* insert SupportResource(ResearchStudy, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-studie)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(title, http://hl7.org/fhir/SearchParameter/ResearchStudy-title, #string, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ResearchStudy-status, #token, #SHALL)
-* insert SupportSearchParam(identifier, http://hl7.org/fhir/SearchParameter/ResearchStudy-identifier, #token, #SHALL)
-
-* insert SupportResource(ServiceRequest, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-studieneinschluss-anfrage)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapieempfehlung-nicht-medikamentoes)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/ServiceRequest-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(authored, http://hl7.org/fhir/SearchParameter/ServiceRequest-authored, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ServiceRequest-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/ServiceRequest-category, #token, #SHALL)
-
-// ============================================================================
-// Onkologie Module
-// ============================================================================
-
-RuleSet: FDPG_CPS_Onkologie_Resources
-* insert SupportResource(AdverseEvent, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-nebenwirkung-adverse-event)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/AdverseEvent-subject, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/AdverseEvent-date, #date, #SHALL)
-* insert SupportSearchParam(event, http://hl7.org/fhir/SearchParameter/AdverseEvent-event, #token, #SHALL)
-
-* insert SupportResource(CarePlan, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-tumorkonferenz)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/CarePlan-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/CarePlan-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/CarePlan-category, #token, #SHALL)
-
-* insert SupportResource(Condition, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-diagnose-primaertumor)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-fruehere-tumorerkrankung)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Condition-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(clinical-status, http://hl7.org/fhir/SearchParameter/Condition-clinical-status, #token, #SHALL)
-* insert SupportSearchParam(recorded-date, http://hl7.org/fhir/SearchParameter/Condition-recorded-date, #date, #SHALL)
-
-* insert SupportResource(DiagnosticReport, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-befund)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/DiagnosticReport-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/DiagnosticReport-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/DiagnosticReport-category, #token, #SHALL)
-
-* insert SupportResource(List, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-liste-evidenz-erstdiagnose)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/List-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/List-status, #token, #SHALL)
-
-* insert SupportResource(MedicationRequest, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-therapieempfehlung-medikation)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/MedicationRequest-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(authoredon, http://hl7.org/fhir/SearchParameter/MedicationRequest-authoredon, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/medications-status, #token, #SHALL)
-
-* insert SupportResource(MedicationStatement, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-systemische-therapie-medikation)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/MedicationStatement-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(effective, http://hl7.org/fhir/SearchParameter/MedicationStatement-effective, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/medications-status, #token, #SHALL)
-
-* insert SupportResource(Observation, #SHALL)
+// Onkologie
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-allgemeiner-leistungszustand-ecog)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-allgemeiner-leistungszustand-karnofsky)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-anzahl-befallene-lymphknoten)
@@ -1017,38 +312,48 @@ RuleSet: FDPG_CPS_Onkologie_Resources
 * insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Observation-status, #token, #SHALL)
 * insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/Observation-category, #token, #SHALL)
 
-* insert SupportResource(Procedure, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-krk-operation)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-krk-stoma-markierung)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-mamma-operation)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-mamma-praeoperative-markierung)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-mamma-sozialdienst)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-melanom-exzision)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-operation)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-prostata-operation)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-strahlentherapie-bestrahlung-strahlentherapie)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-strahlentherapie)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-systemische-therapie)
+// --- DiagnosticReport (from: Labor, MolGen, Patho, Bildgebung, Onkologie) ---
+
+RuleSet: FDPG_CPS_DiagnosticReport
+* insert SupportResource(DiagnosticReport, #SHALL)
+// Labor
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-labor-laborbefund)
+// MolGen
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-molekulargenetischer-befundbericht)
+// Patho
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-report)
+// Bildgebung
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-radiologischer-befund)
+// Onkologie
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-befund)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams
 * insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Procedure-subject, #reference, #SHALL)
+* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/DiagnosticReport-subject, #reference, #SHALL)
 * insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
 * insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Procedure-status, #token, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/DiagnosticReport-status, #token, #SHALL)
+* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/DiagnosticReport-category, #token, #SHALL)
 
-* insert SupportResource(RequestGroup, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-therapieempfehlung-kombinationstherapie)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/RequestGroup-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/RequestGroup-patient, #reference, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/RequestGroup-status, #token, #SHALL)
+// --- ServiceRequest (from: Labor, Studie, MolGen, Patho, Bildgebung, Seltene Erkrankungen, Onkologie) ---
 
+RuleSet: FDPG_CPS_ServiceRequest
 * insert SupportResource(ServiceRequest, #SHALL)
+// Labor
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-labor-laboranforderung)
+// Studie
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-studieneinschluss-anfrage)
+// MolGen
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-anforderung-genetischer-test)
+// Patho
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-service-request)
+// Bildgebung
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-anforderung-bildgebung)
+// Seltene Erkrankungen
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-studieneinschluss-anfrage)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapieempfehlung-nicht-medikamentoes)
+// Onkologie
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-therapieempfehlung-operation)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
@@ -1060,7 +365,115 @@ RuleSet: FDPG_CPS_Onkologie_Resources
 * insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ServiceRequest-status, #token, #SHALL)
 * insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/ServiceRequest-category, #token, #SHALL)
 
+// --- List (from: Medikation, Patho, Onkologie) ---
+
+RuleSet: FDPG_CPS_List
+* insert SupportResource(List, #SHALL)
+// Medikation
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-medikation-medikationsliste)
+// Patho
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-active-problems-list)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-history-of-present-illness)
+// Onkologie
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-liste-evidenz-erstdiagnose)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
+* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/List-subject, #reference, #SHALL)
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
+* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/List-status, #token, #SHALL)
+
+// --- Medication (from: Medikation) ---
+
+RuleSet: FDPG_CPS_Medication
+* insert SupportResource(Medication, #SHALL)
+// Profiles from: Medikation
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-medikation-medication)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Medication-status, #token, #SHALL)
+
+// --- MedicationAdministration (from: Medikation, Bildgebung) ---
+
+RuleSet: FDPG_CPS_MedicationAdministration
+* insert SupportResource(MedicationAdministration, #SHALL)
+// Medikation
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-medikation-medication-administration)
+// Bildgebung
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-kontrastmittelgabe)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
+* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/MedicationAdministration-subject, #reference, #SHALL)
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
+* insert SupportSearchParam(effective-time, http://hl7.org/fhir/SearchParameter/MedicationAdministration-effective-time, #date, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/medications-status, #token, #SHALL)
+
+// --- MedicationRequest (from: Medikation, Seltene Erkrankungen, Onkologie) ---
+
+RuleSet: FDPG_CPS_MedicationRequest
+* insert SupportResource(MedicationRequest, #SHALL)
+// Medikation
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-medikation-medication-request)
+// Seltene Erkrankungen
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapieempfehlung)
+// Onkologie
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-therapieempfehlung-medikation)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
+* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/MedicationRequest-subject, #reference, #SHALL)
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
+* insert SupportSearchParam(authoredon, http://hl7.org/fhir/SearchParameter/MedicationRequest-authoredon, #date, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/medications-status, #token, #SHALL)
+
+// --- MedicationStatement (from: Medikation, Onkologie) ---
+
+RuleSet: FDPG_CPS_MedicationStatement
+* insert SupportResource(MedicationStatement, #SHALL)
+// Medikation
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-medikation-medication-statement)
+// Onkologie
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-systemische-therapie-medikation)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
+* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/MedicationStatement-subject, #reference, #SHALL)
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
+* insert SupportSearchParam(effective, http://hl7.org/fhir/SearchParameter/MedicationStatement-effective, #date, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/medications-status, #token, #SHALL)
+
+// --- Organization (from: Biobank) ---
+
+RuleSet: FDPG_CPS_Organization
+* insert SupportResource(Organization, #SHALL)
+// Profiles from: Biobank
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-organization)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(name, http://hl7.org/fhir/SearchParameter/Organization-name, #string, #SHALL)
+* insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/Organization-type, #token, #SHALL)
+* insert SupportSearchParam(identifier, http://hl7.org/fhir/SearchParameter/Organization-identifier, #token, #SHALL)
+
+// --- Specimen (from: Biobank, Patho, Onkologie) ---
+
+RuleSet: FDPG_CPS_Specimen
 * insert SupportResource(Specimen, #SHALL)
+// Biobank
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-specimen-core)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-specimen)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-zellinie-organoid)
+// Patho
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-specimen)
+// Onkologie
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-krk-specimen)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-specimen)
 * insert SupportInteraction(#read, #SHALL)
@@ -1072,48 +485,27 @@ RuleSet: FDPG_CPS_Onkologie_Resources
 * insert SupportSearchParam(collected, http://hl7.org/fhir/SearchParameter/Specimen-collected, #date, #SHALL)
 * insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Specimen-status, #token, #SHALL)
 
-// ============================================================================
-// Consent Module
-// ============================================================================
+// --- Substance (from: Biobank) ---
 
-RuleSet: FDPG_CPS_Consent_Resources
-* insert SupportResource(Consent, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-consent-einwilligung)
+RuleSet: FDPG_CPS_Substance
+* insert SupportResource(Substance, #SHALL)
+// Profiles from: Biobank
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-substance-additiv)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Consent-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/Consent-category, #token, #SHALL)
+* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/Substance-code, #token, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Substance-status, #token, #SHALL)
 
+// --- DocumentReference (from: Studie, Consent, Dokument) ---
+
+RuleSet: FDPG_CPS_DocumentReference
 * insert SupportResource(DocumentReference, #SHALL)
+// Studie
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-dokument)
+// Consent
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-consent-documentreference)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/clinical-type, #token, #SHALL)
-* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/DocumentReference-subject, #reference, #SHALL)
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
-* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/DocumentReference-date, #date, #SHALL)
-* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/DocumentReference-status, #token, #SHALL)
-* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/DocumentReference-category, #token, #SHALL)
-
-* insert SupportResource(Provenance, #SHALL)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-consent-provenance)
-* insert SupportInteraction(#read, #SHALL)
-* insert SupportInteraction(#search-type, #SHALL)
-* insert CommonSearchParams
-* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/Provenance-patient, #reference, #SHALL)
-* insert SupportSearchParam(recorded, http://hl7.org/fhir/SearchParameter/Provenance-recorded, #date, #SHALL)
-* insert SupportSearchParam(target, http://hl7.org/fhir/SearchParameter/Provenance-target, #reference, #SHALL)
-
-// ============================================================================
-// Dokument Module
-// ============================================================================
-
-RuleSet: FDPG_CPS_Dokument_Resources
-* insert SupportResource(DocumentReference, #SHALL)
+// Dokument
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-dokument-dokument)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
@@ -1124,3 +516,297 @@ RuleSet: FDPG_CPS_Dokument_Resources
 * insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/DocumentReference-date, #date, #SHALL)
 * insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/DocumentReference-status, #token, #SHALL)
 * insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/DocumentReference-category, #token, #SHALL)
+
+// --- EvidenceVariable (from: Studie) ---
+
+RuleSet: FDPG_CPS_EvidenceVariable
+* insert SupportResource(EvidenceVariable, #SHALL)
+// Profiles from: Studie
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-ein-auschluss-kriterium)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(name, http://hl7.org/fhir/SearchParameter/EvidenceVariable-name, #string, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/EvidenceVariable-status, #token, #SHALL)
+
+// --- Library (from: Studie) ---
+
+RuleSet: FDPG_CPS_Library
+* insert SupportResource(Library, #SHALL)
+// Profiles from: Studie
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-register)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(name, http://hl7.org/fhir/SearchParameter/Library-name, #string, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Library-status, #token, #SHALL)
+
+// --- PractitionerRole (from: Studie) ---
+
+RuleSet: FDPG_CPS_PractitionerRole
+* insert SupportResource(PractitionerRole, #SHALL)
+// Profiles from: Studie
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-beteiligte-person)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(practitioner, http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner, #reference, #SHALL)
+* insert SupportSearchParam(role, http://hl7.org/fhir/SearchParameter/PractitionerRole-role, #token, #SHALL)
+
+// --- ResearchStudy (from: Studie, Seltene Erkrankungen) ---
+
+RuleSet: FDPG_CPS_ResearchStudy
+* insert SupportResource(ResearchStudy, #SHALL)
+// Studie
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-studie)
+// Seltene Erkrankungen
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-studie)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(title, http://hl7.org/fhir/SearchParameter/ResearchStudy-title, #string, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ResearchStudy-status, #token, #SHALL)
+* insert SupportSearchParam(identifier, http://hl7.org/fhir/SearchParameter/ResearchStudy-identifier, #token, #SHALL)
+
+// --- ResearchSubject (from: Studie) ---
+
+RuleSet: FDPG_CPS_ResearchSubject
+* insert SupportResource(ResearchSubject, #SHALL)
+// Profiles from: Studie
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-proband)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/ResearchSubject-patient, #reference, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ResearchSubject-status, #token, #SHALL)
+* insert SupportSearchParam(study, http://hl7.org/fhir/SearchParameter/ResearchSubject-study, #reference, #SHALL)
+
+// --- FamilyMemberHistory (from: MolGen, Seltene Erkrankungen) ---
+
+RuleSet: FDPG_CPS_FamilyMemberHistory
+* insert SupportResource(FamilyMemberHistory, #SHALL)
+// MolGen
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-familienanamnese)
+// Seltene Erkrankungen
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-familienanamnese)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
+* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/FamilyMemberHistory-status, #token, #SHALL)
+
+// --- RiskAssessment (from: MolGen) ---
+
+RuleSet: FDPG_CPS_RiskAssessment
+* insert SupportResource(RiskAssessment, #SHALL)
+// Profiles from: MolGen
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-polygener-risiko-score)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/RiskAssessment-subject, #reference, #SHALL)
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
+* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
+
+// --- Task (from: MolGen) ---
+
+RuleSet: FDPG_CPS_Task
+* insert SupportResource(Task, #SHALL)
+// Profiles from: MolGen
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-empfohlene-folgemassnahme)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-medikationsempfehlung)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/Task-code, #token, #SHALL)
+* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Task-subject, #reference, #SHALL)
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/Task-patient, #reference, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Task-status, #token, #SHALL)
+
+// --- Bundle (from: Patho) ---
+
+RuleSet: FDPG_CPS_Bundle
+* insert SupportResource(Bundle, #SHALL)
+// Profiles from: Patho
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-bundle)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/Bundle-type, #token, #SHALL)
+* insert SupportSearchParam(identifier, http://hl7.org/fhir/SearchParameter/Bundle-identifier, #token, #SHALL)
+
+// --- Composition (from: Patho, Bildgebung) ---
+
+RuleSet: FDPG_CPS_Composition
+* insert SupportResource(Composition, #SHALL)
+// Patho
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-composition)
+// Bildgebung
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-semistrukt-befundbericht)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/clinical-type, #token, #SHALL)
+* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Composition-subject, #reference, #SHALL)
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
+* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Composition-status, #token, #SHALL)
+
+// --- Media (from: Patho) ---
+
+RuleSet: FDPG_CPS_Media
+* insert SupportResource(Media, #SHALL)
+// Profiles from: Patho
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-attached-image)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/Media-subject, #reference, #SHALL)
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Media-status, #token, #SHALL)
+
+// --- Device (from: ICU, Bildgebung) ---
+
+RuleSet: FDPG_CPS_Device
+* insert SupportResource(Device, #SHALL)
+// ICU
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-device)
+// Bildgebung
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-geraet)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/Device-type, #token, #SHALL)
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/Device-patient, #reference, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Device-status, #token, #SHALL)
+
+// --- DeviceMetric (from: ICU) ---
+
+RuleSet: FDPG_CPS_DeviceMetric
+* insert SupportResource(DeviceMetric, #SHALL)
+// Profiles from: ICU
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-ect-dm-eingest-param-extrakorporale-verfahren)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/DeviceMetric-type, #token, #SHALL)
+* insert SupportSearchParam(source, http://hl7.org/fhir/SearchParameter/DeviceMetric-source, #reference, #SHALL)
+* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/DeviceMetric-category, #token, #SHALL)
+
+// --- BodyStructure (from: Bildgebung) ---
+
+RuleSet: FDPG_CPS_BodyStructure
+* insert SupportResource(BodyStructure, #SHALL)
+// Profiles from: Bildgebung
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-koerperstruktur)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/BodyStructure-patient, #reference, #SHALL)
+* insert SupportSearchParam(location, http://hl7.org/fhir/SearchParameter/BodyStructure-location, #token, #SHALL)
+
+// --- CarePlan (from: Bildgebung, Seltene Erkrankungen, Onkologie) ---
+
+RuleSet: FDPG_CPS_CarePlan
+* insert SupportResource(CarePlan, #SHALL)
+// Bildgebung
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-behandlungsempfehlung)
+// Seltene Erkrankungen
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapieplan)
+// Onkologie
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-tumorkonferenz)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/CarePlan-subject, #reference, #SHALL)
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
+* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/CarePlan-status, #token, #SHALL)
+* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/CarePlan-category, #token, #SHALL)
+
+// --- ImagingStudy (from: Bildgebung) ---
+
+RuleSet: FDPG_CPS_ImagingStudy
+* insert SupportResource(ImagingStudy, #SHALL)
+// Profiles from: Bildgebung
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-bildgebungsstudie)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/ImagingStudy-subject, #reference, #SHALL)
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
+* insert SupportSearchParam(started, http://hl7.org/fhir/SearchParameter/ImagingStudy-started, #date, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ImagingStudy-status, #token, #SHALL)
+* insert SupportSearchParam(modality, http://hl7.org/fhir/SearchParameter/ImagingStudy-modality, #token, #SHALL)
+
+// --- ClinicalImpression (from: Seltene Erkrankungen) ---
+
+RuleSet: FDPG_CPS_ClinicalImpression
+* insert SupportResource(ClinicalImpression, #SHALL)
+// Profiles from: Seltene Erkrankungen
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-clinical-impression)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/ClinicalImpression-subject, #reference, #SHALL)
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
+* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ClinicalImpression-status, #token, #SHALL)
+
+// --- RequestGroup (from: Seltene Erkrankungen, Onkologie) ---
+
+RuleSet: FDPG_CPS_RequestGroup
+* insert SupportResource(RequestGroup, #SHALL)
+// Seltene Erkrankungen
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapieempfehlung-kombination)
+// Onkologie
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-therapieempfehlung-kombinationstherapie)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/RequestGroup-subject, #reference, #SHALL)
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/RequestGroup-patient, #reference, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/RequestGroup-status, #token, #SHALL)
+
+// --- AdverseEvent (from: Onkologie) ---
+
+RuleSet: FDPG_CPS_AdverseEvent
+* insert SupportResource(AdverseEvent, #SHALL)
+// Profiles from: Onkologie
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-nebenwirkung-adverse-event)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(subject, http://hl7.org/fhir/SearchParameter/AdverseEvent-subject, #reference, #SHALL)
+* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/AdverseEvent-date, #date, #SHALL)
+* insert SupportSearchParam(event, http://hl7.org/fhir/SearchParameter/AdverseEvent-event, #token, #SHALL)
+
+// --- Consent (from: Consent) ---
+
+RuleSet: FDPG_CPS_Consent
+* insert SupportResource(Consent, #SHALL)
+// Profiles from: Consent
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-consent-einwilligung)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
+* insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Consent-status, #token, #SHALL)
+* insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/Consent-category, #token, #SHALL)
+
+// --- Provenance (from: Consent) ---
+
+RuleSet: FDPG_CPS_Provenance
+* insert SupportResource(Provenance, #SHALL)
+// Profiles from: Consent
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-consent-provenance)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/Provenance-patient, #reference, #SHALL)
+* insert SupportSearchParam(recorded, http://hl7.org/fhir/SearchParameter/Provenance-recorded, #date, #SHALL)
+* insert SupportSearchParam(target, http://hl7.org/fhir/SearchParameter/Provenance-target, #reference, #SHALL)

@@ -21,7 +21,7 @@
     "fshType": "Instance",
     "fshFile": "capabilitystatements/fdpg-cps-data-consumer.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 66
   },
   {
     "outputFile": "CapabilityStatement-fdpg-cps-data-provider.json",
@@ -29,7 +29,7 @@
     "fshType": "Instance",
     "fshFile": "capabilitystatements/fdpg-cps-data-provider.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-bildgebung-anforderung-bildgebung.json",
