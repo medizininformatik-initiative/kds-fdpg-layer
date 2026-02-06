@@ -6,7 +6,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### AnforderungGenetischerTest (ServiceRequest)
 
-**FDPG Profil:** [FDPG_PR_MolGen_AnforderungGenetischerTest](StructureDefinition-fdpg-pr-molgen-anforderung-genetischer-test.html) | **MII Elternprofil:** MII_PR_MolGen_AnforderungGenetischerTest
+**FDPG Profil:** [FDPG_PR_MolGen_AnforderungGenetischerTest](StructureDefinition-fdpg-pr-molgen-anforderung-genetischer-test.html) · **MII Elternprofil:** MII_PR_MolGen_AnforderungGenetischerTest
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -23,7 +23,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### DiagnostischeImplikation (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_DiagnostischeImplikation](StructureDefinition-fdpg-pr-molgen-diagnostische-implikation.html) | **MII Elternprofil:** MII_PR_MolGen_DiagnostischeImplikation
+**FDPG Profil:** [FDPG_PR_MolGen_DiagnostischeImplikation](StructureDefinition-fdpg-pr-molgen-diagnostische-implikation.html) · **MII Elternprofil:** MII_PR_MolGen_DiagnostischeImplikation
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -44,7 +44,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### EmpfohleneFolgemassnahme (Task)
 
-**FDPG Profil:** [FDPG_PR_MolGen_EmpfohleneFolgemassnahme](StructureDefinition-fdpg-pr-molgen-empfohlene-folgemassnahme.html) | **MII Elternprofil:** MII_PR_MolGen_EmpfohleneFolgemassnahme
+**FDPG Profil:** [FDPG_PR_MolGen_EmpfohleneFolgemassnahme](StructureDefinition-fdpg-pr-molgen-empfohlene-folgemassnahme.html) · **MII Elternprofil:** MII_PR_MolGen_EmpfohleneFolgemassnahme
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -58,7 +58,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Familienanamnese (FamilyMemberHistory)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Familienanamnese](StructureDefinition-fdpg-pr-molgen-familienanamnese.html) | **MII Elternprofil:** MII_PR_MolGen_Familienanamnese
+**FDPG Profil:** [FDPG_PR_MolGen_Familienanamnese](StructureDefinition-fdpg-pr-molgen-familienanamnese.html) · **MII Elternprofil:** MII_PR_MolGen_Familienanamnese
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -73,7 +73,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### GenomicStudyAnalysis (Procedure)
 
-**FDPG Profil:** [FDPG_PR_MolGen_GenomicStudyAnalysis](StructureDefinition-fdpg-pr-molgen-genomic-study-analysis.html) | **MII Elternprofil:** MII_PR_MolGen_GenomicStudyAnalysis
+**FDPG Profil:** [FDPG_PR_MolGen_GenomicStudyAnalysis](StructureDefinition-fdpg-pr-molgen-genomic-study-analysis.html) · **MII Elternprofil:** MII_PR_MolGen_GenomicStudyAnalysis
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -89,7 +89,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### GenomicStudy (Procedure)
 
-**FDPG Profil:** [FDPG_PR_MolGen_GenomicStudy](StructureDefinition-fdpg-pr-molgen-genomic-study.html) | **MII Elternprofil:** MII_PR_MolGen_GenomicStudy
+**FDPG Profil:** [FDPG_PR_MolGen_GenomicStudy](StructureDefinition-fdpg-pr-molgen-genomic-study.html) · **MII Elternprofil:** MII_PR_MolGen_GenomicStudy
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -103,7 +103,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Genotyp (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Genotyp](StructureDefinition-fdpg-pr-molgen-genotyp.html) | **MII Elternprofil:** MII_PR_MolGen_Genotyp
+**FDPG Profil:** [FDPG_PR_MolGen_Genotyp](StructureDefinition-fdpg-pr-molgen-genotyp.html) · **MII Elternprofil:** MII_PR_MolGen_Genotyp
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -124,7 +124,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Medikationsempfehlung (Task)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Medikationsempfehlung](StructureDefinition-fdpg-pr-molgen-medikationsempfehlung.html) | **MII Elternprofil:** MII_PR_MolGen_Medikationsempfehlung
+**FDPG Profil:** [FDPG_PR_MolGen_Medikationsempfehlung](StructureDefinition-fdpg-pr-molgen-medikationsempfehlung.html) · **MII Elternprofil:** MII_PR_MolGen_Medikationsempfehlung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -138,7 +138,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Mikrosatelliteninstabilitaet (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Mikrosatelliteninstabilitaet](StructureDefinition-fdpg-pr-molgen-mikrosatelliteninstabilitaet.html) | **MII Elternprofil:** MII_PR_MolGen_Mikrosatelliteninstabilitaet
+**FDPG Profil:** [FDPG_PR_MolGen_Mikrosatelliteninstabilitaet](StructureDefinition-fdpg-pr-molgen-mikrosatelliteninstabilitaet.html) · **MII Elternprofil:** MII_PR_MolGen_Mikrosatelliteninstabilitaet
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -157,7 +157,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### MolekulareKonsequenz (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_MolekulareKonsequenz](StructureDefinition-fdpg-pr-molgen-molekulare-konsequenz.html) | **MII Elternprofil:** MII_PR_MolGen_MolekulareKonsequenz
+**FDPG Profil:** [FDPG_PR_MolGen_MolekulareKonsequenz](StructureDefinition-fdpg-pr-molgen-molekulare-konsequenz.html) · **MII Elternprofil:** MII_PR_MolGen_MolekulareKonsequenz
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -177,7 +177,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### MolekularerBiomarker (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_MolekularerBiomarker](StructureDefinition-fdpg-pr-molgen-molekularer-biomarker.html) | **MII Elternprofil:** MII_PR_MolGen_MolekularerBiomarker
+**FDPG Profil:** [FDPG_PR_MolGen_MolekularerBiomarker](StructureDefinition-fdpg-pr-molgen-molekularer-biomarker.html) · **MII Elternprofil:** MII_PR_MolGen_MolekularerBiomarker
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -194,7 +194,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### MolekulargenetischerBefundbericht (DiagnosticReport)
 
-**FDPG Profil:** [FDPG_PR_MolGen_MolekulargenetischerBefundbericht](StructureDefinition-fdpg-pr-molgen-molekulargenetischer-befundbericht.html) | **MII Elternprofil:** MII_PR_MolGen_MolekulargenetischerBefundbericht
+**FDPG Profil:** [FDPG_PR_MolGen_MolekulargenetischerBefundbericht](StructureDefinition-fdpg-pr-molgen-molekulargenetischer-befundbericht.html) · **MII Elternprofil:** MII_PR_MolGen_MolekulargenetischerBefundbericht
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -225,7 +225,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Mutationslast (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Mutationslast](StructureDefinition-fdpg-pr-molgen-mutationslast.html) | **MII Elternprofil:** MII_PR_MolGen_Mutationslast
+**FDPG Profil:** [FDPG_PR_MolGen_Mutationslast](StructureDefinition-fdpg-pr-molgen-mutationslast.html) · **MII Elternprofil:** MII_PR_MolGen_Mutationslast
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -245,7 +245,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### PolygenerRisikoScore (RiskAssessment)
 
-**FDPG Profil:** [FDPG_PR_MolGen_PolygenerRisikoScore](StructureDefinition-fdpg-pr-molgen-polygener-risiko-score.html) | **MII Elternprofil:** MII_PR_MolGen_PolygenerRisikoScore
+**FDPG Profil:** [FDPG_PR_MolGen_PolygenerRisikoScore](StructureDefinition-fdpg-pr-molgen-polygener-risiko-score.html) · **MII Elternprofil:** MII_PR_MolGen_PolygenerRisikoScore
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -261,7 +261,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### TherapeutischeImplikation (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_TherapeutischeImplikation](StructureDefinition-fdpg-pr-molgen-therapeutische-implikation.html) | **MII Elternprofil:** MII_PR_MolGen_TherapeutischeImplikation
+**FDPG Profil:** [FDPG_PR_MolGen_TherapeutischeImplikation](StructureDefinition-fdpg-pr-molgen-therapeutische-implikation.html) · **MII Elternprofil:** MII_PR_MolGen_TherapeutischeImplikation
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -284,7 +284,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Variante (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Variante](StructureDefinition-fdpg-pr-molgen-variante.html) | **MII Elternprofil:** MII_PR_MolGen_Variante
+**FDPG Profil:** [FDPG_PR_MolGen_Variante](StructureDefinition-fdpg-pr-molgen-variante.html) · **MII Elternprofil:** MII_PR_MolGen_Variante
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|

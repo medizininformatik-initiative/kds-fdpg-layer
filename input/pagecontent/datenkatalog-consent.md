@@ -6,7 +6,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### DocumentReference (DocumentReference)
 
-**FDPG Profil:** [FDPG_PR_Consent_DocumentReference](StructureDefinition-fdpg-pr-consent-documentreference.html) | **MII Elternprofil:** MII_PR_Consent_DocumentReference
+**FDPG Profil:** [FDPG_PR_Consent_DocumentReference](StructureDefinition-fdpg-pr-consent-documentreference.html) · **MII Elternprofil:** MII_PR_Consent_DocumentReference
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -16,7 +16,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Einwilligung (Consent)
 
-**FDPG Profil:** [FDPG_PR_Consent_Einwilligung](StructureDefinition-fdpg-pr-consent-einwilligung.html) | **MII Elternprofil:** MII_PR_Consent_Einwilligung
+**FDPG Profil:** [FDPG_PR_Consent_Einwilligung](StructureDefinition-fdpg-pr-consent-einwilligung.html) · **MII Elternprofil:** MII_PR_Consent_Einwilligung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -39,7 +39,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Provenance (Provenance)
 
-**FDPG Profil:** [FDPG_PR_Consent_Provenance](StructureDefinition-fdpg-pr-consent-provenance.html) | **MII Elternprofil:** MII_PR_Consent_Provenance
+**FDPG Profil:** [FDPG_PR_Consent_Provenance](StructureDefinition-fdpg-pr-consent-provenance.html) · **MII Elternprofil:** MII_PR_Consent_Provenance
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|

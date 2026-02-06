@@ -6,7 +6,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Dokument (DocumentReference)
 
-**FDPG Profil:** [FDPG_PR_Dokument_Dokument](StructureDefinition-fdpg-pr-dokument-dokument.html) | **MII Elternprofil:** MII_PR_Dokument_Dokument
+**FDPG Profil:** [FDPG_PR_Dokument_Dokument](StructureDefinition-fdpg-pr-dokument-dokument.html) · **MII Elternprofil:** MII_PR_Dokument_Dokument
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|

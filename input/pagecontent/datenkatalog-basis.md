@@ -10,16 +10,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Patient (Patient)
 
-**FDPG Profil:** [FDPG_PR_Person_Patient](StructureDefinition-fdpg-pr-person-patient.html) | **MII Elternprofil:** MII_PR_Person_Patient
+**FDPG Profil:** [FDPG_PR_Person_Patient](StructureDefinition-fdpg-pr-person-patient.html) · **MII Elternprofil:** MII_PR_Person_Patient
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `identifier` | Identifikator | Ein Identifikator für den/die Patient*in |
+| `identifier` | Identifikator | Ein Identifikator für den/die Patient\*in |
 | `identifier:versichertenId` | Krankenversichertennummer | 10-stellige KVID |
-| `identifier:pid` | Organisationsinterner Patienten-Identifikator | Führende ID der Patient*in in der Organisation |
+| `identifier:pid` | Organisationsinterner Patienten-Identifikator | Führende ID der Patient\*in in der Organisation |
 | `name` | Name | Name der Patientin oder des Patienten |
 | `name:name` | Personenname | Personenname mit in Deutschland üblichen Namensbestandteilen |
 | `name:geburtsname` | Geburtsname | Name, der vor einer Namensänderung aufgrund von Heirat verwendet wurde. |
@@ -30,16 +30,17 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `address:Strassenanschrift` | Straßenanschrift | Eine Straßenanschrift der Patientin oder des Patienten |
 | `address:Postfach` | Postfach | Eine Postfachanschrift der Patientin oder des Patienten |
 | `link` | Verweis | Verweis auf eine andere Patientenressource, die die gleiche tatsächliche Person betrifft |
+
 #### PatientPseudonymisiert (Patient)
 
-**FDPG Profil:** [FDPG_PR_Person_PatientPseudonymisiert](StructureDefinition-fdpg-pr-person-patient-pseudonymisiert.html) | **MII Elternprofil:** MII_PR_Person_PatientPseudonymisiert
+**FDPG Profil:** [FDPG_PR_Person_PatientPseudonymisiert](StructureDefinition-fdpg-pr-person-patient-pseudonymisiert.html) · **MII Elternprofil:** MII_PR_Person_PatientPseudonymisiert
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `identifier` | Identifikator | Ein Identifikator für den/die Patient*in |
+| `identifier` | Identifikator | Ein Identifikator für den/die Patient\*in |
 | `identifier:PseudonymisierterIdentifier` | Pseudonymisierter Identifikator | Ein Pseudonym ersetzt einen Originalwert. Die Verarbeitung ist umkehrbar. Zusätzliche Informationen sind erforderlich, um den Originalwert zu rekonstruieren, bspw. eine Trusted Third Party. |
 | `identifier:AnonymisierterIdentifier` | Anonymisierter Identifikator | Ein Anonymisierter Identifikator ersetzt einen Originalwert. Die Verarbeitung ist unumkehrbar. Der Originalwert kann nicht oder nur mit unverhältnismäßigem Aufwand rekonstruiert werden. |
 | `identifier:MaskierterVersichertenIdentifer` | Maskierter Identifier der Krankenversicherten-ID | Identifier der Krankenversichertennummer, bei dem der Wert maskiert wurde. |
@@ -48,9 +49,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `birthDate` | Geburtsdatum | Das Geburtsdatum der Patientin oder des Patienten |
 | `address` | Adresse | Eine Adresse der Patientin oder des Patienten |
 | `address:Strassenanschrift` | Straßenanschrift | Eine Straßenanschrift der Patientin oder des Patienten |
+
 #### Vitalstatus (Observation)
 
-**FDPG Profil:** [FDPG_PR_Person_Vitalstatus](StructureDefinition-fdpg-pr-person-vitalstatus.html) | **MII Elternprofil:** MII_PR_Person_Vitalstatus
+**FDPG Profil:** [FDPG_PR_Person_Vitalstatus](StructureDefinition-fdpg-pr-person-vitalstatus.html) · **MII Elternprofil:** MII_PR_Person_Vitalstatus
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -66,9 +68,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Zeitpunkt | Der Zeitpunkt, zu dem der beobachtete Vitalstatus als wahr festgestellt wird. |
 | `value[x]` | Wert | lebendig \| verstorben \| unbekannt |
 | `note` | Hinweis | Zusätzliche Informationen zum Vitalstatus als Freitext. |
+
 #### Todesursache (Condition)
 
-**FDPG Profil:** [FDPG_PR_Person_Todesursache](StructureDefinition-fdpg-pr-person-todesursache.html) | **MII Elternprofil:** MII_PR_Person_Todesursache
+**FDPG Profil:** [FDPG_PR_Person_Todesursache](StructureDefinition-fdpg-pr-person-todesursache.html) · **MII Elternprofil:** MII_PR_Person_Todesursache
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -89,7 +92,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Condition (Condition)
 
-**FDPG Profil:** [FDPG_PR_Diagnose_Condition](StructureDefinition-fdpg-pr-diagnose-condition.html) | **MII Elternprofil:** MII_PR_Diagnose_Condition
+**FDPG Profil:** [FDPG_PR_Diagnose_Condition](StructureDefinition-fdpg-pr-diagnose-condition.html) · **MII Elternprofil:** MII_PR_Diagnose_Condition
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -116,7 +119,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Procedure (Procedure)
 
-**FDPG Profil:** [FDPG_PR_Prozedur_Procedure](StructureDefinition-fdpg-pr-prozedur-procedure.html) | **MII Elternprofil:** MII_PR_Prozedur_Procedure
+**FDPG Profil:** [FDPG_PR_Prozedur_Procedure](StructureDefinition-fdpg-pr-prozedur-procedure.html) · **MII Elternprofil:** MII_PR_Prozedur_Procedure
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -140,7 +143,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### KontaktGesundheitseinrichtung (Encounter)
 
-**FDPG Profil:** [FDPG_PR_Fall_KontaktGesundheitseinrichtung](StructureDefinition-fdpg-pr-fall-kontakt-gesundheitseinrichtung.html) | **MII Elternprofil:** MII_PR_Fall_KontaktGesundheitseinrichtung
+**FDPG Profil:** [FDPG_PR_Fall_KontaktGesundheitseinrichtung](StructureDefinition-fdpg-pr-fall-kontakt-gesundheitseinrichtung.html) · **MII Elternprofil:** MII_PR_Fall_KontaktGesundheitseinrichtung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|

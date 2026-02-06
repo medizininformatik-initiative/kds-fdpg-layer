@@ -6,7 +6,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Active Problems List (List)
 
-**FDPG Profil:** [FDPG_PR_Patho_Active_Problems_List](StructureDefinition-fdpg-pr-patho-active-problems-list.html) | **MII Elternprofil:** MII_PR_Patho_Active_Problems_List
+**FDPG Profil:** [FDPG_PR_Patho_Active_Problems_List](StructureDefinition-fdpg-pr-patho-active-problems-list.html) · **MII Elternprofil:** MII_PR_Patho_Active_Problems_List
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -19,7 +19,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Additional Specified Grouper (Observation)
 
-**FDPG Profil:** [FDPG_PR_Patho_Additional_Specified_Grouper](StructureDefinition-fdpg-pr-patho-additional-specified-grouper.html) | **MII Elternprofil:** MII_PR_Patho_Additional_Specified_Grouper
+**FDPG Profil:** [FDPG_PR_Patho_Additional_Specified_Grouper](StructureDefinition-fdpg-pr-patho-additional-specified-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Additional_Specified_Grouper
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -45,7 +45,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Attached Image (Media)
 
-**FDPG Profil:** [FDPG_PR_Patho_Attached_Image](StructureDefinition-fdpg-pr-patho-attached-image.html) | **MII Elternprofil:** MII_PR_Patho_Attached_Image
+**FDPG Profil:** [FDPG_PR_Patho_Attached_Image](StructureDefinition-fdpg-pr-patho-attached-image.html) · **MII Elternprofil:** MII_PR_Patho_Attached_Image
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -61,7 +61,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Base Observation (Observation)
 
-**FDPG Profil:** [FDPG_PR_Patho_Base_Observation](StructureDefinition-fdpg-pr-patho-base-observation.html) | **MII Elternprofil:** MII_PR_Patho_Base_Observation
+**FDPG Profil:** [FDPG_PR_Patho_Base_Observation](StructureDefinition-fdpg-pr-patho-base-observation.html) · **MII Elternprofil:** MII_PR_Patho_Base_Observation
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -85,7 +85,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Bundle (Bundle)
 
-**FDPG Profil:** [FDPG_PR_Patho_Bundle](StructureDefinition-fdpg-pr-patho-bundle.html) | **MII Elternprofil:** MII_PR_Patho_Bundle
+**FDPG Profil:** [FDPG_PR_Patho_Bundle](StructureDefinition-fdpg-pr-patho-bundle.html) · **MII Elternprofil:** MII_PR_Patho_Bundle
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -106,7 +106,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Composition (Composition)
 
-**FDPG Profil:** [FDPG_PR_Patho_Composition](StructureDefinition-fdpg-pr-patho-composition.html) | **MII Elternprofil:** MII_PR_Patho_Composition
+**FDPG Profil:** [FDPG_PR_Patho_Composition](StructureDefinition-fdpg-pr-patho-composition.html) · **MII Elternprofil:** MII_PR_Patho_Composition
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -134,7 +134,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Diagnostic Conclusion Grouper (Observation)
 
-**FDPG Profil:** [FDPG_PR_Patho_Diagnostic_Conclusion_Grouper](StructureDefinition-fdpg-pr-patho-diagnostic-conclusion-grouper.html) | **MII Elternprofil:** MII_PR_Patho_Diagnostic_Conclusion_Grouper
+**FDPG Profil:** [FDPG_PR_Patho_Diagnostic_Conclusion_Grouper](StructureDefinition-fdpg-pr-patho-diagnostic-conclusion-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Diagnostic_Conclusion_Grouper
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -163,7 +163,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Finding (Observation)
 
-**FDPG Profil:** [FDPG_PR_Patho_Finding](StructureDefinition-fdpg-pr-patho-finding.html) | **MII Elternprofil:** MII_PR_Patho_Finding
+**FDPG Profil:** [FDPG_PR_Patho_Finding](StructureDefinition-fdpg-pr-patho-finding.html) · **MII Elternprofil:** MII_PR_Patho_Finding
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -189,7 +189,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### History Of Present Illness (List)
 
-**FDPG Profil:** [FDPG_PR_Patho_History_Of_Present_Illness](StructureDefinition-fdpg-pr-patho-history-of-present-illness.html) | **MII Elternprofil:** MII_PR_Patho_History_Of_Present_Illness
+**FDPG Profil:** [FDPG_PR_Patho_History_Of_Present_Illness](StructureDefinition-fdpg-pr-patho-history-of-present-illness.html) · **MII Elternprofil:** MII_PR_Patho_History_Of_Present_Illness
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -202,7 +202,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Intraoperative Grouper (Observation)
 
-**FDPG Profil:** [FDPG_PR_Patho_Intraoperative_Grouper](StructureDefinition-fdpg-pr-patho-intraoperative-grouper.html) | **MII Elternprofil:** MII_PR_Patho_Intraoperative_Grouper
+**FDPG Profil:** [FDPG_PR_Patho_Intraoperative_Grouper](StructureDefinition-fdpg-pr-patho-intraoperative-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Intraoperative_Grouper
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -228,7 +228,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Macroscopic Grouper (Observation)
 
-**FDPG Profil:** [FDPG_PR_Patho_Macroscopic_Grouper](StructureDefinition-fdpg-pr-patho-macroscopic-grouper.html) | **MII Elternprofil:** MII_PR_Patho_Macroscopic_Grouper
+**FDPG Profil:** [FDPG_PR_Patho_Macroscopic_Grouper](StructureDefinition-fdpg-pr-patho-macroscopic-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Macroscopic_Grouper
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -254,7 +254,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Microscopic Grouper (Observation)
 
-**FDPG Profil:** [FDPG_PR_Patho_Microscopic_Grouper](StructureDefinition-fdpg-pr-patho-microscopic-grouper.html) | **MII Elternprofil:** MII_PR_Patho_Microscopic_Grouper
+**FDPG Profil:** [FDPG_PR_Patho_Microscopic_Grouper](StructureDefinition-fdpg-pr-patho-microscopic-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Microscopic_Grouper
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -280,7 +280,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Problem List Item (Condition)
 
-**FDPG Profil:** [FDPG_PR_Patho_Problem_List_Item](StructureDefinition-fdpg-pr-patho-problem-list-item.html) | **MII Elternprofil:** MII_PR_Patho_Problem_List_Item
+**FDPG Profil:** [FDPG_PR_Patho_Problem_List_Item](StructureDefinition-fdpg-pr-patho-problem-list-item.html) · **MII Elternprofil:** MII_PR_Patho_Problem_List_Item
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -292,7 +292,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Report (DiagnosticReport)
 
-**FDPG Profil:** [FDPG_PR_Patho_Report](StructureDefinition-fdpg-pr-patho-report.html) | **MII Elternprofil:** MII_PR_Patho_Report
+**FDPG Profil:** [FDPG_PR_Patho_Report](StructureDefinition-fdpg-pr-patho-report.html) · **MII Elternprofil:** MII_PR_Patho_Report
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -324,7 +324,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Section Grouper (Observation)
 
-**FDPG Profil:** [FDPG_PR_Patho_Section_Grouper](StructureDefinition-fdpg-pr-patho-section-grouper.html) | **MII Elternprofil:** MII_PR_Patho_Section_Grouper
+**FDPG Profil:** [FDPG_PR_Patho_Section_Grouper](StructureDefinition-fdpg-pr-patho-section-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Section_Grouper
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -350,7 +350,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Service Request (ServiceRequest)
 
-**FDPG Profil:** [FDPG_PR_Patho_Service_Request](StructureDefinition-fdpg-pr-patho-service-request.html) | **MII Elternprofil:** MII_PR_Patho_Service_Request
+**FDPG Profil:** [FDPG_PR_Patho_Service_Request](StructureDefinition-fdpg-pr-patho-service-request.html) · **MII Elternprofil:** MII_PR_Patho_Service_Request
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -378,7 +378,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Specimen (Specimen)
 
-**FDPG Profil:** [FDPG_PR_Patho_Specimen](StructureDefinition-fdpg-pr-patho-specimen.html) | **MII Elternprofil:** MII_PR_Patho_Specimen
+**FDPG Profil:** [FDPG_PR_Patho_Specimen](StructureDefinition-fdpg-pr-patho-specimen.html) · **MII Elternprofil:** MII_PR_Patho_Specimen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|

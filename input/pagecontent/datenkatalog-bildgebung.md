@@ -6,7 +6,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Anforderung Bildgebung (ServiceRequest)
 
-**FDPG Profil:** [FDPG_PR_Bildgebung_Anforderung_Bildgebung](StructureDefinition-fdpg-pr-bildgebung-anforderung-bildgebung.html) | **MII Elternprofil:** MII_PR_Bildgebung_Anforderung_Bildgebung
+**FDPG Profil:** [FDPG_PR_Bildgebung_Anforderung_Bildgebung](StructureDefinition-fdpg-pr-bildgebung-anforderung-bildgebung.html) · **MII Elternprofil:** MII_PR_Bildgebung_Anforderung_Bildgebung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -28,7 +28,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Behandlungsempfehlung (CarePlan)
 
-**FDPG Profil:** [FDPG_PR_Bildgebung_Behandlungsempfehlung](StructureDefinition-fdpg-pr-bildgebung-behandlungsempfehlung.html) | **MII Elternprofil:** MII_PR_Bildgebung_Behandlungsempfehlung
+**FDPG Profil:** [FDPG_PR_Bildgebung_Behandlungsempfehlung](StructureDefinition-fdpg-pr-bildgebung-behandlungsempfehlung.html) · **MII Elternprofil:** MII_PR_Bildgebung_Behandlungsempfehlung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -44,7 +44,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Bildgebungsprozedur (Procedure)
 
-**FDPG Profil:** [FDPG_PR_Bildgebung_Bildgebungsprozedur](StructureDefinition-fdpg-pr-bildgebung-bildgebungsprozedur.html) | **MII Elternprofil:** MII_PR_Bildgebung_Bildgebungsprozedur
+**FDPG Profil:** [FDPG_PR_Bildgebung_Bildgebungsprozedur](StructureDefinition-fdpg-pr-bildgebung-bildgebungsprozedur.html) · **MII Elternprofil:** MII_PR_Bildgebung_Bildgebungsprozedur
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -67,7 +67,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Bildgebungsstudie (ImagingStudy)
 
-**FDPG Profil:** [FDPG_PR_Bildgebung_Bildgebungsstudie](StructureDefinition-fdpg-pr-bildgebung-bildgebungsstudie.html) | **MII Elternprofil:** MII_PR_Bildgebung_Bildgebungsstudie
+**FDPG Profil:** [FDPG_PR_Bildgebung_Bildgebungsstudie](StructureDefinition-fdpg-pr-bildgebung-bildgebungsstudie.html) · **MII Elternprofil:** MII_PR_Bildgebung_Bildgebungsstudie
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -91,7 +91,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Geraet (Device)
 
-**FDPG Profil:** [FDPG_PR_Bildgebung_Geraet](StructureDefinition-fdpg-pr-bildgebung-geraet.html) | **MII Elternprofil:** MII_PR_Bildgebung_Geraet
+**FDPG Profil:** [FDPG_PR_Bildgebung_Geraet](StructureDefinition-fdpg-pr-bildgebung-geraet.html) · **MII Elternprofil:** MII_PR_Bildgebung_Geraet
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -104,7 +104,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Koerperstruktur (BodyStructure)
 
-**FDPG Profil:** [FDPG_PR_Bildgebung_Koerperstruktur](StructureDefinition-fdpg-pr-bildgebung-koerperstruktur.html) | **MII Elternprofil:** MII_PR_Bildgebung_Koerperstruktur
+**FDPG Profil:** [FDPG_PR_Bildgebung_Koerperstruktur](StructureDefinition-fdpg-pr-bildgebung-koerperstruktur.html) · **MII Elternprofil:** MII_PR_Bildgebung_Koerperstruktur
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -119,7 +119,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Kontrastmittelgabe (MedicationAdministration)
 
-**FDPG Profil:** [FDPG_PR_Bildgebung_Kontrastmittelgabe](StructureDefinition-fdpg-pr-bildgebung-kontrastmittelgabe.html) | **MII Elternprofil:** MII_PR_Bildgebung_Kontrastmittelgabe
+**FDPG Profil:** [FDPG_PR_Bildgebung_Kontrastmittelgabe](StructureDefinition-fdpg-pr-bildgebung-kontrastmittelgabe.html) · **MII Elternprofil:** MII_PR_Bildgebung_Kontrastmittelgabe
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -138,7 +138,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `context` | Kontext | Fall oder Kontakt, bei dem die Medikation verabreicht wurde. |
 | `effective[x]` | Zeitpunkt oder Zeitraum | Zeitpunkt oder Zeitraum in dem die Medikation verabreicht wurde. |
 | `effective[x]:effectivePeriod` | Zeitraum | Zeitraum, in dem die Medikation verabreicht wurde. |
-| `performer` | Ausführende*r | Wer die Medikation verabreicht hat und was sie getan haben. |
+| `performer` | Ausführende\*r | Wer die Medikation verabreicht hat und was sie getan haben. |
 | `reasonCode` | Grund Code | Grund für die Medikationverabreichung als Code. |
 | `reasonReference` | Grund Referenz | Grund für die Medikationsverabreichung als Referenz auf Condition- oder Observation-Objekt. |
 | `request` | Verordnung | Verordnung zur Medikationsverabreichung. |
@@ -147,7 +147,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Radiologische Befundungsprozedur (Procedure)
 
-**FDPG Profil:** [FDPG_PR_Bildgebung_Radiologische_Befundungsprozedur](StructureDefinition-fdpg-pr-bildgebung-radiologische-befundungsprozedur.html) | **MII Elternprofil:** MII_PR_Bildgebung_Radiologische_Befundungsprozedur
+**FDPG Profil:** [FDPG_PR_Bildgebung_Radiologische_Befundungsprozedur](StructureDefinition-fdpg-pr-bildgebung-radiologische-befundungsprozedur.html) · **MII Elternprofil:** MII_PR_Bildgebung_Radiologische_Befundungsprozedur
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -170,7 +170,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Radiologische Beobachtung (Observation)
 
-**FDPG Profil:** [FDPG_PR_Bildgebung_Radiologische_Beobachtung](StructureDefinition-fdpg-pr-bildgebung-radiologische-beobachtung.html) | **MII Elternprofil:** MII_PR_Bildgebung_Radiologische_Beobachtung
+**FDPG Profil:** [FDPG_PR_Bildgebung_Radiologische_Beobachtung](StructureDefinition-fdpg-pr-bildgebung-radiologische-beobachtung.html) · **MII Elternprofil:** MII_PR_Bildgebung_Radiologische_Beobachtung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -192,7 +192,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Radiologischer Befund (DiagnosticReport)
 
-**FDPG Profil:** [FDPG_PR_Bildgebung_Radiologischer_Befund](StructureDefinition-fdpg-pr-bildgebung-radiologischer-befund.html) | **MII Elternprofil:** MII_PR_Bildgebung_Radiologischer_Befund
+**FDPG Profil:** [FDPG_PR_Bildgebung_Radiologischer_Befund](StructureDefinition-fdpg-pr-bildgebung-radiologischer-befund.html) · **MII Elternprofil:** MII_PR_Bildgebung_Radiologischer_Befund
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -219,7 +219,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Semistrukt Befundbericht (Composition)
 
-**FDPG Profil:** [FDPG_PR_Bildgebung_Semistrukt_Befundbericht](StructureDefinition-fdpg-pr-bildgebung-semistrukt-befundbericht.html) | **MII Elternprofil:** MII_PR_Bildgebung_Semistrukt_Befundbericht
+**FDPG Profil:** [FDPG_PR_Bildgebung_Semistrukt_Befundbericht](StructureDefinition-fdpg-pr-bildgebung-semistrukt-befundbericht.html) · **MII Elternprofil:** MII_PR_Bildgebung_Semistrukt_Befundbericht
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|

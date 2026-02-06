@@ -6,7 +6,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Beteiligte Person (PractitionerRole)
 
-**FDPG Profil:** [FDPG_PR_Studie_Beteiligte_Person](StructureDefinition-fdpg-pr-studie-beteiligte-person.html) | **MII Elternprofil:** MII_PR_Studie_Beteiligte_Person
+**FDPG Profil:** [FDPG_PR_Studie_Beteiligte_Person](StructureDefinition-fdpg-pr-studie-beteiligte-person.html) · **MII Elternprofil:** MII_PR_Studie_Beteiligte_Person
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -17,7 +17,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Dokument (DocumentReference)
 
-**FDPG Profil:** [FDPG_PR_Studie_Dokument](StructureDefinition-fdpg-pr-studie-dokument.html) | **MII Elternprofil:** MII_PR_Studie_Dokument
+**FDPG Profil:** [FDPG_PR_Studie_Dokument](StructureDefinition-fdpg-pr-studie-dokument.html) · **MII Elternprofil:** MII_PR_Studie_Dokument
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -29,7 +29,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### EinAuschlussKriterium (EvidenceVariable)
 
-**FDPG Profil:** [FDPG_PR_Studie_EinAuschlussKriterium](StructureDefinition-fdpg-pr-studie-ein-auschluss-kriterium.html) | **MII Elternprofil:** MII_PR_Studie_EinAuschlussKriterium
+**FDPG Profil:** [FDPG_PR_Studie_EinAuschlussKriterium](StructureDefinition-fdpg-pr-studie-ein-auschluss-kriterium.html) · **MII Elternprofil:** MII_PR_Studie_EinAuschlussKriterium
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -38,7 +38,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Proband (ResearchSubject)
 
-**FDPG Profil:** [FDPG_PR_Studie_Proband](StructureDefinition-fdpg-pr-studie-proband.html) | **MII Elternprofil:** MII_PR_Studie_Proband
+**FDPG Profil:** [FDPG_PR_Studie_Proband](StructureDefinition-fdpg-pr-studie-proband.html) · **MII Elternprofil:** MII_PR_Studie_Proband
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -55,7 +55,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Register (Library)
 
-**FDPG Profil:** [FDPG_PR_Studie_Register](StructureDefinition-fdpg-pr-studie-register.html) | **MII Elternprofil:** MII_PR_Studie_Register
+**FDPG Profil:** [FDPG_PR_Studie_Register](StructureDefinition-fdpg-pr-studie-register.html) · **MII Elternprofil:** MII_PR_Studie_Register
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -66,7 +66,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Studie (ResearchStudy)
 
-**FDPG Profil:** [FDPG_PR_Studie_Studie](StructureDefinition-fdpg-pr-studie-studie.html) | **MII Elternprofil:** MII_PR_Studie_Studie
+**FDPG Profil:** [FDPG_PR_Studie_Studie](StructureDefinition-fdpg-pr-studie-studie.html) · **MII Elternprofil:** MII_PR_Studie_Studie
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -90,7 +90,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Studieneinschluss Anfrage (ServiceRequest)
 
-**FDPG Profil:** [FDPG_PR_Studie_Studieneinschluss_Anfrage](StructureDefinition-fdpg-pr-studie-studieneinschluss-anfrage.html) | **MII Elternprofil:** MII_PR_Studie_Studieneinschluss_Anfrage
+**FDPG Profil:** [FDPG_PR_Studie_Studieneinschluss_Anfrage](StructureDefinition-fdpg-pr-studie-studieneinschluss-anfrage.html) · **MII Elternprofil:** MII_PR_Studie_Studieneinschluss_Anfrage
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|

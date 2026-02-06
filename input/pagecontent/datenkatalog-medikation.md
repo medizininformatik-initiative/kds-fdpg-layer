@@ -6,7 +6,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### MedicationAdministration (MedicationAdministration)
 
-**FDPG Profil:** [FDPG_PR_Medikation_MedicationAdministration](StructureDefinition-fdpg-pr-medikation-medication-administration.html) | **MII Elternprofil:** MII_PR_Medikation_MedicationAdministration
+**FDPG Profil:** [FDPG_PR_Medikation_MedicationAdministration](StructureDefinition-fdpg-pr-medikation-medication-administration.html) · **MII Elternprofil:** MII_PR_Medikation_MedicationAdministration
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -26,7 +26,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Zeitpunkt oder Zeitraum | Zeitpunkt oder Zeitraum in dem die Medikation verabreicht wurde. |
 | `effective[x]:effectiveDateTime` | Zeitpunkt | Zeitpunkt, zu der die Medikation verabreicht wurde. |
 | `effective[x]:effectivePeriod` | Zeitraum | Zeitraum, in dem die Medikation verabreicht wurde. |
-| `performer` | Ausführende*r | Wer die Medikation verabreicht hat und was sie getan haben. |
+| `performer` | Ausführende\*r | Wer die Medikation verabreicht hat und was sie getan haben. |
 | `reasonCode` | Grund Code | Grund für die Medikationverabreichung als Code. |
 | `reasonReference` | Grund Referenz | Grund für die Medikationsverabreichung als Referenz auf Condition- oder Observation-Objekt. |
 | `request` | Verordnung | Verordnung zur Medikationsverabreichung. |
@@ -35,7 +35,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### MedicationRequest (MedicationRequest)
 
-**FDPG Profil:** [FDPG_PR_Medikation_MedicationRequest](StructureDefinition-fdpg-pr-medikation-medication-request.html) | **MII Elternprofil:** MII_PR_Medikation_MedicationRequest
+**FDPG Profil:** [FDPG_PR_Medikation_MedicationRequest](StructureDefinition-fdpg-pr-medikation-medication-request.html) · **MII Elternprofil:** MII_PR_Medikation_MedicationRequest
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -63,7 +63,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### MedicationStatement (MedicationStatement)
 
-**FDPG Profil:** [FDPG_PR_Medikation_MedicationStatement](StructureDefinition-fdpg-pr-medikation-medication-statement.html) | **MII Elternprofil:** MII_PR_Medikation_MedicationStatement
+**FDPG Profil:** [FDPG_PR_Medikation_MedicationStatement](StructureDefinition-fdpg-pr-medikation-medication-statement.html) · **MII Elternprofil:** MII_PR_Medikation_MedicationStatement
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -93,7 +93,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Medication (Medication)
 
-**FDPG Profil:** [FDPG_PR_Medikation_Medication](StructureDefinition-fdpg-pr-medikation-medication.html) | **MII Elternprofil:** MII_PR_Medikation_Medication
+**FDPG Profil:** [FDPG_PR_Medikation_Medication](StructureDefinition-fdpg-pr-medikation-medication.html) · **MII Elternprofil:** MII_PR_Medikation_Medication
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -107,7 +107,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Medikationsliste (List)
 
-**FDPG Profil:** [FDPG_PR_Medikation_Medikationsliste](StructureDefinition-fdpg-pr-medikation-medikationsliste.html) | **MII Elternprofil:** MII_PR_Medikation_Medikationsliste
+**FDPG Profil:** [FDPG_PR_Medikation_Medikationsliste](StructureDefinition-fdpg-pr-medikation-medikationsliste.html) · **MII Elternprofil:** MII_PR_Medikation_Medikationsliste
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|

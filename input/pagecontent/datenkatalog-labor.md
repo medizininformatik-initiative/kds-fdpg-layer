@@ -6,7 +6,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Laboranforderung (ServiceRequest)
 
-**FDPG Profil:** [FDPG_PR_Labor_Laboranforderung](StructureDefinition-fdpg-pr-labor-laboranforderung.html) | **MII Elternprofil:** MII_PR_Labor_Laboranforderung
+**FDPG Profil:** [FDPG_PR_Labor_Laboranforderung](StructureDefinition-fdpg-pr-labor-laboranforderung.html) · **MII Elternprofil:** MII_PR_Labor_Laboranforderung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -27,7 +27,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Laborbefund (DiagnosticReport)
 
-**FDPG Profil:** [FDPG_PR_Labor_Laborbefund](StructureDefinition-fdpg-pr-labor-laborbefund.html) | **MII Elternprofil:** MII_PR_Labor_Laborbefund
+**FDPG Profil:** [FDPG_PR_Labor_Laborbefund](StructureDefinition-fdpg-pr-labor-laborbefund.html) · **MII Elternprofil:** MII_PR_Labor_Laborbefund
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -46,14 +46,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` | Fall oder Kontakt | Fall oder Kontakt, in dem der Laborbefund erstellt wurde. |
 | `effective[x]` | Klinisches Bezugsdatum | Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial e.g. Analytkonzentration mutmaßlich der Eigenschaft im Patienten entsprach. |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem der Laborbefund dokumentiert wurde. |
-| `performer` | Ausführende*r | Verantwortliche Person oder Organisation, die für die Ausstellung des Befunds verantwortlich ist. |
+| `performer` | Ausführende\*r | Verantwortliche Person oder Organisation, die für die Ausstellung des Befunds verantwortlich ist. |
 | `specimen` | Probenmaterial | Bioproben, auf denen dieser Laborbefund basiert. |
 | `result` | Ergebnis | Laborergebnisse, die Teil dieses Laborbefunds sind. |
 | `conclusion` | Schlussfolgerung | Klinische Schlussfolgerung/Interpretation der Testergebnisse |
 
 #### Laboruntersuchung (Observation)
 
-**FDPG Profil:** [FDPG_PR_Labor_Laboruntersuchung](StructureDefinition-fdpg-pr-labor-laboruntersuchung.html) | **MII Elternprofil:** MII_PR_Labor_Laboruntersuchung
+**FDPG Profil:** [FDPG_PR_Labor_Laboruntersuchung](StructureDefinition-fdpg-pr-labor-laboruntersuchung.html) · **MII Elternprofil:** MII_PR_Labor_Laboruntersuchung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|

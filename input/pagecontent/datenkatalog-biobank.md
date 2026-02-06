@@ -6,7 +6,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Observation DNA Konzentration (Observation)
 
-**FDPG Profil:** [FDPG_PR_Biobank_Observation_DNA_Konzentration](StructureDefinition-fdpg-pr-biobank-observation-dna-konzentration.html) | **MII Elternprofil:** MII_PR_Biobank_Observation_DNA_Konzentration
+**FDPG Profil:** [FDPG_PR_Biobank_Observation_DNA_Konzentration](StructureDefinition-fdpg-pr-biobank-observation-dna-konzentration.html) · **MII Elternprofil:** MII_PR_Biobank_Observation_DNA_Konzentration
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -21,7 +21,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Observation Karyotyp (Observation)
 
-**FDPG Profil:** [FDPG_PR_Biobank_Observation_Karyotyp](StructureDefinition-fdpg-pr-biobank-observation-karyotyp.html) | **MII Elternprofil:** MII_PR_Biobank_Observation_Karyotyp
+**FDPG Profil:** [FDPG_PR_Biobank_Observation_Karyotyp](StructureDefinition-fdpg-pr-biobank-observation-karyotyp.html) · **MII Elternprofil:** MII_PR_Biobank_Observation_Karyotyp
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -36,7 +36,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Observation Morphologie (Observation)
 
-**FDPG Profil:** [FDPG_PR_Biobank_Observation_Morphologie](StructureDefinition-fdpg-pr-biobank-observation-morphologie.html) | **MII Elternprofil:** MII_PR_Biobank_Observation_Morphologie
+**FDPG Profil:** [FDPG_PR_Biobank_Observation_Morphologie](StructureDefinition-fdpg-pr-biobank-observation-morphologie.html) · **MII Elternprofil:** MII_PR_Biobank_Observation_Morphologie
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -50,7 +50,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Observation Proliferation (Observation)
 
-**FDPG Profil:** [FDPG_PR_Biobank_Observation_Proliferation](StructureDefinition-fdpg-pr-biobank-observation-proliferation.html) | **MII Elternprofil:** MII_PR_Biobank_Observation_Proliferation
+**FDPG Profil:** [FDPG_PR_Biobank_Observation_Proliferation](StructureDefinition-fdpg-pr-biobank-observation-proliferation.html) · **MII Elternprofil:** MII_PR_Biobank_Observation_Proliferation
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -64,7 +64,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Observation Qualitaetspruefung (Observation)
 
-**FDPG Profil:** [FDPG_PR_Biobank_Observation_Qualitaetspruefung](StructureDefinition-fdpg-pr-biobank-observation-qualitaetspruefung.html) | **MII Elternprofil:** MII_PR_Biobank_Observation_Qualitaetspruefung
+**FDPG Profil:** [FDPG_PR_Biobank_Observation_Qualitaetspruefung](StructureDefinition-fdpg-pr-biobank-observation-qualitaetspruefung.html) · **MII Elternprofil:** MII_PR_Biobank_Observation_Qualitaetspruefung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -80,7 +80,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Observation Wachstumstyp (Observation)
 
-**FDPG Profil:** [FDPG_PR_Biobank_Observation_Wachstumstyp](StructureDefinition-fdpg-pr-biobank-observation-wachstumstyp.html) | **MII Elternprofil:** MII_PR_Biobank_Observation_Wachstumstyp
+**FDPG Profil:** [FDPG_PR_Biobank_Observation_Wachstumstyp](StructureDefinition-fdpg-pr-biobank-observation-wachstumstyp.html) · **MII Elternprofil:** MII_PR_Biobank_Observation_Wachstumstyp
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -94,7 +94,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Organization Sammlung Biobank (Organization)
 
-**FDPG Profil:** [FDPG_PR_Biobank_Organization_Sammlung_Biobank](StructureDefinition-fdpg-pr-biobank-organization.html) | **MII Elternprofil:** MII_PR_Biobank_Organization_Sammlung_Biobank
+**FDPG Profil:** [FDPG_PR_Biobank_Organization_Sammlung_Biobank](StructureDefinition-fdpg-pr-biobank-organization.html) · **MII Elternprofil:** MII_PR_Biobank_Organization_Sammlung_Biobank
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -115,7 +115,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Specimen Bioprobe Core (Specimen)
 
-**FDPG Profil:** [FDPG_PR_Biobank_Specimen_Bioprobe_Core](StructureDefinition-fdpg-pr-biobank-specimen-core.html) | **MII Elternprofil:** MII_PR_Biobank_Specimen_Bioprobe_Core
+**FDPG Profil:** [FDPG_PR_Biobank_Specimen_Bioprobe_Core](StructureDefinition-fdpg-pr-biobank-specimen-core.html) · **MII Elternprofil:** MII_PR_Biobank_Specimen_Bioprobe_Core
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -139,7 +139,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Specimen Bioprobe (Specimen)
 
-**FDPG Profil:** [FDPG_PR_Biobank_Specimen_Bioprobe](StructureDefinition-fdpg-pr-biobank-specimen.html) | **MII Elternprofil:** MII_PR_Biobank_Specimen_Bioprobe
+**FDPG Profil:** [FDPG_PR_Biobank_Specimen_Bioprobe](StructureDefinition-fdpg-pr-biobank-specimen.html) · **MII Elternprofil:** MII_PR_Biobank_Specimen_Bioprobe
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -166,7 +166,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Substance Additiv (Substance)
 
-**FDPG Profil:** [FDPG_PR_Biobank_Substance_Additiv](StructureDefinition-fdpg-pr-biobank-substance-additiv.html) | **MII Elternprofil:** MII_PR_Biobank_Substance_Additiv
+**FDPG Profil:** [FDPG_PR_Biobank_Substance_Additiv](StructureDefinition-fdpg-pr-biobank-substance-additiv.html) · **MII Elternprofil:** MII_PR_Biobank_Substance_Additiv
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -180,7 +180,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 #### Specimen Zellinie Organoid (Specimen)
 
-**FDPG Profil:** [FDPG_PR_Biobank_Specimen_Zellinie_Organoid](StructureDefinition-fdpg-pr-biobank-zellinie-organoid.html) | **MII Elternprofil:** MII_PR_Biobank_Specimen_Zellinie_Organoid
+**FDPG Profil:** [FDPG_PR_Biobank_Specimen_Zellinie_Organoid](StructureDefinition-fdpg-pr-biobank-zellinie-organoid.html) · **MII Elternprofil:** MII_PR_Biobank_Specimen_Zellinie_Organoid
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
