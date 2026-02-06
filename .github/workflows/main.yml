@@ -21,6 +21,7 @@ jobs:
 
   JAVA_FHIR_VALIDATION:
     if: github.event_name != 'release'
+    needs: DOTNET_FHIR_VALIDATION
     uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_java_validation.yml@master
     with:
       ref: ${{ github.event.pull_request.head.ref || github.ref }}
