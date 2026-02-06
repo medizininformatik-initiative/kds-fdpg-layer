@@ -1,5 +1,4 @@
 # FHIR IG Build artifacts
-fsh-generated/
 output/
 temp/
 template/

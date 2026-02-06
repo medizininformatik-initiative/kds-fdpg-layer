@@ -1,0 +1,17 @@
+{
+  "resourceType": "ActorDefinition",
+  "id": "fdpg-actor-data-consumer",
+  "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-data-consumer",
+  "identifier": [
+    {
+      "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations",
+      "value": "data-consumer"
+    }
+  ],
+  "name": "FDPGDataConsumer",
+  "title": "FDPG Datenkonsument",
+  "status": "active",
+  "type": "system",
+  "description": "Systeme die Daten vom FDPG abrufen",
+  "documentation": "### Rolle\nDer FDPG Datenkonsument ist ein System, das Daten aus dem FDPG\nForschungsnetzwerk abruft und verarbeitet.\n\n### Verantwortlichkeiten\n- Korrekte Verarbeitung aller bereitgestellten Datenelemente\n- Anzeige gemäß definierten Display-Obligations\n- Persistierung gemäß Persist-Obligations\n- Einhaltung der Nutzungsbedingungen\n\n### Obligation Codes\n- `SHALL:handle` - Element MUSS verarbeitet werden können\n- `SHALL:persist` - Element MUSS persistiert werden\n- `SHOULD:display` - Element SOLLTE angezeigt werden\n- `MAY:ignore` - Element KANN ignoriert werden"
+}

@@ -1,0 +1,17 @@
+{
+  "resourceType": "ActorDefinition",
+  "id": "fdpg-actor-data-provider",
+  "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-data-provider",
+  "identifier": [
+    {
+      "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations",
+      "value": "data-provider"
+    }
+  ],
+  "name": "FDPGDataProvider",
+  "title": "FDPG Datenlieferant",
+  "status": "active",
+  "type": "system",
+  "description": "Systeme die Daten an das FDPG liefern",
+  "documentation": "### Rolle\nDer FDPG Datenlieferant ist ein System innerhalb eines Universitätsklinikums\noder einer Forschungseinrichtung, das Daten gemäß dem MII Kerndatensatz an\ndas FDPG Forschungsnetzwerk liefert.\n\n### Verantwortlichkeiten\n- Bereitstellung von Daten gemäß den definierten Obligations\n- Einhaltung der Datenqualitätsanforderungen\n- Pseudonymisierung gemäß Datenschutzkonzept\n- Unterstützung der definierten Suchparameter\n\n### Obligation Codes\n- `SHALL:populate` - Element MUSS befüllt werden\n- `SHOULD:populate` - Element SOLLTE befüllt werden\n- `SHOULD:populate-if-known` - Element SOLLTE befüllt werden, wenn bekannt"
+}

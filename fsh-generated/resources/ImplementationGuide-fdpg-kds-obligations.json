@@ -1,0 +1,2319 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "fdpg-kds-obligations",
+  "language": "de-DE",
+  "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ImplementationGuide/fdpg-kds-obligations",
+  "version": "2026.0.0",
+  "name": "FDPGKDSObligations",
+  "title": "FDPG KDS Obligations Layer",
+  "status": "active",
+  "publisher": "FDPG / Medizininformatik-Initiative",
+  "contact": [
+    {
+      "name": "FDPG / Medizininformatik-Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://forschen-fuer-gesundheit.de"
+        }
+      ]
+    }
+  ],
+  "description": "FDPG-spezifische Obligations und Anforderungen für MII Kerndatensatz Profile",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "DE",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Germany"
+        }
+      ]
+    }
+  ],
+  "packageId": "fdpg-kds-obligations",
+  "license": "CC-BY-4.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.uv.extensions.r4",
+      "version": "5.1.0",
+      "uri": "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+      "id": "hl7_fhir_uv_extensions_r4"
+    },
+    {
+      "packageId": "de.basisprofil.r4",
+      "version": "1.5.0",
+      "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
+      "id": "de_basisprofil_r4"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.meta",
+      "version": "2026.0.0",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta",
+      "id": "de_medizininformatikinitiative_kerndatensatz_meta"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.base",
+      "version": "2026.0.0",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/modul-base/ImplementationGuide/mii-ig-base",
+      "id": "de_medizininformatikinitiative_kerndatensatz_base"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.laborbefund",
+      "version": "2026.0.1",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.laborbefund",
+      "id": "de_medizininformatikinitiative_kerndatensatz_laborbefund"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.medikation",
+      "version": "2026.0.0",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation",
+      "id": "de_medizininformatikinitiative_kerndatensatz_medikation"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.biobank",
+      "version": "2026.0.0",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.biobank/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.biobank",
+      "id": "de_medizininformatikinitiative_kerndatensatz_biobank"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.studie",
+      "version": "2026.0.2",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.studie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.studie",
+      "id": "de_medizininformatikinitiative_kerndatensatz_studie"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.molgen",
+      "version": "2026.0.4",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.molgen/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.molgen",
+      "id": "de_medizininformatikinitiative_kerndatensatz_molgen"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.patho",
+      "version": "2026.0.1",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.patho/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.patho",
+      "id": "de_medizininformatikinitiative_kerndatensatz_patho"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.icu",
+      "version": "2026.0.1-rc1",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu",
+      "id": "de_medizininformatikinitiative_kerndatensatz_icu"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.bildgebung",
+      "version": "2026.0.0",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.bildgebung/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.bildgebung",
+      "id": "de_medizininformatikinitiative_kerndatensatz_bildgebung"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.seltene",
+      "version": "2026.0.0",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene",
+      "id": "de_medizininformatikinitiative_kerndatensatz_seltene"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.onkologie",
+      "version": "2026.0.1",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.onkologie",
+      "id": "de_medizininformatikinitiative_kerndatensatz_onkologie"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.consent",
+      "version": "2026.0.1-rc-1",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.consent/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.consent",
+      "id": "de_medizininformatikinitiative_kerndatensatz_consent"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.dokument",
+      "version": "2026.0.0",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/ImplementationGuide/mii-ig-dokument",
+      "id": "de_medizininformatikinitiative_kerndatensatz_dokument"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "CapabilityStatement/fdpg-cps-data-consumer"
+        },
+        "name": "FDPG CapabilityStatement für Datenkonsumenten",
+        "description": "Dieses CapabilityStatement beschreibt die Anforderungen an FDPG Datenkonsumenten\n(Data Consumer) für den Abruf und die Verarbeitung von Daten gemäß dem MII Kerndatensatz.\n\nEs definiert die minimal erforderlichen Fähigkeiten für Forschungsprojekte und\nandere Systeme, die Daten aus dem FDPG abrufen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/fdpg-cps-data-provider"
+        },
+        "name": "FDPG CapabilityStatement für Datenlieferanten",
+        "description": "Dieses CapabilityStatement beschreibt die Anforderungen an FDPG Datenlieferanten\n(Data Provider) für die Bereitstellung von Daten gemäß dem MII Kerndatensatz.\n\nEs konsolidiert die Anforderungen aus allen KDS-Modulen und definiert\nFDPG-spezifische Obligations.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ActorDefinition/fdpg-actor-data-consumer"
+        },
+        "name": "FDPG Datenkonsument",
+        "description": "Systeme die Daten vom FDPG abrufen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ActorDefinition/fdpg-actor-data-provider"
+        },
+        "name": "FDPG Datenlieferant",
+        "description": "Systeme die Daten an das FDPG liefern",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-bildgebung-anforderung-bildgebung"
+        },
+        "name": "FDPG PR Bildgebung Anforderung Bildgebung",
+        "description": "FDPG Profil - MII PR Bildgebung Anforderung Bildgebung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-bildgebung-behandlungsempfehlung"
+        },
+        "name": "FDPG PR Bildgebung Behandlungsempfehlung",
+        "description": "FDPG Profil - MII PR Bildgebung Behandlungsempfehlung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-bildgebung-bildgebungsprozedur"
+        },
+        "name": "FDPG PR Bildgebung Bildgebungsprozedur",
+        "description": "FDPG Profil - MII PR Bildgebung Bildgebungsprozedur",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-bildgebung-bildgebungsstudie"
+        },
+        "name": "FDPG PR Bildgebung Bildgebungsstudie",
+        "description": "FDPG Profil - MII PR Bildgebung Bildgebungsstudie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-bildgebung-geraet"
+        },
+        "name": "FDPG PR Bildgebung Gerät",
+        "description": "FDPG Profil - MII PR Bildgebung Gerät",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-bildgebung-kontrastmittelgabe"
+        },
+        "name": "FDPG PR Bildgebung Konstrastmittelgabe",
+        "description": "FDPG Profil - MII PR Bildgebung Konstrastmittelgabe",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-bildgebung-koerperstruktur"
+        },
+        "name": "FDPG PR Bildgebung Körperstruktur",
+        "description": "FDPG Profil - MII PR Bildgebung Körperstruktur",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-bildgebung-radiologische-befundungsprozedur"
+        },
+        "name": "FDPG PR Bildgebung Radiologische Befundungsprozedur",
+        "description": "FDPG Profil - MII PR Bildgebung Radiologische Befundungsprozedur",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-bildgebung-radiologische-beobachtung"
+        },
+        "name": "FDPG PR Bildgebung Radiologische Beobachtung",
+        "description": "FDPG Profil - MII PR Bildgebung Radiologische Beobachtung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-bildgebung-radiologischer-befund"
+        },
+        "name": "FDPG PR Bildgebung Radiologischer Befund",
+        "description": "FDPG Profil - MII PR Bildgebung Radiologischer Befund",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-bildgebung-semistrukt-befundbericht"
+        },
+        "name": "FDPG PR Bildgebung Semistrukturierter Befundbericht",
+        "description": "FDPG Profil - MII PR Bildgebung Semistrukturierter Befundbericht",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-biobank-observation-dna-konzentration"
+        },
+        "name": "FDPG PR Biobank Observation DNA Konzentration",
+        "description": "FDPG Profil - MII PR Biobank Observation DNA Konzentration",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-biobank-observation-karyotyp"
+        },
+        "name": "FDPG PR Biobank Observation Karyotyp",
+        "description": "FDPG Profil - MII PR Biobank Observation Karyotyp",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-biobank-observation-morphologie"
+        },
+        "name": "FDPG PR Biobank Observation Morphologie",
+        "description": "FDPG Profil - MII PR Biobank Observation Morphologie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-biobank-observation-proliferation"
+        },
+        "name": "FDPG PR Biobank Observation Proliferation",
+        "description": "FDPG Profil - MII PR Biobank Observation Proliferation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-biobank-observation-qualitaetspruefung"
+        },
+        "name": "FDPG PR Biobank Observation Qualitätsprüfung",
+        "description": "FDPG Profil - MII PR Biobank Observation Qualitätsprüfung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-biobank-observation-wachstumstyp"
+        },
+        "name": "FDPG PR Biobank Observation Wachstumstyp",
+        "description": "FDPG Profil - MII PR Biobank Observation Wachstumstyp",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-biobank-organization"
+        },
+        "name": "FDPG PR Biobank Organization Sammlung Biobank",
+        "description": "FDPG Profil - MII PR Biobank Organization Sammlung Biobank",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-biobank-specimen"
+        },
+        "name": "FDPG PR Biobank Specimen Bioprobe",
+        "description": "FDPG Profil - MII PR Biobank Specimen Bioprobe",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-biobank-specimen-core"
+        },
+        "name": "FDPG PR Biobank Specimen Bioprobe Core",
+        "description": "FDPG Profil - MII PR Biobank Specimen Bioprobe Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-biobank-zellinie-organoid"
+        },
+        "name": "FDPG PR Biobank Specimen Zellinie Organoid",
+        "description": "FDPG Profil - MII PR Biobank Specimen Zellinie Organoid",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-biobank-substance-additiv"
+        },
+        "name": "FDPG PR Biobank Substance Additiv",
+        "description": "FDPG Profil - MII PR Biobank Substance Additiv",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-bodymassindex"
+        },
+        "name": "FDPG PR Body Mass Index (BMI) of the patient",
+        "description": "FDPG Profil - Body Mass Index (BMI) of the patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-consent-documentreference"
+        },
+        "name": "FDPG PR Consent - DocumentReference",
+        "description": "FDPG Profil - Profile - MI-I - Consent - DocumentReference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-consent-einwilligung"
+        },
+        "name": "FDPG PR Consent - Einwilligung",
+        "description": "FDPG Profil - Profile - MI-I - Consent - Einwilligung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-consent-provenance"
+        },
+        "name": "FDPG PR Consent - Provenance",
+        "description": "FDPG Profil - Profile - MI-I - Consent - Provenance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-diagnose-condition"
+        },
+        "name": "FDPG PR Diagnose Condition",
+        "description": "FDPG Profil - MII PR Diagnose Condition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-dokument-dokument"
+        },
+        "name": "FDPG PR Dokument Dokument",
+        "description": "FDPG Profil - MII PR Dokument Dokument",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-fall-kontakt-gesundheitseinrichtung"
+        },
+        "name": "FDPG PR Fall Kontakt mit einer Gesundheitseinrichtung",
+        "description": "FDPG Profil - MII PR Fall Kontakt mit einer Gesundheitseinrichtung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-muv-arterieller-blutdruck"
+        },
+        "name": "FDPG PR ICU Arterieller Blutdruck",
+        "description": "FDPG Profil - MII PR ICU Arterieller Blutdruck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-ect-arterieller-druck"
+        },
+        "name": "FDPG PR ICU Arterieller Druck",
+        "description": "FDPG Profil - MII PR ICU Arterieller Druck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-muv-atemfrequenz"
+        },
+        "name": "FDPG PR ICU Atemfrequenz",
+        "description": "FDPG Profil - MII PR ICU Atemfrequenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-atemwegsdruck-mittl-expirat-gasfluss"
+        },
+        "name": "FDPG PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss",
+        "description": "FDPG Profil - MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss"
+        },
+        "name": "FDPG PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss",
+        "description": "FDPG Profil - MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-atemzugvolumen-einstellung"
+        },
+        "name": "FDPG PR ICU Atemzugvolumen Einstellung",
+        "description": "FDPG Profil - MII PR ICU Atemzugvolumen Einstellung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-atemzugvolumen-waehrend-beatmung"
+        },
+        "name": "FDPG PR ICU Atemzugvolumen Waehrend Beatmung",
+        "description": "FDPG Profil - MII PR ICU Atemzugvolumen Waehrend Beatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-beatmung"
+        },
+        "name": "FDPG PR ICU Beatmung",
+        "description": "FDPG Profil - MII PR ICU Beatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung"
+        },
+        "name": "FDPG PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung",
+        "description": "FDPG Profil - MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-beatmungszeit-niedrigem-druck"
+        },
+        "name": "FDPG PR ICU Beatmungszeit Niedrigem Druck",
+        "description": "FDPG Profil - MII PR ICU Beatmungszeit Niedrigem Druck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz"
+        },
+        "name": "FDPG PR ICU Bilanz",
+        "description": "FDPG Profil - MII PR ICU Bilanz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"
+        },
+        "name": "FDPG PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte",
+        "description": "FDPG Profil - MII PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-drainage-generisch"
+        },
+        "name": "FDPG PR ICU Bilanz Ausfuhr Drainage Generisch",
+        "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr Drainage Generisch",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt"
+        },
+        "name": "FDPG PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt",
+        "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-gallenfluessigkeit"
+        },
+        "name": "FDPG PR ICU Bilanz Ausfuhr Gallenfluessigkeit",
+        "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-gallengang"
+        },
+        "name": "FDPG PR ICU Bilanz Ausfuhr Gallengang",
+        "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr Gallengang",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-magensonde"
+        },
+        "name": "FDPG PR ICU Bilanz Ausfuhr Magensonde",
+        "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr Magensonde",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-opdrainage"
+        },
+        "name": "FDPG PR ICU Bilanz Ausfuhr Opdrainage",
+        "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr Opdrainage",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-pankreasdrainage"
+        },
+        "name": "FDPG PR ICU Bilanz Ausfuhr Pankreasdrainage",
+        "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr Pankreasdrainage",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-stuhlgang"
+        },
+        "name": "FDPG PR ICU Bilanz Ausfuhr Stuhlgang",
+        "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr Stuhlgang",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-urin"
+        },
+        "name": "FDPG PR ICU Bilanz Ausfuhr Urin",
+        "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr Urin",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-wunddrainage"
+        },
+        "name": "FDPG PR ICU Bilanz Ausfuhr Wunddrainage",
+        "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr Wunddrainage",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-blutverlust"
+        },
+        "name": "FDPG PR ICU Bilanz Blutverlust",
+        "description": "FDPG Profil - MII PR ICU Bilanz Blutverlust",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-einfuhr-enterale-fluessigkeit"
+        },
+        "name": "FDPG PR ICU Bilanz Einfuhr Enterale Fluessigkeit",
+        "description": "FDPG Profil - MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-einfuhr-oraler-fluessigkeit"
+        },
+        "name": "FDPG PR ICU Bilanz Einfuhr Oraler Fluessigkeit",
+        "description": "FDPG Profil - MII PR ICU Bilanz Einfuhr Oraler Fluessigkeit",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-gesamte-ausfuhr"
+        },
+        "name": "FDPG PR ICU Bilanz Gesamte Ausfuhr",
+        "description": "FDPG Profil - MII PR ICU Bilanz Gesamte Ausfuhr",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-gesamte-einfuhr"
+        },
+        "name": "FDPG PR ICU Bilanz Gesamte Einfuhr",
+        "description": "FDPG Profil - MII PR ICU Bilanz Gesamte Einfuhr",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-gesamte-tages-bilanz"
+        },
+        "name": "FDPG PR ICU Bilanz Gesamte Tages Bilanz",
+        "description": "FDPG Profil - MII PR ICU Bilanz Gesamte Tages Bilanz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-ect-blutfluss-cardiovasculaeres-geraet"
+        },
+        "name": "FDPG PR ICU Blutfluss Cardiovasculaeres Geraet",
+        "description": "FDPG Profil - MII PR ICU Blutfluss Cardiovasculaeres Geraet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch"
+        },
+        "name": "FDPG PR ICU Blutfluss Extrakorporaler Gasaustausch",
+        "description": "FDPG Profil - MII PR ICU Blutfluss Extrakorporaler Gasaustausch",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch"
+        },
+        "name": "FDPG PR ICU Blutflussindex Extrakorporaler Gasaustausch",
+        "description": "FDPG Profil - MII PR ICU Blutflussindex Extrakorporaler Gasaustausch",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-ect-dauer-extrakorporaler-gasaustausch"
+        },
+        "name": "FDPG PR ICU Dauer Extrakorporaler Gasaustausch",
+        "description": "FDPG Profil - MII PR ICU Dauer Extrakorporaler Gasaustausch",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-device"
+        },
+        "name": "FDPG PR ICU Device",
+        "description": "FDPG Profil - MII PR ICU Device",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung"
+        },
+        "name": "FDPG PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung",
+        "description": "FDPG Profil - MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-ect-dm-eingest-param-extrakorporale-verfahren"
+        },
+        "name": "FDPG PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren",
+        "description": "FDPG Profil - MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-vent-provided-icu-druckdifferenz-beatmung"
+        },
+        "name": "FDPG PR ICU Druckdifferenz Beatmung",
+        "description": "FDPG Profil - MII PR ICU Druckdifferenz Beatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-vent-icu-dynamische-kompliance"
+        },
+        "name": "FDPG PR ICU Dynamische Kompliance",
+        "description": "FDPG Profil - MII PR ICU Dynamische Kompliance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-eingestellter-inspiratorischer-gasfluss"
+        },
+        "name": "FDPG PR ICU Eingestellter Inspiratorischer Gasfluss",
+        "description": "FDPG Profil - MII PR ICU Eingestellter Inspiratorischer Gasfluss",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-einstellung-ausatmungszeit-beatmung"
+        },
+        "name": "FDPG PR ICU Einstellung Ausatmungszeit Beatmung",
+        "description": "FDPG Profil - MII PR ICU Einstellung Ausatmungszeit Beatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-einstellung-einatmungszeit-beatmung"
+        },
+        "name": "FDPG PR ICU Einstellung Einatmungszeit Beatmung",
+        "description": "FDPG Profil - MII PR ICU Einstellung Einatmungszeit Beatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck"
+        },
+        "name": "FDPG PR ICU Endexpiratorischer Kohlendioxidpartialdruck",
+        "description": "FDPG Profil - MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-exspiratorischer-gasfluss"
+        },
+        "name": "FDPG PR ICU Exspiratorischer Gasfluss",
+        "description": "FDPG Profil - MII PR ICU Exspiratorischer Gasfluss",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-event-xspiratorischer-sauerstoffpartialdruck"
+        },
+        "name": "FDPG PR ICU Exspiratorischer Sauerstoffpartialdruck",
+        "description": "FDPG Profil - MII PR ICU Exspiratorischer Sauerstoffpartialdruck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-ect-extrakorporales-verfahren"
+        },
+        "name": "FDPG PR ICU Extrakorporales Verfahren",
+        "description": "FDPG Profil - MII PR ICU Extrakorporales Verfahren",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-ect-gasfluss"
+        },
+        "name": "FDPG PR ICU Gasfluss",
+        "description": "FDPG Profil - MII PR ICU Gasfluss",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-ect-haemodialyse-blutfluss"
+        },
+        "name": "FDPG PR ICU Haemodialyse Blutfluss",
+        "description": "FDPG Profil - MII PR ICU Haemodialyse Blutfluss",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-horowitz-in-arteriellem-blut"
+        },
+        "name": "FDPG PR ICU Horowitz In Arteriellem Blut",
+        "description": "FDPG Profil - MII PR ICU Horowitz In Arteriellem Blut",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-inspiratorischer-gasfluss"
+        },
+        "name": "FDPG PR ICU Inspiratorischer Gasfluss",
+        "description": "FDPG Profil - MII PR ICU Inspiratorischer Gasfluss",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-ect-onisiertes-kalzium-nierenersatzverfahren"
+        },
+        "name": "FDPG PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
+        "description": "FDPG Profil - MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-muv-koerpergewicht"
+        },
+        "name": "FDPG PR ICU Koerpergewicht",
+        "description": "FDPG Profil - MII PR ICU Koerpergewicht",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-muv-koerpergroesse"
+        },
+        "name": "FDPG PR ICU Koerpergroesse",
+        "description": "FDPG Profil - MII PR ICU Koerpergroesse",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-muv-kopfumfang"
+        },
+        "name": "FDPG PR ICU Kopfumfang",
+        "description": "FDPG Profil - MII PR ICU Kopfumfang",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-maximaler-beatmungsdruck"
+        },
+        "name": "FDPG PR ICU Maximaler Beatmungsdruck",
+        "description": "FDPG Profil - MII PR ICU Maximaler Beatmungsdruck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-mechanische-atemfrequenz-beatmet"
+        },
+        "name": "FDPG PR ICU Mechanische Atemfrequenz Beatmet",
+        "description": "FDPG Profil - MII PR ICU Mechanische Atemfrequenz Beatmet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-mittlerer-beatmungsdruck"
+        },
+        "name": "FDPG PR ICU Mittlerer Beatmungsdruck",
+        "description": "FDPG Profil - MII PR ICU Mittlerer Beatmungsdruck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-vent-icu-parameter-von-beatmung"
+        },
+        "name": "FDPG PR ICU Parameter von Beatmung",
+        "description": "FDPG Profil - MII PR ICU Parameter von Beatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-ect-parameter-von-extrakorporalen-verfahren"
+        },
+        "name": "FDPG PR ICU Parameter von Extrakorporalen Verfahren",
+        "description": "FDPG Profil - MII PR ICU Parameter von Extrakorporalen Verfahren",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-positiv-endexpiratorischer-druck"
+        },
+        "name": "FDPG PR ICU Positiv Endexpiratorischer Druck",
+        "description": "FDPG Profil - MII PR ICU Positiv Endexpiratorischer Druck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-spontane-atemfrequenz-beatmet"
+        },
+        "name": "FDPG PR ICU Spontane Atemfrequenz Beatmet",
+        "description": "FDPG Profil - MII PR ICU Spontane Atemfrequenz Beatmet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet"
+        },
+        "name": "FDPG PR ICU Spontane Mechanische Atemfrequenz Beatmet",
+        "description": "FDPG Profil - MII PR ICU Spontane Mechanische Atemfrequenz Beatmet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-spontanes-atemzugvolumen"
+        },
+        "name": "FDPG PR ICU Spontanes Atemzugvolumen",
+        "description": "FDPG Profil - MII PR ICU Spontanes Atemzugvolumen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen"
+        },
+        "name": "FDPG PR ICU Spontanes Plus Mechanisches Atemzugvolumen",
+        "description": "FDPG Profil - MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-ect-substituatfluss"
+        },
+        "name": "FDPG PR ICU Substituatfluss",
+        "description": "FDPG Profil - MII PR ICU Substituatfluss",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-ect-substituatvolumen"
+        },
+        "name": "FDPG PR ICU Substituatvolumen",
+        "description": "FDPG Profil - MII PR ICU Substituatvolumen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-unterstuezungsdruck-beatmung"
+        },
+        "name": "FDPG PR ICU Unterstuezungsdruck Beatmung",
+        "description": "FDPG Profil - MII PR ICU Unterstuezungsdruck Beatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-ect-venoeser-druck"
+        },
+        "name": "FDPG PR ICU Venous Pressure",
+        "description": "FDPG Profil - MII PR ICU Venous Pressure",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-zeitverhaeltnis-ein-ausatmung"
+        },
+        "name": "FDPG PR ICU Zeitverhaeltnis Ein Ausatmung",
+        "description": "FDPG Profil - MII PR ICU Zeitverhaeltnis Ein Ausatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-labor-laboranforderung"
+        },
+        "name": "FDPG PR Labor Laboranforderung",
+        "description": "FDPG Profil - MII PR Labor Laboranforderung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-labor-laborbefund"
+        },
+        "name": "FDPG PR Labor Laborbefund",
+        "description": "FDPG Profil - MII PR Labor Laborbefund",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-labor-laboruntersuchung"
+        },
+        "name": "FDPG PR Labor Laboruntersuchung",
+        "description": "FDPG Profil - MII PR Labor Laboruntersuchung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-medikation-medication"
+        },
+        "name": "FDPG PR Medikation Medication",
+        "description": "FDPG Profil - MII PR Medikation Medication",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-medikation-medication-administration"
+        },
+        "name": "FDPG PR Medikation MedicationAdministration",
+        "description": "FDPG Profil - MII PR Medikation MedicationAdministration",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-medikation-medication-request"
+        },
+        "name": "FDPG PR Medikation MedicationRequest",
+        "description": "FDPG Profil - MII PR Medikation MedicationRequest",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-medikation-medication-statement"
+        },
+        "name": "FDPG PR Medikation MedicationStatement",
+        "description": "FDPG Profil - MII PR Medikation MedicationStatement",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-medikation-medikationsliste"
+        },
+        "name": "FDPG PR Medikation Medikationsliste",
+        "description": "FDPG Profil - MII PR Medikation Medikationsliste",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-beatmungszeit-hohem-druck"
+        },
+        "name": "FDPG PR MII ICU Beatmungszeit Hohem Druck",
+        "description": "FDPG Profil - MII ICU Beatmungszeit Hohem Druck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-ect-dauer-haemodialysesitzung"
+        },
+        "name": "FDPG PR MII ICU Dauer Haemodialysesitzung",
+        "description": "FDPG Profil - MII ICU Dauer Haemodialysesitzung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-clinical-impression"
+        },
+        "name": "FDPG PR MII Profile SE Clinical Impression",
+        "description": "FDPG Profil - MII Profile SE Clinical Impression",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-hpo-assessment"
+        },
+        "name": "FDPG PR MII Profile SE HPO Assessment",
+        "description": "FDPG Profil - MII Profile SE HPO Assessment",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-symptom-condition"
+        },
+        "name": "FDPG PR MII Profile SE Symptom Condition",
+        "description": "FDPG Profil - MII Profile SE Symptom Condition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-muv-herzfrequenz"
+        },
+        "name": "FDPG PR MII SD ICU Herzfrequenz",
+        "description": "FDPG Profil - MII SD ICU Herzfrequenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen"
+        },
+        "name": "FDPG PR MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen",
+        "description": "FDPG Profil - MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-molgen-anforderung-genetischer-test"
+        },
+        "name": "FDPG PR MolGen Anforderung genetischer Test",
+        "description": "FDPG Profil - MII PR MolGen Anforderung genetischer Test",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-molgen-diagnostische-implikation"
+        },
+        "name": "FDPG PR MolGen Diagnostische Implikation",
+        "description": "FDPG Profil - MII PR MolGen Diagnostische Implikation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-molgen-empfohlene-folgemassnahme"
+        },
+        "name": "FDPG PR MolGen Empfohlene Folgemaßnahme",
+        "description": "FDPG Profil - MII PR MolGen Empfohlene Folgemaßnahme",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-molgen-familienanamnese"
+        },
+        "name": "FDPG PR MolGen Familienanamnese",
+        "description": "FDPG Profil - MII PR MolGen Familienanamnese",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-molgen-genomic-study"
+        },
+        "name": "FDPG PR MolGen Genomic Study",
+        "description": "FDPG Profil - MII PR MolGen Genomic Study",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-molgen-genomic-study-analysis"
+        },
+        "name": "FDPG PR MolGen Genomic Study Analysis",
+        "description": "FDPG Profil - MII PR MolGen Genomic Study Analysis",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-molgen-genotyp"
+        },
+        "name": "FDPG PR MolGen Genotyp",
+        "description": "FDPG Profil - MII PR MolGen Genotyp",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-molgen-medikationsempfehlung"
+        },
+        "name": "FDPG PR MolGen Medikationsempfehlung",
+        "description": "FDPG Profil - MII PR MolGen Medikationsempfehlung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-molgen-mikrosatelliteninstabilitaet"
+        },
+        "name": "FDPG PR MolGen Mikrosatelliteninstabilität",
+        "description": "FDPG Profil - MII PR MolGen Mikrosatelliteninstabilität",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-molgen-molekularer-biomarker"
+        },
+        "name": "FDPG PR MolGen Molekulare Biomarker",
+        "description": "FDPG Profil - MII PR MolGen Molekulare Biomarker",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-molgen-molekulare-konsequenz"
+        },
+        "name": "FDPG PR MolGen Molekulare Konsequenz",
+        "description": "FDPG Profil - MII PR MolGen Molekulare Konsequenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-molgen-molekulargenetischer-befundbericht"
+        },
+        "name": "FDPG PR MolGen Molekulargenetischer Befundbericht",
+        "description": "FDPG Profil - MII PR MolGen Molekulargenetischer Befundbericht",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-molgen-mutationslast"
+        },
+        "name": "FDPG PR MolGen Mutationslast",
+        "description": "FDPG Profil - MII PR MolGen Mutationslast",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-molgen-polygener-risiko-score"
+        },
+        "name": "FDPG PR MolGen Polygener Risiko Score",
+        "description": "FDPG Profil - MII PR MolGen Polygener Risiko Score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-molgen-therapeutische-implikation"
+        },
+        "name": "FDPG PR MolGen Therapeutische Implikation",
+        "description": "FDPG Profil - MII PR MolGen Therapeutische Implikation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-molgen-variante"
+        },
+        "name": "FDPG PR MolGen Variante",
+        "description": "FDPG Profil - MII PR MolGen Variante",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-melanom-exzision"
+        },
+        "name": "FDPG PR Onko Melanom Exzision",
+        "description": "FDPG Profil - MII PR Onko Melanom Exzision",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-prostata-operation"
+        },
+        "name": "FDPG PR Onko Prostata Operation",
+        "description": "FDPG Profil - MII PR Onko Prostata Operation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-krk-abstand-aboral"
+        },
+        "name": "FDPG PR Onkologie Abstand Aboral",
+        "description": "FDPG Profil - MII PR Onkologie Abstand Aboral",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-krk-abstand-anokutan"
+        },
+        "name": "FDPG PR Onkologie Abstand Anokutan",
+        "description": "FDPG Profil - MII PR Onkologie Abstand Anokutan",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-krk-abstand-circumferelle-resektionsebene"
+        },
+        "name": "FDPG PR Onkologie Abstand Circumferelle Resektionsebene",
+        "description": "FDPG Profil - MII PR Onkologie Abstand Circumferelle Resektionsebene",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-allgemeiner-leistungszustand-ecog"
+        },
+        "name": "FDPG PR Onkologie Allgemeiner Leistungszustand ECOG",
+        "description": "FDPG Profil - MII PR Onkologie Allgemeiner Leistungszustand ECOG",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-allgemeiner-leistungszustand-karnofsky"
+        },
+        "name": "FDPG PR Onkologie Allgemeiner Leistungszustand nach Karnofsky",
+        "description": "FDPG Profil - MII PR Onkologie Allgemeiner Leistungszustand nach Karnofsky",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-anzahl-befallene-lymphknoten"
+        },
+        "name": "FDPG PR Onkologie Anzahl der befallenen Lymphknoten",
+        "description": "FDPG Profil - MII PR Onkologie Anzahl der befallenen Lymphknoten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-anzahl-befallene-sentinel-lymphknoten"
+        },
+        "name": "FDPG PR Onkologie Anzahl der befallenen Sentinel-Lymphknoten",
+        "description": "FDPG Profil - MII PR Onkologie Anzahl der befallenen Sentinel-Lymphknoten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-anzahl-untersuchte-lymphknoten"
+        },
+        "name": "FDPG PR Onkologie Anzahl der untersuchten Lymphknoten",
+        "description": "FDPG Profil - MII PR Onkologie Anzahl der untersuchten Lymphknoten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-anzahl-untersuchte-sentinel-lymphknoten"
+        },
+        "name": "FDPG PR Onkologie Anzahl der untersuchten Sentinel-Lymphknoten",
+        "description": "FDPG Profil - MII PR Onkologie Anzahl der untersuchten Sentinel-Lymphknoten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-asa-klassifikation"
+        },
+        "name": "FDPG PR Onkologie ASA-Klassifikation",
+        "description": "FDPG Profil - MII PR Onkologie ASA-Klassifikation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-befund"
+        },
+        "name": "FDPG PR Onkologie Befund",
+        "description": "FDPG Profil - MII PR Onkologie Befund",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-prostate-ca-befall-stanze"
+        },
+        "name": "FDPG PR Onkologie Ca-Befall Stanze",
+        "description": "FDPG Profil - MII PR Onkologie Ca-Befall Stanze",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-prostate-clavien-dindo"
+        },
+        "name": "FDPG PR Onkologie Clavien Dindo",
+        "description": "FDPG Profil - MII PR Onkologie Clavien Dindo",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-diagnose-primaertumor"
+        },
+        "name": "FDPG PR Onkologie Diagnose Primärtumor",
+        "description": "FDPG Profil - MII PR Onkologie Diagnose Primärtumor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-liste-evidenz-erstdiagnose"
+        },
+        "name": "FDPG PR Onkologie Evidenz Diagnose Primärtumor",
+        "description": "FDPG Profil - MII PR Onkologie Evidenz Diagnose Primärtumor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-fernmetastasen"
+        },
+        "name": "FDPG PR Onkologie Fernmetastasen",
+        "description": "FDPG Profil - MII PR Onkologie Fernmetastasen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-fruehere-tumorerkrankung"
+        },
+        "name": "FDPG PR Onkologie Frühere Tumorerkrankung",
+        "description": "FDPG Profil - MII PR Onkologie Frühere Tumorerkrankung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-genetische-variante"
+        },
+        "name": "FDPG PR Onkologie Genetische Variante",
+        "description": "FDPG Profil - MII PR Onkologie Genetische Variante",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-grading"
+        },
+        "name": "FDPG PR Onkologie Grading",
+        "description": "FDPG Profil - MII PR Onkologie Grading",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-mamma-her2neu-status"
+        },
+        "name": "FDPG PR Onkologie Her2neu Status",
+        "description": "FDPG Profil - MII PR Onkologie Her2neu Status",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-histologie-icdo3"
+        },
+        "name": "FDPG PR Onkologie Histologie ICD-O-3",
+        "description": "FDPG Profil - MII PR Onkologie Histologie ICD-O-3",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-krk-anastomoseninsuffizienz"
+        },
+        "name": "FDPG PR Onkologie KRK Anastomoseninsuffizienz",
+        "description": "FDPG Profil - MII PR Onkologie KRK Anastomoseninsuffizienz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-krk-mrt-mesorektale-faszie"
+        },
+        "name": "FDPG PR Onkologie KRK MRT/CT Abstand Mesorektale Faszie",
+        "description": "FDPG Profil - MII PR Onkologie KRK MRT/CT Abstand Mesorektale Faszie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-krk-stoma-markierung"
+        },
+        "name": "FDPG PR Onkologie KRK Stoma-Markierung",
+        "description": "FDPG Profil - MII PR Onkologie KRK Stoma-Markierung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-mamma-operation"
+        },
+        "name": "FDPG PR Onkologie Mamma Operation",
+        "description": "FDPG Profil - MII PR Onkologie Mamma Operation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-melanom-breslow-tiefe"
+        },
+        "name": "FDPG PR Onkologie Melanom Breslow Tiefe",
+        "description": "FDPG Profil - MII PR Onkologie Melanom Breslow Tiefe",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-melanom-ldh"
+        },
+        "name": "FDPG PR Onkologie Melanom LDH",
+        "description": "FDPG Profil - MII PR Onkologie Melanom LDH",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-melanom-sicherheitsabstand"
+        },
+        "name": "FDPG PR Onkologie Melanom Sicherheitsabstand",
+        "description": "FDPG Profil - MII PR Onkologie Melanom Sicherheitsabstand",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-melanom-ulzeration"
+        },
+        "name": "FDPG PR Onkologie Melanom Ulzeration",
+        "description": "FDPG Profil - MII PR Onkologie Melanom Ulzeration",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-mamma-menopause-status"
+        },
+        "name": "FDPG PR Onkologie Menopausenstatus Mamma",
+        "description": "FDPG Profil - MII PR Onkologie Menopausenstatus Mamma",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-nebenwirkung-adverse-event"
+        },
+        "name": "FDPG PR Onkologie Nebenwirkung von Strahlentherapie und systemische Therapie",
+        "description": "FDPG Profil - MII PR Onkologie Nebenwirkung von Strahlentherapie und systemische Therapie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-operation"
+        },
+        "name": "FDPG PR Onkologie Operation",
+        "description": "FDPG Profil - MII PR Onkologie Operation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-prostate-anzahl-positive-stanzen"
+        },
+        "name": "FDPG PR Onkologie Prostata Anzahl positiver Stanzen",
+        "description": "FDPG Profil - MII PR Onkologie Prostata Anzahl positiver Stanzen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-prostate-anzahl-stanzen"
+        },
+        "name": "FDPG PR Onkologie Prostata Anzahl Stanzen",
+        "description": "FDPG Profil - MII PR Onkologie Prostata Anzahl Stanzen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-prostate-gleason-grade-group"
+        },
+        "name": "FDPG PR Onkologie Prostata Gleason Grade Group",
+        "description": "FDPG Profil - MII PR Onkologie Prostata Gleason Grade Group",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-prostate-gleason-patterns"
+        },
+        "name": "FDPG PR Onkologie Prostata Gleason Primär",
+        "description": "FDPG Profil - MII PR Onkologie Prostata Gleason Primär",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-krk-operation"
+        },
+        "name": "FDPG PR Onkologie Präoperative Drahtmarkierung Mamma",
+        "description": "FDPG Profil - MII PR Onkologie Präoperative Drahtmarkierung Mamma",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-mamma-sozialdienst"
+        },
+        "name": "FDPG PR Onkologie Präoperative Drahtmarkierung Mamma",
+        "description": "FDPG Profil - MII PR Onkologie Präoperative Drahtmarkierung Mamma",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-mamma-praeoperative-markierung"
+        },
+        "name": "FDPG PR Onkologie Präoperative Markierung Mamma",
+        "description": "FDPG Profil - MII PR Onkologie Präoperative Markierung Mamma",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-prostate-psa"
+        },
+        "name": "FDPG PR Onkologie PSA-Wert",
+        "description": "FDPG Profil - MII PR Onkologie PSA-Wert",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-residualstatus"
+        },
+        "name": "FDPG PR Onkologie Residualstatus",
+        "description": "FDPG Profil - MII PR Onkologie Residualstatus",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-mamma-rezeptorstatus-estrogen"
+        },
+        "name": "FDPG PR Onkologie Rezeptorstatus Estrogen",
+        "description": "FDPG Profil - MII PR Onkologie Rezeptorstatus Estrogen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-mamma-rezeptorstatus-progesteron"
+        },
+        "name": "FDPG PR Onkologie Rezeptorstatus Progesteron",
+        "description": "FDPG Profil - MII PR Onkologie Rezeptorstatus Progesteron",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-krk-specimen"
+        },
+        "name": "FDPG PR Onkologie Specimen",
+        "description": "FDPG Profil - MII PR Onkologie Specimen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-specimen"
+        },
+        "name": "FDPG PR Onkologie Specimen",
+        "description": "FDPG Profil - MII PR Onkologie Specimen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-strahlentherapie-bestrahlung-strahlentherapie"
+        },
+        "name": "FDPG PR Onkologie Strahlentherapie",
+        "description": "FDPG Profil - MII PR Onkologie Strahlentherapie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-strahlentherapie"
+        },
+        "name": "FDPG PR Onkologie Strahlentherapie",
+        "description": "FDPG Profil - MII PR Onkologie Strahlentherapie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin"
+        },
+        "name": "FDPG PR Onkologie Strahlentherapie Nuklearmedizin",
+        "description": "FDPG Profil - MII PR Onkologie Strahlentherapie Nuklearmedizin",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-studienteilnahme"
+        },
+        "name": "FDPG PR Onkologie Studienteilnahme",
+        "description": "FDPG Profil - MII PR Onkologie Studienteilnahme",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-systemische-therapie"
+        },
+        "name": "FDPG PR Onkologie Systemische Therapie",
+        "description": "FDPG Profil - MII PR Onkologie Systemische Therapie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-systemische-therapie-medikation"
+        },
+        "name": "FDPG PR Onkologie Systemische Therapie Medikation",
+        "description": "FDPG Profil - MII PR Onkologie Systemische Therapie Medikation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-therapieempfehlung-kombinationstherapie"
+        },
+        "name": "FDPG PR Onkologie Therapieempfehlung Kombinationstherapie",
+        "description": "FDPG Profil - MII PR Onkologie Therapieempfehlung Kombinationstherapie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-therapieempfehlung-medikation"
+        },
+        "name": "FDPG PR Onkologie Therapieempfehlung Medikation",
+        "description": "FDPG Profil - MII PR Onkologie Therapieempfehlung Medikation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-therapieempfehlung-operation"
+        },
+        "name": "FDPG PR Onkologie Therapieempfehlung Operation",
+        "description": "FDPG Profil - MII PR Onkologie Therapieempfehlung Operation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-tnm-a-symbol"
+        },
+        "name": "FDPG PR Onkologie TNM a-Symbol",
+        "description": "FDPG Profil - MII PR Onkologie TNM a-Symbol",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-tnm-l-kategorie"
+        },
+        "name": "FDPG PR Onkologie TNM L-Kategorie",
+        "description": "FDPG Profil - MII PR Onkologie TNM L-Kategorie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-tnm-m-kategorie"
+        },
+        "name": "FDPG PR Onkologie TNM M-Kategorie",
+        "description": "FDPG Profil - MII PR Onkologie TNM M-Kategorie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-tnm-m-symbol"
+        },
+        "name": "FDPG PR Onkologie TNM m-Symbol",
+        "description": "FDPG Profil - MII PR Onkologie TNM m-Symbol",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-tnm-n-kategorie"
+        },
+        "name": "FDPG PR Onkologie TNM N-Kategorie",
+        "description": "FDPG Profil - MII PR Onkologie TNM N-Kategorie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-tnm-pn-kategorie"
+        },
+        "name": "FDPG PR Onkologie TNM Pn-Kategorie",
+        "description": "FDPG Profil - MII PR Onkologie TNM Pn-Kategorie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-tnm-r-symbol"
+        },
+        "name": "FDPG PR Onkologie TNM r-Symbol",
+        "description": "FDPG Profil - MII PR Onkologie TNM r-Symbol",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-tnm-s-kategorie"
+        },
+        "name": "FDPG PR Onkologie TNM S-Kategorie",
+        "description": "FDPG Profil - MII PR Onkologie TNM S-Kategorie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-tnm-t-kategorie"
+        },
+        "name": "FDPG PR Onkologie TNM T-Kategorie",
+        "description": "FDPG Profil - MII PR Onkologie TNM T-Kategorie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-tnm-v-kategorie"
+        },
+        "name": "FDPG PR Onkologie TNM V-Kategorie",
+        "description": "FDPG Profil - MII PR Onkologie TNM V-Kategorie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-tnm-y-symbol"
+        },
+        "name": "FDPG PR Onkologie TNM y-Symbol",
+        "description": "FDPG Profil - MII PR Onkologie TNM y-Symbol",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-tnm-klassifikation"
+        },
+        "name": "FDPG PR Onkologie TNM-Klassifikation",
+        "description": "FDPG Profil - MII PR Onkologie TNM-Klassifikation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-tod"
+        },
+        "name": "FDPG PR Onkologie Tod",
+        "description": "FDPG Profil - MII PR Onkologie Tod",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-tumorgroesse"
+        },
+        "name": "FDPG PR Onkologie Tumorgröße",
+        "description": "FDPG Profil - MII PR Onkologie Tumorgröße",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-tumorkonferenz"
+        },
+        "name": "FDPG PR Onkologie Tumorkonferenz",
+        "description": "FDPG Profil - MII PR Onkologie Tumorkonferenz",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-verlauf"
+        },
+        "name": "FDPG PR Onkologie Verlauf",
+        "description": "FDPG Profil - MII PR Onkologie Verlauf",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-onko-weitere-klassifikationen"
+        },
+        "name": "FDPG PR Onkologie Weitere Klassifikationen",
+        "description": "FDPG Profil - MII PR Onkologie Weitere Klassifikationen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-active-problems-list"
+        },
+        "name": "FDPG PR Patho Active Problems List",
+        "description": "FDPG Profil - MII PR Patho Active Problems List",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-additional-specified-grouper"
+        },
+        "name": "FDPG PR Patho Additional Specified Grouper",
+        "description": "FDPG Profil - MII PR Patho Additional Specified Grouper",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-attached-image"
+        },
+        "name": "FDPG PR Patho Attached Image",
+        "description": "FDPG Profil - MII PR Patho Attached Image",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-base-observation"
+        },
+        "name": "FDPG PR Patho Base Observation",
+        "description": "FDPG Profil - MII PR Patho Base Observation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-bundle"
+        },
+        "name": "FDPG PR Patho Bundle",
+        "description": "FDPG Profil - MII PR Patho Bundle",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-composition"
+        },
+        "name": "FDPG PR Patho Composition",
+        "description": "FDPG Profil - MII PR Patho Composition",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-diagnostic-conclusion-grouper"
+        },
+        "name": "FDPG PR Patho Diagnostic Conclusion Grouper",
+        "description": "FDPG Profil - MII PR Patho Diagnostic Conclusion Grouper",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-finding"
+        },
+        "name": "FDPG PR Patho Finding",
+        "description": "FDPG Profil - MII PR Patho Finding",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-history-of-present-illness"
+        },
+        "name": "FDPG PR Patho History Of Present Illness",
+        "description": "FDPG Profil - MII PR Patho History Of Present Illness",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-intraoperative-grouper"
+        },
+        "name": "FDPG PR Patho Intraoperative Grouper",
+        "description": "FDPG Profil - MII PR Patho Intraoperative Grouper",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-macroscopic-grouper"
+        },
+        "name": "FDPG PR Patho Macroscopic Grouper",
+        "description": "FDPG Profil - MII PR Patho Macroscopic Grouper",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-microscopic-grouper"
+        },
+        "name": "FDPG PR Patho Microscopic Grouper",
+        "description": "FDPG Profil - MII PR Patho Microscopic Grouper",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-problem-list-item"
+        },
+        "name": "FDPG PR Patho Problem List Item",
+        "description": "FDPG Profil - MII PR Patho Problem List Item",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-report"
+        },
+        "name": "FDPG PR Patho Report",
+        "description": "FDPG Profil - MII PR Patho Report",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-section-grouper"
+        },
+        "name": "FDPG PR Patho Section Grouper",
+        "description": "FDPG Profil - MII PR Patho Section Grouper",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-service-request"
+        },
+        "name": "FDPG PR Patho Service Request",
+        "description": "FDPG Profil - MII PR Patho Service Request",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-specimen"
+        },
+        "name": "FDPG PR Patho Specimen",
+        "description": "FDPG Profil - MII PR Patho Specimen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-person-patient"
+        },
+        "name": "FDPG PR Person Patient",
+        "description": "FDPG Profil - MII PR Person Patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-person-patient-pseudonymisiert"
+        },
+        "name": "FDPG PR Person Patient (Pseudonymisiert)",
+        "description": "FDPG Profil - MII PR Person Patient (Pseudonymisiert)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-person-todesursache"
+        },
+        "name": "FDPG PR Person Todesursache",
+        "description": "FDPG Profil - MII PR Person Todesursache",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-person-vitalstatus"
+        },
+        "name": "FDPG PR Person Vitalstatus",
+        "description": "FDPG Profil - MII PR Person Vitalstatus",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-prozedur-procedure"
+        },
+        "name": "FDPG PR Prozedur Procedure",
+        "description": "FDPG Profil - MII PR Prozedur Procedure",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"
+        },
+        "name": "FDPG PR SD MII ICU Bilanz Einfuhr Fluessigkeit Gesamt",
+        "description": "FDPG Profil - SD MII ICU Bilanz Einfuhr Fluessigkeit Gesamt",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-blutgruppe"
+        },
+        "name": "FDPG PR SE Blutgruppe",
+        "description": "FDPG Profil - MII PR SE Blutgruppe",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-clinical-diagnosis"
+        },
+        "name": "FDPG PR SE Clinical Diagnosis",
+        "description": "FDPG Profil - MII PR SE Clinical Diagnosis",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-familienanamnese"
+        },
+        "name": "FDPG PR SE Familienanamnese",
+        "description": "FDPG Profil - MII PR SE Familienanamnese",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-genetic-diagnosis"
+        },
+        "name": "FDPG PR SE Genetic Diagnosis",
+        "description": "FDPG Profil - MII PR SE Genetic Diagnosis",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-hueftumfang"
+        },
+        "name": "FDPG PR SE Hüftumfang",
+        "description": "FDPG Profil - MII PR SE Hüftumfang",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-kopfumfang"
+        },
+        "name": "FDPG PR SE Kopfumfang",
+        "description": "FDPG Profil - MII PR SE Kopfumfang",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-studie"
+        },
+        "name": "FDPG PR SE Studie",
+        "description": "FDPG Profil - MII PR SE Studie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-studieneinschluss-anfrage"
+        },
+        "name": "FDPG PR SE Studieneinschluss Anfrage",
+        "description": "FDPG Profil - MII PR SE Studieneinschluss Anfrage",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-taillenumfang"
+        },
+        "name": "FDPG PR SE Taillenumfang",
+        "description": "FDPG Profil - MII PR SE Taillenumfang",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-therapieempfehlung-kombination"
+        },
+        "name": "FDPG PR SE Therapieempfehlung Kombinationstherapie",
+        "description": "FDPG Profil - MII PR SE Therapieempfehlung Kombinationstherapie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-therapieempfehlung-nicht-medikamentoes"
+        },
+        "name": "FDPG PR SE Therapieempfehlung Nicht-Medikamentös",
+        "description": "FDPG Profil - MII PR SE Therapieempfehlung Nicht-Medikamentös",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-therapieempfehlung"
+        },
+        "name": "FDPG PR SE Therapieempfehlung Systemische Therapie",
+        "description": "FDPG Profil - MII PR SE Therapieempfehlung Systemische Therapie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-therapieplan"
+        },
+        "name": "FDPG PR SE Therapieplan",
+        "description": "FDPG Profil - MII PR SE Therapieplan",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-seltene-therapie-durchgefuehrt"
+        },
+        "name": "FDPG PR Seltene Erkrankungen Therapie Durchgeführt",
+        "description": "FDPG Profil - MII PR Seltene Erkrankungen Therapie Durchgeführt",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-studie-beteiligte-person"
+        },
+        "name": "FDPG PR Studie Beteiligte Person",
+        "description": "FDPG Profil - MII PR Studie Beteiligte Person",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-studie-dokument"
+        },
+        "name": "FDPG PR Studie Dokument",
+        "description": "FDPG Profil - MII PR Studie Dokument",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-studie-ein-auschluss-kriterium"
+        },
+        "name": "FDPG PR Studie EinAuschlussKriterium",
+        "description": "FDPG Profil - MII PR Studie EinAuschlussKriterium",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-studie-proband"
+        },
+        "name": "FDPG PR Studie Proband",
+        "description": "FDPG Profil - MII PR Studie Proband",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-studie-register"
+        },
+        "name": "FDPG PR Studie Register",
+        "description": "FDPG Profil - MII PR Studie Register",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-studie-studie"
+        },
+        "name": "FDPG PR Studie Studie",
+        "description": "FDPG Profil - MII PR Studie Studie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-studie-studieneinschluss-anfrage"
+        },
+        "name": "FDPG PR Studie Studieneinschluss Anfrage",
+        "description": "FDPG Profil - MII PR Studie Studieneinschluss Anfrage",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "obligations.html",
+          "title": "FDPG Obligations",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "actors.html",
+          "title": "Actor Definitions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-person.html",
+          "title": "Modul Person",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-diagnose.html",
+          "title": "Modul Diagnose",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-prozedur.html",
+          "title": "Modul Prozedur",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-fall.html",
+          "title": "Modul Fall",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-labor.html",
+          "title": "Modul Laborbefund",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-medikation.html",
+          "title": "Modul Medikation",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-biobank.html",
+          "title": "Modul Biobank",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-studie.html",
+          "title": "Modul Studie",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-molgen.html",
+          "title": "Modul Molekulargenetik",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-patho.html",
+          "title": "Modul Pathologiebefund",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-icu.html",
+          "title": "Modul Intensivmedizin",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-bildgebung.html",
+          "title": "Modul Bildgebung",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-seltene.html",
+          "title": "Modul Seltene Erkrankungen",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-onkologie.html",
+          "title": "Modul Onkologie",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-consent.html",
+          "title": "Modul Einwilligung",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-symptom.html",
+          "title": "Modul Symptom",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-dokument.html",
+          "title": "Modul Dokument",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datenkatalog-basis.html",
+          "title": "Datenkatalog Basisdaten",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datenkatalog-labor.html",
+          "title": "Datenkatalog Laborbefund",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datenkatalog-medikation.html",
+          "title": "Datenkatalog Medikation",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datenkatalog-biobank.html",
+          "title": "Datenkatalog Biobank",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datenkatalog-studie.html",
+          "title": "Datenkatalog Studie",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datenkatalog-molgen.html",
+          "title": "Datenkatalog Molekulargenetik",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datenkatalog-patho.html",
+          "title": "Datenkatalog Pathologiebefund",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datenkatalog-icu.html",
+          "title": "Datenkatalog Intensivmedizin",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datenkatalog-bildgebung.html",
+          "title": "Datenkatalog Bildgebung",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datenkatalog-seltene.html",
+          "title": "Datenkatalog Seltene Erkrankungen",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datenkatalog-onkologie.html",
+          "title": "Datenkatalog Onkologie",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datenkatalog-consent.html",
+          "title": "Datenkatalog Einwilligung",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datenkatalog-dokument.html",
+          "title": "Datenkatalog Dokument",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2025+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "trial-use"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      },
+      {
+        "code": "apply-jurisdiction",
+        "value": "true"
+      },
+      {
+        "code": "apply-publisher",
+        "value": "true"
+      }
+    ]
+  }
+}
