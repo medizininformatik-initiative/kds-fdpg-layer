@@ -1,0 +1,31 @@
+- action: parse
+  files: fsh-generated/resources/*.json
+
+- action: validate
+
+- action: unique
+  unique: canonical
+
+- action: unique
+  unique: name
+  filter: StructureDefinition
+
+- predicate: id.matches('^[A-Za-z0-9\\-\\.]{1,64}$')
+  error-message: "id invalid"
+
+# FDPG naming conventions (not MII)
+- predicate: id.matches('^fdpg-(pr|ex|lm|vs|cs|cm|sm|ns|sp|cps|od|ig|exa)-')
+  error-message: "id does not follow fdpg-{type}-... convention"
+  filter: StructureDefinition
+
+- predicate: name.matches('^FDPG_(PR|EX|LM|VS|CS|CM|SM|NS|SP|CPS|OD|IG|EXA)_')
+  error-message: "name does not follow FDPG_{TYPE}_ convention"
+  filter: StructureDefinition
+
+- predicate: url.startsWith('https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/')
+  error-message: "url does not start with canonical"
+  filter: StructureDefinition
+
+- predicate: version.exists() and (version in ('2026.0.0'))
+  error-message: "version must be 2026.0.0"
+  filter: StructureDefinition or ValueSet or CodeSystem
