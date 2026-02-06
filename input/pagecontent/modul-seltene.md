@@ -34,3 +34,7 @@ Das Modul Seltene Erkrankungen deckt die spezifischen Anforderungen der Dokument
 ## Obligation-Übersicht
 
 Alle MustSupport-Elemente der MII-Elternprofile tragen in den FDPG-Profilen entsprechende Obligations. Die konkreten Obligation-Kategorien und deren Bedeutung sind auf der Seite [Obligations](obligations.html) beschrieben.
+
+## Datenkatalog
+
+Detaillierte Übersicht aller MustSupport-Elemente mit Beschreibungen: [Datenkatalog Seltene Erkrankungen](datenkatalog-seltene.html)

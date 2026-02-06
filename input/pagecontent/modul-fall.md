@@ -17,3 +17,7 @@ Das Modul Fall bildet Kontakte mit Gesundheitseinrichtungen ab. Es umfasst ambul
 ## Obligation-Übersicht
 
 Alle MustSupport-Elemente des MII-Elternprofils tragen im FDPG-Profil entsprechende Obligations. Die konkreten Obligation-Kategorien und deren Bedeutung sind auf der Seite [Obligations](obligations.html) beschrieben.
+
+## Datenkatalog
+
+Detaillierte Übersicht aller MustSupport-Elemente mit Beschreibungen: [Datenkatalog Basisdaten](datenkatalog-basis.html)

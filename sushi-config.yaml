@@ -97,6 +97,32 @@ pages:
     title: Modul Symptom
   modul-dokument.md:
     title: Modul Dokument
+  datenkatalog-basis.md:
+    title: Datenkatalog Basisdaten
+  datenkatalog-labor.md:
+    title: Datenkatalog Laborbefund
+  datenkatalog-medikation.md:
+    title: Datenkatalog Medikation
+  datenkatalog-biobank.md:
+    title: Datenkatalog Biobank
+  datenkatalog-studie.md:
+    title: Datenkatalog Studie
+  datenkatalog-molgen.md:
+    title: Datenkatalog Molekulargenetik
+  datenkatalog-patho.md:
+    title: Datenkatalog Pathologiebefund
+  datenkatalog-icu.md:
+    title: Datenkatalog Intensivmedizin
+  datenkatalog-bildgebung.md:
+    title: Datenkatalog Bildgebung
+  datenkatalog-seltene.md:
+    title: Datenkatalog Seltene Erkrankungen
+  datenkatalog-onkologie.md:
+    title: Datenkatalog Onkologie
+  datenkatalog-consent.md:
+    title: Datenkatalog Einwilligung
+  datenkatalog-dokument.md:
+    title: Datenkatalog Dokument
 
 menu:
   Home: index.html
@@ -120,4 +146,18 @@ menu:
     Einwilligung: modul-consent.html
     Symptom: modul-symptom.html
     Dokument: modul-dokument.html
+  Datenkatalog:
+    Basisdaten: datenkatalog-basis.html
+    Laborbefund: datenkatalog-labor.html
+    Medikation: datenkatalog-medikation.html
+    Biobank: datenkatalog-biobank.html
+    Studie: datenkatalog-studie.html
+    Molekulargenetik: datenkatalog-molgen.html
+    Pathologiebefund: datenkatalog-patho.html
+    Intensivmedizin: datenkatalog-icu.html
+    Bildgebung: datenkatalog-bildgebung.html
+    Seltene Erkrankungen: datenkatalog-seltene.html
+    Onkologie: datenkatalog-onkologie.html
+    Einwilligung: datenkatalog-consent.html
+    Dokument: datenkatalog-dokument.html
   Artifacts: artifacts.html

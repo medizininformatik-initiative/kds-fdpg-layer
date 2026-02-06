@@ -34,7 +34,7 @@ jobs:
 
   BUILD_AND_DEPLOY_IG:
     if: github.ref == 'refs/heads/main' && github.event_name != 'release'
-    needs: [DOTNET_FHIR_VALIDATION, JAVA_FHIR_VALIDATION]
+    needs: [DOTNET_FHIR_VALIDATION]
     runs-on: ubuntu-latest
     permissions:
       contents: write

@@ -17,3 +17,7 @@ Das Modul Diagnose bildet klinische Diagnosen ab, die im Rahmen der Patientenver
 ## Obligation-Übersicht
 
 Alle MustSupport-Elemente des MII-Elternprofils tragen im FDPG-Profil entsprechende Obligations. Die konkreten Obligation-Kategorien und deren Bedeutung sind auf der Seite [Obligations](obligations.html) beschrieben.
+
+## Datenkatalog
+
+Detaillierte Übersicht aller MustSupport-Elemente mit Beschreibungen: [Datenkatalog Basisdaten](datenkatalog-basis.html)

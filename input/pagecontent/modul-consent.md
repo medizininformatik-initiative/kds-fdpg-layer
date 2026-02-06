@@ -19,3 +19,7 @@ Das Modul Einwilligung bildet die Dokumentation von Patienteneinwilligungen ab. 
 ## Obligation-Übersicht
 
 Alle MustSupport-Elemente der MII-Elternprofile tragen in den FDPG-Profilen entsprechende Obligations. Die konkreten Obligation-Kategorien und deren Bedeutung sind auf der Seite [Obligations](obligations.html) beschrieben.
+
+## Datenkatalog
+
+Detaillierte Übersicht aller MustSupport-Elemente mit Beschreibungen: [Datenkatalog Einwilligung](datenkatalog-consent.html)

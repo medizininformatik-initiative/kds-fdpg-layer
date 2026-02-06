@@ -17,3 +17,7 @@ Das Modul Prozedur erfasst medizinische Massnahmen und Eingriffe, die an Patient
 ## Obligation-Übersicht
 
 Alle MustSupport-Elemente des MII-Elternprofils tragen im FDPG-Profil entsprechende Obligations. Die konkreten Obligation-Kategorien und deren Bedeutung sind auf der Seite [Obligations](obligations.html) beschrieben.
+
+## Datenkatalog
+
+Detaillierte Übersicht aller MustSupport-Elemente mit Beschreibungen: [Datenkatalog Basisdaten](datenkatalog-basis.html)
