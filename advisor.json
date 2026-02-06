@@ -3,6 +3,8 @@
     "Terminology_TX_NoValid_16",
     "Terminology_TX_Confirm_4a",
     "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6",
-    "UNABLE_TO_INFER_CODESYSTEM"
+    "UNABLE_TO_INFER_CODESYSTEM",
+    "IG_DEPENDENCY_DIRECT@ImplementationGuide",
+    "The slice definition for *extension has a minimum of 0 but the slices add up to a minimum of 1"
   ]
 }
