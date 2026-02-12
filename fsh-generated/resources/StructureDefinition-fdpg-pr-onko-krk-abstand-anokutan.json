@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Abstand Anokutan"
+            "valueString": "Abstand zur anokutanen Grenze"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Abstand Anokutan"
+            "valueString": "Distance to Anocutaneous Line"
           }
         ]
       }

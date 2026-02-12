@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Her2neu Status"
+            "valueString": "HER2/neu-Status"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Her2neu Status"
+            "valueString": "HER2/neu Status"
           }
         ]
       }

@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Verlauf"
+            "valueString": "Onkologischer Verlauf"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Verlauf"
+            "valueString": "Oncology Disease Course"
           }
         ]
       }

@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Evidenz Diagnose Primärtumor"
+            "valueString": "Evidenz für Erstdiagnose"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Evidenz Diagnose Primärtumor"
+            "valueString": "Evidence for Initial Diagnosis"
           }
         ]
       }

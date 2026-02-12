@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie TNM M-Kategorie"
+            "valueString": "TNM M-Kategorie"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie TNM M-Kategorie"
+            "valueString": "TNM M-Category"
           }
         ]
       }

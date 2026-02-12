@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onko Prostata Operation"
+            "valueString": "Prostata-Operation"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onko Prostata Operation"
+            "valueString": "Prostate Surgery"
           }
         ]
       }

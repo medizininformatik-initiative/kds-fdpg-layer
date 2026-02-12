@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Ca-Befall Stanze"
+            "valueString": "Ca-Befall in Stanze"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Ca-Befall Stanze"
+            "valueString": "Carcinoma Involvement in Core"
           }
         ]
       }

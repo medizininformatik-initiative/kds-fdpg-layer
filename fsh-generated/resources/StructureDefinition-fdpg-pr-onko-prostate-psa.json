@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie PSA-Wert"
+            "valueString": "PSA-Wert"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie PSA-Wert"
+            "valueString": "PSA Value"
           }
         ]
       }

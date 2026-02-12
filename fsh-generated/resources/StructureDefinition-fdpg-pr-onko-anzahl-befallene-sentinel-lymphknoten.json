@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Anzahl der befallenen Sentinel-Lymphknoten"
+            "valueString": "Anzahl der befallenen Sentinel-Lymphknoten"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Anzahl der befallenen Sentinel-Lymphknoten"
+            "valueString": "Number of Involved Sentinel Lymph Nodes"
           }
         ]
       }

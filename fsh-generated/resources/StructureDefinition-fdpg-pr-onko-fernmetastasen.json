@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Fernmetastasen"
+            "valueString": "Fernmetastasen"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Fernmetastasen"
+            "valueString": "Distant Metastases"
           }
         ]
       }

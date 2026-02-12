@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Histologie ICD-O-3"
+            "valueString": "Histologie nach ICD-O-3"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Histologie ICD-O-3"
+            "valueString": "Histology (ICD-O-3)"
           }
         ]
       }

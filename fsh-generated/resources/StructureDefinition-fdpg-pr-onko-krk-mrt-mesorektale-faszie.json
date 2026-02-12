@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie KRK MRT/CT Abstand Mesorektale Faszie"
+            "valueString": "KRK MRT/CT Abstand mesorektale Faszie"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie KRK MRT/CT Abstand Mesorektale Faszie"
+            "valueString": "Colorectal MRI/CT Distance to Mesorectal Fascia"
           }
         ]
       }

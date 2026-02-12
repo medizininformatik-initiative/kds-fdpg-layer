@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Anzahl der untersuchten Sentinel-Lymphknoten"
+            "valueString": "Anzahl der untersuchten Sentinel-Lymphknoten"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Anzahl der untersuchten Sentinel-Lymphknoten"
+            "valueString": "Number of Examined Sentinel Lymph Nodes"
           }
         ]
       }

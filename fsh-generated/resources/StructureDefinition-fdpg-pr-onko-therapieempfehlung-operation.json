@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Therapieempfehlung Operation"
+            "valueString": "Therapieempfehlung Operation"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Therapieempfehlung Operation"
+            "valueString": "Therapy Recommendation Surgery"
           }
         ]
       }

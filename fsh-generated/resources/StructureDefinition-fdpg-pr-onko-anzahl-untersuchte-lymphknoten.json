@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Anzahl der untersuchten Lymphknoten"
+            "valueString": "Anzahl der untersuchten Lymphknoten"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Anzahl der untersuchten Lymphknoten"
+            "valueString": "Number of Examined Lymph Nodes"
           }
         ]
       }

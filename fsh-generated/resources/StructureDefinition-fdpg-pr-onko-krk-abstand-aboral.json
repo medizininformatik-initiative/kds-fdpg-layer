@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Abstand Aboral"
+            "valueString": "Abstand zum aboralen Resektionsrand"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Abstand Aboral"
+            "valueString": "Distance to Aboral Resection Margin"
           }
         ]
       }

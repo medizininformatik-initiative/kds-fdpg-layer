@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Befund"
+            "valueString": "Onkologischer Befund"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Befund"
+            "valueString": "Oncology Finding"
           }
         ]
       }

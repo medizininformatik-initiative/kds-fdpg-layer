@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Allgemeiner Leistungszustand ECOG"
+            "valueString": "Allgemeiner Leistungszustand nach ECOG"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Allgemeiner Leistungszustand ECOG"
+            "valueString": "General Performance Status (ECOG)"
           }
         ]
       }

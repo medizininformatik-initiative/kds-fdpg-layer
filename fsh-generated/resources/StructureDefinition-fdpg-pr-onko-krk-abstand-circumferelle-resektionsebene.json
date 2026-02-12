@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Abstand Circumferelle Resektionsebene"
+            "valueString": "Abstand zur circumferellen Resektionsebene"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Abstand Circumferelle Resektionsebene"
+            "valueString": "Distance to Circumferential Resection Margin"
           }
         ]
       }

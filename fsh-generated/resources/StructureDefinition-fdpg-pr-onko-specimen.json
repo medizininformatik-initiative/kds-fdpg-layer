@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Specimen"
+            "valueString": "Onkologische Probe"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Specimen"
+            "valueString": "Oncology Specimen"
           }
         ]
       }

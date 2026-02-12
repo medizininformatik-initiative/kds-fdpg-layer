@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Prostata Anzahl Stanzen"
+            "valueString": "Prostata Anzahl Stanzen"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Prostata Anzahl Stanzen"
+            "valueString": "Prostate Number of Cores"
           }
         ]
       }

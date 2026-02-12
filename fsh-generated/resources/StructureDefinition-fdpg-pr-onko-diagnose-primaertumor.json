@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Diagnose Primärtumor"
+            "valueString": "Onkologische Diagnose Primärtumor"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Diagnose Primärtumor"
+            "valueString": "Oncology Diagnosis Primary Tumor"
           }
         ]
       }

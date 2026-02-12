@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Allgemeiner Leistungszustand nach Karnofsky"
+            "valueString": "Allgemeiner Leistungszustand nach Karnofsky"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Allgemeiner Leistungszustand nach Karnofsky"
+            "valueString": "General Performance Status (Karnofsky)"
           }
         ]
       }

@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Melanom Breslow Tiefe"
+            "valueString": "Melanom Breslow-Dicke"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Melanom Breslow Tiefe"
+            "valueString": "Melanoma Breslow Thickness"
           }
         ]
       }

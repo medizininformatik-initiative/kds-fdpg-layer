@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Rezeptorstatus Estrogen"
+            "valueString": "Rezeptorstatus Östrogen"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Rezeptorstatus Estrogen"
+            "valueString": "Estrogen Receptor Status"
           }
         ]
       }

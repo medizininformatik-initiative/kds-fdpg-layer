@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Tumorgröße"
+            "valueString": "Tumorgröße"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Tumorgröße"
+            "valueString": "Tumor Size"
           }
         ]
       }

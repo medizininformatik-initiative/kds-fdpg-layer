@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Melanom Sicherheitsabstand"
+            "valueString": "Melanom Sicherheitsabstand"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Melanom Sicherheitsabstand"
+            "valueString": "Melanoma Safety Margin"
           }
         ]
       }

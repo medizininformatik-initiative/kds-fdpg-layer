@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Anzahl der befallenen Lymphknoten"
+            "valueString": "Anzahl der befallenen Lymphknoten"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Anzahl der befallenen Lymphknoten"
+            "valueString": "Number of Involved Lymph Nodes"
           }
         ]
       }

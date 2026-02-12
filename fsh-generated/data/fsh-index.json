@@ -1005,7 +1005,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-allgemeiner-leistungszustand-ecog.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-allgemeiner-leistungszustand-karnofsky.json",
@@ -1013,7 +1013,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-allgemeiner-leistungszustand-karnofsky.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-anzahl-befallene-lymphknoten.json",
@@ -1021,7 +1021,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-anzahl-befallene-lymphknoten.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 36
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-anzahl-befallene-sentinel-lymphknoten.json",
@@ -1029,7 +1029,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-anzahl-befallene-sentinel-lymphknoten.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 36
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-anzahl-untersuchte-lymphknoten.json",
@@ -1037,7 +1037,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-anzahl-untersuchte-lymphknoten.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 36
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-anzahl-untersuchte-sentinel-lymphknoten.json",
@@ -1045,7 +1045,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-anzahl-untersuchte-sentinel-lymphknoten.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 36
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-asa-klassifikation.json",
@@ -1053,7 +1053,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-asa-klassifikation.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-befund.json",
@@ -1061,7 +1061,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-befund.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 26
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-diagnose-primaertumor.json",
@@ -1069,7 +1069,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-diagnose-primaertumor.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 152
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-fernmetastasen.json",
@@ -1077,7 +1077,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-fernmetastasen.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 29
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-fruehere-tumorerkrankung.json",
@@ -1085,7 +1085,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-fruehere-tumorerkrankung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 38
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-genetische-variante.json",
@@ -1093,7 +1093,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-genetische-variante.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 209
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-grading.json",
@@ -1101,7 +1101,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-grading.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 25
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-histologie-icdo3.json",
@@ -1109,7 +1109,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-histologie-icdo3.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 36
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-krk-abstand-aboral.json",
@@ -1117,7 +1117,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-krk-abstand-aboral.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 35
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-krk-abstand-anokutan.json",
@@ -1125,7 +1125,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-krk-abstand-anokutan.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 35
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-krk-abstand-circumferelle-resektionsebene.json",
@@ -1133,7 +1133,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-krk-abstand-circumferelle-resektionsebene.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 35
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-krk-anastomoseninsuffizienz.json",
@@ -1141,7 +1141,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-krk-anastomoseninsuffizienz.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 27
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-krk-mrt-mesorektale-faszie.json",
@@ -1149,7 +1149,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-krk-mrt-mesorektale-faszie.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 42
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-krk-operation.json",
@@ -1157,7 +1157,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-krk-operation.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 130
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-krk-specimen.json",
@@ -1165,7 +1165,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-krk-specimen.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 27
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-krk-stoma-markierung.json",
@@ -1173,7 +1173,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-krk-stoma-markierung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 115
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-liste-evidenz-erstdiagnose.json",
@@ -1181,7 +1181,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-liste-evidenz-erstdiagnose.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 25
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-mamma-her2neu-status.json",
@@ -1189,7 +1189,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-mamma-her2neu-status.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 29
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-mamma-menopause-status.json",
@@ -1197,7 +1197,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-mamma-menopause-status.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-mamma-operation.json",
@@ -1205,7 +1205,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-mamma-operation.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 139
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-mamma-praeoperative-markierung.json",
@@ -1213,7 +1213,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-mamma-praeoperative-markierung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-mamma-rezeptorstatus-estrogen.json",
@@ -1221,7 +1221,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-mamma-rezeptorstatus-estrogen.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 33
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-mamma-rezeptorstatus-progesteron.json",
@@ -1229,7 +1229,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-mamma-rezeptorstatus-progesteron.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 31
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-mamma-sozialdienst.json",
@@ -1237,7 +1237,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-mamma-sozialdienst.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 133
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-melanom-breslow-tiefe.json",
@@ -1245,7 +1245,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-melanom-breslow-tiefe.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-melanom-exzision.json",
@@ -1253,7 +1253,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-melanom-exzision.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 128
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-melanom-ldh.json",
@@ -1261,7 +1261,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-melanom-ldh.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-melanom-sicherheitsabstand.json",
@@ -1269,7 +1269,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-melanom-sicherheitsabstand.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 37
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-melanom-ulzeration.json",
@@ -1277,7 +1277,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-melanom-ulzeration.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 31
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-nebenwirkung-adverse-event.json",
@@ -1285,7 +1285,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-nebenwirkung-adverse-event.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 36
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-operation.json",
@@ -1293,7 +1293,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-operation.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 128
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-prostata-operation.json",
@@ -1301,7 +1301,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-prostata-operation.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 128
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-prostate-anzahl-positive-stanzen.json",
@@ -1309,7 +1309,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-prostate-anzahl-positive-stanzen.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 27
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-prostate-anzahl-stanzen.json",
@@ -1317,7 +1317,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-prostate-anzahl-stanzen.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 27
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-prostate-ca-befall-stanze.json",
@@ -1325,7 +1325,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-prostate-ca-befall-stanze.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-prostate-clavien-dindo.json",
@@ -1333,7 +1333,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-prostate-clavien-dindo.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 27
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-prostate-gleason-grade-group.json",
@@ -1341,7 +1341,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-prostate-gleason-grade-group.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 24
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-prostate-gleason-patterns.json",
@@ -1349,7 +1349,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-prostate-gleason-patterns.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 26
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-prostate-psa.json",
@@ -1357,7 +1357,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-prostate-psa.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 22
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-residualstatus.json",
@@ -1365,7 +1365,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-residualstatus.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-specimen.json",
@@ -1373,7 +1373,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-specimen.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 25
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin.json",
@@ -1381,7 +1381,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 149
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-strahlentherapie-bestrahlung-strahlentherapie.json",
@@ -1389,7 +1389,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-strahlentherapie-bestrahlung-strahlentherapie.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 149
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-strahlentherapie.json",
@@ -1397,7 +1397,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-strahlentherapie.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 141
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-studienteilnahme.json",
@@ -1405,7 +1405,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-studienteilnahme.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 28
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-systemische-therapie-medikation.json",
@@ -1413,7 +1413,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-systemische-therapie-medikation.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 429
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-systemische-therapie.json",
@@ -1421,7 +1421,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-systemische-therapie.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 137
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-therapieempfehlung-kombinationstherapie.json",
@@ -1429,7 +1429,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-therapieempfehlung-kombinationstherapie.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 36
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-therapieempfehlung-medikation.json",
@@ -1437,7 +1437,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-therapieempfehlung-medikation.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 387
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-therapieempfehlung-operation.json",
@@ -1445,7 +1445,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-therapieempfehlung-operation.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 27
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-a-symbol.json",
@@ -1453,7 +1453,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-a-symbol.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 26
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-klassifikation.json",
@@ -1461,7 +1461,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-klassifikation.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 32
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-l-kategorie.json",
@@ -1469,7 +1469,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-l-kategorie.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 28
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-m-kategorie.json",
@@ -1477,7 +1477,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-m-kategorie.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-m-symbol.json",
@@ -1485,7 +1485,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-m-symbol.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 26
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-n-kategorie.json",
@@ -1493,7 +1493,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-n-kategorie.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-pn-kategorie.json",
@@ -1501,7 +1501,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-pn-kategorie.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 33
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-r-symbol.json",
@@ -1509,7 +1509,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-r-symbol.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 26
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-s-kategorie.json",
@@ -1517,7 +1517,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-s-kategorie.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 28
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-t-kategorie.json",
@@ -1525,7 +1525,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-t-kategorie.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 35
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-v-kategorie.json",
@@ -1533,7 +1533,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-v-kategorie.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 28
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-y-symbol.json",
@@ -1541,7 +1541,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-y-symbol.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 26
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tod.json",
@@ -1549,7 +1549,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tod.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 26
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tumorgroesse.json",
@@ -1557,7 +1557,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tumorgroesse.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 36
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tumorkonferenz.json",
@@ -1565,7 +1565,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tumorkonferenz.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 53
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-verlauf.json",
@@ -1573,7 +1573,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-verlauf.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 35
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-weitere-klassifikationen.json",
@@ -1581,7 +1581,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-weitere-klassifikationen.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-active-problems-list.json",

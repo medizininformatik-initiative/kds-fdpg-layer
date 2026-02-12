@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie KRK Anastomoseninsuffizienz"
+            "valueString": "KRK Anastomoseninsuffizienz"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie KRK Anastomoseninsuffizienz"
+            "valueString": "Colorectal Anastomotic Leakage"
           }
         ]
       }

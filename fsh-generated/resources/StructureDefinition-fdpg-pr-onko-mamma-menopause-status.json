@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Menopausenstatus Mamma"
+            "valueString": "Menopausenstatus"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onkologie Menopausenstatus Mamma"
+            "valueString": "Menopausal Status"
           }
         ]
       }
