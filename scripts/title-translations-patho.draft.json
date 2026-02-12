@@ -1,0 +1,87 @@
+{
+  "MII_PR_Patho_Active_Problems_List": {
+    "title": "MII PR Patho Active Problems List",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Patho_Additional_Specified_Grouper": {
+    "title": "MII PR Patho Additional Specified Grouper",
+    "de-DE": "MII PR Patho Additional Specified Grouper",
+    "en-US": "MII PR Patho Additional Specified Grouper"
+  },
+  "MII_PR_Patho_Attached_Image": {
+    "title": "MII PR Patho Attached Image",
+    "de-DE": "MII PR Patho Angefügtes Bild",
+    "en-US": "MII PR Patho Attached Image"
+  },
+  "MII_PR_Patho_Base_Observation": {
+    "title": "MII PR Patho Base Observation",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Patho_Bundle": {
+    "title": "MII PR Patho Bundle",
+    "de-DE": "MII PR Patho Bundle",
+    "en-US": "MII PR Patho Bundle"
+  },
+  "MII_PR_Patho_Composition": {
+    "title": "MII PR Patho Composition",
+    "de-DE": "MII PR Patho Zusammenstellung",
+    "en-US": "MII PR Patho Composition"
+  },
+  "MII_PR_Patho_Diagnostic_Conclusion_Grouper": {
+    "title": "MII PR Patho Diagnostic Conclusion Grouper",
+    "de-DE": "MII PR Patho Diagnostic Conclusion Grouper",
+    "en-US": "MII PR Patho Diagnostic Conclusion Grouper"
+  },
+  "MII_PR_Patho_Finding": {
+    "title": "MII PR Patho Finding",
+    "de-DE": "MII PR Patho Befund",
+    "en-US": "MII PR Patho Finding"
+  },
+  "MII_PR_Patho_History_Of_Present_Illness": {
+    "title": "MII PR Patho History Of Present Illness",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Patho_Intraoperative_Grouper": {
+    "title": "MII PR Patho Intraoperative Grouper",
+    "de-DE": "MII PR Patho Intraoperative Grouper",
+    "en-US": "MII PR Patho Intraoperative Grouper"
+  },
+  "MII_PR_Patho_Macroscopic_Grouper": {
+    "title": "MII PR Patho Macroscopic Grouper",
+    "de-DE": "MII PR Patho Macroscopic Grouper",
+    "en-US": "MII PR Patho Macroscopic Grouper"
+  },
+  "MII_PR_Patho_Microscopic_Grouper": {
+    "title": "MII PR Patho Microscopic Grouper",
+    "de-DE": "MII PR Patho Microscopic Grouper",
+    "en-US": "MII PR Patho Microscopic Grouper"
+  },
+  "MII_PR_Patho_Problem_List_Item": {
+    "title": "MII PR Patho Problem List Item",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Patho_Report": {
+    "title": "MII PR Patho Report",
+    "de-DE": "MII PR Patho Bericht",
+    "en-US": "MII PR Patho Report"
+  },
+  "MII_PR_Patho_Section_Grouper": {
+    "title": "MII PR Patho Section Grouper",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Patho_Service_Request": {
+    "title": "MII PR Patho Service Request",
+    "de-DE": "MII PR Patho Untersuchungsauftrag",
+    "en-US": "MII PR Patho Service Request"
+  },
+  "MII_PR_Patho_Specimen": {
+    "title": "MII PR Patho Specimen",
+    "de-DE": "MII PR Patho Probe",
+    "en-US": "MII PR Patho Specimen"
+  }
+}

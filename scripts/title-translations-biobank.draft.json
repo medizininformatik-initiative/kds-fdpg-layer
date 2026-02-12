@@ -1,0 +1,57 @@
+{
+  "MII_PR_Biobank_Observation_DNA_Konzentration": {
+    "title": "MII PR Biobank Observation DNA Konzentration",
+    "de-DE": "Observation DNA Konzentration",
+    "en-US": "Observation DNA Concentration"
+  },
+  "MII_PR_Biobank_Observation_Karyotyp": {
+    "title": "MII PR Biobank Observation Karyotyp",
+    "de-DE": "Observation Karyotyp",
+    "en-US": "Observation Karyotype"
+  },
+  "MII_PR_Biobank_Observation_Morphologie": {
+    "title": "MII PR Biobank Observation Morphologie",
+    "de-DE": "Observation Morphologie",
+    "en-US": "Observation Morphology"
+  },
+  "MII_PR_Biobank_Observation_Proliferation": {
+    "title": "MII PR Biobank Observation Proliferation",
+    "de-DE": "Observation Proliferation",
+    "en-US": "Observation Proliferation"
+  },
+  "MII_PR_Biobank_Observation_Qualitaetspruefung": {
+    "title": "MII PR Biobank Observation Qualitätsprüfung",
+    "de-DE": "Observation Qualitätsprüfung",
+    "en-US": "Observation Quality Check"
+  },
+  "MII_PR_Biobank_Observation_Wachstumstyp": {
+    "title": "MII PR Biobank Observation Wachstumstyp",
+    "de-DE": "Observation Wachstumstyp",
+    "en-US": "Observation Growth Type"
+  },
+  "MII_PR_Biobank_Organization_Sammlung_Biobank": {
+    "title": "MII PR Biobank Organization Sammlung Biobank",
+    "de-DE": "Organization Sammlung Biobank",
+    "en-US": "Organization Sample Collection Biobank"
+  },
+  "MII_PR_Biobank_Specimen_Bioprobe": {
+    "title": "MII PR Biobank Specimen Bioprobe",
+    "de-DE": "Specimen Bioprobe",
+    "en-US": "Specimen Bioprobe"
+  },
+  "MII_PR_Biobank_Specimen_Bioprobe_Core": {
+    "title": "MII PR Biobank Specimen Bioprobe Core",
+    "de-DE": "Specimen Bioprobe Core",
+    "en-US": "Specimen Bioprobe Core"
+  },
+  "MII_PR_Biobank_Specimen_Zellinie_Organoid": {
+    "title": "MII PR Biobank Specimen Zellinie Organoid",
+    "de-DE": "Specimen Zellinie Organoid",
+    "en-US": "Specimen Cellline Organoid"
+  },
+  "MII_PR_Biobank_Substance_Additiv": {
+    "title": "MII PR Biobank Substance Additiv",
+    "de-DE": "Substance Additiv",
+    "en-US": "Substance Additive"
+  }
+}

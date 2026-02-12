@@ -1,0 +1,17 @@
+{
+  "MII_PR_Labor_Laboranforderung": {
+    "title": "MII PR Labor Laboranforderung",
+    "de-DE": "Laboranforderung",
+    "en-US": "Laboratory order"
+  },
+  "MII_PR_Labor_Laborbefund": {
+    "title": "MII PR Labor Laborbefund",
+    "de-DE": "Laborbefund",
+    "en-US": "Laboratory report"
+  },
+  "MII_PR_Labor_Laboruntersuchung": {
+    "title": "MII PR Labor Laboruntersuchung",
+    "de-DE": "Laboruntersuchung",
+    "en-US": "Laboratory test"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "MII_PR_Studie_Beteiligte_Person": {
+    "de-DE": "Beteiligte Person",
+    "en-US": "Involved Person"
+  },
+  "MII_PR_Studie_Dokument": {
+    "de-DE": "Studiendokument",
+    "en-US": "Study Document"
+  },
+  "MII_PR_Studie_EinAuschlussKriterium": {
+    "de-DE": "Ein-/Ausschlusskriterium",
+    "en-US": "Inclusion/Exclusion Criterion"
+  },
+  "MII_PR_Studie_Proband": {
+    "de-DE": "Proband / Probandin",
+    "en-US": "Research Subject"
+  },
+  "MII_PR_Studie_Register": {
+    "de-DE": "Studienregister",
+    "en-US": "Study Registry"
+  },
+  "MII_PR_Studie_Studie": {
+    "de-DE": "Studie",
+    "en-US": "Research Study"
+  },
+  "MII_PR_Studie_Studieneinschluss_Anfrage": {
+    "de-DE": "Studieneinschluss-Anfrage",
+    "en-US": "Study Enrollment Request"
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "MII_PR_Seltene_Blutgruppe": {
+    "title": "MII PR SE Blutgruppe",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Seltene_Bodymassindex": {
+    "title": "Body Mass Index (BMI) of the patient",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Seltene_ClinicalDiagnosis": {
+    "title": "MII PR SE Clinical Diagnosis",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Seltene_ClinicalImpression": {
+    "title": "MII Profile SE Clinical Impression",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Seltene_Familienanamnese": {
+    "title": "MII PR SE Familienanamnese",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Seltene_GeneticDiagnosis": {
+    "title": "MII PR SE Genetic Diagnosis",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Seltene_HPO_Assessment": {
+    "title": "MII Profile SE HPO Assessment",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Seltene_Hueftumfang": {
+    "title": "MII PR SE Hüftumfang",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Seltene_Kopfumfang": {
+    "title": "MII PR SE Kopfumfang",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Seltene_Studie": {
+    "title": "MII PR SE Studie",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Seltene_Studieneinschluss_Anfrage": {
+    "title": "MII PR SE Studieneinschluss Anfrage",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Seltene_Symptom_Condition": {
+    "title": "MII Profile SE Symptom Condition",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Seltene_Taillenumfang": {
+    "title": "MII PR SE Taillenumfang",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Seltene_TherapieDurchgefuehrt": {
+    "title": "MII PR Seltene Erkrankungen Therapie Durchgeführt",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Seltene_Therapieempfehlung": {
+    "title": "MII PR SE Therapieempfehlung Systemische Therapie",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Seltene_TherapieempfehlungNichtMedikamentoes": {
+    "title": "MII PR SE Therapieempfehlung Nicht-Medikamentös",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Seltene_Therapieempfehlung_Kombination": {
+    "title": "MII PR SE Therapieempfehlung Kombinationstherapie",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Seltene_Therapieplan": {
+    "title": "MII PR SE Therapieplan",
+    "de-DE": "???",
+    "en-US": "???"
+  }
+}

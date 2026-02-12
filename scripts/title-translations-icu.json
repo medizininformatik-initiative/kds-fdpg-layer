@@ -1,0 +1,290 @@
+{
+  "MIIPR_ICU_Zeitverhaeltnis_Ein_Ausatmung": {
+    "de-DE": "Zeitverhältnis Ein-/Ausatmung",
+    "en-US": "Inspiration/Expiration Time Ratio"
+  },
+  "MII_PR_ICU_Arterieller_Blutdruck": {
+    "de-DE": "Arterieller Blutdruck",
+    "en-US": "Arterial Blood Pressure"
+  },
+  "MII_PR_ICU_Arterieller_Druck": {
+    "de-DE": "Arterieller Druck",
+    "en-US": "Arterial Pressure"
+  },
+  "MII_PR_ICU_Atemfrequenz": {
+    "de-DE": "Atemfrequenz",
+    "en-US": "Respiratory Rate"
+  },
+  "MII_PR_ICU_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss": {
+    "de-DE": "Atemwegsdruck bei mittlerem expiratorischem Gasfluss",
+    "en-US": "Airway Pressure at Mean Expiratory Gas Flow"
+  },
+  "MII_PR_ICU_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss": {
+    "de-DE": "Atemwegsdruck bei null expiratorischem Gasfluss",
+    "en-US": "Airway Pressure at Zero Expiratory Gas Flow"
+  },
+  "MII_PR_ICU_Atemzugvolumen_Einstellung": {
+    "de-DE": "Atemzugvolumen - Einstellung",
+    "en-US": "Tidal Volume - Setting"
+  },
+  "MII_PR_ICU_Atemzugvolumen_Waehrend_Beatmung": {
+    "de-DE": "Atemzugvolumen während Beatmung",
+    "en-US": "Tidal Volume During Mechanical Ventilation"
+  },
+  "MII_PR_ICU_Beatmung": {
+    "de-DE": "Beatmung",
+    "en-US": "Mechanical Ventilation"
+  },
+  "MII_PR_ICU_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung": {
+    "de-DE": "Beatmungsvolumen pro Minute maschineller Beatmung",
+    "en-US": "Minute Ventilation During Mechanical Ventilation"
+  },
+  "MII_PR_ICU_Beatmungszeit_Hohem_Druck": {
+    "de-DE": "Beatmungszeit bei hohem Druck",
+    "en-US": "Ventilation Time at High Pressure"
+  },
+  "MII_PR_ICU_Beatmungszeit_Niedrigem_Druck": {
+    "de-DE": "Beatmungszeit bei niedrigem Druck",
+    "en-US": "Ventilation Time at Low Pressure"
+  },
+  "MII_PR_ICU_Bilanz": {
+    "de-DE": "Bilanz",
+    "en-US": "Fluid Balance"
+  },
+  "MII_PR_ICU_Bilanz_Abnahme_Haemofiltration_Einzelmesswerte": {
+    "de-DE": "Bilanz - Abnahme Hämofiltration (Einzelmesswerte)",
+    "en-US": "Fluid Balance - Hemofiltration Removal (Individual Measurements)"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch": {
+    "de-DE": "Bilanz - Ausfuhr Drainage (generisch)",
+    "en-US": "Fluid Balance - Drainage Output (Generic)"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt": {
+    "de-DE": "Bilanz - Ausfuhr Flüssigkeit gesamt",
+    "en-US": "Fluid Balance - Total Fluid Output"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit": {
+    "de-DE": "Bilanz - Ausfuhr Gallenflüssigkeit",
+    "en-US": "Fluid Balance - Bile Output"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Gallengang": {
+    "de-DE": "Bilanz - Ausfuhr Gallengang",
+    "en-US": "Fluid Balance - Bile Duct Output"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Magensonde": {
+    "de-DE": "Bilanz - Ausfuhr Magensonde",
+    "en-US": "Fluid Balance - Nasogastric Tube Output"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Opdrainage": {
+    "de-DE": "Bilanz - Ausfuhr OP-Drainage",
+    "en-US": "Fluid Balance - Surgical Drainage Output"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage": {
+    "de-DE": "Bilanz - Ausfuhr Pankreasdrainage",
+    "en-US": "Fluid Balance - Pancreatic Drainage Output"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Stuhlgang": {
+    "de-DE": "Bilanz - Ausfuhr Stuhlgang",
+    "en-US": "Fluid Balance - Stool Output"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Urin": {
+    "de-DE": "Bilanz - Ausfuhr Urin",
+    "en-US": "Fluid Balance - Urine Output"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage": {
+    "de-DE": "Bilanz - Ausfuhr Wunddrainage",
+    "en-US": "Fluid Balance - Wound Drainage Output"
+  },
+  "MII_PR_ICU_Bilanz_Blutverlust": {
+    "de-DE": "Bilanz - Blutverlust",
+    "en-US": "Fluid Balance - Blood Loss"
+  },
+  "MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit": {
+    "de-DE": "Bilanz - Einfuhr enterale Flüssigkeit",
+    "en-US": "Fluid Balance - Enteral Fluid Intake"
+  },
+  "MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt": {
+    "de-DE": "Bilanz - Einfuhr Flüssigkeit gesamt",
+    "en-US": "Fluid Balance - Total Fluid Intake"
+  },
+  "MII_PR_ICU_Bilanz_Einfuhr_Oraler_Fluessigkeit": {
+    "de-DE": "Bilanz - Einfuhr oraler Flüssigkeit",
+    "en-US": "Fluid Balance - Oral Fluid Intake"
+  },
+  "MII_PR_ICU_Bilanz_Gesamte_Ausfuhr": {
+    "de-DE": "Bilanz - Gesamte Ausfuhr",
+    "en-US": "Fluid Balance - Total Output"
+  },
+  "MII_PR_ICU_Bilanz_Gesamte_Einfuhr": {
+    "de-DE": "Bilanz - Gesamte Einfuhr",
+    "en-US": "Fluid Balance - Total Intake"
+  },
+  "MII_PR_ICU_Bilanz_Gesamte_Tages_Bilanz": {
+    "de-DE": "Bilanz - Gesamte Tagesbilanz",
+    "en-US": "Fluid Balance - Total Daily Balance"
+  },
+  "MII_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet": {
+    "de-DE": "Blutfluss - Kardiovaskuläres Gerät",
+    "en-US": "Blood Flow - Cardiovascular Device"
+  },
+  "MII_PR_ICU_Blutfluss_Extrakorporaler_Gasaustausch": {
+    "de-DE": "Blutfluss - Extrakorporaler Gasaustausch",
+    "en-US": "Blood Flow - Extracorporeal Gas Exchange"
+  },
+  "MII_PR_ICU_Blutflussindex_Extrakorporaler_Gasaustausch": {
+    "de-DE": "Blutflussindex - Extrakorporaler Gasaustausch",
+    "en-US": "Blood Flow Index - Extracorporeal Gas Exchange"
+  },
+  "MII_PR_ICU_Dauer_Extrakorporaler_Gasaustausch": {
+    "de-DE": "Dauer extrakorporaler Gasaustausch",
+    "en-US": "Duration of Extracorporeal Gas Exchange"
+  },
+  "MII_PR_ICU_Dauer_Haemodialysesitzung": {
+    "de-DE": "Dauer der Hämodialysesitzung",
+    "en-US": "Duration of Hemodialysis Session"
+  },
+  "MII_PR_ICU_Device": {
+    "de-DE": "Gerät",
+    "en-US": "Device"
+  },
+  "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung": {
+    "de-DE": "Gerätemetrik - Eingestellte/gemessene Parameter Beatmung",
+    "en-US": "Device Metric - Set/Measured Ventilation Parameters"
+  },
+  "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren": {
+    "de-DE": "Gerätemetrik - Eingestellte/gemessene Parameter extrakorporale Verfahren",
+    "en-US": "Device Metric - Set/Measured Extracorporeal Procedure Parameters"
+  },
+  "MII_PR_ICU_Druckdifferenz_Beatmung": {
+    "de-DE": "Druckdifferenz Beatmung",
+    "en-US": "Ventilation Pressure Difference (Driving Pressure)"
+  },
+  "MII_PR_ICU_Dynamische_Kompliance": {
+    "de-DE": "Dynamische Compliance",
+    "en-US": "Dynamic Compliance"
+  },
+  "MII_PR_ICU_Eingestellter_Inspiratorischer_Gasfluss": {
+    "de-DE": "Eingestellter inspiratorischer Gasfluss",
+    "en-US": "Set Inspiratory Gas Flow"
+  },
+  "MII_PR_ICU_Einstellung_Ausatmungszeit_Beatmung": {
+    "de-DE": "Einstellung Ausatmungszeit Beatmung",
+    "en-US": "Expiratory Time Setting (Ventilation)"
+  },
+  "MII_PR_ICU_Einstellung_Einatmungszeit_Beatmung": {
+    "de-DE": "Einstellung Einatmungszeit Beatmung",
+    "en-US": "Inspiratory Time Setting (Ventilation)"
+  },
+  "MII_PR_ICU_Endexpiratorischer_Kohlendioxidpartialdruck": {
+    "de-DE": "Endexpiratorischer Kohlendioxidpartialdruck",
+    "en-US": "End-Tidal Carbon Dioxide Partial Pressure (etCO2)"
+  },
+  "MII_PR_ICU_Exspiratorischer_Gasfluss": {
+    "de-DE": "Exspiratorischer Gasfluss",
+    "en-US": "Expiratory Gas Flow"
+  },
+  "MII_PR_ICU_Exspiratorischer_Sauerstoffpartialdruck": {
+    "de-DE": "Exspiratorischer Sauerstoffpartialdruck",
+    "en-US": "Expiratory Oxygen Partial Pressure"
+  },
+  "MII_PR_ICU_Extrakorporales_Verfahren": {
+    "de-DE": "Extrakorporales Verfahren",
+    "en-US": "Extracorporeal Procedure"
+  },
+  "MII_PR_ICU_Gasfluss": {
+    "de-DE": "Gasfluss",
+    "en-US": "Gas Flow"
+  },
+  "MII_PR_ICU_Haemodialyse_Blutfluss": {
+    "de-DE": "Hämodialyse - Blutfluss",
+    "en-US": "Hemodialysis - Blood Flow"
+  },
+  "MII_PR_ICU_Herzfrequenz": {
+    "de-DE": "Herzfrequenz",
+    "en-US": "Heart Rate"
+  },
+  "MII_PR_ICU_Horowitz_In_Arteriellem_Blut": {
+    "de-DE": "Horowitz-Index in arteriellem Blut",
+    "en-US": "Horowitz Index (P/F Ratio) in Arterial Blood"
+  },
+  "MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen": {
+    "de-DE": "Inspiratorische Sauerstofffraktion (gemessen)",
+    "en-US": "Fraction of Inspired Oxygen - Measured (FiO2)"
+  },
+  "MII_PR_ICU_Inspiratorischer_Gasfluss": {
+    "de-DE": "Inspiratorischer Gasfluss",
+    "en-US": "Inspiratory Gas Flow"
+  },
+  "MII_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren": {
+    "de-DE": "Ionisiertes Kalzium - Nierenersatzverfahren",
+    "en-US": "Ionized Calcium - Renal Replacement Therapy"
+  },
+  "MII_PR_ICU_Koerpergewicht": {
+    "de-DE": "Körpergewicht",
+    "en-US": "Body Weight"
+  },
+  "MII_PR_ICU_Koerpergroesse": {
+    "de-DE": "Körpergröße",
+    "en-US": "Body Height"
+  },
+  "MII_PR_ICU_Kopfumfang": {
+    "de-DE": "Kopfumfang",
+    "en-US": "Head Circumference"
+  },
+  "MII_PR_ICU_Maximaler_Beatmungsdruck": {
+    "de-DE": "Maximaler Beatmungsdruck",
+    "en-US": "Peak Ventilation Pressure"
+  },
+  "MII_PR_ICU_Mechanische_Atemfrequenz_Beatmet": {
+    "de-DE": "Mechanische Atemfrequenz (beatmet)",
+    "en-US": "Mechanical Respiratory Rate (Ventilated)"
+  },
+  "MII_PR_ICU_Mittlerer_Beatmungsdruck": {
+    "de-DE": "Mittlerer Beatmungsdruck",
+    "en-US": "Mean Ventilation Pressure"
+  },
+  "MII_PR_ICU_Parameter_Von_Beatmung": {
+    "de-DE": "Parameter von Beatmung",
+    "en-US": "Ventilation Parameters"
+  },
+  "MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren": {
+    "de-DE": "Parameter von extrakorporalen Verfahren",
+    "en-US": "Extracorporeal Procedure Parameters"
+  },
+  "MII_PR_ICU_Positiv_Endexpiratorischer_Druck": {
+    "de-DE": "Positiv-endexpiratorischer Druck (PEEP)",
+    "en-US": "Positive End-Expiratory Pressure (PEEP)"
+  },
+  "MII_PR_ICU_Spontane_Atemfrequenz_Beatmet": {
+    "de-DE": "Spontane Atemfrequenz (beatmet)",
+    "en-US": "Spontaneous Respiratory Rate (Ventilated)"
+  },
+  "MII_PR_ICU_Spontane_Mechanische_Atemfrequenz_Beatmet": {
+    "de-DE": "Spontane + mechanische Atemfrequenz (beatmet)",
+    "en-US": "Spontaneous Plus Mechanical Respiratory Rate (Ventilated)"
+  },
+  "MII_PR_ICU_Spontanes_Atemzugvolumen": {
+    "de-DE": "Spontanes Atemzugvolumen",
+    "en-US": "Spontaneous Tidal Volume"
+  },
+  "MII_PR_ICU_Spontanes_Plus_Mechanisches_Atemzugvolumen": {
+    "de-DE": "Spontanes + mechanisches Atemzugvolumen",
+    "en-US": "Spontaneous Plus Mechanical Tidal Volume"
+  },
+  "MII_PR_ICU_Substituatfluss": {
+    "de-DE": "Substituatfluss",
+    "en-US": "Substitution Fluid Flow Rate"
+  },
+  "MII_PR_ICU_Substituatvolumen": {
+    "de-DE": "Substituatvolumen",
+    "en-US": "Substitution Fluid Volume"
+  },
+  "MII_PR_ICU_Unterstuezungsdruck_Beatmung": {
+    "de-DE": "Unterstützungsdruck Beatmung",
+    "en-US": "Pressure Support (Ventilation)"
+  },
+  "MII_PR_ICU_Venoeser_Druck": {
+    "de-DE": "Venöser Druck",
+    "en-US": "Venous Pressure"
+  }
+}

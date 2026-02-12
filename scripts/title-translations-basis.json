@@ -1,0 +1,30 @@
+{
+  "MII_PR_Diagnose_Condition": {
+    "de-DE": "Diagnose",
+    "en-US": "Diagnosis"
+  },
+  "MII_PR_Fall_KontaktGesundheitseinrichtung": {
+    "de-DE": "Fall - Kontakt mit einer Gesundheitseinrichtung",
+    "en-US": "Treatment case - Encounter with Health Care Facility"
+  },
+  "MII_PR_Person_Patient": {
+    "de-DE": "Patient / Patientin",
+    "en-US": "Patient"
+  },
+  "MII_PR_Person_PatientPseudonymisiert": {
+    "de-DE": "Patient / Patientin pseudonymisiert",
+    "en-US": "Patient pseudonymized"
+  },
+  "MII_PR_Person_Todesursache": {
+    "de-DE": "Todesursache",
+    "en-US": "Cause of Death"
+  },
+  "MII_PR_Person_Vitalstatus": {
+    "de-DE": "Vitalstatus",
+    "en-US": "Vital status"
+  },
+  "MII_PR_Prozedur_Procedure": {
+    "de-DE": "Prozedur",
+    "en-US": "Procedure"
+  }
+}

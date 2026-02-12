@@ -1,0 +1,14 @@
+{
+  "MII_PR_Consent_DocumentReference": {
+    "de-DE": "Einwilligungsdokument",
+    "en-US": "Consent document reference"
+  },
+  "MII_PR_Consent_Einwilligung": {
+    "de-DE": "Einwilligung",
+    "en-US": "Consent"
+  },
+  "MII_PR_Consent_Provenance": {
+    "de-DE": "Einwilligungsherkunft",
+    "en-US": "Consent provenance"
+  }
+}

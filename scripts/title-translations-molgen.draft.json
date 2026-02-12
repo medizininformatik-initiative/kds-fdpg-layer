@@ -1,0 +1,82 @@
+{
+  "MII_PR_MolGen_AnforderungGenetischerTest": {
+    "title": "MII PR MolGen Anforderung genetischer Test",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_MolGen_DiagnostischeImplikation": {
+    "title": "MII PR MolGen Diagnostische Implikation",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_MolGen_EmpfohleneFolgemassnahme": {
+    "title": "MII PR MolGen Empfohlene Folgemaßnahme",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_MolGen_Familienanamnese": {
+    "title": "MII PR MolGen Familienanamnese",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_MolGen_GenomicStudy": {
+    "title": "MII PR MolGen Genomic Study",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_MolGen_GenomicStudyAnalysis": {
+    "title": "MII PR MolGen Genomic Study Analysis",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_MolGen_Genotyp": {
+    "title": "MII PR MolGen Genotyp",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_MolGen_Medikationsempfehlung": {
+    "title": "MII PR MolGen Medikationsempfehlung",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_MolGen_Mikrosatelliteninstabilitaet": {
+    "title": "MII PR MolGen Mikrosatelliteninstabilität",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_MolGen_MolekulareKonsequenz": {
+    "title": "MII PR MolGen Molekulare Konsequenz",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_MolGen_MolekularerBiomarker": {
+    "title": "MII PR MolGen Molekulare Biomarker",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_MolGen_MolekulargenetischerBefundbericht": {
+    "title": "MII PR MolGen Molekulargenetischer Befundbericht",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_MolGen_Mutationslast": {
+    "title": "MII PR MolGen Mutationslast",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_MolGen_PolygenerRisikoScore": {
+    "title": "MII PR MolGen Polygener Risiko Score",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_MolGen_TherapeutischeImplikation": {
+    "title": "MII PR MolGen Therapeutische Implikation",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_MolGen_Variante": {
+    "title": "MII PR MolGen Variante",
+    "de-DE": "???",
+    "en-US": "???"
+  }
+}

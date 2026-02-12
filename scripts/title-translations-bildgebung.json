@@ -1,0 +1,46 @@
+{
+  "MII_PR_Bildgebung_Anforderung_Bildgebung": {
+    "de-DE": "Anforderung Bildgebung",
+    "en-US": "radiological service request"
+  },
+  "MII_PR_Bildgebung_Behandlungsempfehlung": {
+    "de-DE": "Behandlungsempfehlung",
+    "en-US": "care plan"
+  },
+  "MII_PR_Bildgebung_Bildgebungsprozedur": {
+    "de-DE": "Bildgebungsprozedur",
+    "en-US": "imaging procedure"
+  },
+  "MII_PR_Bildgebung_Bildgebungsstudie": {
+    "de-DE": "Bildgebungsstudie",
+    "en-US": "imaging study"
+  },
+  "MII_PR_Bildgebung_Geraet": {
+    "de-DE": "Bildgebungsgerät",
+    "en-US": "imaging device"
+  },
+  "MII_PR_Bildgebung_Koerperstruktur": {
+    "de-DE": "Körperstrukutur",
+    "en-US": "body structure"
+  },
+  "MII_PR_Bildgebung_Kontrastmittelgabe": {
+    "de-DE": "Kontrastmittelgabe",
+    "en-US": "contrast medication administration"
+  },
+  "MII_PR_Bildgebung_Radiologische_Befundungsprozedur": {
+    "de-DE": "radiologische Befundungsprozedur",
+    "en-US": "radiological read-procedure"
+  },
+  "MII_PR_Bildgebung_Radiologische_Beobachtung": {
+    "de-DE": "radiologische Beobachtung",
+    "en-US": "radiological observation"
+  },
+  "MII_PR_Bildgebung_Radiologischer_Befund": {
+    "de-DE": "Befundbericht",
+    "en-US": "diagnostic report"
+  },
+  "MII_PR_Bildgebung_Semistrukt_Befundbericht": {
+    "de-DE": "Befundbericht semistrukturiert",
+    "en-US": "composition"
+  }
+}

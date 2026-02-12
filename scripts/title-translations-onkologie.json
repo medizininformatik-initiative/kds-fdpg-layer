@@ -1,0 +1,294 @@
+{
+  "MII_PR_Onko_Allgemeiner_Leistungszustand_ECOG": {
+    "de-DE": "Allgemeiner Leistungszustand nach ECOG",
+    "en-US": "General Performance Status (ECOG)"
+  },
+  "MII_PR_Onko_Allgemeiner_Leistungszustand_Karnofsky": {
+    "de-DE": "Allgemeiner Leistungszustand nach Karnofsky",
+    "en-US": "General Performance Status (Karnofsky)"
+  },
+  "MII_PR_Onko_Anzahl_Befallene_Lymphknoten": {
+    "de-DE": "Anzahl der befallenen Lymphknoten",
+    "en-US": "Number of Involved Lymph Nodes"
+  },
+  "MII_PR_Onko_Anzahl_Befallene_Sentinel_Lymphknoten": {
+    "de-DE": "Anzahl der befallenen Sentinel-Lymphknoten",
+    "en-US": "Number of Involved Sentinel Lymph Nodes"
+  },
+  "MII_PR_Onko_Anzahl_Untersuchte_Lymphknoten": {
+    "de-DE": "Anzahl der untersuchten Lymphknoten",
+    "en-US": "Number of Examined Lymph Nodes"
+  },
+  "MII_PR_Onko_Anzahl_Untersuchte_Sentinel_Lymphknoten": {
+    "de-DE": "Anzahl der untersuchten Sentinel-Lymphknoten",
+    "en-US": "Number of Examined Sentinel Lymph Nodes"
+  },
+  "MII_PR_Onko_ASA_Klassifikation": {
+    "de-DE": "ASA-Klassifikation",
+    "en-US": "ASA Classification"
+  },
+  "MII_PR_Onko_Befund": {
+    "de-DE": "Onkologischer Befund",
+    "en-US": "Oncology Finding"
+  },
+  "MII_PR_Onko_Diagnose_Primaertumor": {
+    "de-DE": "Onkologische Diagnose Primärtumor",
+    "en-US": "Oncology Diagnosis Primary Tumor"
+  },
+  "MII_PR_Onko_Fernmetastasen": {
+    "de-DE": "Fernmetastasen",
+    "en-US": "Distant Metastases"
+  },
+  "MII_PR_Onko_Fruehere_Tumorerkrankung": {
+    "de-DE": "Frühere Tumorerkrankung",
+    "en-US": "Previous Tumor Disease"
+  },
+  "MII_PR_Onko_Genetische_Variante": {
+    "de-DE": "Genetische Variante",
+    "en-US": "Genetic Variant"
+  },
+  "MII_PR_Onko_Grading": {
+    "de-DE": "Grading",
+    "en-US": "Grading"
+  },
+  "MII_PR_Onko_Histologie_ICDO3": {
+    "de-DE": "Histologie nach ICD-O-3",
+    "en-US": "Histology (ICD-O-3)"
+  },
+  "MII_PR_Onko_KRK_Abstand_Aboral": {
+    "de-DE": "Abstand zum aboralen Resektionsrand",
+    "en-US": "Distance to Aboral Resection Margin"
+  },
+  "MII_PR_Onko_KRK_Abstand_Anokutan": {
+    "de-DE": "Abstand zur anokutanen Grenze",
+    "en-US": "Distance to Anocutaneous Line"
+  },
+  "MII_PR_Onko_KRK_Abstand_Circumferelle_Resektionsebene": {
+    "de-DE": "Abstand zur circumferellen Resektionsebene",
+    "en-US": "Distance to Circumferential Resection Margin"
+  },
+  "MII_PR_Onko_KRK_Anastomoseninsuffizienz": {
+    "de-DE": "KRK Anastomoseninsuffizienz",
+    "en-US": "Colorectal Anastomotic Leakage"
+  },
+  "MII_PR_Onko_KRK_MRT_Mesorektale_Faszie": {
+    "de-DE": "KRK MRT/CT Abstand mesorektale Faszie",
+    "en-US": "Colorectal MRI/CT Distance to Mesorectal Fascia"
+  },
+  "MII_PR_Onko_KRK_Operation": {
+    "de-DE": "KRK Operation",
+    "en-US": "Colorectal Surgery"
+  },
+  "MII_PR_Onko_KRK_Specimen": {
+    "de-DE": "KRK Probe",
+    "en-US": "Colorectal Specimen"
+  },
+  "MII_PR_Onko_KRK_Stoma_Markierung": {
+    "de-DE": "KRK Stoma-Markierung",
+    "en-US": "Colorectal Stoma Marking"
+  },
+  "MII_PR_Onko_Liste_Evidenz_Erstdiagnose": {
+    "de-DE": "Evidenz für Erstdiagnose",
+    "en-US": "Evidence for Initial Diagnosis"
+  },
+  "MII_PR_Onko_Mamma_Her2neu_Status": {
+    "de-DE": "HER2/neu-Status",
+    "en-US": "HER2/neu Status"
+  },
+  "MII_PR_Onko_Mamma_Menopausenstatus": {
+    "de-DE": "Menopausenstatus",
+    "en-US": "Menopausal Status"
+  },
+  "MII_PR_Onko_Mamma_Operation": {
+    "de-DE": "Mamma-Operation",
+    "en-US": "Breast Surgery"
+  },
+  "MII_PR_Onko_Mamma_Praeoperative_Markierung": {
+    "de-DE": "Präoperative Markierung Mamma",
+    "en-US": "Preoperative Breast Marking"
+  },
+  "MII_PR_Onko_Mamma_Rezeptorstatus_Estrogen": {
+    "de-DE": "Rezeptorstatus Östrogen",
+    "en-US": "Estrogen Receptor Status"
+  },
+  "MII_PR_Onko_Mamma_Rezeptorstatus_Progesteron": {
+    "de-DE": "Rezeptorstatus Progesteron",
+    "en-US": "Progesterone Receptor Status"
+  },
+  "MII_PR_Onko_Mamma_Sozialdienst": {
+    "de-DE": "Sozialdienst Mamma",
+    "en-US": "Social Services Breast"
+  },
+  "MII_PR_Onko_Melanom_Breslow_Tiefe": {
+    "de-DE": "Melanom Breslow-Dicke",
+    "en-US": "Melanoma Breslow Thickness"
+  },
+  "MII_PR_Onko_Melanom_Exzision": {
+    "de-DE": "Melanom Exzision",
+    "en-US": "Melanoma Excision"
+  },
+  "MII_PR_Onko_Melanom_LDH": {
+    "de-DE": "Melanom LDH-Wert",
+    "en-US": "Melanoma LDH Value"
+  },
+  "MII_PR_Onko_Melanom_Sicherheitsabstand": {
+    "de-DE": "Melanom Sicherheitsabstand",
+    "en-US": "Melanoma Safety Margin"
+  },
+  "MII_PR_Onko_Melanom_Ulzeration": {
+    "de-DE": "Melanom Ulzeration",
+    "en-US": "Melanoma Ulceration"
+  },
+  "MII_PR_Onko_Nebenwirkung_Adverse_Event": {
+    "de-DE": "Nebenwirkung von Strahlentherapie und systemischer Therapie",
+    "en-US": "Adverse Event of Radiation and Systemic Therapy"
+  },
+  "MII_PR_Onko_Operation": {
+    "de-DE": "Onkologische Operation",
+    "en-US": "Oncology Surgery"
+  },
+  "MII_PR_Onko_Prostata_Operation": {
+    "de-DE": "Prostata-Operation",
+    "en-US": "Prostate Surgery"
+  },
+  "MII_PR_Onko_Prostata_Anzahl_Positive_Stanzen": {
+    "de-DE": "Prostata Anzahl positiver Stanzen",
+    "en-US": "Prostate Number of Positive Cores"
+  },
+  "MII_PR_Onko_Prostata_Anzahl_Stanzen": {
+    "de-DE": "Prostata Anzahl Stanzen",
+    "en-US": "Prostate Number of Cores"
+  },
+  "MII_PR_Onko_Prostata_CA_Befall_Stanze": {
+    "de-DE": "Ca-Befall in Stanze",
+    "en-US": "Carcinoma Involvement in Core"
+  },
+  "MII_PR_Onko_Prostata_Clavien_Dindo": {
+    "de-DE": "Clavien-Dindo-Klassifikation",
+    "en-US": "Clavien-Dindo Classification"
+  },
+  "MII_PR_Onko_Prostata_Gleason_Grade_Group": {
+    "de-DE": "Prostata Gleason Grade Group",
+    "en-US": "Prostate Gleason Grade Group"
+  },
+  "MII_PR_Onko_Prostata_Gleason_Pattern": {
+    "de-DE": "Prostata Gleason-Muster",
+    "en-US": "Prostate Gleason Patterns"
+  },
+  "MII_PR_Onko_Prostata_PSA": {
+    "de-DE": "PSA-Wert",
+    "en-US": "PSA Value"
+  },
+  "MII_PR_Onko_Residualstatus": {
+    "de-DE": "Residualstatus",
+    "en-US": "Residual Status"
+  },
+  "MII_PR_Onko_Specimen": {
+    "de-DE": "Onkologische Probe",
+    "en-US": "Oncology Specimen"
+  },
+  "MII_PR_Onko_Strahlentherapie_Bestrahlung_Nuklearmedizin": {
+    "de-DE": "Strahlentherapie Bestrahlung Nuklearmedizin",
+    "en-US": "Radiation Therapy Nuclear Medicine"
+  },
+  "MII_PR_Onko_Strahlentherapie_Bestrahlung_Strahlentherapie": {
+    "de-DE": "Strahlentherapie Bestrahlung",
+    "en-US": "Radiation Therapy Irradiation"
+  },
+  "MII_PR_Onko_Strahlentherapie": {
+    "de-DE": "Strahlentherapie",
+    "en-US": "Radiation Therapy"
+  },
+  "MII_PR_Onko_Studienteilnahme": {
+    "de-DE": "Studienteilnahme",
+    "en-US": "Study Participation"
+  },
+  "MII_PR_Onko_Systemische_Therapie_Medikation": {
+    "de-DE": "Systemische Therapie Medikation",
+    "en-US": "Systemic Therapy Medication"
+  },
+  "MII_PR_Onko_Systemische_Therapie": {
+    "de-DE": "Systemische Therapie",
+    "en-US": "Systemic Therapy"
+  },
+  "MII_PR_Onko_Therapieempfehlung_Kombinationstherapie": {
+    "de-DE": "Therapieempfehlung Kombinationstherapie",
+    "en-US": "Therapy Recommendation Combination Therapy"
+  },
+  "MII_PR_Onko_Therapieempfehlung_Medikation": {
+    "de-DE": "Therapieempfehlung Medikation",
+    "en-US": "Therapy Recommendation Medication"
+  },
+  "MII_PR_Onko_Therapieempfehlung_Operation": {
+    "de-DE": "Therapieempfehlung Operation",
+    "en-US": "Therapy Recommendation Surgery"
+  },
+  "MII_PR_Onko_TNM_a_Symbol": {
+    "de-DE": "TNM a-Symbol",
+    "en-US": "TNM a-Symbol"
+  },
+  "MII_PR_Onko_TNM_Klassifikation": {
+    "de-DE": "TNM-Klassifikation",
+    "en-US": "TNM Classification"
+  },
+  "MII_PR_Onko_TNM_L_Kategorie": {
+    "de-DE": "TNM L-Kategorie",
+    "en-US": "TNM L-Category"
+  },
+  "MII_PR_Onko_TNM_M_Kategorie": {
+    "de-DE": "TNM M-Kategorie",
+    "en-US": "TNM M-Category"
+  },
+  "MII_PR_Onko_TNM_m_Symbol": {
+    "de-DE": "TNM m-Symbol",
+    "en-US": "TNM m-Symbol"
+  },
+  "MII_PR_Onko_TNM_N_Kategorie": {
+    "de-DE": "TNM N-Kategorie",
+    "en-US": "TNM N-Category"
+  },
+  "MII_PR_Onko_TNM_Pn_Kategorie": {
+    "de-DE": "TNM Pn-Kategorie",
+    "en-US": "TNM Pn-Category"
+  },
+  "MII_PR_Onko_TNM_r_Symbol": {
+    "de-DE": "TNM r-Symbol",
+    "en-US": "TNM r-Symbol"
+  },
+  "MII_PR_Onko_TNM_S_Kategorie": {
+    "de-DE": "TNM S-Kategorie",
+    "en-US": "TNM S-Category"
+  },
+  "MII_PR_Onko_TNM_T_Kategorie": {
+    "de-DE": "TNM T-Kategorie",
+    "en-US": "TNM T-Category"
+  },
+  "MII_PR_Onko_TNM_V_Kategorie": {
+    "de-DE": "TNM V-Kategorie",
+    "en-US": "TNM V-Category"
+  },
+  "MII_PR_Onko_TNM_y_Symbol": {
+    "de-DE": "TNM y-Symbol",
+    "en-US": "TNM y-Symbol"
+  },
+  "MII_PR_Onko_Tod": {
+    "de-DE": "Tod bei onkologischer Erkrankung",
+    "en-US": "Death in Oncological Disease"
+  },
+  "MII_PR_Onko_Tumorgroesse": {
+    "de-DE": "Tumorgröße",
+    "en-US": "Tumor Size"
+  },
+  "MII_PR_Onko_Tumorkonferenz": {
+    "de-DE": "Tumorkonferenz",
+    "en-US": "Tumor Board"
+  },
+  "MII_PR_Onko_Verlauf": {
+    "de-DE": "Onkologischer Verlauf",
+    "en-US": "Oncology Disease Course"
+  },
+  "MII_PR_Onko_Weitere_Klassifikationen": {
+    "de-DE": "Weitere Klassifikationen",
+    "en-US": "Additional Classifications"
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "MIIPR_ICU_Zeitverhaeltnis_Ein_Ausatmung": {
+    "title": "MII PR ICU Zeitverhaeltnis Ein Ausatmung",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Arterieller_Blutdruck": {
+    "title": "MII PR ICU Arterieller Blutdruck",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Arterieller_Druck": {
+    "title": "MII PR ICU Arterieller Druck",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Atemfrequenz": {
+    "title": "MII PR ICU Atemfrequenz",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss": {
+    "title": "MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss": {
+    "title": "MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Atemzugvolumen_Einstellung": {
+    "title": "MII PR ICU Atemzugvolumen Einstellung",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Atemzugvolumen_Waehrend_Beatmung": {
+    "title": "MII PR ICU Atemzugvolumen Waehrend Beatmung",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Beatmung": {
+    "title": "MII PR ICU Beatmung",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung": {
+    "title": "MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Beatmungszeit_Hohem_Druck": {
+    "title": "MII ICU Beatmungszeit Hohem Druck",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Beatmungszeit_Niedrigem_Druck": {
+    "title": "MII PR ICU Beatmungszeit Niedrigem Druck",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz": {
+    "title": "MII PR ICU Bilanz",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Abnahme_Haemofiltration_Einzelmesswerte": {
+    "title": "MII PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch": {
+    "title": "MII PR ICU Bilanz Ausfuhr Drainage Generisch",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt": {
+    "title": "MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit": {
+    "title": "MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Gallengang": {
+    "title": "MII PR ICU Bilanz Ausfuhr Gallengang",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Magensonde": {
+    "title": "MII PR ICU Bilanz Ausfuhr Magensonde",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Opdrainage": {
+    "title": "MII PR ICU Bilanz Ausfuhr Opdrainage",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage": {
+    "title": "MII PR ICU Bilanz Ausfuhr Pankreasdrainage",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Stuhlgang": {
+    "title": "MII PR ICU Bilanz Ausfuhr Stuhlgang",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Urin": {
+    "title": "MII PR ICU Bilanz Ausfuhr Urin",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage": {
+    "title": "MII PR ICU Bilanz Ausfuhr Wunddrainage",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Blutverlust": {
+    "title": "MII PR ICU Bilanz Blutverlust",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit": {
+    "title": "MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt": {
+    "title": "MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Einfuhr_Oraler_Fluessigkeit": {
+    "title": "MII PR ICU Bilanz Einfuhr Oraler Fluessigkeit",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Gesamte_Ausfuhr": {
+    "title": "MII PR ICU Bilanz Gesamte Ausfuhr",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Gesamte_Einfuhr": {
+    "title": "MII PR ICU Bilanz Gesamte Einfuhr",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Bilanz_Gesamte_Tages_Bilanz": {
+    "title": "MII PR ICU Bilanz Gesamte Tages Bilanz",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet": {
+    "title": "MII PR ICU Blutfluss Cardiovasculaeres Geraet",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Blutfluss_Extrakorporaler_Gasaustausch": {
+    "title": "MII PR ICU Blutfluss Extrakorporaler Gasaustausch",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Blutflussindex_Extrakorporaler_Gasaustausch": {
+    "title": "MII PR ICU Blutflussindex Extrakorporaler Gasaustausch",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Dauer_Extrakorporaler_Gasaustausch": {
+    "title": "MII PR ICU Dauer Extrakorporaler Gasaustausch",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Dauer_Haemodialysesitzung": {
+    "title": "MII ICU Dauer Haemodialysesitzung",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Device": {
+    "title": "MII PR ICU Device",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung": {
+    "title": "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren": {
+    "title": "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Druckdifferenz_Beatmung": {
+    "title": "MII PR ICU Druckdifferenz Beatmung",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Dynamische_Kompliance": {
+    "title": "MII PR ICU Dynamische Kompliance",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Eingestellter_Inspiratorischer_Gasfluss": {
+    "title": "MII PR ICU Eingestellter Inspiratorischer Gasfluss",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Einstellung_Ausatmungszeit_Beatmung": {
+    "title": "MII PR ICU Einstellung Ausatmungszeit Beatmung",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Einstellung_Einatmungszeit_Beatmung": {
+    "title": "MII PR ICU Einstellung Einatmungszeit Beatmung",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Endexpiratorischer_Kohlendioxidpartialdruck": {
+    "title": "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Exspiratorischer_Gasfluss": {
+    "title": "MII PR ICU Exspiratorischer Gasfluss",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Exspiratorischer_Sauerstoffpartialdruck": {
+    "title": "MII PR ICU Exspiratorischer Sauerstoffpartialdruck",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Extrakorporales_Verfahren": {
+    "title": "MII PR ICU Extrakorporales Verfahren",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Gasfluss": {
+    "title": "MII PR ICU Gasfluss",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Haemodialyse_Blutfluss": {
+    "title": "MII PR ICU Haemodialyse Blutfluss",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Herzfrequenz": {
+    "title": "MII SD ICU Herzfrequenz",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Horowitz_In_Arteriellem_Blut": {
+    "title": "MII PR ICU Horowitz In Arteriellem Blut",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen": {
+    "title": "MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Inspiratorischer_Gasfluss": {
+    "title": "MII PR ICU Inspiratorischer Gasfluss",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren": {
+    "title": "MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Koerpergewicht": {
+    "title": "MII PR ICU Koerpergewicht",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Koerpergroesse": {
+    "title": "MII PR ICU Koerpergroesse",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Kopfumfang": {
+    "title": "MII PR ICU Kopfumfang",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Maximaler_Beatmungsdruck": {
+    "title": "MII PR ICU Maximaler Beatmungsdruck",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Mechanische_Atemfrequenz_Beatmet": {
+    "title": "MII PR ICU Mechanische Atemfrequenz Beatmet",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Mittlerer_Beatmungsdruck": {
+    "title": "MII PR ICU Mittlerer Beatmungsdruck",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Parameter_Von_Beatmung": {
+    "title": "MII PR ICU Parameter von Beatmung",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren": {
+    "title": "MII PR ICU Parameter von Extrakorporalen Verfahren",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Positiv_Endexpiratorischer_Druck": {
+    "title": "MII PR ICU Positiv Endexpiratorischer Druck",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Spontane_Atemfrequenz_Beatmet": {
+    "title": "MII PR ICU Spontane Atemfrequenz Beatmet",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Spontane_Mechanische_Atemfrequenz_Beatmet": {
+    "title": "MII PR ICU Spontane Mechanische Atemfrequenz Beatmet",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Spontanes_Atemzugvolumen": {
+    "title": "MII PR ICU Spontanes Atemzugvolumen",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Spontanes_Plus_Mechanisches_Atemzugvolumen": {
+    "title": "MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Substituatfluss": {
+    "title": "MII PR ICU Substituatfluss",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Substituatvolumen": {
+    "title": "MII PR ICU Substituatvolumen",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Unterstuezungsdruck_Beatmung": {
+    "title": "MII PR ICU Unterstuezungsdruck Beatmung",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_ICU_Venoeser_Druck": {
+    "title": "MII PR ICU Venous Pressure",
+    "de-DE": "???",
+    "en-US": "???"
+  }
+}

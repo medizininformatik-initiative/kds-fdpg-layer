@@ -1,0 +1,66 @@
+{
+  "MII_PR_MolGen_AnforderungGenetischerTest": {
+    "de-DE": "Anforderung genetischer Test",
+    "en-US": "Genetic Test Order"
+  },
+  "MII_PR_MolGen_DiagnostischeImplikation": {
+    "de-DE": "Diagnostische Implikation",
+    "en-US": "Diagnostic Implication"
+  },
+  "MII_PR_MolGen_EmpfohleneFolgemassnahme": {
+    "de-DE": "Empfohlene Folgema\u00dfnahme",
+    "en-US": "Recommended Follow-up Action"
+  },
+  "MII_PR_MolGen_Familienanamnese": {
+    "de-DE": "Familienanamnese",
+    "en-US": "Family History"
+  },
+  "MII_PR_MolGen_GenomicStudy": {
+    "de-DE": "Genomische Studie",
+    "en-US": "Genomic Study"
+  },
+  "MII_PR_MolGen_GenomicStudyAnalysis": {
+    "de-DE": "Genomische Studienanalyse",
+    "en-US": "Genomic Study Analysis"
+  },
+  "MII_PR_MolGen_Genotyp": {
+    "de-DE": "Genotyp",
+    "en-US": "Genotype"
+  },
+  "MII_PR_MolGen_Medikationsempfehlung": {
+    "de-DE": "Medikationsempfehlung",
+    "en-US": "Medication Recommendation"
+  },
+  "MII_PR_MolGen_Mikrosatelliteninstabilitaet": {
+    "de-DE": "Mikrosatelliteninstabilit\u00e4t",
+    "en-US": "Microsatellite Instability"
+  },
+  "MII_PR_MolGen_MolekulareKonsequenz": {
+    "de-DE": "Molekulare Konsequenz",
+    "en-US": "Molecular Consequence"
+  },
+  "MII_PR_MolGen_MolekularerBiomarker": {
+    "de-DE": "Molekularer Biomarker",
+    "en-US": "Molecular Biomarker"
+  },
+  "MII_PR_MolGen_MolekulargenetischerBefundbericht": {
+    "de-DE": "Molekulargenetischer Befundbericht",
+    "en-US": "Molecular Genetic Diagnostic Report"
+  },
+  "MII_PR_MolGen_Mutationslast": {
+    "de-DE": "Mutationslast",
+    "en-US": "Tumor Mutational Burden"
+  },
+  "MII_PR_MolGen_PolygenerRisikoScore": {
+    "de-DE": "Polygener Risiko-Score",
+    "en-US": "Polygenic Risk Score"
+  },
+  "MII_PR_MolGen_TherapeutischeImplikation": {
+    "de-DE": "Therapeutische Implikation",
+    "en-US": "Therapeutic Implication"
+  },
+  "MII_PR_MolGen_Variante": {
+    "de-DE": "Variante",
+    "en-US": "Variant"
+  }
+}

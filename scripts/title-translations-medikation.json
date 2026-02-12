@@ -1,0 +1,22 @@
+{
+  "MII_PR_Medikation_Medication": {
+    "de-DE": "Medikament",
+    "en-US": "MII PR Medikation Medication"
+  },
+  "MII_PR_Medikation_MedicationAdministration": {
+    "de-DE": "Medikationsverabreichung",
+    "en-US": "Medication administration"
+  },
+  "MII_PR_Medikation_MedicationRequest": {
+    "de-DE": "Medikationsverordnung",
+    "en-US": "Medication request"
+  },
+  "MII_PR_Medikation_MedicationStatement": {
+    "de-DE": "Medikationseintrag",
+    "en-US": "Medication statement"
+  },
+  "MII_PR_Medikation_Medikationsliste": {
+    "de-DE": "Medikationsliste",
+    "en-US": "Medicationlist"
+  }
+}

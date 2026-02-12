@@ -1,0 +1,17 @@
+{
+  "MII_PR_Consent_DocumentReference": {
+    "title": "Profile - MI-I - Consent - DocumentReference",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Consent_Einwilligung": {
+    "title": "Profile - MI-I - Consent - Einwilligung",
+    "de-DE": "???",
+    "en-US": "???"
+  },
+  "MII_PR_Consent_Provenance": {
+    "title": "Profile - MI-I - Consent - Provenance",
+    "de-DE": "???",
+    "en-US": "???"
+  }
+}

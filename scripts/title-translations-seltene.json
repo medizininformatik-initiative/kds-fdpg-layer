@@ -1,0 +1,74 @@
+{
+  "MII_PR_Seltene_Blutgruppe": {
+    "de-DE": "Blutgruppe",
+    "en-US": "Blood Group"
+  },
+  "MII_PR_Seltene_Bodymassindex": {
+    "de-DE": "Body-Mass-Index (BMI)",
+    "en-US": "Body Mass Index (BMI)"
+  },
+  "MII_PR_Seltene_ClinicalDiagnosis": {
+    "de-DE": "Klinische Diagnose",
+    "en-US": "Clinical Diagnosis"
+  },
+  "MII_PR_Seltene_ClinicalImpression": {
+    "de-DE": "Klinische Beurteilung",
+    "en-US": "Clinical Impression"
+  },
+  "MII_PR_Seltene_Familienanamnese": {
+    "de-DE": "Familienanamnese",
+    "en-US": "Family History"
+  },
+  "MII_PR_Seltene_GeneticDiagnosis": {
+    "de-DE": "Genetische Diagnose",
+    "en-US": "Genetic Diagnosis"
+  },
+  "MII_PR_Seltene_HPO_Assessment": {
+    "de-DE": "HPO-Beurteilung",
+    "en-US": "HPO Assessment"
+  },
+  "MII_PR_Seltene_Hueftumfang": {
+    "de-DE": "Hüftumfang",
+    "en-US": "Hip Circumference"
+  },
+  "MII_PR_Seltene_Kopfumfang": {
+    "de-DE": "Kopfumfang",
+    "en-US": "Head Circumference"
+  },
+  "MII_PR_Seltene_Studie": {
+    "de-DE": "Studie",
+    "en-US": "Study"
+  },
+  "MII_PR_Seltene_Studieneinschluss_Anfrage": {
+    "de-DE": "Studieneinschluss-Anfrage",
+    "en-US": "Study Enrollment Request"
+  },
+  "MII_PR_Seltene_Symptom_Condition": {
+    "de-DE": "Symptom",
+    "en-US": "Symptom Condition"
+  },
+  "MII_PR_Seltene_Taillenumfang": {
+    "de-DE": "Taillenumfang",
+    "en-US": "Waist Circumference"
+  },
+  "MII_PR_Seltene_TherapieDurchgefuehrt": {
+    "de-DE": "Therapie durchgeführt",
+    "en-US": "Therapy Administered"
+  },
+  "MII_PR_Seltene_Therapieempfehlung": {
+    "de-DE": "Therapieempfehlung systemische Therapie",
+    "en-US": "Therapy Recommendation Systemic Therapy"
+  },
+  "MII_PR_Seltene_TherapieempfehlungNichtMedikamentoes": {
+    "de-DE": "Therapieempfehlung nicht-medikamentös",
+    "en-US": "Therapy Recommendation Non-Pharmacological"
+  },
+  "MII_PR_Seltene_Therapieempfehlung_Kombination": {
+    "de-DE": "Therapieempfehlung Kombinationstherapie",
+    "en-US": "Therapy Recommendation Combination Therapy"
+  },
+  "MII_PR_Seltene_Therapieplan": {
+    "de-DE": "Therapieplan",
+    "en-US": "Therapy Plan"
+  }
+}
