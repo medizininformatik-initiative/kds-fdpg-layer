@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Bilanz Ausfuhr Opdrainage"
+            "valueString": "Bilanz - Ausfuhr OP-Drainage"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Bilanz Ausfuhr Opdrainage"
+            "valueString": "Fluid Balance - Surgical Drainage Output"
           }
         ]
       }

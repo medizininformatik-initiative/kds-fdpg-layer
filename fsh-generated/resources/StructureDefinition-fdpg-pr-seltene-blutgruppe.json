@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR SE Blutgruppe"
+            "valueString": "Blutgruppe"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR SE Blutgruppe"
+            "valueString": "Blood Group"
           }
         ]
       }

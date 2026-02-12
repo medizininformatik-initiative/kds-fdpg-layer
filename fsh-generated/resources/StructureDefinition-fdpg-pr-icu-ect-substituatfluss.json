@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Substituatfluss"
+            "valueString": "Substituatfluss"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Substituatfluss"
+            "valueString": "Substitution Fluid Flow Rate"
           }
         ]
       }

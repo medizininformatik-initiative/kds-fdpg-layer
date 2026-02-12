@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Druckdifferenz Beatmung"
+            "valueString": "Druckdifferenz Beatmung"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Druckdifferenz Beatmung"
+            "valueString": "Ventilation Pressure Difference (Driving Pressure)"
           }
         ]
       }

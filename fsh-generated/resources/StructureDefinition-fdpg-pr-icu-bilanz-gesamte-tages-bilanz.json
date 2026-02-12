@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Bilanz Gesamte Tages Bilanz"
+            "valueString": "Bilanz - Gesamte Tagesbilanz"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Bilanz Gesamte Tages Bilanz"
+            "valueString": "Fluid Balance - Total Daily Balance"
           }
         ]
       }

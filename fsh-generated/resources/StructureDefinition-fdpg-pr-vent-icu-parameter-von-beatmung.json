@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Parameter von Beatmung"
+            "valueString": "Parameter von Beatmung"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Parameter von Beatmung"
+            "valueString": "Ventilation Parameters"
           }
         ]
       }

@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR MolGen Familienanamnese"
+            "valueString": "Familienanamnese"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MolGen Familienanamnese"
+            "valueString": "Family History"
           }
         ]
       }

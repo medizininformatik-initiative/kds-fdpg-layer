@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Labor Laboruntersuchung"
+            "valueString": "Laboruntersuchung"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Labor Laboruntersuchung"
+            "valueString": "Laboratory test"
           }
         ]
       }
@@ -74,8 +74,120 @@
   "differential": {
     "element": [
       {
-        "id": "Observation",
-        "path": "Observation"
+        "id": "Observation.identifier",
+        "path": "Observation.identifier",
+        "_short": {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Analyse-Befund-Code"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            },
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Laboratory analysis identifier"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            },
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Analyse-Befund-Code"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            },
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Laboratory analysis identifier"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Eindeutiger und dauerhafter Identifikator für eine Laboruntersuchung."
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            },
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Unique and persistent identifier for a laboratory observation instance"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            },
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Eindeutiger und dauerhafter Identifikator für eine Laboruntersuchung."
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            },
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Unique and persistent identifier for a laboratory observation instance"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            }
+          ]
+        }
       }
     ]
   }

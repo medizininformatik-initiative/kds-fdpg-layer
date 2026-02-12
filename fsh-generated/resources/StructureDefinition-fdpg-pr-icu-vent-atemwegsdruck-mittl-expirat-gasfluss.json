@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss"
+            "valueString": "Atemwegsdruck bei mittlerem expiratorischem Gasfluss"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss"
+            "valueString": "Airway Pressure at Mean Expiratory Gas Flow"
           }
         ]
       }

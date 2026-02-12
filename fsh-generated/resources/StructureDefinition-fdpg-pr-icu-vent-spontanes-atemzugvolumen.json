@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Spontanes Atemzugvolumen"
+            "valueString": "Spontanes Atemzugvolumen"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Spontanes Atemzugvolumen"
+            "valueString": "Spontaneous Tidal Volume"
           }
         ]
       }

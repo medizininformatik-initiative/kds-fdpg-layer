@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Bildgebung Bildgebungsprozedur"
+            "valueString": "Bildgebungsprozedur"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Bildgebung Bildgebungsprozedur"
+            "valueString": "imaging procedure"
           }
         ]
       }

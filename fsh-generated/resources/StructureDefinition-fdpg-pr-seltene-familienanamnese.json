@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR SE Familienanamnese"
+            "valueString": "Familienanamnese"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR SE Familienanamnese"
+            "valueString": "Family History"
           }
         ]
       }

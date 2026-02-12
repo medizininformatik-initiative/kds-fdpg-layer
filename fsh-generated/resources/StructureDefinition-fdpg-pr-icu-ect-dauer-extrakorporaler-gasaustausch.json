@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Dauer Extrakorporaler Gasaustausch"
+            "valueString": "Dauer extrakorporaler Gasaustausch"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Dauer Extrakorporaler Gasaustausch"
+            "valueString": "Duration of Extracorporeal Gas Exchange"
           }
         ]
       }

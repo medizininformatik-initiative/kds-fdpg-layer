@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Bilanz Einfuhr Oraler Fluessigkeit"
+            "valueString": "Bilanz - Einfuhr oraler Flüssigkeit"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Bilanz Einfuhr Oraler Fluessigkeit"
+            "valueString": "Fluid Balance - Oral Fluid Intake"
           }
         ]
       }

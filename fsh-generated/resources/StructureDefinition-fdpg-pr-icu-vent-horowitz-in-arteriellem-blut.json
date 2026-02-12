@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Horowitz In Arteriellem Blut"
+            "valueString": "Horowitz-Index in arteriellem Blut"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Horowitz In Arteriellem Blut"
+            "valueString": "Horowitz Index (P/F Ratio) in Arterial Blood"
           }
         ]
       }

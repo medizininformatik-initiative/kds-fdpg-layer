@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR SE Hüftumfang"
+            "valueString": "Hüftumfang"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR SE Hüftumfang"
+            "valueString": "Hip Circumference"
           }
         ]
       }

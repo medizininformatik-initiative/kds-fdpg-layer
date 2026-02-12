@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Labor Laboranforderung"
+            "valueString": "Laboranforderung"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Labor Laboranforderung"
+            "valueString": "Laboratory order"
           }
         ]
       }
@@ -74,8 +74,38 @@
   "differential": {
     "element": [
       {
-        "id": "ServiceRequest",
-        "path": "ServiceRequest"
+        "id": "ServiceRequest.intent",
+        "path": "ServiceRequest.intent",
+        "_definition": {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "auftrag"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            },
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "order"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            }
+          ]
+        }
       }
     ]
   }

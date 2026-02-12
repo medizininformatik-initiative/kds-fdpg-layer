@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "Body-Mass-Index des Patienten"
+            "valueString": "Body-Mass-Index (BMI)"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Body Mass Index of the Patient"
+            "valueString": "Body Mass Index (BMI)"
           }
         ]
       }

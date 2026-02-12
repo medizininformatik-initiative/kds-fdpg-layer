@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Bilanz Ausfuhr Drainage Generisch"
+            "valueString": "Bilanz - Ausfuhr Drainage (generisch)"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Bilanz Ausfuhr Drainage Generisch"
+            "valueString": "Fluid Balance - Drainage Output (Generic)"
           }
         ]
       }

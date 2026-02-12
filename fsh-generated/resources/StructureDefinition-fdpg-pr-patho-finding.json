@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Patho Finding"
+            "valueString": "MII PR Patho Befund"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Patho Finding"
+            "valueString": "MII PR Patho Finding"
           }
         ]
       }

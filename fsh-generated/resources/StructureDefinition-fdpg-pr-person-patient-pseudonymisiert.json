@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Person Patient - Pseudonymisiert"
+            "valueString": "Patient / Patientin pseudonymisiert"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Person Patient - Pseudonymised"
+            "valueString": "Patient pseudonymized"
           }
         ]
       }

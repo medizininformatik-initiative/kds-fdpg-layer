@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Venous Pressure"
+            "valueString": "Venöser Druck"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Venous Pressure"
+            "valueString": "Venous Pressure"
           }
         ]
       }

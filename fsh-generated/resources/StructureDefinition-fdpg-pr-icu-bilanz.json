@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Bilanz"
+            "valueString": "Bilanz"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Bilanz"
+            "valueString": "Fluid Balance"
           }
         ]
       }

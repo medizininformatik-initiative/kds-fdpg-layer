@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Atemzugvolumen Einstellung"
+            "valueString": "Atemzugvolumen - Einstellung"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Atemzugvolumen Einstellung"
+            "valueString": "Tidal Volume - Setting"
           }
         ]
       }

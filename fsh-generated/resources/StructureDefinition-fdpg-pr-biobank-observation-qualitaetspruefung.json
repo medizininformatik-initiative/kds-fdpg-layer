@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Biobank Observation Qualitätsprüfung"
+            "valueString": "Observation Qualitätsprüfung"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Biobank Observation Qualitätsprüfung"
+            "valueString": "Observation Quality Check"
           }
         ]
       }

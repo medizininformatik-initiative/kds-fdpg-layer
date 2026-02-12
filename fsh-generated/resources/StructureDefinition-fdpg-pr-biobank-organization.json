@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Biobank Organization Sammlung Biobank"
+            "valueString": "Organization Sammlung Biobank"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Biobank Organization Sammlung Biobank"
+            "valueString": "Organization Sample Collection Biobank"
           }
         ]
       }

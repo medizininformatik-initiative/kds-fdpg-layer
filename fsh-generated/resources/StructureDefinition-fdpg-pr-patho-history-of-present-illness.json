@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Patho History Of Present Illness"
+            "valueString": "MII PR Patho Anamnese der aktuellen Erkrankung"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Patho History Of Present Illness"
+            "valueString": "MII PR Patho History of Present Illness"
           }
         ]
       }

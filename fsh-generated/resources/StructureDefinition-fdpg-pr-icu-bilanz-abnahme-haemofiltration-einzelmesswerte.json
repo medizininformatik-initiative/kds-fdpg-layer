@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte"
+            "valueString": "Bilanz - Abnahme Hämofiltration (Einzelmesswerte)"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte"
+            "valueString": "Fluid Balance - Hemofiltration Removal (Individual Measurements)"
           }
         ]
       }

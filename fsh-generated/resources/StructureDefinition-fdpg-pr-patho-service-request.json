@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Patho Service Request"
+            "valueString": "MII PR Patho Untersuchungsauftrag"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Patho Service Request"
+            "valueString": "MII PR Patho Service Request"
           }
         ]
       }

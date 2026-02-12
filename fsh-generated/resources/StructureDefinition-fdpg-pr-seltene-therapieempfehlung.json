@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR SE Therapieempfehlung Systemische Therapie"
+            "valueString": "Therapieempfehlung systemische Therapie"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR SE Therapieempfehlung Systemische Therapie"
+            "valueString": "Therapy Recommendation Systemic Therapy"
           }
         ]
       }
@@ -74,8 +74,9 @@
   "differential": {
     "element": [
       {
-        "id": "MedicationRequest",
-        "path": "MedicationRequest"
+        "id": "MedicationRequest.intent",
+        "path": "MedicationRequest.intent",
+        "definition": "Da nur Empfehlungen abgegeben werden, wird hier typischerweise 'proposal' stehen. Es sei denn,         diese Therapieempfehlung ist Teil einer RequestGroup (z.B. Kombinationstherapie). In dem Fall muss hier 'option' stehen."
       }
     ]
   }

@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Mittlerer Beatmungsdruck"
+            "valueString": "Mittlerer Beatmungsdruck"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Mittlerer Beatmungsdruck"
+            "valueString": "Mean Ventilation Pressure"
           }
         ]
       }

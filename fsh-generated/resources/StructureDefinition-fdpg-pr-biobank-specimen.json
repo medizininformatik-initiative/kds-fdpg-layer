@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Biobank Specimen Bioprobe"
+            "valueString": "Specimen Bioprobe"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Biobank Specimen Bioprobe"
+            "valueString": "Specimen Bioprobe"
           }
         ]
       }

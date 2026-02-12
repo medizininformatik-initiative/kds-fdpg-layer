@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Bilanz Ausfuhr Gallengang"
+            "valueString": "Bilanz - Ausfuhr Gallengang"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Bilanz Ausfuhr Gallengang"
+            "valueString": "Fluid Balance - Bile Duct Output"
           }
         ]
       }

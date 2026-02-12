@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR SE Therapieempfehlung Nicht-Medikamentös"
+            "valueString": "Therapieempfehlung nicht-medikamentös"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR SE Therapieempfehlung Nicht-Medikamentös"
+            "valueString": "Therapy Recommendation Non-Pharmacological"
           }
         ]
       }

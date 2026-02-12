@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Haemodialyse Blutfluss"
+            "valueString": "Hämodialyse - Blutfluss"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Haemodialyse Blutfluss"
+            "valueString": "Hemodialysis - Blood Flow"
           }
         ]
       }

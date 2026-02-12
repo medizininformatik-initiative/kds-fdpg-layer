@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Parameter von Extrakorporalen Verfahren"
+            "valueString": "Parameter von extrakorporalen Verfahren"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Parameter von Extrakorporalen Verfahren"
+            "valueString": "Extracorporeal Procedure Parameters"
           }
         ]
       }

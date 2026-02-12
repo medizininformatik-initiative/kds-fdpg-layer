@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Zeitverhaeltnis Ein Ausatmung"
+            "valueString": "Zeitverhältnis Ein-/Ausatmung"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Zeitverhaeltnis Ein Ausatmung"
+            "valueString": "Inspiration/Expiration Time Ratio"
           }
         ]
       }

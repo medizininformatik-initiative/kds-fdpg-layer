@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII ICU Dauer Haemodialysesitzung"
+            "valueString": "Dauer der Hämodialysesitzung"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MII ICU Dauer Haemodialysesitzung"
+            "valueString": "Duration of Hemodialysis Session"
           }
         ]
       }

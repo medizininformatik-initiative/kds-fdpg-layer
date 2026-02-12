@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Person Todesursache"
+            "valueString": "Todesursache"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Person Todesursache"
+            "valueString": "Cause of Death"
           }
         ]
       }

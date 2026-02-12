@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Einstellung Einatmungszeit Beatmung"
+            "valueString": "Einstellung Einatmungszeit Beatmung"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Einstellung Einatmungszeit Beatmung"
+            "valueString": "Inspiratory Time Setting (Ventilation)"
           }
         ]
       }

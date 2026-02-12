@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Bildgebung Konstrastmittelgabe"
+            "valueString": "Kontrastmittelgabe"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Bildgebung Konstrastmittelgabe"
+            "valueString": "contrast medication administration"
           }
         ]
       }

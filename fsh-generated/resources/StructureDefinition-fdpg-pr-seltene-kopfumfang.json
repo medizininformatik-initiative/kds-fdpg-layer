@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR SE Kopfumfang"
+            "valueString": "Kopfumfang"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR SE Kopfumfang"
+            "valueString": "Head Circumference"
           }
         ]
       }

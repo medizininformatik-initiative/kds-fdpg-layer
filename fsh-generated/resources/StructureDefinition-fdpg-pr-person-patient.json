@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Person Patient"
+            "valueString": "Patient / Patientin"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Person Patient"
+            "valueString": "Patient"
           }
         ]
       }

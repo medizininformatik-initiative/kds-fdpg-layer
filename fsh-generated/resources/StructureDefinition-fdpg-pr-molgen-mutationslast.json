@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR MolGen Mutationslast"
+            "valueString": "Mutationslast"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MolGen Mutationslast"
+            "valueString": "Tumor Mutational Burden"
           }
         ]
       }

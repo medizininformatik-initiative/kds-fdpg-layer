@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Bildgebung Gerät"
+            "valueString": "Bildgebungsgerät"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Bildgebung Gerät"
+            "valueString": "imaging device"
           }
         ]
       }

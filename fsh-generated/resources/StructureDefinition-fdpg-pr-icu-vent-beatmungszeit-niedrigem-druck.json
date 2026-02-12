@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Beatmungszeit Niedrigem Druck"
+            "valueString": "Beatmungszeit bei niedrigem Druck"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Beatmungszeit Niedrigem Druck"
+            "valueString": "Ventilation Time at Low Pressure"
           }
         ]
       }

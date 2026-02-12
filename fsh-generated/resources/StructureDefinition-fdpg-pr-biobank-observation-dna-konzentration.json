@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Biobank Observation DNA Konzentration"
+            "valueString": "Observation DNA Konzentration"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Biobank Observation DNA Konzentration"
+            "valueString": "Observation DNA Concentration"
           }
         ]
       }

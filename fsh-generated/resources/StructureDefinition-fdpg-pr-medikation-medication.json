@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Medikation Medication"
+            "valueString": "Medikament"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Medikation Medication"
+            "valueString": "MII PR Medikation Medication"
           }
         ]
       }

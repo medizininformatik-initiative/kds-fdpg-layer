@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Substituatvolumen"
+            "valueString": "Substituatvolumen"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Substituatvolumen"
+            "valueString": "Substitution Fluid Volume"
           }
         ]
       }

@@ -37,7 +37,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/bildgebung/fdpg-pr-bildgebung-anforderung-bildgebung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 114
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-bildgebung-behandlungsempfehlung.json",
@@ -45,7 +45,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/bildgebung/fdpg-pr-bildgebung-behandlungsempfehlung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 44
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-bildgebung-bildgebungsprozedur.json",
@@ -53,7 +53,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/bildgebung/fdpg-pr-bildgebung-bildgebungsprozedur.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 127
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-bildgebung-bildgebungsstudie.json",
@@ -61,7 +61,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/bildgebung/fdpg-pr-bildgebung-bildgebungsstudie.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 193
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-bildgebung-geraet.json",
@@ -69,7 +69,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/bildgebung/fdpg-pr-bildgebung-geraet.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-bildgebung-koerperstruktur.json",
@@ -77,7 +77,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/bildgebung/fdpg-pr-bildgebung-koerperstruktur.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 37
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-bildgebung-kontrastmittelgabe.json",
@@ -85,7 +85,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/bildgebung/fdpg-pr-bildgebung-kontrastmittelgabe.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 232
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-bildgebung-radiologische-befundungsprozedur.json",
@@ -93,7 +93,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/bildgebung/fdpg-pr-bildgebung-radiologische-befundungsprozedur.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 120
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-bildgebung-radiologische-beobachtung.json",
@@ -101,7 +101,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/bildgebung/fdpg-pr-bildgebung-radiologische-beobachtung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 107
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-bildgebung-radiologischer-befund.json",
@@ -109,7 +109,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/bildgebung/fdpg-pr-bildgebung-radiologischer-befund.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 160
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-bildgebung-semistrukt-befundbericht.json",
@@ -117,7 +117,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/bildgebung/fdpg-pr-bildgebung-semistrukt-befundbericht.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 124
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-observation-dna-konzentration.json",
@@ -125,7 +125,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-observation-dna-konzentration.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 17
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-observation-karyotyp.json",
@@ -133,7 +133,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-observation-karyotyp.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 17
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-observation-morphologie.json",
@@ -141,7 +141,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-observation-morphologie.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 15
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-observation-proliferation.json",
@@ -149,7 +149,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-observation-proliferation.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 15
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-observation-qualitaetspruefung.json",
@@ -157,7 +157,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-observation-qualitaetspruefung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-observation-wachstumstyp.json",
@@ -165,7 +165,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-observation-wachstumstyp.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 15
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-organization.json",
@@ -173,7 +173,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-organization.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 62
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-specimen-core.json",
@@ -181,7 +181,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-specimen-core.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 194
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-specimen.json",
@@ -189,7 +189,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-specimen.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 214
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-substance-additiv.json",
@@ -197,7 +197,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-substance-additiv.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 15
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-zellinie-organoid.json",
@@ -205,7 +205,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-zellinie-organoid.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 220
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-consent-documentreference.json",
@@ -213,7 +213,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/consent/fdpg-pr-consent-documentreference.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-consent-einwilligung.json",
@@ -221,7 +221,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/consent/fdpg-pr-consent-einwilligung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 55
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-consent-provenance.json",
@@ -229,7 +229,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/consent/fdpg-pr-consent-provenance.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-diagnose-condition.json",
@@ -237,7 +237,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/basis/fdpg-pr-diagnose-condition.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 125
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-dokument-dokument.json",
@@ -245,7 +245,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/dokument/fdpg-pr-dokument-dokument.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 83
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-fall-kontakt-gesundheitseinrichtung.json",
@@ -253,7 +253,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/basis/fdpg-pr-fall-kontakt-gesundheitseinrichtung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 176
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.json",
@@ -261,7 +261,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-drainage-generisch.json",
@@ -269,7 +269,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-drainage-generisch.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.json",
@@ -277,7 +277,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.json",
@@ -285,7 +285,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-gallengang.json",
@@ -293,7 +293,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-gallengang.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-magensonde.json",
@@ -301,7 +301,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-magensonde.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-opdrainage.json",
@@ -309,7 +309,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-opdrainage.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-pankreasdrainage.json",
@@ -317,7 +317,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-pankreasdrainage.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-stuhlgang.json",
@@ -325,7 +325,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-stuhlgang.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-urin.json",
@@ -333,7 +333,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-urin.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-wunddrainage.json",
@@ -341,7 +341,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-wunddrainage.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-blutverlust.json",
@@ -349,7 +349,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-blutverlust.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.json",
@@ -357,7 +357,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.json",
@@ -365,7 +365,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-einfuhr-oraler-fluessigkeit.json",
@@ -373,7 +373,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-einfuhr-oraler-fluessigkeit.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-gesamte-ausfuhr.json",
@@ -381,7 +381,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-gesamte-ausfuhr.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-gesamte-einfuhr.json",
@@ -389,7 +389,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-gesamte-einfuhr.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-gesamte-tages-bilanz.json",
@@ -397,7 +397,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-gesamte-tages-bilanz.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz.json",
@@ -405,7 +405,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-device.json",
@@ -413,7 +413,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-device.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 33
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-ect-arterieller-druck.json",
@@ -421,7 +421,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-ect-arterieller-druck.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.json",
@@ -429,7 +429,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.json",
@@ -437,7 +437,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.json",
@@ -445,7 +445,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-ect-dauer-extrakorporaler-gasaustausch.json",
@@ -453,7 +453,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-ect-dauer-extrakorporaler-gasaustausch.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-ect-dauer-haemodialysesitzung.json",
@@ -461,7 +461,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-ect-dauer-haemodialysesitzung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-ect-dm-eingest-param-extrakorporale-verfahren.json",
@@ -469,7 +469,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-ect-dm-eingest-gem-parameter-extrakorporale-verfahren.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 15
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-ect-extrakorporales-verfahren.json",
@@ -477,7 +477,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-ect-extrakorporales-verfahren.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 114
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-ect-gasfluss.json",
@@ -485,7 +485,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-ect-gasfluss.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-ect-haemodialyse-blutfluss.json",
@@ -493,7 +493,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-ect-haemodialyse-blutfluss.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-ect-onisiertes-kalzium-nierenersatzverfahren.json",
@@ -501,7 +501,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-ect-onisiertes-kalzium-nierenersatzverfahren.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-ect-parameter-von-extrakorporalen-verfahren.json",
@@ -509,7 +509,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-ect-parameter-von-extrakorporalen-verfahren.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-ect-substituatfluss.json",
@@ -517,7 +517,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-ect-substituatfluss.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-ect-substituatvolumen.json",
@@ -525,7 +525,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-ect-substituatvolumen.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-ect-venoeser-druck.json",
@@ -533,7 +533,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-ect-venoeser-druck.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-event-xspiratorischer-sauerstoffpartialdruck.json",
@@ -541,7 +541,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-event-xspiratorischer-sauerstoffpartialdruck.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-arterieller-blutdruck.json",
@@ -549,7 +549,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-arterieller-blutdruck.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 107
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-atemfrequenz.json",
@@ -557,7 +557,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-atemfrequenz.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 35
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-herzfrequenz.json",
@@ -565,7 +565,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-herzfrequenz.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 65
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-koerpergewicht.json",
@@ -573,7 +573,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-koerpergewicht.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 47
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-koerpergroesse.json",
@@ -581,7 +581,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-koerpergroesse.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 49
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-kopfumfang.json",
@@ -589,7 +589,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-kopfumfang.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.json",
@@ -597,7 +597,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-atemwegsdruck-mittl-expirat-gasfluss.json",
@@ -605,7 +605,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-atemwegsdruck-mittlerem-expiratorischem-gasfluss.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-atemzugvolumen-einstellung.json",
@@ -613,7 +613,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-atemzugvolumen-einstellung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-atemzugvolumen-waehrend-beatmung.json",
@@ -621,7 +621,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-atemzugvolumen-waehrend-beatmung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-beatmung.json",
@@ -629,7 +629,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-beatmung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 114
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung.json",
@@ -637,7 +637,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-beatmungszeit-hohem-druck.json",
@@ -645,7 +645,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-beatmungszeit-hohem-druck.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-beatmungszeit-niedrigem-druck.json",
@@ -653,7 +653,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-beatmungszeit-niedrigem-druck.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung.json",
@@ -661,7 +661,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 15
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.json",
@@ -669,7 +669,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-einstellung-ausatmungszeit-beatmung.json",
@@ -677,7 +677,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-einstellung-ausatmungszeit-beatmung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-einstellung-einatmungszeit-beatmung.json",
@@ -685,7 +685,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-einstellung-einatmungszeit-beatmung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck.json",
@@ -693,7 +693,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-exspiratorischer-gasfluss.json",
@@ -701,7 +701,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-exspiratorischer-gasfluss.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-horowitz-in-arteriellem-blut.json",
@@ -709,7 +709,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-horowitz-in-arteriellem-blut.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen.json",
@@ -717,7 +717,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-inspiratorischer-gasfluss.json",
@@ -725,7 +725,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-inspiratorischer-gasfluss.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-maximaler-beatmungsdruck.json",
@@ -733,7 +733,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-maximaler-beatmungsdruck.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-mechanische-atemfrequenz-beatmet.json",
@@ -741,7 +741,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-mechanische-atemfrequenz-beatmet.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-mittlerer-beatmungsdruck.json",
@@ -749,7 +749,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-mittlerer-beatmungsdruck.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-positiv-endexpiratorischer-druck.json",
@@ -757,7 +757,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-positiv-endexpiratorischer-druck.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-spontane-atemfrequenz-beatmet.json",
@@ -765,7 +765,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-spontane-atemfrequenz-beatmet.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet.json",
@@ -773,7 +773,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-spontanes-atemzugvolumen.json",
@@ -781,7 +781,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-spontanes-atemzugvolumen.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen.json",
@@ -789,7 +789,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-unterstuezungsdruck-beatmung.json",
@@ -797,7 +797,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-unterstuezungsdruck-beatmung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.json",
@@ -805,7 +805,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-labor-laboranforderung.json",
@@ -813,7 +813,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/labor/fdpg-pr-labor-laboranforderung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 103
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-labor-laborbefund.json",
@@ -821,7 +821,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/labor/fdpg-pr-labor-laborbefund.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 150
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-labor-laboruntersuchung.json",
@@ -829,7 +829,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/labor/fdpg-pr-labor-laboruntersuchung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 193
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-medikation-medication-administration.json",
@@ -837,7 +837,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/medikation/fdpg-pr-medikation-medication-administration.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 234
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-medikation-medication-request.json",
@@ -845,7 +845,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/medikation/fdpg-pr-medikation-medication-request.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 378
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-medikation-medication-statement.json",
@@ -853,7 +853,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/medikation/fdpg-pr-medikation-medication-statement.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 402
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-medikation-medication.json",
@@ -861,7 +861,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/medikation/fdpg-pr-medikation-medication.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-medikation-medikationsliste.json",
@@ -869,7 +869,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/medikation/fdpg-pr-medikation-medikationsliste.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 71
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-anforderung-genetischer-test.json",
@@ -877,7 +877,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-anforderung-genetischer-test.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 59
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-diagnostische-implikation.json",
@@ -885,7 +885,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-diagnostische-implikation.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 79
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-empfohlene-folgemassnahme.json",
@@ -893,7 +893,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-empfohlene-folgemassnahme.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 44
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-familienanamnese.json",
@@ -901,7 +901,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-familienanamnese.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 209
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-genomic-study-analysis.json",
@@ -909,7 +909,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-genomic-study-analysis.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 54
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-genomic-study.json",
@@ -917,7 +917,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-genomic-study.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 44
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-genotyp.json",
@@ -925,7 +925,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-genotyp.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 79
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-medikationsempfehlung.json",
@@ -933,7 +933,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-medikationsempfehlung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 44
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-mikrosatelliteninstabilitaet.json",
@@ -941,7 +941,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-mikrosatelliteninstabilitaet.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 69
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-molekulare-konsequenz.json",
@@ -949,7 +949,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-molekulare-konsequenz.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 74
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-molekularer-biomarker.json",
@@ -957,7 +957,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-molekularer-biomarker.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 59
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-molekulargenetischer-befundbericht.json",
@@ -965,7 +965,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-molekulargenetischer-befundbericht.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 129
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-mutationslast.json",
@@ -973,7 +973,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-mutationslast.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 74
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-polygener-risiko-score.json",
@@ -981,7 +981,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-polygener-risiko-score.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 84
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-therapeutische-implikation.json",
@@ -989,7 +989,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-therapeutische-implikation.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 89
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-variante.json",
@@ -997,7 +997,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-variante.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 194
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-allgemeiner-leistungszustand-ecog.json",
@@ -1589,7 +1589,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-active-problems-list.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-additional-specified-grouper.json",
@@ -1597,7 +1597,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-additional-specified-grouper.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 59
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-attached-image.json",
@@ -1605,7 +1605,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-attached-image.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 55
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-base-observation.json",
@@ -1613,7 +1613,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-base-observation.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 45
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-bundle.json",
@@ -1621,7 +1621,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-bundle.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 107
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-composition.json",
@@ -1629,7 +1629,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-composition.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 162
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-diagnostic-conclusion-grouper.json",
@@ -1637,7 +1637,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-diagnostic-conclusion-grouper.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 80
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-finding.json",
@@ -1645,7 +1645,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-finding.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-history-of-present-illness.json",
@@ -1653,7 +1653,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-history-of-present-illness.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-intraoperative-grouper.json",
@@ -1661,7 +1661,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-intraoperative-grouper.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 59
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-macroscopic-grouper.json",
@@ -1669,7 +1669,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-macroscopic-grouper.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 59
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-microscopic-grouper.json",
@@ -1677,7 +1677,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-microscopic-grouper.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 59
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-problem-list-item.json",
@@ -1685,7 +1685,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-problem-list-item.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 15
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-report.json",
@@ -1693,7 +1693,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-report.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 187
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-section-grouper.json",
@@ -1701,7 +1701,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-section-grouper.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 49
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-service-request.json",
@@ -1709,7 +1709,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-service-request.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 162
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-specimen.json",
@@ -1717,7 +1717,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-specimen.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 252
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-person-patient-pseudonymisiert.json",
@@ -1725,7 +1725,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/basis/fdpg-pr-person-patient-pseudonymisiert.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 93
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-person-patient.json",
@@ -1733,7 +1733,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/basis/fdpg-pr-person-patient.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 201
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-person-todesursache.json",
@@ -1741,7 +1741,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/basis/fdpg-pr-person-todesursache.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 62
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-person-vitalstatus.json",
@@ -1749,7 +1749,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/basis/fdpg-pr-person-vitalstatus.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-prozedur-procedure.json",
@@ -1757,7 +1757,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/basis/fdpg-pr-prozedur-procedure.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 108
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-blutgruppe.json",
@@ -1765,7 +1765,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-blutgruppe.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 31
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-bodymassindex.json",
@@ -1773,7 +1773,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-bodymassindex.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 19
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-clinical-diagnosis.json",
@@ -1781,7 +1781,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-clinical-diagnosis.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 149
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-clinical-impression.json",
@@ -1789,7 +1789,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-clinical-impression.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-familienanamnese.json",
@@ -1797,7 +1797,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-familienanamnese.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 230
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-genetic-diagnosis.json",
@@ -1805,7 +1805,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-genetic-diagnosis.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 151
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-hpo-assessment.json",
@@ -1813,7 +1813,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-hpo-assessment.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 43
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-hueftumfang.json",
@@ -1821,7 +1821,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-hueftumfang.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-kopfumfang.json",
@@ -1829,7 +1829,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-kopfumfang.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-studie.json",
@@ -1837,7 +1837,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-studie.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 11
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-studieneinschluss-anfrage.json",
@@ -1845,7 +1845,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-studieneinschluss-anfrage.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 29
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-symptom-condition.json",
@@ -1853,7 +1853,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-symptom-condition.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 55
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-taillenumfang.json",
@@ -1861,7 +1861,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-taillenumfang.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 21
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-therapie-durchgefuehrt.json",
@@ -1869,7 +1869,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-therapie-durchgefuehrt.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 23
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-therapieempfehlung-kombination.json",
@@ -1877,7 +1877,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-therapieempfehlung-kombination.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 25
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-therapieempfehlung-nicht-medikamentoes.json",
@@ -1885,7 +1885,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-therapieempfehlung-nicht-medikamentoes.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 47
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-therapieempfehlung.json",
@@ -1893,7 +1893,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-therapieempfehlung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 390
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-therapieplan.json",
@@ -1901,7 +1901,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/seltene/fdpg-pr-seltene-therapieplan.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 33
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-studie-beteiligte-person.json",
@@ -1965,7 +1965,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-vent-icu-dynamische-kompliance.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-vent-icu-parameter-von-beatmung.json",
@@ -1973,7 +1973,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-vent-icu-parameter-von-beatmung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-vent-provided-icu-druckdifferenz-beatmung.json",
@@ -1981,6 +1981,6 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-vent-provided-icu-druckdifferenz-beatmung.fsh",
     "startLine": 1,
-    "endLine": 8
+    "endLine": 41
   }
 ]

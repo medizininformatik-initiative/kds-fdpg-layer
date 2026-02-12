@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Eingestellter Inspiratorischer Gasfluss"
+            "valueString": "Eingestellter inspiratorischer Gasfluss"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Eingestellter Inspiratorischer Gasfluss"
+            "valueString": "Set Inspiratory Gas Flow"
           }
         ]
       }

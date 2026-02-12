@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Bildgebung Anforderung Bildgebung"
+            "valueString": "Anforderung Bildgebung"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Bildgebung Anforderung Bildgebung"
+            "valueString": "radiological service request"
           }
         ]
       }

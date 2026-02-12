@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen"
+            "valueString": "Inspiratorische Sauerstofffraktion (gemessen)"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen"
+            "valueString": "Fraction of Inspired Oxygen - Measured (FiO2)"
           }
         ]
       }

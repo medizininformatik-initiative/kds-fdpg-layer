@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Inspiratorischer Gasfluss"
+            "valueString": "Inspiratorischer Gasfluss"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Inspiratorischer Gasfluss"
+            "valueString": "Inspiratory Gas Flow"
           }
         ]
       }

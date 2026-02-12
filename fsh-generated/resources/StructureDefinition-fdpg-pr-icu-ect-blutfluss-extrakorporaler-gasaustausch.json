@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Blutfluss Extrakorporaler Gasaustausch"
+            "valueString": "Blutfluss - Extrakorporaler Gasaustausch"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Blutfluss Extrakorporaler Gasaustausch"
+            "valueString": "Blood Flow - Extracorporeal Gas Exchange"
           }
         ]
       }

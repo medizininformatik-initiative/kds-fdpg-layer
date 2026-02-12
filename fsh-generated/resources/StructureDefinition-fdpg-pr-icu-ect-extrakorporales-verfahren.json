@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Extrakorporales Verfahren"
+            "valueString": "Extrakorporales Verfahren"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Extrakorporales Verfahren"
+            "valueString": "Extracorporeal Procedure"
           }
         ]
       }

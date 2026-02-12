@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Atemzugvolumen Waehrend Beatmung"
+            "valueString": "Atemzugvolumen während Beatmung"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Atemzugvolumen Waehrend Beatmung"
+            "valueString": "Tidal Volume During Mechanical Ventilation"
           }
         ]
       }

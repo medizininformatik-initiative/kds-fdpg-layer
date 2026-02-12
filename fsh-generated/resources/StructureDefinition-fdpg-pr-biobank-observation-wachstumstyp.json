@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Biobank Observation Wachstumstyp"
+            "valueString": "Observation Wachstumstyp"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Biobank Observation Wachstumstyp"
+            "valueString": "Observation Growth Type"
           }
         ]
       }

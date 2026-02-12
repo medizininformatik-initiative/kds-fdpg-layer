@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Arterieller Druck"
+            "valueString": "Arterieller Druck"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Arterieller Druck"
+            "valueString": "Arterial Pressure"
           }
         ]
       }

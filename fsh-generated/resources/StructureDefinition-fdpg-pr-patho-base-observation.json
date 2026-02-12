@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Patho Base Observation"
+            "valueString": "MII PR Patho Basisbeobachtung"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Patho Base Observation"
+            "valueString": "MII PR Patho Base Observation"
           }
         ]
       }

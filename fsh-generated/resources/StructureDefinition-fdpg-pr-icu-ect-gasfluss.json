@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Gasfluss"
+            "valueString": "Gasfluss"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Gasfluss"
+            "valueString": "Gas Flow"
           }
         ]
       }

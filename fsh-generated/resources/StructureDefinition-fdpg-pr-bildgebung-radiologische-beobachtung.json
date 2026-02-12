@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Bildgebung Radiologische Beobachtung"
+            "valueString": "radiologische Beobachtung"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Bildgebung Radiologische Beobachtung"
+            "valueString": "radiological observation"
           }
         ]
       }
@@ -74,8 +74,120 @@
   "differential": {
     "element": [
       {
-        "id": "Observation",
-        "path": "Observation"
+        "id": "Observation.bodySite",
+        "path": "Observation.bodySite",
+        "_short": {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT Code"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            },
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            },
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT Code"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            },
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von SNOMED CT definierten Code"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            },
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by SNOMED CT"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            },
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von SNOMED CT definierten Code"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            },
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by SNOMED CT"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            }
+          ]
+        }
       }
     ]
   }

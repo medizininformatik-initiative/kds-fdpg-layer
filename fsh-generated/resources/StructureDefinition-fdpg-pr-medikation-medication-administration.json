@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Medikation MedicationAdministration"
+            "valueString": "Medikationsverabreichung"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Medikation MedicationAdministration"
+            "valueString": "Medication administration"
           }
         ]
       }

@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII Profile SE Symptom Condition"
+            "valueString": "Symptom"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MII Profile SE Symptom Condition"
+            "valueString": "Symptom Condition"
           }
         ]
       }

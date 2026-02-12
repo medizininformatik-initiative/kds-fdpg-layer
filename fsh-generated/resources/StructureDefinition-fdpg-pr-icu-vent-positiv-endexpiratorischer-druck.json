@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Positiv Endexpiratorischer Druck"
+            "valueString": "Positiv-endexpiratorischer Druck (PEEP)"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Positiv Endexpiratorischer Druck"
+            "valueString": "Positive End-Expiratory Pressure (PEEP)"
           }
         ]
       }

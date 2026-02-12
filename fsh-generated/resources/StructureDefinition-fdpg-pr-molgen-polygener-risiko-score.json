@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR MolGen Polygener Risiko Score"
+            "valueString": "Polygener Risiko-Score"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MolGen Polygener Risiko Score"
+            "valueString": "Polygenic Risk Score"
           }
         ]
       }

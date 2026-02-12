@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Medikation MedicationRequest"
+            "valueString": "Medikationsverordnung"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Medikation MedicationRequest"
+            "valueString": "Medication request"
           }
         ]
       }

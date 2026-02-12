@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Labor Laborbefund"
+            "valueString": "Laborbefund"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Labor Laborbefund"
+            "valueString": "Laboratory report"
           }
         ]
       }
@@ -74,8 +74,9 @@
   "differential": {
     "element": [
       {
-        "id": "DiagnosticReport",
-        "path": "DiagnosticReport"
+        "id": "DiagnosticReport.effective[x]",
+        "path": "DiagnosticReport.effective[x]",
+        "definition": "Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach.  Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird meist dieser Zeitpunkt verwendet.  Andernfalls wird zumeist behelfsmäßig der Probeneingang im Labor gewählt.  Dieses Element ist wichtig um verschiedene Analysen im Zeitverlauf sortieren zu können."
       }
     ]
   }

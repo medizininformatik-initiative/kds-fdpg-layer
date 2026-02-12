@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Bildgebung Radiologische Befundungsprozedur"
+            "valueString": "radiologische Befundungsprozedur"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Bildgebung Radiologische Befundungsprozedur"
+            "valueString": "radiological read-procedure"
           }
         ]
       }

@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII SD ICU Herzfrequenz"
+            "valueString": "Herzfrequenz"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MII SD ICU Herzfrequenz"
+            "valueString": "Heart Rate"
           }
         ]
       }

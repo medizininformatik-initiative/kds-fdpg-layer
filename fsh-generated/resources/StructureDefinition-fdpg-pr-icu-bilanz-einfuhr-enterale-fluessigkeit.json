@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit"
+            "valueString": "Bilanz - Einfuhr enterale Flüssigkeit"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Bilanz Einfuhr Enterale Fluessigkeit"
+            "valueString": "Fluid Balance - Enteral Fluid Intake"
           }
         ]
       }

@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "Profile - MI-I - Consent - Einwilligung"
+            "valueString": "Einwilligung"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Consent - Einwilligung"
+            "valueString": "Consent"
           }
         ]
       }

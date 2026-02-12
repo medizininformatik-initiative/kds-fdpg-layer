@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR MolGen Anforderung genetischer Test"
+            "valueString": "Anforderung genetischer Test"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MolGen Anforderung genetischer Test"
+            "valueString": "Genetic Test Order"
           }
         ]
       }

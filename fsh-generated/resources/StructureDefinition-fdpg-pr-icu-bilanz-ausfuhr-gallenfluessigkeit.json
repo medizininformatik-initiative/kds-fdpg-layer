@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit"
+            "valueString": "Bilanz - Ausfuhr Gallenflüssigkeit"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Bilanz Ausfuhr Gallenfluessigkeit"
+            "valueString": "Fluid Balance - Bile Output"
           }
         ]
       }

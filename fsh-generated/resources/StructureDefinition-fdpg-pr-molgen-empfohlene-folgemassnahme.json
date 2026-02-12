@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR MolGen Empfohlene Folgemaßnahme"
+            "valueString": "Empfohlene Folgemaßnahme"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MolGen Empfohlene Folgemaßnahme"
+            "valueString": "Recommended Follow-up Action"
           }
         ]
       }

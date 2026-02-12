@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Mechanische Atemfrequenz Beatmet"
+            "valueString": "Mechanische Atemfrequenz (beatmet)"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Mechanische Atemfrequenz Beatmet"
+            "valueString": "Mechanical Respiratory Rate (Ventilated)"
           }
         ]
       }

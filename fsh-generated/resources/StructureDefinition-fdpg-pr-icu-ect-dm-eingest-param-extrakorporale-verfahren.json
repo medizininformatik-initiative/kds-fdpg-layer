@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren"
+            "valueString": "Gerätemetrik - Eingestellte/gemessene Parameter extrakorporale Verfahren"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren"
+            "valueString": "Device Metric - Set/Measured Extracorporeal Procedure Parameters"
           }
         ]
       }

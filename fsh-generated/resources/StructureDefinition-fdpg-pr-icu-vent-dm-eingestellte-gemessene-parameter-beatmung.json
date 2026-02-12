@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung"
+            "valueString": "Gerätemetrik - Eingestellte/gemessene Parameter Beatmung"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung"
+            "valueString": "Device Metric - Set/Measured Ventilation Parameters"
           }
         ]
       }

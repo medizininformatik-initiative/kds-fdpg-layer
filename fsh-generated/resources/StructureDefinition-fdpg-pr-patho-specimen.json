@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Patho Specimen"
+            "valueString": "MII PR Patho Probe"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Patho Specimen"
+            "valueString": "MII PR Patho Specimen"
           }
         ]
       }

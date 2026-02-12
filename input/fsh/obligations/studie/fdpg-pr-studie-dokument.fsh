@@ -4,5 +4,5 @@ Id: fdpg-pr-studie-dokument
 Title: "FDPG PR Studie Dokument"
 Description: "FDPG Profil - MII PR Studie Dokument"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Studie Dokument)
-* insert Translation(^title, en-US, FDPG PR Studie Dokument)
+* insert Translation(^title, de-DE, Studiendokument)
+* insert Translation(^title, en-US, Study Document)

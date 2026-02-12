@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Spontane Mechanische Atemfrequenz Beatmet"
+            "valueString": "Spontane + mechanische Atemfrequenz (beatmet)"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Spontane Mechanische Atemfrequenz Beatmet"
+            "valueString": "Spontaneous Plus Mechanical Respiratory Rate (Ventilated)"
           }
         ]
       }

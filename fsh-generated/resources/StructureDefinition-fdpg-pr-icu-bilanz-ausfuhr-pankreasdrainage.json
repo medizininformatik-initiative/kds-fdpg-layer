@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Bilanz Ausfuhr Pankreasdrainage"
+            "valueString": "Bilanz - Ausfuhr Pankreasdrainage"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Bilanz Ausfuhr Pankreasdrainage"
+            "valueString": "Fluid Balance - Pancreatic Drainage Output"
           }
         ]
       }

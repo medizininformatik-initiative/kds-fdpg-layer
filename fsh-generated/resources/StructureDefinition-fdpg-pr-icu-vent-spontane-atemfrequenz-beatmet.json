@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Spontane Atemfrequenz Beatmet"
+            "valueString": "Spontane Atemfrequenz (beatmet)"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Spontane Atemfrequenz Beatmet"
+            "valueString": "Spontaneous Respiratory Rate (Ventilated)"
           }
         ]
       }

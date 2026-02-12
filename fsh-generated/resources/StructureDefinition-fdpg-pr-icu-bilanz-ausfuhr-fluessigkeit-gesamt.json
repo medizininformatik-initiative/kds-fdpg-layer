@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt"
+            "valueString": "Bilanz - Ausfuhr Flüssigkeit gesamt"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt"
+            "valueString": "Fluid Balance - Total Fluid Output"
           }
         ]
       }

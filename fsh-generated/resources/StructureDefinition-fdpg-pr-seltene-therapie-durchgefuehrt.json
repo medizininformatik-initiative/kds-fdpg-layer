@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Seltene Erkrankungen Therapie Durchgeführt"
+            "valueString": "Therapie durchgeführt"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Seltene Erkrankungen Therapie Durchgeführt"
+            "valueString": "Therapy Administered"
           }
         ]
       }

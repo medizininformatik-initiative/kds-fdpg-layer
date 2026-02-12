@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen"
+            "valueString": "Spontanes + mechanisches Atemzugvolumen"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Spontanes Plus Mechanisches Atemzugvolumen"
+            "valueString": "Spontaneous Plus Mechanical Tidal Volume"
           }
         ]
       }

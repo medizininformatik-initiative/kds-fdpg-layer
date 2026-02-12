@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "SD MII ICU Bilanz Einfuhr Fluessigkeit Gesamt"
+            "valueString": "Bilanz - Einfuhr Flüssigkeit gesamt"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR SD MII ICU Bilanz Einfuhr Fluessigkeit Gesamt"
+            "valueString": "Fluid Balance - Total Fluid Intake"
           }
         ]
       }

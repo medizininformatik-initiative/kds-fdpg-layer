@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Bilanz Blutverlust"
+            "valueString": "Bilanz - Blutverlust"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Bilanz Blutverlust"
+            "valueString": "Fluid Balance - Blood Loss"
           }
         ]
       }

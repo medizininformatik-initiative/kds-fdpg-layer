@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR MolGen Mikrosatelliteninstabilität"
+            "valueString": "Mikrosatelliteninstabilität"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MolGen Mikrosatelliteninstabilität"
+            "valueString": "Microsatellite Instability"
           }
         ]
       }

@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR SE Studieneinschluss Anfrage"
+            "valueString": "Studieneinschluss-Anfrage"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR SE Studieneinschluss Anfrage"
+            "valueString": "Study Enrollment Request"
           }
         ]
       }

@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"
+            "valueString": "Atemwegsdruck bei null expiratorischem Gasfluss"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"
+            "valueString": "Airway Pressure at Zero Expiratory Gas Flow"
           }
         ]
       }

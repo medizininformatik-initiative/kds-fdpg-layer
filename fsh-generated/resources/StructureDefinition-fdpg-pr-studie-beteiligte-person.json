@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Studie Beteiligte Person"
+            "valueString": "Beteiligte Person"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Studie Beteiligte Person"
+            "valueString": "Involved Person"
           }
         ]
       }

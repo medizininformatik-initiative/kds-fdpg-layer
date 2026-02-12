@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "Profile - MI-I - Consent - Provenance"
+            "valueString": "Einwilligungsherkunft"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Consent - Provenance"
+            "valueString": "Consent provenance"
           }
         ]
       }
@@ -60,8 +60,14 @@
   "differential": {
     "element": [
       {
-        "id": "Provenance",
-        "path": "Provenance"
+        "id": "Provenance.signature.extension:where",
+        "path": "Provenance.signature.extension",
+        "sliceName": "where"
+      },
+      {
+        "id": "Provenance.signature.extension:where.extension",
+        "path": "Provenance.signature.extension.extension",
+        "max": "0"
       }
     ]
   }

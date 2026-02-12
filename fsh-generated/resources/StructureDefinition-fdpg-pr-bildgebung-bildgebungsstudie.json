@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Bildgebung Bildgebungsstudie"
+            "valueString": "Bildgebungsstudie"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Bildgebung Bildgebungsstudie"
+            "valueString": "imaging study"
           }
         ]
       }

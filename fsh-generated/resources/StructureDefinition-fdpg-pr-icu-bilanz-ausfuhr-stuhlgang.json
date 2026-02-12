@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Bilanz Ausfuhr Stuhlgang"
+            "valueString": "Bilanz - Ausfuhr Stuhlgang"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Bilanz Ausfuhr Stuhlgang"
+            "valueString": "Fluid Balance - Stool Output"
           }
         ]
       }

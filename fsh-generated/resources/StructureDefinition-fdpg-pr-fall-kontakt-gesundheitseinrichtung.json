@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Fall Kontakt mit einer Gesundheitseinrichtung"
+            "valueString": "Fall - Kontakt mit einer Gesundheitseinrichtung"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Fall Kontakt mit einer Gesundheitseinrichtung"
+            "valueString": "Treatment case - Encounter with Health Care Facility"
           }
         ]
       }
@@ -74,8 +74,54 @@
   "differential": {
     "element": [
       {
-        "id": "Encounter",
-        "path": "Encounter"
+        "id": "Encounter.identifier:Aufnahmenummer",
+        "path": "Encounter.identifier",
+        "sliceName": "Aufnahmenummer",
+        "definition": "OPTIONAL, Ein eindeutiger Identifier, der einem Patienten bei der Aufnahmeplanung oder bei der Aufnahme selbst zugewiesen wird. Jeder Encounter SOLLTE seine eigene eindeutige Aufnahmenummer haben. Die Aufnahmenummer ist nicht die Fallnummer,  welche sich auf den kompletten Abrechnungsfall bezieht. Hier wird ein Identifier angegeben, der den Kontakt eindeutig identifiziert."
+      },
+      {
+        "id": "Encounter.class",
+        "path": "Encounter.class",
+        "definition": "VERPFLICHTEND, Kontaktklasse. Required Binding auf http://fhir.de/ValueSet/EncounterClassDE.  Klassifizierung des Kontaktes in stationär, ambulant, teilstationär oder andere."
+      },
+      {
+        "id": "Encounter.type:Kontaktebene",
+        "path": "Encounter.type",
+        "sliceName": "Kontaktebene",
+        "definition": "OPTIONAL, Unterscheidung der Kontakt-Hierarchieebenen Einrichtungskontakt, Abteilungskontakt, Versorgungsstellenkontakt.  Die Gliederung gilt für stationäre Kontakte. Required Binding auf http://fhir.de/ValueSet/kontaktebene-de"
+      },
+      {
+        "id": "Encounter.type:KontaktArt",
+        "path": "Encounter.type",
+        "sliceName": "KontaktArt",
+        "definition": "OPTIONAL, Differenzierung zwischen verschiedenen Arten von Kontakten (z.B. vorstationär, nachstationär, intensivstationär).  Required Binding auf http://fhir.de/ValueSet/kontaktart-de"
+      },
+      {
+        "id": "Encounter.serviceType.coding:Fachabteilungsschluessel",
+        "path": "Encounter.serviceType.coding",
+        "sliceName": "Fachabteilungsschluessel",
+        "definition": "OPTIONAL, required Binding auf http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel Fachabteilungen gemäß Anhang 1 der BPflV in der am 31.12.2003 geltenden Fassung"
+      },
+      {
+        "id": "Encounter.serviceType.coding:ErweiterterFachabteilungsschluessel",
+        "path": "Encounter.serviceType.coding",
+        "sliceName": "ErweiterterFachabteilungsschluessel",
+        "definition": "OPTIONAL, required Binding auf http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel-erweitert Fachabteilungen gemäß Anhang 1 der BPflV in der am 31.12.2003 geltenden Fassung inkl. Spezialisierungen."
+      },
+      {
+        "id": "Encounter.period",
+        "path": "Encounter.period",
+        "definition": "Beginn- und Endzeitpunkt des Kontaktes.      DARF NICHT vorhanden sein, kann OPTIONAL oder VERPFLICHTEND sein,      abhängig vom Status des Kontaktes - siehe Invarianten auf Ebene Encounter."
+      },
+      {
+        "id": "Encounter.diagnosis",
+        "path": "Encounter.diagnosis",
+        "definition": "OPTIONAL, Verweis auf Diagnosen/Prozeduren, die eine besondere Rolle im Kontext eines Encounters haben. Der Fallbezug von Diagnosen und Prozeduren wird über das jeweilige encounter-Element der Condition bzw. Procedure-Ressource hinreichend etabliert.  Die zusätzliche Rückverlinkung von Encounter.diagnosis auf Condition/Procedure wird nur dann verwendet,  wenn einer Diagnose bzw. Prozedur im Kontext eines Aufenthaltes eine besondere Rolle zugewiesen werden soll,  z.B. Haupt-/Neben-/Aufnahme- oder Überweisungsdiagnose)."
+      },
+      {
+        "id": "Encounter.partOf",
+        "path": "Encounter.partOf",
+        "definition": "OPTIONAL. Abbildung der Hierarchie zwischen Kontaktebenen durch Referenz auf weitere Kontakte,  wenn bspw. ein Versorgungsstellenkontakt Teil eines Abteilungskontaktes  oder ein Abteilungskontakt Teil eines Einrichtungskontaktes ist."
       }
     ]
   }

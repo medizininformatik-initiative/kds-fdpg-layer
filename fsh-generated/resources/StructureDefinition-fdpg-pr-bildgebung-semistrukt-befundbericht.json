@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Bildgebung Semistrukturierter Befundbericht"
+            "valueString": "Befundbericht semistrukturiert"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Bildgebung Semistrukturierter Befundbericht"
+            "valueString": "composition"
           }
         ]
       }

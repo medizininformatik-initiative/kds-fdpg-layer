@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR MolGen Genotyp"
+            "valueString": "Genotyp"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MolGen Genotyp"
+            "valueString": "Genotype"
           }
         ]
       }

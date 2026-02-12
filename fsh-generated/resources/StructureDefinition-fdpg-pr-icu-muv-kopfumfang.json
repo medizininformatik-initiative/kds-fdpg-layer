@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Kopfumfang"
+            "valueString": "Kopfumfang"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Kopfumfang"
+            "valueString": "Head Circumference"
           }
         ]
       }

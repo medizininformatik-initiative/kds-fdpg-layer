@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"
+            "valueString": "Beatmungsvolumen pro Minute maschineller Beatmung"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"
+            "valueString": "Minute Ventilation During Mechanical Ventilation"
           }
         ]
       }

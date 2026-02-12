@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Patho Section Grouper"
+            "valueString": "MII PR Patho Abschnittsgruppierung"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Patho Section Grouper"
+            "valueString": "MII PR Patho Section Grouper"
           }
         ]
       }

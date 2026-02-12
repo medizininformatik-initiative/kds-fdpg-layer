@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Bilanz Ausfuhr Urin"
+            "valueString": "Bilanz - Ausfuhr Urin"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Bilanz Ausfuhr Urin"
+            "valueString": "Fluid Balance - Urine Output"
           }
         ]
       }

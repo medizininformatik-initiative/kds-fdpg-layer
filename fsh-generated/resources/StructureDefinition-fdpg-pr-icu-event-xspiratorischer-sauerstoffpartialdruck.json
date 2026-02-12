@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Exspiratorischer Sauerstoffpartialdruck"
+            "valueString": "Exspiratorischer Sauerstoffpartialdruck"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Exspiratorischer Sauerstoffpartialdruck"
+            "valueString": "Expiratory Oxygen Partial Pressure"
           }
         ]
       }

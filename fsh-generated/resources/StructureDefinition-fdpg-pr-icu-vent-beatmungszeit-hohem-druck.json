@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII ICU Beatmungszeit Hohem Druck"
+            "valueString": "Beatmungszeit bei hohem Druck"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MII ICU Beatmungszeit Hohem Druck"
+            "valueString": "Ventilation Time at High Pressure"
           }
         ]
       }

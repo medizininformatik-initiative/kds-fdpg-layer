@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Diagnose Condition"
+            "valueString": "Diagnose"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Diagnose Condition"
+            "valueString": "Diagnosis"
           }
         ]
       }

@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR SE Clinical Diagnosis"
+            "valueString": "Klinische Diagnose"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR SE Clinical Diagnosis"
+            "valueString": "Clinical Diagnosis"
           }
         ]
       }

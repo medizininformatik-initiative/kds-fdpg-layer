@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Bildgebung Radiologischer Befund"
+            "valueString": "Befundbericht"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Bildgebung Radiologischer Befund"
+            "valueString": "diagnostic report"
           }
         ]
       }

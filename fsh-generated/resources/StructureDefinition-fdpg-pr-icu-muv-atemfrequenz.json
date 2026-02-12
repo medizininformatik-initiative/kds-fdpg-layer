@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Atemfrequenz"
+            "valueString": "Atemfrequenz"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Atemfrequenz"
+            "valueString": "Respiratory Rate"
           }
         ]
       }

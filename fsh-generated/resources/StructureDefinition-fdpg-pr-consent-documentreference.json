@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "Profile - MI-I - Consent - DocumentReference"
+            "valueString": "Einwilligungsdokument"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Consent - DocumentReference"
+            "valueString": "Consent document reference"
           }
         ]
       }

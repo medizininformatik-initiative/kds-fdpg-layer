@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Koerpergroesse"
+            "valueString": "Körpergröße"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Koerpergroesse"
+            "valueString": "Body Height"
           }
         ]
       }

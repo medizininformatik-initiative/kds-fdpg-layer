@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck"
+            "valueString": "Endexpiratorischer Kohlendioxidpartialdruck"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Endexpiratorischer Kohlendioxidpartialdruck"
+            "valueString": "End-Tidal Carbon Dioxide Partial Pressure (etCO2)"
           }
         ]
       }
