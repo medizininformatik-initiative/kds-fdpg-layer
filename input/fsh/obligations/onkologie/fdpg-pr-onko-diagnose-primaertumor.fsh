@@ -2,7 +2,7 @@ Profile: FDPG_PR_Onko_Diagnose_Primaertumor
 Parent: MII_PR_Onko_Diagnose_Primaertumor
 Id: fdpg-pr-onko-diagnose-primaertumor
 Title: "FDPG PR Onkologie Diagnose Primärtumor"
-Description: "FDPG Profil - MII PR Onkologie Diagnose Primärtumor"
+Description: "Die Diagnose Primärtumor ist der zentrale Ankerpunkt der onkologischen Dokumentation. Alle weiteren onkologischen Datenpunkte (Staging, Therapie, Verlauf, Metastasen, Rezidive etc.) referenzieren auf diese Diagnose, insofern eine Zuordnung getroffen werden kann. Ein komplett neuartiger Tumor wird als zweite Diagnose Primärtumor dokumentiert, so dass die Datenpunkte eindeutig zugeordnet werden können. Das Profil wird ebenfalls für Fälle mit unklarem Primärtumor (CUP-Syndrom), Polyneoplasien und neoplastischen Erkrankungen ohne klar abgrenzbaren Tumor (z.B. Lymphome, Leukämien) eingesetzt."
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Onkologische Diagnose Primärtumor)
 * insert Translation(^title, en-US, Oncology Diagnosis Primary Tumor)

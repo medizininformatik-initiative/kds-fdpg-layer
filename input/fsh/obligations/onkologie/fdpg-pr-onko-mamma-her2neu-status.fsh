@@ -2,7 +2,7 @@ Profile: FDPG_PR_Onko_Mamma_Her2neu_Status
 Parent: MII_PR_Onko_Mamma_Her2neu_Status
 Id: fdpg-pr-onko-mamma-her2neu-status
 Title: "FDPG PR Onkologie Her2neu Status"
-Description: "FDPG Profil - MII PR Onkologie Her2neu Status"
+Description: "Bei diesem Profil handelt es sich um die klinische Interpretation des HER2-Status. Die zugrundeliegenden immunhistochemischen (IHC) und In-Situ-Hybridisierungs-Datenpunkte sind im Modul Molekulares Tumorboard modelliert."
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, HER2/neu-Status)
 * insert Translation(^title, en-US, HER2/neu Status)

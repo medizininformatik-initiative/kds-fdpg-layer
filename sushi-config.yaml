@@ -123,6 +123,8 @@ pages:
     title: Datenkatalog Einwilligung
   datenkatalog-dokument.md:
     title: Datenkatalog Dokument
+  changelog.md:
+    title: Changelog
 
 menu:
   Home: index.html
@@ -160,4 +162,5 @@ menu:
     Onkologie: datenkatalog-onkologie.html
     Einwilligung: datenkatalog-consent.html
     Dokument: datenkatalog-dokument.html
+  Changelog: changelog.html
   Artifacts: artifacts.html

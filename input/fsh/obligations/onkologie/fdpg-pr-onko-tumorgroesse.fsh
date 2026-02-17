@@ -2,7 +2,7 @@ Profile: FDPG_PR_Onko_Tumorgroesse
 Parent: MII_PR_Onko_Tumorgroesse
 Id: fdpg-pr-onko-tumorgroesse
 Title: "FDPG PR Onkologie Tumorgröße"
-Description: "FDPG Profil - MII PR Onkologie Tumorgröße"
+Description: "Die Tumorgröße ist ursprünglich nicht Teil des oBDS, sondern der organspezifischen Module."
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Tumorgröße)
 * insert Translation(^title, en-US, Tumor Size)

@@ -2,7 +2,7 @@ Profile: FDPG_PR_Onko_Tod
 Parent: MII_PR_Onko_Tod
 Id: fdpg-pr-onko-tod
 Title: "FDPG PR Onkologie Tod"
-Description: "FDPG Profil - MII PR Onkologie Tod"
+Description: "Krebsregisterspezifische Darstellung der Todesursache nach ICD-10-GM. Die Todesursache aus dem MII-Personenmodul (Person_Todesursache) beschreibt dagegen die für die Todesursachenstatistik benötigte, international eingesetzte ICD-10-WHO."
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Tod bei onkologischer Erkrankung)
 * insert Translation(^title, en-US, Death in Oncological Disease)

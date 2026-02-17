@@ -2,7 +2,7 @@ Profile: FDPG_PR_Onko_Verlauf
 Parent: MII_PR_Onko_Verlauf
 Id: fdpg-pr-onko-verlauf
 Title: "FDPG PR Onkologie Verlauf"
-Description: "FDPG Profil - MII PR Onkologie Verlauf"
+Description: "Dieses Profil beschreibt den Behandlungserfolg und/oder Tumorprogress. Es ist davon auszugehen, dass ein Großteil der Patient:innen ambulant behandelt wird, so dass ggfs. keine strukturierten Verlaufsdaten vorliegen."
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Onkologischer Verlauf)
 * insert Translation(^title, en-US, Oncology Disease Course)

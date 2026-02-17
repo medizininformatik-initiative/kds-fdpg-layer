@@ -1,5 +1,17 @@
 # FDPG KDS Obligations Layer
 
+<div markdown="1" class="bg-warning" style="padding: 1em; border-left: 4px solid #856404; margin-bottom: 2em;">
+
+**Experimenteller Status** — Dieses Projekt befindet sich in der Prototyp-Phase und ist nicht für den produktiven Einsatz vorgesehen.
+
+Die FDPG KDS Obligations Layer beschreibt, welche MustSupport-Elemente der MII-Kerndatensatz-Profile im **FDPG-Portal** (als Metadata Consumer) dargestellt werden. Die hier definierten Obligations und Datenkataloge dienen als Arbeitsgrundlage und können sich jederzeit ändern.
+
+**Aktueller Fokus:** FDPG-Portal als einziger Actor (Metadata Consumer). Weitere Interfaces (z.B. DIZ-Systeme, TORCH) können in späteren Versionen ergänzt werden. Die Data-Population-Logik zwischen KDS und DIZ ist nicht Bestandteil dieser Spezifikation.
+
+Siehe [Changelog](changelog.html) für die Versionshistorie.
+
+</div>
+
 ## Übersicht
 
 Die FDPG KDS Obligations Layer definiert FDPG-spezifische Anforderungen für die MII Kerndatensatz Profile.
