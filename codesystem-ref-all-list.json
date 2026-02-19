@@ -1,0 +1,3050 @@
+{
+  "codeSystems" : [{
+    "url" : "http://dicom.nema.org/resources/ontology/DCM",
+    "version" : "2025.3.20250714",
+    "status" : "active",
+    "name" : "DICOMTerminologyDefinitions",
+    "title" : "DICOM Controlled Terminology Definitions",
+    "description" : "DICOM Code Definitions (Coding Scheme Designator \"DCM\" Coding Scheme Version 2025.3.20250714",
+    "oids" : ["1.2.840.10008.2.16.4"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+  },
+  {
+    "url" : "http://dvmd.de/fhir/CodeSystem/kdl",
+    "version" : "2025",
+    "status" : "active",
+    "name" : "CodeSystemKDL",
+    "title" : "CodeSystem Klinische Dokumentenklassen-Liste (Version 2025)",
+    "description" : "Diese CodeSystem-Ressource definiert alle in der Klinischen Dokumentenklassen-Liste aktuell gültigen Codes.",
+    "oids" : ["1.2.276.0.76.5.553"],
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://dvmd.de/fhir/ValueSet/kdl" : "ValueSet Klinische Dokumentenklassen-Liste (Version 2025)",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/ValueSet/mii-vs-patho-composition-type-kdl" : "MII VS Patho Composition Type KDL"
+  },
+  {
+    "url" : "http://fdasis.nlm.nih.gov",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "UNII",
+    "title" : "Unique Ingredient Identifier (UNII)",
+    "description" : "A UNII is a non-proprietary, free, unique, unambiguous, nonsemantic, alphanumeric identifier based on a substance's molecular structure and/or descriptive information. UNII identifiers are generated based on scientific identity characteristics using ISO 11238 data elements. UNII availability does not imply any regulatory review or approval. Synonyms and mappings are based on the best public information available at the time of publication.",
+    "oids" : ["2.16.840.1.113883.4.9"],
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-substanzen-unii" : "MII VS Onkologie Systemische Therapie Substanzen (UNII)",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.medikation@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-unii" : "MII VS Medikation UNII"
+  },
+  {
+    "url" : "http://fhir.de/CodeSystem/KontaktDiagnoseProzedur",
+    "version" : "1.5.4",
+    "status" : "active",
+    "name" : "KontaktDiagnoseProzedur",
+    "title" : "KontaktDiagnoseProzedur",
+    "description" : "Rolle/Relevanz von Diagnosen",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/Diagnosesubtyp" : "Diagnosesubtyp ValueSet",
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/DiagnoseTyp" : "DiagnoseTyp ValueSet"
+  },
+  {
+    "url" : "http://fhir.de/CodeSystem/Kontaktebene",
+    "version" : "1.5.4",
+    "status" : "active",
+    "name" : "Kontaktebene",
+    "title" : "Kontaktebene",
+    "description" : "CodeSystem für die Ebene eines Kontaktes mit einer Gesundheitseinrichtung",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/kontaktebene-de" : "KontaktebeneDe ValueSet"
+  },
+  {
+    "url" : "http://fhir.de/CodeSystem/ask",
+    "version" : null,
+    "status" : "active",
+    "name" : "Ask",
+    "title" : "Arzneimittel-Stoffkatalog",
+    "description" : "Arzneimittel-Stoffkatalog (ASK) Platzhalter-CodeSystem",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.medikation@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-ask" : "MII VS Medikation ASK"
+  },
+  {
+    "url" : "http://fhir.de/CodeSystem/bfarm/alpha-id",
+    "version" : null,
+    "status" : "active",
+    "name" : "AlphaId",
+    "title" : "Alpha-ID",
+    "description" : "Alpha-ID Platzhalter-CodeSystem",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/ValueSet/mii-vs-diagnose-alphaid" : "MII VS Diagnose Alpha-ID"
+  },
+  {
+    "url" : "http://fhir.de/CodeSystem/bfarm/atc",
+    "version" : null,
+    "status" : "active",
+    "name" : "Atc",
+    "title" : "ATC",
+    "description" : "ATC Platzhalter-CodeSystem",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.medikation@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/mii-vs-medikation-atc" : "MII VS Medikation ATC"
+  },
+  {
+    "url" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+    "version" : null,
+    "status" : "active",
+    "name" : "ICD10GM",
+    "title" : "ICD-10-GM",
+    "description" : "ICD-10-GM Platzhalter-CodeSystem",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/ValueSet/mii-vs-diagnose-icd10gm" : "MII VS Diagnose ICD-10-GM",
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/bfarm/icd-10-gm" : "ICD10GM ValueSet"
+  },
+  {
+    "url" : "http://fhir.de/CodeSystem/bfarm/ops",
+    "version" : null,
+    "status" : "active",
+    "name" : "OPS",
+    "title" : "OPS",
+    "description" : "OPS Platzhalter-CodeSystem",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-ops-nuklearmedizin" : "MII VS Onkologie OPS Nuklearmedizin",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/mii-vs-prozedur-ops" : "MII VS Prozedur OPS",
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/bfarm/ops" : "OPS ValueSet",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-ops-strahlentherapie" : "MII VS Onkologie OPS Strahlentherapie",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-operation-ops" : "MII_VS_Onko_Mamma_Operation_OPS"
+  },
+  {
+    "url" : "http://fhir.de/CodeSystem/dgkev/Aufnahmeanlass",
+    "version" : "1.5.4",
+    "status" : "active",
+    "name" : "CodeSystemAufnahmeanlass",
+    "title" : "CodeSystemAufnahmeanlass",
+    "description" : "Aufnahmeanlass, Datenübermittlung nach § 301 Abs. 3 SGB V",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/dgkev/Aufnahmeanlass" : "Aufnahmeanlass ValueSet"
+  },
+  {
+    "url" : "http://fhir.de/CodeSystem/dkgev/AufnahmegrundDritteStelle",
+    "version" : "1.5.4",
+    "status" : "active",
+    "name" : "AufnahmegrundDritteStelle",
+    "title" : "AufnahmegrundDritteStelle",
+    "description" : "Aufnahmegrund (3. Stelle), Datenübermittlung nach § 301 Abs. 3 SGB V",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/dkgev/AufnahmegrundDritteStelle" : "AufnahmegrundDritteStelle ValueSet"
+  },
+  {
+    "url" : "http://fhir.de/CodeSystem/dkgev/AufnahmegrundErsteUndZweiteStelle",
+    "version" : "1.5.4",
+    "status" : "active",
+    "name" : "CodeSystemAufnahmegrundErsteUndZweiteStelle",
+    "title" : "CodeSystemAufnahmegrundErsteUndZweiteStelle",
+    "description" : "Aufnahmegrund (1. und 2. Stelle), Datenübermittlung nach § 301 Abs. 3 SGB V",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/dkgev/AufnahmegrundErsteUndZweiteStelle" : "Aufnahmegrund Erste und Zweite Stelle ValueSet"
+  },
+  {
+    "url" : "http://fhir.de/CodeSystem/dkgev/AufnahmegrundVierteStelle",
+    "version" : "1.5.4",
+    "status" : "active",
+    "name" : "AufnahmegrundVierteStelle",
+    "title" : "AufnahmegrundVierteStelle",
+    "description" : "Aufnahmegrund (4. Stelle), Datenübermittlung nach § 301 Abs. 3 SGB V",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/dkgev/AufnahmegrundVierteStelle" : "Aufnahmegrund Vierte Stelle ValueSet"
+  },
+  {
+    "url" : "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel",
+    "version" : "1.5.4",
+    "status" : "active",
+    "name" : "CodeSystemFachabteilungsschluessel",
+    "title" : "Fachabteilungsschluessel",
+    "description" : "Fachabteilungen gemäß Anhang 1 der BPflV in der am 31.12.2003 geltenden Fassung",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel" : "Fachabteilungsschlüssel ValueSet"
+  },
+  {
+    "url" : "http://fhir.de/CodeSystem/dkgev/Fachabteilungsschluessel-erweitert",
+    "version" : "1.5.4",
+    "status" : "active",
+    "name" : "CodeSystemFachabteilungsschluesselErweitert",
+    "title" : "Fachabteilungsschluessel Erweitert",
+    "description" : "Fachabteilungen gemäß Anhang 1 der BPflV in der am 31.12.2003 geltenden Fassung inkl. Spezialisierungen",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel-erweitert" : "FachabteilungsschluesselErweitert ValueSet"
+  },
+  {
+    "url" : "http://fhir.de/CodeSystem/identifier-type-de-basis",
+    "version" : "1.5.4",
+    "status" : "active",
+    "name" : "IdentifierTypeDeBasis",
+    "title" : "Identifier Type De Basis",
+    "description" : "Liste der Identfikatorentypen des deutschen Basisprofils welche die Standardtypen ergänzen.",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/identifier-type-de-basis" : "Identifier Type DeBasis ValueSet"
+  },
+  {
+    "url" : "http://fhir.de/CodeSystem/kontaktart-de",
+    "version" : "1.5.4",
+    "status" : "active",
+    "name" : "KontaktArtDe",
+    "title" : "KontaktArtDe",
+    "description" : "Klassifizierung eines Kontaktes mit einer Gesundheitseinrichtung",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/kontaktart-de" : "KontaktartDe ValueSet"
+  },
+  {
+    "url" : "http://hl7.org/fhir/CodeSystem/medication-statement-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "Medication Status Codes",
+    "title" : "Medication  status  codes",
+    "description" : "Medication Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1379"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medication-statement-status.html" : "Medication  status  codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/CodeSystem/medication-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "Medication Status Codes",
+    "title" : "Medication  status  codes",
+    "description" : "Medication Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1380"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medication-status.html" : "Medication  status  codes"
+  },
+  {
+    "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-intent",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "medicationRequest Intent",
+    "title" : "Medication request  intent",
+    "description" : "MedicationRequest Intent Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1378"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationrequest-intent.html" : "Medication request  intent"
+  },
+  {
+    "url" : "http://hl7.org/fhir/CodeSystem/medicationrequest-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "medicationrequest Status",
+    "title" : "Medicationrequest  status",
+    "description" : "MedicationRequest Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1377"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationrequest-status.html" : "Medicationrequest  status"
+  },
+  {
+    "url" : "http://hl7.org/fhir/action-cardinality-behavior",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ActionCardinalityBehavior",
+    "title" : "ActionCardinalityBehavior",
+    "description" : "Defines behavior for an action or a group for how many times that item may be repeated.",
+    "oids" : ["2.16.840.1.113883.4.642.4.808"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-action-cardinality-behavior.html" : "ActionCardinalityBehavior"
+  },
+  {
+    "url" : "http://hl7.org/fhir/action-condition-kind",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ActionConditionKind",
+    "title" : "ActionConditionKind",
+    "description" : "Defines the kinds of conditions that can appear on actions.",
+    "oids" : ["2.16.840.1.113883.4.642.4.816"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-action-condition-kind.html" : "ActionConditionKind"
+  },
+  {
+    "url" : "http://hl7.org/fhir/action-grouping-behavior",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ActionGroupingBehavior",
+    "title" : "ActionGroupingBehavior",
+    "description" : "Defines organization behavior of a group.",
+    "oids" : ["2.16.840.1.113883.4.642.4.800"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-action-grouping-behavior.html" : "ActionGroupingBehavior"
+  },
+  {
+    "url" : "http://hl7.org/fhir/action-precheck-behavior",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ActionPrecheckBehavior",
+    "title" : "ActionPrecheckBehavior",
+    "description" : "Defines selection frequency behavior for an action or group.",
+    "oids" : ["2.16.840.1.113883.4.642.4.806"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-action-precheck-behavior.html" : "ActionPrecheckBehavior"
+  },
+  {
+    "url" : "http://hl7.org/fhir/action-relationship-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ActionRelationshipType",
+    "title" : "ActionRelationshipType",
+    "description" : "Defines the types of relationships between actions.",
+    "oids" : ["2.16.840.1.113883.4.642.4.814"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-action-relationship-type.html" : "ActionRelationshipType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/action-required-behavior",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ActionRequiredBehavior",
+    "title" : "ActionRequiredBehavior",
+    "description" : "Defines expectations around whether an action or action group is required.",
+    "oids" : ["2.16.840.1.113883.4.642.4.804"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-action-required-behavior.html" : "ActionRequiredBehavior"
+  },
+  {
+    "url" : "http://hl7.org/fhir/action-selection-behavior",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ActionSelectionBehavior",
+    "title" : "ActionSelectionBehavior",
+    "description" : "Defines selection behavior of a group.",
+    "oids" : ["2.16.840.1.113883.4.642.4.802"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-action-selection-behavior.html" : "ActionSelectionBehavior"
+  },
+  {
+    "url" : "http://hl7.org/fhir/address-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AddressType",
+    "title" : "AddressType",
+    "description" : "The type of an address (physical / postal).",
+    "oids" : ["2.16.840.1.113883.4.642.4.70"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-address-type.html" : "AddressType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/address-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AddressUse",
+    "title" : "AddressUse",
+    "description" : "The use of an address.",
+    "oids" : ["2.16.840.1.113883.4.642.4.68"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-address-use.html" : "AddressUse"
+  },
+  {
+    "url" : "http://hl7.org/fhir/administrative-gender",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "AdministrativeGender",
+    "title" : "AdministrativeGender",
+    "description" : "The gender of a person used for administrative purposes.",
+    "oids" : ["2.16.840.1.113883.4.642.4.2"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-administrative-gender.html" : "AdministrativeGender"
+  },
+  {
+    "url" : "http://hl7.org/fhir/adverse-event-actuality",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AdverseEventActuality",
+    "title" : "AdverseEventActuality",
+    "description" : "Overall nature of the adverse event, e.g. real or potential.",
+    "oids" : ["2.16.840.1.113883.4.642.4.832"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-adverse-event-actuality.html" : "AdverseEventActuality"
+  },
+  {
+    "url" : "http://hl7.org/fhir/bundle-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "BundleType",
+    "title" : "BundleType",
+    "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+    "oids" : ["2.16.840.1.113883.4.642.4.621"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-bundle-type.html" : "BundleType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/care-plan-activity-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CarePlanActivityStatus",
+    "title" : "CarePlanActivityStatus",
+    "description" : "Codes that reflect the current state of a care plan activity within its overall life cycle.",
+    "oids" : ["2.16.840.1.113883.4.642.4.147"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-care-plan-activity-status.html" : "CarePlanActivityStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/composition-attestation-mode",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CompositionAttestationMode",
+    "title" : "CompositionAttestationMode",
+    "description" : "The way in which a person authenticated a composition.",
+    "oids" : ["2.16.840.1.113883.4.642.4.239"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-composition-attestation-mode.html" : "CompositionAttestationMode"
+  },
+  {
+    "url" : "http://hl7.org/fhir/composition-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CompositionStatus",
+    "title" : "CompositionStatus",
+    "description" : "The workflow/clinical status of the composition.",
+    "oids" : ["2.16.840.1.113883.4.642.4.242"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/consent-data-meaning",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConsentDataMeaning",
+    "title" : "ConsentDataMeaning",
+    "description" : "How a resource reference is interpreted when testing consent restrictions.",
+    "oids" : ["2.16.840.1.113883.4.642.4.760"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-data-meaning.html" : "ConsentDataMeaning"
+  },
+  {
+    "url" : "http://hl7.org/fhir/consent-provision-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConsentProvisionType",
+    "title" : "ConsentProvisionType",
+    "description" : "How a rule statement is applied, such as adding additional consent or removing consent.",
+    "oids" : ["2.16.840.1.113883.4.642.4.758"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-provision-type.html" : "ConsentProvisionType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/consent-state-codes",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ConsentState",
+    "title" : "ConsentState",
+    "description" : "Indicates the state of the consent.",
+    "oids" : ["2.16.840.1.113883.4.642.4.756"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-state-codes.html" : "ConsentState"
+  },
+  {
+    "url" : "http://hl7.org/fhir/days-of-week",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "DaysOfWeek",
+    "title" : "DaysOfWeek",
+    "description" : "The days of the week.",
+    "oids" : ["2.16.840.1.113883.4.642.4.513"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-days-of-week.html" : "DaysOfWeek"
+  },
+  {
+    "url" : "http://hl7.org/fhir/device-nametype",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DeviceNameType",
+    "title" : "DeviceNameType",
+    "description" : "The type of name the device is referred by.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1084"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-device-nametype.html" : "DeviceNameType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/device-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FHIRDeviceStatus",
+    "title" : "FHIRDeviceStatus",
+    "description" : "The availability status of the device.",
+    "oids" : ["2.16.840.1.113883.4.642.4.210"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-device-status.html" : "FHIRDeviceStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/diagnostic-report-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DiagnosticReportStatus",
+    "title" : "DiagnosticReportStatus",
+    "description" : "The status of the diagnostic report.",
+    "oids" : ["2.16.840.1.113883.4.642.4.236"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html" : "DiagnosticReportStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/document-reference-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentReferenceStatus",
+    "title" : "DocumentReferenceStatus",
+    "description" : "The status of the document reference.",
+    "oids" : ["2.16.840.1.113883.4.642.4.8"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-document-reference-status.html" : "DocumentReferenceStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/document-relationship-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DocumentRelationshipType",
+    "title" : "DocumentRelationshipType",
+    "description" : "The type of relationship between documents.",
+    "oids" : ["2.16.840.1.113883.4.642.4.245"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-document-relationship-type.html" : "DocumentRelationshipType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/encounter-location-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EncounterLocationStatus",
+    "title" : "EncounterLocationStatus",
+    "description" : "The status of the location.",
+    "oids" : ["2.16.840.1.113883.4.642.4.263"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-location-status.html" : "EncounterLocationStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/encounter-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EncounterStatus",
+    "title" : "EncounterStatus",
+    "description" : "Current state of the encounter.",
+    "oids" : ["2.16.840.1.113883.4.642.4.247"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-status.html" : "EncounterStatus",
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/EncounterStatusDe" : "Encounter Status ValueSet"
+  },
+  {
+    "url" : "http://hl7.org/fhir/event-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EventStatus",
+    "title" : "EventStatus",
+    "description" : "Codes identifying the lifecycle stage of an event.",
+    "oids" : ["2.16.840.1.113883.4.642.4.110"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-clinicalimpression-status.html" : "Clinical Impression Status",
+    "http://hl7.org/fhir/R4/valueset-event-status.html" : "EventStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/event-timing",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "EventTiming",
+    "title" : "EventTiming",
+    "description" : "Real world event relating to the schedule.",
+    "oids" : ["2.16.840.1.113883.4.642.4.76"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-event-timing.html" : "EventTiming"
+  },
+  {
+    "url" : "http://hl7.org/fhir/group-measure",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "GroupMeasure",
+    "title" : "GroupMeasure",
+    "description" : "Possible group measure aggregates (E.g. Mean, Median).",
+    "oids" : ["2.16.840.1.113883.4.642.4.1346"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-group-measure.html" : "GroupMeasure"
+  },
+  {
+    "url" : "http://hl7.org/fhir/history-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FamilyHistoryStatus",
+    "title" : "FamilyHistoryStatus",
+    "description" : "A code that identifies the status of the family history record.",
+    "oids" : ["2.16.840.1.113883.4.642.4.268"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-history-status.html" : "FamilyHistoryStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/http-verb",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "HTTPVerb",
+    "title" : "HTTPVerb",
+    "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+    "oids" : ["2.16.840.1.113883.4.642.4.625"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-http-verb.html" : "HTTPVerb"
+  },
+  {
+    "url" : "http://hl7.org/fhir/identifier-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "IdentifierUse",
+    "title" : "IdentifierUse",
+    "description" : "Identifies the purpose for this identifier, if known .",
+    "oids" : ["2.16.840.1.113883.4.642.4.58"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
+  },
+  {
+    "url" : "http://hl7.org/fhir/imagingstudy-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ImagingStudyStatus",
+    "title" : "ImagingStudyStatus",
+    "description" : "The status of the ImagingStudy.",
+    "oids" : ["2.16.840.1.113883.4.642.4.991"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-imagingstudy-status.html" : "ImagingStudyStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/link-type",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "LinkType",
+    "title" : "LinkType",
+    "description" : "The type of link between this patient resource and another patient resource.",
+    "oids" : ["2.16.840.1.113883.4.642.4.424"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-link-type.html" : "LinkType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/list-mode",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ListMode",
+    "title" : "ListMode",
+    "description" : "The processing mode that applies to this list.",
+    "oids" : ["2.16.840.1.113883.4.642.4.319"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-mode.html" : "ListMode"
+  },
+  {
+    "url" : "http://hl7.org/fhir/list-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ListStatus",
+    "title" : "ListStatus",
+    "description" : "The current state of the list.",
+    "oids" : ["2.16.840.1.113883.4.642.4.327"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-status.html" : "ListStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/metric-calibration-state",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DeviceMetricCalibrationState",
+    "title" : "DeviceMetricCalibrationState",
+    "description" : "Describes the state of a metric calibration.",
+    "oids" : ["2.16.840.1.113883.4.642.4.653"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-metric-calibration-state.html" : "DeviceMetricCalibrationState"
+  },
+  {
+    "url" : "http://hl7.org/fhir/metric-calibration-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DeviceMetricCalibrationType",
+    "title" : "DeviceMetricCalibrationType",
+    "description" : "Describes the type of a metric calibration.",
+    "oids" : ["2.16.840.1.113883.4.642.4.651"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-metric-calibration-type.html" : "DeviceMetricCalibrationType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/metric-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DeviceMetricCategory",
+    "title" : "DeviceMetricCategory",
+    "description" : "Describes the category of the metric.",
+    "oids" : ["2.16.840.1.113883.4.642.4.649"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-metric-category.html" : "DeviceMetricCategory"
+  },
+  {
+    "url" : "http://hl7.org/fhir/metric-color",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DeviceMetricColor",
+    "title" : "DeviceMetricColor",
+    "description" : "Describes the typical color of representation.",
+    "oids" : ["2.16.840.1.113883.4.642.4.655"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-metric-color.html" : "DeviceMetricColor"
+  },
+  {
+    "url" : "http://hl7.org/fhir/metric-operational-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "DeviceMetricOperationalStatus",
+    "title" : "DeviceMetricOperationalStatus",
+    "description" : "Describes the operational status of the DeviceMetric.",
+    "oids" : ["2.16.840.1.113883.4.642.4.647"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-metric-operational-status.html" : "DeviceMetricOperationalStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/name-use",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "NameUse",
+    "title" : "NameUse",
+    "description" : "The use of a human name.",
+    "oids" : ["2.16.840.1.113883.4.642.4.66"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-name-use.html" : "NameUse"
+  },
+  {
+    "url" : "http://hl7.org/fhir/narrative-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "NarrativeStatus",
+    "title" : "NarrativeStatus",
+    "description" : "The status of a resource narrative.",
+    "oids" : ["2.16.840.1.113883.4.642.4.56"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-narrative-status.html" : "NarrativeStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/observation-status",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ObservationStatus",
+    "title" : "ObservationStatus",
+    "description" : "Codes providing the status of an observation.",
+    "oids" : ["2.16.840.1.113883.4.642.4.401"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/provenance-entity-role",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ProvenanceEntityRole",
+    "title" : "ProvenanceEntityRole",
+    "description" : "How an entity was used in an activity.",
+    "oids" : ["2.16.840.1.113883.4.642.4.437"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-provenance-entity-role.html" : "ProvenanceEntityRole"
+  },
+  {
+    "url" : "http://hl7.org/fhir/publication-status",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "PublicationStatus",
+    "title" : "PublicationStatus",
+    "description" : "The lifecycle status of an artifact.",
+    "oids" : ["2.16.840.1.113883.4.642.4.4"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-publication-status.html" : "PublicationStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/quantity-comparator",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "QuantityComparator",
+    "title" : "QuantityComparator",
+    "description" : "How the Quantity should be understood and represented.",
+    "oids" : ["2.16.840.1.113883.4.642.4.60"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
+  },
+  {
+    "url" : "http://hl7.org/fhir/related-artifact-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "RelatedArtifactType",
+    "title" : "RelatedArtifactType",
+    "description" : "The type of relationship to the related artifact.",
+    "oids" : ["2.16.840.1.113883.4.642.4.100"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-related-artifact-type.html" : "RelatedArtifactType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/request-intent",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "RequestIntent",
+    "title" : "RequestIntent",
+    "description" : "Codes indicating the degree of authority/intentionality associated with a request.",
+    "oids" : ["2.16.840.1.113883.4.642.4.114"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent",
+    "http://hl7.org/fhir/R4/valueset-request-intent.html" : "RequestIntent",
+    "http://hl7.org/fhir/R4/valueset-care-plan-intent.html" : "Care Plan Intent"
+  },
+  {
+    "url" : "http://hl7.org/fhir/request-priority",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "RequestPriority",
+    "title" : "RequestPriority",
+    "description" : "Identifies the level of importance to be assigned to actioning the request.",
+    "oids" : ["2.16.840.1.113883.4.642.4.116"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-request-priority.html" : "Request priority"
+  },
+  {
+    "url" : "http://hl7.org/fhir/request-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "RequestStatus",
+    "title" : "RequestStatus",
+    "description" : "Codes identifying the lifecycle stage of a request.",
+    "oids" : ["2.16.840.1.113883.4.642.4.112"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-request-status.html" : "RequestStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/research-study-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ResearchStudyStatus",
+    "title" : "ResearchStudyStatus",
+    "description" : "Codes that convey the current status of the research study.",
+    "oids" : ["2.16.840.1.113883.4.642.4.820"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-research-study-status.html" : "ResearchStudyStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/research-subject-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "ResearchSubjectStatus",
+    "title" : "ResearchSubjectStatus",
+    "description" : "Indicates the progression of a study subject through a study.",
+    "oids" : ["2.16.840.1.113883.4.642.4.830"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-research-subject-status.html" : "ResearchSubjectStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/resource-types",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "ResourceType",
+    "title" : "ResourceType",
+    "description" : "One of the resource types defined as part of this version of FHIR.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class",
+    "http://hl7.org/fhir/R4/valueset-subject-type.html" : "Subject type",
+    "http://hl7.org/fhir/R4/valueset-care-plan-activity-kind.html" : "Care Plan Activity Kind",
+    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/search-entry-mode",
+    "version" : "4.0.1",
+    "status" : "active",
+    "name" : "SearchEntryMode",
+    "title" : "SearchEntryMode",
+    "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+    "oids" : ["2.16.840.1.113883.4.642.4.623"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
+  },
+  {
+    "url" : "http://hl7.org/fhir/sid/icd-10",
+    "version" : "2.1.1",
+    "status" : "retired",
+    "name" : "Icd10",
+    "title" : "ICD-10",
+    "description" : "International Classification of Diseases revision 10 (ICD 10)",
+    "oids" : ["2.16.840.1.113883.6.3"],
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/ValueSet/mii-vs-person-icd10who" : "MII VS Person ICD-10-WHO"
+  },
+  {
+    "url" : "http://hl7.org/fhir/specimen-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SpecimenStatus",
+    "title" : "SpecimenStatus",
+    "description" : "Codes providing the status/availability of a specimen.",
+    "oids" : ["2.16.840.1.113883.4.642.4.472"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-specimen-status.html" : "SpecimenStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/substance-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "FHIRSubstanceStatus",
+    "title" : "FHIRSubstanceStatus",
+    "description" : "A code to indicate if the substance is actively used.",
+    "oids" : ["2.16.840.1.113883.4.642.4.475"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-substance-status.html" : "FHIRSubstanceStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/task-intent",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "TaskIntent",
+    "title" : "TaskIntent",
+    "description" : "Distinguishes whether the task is a proposal, plan or full order.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1241"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-task-intent.html" : "TaskIntent"
+  },
+  {
+    "url" : "http://hl7.org/fhir/task-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "TaskStatus",
+    "title" : "TaskStatus",
+    "description" : "The current status of the task.",
+    "oids" : ["2.16.840.1.113883.4.642.4.791"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-task-status.html" : "TaskStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/udi-entry-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "UDIEntryType",
+    "title" : "UDIEntryType",
+    "description" : "Codes to identify how UDI data was entered.",
+    "oids" : ["2.16.840.1.113883.4.642.4.212"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-udi-entry-type.html" : "UDIEntryType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/clinvar-evidence-level-custom-cs",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ClinVarEvidenceLevelCustomCS",
+    "title" : "ClinVar Evidence Level Example Codes",
+    "description" : "ClinVar contains examples of evidence level concepts that are not conflated with clinical significance. These can be found on  ClinVar https://www.ncbi.nlm.nih.gov/clinvar/docs/review_status/ . These examples are informational only, for copyright information contact the relevant source.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/uv/genomics-reporting/STU3/ValueSet-evidence-level-example-vs.html" : "Evidence Level Examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/genomic-study-type-cs",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "GenomicStudyTypeCS",
+    "title" : "Genomic Study Type CodeSystem",
+    "description" : "Backport of http://hl7.org/fhir/genomicstudy-type",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/uv/genomics-reporting/STU3/ValueSet-genomic-study-type-vs.html" : "Genomic Study Type ValueSet"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/molecular-biomarker-ontology-cs",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "MolecularBiomarkerOntologyCS",
+    "title" : "Molecular Biomarker Ontology Codes",
+    "description" : "This (experimental) code system provides for a draft categorization of biomarkers along several axes. Based on ballot feedback, the committee anticipates significant revisions.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/uv/genomics-reporting/STU3/ValueSet-molecular-biomarker-category-vs.html" : "Molecular Biomarker Categories"
+  },
+  {
+    "url" : "http://hl7.org/fhir/uv/genomics-reporting/CodeSystem/pharmgkb-evidence-level-custom-cs",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "PharmGKBEvidenceLevelCustomCS",
+    "title" : "PharmGKB Evidence Level Example Codes",
+    "description" : "PharmGKB contains examples of evidence level concepts that are not conflated with clinical significance. These can be found on PharmGKB https://www.pharmgkb.org/page/clinAnnLevels. These examples are informational only, for copyright information contact the relevant source.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/uv/genomics-reporting/STU3/ValueSet-evidence-level-example-vs.html" : "Evidence Level Examples"
+  },
+  {
+    "url" : "http://hl7.org/fhir/variable-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "EvidenceVariableType",
+    "title" : "EvidenceVariableType",
+    "description" : "The possible types of variables for exposures or outcomes (E.g. Dichotomous, Continuous, Descriptive).",
+    "oids" : ["2.16.840.1.113883.4.642.4.1344"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-variable-type.html" : "EvidenceVariableType"
+  },
+  {
+    "url" : "http://human-phenotype-ontology.org",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "HPO",
+    "title" : "Human Phenotype Ontology",
+    "description" : "\"The Human Phenotype Ontology (HPO) provides a standardized vocabulary of phenotypic abnormalities encountered in human disease. Each term in the HPO describes a phenotypic abnormality, such as Atrial septal defect. The HPO is currently being developed using the medical literature, Orphanet, DECIPHER, and OMIM. HPO currently contains over 13,000 terms and over 156,000 annotations to hereditary diseases. The HPO project and others have developed software for phenotype-driven differential diagnostics, genomic diagnostics, and translational research. The HPO is a flagship product of the Monarch Initiative, an NIH-supported international consortium dedicated to semantic integration of biomedical and model organism data with the ultimate goal of improving biomedical research. The HPO, as a part of the Monarch Initiative, is a central component of one of the 13 driver projects in the Global Alliance for Genomics and Health (GA4GH) strategic roadmap.\"\r\n\r\nPlease see https://hpo.jax.org/app/download/ontology.\r\n\r\nReleases, produced approximately every 2 months, can be found [here](https://github.com/obophenotype/human-phenotype-ontology/releases).",
+    "oids" : ["2.16.840.1.113883.6.339"],
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.seltene@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ValueSet/mii-vs-seltene-hpo-phenotypic-observation-codes" : "HPO Phenotypic Observation Codes",
+    "http://hl7.org/fhir/uv/genomics-reporting/STU3/ValueSet-condition-inheritance-mode-vs.html" : "Condition Inheritance Patterns",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.seltene@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ValueSet/mii-vs-seltene-hpo-severity" : "HPO Severity"
+  },
+  {
+    "url" : "http://ihe-d.de/CodeSystems/DokumentenWarnhinweise",
+    "version" : "2021-07-06T21:19:41",
+    "status" : "active",
+    "name" : "DokumentenWarnhinweise",
+    "title" : "Dokumenten Warnhinweise",
+    "description" : "",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.medikation@2026.0.1&canonical=http://ihe-d.de/ValueSets/IHEXDSeventCodeList" : "IHE XDS eventCodeList"
+  },
+  {
+    "url" : "http://ihe-d.de/CodeSystems/FallkontextBeiDokumentenerstellung",
+    "version" : "2021-07-06T21:19:41",
+    "status" : "active",
+    "name" : "FallkontextBeiDokumentenerstellung",
+    "title" : "Fallkontext Bei Dokumentenerstellung",
+    "description" : "",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.medikation@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ValueSet/fallkontext" : "MII VS Medikation Fallkontext",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.medikation@2026.0.1&canonical=http://ihe-d.de/ValueSets/IHEXDSeventCodeList" : "IHE XDS eventCodeList"
+  },
+  {
+    "url" : "http://ihe-d.de/CodeSystems/IHEXDSclassCode",
+    "version" : "2021-06-25T13:44:47",
+    "status" : "active",
+    "name" : "IHEXDSclassCode",
+    "title" : " IHEXDSclassCode",
+    "description" : "",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.medikation@2026.0.1&canonical=http://ihe-d.de/ValueSets/IHEXDSclassCode" : "IHE XDS classCode"
+  },
+  {
+    "url" : "http://ihe-d.de/CodeSystems/IHEXDStypeCode",
+    "version" : "2020-02-07T07:55:58",
+    "status" : "active",
+    "name" : "IHEXDStypeCode",
+    "title" : "IHEXDStypeCode",
+    "description" : "",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.medikation@2026.0.1&canonical=http://ihe-d.de/ValueSets/IHEXDStypeCode" : "IHE XDS typeCode"
+  },
+  {
+    "url" : "http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode",
+    "version" : "1.4.0",
+    "status" : "active",
+    "name" : "IHE_FormatCode_codesystem",
+    "title" : "IHE Format Code set for use with Document Sharing",
+    "description" : "The [IHE](http://www.ihe.net) FormatCode code system with canonical URI of http://ihe.net/fhir/ihe.formatcode.fhir/CodeSystem/formatcode is defined to be the set of FormatCodes define by IHE, for use with [Document Sharing](https://profiles.ihe.net/ITI/HIE-Whitepaper/index.html). This code set additionally includes, as deprecated, format codes defined by [HL7 for some Implementation Guides](http://wiki.hl7.org/index.php?title=CDA_Format_Codes_for_IHE_XDS). The HL7 codes are now managed by HL7. The set of IHE FormatCode codes was listed in HITSP C80 Table 2-153 Format Code Value Set Definition, but since has been updated. The use of the FormatCode specifies the technical format of the document. The FormatCode tends to reference the IHE Content Profile (Implementation Guide) that defines the use-case and constraints. The FormatCode is a further specialization more detailed than the mime-type. The FormatCode provides sufficient metadata information to allow any potential document content consumer to know if it can process and/or display by identifying a document encoding, structure and template. The set of codes is intended to be preferred.",
+    "oids" : ["1.3.6.1.4.1.19376.1.2.3"],
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.medikation@2026.0.1&canonical=http://ihe-d.de/ValueSets/IHEXDSeventCodeList" : "IHE XDS eventCodeList"
+  },
+  {
+    "url" : "http://loinc.org",
+    "version" : "3.1.0",
+    "status" : "active",
+    "name" : "LOINC",
+    "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+    "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+    "oids" : ["2.16.840.1.113883.6.1"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/uv/genomics-reporting/STU3/ValueSet-genetic-therapeutic-implications-vs.html" : "Genetic Therapeutic Implications",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-krk-abstand-resektionslinie-aboral" : "MII_VS_Onko_KRK_Abstand_Resektionslinie_Aboral",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-prostata-psa-loinc" : "MII VS Onko Prostata PSA LOINC",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.seltene@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ValueSet/mii-vs-seltene-hpo-presence-status" : "HPO Phenotype Presence Status",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.medikation@2026.0.1&canonical=http://ihe-d.de/ValueSets/IHEXDSclassCode" : "IHE XDS classCode",
+    "https://loinc.org/LLLL1040-6" : "LOINC Answer Codes for LL1040-6",
+    "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
+    "http://hl7.org/fhir/uv/genomics-reporting/STU3/ValueSet-molecular-biomarker-code-vs.html" : "Molecular Biomarker Codes",
+    "https://loinc.org/LLLL1971-2" : "LOINC Answer Codes for LL1971-2",
+    "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes",
+    "http://hl7.org/fhir/R4/valueset-consent-content-code.html" : "Consent Content Codes",
+    "https://loinc.org/LLLL4034-6" : "LOINC Answer Codes for LL4034-6",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.seltene@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ValueSet/mii-vs-seltene-blutgruppe" : "MII VS SE Blutgruppe",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.laborbefund@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/ValueSetOrderCodes" : "MII VS Labor Order Codes",
+    "https://loinc.org/LLLL5323-2" : "LOINC Answer Codes for LL5323-2",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.bildgebung@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-lnc" : "MII VS Bildgebung DiagnosticReport Code Loinc",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/ValueSet/mii-vs-patho-all-loinc" : "MII VS Patho All [LOINC]",
+    "http://hl7.org/fhir/R4/valueset-report-codes.html" : "LOINC Diagnostic Report Codes",
+    "https://loinc.org/LLLL4048-6" : "LOINC Answer Codes for LL4048-6",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-krk-abstand-circumferelle-resektionsrand" : "MII_VS_Onko_KRK_Abstand_Circumferelle_Resektionsrand",
+    "https://loinc.org/LLLL1037-2" : "LOINC Answer Codes for LL1037-2",
+    "https://loinc.org/LLLL4358-9" : "LOINC Answer Codes for LL4358-9",
+    "https://loinc.org/LLLL4050-2" : "LOINC Answer Codes for LL4050-2",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-melanom-ldh" : "MII_VS_Onko_Melanom_LDH",
+    "https://loinc.org/LLLL2938-0" : "LOINC Answer Codes for LL2938-0",
+    "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+    "http://hl7.org/fhir/R4/valueset-c80-doc-typecodes.html" : "Document Type Value Set",
+    "https://loinc.org/LLLL5489-1" : "LOINC Answer Codes for LL5489-1",
+    "https://loinc.org/LLLL378-1" : "LOINC Answer Codes for LL378-1",
+    "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-rezeptorstatus-obds" : "MII_VS_Onko_Mamma_Rezeptorstatus_oBDS",
+    "https://loinc.org/LLLL4396-9" : "LOINC Answer Codes for LL4396-9",
+    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.medikation@2026.0.1&canonical=http://ihe-d.de/ValueSets/IHEXDStypeCode" : "IHE XDS typeCode",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/ValueSet/mii-vs-patho-service-request-code" : "MII VS Patho Service Request Code",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.1&canonical=https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-loinc" : "VS MII ICU Code Monitoring und Vitaldaten [LOINC]",
+    "https://loinc.org/LLLL4049-4" : "LOINC Answer Codes for LL4049-4",
+    "https://loinc.org/LLLL381-5" : "LOINC Answer Codes for LL381-5",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-loinc" : "MII VS ICU Code Observation extrakorporale Verfahren [LOINC]",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/ValueSet/mii-vs-patho-section-types-loinc" : "MII VS Patho Section Types [LOINC]",
+    "https://loinc.org/LLLL3837-3" : "LOINC Answer Codes for LL3837-3",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-loinc" : "MII VS ICU Code Observation Bilanzen [LOINC]",
+    "https://loinc.org/LLLL4678-0" : "LOINC Answer Codes for LL4678-0",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-loinc" : "MII VS ICU Code Observation Beatmung [LOINC]"
+  },
+  {
+    "url" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "NciThesaurus",
+    "title" : "NCI Thesaurus",
+    "description" : "NCI Thesaurus NCI Thesaurus is a biomedical thesaurus created specifically to meet the needs of the cancer research community, especially those engaged in translational research NCI Thesaurus is produced by the NCI Enterprise Vocabulary Services project. The NCI Thesaurus is provided under an open content license.",
+    "oids" : ["2.16.840.1.113883.3.26.1.1"],
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-weitere-klassifikationen" : "MII Value Set Onkologie - Weitere Klassifikationen",
+    "http://hl7.org/fhir/uv/genomics-reporting/STU3/ValueSet-molecular-biomarker-code-vs.html" : "Molecular Biomarker Codes"
+  },
+  {
+    "url" : "http://snomed.info/sct",
+    "version" : null,
+    "status" : "active",
+    "name" : "SNOMED_CT",
+    "title" : "SNOMED CT (all versions)",
+    "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+    "oids" : ["2.16.840.1.113883.6.96"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/VitalSignDE-Koerpergroesse-SNOMED-CT" : "VitalSignDE_Koerpergroesse_SNOMED_CT",
+    "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-sct" : "MII VS Prozedur Prozeduren [SNOMED CT]",
+    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.dokument@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/ValueSet/mii-vs-dokument-fachgebiet" : "MII VS Dokument Fachgebiet",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.molgen@2026.0.4&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/ValueSet/mii-vs-molgen-family-member-snomed" : "MII VS MolGen Family Member SNOMED",
+    "http://hl7.org/fhir/R4/valueset-substance-code.html" : "Substance Code",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-prostata-gleason-primary-secondary-tertiary" : "MII_VS_Onko_Prostata_Gleason_PrimarySecondaryTertiary",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-melanom-exzision-snomedct" : "MII VS Onko Melanom Exzision SNOMED CT",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-klassifikation-typ" : "MII VS Onkologie TNM Klassifikation Typ",
+    "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.biobank@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-containertyp-sct" : "MII VS Biobank Containertyp SCT",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/ValueSet/mii-vs-patho-media-modality-snomed-ct" : "MII VS Patho Media Modality [SNOMED CT]",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.biobank@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-laboratory-procedure-sct" : "MII VS Biobank Laboratory Procedure SCT",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.seltene@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ValueSet/mii-vs-seltene-blutgruppe" : "MII VS SE Blutgruppe",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-extrakorporale-verfahren-snomed" : "MII VS ICU Code Observation extrakorporale Verfahren [SNOMED]",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-menopause-status" : "MII_VS_Onko_Mamma_Menopause_Status",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.dokument@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/ValueSet/mii-vs-dokument-sct-dokument-typ" : "MII VS Dokument SCT Dokument Typ",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-prostata-clavien-dindo" : "MII_VS_Onko_Prostata_Clavien_Dindo",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.1&canonical=https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-snomed" : "VS MII ICU Code Monitoring und Vitaldaten [sct]",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-krk-stoma-status-reason" : "MII_VS_Onko_KRK_Stoma_Status_Reason",
+    "http://hl7.org/fhir/R4/valueset-encounter-reason.html" : "Encounter Reason Codes",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.biobank@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-substance-additive-sct" : "MII VS Biobank Substance Additive",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/ValueSet/mii-vs-diagnose-bodystructure-snomed" : "MII VS Diagnose BodyStructure SNOMED",
+    "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+    "http://hl7.org/fhir/R4/valueset-participant-role.html" : "Participant Roles",
+    "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+    "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
+    "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-t-kategorie" : "MII VS Onkologie TNM T Kategorie",
+    "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
+    "http://hl7.org/fhir/R4/valueset-media-view.html" : "Media Collection View/Projection",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.biobank@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-probenart-sct" : "MII VS Biobank Probenart SCT",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/ValueSet/mii-vs-patho-problem-list-snomed-ct" : "MII VS Patho Problem List [SNOMED CT]",
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/VitalSignDE-Koerpergewicht-SNOMED-CT" : "VitalSignDE_Koerpergewicht_SNOMED_CT",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.bildgebung@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-imaging-procedure-code-sct" : "MII VS Bildgebung ImagingProcedure Code SCT",
+    "http://hl7.org/fhir/R4/valueset-specimen-container-type.html" : "Specimen Container Type",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-praeoperative-markierung-modalitaet" : "MII_VS_Onko_Mamma_Praeoperative_Markierung_Modalitaet",
+    "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes",
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/VitalSignDE-Kopfumfang-SNOMED-CT" : "VitalSignDE_Kopfumfang_SNOMED_CT",
+    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-m-kategorie" : "MII VS Onkologie TNM M Kategorie",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-snomed" : "MII VS ICU Code Observation Beatmung [SNOMED]",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-procedure-beatmung-snomed" : "MII VS ICU Code Procedure Beatmung [SNOMED]",
+    "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-extrakorporale-verfahren" : "MII VS ICU BodySite Observation extrakorporale Verfahren",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.dokument@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/ValueSet/mii-vs-dokument-einrichtungsart" : "MII VS Dokument Einrichtungart",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.bildgebung@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-diagnostic-report-code-sct" : "MII VS Bildgebung DiagnosticReport Code SCT",
+    "http://hl7.org/fhir/R4/valueset-adverse-event-type.html" : "SNOMED CT Clinical Findings",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-prostata-operation-snomedct" : "MII VS Onko Prostata Operation SNOMED CT",
+    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+    "http://hl7.org/fhir/R4/valueset-investigation-sets.html" : "Investigation Type",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/ValueSet/mii-vs-patho-collection-method-snomed-ct" : "MII VS Patho Collection Method [SNOMED CT]",
+    "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/ValueSet/procedures-category-sct" : "MII VS Prozedur OPS Kategorien [SNOMED CT]",
+    "http://hl7.org/fhir/R4/valueset-care-plan-activity-outcome.html" : "Care Plan Activity Outcome",
+    "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-intraoperatives-imaging-praeparat" : "MII_VS_Onko_Mamma_Intraoperatives_Imaging_Praeparat",
+    "http://hl7.org/fhir/uv/genomics-reporting/STU3/ValueSet-genetic-therapeutic-implications-vs.html" : "Genetic Therapeutic Implications",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.biobank@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-cellline-proliferation" : "MII VS Biobank Proliferation Zellinie",
+    "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
+    "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+    "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
+    "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-bodysite-observation-beatmung" : "MII VS ICU BodySite Observation Beatmung",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-extrakorporale-verfahren" : "MII VS ICU Code extrakorporale Verfahren",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-n-kategorie" : "MII VS Onkologie TNM N Kategorie",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.1&canonical=https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-bodysite-observation-monitoring-und-vitaldaten" : "VS MII ICU BodySite Observation Monitoring und Vitaldaten",
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/lebensphase-de" : "LebensphaseDe ValueSet",
+    "http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html" : "SNOMED CT Additional Dosage Instructions",
+    "http://hl7.org/fhir/R4/valueset-device-type.html" : "Device Type",
+    "http://hl7.org/fhir/extensions/5.2.0/ValueSet-condition-predecessor.html" : "Condition Predecessor Codes",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.bildgebung@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-findings-sct" : "MII VS Bildgebung Findings SCT",
+    "http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html" : "SNOMED CT Drug Therapy Status codes ",
+    "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-devicemetric-extrakorporale-verfahren" : "MII VS ICU Category Procedure Beatmung [SNOMED]",
+    "http://hl7.org/fhir/R4/valueset-condition-outcome.html" : "Condition Outcome Codes",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.bildgebung@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/ValueSet/mii-vs-bildgebung-observation-body-site-sct" : "MII VS Bildgebung Observation Body Site SCT",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/ValueSet/mii-vs-patho-processing-procedure-snomed-ct" : "MII VS Patho Processing Procedure [SNOMED CT]",
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/VitalSignDE-Atemfrequenz-SNOMED-CT" : "VitalSignDE_Atemfrequenz_SNOMED_CT",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.biobank@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-cellline-morphology-sct" : "MII VS Biobank Cellinie Morphology SCT",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-operation-sct" : "MII_VS_Onko_Mamma_Operation_SCT",
+    "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/ValueSet/diagnoses-sct" : "MII VS Diagnose Diagnose-Codes SNOMED",
+    "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+    "http://hl7.org/fhir/R4/valueset-clinicalimpression-prognosis.html" : "Clinical Impression Prognosis",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-snomed" : "MII VS ICU Code Observation Bilanzen [SNOMED]",
+    "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.biobank@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-karyotyp-sct" : "MII VS Biobank Karyotyp SCT",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/ValueSet/mii-vs-patho-composition-type-snomed-ct" : "MII VS Patho Composition Type [Snomed CT]",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-weitere-klassifikationen-auspraegungen" : "MII Value Set Onkologie - Weitere Klassifikationen - Auspraegungen",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/ValueSet/mii-vs-patho-service-request-code" : "MII VS Patho Service Request Code",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-category.html" : "Service Request Category Codes",
+    "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.dokument@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/ValueSet/mii-vs-dokument-sct-dokument-kategorie" : "MII VS Dokument SCT Dokument Kategorie",
+    "http://hl7.org/fhir/R4/valueset-care-plan-category.html" : "Care Plan Category",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.seltene@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ValueSet/mii-vs-seltene-symptom-change-status-combined" : "MII VS Seltene Erkrankungen Symptom Change Status (Combined)",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/ValueSet/mii-vs-patho-container-type-snomed-ct" : "MII VS Patho Container Type [SNOMED CT]",
+    "http://hl7.org/fhir/R4/valueset-servicerequest-orderdetail.html" : "Service Request Order Details Codes",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.biobank@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-body-structures-sct" : "MII VS Biobank BodyStructures SCT",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-prostata-gleason-score" : "MII_VS_Onko_Prostata_Gleason_Score",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-weitere-klassifikationen" : "MII Value Set Onkologie - Weitere Klassifikationen",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-prostata-gleason-patterns" : "MII VS Onkologie Prostata Gleason Patterns",
+    "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
+    "http://hl7.org/fhir/R4/valueset-bodystructure-code.html" : "SNOMED CT Morphologic Abnormalities",
+    "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-procedure-beatmung-snomed" : "MII VS ICU Category Procedure Beatmung [SNOMED]"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/action-type",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ActionType",
+    "title" : "ActionType",
+    "description" : "The type of action to be performed.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1246"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-action-type.html" : "ActionType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "AdverseEventCategory",
+    "title" : "AdverseEventCategory",
+    "description" : "Overall categorization of the event, e.g. product-related or situational.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1251"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-adverse-event-category.html" : "AdverseEventCategory"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-causality-assess",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "AdverseEventCausalityAssessment",
+    "title" : "AdverseEventCausalityAssessment",
+    "description" : "Codes for the assessment of whether the entity caused the event.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1254"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-adverse-event-causality-assess.html" : "AdverseEventCausalityAssessment"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-causality-method",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "AdverseEventCausalityMethod",
+    "title" : "AdverseEventCausalityMethod",
+    "description" : "This code system contains methods for assessing causality.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1255"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-adverse-event-causality-method.html" : "AdverseEventCausalityMethod"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-outcome",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "AdverseEventOutcome",
+    "title" : "AdverseEventOutcome",
+    "description" : "TODO (and should this be required?).",
+    "oids" : ["2.16.840.1.113883.4.642.4.1252"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-adverse-event-outcome.html" : "AdverseEventOutcome"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/adverse-event-severity",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "AdverseEventSeverity",
+    "title" : "AdverseEventSeverity",
+    "description" : "The severity of the adverse event itself, in direct relation to the subject.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1256"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-adverse-event-severity.html" : "AdverseEventSeverity"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "CommonTags",
+    "title" : "Common Tags",
+    "description" : "Common Tag Codes defined by FHIR project",
+    "oids" : ["2.16.840.1.113883.4.642.1.1067"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-common-tags.html" : "Common Tags"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ConditionCategoryCodes",
+    "title" : "Condition Category Codes",
+    "description" : "Preferred value set for Condition Categories.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1073"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-condition-category.html" : "Condition Category Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ConditionClinicalStatusCodes",
+    "title" : "Condition Clinical Status Codes",
+    "description" : "Preferred value set for Condition Clinical Status.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1074"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-condition-clinical.html" : "Condition Clinical Status Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "ConditionVerificationStatus",
+    "title" : "ConditionVerificationStatus",
+    "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1075"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-condition-ver-status.html" : "ConditionVerificationStatus"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/consentaction",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ConsentActionCodes",
+    "title" : "Consent Action Codes",
+    "description" : "This value set includes sample Consent Action codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1227"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-action.html" : "Consent Action Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/consentcategorycodes",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ConsentCategoryCodes",
+    "title" : "Consent Category Codes",
+    "description" : "This value set includes sample Consent Directive Type codes, including several consent directive related LOINC codes; HL7 VALUE SET: ActConsentType(2.16.840.1.113883.1.11.19897); examples of US realm consent directive legal descriptions and references to online and/or downloadable forms such as the SSA-827 Authorization to Disclose Information to the Social Security Administration; and other anticipated consent directives related to participation in a clinical trial, medical procedures, reproductive procedures; health care directive (Living Will); advance directive, do not resuscitate (DNR); Physician Orders for Life-Sustaining Treatment (POLST)",
+    "oids" : ["2.16.840.1.113883.4.642.1.1226"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-category.html" : "Consent Category Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/consentpolicycodes",
+    "version" : "3.0.1",
+    "status" : "active",
+    "name" : "ConsentPolicyRuleCodes",
+    "title" : "Consent PolicyRule Codes",
+    "description" : "This value set includes sample Regulatory consent policy types from the US and other regions.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1229"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-policy.html" : "Consent PolicyRule Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/consentscope",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "ConsentScopeCodes",
+    "title" : "Consent Scope Codes",
+    "description" : "This value set includes the four Consent scope codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1228"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-consent-scope.html" : "Consent Scope Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/contactentity-type",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "ContactEntityType",
+    "title" : "Contact entity type",
+    "description" : "This example value set defines a set of codes that can be used to indicate the purpose for which you would contact a contact party.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1129"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-contactentity-type.html" : "Contact entity type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/contractsignertypecodes",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ContractSignerTypeCodes",
+    "title" : "Contract Signer Type Codes",
+    "description" : "This value set includes sample Contract Signer Type codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1201"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "DataAbsentReason",
+    "title" : "DataAbsentReason",
+    "description" : "Used to specify why the normally expected content of the data element is missing.",
+    "oids" : ["2.16.840.1.113883.4.642.4.1048"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-data-absent-reason.html" : "DataAbsentReason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/definition-topic",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "DefinitionTopic",
+    "title" : "DefinitionTopic",
+    "description" : "High-level categorization of the definition, used for searching, sorting, and filtering.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1244"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-definition-topic.html" : "DefinitionTopic"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/device-status-reason",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "FHIRDeviceStatusReason",
+    "title" : "FHIRDeviceStatusReason",
+    "description" : "The availability status reason of the device.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1082"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-device-status-reason.html" : "FHIRDeviceStatusReason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+    "version" : "1.1.1",
+    "status" : "active",
+    "name" : "DiagnosisRole",
+    "title" : "Diagnosis Role",
+    "description" : "This value set defines a set of codes that can be used to express the role of a diagnosis on the Encounter or EpisodeOfCare record.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1054"],
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/Diagnosesubtyp" : "Diagnosesubtyp ValueSet"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/diet",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "Diet",
+    "title" : "Diet",
+    "description" : "This value set defines a set of codes that can be used to indicate dietary preferences or restrictions a patient may have.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1091"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-diet.html" : "Diet"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/discharge-disposition",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "DischargeDisposition",
+    "title" : "Discharge disposition",
+    "description" : "This value set defines a set of codes that can be used to where the patient left the hospital.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1093"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-discharge-disposition.html" : "Discharge disposition"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "DoseAndRateType",
+    "title" : "DoseAndRateType",
+    "description" : "The kind of dose or rate specified.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1069"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-dose-rate-type.html" : "DoseAndRateType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/encounter-special-arrangements",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "SpecialArrangements",
+    "title" : "Special arrangements",
+    "description" : "This value set defines a set of codes that can be used to indicate the kinds of special arrangements in place for a patients visit.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1090"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-special-arrangements.html" : "Special arrangements"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/encounter-type",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "EncounterType",
+    "title" : "Encounter type",
+    "description" : "This example value set defines a set of codes that can be used to indicate the type of encounter: a specific code indicating type of service provided.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1088"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-type.html" : "Encounter type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "SecurityRoleType",
+    "title" : "Security Role Type",
+    "description" : "This CodeSystem contains Additional FHIR-defined Security Role types not defined elsewhere",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/history-absent-reason",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "FamilyHistoryAbsentReason",
+    "title" : "FamilyHistoryAbsentReason",
+    "description" : "Codes describing the reason why a family member's history is not available.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1094"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-history-absent-reason.html" : "FamilyHistoryAbsentReason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "IcdO3",
+    "title" : "International Classification of Diseases for Oncology, version 3.",
+    "description" : "International Classification of Diseases for Oncology, version 3. For more information see http://www.who.int/classifications/icd/adaptations/oncology/en/.",
+    "oids" : ["2.16.840.1.113883.6.43.1"],
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-icdo3-morphologie" : "MII VS Onkologie ICD-O-3 Morphologie",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-icdo3-topographie" : "MII VS Onkologie ICD-O-3 Topographie"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/library-type",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "LibraryType",
+    "title" : "LibraryType",
+    "description" : "The type of knowledge asset this library contains.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1230"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-library-type.html" : "LibraryType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ListEmptyReasons",
+    "title" : "List Empty Reasons",
+    "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+    "oids" : ["2.16.840.1.113883.4.642.1.1106"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-empty-reason.html" : "List Empty Reasons"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/list-example-use-codes",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ExampleUseCodesForList",
+    "title" : "Example Use Codes for List",
+    "description" : "Example use codes for the List resource - typical kinds of use.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1105"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-example-codes.html" : "Example Use Codes for List"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/list-order",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ListOrderCodes",
+    "title" : "List Order Codes",
+    "description" : "Base values for the order of item lists in resources.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1107"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-order.html" : "List Order Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/location-physical-type",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "LocationType",
+    "title" : "Location type",
+    "description" : "This example value set defines a set of codes that can be used to indicate the physical form of the Location.\r\rThis includes several 'non physical' codes which are still considered a location.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1108"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-location-physical-type.html" : "Location type",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ValueSet/location-physical-type" : "MII VS Fall Location Physical Type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/med-admin-perform-function",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "MedicationAdministrationPerformerFunctionCodes",
+    "title" : "MedicationAdministration Performer Function Codes",
+    "description" : "MedicationAdministration Performer Function Codes",
+    "oids" : ["2.16.840.1.113883.4.642.1.1112"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-med-admin-perform-function.html" : "Medication administration  performer  function  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/media-type",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "MediaType",
+    "title" : "Media Type",
+    "description" : "Codes for high level media categories.",
+    "oids" : ["2.16.840.1.113883.4.642.1.326"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-media-type.html" : "Media Type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "MedicationAdministration Category Codes",
+    "title" : "Medication administration  category  codes",
+    "description" : "MedicationAdministration Category Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1111"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medication-admin-category.html" : "Medication administration  category  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medication-admin-status",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "MedicationAdministration Status Codes",
+    "title" : "Medication administration  status  codes",
+    "description" : "MedicationAdministration Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1311"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medication-admin-status.html" : "Medication administration  status  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "Medication usage category codes",
+    "title" : "Medication usage category codes",
+    "description" : "Medication Status Codes",
+    "oids" : ["2.16.840.1.113883.4.642.4.1120"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medication-statement-category.html" : "Medication usage category codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-category",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "MedicationRequestCategoryCodes",
+    "title" : "MedicationRequest Category Codes",
+    "description" : "MedicationRequest Category Codes",
+    "oids" : ["2.16.840.1.113883.4.642.1.1323"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationrequest-category.html" : "Medication request  category  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "MedicationRequestCourseOfTherapyCodes",
+    "title" : "MedicationRequest Course of Therapy Codes",
+    "description" : "MedicationRequest Course of Therapy Codes",
+    "oids" : ["2.16.840.1.113883.4.642.1.1327"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationrequest-course-of-therapy.html" : "Medication request  course of  therapy  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/medicationrequest-status-reason",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "MedicationRequestStatusReasonCodes",
+    "title" : "MedicationRequest Status Reason Codes",
+    "description" : "MedicationRequest Status Reason Codes",
+    "oids" : ["2.16.840.1.113883.4.642.1.1325"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-medicationrequest-status-reason.html" : "Medication request  status  reason  codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ObservationCategoryCodes",
+    "title" : "Observation Category Codes",
+    "description" : "Observation Category codes.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-category-observation-bilanzen-hl7" : "MII VS ICU Category Observation Bilanzen [HL7]",
+    "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/organization-type",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "OrganizationType",
+    "title" : "Organization type",
+    "description" : "This example value set defines a set of codes that can be used to indicate a type of organization.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1128"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-organization-type.html" : "Organization type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/participant-type",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ParticipantType",
+    "title" : "Participant type",
+    "description" : "This value set defines a set of codes that can be used to indicate how an individual participates in an encounter.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1089"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "PractitionerRole",
+    "title" : "Practitioner role",
+    "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1132"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ProvenanceParticipantType",
+    "title" : "Provenance participant type",
+    "description" : "These codes define the type of participation by an agent in a provenance activity. An agent is something that bears the responsibility identified by the type of participation in the activity taking place, for the existence of an entity, or for another agent's activity. An Agent may be An agent, device, system, organization, group, care-team, or other identifiable thing.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1131"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-provenance-agent-type.html" : "Provenance participant type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/reason-medication-given",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ReasonMedicationGivenCodes",
+    "title" : "Reason Medication Given Codes",
+    "description" : "This value set is provided as an example. The value set to instantiate this attribute should be drawn from a robust terminology code system that consists of or contains concepts to support the medication process.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1110"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-reason-medication-given-codes.html" : "Reason Medication Given Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ObservationReferenceRangeMeaningCodes",
+    "title" : "Observation Reference Range Meaning Codes",
+    "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1124"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/research-study-objective-type",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "ResearchStudyObjectiveType",
+    "title" : "ResearchStudyObjectiveType",
+    "description" : "Codes for the kind of study objective.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1248"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-research-study-objective-type.html" : "ResearchStudyObjectiveType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/research-study-phase",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "ResearchStudyPhase",
+    "title" : "ResearchStudyPhase",
+    "description" : "Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1247"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-research-study-phase.html" : "ResearchStudyPhase"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "ResearchStudyPrimaryPurposeType",
+    "title" : "ResearchStudyPrimaryPurposeType",
+    "description" : "Codes for the main intent of the study.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1250"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html" : "ResearchStudyPrimaryPurposeType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/research-study-reason-stopped",
+    "version" : "1.0.0",
+    "status" : "draft",
+    "name" : "ResearchStudyReasonStopped",
+    "title" : "ResearchStudyReasonStopped",
+    "description" : "Codes for why the study ended prematurely.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1249"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-research-study-reason-stopped.html" : "ResearchStudyReasonStopped"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/risk-probability",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "RiskProbability",
+    "title" : "Risk Probability",
+    "description" : "Codes representing the likelihood of a particular outcome in a risk assessment.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1133"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-risk-probability.html" : "Risk Probability"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/service-type",
+    "version" : "1.1.1",
+    "status" : "active",
+    "name" : "ServiceType",
+    "title" : "Service type",
+    "description" : "This value set defines an example set of codes of service-types.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1145"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-service-type.html" : "Service type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/substance-category",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "SubstanceCategoryCodes",
+    "title" : "Substance Category Codes",
+    "description" : "Substance category codes",
+    "oids" : ["2.16.840.1.113883.4.642.1.1138"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-substance-category.html" : "Substance Category Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "DiagnosticServiceSectionId",
+    "title" : "diagnosticServiceSectionId",
+    "description" : "HL7-defined code system of concepts which specify a section of a diagnostic service where the observation may be performed.  Used in HL7 Version 2.x messaging in the OBR and OM4 segments.",
+    "oids" : ["2.16.840.1.113883.18.29"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html" : "Diagnostic Service Section Codes",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-patho/ValueSet/mii-vs-patho-report-category-hl7" : "MII VS Patho Report Category HL7"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0092",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ReAdmissionIndicator",
+    "title" : "re-admissionIndicator",
+    "description" : "Code system of concepts which are used to specify that a patient is being re admitted to a healthcare facilityin from which they were discharged, and indicates the circumstances around such re-admission.  Used in HL7 Version 2.x messagine in the PV1 segment.",
+    "oids" : ["2.16.840.1.113883.18.36"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.0.1/ValueSet-v2-0092.html" : "hl7VS-re-admissionIndicator"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0131",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ContactRole2",
+    "title" : "contactRole2",
+    "description" : "Code system of concepts which specify a relationship role that the next of kin/associated parties plays with regard to the patient. Also used in referrals, for example, it may be necessary to identify the contact representative at the clinic that sent a referral. Used in HL7 Version 2 messaging in the NK1 and CTD segments after 2.5, when it replace 2.16.840.1.113883.18.57.",
+    "oids" : ["2.16.840.1.113883.18.58"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-patient-contactrelationship.html" : "Patient Contact Relationship "
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "IdentifierType",
+    "title" : "identifierType",
+    "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+    "oids" : ["2.16.840.1.113883.18.108"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-fall/ValueSet/identifier-type-codes" : "MII VS Fall Identifier Type Codes",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.laborbefund@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-labor/ValueSet/mii-vs-labor-identifier-type-codes" : "MII VS Labor Identifier Type Codes",
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/identifier-type-de-basis" : "Identifier Type DeBasis ValueSet"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0371",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "AdditivePreservative",
+    "title" : "additivePreservative",
+    "description" : "HL7-defined code system of concepts specifying any additive introduced to the specimen before or at the time of collection.  These additives may be introduced in order to preserve, maintain or enhance the particular nature or component of the specimen.  Used in HL7 Version 2.x messaging in the SPM and SAC segments.",
+    "oids" : ["2.16.840.1.113883.18.229"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.0.1/ValueSet-v2-0371.html" : "hl7VS-additivePreservative"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0373",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "Treatment",
+    "title" : "treatment",
+    "description" : "Code system of concepts that identify the specimen treatment performed during lab processing.  Used in the Interaction Specimen Container Detail (SAC) segment in HL7 Version 2.x messaging.",
+    "oids" : ["2.16.840.1.113883.18.231"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-specimen-processing-procedure.html" : "Specimen processing procedure"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0487",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "SpecimenType",
+    "title" : "specimenType",
+    "description" : "HL7-defined code system of concepts that describe the precise nature of an entity that may be used as the source material for an observation.  This is one of two code systems that are used instead of table 0070 (code system 2.16.840.1.113883.18.28) which conflated specimen types and specimen collection methods.   Used in HL7 Version 2.x messaging in the SPM segment.",
+    "oids" : ["2.16.840.1.113883.18.311"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.0.1/ValueSet-v2-0487.html" : "hl7VS-specimenType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0493",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "SpecimenCondition",
+    "title" : "specimenCondition",
+    "description" : "Code system of concepts specifying a mode or state of being that describes the nature of the specimen.  Used in HL7 Version 2.x messaging in the SPM segment.",
+    "oids" : ["2.16.840.1.113883.18.317"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.0.1/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v2-0916",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "RelevantClincialInformation",
+    "title" : "relevantClincialInformation",
+    "description" : "Code system of concepts specifying additional clinical information about the patient or specimen to report the supporting and/or suspected diagnosis and clinical findings on requests for interpreted diagnostic studies. Used in HL7 Version 2.x messaging in the OBR segment.",
+    "oids" : ["2.16.840.1.113883.18.422"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.0.1/ValueSet-v2-0916.html" : "hl7VS-relevantClincialInformation"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "version" : "9.0.0",
+    "status" : "active",
+    "name" : "ActCode",
+    "title" : "ActCode",
+    "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+    "oids" : ["2.16.840.1.113883.5.4"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/EncounterClassDE" : "EncounterClassDE",
+    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
+    "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActEncounterCode.html" : "ActEncounterCode"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActPriority",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ActPriority",
+    "title" : "ActPriority",
+    "description" : "A set of codes (e.g., for routine, emergency), specifying the urgency under which the Act happened, can happen, is happening, is intended to happen, or is requested/demanded to happen.",
+    "oids" : ["2.16.840.1.113883.5.7"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActPriority.html" : "ActPriority"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+    "version" : "3.1.0",
+    "status" : "active",
+    "name" : "ActReason",
+    "title" : "ActReason",
+    "description" : "A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented as an ActRelationship of type \"has reason\" linking to another Act.\r\n\r\n*Examples:* Example reasons that might qualify for being coded in this field might be: \"routine requirement\", \"infectious disease reporting requirement\", \"on patient request\", \"required by law\".",
+    "oids" : ["2.16.840.1.113883.5.8"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.0.1/ValueSet-v3-PurposeOfUse.html" : "PurposeOfUse",
+    "http://terminology.hl7.org/7.0.1/ValueSet-v3-SubstanceAdminSubstitutionReason.html" : "SubstanceAdminSubstitutionReason"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "Confidentiality",
+    "title" : "Confidentiality",
+    "description" : "A set of codes specifying the security classification of acts and roles in accordance with the definition for concept domain \"Confidentiality\".",
+    "oids" : ["2.16.840.1.113883.5.25"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/v3/ConfidentialityClassification/vs.html" : "V3 Value SetConfidentialityClassification"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "DataOperation",
+    "title" : "DataOperation",
+    "description" : "**** MISSING DESCRIPTION ****",
+    "oids" : ["2.16.840.1.113883.5.1123"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-DocumentCompletion",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "DocumentCompletion",
+    "title" : "DocumentCompletion",
+    "description" : "Identifies the current completion state of a clinical document.",
+    "oids" : ["2.16.840.1.113883.5.33"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-EncounterSpecialCourtesy",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "EncounterSpecialCourtesy",
+    "title" : "EncounterSpecialCourtesy",
+    "description" : "**** MISSING DESCRIPTION ****",
+    "oids" : ["2.16.840.1.113883.5.40"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "GTSAbbreviation",
+    "title" : "GTSAbbreviation",
+    "description" : "*Open Issue:* It appears that the printnames are suboptimal and should be improved for many of the existing codes.",
+    "oids" : ["2.16.840.1.113883.5.1022"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-timing-abbreviation.html" : "TimingAbbreviation"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "MaritalStatus",
+    "title" : "MaritalStatus",
+    "description" : "\\* \\* \\* No description supplied \\* \\* \\*\r\n\r\n*Open Issue:* The specific meanings of these codes can vary somewhat by jurisdiction and implementation so caution should be used when determining equivalency.\r\n\r\n*Open Issue:* fixing and completion of the hierarchy and proper good definitions of all the concepts is badly needed.",
+    "oids" : ["2.16.840.1.113883.5.2"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "NullFlavor",
+    "title" : "NullFlavor",
+    "description" : "A collection of codes specifying why a valid value is not present.",
+    "oids" : ["2.16.840.1.113883.5.1008"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-marital-status.html" : "MaritalStatus",
+    "http://hl7.org/fhir/R4/valueset-encounter-special-courtesy.html" : "Special courtesy"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ObservationInterpretation",
+    "title" : "ObservationInterpretation",
+    "description" : "One or more codes providing a rough qualitative interpretation of the observation, such as \"normal\" / \"abnormal\", \"low\" / \"high\", \"better\" / \"worse\", \"resistant\" / \"susceptible\", \"expected\" / \"not expected\". The value set is intended to be for ANY use where coded representation of an interpretation is needed.",
+    "oids" : ["2.16.840.1.113883.5.83"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationFunction",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "ParticipationFunction",
+    "title" : "ParticipationFunction",
+    "description" : "This code is used to specify the exact function an actor had in a service in all necessary detail. This domain may include local extensions (CWE).",
+    "oids" : ["2.16.840.1.113883.5.88"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ParticipationType",
+    "title" : "ParticipationType",
+    "description" : "A code specifying the meaning and purpose of every Participation instance. Each of its values implies specific constraints on the Roles undertaking the participation.",
+    "oids" : ["2.16.840.1.113883.5.90"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-series-performer-function.html" : "ImagingStudy series performer function",
+    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
+    "http://hl7.org/fhir/R4/valueset-encounter-participant-type.html" : "Participant type",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "RoleClass",
+    "title" : "RoleClass",
+    "description" : "Codes for the Role class hierarchy. The values in this hierarchy, represent a Role which is an association or relationship between two entities - the entity that plays the role and the entity that scopes the role. Roles names are derived from the name of the playing entity in that role.\r\n\r\nThe role hierarchy stems from three core concepts, or abstract domains:\r\n\r\n *  **RoleClassOntological** is an abstract domain that collects roles in which the playing entity is defined or specified by the scoping entity.\r\n *  **RoleClassPartitive** collects roles in which the playing entity is in some sense a \"part\" of the scoping entity.\r\n *  **RoleClassAssociative** collects all of the remaining forms of association between the playing entity and the scoping entity. This set of roles is further partitioned between:\r\n    \r\n     *  **RoleClassPassive** which are roles in which the playing entity is used, known, treated, handled, built, or destroyed, etc. under the auspices of the scoping entity. The playing entity is passive in these roles in that the role exists without an agreement from the playing entity.\r\n     *  **RoleClassMutualRelationship** which are relationships based on mutual behavior of the two entities. The basis of these relationship may be formal agreements or they may be *de facto* behavior. Thus, this sub-domain is further divided into:\r\n        \r\n         *  **RoleClassRelationshipFormal** in which the relationship is formally defined, frequently by a contract or agreement.\r\n         *  **Personal relationship** which inks two people in a personal relationship.\r\n\r\nThe hierarchy discussed above is represented In the current vocabulary tables as a set of abstract domains, with the exception of the \"Personal relationship\" which is a leaf concept.\r\n\r\n*OpenIssue:* Description copied from Concept Domain of same name. Must be verified.",
+    "oids" : ["2.16.840.1.113883.5.110"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "RoleCode",
+    "title" : "RoleCode",
+    "description" : "A set of codes further specifying the kind of Role; specific classification codes for further qualifying RoleClass codes.",
+    "oids" : ["2.16.840.1.113883.5.111"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.0.1/ValueSet-v3-ServiceDeliveryLocationRoleType.html" : "ServiceDeliveryLocationRoleType",
+    "http://terminology.hl7.org/7.0.1/ValueSet-v3-FamilyMember.html" : "FamilyMember",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+    "http://terminology.hl7.org/7.0.1/ValueSet-v3-PersonalRelationshipRoleType.html" : "PersonalRelationshipRoleType"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-TimingEvent",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "TimingEvent",
+    "title" : "TimingEvent",
+    "description" : "**** MISSING DESCRIPTION ****",
+    "oids" : ["2.16.840.1.113883.5.139"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-event-timing.html" : "EventTiming"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-substanceAdminSubstitution",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "SubstanceAdminSubstitution",
+    "title" : "Substance Admin Substitution",
+    "description" : "Identifies what sort of change is permitted or has occurred between the therapy that was ordered and the therapy that was/will be provided.",
+    "oids" : ["2.16.840.1.113883.5.1070"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.0.1/ValueSet-v3-ActSubstanceAdminSubstitutionCode.html" : "ActSubstanceAdminSubstitutionCode"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/variant-confidence-status-cs",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "VariantConfidenceStatusCS",
+    "title" : "Variant Confidence Status Codes",
+    "description" : "A code that represents the confidence of a true positive variant call.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/uv/genomics-reporting/STU3/ValueSet-variant-confidence-status-vs.html" : "Variant Confidence Status"
+  },
+  {
+    "url" : "http://unitsofmeasure.org",
+    "version" : "3.0.1",
+    "status" : "active",
+    "name" : "UCUM",
+    "title" : "Unified Code for Units of Measure (UCUM)",
+    "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+    "oids" : ["2.16.840.1.113883.6.8"],
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/VitalSignDE_Body_Weigth_UCUM" : "VitalSignDE_Body_Weigth_UCUM",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-milliliter" : "MII VS ICU Unit equivalent UCUM milliliter",
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/VitalSignDE_Body_Length_UCUM" : "VitalSignDE_Body_Length_UCUM",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.biobank@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/mii-vs-biobank-dna-concentration-units-ucum" : "MII VS Biobank DNA Concentration Units UCUM",
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/UcumVitalsCommonDE" : "UCUM Vitals Common DE",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-breaths-per-minute" : "MII VS ICU Unit equivalent UCUM breaths per minute",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-unit-equivalent-ucum-beats-per-minute" : "MII VS ICU Unit equivalent UCUM beats per minute",
+    "http://hl7.org/fhir/R4/valueset-units-of-time.html" : "UnitsOfTime",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-strahlentherapie-strahlungseinheit" : "MII VS Onkologie Strahlentherapie Strahlungseinheit",
+    "http://ig.fhir.de/igs/medication/1.0.3/ValueSet-DosageDoseQuantityDE.html" : "Dosage DoseQuantity ValueSet"
+  },
+  {
+    "url" : "http://varnomen.hgvs.org",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "Hgvs",
+    "title" : "Human Genome Variation Society nomenclature",
+    "description" : "HGVS nomenclatures are the guidelines for mutation nomenclature made by the Human Genome Variation Society.\r\n\r\nHGVS nomenclature can be used with the HL7 coded data type (code data type that accepts expression data, or a coded expression data type). This coded data type should be able to distinguish expressions in HGVS nomenclature from coded concepts. For example, in the HL7 messages specified according to the HL7 V2 Clinical Genomics Fully LOINC-Qualified Genetic Variation Model, HGVS nomenclature can be used to as the observation values for DNA sequence variations. For example, OBX|1|CWE|48004-6^DNA Sequence Variation^LN\r\n\r\nc.1129C>T^^HGVS|\r\n\r\nVersioning information: The HGVS nomenclature for the description of sequence variants was last modified Feb 20, 2008. The HGVS nomenclature for the description of protein sequence variants was last modified May 12, 2007. The HGVS nomenclature for the description of DNA sequence variants was last modified June 15, 2007 The HGVS nomenclature for the description of RNA sequence variants was last modified May 12, 2007\r\n\r\nHGVS nomenclatures can be used freely by the public.",
+    "oids" : ["2.16.840.1.113883.6.282"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/uv/genomics-reporting/STU3/ValueSet-hgvs-vs.html" : "Human Genome Variation Society (HGVS) Nomenclature"
+  },
+  {
+    "url" : "http://www.genenames.org",
+    "version" : "3.1.0",
+    "status" : "active",
+    "name" : "HGNCGenes",
+    "title" : "HUGO Gene Nomenclature Committee Genes",
+    "description" : "\"The HGNC is responsible for approving unique symbols and names for human loci, including protein coding genes, ncRNA genes and pseudogenes, to allow unambiguous scientific communication.\"\r\n\r\nThe HGNC gene table carries gene IDs, gene symbols and full gene names. Guidance from HGNC confirms that gene symbols are not unique across species and have been known to change in some instances. Thus the commonly used gene symbols should be encoded in FHIR as \"displays\" with the corresponding IDs (beginning with \"HGNC:\") as the \"codes\".\r\n\r\n\"For each known human gene we approve a gene name and symbol (short-form abbreviation). All approved symbols are stored in the HGNC database,[www.genenames.org](https://www.genenames.org/tools/search), a curated online repository of HGNC-approved gene nomenclature, gene groups and associated resources including links to genomic, proteomic and phenotypic information. Each symbol is unique and we ensure that each gene is only given one approved gene symbol. It is necessary to provide a unique symbol for each gene so that we and others can talk about them, and this also facilitates electronic data retrieval from publications and databases.\"\r\n\r\nHGNC also provides an index on gene families/groups. GeneGroup IDs do not begin with \"HGNC:\", so care must be made to ensure alignment of concepts when viewing an HGNC ID from an older system that may be referring to the GeneID and not a gene group. For example, 588 refers to the HLA gene family, but HGNC:588 identifies the ATG12 gene. To provide clarity for systems that do not distinguish codes from genes and gene families, use \"http://www.genenames.org\" for genes and \"http://www.genenames.org/genegroup\" for gene families as code system URIs.\r\n\r\nFor more information on HGNC Gene Groups, see [https://terminology.hl7.org/CodeSystem-HGNCGeneGroup.html](https://terminology.hl7.org/CodeSystem-HGNCGeneGroup.html).\r\n\r\nHistorically, HGNC gene symbols were used with the HL7 coded data type. For example, in the HL7 messages specified according to the HL7 V2 Clinical Genomics Fully LOINC-Qualified Genetic Variation Model Implementation Guide, HGNC gene symbols were used as the observation values for gene identifiers. For example, OBX 1 CWE 48018-6^Gene identifier^ BRCA1^HGNC. Please note that gene symbols may be present in legacy systems, but GeneID should be used to exchange HGNC gene information in current implementations.\r\n\r\nHGNC is a free database for the public.\r\n\r\nVersioning Information: The version of the HGNC database is reported using the last updated date. The last updated date is posted on the main HGNC Search screen in the format like \"2024-07-25\".\r\n\r\nCurrent, monthly and quarterly HGNC dataset files are published.\r\n\r\nPlease see https://www.genenames.org/ for more info.",
+    "oids" : ["2.16.840.1.113883.6.281"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/uv/genomics-reporting/STU3/ValueSet-hgnc-vs.html" : "HUGO Gene Nomenclature Committee Gene Names (HGNC)"
+  },
+  {
+    "url" : "http://www.genenames.org/genegroup",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "HGNCGeneGroup",
+    "title" : "HUGO Gene Nomenclature Committee Gene Group",
+    "description" : "\"The HGNC is responsible for approving unique symbols and names for human loci, including protein coding genes, ncRNA genes and pseudogenes, to allow unambiguous scientific communication.\"\r\n\r\nHGNC Gene Group is an index on gene families/groups. The numeric GeneGroup IDs should be used as codes. GeneGroup IDs do not begin with \"HGNC:\" (like the GeneIDs for genes in HGNC Genes), so care must be made to ensure alignment of concepts when viewing an HGNC ID from an older system that may be referring to the GeneID and not a gene group. For example, 588 refers to the HLA gene family, but HGNC:588 identifies the ATG12 gene. To provide clarity for systems that do not distinguish codes from genes and gene families, use \"http://www.genenames.org\" for genes and \"http://www.genenames.org/genegroup\" for gene families as code system URIs.\r\n\r\n\"For each known human gene we approve a gene name and symbol (short-form abbreviation). All approved symbols are stored in the HGNC database,[www.genenames.org](https://www.genenames.org/tools/search), a curated online repository of HGNC-approved gene nomenclature, gene groups and associated resources including links to genomic, proteomic and phenotypic information. Each symbol is unique and we ensure that each gene is only given one approved gene symbol. It is necessary to provide a unique symbol for each gene so that we and others can talk about them, and this also facilitates electronic data retrieval from publications and databases.\"\r\n\r\nFor more information on the use of HGNC Genes, see [https://terminology.hl7.org/CodeSystem-v3-hgnc.html](https://terminology.hl7.org/CodeSystem-v3-hgnc.html).\r\n\r\nHGNC is a free database for the public.\r\n\r\nPlease see https://www.genenames.org/ for more info.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/uv/genomics-reporting/STU3/ValueSet-hgnc-vs.html" : "HUGO Gene Nomenclature Committee Gene Names (HGNC)"
+  },
+  {
+    "url" : "http://www.sequenceontology.org",
+    "version" : "1.0.0",
+    "status" : "active",
+    "name" : "SO",
+    "title" : "Sequence Ontology",
+    "description" : "\"The Sequence Ontology is a set of terms and relationships used to describe the features and attributes of biological sequence. SO includes different kinds of features which can be located on the sequence. Biological features are those which are defined by their disposition to be involved in a biological process.\"\r\n\r\n\"The Sequence Ontologies are provided as a resource to the biological community. They have the following obvious uses:\r\n\r\n* To provide for a structured controlled vocabulary for the description of primary annotations of nucleic acid sequence, e.g. the annotations shared by a DAS server ([BioDAS](http://www.biodas.org/documents/das2/das2_protocol.html), [Biosapiens DAS](http://www.biosapiens.info/page.php?page=das_portal)), or annotations encoded by [GFF3](http://www.sequenceontology.org/gff3.shtml).\"\r\n\r\n* To provide for a structured representation of these annotations within databases. Were genes within model organism databases to be annotated with these terms then it would be possible to query all these databases for, for example, all genes whose transcripts are edited, or trans-spliced, or are bound by a particular protein. One such genomic database is [Chado](http://www.gmod.org/wiki/Chado).\r\n\r\n* To provide a structured controlled vocabulary for the description of mutations at both the sequence and more gross level in the context of genomic databases.\"\r\n\r\n\"The Sequence Ontology is part of [OBO](http://www.obofoundry.org/). It has close links to other ontology projects such as the [RNAO consortium](http://roc.bgsu.edu/), and the [Biosapiens polypeptide features](http://www.ebi.ac.uk/ontology-lookup/browse.do?ontName=BS).\"\r\n\r\nThe content can be browsed [here](http://www.sequenceontology.org/browser/obob.cgi)\r\n\r\nThe content can be downloaded [here](https://github.com/The-Sequence-Ontology/SO-Ontologies)\r\n\r\nFor information on contributing, please see [here](https://github.com/The-Sequence-Ontology/SO-Ontologies#contributing)\r\n\r\nTo request a term or register feedback, see [here](https://github.com/The-Sequence-Ontology/SO-Ontologies/issues)",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/uv/genomics-reporting/STU3/ValueSet-dna-change-type-vs.html" : "DNA Change Type",
+    "http://hl7.org/fhir/uv/genomics-reporting/STU3/ValueSet-functional-effect-vs.html" : "Functional Effect Value Set",
+    "http://hl7.org/fhir/uv/genomics-reporting/STU3/ValueSet-molecular-consequence-vs.html" : "Molecular Consequence Value Set"
+  },
+  {
+    "url" : "https://fhir.bbmri-eric.eu/fhir/CodeSystem/miabis-detailed-samply-type-cs",
+    "version" : null,
+    "status" : "active",
+    "name" : "DetailedSampleTypeCS",
+    "title" : "DetailedSampleType",
+    "description" : "Code system for the detailed sample type of a sample",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.biobank@2026.0.1&canonical=https://fhir.bbmri-eric.eu/fhir/ValueSet/miabis-detailed-sample-type-vs" : "DetailedSampleTypeVS"
+  },
+  {
+    "url" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT",
+    "version" : "1.01",
+    "status" : "active",
+    "name" : "KBV_CS_SFHIR_BMP_DOSIEREINHEIT",
+    "title" : null,
+    "description" : "Die Schlüsseltabelle enthält eine Liste von kodierten Dosiereinheiten, die im Rahmen der Spezifikation zum bundeseinheitlichen Medikationsplan nach § 31a SGB V zu verwenden sind (vgl. Anhang 4 zu Anlage 3 Vereinbarung BMP). Die Spalte \"Code\" wird im Attribut \"V\", die Spalte \"Einheit Ausdruck\" im Attribut \"DN\", die Spalte  \"Bedeutung\" im Attribut \"bedeutung\" und die Spalte \"Einheit durch AM-Datenbanken unterstützt\" im Attribut \"unterstuetzt\" abgebildet.",
+    "oids" : ["1.2.276.0.76.3.1.1.5.2.41"],
+    "uses" : {
+    },
+    "http://ig.fhir.de/igs/medication/1.0.3/ValueSet-DosageDoseQuantityDE.html" : "Dosage DoseQuantity ValueSet"
+  },
+  {
+    "url" : "https://www.meddra.org",
+    "version" : "3.0.0",
+    "status" : "active",
+    "name" : "MedDRA",
+    "title" : "Medical Dictionary for Regulatory Activities",
+    "description" : "MedDRA is a multilingual standardised international medical terminology which can be used for regulatory communication and evaluation of data pertaining to medicinal products for human use.  MedDRA is designed for use in the registration, documentation and safety monitoring of medicinal products through all phases of the development cycle (i.e., from clinical trials to post-marketing surveillance).#13;\n\r\nMedDRA is structured as a five level hierarchy. System Organ Classes (SOCs) are the broadest terms (e.g., Cardiac disorders, Investigations). The lowest level of the terminology is the Lowest Level Term (LLT) level.",
+    "oids" : ["2.16.840.1.113883.6.163"],
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-nebenwirkung-art" : "MII VS Onkologie Nebenwirkung nach CTCAE Art"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/core/modul-person/CodeSystem/Vitalstatus",
+    "version" : "2026.0.0",
+    "status" : "active",
+    "name" : "MII_CS_Person_Vitalstatus",
+    "title" : "MII CS Person Vitalstatus",
+    "description" : "Vitalstatus des Patienten",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.base@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/core/modul-person/ValueSet/Vitalstatus" : "MII VS Person Vitalstatus"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-ecog",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Allgemeiner_Leistungszustand_ECOG",
+    "title" : "MII CS Onkologie Allgemeiner Leistungszustand ECOG",
+    "description" : "oBDS-spezifisches Codesystem für den Allgemeinen Leistungszustand nach ECOG",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-allgemeiner-leistungszustand-ecog" : "MII VS Onkologie Allgemeiner Leistungszustand nach ECOG"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-allgemeiner-leistungszustand-karnofsky",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Allgemeiner_Leistungszustand_Karnofsky",
+    "title" : "MII CS Onkologie Allgemeiner Leistungszustand Karnofsky",
+    "description" : "oBDS-spezifisches Codesystem für den Allgemeinen Leistungszustand nach Karnofsky",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-allgemeiner-leistungszustand-karnofsky" : "MII VS Onkologie Allgemeiner Leistungszustand nach Karnofsky"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-asa-obds",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_ASA_oBDS",
+    "title" : "MII CS Onkologie ASA-Klassifikation oBDS",
+    "description" : "oBDS-basiertes CodeSystem für ASA-Klassifikation (ursprünglich KR9 aus Kolorektales Karzinom Modul, generalisiert für alle onkologischen Indikationen)",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-asa-obds" : "MII_VS_Onko_ASA_oBDS"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-fernmetastasen",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Fernmetastasen",
+    "title" : "MII CS Onkologie Fernmetastasen",
+    "description" : "oBDS-spezifisches Codesystem für Fernmetastasen, basierend auf Spezifikation durch TNM-Klassifikation",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-fernmetastasen" : "MII VS Onkologie Fernmetastasen"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-genetische-variante-auspraegung",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Genetische_Variante_Auspraegung",
+    "title" : "MII CS Onkologie Genetische Variante Ausprägung",
+    "description" : "oBDS-spezifisches Codesystem Konsequenz der genetischen Variante Ausprägung",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-genetische-variante-auspraegung" : "MII_VS Onkologie Genetische Variante Ausprägung"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-grading",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Grading",
+    "title" : "MII CS Onkologie Grading",
+    "description" : "Codes für Histologie Grading. Gibt den Differenzierungsgrad des Tumors entsprechend der aktuellen TNM-Auflage an.",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-grading" : "MII VS Onkologie Grading"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-intention",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Intention",
+    "title" : "MII CS Onkologie Intention",
+    "description" : "oBDS-spezifisches Codesystem für Klassifikation von Intention der OP, der Strahlentherapie und der Systemischen Therapie.",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-strahlentherapie-intention" : "MII VS Onkologie Strahlentherapie Intention",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-intention" : "MII VS Onkologie Systemische Therapie Intention",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-operation-intention" : "MII VS Onkologie Operation Intention"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-krk-anastomoseninsuffizienz",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_KRK_Anastomoseninsuffizienz",
+    "title" : "MII CS Onkologie KRK Anastomoseninsuffizienz",
+    "description" : "oBDS-spezifisches Codesystem für Anastomoseninsuffizienz beim Kolorektalen Karzinom",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-krk-anastomoseninsuffizienz" : "MII_VS_Onko_KRK_Anastomoseninsuffizienz"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-krk-mrt-mesorektale-faszie-status",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_KRK_MRT_Mesorektale_Faszie_Status",
+    "title" : null,
+    "description" : "oBDS-basiertes Codesystem für den Status der MRT/CT Untersuchung zur mesorektalen Faszie beim Kolorektalen Karzinom (KR5)",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-krk-mrt-mesorektale-faszie-status" : "MII_VS_Onko_KRK_MRT_Mesorektale_Faszie_Status"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-krk-tme-qualitaet",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_KRK_TME_Qualitaet",
+    "title" : "MII CS Onkologie TME Qualität",
+    "description" : "oBDS-spezifisches Codesystem TME-Präparat, basierend auf der S3-Leitlinie Mammakarzinom v",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-krk-tme-qualitaet" : "MII_VS_Onko_KRK_TME_Qualitaet"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-mamma-her2neu-status-leitlinie",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Mamma_Her2neu_Status_Leitlinie",
+    "title" : "MII CS Onkologie Mamma Her2neu Status Leitlinie",
+    "description" : "Codesystem für Her2neu Status basierend auf der S3-Leitlinie Mammakarzinom und ASCO/CAP Guidelines mit erweiterten Klassifikationen (HER2-low, HER2-ultralow)",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-her2neu-status-leitlinie" : "MII VS Onkologie Mamma Her2neu Status Leitlinie"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-mamma-her2neu-status-obds",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Mamma_Her2neu_Status_oBDS",
+    "title" : "MII CS Onkologie Mamma Her2neu Status oBDS",
+    "description" : "oBDS-spezifisches Codesystem für Her2neu Status gemäß oBDS Feld M4 (243)",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-her2neu-status-obds" : "MII VS Onkologie Mamma Her2neu Status oBDS"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-mamma-rezeptorstatus-leitlinie",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Mamma_Rezeptorstatus_Leitlinie",
+    "title" : "MII CS Onkologie Mamma Rezeptorstatus",
+    "description" : "oBDS-spezifisches Codesystem Mamma-Rezeptorstatus, basierend auf der S3-Leitlinie Mammakarzinom v5.02 Abschnitt 4.5.4",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-mamma-rezeptorstatus-leitlinie" : "MII_VS_Onko_Mamma_Rezeptorstatus_Leitlinie"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-melanom-ulzeration",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Melanom_Ulzeration",
+    "title" : "MII CS Onkologie Melanom Ulzeration",
+    "description" : "Codes für die Ulzeration beim Malignen Melanom der Haut nach oBDS",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-melanom-ulzeration" : "MII VS Onkologie Melanom Ulzeration"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-nebenwirkung-ctcae-grad",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Nebenwirkung_CTCAE_Grad",
+    "title" : "MII CS Onko Nebenwirkung nach CTCAE-Grad",
+    "description" : "Gibt an, zu welchem Schweregrad von Nebenwirkungen es bei der Bestrahlung oder der systemischen Therapie gekommen ist.",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-nebenwirkung-ctcae-grad" : "MII VS Onkologie Nebenwirkung nach CTCAE Grad"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-komplikation",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Operation_Komplikationen",
+    "title" : "MII CS Onkologie Operation Komplikationen",
+    "description" : "oBDS-spezifisches Codesystem für Klassifikation von Komplikationen während der OP",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-operation-komplikation" : "MII VS Onkologie Operation Komplikationen"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-operation-urgency",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Operation_Urgency",
+    "title" : null,
+    "description" : "oBDS-basiertes Codesystem für die Modalität der Eingriffsdurchführung (Art des Eingriffs KR6)",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-operation-urgency" : "MII_VS_Onko_Operation_Urgency"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-primaertumor-diagnosesicherung",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Primaertumor_Diagnosesicherung",
+    "title" : "MII CS Onkologie Primärtumor Diagnosesicherung",
+    "description" : "Codes für Primärtumor Diagnosesicherung, d.h. die höchste erreichte Diagnosesicherheit der Diagnose.",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-primaertumor-diagnosesicherung" : "MII VS Onkologie Primärtumor Diagnosesicherung"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-prostata-postsurgical-complications",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Prostata_Postsurgical_Complications",
+    "title" : "MII CS Onkologie Prostata Postoperative Komplikationen",
+    "description" : "CodeSystem zur Darstellung des Vorhandenseins von postoperativen Komplikationen nach Prostatektomie in der Onkologie",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-prostata-postsurgical-complications" : "MII_VS_Onko_Prostata_Postsurgical_Complications"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-residualstatus",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Residualstatus",
+    "title" : "MII CS Onkologie Residualstatus",
+    "description" : "oBDS-spezifisches Codesystem für R-Klassifikation",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-beurteilung-lokaler-residualstatus" : "MII VS Onkologie Beurteilung des lokalen Residualstatus",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-gesamtbeurteilung-residualstatus" : "MII VS Onkologie Gesamtbeurteilung des Residualstatus"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-seitenlokalisation",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Seitenlokalisation",
+    "title" : "MII CS Onkologie Primärtumor Seitenlokalisation",
+    "description" : "Codes für Seitenlokalisation, d.h. organspezifische Angabe der betroffenen Seite.",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-seitenlokalisation" : "MII VS Onkologie Primärtumor Seitenlokalisation"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-applikationsart",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Strahlentherapie_Applikationsart",
+    "title" : "MII CS Onkologie Strahlentherapie Applikationsart",
+    "description" : "oBDS-spezifisches Codesystem für Klassifikation von Intention der OP",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-strahlentherapie-applikationsart" : "MII VS Onkologie Strahlentherapie Applikationsart"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-boost",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Strahlentherapie_Boost",
+    "title" : "MII CS Onkologie Strahlentherapie Boost",
+    "description" : "oBDS-spezifisches Codesystem für Klassifikation von Strahlentherapie-Boosts",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-strahlentherapie-boost" : "MII VS Onkologie Strahlentherapie Boost"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-strahlenart",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Strahlentherapie_Strahlenart",
+    "title" : "MII CS Onkologie Strahlentherapie Strahlenart",
+    "description" : "oBDS-spezifisches Codesystem für Klassifikation von eingesetzter Strahlenart",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-strahlentherapie-strahlenart" : "MII VS Onkologie Strahlentherapie Strahlenart"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-zielgebiet",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Strahlentherapie_Zielgebiet",
+    "title" : "MII CS Onkologie Strahlentherapie Zielgebiet",
+    "description" : "oBDS-spezifisches Codesystem für Klassifikation von Zielgebiet von Strahlentherapie",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-strahlentherapie-zielgebiet" : "MII VS Onkologie Strahlentherapie Zielgebiet"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-strahlentherapie-zielgebiet-2014",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Strahlentherapie_Zielgebiet_2014",
+    "title" : "MII CS Onkologie Strahlentherapie Zielgebiet oBDS 2014 (Legacy)",
+    "description" : "oBDS 2014 Legacy-Codesystem für Klassifikation von Zielgebiet von Strahlentherapie - nur für Datenimport und Migration",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-strahlentherapie-zielgebiet" : "MII VS Onkologie Strahlentherapie Zielgebiet"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-studienteilnahme",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "Studienteilnahme",
+    "title" : "MII CS Onkologie Studienteilnahme",
+    "description" : "oBDS-spezifisches Codesystem den Status der Studienteilnahme",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-studienteilnahme" : "MII VS Onkologie Studienteilnahme"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-systemische-therapie-protokolle",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Systemische_Therapie_Protokolle",
+    "title" : "MII CS Onkologie Systemische Therapie Protokolle",
+    "description" : "oBDS-spezifisches Codesystem für Protokolle systemischer Therapien",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-protokolle" : "MII VS Onkologie Systemische Therapie Protokolle"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-ende-grund",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Therapie_Ende_Grund",
+    "title" : "MII CS Onkologie Strahlentherapie Ende Grund",
+    "description" : "oBDS-spezifisches Codesystem für Klassifikation des Grundes der Beendigung der Strahlentherapie oder der systemischen Therapie",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-strahlentherapie-ende-grund" : "MII VS Onkologie Strahlentherapie Ende Grund",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-systemische-therapie-ende-grund" : "MII VS Onkologie Systemische Therapie Ende Grund"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-stellungzurop",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Therapie_StellungZurOp",
+    "title" : "MII CS Onkologie Therapie Stellung",
+    "description" : "oBDS-spezifisches Codesystem für Klassifikation von Stellung zur OP",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-systemische-therapie-stellungzurop" : "MII VS Onkologie Systemische Therapie Stellung",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-strahlentherapie-stellungzurop" : "MII VS Onkologie Strahlentherapie Stellung zur OP"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapie-typ",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Therapie_Typ",
+    "title" : "MII CS Onko Therapie Typ",
+    "description" : "Typ der Therapie",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-systemische-therapie-art" : "MII VS Onkologie Systemische Therapie Art",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-therapieempfehlung-typ" : "MII VS Onkologie Therapieempfehlung Typ"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapieabweichung",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Therapieabweichung",
+    "title" : "MII CS Onkologie Therapieabweichung",
+    "description" : "oBDS-spezifisches Codesystem für die Therapieabweichung auf Wunsch des Patients.",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-therapieabweichung" : "MII VS Onkologie Therapieabweichung"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-therapieplanung-typ",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Therapieplanung_Typ",
+    "title" : "MII CS Onkologie Therapieplanung Typ",
+    "description" : "oBDS-spezifisches Codesystem für den Therapieplanungstyp",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-therapieplanung-typ" : "MII VS Onkologie Therapieplanung Typ"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tnm-version",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_TNM_Version",
+    "title" : "MII CS Onkologie TNM Version",
+    "description" : "Codes für TNM Version/Auflage nach welcher Version des TNM klassifiziert wird.",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-version" : "MII VS Onkologie TNM Version"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-tod",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Tod",
+    "title" : "MII CS Onkologie Tod",
+    "description" : "oBDS-spezifisches Codesystem tumorbedingter Tod",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tod" : "MII VS Onkologie Tod"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-fernmetastasen",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Verlauf_Fernmetastasen",
+    "title" : "MII CS Onkologie Verlauf Fernmetastasen",
+    "description" : "oBDS-spezifisches Codesystem für die Beurteilung von Fernmetastasen im Behandlungsverlauf",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-verlauf-fernmetastasen" : "MII VS Onkologie Verlauf Fernmetastasen"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-gesamtbeurteilung",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Verlauf_Gesamtbeurteilung",
+    "title" : "MII CS Onkologie Verlauf Gesamtbeurteilung",
+    "description" : "oBDS-spezifisches Codesystem für die Gesamtbeurteilung im Behandlungsverlauf",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-verlauf-gesamtbeurteilung" : "MII VS Onkologie Verlauf Gesamtbeurteilung"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-lymphknoten",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Verlauf_Lymphknoten",
+    "title" : "MII CS Onkologie Verlauf Lymphknoten",
+    "description" : "oBDS-spezifisches Codesystem für die Beurteilung von Lymphknoten im Behandlungsverlauf",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-verlauf-lymphknoten" : "MII VS Onkologie Verlauf Lymphknoten"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-verlauf-primaertumor",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Verlauf_Primaertumor",
+    "title" : "MII CS Onkologie Verlauf Primärtumor",
+    "description" : "oBDS-spezifisches Codesystem für die Beurteilung des Primärtumors im Behandlungsverlauf",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-verlauf-primaertumor" : "MII VS Onkologie Verlauf Primärtumor"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/CodeSystem/mii-cs-onko-weitere-klassifikationen-obds",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_Weitere_Klassifikationen_OBDS",
+    "title" : "MII CodeSystem Onkologie - Weitere Klassifikationen oBDS",
+    "description" : "oBDS-specific classification systems and scoring systems not yet covered by international terminologies (SNOMED CT, NCI Thesaurus). These codes supplement the existing ValueSet for additional classifications. Research required: Check if SNOMED CT or LOINC codes exist for these scoring systems before using oBDS-specific codes.",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-weitere-klassifikationen-auspraegungen" : "MII Value Set Onkologie - Weitere Klassifikationen - Auspraegungen"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-empfehlung-status-begruendung",
+    "version" : null,
+    "status" : "active",
+    "name" : "MII_CS_Seltene_Empfehlung_StatusBegruendung",
+    "title" : "MII CS SE Empfehlung Status Begründung",
+    "description" : "Begründung bei fehlender Empfehlung",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.seltene@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ValueSet/mii-vs-seltene-empfehlung-status-begruendung" : "MII VS SE Empfehlung Status Begründung"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-hpo-change-status",
+    "version" : "2026.0.0",
+    "status" : "active",
+    "name" : "MII_CS_Seltene_HPO_ChangeStatus",
+    "title" : "MII CS Seltene Erkrankungen HPO Change Status",
+    "description" : "CodeSystem zur Dokumentation von Änderungen bei HPO-Phänotypen über Zeit",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.seltene@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ValueSet/mii-vs-seltene-symptom-change-status-combined" : "MII VS Seltene Erkrankungen Symptom Change Status (Combined)"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-narse-therapietyp",
+    "version" : "2026.0.0",
+    "status" : "active",
+    "name" : "MII_CS_Seltene_NARSE_Therapietyp",
+    "title" : "MII CS Seltene Erkrankungen NARSE Therapietyp",
+    "description" : "CodeSystem für NARSE-spezifische Therapietypen bei Seltenen Erkrankungen",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.seltene@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ValueSet/mii-vs-seltene-narse-therapietyp" : "MII VS Seltene Erkrankungen NARSE Therapietyp"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-strategie",
+    "version" : "2026.0.0",
+    "status" : "active",
+    "name" : "MII_CS_Seltene_TherapieempfehlungStrategie",
+    "title" : "MII CS SE Therapieempfehlung Strategie",
+    "description" : "Strategietypen für Therapieempfehlungen bei seltenen Erkrankungen, abgeleitet aus MV GenomSeq",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.seltene@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ValueSet/mii-vs-seltene-therapieempfehlung-strategie-medikamentoes" : "MII VS SE Therapieempfehlung Strategie - Medikamentös",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.seltene@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ValueSet/mii-vs-seltene-therapieempfehlung-strategie-nicht-medikamentoes" : "MII VS SE Therapieempfehlung Strategie - Nicht-Medikamentös"
+  },
+  {
+    "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/CodeSystem/mii-cs-seltene-therapieempfehlung-typ",
+    "version" : "2026.0.0",
+    "status" : "active",
+    "name" : "MII_CS_Seltene_TherapieempfehlungTyp",
+    "title" : "MII CS SE Therapieempfehlung Typ",
+    "description" : "Therapietyp (kausal vs. symptomatisch) für Therapieempfehlungen bei seltenen Erkrankungen, abgeleitet aus MV GenomSeq",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.seltene@2026.0.0&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/ValueSet/mii-vs-seltene-therapieempfehlung-typ" : "MII VS SE Therapieempfehlung Typ"
+  },
+  {
+    "url" : "https://www.uicc.org/resources/tnm",
+    "version" : "2026.0.1",
+    "status" : "active",
+    "name" : "MII_CS_Onko_TNM_UICC",
+    "title" : "MII CS Onkologie TNM UICC",
+    "description" : "Codes für TNM UICC Ausprägungen.",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-uicc-stadium" : "MII VS Onkologie TNM UICC Stadium",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-t-kategorie-werte" : "MII VS Onkologie TNM T Kategorie Werte",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-pn-kategorie-werte" : "MII VS Onkologie TNM Pn Kategorie Werte",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-l-kategorie-werte" : "MII VS Onkologie TNM L Kategorie Werte",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-v-kategorie-werte" : "MII VS Onkologie TNM V Kategorie Werte",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-m-symbol" : "MII VS Onkologie TNM m-Symbol",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-n-kategorie-werte" : "MII VS Onkologie TNM N Kategorie Werte",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-cp-praefix" : "MII VS Onkologie TNM c/p/u Praefix",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-m-kategorie-werte" : "MII VS Onkologie TNM M Kategorie Werte",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.onkologie@2026.0.1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/ValueSet/mii-vs-onko-tnm-s-kategorie-werte" : "MII VS Onkologie TNM S Kategorie Werte"
+  },
+  {
+    "url" : "urn:ietf:bcp:47",
+    "version" : "2.0.1",
+    "status" : "active",
+    "name" : "Ietf3066",
+    "title" : "Tags for the Identification of Languages",
+    "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+    "oids" : ["2.16.840.1.113883.6.121"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+  },
+  {
+    "url" : "urn:iso-astm:E1762-95:2013",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SignatureTypeCodes",
+    "title" : "Signature Type Codes",
+    "description" : "The Digital Signature Purposes, an indication of the reason an entity signs a document. This is included in the signed information and can be used when determining accountability for various actions concerning the document. Examples include: author, transcriptionist/recorder, and witness.",
+    "oids" : ["2.16.840.1.113883.4.642.4.64"],
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2026.0.1-rc-1&canonical=https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes" : "MII Consent: Signature Types"
+  },
+  {
+    "url" : "urn:iso:std:iso:11073:10101",
+    "version" : "20250520",
+    "status" : "active",
+    "name" : "Mdc",
+    "title" : "ISO/IEEE 11073 Medical Device Communication Nomenclature",
+    "description" : "The nomenclature relates primarily to vital signs monitoring, but also includes semantics of other medical devices that are commonly used in acute care settings. There are multiple coding partitions each of which has a systematic name consisting of a set of base concepts and differentiating criteria.",
+    "oids" : ["2.16.840.1.113883.6.24"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-devicemetric-type.html" : "Device Metric and Component Types",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-beatmung-iso11073" : "MII VS ICU Code Observation Beatmung [ISO11073]",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.icu@2026.0.1-rc1&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/ValueSet/mii-vs-icu-code-observation-bilanzen-iso11073" : "MII VS ICU Code Observation Bilanzen [ISO11073]",
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.patho@2026.0.1&canonical=https://gematik.de/fhir/isik/ValueSet/vs-mii-icu-code-monitoring-und-vitaldaten-iso11073" : "VS MII ICU Code Monitoring und Vitaldaten [ISO11073]"
+  },
+  {
+    "url" : "urn:iso:std:iso:3166",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ISO3166Part1",
+    "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
+    "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
+    "oids" : ["1.0.3166.1"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-jurisdiction.html" : "Jurisdiction",
+    "http://hl7.org/fhir/R4/valueset-iso3166-1-2.html" : "Iso 3166 Part 1: 2 Letter Codes"
+  },
+  {
+    "url" : "urn:iso:std:iso:3166-2:de",
+    "version" : "1.5.4",
+    "status" : "active",
+    "name" : "CodeSystemISO31662DE",
+    "title" : "ISO-3166-2:de-Laendercodes",
+    "description" : "Die Liste der ISO-3166-2:DE Codes für Deutschland enthält die Codes für die deutschen Länder.",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.gematik.isik@5.1.0&canonical=http://fhir.de/ValueSet/iso/bundeslaender" : "ISO-3166-2:de-Laendercodes"
+  },
+  {
+    "url" : "urn:iso:std:iso:3166:-2",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ISO3166Part2",
+    "title" : "ISO 3166-2 Codes for the representation of names of countries and their subdivisions — Part 2: Country subdivision code",
+    "description" : "ISO 3166-2 establishes a code that represents the names of the principal administrative divisions, or similar areas, of the countries and entities included in ISO 3166-1.",
+    "oids" : ["1.0.3166.2"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-jurisdiction.html" : "Jurisdiction"
+  },
+  {
+    "url" : "urn:oid:1.2.36.1.2001.1001.101.104.16592",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "PatientMedicineChangeTypes",
+    "title" : "Patient Medicine Change Types",
+    "description" : "Example Item Flags for the List Resource. In this case, these are the kind of flags that would be used on a medication list at the end of a consultation.",
+    "oids" : ["1.2.36.1.2001.1001.101.104.16592",
+    "2.16.840.1.113883.4.642.4.321"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-item-flag.html" : "Patient Medicine Change Types"
+  },
+  {
+    "url" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+    "version" : "1.1.0",
+    "status" : "active",
+    "name" : "MII CS Consent Policy",
+    "title" : "MII Consent: Policy CodeSystem",
+    "description" : "Codesystem mit Consent-Policy-Codes zur interoperablen Operationalisierung bzw. Durchsetzung (Enforcement) von Consent Informationen des MII Broad Consent",
+    "oids" : ["2.16.840.1.113883.3.1937.777.24.5.3"],
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.consent@2026.0.1-rc-1&canonical=https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy" : "MII Consent: Policy ValueSet"
+  }]
+}

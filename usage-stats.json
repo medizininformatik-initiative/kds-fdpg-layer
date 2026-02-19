@@ -1,0 +1,778 @@
+{
+  "package": "fdpg-kds-obligations",
+  "version": "2026.0.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "DE",
+  "extensions": [],
+  "profiles": {
+    "ServiceRequest": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-studieneinschluss-anfrage",
+        "title": "FDPG PR Studie Studieneinschluss Anfrage"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapieplan",
+        "title": "FDPG PR SE Therapieplan"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapie-durchgefuehrt",
+        "title": "FDPG PR Seltene Erkrankungen Therapie Durchgeführt"
+      }
+    ],
+    "ImagingStudy": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-bildgebungsstudie",
+        "title": "FDPG PR Bildgebung Bildgebungsstudie"
+      }
+    ],
+    "Device": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-device",
+        "title": "FDPG PR ICU Device"
+      }
+    ],
+    "BodyStructure": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-koerperstruktur",
+        "title": "FDPG PR Bildgebung Körperstruktur"
+      }
+    ],
+    "MedicationAdministration": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-medikation-medication-administration",
+        "title": "FDPG PR Medikation MedicationAdministration"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-vent-icu-dynamische-kompliance",
+        "title": "FDPG PR ICU Dynamische Kompliance"
+      },
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-vent-icu-parameter-von-beatmung",
+        "title": "FDPG PR ICU Parameter von Beatmung"
+      },
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-vent-provided-icu-druckdifferenz-beatmung",
+        "title": "FDPG PR ICU Druckdifferenz Beatmung"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-report",
+        "title": "FDPG PR Patho Report"
+      }
+    ],
+    "Composition": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-composition",
+        "title": "FDPG PR Patho Composition"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-organization",
+        "title": "FDPG PR Biobank Organization Sammlung Biobank"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-specimen",
+        "title": "FDPG PR Patho Specimen"
+      }
+    ],
+    "Substance": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-substance-additiv",
+        "title": "FDPG PR Biobank Substance Additiv"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-dokument",
+        "title": "FDPG PR Studie Dokument"
+      }
+    ],
+    "Consent": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-consent-einwilligung",
+        "title": "FDPG PR Consent - Einwilligung"
+      }
+    ],
+    "Provenance": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-consent-provenance",
+        "title": "FDPG PR Consent - Provenance"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-symptom-condition",
+        "title": "FDPG PR MII Profile SE Symptom Condition"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-fall-kontakt-gesundheitseinrichtung",
+        "title": "FDPG PR Fall Kontakt mit einer Gesundheitseinrichtung"
+      }
+    ],
+    "DeviceMetric": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung",
+        "title": "FDPG PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-medikation-medication",
+        "title": "FDPG PR Medikation Medication"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapieempfehlung",
+        "title": "FDPG PR SE Therapieempfehlung Systemische Therapie"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-systemische-therapie-medikation",
+        "title": "FDPG PR Onkologie Systemische Therapie Medikation"
+      }
+    ],
+    "List": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-history-of-present-illness",
+        "title": "FDPG PR Patho History Of Present Illness"
+      }
+    ],
+    "Task": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-medikationsempfehlung",
+        "title": "FDPG PR MolGen Medikationsempfehlung"
+      }
+    ],
+    "FamilyMemberHistory": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-familienanamnese",
+        "title": "FDPG PR SE Familienanamnese"
+      }
+    ],
+    "RiskAssessment": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-polygener-risiko-score",
+        "title": "FDPG PR MolGen Polygener Risiko Score"
+      }
+    ],
+    "AdverseEvent": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-nebenwirkung-adverse-event",
+        "title": "FDPG PR Onkologie Nebenwirkung von Strahlentherapie und systemische Therapie"
+      }
+    ],
+    "RequestGroup": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapieempfehlung-kombination",
+        "title": "FDPG PR SE Therapieempfehlung Kombinationstherapie"
+      }
+    ],
+    "Media": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-attached-image",
+        "title": "FDPG PR Patho Attached Image"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-bundle",
+        "title": "FDPG PR Patho Bundle"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-person-patient",
+        "title": "FDPG PR Person Patient"
+      },
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-person-patient-pseudonymisiert",
+        "title": "FDPG PR Person Patient (Pseudonymisiert)"
+      }
+    ],
+    "ClinicalImpression": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-clinical-impression",
+        "title": "FDPG PR MII Profile SE Clinical Impression"
+      }
+    ],
+    "ResearchStudy": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-studie",
+        "title": "FDPG PR Studie Studie"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-beteiligte-person",
+        "title": "FDPG PR Studie Beteiligte Person"
+      }
+    ],
+    "EvidenceVariable": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-ein-auschluss-kriterium",
+        "title": "FDPG PR Studie EinAuschlussKriterium"
+      }
+    ],
+    "ResearchSubject": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-proband",
+        "title": "FDPG PR Studie Proband"
+      }
+    ],
+    "Library": [
+      {
+        "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-register",
+        "title": "FDPG PR Studie Register"
+      }
+    ]
+  },
+  "usage": {
+    "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference": [
+      "Consent"
+    ],
+    "http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation": [
+      "Provenance.signature"
+    ],
+    "http://fhir.de/ConsentManagement/StructureDefinition/Xacml": [
+      "Consent.policyRule"
+    ],
+    "http://fhir.de/StructureDefinition/Aufnahmegrund": [
+      "Encounter"
+    ],
+    "http://fhir.de/StructureDefinition/Entlassungsgrund": [
+      "Encounter.hospitalization.dischargeDisposition"
+    ],
+    "http://fhir.de/StructureDefinition/ProzedurDokumentationsdatum": [
+      "Procedure"
+    ],
+    "http://fhir.de/StructureDefinition/destatis/ags": [
+      "Patient.address.city"
+    ],
+    "http://fhir.de/StructureDefinition/gender-amtlich-de": [
+      "Patient.gender"
+    ],
+    "http://fhir.de/StructureDefinition/humanname-namenszusatz": [
+      "Patient.name.family"
+    ],
+    "http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit": [
+      "Condition.code.coding",
+      "FamilyMemberHistory.condition.code.coding"
+    ],
+    "http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen": [
+      "Condition.code.coding",
+      "FamilyMemberHistory.condition.code.coding"
+    ],
+    "http://fhir.de/StructureDefinition/lebensphase": [
+      "Condition.onset[x]",
+      "Condition.onset[x].end",
+      "Condition.onset[x].start"
+    ],
+    "http://fhir.de/StructureDefinition/seitenlokalisation": [
+      "Condition.code.coding",
+      "FamilyMemberHistory.condition.code.coding",
+      "Procedure.code.coding"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.documentation": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version": [
+      "Basic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedEndDate": [
+      "Encounter"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Encounter.plannedStartDate": [
+      "Encounter"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionByCombination": [
+      "EvidenceVariable.characteristic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionByTypeAndValue": [
+      "EvidenceVariable.characteristic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionCanonical": [
+      "EvidenceVariable.characteristic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.definitionReference": [
+      "EvidenceVariable.characteristic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-EvidenceVariable.characteristic.linkId": [
+      "EvidenceVariable.characteristic"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.associatedParty": [
+      "ResearchStudy"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-ResearchStudy.label": [
+      "ResearchStudy"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Specimen.feature": [
+      "Specimen"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/bodySite": [
+      "Observation",
+      "Observation.bodySite"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation": [
+      "CapabilityStatement.rest.resource",
+      "CapabilityStatement.rest.resource.interaction",
+      "CapabilityStatement.rest.resource.searchParam"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/composition-clinicaldocument-versionNumber": [
+      "Composition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-assertedDate": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-occurredFollowing": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/condition-related": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Patient.birthDate",
+      "Patient.identifier.value"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/extension-quantity-translation": [
+      "Observation.value[x]"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/hla-genotyping-results-allele-database": [
+      "DiagnosticReport"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/hla-genotyping-results-glstring": [
+      "DiagnosticReport"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-name": [
+      "Patient.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix": [
+      "Patient.name.family"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
+      "Patient.address.line",
+      "StructureDefinition.snapshot.element.example.valueString"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox": [
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-precinct": [
+      "Patient.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
+      "Patient.address.line",
+      "StructureDefinition.snapshot.element.example.valueString"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier": [
+      "Patient.name.prefix"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-PQ-translation": [
+      "Specimen.collection.quantity"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/observation-secondaryFinding": [
+      "Observation"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/procedure-method": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/quantity-precision": [
+      "Observation.value[x].value",
+      "Specimen.collection.quantity"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/request-statusReason": [
+      "ServiceRequest"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/translation": [
+      "StructureDefinition.differential.element.definition",
+      "StructureDefinition.differential.element.short",
+      "StructureDefinition.snapshot.element.comment",
+      "StructureDefinition.snapshot.element.definition",
+      "StructureDefinition.snapshot.element.short",
+      "StructureDefinition.title"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-relatedArtifact": [
+      "DiagnosticReport",
+      "Observation"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo": [
+      "DiagnosticReport"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-location-qualifier": [
+      "Specimen.collection.bodySite"
+    ],
+    "http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-laterality-qualifier": [
+      "Specimen.collection.bodySite"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/annotation-code": [
+      "Observation.note"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-report-note": [
+      "DiagnosticReport"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-risk-assessment": [
+      "DiagnosticReport",
+      "Observation"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-change-type": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-device": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-ext": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-focus": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-genome-build": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-genomic-source-class": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-input": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-method-type": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-metrics": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-output": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-protocol-performed": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-regions": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-specimen": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-analysis-title": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-reference": [
+      "DiagnosticReport"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/genomic-study-referrer-ext": [
+      "Procedure"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/medication-assessed-reference": [
+      "Observation.component"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/repeat-motif-order": [
+      "Observation.component"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/therapy-assessed-reference": [
+      "Observation.component"
+    ],
+    "http://hl7.org/fhir/uv/genomics-reporting/StructureDefinition/workflow-relatedArtifactComponent": [
+      "Observation.component"
+    ],
+    "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-collection-design-extension": [
+      "Organization"
+    ],
+    "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-organization-description-extension": [
+      "Organization"
+    ],
+    "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-sample-collection-setting-extension": [
+      "Organization"
+    ],
+    "https://fhir.bbmri-eric.eu/fhir/StructureDefinition/miabis-sample-storage-temperature-extension": [
+      "Specimen.processing"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/InterpretationsbeeinflussendeEigenschaft": [
+      "Observation"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/core/modul-labor/StructureDefinition/QuelleKlinischesBezugsdatum": [
+      "DiagnosticReport.effective[x]",
+      "Observation.effective[x]"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstoffrelation": [
+      "Medication.ingredient"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/wirkstofftyp": [
+      "Medication.ingredient"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Durchfuehrungsabsicht": [
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-bildgebungsgrund": [
+      "ImagingStudy"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-instanz-details": [
+      "ImagingStudy.series.instance"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-kontrastmittel": [
+      "ImagingStudy.series"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-ct": [
+      "ImagingStudy.series"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mg-cr-dx": [
+      "ImagingStudy.series"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-mr": [
+      "ImagingStudy.series"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-nm": [
+      "ImagingStudy.series"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-pt": [
+      "ImagingStudy.series"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-modalitaet-us": [
+      "ImagingStudy.series"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-serie-schichtdicke": [
+      "ImagingStudy.series"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-series-uid": [
+      "Observation"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-bildgebung/StructureDefinition/mii-ex-bildgebung-sop-instanz-uid": [
+      "Observation"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Diagnose": [
+      "Specimen"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/EinstellungBlutversorgung": [
+      "Specimen.collection"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/KontaktRolle": [
+      "Organization.contact"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen": [
+      "Specimen.processing"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/VerwaltendeOrganisation": [
+      "Specimen"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-anzahl-aliquots": [
+      "Specimen"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-anzahl-passagen": [
+      "Specimen"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-ebene": [
+      "Specimen"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-kulturprotokoll": [
+      "Specimen"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/mii-ex-biobank-modifikationen": [
+      "Specimen"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/StructureDefinition/mii-ex-dokument-nlp-processing-status": [
+      "DocumentReference"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/empfohlene-massnahme": [
+      "DiagnosticReport"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-familiare-linie": [
+      "FamilyMemberHistory.relationship.coding"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsgrad": [
+      "FamilyMemberHistory.relationship.coding"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/mii-ex-molgen-verwandtschaftsverhaeltnis": [
+      "FamilyMemberHistory.relationship.coding"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/risk-assessment-einflussfaktor": [
+      "RiskAssessment.prediction"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-histology-morphology-behavior-icdo3": [
+      "Condition"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-intention": [
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-operation-urgency": [
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-boost": [
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-einzeldosis": [
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-gesamtdosis": [
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-bestrahlung-seitenlokalisation": [
+      "Procedure.bodySite"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-intention": [
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-strahlentherapie-stellungzurop": [
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-intention": [
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-systemische-therapie-stellungzurop": [
+      "Procedure"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-cp-praefix": [
+      "Observation.code"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-itc-suffix": [
+      "Observation.value[x]"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-onko/StructureDefinition/mii-ex-onko-tnm-sn-suffix": [
+      "Observation.value[x]"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-evidenzgraduierung": [
+      "MedicationRequest",
+      "RequestGroup",
+      "ServiceRequest"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-prioritaet": [
+      "MedicationRequest",
+      "RequestGroup",
+      "ServiceRequest"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-empfehlung-publikation": [
+      "MedicationRequest",
+      "RequestGroup",
+      "ServiceRequest"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/mii-ex-seltene-penetrance": [
+      "Condition",
+      "FamilyMemberHistory.condition"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene/StructureDefinition/von-seltene-betroffen": [
+      "FamilyMemberHistory"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable": [
+      "StructureDefinition"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-akronym": [
+      "ResearchStudy"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-eligibility": [
+      "ResearchStudy"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-ethikvotum": [
+      "ResearchStudy"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-finanzierung": [
+      "ResearchStudy"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-quell-register": [
+      "Library"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-rekrutierung": [
+      "ResearchStudy"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-ex-studie-studienregister": [
+      "ResearchStudy"
+    ]
+  }
+}

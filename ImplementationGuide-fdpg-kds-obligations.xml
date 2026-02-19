@@ -1,0 +1,3612 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="fdpg-kds-obligations"/>
+  <language value="de-DE"/>
+  <text>
+    <status value="generated"/><div xml:lang="de-DE" xmlns="http://www.w3.org/1999/xhtml" lang="de-DE"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide fdpg-kds-obligations</b></p><a name="fdpg-kds-obligations"> </a><a name="hcfdpg-kds-obligations"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: de-DE</p></div><h2>FDPGKDSObligations</h2><p>The official URL for this implementation guide is: </p><pre>https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ImplementationGuide/fdpg-kds-obligations</pre><div><p>FDPG-spezifische Obligations und Anforderungen für MII Kerndatensatz Profile</p>
+</div></div>
+  </text>
+  <url value="https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ImplementationGuide/fdpg-kds-obligations"/>
+  <version value="2026.0.0"/>
+  <name value="FDPGKDSObligations"/>
+  <title value="FDPG KDS Obligations Layer"/>
+  <status value="active"/>
+  <date value="2026-02-19T20:14:03+00:00"/>
+  <publisher value="FDPG / Medizininformatik-Initiative"/>
+  <contact>
+    <name value="FDPG / Medizininformatik-Initiative"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://forschen-fuer-gesundheit.de"/>
+    </telecom>
+  </contact>
+  <description value="FDPG-spezifische Obligations und Anforderungen für MII Kerndatensatz Profile"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="fdpg-kds-obligations"/>
+  <license value="CC-BY-4.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="7.0.1"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_uv_extensions_r4">
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.1.0"/>
+  </dependsOn>
+  <dependsOn id="de_basisprofil_r4">
+    <uri value="http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4"/>
+    <packageId value="de.basisprofil.r4"/>
+    <version value="1.5.0"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_meta">
+    <uri value="https://www.medizininformatik-initiative.de/fhir/modul-meta/ImplementationGuide/mii-ig-meta"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.meta"/>
+    <version value="2026.0.0"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_base">
+    <uri value="https://www.medizininformatik-initiative.de/fhir/modul-base/ImplementationGuide/mii-ig-base"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.base"/>
+    <version value="2026.0.0"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_laborbefund">
+    <uri value="http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.laborbefund"/>
+    <version value="2026.0.1"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_medikation">
+    <uri value="https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.medikation"/>
+    <version value="2026.0.1"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_biobank">
+    <uri value="http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.biobank/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.biobank"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.biobank"/>
+    <version value="2026.0.1"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_studie">
+    <uri value="http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.studie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.studie"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.studie"/>
+    <version value="2026.0.2"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_molgen">
+    <uri value="http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.molgen/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.molgen"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.molgen"/>
+    <version value="2026.0.4"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_patho">
+    <uri value="http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.patho/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.patho"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.patho"/>
+    <version value="2026.0.1"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_icu">
+    <uri value="http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.icu"/>
+    <version value="2026.0.1-rc1"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_bildgebung">
+    <uri value="http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.bildgebung/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.bildgebung"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.bildgebung"/>
+    <version value="2026.0.0"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_seltene">
+    <uri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.seltene"/>
+    <version value="2026.0.0"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_onkologie">
+    <uri value="http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.onkologie"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.onkologie"/>
+    <version value="2026.0.1"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_consent">
+    <uri value="http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.consent/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.consent"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.consent"/>
+    <version value="2026.0.1-rc-1"/>
+  </dependsOn>
+  <dependsOn id="de_medizininformatikinitiative_kerndatensatz_dokument">
+    <uri value="https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/ImplementationGuide/mii-ig-dokument"/>
+    <packageId value="de.medizininformatikinitiative.kerndatensatz.dokument"/>
+    <version value="2026.0.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2025+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="trial-use"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#0.9.0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2025+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="trial-use"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="show-inherited-invariants"/>
+      </extension>
+      <extension url="value">
+        <valueString value="false"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/fdpg-cps-data-consumer"/>
+      </reference>
+      <name value="FDPG CapabilityStatement für Datenkonsumenten"/>
+      <description value="Dieses CapabilityStatement beschreibt die Anforderungen an FDPG Datenkonsumenten&#xA;(Data Consumer) für den Abruf und die Verarbeitung von Daten gemäß dem MII Kerndatensatz.&#xA;&#xA;Es definiert die minimal erforderlichen Fähigkeiten für Forschungsprojekte und&#xA;andere Systeme, die Daten aus dem FDPG abrufen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/fdpg-cps-data-provider"/>
+      </reference>
+      <name value="FDPG CapabilityStatement für Datenlieferanten"/>
+      <description value="Dieses CapabilityStatement beschreibt die Anforderungen an FDPG Datenlieferanten&#xA;(Data Provider) für die Bereitstellung von Daten gemäß dem MII Kerndatensatz.&#xA;&#xA;Es konsolidiert die Anforderungen aus allen KDS-Modulen und definiert&#xA;FDPG-spezifische Obligations."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/fdpg-actor-data-consumer"/>
+      </reference>
+      <name value="FDPG Datenkonsument"/>
+      <description value="Systeme die Daten vom FDPG abrufen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ActorDefinition"/>
+      </extension>
+      <reference>
+        <reference value="ActorDefinition/fdpg-actor-data-provider"/>
+      </reference>
+      <name value="FDPG Datenlieferant"/>
+      <description value="Systeme die Daten an das FDPG liefern"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-bildgebung-anforderung-bildgebung"/>
+      </reference>
+      <name value="FDPG PR Bildgebung Anforderung Bildgebung"/>
+      <description value="FDPG Profil - MII PR Bildgebung Anforderung Bildgebung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-bildgebung-behandlungsempfehlung"/>
+      </reference>
+      <name value="FDPG PR Bildgebung Behandlungsempfehlung"/>
+      <description value="FDPG Profil - MII PR Bildgebung Behandlungsempfehlung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-bildgebung-bildgebungsprozedur"/>
+      </reference>
+      <name value="FDPG PR Bildgebung Bildgebungsprozedur"/>
+      <description value="FDPG Profil - MII PR Bildgebung Bildgebungsprozedur"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-bildgebung-bildgebungsstudie"/>
+      </reference>
+      <name value="FDPG PR Bildgebung Bildgebungsstudie"/>
+      <description value="FDPG Profil - MII PR Bildgebung Bildgebungsstudie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-bildgebung-geraet"/>
+      </reference>
+      <name value="FDPG PR Bildgebung Gerät"/>
+      <description value="FDPG Profil - MII PR Bildgebung Gerät"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-bildgebung-kontrastmittelgabe"/>
+      </reference>
+      <name value="FDPG PR Bildgebung Konstrastmittelgabe"/>
+      <description value="FDPG Profil - MII PR Bildgebung Konstrastmittelgabe"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-bildgebung-koerperstruktur"/>
+      </reference>
+      <name value="FDPG PR Bildgebung Körperstruktur"/>
+      <description value="FDPG Profil - MII PR Bildgebung Körperstruktur"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-bildgebung-radiologische-befundungsprozedur"/>
+      </reference>
+      <name value="FDPG PR Bildgebung Radiologische Befundungsprozedur"/>
+      <description value="FDPG Profil - MII PR Bildgebung Radiologische Befundungsprozedur"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-bildgebung-radiologische-beobachtung"/>
+      </reference>
+      <name value="FDPG PR Bildgebung Radiologische Beobachtung"/>
+      <description value="FDPG Profil - MII PR Bildgebung Radiologische Beobachtung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-bildgebung-radiologischer-befund"/>
+      </reference>
+      <name value="FDPG PR Bildgebung Radiologischer Befund"/>
+      <description value="FDPG Profil - MII PR Bildgebung Radiologischer Befund"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-bildgebung-semistrukt-befundbericht"/>
+      </reference>
+      <name value="FDPG PR Bildgebung Semistrukturierter Befundbericht"/>
+      <description value="FDPG Profil - MII PR Bildgebung Semistrukturierter Befundbericht"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-biobank-observation-dna-konzentration"/>
+      </reference>
+      <name value="FDPG PR Biobank Observation DNA Konzentration"/>
+      <description value="FDPG Profil - MII PR Biobank Observation DNA Konzentration"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-biobank-observation-karyotyp"/>
+      </reference>
+      <name value="FDPG PR Biobank Observation Karyotyp"/>
+      <description value="FDPG Profil - MII PR Biobank Observation Karyotyp"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-biobank-observation-morphologie"/>
+      </reference>
+      <name value="FDPG PR Biobank Observation Morphologie"/>
+      <description value="FDPG Profil - MII PR Biobank Observation Morphologie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-biobank-observation-proliferation"/>
+      </reference>
+      <name value="FDPG PR Biobank Observation Proliferation"/>
+      <description value="FDPG Profil - MII PR Biobank Observation Proliferation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-biobank-observation-qualitaetspruefung"/>
+      </reference>
+      <name value="FDPG PR Biobank Observation Qualitätsprüfung"/>
+      <description value="FDPG Profil - MII PR Biobank Observation Qualitätsprüfung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-biobank-observation-wachstumstyp"/>
+      </reference>
+      <name value="FDPG PR Biobank Observation Wachstumstyp"/>
+      <description value="FDPG Profil - MII PR Biobank Observation Wachstumstyp"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-biobank-organization"/>
+      </reference>
+      <name value="FDPG PR Biobank Organization Sammlung Biobank"/>
+      <description value="FDPG Profil - MII PR Biobank Organization Sammlung Biobank"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-biobank-specimen"/>
+      </reference>
+      <name value="FDPG PR Biobank Specimen Bioprobe"/>
+      <description value="FDPG Profil - MII PR Biobank Specimen Bioprobe"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-biobank-specimen-core"/>
+      </reference>
+      <name value="FDPG PR Biobank Specimen Bioprobe Core"/>
+      <description value="FDPG Profil - MII PR Biobank Specimen Bioprobe Core"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-biobank-zellinie-organoid"/>
+      </reference>
+      <name value="FDPG PR Biobank Specimen Zellinie Organoid"/>
+      <description value="FDPG Profil - MII PR Biobank Specimen Zellinie Organoid"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-biobank-substance-additiv"/>
+      </reference>
+      <name value="FDPG PR Biobank Substance Additiv"/>
+      <description value="FDPG Profil - MII PR Biobank Substance Additiv"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-bodymassindex"/>
+      </reference>
+      <name value="FDPG PR Body Mass Index (BMI) of the patient"/>
+      <description value="FDPG Profil - Body Mass Index (BMI) of the patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-consent-documentreference"/>
+      </reference>
+      <name value="FDPG PR Consent - DocumentReference"/>
+      <description value="FDPG Profil - Profile - MI-I - Consent - DocumentReference"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-consent-einwilligung"/>
+      </reference>
+      <name value="FDPG PR Consent - Einwilligung"/>
+      <description value="FDPG Profil - Profile - MI-I - Consent - Einwilligung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-consent-provenance"/>
+      </reference>
+      <name value="FDPG PR Consent - Provenance"/>
+      <description value="FDPG Profil - Profile - MI-I - Consent - Provenance"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-diagnose-condition"/>
+      </reference>
+      <name value="FDPG PR Diagnose Condition"/>
+      <description value="FDPG Profil - MII PR Diagnose Condition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-dokument-dokument"/>
+      </reference>
+      <name value="FDPG PR Dokument Dokument"/>
+      <description value="FDPG Profil - MII PR Dokument Dokument"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-fall-kontakt-gesundheitseinrichtung"/>
+      </reference>
+      <name value="FDPG PR Fall Kontakt mit einer Gesundheitseinrichtung"/>
+      <description value="FDPG Profil - MII PR Fall Kontakt mit einer Gesundheitseinrichtung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-muv-arterieller-blutdruck"/>
+      </reference>
+      <name value="FDPG PR ICU Arterieller Blutdruck"/>
+      <description value="FDPG Profil - MII PR ICU Arterieller Blutdruck"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-ect-arterieller-druck"/>
+      </reference>
+      <name value="FDPG PR ICU Arterieller Druck"/>
+      <description value="FDPG Profil - MII PR ICU Arterieller Druck"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-muv-atemfrequenz"/>
+      </reference>
+      <name value="FDPG PR ICU Atemfrequenz"/>
+      <description value="FDPG Profil - MII PR ICU Atemfrequenz"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-atemwegsdruck-mittl-expirat-gasfluss"/>
+      </reference>
+      <name value="FDPG PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss"/>
+      <description value="FDPG Profil - MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss"/>
+      </reference>
+      <name value="FDPG PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"/>
+      <description value="FDPG Profil - MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-atemzugvolumen-einstellung"/>
+      </reference>
+      <name value="FDPG PR ICU Atemzugvolumen Einstellung"/>
+      <description value="FDPG Profil - MII PR ICU Atemzugvolumen Einstellung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-atemzugvolumen-waehrend-beatmung"/>
+      </reference>
+      <name value="FDPG PR ICU Atemzugvolumen Waehrend Beatmung"/>
+      <description value="FDPG Profil - MII PR ICU Atemzugvolumen Waehrend Beatmung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-beatmung"/>
+      </reference>
+      <name value="FDPG PR ICU Beatmung"/>
+      <description value="FDPG Profil - MII PR ICU Beatmung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung"/>
+      </reference>
+      <name value="FDPG PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"/>
+      <description value="FDPG Profil - MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-beatmungszeit-niedrigem-druck"/>
+      </reference>
+      <name value="FDPG PR ICU Beatmungszeit Niedrigem Druck"/>
+      <description value="FDPG Profil - MII PR ICU Beatmungszeit Niedrigem Druck"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-drainage-generisch"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz Ausfuhr Drainage Generisch"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz Ausfuhr Drainage Generisch"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-gallenfluessigkeit"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz Ausfuhr Gallenfluessigkeit"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-gallengang"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz Ausfuhr Gallengang"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz Ausfuhr Gallengang"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-magensonde"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz Ausfuhr Magensonde"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz Ausfuhr Magensonde"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-opdrainage"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz Ausfuhr Opdrainage"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz Ausfuhr Opdrainage"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-pankreasdrainage"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz Ausfuhr Pankreasdrainage"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz Ausfuhr Pankreasdrainage"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-stuhlgang"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz Ausfuhr Stuhlgang"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz Ausfuhr Stuhlgang"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-urin"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz Ausfuhr Urin"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz Ausfuhr Urin"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-wunddrainage"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz Ausfuhr Wunddrainage"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz Ausfuhr Wunddrainage"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-blutverlust"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz Blutverlust"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz Blutverlust"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-einfuhr-enterale-fluessigkeit"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz Einfuhr Enterale Fluessigkeit"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-einfuhr-oraler-fluessigkeit"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz Einfuhr Oraler Fluessigkeit"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz Einfuhr Oraler Fluessigkeit"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-gesamte-ausfuhr"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz Gesamte Ausfuhr"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz Gesamte Ausfuhr"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-gesamte-einfuhr"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz Gesamte Einfuhr"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz Gesamte Einfuhr"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-gesamte-tages-bilanz"/>
+      </reference>
+      <name value="FDPG PR ICU Bilanz Gesamte Tages Bilanz"/>
+      <description value="FDPG Profil - MII PR ICU Bilanz Gesamte Tages Bilanz"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-ect-blutfluss-cardiovasculaeres-geraet"/>
+      </reference>
+      <name value="FDPG PR ICU Blutfluss Cardiovasculaeres Geraet"/>
+      <description value="FDPG Profil - MII PR ICU Blutfluss Cardiovasculaeres Geraet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch"/>
+      </reference>
+      <name value="FDPG PR ICU Blutfluss Extrakorporaler Gasaustausch"/>
+      <description value="FDPG Profil - MII PR ICU Blutfluss Extrakorporaler Gasaustausch"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch"/>
+      </reference>
+      <name value="FDPG PR ICU Blutflussindex Extrakorporaler Gasaustausch"/>
+      <description value="FDPG Profil - MII PR ICU Blutflussindex Extrakorporaler Gasaustausch"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-ect-dauer-extrakorporaler-gasaustausch"/>
+      </reference>
+      <name value="FDPG PR ICU Dauer Extrakorporaler Gasaustausch"/>
+      <description value="FDPG Profil - MII PR ICU Dauer Extrakorporaler Gasaustausch"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-device"/>
+      </reference>
+      <name value="FDPG PR ICU Device"/>
+      <description value="FDPG Profil - MII PR ICU Device"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung"/>
+      </reference>
+      <name value="FDPG PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung"/>
+      <description value="FDPG Profil - MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-ect-dm-eingest-param-extrakorporale-verfahren"/>
+      </reference>
+      <name value="FDPG PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren"/>
+      <description value="FDPG Profil - MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-vent-provided-icu-druckdifferenz-beatmung"/>
+      </reference>
+      <name value="FDPG PR ICU Druckdifferenz Beatmung"/>
+      <description value="FDPG Profil - MII PR ICU Druckdifferenz Beatmung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-vent-icu-dynamische-kompliance"/>
+      </reference>
+      <name value="FDPG PR ICU Dynamische Kompliance"/>
+      <description value="FDPG Profil - MII PR ICU Dynamische Kompliance"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-eingestellter-inspiratorischer-gasfluss"/>
+      </reference>
+      <name value="FDPG PR ICU Eingestellter Inspiratorischer Gasfluss"/>
+      <description value="FDPG Profil - MII PR ICU Eingestellter Inspiratorischer Gasfluss"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-einstellung-ausatmungszeit-beatmung"/>
+      </reference>
+      <name value="FDPG PR ICU Einstellung Ausatmungszeit Beatmung"/>
+      <description value="FDPG Profil - MII PR ICU Einstellung Ausatmungszeit Beatmung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-einstellung-einatmungszeit-beatmung"/>
+      </reference>
+      <name value="FDPG PR ICU Einstellung Einatmungszeit Beatmung"/>
+      <description value="FDPG Profil - MII PR ICU Einstellung Einatmungszeit Beatmung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck"/>
+      </reference>
+      <name value="FDPG PR ICU Endexpiratorischer Kohlendioxidpartialdruck"/>
+      <description value="FDPG Profil - MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-exspiratorischer-gasfluss"/>
+      </reference>
+      <name value="FDPG PR ICU Exspiratorischer Gasfluss"/>
+      <description value="FDPG Profil - MII PR ICU Exspiratorischer Gasfluss"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-event-xspiratorischer-sauerstoffpartialdruck"/>
+      </reference>
+      <name value="FDPG PR ICU Exspiratorischer Sauerstoffpartialdruck"/>
+      <description value="FDPG Profil - MII PR ICU Exspiratorischer Sauerstoffpartialdruck"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-ect-extrakorporales-verfahren"/>
+      </reference>
+      <name value="FDPG PR ICU Extrakorporales Verfahren"/>
+      <description value="FDPG Profil - MII PR ICU Extrakorporales Verfahren"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-ect-gasfluss"/>
+      </reference>
+      <name value="FDPG PR ICU Gasfluss"/>
+      <description value="FDPG Profil - MII PR ICU Gasfluss"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-ect-haemodialyse-blutfluss"/>
+      </reference>
+      <name value="FDPG PR ICU Haemodialyse Blutfluss"/>
+      <description value="FDPG Profil - MII PR ICU Haemodialyse Blutfluss"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-horowitz-in-arteriellem-blut"/>
+      </reference>
+      <name value="FDPG PR ICU Horowitz In Arteriellem Blut"/>
+      <description value="FDPG Profil - MII PR ICU Horowitz In Arteriellem Blut"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-inspiratorischer-gasfluss"/>
+      </reference>
+      <name value="FDPG PR ICU Inspiratorischer Gasfluss"/>
+      <description value="FDPG Profil - MII PR ICU Inspiratorischer Gasfluss"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-ect-onisiertes-kalzium-nierenersatzverfahren"/>
+      </reference>
+      <name value="FDPG PR ICU Ionisiertes Kalzium Nierenersatzverfahren"/>
+      <description value="FDPG Profil - MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-muv-koerpergewicht"/>
+      </reference>
+      <name value="FDPG PR ICU Koerpergewicht"/>
+      <description value="FDPG Profil - MII PR ICU Koerpergewicht"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-muv-koerpergroesse"/>
+      </reference>
+      <name value="FDPG PR ICU Koerpergroesse"/>
+      <description value="FDPG Profil - MII PR ICU Koerpergroesse"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-muv-kopfumfang"/>
+      </reference>
+      <name value="FDPG PR ICU Kopfumfang"/>
+      <description value="FDPG Profil - MII PR ICU Kopfumfang"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-maximaler-beatmungsdruck"/>
+      </reference>
+      <name value="FDPG PR ICU Maximaler Beatmungsdruck"/>
+      <description value="FDPG Profil - MII PR ICU Maximaler Beatmungsdruck"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-mechanische-atemfrequenz-beatmet"/>
+      </reference>
+      <name value="FDPG PR ICU Mechanische Atemfrequenz Beatmet"/>
+      <description value="FDPG Profil - MII PR ICU Mechanische Atemfrequenz Beatmet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-mittlerer-beatmungsdruck"/>
+      </reference>
+      <name value="FDPG PR ICU Mittlerer Beatmungsdruck"/>
+      <description value="FDPG Profil - MII PR ICU Mittlerer Beatmungsdruck"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-vent-icu-parameter-von-beatmung"/>
+      </reference>
+      <name value="FDPG PR ICU Parameter von Beatmung"/>
+      <description value="FDPG Profil - MII PR ICU Parameter von Beatmung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-ect-parameter-von-extrakorporalen-verfahren"/>
+      </reference>
+      <name value="FDPG PR ICU Parameter von Extrakorporalen Verfahren"/>
+      <description value="FDPG Profil - MII PR ICU Parameter von Extrakorporalen Verfahren"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-positiv-endexpiratorischer-druck"/>
+      </reference>
+      <name value="FDPG PR ICU Positiv Endexpiratorischer Druck"/>
+      <description value="FDPG Profil - MII PR ICU Positiv Endexpiratorischer Druck"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-spontane-atemfrequenz-beatmet"/>
+      </reference>
+      <name value="FDPG PR ICU Spontane Atemfrequenz Beatmet"/>
+      <description value="FDPG Profil - MII PR ICU Spontane Atemfrequenz Beatmet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet"/>
+      </reference>
+      <name value="FDPG PR ICU Spontane Mechanische Atemfrequenz Beatmet"/>
+      <description value="FDPG Profil - MII PR ICU Spontane Mechanische Atemfrequenz Beatmet"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-spontanes-atemzugvolumen"/>
+      </reference>
+      <name value="FDPG PR ICU Spontanes Atemzugvolumen"/>
+      <description value="FDPG Profil - MII PR ICU Spontanes Atemzugvolumen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen"/>
+      </reference>
+      <name value="FDPG PR ICU Spontanes Plus Mechanisches Atemzugvolumen"/>
+      <description value="FDPG Profil - MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-ect-substituatfluss"/>
+      </reference>
+      <name value="FDPG PR ICU Substituatfluss"/>
+      <description value="FDPG Profil - MII PR ICU Substituatfluss"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-ect-substituatvolumen"/>
+      </reference>
+      <name value="FDPG PR ICU Substituatvolumen"/>
+      <description value="FDPG Profil - MII PR ICU Substituatvolumen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-unterstuezungsdruck-beatmung"/>
+      </reference>
+      <name value="FDPG PR ICU Unterstuezungsdruck Beatmung"/>
+      <description value="FDPG Profil - MII PR ICU Unterstuezungsdruck Beatmung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-ect-venoeser-druck"/>
+      </reference>
+      <name value="FDPG PR ICU Venous Pressure"/>
+      <description value="FDPG Profil - MII PR ICU Venous Pressure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-zeitverhaeltnis-ein-ausatmung"/>
+      </reference>
+      <name value="FDPG PR ICU Zeitverhaeltnis Ein Ausatmung"/>
+      <description value="FDPG Profil - MII PR ICU Zeitverhaeltnis Ein Ausatmung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-labor-laboranforderung"/>
+      </reference>
+      <name value="FDPG PR Labor Laboranforderung"/>
+      <description value="FDPG Profil - MII PR Labor Laboranforderung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-labor-laborbefund"/>
+      </reference>
+      <name value="FDPG PR Labor Laborbefund"/>
+      <description value="FDPG Profil - MII PR Labor Laborbefund"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-labor-laboruntersuchung"/>
+      </reference>
+      <name value="FDPG PR Labor Laboruntersuchung"/>
+      <description value="FDPG Profil - MII PR Labor Laboruntersuchung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-medikation-medication"/>
+      </reference>
+      <name value="FDPG PR Medikation Medication"/>
+      <description value="FDPG Profil - MII PR Medikation Medication"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-medikation-medication-administration"/>
+      </reference>
+      <name value="FDPG PR Medikation MedicationAdministration"/>
+      <description value="FDPG Profil - MII PR Medikation MedicationAdministration"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-medikation-medication-request"/>
+      </reference>
+      <name value="FDPG PR Medikation MedicationRequest"/>
+      <description value="FDPG Profil - MII PR Medikation MedicationRequest"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-medikation-medication-statement"/>
+      </reference>
+      <name value="FDPG PR Medikation MedicationStatement"/>
+      <description value="FDPG Profil - MII PR Medikation MedicationStatement"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-medikation-medikationsliste"/>
+      </reference>
+      <name value="FDPG PR Medikation Medikationsliste"/>
+      <description value="FDPG Profil - MII PR Medikation Medikationsliste"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-beatmungszeit-hohem-druck"/>
+      </reference>
+      <name value="FDPG PR MII ICU Beatmungszeit Hohem Druck"/>
+      <description value="FDPG Profil - MII ICU Beatmungszeit Hohem Druck"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-ect-dauer-haemodialysesitzung"/>
+      </reference>
+      <name value="FDPG PR MII ICU Dauer Haemodialysesitzung"/>
+      <description value="FDPG Profil - MII ICU Dauer Haemodialysesitzung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-clinical-impression"/>
+      </reference>
+      <name value="FDPG PR MII Profile SE Clinical Impression"/>
+      <description value="FDPG Profil - MII Profile SE Clinical Impression"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-hpo-assessment"/>
+      </reference>
+      <name value="FDPG PR MII Profile SE HPO Assessment"/>
+      <description value="FDPG Profil - MII Profile SE HPO Assessment"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-symptom-condition"/>
+      </reference>
+      <name value="FDPG PR MII Profile SE Symptom Condition"/>
+      <description value="FDPG Profil - MII Profile SE Symptom Condition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-muv-herzfrequenz"/>
+      </reference>
+      <name value="FDPG PR MII SD ICU Herzfrequenz"/>
+      <description value="FDPG Profil - MII SD ICU Herzfrequenz"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen"/>
+      </reference>
+      <name value="FDPG PR MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen"/>
+      <description value="FDPG Profil - MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-molgen-anforderung-genetischer-test"/>
+      </reference>
+      <name value="FDPG PR MolGen Anforderung genetischer Test"/>
+      <description value="FDPG Profil - MII PR MolGen Anforderung genetischer Test"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-molgen-diagnostische-implikation"/>
+      </reference>
+      <name value="FDPG PR MolGen Diagnostische Implikation"/>
+      <description value="FDPG Profil - MII PR MolGen Diagnostische Implikation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-molgen-empfohlene-folgemassnahme"/>
+      </reference>
+      <name value="FDPG PR MolGen Empfohlene Folgemaßnahme"/>
+      <description value="FDPG Profil - MII PR MolGen Empfohlene Folgemaßnahme"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-molgen-familienanamnese"/>
+      </reference>
+      <name value="FDPG PR MolGen Familienanamnese"/>
+      <description value="FDPG Profil - MII PR MolGen Familienanamnese"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-molgen-genomic-study"/>
+      </reference>
+      <name value="FDPG PR MolGen Genomic Study"/>
+      <description value="FDPG Profil - MII PR MolGen Genomic Study"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-molgen-genomic-study-analysis"/>
+      </reference>
+      <name value="FDPG PR MolGen Genomic Study Analysis"/>
+      <description value="FDPG Profil - MII PR MolGen Genomic Study Analysis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-molgen-genotyp"/>
+      </reference>
+      <name value="FDPG PR MolGen Genotyp"/>
+      <description value="FDPG Profil - MII PR MolGen Genotyp"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-molgen-medikationsempfehlung"/>
+      </reference>
+      <name value="FDPG PR MolGen Medikationsempfehlung"/>
+      <description value="FDPG Profil - MII PR MolGen Medikationsempfehlung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-molgen-mikrosatelliteninstabilitaet"/>
+      </reference>
+      <name value="FDPG PR MolGen Mikrosatelliteninstabilität"/>
+      <description value="FDPG Profil - MII PR MolGen Mikrosatelliteninstabilität"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-molgen-molekularer-biomarker"/>
+      </reference>
+      <name value="FDPG PR MolGen Molekulare Biomarker"/>
+      <description value="FDPG Profil - MII PR MolGen Molekulare Biomarker"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-molgen-molekulare-konsequenz"/>
+      </reference>
+      <name value="FDPG PR MolGen Molekulare Konsequenz"/>
+      <description value="FDPG Profil - MII PR MolGen Molekulare Konsequenz"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-molgen-molekulargenetischer-befundbericht"/>
+      </reference>
+      <name value="FDPG PR MolGen Molekulargenetischer Befundbericht"/>
+      <description value="FDPG Profil - MII PR MolGen Molekulargenetischer Befundbericht"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-molgen-mutationslast"/>
+      </reference>
+      <name value="FDPG PR MolGen Mutationslast"/>
+      <description value="FDPG Profil - MII PR MolGen Mutationslast"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-molgen-polygener-risiko-score"/>
+      </reference>
+      <name value="FDPG PR MolGen Polygener Risiko Score"/>
+      <description value="FDPG Profil - MII PR MolGen Polygener Risiko Score"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-molgen-therapeutische-implikation"/>
+      </reference>
+      <name value="FDPG PR MolGen Therapeutische Implikation"/>
+      <description value="FDPG Profil - MII PR MolGen Therapeutische Implikation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-molgen-variante"/>
+      </reference>
+      <name value="FDPG PR MolGen Variante"/>
+      <description value="FDPG Profil - MII PR MolGen Variante"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-melanom-exzision"/>
+      </reference>
+      <name value="FDPG PR Onko Melanom Exzision"/>
+      <description value="FDPG Profil - MII PR Onko Melanom Exzision"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-prostata-operation"/>
+      </reference>
+      <name value="FDPG PR Onko Prostata Operation"/>
+      <description value="FDPG Profil - MII PR Onko Prostata Operation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-krk-abstand-aboral"/>
+      </reference>
+      <name value="FDPG PR Onkologie Abstand Aboral"/>
+      <description value="FDPG Profil - MII PR Onkologie Abstand Aboral"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-krk-abstand-anokutan"/>
+      </reference>
+      <name value="FDPG PR Onkologie Abstand Anokutan"/>
+      <description value="FDPG Profil - MII PR Onkologie Abstand Anokutan"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-krk-abstand-circumferelle-resektionsebene"/>
+      </reference>
+      <name value="FDPG PR Onkologie Abstand Circumferelle Resektionsebene"/>
+      <description value="FDPG Profil - MII PR Onkologie Abstand Circumferelle Resektionsebene"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-allgemeiner-leistungszustand-ecog"/>
+      </reference>
+      <name value="FDPG PR Onkologie Allgemeiner Leistungszustand ECOG"/>
+      <description value="FDPG Profil - MII PR Onkologie Allgemeiner Leistungszustand ECOG"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-allgemeiner-leistungszustand-karnofsky"/>
+      </reference>
+      <name value="FDPG PR Onkologie Allgemeiner Leistungszustand nach Karnofsky"/>
+      <description value="FDPG Profil - MII PR Onkologie Allgemeiner Leistungszustand nach Karnofsky"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-anzahl-befallene-lymphknoten"/>
+      </reference>
+      <name value="FDPG PR Onkologie Anzahl der befallenen Lymphknoten"/>
+      <description value="FDPG Profil - MII PR Onkologie Anzahl der befallenen Lymphknoten"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-anzahl-befallene-sentinel-lymphknoten"/>
+      </reference>
+      <name value="FDPG PR Onkologie Anzahl der befallenen Sentinel-Lymphknoten"/>
+      <description value="FDPG Profil - MII PR Onkologie Anzahl der befallenen Sentinel-Lymphknoten"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-anzahl-untersuchte-lymphknoten"/>
+      </reference>
+      <name value="FDPG PR Onkologie Anzahl der untersuchten Lymphknoten"/>
+      <description value="FDPG Profil - MII PR Onkologie Anzahl der untersuchten Lymphknoten"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-anzahl-untersuchte-sentinel-lymphknoten"/>
+      </reference>
+      <name value="FDPG PR Onkologie Anzahl der untersuchten Sentinel-Lymphknoten"/>
+      <description value="FDPG Profil - MII PR Onkologie Anzahl der untersuchten Sentinel-Lymphknoten"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-asa-klassifikation"/>
+      </reference>
+      <name value="FDPG PR Onkologie ASA-Klassifikation"/>
+      <description value="FDPG Profil - MII PR Onkologie ASA-Klassifikation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-befund"/>
+      </reference>
+      <name value="FDPG PR Onkologie Befund"/>
+      <description value="FDPG Profil - MII PR Onkologie Befund"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-prostate-ca-befall-stanze"/>
+      </reference>
+      <name value="FDPG PR Onkologie Ca-Befall Stanze"/>
+      <description value="FDPG Profil - MII PR Onkologie Ca-Befall Stanze"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-prostate-clavien-dindo"/>
+      </reference>
+      <name value="FDPG PR Onkologie Clavien Dindo"/>
+      <description value="FDPG Profil - MII PR Onkologie Clavien Dindo"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-diagnose-primaertumor"/>
+      </reference>
+      <name value="FDPG PR Onkologie Diagnose Primärtumor"/>
+      <description value="Die Diagnose Primärtumor ist der zentrale Ankerpunkt der onkologischen Dokumentation. Alle weiteren onkologischen Datenpunkte (Staging, Therapie, Verlauf, Metastasen, Rezidive etc.) referenzieren auf diese Diagnose, insofern eine Zuordnung getroffen werden kann. Ein komplett neuartiger Tumor wird als zweite Diagnose Primärtumor dokumentiert, so dass die Datenpunkte eindeutig zugeordnet werden können. Das Profil wird ebenfalls für Fälle mit unklarem Primärtumor (CUP-Syndrom), Polyneoplasien und neoplastischen Erkrankungen ohne klar abgrenzbaren Tumor (z.B. Lymphome, Leukämien) eingesetzt."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-liste-evidenz-erstdiagnose"/>
+      </reference>
+      <name value="FDPG PR Onkologie Evidenz Diagnose Primärtumor"/>
+      <description value="FDPG Profil - MII PR Onkologie Evidenz Diagnose Primärtumor"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-fernmetastasen"/>
+      </reference>
+      <name value="FDPG PR Onkologie Fernmetastasen"/>
+      <description value="FDPG Profil - MII PR Onkologie Fernmetastasen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-fruehere-tumorerkrankung"/>
+      </reference>
+      <name value="FDPG PR Onkologie Frühere Tumorerkrankung"/>
+      <description value="Zusammenfassende Darstellung früherer Tumorerkrankungen. Die Angaben liegen voraussichtlich nur im Freitext vor und erfüllen damit nicht die Kriterien an eine Diagnose Primärtumor, werden aber zur besseren Einordnung der Krankheitsgeschichte hier geführt."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-genetische-variante"/>
+      </reference>
+      <name value="FDPG PR Onkologie Genetische Variante"/>
+      <description value="FDPG Profil - MII PR Onkologie Genetische Variante"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-grading"/>
+      </reference>
+      <name value="FDPG PR Onkologie Grading"/>
+      <description value="FDPG Profil - MII PR Onkologie Grading"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-mamma-her2neu-status"/>
+      </reference>
+      <name value="FDPG PR Onkologie Her2neu Status"/>
+      <description value="Bei diesem Profil handelt es sich um die klinische Interpretation des HER2-Status. Die zugrundeliegenden immunhistochemischen (IHC) und In-Situ-Hybridisierungs-Datenpunkte sind im Modul Molekulares Tumorboard modelliert."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-histologie-icdo3"/>
+      </reference>
+      <name value="FDPG PR Onkologie Histologie ICD-O-3"/>
+      <description value="FDPG Profil - MII PR Onkologie Histologie ICD-O-3"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-krk-anastomoseninsuffizienz"/>
+      </reference>
+      <name value="FDPG PR Onkologie KRK Anastomoseninsuffizienz"/>
+      <description value="FDPG Profil - MII PR Onkologie KRK Anastomoseninsuffizienz"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-krk-mrt-mesorektale-faszie"/>
+      </reference>
+      <name value="FDPG PR Onkologie KRK MRT/CT Abstand Mesorektale Faszie"/>
+      <description value="FDPG Profil - MII PR Onkologie KRK MRT/CT Abstand Mesorektale Faszie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-krk-stoma-markierung"/>
+      </reference>
+      <name value="FDPG PR Onkologie KRK Stoma-Markierung"/>
+      <description value="FDPG Profil - MII PR Onkologie KRK Stoma-Markierung"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-mamma-operation"/>
+      </reference>
+      <name value="FDPG PR Onkologie Mamma Operation"/>
+      <description value="FDPG Profil - MII PR Onkologie Mamma Operation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-melanom-breslow-tiefe"/>
+      </reference>
+      <name value="FDPG PR Onkologie Melanom Breslow Tiefe"/>
+      <description value="FDPG Profil - MII PR Onkologie Melanom Breslow Tiefe"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-melanom-ldh"/>
+      </reference>
+      <name value="FDPG PR Onkologie Melanom LDH"/>
+      <description value="FDPG Profil - MII PR Onkologie Melanom LDH"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-melanom-sicherheitsabstand"/>
+      </reference>
+      <name value="FDPG PR Onkologie Melanom Sicherheitsabstand"/>
+      <description value="FDPG Profil - MII PR Onkologie Melanom Sicherheitsabstand"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-melanom-ulzeration"/>
+      </reference>
+      <name value="FDPG PR Onkologie Melanom Ulzeration"/>
+      <description value="FDPG Profil - MII PR Onkologie Melanom Ulzeration"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-mamma-menopause-status"/>
+      </reference>
+      <name value="FDPG PR Onkologie Menopausenstatus Mamma"/>
+      <description value="FDPG Profil - MII PR Onkologie Menopausenstatus Mamma"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-nebenwirkung-adverse-event"/>
+      </reference>
+      <name value="FDPG PR Onkologie Nebenwirkung von Strahlentherapie und systemische Therapie"/>
+      <description value="FDPG Profil - MII PR Onkologie Nebenwirkung von Strahlentherapie und systemische Therapie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-operation"/>
+      </reference>
+      <name value="FDPG PR Onkologie Operation"/>
+      <description value="FDPG Profil - MII PR Onkologie Operation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-prostate-anzahl-positive-stanzen"/>
+      </reference>
+      <name value="FDPG PR Onkologie Prostata Anzahl positiver Stanzen"/>
+      <description value="FDPG Profil - MII PR Onkologie Prostata Anzahl positiver Stanzen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-prostate-anzahl-stanzen"/>
+      </reference>
+      <name value="FDPG PR Onkologie Prostata Anzahl Stanzen"/>
+      <description value="FDPG Profil - MII PR Onkologie Prostata Anzahl Stanzen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-prostate-gleason-grade-group"/>
+      </reference>
+      <name value="FDPG PR Onkologie Prostata Gleason Grade Group"/>
+      <description value="FDPG Profil - MII PR Onkologie Prostata Gleason Grade Group"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-prostate-gleason-patterns"/>
+      </reference>
+      <name value="FDPG PR Onkologie Prostata Gleason Primär"/>
+      <description value="FDPG Profil - MII PR Onkologie Prostata Gleason Primär"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-krk-operation"/>
+      </reference>
+      <name value="FDPG PR Onkologie Präoperative Drahtmarkierung Mamma"/>
+      <description value="FDPG Profil - MII PR Onkologie Präoperative Drahtmarkierung Mamma"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-mamma-sozialdienst"/>
+      </reference>
+      <name value="FDPG PR Onkologie Präoperative Drahtmarkierung Mamma"/>
+      <description value="FDPG Profil - MII PR Onkologie Präoperative Drahtmarkierung Mamma"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-mamma-praeoperative-markierung"/>
+      </reference>
+      <name value="FDPG PR Onkologie Präoperative Markierung Mamma"/>
+      <description value="FDPG Profil - MII PR Onkologie Präoperative Markierung Mamma"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-prostate-psa"/>
+      </reference>
+      <name value="FDPG PR Onkologie PSA-Wert"/>
+      <description value="FDPG Profil - MII PR Onkologie PSA-Wert"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-residualstatus"/>
+      </reference>
+      <name value="FDPG PR Onkologie Residualstatus"/>
+      <description value="FDPG Profil - MII PR Onkologie Residualstatus"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-mamma-rezeptorstatus-estrogen"/>
+      </reference>
+      <name value="FDPG PR Onkologie Rezeptorstatus Estrogen"/>
+      <description value="FDPG Profil - MII PR Onkologie Rezeptorstatus Estrogen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-mamma-rezeptorstatus-progesteron"/>
+      </reference>
+      <name value="FDPG PR Onkologie Rezeptorstatus Progesteron"/>
+      <description value="FDPG Profil - MII PR Onkologie Rezeptorstatus Progesteron"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-krk-specimen"/>
+      </reference>
+      <name value="FDPG PR Onkologie Specimen"/>
+      <description value="FDPG Profil - MII PR Onkologie Specimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-specimen"/>
+      </reference>
+      <name value="FDPG PR Onkologie Specimen"/>
+      <description value="FDPG Profil - MII PR Onkologie Specimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-strahlentherapie-bestrahlung-strahlentherapie"/>
+      </reference>
+      <name value="FDPG PR Onkologie Strahlentherapie"/>
+      <description value="FDPG Profil - MII PR Onkologie Strahlentherapie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-strahlentherapie"/>
+      </reference>
+      <name value="FDPG PR Onkologie Strahlentherapie"/>
+      <description value="FDPG Profil - MII PR Onkologie Strahlentherapie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin"/>
+      </reference>
+      <name value="FDPG PR Onkologie Strahlentherapie Nuklearmedizin"/>
+      <description value="FDPG Profil - MII PR Onkologie Strahlentherapie Nuklearmedizin"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-studienteilnahme"/>
+      </reference>
+      <name value="FDPG PR Onkologie Studienteilnahme"/>
+      <description value="FDPG Profil - MII PR Onkologie Studienteilnahme"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-systemische-therapie"/>
+      </reference>
+      <name value="FDPG PR Onkologie Systemische Therapie"/>
+      <description value="FDPG Profil - MII PR Onkologie Systemische Therapie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-systemische-therapie-medikation"/>
+      </reference>
+      <name value="FDPG PR Onkologie Systemische Therapie Medikation"/>
+      <description value="FDPG Profil - MII PR Onkologie Systemische Therapie Medikation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-therapieempfehlung-kombinationstherapie"/>
+      </reference>
+      <name value="FDPG PR Onkologie Therapieempfehlung Kombinationstherapie"/>
+      <description value="FDPG Profil - MII PR Onkologie Therapieempfehlung Kombinationstherapie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-therapieempfehlung-medikation"/>
+      </reference>
+      <name value="FDPG PR Onkologie Therapieempfehlung Medikation"/>
+      <description value="FDPG Profil - MII PR Onkologie Therapieempfehlung Medikation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-therapieempfehlung-operation"/>
+      </reference>
+      <name value="FDPG PR Onkologie Therapieempfehlung Operation"/>
+      <description value="FDPG Profil - MII PR Onkologie Therapieempfehlung Operation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-tnm-a-symbol"/>
+      </reference>
+      <name value="FDPG PR Onkologie TNM a-Symbol"/>
+      <description value="FDPG Profil - MII PR Onkologie TNM a-Symbol"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-tnm-l-kategorie"/>
+      </reference>
+      <name value="FDPG PR Onkologie TNM L-Kategorie"/>
+      <description value="FDPG Profil - MII PR Onkologie TNM L-Kategorie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-tnm-m-kategorie"/>
+      </reference>
+      <name value="FDPG PR Onkologie TNM M-Kategorie"/>
+      <description value="FDPG Profil - MII PR Onkologie TNM M-Kategorie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-tnm-m-symbol"/>
+      </reference>
+      <name value="FDPG PR Onkologie TNM m-Symbol"/>
+      <description value="FDPG Profil - MII PR Onkologie TNM m-Symbol"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-tnm-n-kategorie"/>
+      </reference>
+      <name value="FDPG PR Onkologie TNM N-Kategorie"/>
+      <description value="FDPG Profil - MII PR Onkologie TNM N-Kategorie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-tnm-pn-kategorie"/>
+      </reference>
+      <name value="FDPG PR Onkologie TNM Pn-Kategorie"/>
+      <description value="FDPG Profil - MII PR Onkologie TNM Pn-Kategorie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-tnm-r-symbol"/>
+      </reference>
+      <name value="FDPG PR Onkologie TNM r-Symbol"/>
+      <description value="FDPG Profil - MII PR Onkologie TNM r-Symbol"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-tnm-s-kategorie"/>
+      </reference>
+      <name value="FDPG PR Onkologie TNM S-Kategorie"/>
+      <description value="FDPG Profil - MII PR Onkologie TNM S-Kategorie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-tnm-t-kategorie"/>
+      </reference>
+      <name value="FDPG PR Onkologie TNM T-Kategorie"/>
+      <description value="FDPG Profil - MII PR Onkologie TNM T-Kategorie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-tnm-v-kategorie"/>
+      </reference>
+      <name value="FDPG PR Onkologie TNM V-Kategorie"/>
+      <description value="FDPG Profil - MII PR Onkologie TNM V-Kategorie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-tnm-y-symbol"/>
+      </reference>
+      <name value="FDPG PR Onkologie TNM y-Symbol"/>
+      <description value="FDPG Profil - MII PR Onkologie TNM y-Symbol"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-tnm-klassifikation"/>
+      </reference>
+      <name value="FDPG PR Onkologie TNM-Klassifikation"/>
+      <description value="FDPG Profil - MII PR Onkologie TNM-Klassifikation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-tod"/>
+      </reference>
+      <name value="FDPG PR Onkologie Tod"/>
+      <description value="Krebsregisterspezifische Darstellung der Todesursache nach ICD-10-GM. Die Todesursache aus dem MII-Personenmodul (Person_Todesursache) beschreibt dagegen die für die Todesursachenstatistik benötigte, international eingesetzte ICD-10-WHO."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-tumorgroesse"/>
+      </reference>
+      <name value="FDPG PR Onkologie Tumorgröße"/>
+      <description value="Die Tumorgröße ist ursprünglich nicht Teil des oBDS, sondern der organspezifischen Module."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-tumorkonferenz"/>
+      </reference>
+      <name value="FDPG PR Onkologie Tumorkonferenz"/>
+      <description value="FDPG Profil - MII PR Onkologie Tumorkonferenz"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-verlauf"/>
+      </reference>
+      <name value="FDPG PR Onkologie Verlauf"/>
+      <description value="Dieses Profil beschreibt den Behandlungserfolg und/oder Tumorprogress. Es ist davon auszugehen, dass ein Großteil der Patient:innen ambulant behandelt wird, so dass ggfs. keine strukturierten Verlaufsdaten vorliegen."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-onko-weitere-klassifikationen"/>
+      </reference>
+      <name value="FDPG PR Onkologie Weitere Klassifikationen"/>
+      <description value="In den Krebsregisterdaten werden weitere Klassifikationen neben TNM häufig als Freitext erfasst. Es wurden Anstrengungen unternommen, die Ergebnisse strukturiert darzustellen. Der momentane Datensatz unterstützt die strukturierte Annotation folgender Klassifikationen neben TNM: BINET (CLL), Ann-Arbor (Lymphome), ISS (Multiples Myelom), ISSWM (M. Waldenström), WHO-Grad (ZNS-Tumoren), ELN-Klassifikation (AML/CML), Durie-Salmon (Multiples Myelom), Bismuth (Gallengangskarzinom), Masaoka (Thymome), Mitoserate-GIST, p16, EUTOS-Score (CML), Sanz-Score (APL), IPI (aggressive NHL), FLIPI (follikuläres Lymphom), MIPI (Mantelzelllymphom), Risikogruppen GHSG (Hodgkin-Lymphom) und IPSS (MDS)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-patho-active-problems-list"/>
+      </reference>
+      <name value="FDPG PR Patho Active Problems List"/>
+      <description value="FDPG Profil - MII PR Patho Active Problems List"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-patho-additional-specified-grouper"/>
+      </reference>
+      <name value="FDPG PR Patho Additional Specified Grouper"/>
+      <description value="FDPG Profil - MII PR Patho Additional Specified Grouper"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-patho-attached-image"/>
+      </reference>
+      <name value="FDPG PR Patho Attached Image"/>
+      <description value="FDPG Profil - MII PR Patho Attached Image"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-patho-base-observation"/>
+      </reference>
+      <name value="FDPG PR Patho Base Observation"/>
+      <description value="FDPG Profil - MII PR Patho Base Observation"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-patho-bundle"/>
+      </reference>
+      <name value="FDPG PR Patho Bundle"/>
+      <description value="FDPG Profil - MII PR Patho Bundle"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-patho-composition"/>
+      </reference>
+      <name value="FDPG PR Patho Composition"/>
+      <description value="FDPG Profil - MII PR Patho Composition"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-patho-diagnostic-conclusion-grouper"/>
+      </reference>
+      <name value="FDPG PR Patho Diagnostic Conclusion Grouper"/>
+      <description value="FDPG Profil - MII PR Patho Diagnostic Conclusion Grouper"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-patho-finding"/>
+      </reference>
+      <name value="FDPG PR Patho Finding"/>
+      <description value="FDPG Profil - MII PR Patho Finding"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-patho-history-of-present-illness"/>
+      </reference>
+      <name value="FDPG PR Patho History Of Present Illness"/>
+      <description value="FDPG Profil - MII PR Patho History Of Present Illness"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-patho-intraoperative-grouper"/>
+      </reference>
+      <name value="FDPG PR Patho Intraoperative Grouper"/>
+      <description value="FDPG Profil - MII PR Patho Intraoperative Grouper"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-patho-macroscopic-grouper"/>
+      </reference>
+      <name value="FDPG PR Patho Macroscopic Grouper"/>
+      <description value="FDPG Profil - MII PR Patho Macroscopic Grouper"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-patho-microscopic-grouper"/>
+      </reference>
+      <name value="FDPG PR Patho Microscopic Grouper"/>
+      <description value="FDPG Profil - MII PR Patho Microscopic Grouper"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-patho-problem-list-item"/>
+      </reference>
+      <name value="FDPG PR Patho Problem List Item"/>
+      <description value="FDPG Profil - MII PR Patho Problem List Item"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-patho-report"/>
+      </reference>
+      <name value="FDPG PR Patho Report"/>
+      <description value="FDPG Profil - MII PR Patho Report"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-patho-section-grouper"/>
+      </reference>
+      <name value="FDPG PR Patho Section Grouper"/>
+      <description value="FDPG Profil - MII PR Patho Section Grouper"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-patho-service-request"/>
+      </reference>
+      <name value="FDPG PR Patho Service Request"/>
+      <description value="FDPG Profil - MII PR Patho Service Request"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-patho-specimen"/>
+      </reference>
+      <name value="FDPG PR Patho Specimen"/>
+      <description value="FDPG Profil - MII PR Patho Specimen"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-person-patient"/>
+      </reference>
+      <name value="FDPG PR Person Patient"/>
+      <description value="FDPG Profil - MII PR Person Patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-person-patient-pseudonymisiert"/>
+      </reference>
+      <name value="FDPG PR Person Patient (Pseudonymisiert)"/>
+      <description value="FDPG Profil - MII PR Person Patient (Pseudonymisiert)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-person-todesursache"/>
+      </reference>
+      <name value="FDPG PR Person Todesursache"/>
+      <description value="FDPG Profil - MII PR Person Todesursache"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-person-vitalstatus"/>
+      </reference>
+      <name value="FDPG PR Person Vitalstatus"/>
+      <description value="FDPG Profil - MII PR Person Vitalstatus"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-prozedur-procedure"/>
+      </reference>
+      <name value="FDPG PR Prozedur Procedure"/>
+      <description value="FDPG Profil - MII PR Prozedur Procedure"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt"/>
+      </reference>
+      <name value="FDPG PR SD MII ICU Bilanz Einfuhr Fluessigkeit Gesamt"/>
+      <description value="FDPG Profil - SD MII ICU Bilanz Einfuhr Fluessigkeit Gesamt"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-blutgruppe"/>
+      </reference>
+      <name value="FDPG PR SE Blutgruppe"/>
+      <description value="FDPG Profil - MII PR SE Blutgruppe"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-clinical-diagnosis"/>
+      </reference>
+      <name value="FDPG PR SE Clinical Diagnosis"/>
+      <description value="FDPG Profil - MII PR SE Clinical Diagnosis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-familienanamnese"/>
+      </reference>
+      <name value="FDPG PR SE Familienanamnese"/>
+      <description value="FDPG Profil - MII PR SE Familienanamnese"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-genetic-diagnosis"/>
+      </reference>
+      <name value="FDPG PR SE Genetic Diagnosis"/>
+      <description value="FDPG Profil - MII PR SE Genetic Diagnosis"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-hueftumfang"/>
+      </reference>
+      <name value="FDPG PR SE Hüftumfang"/>
+      <description value="FDPG Profil - MII PR SE Hüftumfang"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-kopfumfang"/>
+      </reference>
+      <name value="FDPG PR SE Kopfumfang"/>
+      <description value="FDPG Profil - MII PR SE Kopfumfang"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-studie"/>
+      </reference>
+      <name value="FDPG PR SE Studie"/>
+      <description value="FDPG Profil - MII PR SE Studie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-studieneinschluss-anfrage"/>
+      </reference>
+      <name value="FDPG PR SE Studieneinschluss Anfrage"/>
+      <description value="FDPG Profil - MII PR SE Studieneinschluss Anfrage"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-taillenumfang"/>
+      </reference>
+      <name value="FDPG PR SE Taillenumfang"/>
+      <description value="FDPG Profil - MII PR SE Taillenumfang"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-therapieempfehlung-kombination"/>
+      </reference>
+      <name value="FDPG PR SE Therapieempfehlung Kombinationstherapie"/>
+      <description value="FDPG Profil - MII PR SE Therapieempfehlung Kombinationstherapie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-therapieempfehlung-nicht-medikamentoes"/>
+      </reference>
+      <name value="FDPG PR SE Therapieempfehlung Nicht-Medikamentös"/>
+      <description value="FDPG Profil - MII PR SE Therapieempfehlung Nicht-Medikamentös"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-therapieempfehlung"/>
+      </reference>
+      <name value="FDPG PR SE Therapieempfehlung Systemische Therapie"/>
+      <description value="FDPG Profil - MII PR SE Therapieempfehlung Systemische Therapie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-therapieplan"/>
+      </reference>
+      <name value="FDPG PR SE Therapieplan"/>
+      <description value="FDPG Profil - MII PR SE Therapieplan"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-seltene-therapie-durchgefuehrt"/>
+      </reference>
+      <name value="FDPG PR Seltene Erkrankungen Therapie Durchgeführt"/>
+      <description value="FDPG Profil - MII PR Seltene Erkrankungen Therapie Durchgeführt"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-studie-beteiligte-person"/>
+      </reference>
+      <name value="FDPG PR Studie Beteiligte Person"/>
+      <description value="FDPG Profil - MII PR Studie Beteiligte Person"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-studie-dokument"/>
+      </reference>
+      <name value="FDPG PR Studie Dokument"/>
+      <description value="FDPG Profil - MII PR Studie Dokument"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-studie-ein-auschluss-kriterium"/>
+      </reference>
+      <name value="FDPG PR Studie EinAuschlussKriterium"/>
+      <description value="FDPG Profil - MII PR Studie EinAuschlussKriterium"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-studie-proband"/>
+      </reference>
+      <name value="FDPG PR Studie Proband"/>
+      <description value="FDPG Profil - MII PR Studie Proband"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-studie-register"/>
+      </reference>
+      <name value="FDPG PR Studie Register"/>
+      <description value="FDPG Profil - MII PR Studie Register"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-studie-studie"/>
+      </reference>
+      <name value="FDPG PR Studie Studie"/>
+      <description value="FDPG Profil - MII PR Studie Studie"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fdpg-pr-studie-studieneinschluss-anfrage"/>
+      </reference>
+      <name value="FDPG PR Studie Studieneinschluss Anfrage"/>
+      <description value="FDPG Profil - MII PR Studie Studieneinschluss Anfrage"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="obligations.html"/>
+        </extension>
+        <nameUrl value="obligations.html"/>
+        <title value="FDPG Obligations"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="actors.html"/>
+        </extension>
+        <nameUrl value="actors.html"/>
+        <title value="Actor Definitions"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modul-person.html"/>
+        </extension>
+        <nameUrl value="modul-person.html"/>
+        <title value="Modul Person"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modul-diagnose.html"/>
+        </extension>
+        <nameUrl value="modul-diagnose.html"/>
+        <title value="Modul Diagnose"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modul-prozedur.html"/>
+        </extension>
+        <nameUrl value="modul-prozedur.html"/>
+        <title value="Modul Prozedur"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modul-fall.html"/>
+        </extension>
+        <nameUrl value="modul-fall.html"/>
+        <title value="Modul Fall"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modul-labor.html"/>
+        </extension>
+        <nameUrl value="modul-labor.html"/>
+        <title value="Modul Laborbefund"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modul-medikation.html"/>
+        </extension>
+        <nameUrl value="modul-medikation.html"/>
+        <title value="Modul Medikation"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modul-biobank.html"/>
+        </extension>
+        <nameUrl value="modul-biobank.html"/>
+        <title value="Modul Biobank"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modul-studie.html"/>
+        </extension>
+        <nameUrl value="modul-studie.html"/>
+        <title value="Modul Studie"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modul-molgen.html"/>
+        </extension>
+        <nameUrl value="modul-molgen.html"/>
+        <title value="Modul Molekulargenetik"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modul-patho.html"/>
+        </extension>
+        <nameUrl value="modul-patho.html"/>
+        <title value="Modul Pathologiebefund"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modul-icu.html"/>
+        </extension>
+        <nameUrl value="modul-icu.html"/>
+        <title value="Modul Intensivmedizin"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modul-bildgebung.html"/>
+        </extension>
+        <nameUrl value="modul-bildgebung.html"/>
+        <title value="Modul Bildgebung"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modul-seltene.html"/>
+        </extension>
+        <nameUrl value="modul-seltene.html"/>
+        <title value="Modul Seltene Erkrankungen"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modul-onkologie.html"/>
+        </extension>
+        <nameUrl value="modul-onkologie.html"/>
+        <title value="Modul Onkologie"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modul-consent.html"/>
+        </extension>
+        <nameUrl value="modul-consent.html"/>
+        <title value="Modul Einwilligung"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modul-symptom.html"/>
+        </extension>
+        <nameUrl value="modul-symptom.html"/>
+        <title value="Modul Symptom"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="modul-dokument.html"/>
+        </extension>
+        <nameUrl value="modul-dokument.html"/>
+        <title value="Modul Dokument"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="datenkatalog-basis.html"/>
+        </extension>
+        <nameUrl value="datenkatalog-basis.html"/>
+        <title value="Datenkatalog Basisdaten"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="datenkatalog-labor.html"/>
+        </extension>
+        <nameUrl value="datenkatalog-labor.html"/>
+        <title value="Datenkatalog Laborbefund"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="datenkatalog-medikation.html"/>
+        </extension>
+        <nameUrl value="datenkatalog-medikation.html"/>
+        <title value="Datenkatalog Medikation"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="datenkatalog-biobank.html"/>
+        </extension>
+        <nameUrl value="datenkatalog-biobank.html"/>
+        <title value="Datenkatalog Biobank"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="datenkatalog-studie.html"/>
+        </extension>
+        <nameUrl value="datenkatalog-studie.html"/>
+        <title value="Datenkatalog Studie"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="datenkatalog-molgen.html"/>
+        </extension>
+        <nameUrl value="datenkatalog-molgen.html"/>
+        <title value="Datenkatalog Molekulargenetik"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="datenkatalog-patho.html"/>
+        </extension>
+        <nameUrl value="datenkatalog-patho.html"/>
+        <title value="Datenkatalog Pathologiebefund"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="datenkatalog-icu.html"/>
+        </extension>
+        <nameUrl value="datenkatalog-icu.html"/>
+        <title value="Datenkatalog Intensivmedizin"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="datenkatalog-bildgebung.html"/>
+        </extension>
+        <nameUrl value="datenkatalog-bildgebung.html"/>
+        <title value="Datenkatalog Bildgebung"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="datenkatalog-seltene.html"/>
+        </extension>
+        <nameUrl value="datenkatalog-seltene.html"/>
+        <title value="Datenkatalog Seltene Erkrankungen"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="datenkatalog-onkologie.html"/>
+        </extension>
+        <nameUrl value="datenkatalog-onkologie.html"/>
+        <title value="Datenkatalog Onkologie"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="datenkatalog-consent.html"/>
+        </extension>
+        <nameUrl value="datenkatalog-consent.html"/>
+        <title value="Datenkatalog Einwilligung"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="datenkatalog-dokument.html"/>
+        </extension>
+        <nameUrl value="datenkatalog-dokument.html"/>
+        <title value="Datenkatalog Dokument"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="changelog.html"/>
+        </extension>
+        <nameUrl value="changelog.html"/>
+        <title value="Changelog"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

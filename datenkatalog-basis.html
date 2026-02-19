@@ -1,0 +1,1090 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Datenkatalog Basisdaten - FDPG KDS Obligations Layer v2026.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+  	<link rel="stylesheet" href="assets/css/cqf.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script src="assets/js/mermaid.js" type="text/javascript"></script>
+    <script src="assets/js/mermaid-init.js" type="text/javascript"></script>
+    <style type="text/css">h2{--heading-prefix:"21"}
+    h3,h4,h5,h6{--heading-prefix:"21"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">FDPG KDS Obligations Layer</span>
+            <br/>
+            <span style="display:inline-block;">2026.0.0 - trial-use
+
+
+
+  Germany
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="obligations.html">Obligations</a>
+  </li>
+  <li>
+    <a href="actors.html">Actors</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Module
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="modul-person.html">Person</a>
+      </li>
+      <li>
+        <a href="modul-diagnose.html">Diagnose</a>
+      </li>
+      <li>
+        <a href="modul-prozedur.html">Prozedur</a>
+      </li>
+      <li>
+        <a href="modul-fall.html">Fall</a>
+      </li>
+      <li>
+        <a href="modul-labor.html">Laborbefund</a>
+      </li>
+      <li>
+        <a href="modul-medikation.html">Medikation</a>
+      </li>
+      <li>
+        <a href="modul-biobank.html">Biobank</a>
+      </li>
+      <li>
+        <a href="modul-studie.html">Studie</a>
+      </li>
+      <li>
+        <a href="modul-molgen.html">Molekulargenetik</a>
+      </li>
+      <li>
+        <a href="modul-patho.html">Pathologiebefund</a>
+      </li>
+      <li>
+        <a href="modul-icu.html">Intensivmedizin</a>
+      </li>
+      <li>
+        <a href="modul-bildgebung.html">Bildgebung</a>
+      </li>
+      <li>
+        <a href="modul-seltene.html">Seltene Erkrankungen</a>
+      </li>
+      <li>
+        <a href="modul-onkologie.html">Onkologie</a>
+      </li>
+      <li>
+        <a href="modul-consent.html">Einwilligung</a>
+      </li>
+      <li>
+        <a href="modul-symptom.html">Symptom</a>
+      </li>
+      <li>
+        <a href="modul-dokument.html">Dokument</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Datenkatalog
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="datenkatalog-basis.html">Basisdaten</a>
+      </li>
+      <li>
+        <a href="datenkatalog-labor.html">Laborbefund</a>
+      </li>
+      <li>
+        <a href="datenkatalog-medikation.html">Medikation</a>
+      </li>
+      <li>
+        <a href="datenkatalog-biobank.html">Biobank</a>
+      </li>
+      <li>
+        <a href="datenkatalog-studie.html">Studie</a>
+      </li>
+      <li>
+        <a href="datenkatalog-molgen.html">Molekulargenetik</a>
+      </li>
+      <li>
+        <a href="datenkatalog-patho.html">Pathologiebefund</a>
+      </li>
+      <li>
+        <a href="datenkatalog-icu.html">Intensivmedizin</a>
+      </li>
+      <li>
+        <a href="datenkatalog-bildgebung.html">Bildgebung</a>
+      </li>
+      <li>
+        <a href="datenkatalog-seltene.html">Seltene Erkrankungen</a>
+      </li>
+      <li>
+        <a href="datenkatalog-onkologie.html">Onkologie</a>
+      </li>
+      <li>
+        <a href="datenkatalog-consent.html">Einwilligung</a>
+      </li>
+      <li>
+        <a href="datenkatalog-dokument.html">Dokument</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="changelog.html">Changelog</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Datenkatalog Basisdaten</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">FDPG KDS Obligations Layer - Local Development build (v2026.0.0) built by the FHIR (HL7&reg; FHIR&reg; Standard) Build Tools. See the <a href="https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Datenkatalog Basisdaten</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#datenkatalog-basisdaten" id="markdown-toc-datenkatalog-basisdaten">Datenkatalog Basisdaten</a>    <ul>
+      <li><a href="#person" id="markdown-toc-person">Person</a></li>
+      <li><a href="#diagnose" id="markdown-toc-diagnose">Diagnose</a></li>
+      <li><a href="#prozedur" id="markdown-toc-prozedur">Prozedur</a></li>
+      <li><a href="#fall" id="markdown-toc-fall">Fall</a></li>
+      <li><a href="#english-translations" id="markdown-toc-english-translations">English Translations</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div>
+<h1 id="datenkatalog-basisdaten">Datenkatalog Basisdaten</h1>
+
+<p><em>Person, Diagnose, Prozedur, Fall</em></p>
+
+<p>Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen und englischen Beschreibungen. Die Obligations werden auf der Seite <a href="obligations.html">Obligations</a> beschrieben.</p>
+
+<p><strong>Quellpaket:</strong> <a href="https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base/2026.0.0">de.medizininformatikinitiative.kerndatensatz.base</a></p>
+
+<h3 id="person">Person</h3>
+
+<h4 id="patient-patient">Patient (Patient)</h4>
+
+<p><strong>FDPG Profil:</strong> <a href="StructureDefinition-fdpg-pr-person-patient.html">FDPG_PR_Person_Patient</a> · <strong>MII Elternprofil:</strong> MII_PR_Person_Patient</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Kurzbeschreibung (de)</th>
+      <th>Definition (de)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">id</code></td>
+      <td>Logical id of this artifact</td>
+      <td>The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta</code></td>
+      <td>Metadata about the resource</td>
+      <td>The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta.profile</code></td>
+      <td>Profiles this resource claims to conform to</td>
+      <td><a name="l572">​</a>A list of profiles (references to <a href="structuredefinition.html#">StructureDefinition</a> resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured…</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">identifier</code></td>
+      <td>Identifikator</td>
+      <td>Ein Identifikator für den/die Patient*in</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">identifier:versichertenId</code></td>
+      <td>Krankenversichertennummer</td>
+      <td>10-stellige KVID</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">identifier:pid</code></td>
+      <td>Organisationsinterner Patienten-Identifikator</td>
+      <td>Führende ID der Patient*in in der Organisation</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">name</code></td>
+      <td>Name</td>
+      <td>Name der Patientin oder des Patienten</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">name:name</code></td>
+      <td>Personenname</td>
+      <td>Personenname mit in Deutschland üblichen Namensbestandteilen</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">name:geburtsname</code></td>
+      <td>Geburtsname</td>
+      <td>Name, der vor einer Namensänderung aufgrund von Heirat verwendet wurde.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">gender</code></td>
+      <td>Administratives Geschlecht</td>
+      <td>männlich | weiblich | andere | unbekannt | unbestimmt | divers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">birthDate</code></td>
+      <td>Geburtsdatum</td>
+      <td>Das Geburtsdatum der Patientin oder des Patienten</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">deceased[x]</code></td>
+      <td>Verstorben</td>
+      <td>Gibt an, ob die Person verstorben ist oder nicht</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">address</code></td>
+      <td>Adresse</td>
+      <td>Eine Adresse der Patientin oder des Patienten</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">address:Strassenanschrift</code></td>
+      <td>Straßenanschrift</td>
+      <td>Eine Straßenanschrift der Patientin oder des Patienten</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">address:Postfach</code></td>
+      <td>Postfach</td>
+      <td>Eine Postfachanschrift der Patientin oder des Patienten</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">link</code></td>
+      <td>Verweis</td>
+      <td>Verweis auf eine andere Patientenressource, die die gleiche tatsächliche Person betrifft</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="patientpseudonymisiert-patient">PatientPseudonymisiert (Patient)</h4>
+
+<p><strong>FDPG Profil:</strong> <a href="StructureDefinition-fdpg-pr-person-patient-pseudonymisiert.html">FDPG_PR_Person_PatientPseudonymisiert</a> · <strong>MII Elternprofil:</strong> MII_PR_Person_PatientPseudonymisiert</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Kurzbeschreibung (de)</th>
+      <th>Definition (de)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">id</code></td>
+      <td>Logical id of this artifact</td>
+      <td>The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta</code></td>
+      <td>Metadata about the resource</td>
+      <td>The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta.profile</code></td>
+      <td>Profiles this resource claims to conform to</td>
+      <td><a name="l818">​</a>A list of profiles (references to <a href="structuredefinition.html#">StructureDefinition</a> resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured…</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">identifier</code></td>
+      <td>Identifikator</td>
+      <td>Ein Identifikator für den/die Patient*in</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">identifier:PseudonymisierterIdentifier</code></td>
+      <td>Pseudonymisierter Identifikator</td>
+      <td>Ein Pseudonym ersetzt einen Originalwert. Die Verarbeitung ist umkehrbar. Zusätzliche Informationen sind erforderlich, um den Originalwert zu rekonstruieren, bspw. eine Trusted Third Party.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">identifier:AnonymisierterIdentifier</code></td>
+      <td>Anonymisierter Identifikator</td>
+      <td>Ein Anonymisierter Identifikator ersetzt einen Originalwert. Die Verarbeitung ist unumkehrbar. Der Originalwert kann nicht oder nur mit unverhältnismäßigem Aufwand rekonstruiert werden.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">identifier:MaskierterVersichertenIdentifer</code></td>
+      <td>Maskierter Identifier der Krankenversicherten-ID</td>
+      <td>Identifier der Krankenversichertennummer, bei dem der Wert maskiert wurde.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">active</code></td>
+      <td>Aktiv</td>
+      <td>Gibt an, ob diese Patient-Ressource aktiv verwendet wird.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">gender</code></td>
+      <td>Administratives Geschlecht</td>
+      <td>männlich | weiblich | andere | unbekannt | unbestimmt | divers</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">birthDate</code></td>
+      <td>Geburtsdatum</td>
+      <td>Das Geburtsdatum der Patientin oder des Patienten</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">address</code></td>
+      <td>Adresse</td>
+      <td>Eine Adresse der Patientin oder des Patienten</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">address:Strassenanschrift</code></td>
+      <td>Straßenanschrift</td>
+      <td>Eine Straßenanschrift der Patientin oder des Patienten</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="vitalstatus-observation">Vitalstatus (Observation)</h4>
+
+<p><strong>FDPG Profil:</strong> <a href="StructureDefinition-fdpg-pr-person-vitalstatus.html">FDPG_PR_Person_Vitalstatus</a> · <strong>MII Elternprofil:</strong> MII_PR_Person_Vitalstatus</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Kurzbeschreibung (de)</th>
+      <th>Definition (de)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">id</code></td>
+      <td>Logical id of this artifact</td>
+      <td>The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta</code></td>
+      <td>Metadata about the resource</td>
+      <td>The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta.profile</code></td>
+      <td>Profiles this resource claims to conform to</td>
+      <td><a name="l1012">​</a>A list of profiles (references to <a href="structuredefinition.html#">StructureDefinition</a> resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured…</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td>Status</td>
+      <td>abgeschlossen</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">category</code></td>
+      <td>Kategorie</td>
+      <td>Klassifikation des Typs der Beobachtung für den Vitalstatus.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">category:survey</code></td>
+      <td>Classification of type of observation</td>
+      <td>A code that classifies the general type of observation being made.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code></td>
+      <td>Code</td>
+      <td>Ein LOINC Code, der die Vitalstatus Beobachtung identifiziert.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>Who and/or what the observation is about</td>
+      <td>The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec…</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">encounter</code></td>
+      <td>Kontakt</td>
+      <td>Kontakt, bei dem der Vitalstatus festgestellt wurde.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">effective[x]</code></td>
+      <td>Zeitpunkt</td>
+      <td>Der Zeitpunkt, zu dem der beobachtete Vitalstatus als wahr festgestellt wird.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">value[x]</code></td>
+      <td>Wert</td>
+      <td>lebendig | verstorben | unbekannt</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">note</code></td>
+      <td>Hinweis</td>
+      <td>Zusätzliche Informationen zum Vitalstatus als Freitext.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="todesursache-condition">Todesursache (Condition)</h4>
+
+<p><strong>FDPG Profil:</strong> <a href="StructureDefinition-fdpg-pr-person-todesursache.html">FDPG_PR_Person_Todesursache</a> · <strong>MII Elternprofil:</strong> MII_PR_Person_Todesursache</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Kurzbeschreibung (de)</th>
+      <th>Definition (de)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">id</code></td>
+      <td>Logical id of this artifact</td>
+      <td>The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta</code></td>
+      <td>Metadata about the resource</td>
+      <td>The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta.profile</code></td>
+      <td>Profiles this resource claims to conform to</td>
+      <td><a name="l1206">​</a>A list of profiles (references to <a href="structuredefinition.html#">StructureDefinition</a> resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured…</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">clinicalStatus</code></td>
+      <td>Klinischer Status</td>
+      <td>aktiv | Rezidiv | Rückfall | inaktiv | Remission | abgeklungen</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">verificationStatus</code></td>
+      <td>Verifizierungsstatus</td>
+      <td>unbestätigt | vorläufig | differential | bestätigt | widerlegt | fehlerhafte Eingabe</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">category</code></td>
+      <td>Kategorie</td>
+      <td>Eine Kategorie, die der Diagnose zugeordnet ist.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">category:todesDiagnose</code></td>
+      <td>problem-list-item | encounter-diagnosis</td>
+      <td>A category assigned to the condition.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code></td>
+      <td>Code</td>
+      <td>Ein ICD-10-WHO Code, der die Todesursache identifiziert.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>Who has the condition?</td>
+      <td>Indicates the patient or group who the condition record is associated with.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">encounter</code></td>
+      <td>Kontakt</td>
+      <td>Kontakt, bei dem die Todesursache festgestellt wurde.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">recordedDate</code></td>
+      <td>Aufzeichnungsdatum</td>
+      <td>Datum, an dem die Todesursache erstmals dokumentiert wurde.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">note</code></td>
+      <td>Hinweis</td>
+      <td>Zusätzliche Informationen zur Todesursache als Freitext.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="diagnose">Diagnose</h3>
+
+<h4 id="condition-condition">Condition (Condition)</h4>
+
+<p><strong>FDPG Profil:</strong> <a href="StructureDefinition-fdpg-pr-diagnose-condition.html">FDPG_PR_Diagnose_Condition</a> · <strong>MII Elternprofil:</strong> MII_PR_Diagnose_Condition</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Kurzbeschreibung (de)</th>
+      <th>Definition (de)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">id</code></td>
+      <td>Logical id of this artifact</td>
+      <td>The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta</code></td>
+      <td>Metadata about the resource</td>
+      <td>The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta.source</code></td>
+      <td>Identifies where the resource comes from</td>
+      <td><a name="l1403">​</a>A uri that identifies the source system of the resource. This provides a minimal amount of <a href="provenance.html#">Provenance</a> information that can be used to track or differentiate the source of inform…</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta.profile</code></td>
+      <td>Profiles this resource claims to conform to</td>
+      <td><a name="l1419">​</a>A list of profiles (references to <a href="structuredefinition.html#">StructureDefinition</a> resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured…</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension:ReferenzPrimaerdiagnose</code></td>
+      <td>Conditions associated with this condition</td>
+      <td>This condition has an unspecified relationship with another condition.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension:Feststellungsdatum</code></td>
+      <td>Feststellungsdatum</td>
+      <td>Datum, an dem die Diagnose erstmals festgestellt wurde</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">clinicalStatus</code></td>
+      <td>Klinischer Status</td>
+      <td>aktiv | Rezidiv | Rückfall | inaktiv | Remission | abgeklungen</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">verificationStatus</code></td>
+      <td>Verifizierungsstatus</td>
+      <td>unbestätigt | vorläufig | differential | bestätigt | widerlegt | fehlerhafte Eingabe</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code></td>
+      <td>Code</td>
+      <td>Ein ICD-10-, Alpha-ID-, SNOMED-, Orpha- oder anderer Code, der die Diagnose identifiziert.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">bodySite</code></td>
+      <td>Körperstelle</td>
+      <td>Körperstelle der Diagnose mittels SNOMED oder anderem Code.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>Who has the condition?</td>
+      <td>Indicates the patient or group who the condition record is associated with.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">encounter</code></td>
+      <td>Kontakt</td>
+      <td>Kontakt, während dem die Diagnose erstellt wurde oder mit dem die Diagnose in Zusammenhang steht.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">onset[x]</code></td>
+      <td>Beginn</td>
+      <td>Geschätztes oder tatsächliches Datum oder Zeitraum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">onset[x]:onsetPeriod</code></td>
+      <td>Beginn Zeitraum</td>
+      <td>Der Zeitraum, in dem die Erkrankung begonnen hat, nach Meinung des Klinikers.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">onset[x]:onsetDateTime</code></td>
+      <td>Beginn Datum</td>
+      <td>Das Datum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">onset[x]:onsetAge</code></td>
+      <td>Erkrankungsbeginn als Alter</td>
+      <td>Estimated or actual date or date-time the condition began, in the opinion of the clinician.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">recordedDate</code></td>
+      <td>Aufzeichnungsdatum</td>
+      <td>Datum, an dem die Diagnose erstmals dokumentiert wurde.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">note</code></td>
+      <td>Hinweis</td>
+      <td>Zusätzliche Informationen zur Diagnose als Freitext.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="prozedur">Prozedur</h3>
+
+<h4 id="procedure-procedure">Procedure (Procedure)</h4>
+
+<p><strong>FDPG Profil:</strong> <a href="StructureDefinition-fdpg-pr-prozedur-procedure.html">FDPG_PR_Prozedur_Procedure</a> · <strong>MII Elternprofil:</strong> MII_PR_Prozedur_Procedure</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Kurzbeschreibung (de)</th>
+      <th>Definition (de)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">id</code></td>
+      <td>Logical id of this artifact</td>
+      <td>The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta</code></td>
+      <td>Metadata about the resource</td>
+      <td>The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta.source</code></td>
+      <td>Identifies where the resource comes from</td>
+      <td><a name="l1681">​</a>A uri that identifies the source system of the resource. This provides a minimal amount of <a href="provenance.html#">Provenance</a> information that can be used to track or differentiate the source of inform…</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta.profile</code></td>
+      <td>Profiles this resource claims to conform to</td>
+      <td><a name="l1697">​</a>A list of profiles (references to <a href="structuredefinition.html#">StructureDefinition</a> resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured…</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension</code></td>
+      <td>Additional content defined by implementations</td>
+      <td>May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance appl…</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension:Dokumentationsdatum</code></td>
+      <td>Dokumentationsdatum</td>
+      <td>Dokumentationsdatum der Prozedur, falls abweichend vom Durchführungsdatum</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension:durchfuehrungsabsicht</code></td>
+      <td>Durchführungsabsicht</td>
+      <td>therapeutisch | palliativ | diagnostisch | präventiv | rehabilitativ | andere</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td>Status</td>
+      <td>Vorbereitung | in Arbeit | nicht durchgeführt | pausiert | abgebrochen | abgeschlossen | Eingabe fehlerhaft | unbekannt</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">category</code></td>
+      <td>Kategorie</td>
+      <td>Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">code</code></td>
+      <td>Code</td>
+      <td>Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>Who the procedure was performed on</td>
+      <td>The person, animal or group on which the procedure was performed.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">encounter</code></td>
+      <td>Kontakt</td>
+      <td>Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">performed[x]</code></td>
+      <td>Durchführungsdatum</td>
+      <td>Durchführungsdatum oder -zeitraum der Prozedur.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">bodySite</code></td>
+      <td>Körperstelle</td>
+      <td>Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">note</code></td>
+      <td>Hinweis</td>
+      <td>Zusätzliche Informationen zur Prozedur als Freitext.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="fall">Fall</h3>
+
+<h4 id="kontaktgesundheitseinrichtung-encounter">KontaktGesundheitseinrichtung (Encounter)</h4>
+
+<p><strong>FDPG Profil:</strong> <a href="StructureDefinition-fdpg-pr-fall-kontakt-gesundheitseinrichtung.html">FDPG_PR_Fall_KontaktGesundheitseinrichtung</a> · <strong>MII Elternprofil:</strong> MII_PR_Fall_KontaktGesundheitseinrichtung</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Kurzbeschreibung (de)</th>
+      <th>Definition (de)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">id</code></td>
+      <td>Logical id of this artifact</td>
+      <td>Angabe OPTIONAL, vom Server automatisch vergebene system-abhängige ID</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta</code></td>
+      <td>Metadata about the resource</td>
+      <td>Angabe OPTIONAL zur Provenance und zum Profil</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta.source</code></td>
+      <td>Identifies where the resource comes from</td>
+      <td><a name="l1920">​</a>A uri that identifies the source system of the resource. This provides a minimal amount of <a href="provenance.html#">Provenance</a> information that can be used to track or differentiate the source of inform…</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">meta.profile</code></td>
+      <td>Profiles this resource claims to conform to</td>
+      <td><a name="l1936">​</a>A list of profiles (references to <a href="structuredefinition.html#">StructureDefinition</a> resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured…</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">extension:Aufnahmegrund</code></td>
+      <td>Aufnahmegrund</td>
+      <td>Aufnahmegrund nach Schlüssel 1, Anlage 2, Datenübermittlung nach &sect; 301 Abs. 3 SGB V</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">identifier</code></td>
+      <td>Identifikator</td>
+      <td>Kennung/en, unter der/denen dieser Kontakt bekannt ist.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">identifier:Aufnahmenummer</code></td>
+      <td>Aufnahmenummer</td>
+      <td>Aufnahmenummer/Fallnummer, die Patient:in bei einer Aufnahme bekommt.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">status</code></td>
+      <td>Status</td>
+      <td>geplant | im Gange | beurlaubt | abgeschlossen | abgebrochen | fehlerhafte Eingabe | unbekannt</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">class</code></td>
+      <td>Kontaktklasse</td>
+      <td>ambulant | stationär | vorstationär | virtuell | teilstationär | häusliche Pflege</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">type</code></td>
+      <td>Typ des Kontaktes</td>
+      <td>Spezifischer Typ des Kontaktes</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">type:Kontaktebene</code></td>
+      <td>Kontaktebene</td>
+      <td>Unterscheidung der Kontakt-Hierarchieebenen: Einrichtungskontakt | Abteilungskontakt | Versorgungsstellenkontakt</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">type:KontaktArt</code></td>
+      <td>Kontaktart</td>
+      <td>Kontaktarten wie vorstationär | nachstationär | intensivstationär</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">serviceType</code></td>
+      <td>Fachabteilung</td>
+      <td>Fachabteilung Klassifizierung durch Fachabteilungsschlüssel</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">subject</code></td>
+      <td>Patientenidentifikator</td>
+      <td>VERPFLICHTEND, Referenz auf Patient:in.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">period</code></td>
+      <td>Zeitraum des Kontaktes</td>
+      <td>Beginn- und Endzeitpunkt des Kontaktes.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">diagnosis</code></td>
+      <td>Diagnosen</td>
+      <td>Angaben zu für den Kontakt relevanten Diagnosen</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">account</code></td>
+      <td>Abrechnungskontext</td>
+      <td>Referenz auf den Abrechnungsfall.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">hospitalization</code></td>
+      <td>Klinikaufenthalt</td>
+      <td>Details zur Aufnahme und Entlassung</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">partOf</code></td>
+      <td>Teil von Kontakt</td>
+      <td>Abbildung der Hierarchie zwischen Kontaktebenen durch Referenz auf weitere Kontakte.</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr/>
+
+<h2 id="english-translations">English Translations</h2>
+
+<details>
+<summary>English translations - Patient</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | An identifier for this patient |
+| `identifier:versichertenId` | Health insurance number | 10-digit health insurance number |
+| `identifier:pid` | Organization-internal patient identifier | Medical record number of the patient in the organization |
+| `name` | Name | A name associated with the patient |
+| `name:name` | Person's name | A person's name with components typically used in Germany |
+| `name:geburtsname` | Maiden name | A name used prior to changing name because of marriage. |
+| `gender` | Administrative gender | male \| female \| other \| unknown \| undetermined \| diverse |
+| `birthDate` | Date of birth | The date of birth for the individual |
+| `deceased[x]` | Deceased | Indicates if the individual is deceased or not |
+| `address` | Address | An address for the individual |
+| `address:Strassenanschrift` | Street address | A street address for the individual |
+| `address:Postfach` | Postbox | A postbox address for the individual |
+| `link` | Link | Link to another patient resource that concerns the same actual person |
+
+</details>
+
+<details>
+<summary>English translations - PatientPseudonymisiert</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | An identifier for this patient |
+| `identifier:MaskierterVersichertenIdentifer` | Masked identifier of the health insurance ID | Health insurance number identifier with masked value. |
+| `active` | Active | Whether this patient's record is in active use |
+| `gender` | Administrative gender | male \| female \| other \| unknown \| undetermined \| diverse |
+| `birthDate` | Date of birth | The date of birth for the individual |
+| `address` | Address | An address for the individual |
+| `address:Strassenanschrift` | Street address | A street address for the individual |
+
+</details>
+
+<details>
+<summary>English translations - Vitalstatus</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `status` | Status | completed |
+| `category` | Category | Classification of type of observation for vital status. |
+| `code` | Code | A LOINC code identifying the vital status observation. |
+| `encounter` | Encounter | Encounter during which the vital status was determined. |
+| `effective[x]` | Point in time | The time the observed vital status is asserted as being true. |
+| `value[x]` | Value | alive \| deceased \| unknown |
+| `note` | Note | Additional information about the vital status as free text. |
+
+</details>
+
+<details>
+<summary>English translations - Todesursache</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `clinicalStatus` | Clinical status | active \| recurrence \| relapse \| inactive \| remission \| resolved |
+| `verificationStatus` | Verification status | unconfirmed \| provisional \| differential \| confirmed \| refuted \| entered-in-error |
+| `category` | Category | A category assigned to the condition. |
+| `code` | Code | An ICD-10-WHO code identifying the cause of death. |
+| `encounter` | Encounter | Encounter during which the cause of death was determined. |
+| `recordedDate` | Recorded date | Date when the cause of death was first recorded. |
+| `note` | Note | Additional information about the cause of death as free text. |
+
+</details>
+
+<details>
+<summary>English translations - Condition</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `extension:Feststellungsdatum` | Asserted date | Date the condition was first asserted |
+| `clinicalStatus` | Clinical status | active \| recurrence \| relapse \| inactive \| remission \| resolved |
+| `verificationStatus` | Verification status | unconfirmed \| provisional \| differential \| confirmed \| refuted \| entered-in-error |
+| `code` | Code | An ICD-10-, Alpha-ID-, SNOMED-, Orpha- or other code that identifies the diagnosis. |
+| `bodySite` | Body site | The body site of the diagnosis using SNOMED or other systems. |
+| `encounter` | Encounter | The Encounter during which this Condition was created or to which the creation of this record is tightly associated. |
+| `onset[x]` | Onset | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
+| `recordedDate` | Recorded date | Date when the diagnosis was first recorded. |
+| `note` | Note | Additional information about the diagnosis as free text. |
+
+</details>
+
+<details>
+<summary>English translations - Procedure</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `extension:Dokumentationsdatum` | Recorded date | The date the procedure was documented, if different from the performed date |
+| `extension:durchfuehrungsabsicht` | Intention | therapeutic \| palliative \| diagnostic \| preventive \| rehabilitative \| other |
+| `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
+| `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
+| `code` | Code | Code from OPS - Operationen- und Prozedurenschlüssel, SNOMED CT or other. |
+| `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
+| `performed[x]` | Performed date | The date or period of time the procedure was performed. |
+| `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
+| `note` | Note | Additional information about the procedure as free text. |
+
+</details>
+
+<details>
+<summary>English translations - KontaktGesundheitseinrichtung</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `extension:Aufnahmegrund` | Admission reason | Admission reason according to key 1, appendix 2, data transmission according to &sect; 301 para. 3 SGB V |
+| `identifier` | Identifier | Identifier/s by which this encounter is known. |
+| `identifier:Aufnahmenummer` | Admission number | Admission number, the patient receives during an admission. |
+| `status` | status | planned \| in-progress \| onleave \| finished \| cancelled \| entered-in-error \| unknown |
+| `class` | Classification of patient encounter | ambulatory \| inpatient encounter \| pre-admission \| virtual \| short stay \| home health |
+| `type` | Type of encounter | Specific type of encounter |
+| `type:Kontaktebene` | Level of encounter | Differentiation of the encounter hierarchy levels: facility contact \| department contact \| care provider contact |
+| `type:KontaktArt` | Type of encounter | Type of encounter such as pre-admission \| post-admission \| intensive care |
+| `serviceType` | Department | Department classification by department key |
+| `period` | Period of encounter | Start and end time of the encounter. |
+| `diagnosis` | Diagnoses | Information about diagnoses relevant for the encounter |
+| `account` | Billing Context | Reference to the billing case. |
+| `hospitalization` | Hospitalization | Details about admission and discharge |
+| `partOf` | Part of encounter | Hierarchy between encounter levels by referencing further encounters. |
+
+</details>
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script src="assets/js/window-hash.js" type="text/javascript"> </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &copy; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://forschen-fuer-gesundheit.de">FDPG / Medizininformatik-Initiative</a>.  Package fdpg-kds-obligations#2026.0.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 19, 2026 20:14+0000">2026-02-19</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor-hover.js" type="text/javascript"> </script>
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

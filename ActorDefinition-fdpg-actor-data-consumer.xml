@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Basic xmlns="http://hl7.org/fhir">
+  <id value="fdpg-actor-data-consumer"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ActorDefinition fdpg-actor-data-consumer</b></p><a name="fdpg-actor-data-consumer"> </a><a name="hcfdpg-actor-data-consumer"> </a><table class="grid"><tr><td><b>Actor: FDPGDataConsumer </b></td><td>FDPG Datenkonsument</td><td>Type: system </td></tr><tr><td colspan="3"><div><h3>Rolle</h3>
+<p>Der FDPG Datenkonsument ist ein System, das Daten aus dem FDPG
+Forschungsnetzwerk abruft und verarbeitet.</p>
+<h3>Verantwortlichkeiten</h3>
+<ul>
+<li>Korrekte Verarbeitung aller bereitgestellten Datenelemente</li>
+<li>Anzeige gemäß definierten Display-Obligations</li>
+<li>Persistierung gemäß Persist-Obligations</li>
+<li>Einhaltung der Nutzungsbedingungen</li>
+</ul>
+<h3>Obligation Codes</h3>
+<ul>
+<li><code>SHALL:handle</code> - Element MUSS verarbeitet werden können</li>
+<li><code>SHALL:persist</code> - Element MUSS persistiert werden</li>
+<li><code>SHOULD:display</code> - Element SOLLTE angezeigt werden</li>
+<li><code>MAY:ignore</code> - Element KANN ignoriert werden</li>
+</ul>
+</div></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.url">
+    <valueUri value="https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-data-consumer"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.version">
+    <valueString value="2026.0.0"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.name">
+    <valueString value="FDPGDataConsumer"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.title">
+    <valueString value="FDPG Datenkonsument"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.status">
+    <valueCode value="active"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.date">
+    <valueDateTime value="2026-02-19T20:14:03+00:00"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.publisher">
+    <valueString value="FDPG / Medizininformatik-Initiative"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.contact">
+    <valueContactDetail>
+      <name value="FDPG / Medizininformatik-Initiative"/>
+      <telecom>
+        <system value="url"/>
+        <value value="https://forschen-fuer-gesundheit.de"/>
+      </telecom>
+    </valueContactDetail>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.description">
+    <valueMarkdown value="Systeme die Daten vom FDPG abrufen"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.jurisdiction">
+    <valueCodeableConcept>
+      <coding>
+        <system value="urn:iso:std:iso:3166"/>
+        <code value="DE"/>
+        <display value="Germany"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.type">
+    <valueCode value="system"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-ActorDefinition.documentation">
+    <valueMarkdown value="### Rolle&#xA;Der FDPG Datenkonsument ist ein System, das Daten aus dem FDPG&#xA;Forschungsnetzwerk abruft und verarbeitet.&#xA;&#xA;### Verantwortlichkeiten&#xA;- Korrekte Verarbeitung aller bereitgestellten Datenelemente&#xA;- Anzeige gemäß definierten Display-Obligations&#xA;- Persistierung gemäß Persist-Obligations&#xA;- Einhaltung der Nutzungsbedingungen&#xA;&#xA;### Obligation Codes&#xA;- `SHALL:handle` - Element MUSS verarbeitet werden können&#xA;- `SHALL:persist` - Element MUSS persistiert werden&#xA;- `SHOULD:display` - Element SOLLTE angezeigt werden&#xA;- `MAY:ignore` - Element KANN ignoriert werden"/>
+  </extension>
+  <identifier>
+    <system value="https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations"/>
+    <value value="data-consumer"/>
+  </identifier>
+  <code>
+    <coding>
+      <system value="http://hl7.org/fhir/fhir-types"/>
+      <code value="ActorDefinition"/>
+    </coding>
+  </code>
+</Basic>
