@@ -329,14 +329,15 @@ def parse_fhir_mapping(fhir_map: str) -> tuple[str, str] | None:
 
 def build_lm_lookup(
     logical_models: list[dict], fhir_identities: list[str],
-) -> dict[tuple[str, str], list[str]]:
-    """Build (resource_type, element) → [labels] lookup from logical models.
+) -> dict[tuple[str, str], dict]:
+    """Build (resource_type, element) → info lookup from logical models.
 
-    Prefers labels from shallow (depth-1) FHIR mappings over deeper ones.
+    Each entry: {"labels": [str], "short": str, "definition": str}.
+    Prefers data from shallow (depth-1) FHIR mappings over deeper ones.
     The label is the leaf segment of the logical model element ID.
     """
-    primary: dict[tuple[str, str], list[str]] = {}   # depth-1 matches
-    secondary: dict[tuple[str, str], list[str]] = {}  # deeper matches
+    primary: dict[tuple[str, str], dict] = {}   # depth-1 matches
+    secondary: dict[tuple[str, str], dict] = {}  # deeper matches
 
     for lm in logical_models:
         for elem in lm.get("snapshot", {}).get("element", []):
@@ -360,26 +361,29 @@ def build_lm_lookup(
 
                 target = primary if is_primary else secondary
                 if key not in target:
-                    target[key] = []
-                if label not in target[key]:
-                    target[key].append(label)
+                    target[key] = {
+                        "labels": [],
+                        "short": elem.get("short", ""),
+                        "definition": elem.get("definition", ""),
+                    }
+                if label not in target[key]["labels"]:
+                    target[key]["labels"].append(label)
 
-    # Merge: prefer primary labels, fall back to secondary
-    result: dict[tuple[str, str], list[str]] = {}
+    # Merge: prefer primary, fall back to secondary
+    result: dict[tuple[str, str], dict] = {}
     for key in set(primary) | set(secondary):
-        result[key] = primary.get(key, secondary.get(key, []))
+        result[key] = primary.get(key, secondary.get(key, {}))
     return result
 
 
-def lookup_lm_label(
-    lm_lookup: dict[tuple[str, str], list[str]],
+def _resolve_lm_key(
+    lm_lookup: dict[tuple[str, str], dict],
     resource_type: str,
     display_path: str,
-) -> str:
-    """Resolve a profile element's display path to its logical model label(s).
+) -> dict | None:
+    """Find the LM lookup entry for a profile element's display path.
 
     Handles slice names (stripped before lookup) and choice type [x] matching.
-    Returns empty string when no match is found.
     """
     # Strip slice suffix: 'identifier:analyseBefundCode' → 'identifier'
     base = re.sub(r":[^.]+", "", display_path)
@@ -387,21 +391,47 @@ def lookup_lm_label(
     top = base.split(".")[0]
 
     key = (resource_type, top)
-    labels = lm_lookup.get(key)
+    entry = lm_lookup.get(key)
 
     # Choice type fallback: 'value[x]' → try 'valueQuantity' etc.
-    if not labels and "[x]" in top:
+    if not entry and "[x]" in top:
         prefix = top.replace("[x]", "")
-        for (rt, elem), lbls in lm_lookup.items():
+        for (rt, elem), e in lm_lookup.items():
             if rt == resource_type and elem.startswith(prefix) and elem != top:
-                labels = lbls
+                entry = e
                 break
 
-    if not labels:
+    return entry
+
+
+def lookup_lm_label(
+    lm_lookup: dict[tuple[str, str], dict],
+    resource_type: str,
+    display_path: str,
+) -> str:
+    """Resolve a profile element to its logical model concept name(s)."""
+    entry = _resolve_lm_key(lm_lookup, resource_type, display_path)
+    if not entry:
         return ""
+    labels = entry["labels"]
     if len(labels) <= 2:
         return ", ".join(labels)
     return ", ".join(labels[:2]) + ", ..."
+
+
+def lookup_lm_description(
+    lm_lookup: dict[tuple[str, str], dict],
+    resource_type: str,
+    display_path: str,
+) -> str:
+    """Resolve a profile element to its logical model description.
+
+    Prefers 'definition', falls back to 'short'.
+    """
+    entry = _resolve_lm_key(lm_lookup, resource_type, display_path)
+    if not entry:
+        return ""
+    return entry.get("definition") or entry.get("short", "")
 
 
 # ---------------------------------------------------------------------------
@@ -568,7 +598,7 @@ def generate_profile_section(
     profile_info: dict,
     profile_data: dict,
     resource_type: str,
-    lm_lookup: dict[tuple[str, str], list[str]] | None = None,
+    lm_lookup: dict[tuple[str, str], dict] | None = None,
 ) -> tuple[str, str]:
     """Generate German table and English details block for one profile.
 
@@ -613,10 +643,10 @@ def generate_profile_section(
                 has_lm_column = True
                 break
 
-    # Build table header (4 combinations: ±Fachbegriff × ±Kommentar)
+    # Build table header (combinations: ±LM columns × ±Kommentar)
     hdr_cols = ["Element"]
     if has_lm_column:
-        hdr_cols.append("Fachbegriff")
+        hdr_cols += ["Konzept (LM)", "Beschreibung (LM)"]
     hdr_cols += ["Kurzbeschreibung (de)", "Definition (de)"]
     if has_any_comment:
         hdr_cols.append("Kommentar")
@@ -642,14 +672,16 @@ def generate_profile_section(
         # Look up element comment from FSH
         comment = element_comments.get(display_path, "")
 
-        # Look up logical model label
+        # Look up logical model concept + description
         lm_label = ""
+        lm_desc = ""
         if has_lm_column and lm_lookup:
             lm_label = lookup_lm_label(lm_lookup, resource_type, display_path)
+            lm_desc = lookup_lm_description(lm_lookup, resource_type, display_path)
 
         row_cols = [f"`{display_path}`"]
         if has_lm_column:
-            row_cols.append(md_escape(lm_label))
+            row_cols += [md_escape(lm_label), md_escape(lm_desc)]
         row_cols += [md_escape(de_short), md_escape(de_def)]
         if has_any_comment:
             row_cols.append(md_escape(comment))
