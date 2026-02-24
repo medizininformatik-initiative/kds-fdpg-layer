@@ -4,7 +4,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.molgen](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.molgen/2026.0.4)
 
-#### AnforderungGenetischerTest (ServiceRequest)
+#### Anforderung genetischer Test (ServiceRequest)
 
 **FDPG Profil:** [FDPG_PR_MolGen_AnforderungGenetischerTest](StructureDefinition-fdpg-pr-molgen-anforderung-genetischer-test.html) · **MII Elternprofil:** MII_PR_MolGen_AnforderungGenetischerTest
 
@@ -21,7 +21,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `supportingInfo` | Unterstützende Informationen | Zusätzliche Informationen die die Anforderung unterstützen |
 | `note` | Anmerkung | Zusätzliche Anmerkungen oder Anforderungstext |
 
-#### DiagnostischeImplikation (Observation)
+#### Diagnostische Implikation (Observation)
 
 **FDPG Profil:** [FDPG_PR_MolGen_DiagnostischeImplikation](StructureDefinition-fdpg-pr-molgen-diagnostische-implikation.html) · **MII Elternprofil:** MII_PR_MolGen_DiagnostischeImplikation
 
@@ -42,7 +42,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:predicted-phenotype` | Vorhergesagter Phänotyp | Der mit der Variante assoziierte vorhergesagte Phänotyp oder Erkrankung |
 | `component:mode-of-inheritance` | Vererbungsmodus | Der Vererbungsmodus der assoziierten Erkrankung |
 
-#### EmpfohleneFolgemassnahme (Task)
+#### Empfohlene Folgemaßnahme (Task)
 
 **FDPG Profil:** [FDPG_PR_MolGen_EmpfohleneFolgemassnahme](StructureDefinition-fdpg-pr-molgen-empfohlene-folgemassnahme.html) · **MII Elternprofil:** MII_PR_MolGen_EmpfohleneFolgemassnahme
 
@@ -71,7 +71,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonReference` | Referenz zum Grund | Referenz zu einer Condition die den Grund der Familienanamnese beschreibt |
 | `condition` | Erkrankung | Erkrankung des Familienangehörigen |
 
-#### GenomicStudyAnalysis (Procedure)
+#### Genomische Studienanalyse (Procedure)
 
 **FDPG Profil:** [FDPG_PR_MolGen_GenomicStudyAnalysis](StructureDefinition-fdpg-pr-molgen-genomic-study-analysis.html) · **MII Elternprofil:** MII_PR_MolGen_GenomicStudyAnalysis
 
@@ -87,7 +87,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:regions` | Untersuchte genomische Regionen | Komplexe Extension zur Spezifikation der genomischen Regionen - v.a. Gene aber theoretisch erweiterbar durch z.B. Exonangaben - die in dieser Analyse untersucht wurden. Angabe der untersuchten Regi... |
 | `extension:device` | Verwendetes Analysegerät | Komplexe Extension mit Art des Gerätes und Referenz zum Device wie z.B. Sequenziergerät oder Library Preparation Kit oder bioinformatische Pipelines das für diese Analyse verwendet wurde |
 
-#### GenomicStudy (Procedure)
+#### Genomische Studie (Procedure)
 
 **FDPG Profil:** [FDPG_PR_MolGen_GenomicStudy](StructureDefinition-fdpg-pr-molgen-genomic-study.html) · **MII Elternprofil:** MII_PR_MolGen_GenomicStudy
 
@@ -136,7 +136,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonCode` | Begründung | Kodierte Begründung für die Medikationsempfehlung |
 | `reasonReference` | Referenz zur Begründung | Referenz zur therapeutischen Implikation die diese Empfehlung begründet |
 
-#### Mikrosatelliteninstabilitaet (Observation)
+#### Mikrosatelliteninstabilität (Observation)
 
 **FDPG Profil:** [FDPG_PR_MolGen_Mikrosatelliteninstabilitaet](StructureDefinition-fdpg-pr-molgen-mikrosatelliteninstabilitaet.html) · **MII Elternprofil:** MII_PR_MolGen_Mikrosatelliteninstabilitaet
 
@@ -155,7 +155,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:gene-studied` | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### MolekulareKonsequenz (Observation)
+#### Molekulare Konsequenz (Observation)
 
 **FDPG Profil:** [FDPG_PR_MolGen_MolekulareKonsequenz](StructureDefinition-fdpg-pr-molgen-molekulare-konsequenz.html) · **MII Elternprofil:** MII_PR_MolGen_MolekulareKonsequenz
 
@@ -175,7 +175,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:clinical-significance` | Klinische Signifikanz | Die klinische Signifikanz der Variante |
 | `component:functional-effect` | Funktioneller Effekt | Der funktionelle Effekt der Variante auf das Genprodukt |
 
-#### MolekularerBiomarker (Observation)
+#### Molekularer Biomarker (Observation)
 
 **FDPG Profil:** [FDPG_PR_MolGen_MolekularerBiomarker](StructureDefinition-fdpg-pr-molgen-molekularer-biomarker.html) · **MII Elternprofil:** MII_PR_MolGen_MolekularerBiomarker
 
@@ -192,7 +192,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:gene-studied` | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### MolekulargenetischerBefundbericht (DiagnosticReport)
+#### Molekulargenetischer Befundbericht (DiagnosticReport)
 
 **FDPG Profil:** [FDPG_PR_MolGen_MolekulargenetischerBefundbericht](StructureDefinition-fdpg-pr-molgen-molekulargenetischer-befundbericht.html) · **MII Elternprofil:** MII_PR_MolGen_MolekulargenetischerBefundbericht
 
@@ -243,7 +243,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:gene-studied` | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### PolygenerRisikoScore (RiskAssessment)
+#### Polygener Risiko-Score (RiskAssessment)
 
 **FDPG Profil:** [FDPG_PR_MolGen_PolygenerRisikoScore](StructureDefinition-fdpg-pr-molgen-polygener-risiko-score.html) · **MII Elternprofil:** MII_PR_MolGen_PolygenerRisikoScore
 
@@ -259,7 +259,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basis` | Grundlage | Die Grundlagen auf denen die Risikobewertung basiert wie z.B. genetische Varianten |
 | `prediction` | Vorhersage | Die vorhergesagten Risiken |
 
-#### TherapeutischeImplikation (Observation)
+#### Therapeutische Implikation (Observation)
 
 **FDPG Profil:** [FDPG_PR_MolGen_TherapeutischeImplikation](StructureDefinition-fdpg-pr-molgen-therapeutische-implikation.html) · **MII Elternprofil:** MII_PR_MolGen_TherapeutischeImplikation
 

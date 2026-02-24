@@ -49,7 +49,7 @@
       ]
     }
   ],
-  "description": "FDPG Profil - MII PR Onkologie Tod",
+  "description": "Krebsregisterspezifische Darstellung der Todesursache nach ICD-10-GM. Die Todesursache aus dem MII-Personenmodul (Person_Todesursache) beschreibt dagegen die für die Todesursachenstatistik benötigte, international eingesetzte ICD-10-WHO.",
   "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
   "fhirVersion": "4.0.1",
   "kind": "resource",

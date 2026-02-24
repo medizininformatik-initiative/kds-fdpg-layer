@@ -62,7 +62,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### Observation Qualitaetspruefung (Observation)
+#### Observation Qualitätsprüfung (Observation)
 
 **FDPG Profil:** [FDPG_PR_Biobank_Observation_Qualitaetspruefung](StructureDefinition-fdpg-pr-biobank-observation-qualitaetspruefung.html) · **MII Elternprofil:** MII_PR_Biobank_Observation_Qualitaetspruefung
 

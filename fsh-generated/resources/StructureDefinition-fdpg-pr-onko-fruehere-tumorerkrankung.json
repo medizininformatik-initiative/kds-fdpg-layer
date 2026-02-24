@@ -49,7 +49,7 @@
       ]
     }
   ],
-  "description": "FDPG Profil - MII PR Onkologie Frühere Tumorerkrankung",
+  "description": "Zusammenfassende Darstellung früherer Tumorerkrankungen. Die Angaben liegen voraussichtlich nur im Freitext vor und erfüllen damit nicht die Kriterien an eine Diagnose Primärtumor, werden aber zur besseren Einordnung der Krankheitsgeschichte hier geführt.",
   "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
   "fhirVersion": "4.0.1",
   "kind": "resource",

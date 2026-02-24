@@ -15,7 +15,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Rollen, die dieser Praktiker ausüben kann. | Rollen, die dieser Praktiker für die Organisation ausüben darf. |
 | `telecom` | Kontaktdaten, die spezifisch für die Rolle/den Standort/die Dienstleistung sind. | Kontaktdaten, die spezifisch für die Rolle, den Standort oder die Dienstleistung sind. |
 
-#### Dokument (DocumentReference)
+#### Studiendokument (DocumentReference)
 
 **FDPG Profil:** [FDPG_PR_Studie_Dokument](StructureDefinition-fdpg-pr-studie-dokument.html) · **MII Elternprofil:** MII_PR_Studie_Dokument
 
@@ -27,7 +27,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `content` | Content | Das referenzierte Dokument und Format. Es können mehrere Wiederholungen des Inhaltselements vorhanden sein, jeweils in einem anderen Format. |
 | `context` | Context | Der klinische Kontext, in dem das Dokument erstellt wurde. |
 
-#### EinAuschlussKriterium (EvidenceVariable)
+#### Ein-/Ausschlusskriterium (EvidenceVariable)
 
 **FDPG Profil:** [FDPG_PR_Studie_EinAuschlussKriterium](StructureDefinition-fdpg-pr-studie-ein-auschluss-kriterium.html) · **MII Elternprofil:** MII_PR_Studie_EinAuschlussKriterium
 
@@ -36,7 +36,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Status | Der Status dieser EvidenceVariable. Ermöglicht die Verfolgung des Lebenszyklus des Inhalts. |
 | `characteristic` | Characteristic | Eine Eigenschaft, die die Mitglieder des Evidence-Elements definiert. Mehrere Eigenschaften werden mit einer “und”-Semantik angewendet. |
 
-#### Proband (ResearchSubject)
+#### Proband / Probandin (ResearchSubject)
 
 **FDPG Profil:** [FDPG_PR_Studie_Proband](StructureDefinition-fdpg-pr-studie-proband.html) · **MII Elternprofil:** MII_PR_Studie_Proband
 
@@ -53,7 +53,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `individual` | Wer an der Studie teilnimmt. | Der Datensatz der Person oder des Tieres, das an der Studie beteiligt ist. |
 | `consent` | Einverständnis zur Studienteilnahme | Ein Datensatz der informierten Zustimmung des Patienten zur Teilnahme an der Studie. |
 
-#### Register (Library)
+#### Studienregister (Library)
 
 **FDPG Profil:** [FDPG_PR_Studie_Register](StructureDefinition-fdpg-pr-studie-register.html) · **MII Elternprofil:** MII_PR_Studie_Register
 
@@ -88,7 +88,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `keyword` | Wird verwendet, um nach der Studie zu suchen. | Schlüsselbegriffe, die bei der Suche nach oder Filterung der Studie helfen. |
 | `arm` | Definierter Weg durch die Studie für ein Subjekt. | Beschreibt eine erwartete Abfolge von Ereignissen für einen der Teilnehmer einer Studie. Z. B. Exposition gegenüber Medikament A, Auswaschphase, Exposition gegenüber Medikament B, Auswaschphase, Na... |
 
-#### Studieneinschluss Anfrage (ServiceRequest)
+#### Studieneinschluss-Anfrage (ServiceRequest)
 
 **FDPG Profil:** [FDPG_PR_Studie_Studieneinschluss_Anfrage](StructureDefinition-fdpg-pr-studie-studieneinschluss-anfrage.html) · **MII Elternprofil:** MII_PR_Studie_Studieneinschluss_Anfrage
 

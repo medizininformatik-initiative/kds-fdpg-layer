@@ -4,7 +4,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.medikation](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.medikation/2026.0.0)
 
-#### MedicationAdministration (MedicationAdministration)
+#### Medikationsverabreichung (MedicationAdministration)
 
 **FDPG Profil:** [FDPG_PR_Medikation_MedicationAdministration](StructureDefinition-fdpg-pr-medikation-medication-administration.html) · **MII Elternprofil:** MII_PR_Medikation_MedicationAdministration
 
@@ -33,7 +33,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `note` | Hinweis | Zusätzliche Informationen zur Medikationsverabreichung als Freitext. |
 | `dosage` | Dosierung | Details der Medikamentendosierung, wie Dosis, Menge, Applikationsort, Verabreichungsweg, etc. |
 
-#### MedicationRequest (MedicationRequest)
+#### Medikationsverordnung (MedicationRequest)
 
 **FDPG Profil:** [FDPG_PR_Medikation_MedicationRequest](StructureDefinition-fdpg-pr-medikation-medication-request.html) · **MII Elternprofil:** MII_PR_Medikation_MedicationRequest
 
@@ -61,7 +61,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `substitution` | Substitution | Etwaige Einschränkungen bei der Substitution von Medikamenten |
 | `priorPrescription` | Vorherige Verschreibung | Eine Verschreibung, die ersetzt wird |
 
-#### MedicationStatement (MedicationStatement)
+#### Medikationseintrag (MedicationStatement)
 
 **FDPG Profil:** [FDPG_PR_Medikation_MedicationStatement](StructureDefinition-fdpg-pr-medikation-medication-statement.html) · **MII Elternprofil:** MII_PR_Medikation_MedicationStatement
 
@@ -91,7 +91,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `note` | Hinweis | Zusätzliche Informationen zum Medikationseintrag als Freitext. |
 | `dosage` | Dosierung | Details zur Dosierung des Medikamentes. |
 
-#### Medication (Medication)
+#### Medikament (Medication)
 
 **FDPG Profil:** [FDPG_PR_Medikation_Medication](StructureDefinition-fdpg-pr-medikation-medication.html) · **MII Elternprofil:** MII_PR_Medikation_Medication
 
@@ -128,7 +128,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 ## English Translations
 
 <details>
-<summary>English translations - MedicationAdministration</summary>
+<summary>English translations - Medikationsverabreichung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -151,7 +151,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MedicationRequest</summary>
+<summary>English translations - Medikationsverordnung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -173,7 +173,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MedicationStatement</summary>
+<summary>English translations - Medikationseintrag</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|

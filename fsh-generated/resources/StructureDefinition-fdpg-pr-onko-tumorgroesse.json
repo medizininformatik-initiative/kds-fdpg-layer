@@ -49,7 +49,7 @@
       ]
     }
   ],
-  "description": "FDPG Profil - MII PR Onkologie Tumorgröße",
+  "description": "Die Tumorgröße ist ursprünglich nicht Teil des oBDS, sondern der organspezifischen Module.",
   "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
   "fhirVersion": "4.0.1",
   "kind": "resource",

@@ -4,7 +4,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.patho](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.patho/2026.0.1)
 
-#### Active Problems List (List)
+#### MII PR Patho Aktive Problemliste (List)
 
 **FDPG Profil:** [FDPG_PR_Patho_Active_Problems_List](StructureDefinition-fdpg-pr-patho-active-problems-list.html) · **MII Elternprofil:** MII_PR_Patho_Active_Problems_List
 
@@ -17,7 +17,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | If all resources have the same subject | The common subject (or patient) of the resources that are in the list if there is one. |
 | `entry` | Entries in the list | Entries in this list. |
 
-#### Additional Specified Grouper (Observation)
+#### MII PR Patho Additional Specified Grouper (Observation)
 
 **FDPG Profil:** [FDPG_PR_Patho_Additional_Specified_Grouper](StructureDefinition-fdpg-pr-patho-additional-specified-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Additional_Specified_Grouper
 
@@ -43,7 +43,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
 | `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
 
-#### Attached Image (Media)
+#### MII PR Patho Angefügtes Bild (Media)
 
 **FDPG Profil:** [FDPG_PR_Patho_Attached_Image](StructureDefinition-fdpg-pr-patho-attached-image.html) · **MII Elternprofil:** MII_PR_Patho_Attached_Image
 
@@ -59,7 +59,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Gegenstand | Verweis auf die abgebildete Probe |
 | `content` | Inhalt | Daten des Bildes |
 
-#### Base Observation (Observation)
+#### MII PR Patho Basisbeobachtung (Observation)
 
 **FDPG Profil:** [FDPG_PR_Patho_Base_Observation](StructureDefinition-fdpg-pr-patho-base-observation.html) · **MII Elternprofil:** MII_PR_Patho_Base_Observation
 
@@ -83,7 +83,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
 | `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
 
-#### Bundle (Bundle)
+#### MII PR Patho Bundle (Bundle)
 
 **FDPG Profil:** [FDPG_PR_Patho_Bundle](StructureDefinition-fdpg-pr-patho-bundle.html) · **MII Elternprofil:** MII_PR_Patho_Bundle
 
@@ -104,7 +104,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `entry:Observations` | Slice für Observations | Slice zur Hinterlegung der zugehörigen Observation-Instanzen |
 | `signature` | Signatur | Digitale Signatur des Bundles |
 
-#### Composition (Composition)
+#### MII PR Patho Zusammenstellung (Composition)
 
 **FDPG Profil:** [FDPG_PR_Patho_Composition](StructureDefinition-fdpg-pr-patho-composition.html) · **MII Elternprofil:** MII_PR_Patho_Composition
 
@@ -132,7 +132,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `section` | Kapitel | The root of the sections that make up the composition. |
 | `section:patho-diagnostic-report` | Pathologie-Diagnostikbericht | Pathologie-Diagnostikbericht |
 
-#### Diagnostic Conclusion Grouper (Observation)
+#### MII PR Patho Diagnostic Conclusion Grouper (Observation)
 
 **FDPG Profil:** [FDPG_PR_Patho_Diagnostic_Conclusion_Grouper](StructureDefinition-fdpg-pr-patho-diagnostic-conclusion-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Diagnostic_Conclusion_Grouper
 
@@ -161,7 +161,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `derivedFrom:grouper-observation` | Gruppierte Beobachtung | Referenz zu gruppierten Beobachtungen |
 | `derivedFrom:questionnaire-response` | Fragebogen-Antwort | Referenz zu Fragebogen-Antworten |
 
-#### Finding (Observation)
+#### MII PR Patho Befund (Observation)
 
 **FDPG Profil:** [FDPG_PR_Patho_Finding](StructureDefinition-fdpg-pr-patho-finding.html) · **MII Elternprofil:** MII_PR_Patho_Finding
 
@@ -187,7 +187,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
 | `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
 
-#### History Of Present Illness (List)
+#### MII PR Patho Anamnese der aktuellen Erkrankung (List)
 
 **FDPG Profil:** [FDPG_PR_Patho_History_Of_Present_Illness](StructureDefinition-fdpg-pr-patho-history-of-present-illness.html) · **MII Elternprofil:** MII_PR_Patho_History_Of_Present_Illness
 
@@ -200,7 +200,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | If all resources have the same subject | The common subject (or patient) of the resources that are in the list if there is one. |
 | `entry` | Entries in the list | Entries in this list. |
 
-#### Intraoperative Grouper (Observation)
+#### MII PR Patho Intraoperative Grouper (Observation)
 
 **FDPG Profil:** [FDPG_PR_Patho_Intraoperative_Grouper](StructureDefinition-fdpg-pr-patho-intraoperative-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Intraoperative_Grouper
 
@@ -226,7 +226,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
 | `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
 
-#### Macroscopic Grouper (Observation)
+#### MII PR Patho Macroscopic Grouper (Observation)
 
 **FDPG Profil:** [FDPG_PR_Patho_Macroscopic_Grouper](StructureDefinition-fdpg-pr-patho-macroscopic-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Macroscopic_Grouper
 
@@ -252,7 +252,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
 | `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
 
-#### Microscopic Grouper (Observation)
+#### MII PR Patho Microscopic Grouper (Observation)
 
 **FDPG Profil:** [FDPG_PR_Patho_Microscopic_Grouper](StructureDefinition-fdpg-pr-patho-microscopic-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Microscopic_Grouper
 
@@ -278,7 +278,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
 | `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
 
-#### Problem List Item (Condition)
+#### MII PR Patho Problemlisteneintrag (Condition)
 
 **FDPG Profil:** [FDPG_PR_Patho_Problem_List_Item](StructureDefinition-fdpg-pr-patho-problem-list-item.html) · **MII Elternprofil:** MII_PR_Patho_Problem_List_Item
 
@@ -290,7 +290,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Identification of the condition, problem or diagnosis | Identification of the condition, problem or diagnosis. |
 | `subject` | Who has the condition? | Indicates the patient or group who the condition record is associated with. |
 
-#### Report (DiagnosticReport)
+#### MII PR Patho Bericht (DiagnosticReport)
 
 **FDPG Profil:** [FDPG_PR_Patho_Report](StructureDefinition-fdpg-pr-patho-report.html) · **MII Elternprofil:** MII_PR_Patho_Report
 
@@ -322,7 +322,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `conclusionCode` | Schlussfolgerungscode | Kodierung für abschließende diagnostische Schlussfolgerung |
 | `presentedForm` | Menschenlesbare Form | PDF-Dokument |
 
-#### Section Grouper (Observation)
+#### MII PR Patho Abschnittsgruppierung (Observation)
 
 **FDPG Profil:** [FDPG_PR_Patho_Section_Grouper](StructureDefinition-fdpg-pr-patho-section-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Section_Grouper
 
@@ -348,7 +348,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
 | `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
 
-#### Service Request (ServiceRequest)
+#### MII PR Patho Untersuchungsauftrag (ServiceRequest)
 
 **FDPG Profil:** [FDPG_PR_Patho_Service_Request](StructureDefinition-fdpg-pr-patho-service-request.html) · **MII Elternprofil:** MII_PR_Patho_Service_Request
 
@@ -376,7 +376,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `supportingInfo:observations` | Beobachtungen | Verweis auf Messwerte und Beobachtungen |
 | `specimen` | Probe | Verweis auf die zu untersuchende Probe |
 
-#### Specimen (Specimen)
+#### MII PR Patho Probe (Specimen)
 
 **FDPG Profil:** [FDPG_PR_Patho_Specimen](StructureDefinition-fdpg-pr-patho-specimen.html) · **MII Elternprofil:** MII_PR_Patho_Specimen
 
@@ -409,7 +409,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 ## English Translations
 
 <details>
-<summary>English translations - Additional Specified Grouper</summary>
+<summary>English translations - MII PR Patho Additional Specified Grouper</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -419,7 +419,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Attached Image</summary>
+<summary>English translations - MII PR Patho Angefügtes Bild</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -433,7 +433,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Bundle</summary>
+<summary>English translations - MII PR Patho Bundle</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -451,7 +451,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Composition</summary>
+<summary>English translations - MII PR Patho Zusammenstellung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -468,7 +468,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Diagnostic Conclusion Grouper</summary>
+<summary>English translations - MII PR Patho Diagnostic Conclusion Grouper</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -481,7 +481,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Finding</summary>
+<summary>English translations - MII PR Patho Befund</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -503,7 +503,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Intraoperative Grouper</summary>
+<summary>English translations - MII PR Patho Intraoperative Grouper</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -513,7 +513,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Macroscopic Grouper</summary>
+<summary>English translations - MII PR Patho Macroscopic Grouper</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -523,7 +523,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Microscopic Grouper</summary>
+<summary>English translations - MII PR Patho Microscopic Grouper</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -533,7 +533,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Report</summary>
+<summary>English translations - MII PR Patho Bericht</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -562,7 +562,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Service Request</summary>
+<summary>English translations - MII PR Patho Untersuchungsauftrag</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -589,7 +589,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Specimen</summary>
+<summary>English translations - MII PR Patho Probe</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|

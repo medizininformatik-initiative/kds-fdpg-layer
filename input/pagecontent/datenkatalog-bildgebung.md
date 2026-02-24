@@ -89,7 +89,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `description` | Studienbeschreibung | Beschreibung der Studie |
 | `series` | Serienebene | einzelne Bildserie einer Studie |
 
-#### Geraet (Device)
+#### Bildgebungsgerät (Device)
 
 **FDPG Profil:** [FDPG_PR_Bildgebung_Geraet](StructureDefinition-fdpg-pr-bildgebung-geraet.html) · **MII Elternprofil:** MII_PR_Bildgebung_Geraet
 
@@ -102,7 +102,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `manufacturer` | Hersteller | Hersteller des Aufnahmegeräts |
 | `deviceName` | Gerätename | Name und Modell des Aufnahmegeräts |
 
-#### Koerperstruktur (BodyStructure)
+#### Körperstrukutur (BodyStructure)
 
 **FDPG Profil:** [FDPG_PR_Bildgebung_Koerperstruktur](StructureDefinition-fdpg-pr-bildgebung-koerperstruktur.html) · **MII Elternprofil:** MII_PR_Bildgebung_Koerperstruktur
 
@@ -145,7 +145,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `note` | Hinweis | Zusätzliche Informationen zur Medikationsverabreichung als Freitext. |
 | `dosage` | Dosierung | Details der Medikamentendosierung, wie Dosis, Menge, Applikationsort, Verabreichungsweg, etc. |
 
-#### Radiologische Befundungsprozedur (Procedure)
+#### radiologische Befundungsprozedur (Procedure)
 
 **FDPG Profil:** [FDPG_PR_Bildgebung_Radiologische_Befundungsprozedur](StructureDefinition-fdpg-pr-bildgebung-radiologische-befundungsprozedur.html) · **MII Elternprofil:** MII_PR_Bildgebung_Radiologische_Befundungsprozedur
 
@@ -168,7 +168,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `report` | Bericht | Referenz auf den Bericht |
 | `note` | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 
-#### Radiologische Beobachtung (Observation)
+#### radiologische Beobachtung (Observation)
 
 **FDPG Profil:** [FDPG_PR_Bildgebung_Radiologische_Beobachtung](StructureDefinition-fdpg-pr-bildgebung-radiologische-beobachtung.html) · **MII Elternprofil:** MII_PR_Bildgebung_Radiologische_Beobachtung
 
@@ -190,7 +190,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `derivedFrom` | abgeleitet | Abgeleitet von ImagingStudy, ect. |
 | `component` | Bestandteile | detailierte Bestandteile der Beobachtung |
 
-#### Radiologischer Befund (DiagnosticReport)
+#### Befundbericht (DiagnosticReport)
 
 **FDPG Profil:** [FDPG_PR_Bildgebung_Radiologischer_Befund](StructureDefinition-fdpg-pr-bildgebung-radiologischer-befund.html) · **MII Elternprofil:** MII_PR_Bildgebung_Radiologischer_Befund
 
@@ -217,7 +217,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `conclusionCode` | Strukturiertes Fazit | Fazit, welches strukturiert über Codes dargestellt wird |
 | `presentedForm` | Anhang | zusätzlicher wichtiger Anhang |
 
-#### Semistrukt Befundbericht (Composition)
+#### Befundbericht semistrukturiert (Composition)
 
 **FDPG Profil:** [FDPG_PR_Bildgebung_Semistrukt_Befundbericht](StructureDefinition-fdpg-pr-bildgebung-semistrukt-befundbericht.html) · **MII Elternprofil:** MII_PR_Bildgebung_Semistrukt_Befundbericht
 
@@ -312,7 +312,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Geraet</summary>
+<summary>English translations - Bildgebungsgerät</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -322,7 +322,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Koerperstruktur</summary>
+<summary>English translations - Körperstrukutur</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -357,7 +357,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Radiologische Befundungsprozedur</summary>
+<summary>English translations - radiologische Befundungsprozedur</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -376,7 +376,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Radiologische Beobachtung</summary>
+<summary>English translations - radiologische Beobachtung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -395,7 +395,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Radiologischer Befund</summary>
+<summary>English translations - Befundbericht</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -417,7 +417,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Semistrukt Befundbericht</summary>
+<summary>English translations - Befundbericht semistrukturiert</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|

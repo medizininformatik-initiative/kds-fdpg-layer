@@ -6,9 +6,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 ### Diagnose und Staging
 
-#### Diagnose Primaertumor (Condition)
+#### Onkologische Diagnose Primärtumor (Condition)
 
 **FDPG Profil:** [FDPG_PR_Onko_Diagnose_Primaertumor](StructureDefinition-fdpg-pr-onko-diagnose-primaertumor.html) · **MII Elternprofil:** MII_PR_Onko_Diagnose_Primaertumor
+
+Die Diagnose Primärtumor ist der zentrale Ankerpunkt der onkologischen Dokumentation. Alle weiteren onkologischen Datenpunkte (Staging, Therapie, Verlauf, Metastasen, Rezidive etc.) referenzieren auf diese Diagnose, insofern eine Zuordnung getroffen werden kann. Ein komplett neuartiger Tumor wird als zweite Diagnose Primärtumor dokumentiert, so dass die Datenpunkte eindeutig zugeordnet werden können. Das Profil wird ebenfalls für Fälle mit unklarem Primärtumor (CUP-Syndrom), Polyneoplasien und neoplastischen Erkrankungen ohne klar abgrenzbaren Tumor (z.B. Lymphome, Leukämien) eingesetzt.
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -35,9 +37,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `evidence` | Supporting evidence | Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition. |
 | `note` | Hinweis | Zusätzliche Informationen zur Diagnose als Freitext. |
 
-#### Fruehere Tumorerkrankung (Condition)
+#### Frühere Tumorerkrankung (Condition)
 
 **FDPG Profil:** [FDPG_PR_Onko_Fruehere_Tumorerkrankung](StructureDefinition-fdpg-pr-onko-fruehere-tumorerkrankung.html) · **MII Elternprofil:** MII_PR_Onko_Fruehere_Tumorerkrankung
+
+Zusammenfassende Darstellung früherer Tumorerkrankungen. Die Angaben liegen voraussichtlich nur im Freitext vor und erfüllen damit nicht die Kriterien an eine Diagnose Primärtumor, werden aber zur besseren Einordnung der Krankheitsgeschichte hier geführt.
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -56,7 +60,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `recordedDate` | Date record was first recorded | The recordedDate represents when this particular Condition record was created in the system, which is often a system-generated date. |
 | `note` | Additional information about the Condition | Additional information about the Condition. This is a general notes/comments entry for description of the Condition, its diagnosis and prognosis. |
 
-#### TNM Klassifikation (Observation)
+#### TNM-Klassifikation (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_Klassifikation](StructureDefinition-fdpg-pr-onko-tnm-klassifikation.html) · **MII Elternprofil:** MII_PR_Onko_TNM_Klassifikation
 
@@ -74,7 +78,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 
-#### TNM T Kategorie (Observation)
+#### TNM T-Kategorie (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_T_Kategorie](StructureDefinition-fdpg-pr-onko-tnm-t-kategorie.html) · **MII Elternprofil:** MII_PR_Onko_TNM_T_Kategorie
 
@@ -90,7 +94,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 | `method` | How it was done | Indicates the mechanism used to perform the observation. |
 
-#### TNM N Kategorie (Observation)
+#### TNM N-Kategorie (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_N_Kategorie](StructureDefinition-fdpg-pr-onko-tnm-n-kategorie.html) · **MII Elternprofil:** MII_PR_Onko_TNM_N_Kategorie
 
@@ -107,7 +111,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `method` | How it was done | Indicates the mechanism used to perform the observation. |
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 
-#### TNM M Kategorie (Observation)
+#### TNM M-Kategorie (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_M_Kategorie](StructureDefinition-fdpg-pr-onko-tnm-m-kategorie.html) · **MII Elternprofil:** MII_PR_Onko_TNM_M_Kategorie
 
@@ -125,7 +129,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `method` | How it was done | Indicates the mechanism used to perform the observation. |
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 
-#### TNM L Kategorie (Observation)
+#### TNM L-Kategorie (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_L_Kategorie](StructureDefinition-fdpg-pr-onko-tnm-l-kategorie.html) · **MII Elternprofil:** MII_PR_Onko_TNM_L_Kategorie
 
@@ -141,7 +145,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 | `method` | TNM Version | Gibt an, nach welcher Version des TNM klassifiziert wurde. |
 
-#### TNM V Kategorie (Observation)
+#### TNM V-Kategorie (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_V_Kategorie](StructureDefinition-fdpg-pr-onko-tnm-v-kategorie.html) · **MII Elternprofil:** MII_PR_Onko_TNM_V_Kategorie
 
@@ -157,7 +161,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 | `method` | How it was done | Indicates the mechanism used to perform the observation. |
 
-#### TNM Pn Kategorie (Observation)
+#### TNM Pn-Kategorie (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_Pn_Kategorie](StructureDefinition-fdpg-pr-onko-tnm-pn-kategorie.html) · **MII Elternprofil:** MII_PR_Onko_TNM_Pn_Kategorie
 
@@ -173,7 +177,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 | `method` | How it was done | Indicates the mechanism used to perform the observation. |
 
-#### TNM S Kategorie (Observation)
+#### TNM S-Kategorie (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_S_Kategorie](StructureDefinition-fdpg-pr-onko-tnm-s-kategorie.html) · **MII Elternprofil:** MII_PR_Onko_TNM_S_Kategorie
 
@@ -189,7 +193,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 | `method` | TNM Version | Gibt an, nach welcher Version des TNM klassifiziert wurde. |
 
-#### TNM a Symbol (Observation)
+#### TNM a-Symbol (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_a_Symbol](StructureDefinition-fdpg-pr-onko-tnm-a-symbol.html) · **MII Elternprofil:** MII_PR_Onko_TNM_a_Symbol
 
@@ -204,7 +208,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 |
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### TNM m Symbol (Observation)
+#### TNM m-Symbol (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_m_Symbol](StructureDefinition-fdpg-pr-onko-tnm-m-symbol.html) · **MII Elternprofil:** MII_PR_Onko_TNM_m_Symbol
 
@@ -219,7 +223,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 |
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### TNM r Symbol (Observation)
+#### TNM r-Symbol (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_r_Symbol](StructureDefinition-fdpg-pr-onko-tnm-r-symbol.html) · **MII Elternprofil:** MII_PR_Onko_TNM_r_Symbol
 
@@ -234,7 +238,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 |
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### TNM y Symbol (Observation)
+#### TNM y-Symbol (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_y_Symbol](StructureDefinition-fdpg-pr-onko-tnm-y-symbol.html) · **MII Elternprofil:** MII_PR_Onko_TNM_y_Symbol
 
@@ -265,7 +269,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### Histologie ICDO3 (Observation)
+#### Histologie nach ICD-O-3 (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Histologie_ICDO3](StructureDefinition-fdpg-pr-onko-histologie-icdo3.html) · **MII Elternprofil:** MII_PR_Onko_Histologie_ICDO3
 
@@ -283,6 +287,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 #### Weitere Klassifikationen (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Weitere_Klassifikationen](StructureDefinition-fdpg-pr-onko-weitere-klassifikationen.html) · **MII Elternprofil:** MII_PR_Onko_Weitere_Klassifikationen
+
+In den Krebsregisterdaten werden weitere Klassifikationen neben TNM häufig als Freitext erfasst. Es wurden Anstrengungen unternommen, die Ergebnisse strukturiert darzustellen. Der momentane Datensatz unterstützt die strukturierte Annotation folgender Klassifikationen neben TNM: BINET (CLL), Ann-Arbor (Lymphome), ISS (Multiples Myelom), ISSWM (M. Waldenström), WHO-Grad (ZNS-Tumoren), ELN-Klassifikation (AML/CML), Durie-Salmon (Multiples Myelom), Bismuth (Gallengangskarzinom), Masaoka (Thymome), Mitoserate-GIST, p16, EUTOS-Score (CML), Sanz-Score (APL), IPI (aggressive NHL), FLIPI (follikuläres Lymphom), MIPI (Mantelzelllymphom), Risikogruppen GHSG (Hodgkin-Lymphom) und IPSS (MDS).
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -310,9 +316,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Datum der diagnostischen Sicherung von Fernmetastasen | Gibt an wann die Fernmetastase festgestellt wurde. |
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### Tumorgroesse (Observation)
+#### Tumorgröße (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Tumorgroesse](StructureDefinition-fdpg-pr-onko-tumorgroesse.html) · **MII Elternprofil:** MII_PR_Onko_Tumorgroesse
+
+Die Tumorgröße ist ursprünglich nicht Teil des oBDS, sondern der organspezifischen Module.
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -376,7 +384,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:gene-fusion` | Genfusion | Details zur Genfusion in Blut oder Gewebe mittels molekulargenetischer Methode |
 | `component:detection-limit` | Nachweisgrenze | Die Nachweisgrenze des Laborgeräts |
 
-#### Liste Evidenz Erstdiagnose (List)
+#### Evidenz für Erstdiagnose (List)
 
 **FDPG Profil:** [FDPG_PR_Onko_Liste_Evidenz_Erstdiagnose](StructureDefinition-fdpg-pr-onko-liste-evidenz-erstdiagnose.html) · **MII Elternprofil:** MII_PR_Onko_Liste_Evidenz_Erstdiagnose
 
@@ -392,7 +400,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 ### Lymphknoten
 
-#### Anzahl Befallene Lymphknoten (Observation)
+#### Anzahl der befallenen Lymphknoten (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Anzahl_Befallene_Lymphknoten](StructureDefinition-fdpg-pr-onko-anzahl-befallene-lymphknoten.html) · **MII Elternprofil:** MII_PR_Onko_Anzahl_Befallene_Lymphknoten
 
@@ -408,7 +416,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
 | `value[x]` | Anzahl befallener Lymphknoten | Anzahl befallener Lymphknoten nach 6.8 oBDS 2021 |
 
-#### Anzahl Untersuchte Lymphknoten (Observation)
+#### Anzahl der untersuchten Lymphknoten (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Anzahl_Untersuchte_Lymphknoten](StructureDefinition-fdpg-pr-onko-anzahl-untersuchte-lymphknoten.html) · **MII Elternprofil:** MII_PR_Onko_Anzahl_Untersuchte_Lymphknoten
 
@@ -424,7 +432,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
 | `value[x]` | Anzahl untersuchter Lymphknoten | Anzahl untersuchter Lymphknoten nach 6.7 oBDS 2021 |
 
-#### Anzahl Befallene Sentinel Lymphknoten (Observation)
+#### Anzahl der befallenen Sentinel-Lymphknoten (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Anzahl_Befallene_Sentinel_Lymphknoten](StructureDefinition-fdpg-pr-onko-anzahl-befallene-sentinel-lymphknoten.html) · **MII Elternprofil:** MII_PR_Onko_Anzahl_Befallene_Sentinel_Lymphknoten
 
@@ -440,7 +448,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
 | `value[x]` | Anzahl befallener Sentinel-Lymphknoten | Anzahl befallener Lymphknoten nach 6.10 oBDS 2021 |
 
-#### Anzahl Untersuchte Sentinel Lymphknoten (Observation)
+#### Anzahl der untersuchten Sentinel-Lymphknoten (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Anzahl_Untersuchte_Sentinel_Lymphknoten](StructureDefinition-fdpg-pr-onko-anzahl-untersuchte-sentinel-lymphknoten.html) · **MII Elternprofil:** MII_PR_Onko_Anzahl_Untersuchte_Sentinel_Lymphknoten
 
@@ -458,7 +466,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 ### Therapie
 
-#### Operation (Procedure)
+#### Onkologische Operation (Procedure)
 
 **FDPG Profil:** [FDPG_PR_Onko_Operation](StructureDefinition-fdpg-pr-onko-operation.html) · **MII Elternprofil:** MII_PR_Onko_Operation
 
@@ -577,7 +585,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `outcome` | The result of procedure | The outcome of the procedure - did it resolve the reasons for the procedure being performed? |
 | `note` | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 
-#### Strahlentherapie Bestrahlung Strahlentherapie (Procedure)
+#### Strahlentherapie Bestrahlung (Procedure)
 
 **FDPG Profil:** [FDPG_PR_Onko_Strahlentherapie_Bestrahlung_Strahlentherapie](StructureDefinition-fdpg-pr-onko-strahlentherapie-bestrahlung-strahlentherapie.html) · **MII Elternprofil:** MII_PR_Onko_Strahlentherapie_Bestrahlung_Strahlentherapie
 
@@ -653,7 +661,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### Specimen (Specimen)
+#### Onkologische Probe (Specimen)
 
 **FDPG Profil:** [FDPG_PR_Onko_Specimen](StructureDefinition-fdpg-pr-onko-specimen.html) · **MII Elternprofil:** MII_PR_Onko_Specimen
 
@@ -749,7 +757,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 ### Allgemein
 
-#### Allgemeiner Leistungszustand ECOG (Observation)
+#### Allgemeiner Leistungszustand nach ECOG (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Allgemeiner_Leistungszustand_ECOG](StructureDefinition-fdpg-pr-onko-allgemeiner-leistungszustand-ecog.html) · **MII Elternprofil:** MII_PR_Onko_Allgemeiner_Leistungszustand_ECOG
 
@@ -761,7 +769,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### Allgemeiner Leistungszustand Karnofsky (Observation)
+#### Allgemeiner Leistungszustand nach Karnofsky (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Allgemeiner_Leistungszustand_Karnofsky](StructureDefinition-fdpg-pr-onko-allgemeiner-leistungszustand-karnofsky.html) · **MII Elternprofil:** MII_PR_Onko_Allgemeiner_Leistungszustand_Karnofsky
 
@@ -773,7 +781,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### ASA Klassifikation (Observation)
+#### ASA-Klassifikation (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_ASA_Klassifikation](StructureDefinition-fdpg-pr-onko-asa-klassifikation.html) · **MII Elternprofil:** MII_PR_Onko_ASA_Klassifikation
 
@@ -787,7 +795,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
 | `value[x]` | ASA-Klassifikation | ASA-Klassifikation zur präoperativen Risikobewertung gemäß oBDS KR9 |
 
-#### Befund (DiagnosticReport)
+#### Onkologischer Befund (DiagnosticReport)
 
 **FDPG Profil:** [FDPG_PR_Onko_Befund](StructureDefinition-fdpg-pr-onko-befund.html) · **MII Elternprofil:** MII_PR_Onko_Befund
 
@@ -802,7 +810,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `specimen` | Specimens this report is based on | Details about the specimens on which this diagnostic report is based. |
 | `conclusion` | Befund als Freitext | Befund als Freitext nach 6.11 oBDS 2021 |
 
-#### Nebenwirkung Adverse Event (AdverseEvent)
+#### Nebenwirkung von Strahlentherapie und systemischer Therapie (AdverseEvent)
 
 **FDPG Profil:** [FDPG_PR_Onko_Nebenwirkung_Adverse_Event](StructureDefinition-fdpg-pr-onko-nebenwirkung-adverse-event.html) · **MII Elternprofil:** MII_PR_Onko_Nebenwirkung_Adverse_Event
 
@@ -831,9 +839,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Studienteilnahme Datum | Studienteilnahme Datum gemäß 24.2 oBDS 2021 |
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### Tod (Observation)
+#### Tod bei onkologischer Erkrankung (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Tod](StructureDefinition-fdpg-pr-onko-tod.html) · **MII Elternprofil:** MII_PR_Onko_Tod
+
+Krebsregisterspezifische Darstellung der Todesursache nach ICD-10-GM. Die Todesursache aus dem MII-Personenmodul (Person_Todesursache) beschreibt dagegen die für die Todesursachenstatistik benötigte, international eingesetzte ICD-10-WHO.
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -846,9 +856,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 | `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
 
-#### Verlauf (Observation)
+#### Onkologischer Verlauf (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Verlauf](StructureDefinition-fdpg-pr-onko-verlauf.html) · **MII Elternprofil:** MII_PR_Onko_Verlauf
+
+Dieses Profil beschreibt den Behandlungserfolg und/oder Tumorprogress. Es ist davon auszugehen, dass ein Großteil der Patient:innen ambulant behandelt wird, so dass ggfs. keine strukturierten Verlaufsdaten vorliegen.
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -869,7 +881,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 ### Mamma-Karzinom
 
-#### Mamma Operation (Procedure)
+#### Mamma-Operation (Procedure)
 
 **FDPG Profil:** [FDPG_PR_Onko_Mamma_Operation](StructureDefinition-fdpg-pr-onko-mamma-operation.html) · **MII Elternprofil:** MII_PR_Onko_Mamma_Operation
 
@@ -904,7 +916,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `usedCode:IntraoperativesImaging` | Intraoperatives Präparateröntgen/Sonografie | Bildgebende Verfahren zur intraoperativen Beurteilung des Resektats (Mammografie, Sonografie, etc.) |
 | `usedCode:PraeoperativeMarkierung` | Präoperative Markierung | Modalität der präoperativen Markierung (Drahtmarkierung, Markierungsclips, Seed-Markierung) |
 
-#### Mamma Praeoperative Markierung (Procedure)
+#### Präoperative Markierung Mamma (Procedure)
 
 **FDPG Profil:** [FDPG_PR_Onko_Mamma_Praeoperative_Markierung](StructureDefinition-fdpg-pr-onko-mamma-praeoperative-markierung.html) · **MII Elternprofil:** MII_PR_Onko_Mamma_Praeoperative_Markierung
 
@@ -917,7 +929,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Who the procedure was performed on | The person, animal or group on which the procedure was performed. |
 | `encounter` | Encounter created as part of | The Encounter during which this Procedure was created or performed or to which the creation of this record is tightly associated. |
 
-#### Mamma Sozialdienst (Procedure)
+#### Sozialdienst Mamma (Procedure)
 
 **FDPG Profil:** [FDPG_PR_Onko_Mamma_Sozialdienst](StructureDefinition-fdpg-pr-onko-mamma-sozialdienst.html) · **MII Elternprofil:** MII_PR_Onko_Mamma_Sozialdienst
 
@@ -949,7 +961,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `complication:compl_icd10` | Complication following the procedure | Any complications that occurred during the procedure, or in the immediate post-performance period. These are generally tracked separately from the notes, which will typically describe the procedure... |
 | `note` | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 
-#### Mamma Rezeptorstatus Estrogen (Observation)
+#### Rezeptorstatus Östrogen (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Mamma_Rezeptorstatus_Estrogen](StructureDefinition-fdpg-pr-onko-mamma-rezeptorstatus-estrogen.html) · **MII Elternprofil:** MII_PR_Onko_Mamma_Rezeptorstatus_Estrogen
 
@@ -965,7 +977,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:AnteilPositiveZellen` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:Faerbeintensitaet` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 
-#### Mamma Rezeptorstatus Progesteron (Observation)
+#### Rezeptorstatus Progesteron (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Mamma_Rezeptorstatus_Progesteron](StructureDefinition-fdpg-pr-onko-mamma-rezeptorstatus-progesteron.html) · **MII Elternprofil:** MII_PR_Onko_Mamma_Rezeptorstatus_Progesteron
 
@@ -981,9 +993,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:AnteilPositiveZellen` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:Faerbeintensitaet` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 
-#### Mamma Her2neu Status (Observation)
+#### HER2/neu-Status (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Mamma_Her2neu_Status](StructureDefinition-fdpg-pr-onko-mamma-her2neu-status.html) · **MII Elternprofil:** MII_PR_Onko_Mamma_Her2neu_Status
+
+Bei diesem Profil handelt es sich um die klinische Interpretation des HER2-Status. Die zugrundeliegenden immunhistochemischen (IHC) und In-Situ-Hybridisierungs-Datenpunkte sind im Modul Molekulares Tumorboard modelliert.
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---------|----------------------|-----------------|
@@ -997,7 +1011,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:IHCScore` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:ISHResult` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 
-#### Mamma Menopausenstatus (Observation)
+#### Menopausenstatus (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Mamma_Menopausenstatus](StructureDefinition-fdpg-pr-onko-mamma-menopause-status.html) · **MII Elternprofil:** MII_PR_Onko_Mamma_Menopausenstatus
 
@@ -1012,7 +1026,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 ### Prostata-Karzinom
 
-#### Prostata Operation (Procedure)
+#### Prostata-Operation (Procedure)
 
 **FDPG Profil:** [FDPG_PR_Onko_Prostata_Operation](StructureDefinition-fdpg-pr-onko-prostata-operation.html) · **MII Elternprofil:** MII_PR_Onko_Prostata_Operation
 
@@ -1043,7 +1057,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `complication:compl_icd10` | Complication following the procedure | Any complications that occurred during the procedure, or in the immediate post-performance period. These are generally tracked separately from the notes, which will typically describe the procedure... |
 | `note` | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 
-#### Prostata PSA (Observation)
+#### PSA-Wert (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Prostata_PSA](StructureDefinition-fdpg-pr-onko-prostate-psa.html) · **MII Elternprofil:** MII_PR_Onko_Prostata_PSA
 
@@ -1070,7 +1084,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Datum der Probenentnahme | Datum der Probenentnahme der Prostata-Biopise oder des Prostata-Exzisats |
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### Prostata Gleason Pattern (Observation)
+#### Prostata Gleason-Muster (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Prostata_Gleason_Pattern](StructureDefinition-fdpg-pr-onko-prostate-gleason-patterns.html) · **MII Elternprofil:** MII_PR_Onko_Prostata_Gleason_Pattern
 
@@ -1099,7 +1113,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Datum der Probenentnahme | Datum der Probenentnahme der Prostata-Biopise oder des Prostata-Exzisats |
 | `value[x]` | Anzahl Stanzen | Anzahl Stanzen Prostata-Biopsie |
 
-#### Prostata Anzahl Positive Stanzen (Observation)
+#### Prostata Anzahl positiver Stanzen (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Prostata_Anzahl_Positive_Stanzen](StructureDefinition-fdpg-pr-onko-prostate-anzahl-positive-stanzen.html) · **MII Elternprofil:** MII_PR_Onko_Prostata_Anzahl_Positive_Stanzen
 
@@ -1113,7 +1127,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Datum der Probenentnahme | Datum der Probenentnahme der Prostata-Biopise oder des Prostata-Exzisats |
 | `value[x]` | Primäres Gleason-Pattern | Primäres Gleason-Pattern einer Prostata-Biopsie oder Operation |
 
-#### Prostata CA Befall Stanze (Observation)
+#### Ca-Befall in Stanze (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Prostata_CA_Befall_Stanze](StructureDefinition-fdpg-pr-onko-prostate-ca-befall-stanze.html) · **MII Elternprofil:** MII_PR_Onko_Prostata_CA_Befall_Stanze
 
@@ -1127,7 +1141,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Prozentualer Karzinombefall | Prozentualer Karzinombefall der am stärksten befallenen Stanze einer Prostata-Biopsie |
 | `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
 
-#### Prostata Clavien Dindo (Observation)
+#### Clavien-Dindo-Klassifikation (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Prostata_Clavien_Dindo](StructureDefinition-fdpg-pr-onko-prostate-clavien-dindo.html) · **MII Elternprofil:** MII_PR_Onko_Prostata_Clavien_Dindo
 
@@ -1176,7 +1190,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `complication:compl_icd10` | Complication following the procedure | Any complications that occurred during the procedure, or in the immediate post-performance period. These are generally tracked separately from the notes, which will typically describe the procedure... |
 | `note` | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 
-#### Melanom Breslow Tiefe (Observation)
+#### Melanom Breslow-Dicke (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Melanom_Breslow_Tiefe](StructureDefinition-fdpg-pr-onko-melanom-breslow-tiefe.html) · **MII Elternprofil:** MII_PR_Onko_Melanom_Breslow_Tiefe
 
@@ -1192,7 +1206,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Grund für fehlende Messung | Grund warum die Breslow-Tiefe nicht bestimmbar war (z.B. ulzeriert, nicht messbar) |
 | `method` | How it was done | Indicates the mechanism used to perform the observation. |
 
-#### Melanom LDH (Observation)
+#### Melanom LDH-Wert (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Melanom_LDH](StructureDefinition-fdpg-pr-onko-melanom-ldh.html) · **MII Elternprofil:** MII_PR_Onko_Melanom_LDH
 
@@ -1274,7 +1288,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `note` | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 | `usedCode` | Coded items used during the procedure | Identifies coded items that were used as part of the procedure. |
 
-#### KRK Stoma Markierung (Procedure)
+#### KRK Stoma-Markierung (Procedure)
 
 **FDPG Profil:** [FDPG_PR_Onko_KRK_Stoma_Markierung](StructureDefinition-fdpg-pr-onko-krk-stoma-markierung.html) · **MII Elternprofil:** MII_PR_Onko_KRK_Stoma_Markierung
 
@@ -1299,7 +1313,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `bodySite` | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `note` | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 
-#### KRK Specimen (Specimen)
+#### KRK Probe (Specimen)
 
 **FDPG Profil:** [FDPG_PR_Onko_KRK_Specimen](StructureDefinition-fdpg-pr-onko-krk-specimen.html) · **MII Elternprofil:** MII_PR_Onko_KRK_Specimen
 
@@ -1311,7 +1325,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `collection` | Collection details | Details concerning the specimen collection. |
 | `condition` | State of the specimen | A mode or state of being that describes the nature of the specimen. |
 
-#### KRK Abstand Aboral (Observation)
+#### Abstand zum aboralen Resektionsrand (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_KRK_Abstand_Aboral](StructureDefinition-fdpg-pr-onko-krk-abstand-aboral.html) · **MII Elternprofil:** MII_PR_Onko_KRK_Abstand_Aboral
 
@@ -1325,7 +1339,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Datum der Untersuchung | Datum der Untersuchung |
 | `value[x]` | Minimaler Abstand Tumorrand aboral | Minimaler Abstand des aboralen Tumorrandes zum aboralen Resektionsrand in mm. gemäß oBDS 2021 KR2 |
 
-#### KRK Abstand Anokutan (Observation)
+#### Abstand zur anokutanen Grenze (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_KRK_Abstand_Anokutan](StructureDefinition-fdpg-pr-onko-krk-abstand-anokutan.html) · **MII Elternprofil:** MII_PR_Onko_KRK_Abstand_Anokutan
 
@@ -1339,7 +1353,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Datum der Untersuchung | Datum der Untersuchung |
 | `value[x]` | Abstand des Tumorunterrandes zur Anokutanlinie | Abstand des Tumorunterrandes zur Anokutanlinie in cm nach oBDS 2021 KR1 |
 
-#### KRK Abstand Circumferelle Resektionsebene (Observation)
+#### Abstand zur circumferellen Resektionsebene (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_KRK_Abstand_Circumferelle_Resektionsebene](StructureDefinition-fdpg-pr-onko-krk-abstand-circumferelle-resektionsebene.html) · **MII Elternprofil:** MII_PR_Onko_KRK_Abstand_Circumferelle_Resektionsebene
 
@@ -1367,7 +1381,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Datum der Bewertung | Datum der Bewertung der Anastomoseninsuffizienz |
 | `value[x]` | Anastomoseninsuffizienz Grad | Grad der Anastomoseninsuffizienz nach oBDS |
 
-#### KRK MRT Mesorektale Faszie (Observation)
+#### KRK MRT/CT Abstand mesorektale Faszie (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_KRK_MRT_Mesorektale_Faszie](StructureDefinition-fdpg-pr-onko-krk-mrt-mesorektale-faszie.html) · **MII Elternprofil:** MII_PR_Onko_KRK_MRT_Mesorektale_Faszie
 
@@ -1388,7 +1402,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 ## English Translations
 
 <details>
-<summary>English translations - Diagnose Primaertumor</summary>
+<summary>English translations - Onkologische Diagnose Primärtumor</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1405,7 +1419,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Operation</summary>
+<summary>English translations - Onkologische Operation</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1483,7 +1497,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Strahlentherapie Bestrahlung Strahlentherapie</summary>
+<summary>English translations - Strahlentherapie Bestrahlung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1540,7 +1554,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Mamma Operation</summary>
+<summary>English translations - Mamma-Operation</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1558,7 +1572,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Mamma Sozialdienst</summary>
+<summary>English translations - Sozialdienst Mamma</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1576,7 +1590,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Prostata Operation</summary>
+<summary>English translations - Prostata-Operation</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1627,7 +1641,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - KRK Stoma Markierung</summary>
+<summary>English translations - KRK Stoma-Markierung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|

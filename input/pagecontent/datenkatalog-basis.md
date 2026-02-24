@@ -8,7 +8,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 ### Person
 
-#### Patient (Patient)
+#### Patient / Patientin (Patient)
 
 **FDPG Profil:** [FDPG_PR_Person_Patient](StructureDefinition-fdpg-pr-person-patient.html) · **MII Elternprofil:** MII_PR_Person_Patient
 
@@ -31,7 +31,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `address:Postfach` | Postfach | Eine Postfachanschrift der Patientin oder des Patienten |
 | `link` | Verweis | Verweis auf eine andere Patientenressource, die die gleiche tatsächliche Person betrifft |
 
-#### PatientPseudonymisiert (Patient)
+#### Patient / Patientin pseudonymisiert (Patient)
 
 **FDPG Profil:** [FDPG_PR_Person_PatientPseudonymisiert](StructureDefinition-fdpg-pr-person-patient-pseudonymisiert.html) · **MII Elternprofil:** MII_PR_Person_PatientPseudonymisiert
 
@@ -90,7 +90,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 ### Diagnose
 
-#### Condition (Condition)
+#### Diagnose (Condition)
 
 **FDPG Profil:** [FDPG_PR_Diagnose_Condition](StructureDefinition-fdpg-pr-diagnose-condition.html) · **MII Elternprofil:** MII_PR_Diagnose_Condition
 
@@ -117,7 +117,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 ### Prozedur
 
-#### Procedure (Procedure)
+#### Prozedur (Procedure)
 
 **FDPG Profil:** [FDPG_PR_Prozedur_Procedure](StructureDefinition-fdpg-pr-prozedur-procedure.html) · **MII Elternprofil:** MII_PR_Prozedur_Procedure
 
@@ -141,7 +141,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 ### Fall
 
-#### KontaktGesundheitseinrichtung (Encounter)
+#### Fall - Kontakt mit einer Gesundheitseinrichtung (Encounter)
 
 **FDPG Profil:** [FDPG_PR_Fall_KontaktGesundheitseinrichtung](StructureDefinition-fdpg-pr-fall-kontakt-gesundheitseinrichtung.html) · **MII Elternprofil:** MII_PR_Fall_KontaktGesundheitseinrichtung
 
@@ -172,7 +172,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 ## English Translations
 
 <details>
-<summary>English translations - Patient</summary>
+<summary>English translations - Patient / Patientin</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -193,7 +193,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - PatientPseudonymisiert</summary>
+<summary>English translations - Patient / Patientin pseudonymisiert</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -238,7 +238,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Condition</summary>
+<summary>English translations - Diagnose</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -255,7 +255,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Procedure</summary>
+<summary>English translations - Prozedur</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -272,7 +272,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - KontaktGesundheitseinrichtung</summary>
+<summary>English translations - Fall - Kontakt mit einer Gesundheitseinrichtung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|

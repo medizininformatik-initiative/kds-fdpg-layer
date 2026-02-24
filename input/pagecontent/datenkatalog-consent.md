@@ -4,7 +4,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.consent](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.consent/2026.0.1-rc-1)
 
-#### DocumentReference (DocumentReference)
+#### Einwilligungsdokument (DocumentReference)
 
 **FDPG Profil:** [FDPG_PR_Consent_DocumentReference](StructureDefinition-fdpg-pr-consent-documentreference.html) · **MII Elternprofil:** MII_PR_Consent_DocumentReference
 
@@ -37,7 +37,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `policyRule` | Regulation that this consents to | A reference to the specific base computable regulation or policy. |
 | `provision` | Constraints to the base Consent.policyRule | An exception to the base policy of this consent. An exception can be an addition or removal of access permissions. |
 
-#### Provenance (Provenance)
+#### Einwilligungsherkunft (Provenance)
 
 **FDPG Profil:** [FDPG_PR_Consent_Provenance](StructureDefinition-fdpg-pr-consent-provenance.html) · **MII Elternprofil:** MII_PR_Consent_Provenance
 

@@ -73,7 +73,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 | `component` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 
-#### Koerpergewicht (Observation)
+#### Körpergewicht (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Koerpergewicht](StructureDefinition-fdpg-pr-icu-muv-koerpergewicht.html) · **MII Elternprofil:** MII_PR_ICU_Koerpergewicht
 
@@ -91,7 +91,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]:valueQuantity` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 | `component` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 
-#### Koerpergroesse (Observation)
+#### Körpergröße (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Koerpergroesse](StructureDefinition-fdpg-pr-icu-muv-koerpergroesse.html) · **MII Elternprofil:** MII_PR_ICU_Koerpergroesse
 
@@ -152,7 +152,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `bodySite` | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `note` | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 
-#### Parameter Von Beatmung (Observation)
+#### Parameter von Beatmung (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Parameter_Von_Beatmung](StructureDefinition-fdpg-pr-vent-icu-parameter-von-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Parameter_Von_Beatmung
 
@@ -171,7 +171,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Devicemetric Eingestellte Gemessene Parameter Beatmung (DeviceMetric)
+#### Gerätemetrik - Eingestellte/gemessene Parameter Beatmung (DeviceMetric)
 
 **FDPG Profil:** [FDPG_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung](StructureDefinition-fdpg-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung
 
@@ -181,7 +181,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `source` | Describes the link to the source Device | Describes the link to the Device that this DeviceMetric belongs to and that contains administrative device information such as manufacturer, serial number, etc. |
 | `category` | measurement \| setting \| calculation \| unspecified | Indicates the category of the observation generation process. A DeviceMetric can be for example a setting, measurement, or calculation. |
 
-#### Atemwegsdruck Bei Null Expiratorischem Gasfluss (Observation)
+#### Atemwegsdruck bei null expiratorischem Gasfluss (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss](StructureDefinition-fdpg-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss
 
@@ -200,7 +200,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss (Observation)
+#### Atemwegsdruck bei mittlerem expiratorischem Gasfluss (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss](StructureDefinition-fdpg-pr-icu-vent-atemwegsdruck-mittl-expirat-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss
 
@@ -219,7 +219,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Atemzugvolumen Einstellung (Observation)
+#### Atemzugvolumen - Einstellung (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Atemzugvolumen_Einstellung](StructureDefinition-fdpg-pr-icu-vent-atemzugvolumen-einstellung.html) · **MII Elternprofil:** MII_PR_ICU_Atemzugvolumen_Einstellung
 
@@ -238,7 +238,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Atemzugvolumen Waehrend Beatmung (Observation)
+#### Atemzugvolumen während Beatmung (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Atemzugvolumen_Waehrend_Beatmung](StructureDefinition-fdpg-pr-icu-vent-atemzugvolumen-waehrend-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Atemzugvolumen_Waehrend_Beatmung
 
@@ -257,7 +257,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Beatmungsvolumen Pro Minute Maschineller Beatmung (Observation)
+#### Beatmungsvolumen pro Minute maschineller Beatmung (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung](StructureDefinition-fdpg-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung
 
@@ -276,7 +276,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Beatmungszeit Hohem Druck (Observation)
+#### Beatmungszeit bei hohem Druck (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Beatmungszeit_Hohem_Druck](StructureDefinition-fdpg-pr-icu-vent-beatmungszeit-hohem-druck.html) · **MII Elternprofil:** MII_PR_ICU_Beatmungszeit_Hohem_Druck
 
@@ -295,7 +295,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Beatmungszeit Niedrigem Druck (Observation)
+#### Beatmungszeit bei niedrigem Druck (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Beatmungszeit_Niedrigem_Druck](StructureDefinition-fdpg-pr-icu-vent-beatmungszeit-niedrigem-druck.html) · **MII Elternprofil:** MII_PR_ICU_Beatmungszeit_Niedrigem_Druck
 
@@ -314,7 +314,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Dynamische Kompliance (Observation)
+#### Dynamische Compliance (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Dynamische_Kompliance](StructureDefinition-fdpg-pr-vent-icu-dynamische-kompliance.html) · **MII Elternprofil:** MII_PR_ICU_Dynamische_Kompliance
 
@@ -352,7 +352,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Eingestellter Inspiratorischer Gasfluss (Observation)
+#### Eingestellter inspiratorischer Gasfluss (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Eingestellter_Inspiratorischer_Gasfluss](StructureDefinition-fdpg-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Eingestellter_Inspiratorischer_Gasfluss
 
@@ -470,7 +470,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Horowitz In Arteriellem Blut (Observation)
+#### Horowitz-Index in arteriellem Blut (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Horowitz_In_Arteriellem_Blut](StructureDefinition-fdpg-pr-icu-vent-horowitz-in-arteriellem-blut.html) · **MII Elternprofil:** MII_PR_ICU_Horowitz_In_Arteriellem_Blut
 
@@ -490,7 +490,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Inspiratorische Sauerstofffraktion Gemessen (Observation)
+#### Inspiratorische Sauerstofffraktion (gemessen\ (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen](StructureDefinition-fdpg-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen.html) · **MII Elternprofil:** MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen
 
@@ -549,7 +549,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Mechanische Atemfrequenz Beatmet (Observation)
+#### Mechanische Atemfrequenz (beatmet\ (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Mechanische_Atemfrequenz_Beatmet](StructureDefinition-fdpg-pr-icu-vent-mechanische-atemfrequenz-beatmet.html) · **MII Elternprofil:** MII_PR_ICU_Mechanische_Atemfrequenz_Beatmet
 
@@ -587,7 +587,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Positiv Endexpiratorischer Druck (Observation)
+#### Positiv-endexpiratorischer Druck (PEEP\ (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Positiv_Endexpiratorischer_Druck](StructureDefinition-fdpg-pr-icu-vent-positiv-endexpiratorischer-druck.html) · **MII Elternprofil:** MII_PR_ICU_Positiv_Endexpiratorischer_Druck
 
@@ -606,7 +606,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Spontane Atemfrequenz Beatmet (Observation)
+#### Spontane Atemfrequenz (beatmet\ (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Spontane_Atemfrequenz_Beatmet](StructureDefinition-fdpg-pr-icu-vent-spontane-atemfrequenz-beatmet.html) · **MII Elternprofil:** MII_PR_ICU_Spontane_Atemfrequenz_Beatmet
 
@@ -625,7 +625,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Spontane Mechanische Atemfrequenz Beatmet (Observation)
+#### Spontane + mechanische Atemfrequenz (beatmet\ (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Spontane_Mechanische_Atemfrequenz_Beatmet](StructureDefinition-fdpg-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet.html) · **MII Elternprofil:** MII_PR_ICU_Spontane_Mechanische_Atemfrequenz_Beatmet
 
@@ -663,7 +663,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Spontanes Plus Mechanisches Atemzugvolumen (Observation)
+#### Spontanes + mechanisches Atemzugvolumen (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Spontanes_Plus_Mechanisches_Atemzugvolumen](StructureDefinition-fdpg-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen.html) · **MII Elternprofil:** MII_PR_ICU_Spontanes_Plus_Mechanisches_Atemzugvolumen
 
@@ -682,7 +682,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Unterstuezungsdruck Beatmung (Observation)
+#### Unterstützungsdruck Beatmung (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Unterstuezungsdruck_Beatmung](StructureDefinition-fdpg-pr-icu-vent-unterstuezungsdruck-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Unterstuezungsdruck_Beatmung
 
@@ -701,7 +701,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Ein Ausatmung (Observation)
+#### Zeitverhältnis Ein-/Ausatmung (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Vent_Zeitverhaeltnis_Ein_Ausatmung](StructureDefinition-fdpg-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.html) · **MII Elternprofil:** MIIPR_ICU_Zeitverhaeltnis_Ein_Ausatmung
 
@@ -745,7 +745,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `bodySite` | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `note` | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 
-#### Parameter Von Extrakorporalen Verfahren (Observation)
+#### Parameter von extrakorporalen Verfahren (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren](StructureDefinition-fdpg-pr-icu-ect-parameter-von-extrakorporalen-verfahren.html) · **MII Elternprofil:** MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
 
@@ -762,7 +762,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Devicemetric Eingestellte Gemessene Parameter Extrakorporale Verfahren (DeviceMetric)
+#### Gerätemetrik - Eingestellte/gemessene Parameter extrakorporale Verfahren (DeviceMetric)
 
 **FDPG Profil:** [FDPG_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren](StructureDefinition-fdpg-pr-icu-ect-dm-eingest-param-extrakorporale-verfahren.html) · **MII Elternprofil:** MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren
 
@@ -789,7 +789,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Blutfluss Cardiovasculaeres Geraet (Observation)
+#### Blutfluss - Kardiovaskuläres Gerät (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet](StructureDefinition-fdpg-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.html) · **MII Elternprofil:** MII_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet
 
@@ -806,7 +806,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Blutfluss Extrakorporaler Gasaustausch (Observation)
+#### Blutfluss - Extrakorporaler Gasaustausch (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Blutfluss_Extrakorporaler_Gasaustausch](StructureDefinition-fdpg-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.html) · **MII Elternprofil:** MII_PR_ICU_Blutfluss_Extrakorporaler_Gasaustausch
 
@@ -823,7 +823,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Blutflussindex Extrakorporaler Gasaustausch (Observation)
+#### Blutflussindex - Extrakorporaler Gasaustausch (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Blutflussindex_Extrakorporaler_Gasaustausch](StructureDefinition-fdpg-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.html) · **MII Elternprofil:** MII_PR_ICU_Blutflussindex_Extrakorporaler_Gasaustausch
 
@@ -840,7 +840,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Dauer Extrakorporaler Gasaustausch (Observation)
+#### Dauer extrakorporaler Gasaustausch (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Dauer_Extrakorporaler_Gasaustausch](StructureDefinition-fdpg-pr-icu-ect-dauer-extrakorporaler-gasaustausch.html) · **MII Elternprofil:** MII_PR_ICU_Dauer_Extrakorporaler_Gasaustausch
 
@@ -857,7 +857,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Dauer Haemodialysesitzung (Observation)
+#### Dauer der Hämodialysesitzung (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Dauer_Haemodialysesitzung](StructureDefinition-fdpg-pr-icu-ect-dauer-haemodialysesitzung.html) · **MII Elternprofil:** MII_PR_ICU_Dauer_Haemodialysesitzung
 
@@ -891,7 +891,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Haemodialyse Blutfluss (Observation)
+#### Hämodialyse - Blutfluss (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Haemodialyse_Blutfluss](StructureDefinition-fdpg-pr-icu-ect-haemodialyse-blutfluss.html) · **MII Elternprofil:** MII_PR_ICU_Haemodialyse_Blutfluss
 
@@ -908,7 +908,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Ionisiertes Kalzium Nierenersatzverfahren (Observation)
+#### Ionisiertes Kalzium - Nierenersatzverfahren (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren](StructureDefinition-fdpg-pr-icu-ect-onisiertes-kalzium-nierenersatzverfahren.html) · **MII Elternprofil:** MII_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren
 
@@ -959,7 +959,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 
-#### Venoeser Druck (Observation)
+#### Venöser Druck (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Venoeser_Druck](StructureDefinition-fdpg-pr-icu-ect-venoeser-druck.html) · **MII Elternprofil:** MII_PR_ICU_Venoeser_Druck
 
@@ -1000,7 +1000,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Gesamte Tages Bilanz (Observation)
+#### Bilanz - Gesamte Tagesbilanz (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Gesamte_Tages_Bilanz](StructureDefinition-fdpg-pr-icu-bilanz-gesamte-tages-bilanz.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Gesamte_Tages_Bilanz
 
@@ -1022,7 +1022,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Gesamte Einfuhr (Observation)
+#### Bilanz - Gesamte Einfuhr (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Gesamte_Einfuhr](StructureDefinition-fdpg-pr-icu-bilanz-gesamte-einfuhr.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Gesamte_Einfuhr
 
@@ -1044,7 +1044,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Gesamte Ausfuhr (Observation)
+#### Bilanz - Gesamte Ausfuhr (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Gesamte_Ausfuhr](StructureDefinition-fdpg-pr-icu-bilanz-gesamte-ausfuhr.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Gesamte_Ausfuhr
 
@@ -1066,7 +1066,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Einfuhr Fluessigkeit Gesamt (Observation)
+#### Bilanz - Einfuhr Flüssigkeit gesamt (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt](StructureDefinition-fdpg-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt
 
@@ -1088,7 +1088,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Einfuhr Enterale Fluessigkeit (Observation)
+#### Bilanz - Einfuhr enterale Flüssigkeit (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit](StructureDefinition-fdpg-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit
 
@@ -1110,7 +1110,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Einfuhr Oraler Fluessigkeit (Observation)
+#### Bilanz - Einfuhr oraler Flüssigkeit (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Einfuhr_Oraler_Fluessigkeit](StructureDefinition-fdpg-pr-icu-bilanz-einfuhr-oraler-fluessigkeit.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Einfuhr_Oraler_Fluessigkeit
 
@@ -1132,7 +1132,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Ausfuhr Fluessigkeit Gesamt (Observation)
+#### Bilanz - Ausfuhr Flüssigkeit gesamt (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt
 
@@ -1154,7 +1154,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Ausfuhr Urin (Observation)
+#### Bilanz - Ausfuhr Urin (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Urin](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-urin.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Urin
 
@@ -1176,7 +1176,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Ausfuhr Stuhlgang (Observation)
+#### Bilanz - Ausfuhr Stuhlgang (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Stuhlgang](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-stuhlgang.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Stuhlgang
 
@@ -1198,7 +1198,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Ausfuhr Magensonde (Observation)
+#### Bilanz - Ausfuhr Magensonde (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Magensonde](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-magensonde.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Magensonde
 
@@ -1220,7 +1220,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Ausfuhr Gallenfluessigkeit (Observation)
+#### Bilanz - Ausfuhr Gallenflüssigkeit (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit
 
@@ -1242,7 +1242,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Ausfuhr Gallengang (Observation)
+#### Bilanz - Ausfuhr Gallengang (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Gallengang](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-gallengang.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Gallengang
 
@@ -1264,7 +1264,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Ausfuhr Drainage Generisch (Observation)
+#### Bilanz - Ausfuhr Drainage (generisch\ (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-drainage-generisch.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch
 
@@ -1286,7 +1286,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Ausfuhr Opdrainage (Observation)
+#### Bilanz - Ausfuhr OP-Drainage (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Opdrainage](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-opdrainage.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Opdrainage
 
@@ -1308,7 +1308,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Ausfuhr Pankreasdrainage (Observation)
+#### Bilanz - Ausfuhr Pankreasdrainage (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-pankreasdrainage.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage
 
@@ -1330,7 +1330,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Ausfuhr Wunddrainage (Observation)
+#### Bilanz - Ausfuhr Wunddrainage (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Wunddrainage](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-wunddrainage.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage
 
@@ -1352,7 +1352,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Blutverlust (Observation)
+#### Bilanz - Blutverlust (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Blutverlust](StructureDefinition-fdpg-pr-icu-bilanz-blutverlust.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Blutverlust
 
@@ -1374,7 +1374,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | (Measurement) Device | The device used to generate the observation data. |
 | `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
 
-#### Bilanz Abnahme Haemofiltration Einzelmesswerte (Observation)
+#### Bilanz - Abnahme Hämofiltration (Einzelmesswerte\ (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Abnahme_Haemofiltration_Einzelmesswerte](StructureDefinition-fdpg-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Abnahme_Haemofiltration_Einzelmesswerte
 
@@ -1398,7 +1398,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 ### Geraete
 
-#### Device (Device)
+#### Gerät (Device)
 
 **FDPG Profil:** [FDPG_PR_ICU_Device](StructureDefinition-fdpg-pr-icu-device.html) · **MII Elternprofil:** MII_PR_ICU_Device
 

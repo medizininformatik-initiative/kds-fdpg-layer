@@ -240,7 +240,8 @@ def md_escape(text: str) -> str:
 def parse_fsh_profiles(module_name: str) -> list[dict]:
     """Parse FSH files in the module directory and return profile metadata.
 
-    Returns list of dicts with keys: fdpg_name, parent_name, fdpg_id
+    Returns list of dicts with keys: fdpg_name, parent_name, fdpg_id, description,
+    element_comments (dict mapping element path to comment text).
     """
     module_dir = FSH_DIR / module_name
     if not module_dir.is_dir():
@@ -257,12 +258,42 @@ def parse_fsh_profiles(module_name: str) -> list[dict]:
         parent_match = re.search(r"^Parent:\s*(\S+)", content, re.MULTILINE)
         id_match = re.search(r"^Id:\s*(\S+)", content, re.MULTILINE)
 
-        if profile_match and parent_match and id_match:
-            profiles.append({
-                "fdpg_name": profile_match.group(1),
-                "parent_name": parent_match.group(1),
-                "fdpg_id": id_match.group(1),
-            })
+        if not (profile_match and parent_match and id_match):
+            continue
+
+        # Extract Description (may be multi-line in quotes)
+        desc_match = re.search(
+            r'^Description:\s*"((?:[^"\\]|\\.)*)"\s*$',
+            content, re.MULTILINE | re.DOTALL,
+        )
+        description = desc_match.group(1).replace('\\"', '"') if desc_match else ""
+
+        # Extract German title translation: insert Translation(^title, de-DE, ...)
+        title_de_match = re.search(
+            r'insert\s+Translation\(\^title,\s*de-DE,\s*(.+?)\)',
+            content,
+        )
+        title_de = title_de_match.group(1).strip() if title_de_match else ""
+
+        # Extract element-level ^comment rules
+        # Matches: * some.path ^comment = "..."
+        element_comments: dict[str, str] = {}
+        for m in re.finditer(
+            r'^\*\s+([\w.\[\]:]+)\s+\^comment\s*=\s*"((?:[^"\\]|\\.)*)"',
+            content, re.MULTILINE,
+        ):
+            elem_path = m.group(1)
+            comment_text = m.group(2).replace('\\"', '"')
+            element_comments[elem_path] = comment_text
+
+        profiles.append({
+            "fdpg_name": profile_match.group(1),
+            "parent_name": parent_match.group(1),
+            "fdpg_id": id_match.group(1),
+            "description": description,
+            "title_de": title_de,
+            "element_comments": element_comments,
+        })
 
     return profiles
 
@@ -378,20 +409,35 @@ def generate_profile_section(
     fdpg_name = profile_info["fdpg_name"]
     fdpg_id = profile_info["fdpg_id"]
     parent_name = profile_info["parent_name"]
+    description = profile_info.get("description", "")
+    title_de = profile_info.get("title_de", "")
+    element_comments = profile_info.get("element_comments", {})
 
     german_lines = []
     english_lines = []
 
+    display_name = title_de if title_de else _profile_display_name(parent_name)
     german_lines.append(
-        f"#### {_profile_display_name(parent_name)} ({resource_type})\n"
+        f"#### {display_name} ({resource_type})\n"
     )
     german_lines.append(
         f"**FDPG Profil:** [{fdpg_name}](StructureDefinition-{fdpg_id}.html)"
         f" · **MII Elternprofil:** {parent_name}\n"
     )
 
-    german_lines.append("| Element | Kurzbeschreibung (de) | Definition (de) |")
-    german_lines.append("|---------|----------------------|-----------------|")
+    # Display profile description if available (skip generic placeholders)
+    if description and not description.startswith("FDPG Profil -"):
+        german_lines.append(f"{description}\n")
+
+    # Determine whether to include the Kommentar column
+    has_any_comment = bool(element_comments)
+
+    if has_any_comment:
+        german_lines.append("| Element | Kurzbeschreibung (de) | Definition (de) | Kommentar |")
+        german_lines.append("|---------|----------------------|-----------------|-----------|")
+    else:
+        german_lines.append("| Element | Kurzbeschreibung (de) | Definition (de) |")
+        german_lines.append("|---------|----------------------|-----------------|")
 
     has_english = False
     english_rows = []
@@ -409,9 +455,17 @@ def generate_profile_section(
         if not de_def:
             de_def = elem.get("definition", "")
 
-        german_lines.append(
-            f"| `{display_path}` | {md_escape(de_short)} | {md_escape(de_def)} |"
-        )
+        # Look up element comment from FSH
+        comment = element_comments.get(display_path, "")
+
+        if has_any_comment:
+            german_lines.append(
+                f"| `{display_path}` | {md_escape(de_short)} | {md_escape(de_def)} | {md_escape(comment)} |"
+            )
+        else:
+            german_lines.append(
+                f"| `{display_path}` | {md_escape(de_short)} | {md_escape(de_def)} |"
+            )
 
         # English
         en_short = extract_translation(elem, "short", "en-US")
@@ -430,7 +484,7 @@ def generate_profile_section(
     english_md = ""
     if has_english:
         english_lines.append("<details>")
-        english_lines.append(f"<summary>English translations - {_profile_display_name(parent_name)}</summary>\n")
+        english_lines.append(f"<summary>English translations - {display_name}</summary>\n")
         english_lines.append("| Element | Short (en) | Definition (en) |")
         english_lines.append("|---------|-----------|-----------------|")
         english_lines.extend(english_rows)

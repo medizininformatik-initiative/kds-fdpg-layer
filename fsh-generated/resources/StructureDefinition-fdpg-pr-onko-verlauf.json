@@ -49,7 +49,7 @@
       ]
     }
   ],
-  "description": "FDPG Profil - MII PR Onkologie Verlauf",
+  "description": "Dieses Profil beschreibt den Behandlungserfolg und/oder Tumorprogress. Es ist davon auszugehen, dass ein Großteil der Patient:innen ambulant behandelt wird, so dass ggfs. keine strukturierten Verlaufsdaten vorliegen.",
   "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
   "fhirVersion": "4.0.1",
   "kind": "resource",

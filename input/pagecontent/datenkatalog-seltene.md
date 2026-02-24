@@ -23,7 +23,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]:effectivePeriod` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### Bodymassindex (Observation)
+#### Body-Mass-Index (BMI\ (Observation)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Bodymassindex](StructureDefinition-fdpg-pr-seltene-bodymassindex.html) · **MII Elternprofil:** MII_PR_Seltene_Bodymassindex
 
@@ -35,7 +35,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### ClinicalDiagnosis (Condition)
+#### Klinische Diagnose (Condition)
 
 **FDPG Profil:** [FDPG_PR_Seltene_ClinicalDiagnosis](StructureDefinition-fdpg-pr-seltene-clinical-diagnosis.html) · **MII Elternprofil:** MII_PR_Seltene_ClinicalDiagnosis
 
@@ -67,7 +67,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `evidence` | Supporting evidence | Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition. |
 | `note` | Hinweis | Zusätzliche Informationen zur Diagnose als Freitext. |
 
-#### ClinicalImpression (ClinicalImpression)
+#### Klinische Beurteilung (ClinicalImpression)
 
 **FDPG Profil:** [FDPG_PR_Seltene_ClinicalImpression](StructureDefinition-fdpg-pr-seltene-clinical-impression.html) · **MII Elternprofil:** MII_PR_Seltene_ClinicalImpression
 
@@ -109,7 +109,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonReference` | Referenz zum Grund | Referenz zu einer Condition die den Grund der Familienanamnese beschreibt |
 | `condition` | Erkrankung | Erkrankung des Familienangehörigen |
 
-#### GeneticDiagnosis (Condition)
+#### Genetische Diagnose (Condition)
 
 **FDPG Profil:** [FDPG_PR_Seltene_GeneticDiagnosis](StructureDefinition-fdpg-pr-seltene-genetic-diagnosis.html) · **MII Elternprofil:** MII_PR_Seltene_GeneticDiagnosis
 
@@ -142,7 +142,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `evidence` | Genetic evidence supporting the diagnosis | Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition. |
 | `note` | Hinweis | Zusätzliche Informationen zur Diagnose als Freitext. |
 
-#### HPO Assessment (Observation)
+#### HPO-Beurteilung (Observation)
 
 **FDPG Profil:** [FDPG_PR_Seltene_HPO_Assessment](StructureDefinition-fdpg-pr-seltene-hpo-assessment.html) · **MII Elternprofil:** MII_PR_Seltene_HPO_Assessment
 
@@ -161,7 +161,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:status` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:severity` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 
-#### Hueftumfang (Observation)
+#### Hüftumfang (Observation)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Hueftumfang](StructureDefinition-fdpg-pr-seltene-hueftumfang.html) · **MII Elternprofil:** MII_PR_Seltene_Hueftumfang
 
@@ -195,7 +195,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|----------------------|-----------------|
 | `identifier` | Business Identifier for study | Identifiers assigned to this research study by the sponsor or other systems. |
 
-#### Studieneinschluss Anfrage (ServiceRequest)
+#### Studieneinschluss-Anfrage (ServiceRequest)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Studieneinschluss_Anfrage](StructureDefinition-fdpg-pr-seltene-studieneinschluss-anfrage.html) · **MII Elternprofil:** MII_PR_Seltene_Studieneinschluss_Anfrage
 
@@ -211,7 +211,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `supportingInfo` | Additional clinical information | Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations... |
 | `supportingInfo:Studie` | Additional clinical information | Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations... |
 
-#### Symptom Condition (Condition)
+#### Symptom (Condition)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Symptom_Condition](StructureDefinition-fdpg-pr-seltene-symptom-condition.html) · **MII Elternprofil:** MII_PR_Seltene_Symptom_Condition
 
@@ -248,7 +248,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
 | `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### TherapieDurchgefuehrt (Procedure)
+#### Therapie durchgeführt (Procedure)
 
 **FDPG Profil:** [FDPG_PR_Seltene_TherapieDurchgefuehrt](StructureDefinition-fdpg-pr-seltene-therapie-durchgefuehrt.html) · **MII Elternprofil:** MII_PR_Seltene_TherapieDurchgefuehrt
 
@@ -261,7 +261,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `performed[x]:performedDateTime` | When the procedure was performed | Estimated or actual date, date-time, period, or age when the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of t... |
 | `performed[x]:performedPeriod` | When the procedure was performed | Estimated or actual date, date-time, period, or age when the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of t... |
 
-#### Therapieempfehlung Kombination (RequestGroup)
+#### Therapieempfehlung Kombinationstherapie (RequestGroup)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Therapieempfehlung_Kombination](StructureDefinition-fdpg-pr-seltene-therapieempfehlung-kombination.html) · **MII Elternprofil:** MII_PR_Seltene_Therapieempfehlung_Kombination
 
@@ -275,7 +275,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Who the request group is about | The subject for which the request group was created. |
 | `action` | Proposed actions, if any | The actions, if any, produced by the evaluation of the artifact. |
 
-#### TherapieempfehlungNichtMedikamentoes (ServiceRequest)
+#### Therapieempfehlung nicht-medikamentös (ServiceRequest)
 
 **FDPG Profil:** [FDPG_PR_Seltene_TherapieempfehlungNichtMedikamentoes](StructureDefinition-fdpg-pr-seltene-therapieempfehlung-nicht-medikamentoes.html) · **MII Elternprofil:** MII_PR_Seltene_TherapieempfehlungNichtMedikamentoes
 
@@ -301,7 +301,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `supportingInfo` | Unterstützende Informationen zur Empfehlung | Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations... |
 | `note` | Zusätzliche Anmerkungen zur Therapieempfehlung | Any other notes and comments made about the service request. For example, internal billing notes. |
 
-#### Therapieempfehlung (MedicationRequest)
+#### Therapieempfehlung systemische Therapie (MedicationRequest)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Therapieempfehlung](StructureDefinition-fdpg-pr-seltene-therapieempfehlung.html) · **MII Elternprofil:** MII_PR_Seltene_Therapieempfehlung
 
@@ -354,7 +354,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 ## English Translations
 
 <details>
-<summary>English translations - ClinicalDiagnosis</summary>
+<summary>English translations - Klinische Diagnose</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -371,7 +371,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - GeneticDiagnosis</summary>
+<summary>English translations - Genetische Diagnose</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -388,7 +388,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Therapieempfehlung</summary>
+<summary>English translations - Therapieempfehlung systemische Therapie</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|

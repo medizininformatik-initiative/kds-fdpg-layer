@@ -63,7 +63,7 @@
       ]
     }
   ],
-  "description": "FDPG Profil - MII PR Onkologie Diagnose Primärtumor",
+  "description": "Die Diagnose Primärtumor ist der zentrale Ankerpunkt der onkologischen Dokumentation. Alle weiteren onkologischen Datenpunkte (Staging, Therapie, Verlauf, Metastasen, Rezidive etc.) referenzieren auf diese Diagnose, insofern eine Zuordnung getroffen werden kann. Ein komplett neuartiger Tumor wird als zweite Diagnose Primärtumor dokumentiert, so dass die Datenpunkte eindeutig zugeordnet werden können. Das Profil wird ebenfalls für Fälle mit unklarem Primärtumor (CUP-Syndrom), Polyneoplasien und neoplastischen Erkrankungen ohne klar abgrenzbaren Tumor (z.B. Lymphome, Leukämien) eingesetzt.",
   "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
   "fhirVersion": "4.0.1",
   "kind": "resource",
