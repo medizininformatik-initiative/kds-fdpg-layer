@@ -11,7 +11,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Arterieller_Blutdruck](StructureDefinition-fdpg-pr-icu-muv-arterieller-blutdruck.html) · **MII Elternprofil:** MII_PR_ICU_Arterieller_Blutdruck
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
 | `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
@@ -34,7 +34,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Atemfrequenz](StructureDefinition-fdpg-pr-icu-muv-atemfrequenz.html) · **MII Elternprofil:** MII_PR_ICU_Atemfrequenz
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
@@ -52,7 +52,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Herzfrequenz](StructureDefinition-fdpg-pr-icu-muv-herzfrequenz.html) · **MII Elternprofil:** MII_PR_ICU_Herzfrequenz
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | serverseitige, interne ID des Datensatzes | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `basedOn` | maximal Kardinalität bei Übernahme aus MII-Kerndatensatz-ICU entfernt | A plan, proposal or order that is fulfilled in whole or in part by this event. For example, a MedicationRequest may require a patient to have laboratory test performed before it is dispensed. |
@@ -78,7 +78,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Koerpergewicht](StructureDefinition-fdpg-pr-icu-muv-koerpergewicht.html) · **MII Elternprofil:** MII_PR_ICU_Koerpergewicht
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
@@ -96,7 +96,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Koerpergroesse](StructureDefinition-fdpg-pr-icu-muv-koerpergroesse.html) · **MII Elternprofil:** MII_PR_ICU_Koerpergroesse
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `category:VSCat` | Classification of type of observation | A code that classifies the general type of observation being made. |
@@ -115,7 +115,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Kopfumfang](StructureDefinition-fdpg-pr-icu-muv-kopfumfang.html) · **MII Elternprofil:** MII_PR_ICU_Kopfumfang
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
 | `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -134,7 +134,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Beatmung](StructureDefinition-fdpg-pr-icu-vent-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Beatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
@@ -157,7 +157,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Parameter_Von_Beatmung](StructureDefinition-fdpg-pr-vent-icu-parameter-von-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Parameter_Von_Beatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -176,7 +176,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung](StructureDefinition-fdpg-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `type` | Identity of metric, for example Heart Rate or PEEP Setting | Describes the type of the metric. For example: Heart Rate, PEEP Setting, etc. |
 | `source` | Describes the link to the source Device | Describes the link to the Device that this DeviceMetric belongs to and that contains administrative device information such as manufacturer, serial number, etc. |
 | `category` | measurement \| setting \| calculation \| unspecified | Indicates the category of the observation generation process. A DeviceMetric can be for example a setting, measurement, or calculation. |
@@ -186,7 +186,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss](StructureDefinition-fdpg-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -205,7 +205,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss](StructureDefinition-fdpg-pr-icu-vent-atemwegsdruck-mittl-expirat-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -224,7 +224,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Atemzugvolumen_Einstellung](StructureDefinition-fdpg-pr-icu-vent-atemzugvolumen-einstellung.html) · **MII Elternprofil:** MII_PR_ICU_Atemzugvolumen_Einstellung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -243,7 +243,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Atemzugvolumen_Waehrend_Beatmung](StructureDefinition-fdpg-pr-icu-vent-atemzugvolumen-waehrend-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Atemzugvolumen_Waehrend_Beatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -262,7 +262,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung](StructureDefinition-fdpg-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -281,7 +281,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Beatmungszeit_Hohem_Druck](StructureDefinition-fdpg-pr-icu-vent-beatmungszeit-hohem-druck.html) · **MII Elternprofil:** MII_PR_ICU_Beatmungszeit_Hohem_Druck
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -300,7 +300,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Beatmungszeit_Niedrigem_Druck](StructureDefinition-fdpg-pr-icu-vent-beatmungszeit-niedrigem-druck.html) · **MII Elternprofil:** MII_PR_ICU_Beatmungszeit_Niedrigem_Druck
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -319,7 +319,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Dynamische_Kompliance](StructureDefinition-fdpg-pr-vent-icu-dynamische-kompliance.html) · **MII Elternprofil:** MII_PR_ICU_Dynamische_Kompliance
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -338,7 +338,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Druckdifferenz_Beatmung](StructureDefinition-fdpg-pr-vent-provided-icu-druckdifferenz-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Druckdifferenz_Beatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -357,7 +357,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Eingestellter_Inspiratorischer_Gasfluss](StructureDefinition-fdpg-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Eingestellter_Inspiratorischer_Gasfluss
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -377,7 +377,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Einstellung_Ausatmungszeit_Beatmung](StructureDefinition-fdpg-pr-icu-vent-einstellung-ausatmungszeit-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Einstellung_Ausatmungszeit_Beatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -396,7 +396,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Einstellung_Einatmungszeit_Beatmung](StructureDefinition-fdpg-pr-icu-vent-einstellung-einatmungszeit-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Einstellung_Einatmungszeit_Beatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -415,7 +415,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Endexpiratorischer_Kohlendioxidpartialdruck](StructureDefinition-fdpg-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck.html) · **MII Elternprofil:** MII_PR_ICU_Endexpiratorischer_Kohlendioxidpartialdruck
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -435,7 +435,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Exspiratorischer_Gasfluss](StructureDefinition-fdpg-pr-icu-vent-exspiratorischer-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Exspiratorischer_Gasfluss
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -455,7 +455,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Exspiratorischer_Sauerstoffpartialdruck](StructureDefinition-fdpg-pr-icu-event-xspiratorischer-sauerstoffpartialdruck.html) · **MII Elternprofil:** MII_PR_ICU_Exspiratorischer_Sauerstoffpartialdruck
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -475,7 +475,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Horowitz_In_Arteriellem_Blut](StructureDefinition-fdpg-pr-icu-vent-horowitz-in-arteriellem-blut.html) · **MII Elternprofil:** MII_PR_ICU_Horowitz_In_Arteriellem_Blut
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -495,7 +495,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen](StructureDefinition-fdpg-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen.html) · **MII Elternprofil:** MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -515,7 +515,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Inspiratorischer_Gasfluss](StructureDefinition-fdpg-pr-icu-vent-inspiratorischer-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Inspiratorischer_Gasfluss
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -535,7 +535,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Maximaler_Beatmungsdruck](StructureDefinition-fdpg-pr-icu-vent-maximaler-beatmungsdruck.html) · **MII Elternprofil:** MII_PR_ICU_Maximaler_Beatmungsdruck
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -554,7 +554,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Mechanische_Atemfrequenz_Beatmet](StructureDefinition-fdpg-pr-icu-vent-mechanische-atemfrequenz-beatmet.html) · **MII Elternprofil:** MII_PR_ICU_Mechanische_Atemfrequenz_Beatmet
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -573,7 +573,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Mittlerer_Beatmungsdruck](StructureDefinition-fdpg-pr-icu-vent-mittlerer-beatmungsdruck.html) · **MII Elternprofil:** MII_PR_ICU_Mittlerer_Beatmungsdruck
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -592,7 +592,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Positiv_Endexpiratorischer_Druck](StructureDefinition-fdpg-pr-icu-vent-positiv-endexpiratorischer-druck.html) · **MII Elternprofil:** MII_PR_ICU_Positiv_Endexpiratorischer_Druck
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -611,7 +611,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Spontane_Atemfrequenz_Beatmet](StructureDefinition-fdpg-pr-icu-vent-spontane-atemfrequenz-beatmet.html) · **MII Elternprofil:** MII_PR_ICU_Spontane_Atemfrequenz_Beatmet
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -630,7 +630,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Spontane_Mechanische_Atemfrequenz_Beatmet](StructureDefinition-fdpg-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet.html) · **MII Elternprofil:** MII_PR_ICU_Spontane_Mechanische_Atemfrequenz_Beatmet
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -649,7 +649,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Spontanes_Atemzugvolumen](StructureDefinition-fdpg-pr-icu-vent-spontanes-atemzugvolumen.html) · **MII Elternprofil:** MII_PR_ICU_Spontanes_Atemzugvolumen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -668,7 +668,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Spontanes_Plus_Mechanisches_Atemzugvolumen](StructureDefinition-fdpg-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen.html) · **MII Elternprofil:** MII_PR_ICU_Spontanes_Plus_Mechanisches_Atemzugvolumen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -687,7 +687,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Unterstuezungsdruck_Beatmung](StructureDefinition-fdpg-pr-icu-vent-unterstuezungsdruck-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Unterstuezungsdruck_Beatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -706,7 +706,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Vent_Zeitverhaeltnis_Ein_Ausatmung](StructureDefinition-fdpg-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.html) · **MII Elternprofil:** MIIPR_ICU_Zeitverhaeltnis_Ein_Ausatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -727,7 +727,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Extrakorporales_Verfahren](StructureDefinition-fdpg-pr-icu-ect-extrakorporales-verfahren.html) · **MII Elternprofil:** MII_PR_ICU_Extrakorporales_Verfahren
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
@@ -750,7 +750,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren](StructureDefinition-fdpg-pr-icu-ect-parameter-von-extrakorporalen-verfahren.html) · **MII Elternprofil:** MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -767,7 +767,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren](StructureDefinition-fdpg-pr-icu-ect-dm-eingest-param-extrakorporale-verfahren.html) · **MII Elternprofil:** MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `type` | Identity of metric, for example Heart Rate or PEEP Setting | Describes the type of the metric. For example: Heart Rate, PEEP Setting, etc. |
 | `source` | Describes the link to the source Device | Describes the link to the Device that this DeviceMetric belongs to and that contains administrative device information such as manufacturer, serial number, etc. |
 | `category` | measurement \| setting \| calculation \| unspecified | Indicates the category of the observation generation process. A DeviceMetric can be for example a setting, measurement, or calculation. |
@@ -777,7 +777,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Arterieller_Druck](StructureDefinition-fdpg-pr-icu-ect-arterieller-druck.html) · **MII Elternprofil:** MII_PR_ICU_Arterieller_Druck
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -794,7 +794,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet](StructureDefinition-fdpg-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.html) · **MII Elternprofil:** MII_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -811,7 +811,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Blutfluss_Extrakorporaler_Gasaustausch](StructureDefinition-fdpg-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.html) · **MII Elternprofil:** MII_PR_ICU_Blutfluss_Extrakorporaler_Gasaustausch
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -828,7 +828,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Blutflussindex_Extrakorporaler_Gasaustausch](StructureDefinition-fdpg-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.html) · **MII Elternprofil:** MII_PR_ICU_Blutflussindex_Extrakorporaler_Gasaustausch
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -845,7 +845,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Dauer_Extrakorporaler_Gasaustausch](StructureDefinition-fdpg-pr-icu-ect-dauer-extrakorporaler-gasaustausch.html) · **MII Elternprofil:** MII_PR_ICU_Dauer_Extrakorporaler_Gasaustausch
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -862,7 +862,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Dauer_Haemodialysesitzung](StructureDefinition-fdpg-pr-icu-ect-dauer-haemodialysesitzung.html) · **MII Elternprofil:** MII_PR_ICU_Dauer_Haemodialysesitzung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -879,7 +879,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Gasfluss](StructureDefinition-fdpg-pr-icu-ect-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Gasfluss
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -896,7 +896,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Haemodialyse_Blutfluss](StructureDefinition-fdpg-pr-icu-ect-haemodialyse-blutfluss.html) · **MII Elternprofil:** MII_PR_ICU_Haemodialyse_Blutfluss
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -913,7 +913,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren](StructureDefinition-fdpg-pr-icu-ect-onisiertes-kalzium-nierenersatzverfahren.html) · **MII Elternprofil:** MII_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -930,7 +930,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Substituatfluss](StructureDefinition-fdpg-pr-icu-ect-substituatfluss.html) · **MII Elternprofil:** MII_PR_ICU_Substituatfluss
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -947,7 +947,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Substituatvolumen](StructureDefinition-fdpg-pr-icu-ect-substituatvolumen.html) · **MII Elternprofil:** MII_PR_ICU_Substituatvolumen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -964,7 +964,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Venoeser_Druck](StructureDefinition-fdpg-pr-icu-ect-venoeser-druck.html) · **MII Elternprofil:** MII_PR_ICU_Venoeser_Druck
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
 | `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
@@ -983,7 +983,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz](StructureDefinition-fdpg-pr-icu-bilanz.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1005,7 +1005,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Gesamte_Tages_Bilanz](StructureDefinition-fdpg-pr-icu-bilanz-gesamte-tages-bilanz.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Gesamte_Tages_Bilanz
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1027,7 +1027,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Gesamte_Einfuhr](StructureDefinition-fdpg-pr-icu-bilanz-gesamte-einfuhr.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Gesamte_Einfuhr
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1049,7 +1049,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Gesamte_Ausfuhr](StructureDefinition-fdpg-pr-icu-bilanz-gesamte-ausfuhr.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Gesamte_Ausfuhr
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1071,7 +1071,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt](StructureDefinition-fdpg-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1093,7 +1093,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit](StructureDefinition-fdpg-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1115,7 +1115,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Einfuhr_Oraler_Fluessigkeit](StructureDefinition-fdpg-pr-icu-bilanz-einfuhr-oraler-fluessigkeit.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Einfuhr_Oraler_Fluessigkeit
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1137,7 +1137,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1159,7 +1159,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Urin](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-urin.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Urin
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1181,7 +1181,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Stuhlgang](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-stuhlgang.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Stuhlgang
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1203,7 +1203,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Magensonde](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-magensonde.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Magensonde
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1225,7 +1225,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1247,7 +1247,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Gallengang](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-gallengang.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Gallengang
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1269,7 +1269,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-drainage-generisch.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1291,7 +1291,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Opdrainage](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-opdrainage.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Opdrainage
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1313,7 +1313,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-pankreasdrainage.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1335,7 +1335,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Wunddrainage](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-wunddrainage.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1357,7 +1357,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Blutverlust](StructureDefinition-fdpg-pr-icu-bilanz-blutverlust.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Blutverlust
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1379,7 +1379,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Abnahme_Haemofiltration_Einzelmesswerte](StructureDefinition-fdpg-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Abnahme_Haemofiltration_Einzelmesswerte
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
 | `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
@@ -1403,7 +1403,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_ICU_Device](StructureDefinition-fdpg-pr-icu-device.html) · **MII Elternprofil:** MII_PR_ICU_Device
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `identifier` | Instance identifier | Unique instance identifiers assigned to a device by manufacturers other organizations or owners. |
 | `status` | active \| inactive \| entered-in-error \| unknown | Status of the Device availability. |
 | `deviceName` | The name of the device as given by the manufacturer | This represents the manufacturer's name of the device as provided by the device, from a UDI label, or by a person describing the Device. This typically would be used when a person provides the name... |

@@ -13,7 +13,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Person_Patient](StructureDefinition-fdpg-pr-person-patient.html) · **MII Elternprofil:** MII_PR_Person_Patient
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
@@ -36,7 +36,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Person_PatientPseudonymisiert](StructureDefinition-fdpg-pr-person-patient-pseudonymisiert.html) · **MII Elternprofil:** MII_PR_Person_PatientPseudonymisiert
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
@@ -55,7 +55,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Person_Vitalstatus](StructureDefinition-fdpg-pr-person-vitalstatus.html) · **MII Elternprofil:** MII_PR_Person_Vitalstatus
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
@@ -73,20 +73,20 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Person_Todesursache](StructureDefinition-fdpg-pr-person-todesursache.html) · **MII Elternprofil:** MII_PR_Person_Todesursache
 
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `clinicalStatus` | Klinischer Status | aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen |
-| `verificationStatus` | Verifizierungsstatus | unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe |
-| `category` | Kategorie | Eine Kategorie, die der Diagnose zugeordnet ist. |
-| `category:todesDiagnose` | problem-list-item \| encounter-diagnosis | A category assigned to the condition. |
-| `code` | Code | Ein ICD-10-WHO Code, der die Todesursache identifiziert. |
-| `subject` | Who has the condition? | Indicates the patient or group who the condition record is associated with. |
-| `encounter` | Kontakt | Kontakt, bei dem die Todesursache festgestellt wurde. |
-| `recordedDate` | Aufzeichnungsdatum | Datum, an dem die Todesursache erstmals dokumentiert wurde. |
-| `note` | Hinweis | Zusätzliche Informationen zur Todesursache als Freitext. |
+| Element | Fachbegriff | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|---|
+| `id` |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
+| `meta` |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
+| `meta.profile` |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
+| `clinicalStatus` | KlinischerStatus | Klinischer Status | aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen |
+| `verificationStatus` |  | Verifizierungsstatus | unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe |
+| `category` |  | Kategorie | Eine Kategorie, die der Diagnose zugeordnet ist. |
+| `category:todesDiagnose` |  | problem-list-item \| encounter-diagnosis | A category assigned to the condition. |
+| `code` | ICD10GMDiagnoseKodiert, Diagnosecode, ... | Code | Ein ICD-10-WHO Code, der die Todesursache identifiziert. |
+| `subject` |  | Who has the condition? | Indicates the patient or group who the condition record is associated with. |
+| `encounter` |  | Kontakt | Kontakt, bei dem die Todesursache festgestellt wurde. |
+| `recordedDate` | Dokumentationsdatum | Aufzeichnungsdatum | Datum, an dem die Todesursache erstmals dokumentiert wurde. |
+| `note` | Diagnoseerlaeuterung | Hinweis | Zusätzliche Informationen zur Todesursache als Freitext. |
 
 ### Diagnose
 
@@ -94,26 +94,26 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Diagnose_Condition](StructureDefinition-fdpg-pr-diagnose-condition.html) · **MII Elternprofil:** MII_PR_Diagnose_Condition
 
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `extension:ReferenzPrimaerdiagnose` | Conditions associated with this condition | This condition has an unspecified relationship with another condition. |
-| `extension:Feststellungsdatum` | Feststellungsdatum | Datum, an dem die Diagnose erstmals festgestellt wurde |
-| `clinicalStatus` | Klinischer Status | aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen |
-| `verificationStatus` | Verifizierungsstatus | unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe |
-| `code` | Code | Ein ICD-10-, Alpha-ID-, SNOMED-, Orpha- oder anderer Code, der die Diagnose identifiziert. |
-| `bodySite` | Körperstelle | Körperstelle der Diagnose mittels SNOMED oder anderem Code. |
-| `subject` | Who has the condition? | Indicates the patient or group who the condition record is associated with. |
-| `encounter` | Kontakt | Kontakt, während dem die Diagnose erstellt wurde oder mit dem die Diagnose in Zusammenhang steht. |
-| `onset[x]` | Beginn | Geschätztes oder tatsächliches Datum oder Zeitraum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
-| `onset[x]:onsetPeriod` | Beginn Zeitraum | Der Zeitraum, in dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
-| `onset[x]:onsetDateTime` | Beginn Datum | Das Datum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
-| `onset[x]:onsetAge` | Erkrankungsbeginn als Alter | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
-| `recordedDate` | Aufzeichnungsdatum | Datum, an dem die Diagnose erstmals dokumentiert wurde. |
-| `note` | Hinweis | Zusätzliche Informationen zur Diagnose als Freitext. |
+| Element | Fachbegriff | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|---|
+| `id` |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
+| `meta` |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
+| `meta.source` |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
+| `meta.profile` |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
+| `extension:ReferenzPrimaerdiagnose` |  | Conditions associated with this condition | This condition has an unspecified relationship with another condition. |
+| `extension:Feststellungsdatum` |  | Feststellungsdatum | Datum, an dem die Diagnose erstmals festgestellt wurde |
+| `clinicalStatus` | KlinischerStatus | Klinischer Status | aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen |
+| `verificationStatus` |  | Verifizierungsstatus | unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe |
+| `code` | ICD10GMDiagnoseKodiert, Diagnosecode, ... | Code | Ein ICD-10-, Alpha-ID-, SNOMED-, Orpha- oder anderer Code, der die Diagnose identifiziert. |
+| `bodySite` | Koerperstelle | Körperstelle | Körperstelle der Diagnose mittels SNOMED oder anderem Code. |
+| `subject` |  | Who has the condition? | Indicates the patient or group who the condition record is associated with. |
+| `encounter` |  | Kontakt | Kontakt, während dem die Diagnose erstellt wurde oder mit dem die Diagnose in Zusammenhang steht. |
+| `onset[x]` | KlinischRelevanterZeitraum | Beginn | Geschätztes oder tatsächliches Datum oder Zeitraum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
+| `onset[x]:onsetPeriod` | KlinischRelevanterZeitraum | Beginn Zeitraum | Der Zeitraum, in dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
+| `onset[x]:onsetDateTime` | KlinischRelevanterZeitraum | Beginn Datum | Das Datum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
+| `onset[x]:onsetAge` | KlinischRelevanterZeitraum | Erkrankungsbeginn als Alter | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
+| `recordedDate` | Dokumentationsdatum | Aufzeichnungsdatum | Datum, an dem die Diagnose erstmals dokumentiert wurde. |
+| `note` | Diagnoseerlaeuterung | Hinweis | Zusätzliche Informationen zur Diagnose als Freitext. |
 
 ### Prozedur
 
@@ -121,23 +121,23 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Prozedur_Procedure](StructureDefinition-fdpg-pr-prozedur-procedure.html) · **MII Elternprofil:** MII_PR_Prozedur_Procedure
 
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `extension` | Additional content defined by implementations | May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance appl... |
-| `extension:Dokumentationsdatum` | Dokumentationsdatum | Dokumentationsdatum der Prozedur, falls abweichend vom Durchführungsdatum |
-| `extension:durchfuehrungsabsicht` | Durchführungsabsicht | therapeutisch \| palliativ \| diagnostisch \| präventiv \| rehabilitativ \| andere |
-| `status` | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
-| `category` | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
-| `code` | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `subject` | Who the procedure was performed on | The person, animal or group on which the procedure was performed. |
-| `encounter` | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
-| `bodySite` | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
-| `note` | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
+| Element | Fachbegriff | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|---|
+| `id` |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
+| `meta` |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
+| `meta.source` |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
+| `meta.profile` |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
+| `extension` |  | Additional content defined by implementations | May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance appl... |
+| `extension:Dokumentationsdatum` |  | Dokumentationsdatum | Dokumentationsdatum der Prozedur, falls abweichend vom Durchführungsdatum |
+| `extension:durchfuehrungsabsicht` |  | Durchführungsabsicht | therapeutisch \| palliativ \| diagnostisch \| präventiv \| rehabilitativ \| andere |
+| `status` |  | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
+| `category` |  | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
+| `code` | OPSProzedurKodiert, VollstaendigerProzedurencode, ... | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
+| `subject` |  | Who the procedure was performed on | The person, animal or group on which the procedure was performed. |
+| `encounter` |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
+| `performed[x]` | Durchfuehrungsdatum | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `bodySite` | Koerperstelle | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
+| `note` |  | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 
 ### Fall
 
@@ -146,7 +146,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Fall_KontaktGesundheitseinrichtung](StructureDefinition-fdpg-pr-fall-kontakt-gesundheitseinrichtung.html) · **MII Elternprofil:** MII_PR_Fall_KontaktGesundheitseinrichtung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | Angabe OPTIONAL, vom Server automatisch vergebene system-abhängige ID |
 | `meta` | Metadata about the resource | Angabe OPTIONAL zur Provenance und zum Profil |
 | `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |

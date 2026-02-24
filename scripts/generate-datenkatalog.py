@@ -120,6 +120,51 @@ TRANSLATION_EXT_URL = "http://hl7.org/fhir/StructureDefinition/translation"
 # Obligation labels for the markdown table
 OBLIGATION_LABEL = "MustSupport"
 
+# Logical model config: module name → LM filenames + FHIR mapping identity strings.
+# Modules without an entry (or without FHIR mappings) simply get no Fachbegriff column.
+LOGICAL_MODEL_CONFIG: dict[str, dict] = {
+    "basis": {
+        "lm_files": [
+            "StructureDefinition-mii-lm-diagnose.json",
+            "StructureDefinition-mii-lm-prozedur.json",
+            # person and fall LMs have no FHIR mappings
+        ],
+        "fhir_identities": ["FHIR"],
+    },
+    "labor": {
+        "lm_files": ["StructureDefinition-mii-lm-labor.json"],
+        "fhir_identities": ["FHIR"],
+    },
+    "medikation": {
+        "lm_files": ["StructureDefinition-mii-lm-medikation.json"],
+        "fhir_identities": ["FHIR"],
+    },
+    "biobank": {
+        "lm_files": ["StructureDefinition-Biobank.json"],
+        "fhir_identities": ["FHIR"],
+    },
+    "molgen": {
+        "lm_files": ["StructureDefinition-LogicalModelMolGen.json"],
+        "fhir_identities": ["FHIR"],
+    },
+    "bildgebung": {
+        "lm_files": ["StructureDefinition-mii-lm-bildgebung.json"],
+        "fhir_identities": ["FHIR"],
+    },
+    "seltene": {
+        "lm_files": ["StructureDefinition-mii-lm-seltene.json"],
+        "fhir_identities": ["FHIR"],
+    },
+    "onkologie": {
+        "lm_files": [
+            "StructureDefinition-mii-lm-onko.json",
+            "StructureDefinition-mii-lm-onko-organspezifische-zusatzmodule.json",
+            "StructureDefinition-mii-lm-mvgenomseq-onkologie.json",
+        ],
+        "fhir_identities": ["FHIR", "MVGenomSeq-Datenkranz-to-MII-FHIR"],
+    },
+}
+
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -231,6 +276,132 @@ def md_escape(text: str) -> str:
     if len(text) > 200:
         text = text[:197] + "..."
     return text
+
+
+# ---------------------------------------------------------------------------
+# Logical model helpers
+# ---------------------------------------------------------------------------
+
+def load_logical_models(module_name: str, package_dir: Path) -> list[dict]:
+    """Load logical model JSON files for a module from its FHIR package."""
+    config = LOGICAL_MODEL_CONFIG.get(module_name)
+    if not config:
+        return []
+    models = []
+    for filename in config["lm_files"]:
+        filepath = package_dir / filename
+        if not filepath.exists():
+            continue
+        try:
+            with open(filepath) as f:
+                data = json.load(f)
+            if data.get("kind") == "logical":
+                models.append(data)
+        except (json.JSONDecodeError, KeyError):
+            continue
+    return models
+
+
+def parse_fhir_mapping(fhir_map: str) -> tuple[str, str] | None:
+    """Parse a FHIR mapping string to (resource_type, top_level_element).
+
+    Extracts only the first path segment after the resource type, stripping
+    FHIRPath functions (.where(), .extension(), .select()) and pipe alternatives.
+    Returns None for unparseable strings.
+    """
+    if not fhir_map or not fhir_map[0].isupper():
+        return None
+    # Strip FHIRPath function calls (preserving surrounding path)
+    cleaned = re.sub(r"\.where\([^)]*\)", "", fhir_map)
+    cleaned = re.sub(r"\.extension\([^)]*\)", "", cleaned)
+    cleaned = re.sub(r"\.select\([^)]*\)", "", cleaned)
+    # Resolve pipe alternatives: .(a|b|c) → .a
+    cleaned = re.sub(r"\(([a-zA-Z\[\]x]+)\|[^)]+\)", r"\1", cleaned)
+    match = re.match(r"^([A-Z][a-zA-Z]+)(?:\.([a-zA-Z\[\]x]+))?", cleaned)
+    if not match:
+        return None
+    element = match.group(2) or ""
+    # Skip 'extension' — too generic, accumulates labels from many LM elements
+    if element == "extension":
+        return None
+    return (match.group(1), element)
+
+
+def build_lm_lookup(
+    logical_models: list[dict], fhir_identities: list[str],
+) -> dict[tuple[str, str], list[str]]:
+    """Build (resource_type, element) → [labels] lookup from logical models.
+
+    Prefers labels from shallow (depth-1) FHIR mappings over deeper ones.
+    The label is the leaf segment of the logical model element ID.
+    """
+    primary: dict[tuple[str, str], list[str]] = {}   # depth-1 matches
+    secondary: dict[tuple[str, str], list[str]] = {}  # deeper matches
+
+    for lm in logical_models:
+        for elem in lm.get("snapshot", {}).get("element", []):
+            for m in elem.get("mapping", []):
+                if m.get("identity") not in fhir_identities:
+                    continue
+                fhir_map = m.get("map", "")
+                parsed = parse_fhir_mapping(fhir_map)
+                if not parsed or not parsed[1]:
+                    continue  # skip resource-level mappings
+
+                resource_type, top_element = parsed
+                label = elem.get("id", "").split(".")[-1]
+                if not label:
+                    continue
+
+                key = (resource_type, top_element)
+                is_primary = bool(re.match(
+                    r"^[A-Z][a-zA-Z]+\.[a-zA-Z\[\]x:]+$", fhir_map.strip(),
+                ))
+
+                target = primary if is_primary else secondary
+                if key not in target:
+                    target[key] = []
+                if label not in target[key]:
+                    target[key].append(label)
+
+    # Merge: prefer primary labels, fall back to secondary
+    result: dict[tuple[str, str], list[str]] = {}
+    for key in set(primary) | set(secondary):
+        result[key] = primary.get(key, secondary.get(key, []))
+    return result
+
+
+def lookup_lm_label(
+    lm_lookup: dict[tuple[str, str], list[str]],
+    resource_type: str,
+    display_path: str,
+) -> str:
+    """Resolve a profile element's display path to its logical model label(s).
+
+    Handles slice names (stripped before lookup) and choice type [x] matching.
+    Returns empty string when no match is found.
+    """
+    # Strip slice suffix: 'identifier:analyseBefundCode' → 'identifier'
+    base = re.sub(r":[^.]+", "", display_path)
+    # Only match top-level element (first segment)
+    top = base.split(".")[0]
+
+    key = (resource_type, top)
+    labels = lm_lookup.get(key)
+
+    # Choice type fallback: 'value[x]' → try 'valueQuantity' etc.
+    if not labels and "[x]" in top:
+        prefix = top.replace("[x]", "")
+        for (rt, elem), lbls in lm_lookup.items():
+            if rt == resource_type and elem.startswith(prefix) and elem != top:
+                labels = lbls
+                break
+
+    if not labels:
+        return ""
+    if len(labels) <= 2:
+        return ", ".join(labels)
+    return ", ".join(labels[:2]) + ", ..."
 
 
 # ---------------------------------------------------------------------------
@@ -397,6 +568,7 @@ def generate_profile_section(
     profile_info: dict,
     profile_data: dict,
     resource_type: str,
+    lm_lookup: dict[tuple[str, str], list[str]] | None = None,
 ) -> tuple[str, str]:
     """Generate German table and English details block for one profile.
 
@@ -432,12 +604,24 @@ def generate_profile_section(
     # Determine whether to include the Kommentar column
     has_any_comment = bool(element_comments)
 
+    # Determine whether any element has a logical model label
+    has_lm_column = False
+    if lm_lookup:
+        for elem in ms_elements:
+            dp = element_display_path(elem, resource_type)
+            if dp and lookup_lm_label(lm_lookup, resource_type, dp):
+                has_lm_column = True
+                break
+
+    # Build table header (4 combinations: ±Fachbegriff × ±Kommentar)
+    hdr_cols = ["Element"]
+    if has_lm_column:
+        hdr_cols.append("Fachbegriff")
+    hdr_cols += ["Kurzbeschreibung (de)", "Definition (de)"]
     if has_any_comment:
-        german_lines.append("| Element | Kurzbeschreibung (de) | Definition (de) | Kommentar |")
-        german_lines.append("|---------|----------------------|-----------------|-----------|")
-    else:
-        german_lines.append("| Element | Kurzbeschreibung (de) | Definition (de) |")
-        german_lines.append("|---------|----------------------|-----------------|")
+        hdr_cols.append("Kommentar")
+    german_lines.append("| " + " | ".join(hdr_cols) + " |")
+    german_lines.append("|" + "|".join("---" for _ in hdr_cols) + "|")
 
     has_english = False
     english_rows = []
@@ -458,14 +642,18 @@ def generate_profile_section(
         # Look up element comment from FSH
         comment = element_comments.get(display_path, "")
 
+        # Look up logical model label
+        lm_label = ""
+        if has_lm_column and lm_lookup:
+            lm_label = lookup_lm_label(lm_lookup, resource_type, display_path)
+
+        row_cols = [f"`{display_path}`"]
+        if has_lm_column:
+            row_cols.append(md_escape(lm_label))
+        row_cols += [md_escape(de_short), md_escape(de_def)]
         if has_any_comment:
-            german_lines.append(
-                f"| `{display_path}` | {md_escape(de_short)} | {md_escape(de_def)} | {md_escape(comment)} |"
-            )
-        else:
-            german_lines.append(
-                f"| `{display_path}` | {md_escape(de_short)} | {md_escape(de_def)} |"
-            )
+            row_cols.append(md_escape(comment))
+        german_lines.append("| " + " | ".join(row_cols) + " |")
 
         # English
         en_short = extract_translation(elem, "short", "en-US")
@@ -536,6 +724,13 @@ def generate_module_page(module_name: str) -> str:
         else:
             print(f"  WARNING: Could not find parent profile {p['parent_name']} in {package_dir}", file=sys.stderr)
 
+    # Load logical models and build label lookup
+    lm_models = load_logical_models(module_name, package_dir)
+    lm_lookup: dict[tuple[str, str], list[str]] | None = None
+    if lm_models:
+        lm_cfg = LOGICAL_MODEL_CONFIG.get(module_name, {})
+        lm_lookup = build_lm_lookup(lm_models, lm_cfg.get("fhir_identities", []))
+
     # Get section groupings
     sections = parse_module_sections(module_name)
 
@@ -571,7 +766,7 @@ def generate_module_page(module_name: str) -> str:
                 pinfo = parent_to_profile[parent_name]
                 pdata = parent_data[parent_name]
                 resource_type = pdata.get("type", "Resource")
-                german_md, english_md = generate_profile_section(pinfo, pdata, resource_type)
+                german_md, english_md = generate_profile_section(pinfo, pdata, resource_type, lm_lookup)
                 if german_md:
                     section_german.append(german_md)
                 if english_md:
@@ -596,7 +791,7 @@ def generate_module_page(module_name: str) -> str:
             for pinfo in remaining:
                 pdata = parent_data[pinfo["parent_name"]]
                 resource_type = pdata.get("type", "Resource")
-                german_md, english_md = generate_profile_section(pinfo, pdata, resource_type)
+                german_md, english_md = generate_profile_section(pinfo, pdata, resource_type, lm_lookup)
                 if german_md:
                     lines.append(german_md)
                     lines.append("")
@@ -609,7 +804,7 @@ def generate_module_page(module_name: str) -> str:
                 continue
             pdata = parent_data[pinfo["parent_name"]]
             resource_type = pdata.get("type", "Resource")
-            german_md, english_md = generate_profile_section(pinfo, pdata, resource_type)
+            german_md, english_md = generate_profile_section(pinfo, pdata, resource_type, lm_lookup)
             if german_md:
                 lines.append(german_md)
                 lines.append("")

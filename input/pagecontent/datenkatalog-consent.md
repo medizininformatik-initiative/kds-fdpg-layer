@@ -9,7 +9,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Consent_DocumentReference](StructureDefinition-fdpg-pr-consent-documentreference.html) · **MII Elternprofil:** MII_PR_Consent_DocumentReference
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `status` | current \| superseded \| entered-in-error | The status of this document reference. |
 | `subject` | Who/what is the subject of the document | Who or what the document is about. The document can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd o... |
 | `content` | Document referenced | The document and format referenced. There may be multiple content element repetitions, each with a different format. |
@@ -19,7 +19,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Consent_Einwilligung](StructureDefinition-fdpg-pr-consent-einwilligung.html) · **MII Elternprofil:** MII_PR_Consent_Einwilligung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
@@ -42,7 +42,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Consent_Provenance](StructureDefinition-fdpg-pr-consent-provenance.html) · **MII Elternprofil:** MII_PR_Consent_Provenance
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `target` | Target Reference(s) (usually version specific) | The Reference(s) that were generated or updated by the activity described in this resource. A provenance can point to more than one target if multiple resources were created/updated by the same act... |
 | `recorded` | When the activity was recorded / updated | The instant of time at which the activity was recorded. |
 | `agent` | Actor involved | An dieser Stelle soll die verwendete Software dokumentiert werden. Über die Form der Dokumentation wird hier keine Aussage getroffen, d.h. auch eine freitextliche Angabe (agent.who.display) ist mög... |

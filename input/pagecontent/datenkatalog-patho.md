@@ -9,7 +9,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Patho_Active_Problems_List](StructureDefinition-fdpg-pr-patho-active-problems-list.html) · **MII Elternprofil:** MII_PR_Patho_Active_Problems_List
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `status` | current \| retired \| entered-in-error | Indicates the current state of this list. |
 | `mode` | working \| snapshot \| changes | How this list was prepared - whether it is a working list that is suitable for being maintained on an ongoing basis, or if it represents a snapshot of a list of items from another source, or whethe... |
@@ -22,7 +22,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Patho_Additional_Specified_Grouper](StructureDefinition-fdpg-pr-patho-additional-specified-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Additional_Specified_Grouper
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `text` | Text | Narrative Darstellung |
@@ -48,7 +48,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Patho_Attached_Image](StructureDefinition-fdpg-pr-patho-attached-image.html) · **MII Elternprofil:** MII_PR_Patho_Attached_Image
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `text` | Text summary of the resource, for human interpretation | A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is... |
@@ -64,7 +64,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Patho_Base_Observation](StructureDefinition-fdpg-pr-patho-base-observation.html) · **MII Elternprofil:** MII_PR_Patho_Base_Observation
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
@@ -88,7 +88,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Patho_Bundle](StructureDefinition-fdpg-pr-patho-bundle.html) · **MII Elternprofil:** MII_PR_Patho_Bundle
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | serverseitige, interne ID des Datensatzes | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `identifier` | Identifikator | Eindeutiger Identifikator des Bundles |
@@ -109,7 +109,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Patho_Composition](StructureDefinition-fdpg-pr-patho-composition.html) · **MII Elternprofil:** MII_PR_Patho_Composition
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | serverseitige, interne ID des Datensatzes | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `text` | Header-Informationen | A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is... |
@@ -137,7 +137,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Patho_Diagnostic_Conclusion_Grouper](StructureDefinition-fdpg-pr-patho-diagnostic-conclusion-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Diagnostic_Conclusion_Grouper
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `text` | Text | Narrative Darstellung |
@@ -166,7 +166,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Patho_Finding](StructureDefinition-fdpg-pr-patho-finding.html) · **MII Elternprofil:** MII_PR_Patho_Finding
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `identifier` | Identifikator | Eindeutiger Identifikator |
@@ -192,7 +192,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Patho_History_Of_Present_Illness](StructureDefinition-fdpg-pr-patho-history-of-present-illness.html) · **MII Elternprofil:** MII_PR_Patho_History_Of_Present_Illness
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `status` | current \| retired \| entered-in-error | Indicates the current state of this list. |
 | `mode` | working \| snapshot \| changes | How this list was prepared - whether it is a working list that is suitable for being maintained on an ongoing basis, or if it represents a snapshot of a list of items from another source, or whethe... |
@@ -205,7 +205,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Patho_Intraoperative_Grouper](StructureDefinition-fdpg-pr-patho-intraoperative-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Intraoperative_Grouper
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `text` | Text | Narrative Darstellung |
@@ -231,7 +231,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Patho_Macroscopic_Grouper](StructureDefinition-fdpg-pr-patho-macroscopic-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Macroscopic_Grouper
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `text` | Text | Narrative Darstellung |
@@ -257,7 +257,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Patho_Microscopic_Grouper](StructureDefinition-fdpg-pr-patho-microscopic-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Microscopic_Grouper
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `text` | Text | Narrative Darstellung |
@@ -283,7 +283,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Patho_Problem_List_Item](StructureDefinition-fdpg-pr-patho-problem-list-item.html) · **MII Elternprofil:** MII_PR_Patho_Problem_List_Item
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `category` | problem-list-item \| encounter-diagnosis | A category assigned to the condition. |
 | `category:problem-list-item` | problem-list-item \| encounter-diagnosis | A category assigned to the condition. |
@@ -295,7 +295,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Patho_Report](StructureDefinition-fdpg-pr-patho-report.html) · **MII Elternprofil:** MII_PR_Patho_Report
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `text` | Text summary of the resource, for human interpretation | A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is... |
@@ -327,7 +327,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Patho_Section_Grouper](StructureDefinition-fdpg-pr-patho-section-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Section_Grouper
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `text` | Text summary of the resource, for human interpretation | A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is... |
@@ -353,7 +353,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Patho_Service_Request](StructureDefinition-fdpg-pr-patho-service-request.html) · **MII Elternprofil:** MII_PR_Patho_Service_Request
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `identifier` | Identifikator | Eindeutiger Identifikator des Auftrags |
@@ -381,7 +381,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Patho_Specimen](StructureDefinition-fdpg-pr-patho-specimen.html) · **MII Elternprofil:** MII_PR_Patho_Specimen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |

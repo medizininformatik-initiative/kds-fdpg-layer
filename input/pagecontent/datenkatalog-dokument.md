@@ -9,7 +9,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Dokument_Dokument](StructureDefinition-fdpg-pr-dokument-dokument.html) · **MII Elternprofil:** MII_PR_Dokument_Dokument
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `extension:nlp-processing-status` | NLP Processing Status | Status der NLP-Verarbeitung des referenzierten Dokuments |

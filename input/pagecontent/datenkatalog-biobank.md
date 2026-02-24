@@ -9,7 +9,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Biobank_Observation_DNA_Konzentration](StructureDefinition-fdpg-pr-biobank-observation-dna-konzentration.html) · **MII Elternprofil:** MII_PR_Biobank_Observation_DNA_Konzentration
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
@@ -24,7 +24,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Biobank_Observation_Karyotyp](StructureDefinition-fdpg-pr-biobank-observation-karyotyp.html) · **MII Elternprofil:** MII_PR_Biobank_Observation_Karyotyp
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
@@ -39,7 +39,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Biobank_Observation_Morphologie](StructureDefinition-fdpg-pr-biobank-observation-morphologie.html) · **MII Elternprofil:** MII_PR_Biobank_Observation_Morphologie
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
@@ -53,7 +53,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Biobank_Observation_Proliferation](StructureDefinition-fdpg-pr-biobank-observation-proliferation.html) · **MII Elternprofil:** MII_PR_Biobank_Observation_Proliferation
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
@@ -67,7 +67,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Biobank_Observation_Qualitaetspruefung](StructureDefinition-fdpg-pr-biobank-observation-qualitaetspruefung.html) · **MII Elternprofil:** MII_PR_Biobank_Observation_Qualitaetspruefung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
@@ -83,7 +83,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Biobank_Observation_Wachstumstyp](StructureDefinition-fdpg-pr-biobank-observation-wachstumstyp.html) · **MII Elternprofil:** MII_PR_Biobank_Observation_Wachstumstyp
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
@@ -97,7 +97,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 **FDPG Profil:** [FDPG_PR_Biobank_Organization_Sammlung_Biobank](StructureDefinition-fdpg-pr-biobank-organization.html) · **MII Elternprofil:** MII_PR_Biobank_Organization_Sammlung_Biobank
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
@@ -117,59 +117,59 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Biobank_Specimen_Bioprobe_Core](StructureDefinition-fdpg-pr-biobank-specimen-core.html) · **MII Elternprofil:** MII_PR_Biobank_Specimen_Bioprobe_Core
 
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `extension:probenebene` | MII EX Biobank Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
-| `identifier` | Proben-ID | Einrichtungsinterner Identifier der Probe. |
-| `status` | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |
-| `type` | Probenart | Die Art der Probe, codiert in SNOMED CT. |
-| `subject` | Patient:in | Verweis auf die Person, von der die Probe stammt. |
-| `receivedTime` | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
-| `parent` | Ist gewonnen aus | Referenz auf eine übergeordnete Probe, aus der diese Probe gewonnen wurde. |
-| `request` | Entnahme-ID | Der Identifier der Probenentnahme. |
-| `collection` | Probenentnahme | Informationen über den Prozess der Probenentnahme, einschließlich Entnahmezeitpunkt und -stelle. |
-| `processing` | Probenverarbeitung | Details zur Verarbeitung der Probe, einschließlich Prozeduren und Verarbeitungszeitraum. |
-| `processing:lagerprozess` | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
-| `container` | Probenbehältnis | Informationen über den Behälter, in dem die Probe aufbewahrt wird. |
-| `note` | Projektnutzung | Freitextangabe zur Verwendung der Probe in spezifischen Projekten. |
+| Element | Fachbegriff | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|---|
+| `id` |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
+| `meta` |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
+| `meta.source` |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
+| `meta.profile` |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
+| `extension:probenebene` |  | MII EX Biobank Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
+| `identifier` | Proben-ID | Proben-ID | Einrichtungsinterner Identifier der Probe. |
+| `status` | Verfuegbarkeitsstatus | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |
+| `type` | Probenart | Probenart | Die Art der Probe, codiert in SNOMED CT. |
+| `subject` |  | Patient:in | Verweis auf die Person, von der die Probe stammt. |
+| `receivedTime` |  | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
+| `parent` | Entstanden-aus | Ist gewonnen aus | Referenz auf eine übergeordnete Probe, aus der diese Probe gewonnen wurde. |
+| `request` |  | Entnahme-ID | Der Identifier der Probenentnahme. |
+| `collection` | Probenentnahme | Probenentnahme | Informationen über den Prozess der Probenentnahme, einschließlich Entnahmezeitpunkt und -stelle. |
+| `processing` | Verarbeitungsprozess | Probenverarbeitung | Details zur Verarbeitung der Probe, einschließlich Prozeduren und Verarbeitungszeitraum. |
+| `processing:lagerprozess` | Verarbeitungsprozess | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
+| `container` | Container | Probenbehältnis | Informationen über den Behälter, in dem die Probe aufbewahrt wird. |
+| `note` | Projektverwendung, SonstigeEigenschaften | Projektnutzung | Freitextangabe zur Verwendung der Probe in spezifischen Projekten. |
 
 #### Specimen Bioprobe (Specimen)
 
 **FDPG Profil:** [FDPG_PR_Biobank_Specimen_Bioprobe](StructureDefinition-fdpg-pr-biobank-specimen.html) · **MII Elternprofil:** MII_PR_Biobank_Specimen_Bioprobe
 
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `extension:probenebene` | MII EX Biobank Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
-| `extension:festgestellteDiagnose` | Festgestellte Diagnose | Verweis auf eine Diagnose, für die Material in der Probe enthalten ist. |
-| `extension:gehoertZu` | Verwaltende Organisation | Zuordnung der Probe zu einer Sammlung oder Biobank, die für die Verwaltung verantwortlich ist. |
-| `extension:anzahlAliquots` | MII EX Biobank Anzahl Aliquots | Die Extension ermöglicht es, die Anzahl der vorhandenen Aliquots zu einer Aliquot-Gruppe anzugeben. |
-| `identifier` | Proben-ID | Einrichtungsinterner Identifier der Probe. |
-| `status` | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |
-| `type` | Probenart | Die Art der Probe, codiert in SNOMED CT. |
-| `subject` | Patient:in | Verweis auf die Person, von der die Probe stammt. |
-| `receivedTime` | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
-| `parent` | Ist gewonnen aus | Referenz auf eine übergeordnete Probe, aus der diese Probe gewonnen wurde. |
-| `request` | Entnahme-ID | Der Identifier der Probenentnahme. |
-| `collection` | Probenentnahme | Informationen über den Prozess der Probenentnahme, einschließlich Entnahmezeitpunkt und -stelle. |
-| `processing` | Probenverarbeitung | Details zur Verarbeitung der Probe, einschließlich Prozeduren und Verarbeitungszeitraum. |
-| `processing:lagerprozess` | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
-| `container` | Probenbehältnis | Informationen über den Behälter, in dem die Probe aufbewahrt wird. |
-| `note` | Projektnutzung | Freitextangabe zur Verwendung der Probe in spezifischen Projekten. |
+| Element | Fachbegriff | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|---|
+| `id` |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
+| `meta` |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
+| `meta.source` |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
+| `meta.profile` |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
+| `extension:probenebene` |  | MII EX Biobank Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
+| `extension:festgestellteDiagnose` |  | Festgestellte Diagnose | Verweis auf eine Diagnose, für die Material in der Probe enthalten ist. |
+| `extension:gehoertZu` |  | Verwaltende Organisation | Zuordnung der Probe zu einer Sammlung oder Biobank, die für die Verwaltung verantwortlich ist. |
+| `extension:anzahlAliquots` |  | MII EX Biobank Anzahl Aliquots | Die Extension ermöglicht es, die Anzahl der vorhandenen Aliquots zu einer Aliquot-Gruppe anzugeben. |
+| `identifier` | Proben-ID | Proben-ID | Einrichtungsinterner Identifier der Probe. |
+| `status` | Verfuegbarkeitsstatus | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |
+| `type` | Probenart | Probenart | Die Art der Probe, codiert in SNOMED CT. |
+| `subject` |  | Patient:in | Verweis auf die Person, von der die Probe stammt. |
+| `receivedTime` |  | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
+| `parent` | Entstanden-aus | Ist gewonnen aus | Referenz auf eine übergeordnete Probe, aus der diese Probe gewonnen wurde. |
+| `request` |  | Entnahme-ID | Der Identifier der Probenentnahme. |
+| `collection` | Probenentnahme | Probenentnahme | Informationen über den Prozess der Probenentnahme, einschließlich Entnahmezeitpunkt und -stelle. |
+| `processing` | Verarbeitungsprozess | Probenverarbeitung | Details zur Verarbeitung der Probe, einschließlich Prozeduren und Verarbeitungszeitraum. |
+| `processing:lagerprozess` | Verarbeitungsprozess | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
+| `container` | Container | Probenbehältnis | Informationen über den Behälter, in dem die Probe aufbewahrt wird. |
+| `note` | Projektverwendung, SonstigeEigenschaften | Projektnutzung | Freitextangabe zur Verwendung der Probe in spezifischen Projekten. |
 
 #### Substance Additiv (Substance)
 
 **FDPG Profil:** [FDPG_PR_Biobank_Substance_Additiv](StructureDefinition-fdpg-pr-biobank-substance-additiv.html) · **MII Elternprofil:** MII_PR_Biobank_Substance_Additiv
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
+|---|---|---|
 | `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
 | `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
 | `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
@@ -182,31 +182,31 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Biobank_Specimen_Zellinie_Organoid](StructureDefinition-fdpg-pr-biobank-zellinie-organoid.html) · **MII Elternprofil:** MII_PR_Biobank_Specimen_Zellinie_Organoid
 
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---------|----------------------|-----------------|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `extension:probenebene` | MII EX Biobank Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
-| `extension:festgestellteDiagnose` | Festgestellte Diagnose | Verweis auf eine Diagnose, für die Material in der Probe enthalten ist. |
-| `extension:gehoertZu` | Verwaltende Organisation | Zuordnung der Probe zu einer Sammlung oder Biobank, die für die Verwaltung verantwortlich ist. |
-| `extension:anzahlAliquots` | MII EX Biobank Anzahl Aliquots | Die Extension ermöglicht es, die Anzahl der vorhandenen Aliquots zu einer Aliquot-Gruppe anzugeben. |
-| `extension:kulturprotokoll` | MII EX Biobank Kulturprotokoll | Protokoll der Kultur der Zellinie oder des Organiods. |
-| `extension:modifikationen` | MII EX Biobank Zelllinien-Modifikation | Erweiterung zur Beschreibung von Modifikationen an Zelllinien, einschließlich Art der Modifikation, Zielgen und Referenz zum Protokoll. |
-| `extension:anzahlPassagen` | MII EX Biobank Anzahl Passagen | Zahl der Passagen, die die Zellinie oder das Organiod durchlaufen hat. |
-| `identifier` | Proben-ID | Einrichtungsinterner Identifier der Probe. |
-| `status` | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |
-| `type` | Probenart | Die Art der Probe, codiert in SNOMED CT. |
-| `subject` | Patient:in | Verweis auf die Person, von der die Probe stammt. |
-| `receivedTime` | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
-| `parent` | Ist gewonnen aus | Referenz auf eine übergeordnete Probe, aus der diese Probe gewonnen wurde. |
-| `request` | Entnahme-ID | Der Identifier der Probenentnahme. |
-| `collection` | Probenentnahme | Informationen über den Prozess der Probenentnahme, einschließlich Entnahmezeitpunkt und -stelle. |
-| `processing` | Probenverarbeitung | Details zur Verarbeitung der Probe, einschließlich Prozeduren und Verarbeitungszeitraum. |
-| `processing:lagerprozess` | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
-| `container` | Probenbehältnis | Informationen über den Behälter, in dem die Probe aufbewahrt wird. |
-| `note` | Projektnutzung | Freitextangabe zur Verwendung der Probe in spezifischen Projekten. |
+| Element | Fachbegriff | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|---|
+| `id` |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
+| `meta` |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
+| `meta.source` |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
+| `meta.profile` |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
+| `extension:probenebene` |  | MII EX Biobank Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
+| `extension:festgestellteDiagnose` |  | Festgestellte Diagnose | Verweis auf eine Diagnose, für die Material in der Probe enthalten ist. |
+| `extension:gehoertZu` |  | Verwaltende Organisation | Zuordnung der Probe zu einer Sammlung oder Biobank, die für die Verwaltung verantwortlich ist. |
+| `extension:anzahlAliquots` |  | MII EX Biobank Anzahl Aliquots | Die Extension ermöglicht es, die Anzahl der vorhandenen Aliquots zu einer Aliquot-Gruppe anzugeben. |
+| `extension:kulturprotokoll` |  | MII EX Biobank Kulturprotokoll | Protokoll der Kultur der Zellinie oder des Organiods. |
+| `extension:modifikationen` |  | MII EX Biobank Zelllinien-Modifikation | Erweiterung zur Beschreibung von Modifikationen an Zelllinien, einschließlich Art der Modifikation, Zielgen und Referenz zum Protokoll. |
+| `extension:anzahlPassagen` |  | MII EX Biobank Anzahl Passagen | Zahl der Passagen, die die Zellinie oder das Organiod durchlaufen hat. |
+| `identifier` | Proben-ID | Proben-ID | Einrichtungsinterner Identifier der Probe. |
+| `status` | Verfuegbarkeitsstatus | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |
+| `type` | Probenart | Probenart | Die Art der Probe, codiert in SNOMED CT. |
+| `subject` |  | Patient:in | Verweis auf die Person, von der die Probe stammt. |
+| `receivedTime` |  | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
+| `parent` | Entstanden-aus | Ist gewonnen aus | Referenz auf eine übergeordnete Probe, aus der diese Probe gewonnen wurde. |
+| `request` |  | Entnahme-ID | Der Identifier der Probenentnahme. |
+| `collection` | Probenentnahme | Probenentnahme | Informationen über den Prozess der Probenentnahme, einschließlich Entnahmezeitpunkt und -stelle. |
+| `processing` | Verarbeitungsprozess | Probenverarbeitung | Details zur Verarbeitung der Probe, einschließlich Prozeduren und Verarbeitungszeitraum. |
+| `processing:lagerprozess` | Verarbeitungsprozess | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
+| `container` | Container | Probenbehältnis | Informationen über den Behälter, in dem die Probe aufbewahrt wird. |
+| `note` | Projektverwendung, SonstigeEigenschaften | Projektnutzung | Freitextangabe zur Verwendung der Probe in spezifischen Projekten. |
 
 ---
 
