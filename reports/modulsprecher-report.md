@@ -47,23 +47,23 @@ graph LR
 
 ### Enthaltene Module
 
-| Modul | Paket | Version | Profile (ca.) |
-|-------|-------|---------|--------------|
-| Basisdaten | `...base` | 2026.0.0 | Person, Diagnose, Prozedur, Fall |
-| Laborbefund | `...laborbefund` | 2026.0.1 | Laboruntersuchung, Servicerequest |
-| Medikation | `...medikation` | 2026.0.0 | MedicationStatement, MedicationAdministration, ... |
-| Biobank | `...biobank` | 2026.0.0 | Specimen, Substance, ... |
-| Studie | `...studie` | 2026.0.2 | ResearchStudy, ResearchSubject, ... |
-| Molekulargenetik | `...molgen` | 2026.0.4 | GenomicsReport, Variant, ... |
-| Pathologiebefund | `...patho` | 2026.0.1 | DiagnosticReport, Specimen, ... |
-| Intensivmedizin | `...icu` | 2026.0.1-rc1 | Vitalparameter, Beatmung, ... |
-| Bildgebung | `...bildgebung` | 2026.0.0 | ImagingStudy, Series, Instance, ... |
-| Seltene Erkrankungen | `...seltene` | 2026.0.0 | Condition, Observation, ... |
-| Onkologie | `...onkologie` | 2026.0.1 | Diagnose, Therapie, TNM, ... |
-| Einwilligung | `...consent` | 2026.0.1-rc-1 | Consent, Provision, ... |
-| Dokument | `...dokument` | 2026.0.0 | DocumentReference |
-| MTB | `...mtb` | 2026.0.0 | Observation, Procedure, MedicationRequest, ... |
-| PRO | `...pros` | 2026.0.1 | Observation, Questionnaire, QuestionnaireResponse, ... |
+| Modul | Paket | Version | Profile | FHIR-Ressourcentypen |
+|-------|-------|---------|--------:|---------------------|
+| Basisdaten | `...base` | 2026.0.0 | 7 | Patient, Condition, Encounter, Procedure, Observation |
+| Laborbefund | `...laborbefund` | 2026.0.1 | 3 | Observation, DiagnosticReport, ServiceRequest |
+| Medikation | `...medikation` | 2026.0.0 | 5 | Medication, MedicationStatement, MedicationRequest, MedicationAdministration, List |
+| Biobank | `...biobank` | 2026.0.1 | 11 | Observation, Specimen, Organization, Substance |
+| Studie | `...studie` | 2026.0.2 | 7 | ResearchStudy, ResearchSubject, EvidenceVariable, Library, ServiceRequest, DocumentReference, PractitionerRole |
+| Molekulargenetik | `...molgen` | 2026.0.4 | 16 | Observation, Task, Procedure, DiagnosticReport, FamilyMemberHistory, ServiceRequest, RiskAssessment |
+| Pathologiebefund | `...patho` | 2026.0.1 | 17 | Observation, DiagnosticReport, Specimen, Condition, Composition, List, Bundle, Media, ServiceRequest |
+| Intensivmedizin | `...icu` | 2026.0.1-rc1 | 72 | Observation, DeviceMetric, Procedure, Device |
+| Bildgebung | `...bildgebung` | 2026.0.0 | 11 | ImagingStudy, Procedure, Observation, CarePlan, BodyStructure, Composition, ServiceRequest, Device, DiagnosticReport, MedicationAdministration |
+| Seltene Erkrankungen | `...seltene` | 2026.0.0 | 18 | Observation, Condition, ServiceRequest, Procedure, FamilyMemberHistory, ClinicalImpression, ResearchStudy, CarePlan, RequestGroup, MedicationRequest |
+| Onkologie | `...onkologie` | 2026.0.1 | 73 | Observation, Procedure, Specimen, Condition, MedicationStatement, MedicationRequest, ServiceRequest, DiagnosticReport, CarePlan, RequestGroup, AdverseEvent, List |
+| Einwilligung | `...consent` | 2026.0.1-rc-1 | 3 | Consent, Provenance, DocumentReference |
+| Dokument | `...dokument` | 2026.0.0 | 1 | DocumentReference |
+| MTB | `...mtb` | 2026.0.0 | 49 | Observation, Procedure, ServiceRequest, DiagnosticReport, ClinicalImpression, MedicationRequest, MedicationStatement, Condition, CarePlan, ResearchStudy, Device, RequestGroup, Claim, ClaimResponse |
+| PRO | `...pros` | 2026.0.1 | 20 | Observation, Questionnaire, QuestionnaireResponse, ObservationDefinition |
 
 ---
 
