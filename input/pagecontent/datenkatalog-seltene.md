@@ -46,7 +46,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
 | `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `extension:ReferenzPrimaerdiagnose` |  |  | Conditions associated with this condition | This condition has an unspecified relationship with another condition. |
-| `extension:Feststellungsdatum` |  |  | Feststellungsdatum | Datum, an dem die Diagnose erstmals festgestellt wurde |
+| `extension:Feststellungsdatum` | FeststellungsdatumKlinischeDia, FeststellungsdatumGenDia, ... | Datum, an dem die klinische SE-Diagnose festgestellt wurde. | Feststellungsdatum | Datum, an dem die Diagnose erstmals festgestellt wurde |
 | `clinicalStatus` |  |  | Klinischer Status | aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen |
 | `verificationStatus` |  |  | Verifizierungsstatus | unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe |
 | `category` |  |  | problem-list-item \| encounter-diagnosis | A category assigned to the condition. |
@@ -120,8 +120,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
 | `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `extension:ReferenzPrimaerdiagnose` |  |  | Conditions associated with this condition | This condition has an unspecified relationship with another condition. |
-| `extension:Feststellungsdatum` |  |  | Feststellungsdatum | Datum, an dem die Diagnose erstmals festgestellt wurde |
-| `extension:penetrance` |  |  | Penetranz der genetischen Variante | Angabe zur Penetranz der genetischen Variante bei dieser Erkrankung |
+| `extension:Feststellungsdatum` | FeststellungsdatumKlinischeDia, FeststellungsdatumGenDia, ... | Datum, an dem die klinische SE-Diagnose festgestellt wurde. | Feststellungsdatum | Datum, an dem die Diagnose erstmals festgestellt wurde |
+| `extension:penetrance` | GenDiaFehlendePenetranz | Gibt an, ob bei einer genetischen Diagnose die Penetranz (Wahrscheinlichkeit Genotyp bildet Phaenotyp aus) fehlt | Penetranz der genetischen Variante | Angabe zur Penetranz der genetischen Variante bei dieser Erkrankung |
 | `clinicalStatus` |  |  | Klinischer Status | aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen |
 | `verificationStatus` |  |  | Verifizierungsstatus | unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe |
 | `category` |  |  | Kategorisierung als genetische Erkrankung | Pflicht-Kategorie zur Kennzeichnung als genetisch bestätigte Erkrankung |

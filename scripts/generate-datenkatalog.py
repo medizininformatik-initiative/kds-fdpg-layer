@@ -318,6 +318,28 @@ def load_logical_models(module_name: str, package_dir: Path) -> list[dict]:
     return models
 
 
+def _extract_extension_url_from_mapping(fhir_map: str) -> str:
+    """Extract extension URL from a FHIR mapping string."""
+    fhir_map = fhir_map.split("|")[0].strip()  # handle pipe alternatives
+    m = re.search(r"\.extension\('([^']+)'\)", fhir_map)
+    if m:
+        return m.group(1)
+    m = re.search(r"\.extension\.where\(url='([^']+)'\)", fhir_map)
+    if m:
+        return m.group(1)
+    return ""
+
+
+def _get_extension_url_from_element(element: dict) -> str:
+    """Extract extension URL from profile element's type[0].profile[0]."""
+    types = element.get("type", [])
+    if types:
+        profiles = types[0].get("profile", [])
+        if profiles:
+            return profiles[0]
+    return ""
+
+
 def parse_fhir_mapping(fhir_map: str) -> tuple[str, str] | None:
     """Parse a FHIR mapping string to (resource_type, top_level_element).
 
@@ -327,6 +349,14 @@ def parse_fhir_mapping(fhir_map: str) -> tuple[str, str] | None:
     """
     if not fhir_map or not fhir_map[0].isupper():
         return None
+    # Top-level extension mappings: extract URL as specific key before cleaning
+    # (cleaning strips .extension(...) which loses the URL information)
+    rt_ext = re.match(r"^([A-Z][a-zA-Z]+)\.extension", fhir_map)
+    if rt_ext:
+        ext_url = _extract_extension_url_from_mapping(fhir_map)
+        if ext_url:
+            return (rt_ext.group(1), f"ext:{ext_url}")
+        return None  # bare extension without URL, skip
     # Strip FHIRPath function calls (preserving surrounding path)
     cleaned = re.sub(r"\.where\([^)]*\)", "", fhir_map)
     cleaned = re.sub(r"\.extension\([^)]*\)", "", cleaned)
@@ -336,11 +366,7 @@ def parse_fhir_mapping(fhir_map: str) -> tuple[str, str] | None:
     match = re.match(r"^([A-Z][a-zA-Z]+)(?:\.([a-zA-Z\[\]x]+))?", cleaned)
     if not match:
         return None
-    element = match.group(2) or ""
-    # Skip 'extension' — too generic, accumulates labels from many LM elements
-    if element == "extension":
-        return None
-    return (match.group(1), element)
+    return (match.group(1), match.group(2) or "")
 
 
 def build_lm_lookup(
@@ -396,11 +422,21 @@ def _resolve_lm_key(
     lm_lookup: dict[tuple[str, str], dict],
     resource_type: str,
     display_path: str,
+    element: dict | None = None,
 ) -> dict | None:
     """Find the LM lookup entry for a profile element's display path.
 
-    Handles slice names (stripped before lookup) and choice type [x] matching.
+    Handles slice names (stripped before lookup), choice type [x] matching,
+    and extension URL matching via element type profiles.
     """
+    # Extension elements: match by URL from element's type[0].profile[0]
+    if display_path.startswith("extension:") and element is not None:
+        ext_url = _get_extension_url_from_element(element)
+        if ext_url:
+            entry = lm_lookup.get((resource_type, f"ext:{ext_url}"))
+            if entry:
+                return entry
+
     # Strip slice suffix: 'identifier:analyseBefundCode' → 'identifier'
     base = re.sub(r":[^.]+", "", display_path)
     # Only match top-level element (first segment)
@@ -424,9 +460,10 @@ def lookup_lm_label(
     lm_lookup: dict[tuple[str, str], dict],
     resource_type: str,
     display_path: str,
+    element: dict | None = None,
 ) -> str:
     """Resolve a profile element to its logical model concept name(s)."""
-    entry = _resolve_lm_key(lm_lookup, resource_type, display_path)
+    entry = _resolve_lm_key(lm_lookup, resource_type, display_path, element)
     if not entry:
         return ""
     labels = entry["labels"]
@@ -439,12 +476,13 @@ def lookup_lm_description(
     lm_lookup: dict[tuple[str, str], dict],
     resource_type: str,
     display_path: str,
+    element: dict | None = None,
 ) -> str:
     """Resolve a profile element to its logical model description.
 
     Prefers 'definition', falls back to 'short'.
     """
-    entry = _resolve_lm_key(lm_lookup, resource_type, display_path)
+    entry = _resolve_lm_key(lm_lookup, resource_type, display_path, element)
     if not entry:
         return ""
     return entry.get("definition") or entry.get("short", "")
@@ -655,7 +693,7 @@ def generate_profile_section(
     if lm_lookup:
         for elem in ms_elements:
             dp = element_display_path(elem, resource_type)
-            if dp and lookup_lm_label(lm_lookup, resource_type, dp):
+            if dp and lookup_lm_label(lm_lookup, resource_type, dp, elem):
                 has_lm_column = True
                 break
 
@@ -692,8 +730,8 @@ def generate_profile_section(
         lm_label = ""
         lm_desc = ""
         if has_lm_column and lm_lookup:
-            lm_label = lookup_lm_label(lm_lookup, resource_type, display_path)
-            lm_desc = lookup_lm_description(lm_lookup, resource_type, display_path)
+            lm_label = lookup_lm_label(lm_lookup, resource_type, display_path, elem)
+            lm_desc = lookup_lm_description(lm_lookup, resource_type, display_path, elem)
 
         row_cols = [f"`{display_path}`"]
         if has_lm_column:
