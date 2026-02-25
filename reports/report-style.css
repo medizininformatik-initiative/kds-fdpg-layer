@@ -42,14 +42,16 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin: 12px 0;
-  font-size: 9.5pt;
+  font-size: 8.5pt;
 }
 
 th, td {
   border: 1px solid #999;
-  padding: 5px 8px;
+  padding: 3px 5px;
   text-align: left;
   vertical-align: top;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 th {
@@ -74,9 +76,22 @@ td:nth-child(n) {
 /* Code blocks */
 code {
   background: #f0f0f0;
-  padding: 1px 4px;
+  padding: 1px 3px;
   border-radius: 3px;
-  font-size: 9pt;
+  font-size: 7.5pt;
+}
+
+/* Constrain table column widths */
+table td:first-child {
+  max-width: 140px;
+  word-wrap: break-word;
+}
+
+table td:nth-child(2) {
+  max-width: 180px;
+  word-wrap: break-word;
+  font-size: 7.5pt;
+  font-family: monospace;
 }
 
 pre {
@@ -110,9 +125,18 @@ h2, h3 {
   page-break-after: avoid;
 }
 
-/* Keep tables together where possible */
+/* Allow large tables to break across pages, but keep rows together */
 table {
+  page-break-inside: auto;
+}
+
+tr {
   page-break-inside: avoid;
+}
+
+/* Repeat table header on each page */
+thead {
+  display: table-header-group;
 }
 
 hr {
