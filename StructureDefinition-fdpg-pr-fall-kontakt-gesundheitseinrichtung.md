@@ -1,0 +1,163 @@
+# FDPG PR Fall Kontakt mit einer Gesundheitseinrichtung - FDPG KDS Obligations Layer v2026.0.0
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **FDPG PR Fall Kontakt mit einer Gesundheitseinrichtung**
+
+## Resource Profile: FDPG PR Fall Kontakt mit einer Gesundheitseinrichtung 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-fall-kontakt-gesundheitseinrichtung | *Version*:2026.0.0 |
+| Active as of 2025-01-16 | *Computable Name*:FDPG_PR_Fall_KontaktGesundheitseinrichtung |
+| **Copyright/Legal**: CC-BY-4.0: Medizininformatik-Initiative / FDPG | |
+
+ 
+FDPG Profil - MII PR Fall Kontakt mit einer Gesundheitseinrichtung 
+
+**Usages:**
+
+* CapabilityStatements using this Profile: [FDPG CapabilityStatement für Datenkonsumenten](CapabilityStatement-fdpg-cps-data-consumer.md) and [FDPG CapabilityStatement für Datenlieferanten](CapabilityStatement-fdpg-cps-data-provider.md)
+* This Profile is not used by any profiles in this Implementation Guide
+
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/fdpg-kds-obligations|current/StructureDefinition/fdpg-pr-fall-kontakt-gesundheitseinrichtung)
+
+### Formal Views of Profile Content
+
+ [Description of Profiles, Differentials, Snapshots and how the different presentations work](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#structure-definitions). 
+
+ 
+
+Other representations of profile: [CSV](StructureDefinition-fdpg-pr-fall-kontakt-gesundheitseinrichtung.csv), [Excel](StructureDefinition-fdpg-pr-fall-kontakt-gesundheitseinrichtung.xlsx), [Schematron](StructureDefinition-fdpg-pr-fall-kontakt-gesundheitseinrichtung.sch) 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "fdpg-pr-fall-kontakt-gesundheitseinrichtung",
+  "extension" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://hl7.org/fhir/spdx-license",
+        "code" : "CC-BY-4.0",
+        "display" : "Creative Commons Attribution 4.0 International"
+      }]
+    }
+  }],
+  "url" : "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-fall-kontakt-gesundheitseinrichtung",
+  "version" : "2026.0.0",
+  "name" : "FDPG_PR_Fall_KontaktGesundheitseinrichtung",
+  "title" : "FDPG PR Fall Kontakt mit einer Gesundheitseinrichtung",
+  "_title" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "de-DE"
+      },
+      {
+        "url" : "content",
+        "valueString" : "Fall - Kontakt mit einer Gesundheitseinrichtung"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    },
+    {
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en-US"
+      },
+      {
+        "url" : "content",
+        "valueString" : "Treatment case - Encounter with Health Care Facility"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2025-01-16",
+  "publisher" : "FDPG / Medizininformatik-Initiative",
+  "contact" : [{
+    "name" : "FDPG / Medizininformatik-Initiative",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://forschen-fuer-gesundheit.de"
+    }]
+  }],
+  "description" : "FDPG Profil - MII PR Fall Kontakt mit einer Gesundheitseinrichtung",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "copyright" : "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
+  "fhirVersion" : "4.0.1",
+  "kind" : "resource",
+  "abstract" : false,
+  "type" : "Encounter",
+  "baseDefinition" : "https://www.medizininformatik-initiative.de/fhir/core/modul-fall/StructureDefinition/KontaktGesundheitseinrichtung",
+  "derivation" : "constraint",
+  "differential" : {
+    "element" : [{
+      "id" : "Encounter",
+      "path" : "Encounter"
+    },
+    {
+      "id" : "Encounter.identifier:Aufnahmenummer",
+      "path" : "Encounter.identifier",
+      "sliceName" : "Aufnahmenummer",
+      "definition" : "OPTIONAL, Ein eindeutiger Identifier, der einem Patienten bei der Aufnahmeplanung oder bei der Aufnahme selbst zugewiesen wird. Jeder Encounter SOLLTE seine eigene eindeutige Aufnahmenummer haben. Die Aufnahmenummer ist nicht die Fallnummer,  welche sich auf den kompletten Abrechnungsfall bezieht. Hier wird ein Identifier angegeben, der den Kontakt eindeutig identifiziert."
+    },
+    {
+      "id" : "Encounter.class",
+      "path" : "Encounter.class",
+      "definition" : "VERPFLICHTEND, Kontaktklasse. Required Binding auf http://fhir.de/ValueSet/EncounterClassDE.  Klassifizierung des Kontaktes in stationär, ambulant, teilstationär oder andere."
+    },
+    {
+      "id" : "Encounter.type:Kontaktebene",
+      "path" : "Encounter.type",
+      "sliceName" : "Kontaktebene",
+      "definition" : "OPTIONAL, Unterscheidung der Kontakt-Hierarchieebenen Einrichtungskontakt, Abteilungskontakt, Versorgungsstellenkontakt.  Die Gliederung gilt für stationäre Kontakte. Required Binding auf http://fhir.de/ValueSet/kontaktebene-de"
+    },
+    {
+      "id" : "Encounter.type:KontaktArt",
+      "path" : "Encounter.type",
+      "sliceName" : "KontaktArt",
+      "definition" : "OPTIONAL, Differenzierung zwischen verschiedenen Arten von Kontakten (z.B. vorstationär, nachstationär, intensivstationär).  Required Binding auf http://fhir.de/ValueSet/kontaktart-de"
+    },
+    {
+      "id" : "Encounter.serviceType.coding:Fachabteilungsschluessel",
+      "path" : "Encounter.serviceType.coding",
+      "sliceName" : "Fachabteilungsschluessel",
+      "definition" : "OPTIONAL, required Binding auf http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel Fachabteilungen gemäß Anhang 1 der BPflV in der am 31.12.2003 geltenden Fassung"
+    },
+    {
+      "id" : "Encounter.serviceType.coding:ErweiterterFachabteilungsschluessel",
+      "path" : "Encounter.serviceType.coding",
+      "sliceName" : "ErweiterterFachabteilungsschluessel",
+      "definition" : "OPTIONAL, required Binding auf http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel-erweitert Fachabteilungen gemäß Anhang 1 der BPflV in der am 31.12.2003 geltenden Fassung inkl. Spezialisierungen."
+    },
+    {
+      "id" : "Encounter.period",
+      "path" : "Encounter.period",
+      "definition" : "Beginn- und Endzeitpunkt des Kontaktes.      DARF NICHT vorhanden sein, kann OPTIONAL oder VERPFLICHTEND sein,      abhängig vom Status des Kontaktes - siehe Invarianten auf Ebene Encounter."
+    },
+    {
+      "id" : "Encounter.diagnosis",
+      "path" : "Encounter.diagnosis",
+      "definition" : "OPTIONAL, Verweis auf Diagnosen/Prozeduren, die eine besondere Rolle im Kontext eines Encounters haben. Der Fallbezug von Diagnosen und Prozeduren wird über das jeweilige encounter-Element der Condition bzw. Procedure-Ressource hinreichend etabliert.  Die zusätzliche Rückverlinkung von Encounter.diagnosis auf Condition/Procedure wird nur dann verwendet,  wenn einer Diagnose bzw. Prozedur im Kontext eines Aufenthaltes eine besondere Rolle zugewiesen werden soll,  z.B. Haupt-/Neben-/Aufnahme- oder Überweisungsdiagnose)."
+    },
+    {
+      "id" : "Encounter.partOf",
+      "path" : "Encounter.partOf",
+      "definition" : "OPTIONAL. Abbildung der Hierarchie zwischen Kontaktebenen durch Referenz auf weitere Kontakte,  wenn bspw. ein Versorgungsstellenkontakt Teil eines Abteilungskontaktes  oder ein Abteilungskontakt Teil eines Einrichtungskontaktes ist."
+    }]
+  }
+}
+
+```
