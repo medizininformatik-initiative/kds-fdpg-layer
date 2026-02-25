@@ -19,6 +19,10 @@ Zeigt neue/entfernte Elemente und ob neue Elemente ein Mapping im Logischen Mode
 | **Molekulargenetik** | 2025.0.0 | 2026.0.4 | 183 | 68 | 0 |
 | **Onkologie** | 2025.0.0 | 2026.0.1 | 504 | 211 | 1 |
 
+**Hinweis:** Die Module **MTB** (2026.0.0, 49 Profile, 1.436 MS-Elemente) und **PRO** (2026.0.1, 20 Profile, 299 MS-Elemente)
+sind neu in der FDPG Obligation Layer und haben keine 2025er Vorgängerversion. Sie erscheinen daher nicht in diesem Drift-Report.
+Beide Module haben sehr gute LM-Abdeckung (MTB 93%, PRO 100%).
+
 ---
 
 ## Diagnose

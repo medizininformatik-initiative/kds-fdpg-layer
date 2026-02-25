@@ -1,6 +1,6 @@
 # FDPG KDS Obligations Layer -- Bericht für Modulsprecher
 
-> Stand: 2026-02-25 | FDPG Obligation Layer v0.1.0 | 244 Profile, 13 Module
+> Stand: 2026-02-25 | FDPG Obligation Layer v0.1.0 | 313 Profile, 15 Module
 
 Dieses Dokument richtet sich an die **Modulsprecher der MII-Kerndatensatz-Module**.
 Es erklärt die FDPG Obligation Layer, den Datenkatalog und zeigt pro Modul
@@ -13,7 +13,7 @@ den konkreten Handlungsbedarf zur Verbesserung der Datenqualität.
 ### Was ist die FDPG Obligation Layer?
 
 Die FDPG Obligation Layer ist ein **Overlay** über den MII-Kerndatensatz-Paketen (KDS).
-Sie leitet 244 FHIR-Profile aus 13 KDS-Modulen ab und ergänzt:
+Sie leitet 313 FHIR-Profile aus 15 KDS-Modulen ab und ergänzt:
 
 - **MustSupport-Flags** -- welche Elemente für FDPG-Abfragen relevant sind
 - **Obligations** -- maschinenlesbare Pflichten für Datenlieferanten (DIZ) und Datenkonsumenten (FDPG-Portal)
@@ -24,7 +24,7 @@ Die Upstream-KDS-Pakete bleiben **unverändert**. Die Obligation Layer ist ein r
 
 ```mermaid
 graph LR
-  KDS["MII KDS Pakete<br/>13 Module, 2026.x"] --> FDPG["FDPG Obligation Layer<br/>244 Profile"]
+  KDS["MII KDS Pakete<br/>15 Module, 2026.x"] --> FDPG["FDPG Obligation Layer<br/>313 Profile"]
   FDPG --> Portal["FDPG Portal<br/>(Datenkonsument)"]
   FDPG --> DIZ["DIZ Systeme<br/>(Datenlieferant)"]
   KDS -.->|"Logische Modelle<br/>+ FHIR-Mappings"| DK["Datenkatalog"]
@@ -62,6 +62,8 @@ graph LR
 | Onkologie | `...onkologie` | 2026.0.1 | Diagnose, Therapie, TNM, ... |
 | Einwilligung | `...consent` | 2026.0.1-rc-1 | Consent, Provision, ... |
 | Dokument | `...dokument` | 2026.0.0 | DocumentReference |
+| MTB | `...mtb` | 2026.0.0 | Observation, Procedure, MedicationRequest, ... |
+| PRO | `...pros` | 2026.0.1 | Observation, Questionnaire, QuestionnaireResponse, ... |
 
 ---
 
@@ -75,7 +77,7 @@ graph TD
   B["FSH Dateien<br/>FDPG Obligation Profile<br/>(MS-Flags)"] --> G
   C["Logische Modelle<br/>+ Supplement-Dateien<br/>(FHIR-Mappings)"] --> G
   D["Modul-Konfiguration<br/>(Abschnittsgruppen)"] --> G
-  G --> E["datenkatalog-*.md<br/>13 Markdown-Seiten"]
+  G --> E["datenkatalog-*.md<br/>15 Markdown-Seiten"]
   E --> F["IG Publisher<br/>→ HTML-Seiten"]
 ```
 
@@ -110,6 +112,8 @@ im Logischen Modell haben. Daten aus dem [LM Coverage Report](lm-coverage-report
 
 | Modul | Version | MS-Elemente | Abdeckung | Status |
 |-------|---------|-------------|-----------|--------|
+| PRO | 2026.0.1 | 299 | **100%** | Sehr gut |
+| MTB | 2026.0.0 | 1.436 | **93%** | Sehr gut |
 | Medikation | 2026.0.0 | 65 | **86%** | Gut |
 | Bildgebung | 2026.0.0 | 110 | **79%** | Gut |
 | Laborbefund | 2026.0.1 | 48 | **58%** | Mittel |
@@ -139,6 +143,8 @@ Diese Module haben ein Logisches Modell im Paket, aber **keine FHIR-Mappings** i
 ### Visuelle Übersicht
 
 ```
+PRO               ██████████████████████████████████████████████████ 100%
+MTB               ██████████████████████████████████████████████░░░░  93%
 Medikation        ██████████████████████████████████████████░░░░░░░░  86%
 Bildgebung        ████████████████████████████████████████░░░░░░░░░░  79%
 Laborbefund       █████████████████████████████░░░░░░░░░░░░░░░░░░░░  58%
@@ -203,6 +209,41 @@ Medikation        0                                                  --
 ---
 
 ## 5. Handlungsbedarf pro Modul
+
+### PRO (Patient-Reported Outcomes) -- Sehr gut
+
+**Abdeckung: 100% (299/299 Elemente)**
+
+**Situation:** Das LM `MII_LM_PRO` hat 32 FHIR-Mappings (identity: `FHIR`), die über
+Prefix-Matching alle 299 MS-Elemente der 20 Profile abdecken. Vorbildliche Abdeckung.
+
+> **Hinweis:** Das publizierte Paket hat einen leeren Snapshot im LM --
+> alle Daten liegen nur im Differential. Falls der IG Publisher damit Probleme hat,
+> sollte der Snapshot im nächsten Release ergänzt werden.
+
+**Handlungsbedarf:**
+- [ ] Kein dringender Handlungsbedarf -- beste Abdeckung aller Module
+- [ ] Optional: LM-Snapshot im Paket ergänzen (aktuell nur Differential)
+
+---
+
+### MTB (Molekulares Tumorboard) -- Sehr gut
+
+**Abdeckung: 93% (1.339/1.436 Elemente)**
+
+**Situation:** Das LM `MII_LM_MTB` hat 190 FHIR-Mappings (identity: `mii-map-mtb`),
+die 145 unterschiedliche FHIR-Pfade abdecken. Größtes Modul mit 49 Profilen und
+1.436 MS-Elementen, dennoch exzellente Abdeckung.
+
+Die 97 nicht gemappten Elemente sind überwiegend strukturelle Boilerplate-Elemente
+(`meta`, `meta.profile`) und modulübergreifende Elemente (ResearchStudy-Extensions
+aus dem Studie-Modul, Device-Metadaten).
+
+**Handlungsbedarf:**
+- [ ] Optional: ~97 verbleibende Elemente im LM ergänzen (hauptsächlich `meta`/`meta.profile` und Device-Elemente)
+- [ ] Kein dringender Handlungsbedarf -- sehr gute Basis vorhanden
+
+---
 
 ### Basisdaten (Diagnose, Person, Prozedur, Fall) -- Kritisch
 
@@ -388,8 +429,6 @@ Die folgenden Module sind **nicht** in der FDPG Obligation Layer enthalten:
 |-------|-------|------------------------|
 | **Symptom** | Paket 2026.0.0 noch nicht auf FHIR-Registry publiziert | Sobald auf packages.fhir.org verfügbar |
 | **Mikrobiologie** | Kein 2026.x-Paket publiziert | Ausstehend |
-| **PRO (Patient-Reported Outcomes)** | `...pros` 2026.0.1 auf FHIR-Registry verfügbar (LM `MII_LM_PRO` auf Simplifier) -- Aufnahme ausstehend | Kurzfristig integrierbar |
-| **MTB (Molecular Tumor Board)** | 2026.0.0 auf FHIR-Registry verfügbar -- Aufnahme ausstehend | Kurzfristig integrierbar |
 | **Strukturdaten** | Nicht relevant für FDPG-Abfragen | -- |
 | **Kardiologie** | Alpha-Status, nicht stabil genug | Nach Stabilisierung |
 | **Lungenfunktion** | Nicht als 2026.x publiziert | Ausstehend |
@@ -434,7 +473,7 @@ Die folgenden Module sind **nicht** in der FDPG Obligation Layer enthalten:
 | **Niedrig** | Studie | Niedrig | ~50 Elemente |
 | **Niedrig** | Consent | Minimal | ~24 Elemente |
 | **Niedrig** | Dokument | Minimal | ~17 Elemente |
-| -- | Medikation, Bildgebung | Minimal | Bereits gut abgedeckt |
+| -- | PRO, MTB, Medikation, Bildgebung | Minimal | Bereits gut abgedeckt |
 
 ### Zeitplan
 
