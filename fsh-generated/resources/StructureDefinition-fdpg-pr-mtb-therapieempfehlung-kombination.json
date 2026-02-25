@@ -1,0 +1,69 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "fdpg-pr-mtb-therapieempfehlung-kombination",
+  "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-therapieempfehlung-kombination",
+  "version": "2026.0.0",
+  "name": "FDPG_PR_MTB_Therapieempfehlung_Kombination",
+  "title": "FDPG PR MTB Therapieempfehlung Kombination",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "de-DE"
+          },
+          {
+            "url": "content",
+            "valueString": "MII PR MTB Therapieempfehlung Kombinationstherapie"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "FDPG PR MTB Therapieempfehlung Kombination"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "experimental": false,
+  "date": "2025-01-16",
+  "publisher": "FDPG / Medizininformatik-Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://forschen-fuer-gesundheit.de"
+        }
+      ]
+    }
+  ],
+  "description": "FDPG Profil - MII_PR_MTB_Therapieempfehlung_Kombination",
+  "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "RequestGroup",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/StructureDefinition/mii-pr-mtb-therapieempfehlung-kombination",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "RequestGroup.intent",
+        "path": "RequestGroup.intent",
+        "definition": "Da das MTB nur Empfehlungen abgibt, wird hier typischerweise 'proposal' stehen. Es sei denn, diese Therapieempfehlung ist selbst nochmal Teil einer RequestGroup. In dem Fall muss hier 'option' stehen."
+      }
+    ]
+  }
+}

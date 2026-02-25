@@ -542,9 +542,9 @@ Die Tumorgröße ist ursprünglich nicht Teil des oBDS, sondern der organspezifi
 | `partOf:systemischeTherapie` |  |  | Teil von | Ein größeres Ereignis, von dem dieses spezielle Ereignis ein Bestandteil oder Schritt ist. |
 | `status` |  |  | Status | aktiv \| abgeschlossen \| Eingabe fehlerhaft \| intendiert \| gestoppt \| pausiert \| unbekannt\| nicht eingenommen |
 | `category` |  |  | Kategorie | Eine Kategorie, die dem Medikationseintrag zugeordnet ist. |
-| `medication[x]` | SystemischeTherapieProtokoll | Gibt an, nach welchem Protokoll die Systemtherapie durchgeführt wurde. | Medikation | Medikation, welche Gegenstand des Eintrags ist. Code oder Referenz auf Medication-Objekt. |
-| `medication[x]:medicationReference` | SystemischeTherapieProtokoll | Gibt an, nach welchem Protokoll die Systemtherapie durchgeführt wurde. | Medikation Referenz | Referenz auf eine Medication-Ressource. |
-| `medication[x]:medicationCodeableConcept` | SystemischeTherapieProtokoll | Gibt an, nach welchem Protokoll die Systemtherapie durchgeführt wurde. | Medikation Code | Code für das Medikament, welches Gegenstand des Eintrags ist. |
+| `medication[x]` | Substanz | Substanz der Vortherapie nach ATC oder Text bei nicht-ATC-Wirkstoffen | Medikation | Medikation, welche Gegenstand des Eintrags ist. Code oder Referenz auf Medication-Objekt. |
+| `medication[x]:medicationReference` | Substanz | Substanz der Vortherapie nach ATC oder Text bei nicht-ATC-Wirkstoffen | Medikation Referenz | Referenz auf eine Medication-Ressource. |
+| `medication[x]:medicationCodeableConcept` | Substanz | Substanz der Vortherapie nach ATC oder Text bei nicht-ATC-Wirkstoffen | Medikation Code | Code für das Medikament, welches Gegenstand des Eintrags ist. |
 | `subject` |  |  | Who is/was taking the medication | The person, animal or group who is/was taking the medication. |
 | `context` |  |  | Kontext | Fall oder Kontakt in Verbindung mit dem Medikationseintrag |
 | `effective[x]` |  |  | Zeitpunkt oder Zeitraum | Die Zeitspanne, in der angegeben wird, dass der Patient das Medikament eingenommen hat oder einnehmen wird. |

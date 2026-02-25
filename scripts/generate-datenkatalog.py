@@ -109,6 +109,18 @@ MODULES = {
         "title": "Dokument",
         "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.dokument/2026.0.0",
     },
+    "mtb": {
+        "package": "de.medizininformatikinitiative.kerndatensatz.mtb",
+        "version": "2026.0.0",
+        "title": "MTB",
+        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.mtb/2026.0.0",
+    },
+    "proms": {
+        "package": "de.medizininformatikinitiative.kerndatensatz.pros",
+        "version": "2026.0.1",
+        "title": "PRO",
+        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.pros/2026.0.1",
+    },
 }
 
 # Sub-section groupings for large modules.  Extracted from existing modul-*.md.
@@ -166,6 +178,14 @@ LOGICAL_MODEL_CONFIG: dict[str, dict] = {
             "StructureDefinition-mii-lm-mvgenomseq-onkologie.json",
         ],
         "fhir_identities": ["FHIR", "MVGenomSeq-Datenkranz-to-MII-FHIR"],
+    },
+    "mtb": {
+        "lm_files": ["StructureDefinition-mii-lm-mtb.json"],
+        "fhir_identities": ["mii-map-mtb"],
+    },
+    "proms": {
+        "lm_files": ["StructureDefinition-mii-lm-pro.json"],
+        "fhir_identities": ["FHIR"],
     },
 }
 
@@ -580,6 +600,8 @@ def parse_module_sections(module_name: str) -> list[tuple[str, list[str]]]:
         "onkologie": "modul-onkologie.md",
         "consent": "modul-consent.md",
         "dokument": "modul-dokument.md",
+        "mtb": "modul-mtb.md",
+        "proms": "modul-pros.md",
     }
 
     page_file = PAGECONTENT_DIR / page_map.get(module_name, "")

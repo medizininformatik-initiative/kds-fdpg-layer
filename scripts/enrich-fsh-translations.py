@@ -71,6 +71,14 @@ MODULES = {
         "package": "de.medizininformatikinitiative.kerndatensatz.dokument",
         "version": "2026.0.0",
     },
+    "mtb": {
+        "package": "de.medizininformatikinitiative.kerndatensatz.mtb",
+        "version": "2026.0.0",
+    },
+    "proms": {
+        "package": "de.medizininformatikinitiative.kerndatensatz.pros",
+        "version": "2026.0.1",
+    },
 }
 
 FHIR_CACHE = Path.home() / ".fhir" / "packages"

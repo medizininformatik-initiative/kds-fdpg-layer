@@ -69,13 +69,13 @@
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.medikation",
-      "version": "2026.0.0",
+      "version": "2026.0.1",
       "uri": "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/ImplementationGuide/mii-ig-medikation",
       "id": "de_medizininformatikinitiative_kerndatensatz_medikation"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.biobank",
-      "version": "2026.0.0",
+      "version": "2026.0.1",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.biobank/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.biobank",
       "id": "de_medizininformatikinitiative_kerndatensatz_biobank"
     },
@@ -132,6 +132,18 @@
       "version": "2026.0.0",
       "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/ImplementationGuide/mii-ig-dokument",
       "id": "de_medizininformatikinitiative_kerndatensatz_dokument"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.mtb",
+      "version": "2026.0.0",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/ImplementationGuide/mii-ig-mtb-de",
+      "id": "de_medizininformatikinitiative_kerndatensatz_mtb"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.pros",
+      "version": "2026.0.1",
+      "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dok/ImplementationGuide/mii-ig-pro",
+      "id": "de_medizininformatikinitiative_kerndatensatz_pros"
     }
   ],
   "definition": {
@@ -1186,6 +1198,398 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-antrag-kostenuebernahme"
+        },
+        "name": "FDPG PR MTB Antrag Kostenuebernahme",
+        "description": "FDPG Profil - MII_PR_MTB_Antrag_Kostenuebernahme",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-antwort-kostenuebernahme"
+        },
+        "name": "FDPG PR MTB Antwort Kostenuebernahme",
+        "description": "FDPG Profil - MII_PR_MTB_Antwort_Kostenuebernahme",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-behandlungsepisode"
+        },
+        "name": "FDPG PR MTB Behandlungsepisode",
+        "description": "FDPG Profil - MII_PR_MTB_Behandlungsepisode",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-biomarker-her2-status"
+        },
+        "name": "FDPG PR MTB BIOMARKER HER2 STATUS",
+        "description": "FDPG Profil - MII_PR_MTB_BIOMARKER_HER2_STATUS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-biomarker-insituhybridization"
+        },
+        "name": "FDPG PR MTB Biomarker InSituHybridization",
+        "description": "FDPG Profil - MII_PR_MTB_Biomarker_InSituHybridization",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-biopsie-auftrag"
+        },
+        "name": "FDPG PR MTB Biopsie Auftrag",
+        "description": "FDPG Profil - MII_PR_MTB_Biopsie_Auftrag",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-brcaness"
+        },
+        "name": "FDPG PR MTB BRCAness",
+        "description": "FDPG Profil - MII_PR_MTB_BRCAness",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-consent-given"
+        },
+        "name": "FDPG PR MTB Consent Given",
+        "description": "FDPG Profil - MII_PR_MTB_Consent_Given",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-copy-number-variant"
+        },
+        "name": "FDPG PR MTB Copy Number Variant",
+        "description": "FDPG Profil - MII_PR_MTB_Copy_Number_Variant",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-diagnose-primaertumor"
+        },
+        "name": "FDPG PR MTB Diagnose Primaertumor",
+        "description": "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-diagnostische-implikation"
+        },
+        "name": "FDPG PR MTB Diagnostische Implikation",
+        "description": "FDPG Profil - MII_PR_MTB_Diagnostische_Implikation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-dna-fusion"
+        },
+        "name": "FDPG PR MTB DNA Fusion",
+        "description": "FDPG Profil - MII_PR_MTB_DNA_Fusion",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-einfache-variante"
+        },
+        "name": "FDPG PR MTB Einfache Variante",
+        "description": "FDPG Profil - MII_PR_MTB_Einfache_Variante",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-follow-up-clinicalimpression"
+        },
+        "name": "FDPG PR MTB Follow Up ClinicalImpression",
+        "description": "FDPG Profil - MII_PR_MTB_Follow_Up_ClinicalImpression",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-genomic-study"
+        },
+        "name": "FDPG PR MTB Genomic Study",
+        "description": "FDPG Profil - MII_PR_MTB_Genomic_Study",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-genomic-study-analysis"
+        },
+        "name": "FDPG PR MTB Genomic Study Analysis",
+        "description": "FDPG Profil - MII_PR_MTB_Genomic_Study_Analysis",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-genomic-study-device"
+        },
+        "name": "FDPG PR MTB Genomic Study Device",
+        "description": "FDPG Profil - MII_PR_MTB_Genomic_Study_Device",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-histologie-evaluation-auftrag"
+        },
+        "name": "FDPG PR MTB Histologie Evaluation Auftrag",
+        "description": "FDPG Profil - MII_PR_MTB_Histologie_Evaluation_Auftrag",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-hrd-score"
+        },
+        "name": "FDPG PR MTB HRD Score",
+        "description": "FDPG Profil - MII_PR_MTB_HRD_Score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-humangenetische-beratung-auftrag"
+        },
+        "name": "FDPG PR MTB Humangenetische Beratung Auftrag",
+        "description": "FDPG Profil - MII_PR_MTB_Humangenetische_Beratung_Auftrag",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-immunohistochemistry"
+        },
+        "name": "FDPG PR MTB Immunohistochemistry",
+        "description": "FDPG Profil - MII_PR_MTB_Immunohistochemistry",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-immunohistochemistry-her2"
+        },
+        "name": "FDPG PR MTB IMMUNOHISTOCHEMISTRY HER2",
+        "description": "FDPG Profil - MII_PR_MTB_IMMUNOHISTOCHEMISTRY_HER2",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-immunohistochemistry-mmr"
+        },
+        "name": "FDPG PR MTB Immunohistochemistry MMR",
+        "description": "FDPG Profil - MII_PR_MTB_Immunohistochemistry_MMR",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-immunohistochemistry-msi"
+        },
+        "name": "FDPG PR MTB Immunohistochemistry MSI",
+        "description": "FDPG Profil - MII_PR_MTB_Immunohistochemistry_MSI",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-immunohistochemistry-pdl1"
+        },
+        "name": "FDPG PR MTB Immunohistochemistry PDL1",
+        "description": "FDPG Profil - MII_PR_MTB_Immunohistochemistry_PDL1",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-immunohistochemistry-phosphorylation"
+        },
+        "name": "FDPG PR MTB Immunohistochemistry Phosphorylation",
+        "description": "FDPG Profil - MII_PR_MTB_Immunohistochemistry_Phosphorylation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-insituhybridization-her2"
+        },
+        "name": "FDPG PR MTB INSITUHYBRIDIZATION HER2",
+        "description": "FDPG Profil - MII_PR_MTB_INSITUHYBRIDIZATION_HER2",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-mikrosatelliteninstabilitaet"
+        },
+        "name": "FDPG PR MTB Mikrosatelliteninstabilitaet",
+        "description": "FDPG Profil - MII_PR_MTB_Mikrosatelliteninstabilitaet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-molecular-pathology-report"
+        },
+        "name": "FDPG PR MTB Molecular Pathology Report",
+        "description": "FDPG Profil - MII_PR_MTB_Molecular_Pathology_Report",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-molekularer-biomarker"
+        },
+        "name": "FDPG PR MTB Molekularer Biomarker",
+        "description": "FDPG Profil - MII_PR_MTB_Molekularer_Biomarker",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-mutationslast"
+        },
+        "name": "FDPG PR MTB Mutationslast",
+        "description": "FDPG Profil - MII_PR_MTB_Mutationslast",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-ngs-bericht"
+        },
+        "name": "FDPG PR MTB NGS Bericht",
+        "description": "FDPG Profil - MII_PR_MTB_NGS_Bericht",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-oncotree"
+        },
+        "name": "FDPG PR MTB Oncotree",
+        "description": "FDPG Profil - MII_PR_MTB_Oncotree",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-ploidie"
+        },
+        "name": "FDPG PR MTB Ploidie",
+        "description": "FDPG Profil - MII_PR_MTB_Ploidie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-response-befund"
+        },
+        "name": "FDPG PR MTB Response Befund",
+        "description": "FDPG Profil - MII_PR_MTB_Response_Befund",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-rna-fusion"
+        },
+        "name": "FDPG PR MTB RNA Fusion",
+        "description": "FDPG Profil - MII_PR_MTB_RNA_Fusion",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-rna-seq"
+        },
+        "name": "FDPG PR MTB RNA Seq",
+        "description": "FDPG Profil - MII_PR_MTB_RNA_Seq",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-studie"
+        },
+        "name": "FDPG PR MTB Studie",
+        "description": "FDPG Profil - MII_PR_MTB_Studie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-studieneinschluss-anfrage"
+        },
+        "name": "FDPG PR MTB Studieneinschluss Anfrage",
+        "description": "FDPG Profil - MII_PR_MTB_Studieneinschluss_Anfrage",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-systemische-therapie"
+        },
+        "name": "FDPG PR MTB Systemische Therapie",
+        "description": "FDPG Profil - MII_PR_MTB_Systemische_Therapie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-systemische-therapie-medication-statement"
+        },
+        "name": "FDPG PR MTB Systemische Therapie Medication Statement",
+        "description": "FDPG Profil - MII_PR_MTB_Systemische_Therapie_Medication_Statement",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-systemische-vortherapie"
+        },
+        "name": "FDPG PR MTB Systemische Vortherapie",
+        "description": "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-therapeutische-implikation"
+        },
+        "name": "FDPG PR MTB Therapeutische Implikation",
+        "description": "FDPG Profil - MII_PR_MTB_Therapeutische_Implikation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-therapieempfehlung"
+        },
+        "name": "FDPG PR MTB Therapieempfehlung",
+        "description": "FDPG Profil - MII_PR_MTB_Therapieempfehlung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-therapieempfehlung-kombination"
+        },
+        "name": "FDPG PR MTB Therapieempfehlung Kombination",
+        "description": "FDPG Profil - MII_PR_MTB_Therapieempfehlung_Kombination",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-therapieplan"
+        },
+        "name": "FDPG PR MTB Therapieplan",
+        "description": "FDPG Profil - MII_PR_MTB_Therapieplan",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-tumorausbreitung"
+        },
+        "name": "FDPG PR MTB Tumorausbreitung",
+        "description": "FDPG Profil - MII_PR_MTB_Tumorausbreitung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-tumorzellgehalt"
+        },
+        "name": "FDPG PR MTB Tumorzellgehalt",
+        "description": "FDPG Profil - MII_PR_MTB_Tumorzellgehalt",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mtb-who-grad-tumor-zns"
+        },
+        "name": "FDPG PR MTB WHO Grad Tumor ZNS",
+        "description": "FDPG Profil - MII_PR_MTB_WHO_Grad_Tumor_ZNS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/fdpg-pr-onko-melanom-exzision"
         },
         "name": "FDPG PR Onko Melanom Exzision",
@@ -1938,6 +2342,166 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-depression-t-score"
+        },
+        "name": "FDPG PR PRO Depression T Score",
+        "description": "FDPG Profil - MII_PR_PRO_Depression_T_Score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-observation-bdi-ii"
+        },
+        "name": "FDPG PR PRO Observation BDI II",
+        "description": "FDPG Profil - MII_PR_PRO_Observation_BDI_II",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-observation-eq5d5l-index"
+        },
+        "name": "FDPG PR PRO Observation EQ5D5L Index",
+        "description": "FDPG Profil - MII_PR_PRO_Observation_EQ5D5L_Index",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-observation-eq5d5l-profile"
+        },
+        "name": "FDPG PR PRO Observation EQ5D5L Profile",
+        "description": "FDPG Profil - MII_PR_PRO_Observation_EQ5D5L_Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-observation-eq5d5l-vas"
+        },
+        "name": "FDPG PR PRO Observation EQ5D5L VAS",
+        "description": "FDPG Profil - MII_PR_PRO_Observation_EQ5D5L_VAS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-promis-29-anxiety-tscore"
+        },
+        "name": "FDPG PR PRO PROMIS 29 Anxiety TScore",
+        "description": "FDPG Profil - MII_PR_PRO_PROMIS_29_Anxiety_TScore",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-promis-29-depression-tscore"
+        },
+        "name": "FDPG PR PRO PROMIS 29 Depression TScore",
+        "description": "FDPG Profil - MII_PR_PRO_PROMIS_29_Depression_TScore",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-promis-29-fatigue-tscore"
+        },
+        "name": "FDPG PR PRO PROMIS 29 Fatigue TScore",
+        "description": "FDPG Profil - MII_PR_PRO_PROMIS_29_Fatigue_TScore",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-promis-29-pain-intensity"
+        },
+        "name": "FDPG PR PRO PROMIS 29 Pain Intensity",
+        "description": "FDPG Profil - MII_PR_PRO_PROMIS_29_Pain_Intensity",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-promis-29-pain-interference-tscore"
+        },
+        "name": "FDPG PR PRO PROMIS 29 Pain Interference TScore",
+        "description": "FDPG Profil - MII_PR_PRO_PROMIS_29_Pain_Interference_TScore",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-promis-29-physical-function-tscore"
+        },
+        "name": "FDPG PR PRO PROMIS 29 Physical Function TScore",
+        "description": "FDPG Profil - MII_PR_PRO_PROMIS_29_Physical_Function_TScore",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-promis-29-sleep-disturbance-tscore"
+        },
+        "name": "FDPG PR PRO PROMIS 29 Sleep Disturbance TScore",
+        "description": "FDPG Profil - MII_PR_PRO_PROMIS_29_Sleep_Disturbance_TScore",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-promis-29-social-function-tscore"
+        },
+        "name": "FDPG PR PRO PROMIS 29 Social Function TScore",
+        "description": "FDPG Profil - MII_PR_PRO_PROMIS_29_Social_Function_TScore",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-promis-cognitive-function-sf4a-raw-score"
+        },
+        "name": "FDPG PR PRO PROMIS Cognitive Function SF4a Raw Score",
+        "description": "FDPG Profil - MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-promis-cognitive-function-sf4a-tscore"
+        },
+        "name": "FDPG PR PRO PROMIS Cognitive Function SF4a TScore",
+        "description": "FDPG Profil - MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-promis-depression-sf4a-raw-score"
+        },
+        "name": "FDPG PR PRO PROMIS Depression SF4a Raw Score",
+        "description": "FDPG Profil - MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-questionnaire"
+        },
+        "name": "FDPG PR PRO Questionnaire",
+        "description": "FDPG Profil - MII_PR_PRO_Questionnaire",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-questionnaireresponse"
+        },
+        "name": "FDPG PR PRO QuestionnaireResponse",
+        "description": "FDPG Profil - MII_PR_PRO_QuestionnaireResponse",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-score-blueprint"
+        },
+        "name": "FDPG PR PRO Score Blueprint",
+        "description": "FDPG Profil - MII_PR_PRO_Score_Blueprint",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-pro-score-instance"
+        },
+        "name": "FDPG PR PRO Score Instance",
+        "description": "FDPG Profil - MII_PR_PRO_Score_Instance",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/fdpg-pr-prozedur-procedure"
         },
         "name": "FDPG PR Prozedur Procedure",
@@ -2227,6 +2791,16 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "modul-mtb.html",
+          "title": "Modul MTB",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "modul-pros.html",
+          "title": "Modul PRO",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "datenkatalog-basis.html",
           "title": "Datenkatalog Basisdaten",
           "generation": "markdown"
@@ -2289,6 +2863,16 @@
         {
           "nameUrl": "datenkatalog-dokument.html",
           "title": "Datenkatalog Dokument",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datenkatalog-mtb.html",
+          "title": "Datenkatalog MTB",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datenkatalog-pros.html",
+          "title": "Datenkatalog PRO",
           "generation": "markdown"
         },
         {

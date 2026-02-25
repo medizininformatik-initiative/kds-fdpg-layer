@@ -1,0 +1,68 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "fdpg-pr-pro-promis-depression-sf4a-raw-score",
+  "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-promis-depression-sf4a-raw-score",
+  "version": "2026.0.0",
+  "name": "FDPG_PR_PRO_PROMIS_Depression_SF4a_Raw_Score",
+  "title": "FDPG PR PRO PROMIS Depression SF4a Raw Score",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "de-DE"
+          },
+          {
+            "url": "content",
+            "valueString": "MII PR PRO PROMIS Depression SF 4a Raw Score"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "FDPG PR PRO PROMIS Depression SF4a Raw Score"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "experimental": false,
+  "date": "2025-01-16",
+  "publisher": "FDPG / Medizininformatik-Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://forschen-fuer-gesundheit.de"
+        }
+      ]
+    }
+  ],
+  "description": "FDPG Profil - MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score",
+  "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-pro/StructureDefinition/mii-pr-pro-promis-depression-sf4a-raw-score",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation"
+      }
+    ]
+  }
+}

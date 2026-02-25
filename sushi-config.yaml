@@ -45,11 +45,11 @@ dependencies:
   de.medizininformatikinitiative.kerndatensatz.consent: 2026.0.1-rc-1
   # de.medizininformatikinitiative.kerndatensatz.symptom: 2026.0.0  # Not yet on registry as 2026.0.0
   de.medizininformatikinitiative.kerndatensatz.dokument: 2026.0.0
+  de.medizininformatikinitiative.kerndatensatz.mtb: 2026.0.0
+  de.medizininformatikinitiative.kerndatensatz.pros: 2026.0.1
 
   # Not yet published / deferred:
   # de.medizininformatikinitiative.kerndatensatz.mikrobio: 2026.0.0  # In the making, only 2025.0.1 available
-  # de.medizininformatikinitiative.kerndatensatz.pro: 2026.0.0       # Not yet published
-  # de.medizininformatikinitiative.kerndatensatz.mtb: 2026.0.0       # Not yet published
 
 parameters:
   show-inherited-invariants: false
@@ -97,6 +97,10 @@ pages:
     title: Modul Symptom
   modul-dokument.md:
     title: Modul Dokument
+  modul-mtb.md:
+    title: Modul MTB
+  modul-pros.md:
+    title: Modul PRO
   datenkatalog-basis.md:
     title: Datenkatalog Basisdaten
   datenkatalog-labor.md:
@@ -123,6 +127,10 @@ pages:
     title: Datenkatalog Einwilligung
   datenkatalog-dokument.md:
     title: Datenkatalog Dokument
+  datenkatalog-mtb.md:
+    title: Datenkatalog MTB
+  datenkatalog-pros.md:
+    title: Datenkatalog PRO
   changelog.md:
     title: Changelog
 
@@ -148,6 +156,8 @@ menu:
     Einwilligung: modul-consent.html
     Symptom: modul-symptom.html
     Dokument: modul-dokument.html
+    MTB: modul-mtb.html
+    PRO: modul-pros.html
   Datenkatalog:
     Basisdaten: datenkatalog-basis.html
     Laborbefund: datenkatalog-labor.html
@@ -162,5 +172,7 @@ menu:
     Onkologie: datenkatalog-onkologie.html
     Einwilligung: datenkatalog-consent.html
     Dokument: datenkatalog-dokument.html
+    MTB: datenkatalog-mtb.html
+    PRO: datenkatalog-pros.html
   Changelog: changelog.html
   Artifacts: artifacts.html

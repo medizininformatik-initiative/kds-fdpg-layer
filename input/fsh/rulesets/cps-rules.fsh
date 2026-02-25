@@ -62,7 +62,7 @@ RuleSet: FDPG_CPS_Patient
 * insert SupportSearchParam(gender, http://hl7.org/fhir/SearchParameter/individual-gender, #token, #SHALL)
 * insert SupportSearchParam(deceased, http://hl7.org/fhir/SearchParameter/Patient-deceased, #token, #SHALL)
 
-// --- Condition (from: Basis, Patho, Seltene Erkrankungen, Onkologie) ---
+// --- Condition (from: Basis, Patho, Seltene Erkrankungen, Onkologie, MTB) ---
 
 RuleSet: FDPG_CPS_Condition
 * insert SupportResource(Condition, #SHALL)
@@ -78,6 +78,8 @@ RuleSet: FDPG_CPS_Condition
 // Onkologie
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-diagnose-primaertumor)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-fruehere-tumorerkrankung)
+// MTB
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-diagnose-primaertumor)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams
@@ -87,7 +89,7 @@ RuleSet: FDPG_CPS_Condition
 * insert SupportSearchParam(clinical-status, http://hl7.org/fhir/SearchParameter/Condition-clinical-status, #token, #SHALL)
 * insert SupportSearchParam(recorded-date, http://hl7.org/fhir/SearchParameter/Condition-recorded-date, #date, #SHALL)
 
-// --- Procedure (from: Basis, MolGen, ICU, Bildgebung, Seltene Erkrankungen, Onkologie) ---
+// --- Procedure (from: Basis, MolGen, ICU, Bildgebung, Seltene Erkrankungen, Onkologie, MTB) ---
 
 RuleSet: FDPG_CPS_Procedure
 * insert SupportResource(Procedure, #SHALL)
@@ -117,6 +119,11 @@ RuleSet: FDPG_CPS_Procedure
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-strahlentherapie-bestrahlung-strahlentherapie)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-strahlentherapie)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-systemische-therapie)
+// MTB
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-genomic-study)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-genomic-study-analysis)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-systemische-therapie)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-systemische-vortherapie)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams
@@ -142,7 +149,7 @@ RuleSet: FDPG_CPS_Encounter
 * insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Encounter-status, #token, #SHALL)
 * insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/clinical-type, #token, #SHALL)
 
-// --- Observation (from: Basis, Labor, Biobank, MolGen, Patho, ICU, Bildgebung, Seltene Erkrankungen, Onkologie) ---
+// --- Observation (from: Basis, Labor, Biobank, MolGen, Patho, ICU, Bildgebung, Seltene Erkrankungen, Onkologie, MTB, PRO) ---
 
 RuleSet: FDPG_CPS_Observation
 * insert SupportResource(Observation, #SHALL)
@@ -302,6 +309,53 @@ RuleSet: FDPG_CPS_Observation
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-tumorgroesse)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-verlauf)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-weitere-klassifikationen)
+// MTB
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-biomarker-her2-status)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-biomarker-insituhybridization)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-brcaness)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-consent-given)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-copy-number-variant)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-diagnostische-implikation)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-dna-fusion)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-einfache-variante)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-hrd-score)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-immunohistochemistry)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-immunohistochemistry-her2)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-immunohistochemistry-mmr)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-immunohistochemistry-msi)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-immunohistochemistry-pdl1)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-immunohistochemistry-phosphorylation)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-insituhybridization-her2)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-mikrosatelliteninstabilitaet)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-molekularer-biomarker)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-mutationslast)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-oncotree)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-ploidie)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-response-befund)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-rna-fusion)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-rna-seq)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-therapeutische-implikation)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-tumorausbreitung)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-tumorzellgehalt)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-who-grad-tumor-zns)
+// PRO
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-depression-t-score)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-observation-bdi-ii)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-observation-eq5d5l-index)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-observation-eq5d5l-profile)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-observation-eq5d5l-vas)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-promis-29-anxiety-tscore)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-promis-29-depression-tscore)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-promis-29-fatigue-tscore)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-promis-29-pain-intensity)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-promis-29-pain-interference-tscore)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-promis-29-physical-function-tscore)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-promis-29-sleep-disturbance-tscore)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-promis-29-social-function-tscore)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-promis-cognitive-function-sf4a-raw-score)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-promis-cognitive-function-sf4a-tscore)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-promis-depression-sf4a-raw-score)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-score-instance)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams
@@ -312,7 +366,7 @@ RuleSet: FDPG_CPS_Observation
 * insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Observation-status, #token, #SHALL)
 * insert SupportSearchParam(category, http://hl7.org/fhir/SearchParameter/Observation-category, #token, #SHALL)
 
-// --- DiagnosticReport (from: Labor, MolGen, Patho, Bildgebung, Onkologie) ---
+// --- DiagnosticReport (from: Labor, MolGen, Patho, Bildgebung, Onkologie, MTB) ---
 
 RuleSet: FDPG_CPS_DiagnosticReport
 * insert SupportResource(DiagnosticReport, #SHALL)
@@ -326,6 +380,9 @@ RuleSet: FDPG_CPS_DiagnosticReport
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-radiologischer-befund)
 // Onkologie
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-befund)
+// MTB
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-molecular-pathology-report)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-ngs-bericht)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams
@@ -355,6 +412,11 @@ RuleSet: FDPG_CPS_ServiceRequest
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapieempfehlung-nicht-medikamentoes)
 // Onkologie
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-therapieempfehlung-operation)
+// MTB
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-biopsie-auftrag)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-histologie-evaluation-auftrag)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-humangenetische-beratung-auftrag)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-studieneinschluss-anfrage)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams
@@ -414,7 +476,7 @@ RuleSet: FDPG_CPS_MedicationAdministration
 * insert SupportSearchParam(effective-time, http://hl7.org/fhir/SearchParameter/MedicationAdministration-effective-time, #date, #SHALL)
 * insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/medications-status, #token, #SHALL)
 
-// --- MedicationRequest (from: Medikation, Seltene Erkrankungen, Onkologie) ---
+// --- MedicationRequest (from: Medikation, Seltene Erkrankungen, Onkologie, MTB) ---
 
 RuleSet: FDPG_CPS_MedicationRequest
 * insert SupportResource(MedicationRequest, #SHALL)
@@ -424,6 +486,8 @@ RuleSet: FDPG_CPS_MedicationRequest
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapieempfehlung)
 // Onkologie
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-therapieempfehlung-medikation)
+// MTB
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-therapieempfehlung)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams
@@ -433,7 +497,7 @@ RuleSet: FDPG_CPS_MedicationRequest
 * insert SupportSearchParam(authoredon, http://hl7.org/fhir/SearchParameter/MedicationRequest-authoredon, #date, #SHALL)
 * insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/medications-status, #token, #SHALL)
 
-// --- MedicationStatement (from: Medikation, Onkologie) ---
+// --- MedicationStatement (from: Medikation, Onkologie, MTB) ---
 
 RuleSet: FDPG_CPS_MedicationStatement
 * insert SupportResource(MedicationStatement, #SHALL)
@@ -441,6 +505,8 @@ RuleSet: FDPG_CPS_MedicationStatement
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-medikation-medication-statement)
 // Onkologie
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-systemische-therapie-medikation)
+// MTB
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-systemische-therapie-medication-statement)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams
@@ -553,7 +619,7 @@ RuleSet: FDPG_CPS_PractitionerRole
 * insert SupportSearchParam(practitioner, http://hl7.org/fhir/SearchParameter/PractitionerRole-practitioner, #reference, #SHALL)
 * insert SupportSearchParam(role, http://hl7.org/fhir/SearchParameter/PractitionerRole-role, #token, #SHALL)
 
-// --- ResearchStudy (from: Studie, Seltene Erkrankungen) ---
+// --- ResearchStudy (from: Studie, Seltene Erkrankungen, MTB) ---
 
 RuleSet: FDPG_CPS_ResearchStudy
 * insert SupportResource(ResearchStudy, #SHALL)
@@ -561,6 +627,8 @@ RuleSet: FDPG_CPS_ResearchStudy
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-studie)
 // Seltene Erkrankungen
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-studie)
+// MTB
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-studie)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams
@@ -667,7 +735,7 @@ RuleSet: FDPG_CPS_Media
 * insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/clinical-patient, #reference, #SHALL)
 * insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Media-status, #token, #SHALL)
 
-// --- Device (from: ICU, Bildgebung) ---
+// --- Device (from: ICU, Bildgebung, MTB) ---
 
 RuleSet: FDPG_CPS_Device
 * insert SupportResource(Device, #SHALL)
@@ -675,6 +743,8 @@ RuleSet: FDPG_CPS_Device
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-device)
 // Bildgebung
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-geraet)
+// MTB
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-genomic-study-device)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams
@@ -708,7 +778,7 @@ RuleSet: FDPG_CPS_BodyStructure
 * insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/BodyStructure-patient, #reference, #SHALL)
 * insert SupportSearchParam(location, http://hl7.org/fhir/SearchParameter/BodyStructure-location, #token, #SHALL)
 
-// --- CarePlan (from: Bildgebung, Seltene Erkrankungen, Onkologie) ---
+// --- CarePlan (from: Bildgebung, Seltene Erkrankungen, Onkologie, MTB) ---
 
 RuleSet: FDPG_CPS_CarePlan
 * insert SupportResource(CarePlan, #SHALL)
@@ -718,6 +788,8 @@ RuleSet: FDPG_CPS_CarePlan
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapieplan)
 // Onkologie
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-tumorkonferenz)
+// MTB
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-therapieplan)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams
@@ -742,12 +814,15 @@ RuleSet: FDPG_CPS_ImagingStudy
 * insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ImagingStudy-status, #token, #SHALL)
 * insert SupportSearchParam(modality, http://hl7.org/fhir/SearchParameter/ImagingStudy-modality, #token, #SHALL)
 
-// --- ClinicalImpression (from: Seltene Erkrankungen) ---
+// --- ClinicalImpression (from: Seltene Erkrankungen, MTB) ---
 
 RuleSet: FDPG_CPS_ClinicalImpression
 * insert SupportResource(ClinicalImpression, #SHALL)
-// Profiles from: Seltene Erkrankungen
+// Seltene Erkrankungen
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-clinical-impression)
+// MTB
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-behandlungsepisode)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-follow-up-clinicalimpression)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams
@@ -756,7 +831,7 @@ RuleSet: FDPG_CPS_ClinicalImpression
 * insert SupportSearchParam(date, http://hl7.org/fhir/SearchParameter/clinical-date, #date, #SHALL)
 * insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ClinicalImpression-status, #token, #SHALL)
 
-// --- RequestGroup (from: Seltene Erkrankungen, Onkologie) ---
+// --- RequestGroup (from: Seltene Erkrankungen, Onkologie, MTB) ---
 
 RuleSet: FDPG_CPS_RequestGroup
 * insert SupportResource(RequestGroup, #SHALL)
@@ -764,6 +839,8 @@ RuleSet: FDPG_CPS_RequestGroup
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapieempfehlung-kombination)
 // Onkologie
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-therapieempfehlung-kombinationstherapie)
+// MTB
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-therapieempfehlung-kombination)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams
@@ -810,3 +887,64 @@ RuleSet: FDPG_CPS_Provenance
 * insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/Provenance-patient, #reference, #SHALL)
 * insert SupportSearchParam(recorded, http://hl7.org/fhir/SearchParameter/Provenance-recorded, #date, #SHALL)
 * insert SupportSearchParam(target, http://hl7.org/fhir/SearchParameter/Provenance-target, #reference, #SHALL)
+
+// --- Claim (from: MTB) ---
+
+RuleSet: FDPG_CPS_Claim
+* insert SupportResource(Claim, #SHALL)
+// Profiles from: MTB
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-antrag-kostenuebernahme)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/Claim-patient, #reference, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Claim-status, #token, #SHALL)
+
+// --- ClaimResponse (from: MTB) ---
+
+RuleSet: FDPG_CPS_ClaimResponse
+* insert SupportResource(ClaimResponse, #SHALL)
+// Profiles from: MTB
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-antwort-kostenuebernahme)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/ClaimResponse-patient, #reference, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/ClaimResponse-status, #token, #SHALL)
+
+// --- Questionnaire (from: PRO) ---
+
+RuleSet: FDPG_CPS_Questionnaire
+* insert SupportResource(Questionnaire, #SHALL)
+// Profiles from: PRO
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-questionnaire)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(title, http://hl7.org/fhir/SearchParameter/Questionnaire-title, #string, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Questionnaire-status, #token, #SHALL)
+* insert SupportSearchParam(url, http://hl7.org/fhir/SearchParameter/Questionnaire-url, #uri, #SHALL)
+
+// --- QuestionnaireResponse (from: PRO) ---
+
+RuleSet: FDPG_CPS_QuestionnaireResponse
+* insert SupportResource(QuestionnaireResponse, #SHALL)
+// Profiles from: PRO
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-questionnaireresponse)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
+* insert SupportSearchParam(patient, http://hl7.org/fhir/SearchParameter/QuestionnaireResponse-patient, #reference, #SHALL)
+* insert SupportSearchParam(questionnaire, http://hl7.org/fhir/SearchParameter/QuestionnaireResponse-questionnaire, #reference, #SHALL)
+* insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/QuestionnaireResponse-status, #token, #SHALL)
+* insert SupportSearchParam(authored, http://hl7.org/fhir/SearchParameter/QuestionnaireResponse-authored, #date, #SHALL)
+
+// --- ObservationDefinition (from: PRO) ---
+
+RuleSet: FDPG_CPS_ObservationDefinition
+* insert SupportResource(ObservationDefinition, #SHALL)
+// Profiles from: PRO
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-score-blueprint)
+* insert SupportInteraction(#read, #SHALL)
+* insert SupportInteraction(#search-type, #SHALL)
+* insert CommonSearchParams
