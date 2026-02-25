@@ -25,6 +25,7 @@ FHIR_CACHE = Path.home() / ".fhir" / "packages"
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 FSH_DIR = PROJECT_ROOT / "input" / "fsh" / "obligations"
 PAGECONTENT_DIR = PROJECT_ROOT / "input" / "pagecontent"
+LM_SUPPLEMENT_DIR = PROJECT_ROOT / "input" / "data" / "lm-supplements"
 
 # Module configs: key = obligation folder name, value = dict with package info
 # For basis, the package is "base" but the folder is "basis"
@@ -127,7 +128,10 @@ LOGICAL_MODEL_CONFIG: dict[str, dict] = {
         "lm_files": [
             "StructureDefinition-mii-lm-diagnose.json",
             "StructureDefinition-mii-lm-prozedur.json",
-            # person and fall LMs have no FHIR mappings
+        ],
+        "supplement_files": [
+            "lm-supplement-person.json",
+            "lm-supplement-fall.json",
         ],
         "fhir_identities": ["FHIR"],
     },
@@ -290,6 +294,18 @@ def load_logical_models(module_name: str, package_dir: Path) -> list[dict]:
     models = []
     for filename in config["lm_files"]:
         filepath = package_dir / filename
+        if not filepath.exists():
+            continue
+        try:
+            with open(filepath) as f:
+                data = json.load(f)
+            if data.get("kind") == "logical":
+                models.append(data)
+        except (json.JSONDecodeError, KeyError):
+            continue
+    # Also load supplement files (locally maintained FHIR mappings)
+    for filename in config.get("supplement_files", []):
+        filepath = LM_SUPPLEMENT_DIR / filename
         if not filepath.exists():
             continue
         try:

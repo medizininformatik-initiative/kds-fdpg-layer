@@ -1,0 +1,305 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "lm-supplement-fall",
+  "url": "https://www.medizininformatik-initiative.de/fhir/fdpg/StructureDefinition/lm-supplement-fall",
+  "name": "LM_Supplement_Fall",
+  "title": "Fall LogicalModel FHIR Mapping Supplement",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "type": "Fall",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "mapping": [
+    {
+      "identity": "FHIR",
+      "name": "Fall LogicalModel FHIR Mapping"
+    }
+  ],
+  "snapshot": {
+    "element": [
+      {
+        "id": "Fall",
+        "path": "Fall",
+        "short": "MII LM Fall",
+        "definition": "Logische Repräsentation des Basismoduls Fall"
+      },
+      {
+        "id": "Fall.Einrichtungskontakt.KontaktEbene",
+        "path": "Fall.Einrichtungskontakt.KontaktEbene",
+        "short": "Für die Unterscheidung der Kontakt-Hierarchieebenen im Modul FALL werden folgende Ausprägungen unterschieden: 1. Einrichtungskontakt 2. Abteilungskontakt 3. Versorgungsstellenkontakt",
+        "definition": "Für die Unterscheidung der Kontakt-Hierarchieebenen im Modul FALL werden folgende Ausprägungen unterschieden: 1. Einrichtungskontakt 2. Abteilungskontakt 3. Versorgungsstellenkontakt. Diese Gliederung gilt zunächst für stationäre Kontakte (siehe Kontakt-Klasse).",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.type"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Einrichtungskontakt.KontaktKlasse",
+        "path": "Fall.Einrichtungskontakt.KontaktKlasse",
+        "short": "Auf Einrichtungsebene, also auf der Kontakt-Ebene Einrichtungskontakt, kann die Kontakt-Klasse stationär, ambulant oder teilstationär sein.",
+        "definition": "Auf Einrichtungsebene, also auf der Kontakt-Ebene Einrichtungskontakt, kann die Kontakt-Klasse stationär, ambulant oder teilstationär sein.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.class"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Einrichtungskontakt.KontaktArt",
+        "path": "Fall.Einrichtungskontakt.KontaktArt",
+        "short": "Differenzierung zwischen verschiedenen Arten von Kontakten (z.B. vorstationär, nachstationär, intensivstationär)",
+        "definition": "Differenzierung zwischen verschiedenen Arten von Kontakten (z.B. vorstationär, nachstationär, intensivstationär)",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.type"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Einrichtungskontakt.PatientenIdentifikator",
+        "path": "Fall.Einrichtungskontakt.PatientenIdentifikator",
+        "short": "Bei der internen Nutzung dient die sogenannte Patientennummer als Identifikator.",
+        "definition": "Bei der internen Nutzung dient die sogenannte Patientennummer als Identifikator. Diese wird bei der ersten Aufnahme in die Einrichtung parallel zur ersten Fallnummer (Aufnahmenummer) vergeben.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.subject"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Einrichtungskontakt.Aufnahmenummer",
+        "path": "Fall.Einrichtungskontakt.Aufnahmenummer",
+        "short": "Jeder Patient erhält bei der Planung einer Aufnahme oder bei der Aufnahme selbst eine Aufnahmenummer (auch Fallnummer oder Krankenhausinternes Kennzeichen genannt).",
+        "definition": "Jeder Patient erhält bei der Planung einer Aufnahme oder bei der Aufnahme selbst eine Aufnahmenummer (auch Fallnummer oder Krankenhausinternes Kennzeichen genannt). Sie dient bei allen digital unterstüzten Vorgängen der Zuordnung zu dem Aufenthalt des Patienten in der Einrichtung.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Einrichtungskontakt.Aufnahmeanlass",
+        "path": "Fall.Einrichtungskontakt.Aufnahmeanlass",
+        "short": "Gemäß §21 KHEntgG",
+        "definition": "Gemäß §21 KHEntgG",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.hospitalization.admitSource"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Einrichtungskontakt.Aufnahmegrund",
+        "path": "Fall.Einrichtungskontakt.Aufnahmegrund",
+        "short": "Gemäß §21 KHEntgG",
+        "definition": "Es ist der Aufnahmegrund entsprechend Schlüssel 1 der Anlage 2 zur § 301-Vereinbarung anzugeben.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.extension.where(url='http://fhir.de/StructureDefinition/Aufnahmegrund')"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Einrichtungskontakt.Beginndatum",
+        "path": "Fall.Einrichtungskontakt.Beginndatum",
+        "short": "Start des Kontakt Zeitraums",
+        "definition": "Start des Kontakt Zeitraums",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.period.start"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Einrichtungskontakt.Enddatum",
+        "path": "Fall.Einrichtungskontakt.Enddatum",
+        "short": "Ende des Kontakt Zeitraums",
+        "definition": "Ende des Kontakt Zeitraums",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.period.end"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Einrichtungskontakt.Entlassungsgrund",
+        "path": "Fall.Einrichtungskontakt.Entlassungsgrund",
+        "short": "Gemäß §21 KHEntgG",
+        "definition": "Gemäß §21 KHEntgG",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.hospitalization.dischargeDisposition"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Abteilungskontakt.KontaktEbene",
+        "path": "Fall.Abteilungskontakt.KontaktEbene",
+        "short": "Für die Unterscheidung der Kontakt-Hierarchieebenen im Modul FALL.",
+        "definition": "Für die Unterscheidung der Kontakt-Hierarchieebenen im Modul FALL werden folgende Ausprägungen unterschieden: 1. Einrichtungskontakt 2. Abteilungskontakt 3. Versorgungsstellenkontakt.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.type"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Abteilungskontakt.KontaktArt",
+        "path": "Fall.Abteilungskontakt.KontaktArt",
+        "short": "Differenzierung zwischen verschiedenen Arten von Kontakten (z.B. vorstationär, nachstationär, intensivstationär).",
+        "definition": "Differenzierung zwischen verschiedenen Arten von Kontakten (z.B. vorstationär, nachstationär, intensivstationär).",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.type"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Abteilungskontakt.PatientenIdentifikator",
+        "path": "Fall.Abteilungskontakt.PatientenIdentifikator",
+        "short": "Bei der internen Nutzung dient die sogenannte Patientennummer als Identifikator.",
+        "definition": "Bei der internen Nutzung dient die sogenannte Patientennummer als Identifikator.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.subject"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Abteilungskontakt.Aufnahmenummer",
+        "path": "Fall.Abteilungskontakt.Aufnahmenummer",
+        "short": "Aufnahmenummer (auch Fallnummer oder Krankenhausinternes Kennzeichen genannt). Im MII KDS dient sie als Identifikator bzw. Referenz zum Einrichtungskontakt.",
+        "definition": "Jeder Patient erhält bei der Planung einer Aufnahme oder bei der Aufnahme selbst eine Aufnahmenummer. Im MII KDS dient sie als Identifikator bzw. Referenz zum Einrichtungskontakt.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Abteilungskontakt.Beginndatum",
+        "path": "Fall.Abteilungskontakt.Beginndatum",
+        "short": "Start des Kontakt Zeitraums",
+        "definition": "Start des Kontakt Zeitraums",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.period.start"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Abteilungskontakt.Enddatum",
+        "path": "Fall.Abteilungskontakt.Enddatum",
+        "short": "Ende des Kontakt Zeitraums",
+        "definition": "Ende des Kontakt Zeitraums",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.period.end"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Abteilungskontakt.Fachabteilungsschluessel",
+        "path": "Fall.Abteilungskontakt.Fachabteilungsschluessel",
+        "short": "Bis auf Weiteres wird der proprietäre deutsche Fachabteilungsschlüssel des § 301 SGB V als Fachrichtungsschlüssel genutzt.",
+        "definition": "Bis auf Weiteres wird der proprietäre deutsche Fachabteilungsschlüssel des § 301 SGB V und des Datensatzes gemäß § 21 KHentgG als Fachrichtungsschlüssel genutzt, weil dieser in jedem Krankenhaus als Fachabteilungsschlüssel im Einsatz ist.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.serviceType"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Versorgungsstellenkontakt.KontaktEbene",
+        "path": "Fall.Versorgungsstellenkontakt.KontaktEbene",
+        "short": "Für die Unterscheidung der Kontakt-Hierarchieebenen im Modul FALL.",
+        "definition": "Für die Unterscheidung der Kontakt-Hierarchieebenen im Modul FALL werden folgende Ausprägungen unterschieden: 1. Einrichtungskontakt 2. Abteilungskontakt 3. Versorgungsstellenkontakt.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.type"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Versorgungsstellenkontakt.KontaktArt",
+        "path": "Fall.Versorgungsstellenkontakt.KontaktArt",
+        "short": "Differenzierung zwischen verschiedenen Arten von Kontakten (z.B. vorstationär, nachstationär, intensivstationär).",
+        "definition": "Differenzierung zwischen verschiedenen Arten von Kontakten (z.B. vorstationär, nachstationär, intensivstationär).",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.type"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Versorgungsstellenkontakt.PatientenIdentifikator",
+        "path": "Fall.Versorgungsstellenkontakt.PatientenIdentifikator",
+        "short": "Bei der internen Nutzung dient die sogenannte Patientennummer als Identifikator.",
+        "definition": "Bei der internen Nutzung dient die sogenannte Patientennummer als Identifikator.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.subject"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Versorgungsstellenkontakt.Aufnahmenummer",
+        "path": "Fall.Versorgungsstellenkontakt.Aufnahmenummer",
+        "short": "Aufnahmenummer (auch Fallnummer oder Krankenhausinternes Kennzeichen genannt). Im MII KDS dient sie als Identifikator bzw. Referenz zum Einrichtungskontakt.",
+        "definition": "Jeder Patient erhält bei der Planung einer Aufnahme oder bei der Aufnahme selbst eine Aufnahmenummer. Im MII KDS dient sie als Identifikator bzw. Referenz zum Einrichtungskontakt.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Versorgungsstellenkontakt.Beginndatum",
+        "path": "Fall.Versorgungsstellenkontakt.Beginndatum",
+        "short": "Start des Kontakt Zeitraums",
+        "definition": "Start des Kontakt Zeitraums",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.period.start"
+          }
+        ]
+      },
+      {
+        "id": "Fall.Versorgungsstellenkontakt.Enddatum",
+        "path": "Fall.Versorgungsstellenkontakt.Enddatum",
+        "short": "Ende des Kontakt Zeitraums",
+        "definition": "Ende des Kontakt Zeitraums",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Encounter.period.end"
+          }
+        ]
+      }
+    ]
+  }
+}

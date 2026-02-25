@@ -1,0 +1,429 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "lm-supplement-person",
+  "url": "https://www.medizininformatik-initiative.de/fhir/fdpg/StructureDefinition/lm-supplement-person",
+  "name": "LM_Supplement_Person",
+  "title": "Person LogicalModel FHIR Mapping Supplement",
+  "status": "active",
+  "kind": "logical",
+  "abstract": false,
+  "type": "Person",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Element",
+  "derivation": "specialization",
+  "mapping": [
+    {
+      "identity": "FHIR",
+      "name": "Person LogicalModel FHIR Mapping"
+    }
+  ],
+  "snapshot": {
+    "element": [
+      {
+        "id": "Person",
+        "path": "Person",
+        "short": "-- Überschrift --",
+        "definition": "Logische Repräsentation des Basismoduls Person"
+      },
+      {
+        "id": "Person.Name",
+        "path": "Person.Name",
+        "short": "Vollständiger Name einer Person.",
+        "definition": "Vollständiger Name einer Person.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.name"
+          }
+        ]
+      },
+      {
+        "id": "Person.Name.Vorname",
+        "path": "Person.Name.Vorname",
+        "short": "Vollständiger Vorname einer Person.",
+        "definition": "Vollständiger Vorname einer Person.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.name.given"
+          }
+        ]
+      },
+      {
+        "id": "Person.Name.Nachname",
+        "path": "Person.Name.Nachname",
+        "short": "Nachname einer Person ohne Vor- und Zusätze. Dient z.B. der alphabetischen Einordnung des Namens.",
+        "definition": "Nachname einer Person ohne Vor- und Zusätze. Dient z.B. der alphabetischen Einordnung des Namens.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.name.family"
+          }
+        ]
+      },
+      {
+        "id": "Person.Name.Familienname",
+        "path": "Person.Name.Familienname",
+        "short": "Der vollständige Familienname, einschließlich aller Vorsatz- und Zusatzwörter, mit Leerzeichen getrennt.",
+        "definition": "Der vollständige Familienname, einschließlich aller Vorsatz- und Zusatzwörter, mit Leerzeichen getrennt.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.name.family"
+          }
+        ]
+      },
+      {
+        "id": "Person.Name.Vorsatzwort",
+        "path": "Person.Name.Vorsatzwort",
+        "short": "Vorsatzwort wie z.B.: von, van, zu Vgl. auch VSDM-Spezifikation der Gematik (Versichertenstammdatenmanagement, \"eGK\")",
+        "definition": "Vorsatzwort wie z.B.: von, van, zu Vgl. auch VSDM-Spezifikation der Gematik (Versichertenstammdatenmanagement, \"eGK\")",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix')"
+          }
+        ]
+      },
+      {
+        "id": "Person.Name.Namenszusatz",
+        "path": "Person.Name.Namenszusatz",
+        "short": "Namenszusatz als Bestandteil das Nachnamens, wie in VSDM (Versichertenstammdatenmanagement, \"eGK\") definiert. Beispiele: Gräfin, Prinz oder Fürst",
+        "definition": "Namenszusatz als Bestandteil das Nachnamens, wie in VSDM (Versichertenstammdatenmanagement, \"eGK\") definiert. Beispiele: Gräfin, Prinz oder Fürst",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.name.family.extension('http://fhir.de/StructureDefinition/humanname-namenszusatz')"
+          }
+        ]
+      },
+      {
+        "id": "Person.Name.Praefix",
+        "path": "Person.Name.Praefix",
+        "short": "Namensteile vor dem Vornamen, z.B. akademischer Grad",
+        "definition": "Namensteile vor dem Vornamen, z.B. akademischer Grad",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.name.prefix"
+          }
+        ]
+      },
+      {
+        "id": "Person.Name.Geburtsname",
+        "path": "Person.Name.Geburtsname",
+        "short": "Familienname einer Person zum Zeitpunkt ihrer Geburt. Kann sich danach z.B. durch Heirat und Annahme eines anderen Familiennamens ändern.",
+        "definition": "Familienname einer Person zum Zeitpunkt ihrer Geburt. Kann sich danach z.B. durch Heirat und Annahme eines anderen Familiennamens ändern.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.name.where(use='maiden')"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.AdministrativesGeschlecht",
+        "path": "Person.Demographie.AdministrativesGeschlecht",
+        "short": "Administratives Geschlecht der Person",
+        "definition": "Administratives Geschlecht der Person",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.gender"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.Geburtsdatum",
+        "path": "Person.Demographie.Geburtsdatum",
+        "short": "Geburtsdatum des Person.",
+        "definition": "Geburtsdatum des Person.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.birthDate"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.Adresse",
+        "path": "Person.Demographie.Adresse",
+        "short": "Vollständige Anschrift einer Person für die postlische Kommunikation.",
+        "definition": "Vollständige Anschrift einer Person für die postlische Kommunikation.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.address"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.Adresse.Strassenanschrift",
+        "path": "Person.Demographie.Adresse.Strassenanschrift",
+        "short": "Eine Adresse für die Strassenanschrift gemäß postalischer Konventionen. Bei Stadtstaaten einschließlich Bezirken.",
+        "definition": "Eine Adresse für die Strassenanschrift gemäß postalischer Konventionen. Bei Stadtstaaten einschließlich Bezirken.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.address.where(type='both')"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.Adresse.Strassenanschrift.Land",
+        "path": "Person.Demographie.Adresse.Strassenanschrift.Land",
+        "short": "Ländercode nach ISO 3166.",
+        "definition": "Ländercode nach ISO 3166.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.address.country"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.Adresse.Strassenanschrift.PLZ",
+        "path": "Person.Demographie.Adresse.Strassenanschrift.PLZ",
+        "short": "Postleitzahl gemäß der im jeweiligen Land gültigen Konventionen.",
+        "definition": "Postleitzahl gemäß der im jeweiligen Land gültigen Konventionen.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.address.postalCode"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.Adresse.Strassenanschrift.Wohnort",
+        "path": "Person.Demographie.Adresse.Strassenanschrift.Wohnort",
+        "short": "Bei Personen aus Stadtstaaten inklusive des Stadtteils.",
+        "definition": "Bei Personen aus Stadtstaaten inklusive des Stadtteils.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.address.city"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.Adresse.Strassenanschrift.Strasse",
+        "path": "Person.Demographie.Adresse.Strassenanschrift.Strasse",
+        "short": "Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung.",
+        "definition": "Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.address.line"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.Adresse.Postfach",
+        "path": "Person.Demographie.Adresse.Postfach",
+        "short": "Eine Adresse für ein Postfach gemäß postalischer Konventionen. Bei Stadtstaaten einschließlich Bezirken.",
+        "definition": "Eine Adresse für ein Postfach gemäß postalischer Konventionen. Bei Stadtstaaten einschließlich Bezirken.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.address.where(type='postal')"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.Adresse.Postfach.Land",
+        "path": "Person.Demographie.Adresse.Postfach.Land",
+        "short": "Ländercode nach ISO 3166.",
+        "definition": "Ländercode nach ISO 3166.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.address.country"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.Adresse.Postfach.PLZ",
+        "path": "Person.Demographie.Adresse.Postfach.PLZ",
+        "short": "Postleitzahl gemäß der im jeweiligen Land gültigen Konventionen.",
+        "definition": "Postleitzahl gemäß der im jeweiligen Land gültigen Konventionen.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.address.postalCode"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.Adresse.Postfach.Wohnort",
+        "path": "Person.Demographie.Adresse.Postfach.Wohnort",
+        "short": "Bei Personen aus Stadtstaaten inklusive des Stadtteils.",
+        "definition": "Bei Personen aus Stadtstaaten inklusive des Stadtteils.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.address.city"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.Adresse.Postfach.Strasse",
+        "path": "Person.Demographie.Adresse.Postfach.Strasse",
+        "short": "Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung.",
+        "definition": "Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.address.line"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.Vitalstatus",
+        "path": "Person.Demographie.Vitalstatus",
+        "short": "Gibt an, ob ein Patient verstorben ist. Falls ja, zudem den Zeitpunkt.",
+        "definition": "Gibt an, ob ein Patient verstorben ist. Falls ja, zudem den Zeitpunkt.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.value[x]"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.Vitalstatus.PatientVerstorben",
+        "path": "Person.Demographie.Vitalstatus.PatientVerstorben",
+        "short": "Gibt an, ob der Patient am Leben oder verstorben ist.",
+        "definition": "Gibt an, ob der Patient am Leben oder verstorben ist.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.deceased[x]"
+          },
+          {
+            "identity": "FHIR",
+            "map": "Observation.value[x]"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.Vitalstatus.Todeszeitpunkt",
+        "path": "Person.Demographie.Vitalstatus.Todeszeitpunkt",
+        "short": "Gibt den Todeszeitpunkt des Patienten an, falls dieser im KH verstorben ist. Ansonsten \"Null Flavor\".",
+        "definition": "Gibt den Todeszeitpunkt des Patienten an, falls dieser im KH verstorben ist. Ansonsten \"Null Flavor\".",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.deceased[x]"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.Vitalstatus.ZeitpunktFeststellungDesVitalstatus",
+        "path": "Person.Demographie.Vitalstatus.ZeitpunktFeststellungDesVitalstatus",
+        "short": "Letzter bekannter Zeitpunkt oder Zeitraum, zudem ein Vitalstatus festgestellt wurde",
+        "definition": "Letzter bekannter Zeitpunkt oder Zeitraum, zudem ein Vitalstatus festgestellt wurde",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Observation.effective[x]"
+          }
+        ]
+      },
+      {
+        "id": "Person.Demographie.Vitalstatus.Todesursache",
+        "path": "Person.Demographie.Vitalstatus.Todesursache",
+        "short": "Todesursache mit ICD-10-WHO kodiert.",
+        "definition": "Todesursache mit ICD-10-WHO kodiert.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Condition.code.coding"
+          }
+        ]
+      },
+      {
+        "id": "Person.PatientIn.PatientenIdentifikator",
+        "path": "Person.PatientIn.PatientenIdentifikator",
+        "short": "Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als \"Codesystem\" gesehen werden, und Patienten-Identifikator als \"Code\"",
+        "definition": "Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als \"Codesystem\" gesehen werden, und Patienten-Identifikator als \"Code\"",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Person.PatientIn.PatientenIdentifikator.PatientenIdentifikator",
+        "path": "Person.PatientIn.PatientenIdentifikator.PatientenIdentifikator",
+        "short": "Gesundheitseinrichtungs-eigene Identifikationsnummer für einen Patienten",
+        "definition": "Gesundheitseinrichtungs-eigene Identifikationsnummer für einen Patienten",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.identifier.value"
+          }
+        ]
+      },
+      {
+        "id": "Person.PatientIn.PatientenIdentifikator.PatientenIdentifikatorKontext",
+        "path": "Person.PatientIn.PatientenIdentifikator.PatientenIdentifikatorKontext",
+        "short": "Der Kontext des Patienten-Identifikators um den Patienten-Identifikator zu Beschreiben, da der Patient innerhalb einer Gesundheitseinrichtung möglicherweise pro System eine Nummer bekommt.",
+        "definition": "Der Kontext des Patienten-Identifikators um den Patienten-Identifikator zu Beschreiben, da der Patient innerhalb einer Gesundheitseinrichtung möglicherweise pro System eine Nummer bekommt.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.identifier.assigner"
+          }
+        ]
+      },
+      {
+        "id": "Person.PatientIn.Versicherung.VersichertenIDGKV",
+        "path": "Person.PatientIn.Versicherung.VersichertenIDGKV",
+        "short": "Unveränderlicher Teil der Krankenversichertennummer (VersichertenID) bei GKV Patienten.",
+        "definition": "Unveränderlicher Teil der Krankenversichertennummer (VersichertenID) bei GKV Patienten. Diese findet sich z.B. auf der Mitgliedskarte der Krankenkasse.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.identifier.where(type.coding.code='GKV')"
+          }
+        ]
+      },
+      {
+        "id": "Person.PatientIn.Versicherung.VersichertennummerPKV",
+        "path": "Person.PatientIn.Versicherung.VersichertennummerPKV",
+        "short": "Versichertennummer bei PKV Patienten.",
+        "definition": "Versichertennummer bei PKV Patienten. Vergabe erfolgt durch die jeweilige Private Krankenversicherung.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.identifier.where(type.coding.code='PKV')"
+          }
+        ]
+      },
+      {
+        "id": "Person.PatientIn.Versicherung.InstitutionskennzeichenDerKrankenkasse",
+        "path": "Person.PatientIn.Versicherung.InstitutionskennzeichenDerKrankenkasse",
+        "short": "Die Institutionskennzeichen (kurz: IK) sind bundesweit eindeutige, neunstellige Zahlen.",
+        "definition": "Die Institutionskennzeichen (kurz: IK) sind bundesweit eindeutige, neunstellige Zahlen, mit deren Hilfe Abrechnungen und Qualitätssicherungsmaßnahmen im Bereich der deutschen Sozialversicherung einrichtungsübergreifend abgewickelt werden können.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.identifier.assigner.identifier"
+          }
+        ]
+      },
+      {
+        "id": "Person.PatientInPseudonym.Pseudonym",
+        "path": "Person.PatientInPseudonym.Pseudonym",
+        "short": "Neu generierte Identifikation der PatientIn mit Bezug zum Original-Identifikator in einer Treuhandstelle.",
+        "definition": "Neu generierte Identifikation der PatientIn mit Bezug zum Original-Identifikator in einer Treuhandstelle.",
+        "mapping": [
+          {
+            "identity": "FHIR",
+            "map": "Patient.identifier"
+          }
+        ]
+      }
+    ]
+  }
+}
