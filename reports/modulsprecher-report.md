@@ -16,34 +16,18 @@ Die FDPG Obligation Layer ist ein **Overlay** über den MII-Kerndatensatz-Pakete
 Sie leitet 313 FHIR-Profile aus 15 KDS-Modulen ab und ergänzt:
 
 - **MustSupport-Flags** -- welche Elemente für FDPG-Abfragen relevant sind
-- **Obligations** -- maschinenlesbare Pflichten für Datenlieferanten (DIZ) und Datenkonsumenten (FDPG-Portal)
 - **Übersetzungen** -- deutsche und englische Kurzbeschreibungen und Definitionen pro Element
-- **Datenkatalog** -- menschenlesbare Dokumentation aller MustSupport-Elemente mit LM-Bezug
+- **Datenkatalog** -- menschenlesbare Dokumentation aller MustSupport-Elemente als Authoring- und Review-Werkzeug für das KDS-Team
 
 Die Upstream-KDS-Pakete bleiben **unverändert**. Die Obligation Layer ist ein reines Derivat.
 
 ```mermaid
 graph LR
   KDS["MII KDS Pakete<br/>15 Module, 2026.x"] --> FDPG["FDPG Obligation Layer<br/>313 Profile"]
-  FDPG --> Portal["FDPG Portal<br/>(Datenkonsument)"]
-  FDPG --> DIZ["DIZ Systeme<br/>(Datenlieferant)"]
-  KDS -.->|"Logische Modelle<br/>+ FHIR-Mappings"| DK["Datenkatalog"]
-  FDPG --> DK
+  FDPG --> DK["Datenkatalog<br/>(Authoring & Review)"]
+  KDS -.->|"Logische Modelle<br/>+ FHIR-Mappings"| DK
+  FDPG --> Portal["FDPG Portal"]
 ```
-
-### Obligation-Muster
-
-Jedes MustSupport-Element bekommt Obligations für zwei Akteure:
-
-```mermaid
-graph LR
-  Provider["Datenlieferant<br/>(DIZ)"] -->|"SHALL: populate"| Element["Profil-Element<br/>(MustSupport)"]
-  Element -->|"SHALL: handle"| Consumer["FDPG Portal"]
-  Element -->|"SHALL: persist"| Consumer
-```
-
-- **Provider (DIZ):** `SHALL:populate` -- Element MUSS befüllt werden, wenn Daten vorhanden sind
-- **Consumer (Portal):** `SHALL:handle` + `SHALL:persist` -- Element MUSS verarbeitet und gespeichert werden
 
 ### Enthaltene Module
 
@@ -69,14 +53,16 @@ graph LR
 
 ## 2. Datenkatalog-Pipeline
 
-Der Datenkatalog wird automatisch aus mehreren Quellen generiert:
+Der Datenkatalog dient dem **KDS-Team als Authoring- und Review-Werkzeug**: Er macht die MustSupport-Elemente
+aller Module menschenlesbar sichtbar und zeigt, wo fachliche Beschreibungen oder LM-Verknüpfungen fehlen.
+Er wird automatisch aus mehreren Quellen generiert:
 
 ```mermaid
 graph TD
   A["FHIR Package Cache<br/>MII Elternprofile<br/>(Snapshots)"] --> G["generate-datenkatalog.py"]
   B["FSH Dateien<br/>FDPG Obligation Profile<br/>(MS-Flags)"] --> G
   C["Logische Modelle<br/>+ Supplement-Dateien<br/>(FHIR-Mappings)"] --> G
-  D["Modul-Konfiguration<br/>(Abschnittsgruppen)"] --> G
+  D["Profilgruppierung<br/>pro Modul"] --> G
   G --> E["datenkatalog-*.md<br/>15 Markdown-Seiten"]
   E --> F["IG Publisher<br/>→ HTML-Seiten"]
 ```
@@ -106,7 +92,7 @@ Die FHIR-Mappings in den Logischen Modellen sind der **Schlüssel** zur Verknüp
 ## 3. Datenqualität: LM-Abdeckung
 
 Die folgende Tabelle zeigt, wie viele MustSupport-Elemente jedes Moduls ein Mapping
-im Logischen Modell haben. Daten aus dem [LM Coverage Report](lm-coverage-report.md).
+im Logischen Modell haben. Daten aus dem LM Coverage Report (s. Anhang).
 
 ### Module mit Logischem Modell und FHIR-Mappings
 
@@ -165,7 +151,7 @@ Dokument          ░░░░░░░░░░░░░░░░░░░░�
 ## 4. Profil-Drift 2025 → 2026
 
 Beim Übergang von 2025er auf 2026er Paketversionen wurden viele neue MustSupport-Elemente
-hinzugefügt. Daten aus dem [Drift Report](lm-drift-report-2025-vs-2026.md).
+hinzugefügt. Daten aus dem LM Drift Report (s. Anhang).
 
 ### Zusammenfassung
 
@@ -439,7 +425,7 @@ Die folgenden Module sind **nicht** in der FDPG Obligation Layer enthalten:
 
 ### Bitte an alle Modulsprecher
 
-1. **Abdeckungsliste prüfen:** Der [LM Coverage Report](lm-coverage-report.md) zeigt pro Modul
+1. **Abdeckungsliste prüfen:** Der LM Coverage Report (s. Anhang) zeigt pro Modul
    jedes Element mit und ohne LM-Match. Bitte prüfen Sie die Liste für Ihr Modul.
 
 2. **FHIR-Mappings ergänzen:** Für Elemente ohne LM-Match: bitte im Logischen Modell
@@ -485,7 +471,6 @@ Die folgenden Module sind **nicht** in der FDPG Obligation Layer enthalten:
 
 ## Anhang: Referenzen
 
-- [LM Coverage Report](lm-coverage-report.md) -- Detaillierte Element-Listen pro Modul
-- [LM Drift Report 2025 → 2026](lm-drift-report-2025-vs-2026.md) -- Neue/entfernte Elemente
-- [Datenkatalog-Generator](../scripts/generate-datenkatalog.py) -- Python-Script zur Datenkatalog-Erzeugung
-- [FDPG Obligation Layer IG](https://medizininformatik-initiative.github.io/kds-fdpg-layer/) -- Publizierter Implementation Guide
+- **LM Coverage Report** (`reports/lm-coverage-report.md`) -- Detaillierte Element-Listen pro Modul
+- **LM Drift Report 2025 → 2026** (`reports/lm-drift-report-2025-vs-2026.md`) -- Neue/entfernte Elemente
+- **Git-Repository:** [github.com/medizininformatik-initiative/kds-fdpg-layer](https://github.com/medizininformatik-initiative/kds-fdpg-layer)

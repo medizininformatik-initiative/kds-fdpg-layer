@@ -1,0 +1,122 @@
+/* PDF styling for Modulsprecher report */
+
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.5;
+  color: #1a1a1a;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 20pt;
+  border-bottom: 2px solid #003366;
+  padding-bottom: 6pt;
+  color: #003366;
+}
+
+h2 {
+  font-size: 16pt;
+  color: #003366;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 4pt;
+  margin-top: 24pt;
+}
+
+h3 {
+  font-size: 13pt;
+  color: #004488;
+  margin-top: 18pt;
+}
+
+blockquote {
+  border-left: 4px solid #003366;
+  background: #f0f4f8;
+  padding: 8px 12px;
+  margin: 12px 0;
+  font-style: normal;
+}
+
+/* Tables with clear grid lines */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 12px 0;
+  font-size: 9.5pt;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 5px 8px;
+  text-align: left;
+  vertical-align: top;
+}
+
+th {
+  background-color: #003366;
+  color: white;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #f5f7fa;
+}
+
+tr:hover {
+  background-color: #e8edf3;
+}
+
+/* Right-align numeric columns */
+td:nth-child(n) {
+  white-space: normal;
+}
+
+/* Code blocks */
+code {
+  background: #f0f0f0;
+  padding: 1px 4px;
+  border-radius: 3px;
+  font-size: 9pt;
+}
+
+pre {
+  background: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 8.5pt;
+  overflow-x: auto;
+  line-height: 1.4;
+}
+
+/* Checkboxes in task lists */
+li input[type="checkbox"] {
+  margin-right: 6px;
+}
+
+/* Mermaid diagrams */
+.mermaid {
+  text-align: center;
+  margin: 16px 0;
+}
+
+/* Page breaks before major sections */
+h2 {
+  page-break-before: auto;
+}
+
+/* Prevent orphan headers */
+h2, h3 {
+  page-break-after: avoid;
+}
+
+/* Keep tables together where possible */
+table {
+  page-break-inside: avoid;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 24px 0;
+}
