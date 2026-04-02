@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "fdpg-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
-  "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
+  "id": "fdpg-pr-icu-bilanz-ausfuhr-op-drainage",
+  "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-op-drainage",
   "version": "2026.0.0",
-  "name": "FDPG_PR_ICU_Bilanz_Abnahme_Haemofiltration_Einzelmesswerte",
-  "title": "FDPG PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte",
+  "name": "FDPG_PR_ICU_Bilanz_Ausfuhr_OP_Drainage",
+  "title": "FDPG PR ICU Bilanz Ausfuhr OP Drainage",
   "_title": {
     "extension": [
       {
@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "Bilanz - Abnahme Hämofiltration (Einzelmesswerte)"
+            "valueString": "Bilanz - Ausfuhr OP-Drainage"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "Fluid Balance - Hemofiltration Removal (Individual Measurements)"
+            "valueString": "Fluid Balance - Surgical Drainage Output"
           }
         ]
       }
@@ -49,13 +49,13 @@
       ]
     }
   ],
-  "description": "FDPG Profil - MII PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte",
+  "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr OP Drainage",
   "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-op-drainage",
   "derivation": "constraint",
   "differential": {
     "element": [

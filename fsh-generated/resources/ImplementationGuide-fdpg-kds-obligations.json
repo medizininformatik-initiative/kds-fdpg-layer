@@ -45,7 +45,7 @@
     },
     {
       "packageId": "de.basisprofil.r4",
-      "version": "1.5.0",
+      "version": "1.5.4",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
       "id": "de_basisprofil_r4"
     },
@@ -80,10 +80,10 @@
       "id": "de_medizininformatikinitiative_kerndatensatz_biobank"
     },
     {
-      "packageId": "de.medizininformatikinitiative.kerndatensatz.studie",
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.icu",
       "version": "2026.0.2",
-      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.studie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.studie",
-      "id": "de_medizininformatikinitiative_kerndatensatz_studie"
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu",
+      "id": "de_medizininformatikinitiative_kerndatensatz_icu"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.molgen",
@@ -98,10 +98,10 @@
       "id": "de_medizininformatikinitiative_kerndatensatz_patho"
     },
     {
-      "packageId": "de.medizininformatikinitiative.kerndatensatz.icu",
-      "version": "2026.0.1-rc1",
-      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.icu/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.icu",
-      "id": "de_medizininformatikinitiative_kerndatensatz_icu"
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.studie",
+      "version": "2026.0.2",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.studie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.studie",
+      "id": "de_medizininformatikinitiative_kerndatensatz_studie"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.bildgebung",
@@ -110,40 +110,40 @@
       "id": "de_medizininformatikinitiative_kerndatensatz_bildgebung"
     },
     {
-      "packageId": "de.medizininformatikinitiative.kerndatensatz.seltene",
-      "version": "2026.0.0",
-      "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-seltene",
-      "id": "de_medizininformatikinitiative_kerndatensatz_seltene"
-    },
-    {
-      "packageId": "de.medizininformatikinitiative.kerndatensatz.onkologie",
-      "version": "2026.0.1",
-      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.onkologie",
-      "id": "de_medizininformatikinitiative_kerndatensatz_onkologie"
-    },
-    {
-      "packageId": "de.medizininformatikinitiative.kerndatensatz.consent",
-      "version": "2026.0.1-rc-1",
-      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.consent/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.consent",
-      "id": "de_medizininformatikinitiative_kerndatensatz_consent"
-    },
-    {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.dokument",
-      "version": "2026.0.0",
+      "version": "2026.0.1",
       "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dokument/ImplementationGuide/mii-ig-dokument",
       "id": "de_medizininformatikinitiative_kerndatensatz_dokument"
     },
     {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.onkologie",
+      "version": "2026.0.3",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.onkologie",
+      "id": "de_medizininformatikinitiative_kerndatensatz_onkologie"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.seltene",
+      "version": "2026.0.1",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.seltene/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.seltene",
+      "id": "de_medizininformatikinitiative_kerndatensatz_seltene"
+    },
+    {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.mtb",
-      "version": "2026.0.0",
+      "version": "2026.0.1",
       "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-mtb/ImplementationGuide/mii-ig-mtb-de",
       "id": "de_medizininformatikinitiative_kerndatensatz_mtb"
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.pros",
-      "version": "2026.0.1",
+      "version": "2026.2.0",
       "uri": "https://www.medizininformatik-initiative.de/fhir/ext/modul-dok/ImplementationGuide/mii-ig-pro",
       "id": "de_medizininformatikinitiative_kerndatensatz_pros"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.consent",
+      "version": "2026.0.1-rc-2",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.consent/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.consent",
+      "id": "de_medizininformatikinitiative_kerndatensatz_consent"
     }
   ],
   "definition": {
@@ -502,10 +502,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte"
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-blutverlust"
         },
-        "name": "FDPG PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte",
-        "description": "FDPG Profil - MII PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte",
+        "name": "FDPG PR ICU Bilanz Ausfuhr Blutverlust",
+        "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr Blutverlust",
         "exampleBoolean": false
       },
       {
@@ -534,10 +534,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-gallengang"
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte"
         },
-        "name": "FDPG PR ICU Bilanz Ausfuhr Gallengang",
-        "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr Gallengang",
+        "name": "FDPG PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte",
+        "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte",
         "exampleBoolean": false
       },
       {
@@ -550,10 +550,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-opdrainage"
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-op-drainage"
         },
-        "name": "FDPG PR ICU Bilanz Ausfuhr Opdrainage",
-        "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr Opdrainage",
+        "name": "FDPG PR ICU Bilanz Ausfuhr OP Drainage",
+        "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr OP Drainage",
         "exampleBoolean": false
       },
       {
@@ -590,14 +590,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-blutverlust"
-        },
-        "name": "FDPG PR ICU Bilanz Blutverlust",
-        "description": "FDPG Profil - MII PR ICU Bilanz Blutverlust",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/fdpg-pr-icu-bilanz-einfuhr-enterale-fluessigkeit"
         },
         "name": "FDPG PR ICU Bilanz Einfuhr Enterale Fluessigkeit",
@@ -606,34 +598,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-einfuhr-oraler-fluessigkeit"
+          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-tagesbilanz-fluessigkeit"
         },
-        "name": "FDPG PR ICU Bilanz Einfuhr Oraler Fluessigkeit",
-        "description": "FDPG Profil - MII PR ICU Bilanz Einfuhr Oraler Fluessigkeit",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-gesamte-ausfuhr"
-        },
-        "name": "FDPG PR ICU Bilanz Gesamte Ausfuhr",
-        "description": "FDPG Profil - MII PR ICU Bilanz Gesamte Ausfuhr",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-gesamte-einfuhr"
-        },
-        "name": "FDPG PR ICU Bilanz Gesamte Einfuhr",
-        "description": "FDPG Profil - MII PR ICU Bilanz Gesamte Einfuhr",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/fdpg-pr-icu-bilanz-gesamte-tages-bilanz"
-        },
-        "name": "FDPG PR ICU Bilanz Gesamte Tages Bilanz",
-        "description": "FDPG Profil - MII PR ICU Bilanz Gesamte Tages Bilanz",
+        "name": "FDPG PR ICU Bilanz Tagesbilanz Fluessigkeit",
+        "description": "FDPG Profil - MII PR ICU Bilanz Tagesbilanz Fluessigkeit",
         "exampleBoolean": false
       },
       {
@@ -690,22 +658,6 @@
         },
         "name": "FDPG PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren",
         "description": "FDPG Profil - MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/fdpg-pr-vent-provided-icu-druckdifferenz-beatmung"
-        },
-        "name": "FDPG PR ICU Druckdifferenz Beatmung",
-        "description": "FDPG Profil - MII PR ICU Druckdifferenz Beatmung",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/fdpg-pr-vent-icu-dynamische-kompliance"
-        },
-        "name": "FDPG PR ICU Dynamische Kompliance",
-        "description": "FDPG Profil - MII PR ICU Dynamische Kompliance",
         "exampleBoolean": false
       },
       {
@@ -850,14 +802,6 @@
         },
         "name": "FDPG PR ICU Mittlerer Beatmungsdruck",
         "description": "FDPG Profil - MII PR ICU Mittlerer Beatmungsdruck",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/fdpg-pr-vent-icu-parameter-von-beatmung"
-        },
-        "name": "FDPG PR ICU Parameter von Beatmung",
-        "description": "FDPG Profil - MII PR ICU Parameter von Beatmung",
         "exampleBoolean": false
       },
       {
@@ -2562,14 +2506,6 @@
         },
         "name": "FDPG PR SE Kopfumfang",
         "description": "FDPG Profil - MII PR SE Kopfumfang",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/fdpg-pr-seltene-studie"
-        },
-        "name": "FDPG PR SE Studie",
-        "description": "FDPG Profil - MII PR SE Studie",
         "exampleBoolean": false
       },
       {

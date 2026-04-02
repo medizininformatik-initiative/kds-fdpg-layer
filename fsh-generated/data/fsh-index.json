@@ -256,10 +256,10 @@
     "endLine": 176
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.json",
-    "fshName": "FDPG_PR_ICU_Bilanz_Abnahme_Haemofiltration_Einzelmesswerte",
+    "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-blutverlust.json",
+    "fshName": "FDPG_PR_ICU_Bilanz_Ausfuhr_Blutverlust",
     "fshType": "Profile",
-    "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.fsh",
+    "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-blutverlust.fsh",
     "startLine": 1,
     "endLine": 45
   },
@@ -288,10 +288,10 @@
     "endLine": 45
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-gallengang.json",
-    "fshName": "FDPG_PR_ICU_Bilanz_Ausfuhr_Gallengang",
+    "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.json",
+    "fshName": "FDPG_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte",
     "fshType": "Profile",
-    "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-gallengang.fsh",
+    "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.fsh",
     "startLine": 1,
     "endLine": 45
   },
@@ -304,10 +304,10 @@
     "endLine": 45
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-opdrainage.json",
-    "fshName": "FDPG_PR_ICU_Bilanz_Ausfuhr_Opdrainage",
+    "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-op-drainage.json",
+    "fshName": "FDPG_PR_ICU_Bilanz_Ausfuhr_OP_Drainage",
     "fshType": "Profile",
-    "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-opdrainage.fsh",
+    "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-op-drainage.fsh",
     "startLine": 1,
     "endLine": 45
   },
@@ -344,14 +344,6 @@
     "endLine": 45
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-blutverlust.json",
-    "fshName": "FDPG_PR_ICU_Bilanz_Blutverlust",
-    "fshType": "Profile",
-    "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-blutverlust.fsh",
-    "startLine": 1,
-    "endLine": 45
-  },
-  {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.json",
     "fshName": "FDPG_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit",
     "fshType": "Profile",
@@ -368,34 +360,10 @@
     "endLine": 45
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-einfuhr-oraler-fluessigkeit.json",
-    "fshName": "FDPG_PR_ICU_Bilanz_Einfuhr_Oraler_Fluessigkeit",
+    "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-tagesbilanz-fluessigkeit.json",
+    "fshName": "FDPG_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit",
     "fshType": "Profile",
-    "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-einfuhr-oraler-fluessigkeit.fsh",
-    "startLine": 1,
-    "endLine": 45
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-gesamte-ausfuhr.json",
-    "fshName": "FDPG_PR_ICU_Bilanz_Gesamte_Ausfuhr",
-    "fshType": "Profile",
-    "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-gesamte-ausfuhr.fsh",
-    "startLine": 1,
-    "endLine": 45
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-gesamte-einfuhr.json",
-    "fshName": "FDPG_PR_ICU_Bilanz_Gesamte_Einfuhr",
-    "fshType": "Profile",
-    "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-gesamte-einfuhr.fsh",
-    "startLine": 1,
-    "endLine": 45
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-gesamte-tages-bilanz.json",
-    "fshName": "FDPG_PR_ICU_Bilanz_Gesamte_Tages_Bilanz",
-    "fshType": "Profile",
-    "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-gesamte-tages-bilanz.fsh",
+    "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-tagesbilanz-fluessigkeit.fsh",
     "startLine": 1,
     "endLine": 45
   },
@@ -545,7 +513,7 @@
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-arterieller-blutdruck.json",
-    "fshName": "FDPG_PR_ICU_Arterieller_Blutdruck",
+    "fshName": "FDPG_PR_ICU_MUV_Arterieller_Blutdruck",
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-arterieller-blutdruck.fsh",
     "startLine": 1,
@@ -553,7 +521,7 @@
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-atemfrequenz.json",
-    "fshName": "FDPG_PR_ICU_Atemfrequenz",
+    "fshName": "FDPG_PR_ICU_MUV_Atemfrequenz",
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-atemfrequenz.fsh",
     "startLine": 1,
@@ -561,7 +529,7 @@
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-herzfrequenz.json",
-    "fshName": "FDPG_PR_ICU_Herzfrequenz",
+    "fshName": "FDPG_PR_ICU_MUV_Herzfrequenz",
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-herzfrequenz.fsh",
     "startLine": 1,
@@ -569,7 +537,7 @@
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-koerpergewicht.json",
-    "fshName": "FDPG_PR_ICU_Koerpergewicht",
+    "fshName": "FDPG_PR_ICU_MUV_Koerpergewicht",
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-koerpergewicht.fsh",
     "startLine": 1,
@@ -577,7 +545,7 @@
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-koerpergroesse.json",
-    "fshName": "FDPG_PR_ICU_Koerpergroesse",
+    "fshName": "FDPG_PR_ICU_MUV_Koerpergroesse",
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-koerpergroesse.fsh",
     "startLine": 1,
@@ -585,7 +553,7 @@
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-kopfumfang.json",
-    "fshName": "FDPG_PR_ICU_Kopfumfang",
+    "fshName": "FDPG_PR_ICU_MUV_Kopfumfang",
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-kopfumfang.fsh",
     "startLine": 1,
@@ -2384,14 +2352,6 @@
     "endLine": 21
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-seltene-studie.json",
-    "fshName": "FDPG_PR_Seltene_Studie",
-    "fshType": "Profile",
-    "fshFile": "obligations/seltene/fdpg-pr-seltene-studie.fsh",
-    "startLine": 1,
-    "endLine": 11
-  },
-  {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-studieneinschluss-anfrage.json",
     "fshName": "FDPG_PR_Seltene_Studieneinschluss_Anfrage",
     "fshType": "Profile",
@@ -2510,29 +2470,5 @@
     "fshFile": "obligations/studie/fdpg-pr-studie-studieneinschluss-anfrage.fsh",
     "startLine": 1,
     "endLine": 8
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-vent-icu-dynamische-kompliance.json",
-    "fshName": "FDPG_PR_ICU_Dynamische_Kompliance",
-    "fshType": "Profile",
-    "fshFile": "obligations/icu/fdpg-pr-vent-icu-dynamische-kompliance.fsh",
-    "startLine": 1,
-    "endLine": 41
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-vent-icu-parameter-von-beatmung.json",
-    "fshName": "FDPG_PR_ICU_Parameter_Von_Beatmung",
-    "fshType": "Profile",
-    "fshFile": "obligations/icu/fdpg-pr-vent-icu-parameter-von-beatmung.fsh",
-    "startLine": 1,
-    "endLine": 41
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-vent-provided-icu-druckdifferenz-beatmung.json",
-    "fshName": "FDPG_PR_ICU_Druckdifferenz_Beatmung",
-    "fshType": "Profile",
-    "fshFile": "obligations/icu/fdpg-pr-vent-provided-icu-druckdifferenz-beatmung.fsh",
-    "startLine": 1,
-    "endLine": 41
   }
 ]

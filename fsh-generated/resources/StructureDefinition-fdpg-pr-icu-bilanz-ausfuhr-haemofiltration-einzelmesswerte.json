@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "fdpg-pr-vent-icu-dynamische-kompliance",
-  "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-vent-icu-dynamische-kompliance",
+  "id": "fdpg-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte",
+  "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte",
   "version": "2026.0.0",
-  "name": "FDPG_PR_ICU_Dynamische_Kompliance",
-  "title": "FDPG PR ICU Dynamische Kompliance",
+  "name": "FDPG_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte",
+  "title": "FDPG PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte",
   "_title": {
     "extension": [
       {
@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "Dynamische Compliance"
+            "valueString": "Bilanz - Ausfuhr Hämofiltration (Einzelmesswerte)"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "Dynamic Compliance"
+            "valueString": "Fluid Balance - Hemofiltration Removal (Individual Measurements)"
           }
         ]
       }
@@ -49,13 +49,13 @@
       ]
     }
   ],
-  "description": "FDPG Profil - MII PR ICU Dynamische Kompliance",
+  "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte",
   "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dynamische-kompliance",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte",
   "derivation": "constraint",
   "differential": {
     "element": [

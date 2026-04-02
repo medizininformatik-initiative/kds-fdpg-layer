@@ -1,11 +1,11 @@
-Profile: FDPG_PR_ICU_Bilanz_Einfuhr_Oraler_Fluessigkeit
-Parent: MII_PR_ICU_Bilanz_Einfuhr_Oraler_Fluessigkeit
-Id: fdpg-pr-icu-bilanz-einfuhr-oraler-fluessigkeit
-Title: "FDPG PR ICU Bilanz Einfuhr Oraler Fluessigkeit"
-Description: "FDPG Profil - MII PR ICU Bilanz Einfuhr Oraler Fluessigkeit"
+Profile: FDPG_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit
+Parent: MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit
+Id: fdpg-pr-icu-bilanz-tagesbilanz-fluessigkeit
+Title: "FDPG PR ICU Bilanz Tagesbilanz Fluessigkeit"
+Description: "FDPG Profil - MII PR ICU Bilanz Tagesbilanz Fluessigkeit"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Bilanz - Einfuhr oraler Flüssigkeit)
-* insert Translation(^title, en-US, Fluid Balance - Oral Fluid Intake)
+* insert Translation(^title, de-DE, Bilanz - Gesamte Tagesbilanz)
+* insert Translation(^title, en-US, Fluid Balance - Total Daily Balance)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

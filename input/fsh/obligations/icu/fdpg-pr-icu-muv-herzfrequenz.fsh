@@ -1,5 +1,5 @@
-Profile: FDPG_PR_ICU_Herzfrequenz
-Parent: MII_PR_ICU_Herzfrequenz
+Profile: FDPG_PR_ICU_MUV_Herzfrequenz
+Parent: MII_PR_ICU_MUV_Herzfrequenz
 Id: fdpg-pr-icu-muv-herzfrequenz
 Title: "FDPG PR MII SD ICU Herzfrequenz"
 Description: "FDPG Profil - MII SD ICU Herzfrequenz"

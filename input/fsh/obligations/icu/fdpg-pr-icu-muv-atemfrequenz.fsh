@@ -1,5 +1,5 @@
-Profile: FDPG_PR_ICU_Atemfrequenz
-Parent: MII_PR_ICU_Atemfrequenz
+Profile: FDPG_PR_ICU_MUV_Atemfrequenz
+Parent: MII_PR_ICU_MUV_Atemfrequenz
 Id: fdpg-pr-icu-muv-atemfrequenz
 Title: "FDPG PR ICU Atemfrequenz"
 Description: "FDPG Profil - MII PR ICU Atemfrequenz"

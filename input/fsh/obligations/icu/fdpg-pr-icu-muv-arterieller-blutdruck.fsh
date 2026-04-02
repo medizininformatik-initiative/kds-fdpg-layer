@@ -1,5 +1,5 @@
-Profile: FDPG_PR_ICU_Arterieller_Blutdruck
-Parent: MII_PR_ICU_Arterieller_Blutdruck
+Profile: FDPG_PR_ICU_MUV_Arterieller_Blutdruck
+Parent: MII_PR_ICU_MUV_Arterieller_Blutdruck
 Id: fdpg-pr-icu-muv-arterieller-blutdruck
 Title: "FDPG PR ICU Arterieller Blutdruck"
 Description: "FDPG Profil - MII PR ICU Arterieller Blutdruck"

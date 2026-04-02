@@ -1,5 +1,5 @@
-Profile: FDPG_PR_ICU_Koerpergewicht
-Parent: MII_PR_ICU_Koerpergewicht
+Profile: FDPG_PR_ICU_MUV_Koerpergewicht
+Parent: MII_PR_ICU_MUV_Koerpergewicht
 Id: fdpg-pr-icu-muv-koerpergewicht
 Title: "FDPG PR ICU Koerpergewicht"
 Description: "FDPG Profil - MII PR ICU Koerpergewicht"

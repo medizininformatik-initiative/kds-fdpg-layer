@@ -1,10 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "fdpg-pr-icu-bilanz-blutverlust",
-  "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-bilanz-blutverlust",
+  "id": "fdpg-pr-icu-bilanz-ausfuhr-blutverlust",
+  "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-blutverlust",
   "version": "2026.0.0",
-  "name": "FDPG_PR_ICU_Bilanz_Blutverlust",
-  "title": "FDPG PR ICU Bilanz Blutverlust",
+  "name": "FDPG_PR_ICU_Bilanz_Ausfuhr_Blutverlust",
+  "title": "FDPG PR ICU Bilanz Ausfuhr Blutverlust",
   "_title": {
     "extension": [
       {
@@ -49,13 +49,13 @@
       ]
     }
   ],
-  "description": "FDPG Profil - MII PR ICU Bilanz Blutverlust",
+  "description": "FDPG Profil - MII PR ICU Bilanz Ausfuhr Blutverlust",
   "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-blutverlust",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-bilanz-ausfuhr-blutverlust",
   "derivation": "constraint",
   "differential": {
     "element": [

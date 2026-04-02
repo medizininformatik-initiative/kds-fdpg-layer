@@ -1,5 +1,5 @@
-Profile: FDPG_PR_ICU_Koerpergroesse
-Parent: MII_PR_ICU_Koerpergroesse
+Profile: FDPG_PR_ICU_MUV_Koerpergroesse
+Parent: MII_PR_ICU_MUV_Koerpergroesse
 Id: fdpg-pr-icu-muv-koerpergroesse
 Title: "FDPG PR ICU Koerpergroesse"
 Description: "FDPG Profil - MII PR ICU Koerpergroesse"

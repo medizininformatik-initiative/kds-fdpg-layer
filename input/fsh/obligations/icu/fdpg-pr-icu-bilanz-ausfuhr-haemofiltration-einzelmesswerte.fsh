@@ -1,18 +1,14 @@
-Profile: FDPG_PR_ICU_Dynamische_Kompliance
-Parent: MII_PR_ICU_Dynamische_Kompliance
-Id: fdpg-pr-vent-icu-dynamische-kompliance
-Title: "FDPG PR ICU Dynamische Kompliance"
-Description: "FDPG Profil - MII PR ICU Dynamische Kompliance"
+Profile: FDPG_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte
+Parent: MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte
+Id: fdpg-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte
+Title: "FDPG PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte"
+Description: "FDPG Profil - MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Dynamische Compliance)
-* insert Translation(^title, en-US, Dynamic Compliance)
+* insert Translation(^title, de-DE, Bilanz - Ausfuhr Hämofiltration (Einzelmesswerte\))
+* insert Translation(^title, en-US, Fluid Balance - Hemofiltration Removal (Individual Measurements\))
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"
-// Observation.partOf
-* partOf ^short = "Observation belongs to a specific extracorporeal procedure."
-// Observation.status
-* status ^short = "registered | preliminary | final | amended +"
 // Observation.category
 * category ^short = "Classification of  type of observation"
 // Observation.code
@@ -31,11 +27,19 @@ Description: "FDPG Profil - MII PR ICU Dynamische Kompliance"
 * issued ^short = "Date/Time this version was made available"
 // Observation.value[x]
 * value[x] ^short = "Actual result"
-// Observation.value[x].unit
-* value[x].unit ^short = "Unit representation"
 // Observation.value[x].code
 * value[x].code ^short = "Coded form of the unit"
 // Observation.dataAbsentReason
 * dataAbsentReason ^short = "Why the result is missing"
+// Observation.interpretation
+* interpretation ^short = "High, low, normal, etc."
+// Observation.bodySite
+* bodySite ^short = "Observed body part"
+// Observation.method
+* method ^short = "How it was done"
+// Observation.specimen
+* specimen ^short = "Specimen used for this observation"
 // Observation.device
 * device ^short = "(Measurement) Device"
+// Observation.referenceRange
+* referenceRange ^short = "Provides guide for interpretation"

@@ -1,18 +1,14 @@
-Profile: FDPG_PR_ICU_Druckdifferenz_Beatmung
-Parent: MII_PR_ICU_Druckdifferenz_Beatmung
-Id: fdpg-pr-vent-provided-icu-druckdifferenz-beatmung
-Title: "FDPG PR ICU Druckdifferenz Beatmung"
-Description: "FDPG Profil - MII PR ICU Druckdifferenz Beatmung"
+Profile: FDPG_PR_ICU_Bilanz_Ausfuhr_OP_Drainage
+Parent: MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage
+Id: fdpg-pr-icu-bilanz-ausfuhr-op-drainage
+Title: "FDPG PR ICU Bilanz Ausfuhr OP Drainage"
+Description: "FDPG Profil - MII PR ICU Bilanz Ausfuhr OP Drainage"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Druckdifferenz Beatmung)
-* insert Translation(^title, en-US, Ventilation Pressure Difference (Driving Pressure\))
+* insert Translation(^title, de-DE, Bilanz - Ausfuhr OP-Drainage)
+* insert Translation(^title, en-US, Fluid Balance - Surgical Drainage Output)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"
-// Observation.partOf
-* partOf ^short = "Observation belongs to a specific extracorporeal procedure."
-// Observation.status
-* status ^short = "registered | preliminary | final | amended +"
 // Observation.category
 * category ^short = "Classification of  type of observation"
 // Observation.code
@@ -31,11 +27,19 @@ Description: "FDPG Profil - MII PR ICU Druckdifferenz Beatmung"
 * issued ^short = "Date/Time this version was made available"
 // Observation.value[x]
 * value[x] ^short = "Actual result"
-// Observation.value[x].unit
-* value[x].unit ^short = "Unit representation"
 // Observation.value[x].code
 * value[x].code ^short = "Coded form of the unit"
 // Observation.dataAbsentReason
 * dataAbsentReason ^short = "Why the result is missing"
+// Observation.interpretation
+* interpretation ^short = "High, low, normal, etc."
+// Observation.bodySite
+* bodySite ^short = "Observed body part"
+// Observation.method
+* method ^short = "How it was done"
+// Observation.specimen
+* specimen ^short = "Specimen used for this observation"
 // Observation.device
 * device ^short = "(Measurement) Device"
+// Observation.referenceRange
+* referenceRange ^short = "Provides guide for interpretation"

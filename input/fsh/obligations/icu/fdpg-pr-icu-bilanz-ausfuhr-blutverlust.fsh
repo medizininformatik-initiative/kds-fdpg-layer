@@ -1,11 +1,11 @@
-Profile: FDPG_PR_ICU_Bilanz_Abnahme_Haemofiltration_Einzelmesswerte
-Parent: MII_PR_ICU_Bilanz_Abnahme_Haemofiltration_Einzelmesswerte
-Id: fdpg-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte
-Title: "FDPG PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte"
-Description: "FDPG Profil - MII PR ICU Bilanz Abnahme Haemofiltration Einzelmesswerte"
+Profile: FDPG_PR_ICU_Bilanz_Ausfuhr_Blutverlust
+Parent: MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust
+Id: fdpg-pr-icu-bilanz-ausfuhr-blutverlust
+Title: "FDPG PR ICU Bilanz Ausfuhr Blutverlust"
+Description: "FDPG Profil - MII PR ICU Bilanz Ausfuhr Blutverlust"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Bilanz - Abnahme Hämofiltration (Einzelmesswerte\))
-* insert Translation(^title, en-US, Fluid Balance - Hemofiltration Removal (Individual Measurements\))
+* insert Translation(^title, de-DE, Bilanz - Blutverlust)
+* insert Translation(^title, en-US, Fluid Balance - Blood Loss)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

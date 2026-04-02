@@ -1,5 +1,5 @@
-Profile: FDPG_PR_ICU_Kopfumfang
-Parent: MII_PR_ICU_Kopfumfang
+Profile: FDPG_PR_ICU_MUV_Kopfumfang
+Parent: MII_PR_ICU_MUV_Kopfumfang
 Id: fdpg-pr-icu-muv-kopfumfang
 Title: "FDPG PR ICU Kopfumfang"
 Description: "FDPG Profil - MII PR ICU Kopfumfang"
