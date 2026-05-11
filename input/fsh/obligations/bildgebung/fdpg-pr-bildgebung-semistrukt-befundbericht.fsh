@@ -1,8 +1,8 @@
 Profile: FDPG_PR_Bildgebung_Semistrukt_Befundbericht
 Parent: MII_PR_Bildgebung_Semistrukt_Befundbericht
 Id: fdpg-pr-bildgebung-semistrukt-befundbericht
-Title: "FDPG PR Bildgebung Semistrukturierter Befundbericht"
-Description: "FDPG Profil - MII PR Bildgebung Semistrukturierter Befundbericht"
+Title: "FDPG PR Bildgebung Semistrukt Befundbericht"
+Description: "FDPG Profil - MII_PR_Bildgebung_Semistrukt_Befundbericht"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Befundbericht semistrukturiert)
 * insert Translation(^title, en-US, composition)
@@ -122,3 +122,13 @@ Description: "FDPG Profil - MII PR Bildgebung Semistrukturierter Befundbericht"
 * section[diagRep].entry ^short = "A reference to data that supports this section"
 // Composition.section:diagRep.section
 * section[diagRep].section ^short = "Nested Section"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(type)
+* insert ObligationConsumerDefault(type.coding[loinc])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(date)
+* insert ObligationConsumerDefault(author)
+* insert ObligationConsumerDefault(title)
+* insert ObligationConsumerDefault(section)

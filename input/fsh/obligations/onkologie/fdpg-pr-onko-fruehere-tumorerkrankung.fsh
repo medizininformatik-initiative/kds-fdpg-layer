@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Fruehere_Tumorerkrankung
 Parent: MII_PR_Onko_Fruehere_Tumorerkrankung
 Id: fdpg-pr-onko-fruehere-tumorerkrankung
-Title: "FDPG PR Onkologie Frühere Tumorerkrankung"
-Description: "Zusammenfassende Darstellung früherer Tumorerkrankungen. Die Angaben liegen voraussichtlich nur im Freitext vor und erfüllen damit nicht die Kriterien an eine Diagnose Primärtumor, werden aber zur besseren Einordnung der Krankheitsgeschichte hier geführt."
+Title: "FDPG PR Onko Fruehere Tumorerkrankung"
+Description: "FDPG Profil - MII_PR_Onko_Fruehere_Tumorerkrankung"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Frühere Tumorerkrankung)
-* insert Translation(^title, en-US, Previous Tumor Disease)
+* insert Translation(^title, en-US, FDPG PR Onko Fruehere Tumorerkrankung)
 // --- Element Designations ---
 // Condition.extension:assertedDate
 * extension[assertedDate] ^short = "Diagnosedatum der früheren Tumorerkrankung"
@@ -36,3 +36,24 @@ Description: "Zusammenfassende Darstellung früherer Tumorerkrankungen. Die Anga
 * recordedDate ^short = "Date record was first recorded"
 // Condition.note
 * note ^short = "Additional information about the Condition"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension)
+* insert ObligationConsumerDefault(extension[assertedDate])
+* insert ObligationConsumerDefault(extension[morphology-behavior-icdo3])
+* insert ObligationConsumerDefault(clinicalStatus)
+* insert ObligationConsumerPreSelect(clinicalStatus)
+* insert ObligationConsumerDefault(verificationStatus)
+* insert ObligationConsumerPreSelect(verificationStatus)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category[oncology])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(code.coding[icd10-gm])
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.coding[icd-o-3])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(recordedDate)
+* insert ObligationConsumerPreSelect(recordedDate)
+* insert ObligationConsumerDefault(note)

@@ -37,3 +37,12 @@ Description: "FDPG Profil - MII_PR_MTB_Molecular_Pathology_Report"
 // DiagnosticReport.result:InSituHybridisierung
 * result[InSituHybridisierung] ^short = "Gewebebasierte In-Situ-Hybridisierung"
 * insert Translation(result[InSituHybridisierung] ^short, de-DE, Gewebebasierte In-Situ-Hybridisierung)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(issued)
+* insert ObligationConsumerDefault(specimen)
+* insert ObligationConsumerDefault(result)
+* insert ObligationConsumerDefault(result[Immunhistochemie])
+* insert ObligationConsumerDefault(result[InSituHybridisierung])

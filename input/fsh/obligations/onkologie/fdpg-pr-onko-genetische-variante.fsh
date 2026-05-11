@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Genetische_Variante
 Parent: MII_PR_Onko_Genetische_Variante
 Id: fdpg-pr-onko-genetische-variante
-Title: "FDPG PR Onkologie Genetische Variante"
-Description: "FDPG Profil - MII PR Onkologie Genetische Variante"
+Title: "FDPG PR Onko Genetische Variante"
+Description: "FDPG Profil - MII_PR_Onko_Genetische_Variante"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Genetische Variante)
-* insert Translation(^title, en-US, Genetic Variant)
+* insert Translation(^title, de-DE, MII PR Onkologie Genetische Variante)
+* insert Translation(^title, en-US, FDPG PR Onko Genetische Variante)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "Status"
@@ -207,3 +207,47 @@ Description: "FDPG Profil - MII PR Onkologie Genetische Variante"
 * insert Translation(component[detection-limit] ^short, de-DE, Nachweisgrenze)
 * component[detection-limit] ^definition = "Die Nachweisgrenze des Laborgeräts"
 * insert Translation(component[detection-limit] ^definition, de-DE, Die Nachweisgrenze des Laborgeräts)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(issued)
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerDefault(value[x][valueCodeableConcept])
+* insert ObligationConsumerDefault(interpretation)
+* insert ObligationConsumerDefault(note)
+* insert ObligationConsumerDefault(method)
+* insert ObligationConsumerDefault(specimen)
+* insert ObligationConsumerDefault(device)
+* insert ObligationConsumerDefault(component[conclusion-string])
+* insert ObligationConsumerDefault(component[gene-studied])
+* insert ObligationConsumerDefault(component[cytogenetic-location])
+* insert ObligationConsumerDefault(component[reference-sequence-assembly])
+* insert ObligationConsumerDefault(component[chromosome-identifier])
+* insert ObligationConsumerDefault(component[representative-coding-hgvs])
+* insert ObligationConsumerDefault(component[genomic-hgvs])
+* insert ObligationConsumerDefault(component[genomic-ref-seq])
+* insert ObligationConsumerDefault(component[representative-transcript-ref-seq])
+* insert ObligationConsumerDefault(component[exact-start-end])
+* insert ObligationConsumerDefault(component[inner-start-end])
+* insert ObligationConsumerDefault(component[outer-start-end])
+* insert ObligationConsumerDefault(component[ref-allele])
+* insert ObligationConsumerDefault(component[alt-allele])
+* insert ObligationConsumerDefault(component[coding-change-type])
+* insert ObligationConsumerDefault(component[genomic-source-class])
+* insert ObligationConsumerDefault(component[sample-allelic-frequency])
+* insert ObligationConsumerDefault(component[allelic-read-depth])
+* insert ObligationConsumerDefault(component[allelic-state])
+* insert ObligationConsumerDefault(component[variant-inheritance])
+* insert ObligationConsumerDefault(component[variation-code])
+* insert ObligationConsumerDefault(component[representative-protein-hgvs])
+* insert ObligationConsumerDefault(component[copy-number])
+* insert ObligationConsumerDefault(component[variant-confidence-status])
+* insert ObligationConsumerDefault(component[dna-region])
+* insert ObligationConsumerDefault(component[gene-fusion])
+* insert ObligationConsumerDefault(component[detection-limit])

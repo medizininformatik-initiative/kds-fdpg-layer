@@ -2,7 +2,7 @@ Profile: FDPG_PR_Patho_Attached_Image
 Parent: MII_PR_Patho_Attached_Image
 Id: fdpg-pr-patho-attached-image
 Title: "FDPG PR Patho Attached Image"
-Description: "FDPG Profil - MII PR Patho Attached Image"
+Description: "FDPG Profil - MII_PR_Patho_Attached_Image"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, MII PR Patho Angefügtes Bild)
 * insert Translation(^title, en-US, MII PR Patho Attached Image)
@@ -53,3 +53,11 @@ Description: "FDPG Profil - MII PR Patho Attached Image"
 * content ^definition = "Daten des Bildes"
 * insert Translation(content ^definition, de-DE, Daten des Bildes)
 * insert Translation(content ^definition, en-US, Data of the image)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(partOf)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(type)
+* insert ObligationConsumerDefault(modality)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(content)

@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Tod
 Parent: MII_PR_Onko_Tod
 Id: fdpg-pr-onko-tod
-Title: "FDPG PR Onkologie Tod"
-Description: "Krebsregisterspezifische Darstellung der Todesursache nach ICD-10-GM. Die Todesursache aus dem MII-Personenmodul (Person_Todesursache) beschreibt dagegen die für die Todesursachenstatistik benötigte, international eingesetzte ICD-10-WHO."
+Title: "FDPG PR Onko Tod"
+Description: "FDPG Profil - MII_PR_Onko_Tod"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Tod bei onkologischer Erkrankung)
-* insert Translation(^title, en-US, Death in Oncological Disease)
+* insert Translation(^title, de-DE, MII PR Onkologie Tod)
+* insert Translation(^title, en-US, FDPG PR Onko Tod)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Type of observation (code / type)"
@@ -24,3 +24,16 @@ Description: "Krebsregisterspezifische Darstellung der Todesursache nach ICD-10-
 * value[x] ^short = "Actual result"
 // Observation.interpretation
 * interpretation ^short = "High, low, normal, etc."
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(interpretation)
+* insert ObligationConsumerPreSelect(interpretation)

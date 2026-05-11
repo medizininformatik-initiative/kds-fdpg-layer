@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Seltene_Therapieempfehlung_Kombination
 Parent: MII_PR_Seltene_Therapieempfehlung_Kombination
 Id: fdpg-pr-seltene-therapieempfehlung-kombination
-Title: "FDPG PR SE Therapieempfehlung Kombinationstherapie"
-Description: "FDPG Profil - MII PR SE Therapieempfehlung Kombinationstherapie"
+Title: "FDPG PR Seltene Therapieempfehlung Kombination"
+Description: "FDPG Profil - MII_PR_Seltene_Therapieempfehlung_Kombination"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Therapieempfehlung Kombinationstherapie)
-* insert Translation(^title, en-US, Therapy Recommendation Combination Therapy)
+* insert Translation(^title, de-DE, MII PR SE Therapieempfehlung Kombinationstherapie)
+* insert Translation(^title, en-US, FDPG PR Seltene Therapieempfehlung Kombination)
 // --- Element Designations ---
 // RequestGroup.extension:Prioritaet
 * extension[Prioritaet] ^short = "MII EX SE Empfehlung Priorität"
@@ -23,3 +23,12 @@ Description: "FDPG Profil - MII PR SE Therapieempfehlung Kombinationstherapie"
 * action ^short = "Proposed actions, if any"
 // RequestGroup.action.resource
 * action.resource ^short = "The target of the action"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[Prioritaet])
+* insert ObligationConsumerDefault(extension[Evidenzgraduierung])
+* insert ObligationConsumerDefault(extension[Publikation])
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(intent)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(action)

@@ -104,3 +104,21 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 * activity[extended/Studieneinschlussempfehlung].progress ^short = "Progress notes for recommendation implementation"
 // CarePlan.activity:extended/Studieneinschlussempfehlung.reference
 * activity[extended/Studieneinschlussempfehlung].reference ^short = "Detailed therapy recommendation - RequestGroup, MedicationRequest, or ServiceRequest"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(intent)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(description)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(created)
+* insert ObligationConsumerDefault(addresses)
+* insert ObligationConsumerDefault(supportingInfo)
+* insert ObligationConsumerDefault(supportingInfo[Behandlungsepisode])
+* insert ObligationConsumerDefault(activity)
+* insert ObligationConsumerDefault(activity[extended/Therapieempfehlung])
+* insert ObligationConsumerDefault(activity[extended/HumangenetischeBeratung])
+* insert ObligationConsumerDefault(activity[extended/HistologieEvaluation])
+* insert ObligationConsumerDefault(activity[extended/Biopsie])
+* insert ObligationConsumerDefault(activity[extended/Studieneinschlussempfehlung])

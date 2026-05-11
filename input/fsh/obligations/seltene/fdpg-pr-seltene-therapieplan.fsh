@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Seltene_Therapieplan
 Parent: MII_PR_Seltene_Therapieplan
 Id: fdpg-pr-seltene-therapieplan
-Title: "FDPG PR SE Therapieplan"
-Description: "FDPG Profil - MII PR SE Therapieplan"
+Title: "FDPG PR Seltene Therapieplan"
+Description: "FDPG Profil - MII_PR_Seltene_Therapieplan"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Therapieplan)
-* insert Translation(^title, en-US, Therapy Plan)
+* insert Translation(^title, de-DE, MII PR SE Therapieplan)
+* insert Translation(^title, en-US, FDPG PR Seltene Therapieplan)
 // --- Element Designations ---
 // CarePlan.description
 * description ^short = "Protokollauszug"
@@ -31,3 +31,12 @@ Description: "FDPG Profil - MII PR SE Therapieplan"
 * activity[Studieneinschlussempfehlung] ^short = "Studieneinschlussempfehlung"
 // CarePlan.activity:Studieneinschlussempfehlung.reference
 * activity[Studieneinschlussempfehlung].reference ^short = "Activity details defined in specific resource"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(description)
+* insert ObligationConsumerDefault(created)
+* insert ObligationConsumerDefault(supportingInfo)
+* insert ObligationConsumerDefault(activity)
+* insert ObligationConsumerDefault(activity[MedikamentoesTherapie])
+* insert ObligationConsumerDefault(activity[NichtMedikamentoesTherapie])
+* insert ObligationConsumerDefault(activity[Studieneinschlussempfehlung])

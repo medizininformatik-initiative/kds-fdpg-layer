@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Studienteilnahme
 Parent: MII_PR_Onko_Studienteilnahme
 Id: fdpg-pr-onko-studienteilnahme
-Title: "FDPG PR Onkologie Studienteilnahme"
-Description: "FDPG Profil - MII PR Onkologie Studienteilnahme"
+Title: "FDPG PR Onko Studienteilnahme"
+Description: "FDPG Profil - MII_PR_Onko_Studienteilnahme"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Studienteilnahme)
-* insert Translation(^title, en-US, Study Participation)
+* insert Translation(^title, de-DE, MII PR Onkologie Studienteilnahme)
+* insert Translation(^title, en-US, FDPG PR Onko Studienteilnahme)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Studienteilnahme laut oBDS"
@@ -26,3 +26,16 @@ Description: "FDPG Profil - MII PR Onkologie Studienteilnahme"
 * insert Translation(effective[x] ^definition, de-DE, Studienteilnahme Datum gemäß 24.2 oBDS 2021)
 // Observation.value[x]
 * value[x] ^short = "Actual result"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(focus[primaertumor])
+* insert ObligationConsumerDefault(focus[studie])
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])

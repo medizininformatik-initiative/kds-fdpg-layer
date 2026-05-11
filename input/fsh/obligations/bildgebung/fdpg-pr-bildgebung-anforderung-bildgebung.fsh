@@ -2,7 +2,7 @@ Profile: FDPG_PR_Bildgebung_Anforderung_Bildgebung
 Parent: MII_PR_Bildgebung_Anforderung_Bildgebung
 Id: fdpg-pr-bildgebung-anforderung-bildgebung
 Title: "FDPG PR Bildgebung Anforderung Bildgebung"
-Description: "FDPG Profil - MII PR Bildgebung Anforderung Bildgebung"
+Description: "FDPG Profil - MII_PR_Bildgebung_Anforderung_Bildgebung"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Anforderung Bildgebung)
 * insert Translation(^title, en-US, radiological service request)
@@ -112,3 +112,20 @@ Description: "FDPG Profil - MII PR Bildgebung Anforderung Bildgebung"
 * supportingInfo ^definition = "Zusätzliche Informationen zur Anforderung"
 * insert Translation(supportingInfo ^definition, de-DE, Zusätzliche Informationen zur Anforderung)
 * insert Translation(supportingInfo ^definition, en-US, additional information on this service request)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(intent)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[sct])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[loinc])
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(authoredOn)
+* insert ObligationConsumerDefault(requester)
+* insert ObligationConsumerDefault(reasonCode)
+* insert ObligationConsumerDefault(reasonCode.coding[sct])
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(supportingInfo)

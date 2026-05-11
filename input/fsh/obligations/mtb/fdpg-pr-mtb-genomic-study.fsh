@@ -21,3 +21,12 @@ Description: "FDPG Profil - MII_PR_MTB_Genomic_Study"
 * performed[x] ^short = "GenomicStudy.startDate"
 // Procedure.reasonReference
 * reasonReference ^short = "GenomicStudy.reason"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(performed[x])
+* insert ObligationConsumerDefault(reasonReference)

@@ -1,8 +1,8 @@
 Profile: FDPG_PR_Person_PatientPseudonymisiert
 Parent: MII_PR_Person_PatientPseudonymisiert
 Id: fdpg-pr-person-patient-pseudonymisiert
-Title: "FDPG PR Person Patient (Pseudonymisiert)"
-Description: "FDPG Profil - MII PR Person Patient (Pseudonymisiert)"
+Title: "FDPG PR Basis PatientPseudonymisiert"
+Description: "FDPG Profil - MII_PR_Person_PatientPseudonymisiert"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Patient / Patientin pseudonymisiert)
 * insert Translation(^title, en-US, Patient pseudonymized)
@@ -91,3 +91,15 @@ Description: "FDPG Profil - MII PR Person Patient (Pseudonymisiert)"
 * address[Strassenanschrift].postalCode ^short = "Postleitzahl"
 // Patient.address:Strassenanschrift.country
 * address[Strassenanschrift].country ^short = "Staat"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(identifier[PseudonymisierterIdentifier])
+* insert ObligationConsumerDefault(identifier[AnonymisierterIdentifier])
+* insert ObligationConsumerDefault(identifier[MaskierterVersichertenIdentifer])
+* insert ObligationConsumerDefault(active)
+* insert ObligationConsumerDefault(gender)
+* insert ObligationConsumerDefault(gender.extension[other-amtlich])
+* insert ObligationConsumerDefault(birthDate)
+* insert ObligationConsumerDefault(address)
+* insert ObligationConsumerDefault(address[Strassenanschrift])

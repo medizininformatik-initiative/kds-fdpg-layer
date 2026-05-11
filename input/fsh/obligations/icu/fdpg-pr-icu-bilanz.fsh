@@ -2,10 +2,10 @@ Profile: FDPG_PR_ICU_Bilanz
 Parent: MII_PR_ICU_Bilanz
 Id: fdpg-pr-icu-bilanz
 Title: "FDPG PR ICU Bilanz"
-Description: "FDPG Profil - MII PR ICU Bilanz"
+Description: "FDPG Profil - MII_PR_ICU_Bilanz"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Bilanz)
-* insert Translation(^title, en-US, Fluid Balance)
+* insert Translation(^title, de-DE, MII PR ICU Bilanz)
+* insert Translation(^title, en-US, FDPG PR ICU Bilanz)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"
@@ -41,3 +41,31 @@ Description: "FDPG Profil - MII PR ICU Bilanz"
 * device ^short = "(Measurement) Device"
 // Observation.referenceRange
 * referenceRange ^short = "Provides guide for interpretation"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[hl7-category])
+* insert ObligationConsumerDefault(category.coding[kdsicu-category])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(code.coding[loinc])
+* insert ObligationConsumerDefault(code.coding[IEEE-11073])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(issued)
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(dataAbsentReason)
+* insert ObligationConsumerPreSelect(dataAbsentReason)
+* insert ObligationConsumerDefault(interpretation)
+* insert ObligationConsumerPreSelect(interpretation)
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(method)
+* insert ObligationConsumerDefault(specimen)
+* insert ObligationConsumerDefault(device)
+* insert ObligationConsumerDefault(referenceRange)
+* insert ObligationConsumerPreSelect(referenceRange)

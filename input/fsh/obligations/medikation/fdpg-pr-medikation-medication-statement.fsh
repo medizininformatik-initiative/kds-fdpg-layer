@@ -2,7 +2,7 @@ Profile: FDPG_PR_Medikation_MedicationStatement
 Parent: MII_PR_Medikation_MedicationStatement
 Id: fdpg-pr-medikation-medication-statement
 Title: "FDPG PR Medikation MedicationStatement"
-Description: "FDPG Profil - MII PR Medikation MedicationStatement"
+Description: "FDPG Profil - MII_PR_Medikation_MedicationStatement"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Medikationseintrag)
 * insert Translation(^title, en-US, Medication statement)
@@ -400,3 +400,33 @@ Description: "FDPG Profil - MII PR Medikation MedicationStatement"
 * dosage.maxDosePerAdministration.system ^short = "System that defines coded unit form"
 // MedicationStatement.dosage.maxDosePerAdministration.code
 * dosage.maxDosePerAdministration.code ^short = "Coded form of the unit"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(partOf)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerPreSelect(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(medication[x])
+* insert ObligationConsumerPreSelect(medication[x])
+* insert ObligationConsumerDefault(medication[x][medicationReference])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[atcClassDe])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[atcClassEn])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[UNII])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(context)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(effective[x][effectiveDateTime])
+* insert ObligationConsumerDefault(effective[x][effectivePeriod])
+* insert ObligationConsumerDefault(dateAsserted)
+* insert ObligationConsumerDefault(informationSource)
+* insert ObligationConsumerDefault(reasonCode)
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(note)
+* insert ObligationConsumerDefault(dosage)
+* insert ObligationConsumerDefault(dosage.asNeeded[x][asNeededBoolean])
+* insert ObligationConsumerDefault(dosage.asNeeded[x][asNeededCodeableConcept])

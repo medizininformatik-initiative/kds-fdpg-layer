@@ -1,8 +1,8 @@
 Profile: FDPG_PR_Person_Patient
 Parent: MII_PR_Person_Patient
 Id: fdpg-pr-person-patient
-Title: "FDPG PR Person Patient"
-Description: "FDPG Profil - MII PR Person Patient"
+Title: "FDPG PR Basis Patient"
+Description: "FDPG Profil - MII_PR_Person_Patient"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Patient / Patientin)
 * insert Translation(^title, en-US, Patient)
@@ -199,3 +199,23 @@ Description: "FDPG Profil - MII PR Person Patient"
 * link.other ^short = "The other patient or related person resource that the link refers to"
 // Patient.link.type
 * link.type ^short = "replaced-by | replaces | refer | seealso"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(identifier[versichertenId])
+* insert ObligationConsumerDefault(identifier[pid])
+* insert ObligationConsumerDefault(name)
+* insert ObligationConsumerDefault(name[name])
+* insert ObligationConsumerDefault(name[geburtsname])
+* insert ObligationConsumerDefault(gender)
+* insert ObligationConsumerDefault(gender.extension[other-amtlich])
+* insert ObligationConsumerDefault(birthDate)
+* insert ObligationConsumerDefault(birthDate.extension[data-absent-reason])
+* insert ObligationConsumerDefault(deceased[x])
+* insert ObligationConsumerPreSelect(deceased[x])
+* insert ObligationConsumerDefault(address)
+* insert ObligationConsumerDefault(address[Strassenanschrift])
+* insert ObligationConsumerDefault(address[Strassenanschrift].extension[Stadtteil])
+* insert ObligationConsumerDefault(address[Postfach])
+* insert ObligationConsumerDefault(address[Postfach].extension[Stadtteil])
+* insert ObligationConsumerDefault(link)

@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Strahlentherapie_Bestrahlung_Nuklearmedizin
 Parent: MII_PR_Onko_Strahlentherapie_Bestrahlung_Nuklearmedizin
 Id: fdpg-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin
-Title: "FDPG PR Onkologie Strahlentherapie Nuklearmedizin"
-Description: "FDPG Profil - MII PR Onkologie Strahlentherapie Nuklearmedizin"
+Title: "FDPG PR Onko Strahlentherapie Bestrahlung Nuklearmedizin"
+Description: "FDPG Profil - MII_PR_Onko_Strahlentherapie_Bestrahlung_Nuklearmedizin"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Strahlentherapie Bestrahlung Nuklearmedizin)
-* insert Translation(^title, en-US, Radiation Therapy Nuclear Medicine)
+* insert Translation(^title, de-DE, MII PR Onkologie Strahlentherapie Nuklearmedizin)
+* insert Translation(^title, en-US, FDPG PR Onko Strahlentherapie Bestrahlung Nuklearmedizin)
 // --- Element Designations ---
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"
@@ -147,3 +147,30 @@ Description: "FDPG Profil - MII PR Onkologie Strahlentherapie Nuklearmedizin"
 * insert Translation(usedCode[Strahlenart] ^short, de-DE, Strahlenart)
 * usedCode[Strahlenart] ^definition = "Strahlenart der Bestrahlung gemäß 14.8 oBDS 2021."
 * insert Translation(usedCode[Strahlenart] ^definition, de-DE, Strahlenart der Bestrahlung gemäß 14.8 oBDS 2021.)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension)
+* insert ObligationConsumerDefault(extension[Dokumentationsdatum])
+* insert ObligationConsumerDefault(extension[durchfuehrungsabsicht])
+* insert ObligationConsumerDefault(extension[Applikationsart])
+* insert ObligationConsumerDefault(extension[Gesamtdosis])
+* insert ObligationConsumerDefault(extension[Einzeldosis])
+* insert ObligationConsumerDefault(extension[Boost])
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(partOf)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[sct])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[ops])
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(performed[x])
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.extension[Seitenlokalisation])
+* insert ObligationConsumerDefault(bodySite.coding[snomed-ct])
+* insert ObligationConsumerDefault(note)
+* insert ObligationConsumerDefault(usedCode)
+* insert ObligationConsumerDefault(usedCode[Strahlenart])

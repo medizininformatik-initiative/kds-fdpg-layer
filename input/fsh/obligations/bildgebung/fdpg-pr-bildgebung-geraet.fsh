@@ -1,8 +1,8 @@
 Profile: FDPG_PR_Bildgebung_Geraet
 Parent: MII_PR_Bildgebung_Geraet
 Id: fdpg-pr-bildgebung-geraet
-Title: "FDPG PR Bildgebung Gerät"
-Description: "FDPG Profil - MII PR Bildgebung Gerät"
+Title: "FDPG PR Bildgebung Geraet"
+Description: "FDPG Profil - MII_PR_Bildgebung_Geraet"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Bildgebungsgerät)
 * insert Translation(^title, en-US, imaging device)
@@ -21,3 +21,7 @@ Description: "FDPG Profil - MII PR Bildgebung Gerät"
 * deviceName ^definition = "Name und Modell des Aufnahmegeräts"
 * insert Translation(deviceName ^definition, de-DE, Name und Modell des Aufnahmegeräts)
 * insert Translation(deviceName ^definition, en-US, name and model of the imagingdevice)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(manufacturer)
+* insert ObligationConsumerDefault(deviceName)

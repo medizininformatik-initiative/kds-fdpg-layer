@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Seltene_Symptom_Condition
 Parent: MII_PR_Seltene_Symptom_Condition
 Id: fdpg-pr-seltene-symptom-condition
-Title: "FDPG PR MII Profile SE Symptom Condition"
-Description: "FDPG Profil - MII Profile SE Symptom Condition"
+Title: "FDPG PR Seltene Symptom Condition"
+Description: "FDPG Profil - MII_PR_Seltene_Symptom_Condition"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Symptom)
-* insert Translation(^title, en-US, Symptom Condition)
+* insert Translation(^title, de-DE, MII Profile SE Symptom Condition)
+* insert Translation(^title, en-US, FDPG PR Seltene Symptom Condition)
 // --- Element Designations ---
 // Condition.identifier
 * identifier ^short = "External Ids for this condition"
@@ -53,3 +53,30 @@ Description: "FDPG Profil - MII Profile SE Symptom Condition"
 * evidence ^short = "Unterstützende Evidenz für die Symptom-Erkrankung"
 // Condition.note
 * note ^short = "Zusätzliche Anmerkungen zur Symptom-Erkrankung"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(clinicalStatus)
+* insert ObligationConsumerPreSelect(clinicalStatus)
+* insert ObligationConsumerDefault(verificationStatus)
+* insert ObligationConsumerPreSelect(verificationStatus)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(severity)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(code.coding[hpoCoding])
+* insert ObligationConsumerDefault(code.coding[snomedCoding])
+* insert ObligationConsumerDefault(code.coding[icd10GMCoding])
+* insert ObligationConsumerDefault(code.coding[mondoCoding])
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(onset[x])
+* insert ObligationConsumerPreSelect(onset[x])
+* insert ObligationConsumerDefault(abatement[x])
+* insert ObligationConsumerPreSelect(abatement[x])
+* insert ObligationConsumerDefault(recordedDate)
+* insert ObligationConsumerPreSelect(recordedDate)
+* insert ObligationConsumerDefault(stage)
+* insert ObligationConsumerDefault(evidence)
+* insert ObligationConsumerDefault(note)

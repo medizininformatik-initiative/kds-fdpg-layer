@@ -1,8 +1,8 @@
 Profile: FDPG_PR_Fall_KontaktGesundheitseinrichtung
 Parent: MII_PR_Fall_KontaktGesundheitseinrichtung
 Id: fdpg-pr-fall-kontakt-gesundheitseinrichtung
-Title: "FDPG PR Fall Kontakt mit einer Gesundheitseinrichtung"
-Description: "FDPG Profil - MII PR Fall Kontakt mit einer Gesundheitseinrichtung"
+Title: "FDPG PR Basis KontaktGesundheitseinrichtung"
+Description: "FDPG Profil - MII_PR_Fall_KontaktGesundheitseinrichtung"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Fall - Kontakt mit einer Gesundheitseinrichtung)
 * insert Translation(^title, en-US, Treatment case - Encounter with Health Care Facility)
@@ -174,3 +174,30 @@ Description: "FDPG Profil - MII PR Fall Kontakt mit einer Gesundheitseinrichtung
 * partOf ^definition = "OPTIONAL. Abbildung der Hierarchie zwischen Kontaktebenen durch Referenz auf weitere Kontakte,  wenn bspw. ein Versorgungsstellenkontakt Teil eines Abteilungskontaktes  oder ein Abteilungskontakt Teil eines Einrichtungskontaktes ist."
 * insert Translation(partOf ^definition, de-DE, Abbildung der Hierarchie zwischen Kontaktebenen durch Referenz auf weitere Kontakte.)
 * insert Translation(partOf ^definition, en-US, Hierarchy between encounter levels by referencing further encounters.)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[Aufnahmegrund])
+* insert ObligationConsumerDefault(extension[Aufnahmegrund].extension[ErsteUndZweiteStelle])
+* insert ObligationConsumerDefault(extension[Aufnahmegrund].extension[DritteStelle])
+* insert ObligationConsumerDefault(extension[Aufnahmegrund].extension[VierteStelle])
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(identifier[Aufnahmenummer])
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerPreSelect(status)
+* insert ObligationConsumerDefault(class)
+* insert ObligationConsumerPreSelect(class)
+* insert ObligationConsumerDefault(type)
+* insert ObligationConsumerPreSelect(type)
+* insert ObligationConsumerDefault(type[Kontaktebene])
+* insert ObligationConsumerDefault(type[KontaktArt])
+* insert ObligationConsumerDefault(serviceType)
+* insert ObligationConsumerPreSelect(serviceType)
+* insert ObligationConsumerDefault(serviceType.coding[Fachabteilungsschluessel])
+* insert ObligationConsumerDefault(serviceType.coding[ErweiterterFachabteilungsschluessel])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(period)
+* insert ObligationConsumerPreSelect(period)
+* insert ObligationConsumerDefault(diagnosis)
+* insert ObligationConsumerDefault(account)
+* insert ObligationConsumerDefault(hospitalization)
+* insert ObligationConsumerDefault(partOf)

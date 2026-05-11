@@ -2,7 +2,7 @@ Profile: FDPG_PR_Medikation_Medikationsliste
 Parent: MII_PR_Medikation_Medikationsliste
 Id: fdpg-pr-medikation-medikationsliste
 Title: "FDPG PR Medikation Medikationsliste"
-Description: "FDPG Profil - MII PR Medikation Medikationsliste"
+Description: "FDPG Profil - MII_PR_Medikation_Medikationsliste"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Medikationsliste)
 * insert Translation(^title, en-US, Medicationlist)
@@ -69,3 +69,15 @@ Description: "FDPG Profil - MII PR Medikation Medikationsliste"
 * insert Translation(entry ^definition, en-US, An entry in the medication list that is a MedicationStatement.)
 // List.entry.item
 * entry.item ^short = "Actual entry"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(mode)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[medCode])
+* insert ObligationConsumerDefault(code.coding[contextCode])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(date)
+* insert ObligationConsumerDefault(entry)

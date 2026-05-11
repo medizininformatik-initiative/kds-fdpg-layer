@@ -2,10 +2,11 @@ Profile: FDPG_PR_Patho_Section_Grouper
 Parent: MII_PR_Patho_Section_Grouper
 Id: fdpg-pr-patho-section-grouper
 Title: "FDPG PR Patho Section Grouper"
-Description: "FDPG Profil - MII PR Patho Section Grouper"
+Description: "FDPG Profil - MII_PR_Patho_Section_Grouper"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Patho Abschnittsgruppierung)
-* insert Translation(^title, en-US, MII PR Patho Section Grouper)
+* ^abstract = true
+* insert Translation(^title, de-DE, MII PR Patho Section Grouper)
+* insert Translation(^title, en-US, FDPG PR Patho Section Grouper)
 // --- Element Designations ---
 // Observation.meta.lastUpdated
 * meta.lastUpdated ^short = "When the resource version last changed"
@@ -47,3 +48,22 @@ Description: "FDPG Profil - MII PR Patho Section Grouper"
 * component.code ^short = "Type of component observation (code / type)"
 // Observation.component.dataAbsentReason
 * component.dataAbsentReason ^short = "Why the component result is missing"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category[laboratory-category])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.coding[sct])
+* insert ObligationConsumerDefault(method)
+* insert ObligationConsumerDefault(specimen)
+* insert ObligationConsumerDefault(hasMember)
+* insert ObligationConsumerDefault(hasMember[pathology-finding])
+* insert ObligationConsumerDefault(derivedFrom)
+* insert ObligationConsumerDefault(derivedFrom[attached-image])
+* insert ObligationConsumerDefault(derivedFrom[dicom-image])

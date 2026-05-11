@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Therapieempfehlung_Operation
 Parent: MII_PR_Onko_Therapieempfehlung_Operation
 Id: fdpg-pr-onko-therapieempfehlung-operation
-Title: "FDPG PR Onkologie Therapieempfehlung Operation"
-Description: "FDPG Profil - MII PR Onkologie Therapieempfehlung Operation"
+Title: "FDPG PR Onko Therapieempfehlung Operation"
+Description: "FDPG Profil - MII_PR_Onko_Therapieempfehlung_Operation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Therapieempfehlung Operation)
-* insert Translation(^title, en-US, Therapy Recommendation Surgery)
+* insert Translation(^title, de-DE, MII PR Onkologie Therapieempfehlung Operation)
+* insert Translation(^title, en-US, FDPG PR Onko Therapieempfehlung Operation)
 // --- Element Designations ---
 // ServiceRequest.identifier
 * identifier ^short = "Identifiers assigned to this order"
@@ -25,3 +25,14 @@ Description: "FDPG Profil - MII PR Onkologie Therapieempfehlung Operation"
 * reasonReference ^short = "Explanation/Justification for service or service"
 // ServiceRequest.supportingInfo
 * supportingInfo ^short = "Additional clinical information"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(intent)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(authoredOn)
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(supportingInfo)

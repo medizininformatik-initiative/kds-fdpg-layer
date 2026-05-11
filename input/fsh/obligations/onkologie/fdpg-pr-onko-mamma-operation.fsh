@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Mamma_Operation
 Parent: MII_PR_Onko_Mamma_Operation
 Id: fdpg-pr-onko-mamma-operation
-Title: "FDPG PR Onkologie Mamma Operation"
-Description: "FDPG Profil - MII PR Onkologie Mamma Operation"
+Title: "FDPG PR Onko Mamma Operation"
+Description: "FDPG Profil - MII_PR_Onko_Mamma_Operation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Mamma-Operation)
-* insert Translation(^title, en-US, Breast Surgery)
+* insert Translation(^title, de-DE, MII PR Onkologie Mamma Operation)
+* insert Translation(^title, en-US, FDPG PR Onko Mamma Operation)
 // --- Element Designations ---
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"
@@ -137,3 +137,33 @@ Description: "FDPG Profil - MII PR Onkologie Mamma Operation"
 * usedCode[IntraoperativesImaging] ^short = "Intraoperatives Präparateröntgen/Sonografie"
 // Procedure.usedCode:PraeoperativeMarkierung
 * usedCode[PraeoperativeMarkierung] ^short = "Präoperative Markierung"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension)
+* insert ObligationConsumerDefault(extension[Dokumentationsdatum])
+* insert ObligationConsumerDefault(extension[durchfuehrungsabsicht])
+* insert ObligationConsumerDefault(extension[Intention])
+* insert ObligationConsumerDefault(extension[Urgency])
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(partOf)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[sct])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[ops])
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(performed[x])
+* insert ObligationConsumerDefault(performed[x][performedDateTime])
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.coding[snomed-ct])
+* insert ObligationConsumerDefault(outcome)
+* insert ObligationConsumerDefault(complication)
+* insert ObligationConsumerDefault(complication[compl_obds])
+* insert ObligationConsumerDefault(complication[compl_icd10])
+* insert ObligationConsumerDefault(note)
+* insert ObligationConsumerDefault(usedCode)
+* insert ObligationConsumerDefault(usedCode[IntraoperativesImaging])
+* insert ObligationConsumerDefault(usedCode[PraeoperativeMarkierung])

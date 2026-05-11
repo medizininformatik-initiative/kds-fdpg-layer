@@ -2,7 +2,7 @@ Profile: FDPG_PR_Medikation_MedicationRequest
 Parent: MII_PR_Medikation_MedicationRequest
 Id: fdpg-pr-medikation-medication-request
 Title: "FDPG PR Medikation MedicationRequest"
-Description: "FDPG Profil - MII PR Medikation MedicationRequest"
+Description: "FDPG Profil - MII_PR_Medikation_MedicationRequest"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Medikationsverordnung)
 * insert Translation(^title, en-US, Medication request)
@@ -376,3 +376,34 @@ Description: "FDPG Profil - MII PR Medikation MedicationRequest"
 * priorPrescription ^definition = "Eine Verschreibung, die ersetzt wird"
 * insert Translation(priorPrescription ^definition, de-DE, Eine Verschreibung\, die ersetzt wird)
 * insert Translation(priorPrescription ^definition, en-US, An order/prescription that is being replaced)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerPreSelect(status)
+* insert ObligationConsumerDefault(intent)
+* insert ObligationConsumerPreSelect(intent)
+* insert ObligationConsumerDefault(medication[x])
+* insert ObligationConsumerPreSelect(medication[x])
+* insert ObligationConsumerDefault(medication[x][medicationReference])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[atcClassDe])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[atcClassEn])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[UNII])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(authoredOn)
+* insert ObligationConsumerPreSelect(authoredOn)
+* insert ObligationConsumerDefault(requester)
+* insert ObligationConsumerDefault(reasonCode)
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(note)
+* insert ObligationConsumerDefault(dosageInstruction)
+* insert ObligationConsumerDefault(dosageInstruction.asNeeded[x][asNeededBoolean])
+* insert ObligationConsumerDefault(dosageInstruction.asNeeded[x][asNeededCodeableConcept])
+* insert ObligationConsumerDefault(substitution)
+* insert ObligationConsumerDefault(substitution.allowed[x][allowedBoolean])
+* insert ObligationConsumerDefault(substitution.allowed[x][allowedCodeableConcept])
+* insert ObligationConsumerDefault(priorPrescription)

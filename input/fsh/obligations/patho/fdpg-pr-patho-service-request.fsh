@@ -2,7 +2,7 @@ Profile: FDPG_PR_Patho_Service_Request
 Parent: MII_PR_Patho_Service_Request
 Id: fdpg-pr-patho-service-request
 Title: "FDPG PR Patho Service Request"
-Description: "FDPG Profil - MII PR Patho Service Request"
+Description: "FDPG Profil - MII_PR_Patho_Service_Request"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, MII PR Patho Untersuchungsauftrag)
 * insert Translation(^title, en-US, MII PR Patho Service Request)
@@ -160,3 +160,24 @@ Description: "FDPG Profil - MII PR Patho Service Request"
 * specimen ^definition = "Verweis auf die zu untersuchende Probe"
 * insert Translation(specimen ^definition, de-DE, Verweis auf die zu untersuchende Probe)
 * insert Translation(specimen ^definition, en-US, Reference to the specimen to be examined)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(identifier[Placer-ID])
+* insert ObligationConsumerDefault(identifier[Filler-ID])
+* insert ObligationConsumerDefault(requisition)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(intent)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(requester)
+* insert ObligationConsumerDefault(performer)
+* insert ObligationConsumerDefault(reasonCode)
+* insert ObligationConsumerDefault(supportingInfo)
+* insert ObligationConsumerDefault(supportingInfo[codedCondition])
+* insert ObligationConsumerDefault(supportingInfo[anamnesis])
+* insert ObligationConsumerDefault(supportingInfo[activeProblems])
+* insert ObligationConsumerDefault(supportingInfo[observations])
+* insert ObligationConsumerDefault(specimen)

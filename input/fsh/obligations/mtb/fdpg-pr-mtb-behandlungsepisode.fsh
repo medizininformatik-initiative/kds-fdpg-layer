@@ -56,3 +56,18 @@ Description: "FDPG Profil - MII_PR_MTB_Behandlungsepisode"
 * insert Translation(supportingInfo[Therapieplan] ^short, de-DE, Therapieplan)
 * supportingInfo[Therapieplan] ^definition = "Therapieplan gemäß Beschluss des Molekularen Tumorboards"
 * insert Translation(supportingInfo[Therapieplan] ^definition, de-DE, Therapieplan gemäß Beschluss des Molekularen Tumorboards)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[LeitlinienbehandlungStatus])
+* insert ObligationConsumerDefault(effective[x][effectivePeriod])
+* insert ObligationConsumerDefault(problem)
+* insert ObligationConsumerDefault(problem[PrimaertumorDiagnose])
+* insert ObligationConsumerDefault(investigation[KrankengeschichteFamilie])
+* insert ObligationConsumerDefault(investigation[ECOG])
+* insert ObligationConsumerDefault(investigation[NgsBericht])
+* insert ObligationConsumerDefault(investigation[MolekularPathologieBefund])
+* insert ObligationConsumerDefault(investigation[Einwilligung])
+* insert ObligationConsumerDefault(supportingInfo[Vorbefund])
+* insert ObligationConsumerDefault(supportingInfo[Vortherapie])
+* insert ObligationConsumerDefault(supportingInfo[Vortherapie].extension[LeitlinieDokumentation])
+* insert ObligationConsumerDefault(supportingInfo[Therapieplan])

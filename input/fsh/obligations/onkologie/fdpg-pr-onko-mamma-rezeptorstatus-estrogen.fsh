@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Mamma_Rezeptorstatus_Estrogen
 Parent: MII_PR_Onko_Mamma_Rezeptorstatus_Estrogen
 Id: fdpg-pr-onko-mamma-rezeptorstatus-estrogen
-Title: "FDPG PR Onkologie Rezeptorstatus Estrogen"
-Description: "FDPG Profil - MII PR Onkologie Rezeptorstatus Estrogen"
+Title: "FDPG PR Onko Mamma Rezeptorstatus Estrogen"
+Description: "FDPG Profil - MII_PR_Onko_Mamma_Rezeptorstatus_Estrogen"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Rezeptorstatus Östrogen)
-* insert Translation(^title, en-US, Estrogen Receptor Status)
+* insert Translation(^title, de-DE, MII PR Onkologie Rezeptorstatus Estrogen)
+* insert Translation(^title, en-US, FDPG PR Onko Mamma Rezeptorstatus Estrogen)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Rezeptorstatus Estrogen"
@@ -31,3 +31,17 @@ Description: "FDPG Profil - MII PR Onkologie Rezeptorstatus Estrogen"
 * component[Faerbeintensitaet] ^short = "Component results"
 // Observation.component:Faerbeintensitaet.value[x]
 * component[Faerbeintensitaet].value[x] ^short = "Actual component result"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(value[x].coding[DefinitionOBDS])
+* insert ObligationConsumerDefault(value[x].coding[DefinitionLeitlinie])
+* insert ObligationConsumerDefault(component)
+* insert ObligationConsumerDefault(component[AnteilPositiveZellen])
+* insert ObligationConsumerDefault(component[Faerbeintensitaet])

@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_TNM_y_Symbol
 Parent: MII_PR_Onko_TNM_y_Symbol
 Id: fdpg-pr-onko-tnm-y-symbol
-Title: "FDPG PR Onkologie TNM y-Symbol"
-Description: "FDPG Profil - MII PR Onkologie TNM y-Symbol"
+Title: "FDPG PR Onko TNM y Symbol"
+Description: "FDPG Profil - MII_PR_Onko_TNM_y_Symbol"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, TNM y-Symbol)
-* insert Translation(^title, en-US, TNM y-Symbol)
+* insert Translation(^title, de-DE, MII PR Onkologie TNM y-Symbol)
+* insert Translation(^title, en-US, FDPG PR Onko TNM y Symbol)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"
@@ -24,3 +24,15 @@ Description: "FDPG Profil - MII PR Onkologie TNM y-Symbol"
 * insert Translation(effective[x] ^definition, de-DE, Datum der TNM-Klassifikation nach 8.1 oBDS 2021)
 // Observation.value[x]
 * value[x] ^short = "Actual result"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])

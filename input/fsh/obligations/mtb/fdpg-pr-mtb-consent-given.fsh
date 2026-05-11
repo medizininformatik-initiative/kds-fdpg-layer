@@ -23,3 +23,11 @@ Description: "FDPG Profil - MII_PR_MTB_Consent_Given"
 * insert Translation(value[x].coding ^short, de-DE, Dokumentierter Consent)
 * value[x].coding ^definition = "Dokumentation der Zustimmung der Ablehnung eines Consents"
 * insert Translation(value[x].coding ^definition, de-DE, Dokumentation der Zustimmung der Ablehnung eines Consents)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])

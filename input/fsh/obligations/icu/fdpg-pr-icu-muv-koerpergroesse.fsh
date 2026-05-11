@@ -1,11 +1,11 @@
 Profile: FDPG_PR_ICU_MUV_Koerpergroesse
 Parent: MII_PR_ICU_MUV_Koerpergroesse
 Id: fdpg-pr-icu-muv-koerpergroesse
-Title: "FDPG PR ICU Koerpergroesse"
-Description: "FDPG Profil - MII PR ICU Koerpergroesse"
+Title: "FDPG PR ICU MUV Koerpergroesse"
+Description: "FDPG Profil - MII_PR_ICU_MUV_Koerpergroesse"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Körpergröße)
-* insert Translation(^title, en-US, Body Height)
+* insert Translation(^title, de-DE, MII PR ICU MUV Koerpergroesse)
+* insert Translation(^title, en-US, FDPG PR ICU MUV Koerpergroesse)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"
@@ -47,3 +47,18 @@ Description: "FDPG Profil - MII PR ICU Koerpergroesse"
 * value[x][valueQuantity].code ^short = "Coded form of the unit"
 // Observation.dataAbsentReason
 * dataAbsentReason ^short = "Why the result is missing"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category[VSCat])
+* insert ObligationConsumerDefault(category[sct])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[loinc])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(effective[x][effectiveDateTime])
+* insert ObligationConsumerDefault(effective[x][effectivePeriod])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerDefault(value[x][valueQuantity])
+* insert ObligationConsumerDefault(dataAbsentReason)

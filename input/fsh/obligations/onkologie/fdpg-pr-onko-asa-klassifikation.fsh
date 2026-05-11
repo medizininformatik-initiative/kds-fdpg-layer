@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_ASA_Klassifikation
 Parent: MII_PR_Onko_ASA_Klassifikation
 Id: fdpg-pr-onko-asa-klassifikation
-Title: "FDPG PR Onkologie ASA-Klassifikation"
-Description: "FDPG Profil - MII PR Onkologie ASA-Klassifikation"
+Title: "FDPG PR Onko ASA Klassifikation"
+Description: "FDPG Profil - MII_PR_Onko_ASA_Klassifikation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, ASA-Klassifikation)
-* insert Translation(^title, en-US, ASA Classification)
+* insert Translation(^title, de-DE, MII PR Onkologie ASA-Klassifikation)
+* insert Translation(^title, en-US, FDPG PR Onko ASA Klassifikation)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "ASA-Klassifikation"
@@ -22,3 +22,14 @@ Description: "FDPG Profil - MII PR Onkologie ASA-Klassifikation"
 * insert Translation(value[x] ^short, de-DE, ASA-Klassifikation)
 * value[x] ^definition = "ASA-Klassifikation zur präoperativen Risikobewertung - ASA I-VI"
 * insert Translation(value[x] ^definition, de-DE, ASA-Klassifikation zur präoperativen Risikobewertung gemäß oBDS KR9)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])

@@ -2,9 +2,9 @@ Profile: FDPG_PR_Medikation_Medication
 Parent: MII_PR_Medikation_Medication
 Id: fdpg-pr-medikation-medication
 Title: "FDPG PR Medikation Medication"
-Description: "FDPG Profil - MII PR Medikation Medication"
+Description: "FDPG Profil - MII_PR_Medikation_Medication"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Medikament)
+* insert Translation(^title, de-DE, MII PR Medikation Medication)
 * insert Translation(^title, en-US, MII PR Medikation Medication)
 // --- Element Designations ---
 // Medication.code
@@ -64,3 +64,18 @@ Description: "FDPG Profil - MII PR Medikation Medication"
 * ingredient.strength.numerator ^short = "Numerator value"
 // Medication.ingredient.strength.denominator
 * ingredient.strength.denominator ^short = "Denominator value"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(code.coding[Pharmazentralnummer])
+* insert ObligationConsumerDefault(code.coding[atcClassDe])
+* insert ObligationConsumerDefault(code.coding[atcClassEn])
+* insert ObligationConsumerDefault(form)
+* insert ObligationConsumerDefault(form.coding[EDQM])
+* insert ObligationConsumerDefault(ingredient)
+* insert ObligationConsumerPreSelect(ingredient)
+* insert ObligationConsumerDefault(ingredient.extension[Wirkstofftyp])
+* insert ObligationConsumerDefault(ingredient.extension[Wirkstoffrelation])
+* insert ObligationConsumerDefault(ingredient.item[x][itemReference])
+* insert ObligationConsumerDefault(ingredient.item[x][itemCodeableConcept])

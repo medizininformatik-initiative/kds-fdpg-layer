@@ -2,7 +2,7 @@ Profile: FDPG_PR_Patho_Specimen
 Parent: MII_PR_Patho_Specimen
 Id: fdpg-pr-patho-specimen
 Title: "FDPG PR Patho Specimen"
-Description: "FDPG Profil - MII PR Patho Specimen"
+Description: "FDPG Profil - MII_PR_Patho_Specimen"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, MII PR Patho Probe)
 * insert Translation(^title, en-US, MII PR Patho Specimen)
@@ -250,3 +250,26 @@ Description: "FDPG Profil - MII PR Patho Specimen"
 * note ^definition = "To communicate any details or issues about the specimen or during the specimen collection. (for example: broken vial, sent with patient, frozen)."
 * insert Translation(note ^definition, de-DE, Freitextangabe zur Verwendung der Probe in spezifischen Projekten.)
 * insert Translation(note ^definition, en-US, Free-text information about the use of the specimen in specific projects.)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[probenebene])
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(identifier[Placer-ID])
+* insert ObligationConsumerDefault(identifier[Filler-ID])
+* insert ObligationConsumerDefault(accessionIdentifier)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(type)
+* insert ObligationConsumerDefault(type.coding[sct])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(receivedTime)
+* insert ObligationConsumerDefault(parent)
+* insert ObligationConsumerDefault(request)
+* insert ObligationConsumerDefault(collection)
+* insert ObligationConsumerDefault(collection.extension[einstellungBlutversorgung])
+* insert ObligationConsumerDefault(processing)
+* insert ObligationConsumerDefault(processing.extension[temperaturbedingungen])
+* insert ObligationConsumerDefault(processing.time[x][timePeriod])
+* insert ObligationConsumerDefault(processing[lagerprozess])
+* insert ObligationConsumerDefault(processing[lagerprozess].extension[temperaturbedingungen])
+* insert ObligationConsumerDefault(container)
+* insert ObligationConsumerDefault(note)

@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Fernmetastasen
 Parent: MII_PR_Onko_Fernmetastasen
 Id: fdpg-pr-onko-fernmetastasen
-Title: "FDPG PR Onkologie Fernmetastasen"
-Description: "FDPG Profil - MII PR Onkologie Fernmetastasen"
+Title: "FDPG PR Onko Fernmetastasen"
+Description: "FDPG Profil - MII_PR_Onko_Fernmetastasen"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Fernmetastasen)
-* insert Translation(^title, en-US, Distant Metastases)
+* insert Translation(^title, de-DE, MII PR Onkologie Fernmetastasen)
+* insert Translation(^title, en-US, FDPG PR Onko Fernmetastasen)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Lokalisation einer Fernmetastase laut oBDS"
@@ -27,3 +27,14 @@ Description: "FDPG Profil - MII PR Onkologie Fernmetastasen"
 * insert Translation(value[x].coding ^short, de-DE, Lokalisation der Fernmetastasen)
 * value[x].coding ^definition = "weitere Lokalisationen sind als einzelne Ressourcen zu kodieren"
 * insert Translation(value[x].coding ^definition, de-DE, Lokalisation der Fernmetastasen laut 11.1 oBDS 2021 / TNM Kodierung)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])

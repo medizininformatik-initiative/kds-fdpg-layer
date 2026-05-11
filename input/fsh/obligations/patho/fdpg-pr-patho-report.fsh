@@ -2,7 +2,7 @@ Profile: FDPG_PR_Patho_Report
 Parent: MII_PR_Patho_Report
 Id: fdpg-pr-patho-report
 Title: "FDPG PR Patho Report"
-Description: "FDPG Profil - MII PR Patho Report"
+Description: "FDPG Profil - MII_PR_Patho_Report"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, MII PR Patho Bericht)
 * insert Translation(^title, en-US, MII PR Patho Report)
@@ -185,3 +185,28 @@ Description: "FDPG Profil - MII PR Patho Report"
 * presentedForm ^definition = "PDF-Dokument"
 * insert Translation(presentedForm ^definition, de-DE, PDF-Dokument)
 * insert Translation(presentedForm ^definition, en-US, pdf document)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[related-report])
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(identifier[Set-ID])
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[pathology-report])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(performer)
+* insert ObligationConsumerDefault(specimen)
+* insert ObligationConsumerDefault(result)
+* insert ObligationConsumerDefault(result[intraoperative-observations])
+* insert ObligationConsumerDefault(result[macroscopic-observations])
+* insert ObligationConsumerDefault(result[microscopic-observations])
+* insert ObligationConsumerDefault(result[additional-observations])
+* insert ObligationConsumerDefault(result[diagnostic-conclusion])
+* insert ObligationConsumerDefault(imagingStudy)
+* insert ObligationConsumerDefault(media)
+* insert ObligationConsumerDefault(conclusionCode)
+* insert ObligationConsumerDefault(presentedForm)

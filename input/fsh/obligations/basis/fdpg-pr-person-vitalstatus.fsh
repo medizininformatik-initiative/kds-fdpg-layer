@@ -1,8 +1,8 @@
 Profile: FDPG_PR_Person_Vitalstatus
 Parent: MII_PR_Person_Vitalstatus
 Id: fdpg-pr-person-vitalstatus
-Title: "FDPG PR Person Vitalstatus"
-Description: "FDPG Profil - MII PR Person Vitalstatus"
+Title: "FDPG PR Basis Vitalstatus"
+Description: "FDPG Profil - MII_PR_Person_Vitalstatus"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Vitalstatus)
 * insert Translation(^title, en-US, Vital status)
@@ -64,3 +64,19 @@ Description: "FDPG Profil - MII PR Person Vitalstatus"
 * note ^definition = "Zusätzliche Informationen zum Vitalstatus als Freitext."
 * insert Translation(note ^definition, de-DE, Zusätzliche Informationen zum Vitalstatus als Freitext.)
 * insert Translation(note ^definition, en-US, Additional information about the vital status as free text.)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category[survey])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(code.coding[loinc])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(value[x].coding[Vitalstatus])
+* insert ObligationConsumerDefault(note)

@@ -2,7 +2,7 @@ Profile: FDPG_PR_Bildgebung_Radiologische_Befundungsprozedur
 Parent: MII_PR_Bildgebung_Radiologische_Befundungsprozedur
 Id: fdpg-pr-bildgebung-radiologische-befundungsprozedur
 Title: "FDPG PR Bildgebung Radiologische Befundungsprozedur"
-Description: "FDPG Profil - MII PR Bildgebung Radiologische Befundungsprozedur"
+Description: "FDPG Profil - MII_PR_Bildgebung_Radiologische_Befundungsprozedur"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, radiologische Befundungsprozedur)
 * insert Translation(^title, en-US, radiological read-procedure)
@@ -118,3 +118,21 @@ Description: "FDPG Profil - MII PR Bildgebung Radiologische Befundungsprozedur"
 * note ^definition = "Zusätzliche Informationen zur Prozedur als Freitext."
 * insert Translation(note ^definition, de-DE, Zusätzliche Informationen zur Prozedur als Freitext.)
 * insert Translation(note ^definition, en-US, Additional information about the procedure as free text.)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension)
+* insert ObligationConsumerDefault(extension[Dokumentationsdatum])
+* insert ObligationConsumerDefault(extension[durchfuehrungsabsicht])
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[sct])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[ops])
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(performed[x])
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.coding[snomed-ct])
+* insert ObligationConsumerDefault(report)
+* insert ObligationConsumerDefault(note)

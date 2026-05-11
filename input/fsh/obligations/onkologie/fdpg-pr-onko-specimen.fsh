@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Specimen
 Parent: MII_PR_Onko_Specimen
 Id: fdpg-pr-onko-specimen
-Title: "FDPG PR Onkologie Specimen"
-Description: "FDPG Profil - MII PR Onkologie Specimen"
+Title: "FDPG PR Onko Specimen"
+Description: "FDPG Profil - MII_PR_Onko_Specimen"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Onkologische Probe)
-* insert Translation(^title, en-US, Oncology Specimen)
+* insert Translation(^title, de-DE, MII PR Onkologie Specimen)
+* insert Translation(^title, en-US, FDPG PR Onko Specimen)
 // --- Element Designations ---
 // Specimen.accessionIdentifier
 * accessionIdentifier ^short = "Identifier assigned by the lab"
@@ -23,3 +23,10 @@ Description: "FDPG Profil - MII PR Onkologie Specimen"
 * insert Translation(collection.collected[x][collectedDateTime] ^short, de-DE, Datum der Probenentnahme)
 * collection.collected[x][collectedDateTime] ^definition = "Datum der Probenentnahme - oBDS 6.1 Tumor Histologiedatum"
 * insert Translation(collection.collected[x][collectedDateTime] ^definition, de-DE, Datum der Probenentnahme entspricht oBDS 6.1 Tumor Histologiedatum)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(accessionIdentifier)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(collection)
+* insert ObligationConsumerPreSelect(collection)
+* insert ObligationConsumerDefault(collection.collected[x][collectedDateTime])

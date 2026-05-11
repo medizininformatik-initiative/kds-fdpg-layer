@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Seltene_Taillenumfang
 Parent: MII_PR_Seltene_Taillenumfang
 Id: fdpg-pr-seltene-taillenumfang
-Title: "FDPG PR SE Taillenumfang"
-Description: "FDPG Profil - MII PR SE Taillenumfang"
+Title: "FDPG PR Seltene Taillenumfang"
+Description: "FDPG Profil - MII_PR_Seltene_Taillenumfang"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Taillenumfang)
-* insert Translation(^title, en-US, Waist Circumference)
+* insert Translation(^title, de-DE, MII PR SE Taillenumfang)
+* insert Translation(^title, en-US, FDPG PR Seltene Taillenumfang)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"
@@ -19,3 +19,14 @@ Description: "FDPG Profil - MII PR SE Taillenumfang"
 * effective[x] ^short = "Clinically relevant time/time-period for observation"
 // Observation.value[x]
 * value[x] ^short = "Actual result"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])

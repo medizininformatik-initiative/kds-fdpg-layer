@@ -2,7 +2,7 @@ Profile: FDPG_PR_Bildgebung_Radiologischer_Befund
 Parent: MII_PR_Bildgebung_Radiologischer_Befund
 Id: fdpg-pr-bildgebung-radiologischer-befund
 Title: "FDPG PR Bildgebung Radiologischer Befund"
-Description: "FDPG Profil - MII PR Bildgebung Radiologischer Befund"
+Description: "FDPG Profil - MII_PR_Bildgebung_Radiologischer_Befund"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Befundbericht)
 * insert Translation(^title, en-US, diagnostic report)
@@ -158,3 +158,28 @@ Description: "FDPG Profil - MII PR Bildgebung Radiologischer Befund"
 * presentedForm ^definition = "zusätzlicher wichtiger Anhang"
 * insert Translation(presentedForm ^definition, de-DE, zusätzlicher wichtiger Anhang)
 * insert Translation(presentedForm ^definition, en-US, additional attachment to the report)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[supportingInfo])
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[loinc])
+* insert ObligationConsumerDefault(category.coding[diagnostic-service-sections])
+* insert ObligationConsumerDefault(category.coding[sct])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(code.coding[loinc])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(effective[x][effectiveDateTime])
+* insert ObligationConsumerDefault(effective[x][effectivePeriod])
+* insert ObligationConsumerDefault(issued)
+* insert ObligationConsumerDefault(result)
+* insert ObligationConsumerDefault(imagingStudy)
+* insert ObligationConsumerDefault(conclusion)
+* insert ObligationConsumerDefault(conclusionCode)
+* insert ObligationConsumerDefault(conclusionCode.coding[icd10-gm])
+* insert ObligationConsumerDefault(conclusionCode.coding[sct])
+* insert ObligationConsumerDefault(presentedForm)

@@ -60,3 +60,24 @@ Description: "FDPG Profil - MII_PR_MTB_Response_Befund"
 * component[Lymphknoten_Verlauf] ^short = "Component results"
 // Observation.component:Fernmetastasen_Verlauf
 * component[Fernmetastasen_Verlauf] ^short = "Component results"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(partOf)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(effective[x][effectiveDateTime])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerDefault(value[x][valueCodeableConcept])
+* insert ObligationConsumerDefault(value[x][valueCodeableConcept].coding[oBDS])
+* insert ObligationConsumerDefault(value[x][valueCodeableConcept].coding[MTB])
+* insert ObligationConsumerDefault(method)
+* insert ObligationConsumerDefault(hasMember)
+* insert ObligationConsumerDefault(component)
+* insert ObligationConsumerDefault(component[Tumor_Verlauf])
+* insert ObligationConsumerDefault(component[Lymphknoten_Verlauf])
+* insert ObligationConsumerDefault(component[Fernmetastasen_Verlauf])

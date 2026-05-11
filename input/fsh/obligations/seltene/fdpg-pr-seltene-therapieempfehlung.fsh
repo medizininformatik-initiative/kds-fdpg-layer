@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Seltene_Therapieempfehlung
 Parent: MII_PR_Seltene_Therapieempfehlung
 Id: fdpg-pr-seltene-therapieempfehlung
-Title: "FDPG PR SE Therapieempfehlung Systemische Therapie"
-Description: "FDPG Profil - MII PR SE Therapieempfehlung Systemische Therapie"
+Title: "FDPG PR Seltene Therapieempfehlung"
+Description: "FDPG Profil - MII_PR_Seltene_Therapieempfehlung"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Therapieempfehlung systemische Therapie)
-* insert Translation(^title, en-US, Therapy Recommendation Systemic Therapy)
+* insert Translation(^title, de-DE, MII PR SE Therapieempfehlung Systemische Therapie)
+* insert Translation(^title, en-US, FDPG PR Seltene Therapieempfehlung)
 // --- Element Designations ---
 // MedicationRequest.extension:Prioritaet
 * extension[Prioritaet] ^short = "MII EX SE Empfehlung Priorität"
@@ -388,3 +388,36 @@ Description: "FDPG Profil - MII PR SE Therapieempfehlung Systemische Therapie"
 * priorPrescription ^definition = "Eine Verschreibung, die ersetzt wird"
 * insert Translation(priorPrescription ^definition, de-DE, Eine Verschreibung\, die ersetzt wird)
 * insert Translation(priorPrescription ^definition, en-US, An order/prescription that is being replaced)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[Prioritaet])
+* insert ObligationConsumerDefault(extension[Evidenzgraduierung])
+* insert ObligationConsumerDefault(extension[Publikation])
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(intent)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category[MVGenomSeqTherapieStrategie])
+* insert ObligationConsumerDefault(category[MVGenomSeqTherapieTyp])
+* insert ObligationConsumerDefault(medication[x])
+* insert ObligationConsumerDefault(medication[x][medicationReference])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[atcClassDe])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[atcClassEn])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[UNII])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(authoredOn)
+* insert ObligationConsumerDefault(requester)
+* insert ObligationConsumerDefault(reasonCode)
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(note)
+* insert ObligationConsumerDefault(dosageInstruction)
+* insert ObligationConsumerDefault(dosageInstruction.asNeeded[x][asNeededBoolean])
+* insert ObligationConsumerDefault(dosageInstruction.asNeeded[x][asNeededCodeableConcept])
+* insert ObligationConsumerDefault(substitution)
+* insert ObligationConsumerDefault(substitution.allowed[x][allowedBoolean])
+* insert ObligationConsumerDefault(substitution.allowed[x][allowedCodeableConcept])
+* insert ObligationConsumerDefault(priorPrescription)

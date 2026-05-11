@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_TNM_Klassifikation
 Parent: MII_PR_Onko_TNM_Klassifikation
 Id: fdpg-pr-onko-tnm-klassifikation
-Title: "FDPG PR Onkologie TNM-Klassifikation"
-Description: "FDPG Profil - MII PR Onkologie TNM-Klassifikation"
+Title: "FDPG PR Onko TNM Klassifikation"
+Description: "FDPG Profil - MII_PR_Onko_TNM_Klassifikation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, TNM-Klassifikation)
-* insert Translation(^title, en-US, TNM Classification)
+* insert Translation(^title, de-DE, MII PR Onkologie TNM-Klassifikation)
+* insert Translation(^title, en-US, FDPG PR Onko TNM Klassifikation)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"
@@ -30,3 +30,18 @@ Description: "FDPG Profil - MII PR Onkologie TNM-Klassifikation"
 * specimen ^short = "Specimen used for this observation"
 // Observation.hasMember
 * hasMember ^short = "Related resource that belongs to the Observation group"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(method)
+* insert ObligationConsumerDefault(specimen)
+* insert ObligationConsumerDefault(hasMember)

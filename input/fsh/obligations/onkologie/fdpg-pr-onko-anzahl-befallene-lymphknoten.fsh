@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Anzahl_Befallene_Lymphknoten
 Parent: MII_PR_Onko_Anzahl_Befallene_Lymphknoten
 Id: fdpg-pr-onko-anzahl-befallene-lymphknoten
-Title: "FDPG PR Onkologie Anzahl der befallenen Lymphknoten"
-Description: "FDPG Profil - MII PR Onkologie Anzahl der befallenen Lymphknoten"
+Title: "FDPG PR Onko Anzahl Befallene Lymphknoten"
+Description: "FDPG Profil - MII_PR_Onko_Anzahl_Befallene_Lymphknoten"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Anzahl der befallenen Lymphknoten)
-* insert Translation(^title, en-US, Number of Involved Lymph Nodes)
+* insert Translation(^title, de-DE, MII PR Onkologie Anzahl der befallenen Lymphknoten)
+* insert Translation(^title, en-US, FDPG PR Onko Anzahl Befallene Lymphknoten)
 // --- Element Designations ---
 // Observation.category
 * category ^short = "Classification of  type of observation"
@@ -34,3 +34,17 @@ Description: "FDPG Profil - MII PR Onkologie Anzahl der befallenen Lymphknoten"
 * value[x].system ^short = "System that defines coded unit form"
 // Observation.value[x].code
 * value[x].code ^short = "Coded form of the unit"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category[laboratory])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(code.coding[loinc])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])

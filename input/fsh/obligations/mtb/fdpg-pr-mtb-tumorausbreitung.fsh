@@ -27,3 +27,17 @@ Description: "FDPG Profil - MII_PR_MTB_Tumorausbreitung"
 * insert Translation(value[x].coding[Tumorausbreitung] ^short, de-DE, Tumorausbreitung)
 * value[x].coding[Tumorausbreitung] ^definition = "Angabe zur Tumorausbreitung"
 * insert Translation(value[x].coding[Tumorausbreitung] ^definition, de-DE, Angabe zur Tumorausbreitung)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[ErstdiagnoseZeitpunkt])
+* insert ObligationConsumerDefault(category.coding[MolekularesTumorboardZeitpunkt])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(value[x].coding[Tumorausbreitung])

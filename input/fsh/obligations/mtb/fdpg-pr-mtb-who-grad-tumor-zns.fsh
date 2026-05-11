@@ -23,3 +23,12 @@ Description: "FDPG Profil - MII_PR_MTB_WHO_Grad_Tumor_ZNS"
 * insert Translation(value[x].coding[SCT] ^short, de-DE, WHO-Klassifikation gemäß SNOMED CT)
 * value[x].coding[SCT] ^definition = "Grad eines Tumors nach WHO-Klassifikation der Tumoren des zentralen Nervensystems gemäß SNOMED CT"
 * insert Translation(value[x].coding[SCT] ^definition, de-DE, Grad eines Tumors nach WHO-Klassifikation der Tumoren des zentralen Nervensystems gemäß SNOMED CT)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(value[x].coding[SCT])

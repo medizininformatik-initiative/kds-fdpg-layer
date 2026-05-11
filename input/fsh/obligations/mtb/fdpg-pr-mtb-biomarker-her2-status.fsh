@@ -59,3 +59,16 @@ Description: "FDPG Profil - MII_PR_MTB_BIOMARKER_HER2_STATUS"
 * insert Translation(component[biomarker-category] ^short, de-DE, Biomarker-Kategorie)
 * component[biomarker-category] ^definition = "Die Kategorie des molekularen Biomarkers"
 * insert Translation(component[biomarker-category] ^definition, de-DE, Die Kategorie des molekularen Biomarkers)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(issued)
+* insert ObligationConsumerDefault(derivedFrom)
+* insert ObligationConsumerDefault(component)
+* insert ObligationConsumerDefault(component[gene-studied])
+* insert ObligationConsumerDefault(component[biomarker-category])

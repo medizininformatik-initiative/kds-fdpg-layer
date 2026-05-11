@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_TNM_V_Kategorie
 Parent: MII_PR_Onko_TNM_V_Kategorie
 Id: fdpg-pr-onko-tnm-v-kategorie
-Title: "FDPG PR Onkologie TNM V-Kategorie"
-Description: "FDPG Profil - MII PR Onkologie TNM V-Kategorie"
+Title: "FDPG PR Onko TNM V Kategorie"
+Description: "FDPG Profil - MII_PR_Onko_TNM_V_Kategorie"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, TNM V-Kategorie)
-* insert Translation(^title, en-US, TNM V-Category)
+* insert Translation(^title, de-DE, MII PR Onkologie TNM V-Kategorie)
+* insert Translation(^title, en-US, FDPG PR Onko TNM V Kategorie)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"
@@ -26,3 +26,16 @@ Description: "FDPG Profil - MII PR Onkologie TNM V-Kategorie"
 * value[x] ^short = "Actual result"
 // Observation.method
 * method ^short = "How it was done"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(method)

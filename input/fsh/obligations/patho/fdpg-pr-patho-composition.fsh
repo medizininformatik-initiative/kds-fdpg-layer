@@ -2,7 +2,7 @@ Profile: FDPG_PR_Patho_Composition
 Parent: MII_PR_Patho_Composition
 Id: fdpg-pr-patho-composition
 Title: "FDPG PR Patho Composition"
-Description: "FDPG Profil - MII PR Patho Composition"
+Description: "FDPG Profil - MII_PR_Patho_Composition"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, MII PR Patho Zusammenstellung)
 * insert Translation(^title, en-US, MII PR Patho Composition)
@@ -160,3 +160,30 @@ Description: "FDPG Profil - MII PR Patho Composition"
 * section[patho-diagnostic-report].text ^short = "Narrativ"
 // Composition.section:patho-diagnostic-report.section
 * section[patho-diagnostic-report].section ^short = "Unterkapitel"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[document-version])
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(type)
+* insert ObligationConsumerDefault(type.coding[KDL])
+* insert ObligationConsumerDefault(type.coding[XDS])
+* insert ObligationConsumerDefault(type.coding[sct])
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[LOINC])
+* insert ObligationConsumerDefault(category.coding[IHE])
+* insert ObligationConsumerDefault(category.coding[sct])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(date)
+* insert ObligationConsumerDefault(author)
+* insert ObligationConsumerDefault(title)
+* insert ObligationConsumerDefault(attester)
+* insert ObligationConsumerDefault(attester[legal])
+* insert ObligationConsumerDefault(attester[content-validator])
+* insert ObligationConsumerDefault(custodian)
+* insert ObligationConsumerDefault(relatesTo)
+* insert ObligationConsumerDefault(relatesTo.target[x][targetReference])
+* insert ObligationConsumerDefault(event)
+* insert ObligationConsumerDefault(section)
+* insert ObligationConsumerDefault(section[patho-diagnostic-report])

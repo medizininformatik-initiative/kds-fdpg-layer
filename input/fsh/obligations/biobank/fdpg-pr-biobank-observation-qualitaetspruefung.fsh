@@ -1,8 +1,8 @@
 Profile: FDPG_PR_Biobank_Observation_Qualitaetspruefung
 Parent: MII_PR_Biobank_Observation_Qualitaetspruefung
 Id: fdpg-pr-biobank-observation-qualitaetspruefung
-Title: "FDPG PR Biobank Observation Qualitätsprüfung"
-Description: "FDPG Profil - MII PR Biobank Observation Qualitätsprüfung"
+Title: "FDPG PR Biobank Observation Qualitaetspruefung"
+Description: "FDPG Profil - MII_PR_Biobank_Observation_Qualitaetspruefung"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Observation Qualitätsprüfung)
 * insert Translation(^title, en-US, Observation Quality Check)
@@ -17,3 +17,12 @@ Description: "FDPG Profil - MII PR Biobank Observation Qualitätsprüfung"
 * component[type] ^short = "Component results"
 // Observation.component:result
 * component[result] ^short = "Component results"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(component[type])
+* insert ObligationConsumerDefault(component[result])

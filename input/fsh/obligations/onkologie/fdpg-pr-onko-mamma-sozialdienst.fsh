@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Mamma_Sozialdienst
 Parent: MII_PR_Onko_Mamma_Sozialdienst
 Id: fdpg-pr-onko-mamma-sozialdienst
-Title: "FDPG PR Onkologie Präoperative Drahtmarkierung Mamma"
-Description: "FDPG Profil - MII PR Onkologie Präoperative Drahtmarkierung Mamma"
+Title: "FDPG PR Onko Mamma Sozialdienst"
+Description: "FDPG Profil - MII_PR_Onko_Mamma_Sozialdienst"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Sozialdienst Mamma)
-* insert Translation(^title, en-US, Social Services Breast)
+* insert Translation(^title, de-DE, MII PR Onkologie Präoperative Drahtmarkierung Mamma)
+* insert Translation(^title, en-US, FDPG PR Onko Mamma Sozialdienst)
 // --- Element Designations ---
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"
@@ -131,3 +131,30 @@ Description: "FDPG Profil - MII PR Onkologie Präoperative Drahtmarkierung Mamma
 * note ^definition = "Zusätzliche Informationen zur Prozedur als Freitext."
 * insert Translation(note ^definition, de-DE, Zusätzliche Informationen zur Prozedur als Freitext.)
 * insert Translation(note ^definition, en-US, Additional information about the procedure as free text.)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension)
+* insert ObligationConsumerDefault(extension[Dokumentationsdatum])
+* insert ObligationConsumerDefault(extension[durchfuehrungsabsicht])
+* insert ObligationConsumerDefault(extension[Intention])
+* insert ObligationConsumerDefault(extension[Urgency])
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(partOf)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[sct])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[ops])
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(performed[x])
+* insert ObligationConsumerDefault(performed[x][performedDateTime])
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.coding[snomed-ct])
+* insert ObligationConsumerDefault(outcome)
+* insert ObligationConsumerDefault(complication)
+* insert ObligationConsumerDefault(complication[compl_obds])
+* insert ObligationConsumerDefault(complication[compl_icd10])
+* insert ObligationConsumerDefault(note)

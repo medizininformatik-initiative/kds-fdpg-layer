@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_KRK_Abstand_Aboral
 Parent: MII_PR_Onko_KRK_Abstand_Aboral
 Id: fdpg-pr-onko-krk-abstand-aboral
-Title: "FDPG PR Onkologie Abstand Aboral"
-Description: "FDPG Profil - MII PR Onkologie Abstand Aboral"
+Title: "FDPG PR Onko KRK Abstand Aboral"
+Description: "FDPG Profil - MII_PR_Onko_KRK_Abstand_Aboral"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Abstand zum aboralen Resektionsrand)
-* insert Translation(^title, en-US, Distance to Aboral Resection Margin)
+* insert Translation(^title, de-DE, MII PR Onkologie Abstand Aboral)
+* insert Translation(^title, en-US, FDPG PR Onko KRK Abstand Aboral)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Minimaler Abstand Tumorrand aboral - makroskopisch oder mikroskopisch"
@@ -33,3 +33,14 @@ Description: "FDPG Profil - MII PR Onkologie Abstand Aboral"
 * value[x].system ^short = "System that defines coded unit form"
 // Observation.value[x].code
 * value[x].code ^short = "Coded form of the unit"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])

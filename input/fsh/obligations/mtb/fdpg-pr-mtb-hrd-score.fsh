@@ -88,3 +88,23 @@ Description: "FDPG Profil - MII_PR_MTB_HRD_Score"
 * insert Translation(component[LST] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
 // Observation.component:LST.value[x]
 * component[LST].value[x] ^short = "Actual component result"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(issued)
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerDefault(interpretation)
+* insert ObligationConsumerDefault(specimen)
+* insert ObligationConsumerDefault(derivedFrom)
+* insert ObligationConsumerDefault(component)
+* insert ObligationConsumerDefault(component[gene-studied])
+* insert ObligationConsumerDefault(component[biomarker-category])
+* insert ObligationConsumerDefault(component[LOH])
+* insert ObligationConsumerDefault(component[TAI])
+* insert ObligationConsumerDefault(component[LST])

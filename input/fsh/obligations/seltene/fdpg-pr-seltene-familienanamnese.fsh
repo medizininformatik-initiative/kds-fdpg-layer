@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Seltene_Familienanamnese
 Parent: MII_PR_Seltene_Familienanamnese
 Id: fdpg-pr-seltene-familienanamnese
-Title: "FDPG PR SE Familienanamnese"
-Description: "FDPG Profil - MII PR SE Familienanamnese"
+Title: "FDPG PR Seltene Familienanamnese"
+Description: "FDPG Profil - MII_PR_Seltene_Familienanamnese"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Familienanamnese)
-* insert Translation(^title, en-US, Family History)
+* insert Translation(^title, de-DE, MII PR SE Familienanamnese)
+* insert Translation(^title, en-US, FDPG PR Seltene Familienanamnese)
 // --- Element Designations ---
 // FamilyMemberHistory.extension:vonSEBetroffen
 * extension[vonSEBetroffen] ^short = "Gibt an, ob das Familienmitglied von der gleichen seltenen Erkrankung betroffen ist"
@@ -228,3 +228,22 @@ Description: "FDPG Profil - MII PR SE Familienanamnese"
 * condition.contributedToDeath ^short = "Tod durch diese Erkrankung"
 // FamilyMemberHistory.condition.onset[x]
 * condition.onset[x] ^short = "When condition first manifested"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[vonSEBetroffen])
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(patient)
+* insert ObligationConsumerDefault(date)
+* insert ObligationConsumerDefault(relationship)
+* insert ObligationConsumerDefault(sex)
+* insert ObligationConsumerDefault(born[x])
+* insert ObligationConsumerDefault(age[x])
+* insert ObligationConsumerDefault(deceased[x])
+* insert ObligationConsumerDefault(reasonCode)
+* insert ObligationConsumerDefault(reasonCode.coding[icd10-gm])
+* insert ObligationConsumerDefault(reasonCode.coding[alpha-id])
+* insert ObligationConsumerDefault(reasonCode.coding[sct])
+* insert ObligationConsumerDefault(reasonCode.coding[orphanet])
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(condition)
+* insert ObligationConsumerDefault(condition.extension[penetrance])

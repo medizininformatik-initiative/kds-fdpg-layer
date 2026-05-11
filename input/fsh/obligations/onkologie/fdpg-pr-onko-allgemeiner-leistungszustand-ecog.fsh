@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Allgemeiner_Leistungszustand_ECOG
 Parent: MII_PR_Onko_Allgemeiner_Leistungszustand_ECOG
 Id: fdpg-pr-onko-allgemeiner-leistungszustand-ecog
-Title: "FDPG PR Onkologie Allgemeiner Leistungszustand ECOG"
-Description: "FDPG Profil - MII PR Onkologie Allgemeiner Leistungszustand ECOG"
+Title: "FDPG PR Onko Allgemeiner Leistungszustand ECOG"
+Description: "FDPG Profil - MII_PR_Onko_Allgemeiner_Leistungszustand_ECOG"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Allgemeiner Leistungszustand nach ECOG)
-* insert Translation(^title, en-US, General Performance Status (ECOG\))
+* insert Translation(^title, de-DE, MII PR Onkologie Allgemeiner Leistungszustand ECOG)
+* insert Translation(^title, en-US, FDPG PR Onko Allgemeiner Leistungszustand ECOG)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Type of observation (code / type)"
@@ -20,3 +20,15 @@ Description: "FDPG Profil - MII PR Onkologie Allgemeiner Leistungszustand ECOG"
 * insert Translation(value[x].coding ^short, de-DE, Leistungszustand nach ECOG)
 * value[x].coding ^definition = "Leistungszustand nach ECOG Stufen 0-4 gemäß 12.1 oBDS 2021"
 * insert Translation(value[x].coding ^definition, de-DE, Leistungszustand nach ECOG Stufen 0-4 gemäß 12.1 oBDS 2021)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(code.coding[snomed])
+* insert ObligationConsumerDefault(code.coding[loinc])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(value[x].coding[obds])
+* insert ObligationConsumerDefault(value[x].coding[loinc])

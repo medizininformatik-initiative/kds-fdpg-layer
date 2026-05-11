@@ -2,7 +2,7 @@ Profile: FDPG_PR_Bildgebung_Bildgebungsstudie
 Parent: MII_PR_Bildgebung_Bildgebungsstudie
 Id: fdpg-pr-bildgebung-bildgebungsstudie
 Title: "FDPG PR Bildgebung Bildgebungsstudie"
-Description: "FDPG Profil - MII PR Bildgebung Bildgebungsstudie"
+Description: "FDPG Profil - MII_PR_Bildgebung_Bildgebungsstudie"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Bildgebungsstudie)
 * insert Translation(^title, en-US, imaging study)
@@ -191,3 +191,18 @@ Description: "FDPG Profil - MII PR Bildgebung Bildgebungsstudie"
 * series.instance.number ^definition = "Nummer der aktuellen Instanz"
 * insert Translation(series.instance.number ^definition, de-DE, Nummer der aktuellen Instanz)
 * insert Translation(series.instance.number ^definition, en-US, number of this instance)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(modality)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(started)
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(endpoint)
+* insert ObligationConsumerDefault(numberOfSeries)
+* insert ObligationConsumerDefault(numberOfInstances)
+* insert ObligationConsumerDefault(procedureReference)
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(description)
+* insert ObligationConsumerDefault(series)

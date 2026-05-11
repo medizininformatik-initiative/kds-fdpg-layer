@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Histologie_ICDO3
 Parent: MII_PR_Onko_Histologie_ICDO3
 Id: fdpg-pr-onko-histologie-icdo3
-Title: "FDPG PR Onkologie Histologie ICD-O-3"
-Description: "FDPG Profil - MII PR Onkologie Histologie ICD-O-3"
+Title: "FDPG PR Onko Histologie ICDO3"
+Description: "FDPG Profil - MII_PR_Onko_Histologie_ICDO3"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Histologie nach ICD-O-3)
-* insert Translation(^title, en-US, Histology (ICD-O-3\))
+* insert Translation(^title, de-DE, MII PR Onkologie Histologie ICD-O-3)
+* insert Translation(^title, en-US, FDPG PR Onko Histologie ICDO3)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Histologische Bewertung nach ICD-0-3"
@@ -34,3 +34,17 @@ Description: "FDPG Profil - MII PR Onkologie Histologie ICD-O-3"
 * insert Translation(bodySite.coding[icd-o-3] ^definition, de-DE, ICD-O-3 Topographie bei vom Primärtumor abweichender Lokalisation in der Verlaufsbeschreibung)
 // Observation.specimen
 * specimen ^short = "Specimen used for this observation"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(bodySite.coding[Seitenlokalisation])
+* insert ObligationConsumerDefault(bodySite.coding[icd-o-3])
+* insert ObligationConsumerDefault(specimen)

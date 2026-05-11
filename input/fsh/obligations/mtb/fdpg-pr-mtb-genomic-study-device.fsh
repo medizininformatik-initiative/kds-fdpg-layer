@@ -20,3 +20,8 @@ Description: "FDPG Profil - MII_PR_MTB_Genomic_Study_Device"
 // Device.type
 * type ^short = "Genomic Study Device Type"
 * insert Translation(type ^short, de-DE, Geraetetyp der Genomic Study)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(manufacturer)
+* insert ObligationConsumerDefault(deviceName)
+* insert ObligationConsumerDefault(type)

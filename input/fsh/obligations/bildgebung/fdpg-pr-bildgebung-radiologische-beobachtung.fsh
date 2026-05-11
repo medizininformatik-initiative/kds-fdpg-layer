@@ -2,7 +2,7 @@ Profile: FDPG_PR_Bildgebung_Radiologische_Beobachtung
 Parent: MII_PR_Bildgebung_Radiologische_Beobachtung
 Id: fdpg-pr-bildgebung-radiologische-beobachtung
 Title: "FDPG PR Bildgebung Radiologische Beobachtung"
-Description: "FDPG Profil - MII PR Bildgebung Radiologische Beobachtung"
+Description: "FDPG Profil - MII_PR_Bildgebung_Radiologische_Beobachtung"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, radiologische Beobachtung)
 * insert Translation(^title, en-US, radiological observation)
@@ -105,3 +105,21 @@ Description: "FDPG Profil - MII PR Bildgebung Radiologische Beobachtung"
 * component ^definition = "detailierte Bestandteile der Beobachtung"
 * insert Translation(component ^definition, de-DE, detailierte Bestandteile der Beobachtung)
 * insert Translation(component ^definition, en-US, detailed components of this observation)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(partOf)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[loinc])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(issued)
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.extension[bodyStructure])
+* insert ObligationConsumerDefault(hasMember)
+* insert ObligationConsumerDefault(derivedFrom)
+* insert ObligationConsumerDefault(component)

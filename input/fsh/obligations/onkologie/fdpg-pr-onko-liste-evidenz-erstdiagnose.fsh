@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Liste_Evidenz_Erstdiagnose
 Parent: MII_PR_Onko_Liste_Evidenz_Erstdiagnose
 Id: fdpg-pr-onko-liste-evidenz-erstdiagnose
-Title: "FDPG PR Onkologie Evidenz Diagnose Primärtumor"
-Description: "FDPG Profil - MII PR Onkologie Evidenz Diagnose Primärtumor"
+Title: "FDPG PR Onko Liste Evidenz Erstdiagnose"
+Description: "FDPG Profil - MII_PR_Onko_Liste_Evidenz_Erstdiagnose"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Evidenz für Erstdiagnose)
-* insert Translation(^title, en-US, Evidence for Initial Diagnosis)
+* insert Translation(^title, de-DE, MII PR Onkologie Evidenz Diagnose Primärtumor)
+* insert Translation(^title, en-US, FDPG PR Onko Liste Evidenz Erstdiagnose)
 // --- Element Designations ---
 // List.status
 * status ^short = "current | retired | entered-in-error"
@@ -23,3 +23,11 @@ Description: "FDPG Profil - MII PR Onkologie Evidenz Diagnose Primärtumor"
 * entry.flag ^short = "Status/Workflow information about this item"
 // List.entry.item
 * entry.item ^short = "Actual entry"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(mode)
+* insert ObligationConsumerDefault(title)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(entry)

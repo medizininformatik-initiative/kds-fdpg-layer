@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_KRK_MRT_Mesorektale_Faszie
 Parent: MII_PR_Onko_KRK_MRT_Mesorektale_Faszie
 Id: fdpg-pr-onko-krk-mrt-mesorektale-faszie
-Title: "FDPG PR Onkologie KRK MRT/CT Abstand Mesorektale Faszie"
-Description: "FDPG Profil - MII PR Onkologie KRK MRT/CT Abstand Mesorektale Faszie"
+Title: "FDPG PR Onko KRK MRT Mesorektale Faszie"
+Description: "FDPG Profil - MII_PR_Onko_KRK_MRT_Mesorektale_Faszie"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, KRK MRT/CT Abstand mesorektale Faszie)
-* insert Translation(^title, en-US, Colorectal MRI/CT Distance to Mesorectal Fascia)
+* insert Translation(^title, de-DE, MII PR Onkologie KRK MRT/CT Abstand Mesorektale Faszie)
+* insert Translation(^title, en-US, FDPG PR Onko KRK MRT Mesorektale Faszie)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "MRT/CT Abstand mesorektale Faszie"
@@ -40,3 +40,16 @@ Description: "FDPG Profil - MII PR Onkologie KRK MRT/CT Abstand Mesorektale Fasz
 * insert Translation(value[x][valueCodeableConcept] ^short, de-DE, MRT/CT Status)
 * value[x][valueCodeableConcept] ^definition = "Status der MRT/CT Untersuchung gemäß oBDS 2021 KR5"
 * insert Translation(value[x][valueCodeableConcept] ^definition, de-DE, Status der MRT/CT Untersuchung gemäß oBDS 2021 KR5)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(value[x][valueQuantity])
+* insert ObligationConsumerDefault(value[x][valueCodeableConcept])

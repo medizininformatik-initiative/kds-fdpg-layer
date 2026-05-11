@@ -2,10 +2,10 @@ Profile: FDPG_PR_Onko_Prostata_Operation
 Parent: MII_PR_Onko_Prostata_Operation
 Id: fdpg-pr-onko-prostata-operation
 Title: "FDPG PR Onko Prostata Operation"
-Description: "FDPG Profil - MII PR Onko Prostata Operation"
+Description: "FDPG Profil - MII_PR_Onko_Prostata_Operation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Prostata-Operation)
-* insert Translation(^title, en-US, Prostate Surgery)
+* insert Translation(^title, de-DE, MII PR Onko Prostata Operation)
+* insert Translation(^title, en-US, FDPG PR Onko Prostata Operation)
 // --- Element Designations ---
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"
@@ -126,3 +126,29 @@ Description: "FDPG Profil - MII PR Onko Prostata Operation"
 * note ^definition = "Zusätzliche Informationen zur Prozedur als Freitext."
 * insert Translation(note ^definition, de-DE, Zusätzliche Informationen zur Prozedur als Freitext.)
 * insert Translation(note ^definition, en-US, Additional information about the procedure as free text.)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension)
+* insert ObligationConsumerDefault(extension[Dokumentationsdatum])
+* insert ObligationConsumerDefault(extension[durchfuehrungsabsicht])
+* insert ObligationConsumerDefault(extension[Intention])
+* insert ObligationConsumerDefault(extension[Urgency])
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(partOf)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[sct])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[ops])
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(performed[x])
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.coding[snomed-ct])
+* insert ObligationConsumerDefault(outcome)
+* insert ObligationConsumerDefault(complication)
+* insert ObligationConsumerDefault(complication[compl_obds])
+* insert ObligationConsumerDefault(complication[compl_icd10])
+* insert ObligationConsumerDefault(note)

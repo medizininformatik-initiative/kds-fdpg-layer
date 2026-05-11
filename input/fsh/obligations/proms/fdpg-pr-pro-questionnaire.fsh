@@ -57,3 +57,17 @@ Description: "FDPG Profil - MII_PR_PRO_Questionnaire"
 * item.initial.value[x] ^short = "Actual value for initializing the question"
 // Questionnaire.item.item
 * item.item ^short = "Nested questionnaire items"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[performerType])
+* insert ObligationConsumerDefault(extension[assemble-expectation])
+* insert ObligationConsumerDefault(extension[capabilities])
+* insert ObligationConsumerDefault(url)
+* insert ObligationConsumerDefault(version)
+* insert ObligationConsumerDefault(title)
+* insert ObligationConsumerDefault(derivedFrom)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(subjectType)
+* insert ObligationConsumerDefault(copyright)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(item)

@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Seltene_TherapieempfehlungNichtMedikamentoes
 Parent: MII_PR_Seltene_TherapieempfehlungNichtMedikamentoes
 Id: fdpg-pr-seltene-therapieempfehlung-nicht-medikamentoes
-Title: "FDPG PR SE Therapieempfehlung Nicht-Medikamentös"
-Description: "FDPG Profil - MII PR SE Therapieempfehlung Nicht-Medikamentös"
+Title: "FDPG PR Seltene TherapieempfehlungNichtMedikamentoes"
+Description: "FDPG Profil - MII_PR_Seltene_TherapieempfehlungNichtMedikamentoes"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Therapieempfehlung nicht-medikamentös)
-* insert Translation(^title, en-US, Therapy Recommendation Non-Pharmacological)
+* insert Translation(^title, de-DE, MII PR SE Therapieempfehlung Nicht-Medikamentös)
+* insert Translation(^title, en-US, FDPG PR Seltene TherapieempfehlungNichtMedikamentoes)
 // --- Element Designations ---
 // ServiceRequest.extension:Prioritaet
 * extension[Prioritaet] ^short = "MII EX SE Empfehlung Priorität"
@@ -45,3 +45,27 @@ Description: "FDPG Profil - MII PR SE Therapieempfehlung Nicht-Medikamentös"
 * supportingInfo ^short = "Unterstützende Informationen zur Empfehlung"
 // ServiceRequest.note
 * note ^short = "Zusätzliche Anmerkungen zur Therapieempfehlung"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[Prioritaet])
+* insert ObligationConsumerDefault(extension[Evidenzgraduierung])
+* insert ObligationConsumerDefault(extension[Publikation])
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(intent)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category[MVGenomSeqTherapieStrategie])
+* insert ObligationConsumerDefault(category[MVGenomSeqTherapieTyp])
+* insert ObligationConsumerDefault(priority)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[snomed])
+* insert ObligationConsumerDefault(code.coding[ops])
+* insert ObligationConsumerDefault(code.coding[loinc])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(occurrence[x])
+* insert ObligationConsumerDefault(requester)
+* insert ObligationConsumerDefault(performer)
+* insert ObligationConsumerDefault(reasonCode)
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(supportingInfo)
+* insert ObligationConsumerDefault(note)

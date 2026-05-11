@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Seltene_ClinicalImpression
 Parent: MII_PR_Seltene_ClinicalImpression
 Id: fdpg-pr-seltene-clinical-impression
-Title: "FDPG PR MII Profile SE Clinical Impression"
-Description: "FDPG Profil - MII Profile SE Clinical Impression"
+Title: "FDPG PR Seltene ClinicalImpression"
+Description: "FDPG Profil - MII_PR_Seltene_ClinicalImpression"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Klinische Beurteilung)
-* insert Translation(^title, en-US, Clinical Impression)
+* insert Translation(^title, de-DE, MII Profile SE Clinical Impression)
+* insert Translation(^title, en-US, FDPG PR Seltene ClinicalImpression)
 // --- Element Designations ---
 // ClinicalImpression.identifier
 * identifier ^short = "Business identifier"
@@ -37,3 +37,19 @@ Description: "FDPG Profil - MII Profile SE Clinical Impression"
 * supportingInfo ^short = "Unterstützende Informationen"
 // ClinicalImpression.note
 * note ^short = "Zusätzliche Anmerkungen"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(description)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(date)
+* insert ObligationConsumerDefault(problem)
+* insert ObligationConsumerDefault(investigation)
+* insert ObligationConsumerDefault(summary)
+* insert ObligationConsumerDefault(finding)
+* insert ObligationConsumerDefault(supportingInfo)
+* insert ObligationConsumerDefault(note)

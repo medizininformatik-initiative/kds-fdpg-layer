@@ -2,7 +2,7 @@ Profile: FDPG_PR_Medikation_MedicationAdministration
 Parent: MII_PR_Medikation_MedicationAdministration
 Id: fdpg-pr-medikation-medication-administration
 Title: "FDPG PR Medikation MedicationAdministration"
-Description: "FDPG Profil - MII PR Medikation MedicationAdministration"
+Description: "FDPG Profil - MII_PR_Medikation_MedicationAdministration"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Medikationsverabreichung)
 * insert Translation(^title, en-US, Medication administration)
@@ -232,3 +232,32 @@ Description: "FDPG Profil - MII PR Medikation MedicationAdministration"
 * dosage.rate[x][rateQuantity].system ^short = "System that defines coded unit form"
 // MedicationAdministration.dosage.rate[x]:rateQuantity.code
 * dosage.rate[x][rateQuantity].code ^short = "Coded form of the unit"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(partOf)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerPreSelect(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(medication[x])
+* insert ObligationConsumerPreSelect(medication[x])
+* insert ObligationConsumerDefault(medication[x][medicationReference])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[atcClassDe])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[atcClassEn])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[UNII])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(context)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(effective[x][effectiveDateTime])
+* insert ObligationConsumerDefault(effective[x][effectivePeriod])
+* insert ObligationConsumerDefault(performer)
+* insert ObligationConsumerDefault(reasonCode)
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(request)
+* insert ObligationConsumerDefault(note)
+* insert ObligationConsumerDefault(dosage)
+* insert ObligationConsumerDefault(dosage.rate[x][rateRatio])
+* insert ObligationConsumerDefault(dosage.rate[x][rateQuantity])

@@ -1,8 +1,8 @@
 Profile: FDPG_PR_Bildgebung_Koerperstruktur
 Parent: MII_PR_Bildgebung_Koerperstruktur
 Id: fdpg-pr-bildgebung-koerperstruktur
-Title: "FDPG PR Bildgebung Körperstruktur"
-Description: "FDPG Profil - MII PR Bildgebung Körperstruktur"
+Title: "FDPG PR Bildgebung Koerperstruktur"
+Description: "FDPG Profil - MII_PR_Bildgebung_Koerperstruktur"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Körperstrukutur)
 * insert Translation(^title, en-US, body structure)
@@ -35,3 +35,9 @@ Description: "FDPG Profil - MII PR Bildgebung Körperstruktur"
 * patient ^definition = "Person, an der sich die untersuchte Körperstruktur befindet"
 * insert Translation(patient ^definition, de-DE, Person\, an der sich die untersuchte Körperstruktur befindet)
 * insert Translation(patient ^definition, en-US, person\, who contains the described body structure)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(morphology)
+* insert ObligationConsumerDefault(location)
+* insert ObligationConsumerDefault(locationQualifier)
+* insert ObligationConsumerDefault(patient)

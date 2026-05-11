@@ -16,3 +16,8 @@ Description: "FDPG Profil - MII_PR_MTB_Humangenetische_Beratung_Auftrag"
 * reasonCode ^short = "Explanation/Justification for procedure or service"
 // ServiceRequest.specimen
 * specimen ^short = "Procedure Samples"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(reasonCode)
+* insert ObligationConsumerDefault(specimen)

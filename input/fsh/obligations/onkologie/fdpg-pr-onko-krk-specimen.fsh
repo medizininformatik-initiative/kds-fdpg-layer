@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_KRK_Specimen
 Parent: MII_PR_Onko_KRK_Specimen
 Id: fdpg-pr-onko-krk-specimen
-Title: "FDPG PR Onkologie Specimen"
-Description: "FDPG Profil - MII PR Onkologie Specimen"
+Title: "FDPG PR Onko KRK Specimen"
+Description: "FDPG Profil - MII_PR_Onko_KRK_Specimen"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, KRK Probe)
-* insert Translation(^title, en-US, Colorectal Specimen)
+* insert Translation(^title, de-DE, MII PR Onkologie Specimen)
+* insert Translation(^title, en-US, FDPG PR Onko KRK Specimen)
 // --- Element Designations ---
 // Specimen.accessionIdentifier
 * accessionIdentifier ^short = "Identifier assigned by the lab"
@@ -25,3 +25,10 @@ Description: "FDPG Profil - MII PR Onkologie Specimen"
 * insert Translation(collection.collected[x][collectedDateTime] ^definition, de-DE, Histologiedatum nach 6.1 oBDS 2021)
 // Specimen.condition
 * condition ^short = "State of the specimen"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(accessionIdentifier)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(collection)
+* insert ObligationConsumerDefault(collection.collected[x][collectedDateTime])
+* insert ObligationConsumerDefault(condition)

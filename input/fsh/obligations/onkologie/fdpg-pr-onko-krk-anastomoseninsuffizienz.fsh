@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_KRK_Anastomoseninsuffizienz
 Parent: MII_PR_Onko_KRK_Anastomoseninsuffizienz
 Id: fdpg-pr-onko-krk-anastomoseninsuffizienz
-Title: "FDPG PR Onkologie KRK Anastomoseninsuffizienz"
-Description: "FDPG Profil - MII PR Onkologie KRK Anastomoseninsuffizienz"
+Title: "FDPG PR Onko KRK Anastomoseninsuffizienz"
+Description: "FDPG Profil - MII_PR_Onko_KRK_Anastomoseninsuffizienz"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, KRK Anastomoseninsuffizienz)
-* insert Translation(^title, en-US, Colorectal Anastomotic Leakage)
+* insert Translation(^title, de-DE, MII PR Onkologie KRK Anastomoseninsuffizienz)
+* insert Translation(^title, en-US, FDPG PR Onko KRK Anastomoseninsuffizienz)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Anastomoseninsuffizienz"
@@ -25,3 +25,14 @@ Description: "FDPG Profil - MII PR Onkologie KRK Anastomoseninsuffizienz"
 * insert Translation(value[x] ^short, de-DE, Anastomoseninsuffizienz Grad)
 * value[x] ^definition = "Grad der Anastomoseninsuffizienz nach oBDS"
 * insert Translation(value[x] ^definition, de-DE, Grad der Anastomoseninsuffizienz nach oBDS)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])

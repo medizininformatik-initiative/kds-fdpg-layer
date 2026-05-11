@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Seltene_Studieneinschluss_Anfrage
 Parent: MII_PR_Seltene_Studieneinschluss_Anfrage
 Id: fdpg-pr-seltene-studieneinschluss-anfrage
-Title: "FDPG PR SE Studieneinschluss Anfrage"
-Description: "FDPG Profil - MII PR SE Studieneinschluss Anfrage"
+Title: "FDPG PR Seltene Studieneinschluss Anfrage"
+Description: "FDPG Profil - MII_PR_Seltene_Studieneinschluss_Anfrage"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Studieneinschluss-Anfrage)
-* insert Translation(^title, en-US, Study Enrollment Request)
+* insert Translation(^title, de-DE, MII PR SE Studieneinschluss Anfrage)
+* insert Translation(^title, en-US, FDPG PR Seltene Studieneinschluss Anfrage)
 // --- Element Designations ---
 // ServiceRequest.extension:statusReason
 * extension[statusReason] ^short = "Reason for current status"
@@ -27,3 +27,14 @@ Description: "FDPG Profil - MII PR SE Studieneinschluss Anfrage"
 * supportingInfo ^short = "Additional clinical information"
 // ServiceRequest.supportingInfo:Studie
 * supportingInfo[Studie] ^short = "Additional clinical information"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[statusReason])
+* insert ObligationConsumerDefault(extension[Prioritaet])
+* insert ObligationConsumerDefault(extension[Publikation])
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(supportingInfo)
+* insert ObligationConsumerDefault(supportingInfo[Studie])

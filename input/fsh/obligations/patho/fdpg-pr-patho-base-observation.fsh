@@ -2,10 +2,11 @@ Profile: FDPG_PR_Patho_Base_Observation
 Parent: MII_PR_Patho_Base_Observation
 Id: fdpg-pr-patho-base-observation
 Title: "FDPG PR Patho Base Observation"
-Description: "FDPG Profil - MII PR Patho Base Observation"
+Description: "FDPG Profil - MII_PR_Patho_Base_Observation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Patho Basisbeobachtung)
-* insert Translation(^title, en-US, MII PR Patho Base Observation)
+* ^abstract = true
+* insert Translation(^title, de-DE, MII PR Patho Base Observation)
+* insert Translation(^title, en-US, FDPG PR Patho Base Observation)
 // --- Element Designations ---
 // Observation.meta.lastUpdated
 * meta.lastUpdated ^short = "When the resource version last changed"
@@ -43,3 +44,23 @@ Description: "FDPG Profil - MII PR Patho Base Observation"
 * component.code ^short = "Type of component observation (code / type)"
 // Observation.component.dataAbsentReason
 * component.dataAbsentReason ^short = "Why the component result is missing"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category[laboratory-category])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.coding[sct])
+* insert ObligationConsumerDefault(method)
+* insert ObligationConsumerDefault(specimen)
+* insert ObligationConsumerDefault(hasMember)
+* insert ObligationConsumerDefault(derivedFrom)
+* insert ObligationConsumerDefault(derivedFrom[attached-image])
+* insert ObligationConsumerDefault(derivedFrom[dicom-image])

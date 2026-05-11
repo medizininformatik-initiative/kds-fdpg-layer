@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_KRK_Operation
 Parent: MII_PR_Onko_KRK_Operation
 Id: fdpg-pr-onko-krk-operation
-Title: "FDPG PR Onkologie Präoperative Drahtmarkierung Mamma"
-Description: "FDPG Profil - MII PR Onkologie Präoperative Drahtmarkierung Mamma"
+Title: "FDPG PR Onko KRK Operation"
+Description: "FDPG Profil - MII_PR_Onko_KRK_Operation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, KRK Operation)
-* insert Translation(^title, en-US, Colorectal Surgery)
+* insert Translation(^title, de-DE, MII PR Onkologie Präoperative Drahtmarkierung Mamma)
+* insert Translation(^title, en-US, FDPG PR Onko KRK Operation)
 // --- Element Designations ---
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"
@@ -128,3 +128,30 @@ Description: "FDPG Profil - MII PR Onkologie Präoperative Drahtmarkierung Mamma
 * insert Translation(note ^definition, en-US, Additional information about the procedure as free text.)
 // Procedure.usedCode
 * usedCode ^short = "Coded items used during the procedure"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension)
+* insert ObligationConsumerDefault(extension[Dokumentationsdatum])
+* insert ObligationConsumerDefault(extension[durchfuehrungsabsicht])
+* insert ObligationConsumerDefault(extension[Intention])
+* insert ObligationConsumerDefault(extension[Urgency])
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(partOf)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[sct])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[ops])
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(performed[x])
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.coding[snomed-ct])
+* insert ObligationConsumerDefault(outcome)
+* insert ObligationConsumerDefault(complication)
+* insert ObligationConsumerDefault(complication[compl_obds])
+* insert ObligationConsumerDefault(complication[compl_icd10])
+* insert ObligationConsumerDefault(note)
+* insert ObligationConsumerDefault(usedCode)

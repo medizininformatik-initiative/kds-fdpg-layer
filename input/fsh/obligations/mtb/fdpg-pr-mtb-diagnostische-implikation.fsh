@@ -77,3 +77,20 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnostische_Implikation"
 * insert Translation(component[mode-of-inheritance] ^short, de-DE, Vererbungsmodus)
 * component[mode-of-inheritance] ^definition = "Der Vererbungsmodus der assoziierten Erkrankung"
 * insert Translation(component[mode-of-inheritance] ^definition, de-DE, Der Vererbungsmodus der assoziierten Erkrankung)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[workflow-relatedArtifact])
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(issued)
+* insert ObligationConsumerDefault(derivedFrom)
+* insert ObligationConsumerDefault(component)
+* insert ObligationConsumerDefault(component[conclusion-string])
+* insert ObligationConsumerDefault(component[evidence-level])
+* insert ObligationConsumerDefault(component[clinical-significance])
+* insert ObligationConsumerDefault(component[predicted-phenotype])
+* insert ObligationConsumerDefault(component[mode-of-inheritance])

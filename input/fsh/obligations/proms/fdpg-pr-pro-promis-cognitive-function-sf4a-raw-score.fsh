@@ -35,3 +35,19 @@ Description: "FDPG Profil - MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score"
 * referenceRange ^short = "Provides guide for interpretation"
 // Observation.derivedFrom
 * derivedFrom ^short = "Related measurements the observation is made from"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension)
+* insert ObligationConsumerDefault(extension[instantiatesCanonical])
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(effective[x][effectiveDateTime])
+* insert ObligationConsumerDefault(performer)
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerDefault(interpretation)
+* insert ObligationConsumerDefault(note)
+* insert ObligationConsumerDefault(method)
+* insert ObligationConsumerDefault(referenceRange)
+* insert ObligationConsumerDefault(derivedFrom)

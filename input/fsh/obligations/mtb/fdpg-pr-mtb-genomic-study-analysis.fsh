@@ -62,3 +62,20 @@ Description: "FDPG Profil - MII_PR_MTB_Genomic_Study_Analysis"
 * category ^short = "Classification of the procedure"
 // Procedure.performed[x]
 * performed[x] ^short = "GenomicStudy.analysis.date"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension)
+* insert ObligationConsumerDefault(extension[method-type])
+* insert ObligationConsumerDefault(extension[change-type])
+* insert ObligationConsumerDefault(extension[genome-build])
+* insert ObligationConsumerDefault(extension[title])
+* insert ObligationConsumerDefault(extension[focus])
+* insert ObligationConsumerDefault(extension[specimen])
+* insert ObligationConsumerDefault(extension[metrics])
+* insert ObligationConsumerDefault(extension[regions])
+* insert ObligationConsumerDefault(extension[device])
+* insert ObligationConsumerDefault(extension[qc])
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(performed[x])

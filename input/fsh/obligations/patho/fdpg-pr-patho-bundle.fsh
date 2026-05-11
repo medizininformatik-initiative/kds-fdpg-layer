@@ -2,7 +2,7 @@ Profile: FDPG_PR_Patho_Bundle
 Parent: MII_PR_Patho_Bundle
 Id: fdpg-pr-patho-bundle
 Title: "FDPG PR Patho Bundle"
-Description: "FDPG Profil - MII PR Patho Bundle"
+Description: "FDPG Profil - MII_PR_Patho_Bundle"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, MII PR Patho Bundle)
 * insert Translation(^title, en-US, MII PR Patho Bundle)
@@ -105,3 +105,17 @@ Description: "FDPG Profil - MII PR Patho Bundle"
 * signature ^definition = "Digitale Signatur des Bundles"
 * insert Translation(signature ^definition, de-DE, Digitale Signatur des Bundles)
 * insert Translation(signature ^definition, en-US, Digital signature of the bundle)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(type)
+* insert ObligationConsumerDefault(timestamp)
+* insert ObligationConsumerDefault(entry)
+* insert ObligationConsumerDefault(entry[Composition])
+* insert ObligationConsumerDefault(entry[Patient])
+* insert ObligationConsumerDefault(entry[Encounter])
+* insert ObligationConsumerDefault(entry[ServiceRequest])
+* insert ObligationConsumerDefault(entry[Specimen])
+* insert ObligationConsumerDefault(entry[DiagnosticReport])
+* insert ObligationConsumerDefault(entry[Observations])
+* insert ObligationConsumerDefault(signature)

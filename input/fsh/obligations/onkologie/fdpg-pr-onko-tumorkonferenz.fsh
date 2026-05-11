@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Tumorkonferenz
 Parent: MII_PR_Onko_Tumorkonferenz
 Id: fdpg-pr-onko-tumorkonferenz
-Title: "FDPG PR Onkologie Tumorkonferenz"
-Description: "FDPG Profil - MII PR Onkologie Tumorkonferenz"
+Title: "FDPG PR Onko Tumorkonferenz"
+Description: "FDPG Profil - MII_PR_Onko_Tumorkonferenz"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Tumorkonferenz)
-* insert Translation(^title, en-US, Tumor Board)
+* insert Translation(^title, de-DE, MII PR Onkologie Tumorkonferenz)
+* insert Translation(^title, en-US, FDPG PR Onko Tumorkonferenz)
 // --- Element Designations ---
 // CarePlan.status
 * status ^short = "draft | active | on-hold | revoked | completed | entered-in-error | unknown"
@@ -51,3 +51,14 @@ Description: "FDPG Profil - MII PR Onkologie Tumorkonferenz"
 * activity[extended].progress ^short = "Progress notes for recommendation implementation"
 // CarePlan.activity:extended.reference
 * activity[extended].reference ^short = "Detailed therapy recommendation - RequestGroup, MedicationRequest, or ServiceRequest"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(intent)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(created)
+* insert ObligationConsumerDefault(addresses)
+* insert ObligationConsumerDefault(supportingInfo)
+* insert ObligationConsumerDefault(activity)

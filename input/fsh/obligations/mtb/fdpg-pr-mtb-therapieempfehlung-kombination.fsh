@@ -46,3 +46,17 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung_Kombination"
 * action.action ^short = "Individual medications in protocol"
 // RequestGroup.action.action.resource
 * action.action.resource ^short = "The target of the action"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[Prioritaet])
+* insert ObligationConsumerDefault(extension[Evidenzgraduierung])
+* insert ObligationConsumerDefault(extension[Publikation])
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(intent)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(authoredOn)
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(action)

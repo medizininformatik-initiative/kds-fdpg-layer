@@ -2,7 +2,7 @@ Profile: FDPG_PR_Labor_Laborbefund
 Parent: MII_PR_Labor_Laborbefund
 Id: fdpg-pr-labor-laborbefund
 Title: "FDPG PR Labor Laborbefund"
-Description: "FDPG Profil - MII PR Labor Laborbefund"
+Description: "FDPG Profil - MII_PR_Labor_Laborbefund"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Laborbefund)
 * insert Translation(^title, en-US, Laboratory report)
@@ -148,3 +148,22 @@ Description: "FDPG Profil - MII PR Labor Laborbefund"
 * conclusion ^definition = "Klinische Schlussfolgerung/Interpretation der Testergebnisse"
 * insert Translation(conclusion ^definition, de-DE, Klinische Schlussfolgerung/Interpretation der Testergebnisse)
 * insert Translation(conclusion ^definition, en-US, Clinical conclusion/interpretation of test results)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(identifier[befund])
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category[lab-category])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[loinc-labReport])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(effective[x].extension[QuelleKlinischesBezugsdatum])
+* insert ObligationConsumerDefault(issued)
+* insert ObligationConsumerDefault(performer)
+* insert ObligationConsumerDefault(specimen)
+* insert ObligationConsumerDefault(result)
+* insert ObligationConsumerDefault(conclusion)

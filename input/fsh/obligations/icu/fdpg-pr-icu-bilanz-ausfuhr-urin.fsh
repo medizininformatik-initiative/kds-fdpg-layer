@@ -2,10 +2,10 @@ Profile: FDPG_PR_ICU_Bilanz_Ausfuhr_Urin
 Parent: MII_PR_ICU_Bilanz_Ausfuhr_Urin
 Id: fdpg-pr-icu-bilanz-ausfuhr-urin
 Title: "FDPG PR ICU Bilanz Ausfuhr Urin"
-Description: "FDPG Profil - MII PR ICU Bilanz Ausfuhr Urin"
+Description: "FDPG Profil - MII_PR_ICU_Bilanz_Ausfuhr_Urin"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Bilanz - Ausfuhr Urin)
-* insert Translation(^title, en-US, Fluid Balance - Urine Output)
+* insert Translation(^title, de-DE, MII PR ICU Bilanz Ausfuhr Urin)
+* insert Translation(^title, en-US, FDPG PR ICU Bilanz Ausfuhr Urin)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"
@@ -27,6 +27,8 @@ Description: "FDPG Profil - MII PR ICU Bilanz Ausfuhr Urin"
 * issued ^short = "Date/Time this version was made available"
 // Observation.value[x]
 * value[x] ^short = "Actual result"
+// Observation.value[x].unit
+* value[x].unit ^short = "Display unit (SI)"
 // Observation.value[x].code
 * value[x].code ^short = "Coded form of the unit"
 // Observation.dataAbsentReason
@@ -43,3 +45,25 @@ Description: "FDPG Profil - MII PR ICU Bilanz Ausfuhr Urin"
 * device ^short = "(Measurement) Device"
 // Observation.referenceRange
 * referenceRange ^short = "Provides guide for interpretation"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[hl7-category])
+* insert ObligationConsumerDefault(category.coding[kdsicu-category])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(code.coding[loinc])
+* insert ObligationConsumerDefault(code.coding[IEEE-11073])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(issued)
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerDefault(dataAbsentReason)
+* insert ObligationConsumerDefault(interpretation)
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(method)
+* insert ObligationConsumerDefault(specimen)
+* insert ObligationConsumerDefault(device)
+* insert ObligationConsumerDefault(referenceRange)

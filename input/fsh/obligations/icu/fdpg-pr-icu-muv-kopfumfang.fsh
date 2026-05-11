@@ -1,11 +1,11 @@
 Profile: FDPG_PR_ICU_MUV_Kopfumfang
 Parent: MII_PR_ICU_MUV_Kopfumfang
 Id: fdpg-pr-icu-muv-kopfumfang
-Title: "FDPG PR ICU Kopfumfang"
-Description: "FDPG Profil - MII PR ICU Kopfumfang"
+Title: "FDPG PR ICU MUV Kopfumfang"
+Description: "FDPG Profil - MII_PR_ICU_MUV_Kopfumfang"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Kopfumfang)
-* insert Translation(^title, en-US, Head Circumference)
+* insert Translation(^title, de-DE, MII PR ICU MUV Kopfumfang)
+* insert Translation(^title, en-US, FDPG PR ICU MUV Kopfumfang)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"
@@ -37,3 +37,16 @@ Description: "FDPG Profil - MII PR ICU Kopfumfang"
 * dataAbsentReason ^short = "Why the result is missing"
 // Observation.bodySite
 * bodySite ^short = "Observed body part"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category[sct])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[snomed])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(effective[x][effectiveDateTime])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerDefault(value[x][valueQuantity])
+* insert ObligationConsumerDefault(dataAbsentReason)
+* insert ObligationConsumerDefault(bodySite)

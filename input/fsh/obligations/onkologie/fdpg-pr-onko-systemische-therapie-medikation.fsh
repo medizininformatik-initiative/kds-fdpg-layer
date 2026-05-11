@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Systemische_Therapie_Medikation
 Parent: MII_PR_Onko_Systemische_Therapie_Medikation
 Id: fdpg-pr-onko-systemische-therapie-medikation
-Title: "FDPG PR Onkologie Systemische Therapie Medikation"
-Description: "FDPG Profil - MII PR Onkologie Systemische Therapie Medikation"
+Title: "FDPG PR Onko Systemische Therapie Medikation"
+Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie_Medikation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Systemische Therapie Medikation)
-* insert Translation(^title, en-US, Systemic Therapy Medication)
+* insert Translation(^title, de-DE, MII PR Onkologie Systemische Therapie Medikation)
+* insert Translation(^title, en-US, FDPG PR Onko Systemische Therapie Medikation)
 // --- Element Designations ---
 // MedicationStatement.identifier
 * identifier ^short = "Identifikator"
@@ -427,3 +427,31 @@ Description: "FDPG Profil - MII PR Onkologie Systemische Therapie Medikation"
 * dosage.maxDosePerAdministration.system ^short = "System that defines coded unit form"
 // MedicationStatement.dosage.maxDosePerAdministration.code
 * dosage.maxDosePerAdministration.code ^short = "Coded form of the unit"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(partOf)
+* insert ObligationConsumerDefault(partOf[systemischeTherapie])
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(medication[x])
+* insert ObligationConsumerDefault(medication[x][medicationReference])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[atcClassDe])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[atcClassEn])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[UNII])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(context)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(effective[x][effectiveDateTime])
+* insert ObligationConsumerDefault(effective[x][effectivePeriod])
+* insert ObligationConsumerDefault(dateAsserted)
+* insert ObligationConsumerDefault(informationSource)
+* insert ObligationConsumerDefault(reasonCode)
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(note)
+* insert ObligationConsumerDefault(dosage)
+* insert ObligationConsumerDefault(dosage.asNeeded[x][asNeededBoolean])
+* insert ObligationConsumerDefault(dosage.asNeeded[x][asNeededCodeableConcept])

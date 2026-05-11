@@ -91,3 +91,16 @@ Description: "FDPG Profil - MII_PR_MTB_Antrag_Kostenuebernahme"
 * insert Translation(insurance.coverage ^short, de-DE, Versicherung relevant fuer diesen Antrag)
 // Claim.insurance.claimResponse
 * insurance.claimResponse ^short = "Adjudication results"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(type)
+* insert ObligationConsumerDefault(use)
+* insert ObligationConsumerDefault(patient)
+* insert ObligationConsumerDefault(created)
+* insert ObligationConsumerDefault(provider)
+* insert ObligationConsumerDefault(priority)
+* insert ObligationConsumerDefault(related)
+* insert ObligationConsumerDefault(prescription)
+* insert ObligationConsumerDefault(careTeam[ZPMBeteiligung])
+* insert ObligationConsumerDefault(insurance)

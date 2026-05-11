@@ -1,11 +1,11 @@
 Profile: FDPG_PR_ICU_MUV_Herzfrequenz
 Parent: MII_PR_ICU_MUV_Herzfrequenz
 Id: fdpg-pr-icu-muv-herzfrequenz
-Title: "FDPG PR MII SD ICU Herzfrequenz"
-Description: "FDPG Profil - MII SD ICU Herzfrequenz"
+Title: "FDPG PR ICU MUV Herzfrequenz"
+Description: "FDPG Profil - MII_PR_ICU_MUV_Herzfrequenz"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Herzfrequenz)
-* insert Translation(^title, en-US, Heart Rate)
+* insert Translation(^title, de-DE, MII SD ICU MUV Herzfrequenz)
+* insert Translation(^title, en-US, FDPG PR ICU MUV Herzfrequenz)
 // --- Element Designations ---
 // Observation.id
 * id ^short = "serverseitige, interne ID des Datensatzes"
@@ -63,3 +63,26 @@ Description: "FDPG Profil - MII SD ICU Herzfrequenz"
 * component.interpretation ^short = "High, low, normal, etc."
 // Observation.component.referenceRange
 * component.referenceRange ^short = "Provides guide for interpretation of component result"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category[vs-cat])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(code.coding[loinc])
+* insert ObligationConsumerDefault(code.coding[IEEE-11073])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(performer)
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerDefault(dataAbsentReason)
+* insert ObligationConsumerDefault(interpretation)
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(method)
+* insert ObligationConsumerDefault(device)
+* insert ObligationConsumerDefault(referenceRange)
+* insert ObligationConsumerDefault(component)

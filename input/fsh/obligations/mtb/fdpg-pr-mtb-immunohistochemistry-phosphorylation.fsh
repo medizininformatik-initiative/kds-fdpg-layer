@@ -16,9 +16,6 @@ Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry_Phosphorylation"
 * insert Translation(category ^definition, de-DE, Klassifizierung der Beobachtungsart)
 // Observation.code
 * code ^short = "Code für Immunhistochemische Untersuchung"
-* insert Translation(code ^short, de-DE, Code fuer Immunhistochemische Untersuchung)
-* code ^definition = "Kodierung für Immunhistochemische Untersuchung. Enthält immer den generischen IHC-Code. Nach Möglichkeit sind zusätzlich spezifische Codes zu verwenden. Wenn weder in SNOMED noch LOINC spezifische Codes vorhanden sind, ist über gene-studied das untersuchte Gen anzugeben."
-* insert Translation(code ^definition, de-DE, Kodierung fuer Immunhistochemische Untersuchung. Enthaelt immer den generischen IHC-Code. Nach Moeglichkeit sind zusaetzlich spezifische Codes zu verwenden. Wenn weder in SNOMED noch LOINC spezifische Codes vorhanden sind ist ueber gene-studied das untersuchte Gen anzugeben.)
 // Observation.code.coding:generisch
 * code.coding[generisch] ^short = "Generischer Immunhistochemischer Untersuchungscode"
 * insert Translation(code.coding[generisch] ^short, de-DE, Generischer Immunhistochemischer Untersuchungscode)
@@ -100,3 +97,25 @@ Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry_Phosphorylation"
 * insert Translation(component[protein-isoform] ^short, de-DE, Komponenten)
 * component[protein-isoform] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[protein-isoform] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[generisch])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(issued)
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerDefault(value[x][valueCodeableConcept])
+* insert ObligationConsumerDefault(interpretation)
+* insert ObligationConsumerDefault(specimen)
+* insert ObligationConsumerDefault(derivedFrom)
+* insert ObligationConsumerDefault(component)
+* insert ObligationConsumerDefault(component[gene-studied])
+* insert ObligationConsumerDefault(component[biomarker-category])
+* insert ObligationConsumerDefault(component[phosphorylation-localization])
+* insert ObligationConsumerDefault(component[phosphorylation-localization].value[x][valueCodeableConcept])
+* insert ObligationConsumerDefault(component[protein-isoform])

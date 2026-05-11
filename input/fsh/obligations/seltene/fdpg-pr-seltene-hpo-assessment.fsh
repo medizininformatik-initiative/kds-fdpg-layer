@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Seltene_HPO_Assessment
 Parent: MII_PR_Seltene_HPO_Assessment
 Id: fdpg-pr-seltene-hpo-assessment
-Title: "FDPG PR MII Profile SE HPO Assessment"
-Description: "FDPG Profil - MII Profile SE HPO Assessment"
+Title: "FDPG PR Seltene HPO Assessment"
+Description: "FDPG Profil - MII_PR_Seltene_HPO_Assessment"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, HPO-Beurteilung)
-* insert Translation(^title, en-US, HPO Assessment)
+* insert Translation(^title, de-DE, MII Profile SE HPO Assessment)
+* insert Translation(^title, en-US, FDPG PR Seltene HPO Assessment)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"
@@ -41,3 +41,19 @@ Description: "FDPG Profil - MII Profile SE HPO Assessment"
 * component[severity].code ^short = "Severity modifier"
 // Observation.component:severity.value[x]
 * component[severity].value[x] ^short = "Severity grade"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(note)
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(method)
+* insert ObligationConsumerDefault(derivedFrom)
+* insert ObligationConsumerDefault(component)
+* insert ObligationConsumerDefault(component[status])
+* insert ObligationConsumerDefault(component[severity])

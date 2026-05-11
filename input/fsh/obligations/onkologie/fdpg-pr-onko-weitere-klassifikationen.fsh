@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Weitere_Klassifikationen
 Parent: MII_PR_Onko_Weitere_Klassifikationen
 Id: fdpg-pr-onko-weitere-klassifikationen
-Title: "FDPG PR Onkologie Weitere Klassifikationen"
-Description: "In den Krebsregisterdaten werden weitere Klassifikationen neben TNM häufig als Freitext erfasst. Es wurden Anstrengungen unternommen, die Ergebnisse strukturiert darzustellen. Der momentane Datensatz unterstützt die strukturierte Annotation folgender Klassifikationen neben TNM: BINET (CLL), Ann-Arbor (Lymphome), ISS (Multiples Myelom), ISSWM (M. Waldenström), WHO-Grad (ZNS-Tumoren), ELN-Klassifikation (AML/CML), Durie-Salmon (Multiples Myelom), Bismuth (Gallengangskarzinom), Masaoka (Thymome), Mitoserate-GIST, p16, EUTOS-Score (CML), Sanz-Score (APL), IPI (aggressive NHL), FLIPI (follikuläres Lymphom), MIPI (Mantelzelllymphom), Risikogruppen GHSG (Hodgkin-Lymphom) und IPSS (MDS)."
+Title: "FDPG PR Onko Weitere Klassifikationen"
+Description: "FDPG Profil - MII_PR_Onko_Weitere_Klassifikationen"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Weitere Klassifikationen)
-* insert Translation(^title, en-US, Additional Classifications)
+* insert Translation(^title, de-DE, MII PR Onkologie Weitere Klassifikationen)
+* insert Translation(^title, en-US, FDPG PR Onko Weitere Klassifikationen)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Type of observation (code / type)"
@@ -37,3 +37,16 @@ Description: "In den Krebsregisterdaten werden weitere Klassifikationen neben TN
 * insert Translation(method ^short, de-DE, Verwendetes Klassifikationssystem)
 * method ^definition = "The specific staging system or classification method used to determine the stage/classification value. This allows the same observation to distinguish between different staging systems (e.g., FIGO vs Ann Arbor vs BINET)."
 * insert Translation(method ^definition, de-DE, Das spezifische Klassifikationssystem oder die Bewertungsmethode zur Bestimmung des Klassifikationswertes)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(value[x][valueCodeableConcept])
+* insert ObligationConsumerDefault(method)

@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Systemische_Therapie
 Parent: MII_PR_Onko_Systemische_Therapie
 Id: fdpg-pr-onko-systemische-therapie
-Title: "FDPG PR Onkologie Systemische Therapie"
-Description: "FDPG Profil - MII PR Onkologie Systemische Therapie"
+Title: "FDPG PR Onko Systemische Therapie"
+Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Systemische Therapie)
-* insert Translation(^title, en-US, Systemic Therapy)
+* insert Translation(^title, de-DE, MII PR Onkologie Systemische Therapie)
+* insert Translation(^title, en-US, FDPG PR Onko Systemische Therapie)
 // --- Element Designations ---
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"
@@ -135,3 +135,28 @@ Description: "FDPG Profil - MII PR Onkologie Systemische Therapie"
 * insert Translation(note ^definition, en-US, Additional information about the procedure as free text.)
 // Procedure.usedCode
 * usedCode ^short = "Coded items used during the procedure"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension)
+* insert ObligationConsumerDefault(extension[Dokumentationsdatum])
+* insert ObligationConsumerDefault(extension[durchfuehrungsabsicht])
+* insert ObligationConsumerDefault(extension[Intention])
+* insert ObligationConsumerDefault(extension[StellungZurOp])
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(partOf)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[sct])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[ops])
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(code.coding[systemische_therapie_art])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(performed[x])
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.coding[snomed-ct])
+* insert ObligationConsumerDefault(outcome)
+* insert ObligationConsumerDefault(note)
+* insert ObligationConsumerDefault(usedCode)

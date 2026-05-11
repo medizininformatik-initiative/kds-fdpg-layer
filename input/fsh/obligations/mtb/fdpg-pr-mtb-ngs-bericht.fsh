@@ -78,3 +78,21 @@ Description: "FDPG Profil - MII_PR_MTB_NGS_Bericht"
 * insert Translation(result[MolekularerBiomarker] ^definition, de-DE, Verweis auf Molekularer Biomarker)
 // DiagnosticReport.result:Tumorzellgehalt
 * result[Tumorzellgehalt] ^short = "Observations"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(issued)
+* insert ObligationConsumerDefault(specimen)
+* insert ObligationConsumerDefault(result[TumorMutionalBurden])
+* insert ObligationConsumerDefault(result[MSI])
+* insert ObligationConsumerDefault(result[Ploidie])
+* insert ObligationConsumerDefault(result[HRDScore])
+* insert ObligationConsumerDefault(result[BRCAness])
+* insert ObligationConsumerDefault(result[EinfacheVariante])
+* insert ObligationConsumerDefault(result[CopyNumberVariant])
+* insert ObligationConsumerDefault(result[DNAFusion])
+* insert ObligationConsumerDefault(result[RNAFusion])
+* insert ObligationConsumerDefault(result[RNASeq])
+* insert ObligationConsumerDefault(result[MolekularerBiomarkerHER2Status])
+* insert ObligationConsumerDefault(result[MolekularerBiomarker])
+* insert ObligationConsumerDefault(result[Tumorzellgehalt])

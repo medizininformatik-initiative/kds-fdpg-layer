@@ -2,7 +2,7 @@ Profile: FDPG_PR_Bildgebung_Bildgebungsprozedur
 Parent: MII_PR_Bildgebung_Bildgebungsprozedur
 Id: fdpg-pr-bildgebung-bildgebungsprozedur
 Title: "FDPG PR Bildgebung Bildgebungsprozedur"
-Description: "FDPG Profil - MII PR Bildgebung Bildgebungsprozedur"
+Description: "FDPG Profil - MII_PR_Bildgebung_Bildgebungsprozedur"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Bildgebungsprozedur)
 * insert Translation(^title, en-US, imaging procedure)
@@ -125,3 +125,22 @@ Description: "FDPG Profil - MII PR Bildgebung Bildgebungsprozedur"
 * note ^definition = "Zusätzliche Informationen zur Prozedur als Freitext."
 * insert Translation(note ^definition, de-DE, Zusätzliche Informationen zur Prozedur als Freitext.)
 * insert Translation(note ^definition, en-US, Additional information about the procedure as free text.)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension)
+* insert ObligationConsumerDefault(extension[Dokumentationsdatum])
+* insert ObligationConsumerDefault(extension[durchfuehrungsabsicht])
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[sct])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[ops])
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(code.coding[loinc])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(performed[x])
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.coding[snomed-ct])
+* insert ObligationConsumerDefault(note)

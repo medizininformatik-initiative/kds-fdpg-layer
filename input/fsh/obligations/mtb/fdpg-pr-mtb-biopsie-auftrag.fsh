@@ -24,3 +24,9 @@ Description: "FDPG Profil - MII_PR_MTB_Biopsie_Auftrag"
 * insert Translation(reasonReference[Tumorzellgehalt] ^definition, de-DE, Verweis auf bestimmten - häufig zu niedrigen - Tumorzellgehalt der eine Rebiopsie notwendig macht)
 // ServiceRequest.specimen
 * specimen ^short = "Procedure Samples"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(reasonReference[Histologie])
+* insert ObligationConsumerDefault(reasonReference[Tumorzellgehalt])
+* insert ObligationConsumerDefault(specimen)

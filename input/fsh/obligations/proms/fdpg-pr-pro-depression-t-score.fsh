@@ -27,3 +27,16 @@ Description: "FDPG Profil - MII_PR_PRO_Depression_T_Score"
 * referenceRange ^short = "Provides guide for interpretation"
 // Observation.derivedFrom
 * derivedFrom ^short = "Related measurements the observation is made from"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[instantiatesCanonical])
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(effective[x][effectiveDateTime])
+* insert ObligationConsumerDefault(value[x][valueQuantity])
+* insert ObligationConsumerDefault(referenceRange)
+* insert ObligationConsumerPreSelect(referenceRange)
+* insert ObligationConsumerDefault(derivedFrom)

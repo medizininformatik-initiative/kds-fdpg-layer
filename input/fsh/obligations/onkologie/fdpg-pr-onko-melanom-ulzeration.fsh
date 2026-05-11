@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Melanom_Ulzeration
 Parent: MII_PR_Onko_Melanom_Ulzeration
 Id: fdpg-pr-onko-melanom-ulzeration
-Title: "FDPG PR Onkologie Melanom Ulzeration"
-Description: "FDPG Profil - MII PR Onkologie Melanom Ulzeration"
+Title: "FDPG PR Onko Melanom Ulzeration"
+Description: "FDPG Profil - MII_PR_Onko_Melanom_Ulzeration"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Melanom Ulzeration)
-* insert Translation(^title, en-US, Melanoma Ulceration)
+* insert Translation(^title, de-DE, MII PR Onkologie Melanom Ulzeration)
+* insert Translation(^title, en-US, FDPG PR Onko Melanom Ulzeration)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Ulzeration"
@@ -29,3 +29,17 @@ Description: "FDPG Profil - MII PR Onkologie Melanom Ulzeration"
 * dataAbsentReason ^short = "Grund für fehlende Angabe"
 // Observation.method
 * method ^short = "How it was done"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(dataAbsentReason)
+* insert ObligationConsumerPreSelect(dataAbsentReason)
+* insert ObligationConsumerDefault(method)

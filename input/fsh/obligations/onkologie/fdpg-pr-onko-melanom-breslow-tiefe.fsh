@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Melanom_Breslow_Tiefe
 Parent: MII_PR_Onko_Melanom_Breslow_Tiefe
 Id: fdpg-pr-onko-melanom-breslow-tiefe
-Title: "FDPG PR Onkologie Melanom Breslow Tiefe"
-Description: "FDPG Profil - MII PR Onkologie Melanom Breslow Tiefe"
+Title: "FDPG PR Onko Melanom Breslow Tiefe"
+Description: "FDPG Profil - MII_PR_Onko_Melanom_Breslow_Tiefe"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Melanom Breslow-Dicke)
-* insert Translation(^title, en-US, Melanoma Breslow Thickness)
+* insert Translation(^title, de-DE, MII PR Onkologie Melanom Breslow Tiefe)
+* insert Translation(^title, en-US, FDPG PR Onko Melanom Breslow Tiefe)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Breslow Tiefe"
@@ -37,3 +37,17 @@ Description: "FDPG Profil - MII PR Onkologie Melanom Breslow Tiefe"
 * dataAbsentReason ^short = "Grund für fehlende Messung"
 // Observation.method
 * method ^short = "How it was done"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(dataAbsentReason)
+* insert ObligationConsumerPreSelect(dataAbsentReason)
+* insert ObligationConsumerDefault(method)

@@ -2,10 +2,10 @@ Profile: FDPG_PR_ICU_Device
 Parent: MII_PR_ICU_Device
 Id: fdpg-pr-icu-device
 Title: "FDPG PR ICU Device"
-Description: "FDPG Profil - MII PR ICU Device"
+Description: "FDPG Profil - MII_PR_ICU_Device"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Gerät)
-* insert Translation(^title, en-US, Device)
+* insert Translation(^title, de-DE, MII PR ICU Device)
+* insert Translation(^title, en-US, FDPG PR ICU Device)
 // --- Element Designations ---
 // Device.identifier
 * identifier ^short = "Instance identifier"
@@ -31,3 +31,11 @@ Description: "FDPG Profil - MII PR ICU Device"
 * property ^short = "The actual configuration settings of a device as it actually operates, e.g., regulation status, time properties"
 // Device.property.type
 * property.type ^short = "Code that specifies the property DeviceDefinitionPropetyCode (Extensible)"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(deviceName)
+* insert ObligationConsumerDefault(type)
+* insert ObligationConsumerDefault(version)
+* insert ObligationConsumerDefault(property)

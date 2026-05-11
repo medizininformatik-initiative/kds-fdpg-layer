@@ -19,9 +19,6 @@ Description: "FDPG Profil - MII_PR_MTB_INSITUHYBRIDIZATION_HER2"
 * insert Translation(category ^definition, de-DE, Klassifizierung der Beobachtungsart)
 // Observation.code
 * code ^short = "Code für In Situ Hybridization Untersuchung"
-* insert Translation(code ^short, de-DE, Code fuer In Situ Hybridization Untersuchung)
-* code ^definition = "Kodierung für In Situ Hybridization. Nach Möglichkeit sind spezifische Codes zu verwenden. Wenn weder in SNOMED noch LOINC spezifische Codes vorhanden sind, ist der generische Code mit Textbeschreibung zu verwenden."
-* insert Translation(code ^definition, de-DE, Kodierung fuer In Situ Hybridization. Nach Moeglichkeit sind spezifische Codes zu verwenden. Wenn weder in SNOMED noch LOINC spezifische Codes vorhanden sind ist der generische Code mit Textbeschreibung zu verwenden.)
 // Observation.code.coding:generisch
 * code.coding[generisch] ^short = "Generischer ISH Code"
 * insert Translation(code.coding[generisch] ^short, de-DE, Generischer ISH Code)
@@ -79,11 +76,6 @@ Description: "FDPG Profil - MII_PR_MTB_INSITUHYBRIDIZATION_HER2"
 * insert Translation(component ^short, de-DE, Komponenten)
 * component ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component ^definition, de-DE, Einzelne Komponenten der Beobachtung)
-// Observation.component:gene-studied
-* component[gene-studied] ^short = "Untersuchtes Gen"
-* insert Translation(component[gene-studied] ^short, de-DE, Untersuchtes Gen)
-* component[gene-studied] ^definition = "Das mit der Target-Sonde untersuchte Gen (z.B. ERBB2)"
-* insert Translation(component[gene-studied] ^definition, de-DE, Das mit der Target-Sonde untersuchte Gen - z.B. ERBB2)
 // Observation.component:biomarker-category
 * component[biomarker-category] ^short = "Biomarker-Kategorie"
 * insert Translation(component[biomarker-category] ^short, de-DE, Biomarker-Kategorie)
@@ -101,3 +93,28 @@ Description: "FDPG Profil - MII_PR_MTB_INSITUHYBRIDIZATION_HER2"
 * component[cells-counted] ^short = "Anzahl gezählter Zellkerne"
 * component[cells-counted] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[cells-counted] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[generisch])
+* insert ObligationConsumerDefault(code.coding[spezifisch])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(issued)
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerDefault(value[x][valueQuantity])
+* insert ObligationConsumerDefault(value[x][valueRatio])
+* insert ObligationConsumerDefault(value[x][valueCodeableConcept])
+* insert ObligationConsumerDefault(interpretation)
+* insert ObligationConsumerDefault(method)
+* insert ObligationConsumerDefault(derivedFrom)
+* insert ObligationConsumerDefault(component)
+* insert ObligationConsumerDefault(component[gene-studied])
+* insert ObligationConsumerDefault(component[biomarker-category])
+* insert ObligationConsumerDefault(component[target-signals])
+* insert ObligationConsumerDefault(component[reference-signals])
+* insert ObligationConsumerDefault(component[cells-counted])

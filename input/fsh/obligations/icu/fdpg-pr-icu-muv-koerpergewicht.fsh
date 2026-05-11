@@ -1,11 +1,11 @@
 Profile: FDPG_PR_ICU_MUV_Koerpergewicht
 Parent: MII_PR_ICU_MUV_Koerpergewicht
 Id: fdpg-pr-icu-muv-koerpergewicht
-Title: "FDPG PR ICU Koerpergewicht"
-Description: "FDPG Profil - MII PR ICU Koerpergewicht"
+Title: "FDPG PR ICU MUV Koerpergewicht"
+Description: "FDPG Profil - MII_PR_ICU_MUV_Koerpergewicht"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Körpergewicht)
-* insert Translation(^title, en-US, Body Weight)
+* insert Translation(^title, de-DE, MII PR ICU MUV Koerpergewicht)
+* insert Translation(^title, en-US, FDPG PR ICU MUV Koerpergewicht)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"
@@ -45,3 +45,18 @@ Description: "FDPG Profil - MII PR ICU Koerpergewicht"
 * value[x][valueQuantity].code ^short = "Coded form of the unit"
 // Observation.component
 * component ^short = "Component results"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category[sct])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[loinc])
+* insert ObligationConsumerDefault(code.coding[snomed])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(effective[x][effectiveDateTime])
+* insert ObligationConsumerDefault(effective[x][effectivePeriod])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerDefault(value[x][valueQuantity])
+* insert ObligationConsumerDefault(component)

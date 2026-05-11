@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Diagnose_Primaertumor
 Parent: MII_PR_Onko_Diagnose_Primaertumor
 Id: fdpg-pr-onko-diagnose-primaertumor
-Title: "FDPG PR Onkologie Diagnose Primärtumor"
-Description: "Die Diagnose Primärtumor ist der zentrale Ankerpunkt der onkologischen Dokumentation. Alle weiteren onkologischen Datenpunkte (Staging, Therapie, Verlauf, Metastasen, Rezidive etc.) referenzieren auf diese Diagnose, insofern eine Zuordnung getroffen werden kann. Ein komplett neuartiger Tumor wird als zweite Diagnose Primärtumor dokumentiert, so dass die Datenpunkte eindeutig zugeordnet werden können. Das Profil wird ebenfalls für Fälle mit unklarem Primärtumor (CUP-Syndrom), Polyneoplasien und neoplastischen Erkrankungen ohne klar abgrenzbaren Tumor (z.B. Lymphome, Leukämien) eingesetzt."
+Title: "FDPG PR Onko Diagnose Primaertumor"
+Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Onkologische Diagnose Primärtumor)
-* insert Translation(^title, en-US, Oncology Diagnosis Primary Tumor)
+* insert Translation(^title, de-DE, Onkologische Diagnose im Rahmen einer onkologischen Erkrankung)
+* insert Translation(^title, en-US, FDPG PR Onko Diagnose Primaertumor)
 // --- Element Designations ---
 // Condition.extension:ReferenzPrimaerdiagnose
 * extension[ReferenzPrimaerdiagnose] ^short = "Conditions associated with this condition"
@@ -150,3 +150,32 @@ Description: "Die Diagnose Primärtumor ist der zentrale Ankerpunkt der onkologi
 * note ^definition = "Zusätzliche Informationen zur Diagnose als Freitext."
 * insert Translation(note ^definition, de-DE, Zusätzliche Informationen zur Diagnose als Freitext.)
 * insert Translation(note ^definition, en-US, Additional information about the diagnosis as free text.)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension)
+* insert ObligationConsumerDefault(extension[ReferenzPrimaerdiagnose])
+* insert ObligationConsumerDefault(extension[Feststellungsdatum])
+* insert ObligationConsumerDefault(extension[morphology-behavior-icdo3])
+* insert ObligationConsumerDefault(extension[occurredFollowing])
+* insert ObligationConsumerDefault(clinicalStatus)
+* insert ObligationConsumerDefault(verificationStatus)
+* insert ObligationConsumerDefault(verificationStatus.coding[condition-ver-status])
+* insert ObligationConsumerDefault(verificationStatus.coding[primaertumorDiagnosesicherung])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[icd10-gm])
+* insert ObligationConsumerDefault(code.coding[alpha-id])
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(code.coding[orphanet])
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.coding[snomed-ct])
+* insert ObligationConsumerDefault(bodySite.coding[primaertumorSeitenlokalisation])
+* insert ObligationConsumerDefault(bodySite.coding[icd-o-3])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(onset[x])
+* insert ObligationConsumerDefault(onset[x][onsetPeriod])
+* insert ObligationConsumerDefault(onset[x][onsetDateTime])
+* insert ObligationConsumerDefault(onset[x][onsetAge])
+* insert ObligationConsumerDefault(recordedDate)
+* insert ObligationConsumerDefault(evidence)
+* insert ObligationConsumerDefault(note)

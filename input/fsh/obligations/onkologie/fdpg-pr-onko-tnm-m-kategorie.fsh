@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_TNM_M_Kategorie
 Parent: MII_PR_Onko_TNM_M_Kategorie
 Id: fdpg-pr-onko-tnm-m-kategorie
-Title: "FDPG PR Onkologie TNM M-Kategorie"
-Description: "FDPG Profil - MII PR Onkologie TNM M-Kategorie"
+Title: "FDPG PR Onko TNM M Kategorie"
+Description: "FDPG Profil - MII_PR_Onko_TNM_M_Kategorie"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, TNM M-Kategorie)
-* insert Translation(^title, en-US, TNM M-Category)
+* insert Translation(^title, de-DE, MII PR Onkologie TNM M-Kategorie)
+* insert Translation(^title, en-US, FDPG PR Onko TNM M Kategorie)
 // --- Element Designations ---
 // Observation.partOf
 * partOf ^short = "Part of referenced event"
@@ -39,3 +39,20 @@ Description: "FDPG Profil - MII PR Onkologie TNM M-Kategorie"
 * insert Translation(method.coding ^definition, de-DE, Version nach 8.2 oBDS 2021)
 // Observation.hasMember
 * hasMember ^short = "Related resource that belongs to the Observation group"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(partOf)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(code.extension[cpPraefix])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(value[x].extension[itcSuffix])
+* insert ObligationConsumerDefault(method)
+* insert ObligationConsumerDefault(hasMember)

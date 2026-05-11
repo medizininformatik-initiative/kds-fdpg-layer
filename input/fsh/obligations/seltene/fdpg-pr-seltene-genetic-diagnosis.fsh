@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Seltene_GeneticDiagnosis
 Parent: MII_PR_Seltene_GeneticDiagnosis
 Id: fdpg-pr-seltene-genetic-diagnosis
-Title: "FDPG PR SE Genetic Diagnosis"
-Description: "FDPG Profil - MII PR SE Genetic Diagnosis"
+Title: "FDPG PR Seltene GeneticDiagnosis"
+Description: "FDPG Profil - MII_PR_Seltene_GeneticDiagnosis"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Genetische Diagnose)
-* insert Translation(^title, en-US, Genetic Diagnosis)
+* insert Translation(^title, de-DE, MII PR SE Genetic Diagnosis)
+* insert Translation(^title, en-US, FDPG PR Seltene GeneticDiagnosis)
 // --- Element Designations ---
 // Condition.extension:ReferenzPrimaerdiagnose
 * extension[ReferenzPrimaerdiagnose] ^short = "Conditions associated with this condition"
@@ -149,3 +149,33 @@ Description: "FDPG Profil - MII PR SE Genetic Diagnosis"
 * note ^definition = "Zusätzliche Informationen zur Diagnose als Freitext."
 * insert Translation(note ^definition, de-DE, Zusätzliche Informationen zur Diagnose als Freitext.)
 * insert Translation(note ^definition, en-US, Additional information about the diagnosis as free text.)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[ReferenzPrimaerdiagnose])
+* insert ObligationConsumerDefault(extension[Feststellungsdatum])
+* insert ObligationConsumerDefault(extension[penetrance])
+* insert ObligationConsumerDefault(clinicalStatus)
+* insert ObligationConsumerDefault(verificationStatus)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(severity)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[icd10-gm])
+* insert ObligationConsumerDefault(code.coding[alpha-id])
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(code.coding[orphanet])
+* insert ObligationConsumerDefault(code.coding[omim])
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.coding[snomed-ct])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(onset[x])
+* insert ObligationConsumerDefault(onset[x][onsetPeriod])
+* insert ObligationConsumerDefault(onset[x][onsetDateTime])
+* insert ObligationConsumerDefault(onset[x][onsetAge])
+* insert ObligationConsumerDefault(abatement[x])
+* insert ObligationConsumerDefault(recordedDate)
+* insert ObligationConsumerDefault(recorder)
+* insert ObligationConsumerDefault(asserter)
+* insert ObligationConsumerDefault(stage)
+* insert ObligationConsumerDefault(evidence)
+* insert ObligationConsumerDefault(note)

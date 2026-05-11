@@ -18,3 +18,11 @@ Description: "FDPG Profil - MII_PR_MTB_Oncotree"
 * insert Translation(encounter ^definition, de-DE, Kontakt zur Gesundheitseinrichtung)
 // Observation.value[x]
 * value[x] ^short = "Actual result"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])

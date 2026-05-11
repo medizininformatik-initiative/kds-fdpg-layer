@@ -91,3 +91,23 @@ Description: "FDPG Profil - MII_PR_MTB_Therapeutische_Implikation"
 * insert Translation(component[therapy-assessed] ^short, de-DE, Bewertete Therapie)
 * component[therapy-assessed] ^definition = "Die bewertete nicht-medikamentöse Therapie"
 * insert Translation(component[therapy-assessed] ^definition, de-DE, Die bewertete nicht-medikamentöse Therapie)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[Evidenzgraduierung])
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(issued)
+* insert ObligationConsumerDefault(derivedFrom)
+* insert ObligationConsumerDefault(derivedFrom[variant])
+* insert ObligationConsumerDefault(component)
+* insert ObligationConsumerDefault(component[conclusion-string])
+* insert ObligationConsumerDefault(component[evidence-level])
+* insert ObligationConsumerDefault(component[therapeutic-implication])
+* insert ObligationConsumerDefault(component[phenotypic-treatment-context])
+* insert ObligationConsumerDefault(component[medication-assessed])
+* insert ObligationConsumerDefault(component[therapy-assessed])

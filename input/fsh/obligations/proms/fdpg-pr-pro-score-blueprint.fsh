@@ -31,3 +31,9 @@ Description: "FDPG Profil - MII_PR_PRO_Score_Blueprint"
 * qualifiedInterval.range.low ^short = "Low limit"
 // ObservationDefinition.qualifiedInterval.range.high
 * qualifiedInterval.range.high ^short = "High limit"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(permittedDataType)
+* insert ObligationConsumerDefault(preferredReportName)
+* insert ObligationConsumerDefault(qualifiedInterval)

@@ -32,3 +32,14 @@ Description: "FDPG Profil - MII_PR_MTB_Studieneinschluss_Anfrage"
 * supportingInfo ^short = "Additional clinical information"
 // ServiceRequest.supportingInfo:Studie
 * supportingInfo[Studie] ^short = "Additional clinical information"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[statusReason])
+* insert ObligationConsumerDefault(extension[Prioritaet])
+* insert ObligationConsumerDefault(extension[Publikation])
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(supportingInfo)
+* insert ObligationConsumerDefault(supportingInfo[Studie])

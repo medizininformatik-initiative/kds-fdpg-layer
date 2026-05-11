@@ -44,3 +44,15 @@ Description: "FDPG Profil - MII_PR_MTB_Antwort_Kostenuebernahme"
 * insert Translation(outcome ^short, de-DE, Ergebnis der Kostenuebernahme)
 * outcome ^definition = "Ergebnis der Kostenübernahme. Für den Fall der Sekundärdatenenutzung ist davon auszugehen, dass die Kostenerstattung bereits erfolgt ist. Daher ist der Status auf #complete gesetzt."
 * insert Translation(outcome ^definition, de-DE, Ergebnis der Kostenuebernahme. Fuer den Fall der Sekundaerdatennutzung ist davon auszugehen dass die Kostenerstattung bereits erfolgt ist. Daher ist der Status auf #complete gesetzt.)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension)
+* insert ObligationConsumerDefault(extension[Entscheidung])
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(type)
+* insert ObligationConsumerDefault(use)
+* insert ObligationConsumerDefault(patient)
+* insert ObligationConsumerDefault(created)
+* insert ObligationConsumerDefault(insurer)
+* insert ObligationConsumerDefault(request)
+* insert ObligationConsumerDefault(outcome)

@@ -2,7 +2,7 @@ Profile: FDPG_PR_Patho_Finding
 Parent: MII_PR_Patho_Finding
 Id: fdpg-pr-patho-finding
 Title: "FDPG PR Patho Finding"
-Description: "FDPG Profil - MII PR Patho Finding"
+Description: "FDPG Profil - MII_PR_Patho_Finding"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, MII PR Patho Befund)
 * insert Translation(^title, en-US, MII PR Patho Finding)
@@ -117,3 +117,23 @@ Description: "FDPG Profil - MII PR Patho Finding"
 * component.code ^short = "Type of component observation (code / type)"
 // Observation.component.dataAbsentReason
 * component.dataAbsentReason ^short = "Why the component result is missing"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category[laboratory-category])
+* insert ObligationConsumerDefault(category[section-type])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.coding[sct])
+* insert ObligationConsumerDefault(method)
+* insert ObligationConsumerDefault(specimen)
+* insert ObligationConsumerDefault(hasMember)
+* insert ObligationConsumerDefault(derivedFrom)
+* insert ObligationConsumerDefault(derivedFrom[attached-image])
+* insert ObligationConsumerDefault(derivedFrom[dicom-image])

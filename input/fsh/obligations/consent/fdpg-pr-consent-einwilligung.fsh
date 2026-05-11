@@ -1,16 +1,22 @@
 Profile: FDPG_PR_Consent_Einwilligung
 Parent: MII_PR_Consent_Einwilligung
 Id: fdpg-pr-consent-einwilligung
-Title: "FDPG PR Consent - Einwilligung"
-Description: "FDPG Profil - Profile - MI-I - Consent - Einwilligung"
+Title: "FDPG PR Consent Einwilligung"
+Description: "FDPG Profil - MII_PR_Consent_Einwilligung"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Einwilligung)
-* insert Translation(^title, en-US, Consent)
+* insert Translation(^title, de-DE, Profile - MI-I - Consent - Einwilligung)
+* insert Translation(^title, en-US, FDPG PR Consent Einwilligung)
 // --- Element Designations ---
 // Consent.status
 * status ^short = "draft | proposed | active | rejected | inactive | entered-in-error"
 // Consent.category
 * category ^short = "Classification of the consent statement - for indexing/retrieval"
+// Consent.category:consentCategory
+* category[consentCategory] ^short = "Classification of the consent statement - for indexing/retrieval"
+// Consent.category:resultType
+* category[resultType] ^short = "Classification of the consent statement - for indexing/retrieval"
+// Consent.category:templateType
+* category[templateType] ^short = "Classification of the consent statement - for indexing/retrieval"
 // Consent.category:loinc
 * category[loinc] ^short = "Classification of the consent statement - for indexing/retrieval"
 // Consent.category:mii
@@ -53,3 +59,22 @@ Description: "FDPG Profil - Profile - MI-I - Consent - Einwilligung"
 * provision.provision.period ^short = "Timeframe for this rule"
 // Consent.provision.provision.code
 * provision.provision.code ^short = "e.g. LOINC or SNOMED CT code, etc. in the content"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[domainReference])
+* insert ObligationConsumerDefault(extension[domainReference].extension[domain])
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category[consentCategory])
+* insert ObligationConsumerDefault(category[resultType])
+* insert ObligationConsumerDefault(category[templateType])
+* insert ObligationConsumerDefault(category[loinc])
+* insert ObligationConsumerDefault(category[mii])
+* insert ObligationConsumerDefault(patient)
+* insert ObligationConsumerDefault(dateTime)
+* insert ObligationConsumerDefault(organization)
+* insert ObligationConsumerDefault(source[x])
+* insert ObligationConsumerDefault(policy)
+* insert ObligationConsumerDefault(policyRule)
+* insert ObligationConsumerDefault(policyRule.extension[xacml])
+* insert ObligationConsumerDefault(provision)

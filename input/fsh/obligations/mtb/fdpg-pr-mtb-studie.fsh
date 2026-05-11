@@ -63,3 +63,25 @@ Description: "FDPG Profil - MII_PR_MTB_Studie"
 * arm ^short = "Definierter Weg durch die Studie für ein Subjekt."
 // ResearchStudy.arm.name
 * arm.name ^short = "Label for study arm"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension)
+* insert ObligationConsumerDefault(extension[Label])
+* insert ObligationConsumerDefault(extension[AssociatedParty])
+* insert ObligationConsumerDefault(extension[Ethikvotum])
+* insert ObligationConsumerDefault(extension[Studienregister])
+* insert ObligationConsumerDefault(extension[Eligibility])
+* insert ObligationConsumerDefault(extension[Akronym])
+* insert ObligationConsumerDefault(extension[Rekrutierung])
+* insert ObligationConsumerDefault(extension[Finanzierung])
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(identifier[NCT])
+* insert ObligationConsumerDefault(identifier[DRKS])
+* insert ObligationConsumerDefault(identifier[EudraCT])
+* insert ObligationConsumerDefault(title)
+* insert ObligationConsumerDefault(partOf)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(keyword)
+* insert ObligationConsumerDefault(arm)

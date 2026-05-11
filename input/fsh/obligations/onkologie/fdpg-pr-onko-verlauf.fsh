@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Verlauf
 Parent: MII_PR_Onko_Verlauf
 Id: fdpg-pr-onko-verlauf
-Title: "FDPG PR Onkologie Verlauf"
-Description: "Dieses Profil beschreibt den Behandlungserfolg und/oder Tumorprogress. Es ist davon auszugehen, dass ein Großteil der Patient:innen ambulant behandelt wird, so dass ggfs. keine strukturierten Verlaufsdaten vorliegen."
+Title: "FDPG PR Onko Verlauf"
+Description: "FDPG Profil - MII_PR_Onko_Verlauf"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Onkologischer Verlauf)
-* insert Translation(^title, en-US, Oncology Disease Course)
+* insert Translation(^title, de-DE, MII PR Onkologie Verlauf)
+* insert Translation(^title, en-US, FDPG PR Onko Verlauf)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"
@@ -33,3 +33,21 @@ Description: "Dieses Profil beschreibt den Behandlungserfolg und/oder Tumorprogr
 * component[Lymphknoten_Verlauf] ^short = "Component results"
 // Observation.component:Fernmetastasen_Verlauf
 * component[Fernmetastasen_Verlauf] ^short = "Component results"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(effective[x][effectiveDateTime])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(hasMember)
+* insert ObligationConsumerDefault(component)
+* insert ObligationConsumerDefault(component[Tumor_Verlauf])
+* insert ObligationConsumerDefault(component[Lymphknoten_Verlauf])
+* insert ObligationConsumerDefault(component[Fernmetastasen_Verlauf])

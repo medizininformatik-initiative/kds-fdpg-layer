@@ -2,7 +2,7 @@ Profile: FDPG_PR_Labor_Laboruntersuchung
 Parent: MII_PR_Labor_Laboruntersuchung
 Id: fdpg-pr-labor-laboruntersuchung
 Title: "FDPG PR Labor Laboruntersuchung"
-Description: "FDPG Profil - MII PR Labor Laboruntersuchung"
+Description: "FDPG Profil - MII_PR_Labor_Laboruntersuchung"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Laboruntersuchung)
 * insert Translation(^title, en-US, Laboratory test)
@@ -191,3 +191,35 @@ Description: "FDPG Profil - MII PR Labor Laboruntersuchung"
 * referenceRange.low ^short = "Low Range, if relevant"
 // Observation.referenceRange.high
 * referenceRange.high ^short = "High Range, if relevant"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(identifier[analyseBefundCode])
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[loinc-observation])
+* insert ObligationConsumerDefault(category.coding[observation-category])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(effective[x].extension[QuelleKlinischesBezugsdatum])
+* insert ObligationConsumerDefault(issued)
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(value[x][valueQuantity])
+* insert ObligationConsumerDefault(value[x][valueCodeableConcept])
+* insert ObligationConsumerDefault(value[x][valueRange])
+* insert ObligationConsumerDefault(value[x][valueRatio])
+* insert ObligationConsumerDefault(dataAbsentReason)
+* insert ObligationConsumerPreSelect(dataAbsentReason)
+* insert ObligationConsumerDefault(interpretation)
+* insert ObligationConsumerPreSelect(interpretation)
+* insert ObligationConsumerDefault(note)
+* insert ObligationConsumerDefault(method)
+* insert ObligationConsumerDefault(specimen)
+* insert ObligationConsumerDefault(device)
+* insert ObligationConsumerDefault(referenceRange)
+* insert ObligationConsumerPreSelect(referenceRange)

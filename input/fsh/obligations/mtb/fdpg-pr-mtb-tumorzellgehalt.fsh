@@ -13,3 +13,8 @@ Description: "FDPG Profil - MII_PR_MTB_Tumorzellgehalt"
 * value[x].value ^short = "Numerical value (with implicit precision)"
 // Observation.method
 * method ^short = "How it was done"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(method)

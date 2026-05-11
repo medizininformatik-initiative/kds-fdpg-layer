@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_KRK_Stoma_Markierung
 Parent: MII_PR_Onko_KRK_Stoma_Markierung
 Id: fdpg-pr-onko-krk-stoma-markierung
-Title: "FDPG PR Onkologie KRK Stoma-Markierung"
-Description: "FDPG Profil - MII PR Onkologie KRK Stoma-Markierung"
+Title: "FDPG PR Onko KRK Stoma Markierung"
+Description: "FDPG Profil - MII_PR_Onko_KRK_Stoma_Markierung"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, KRK Stoma-Markierung)
-* insert Translation(^title, en-US, Colorectal Stoma Marking)
+* insert Translation(^title, de-DE, MII PR Onkologie KRK Stoma-Markierung)
+* insert Translation(^title, en-US, FDPG PR Onko KRK Stoma Markierung)
 // --- Element Designations ---
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"
@@ -113,3 +113,23 @@ Description: "FDPG Profil - MII PR Onkologie KRK Stoma-Markierung"
 * note ^definition = "Zusätzliche Informationen zur Prozedur als Freitext."
 * insert Translation(note ^definition, de-DE, Zusätzliche Informationen zur Prozedur als Freitext.)
 * insert Translation(note ^definition, en-US, Additional information about the procedure as free text.)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension)
+* insert ObligationConsumerDefault(extension[Dokumentationsdatum])
+* insert ObligationConsumerDefault(extension[durchfuehrungsabsicht])
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(statusReason)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[sct])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[ops])
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(performed[x])
+* insert ObligationConsumerDefault(performed[x][performedDateTime])
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.coding[snomed-ct])
+* insert ObligationConsumerDefault(note)

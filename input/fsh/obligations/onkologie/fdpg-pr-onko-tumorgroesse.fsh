@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Tumorgroesse
 Parent: MII_PR_Onko_Tumorgroesse
 Id: fdpg-pr-onko-tumorgroesse
-Title: "FDPG PR Onkologie Tumorgröße"
-Description: "Die Tumorgröße ist ursprünglich nicht Teil des oBDS, sondern der organspezifischen Module."
+Title: "FDPG PR Onko Tumorgroesse"
+Description: "FDPG Profil - MII_PR_Onko_Tumorgroesse"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Tumorgröße)
-* insert Translation(^title, en-US, Tumor Size)
+* insert Translation(^title, de-DE, MII PR Onkologie Tumorgröße)
+* insert Translation(^title, en-US, FDPG PR Onko Tumorgroesse)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Type of observation (code / type)"
@@ -34,3 +34,17 @@ Description: "Die Tumorgröße ist ursprünglich nicht Teil des oBDS, sondern de
 * bodySite ^short = "Observed body part"
 // Observation.method
 * method ^short = "How it was done"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(code.coding[loinc])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(method)

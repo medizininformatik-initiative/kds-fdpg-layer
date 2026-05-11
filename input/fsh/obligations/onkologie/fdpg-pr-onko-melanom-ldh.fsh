@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Melanom_LDH
 Parent: MII_PR_Onko_Melanom_LDH
 Id: fdpg-pr-onko-melanom-ldh
-Title: "FDPG PR Onkologie Melanom LDH"
-Description: "FDPG Profil - MII PR Onkologie Melanom LDH"
+Title: "FDPG PR Onko Melanom LDH"
+Description: "FDPG Profil - MII_PR_Onko_Melanom_LDH"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Melanom LDH-Wert)
-* insert Translation(^title, en-US, Melanoma LDH Value)
+* insert Translation(^title, de-DE, MII PR Onkologie Melanom LDH)
+* insert Translation(^title, en-US, FDPG PR Onko Melanom LDH)
 // --- Element Designations ---
 // Observation.category
 * category ^short = "Classification of  type of observation"
@@ -39,3 +39,18 @@ Description: "FDPG Profil - MII PR Onkologie Melanom LDH"
 * interpretation ^short = "Bewertung des LDH-Werts"
 // Observation.note
 * note ^short = "Bemerkungen zur LDH-Bestimmung"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(interpretation)
+* insert ObligationConsumerPreSelect(interpretation)
+* insert ObligationConsumerDefault(note)

@@ -1,11 +1,11 @@
 Profile: FDPG_PR_ICU_MUV_Atemfrequenz
 Parent: MII_PR_ICU_MUV_Atemfrequenz
 Id: fdpg-pr-icu-muv-atemfrequenz
-Title: "FDPG PR ICU Atemfrequenz"
-Description: "FDPG Profil - MII PR ICU Atemfrequenz"
+Title: "FDPG PR ICU MUV Atemfrequenz"
+Description: "FDPG Profil - MII_PR_ICU_MUV_Atemfrequenz"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Atemfrequenz)
-* insert Translation(^title, en-US, Respiratory Rate)
+* insert Translation(^title, de-DE, MII PR ICU MUV Atemfrequenz)
+* insert Translation(^title, en-US, FDPG PR ICU MUV Atemfrequenz)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"
@@ -33,3 +33,15 @@ Description: "FDPG Profil - MII PR ICU Atemfrequenz"
 * value[x][valueQuantity].code ^short = "Coded form of the unit"
 // Observation.dataAbsentReason
 * dataAbsentReason ^short = "Why the result is missing"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[loinc])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerDefault(dataAbsentReason)

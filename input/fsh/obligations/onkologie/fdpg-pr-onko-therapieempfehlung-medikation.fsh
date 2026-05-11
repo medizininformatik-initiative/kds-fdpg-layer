@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Therapieempfehlung_Medikation
 Parent: MII_PR_Onko_Therapieempfehlung_Medikation
 Id: fdpg-pr-onko-therapieempfehlung-medikation
-Title: "FDPG PR Onkologie Therapieempfehlung Medikation"
-Description: "FDPG Profil - MII PR Onkologie Therapieempfehlung Medikation"
+Title: "FDPG PR Onko Therapieempfehlung Medikation"
+Description: "FDPG Profil - MII_PR_Onko_Therapieempfehlung_Medikation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Therapieempfehlung Medikation)
-* insert Translation(^title, en-US, Therapy Recommendation Medication)
+* insert Translation(^title, de-DE, MII PR Onkologie Therapieempfehlung Medikation)
+* insert Translation(^title, en-US, FDPG PR Onko Therapieempfehlung Medikation)
 // --- Element Designations ---
 // MedicationRequest.identifier
 * identifier ^short = "Identifikator"
@@ -385,3 +385,32 @@ Description: "FDPG Profil - MII PR Onkologie Therapieempfehlung Medikation"
 * priorPrescription ^definition = "Eine Verschreibung, die ersetzt wird"
 * insert Translation(priorPrescription ^definition, de-DE, Eine Verschreibung\, die ersetzt wird)
 * insert Translation(priorPrescription ^definition, en-US, An order/prescription that is being replaced)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(intent)
+* insert ObligationConsumerDefault(medication[x])
+* insert ObligationConsumerDefault(medication[x][medicationReference])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[atcClassDe])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[atcClassEn])
+* insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[UNII])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(supportingInformation)
+* insert ObligationConsumerDefault(authoredOn)
+* insert ObligationConsumerDefault(requester)
+* insert ObligationConsumerDefault(reasonCode)
+* insert ObligationConsumerDefault(reasonReference)
+* insert ObligationConsumerDefault(reasonReference[Primaertumor])
+* insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(note)
+* insert ObligationConsumerDefault(dosageInstruction)
+* insert ObligationConsumerDefault(dosageInstruction.asNeeded[x][asNeededBoolean])
+* insert ObligationConsumerDefault(dosageInstruction.asNeeded[x][asNeededCodeableConcept])
+* insert ObligationConsumerDefault(substitution)
+* insert ObligationConsumerDefault(substitution.allowed[x][allowedBoolean])
+* insert ObligationConsumerDefault(substitution.allowed[x][allowedCodeableConcept])
+* insert ObligationConsumerDefault(priorPrescription)

@@ -1,8 +1,8 @@
 Profile: FDPG_PR_Prozedur_Procedure
 Parent: MII_PR_Prozedur_Procedure
 Id: fdpg-pr-prozedur-procedure
-Title: "FDPG PR Prozedur Procedure"
-Description: "FDPG Profil - MII PR Prozedur Procedure"
+Title: "FDPG PR Basis Procedure"
+Description: "FDPG Profil - MII_PR_Prozedur_Procedure"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Prozedur)
 * insert Translation(^title, en-US, Procedure)
@@ -106,3 +106,25 @@ Description: "FDPG Profil - MII PR Prozedur Procedure"
 * note ^definition = "Zusätzliche Informationen zur Prozedur als Freitext."
 * insert Translation(note ^definition, de-DE, Zusätzliche Informationen zur Prozedur als Freitext.)
 * insert Translation(note ^definition, en-US, Additional information about the procedure as free text.)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension)
+* insert ObligationConsumerDefault(extension[Dokumentationsdatum])
+* insert ObligationConsumerDefault(extension[durchfuehrungsabsicht])
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerPreSelect(status)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[sct])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(code.coding[ops])
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerPreSelect(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(performed[x])
+* insert ObligationConsumerPreSelect(performed[x])
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerPreSelect(bodySite)
+* insert ObligationConsumerDefault(bodySite.coding[snomed-ct])
+* insert ObligationConsumerDefault(note)

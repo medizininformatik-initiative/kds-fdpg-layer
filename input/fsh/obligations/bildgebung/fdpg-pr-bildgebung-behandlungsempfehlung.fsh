@@ -2,7 +2,7 @@ Profile: FDPG_PR_Bildgebung_Behandlungsempfehlung
 Parent: MII_PR_Bildgebung_Behandlungsempfehlung
 Id: fdpg-pr-bildgebung-behandlungsempfehlung
 Title: "FDPG PR Bildgebung Behandlungsempfehlung"
-Description: "FDPG Profil - MII PR Bildgebung Behandlungsempfehlung"
+Description: "FDPG Profil - MII_PR_Bildgebung_Behandlungsempfehlung"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Behandlungsempfehlung)
 * insert Translation(^title, en-US, care plan)
@@ -42,3 +42,10 @@ Description: "FDPG Profil - MII PR Bildgebung Behandlungsempfehlung"
 * supportingInfo ^definition = "Zusatzinformation für einen Befundbericht"
 * insert Translation(supportingInfo ^definition, de-DE, Zusatzinformation für einen Befundbericht)
 * insert Translation(supportingInfo ^definition, en-US, additional information for a diagnostic report)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(intent)
+* insert ObligationConsumerDefault(description)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(supportingInfo)

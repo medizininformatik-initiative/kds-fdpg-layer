@@ -20,26 +20,37 @@ import sys
 import argparse
 from pathlib import Path
 
-# Module -> package mapping (only new modules to generate)
+# Module -> package mapping. Versions aligned with sushi-config.yaml dependencies.
 MODULES = {
-    "mtb": {
-        "package": "de.medizininformatikinitiative.kerndatensatz.mtb",
-        "version": "2026.0.0",
-        "module_short": "Mtb",  # For FDPG_PR_ prefix
-        "module_label": "MTB",  # For titles
-    },
-    "proms": {
-        "package": "de.medizininformatikinitiative.kerndatensatz.pros",
-        "version": "2026.0.1",
-        "module_short": "Pro",  # For FDPG_PR_ prefix
-        "module_label": "PRO",  # For titles
-    },
+    "basis":        {"package": "de.medizininformatikinitiative.kerndatensatz.base",        "version": "2026.0.0",          "module_short": "Basis",       "module_label": "Basis"},
+    "labor":        {"package": "de.medizininformatikinitiative.kerndatensatz.laborbefund", "version": "2026.0.1",          "module_short": "Labor",       "module_label": "Labor"},
+    "medikation":   {"package": "de.medizininformatikinitiative.kerndatensatz.medikation",  "version": "2026.0.1",          "module_short": "Medikation",  "module_label": "Medikation"},
+    "biobank":      {"package": "de.medizininformatikinitiative.kerndatensatz.biobank",     "version": "2026.0.1",          "module_short": "Biobank",     "module_label": "Biobank"},
+    "studie":       {"package": "de.medizininformatikinitiative.kerndatensatz.studie",      "version": "2026.0.2",          "module_short": "Studie",      "module_label": "Studie"},
+    "molgen":       {"package": "de.medizininformatikinitiative.kerndatensatz.molgen",      "version": "2026.0.4",          "module_short": "MolGen",      "module_label": "MolGen"},
+    "patho":        {"package": "de.medizininformatikinitiative.kerndatensatz.patho",       "version": "2026.0.1",          "module_short": "Patho",       "module_label": "Patho"},
+    "icu":          {"package": "de.medizininformatikinitiative.kerndatensatz.icu",         "version": "2026.0.2",          "module_short": "ICU",         "module_label": "ICU"},
+    "bildgebung":   {"package": "de.medizininformatikinitiative.kerndatensatz.bildgebung",  "version": "2026.0.0",          "module_short": "Bildgebung",  "module_label": "Bildgebung"},
+    "seltene":      {"package": "de.medizininformatikinitiative.kerndatensatz.seltene",     "version": "2026.0.1",          "module_short": "Seltene",     "module_label": "Seltene"},
+    "onkologie":    {"package": "de.medizininformatikinitiative.kerndatensatz.onkologie",   "version": "2026.0.3",          "module_short": "Onko",        "module_label": "Onko"},
+    "consent":      {"package": "de.medizininformatikinitiative.kerndatensatz.consent",     "version": "2026.0.1-rc-2",     "module_short": "Consent",     "module_label": "Consent"},
+    "dokument":     {"package": "de.medizininformatikinitiative.kerndatensatz.dokument",    "version": "2026.0.1",          "module_short": "Dokument",    "module_label": "Dokument"},
+    "mtb":          {"package": "de.medizininformatikinitiative.kerndatensatz.mtb",         "version": "2026.0.1",          "module_short": "Mtb",         "module_label": "MTB"},
+    "proms":        {"package": "de.medizininformatikinitiative.kerndatensatz.pros",        "version": "2026.3.0",          "module_short": "Pro",         "module_label": "PRO"},
+    "mikrobiologie":{"package": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie","version": "2027.0.0-alpha.2", "module_short": "Mikrobio",    "module_label": "Mikrobio"},
 }
 
 FHIR_CACHE = Path.home() / ".fhir" / "packages"
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 OBLIGATIONS_DIR = PROJECT_ROOT / "input" / "fsh" / "obligations"
 FDPG_CANONICAL = "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations"
+FIELD_CONFIG_FILE = PROJECT_ROOT / "input" / "data" / "field_config.json"
+
+# Infrastructure/metadata elements not eligible for obligations (Styleguide §1).
+METADATA_TOP_ELEMENTS = {
+    "id", "meta", "implicitRules", "language",
+    "text", "contained", "modifierExtension",
+}
 
 
 def extract_translations(ext_obj):
@@ -121,6 +132,74 @@ def _is_fhir_default(text):
     return text in FHIR_DEFAULTS
 
 
+def load_field_config():
+    """Load field_config.json and return per-base-resource pre-select element IDs."""
+    if not FIELD_CONFIG_FILE.exists():
+        return {}
+    with open(FIELD_CONFIG_FILE) as f:
+        cfg = json.load(f)
+    # profiles[<base-url>].recommend.always[].pattern.id → set of element IDs
+    result = {}
+    for base_url, prof in cfg.get("profiles", {}).items():
+        ids = set()
+        for entry in prof.get("recommend", {}).get("always", []):
+            elem_id = entry.get("pattern", {}).get("id")
+            if elem_id:
+                ids.add(elem_id)
+        if ids:
+            result[base_url] = ids
+    return result
+
+
+def get_pre_select_ids(sd, field_config):
+    """Return the set of element IDs that should get pre-select for this profile.
+
+    Walks the baseDefinition chain to find the matching field_config entry
+    (e.g. an MII Condition profile inherits Condition's recommend.always set).
+    """
+    base = sd.get("baseDefinition")
+    while base:
+        if base in field_config:
+            return field_config[base]
+        # Could walk further up by loading the parent SD, but for FHIR base
+        # types (Observation, Condition, …) the URL matches directly.
+        return set()
+    return set()
+
+
+def get_ms_elements_for_obligations(sd):
+    """All MS elements eligible for obligations (top-level + named slices, no metadata).
+
+    Mirrors generate-datenkatalog.py's get_ms_elements logic:
+    - depth <= 2 (top-level + slices on top-level)
+    - depth == 3 if a named slice (e.g. code.coding:icd-10-gm)
+    - excludes id/meta/text/contained/modifierExtension at any depth
+    """
+    elements = []
+    resource_type = sd.get("type", "")
+    for el in sd.get("snapshot", {}).get("element", []):
+        if not el.get("mustSupport"):
+            continue
+        el_id = el.get("id", "")
+        segments = el_id.split(".")
+        depth = len(segments)
+
+        if depth >= 2:
+            top = segments[1].split(":")[0]
+            if top in METADATA_TOP_ELEMENTS:
+                continue
+
+        keep = depth <= 2 or (depth == 3 and ":" in segments[2])
+        if not keep:
+            continue
+
+        fsh_path = element_id_to_fsh_path(el_id, resource_type)
+        if not fsh_path:
+            continue
+        elements.append({"id": el_id, "fsh_path": fsh_path})
+    return elements
+
+
 def get_ms_elements_with_translations(sd):
     """Extract MustSupport elements with their translations from snapshot."""
     elements = []
@@ -153,11 +232,18 @@ def get_ms_elements_with_translations(sd):
 
 
 def name_to_kebab(name):
-    """Convert MII_PR_MTB_Einfache_Variante to mtb-einfache-variante."""
-    # Remove MII_PR_ prefix
-    without_prefix = re.sub(r'^MII_PR_', '', name)
-    # Convert underscores to hyphens and lowercase
-    return without_prefix.replace("_", "-").lower()
+    """Convert MII_PR_MTB_Einfache_Variante or MII_PR_Fall_KontaktGesundheitseinrichtung
+    to mtb-einfache-variante / fall-kontakt-gesundheitseinrichtung.
+
+    Splits on underscores AND camelCase boundaries so filenames stay stable
+    across the historical naming convention. Tolerates the upstream typo
+    `MIIPR_…` (missing underscore between MII and PR).
+    """
+    without_prefix = re.sub(r'^MII_?PR_', '', name)
+    s = without_prefix.replace("_", "-")
+    # Insert hyphen between a lowercase letter and a following uppercase letter (camelCase boundary).
+    s = re.sub(r'([a-z])([A-Z])', r'\1-\2', s)
+    return s.lower()
 
 
 def generate_fdpg_id(parent_name):
@@ -166,8 +252,8 @@ def generate_fdpg_id(parent_name):
 
 
 def generate_fdpg_name(parent_name):
-    """Generate FDPG profile name from parent name (replace MII with FDPG)."""
-    return re.sub(r'^MII_PR_', 'FDPG_PR_', parent_name)
+    """Generate FDPG profile name from parent name (replace MII_PR_ / MIIPR_ with FDPG_PR_)."""
+    return re.sub(r'^MII_?PR_', 'FDPG_PR_', parent_name)
 
 
 def generate_fdpg_title(parent_name, module_label):
@@ -182,7 +268,7 @@ def generate_fdpg_title(parent_name, module_label):
     return f"FDPG PR {module_label} {readable}"
 
 
-def generate_fsh_file(parent_sd, module_config):
+def generate_fsh_file(parent_sd, module_config, field_config=None):
     """Generate complete FSH file content for one profile."""
     parent_name = parent_sd["name"]
     fdpg_name = generate_fdpg_name(parent_name)
@@ -203,6 +289,11 @@ def generate_fsh_file(parent_sd, module_config):
     lines.append(f'Title: "{fdpg_title}"')
     lines.append(f'Description: "FDPG Profil - {parent_name}"')
     lines.append("* insert FDPGMetadata")
+    # Preserve abstract flag from upstream MII parent so FDPG overlay doesn't
+    # accidentally turn an abstract type (e.g. Patho_Base_Observation) into a
+    # concrete profile that researchers could select in the Antragsportal.
+    if parent_sd.get("abstract") is True:
+        lines.append("* ^abstract = true")
 
     # Title translations
     parent_title = parent_sd.get("title", "")
@@ -242,6 +333,18 @@ def generate_fsh_file(parent_sd, module_config):
             if "en-US" in def_trans:
                 lines.append(f"* insert Translation({fsh_path} ^definition, en-US, {escape_fsh_commas(def_trans['en-US'])})")
 
+    # --- Obligations ---
+    obligation_elements = get_ms_elements_for_obligations(parent_sd)
+    pre_select_ids = get_pre_select_ids(parent_sd, field_config or {})
+    if obligation_elements:
+        lines.append("")
+        lines.append("// --- Obligations ---")
+        for el in obligation_elements:
+            fsh_path = el["fsh_path"]
+            lines.append(f"* insert ObligationConsumerDefault({fsh_path})")
+            if el["id"] in pre_select_ids:
+                lines.append(f"* insert ObligationConsumerPreSelect({fsh_path})")
+
     lines.append("")
     return "\n".join(lines), fdpg_id, fdpg_name
 
@@ -255,7 +358,10 @@ def load_profiles_from_package(package_name, version):
 
     profiles = []
     for f in sorted(pkg_dir.iterdir()):
-        if not f.name.startswith("StructureDefinition-") or not f.name.endswith(".json"):
+        # Standard naming + consent module's Profile_MII_*.json variant
+        if not f.name.endswith(".json"):
+            continue
+        if not (f.name.startswith("StructureDefinition-") or f.name.startswith("Profile_MII_")):
             continue
         with open(f) as fh:
             sd = json.load(fh)
@@ -280,7 +386,7 @@ def generate_cps_profile_line(fdpg_id):
     return f"* insert SupportProfile({FDPG_CANONICAL}/StructureDefinition/{fdpg_id})"
 
 
-def process_module(module_name, generate_files=True, print_aliases=False, print_cps=False):
+def process_module(module_name, generate_files=True, print_aliases=False, print_cps=False, field_config=None):
     """Process a module: generate FSH files and/or print aliases/CPS."""
     if module_name not in MODULES:
         print(f"ERROR: Unknown module '{module_name}'")
@@ -292,6 +398,8 @@ def process_module(module_name, generate_files=True, print_aliases=False, print_
     if not profiles:
         print(f"ERROR: No profiles found for {module_name}")
         return False
+    if field_config is None:
+        field_config = load_field_config()
 
     print(f"\n=== Module: {module_name} ({config['module_label']}) ===")
     print(f"  Package: {config['package']}#{config['version']}")
@@ -314,7 +422,7 @@ def process_module(module_name, generate_files=True, print_aliases=False, print_
         resource_type = sd.get("type", "Resource")
 
         # Generate FSH file
-        content, fdpg_id, fdpg_name = generate_fsh_file(sd, config)
+        content, fdpg_id, fdpg_name = generate_fsh_file(sd, config, field_config)
 
         if generate_files:
             filename = f"{fdpg_id}.fsh"

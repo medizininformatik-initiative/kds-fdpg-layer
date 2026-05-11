@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_KRK_Abstand_Circumferelle_Resektionsebene
 Parent: MII_PR_Onko_KRK_Abstand_Circumferelle_Resektionsebene
 Id: fdpg-pr-onko-krk-abstand-circumferelle-resektionsebene
-Title: "FDPG PR Onkologie Abstand Circumferelle Resektionsebene"
-Description: "FDPG Profil - MII PR Onkologie Abstand Circumferelle Resektionsebene"
+Title: "FDPG PR Onko KRK Abstand Circumferelle Resektionsebene"
+Description: "FDPG Profil - MII_PR_Onko_KRK_Abstand_Circumferelle_Resektionsebene"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Abstand zur circumferellen Resektionsebene)
-* insert Translation(^title, en-US, Distance to Circumferential Resection Margin)
+* insert Translation(^title, de-DE, MII PR Onkologie Abstand Circumferelle Resektionsebene)
+* insert Translation(^title, en-US, FDPG PR Onko KRK Abstand Circumferelle Resektionsebene)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Minimaler Abstand Tumorrand circumferell - makroskopisch oder mikroskopisch"
@@ -33,3 +33,14 @@ Description: "FDPG Profil - MII PR Onkologie Abstand Circumferelle Resektionsebe
 * value[x].system ^short = "System that defines coded unit form"
 // Observation.value[x].code
 * value[x].code ^short = "Coded form of the unit"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])

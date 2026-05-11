@@ -1,8 +1,8 @@
 Profile: FDPG_PR_Diagnose_Condition
 Parent: MII_PR_Diagnose_Condition
 Id: fdpg-pr-diagnose-condition
-Title: "FDPG PR Diagnose Condition"
-Description: "FDPG Profil - MII PR Diagnose Condition"
+Title: "FDPG PR Basis Condition"
+Description: "FDPG Profil - MII_PR_Diagnose_Condition"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Diagnose)
 * insert Translation(^title, en-US, Diagnosis)
@@ -123,3 +123,30 @@ Description: "FDPG Profil - MII PR Diagnose Condition"
 * note ^definition = "Zusätzliche Informationen zur Diagnose als Freitext."
 * insert Translation(note ^definition, de-DE, Zusätzliche Informationen zur Diagnose als Freitext.)
 * insert Translation(note ^definition, en-US, Additional information about the diagnosis as free text.)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[ReferenzPrimaerdiagnose])
+* insert ObligationConsumerPreSelect(extension[ReferenzPrimaerdiagnose])
+* insert ObligationConsumerDefault(extension[Feststellungsdatum])
+* insert ObligationConsumerDefault(clinicalStatus)
+* insert ObligationConsumerPreSelect(clinicalStatus)
+* insert ObligationConsumerDefault(verificationStatus)
+* insert ObligationConsumerPreSelect(verificationStatus)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(code.coding[icd10-gm])
+* insert ObligationConsumerDefault(code.coding[alpha-id])
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(code.coding[orphanet])
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.coding[snomed-ct])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(onset[x])
+* insert ObligationConsumerPreSelect(onset[x])
+* insert ObligationConsumerDefault(onset[x][onsetPeriod])
+* insert ObligationConsumerDefault(onset[x][onsetDateTime])
+* insert ObligationConsumerDefault(onset[x][onsetAge])
+* insert ObligationConsumerDefault(recordedDate)
+* insert ObligationConsumerPreSelect(recordedDate)
+* insert ObligationConsumerDefault(note)

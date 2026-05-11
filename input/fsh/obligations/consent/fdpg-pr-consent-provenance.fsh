@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Consent_Provenance
 Parent: MII_PR_Consent_Provenance
 Id: fdpg-pr-consent-provenance
-Title: "FDPG PR Consent - Provenance"
-Description: "FDPG Profil - Profile - MI-I - Consent - Provenance"
+Title: "FDPG PR Consent Provenance"
+Description: "FDPG Profil - MII_PR_Consent_Provenance"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Einwilligungsherkunft)
-* insert Translation(^title, en-US, Consent provenance)
+* insert Translation(^title, de-DE, Profile - MI-I - Consent - Provenance)
+* insert Translation(^title, en-US, FDPG PR Consent Provenance)
 // --- Element Designations ---
 // Provenance.target
 * target ^short = "Target Reference(s) (usually version specific)"
@@ -39,3 +39,11 @@ Description: "FDPG Profil - Profile - MI-I - Consent - Provenance"
 * signature.onBehalfOf ^short = "The party represented"
 // Provenance.signature.data
 * signature.data ^short = "The actual signature content (XML DigSig. JWS, picture, etc.)"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(target)
+* insert ObligationConsumerDefault(recorded)
+* insert ObligationConsumerDefault(agent)
+* insert ObligationConsumerDefault(entity)
+* insert ObligationConsumerDefault(signature)
+* insert ObligationConsumerDefault(signature.extension[where])

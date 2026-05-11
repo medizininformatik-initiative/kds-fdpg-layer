@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Nebenwirkung_Adverse_Event
 Parent: MII_PR_Onko_Nebenwirkung_Adverse_Event
 Id: fdpg-pr-onko-nebenwirkung-adverse-event
-Title: "FDPG PR Onkologie Nebenwirkung von Strahlentherapie und systemische Therapie"
-Description: "FDPG Profil - MII PR Onkologie Nebenwirkung von Strahlentherapie und systemische Therapie"
+Title: "FDPG PR Onko Nebenwirkung Adverse Event"
+Description: "FDPG Profil - MII_PR_Onko_Nebenwirkung_Adverse_Event"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Nebenwirkung von Strahlentherapie und systemischer Therapie)
-* insert Translation(^title, en-US, Adverse Event of Radiation and Systemic Therapy)
+* insert Translation(^title, de-DE, MII PR Onkologie Nebenwirkung von Strahlentherapie und systemische Therapie)
+* insert Translation(^title, en-US, FDPG PR Onko Nebenwirkung Adverse Event)
 // --- Element Designations ---
 // AdverseEvent.event
 * event ^short = "Type of the event itself in relation to the subject"
@@ -34,3 +34,11 @@ Description: "FDPG Profil - MII PR Onkologie Nebenwirkung von Strahlentherapie u
 * suspectEntity ^short = "The suspected agent causing the adverse event"
 // AdverseEvent.suspectEntity.instance
 * suspectEntity.instance ^short = "Refers to the specific entity that caused the adverse event"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(event)
+* insert ObligationConsumerDefault(event.coding[meddra])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(seriousness)
+* insert ObligationConsumerDefault(suspectEntity)

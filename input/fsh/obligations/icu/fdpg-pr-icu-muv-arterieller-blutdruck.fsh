@@ -1,11 +1,11 @@
 Profile: FDPG_PR_ICU_MUV_Arterieller_Blutdruck
 Parent: MII_PR_ICU_MUV_Arterieller_Blutdruck
 Id: fdpg-pr-icu-muv-arterieller-blutdruck
-Title: "FDPG PR ICU Arterieller Blutdruck"
-Description: "FDPG Profil - MII PR ICU Arterieller Blutdruck"
+Title: "FDPG PR ICU MUV Arterieller Blutdruck"
+Description: "FDPG Profil - MII_PR_ICU_MUV_Arterieller_Blutdruck"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Arterieller Blutdruck)
-* insert Translation(^title, en-US, Arterial Blood Pressure)
+* insert Translation(^title, de-DE, MII PR ICU MUV Arterieller Blutdruck)
+* insert Translation(^title, en-US, FDPG PR ICU MUV Arterieller Blutdruck)
 // --- Element Designations ---
 // Observation.category
 * category ^short = "Classification of  type of observation"
@@ -105,3 +105,23 @@ Description: "FDPG Profil - MII PR ICU Arterieller Blutdruck"
 * component[meanBP].value[x] ^short = "Actual component result"
 // Observation.component:meanBP.dataAbsentReason
 * component[meanBP].dataAbsentReason ^short = "Why the component result is missing"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[loinc])
+* insert ObligationConsumerDefault(code.coding[sct])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerDefault(dataAbsentReason)
+* insert ObligationConsumerDefault(interpretation)
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(method)
+* insert ObligationConsumerDefault(device)
+* insert ObligationConsumerDefault(referenceRange)
+* insert ObligationConsumerDefault(component)
+* insert ObligationConsumerDefault(component[SystolicBP])
+* insert ObligationConsumerDefault(component[DiastolicBP])
+* insert ObligationConsumerDefault(component[meanBP])

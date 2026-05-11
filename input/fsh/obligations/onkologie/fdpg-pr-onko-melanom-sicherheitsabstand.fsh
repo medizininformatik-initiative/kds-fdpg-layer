@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_Melanom_Sicherheitsabstand
 Parent: MII_PR_Onko_Melanom_Sicherheitsabstand
 Id: fdpg-pr-onko-melanom-sicherheitsabstand
-Title: "FDPG PR Onkologie Melanom Sicherheitsabstand"
-Description: "FDPG Profil - MII PR Onkologie Melanom Sicherheitsabstand"
+Title: "FDPG PR Onko Melanom Sicherheitsabstand"
+Description: "FDPG Profil - MII_PR_Onko_Melanom_Sicherheitsabstand"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Melanom Sicherheitsabstand)
-* insert Translation(^title, en-US, Melanoma Safety Margin)
+* insert Translation(^title, de-DE, MII PR Onkologie Melanom Sicherheitsabstand)
+* insert Translation(^title, en-US, FDPG PR Onko Melanom Sicherheitsabstand)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Sicherheitsabstand Primärtumor"
@@ -35,3 +35,16 @@ Description: "FDPG Profil - MII PR Onkologie Melanom Sicherheitsabstand"
 * value[x].code ^short = "Coded form of the unit"
 // Observation.dataAbsentReason
 * dataAbsentReason ^short = "Grund für fehlende Messung"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(dataAbsentReason)
+* insert ObligationConsumerPreSelect(dataAbsentReason)

@@ -1,8 +1,8 @@
 Profile: FDPG_PR_Person_Todesursache
 Parent: MII_PR_Person_Todesursache
 Id: fdpg-pr-person-todesursache
-Title: "FDPG PR Person Todesursache"
-Description: "FDPG Profil - MII PR Person Todesursache"
+Title: "FDPG PR Basis Todesursache"
+Description: "FDPG Profil - MII_PR_Person_Todesursache"
 * insert FDPGMetadata
 * insert Translation(^title, de-DE, Todesursache)
 * insert Translation(^title, en-US, Cause of Death)
@@ -60,3 +60,21 @@ Description: "FDPG Profil - MII PR Person Todesursache"
 * note ^definition = "Zusätzliche Informationen zur Todesursache als Freitext."
 * insert Translation(note ^definition, de-DE, Zusätzliche Informationen zur Todesursache als Freitext.)
 * insert Translation(note ^definition, en-US, Additional information about the cause of death as free text.)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(clinicalStatus)
+* insert ObligationConsumerPreSelect(clinicalStatus)
+* insert ObligationConsumerDefault(verificationStatus)
+* insert ObligationConsumerPreSelect(verificationStatus)
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category[todesDiagnose])
+* insert ObligationConsumerDefault(category[todesDiagnose].coding[snomed])
+* insert ObligationConsumerDefault(category[todesDiagnose].coding[loinc])
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(code.coding[icd10-who])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(recordedDate)
+* insert ObligationConsumerPreSelect(recordedDate)
+* insert ObligationConsumerDefault(note)

@@ -1,0 +1,20 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "FDPGObligationCS",
+  "id": "fdpg-obligation-cs",
+  "title": "FDPG Obligation Codes",
+  "description": "FDPG-spezifische Obligation-Codes ergänzend zum FHIR-R5-Standard. Verwendet im `code`-Feld der Obligation-Extension (extensible Binding).",
+  "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-obligation-cs",
+  "concept": [
+    {
+      "code": "pre-select",
+      "display": "Vorauswahl Antragsportal",
+      "definition": "Element wird in der Merkmalselektion des FDPG-Antragsportals standardmäßig vorausgewählt (Checkbox aktiviert). Quelle der Auswahl: field_config.json im fhir-ontology-generator."
+    }
+  ],
+  "experimental": false,
+  "caseSensitive": true,
+  "count": 1
+}

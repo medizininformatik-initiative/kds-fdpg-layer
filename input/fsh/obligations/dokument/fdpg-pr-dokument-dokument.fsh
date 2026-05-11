@@ -2,10 +2,10 @@ Profile: FDPG_PR_Dokument_Dokument
 Parent: MII_PR_Dokument_Dokument
 Id: fdpg-pr-dokument-dokument
 Title: "FDPG PR Dokument Dokument"
-Description: "FDPG Profil - MII PR Dokument Dokument"
+Description: "FDPG Profil - MII_PR_Dokument_Dokument"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Dokument)
-* insert Translation(^title, en-US, Document)
+* insert Translation(^title, de-DE, MII PR Dokument Dokument)
+* insert Translation(^title, en-US, FDPG PR Dokument Dokument)
 // --- Element Designations ---
 // DocumentReference.extension:nlp-processing-status
 * extension[nlp-processing-status] ^short = "NLP Processing Status"
@@ -81,3 +81,27 @@ Description: "FDPG Profil - MII PR Dokument Dokument"
 * context.facilityType ^short = "Art der Einrichtung"
 // DocumentReference.context.practiceSetting
 * context.practiceSetting ^short = "Klinisches Fachgebiet"
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(extension[nlp-processing-status])
+* insert ObligationConsumerDefault(masterIdentifier)
+* insert ObligationConsumerDefault(identifier)
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(docStatus)
+* insert ObligationConsumerDefault(type)
+* insert ObligationConsumerDefault(type.coding[KDL])
+* insert ObligationConsumerDefault(type.coding[LNC])
+* insert ObligationConsumerDefault(type.coding[SCT])
+* insert ObligationConsumerDefault(type.coding[XDS])
+* insert ObligationConsumerDefault(category)
+* insert ObligationConsumerDefault(category.coding[LNC])
+* insert ObligationConsumerDefault(category.coding[SCT])
+* insert ObligationConsumerDefault(category.coding[XDS])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(relatesTo)
+* insert ObligationConsumerDefault(description)
+* insert ObligationConsumerDefault(securityLabel)
+* insert ObligationConsumerDefault(content)
+* insert ObligationConsumerDefault(content[Binaerdaten])
+* insert ObligationConsumerDefault(content[Verweis])
+* insert ObligationConsumerDefault(context)

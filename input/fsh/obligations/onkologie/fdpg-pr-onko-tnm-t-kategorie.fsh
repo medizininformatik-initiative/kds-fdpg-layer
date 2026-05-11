@@ -1,11 +1,11 @@
 Profile: FDPG_PR_Onko_TNM_T_Kategorie
 Parent: MII_PR_Onko_TNM_T_Kategorie
 Id: fdpg-pr-onko-tnm-t-kategorie
-Title: "FDPG PR Onkologie TNM T-Kategorie"
-Description: "FDPG Profil - MII PR Onkologie TNM T-Kategorie"
+Title: "FDPG PR Onko TNM T Kategorie"
+Description: "FDPG Profil - MII_PR_Onko_TNM_T_Kategorie"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, TNM T-Kategorie)
-* insert Translation(^title, en-US, TNM T-Category)
+* insert Translation(^title, de-DE, MII PR Onkologie TNM T-Kategorie)
+* insert Translation(^title, en-US, FDPG PR Onko TNM T Kategorie)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"
@@ -33,3 +33,17 @@ Description: "FDPG Profil - MII PR Onkologie TNM T-Kategorie"
 * insert Translation(method.coding ^short, de-DE, TNM Version)
 * method.coding ^definition = "Gibt an, nach welcher Version des TNM klassifiziert wurde."
 * insert Translation(method.coding ^definition, de-DE, Version nach 8.2 oBDS 2021)
+
+// --- Obligations ---
+* insert ObligationConsumerDefault(status)
+* insert ObligationConsumerDefault(code)
+* insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(code.extension[cpPraefix])
+* insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
+* insert ObligationConsumerDefault(encounter)
+* insert ObligationConsumerDefault(effective[x])
+* insert ObligationConsumerPreSelect(effective[x])
+* insert ObligationConsumerDefault(value[x])
+* insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(method)
