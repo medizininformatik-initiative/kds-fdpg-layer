@@ -4,9 +4,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.molgen](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.molgen/2026.0.4)
 
-#### Anforderung genetischer Test (ServiceRequest)
+#### MII PR MolGen Anforderung genetischer Test (ServiceRequest)
 
-**FDPG Profil:** [FDPG_PR_MolGen_AnforderungGenetischerTest](StructureDefinition-fdpg-pr-molgen-anforderung-genetischer-test.html) · **MII Elternprofil:** MII_PR_MolGen_AnforderungGenetischerTest
+**FDPG Profil:** [FDPG_PR_MolGen_AnforderungGenetischerTest](StructureDefinition-fdpg-pr-mol-gen-anforderung-genetischer-test.html) · **MII Elternprofil:** MII_PR_MolGen_AnforderungGenetischerTest
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -21,9 +21,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `supportingInfo` | Gesundheitszustand | Aktueller Gesundheitszustand; Angabe aktueller Beschwerden oder nachgewiesener Erkrankung - Terminologie: HPO | Unterstützende Informationen | Zusätzliche Informationen die die Anforderung unterstützen |
 | `note` | Bemerkungen | Bemerkungen | Anmerkung | Zusätzliche Anmerkungen oder Anforderungstext |
 
-#### Diagnostische Implikation (Observation)
+#### MII PR MolGen Diagnostische Implikation (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_DiagnostischeImplikation](StructureDefinition-fdpg-pr-molgen-diagnostische-implikation.html) · **MII Elternprofil:** MII_PR_MolGen_DiagnostischeImplikation
+**FDPG Profil:** [FDPG_PR_MolGen_DiagnostischeImplikation](StructureDefinition-fdpg-pr-mol-gen-diagnostische-implikation.html) · **MII Elternprofil:** MII_PR_MolGen_DiagnostischeImplikation
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -42,9 +42,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:predicted-phenotype` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Vorhergesagter Phänotyp | Der mit der Variante assoziierte vorhergesagte Phänotyp oder Erkrankung |
 | `component:mode-of-inheritance` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Vererbungsmodus | Der Vererbungsmodus der assoziierten Erkrankung |
 
-#### Empfohlene Folgemaßnahme (Task)
+#### MII PR MolGen Empfohlene Folgemaßnahme (Task)
 
-**FDPG Profil:** [FDPG_PR_MolGen_EmpfohleneFolgemassnahme](StructureDefinition-fdpg-pr-molgen-empfohlene-folgemassnahme.html) · **MII Elternprofil:** MII_PR_MolGen_EmpfohleneFolgemassnahme
+**FDPG Profil:** [FDPG_PR_MolGen_EmpfohleneFolgemassnahme](StructureDefinition-fdpg-pr-mol-gen-empfohlene-folgemassnahme.html) · **MII Elternprofil:** MII_PR_MolGen_EmpfohleneFolgemassnahme
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -56,9 +56,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonCode` |  |  | Begründung | Kodierte Begründung für die Empfehlung |
 | `reasonReference` |  |  | Referenz zur Begründung | Referenz zur therapeutischen Implikation die diese Empfehlung begründet |
 
-#### Familienanamnese (FamilyMemberHistory)
+#### MII PR MolGen Familienanamnese (FamilyMemberHistory)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Familienanamnese](StructureDefinition-fdpg-pr-molgen-familienanamnese.html) · **MII Elternprofil:** MII_PR_MolGen_Familienanamnese
+**FDPG Profil:** [FDPG_PR_MolGen_Familienanamnese](StructureDefinition-fdpg-pr-mol-gen-familienanamnese.html) · **MII Elternprofil:** MII_PR_MolGen_Familienanamnese
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
@@ -68,12 +68,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `relationship` | Verwandtschaftsbeziehung | Die Art der Verwandtschaft zum Patienten |
 | `sex` | Geschlecht | Das Geschlecht des Familienangehörigen |
 | `reasonCode` | Grund der Erhebung | Der Grund für die Erhebung dieser Familienanamnese |
+| `reasonCode.coding:icd10-gm` | ICD-10-GM Kodierung | Kodierung nach ICD-10-GM |
+| `reasonCode.coding:alpha-id` | Alpha-ID Kodierung | Kodierung nach Alpha-ID |
+| `reasonCode.coding:sct` | SNOMED CT Kodierung | Kodierung nach SNOMED CT |
+| `reasonCode.coding:orphanet` | Orphanet Kodierung | Kodierung nach Orphanet für seltene Erkrankungen |
 | `reasonReference` | Referenz zum Grund | Referenz zu einer Condition die den Grund der Familienanamnese beschreibt |
 | `condition` | Erkrankung | Erkrankung des Familienangehörigen |
 
-#### Genomische Studienanalyse (Procedure)
+#### MII PR MolGen Genomic Study Analysis (Procedure)
 
-**FDPG Profil:** [FDPG_PR_MolGen_GenomicStudyAnalysis](StructureDefinition-fdpg-pr-molgen-genomic-study-analysis.html) · **MII Elternprofil:** MII_PR_MolGen_GenomicStudyAnalysis
+**FDPG Profil:** [FDPG_PR_MolGen_GenomicStudyAnalysis](StructureDefinition-fdpg-pr-mol-gen-genomic-study-analysis.html) · **MII Elternprofil:** MII_PR_MolGen_GenomicStudyAnalysis
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
@@ -87,9 +91,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:regions` | Untersuchte genomische Regionen | Komplexe Extension zur Spezifikation der genomischen Regionen - v.a. Gene aber theoretisch erweiterbar durch z.B. Exonangaben - die in dieser Analyse untersucht wurden. Angabe der untersuchten Regi... |
 | `extension:device` | Verwendetes Analysegerät | Komplexe Extension mit Art des Gerätes und Referenz zum Device wie z.B. Sequenziergerät oder Library Preparation Kit oder bioinformatische Pipelines das für diese Analyse verwendet wurde |
 
-#### Genomische Studie (Procedure)
+#### MII PR MolGen Genomic Study (Procedure)
 
-**FDPG Profil:** [FDPG_PR_MolGen_GenomicStudy](StructureDefinition-fdpg-pr-molgen-genomic-study.html) · **MII Elternprofil:** MII_PR_MolGen_GenomicStudy
+**FDPG Profil:** [FDPG_PR_MolGen_GenomicStudy](StructureDefinition-fdpg-pr-mol-gen-genomic-study.html) · **MII Elternprofil:** MII_PR_MolGen_GenomicStudy
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
@@ -101,9 +105,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `performed[x]` | Zeitpunkt oder Zeitraum der Durchführung | Zeitpunkt oder Zeitraum in dem die genetische Studie durchgeführt wurde |
 | `reasonReference` | Anforderung/Indikation für die genetische Untersuchung | Referenz zur ServiceRequest-Ressource die die Anforderung für diese genetische Studie darstellt |
 
-#### Genotyp (Observation)
+#### MII PR MolGen Genotyp (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Genotyp](StructureDefinition-fdpg-pr-molgen-genotyp.html) · **MII Elternprofil:** MII_PR_MolGen_Genotyp
+**FDPG Profil:** [FDPG_PR_MolGen_Genotyp](StructureDefinition-fdpg-pr-mol-gen-genotyp.html) · **MII Elternprofil:** MII_PR_MolGen_Genotyp
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -114,7 +118,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` |  |  | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Zusammenfassung, Mikrosatelliteninstabilitaet | Zusammenfassung | Ergebniswert | Der Genotyp als kodierter Wert oder Text |
+| `value[x]` | Mutationslast | Somat. Mutationen / Mutationslast | Ergebniswert | Der Genotyp als kodierter Wert oder Text |
 | `derivedFrom` |  |  | Abgeleitet von | Die Varianten oder Haplotypen von denen der Genotyp abgeleitet wurde |
 | `component` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Komponenten | Einzelne Komponenten des Genotyps |
 | `component:conclusion-string` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Schlussfolgerung - Text | Textuelle Zusammenfassung des Genotyps |
@@ -122,9 +126,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:cytogenetic-location` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Zytogenetische Lokalisation | Chromosomale Position in Bandennomenklatur |
 | `component:reference-sequence-assembly` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Referenzgenom-Assembly | Die verwendete Referenzgenom-Version |
 
-#### Medikationsempfehlung (Task)
+#### MII PR MolGen Medikationsempfehlung (Task)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Medikationsempfehlung](StructureDefinition-fdpg-pr-molgen-medikationsempfehlung.html) · **MII Elternprofil:** MII_PR_MolGen_Medikationsempfehlung
+**FDPG Profil:** [FDPG_PR_MolGen_Medikationsempfehlung](StructureDefinition-fdpg-pr-mol-gen-medikationsempfehlung.html) · **MII Elternprofil:** MII_PR_MolGen_Medikationsempfehlung
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -136,9 +140,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonCode` |  |  | Begründung | Kodierte Begründung für die Medikationsempfehlung |
 | `reasonReference` |  |  | Referenz zur Begründung | Referenz zur therapeutischen Implikation die diese Empfehlung begründet |
 
-#### Mikrosatelliteninstabilität (Observation)
+#### MII PR MolGen Mikrosatelliteninstabilität (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Mikrosatelliteninstabilitaet](StructureDefinition-fdpg-pr-molgen-mikrosatelliteninstabilitaet.html) · **MII Elternprofil:** MII_PR_MolGen_Mikrosatelliteninstabilitaet
+**FDPG Profil:** [FDPG_PR_MolGen_Mikrosatelliteninstabilitaet](StructureDefinition-fdpg-pr-mol-gen-mikrosatelliteninstabilitaet.html) · **MII Elternprofil:** MII_PR_MolGen_Mikrosatelliteninstabilitaet
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -149,15 +153,15 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` |  |  | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Zusammenfassung, Mikrosatelliteninstabilitaet | Zusammenfassung | Ergebniswert | Das Ergebnis der MSI-Bestimmung wie z.B. stabil oder instabil |
+| `value[x]` | Mutationslast | Somat. Mutationen / Mutationslast | Ergebniswert | Das Ergebnis der MSI-Bestimmung wie z.B. stabil oder instabil |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Komponenten | Einzelne Komponenten der Beobachtung |
 | `component:gene-studied` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### Molekulare Konsequenz (Observation)
+#### MII PR MolGen Molekulare Konsequenz (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_MolekulareKonsequenz](StructureDefinition-fdpg-pr-molgen-molekulare-konsequenz.html) · **MII Elternprofil:** MII_PR_MolGen_MolekulareKonsequenz
+**FDPG Profil:** [FDPG_PR_MolGen_MolekulareKonsequenz](StructureDefinition-fdpg-pr-mol-gen-molekulare-konsequenz.html) · **MII Elternprofil:** MII_PR_MolGen_MolekulareKonsequenz
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -175,9 +179,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:clinical-significance` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Klinische Signifikanz | Die klinische Signifikanz der Variante |
 | `component:functional-effect` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Funktioneller Effekt | Der funktionelle Effekt der Variante auf das Genprodukt |
 
-#### Molekularer Biomarker (Observation)
+#### MII PR MolGen Molekulare Biomarker (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_MolekularerBiomarker](StructureDefinition-fdpg-pr-molgen-molekularer-biomarker.html) · **MII Elternprofil:** MII_PR_MolGen_MolekularerBiomarker
+**FDPG Profil:** [FDPG_PR_MolGen_MolekularerBiomarker](StructureDefinition-fdpg-pr-mol-gen-molekularer-biomarker.html) · **MII Elternprofil:** MII_PR_MolGen_MolekularerBiomarker
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -192,9 +196,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:gene-studied` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### Molekulargenetischer Befundbericht (DiagnosticReport)
+#### MII PR MolGen Molekulargenetischer Befundbericht (DiagnosticReport)
 
-**FDPG Profil:** [FDPG_PR_MolGen_MolekulargenetischerBefundbericht](StructureDefinition-fdpg-pr-molgen-molekulargenetischer-befundbericht.html) · **MII Elternprofil:** MII_PR_MolGen_MolekulargenetischerBefundbericht
+**FDPG Profil:** [FDPG_PR_MolGen_MolekulargenetischerBefundbericht](StructureDefinition-fdpg-pr-mol-gen-molekulargenetischer-befundbericht.html) · **MII Elternprofil:** MII_PR_MolGen_MolekulargenetischerBefundbericht
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -223,9 +227,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `conclusion` |  |  | Schlussfolgerung | Textuelle Zusammenfassung der Befundergebnisse |
 | `conclusionCode` |  |  | Schlussfolgerungscode | Kodierte Schlussfolgerung des Befundes |
 
-#### Mutationslast (Observation)
+#### MII PR MolGen Mutationslast (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Mutationslast](StructureDefinition-fdpg-pr-molgen-mutationslast.html) · **MII Elternprofil:** MII_PR_MolGen_Mutationslast
+**FDPG Profil:** [FDPG_PR_MolGen_Mutationslast](StructureDefinition-fdpg-pr-mol-gen-mutationslast.html) · **MII Elternprofil:** MII_PR_MolGen_Mutationslast
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -236,16 +240,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` |  |  | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Zusammenfassung, Mikrosatelliteninstabilitaet | Zusammenfassung | Ergebniswert | Der numerische Wert der Mutationslast in Mutationen pro Megabase |
+| `value[x]` | Mutationslast | Somat. Mutationen / Mutationslast | Ergebniswert | Der numerische Wert der Mutationslast in Mutationen pro Megabase |
 | `specimen` |  |  | Probe | Die untersuchte Tumorprobe |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Komponenten | Einzelne Komponenten der Beobachtung |
 | `component:gene-studied` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### Polygener Risiko-Score (RiskAssessment)
+#### MII PR MolGen Polygener Risiko Score (RiskAssessment)
 
-**FDPG Profil:** [FDPG_PR_MolGen_PolygenerRisikoScore](StructureDefinition-fdpg-pr-molgen-polygener-risiko-score.html) · **MII Elternprofil:** MII_PR_MolGen_PolygenerRisikoScore
+**FDPG Profil:** [FDPG_PR_MolGen_PolygenerRisikoScore](StructureDefinition-fdpg-pr-mol-gen-polygener-risiko-score.html) · **MII Elternprofil:** MII_PR_MolGen_PolygenerRisikoScore
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
@@ -258,10 +262,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `condition` | Erkrankung | Die Erkrankung für die das Risiko bewertet wird |
 | `basis` | Grundlage | Die Grundlagen auf denen die Risikobewertung basiert wie z.B. genetische Varianten |
 | `prediction` | Vorhersage | Die vorhergesagten Risiken |
+| `prediction.extension:whenCodeableConcept` | Einflussfaktor | Zusätzlicher Einflussfaktor für die Risikoberechnung |
 
-#### Therapeutische Implikation (Observation)
+#### MII PR MolGen Therapeutische Implikation (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_TherapeutischeImplikation](StructureDefinition-fdpg-pr-molgen-therapeutische-implikation.html) · **MII Elternprofil:** MII_PR_MolGen_TherapeutischeImplikation
+**FDPG Profil:** [FDPG_PR_MolGen_TherapeutischeImplikation](StructureDefinition-fdpg-pr-mol-gen-therapeutische-implikation.html) · **MII Elternprofil:** MII_PR_MolGen_TherapeutischeImplikation
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -282,9 +287,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:medication-assessed` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Bewertete Medikation | Die bewertete Medikation für die therapeutische Empfehlung |
 | `component:therapy-assessed` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Bewertete Therapie | Die bewertete nicht-medikamentöse Therapie |
 
-#### Variante (Observation)
+#### MII PR MolGen Variante (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Variante](StructureDefinition-fdpg-pr-molgen-variante.html) · **MII Elternprofil:** MII_PR_MolGen_Variante
+**FDPG Profil:** [FDPG_PR_MolGen_Variante](StructureDefinition-fdpg-pr-mol-gen-variante.html) · **MII Elternprofil:** MII_PR_MolGen_Variante
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -294,7 +299,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient oder Proband | Der Patient oder die Gruppe auf die sich die Variante bezieht |
 | `effective[x]` |  |  | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | Zusammenfassung, Mikrosatelliteninstabilitaet | Zusammenfassung | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | Mutationslast | Somat. Mutationen / Mutationslast | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Methode | Methode und Referenz zur Methode - beinhaltet alle sequenzbasierenden Analytik-Methoden, während nicht sequenzbasierende Aufarbeitungsmethoden in das Modul Pathologie zuzuordnen sind. | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
@@ -325,4 +330,351 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:dna-region` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | DNA-Regionsname | Ein lesbarer Name für die untersuchte Region. Typischerweise Exon # oder Intron # oder andere. |
 | `component:gene-fusion` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Genfusion | Details zur Genfusion in Blut oder Gewebe mittels molekulargenetischer Methode |
 | `component:detection-limit` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Nachweisgrenze | Die Nachweisgrenze des Laborgeräts |
+
+---
+
+## English Translations
+
+<details>
+<summary>English translations - MII PR MolGen Anforderung genetischer Test</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `authoredOn` | Anforderungsdatum | Datum der Anforderung |
+| `requester` | Requester | Person or organization that made the request. |
+| `reasonCode` | Reason (coded) | Coded reason for the resource. |
+| `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
+| `supportingInfo` | Unterstützende Informationen | Zusätzliche Informationen die die Anforderung unterstützen |
+| `note` | Note | Free-text comment on the resource. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR MolGen Diagnostische Implikation</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `extension:workflow-relatedArtifact` | Extension | FHIR extension. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `component` | Component | Sub-observation component. |
+| `component:conclusion-string` | Component | Sub-observation component. |
+| `component:evidence-level` | Component | Sub-observation component. |
+| `component:clinical-significance` | Component | Sub-observation component. |
+| `component:predicted-phenotype` | Component | Sub-observation component. |
+| `component:mode-of-inheritance` | Component | Sub-observation component. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR MolGen Empfohlene Folgemaßnahme</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `status` | Status | Status of the resource. |
+| `intent` | Intent | Intent of the request: proposal \| plan \| order. |
+| `code` | Code | Coding of the content. |
+| `for` | Patient | Der Patient für den die Maßnahme empfohlen wird |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `reasonCode` | Reason (coded) | Coded reason for the resource. |
+| `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR MolGen Familienanamnese</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `status` | Status | Status of the resource. |
+| `patient` | Patient | The patient that the resource relates to. |
+| `date` | Datum | Datum der Erfassung der Familienanamnese |
+| `relationship` | Verwandtschaftsbeziehung | Die Art der Verwandtschaft zum Patienten |
+| `sex` | Geschlecht | Das Geschlecht des Familienangehörigen |
+| `reasonCode` | Reason (coded) | Coded reason for the resource. |
+| `reasonCode.coding:icd10-gm` | ICD-10-GM | Coding in ICD-10-GM. |
+| `reasonCode.coding:alpha-id` | Alpha-ID | Coding in Alpha-ID. |
+| `reasonCode.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `reasonCode.coding:orphanet` | Orphanet | Coding in Orphanet. |
+| `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
+| `condition` | Erkrankung | Erkrankung des Familienangehörigen |
+
+</details>
+
+<details>
+<summary>English translations - MII PR MolGen Genomic Study Analysis</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `extension:method-type` | Extension | FHIR extension. |
+| `extension:change-type` | Extension | FHIR extension. |
+| `extension:genome-build` | Extension | FHIR extension. |
+| `extension:title` | Extension | FHIR extension. |
+| `extension:focus` | Extension | FHIR extension. |
+| `extension:specimen` | Extension | FHIR extension. |
+| `extension:metrics` | Extension | FHIR extension. |
+| `extension:regions` | Extension | FHIR extension. |
+| `extension:device` | Extension | FHIR extension. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR MolGen Genomic Study</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `extension:genomic-study-analysis` | Extension | FHIR extension. |
+| `status` | Status | Status of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `performed[x]` | Performed | Date or period when the procedure was performed. |
+| `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR MolGen Genotyp</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `component` | Component | Sub-observation component. |
+| `component:conclusion-string` | Component | Sub-observation component. |
+| `component:gene-studied` | Component | Sub-observation component. |
+| `component:cytogenetic-location` | Component | Sub-observation component. |
+| `component:reference-sequence-assembly` | Component | Sub-observation component. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR MolGen Medikationsempfehlung</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `status` | Status | Status of the resource. |
+| `intent` | Intent | Intent of the request: proposal \| plan \| order. |
+| `code` | Code | Coding of the content. |
+| `for` | Patient | Der Patient für den die Medikation empfohlen wird |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `reasonCode` | Reason (coded) | Coded reason for the resource. |
+| `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR MolGen Mikrosatelliteninstabilität</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `component` | Component | Sub-observation component. |
+| `component:gene-studied` | Component | Sub-observation component. |
+| `component:biomarker-category` | Component | Sub-observation component. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR MolGen Molekulare Konsequenz</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `extension:workflow-relatedArtifact` | Extension | FHIR extension. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `component` | Component | Sub-observation component. |
+| `component:conclusion-string` | Component | Sub-observation component. |
+| `component:evidence-level` | Component | Sub-observation component. |
+| `component:clinical-significance` | Component | Sub-observation component. |
+| `component:functional-effect` | Component | Sub-observation component. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR MolGen Molekulare Biomarker</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `component` | Component | Sub-observation component. |
+| `component:gene-studied` | Component | Sub-observation component. |
+| `component:biomarker-category` | Component | Sub-observation component. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR MolGen Molekulargenetischer Befundbericht</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `extension:recommended-action` | Extension | FHIR extension. |
+| `extension:genomic-risk-assessment` | Extension | FHIR extension. |
+| `extension:coded-note` | Extension | FHIR extension. |
+| `extension:supporting-info` | Extension | FHIR extension. |
+| `extension:genomic-study` | Extension | FHIR extension. |
+| `extension:workflow-relatedArtifact` | Extension | FHIR extension. |
+| `status` | Status | Status of the resource. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `issued` | Issued | Date when the resource was issued. |
+| `performer` | Performer | Person or organization that performed the procedure. |
+| `resultsInterpreter` | Befundinterpreter | Die Person oder Organisation die die Ergebnisse interpretiert hat |
+| `specimen` | Specimen | Reference to the specimen. |
+| `result` | Ergebnis | Referenzen zu den einzelnen Beobachtungsergebnissen |
+| `result:diagnostic-implication` | Diagnostische Implikation | Referenz zu diagnostischen Implikationen der genetischen Befunde |
+| `result:therapeutic-implication` | Therapeutische Implikation | Referenz zu therapeutischen Implikationen der genetischen Befunde |
+| `result:variant` | Variante | Referenz zu gefundenen genetischen Varianten |
+| `result:sequence-phase-relation` | Sequenz-Phasen-Beziehung | Referenz zu Sequenz-Phasen-Beziehungen |
+| `result:genotype` | Genotyp | Referenz zu Genotyp-Ergebnissen |
+| `result:haplotype` | Haplotyp | Referenz zu Haplotyp-Ergebnissen |
+| `result:biomarker` | Biomarker | Referenz zu molekularen Biomarkern wie TMB oder MSI |
+| `media` | Medien | Bilder oder andere Medien die zum Bericht gehören |
+| `conclusion` | Conclusion | Clinical conclusion. |
+| `conclusionCode` | Schlussfolgerungscode | Kodierte Schlussfolgerung des Befundes |
+
+</details>
+
+<details>
+<summary>English translations - MII PR MolGen Mutationslast</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `component` | Component | Sub-observation component. |
+| `component:gene-studied` | Component | Sub-observation component. |
+| `component:biomarker-category` | Component | Sub-observation component. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR MolGen Polygener Risiko Score</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `status` | Status | Status of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `occurrence[x]` | Zeitpunkt | Zeitpunkt oder Zeitraum der Risikobewertung |
+| `condition` | Erkrankung | Die Erkrankung für die das Risiko bewertet wird |
+| `basis` | Grundlage | Die Grundlagen auf denen die Risikobewertung basiert wie z.B. genetische Varianten |
+| `prediction` | Vorhersage | Die vorhergesagten Risiken |
+| `prediction.extension:whenCodeableConcept` | Einflussfaktor | Zusätzlicher Einflussfaktor für die Risikoberechnung |
+
+</details>
+
+<details>
+<summary>English translations - MII PR MolGen Therapeutische Implikation</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:variant` | Derived from | Reference to the resource this is derived from. |
+| `component` | Component | Sub-observation component. |
+| `component:conclusion-string` | Component | Sub-observation component. |
+| `component:evidence-level` | Component | Sub-observation component. |
+| `component:therapeutic-implication` | Component | Sub-observation component. |
+| `component:phenotypic-treatment-context` | Component | Sub-observation component. |
+| `component:medication-assessed` | Component | Sub-observation component. |
+| `component:therapy-assessed` | Component | Sub-observation component. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR MolGen Variante</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `device` | Device | Device used to make the observation. |
+| `component:conclusion-string` | Component | Sub-observation component. |
+| `component:gene-studied` | Component | Sub-observation component. |
+| `component:cytogenetic-location` | Component | Sub-observation component. |
+| `component:reference-sequence-assembly` | Component | Sub-observation component. |
+| `component:chromosome-identifier` | Component | Sub-observation component. |
+| `component:representative-coding-hgvs` | Component | Sub-observation component. |
+| `component:genomic-hgvs` | Component | Sub-observation component. |
+| `component:genomic-ref-seq` | Component | Sub-observation component. |
+| `component:representative-transcript-ref-seq` | Component | Sub-observation component. |
+| `component:exact-start-end` | Component | Sub-observation component. |
+| `component:inner-start-end` | Component | Sub-observation component. |
+| `component:outer-start-end` | Component | Sub-observation component. |
+| `component:ref-allele` | Component | Sub-observation component. |
+| `component:alt-allele` | Component | Sub-observation component. |
+| `component:coding-change-type` | Component | Sub-observation component. |
+| `component:genomic-source-class` | Component | Sub-observation component. |
+| `component:sample-allelic-frequency` | Component | Sub-observation component. |
+| `component:allelic-read-depth` | Component | Sub-observation component. |
+| `component:allelic-state` | Component | Sub-observation component. |
+| `component:variant-inheritance` | Component | Sub-observation component. |
+| `component:variation-code` | Component | Sub-observation component. |
+| `component:representative-protein-hgvs` | Component | Sub-observation component. |
+| `component:copy-number` | Component | Sub-observation component. |
+| `component:variant-confidence-status` | Component | Sub-observation component. |
+| `component:dna-region` | Component | Sub-observation component. |
+| `component:gene-fusion` | Component | Sub-observation component. |
+| `component:detection-limit` | Component | Sub-observation component. |
+
+</details>
 

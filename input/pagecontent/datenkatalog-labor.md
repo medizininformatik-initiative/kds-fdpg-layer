@@ -10,15 +10,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `id` |  |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` |  |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `identifier` | Identifikation | Identifikator der Laboranforderung | Identifikator | Kennung/en, unter der/denen diese Laboranforderung bekannt ist. |
 | `identifier:anforderung` | Identifikation | Identifikator der Laboranforderung | Anforderungs-Identifikator | Der eindeutige Identifikator der Laboranforderung. |
 | `status` | Status | Status der Laboranforderung | Status | abgeschlossen |
 | `intent` |  |  | Intention der Anforderung | auftrag |
 | `category` |  |  | Kategorie | Klassifikation als Laborauftrag |
+| `category.coding:laboratory` |  |  | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
 | `code` | Laborparameter | in der Laboruntersuchung analysierter / gemessener Laborparameter | Code | Ein LOINC Code für den Laborparameter bzw. Labortest, der beauftragt wurde. |
 | `subject` |  |  | Subjekt | Subjekt, auf welches sich die Laboranforderung bezieht |
 | `encounter` |  |  | Fall oder Kontakt | Fall oder Kontakt, in dem der Laborauftrag gestellt wurde. |
@@ -31,20 +28,18 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `id` |  |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` |  |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `identifier` | Identifikation | Identifikator des Laborbefunds | Identifikator | Eindeutige Identifikatoren, unter denen dieser Laborbefund geführt wird. |
 | `identifier:befund` | Identifikation | Identifikator des Laborbefunds | Filler-Identifikator | Identifikator, der vom Laborinformationssystem (Filler) vergeben wurde. |
 | `basedOn` |  |  | Basiert auf | Bezug zum Laborauftrag, auf dem dieser Laborbefund basiert. |
 | `status` | Status | vorläufig (noch nicht final validiert, noch Untersuchungen ausstehend, Änderungen sind noch möglich) final (Endbefund, sollte nicht mehr geändert werden.) final korrigiert (nachdem eine finale Vers... | Status | registriert \| teilweise \| vorläufig \| final |
 | `category` |  |  | Kategorie | Klassifikation des Befunds |
-| `category:lab-category` |  |  | Labor-Kategorie | Kategorie-Slice für Laborbefunde |
+| `category:lab-category` |  |  | Kategorie | Kategorisierung der Ressource. |
 | `code` |  |  | Code | LOINC Code zur Identifikation des Befunds als Laborbefund. |
+| `code.coding:loinc-labReport` |  |  | LOINC | Kodierung nach LOINC. |
 | `subject` |  |  | Subjekt | Subjekt, auf welches sich der Laborbefund bezieht |
 | `encounter` |  |  | Fall oder Kontakt | Fall oder Kontakt, in dem der Laborbefund erstellt wurde. |
 | `effective[x]` | KlinischerBezugszeitpunkt | Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird... | Klinisches Bezugsdatum | Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial e.g. Analytkonzentration mutmaßlich der Eigenschaft im Patienten entsprach. |
+| `effective[x].extension:QuelleKlinischesBezugsdatum` | KlinischerBezugszeitpunkt | Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird... | Quelle des klinischen Bezugsdatums | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem der Laborbefund dokumentiert wurde. | Dokumentationsdatum | Zeitpunkt, an dem der Laborbefund dokumentiert wurde. |
 | `performer` |  |  | Ausführende\*r | Verantwortliche Person oder Organisation, die für die Ausstellung des Befunds verantwortlich ist. |
 | `specimen` |  |  | Probenmaterial | Bioproben, auf denen dieser Laborbefund basiert. |
@@ -57,26 +52,23 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `id` |  |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` |  |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `modifierExtension` |  |  | Extensions that cannot be ignored | May be used to represent additional information that is not part of the basic definition of the resource and that modifies the understanding of the element that contains it and/or the understanding... |
-| `modifierExtension:interpretationsbeeinflussendeEigenschaft` |  |  | Interpretationsbeeinflussende interpretationsbeeinflussendeEigenschaft | Beschreibung der interpretationsbeeinflussenden interpretationsbeeinflussendeEigenschaften. |
 | `identifier` | Identifikation | Identifikator der Untersuchung | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Identifikation | Identifikator der Untersuchung | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikation | Identifikator der Untersuchung | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | Status der Laboruntersuchung (durchgeführt, offen, storniert) | Status | abgeschlossen |
 | `category` | Bereich, Gruppe | Laboruntersuchungen werden in diagnostische Fachbereiche gruppiert, z.B. Hämatologie, Mikrobiologie, Pathologie etc. | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
+| `category.coding:loinc-observation` | Bereich, Gruppe | Laboruntersuchungen werden in diagnostische Fachbereiche gruppiert, z.B. Hämatologie, Mikrobiologie, Pathologie etc. | LOINC | Kodierung nach LOINC. |
+| `category.coding:observation-category` | Bereich, Gruppe | Laboruntersuchungen werden in diagnostische Fachbereiche gruppiert, z.B. Hämatologie, Mikrobiologie, Pathologie etc. | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
 | `code` | Code | Code des Laborparameters (LOINC) | Code | LOINC-Code, der den gemessenen Laborparameter bzw. durchgeführten Labortest beschreibt. |
 | `subject` |  |  | Subjekt | Subjekt auf welches sich die Laboruntersuchung bezieht. |
 | `encounter` |  |  | Fall oder Kontakt | Fall oder Kontakt, in dem die Laboruntersuchung durchgeführt wurde. |
 | `effective[x]` | KlinischerBezugszeitpunkt | Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird... | Untersuchungszeitpunkt | Klinischer Bezugszeitpunkt der Laboruntersuchung |
+| `effective[x].extension:QuelleKlinischesBezugsdatum` | KlinischerBezugszeitpunkt | Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird... | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `value[x]:valueCodeableConcept` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `value[x]:valueRange` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `value[x]:valueRatio` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
+| `value[x]:valueQuantity` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Messwert | Wert der Beobachtung. |
+| `value[x]:valueRange` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Messwert | Wert der Beobachtung. |
+| `value[x]:valueRatio` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Messwert | Wert der Beobachtung. |
 | `dataAbsentReason` |  |  | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Codierte Bewertung des Ergebnisses. Wird sowohl für Referenzbereichbewertungen als auch für die Codierung der RAST-Klassen verwendet. | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Kommentar | //type text | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -99,6 +91,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Status | completed |
 | `intent` | Intent | order |
 | `category` | Category | Classification as laboratory order |
+| `category.coding:laboratory` | Observation category | Coding in Observation category. |
 | `code` | Code | A LOINC code for the laboratory parameter or test being ordered. |
 | `subject` | Subject | Subject to whom the laboratory order refers to |
 | `encounter` | Encounter | Encounter during which the laboratory order was placed. |
@@ -117,10 +110,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Based on | Reference to the laboratory order on which this laboratory report is based. |
 | `status` | Status | registered \| partial \| preliminary \| final |
 | `category` | Category | Classification of the report |
+| `category:lab-category` | Category | Categorization of the resource. |
 | `code` | Code | A LOINC code identifying the report as laboratory report. |
+| `code.coding:loinc-labReport` | LOINC | Coding in LOINC. |
 | `subject` | Subject | Subject to whom the laboratory report refers |
 | `encounter` | Encounter | Encounter during which the laboratory report was created. |
 | `effective[x]` | Clinical reference Date | The time when the measured property in the specimen material e.g. analyte concentration is presumed to pertain to the patient. |
+| `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The time when the laboratory report was documented. |
 | `performer` | Performer | Person or organization responsible for issuing the report. |
 | `specimen` | Specimen | Details about the specimen on which this diagnostic report is based. |
@@ -134,16 +130,23 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `modifierExtension:interpretationsbeeinflussendeEigenschaft` | interpretation-influencing specimen property | Description of interpretation-influencing specimen property |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
+| `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
+| `category.coding:observation-category` | Observation category | Coding in Observation category. |
 | `code` | Code | A LOINC code identifying the laboratory test that was performed. |
 | `subject` | Subject | The subject the laboratory test is about. |
 | `encounter` | Encounter | Encounter during which the laboratory test was performed. |
 | `effective[x]` | Effective time | Clinical reference time for the laboratory test. |
+| `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
+| `value[x]:valueQuantity` | Value | Value of the observation. |
+| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
+| `value[x]:valueRange` | Value | Value of the observation. |
+| `value[x]:valueRatio` | Value | Value of the observation. |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |

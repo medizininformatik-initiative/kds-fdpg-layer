@@ -10,19 +10,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `id` |  |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` |  |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `status` | Status | Status der Anforderung | Status | Entwurf \| Aktiv \| Wartend \| Widerrufen \| Abgeschlossen \| Fehlerhafte Eingabe \| Unbekannt |
 | `intent` | Anforderungsabsicht | Absicht in der die Anforderung gestellt worden ist. | Absicht | Vorschlag \| Plan \| Anweisung \| Erstverordnung \| Reflexverordnung \| Füllverordnung \| Beispielverordnung \| Option |
 | `category` | Anforderungsklassifizierung | Klassifizierung der Anfrage | Kategorie | Kategorie der Serviceanforderung |
+| `category.coding:sct` | Anforderungsklassifizierung | Klassifizierung der Anfrage | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `code` | ArtAnfrage | Art der Anfrage | Kode | Kode der Serviceanforderung in LOINC, RadLex oder SNOMED CT |
+| `code.coding:loinc` | ArtAnfrage | Art der Anfrage | LOINC Code | Ein Verweis auf einen von LOINC definierten Code |
+| `code.coding:sct` | ArtAnfrage | Art der Anfrage | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `subject` | Person | Bezug zur Person, für den die Anfoderung besteht. Hier soll auf das MII KDS-Modul Person referenziert werden. | Person | Person, auf die sich die Anforderung bezieht |
 | `encounter` | Versorgungsstellenkontakt | Kontakt einer Versorgungsstelle. Hier soll das MII KDS-Modul Fall verwendet werden | Versorgungsstellenkontakt | Referenz auf den Versorgungsstellenkontakt |
 | `authoredOn` | Zeitpunkt | Zeitpunkt, zu der die Anforderung authorisiert wurde. | Erstellungszeitpunkt | Erstellungszeitpunkt der Anforderung |
 | `requester` | Anforderer | Person, die die Anforderung stellt. | Anforderer | Person, die die Anforderung erstellt |
 | `reasonCode` | Anforderungsgrund | Anforderungsgrund | Anforderungsgrund | kodierter Grund für die Anforderung |
+| `reasonCode.coding:sct` | Anforderungsgrund | Anforderungsgrund | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `reasonReference` | Anforderungsbezug | Anforderungsbezug | Anforderungbezug | Grund, auf den sich die Anforderung bezieht |
 | `supportingInfo` | Zusatzinformation | Zusatzinformation zur jeweiligen Anfoderung | Zusatzinformation | Zusätzliche Informationen zur Anforderung |
 
@@ -32,10 +32,6 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `id` |  |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` |  |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `status` | Status | Status der Behandlungsempfehlung | Status | Entwurf \| Aktiv \| Wartend \| Widerrufen \| Abgeschlossen \| Fehlerhafte Eingabe \| Unbekannt |
 | `intent` | ArtEmpfehlung | Beschreibt die Art und Absicht der Empfehlung. | Absicht | Vorschlag \| Plan \| Anordnung \| Option \| Richtlinie |
 | `description` | FreitextEmpfehlung | Behandlungsempfehlung in Freitextform. | Beschreibung | Freitextbeschreibung der Behandlungsempfehlung |
@@ -48,21 +44,22 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `id` |  |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` |  |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `extension` |  |  | Additional content defined by implementations | May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance appl... |
+| `extension` |  |  | Erweiterung | FHIR-Erweiterung. |
 | `extension:Dokumentationsdatum` |  |  | Dokumentationsdatum | Dokumentationsdatum der Prozedur, falls abweichend vom Durchführungsdatum |
 | `extension:durchfuehrungsabsicht` |  |  | Durchführungsabsicht | therapeutisch \| palliativ \| diagnostisch \| präventiv \| rehabilitativ \| andere |
 | `basedOn` | AnforderndeMassnahme | Anforderung einer Bildgebungsprozedur | Basiert auf | Basiert auf einem Anforderung |
 | `status` | Status | Status der Befundungsprozedur | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` | Kategorie | Kategorisiert die Prozedur | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
+| `category.coding:sct` | Kategorie | Kategorisiert die Prozedur | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `code` | Code | Definiert einen spezifischen Code für die Prozedur nach LOINC | Code | Code aus LOINC |
+| `code.coding:ops` | Code | Definiert einen spezifischen Code für die Prozedur nach LOINC | OPS Code | Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel definierten Code |
+| `code.coding:sct` | Code | Definiert einen spezifischen Code für die Prozedur nach LOINC | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
+| `code.coding:loinc` | Code | Definiert einen spezifischen Code für die Prozedur nach LOINC | LOINC Code | Ein Verweis auf einen von LOINC definierten Code |
 | `subject` | Person | Zu untersuchende Person. Hier soll das MII KDS-Profil Person verwendet werden. | Person | Person, auf die sich die Prozedur bezieht |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | Zeitpunkt | Zeitpunkt an dem die Prozedur durchgeführt wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
+| `bodySite.coding:snomed-ct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 
 #### Bildgebungsstudie (ImagingStudy)
@@ -71,10 +68,6 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `id` |  |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` |  |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `status` | Status | Status der Bildgebungsstudie- Info darüber, ob die Studie gültig, ungültig, zurückgezogen, etc. ist. | Status | Angemeldet \| Verfügbar \| Abgebrochen \| fehlerhafte Eingabe \| Unbekannt |
 | `modality` | Modalitaeten | Set/Liste aller verschiedenen Modalitaeten, die in dieser DICOM-Studie enthalten sind. | Modalität | Modalität der Studie |
 | `subject` | Person | Person, auf die sich die Bildgebungsstudie bezieht. Hier soll das MII KDS-Modul Person referenziert werden. | Person | Person, auf die sich die Studie bezieht |
@@ -95,10 +88,6 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `id` |  |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` |  |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `manufacturer` | Hersteller | Hersteller des Geräts | Hersteller | Hersteller des Aufnahmegeräts |
 | `deviceName` | Geraetename | Name des Geräts | Gerätename | Name und Modell des Aufnahmegeräts |
 
@@ -108,10 +97,6 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `id` |  |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` |  |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `morphology` | Morphologie | Morphologie der Körperstruktur | Morphologie | Morphologie der Körperstruktur |
 | `location` | Lokalisation | Lokalisation der Körperstruktur im Bild. | Lokalisation | Lokalisation der Körperstruktur im Bild |
 | `locationQualifier` | naehereLokalisation | explizite Beschreibung der Lokalisation. | nähere Lokalisation | explizite Beschreibung der Lokalisation |
@@ -123,17 +108,17 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `id` |  |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` |  |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `identifier` |  |  | Identifikator | Ein Identifikator für die Medikationsverabreichung |
 | `partOf` | TeilVon | Teil einer Prozedur oder einer Medikationsgabe | Teil von | Teil einer weiteren Medikationsverabreichung |
 | `status` | Status | Status der Kontrastmittelgabe | Status | in Durchführung \| nicht durchgeführt \| in Wartestellung \| abgeschlossen \| Eingabe fehlerhaft \| abgebrochen \| unbekannt |
 | `category` |  |  | Kategorie | Eine Kategorie, die der Medikationsverabreichung zugeordnet ist. |
 | `medication[x]` | Medikament | Beschreibung des verwendeten Medikament | Medikation | Medikation, die verarbreicht wurde. Code oder Referenz auf Medication-Objekt. |
-| `medication[x]:medicationReference` | Medikament | Beschreibung des verwendeten Medikament | What was administered | Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication ... |
-| `medication[x]:medicationCodeableConcept` | Medikament | Beschreibung des verwendeten Medikament | What was administered | Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication ... |
+| `medication[x]:medicationReference` | Medikament | Beschreibung des verwendeten Medikament | Medikation | Verweis auf das Medikament oder die Medikation. |
+| `medication[x]:medicationCodeableConcept` | Medikament | Beschreibung des verwendeten Medikament | Medikation | Verweis auf das Medikament oder die Medikation. |
+| `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | Medikament | Beschreibung des verwendeten Medikament | PZN Code | Ein Verweis auf einen von der Pharmazentralnummer definierten Code |
+| `medication[x]:medicationCodeableConcept.coding:atcClassDe` | Medikament | Beschreibung des verwendeten Medikament | ATC Code | Ein Verweis auf einen von der deutschen Fassung der Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code |
+| `medication[x]:medicationCodeableConcept.coding:atcClassEn` | Medikament | Beschreibung des verwendeten Medikament | ATC WHO Code | Ein Verweis auf einen von der WHO Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code |
+| `medication[x]:medicationCodeableConcept.coding:UNII` | Medikament | Beschreibung des verwendeten Medikament | Unique Ingredient Identifier | Ein Unique Ingredient Identifier (UNII) aus dem Global Substance Registration System der amerikanischen Food & Drug Administration |
 | `subject` | Person | Person der das Medikament verabreicht wird. Hier soll das MII KDS-Modul Person verwendet werden. | Person | Person, an der sich die untersuchte Körperstruktur befindet |
 | `context` |  |  | Kontext | Fall oder Kontakt, bei dem die Medikation verabreicht wurde. |
 | `effective[x]` | Medikationsdauer | Dauer über die das Medikament verabreicht worden ist. | Zeitpunkt oder Zeitraum | Zeitpunkt oder Zeitraum in dem die Medikation verabreicht wurde. |
@@ -144,6 +129,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `request` |  |  | Verordnung | Verordnung zur Medikationsverabreichung. |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Medikationsverabreichung als Freitext. |
 | `dosage` | Dosierung | Dosierung der Medikation | Dosierung | Details der Medikamentendosierung, wie Dosis, Menge, Applikationsort, Verabreichungsweg, etc. |
+| `dosage.rate[x]:rateRatio` | Dosierung | Dosierung der Medikation | Dose quantity per unit of time | Identifies the speed with which the medication was or will be introduced into the patient. Typically, the rate for an infusion e.g. 100 ml per 1 hour or 100 ml/hr. May also be expressed as a rate p... |
+| `dosage.rate[x]:rateQuantity` | Dosierung | Dosierung der Medikation | A fixed quantity (no comparator) | The comparator is not used on a SimpleQuantity |
 
 #### radiologische Befundungsprozedur (Procedure)
 
@@ -151,20 +138,20 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `id` |  |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` |  |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `extension` |  |  | Additional content defined by implementations | May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance appl... |
+| `extension` |  |  | Erweiterung | FHIR-Erweiterung. |
 | `extension:Dokumentationsdatum` |  |  | Dokumentationsdatum | Dokumentationsdatum der Prozedur, falls abweichend vom Durchführungsdatum |
 | `extension:durchfuehrungsabsicht` |  |  | Durchführungsabsicht | therapeutisch \| palliativ \| diagnostisch \| präventiv \| rehabilitativ \| andere |
 | `status` | Status | Status der Befundungsprozedur | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` | Kategorie | Kategorisiert die Prozedur | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
+| `category.coding:sct` | Kategorie | Kategorisiert die Prozedur | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `code` | Code | Definiert einen spezifischen Code für die Prozedur nach LOINC | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
+| `code.coding:ops` | Code | Definiert einen spezifischen Code für die Prozedur nach LOINC | OPS Code | Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel definierten Code |
+| `code.coding:sct` | Code | Definiert einen spezifischen Code für die Prozedur nach LOINC | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `subject` | Person | Zu untersuchende Person. Hier soll das MII KDS-Profil Person verwendet werden. | Person | Person, auf die sich die Befundungprozedur bezieht |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | Zeitpunkt | Zeitpunkt an dem die Prozedur durchgeführt wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
+| `bodySite.coding:snomed-ct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `report` | Bericht | Referenz auf den Bericht | Bericht | Referenz auf den Bericht |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 
@@ -174,18 +161,17 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `id` |  |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` |  |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `partOf` | TeilEinerBefundungsprozedur | Hier soll auf das MII KDS-Modul Prozedur referenziert werden | Teil von | Teil einer Befundungprozedur |
 | `status` | Status | Status der Beobachtung. | Status | angemeldet \| vorläufig \| endgültig \| geändert \| korrigiert \| abgebrochen \| fehlerhafte Eingabe \| unbekannt |
 | `category` | Beobachtungsklassifizierung | Klassifiziert eine Beobachtung | Kategorie | Klassifikation in diagnostischen Fachbereich und Gruppe |
+| `category.coding:loinc` | Beobachtungsklassifizierung | Klassifiziert eine Beobachtung | LOINC Code | Ein Verweis auf einen von LOINC definierten Code |
 | `code` | Beobachtungstyp | Typ der Beobachtung. | Code | Ein Code für die zu befundende Beoabchtung |
+| `code.coding:sct` | Beobachtungstyp | Typ der Beobachtung. | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `subject` | Person | Person, auf die sich die Beobachtung bezieht. Hier soll das MII KDS-Modul Person verwendet werden. | Person | Person, auf die sich die Beobachtung bezieht |
 | `issued` | Beobachtungszeitpunkt | Zeitpunkt an dem die Beobachtung gemacht wird. | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde |
 | `value[x]` | Beschreibung | Detaillierte Beschreibung der Beobachtung mit value[x]. | Messwert | Wert der Analyse |
 | `bodySite` | Koerperregion | Codierte Körperregion der Beobachtung | Anatomie | betrachtete Anatomie der Beobachtung |
+| `bodySite.extension:bodyStructure` | Koerperregion | Codierte Körperregion der Beobachtung | Körperstruktur | Referenz auf eine Körperstruktur |
 | `hasMember` | WeitereBeobachtung | Weitere Beobachtung(en) als Referenz auf weitere Observation(s). | weitere Beobachtungen | Referenzierung weiterer Beobachtungen |
 | `derivedFrom` |  |  | abgeleitet | Abgeleitet von ImagingStudy, ect. |
 | `component` | ErweiterteBeschreibung | Kann mehrere Beschreibungen strukturiert abbilden. | Bestandteile | detailierte Bestandteile der Beobachtung |
@@ -196,25 +182,28 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `id` |  |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` |  |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `extension:supportingInfo` |  |  | Zusatzinformation | Zusatzinformation zum Befundbericht |
 | `basedOn` | AnforderndeMassnahme | Basiert auf einer ServiceRequest-Anfrage. | Anforderung | Anforderung, die den Befundbericht ausgelöst hat |
 | `status` | Status | Status des Befundberichts. | Status | angemeldet \| unvollständig \| vorläufig \| endgültig \| geändert \| korrigiert \| angefügt \| abgebrochen \| fehlerhafte Eingabe \| unbekannt |
 | `category` | Kategorie | Kategorisiert die Untersuchungsart | Kategorie | Kategorie des Befundberichts |
+| `category.coding:loinc` | Kategorie | Kategorisiert die Untersuchungsart | LOINC Code | Ein Verweis auf einen von LOINC definierten Code |
+| `category.coding:diagnostic-service-sections` | Kategorie | Kategorisiert die Untersuchungsart | Diagnostische Serviceabteilung Code | Ein Verweis auf einen von HL7 International definierten Code |
+| `category.coding:sct` | Kategorie | Kategorisiert die Untersuchungsart | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `code` | Code | Festgelegter Code des Befundberichts. Hier Radiologischer Befund | Code | Code des Befundberichts |
+| `code.coding:sct` | Code | Festgelegter Code des Befundberichts. Hier Radiologischer Befund | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
+| `code.coding:loinc` | Code | Festgelegter Code des Befundberichts. Hier Radiologischer Befund | LOINC Code | Ein Verweis auf einen von LOINC definierten Code |
 | `subject` | Person | Die Person, für die der Befundbericht erstellt wurde. Hier sollte das MII KDS-Modul Person referenziert werden | Person | Person, auf die sich die Befundbericht bezieht |
 | `encounter` | Fall | Referenz über Fall auf den Versorgungsstellenkontakt. Hier soll das MII KDS-Modul Fall in Stufe 3 referenziert werden | Versorgungssstellenkontakt | Fall-Referenz auf den Versorgungssstellenkontakt |
 | `effective[x]` | Zeitpunkt | Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht. | Erstellungsdatum | Zeitpunkt der Erstellung |
-| `effective[x]:effectiveDateTime` | Zeitpunkt | Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht. | Clinically relevant time/time-period for report | The time or time-period the observed values are related to. When the subject of the report is a patient, this is usually either the time of the procedure or of specimen collection(s), but very ofte... |
-| `effective[x]:effectivePeriod` | Zeitpunkt | Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht. | Clinically relevant time/time-period for report | The time or time-period the observed values are related to. When the subject of the report is a patient, this is usually either the time of the procedure or of specimen collection(s), but very ofte... |
+| `effective[x]:effectiveDateTime` | Zeitpunkt | Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `effective[x]:effectivePeriod` | Zeitpunkt | Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `issued` | ZeitpunktErstellung | Zeitpunkt der Erstellung des Berichts. | Erstellungszeitpunkt | Zeit an der der Bericht erstellt wurde |
 | `result` | Beobachtung | Referenz auf die generische Beobachtung. | Ergebnis | Ergebnis einer Beobachtung |
 | `imagingStudy` |  |  | Bildgebungsstudie | Studie, die die vollständige Bildgebung umfasst |
 | `conclusion` | InterpretationBeobachtung | Freitextinterpretation der Beobachtung. | Fazit | Fazit zur aktuellen Befundung |
 | `conclusionCode` | StrukturierteInterpretation | Strukturierte Interpretation der Beobachtung. | Strukturiertes Fazit | Fazit, welches strukturiert über Codes dargestellt wird |
+| `conclusionCode.coding:icd10-gm` | StrukturierteInterpretation | Strukturierte Interpretation der Beobachtung. | ICD-10-GM Code | Ein Verweis auf einen vom Bundesinstitut für Arzneimittel und Medizinprodukte definierten Code |
+| `conclusionCode.coding:sct` | StrukturierteInterpretation | Strukturierte Interpretation der Beobachtung. | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `presentedForm` | Dokumentenanhang | Anhang der Dokumente und Bilder. | Anhang | zusätzlicher wichtiger Anhang |
 
 #### Befundbericht semistrukturiert (Composition)
@@ -223,12 +212,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `id` |  |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` |  |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `status` | Status | Status des semistrukturierten Befundberichts. | Status | vorläufig \| engültig \| geändert \| fehlerhafte Eingabe |
 | `type` | Typ | bestimmte Dokumentenart in LOINC codiert. | Kompositionstyp | Typ der Komposition |
+| `type.coding:loinc` | Typ | bestimmte Dokumentenart in LOINC codiert. | LOINC Code | Ein Verweis auf einen von LOINC definierten Code |
 | `subject` | Person | Person, auf die sich das Dokument bezieht. Hier sollte das MII KDS-Profil Person referenziert werden. | Person | Person, auf die sich die Komposition bezieht |
 | `date` | DatumUhrzeit | Datum und Uhrzeit der Bearbeitung | Erstellungsdatum | Zeitpunkt der Erstellung |
 | `author` | Autor | Referenz auf den Autor der Beschreibung. | Autor | Autor der Komposition |
@@ -247,12 +233,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | status | draft \| active \| on-hold \| revoked \| completed \| entered-in-error \| unknown |
 | `intent` | intent | proposal \| plan \| directive \| original-order \| reflex-order \| filler-order \| instance-order \| option |
 | `category` | category | category of this service request |
+| `category.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
 | `code` | code | code of this service request in LOINC, RadLex or SNOMED CT |
+| `code.coding:loinc` | LOINC code | A reference to a code defined by LOINC |
+| `code.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
 | `subject` | person | person, which this service request is about |
 | `encounter` | encounter | reference on the encounter |
 | `authoredOn` | time of creation | time of creation of this service request |
 | `requester` | requester | person, who created this service request |
 | `reasonCode` | reason | coded reason for this service request |
+| `reasonCode.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
 | `reasonReference` | reason reference | reference to the reason of this service request |
 | `supportingInfo` | additional information | additional information on this service request |
 
@@ -276,16 +266,22 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
+| `extension` | Extension | FHIR extension. |
 | `extension:Dokumentationsdatum` | Recorded date | The date the procedure was documented, if different from the performed date |
 | `extension:durchfuehrungsabsicht` | Intention | therapeutic \| palliative \| diagnostic \| preventive \| rehabilitative \| other |
 | `basedOn` | based on | based on an service request |
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
+| `category.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
 | `code` | Code | Code from LOINC |
+| `code.coding:ops` | OPS code | A reference to a code defined by the German Procedure Classification OPS |
+| `code.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `code.coding:loinc` | LOINC code | A reference to a code defined by LOINC |
 | `subject` | person | person, which this procedure is about |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
+| `bodySite.coding:snomed-ct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
 | `note` | Note | Additional information about the procedure as free text. |
 
 </details>
@@ -343,6 +339,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | status | in-progress \| not-done \| on-hold \| completed \| entered-in-error \| stopped \| unknown |
 | `category` | Category | A category assigned to the medication administration. |
 | `medication[x]` | medication | The medication that was administered. Code or a reference to a medication resource. |
+| `medication[x]:medicationReference` | Medication | Reference to the medication. |
+| `medication[x]:medicationCodeableConcept` | Medication | Reference to the medication. |
+| `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | PZN code | A reference to a code defined by Pharmazentralnummer |
+| `medication[x]:medicationCodeableConcept.coding:atcClassDe` | ATC code | A reference to a code defined by the German edition of the Anatomical Therapeutic Chemical classification system |
+| `medication[x]:medicationCodeableConcept.coding:atcClassEn` | ATC WHO code | A reference to a code defined by the WHO edition of the Anatomical Therapeutic Chemical classification system |
+| `medication[x]:medicationCodeableConcept.coding:UNII` | Unique Ingredient Identifier | A Unique Ingredient Identifier (UNII) from the american Food & Drug Administration's Global Substance Registration System |
 | `subject` | intent | person, who contains the described body structure |
 | `context` | Context | Encounter or episode of care during which the medication was administered. |
 | `effective[x]` | Date or period | The date or time period over which the medication was administered. |
@@ -353,6 +355,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `request` | Request | Request administration performed against. |
 | `note` | Note | Additional information about the medication administration as free text. |
 | `dosage` | Dosage | dose of the medication administration. |
+| `dosage.rate[x]:rateRatio` | Dose quantity per unit of time | Identifies the speed with which the medication was or will be introduced into the patient. Typically, the rate for an infusion e.g. 100 ml per 1 hour or 100 ml/hr. May also be expressed as a rate p... |
+| `dosage.rate[x]:rateQuantity` | A fixed quantity (no comparator) | The comparator is not used on a SimpleQuantity |
 
 </details>
 
@@ -361,15 +365,20 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
+| `extension` | Extension | FHIR extension. |
 | `extension:Dokumentationsdatum` | Recorded date | The date the procedure was documented, if different from the performed date |
 | `extension:durchfuehrungsabsicht` | Intention | therapeutic \| palliative \| diagnostic \| preventive \| rehabilitative \| other |
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
+| `category.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
 | `code` | Code | Code from OPS - Operationen- und Prozedurenschlüssel, SNOMED CT or other. |
+| `code.coding:ops` | OPS code | A reference to a code defined by the German Procedure Classification OPS |
+| `code.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
 | `subject` | person | person, which this read procedure is about |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
+| `bodySite.coding:snomed-ct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
 | `report` | report | reference on the report |
 | `note` | Note | Additional information about the procedure as free text. |
 
@@ -383,11 +392,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | part of | part of a read procedure |
 | `status` | status | registered \| preliminary \| final \| amended \| corrected \| cancelled \| entered-in-error \| unknown |
 | `category` | Category | Classification of the diagnostic service section |
+| `category.coding:loinc` | LOINC code | A reference to a code defined by LOINC |
 | `code` | Code | A code identifying the inspected observation |
+| `code.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
 | `subject` | person | person, which this observation is about |
 | `issued` | Issued | The point in time when the laboratory result was documented |
 | `value[x]` | Value | Value of the analysis |
 | `bodySite` | body site | inspected body site in this observation |
+| `bodySite.extension:bodyStructure` | body structure | reference on a body structure |
 | `hasMember` | additional observation | reference on additional observations |
 | `derivedFrom` | derived from | derived from an imagingStud, etc. |
 | `component` | components | detailed components of this observation |
@@ -403,15 +415,24 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | request | request, which triggered the report |
 | `status` | status | registered \| partial \| preliminary \| final \| amended \| corrected \| appended \| cancelled \| entered-in-error \| unknown |
 | `category` | category | category of the diagnostic report |
+| `category.coding:loinc` | LOINC code | A reference to a code defined by LOINC |
+| `category.coding:diagnostic-service-sections` | Diagnostic-service-section code | A reference to a code defined by HL7 International |
+| `category.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
 | `code` | code | code of the diagnostic report |
+| `code.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `code.coding:loinc` | LOINC code | A reference to a code defined by LOINC |
 | `subject` | person | person, which this report is about |
 | `encounter` | Encounter | encounter reference |
 | `effective[x]` | effective[x] | date of creation |
+| `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
+| `effective[x]:effectivePeriod` | Effective | Date or period the observation refers to. |
 | `issued` | time of creation | timestamp of creation of the report |
 | `result` | result | result of an observation |
 | `imagingStudy` | imaging study | study with all images |
 | `conclusion` | conclusion | conclusion of the actual report |
 | `conclusionCode` | structured conclusion | conclusion presented with structured codes |
+| `conclusionCode.coding:icd10-gm` | ICD-10-GM code | A reference to a code defined by the german Federal Institute for Drugs and Medical Devices |
+| `conclusionCode.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
 | `presentedForm` | Attachment | additional attachment to the report |
 
 </details>
@@ -423,6 +444,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `status` | status | preliminary \| final \| amended \| entered-in-error |
 | `type` | compositiontype | type of the composition |
+| `type.coding:loinc` | LOINC code | A reference to a code defined by LOINC |
 | `subject` | person | person, which this composition is about |
 | `date` | date | date of creation |
 | `author` | author | author of the composition |

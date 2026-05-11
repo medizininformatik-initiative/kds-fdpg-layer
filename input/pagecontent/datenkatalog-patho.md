@@ -4,17 +4,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.patho](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.patho/2026.0.1)
 
-#### MII PR Patho Aktive Problemliste (List)
+#### MII PR Patho Active Problems List (List)
 
 **FDPG Profil:** [FDPG_PR_Patho_Active_Problems_List](StructureDefinition-fdpg-pr-patho-active-problems-list.html) · **MII Elternprofil:** MII_PR_Patho_Active_Problems_List
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `status` | current \| retired \| entered-in-error | Indicates the current state of this list. |
+| `status` | Status | Status der Ressource. |
 | `mode` | working \| snapshot \| changes | How this list was prepared - whether it is a working list that is suitable for being maintained on an ongoing basis, or if it represents a snapshot of a list of items from another source, or whethe... |
-| `code` | What the purpose of this list is | This code defines the purpose of the list - why it was created. |
-| `subject` | If all resources have the same subject | The common subject (or patient) of the resources that are in the list if there is one. |
+| `code` | Code | Kodierung des Inhalts. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `entry` | Entries in the list | Entries in this list. |
 
 #### MII PR Patho Additional Specified Grouper (Observation)
@@ -23,25 +22,23 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `text` | Text | Narrative Darstellung |
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `basedOn` | Fulfills plan, proposal or order | A plan, proposal or order that is fulfilled in whole or in part by this event. For example, a MedicationRequest may require a patient to have laboratory test performed before it is dispensed. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `bodySite.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Einzelbeobachtungen | Referenz zu Einzelbeobachtungen |
-| `derivedFrom` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
 
 #### MII PR Patho Angefügtes Bild (Media)
 
@@ -49,9 +46,6 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `text` | Text summary of the resource, for human interpretation | A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is... |
 | `partOf` | Teil von | Verweis auf übergeordnetes Medium |
 | `status` | Status | Status des Mediums |
 | `type` | Typ | Typ des Mediums |
@@ -59,29 +53,28 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Gegenstand | Verweis auf die abgebildete Probe |
 | `content` | Inhalt | Daten des Bildes |
 
-#### MII PR Patho Basisbeobachtung (Observation)
+#### MII PR Patho Base Observation (Observation)
 
 **FDPG Profil:** [FDPG_PR_Patho_Base_Observation](StructureDefinition-fdpg-pr-patho-base-observation.html) · **MII Elternprofil:** MII_PR_Patho_Base_Observation
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `basedOn` | Fulfills plan, proposal or order | A plan, proposal or order that is fulfilled in whole or in part by this event. For example, a MedicationRequest may require a patient to have laboratory test performed before it is dispensed. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `bodySite.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
-| `derivedFrom` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
 
 #### MII PR Patho Bundle (Bundle)
 
@@ -89,8 +82,6 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | serverseitige, interne ID des Datensatzes | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `identifier` | Identifikator | Eindeutiger Identifikator des Bundles |
 | `type` | Art des Bundles | festgelegt auf den Wert document |
 | `timestamp` | Zeitstempel | Erstellungszeitpunkt des Bundles |
@@ -110,16 +101,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | serverseitige, interne ID des Datensatzes | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `text` | Header-Informationen | A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is... |
 | `extension:document-version` | Dokumentversion | Versionsnummer des Dokuments |
 | `identifier` | Identifikator | Eindeutiger Identifikator |
-| `status` | Status des Dokumentes | The workflow/clinical status of this composition. The status is a marker for the clinical standing of the document. |
-| `type` | Dokumenttyp | Specifies the particular kind of composition (e.g. History and Physical, Discharge Summary, Progress Note). This usually equates to the purpose of making the composition. |
-| `category` | Dokument-Kategorie | A categorization for the type of the composition - helps for indexing and searching. This may be implied by or derived from the code specified in the Composition Type. |
-| `subject` | Patientenbezug | Who or what the composition is about. The composition can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a ... |
-| `encounter` | Aufenthaltsbezug | Describes the clinical encounter or type of care this documentation is associated with. |
+| `status` | Status | Status der Ressource. |
+| `type` | Typ | Typ oder Art der Ressource. |
+| `type.coding:KDL` | KDL | Kodierung nach KDL. |
+| `type.coding:XDS` | IHE XDS Type Code | Kodierung nach IHE XDS Type Code. |
+| `type.coding:sct` | SNOMED CT Typ | SNOMED CT Kodierung für Dokumenttyp |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:LOINC` | LOINC | Kodierung nach LOINC. |
+| `category.coding:IHE` | IHE XDS Class Code | Kodierung nach IHE XDS Class Code. |
+| `category.coding:sct` | SNOMED CT Kategorie | SNOMED CT Kodierung für Dokumentkategorie |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
 | `date` | Dokumentendatum | The composition editing time, when the composition was last logically changed by the author. |
 | `author` | Author can only be of type Practitioner or Organization | Identifies who is responsible for the information in the composition, not necessarily who typed it in. |
 | `title` | Dokumentenbezeichnung | Official human-readable label for the composition. |
@@ -128,6 +122,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `attester:content-validator` | Inhaltssprüfer | Inhaltliche Prüfung des Berichts |
 | `custodian` | Verwalter | Verwaltende Organisation |
 | `relatesTo` | Bezieht sich auf | Beziehung zu anderen Dokumenten z.B. Vor- Zusatz- und/oder Korrekturbefunde |
+| `relatesTo.target[x]:targetReference` | Target of the relationship | The target composition/document of this relationship. |
 | `event` | Ereignis | Referenz auf den auslösenden Untersuchungsauftrag |
 | `section` | Kapitel | The root of the sections that make up the composition. |
 | `section:patho-diagnostic-report` | Pathologie-Diagnostikbericht | Pathologie-Diagnostikbericht |
@@ -138,26 +133,24 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `text` | Text | Narrative Darstellung |
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `basedOn` | Fulfills plan, proposal or order | A plan, proposal or order that is fulfilled in whole or in part by this event. For example, a MedicationRequest may require a patient to have laboratory test performed before it is dispensed. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `note` | Notiz | Zusätzliche Notizen |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `bodySite.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Einzelbeobachtungen | Referenz zu Einzelbeobachtungen |
-| `derivedFrom` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
 | `derivedFrom:grouper-observation` | Gruppierte Beobachtung | Referenz zu gruppierten Beobachtungen |
 | `derivedFrom:questionnaire-response` | Fragebogen-Antwort | Referenz zu Fragebogen-Antworten |
 
@@ -167,37 +160,35 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `identifier` | Identifikator | Eindeutiger Identifikator |
 | `basedOn` | Untersuchungsauftrag | Verweis auf den Untersuchungsauftrag |
 | `status` | Status | Status der Einzelbeobachtung |
 | `category` | Kategorie | Klassifikation der Art der Einzelbeobachtung |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
 | `category:section-type` | Beobachtungsberichtsabschnitt | Typ des Beobachtungsberichtsabschnitts |
 | `code` | Code | Art der durchgeführten Einzelbeobachtung |
 | `subject` | Patient | Referenz auf zugehöhrigen Patient |
 | `effective[x]` | Befundzeit | Zeitpunkt der Einzelbeobachtung |
 | `value[x]` | Wert | Wert der Beobachtung |
 | `bodySite` | Körperstelle | Anatomische Stelle der Einzelbeobachtung |
+| `bodySite.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `method` | Methode | Untersuchungs- oder Bearbeitungsmethode |
 | `specimen` | Probe | Referenz zur untersuchten Probe |
 | `hasMember` | Zugehöhrige Einzelbeobachtung | Zum Untersuchungs-/Beobachtungspanel zugehörige Beobachtung / QuestionnaireResponse |
 | `derivedFrom` | Abgeleitet von | Referenz auf eine Messung / ein Bild / eine QuestionnaireResponse / ein Dokument von dem die Beobachtung abgeleitet wurde |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
 
-#### MII PR Patho Anamnese der aktuellen Erkrankung (List)
+#### MII PR Patho History Of Present Illness (List)
 
 **FDPG Profil:** [FDPG_PR_Patho_History_Of_Present_Illness](StructureDefinition-fdpg-pr-patho-history-of-present-illness.html) · **MII Elternprofil:** MII_PR_Patho_History_Of_Present_Illness
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `status` | current \| retired \| entered-in-error | Indicates the current state of this list. |
+| `status` | Status | Status der Ressource. |
 | `mode` | working \| snapshot \| changes | How this list was prepared - whether it is a working list that is suitable for being maintained on an ongoing basis, or if it represents a snapshot of a list of items from another source, or whethe... |
-| `code` | What the purpose of this list is | This code defines the purpose of the list - why it was created. |
-| `subject` | If all resources have the same subject | The common subject (or patient) of the resources that are in the list if there is one. |
+| `code` | Code | Kodierung des Inhalts. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `entry` | Entries in the list | Entries in this list. |
 
 #### MII PR Patho Intraoperative Grouper (Observation)
@@ -206,25 +197,23 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `text` | Text | Narrative Darstellung |
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `basedOn` | Fulfills plan, proposal or order | A plan, proposal or order that is fulfilled in whole or in part by this event. For example, a MedicationRequest may require a patient to have laboratory test performed before it is dispensed. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `bodySite.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Einzelbeobachtungen | Referenz zu Einzelbeobachtungen |
-| `derivedFrom` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
 
 #### MII PR Patho Macroscopic Grouper (Observation)
 
@@ -232,25 +221,23 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `text` | Text | Narrative Darstellung |
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `basedOn` | Fulfills plan, proposal or order | A plan, proposal or order that is fulfilled in whole or in part by this event. For example, a MedicationRequest may require a patient to have laboratory test performed before it is dispensed. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `bodySite.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Einzelbeobachtungen | Referenz zu Einzelbeobachtungen |
-| `derivedFrom` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
 
 #### MII PR Patho Microscopic Grouper (Observation)
 
@@ -258,37 +245,34 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `text` | Text | Narrative Darstellung |
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `basedOn` | Fulfills plan, proposal or order | A plan, proposal or order that is fulfilled in whole or in part by this event. For example, a MedicationRequest may require a patient to have laboratory test performed before it is dispensed. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `bodySite.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Einzelbeobachtungen | Referenz zu Einzelbeobachtungen |
-| `derivedFrom` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
 
-#### MII PR Patho Problemlisteneintrag (Condition)
+#### MII PR Patho Problem List Item (Condition)
 
 **FDPG Profil:** [FDPG_PR_Patho_Problem_List_Item](StructureDefinition-fdpg-pr-patho-problem-list-item.html) · **MII Elternprofil:** MII_PR_Patho_Problem_List_Item
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `category` | problem-list-item \| encounter-diagnosis | A category assigned to the condition. |
-| `category:problem-list-item` | problem-list-item \| encounter-diagnosis | A category assigned to the condition. |
-| `code` | Identification of the condition, problem or diagnosis | Identification of the condition, problem or diagnosis. |
-| `subject` | Who has the condition? | Indicates the patient or group who the condition record is associated with. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:problem-list-item` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 
 #### MII PR Patho Bericht (DiagnosticReport)
 
@@ -296,16 +280,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `text` | Text summary of the resource, for human interpretation | A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is... |
 | `extension:related-report` | Verwandter Bericht | Verweis auf Vorbefunde |
-| `identifier` | Business identifier for report | Identifiers assigned to this report by the performer or other systems. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `identifier:Set-ID` | Set-ID | Befundnummer oder Eingangsnummer des Befundes |
 | `basedOn` | Untersuchungsauftrag | Verweis auf den zugehörigen Untersuchungsauftrag |
 | `status` | Status | Status des Befundes |
 | `category` | Kategorie | Kategorisierung des Befundes |
 | `code` | Code | Code des Pathologie-Befundes |
+| `code.coding:pathology-report` | Pathologie-Befund Code | Spezifischer Code für Pathologie-Befunde |
 | `subject` | Patient | Verweis auf den Patienten |
 | `encounter` | Fall | Verweis auf den Fall |
 | `effective[x]` | Dokumentationsdatum | Zeitpunkt der Befunderstellung |
@@ -322,31 +304,29 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `conclusionCode` | Schlussfolgerungscode | Kodierung für abschließende diagnostische Schlussfolgerung |
 | `presentedForm` | Menschenlesbare Form | PDF-Dokument |
 
-#### MII PR Patho Abschnittsgruppierung (Observation)
+#### MII PR Patho Section Grouper (Observation)
 
 **FDPG Profil:** [FDPG_PR_Patho_Section_Grouper](StructureDefinition-fdpg-pr-patho-section-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Section_Grouper
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `text` | Text summary of the resource, for human interpretation | A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is... |
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `basedOn` | Fulfills plan, proposal or order | A plan, proposal or order that is fulfilled in whole or in part by this event. For example, a MedicationRequest may require a patient to have laboratory test performed before it is dispensed. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `bodySite.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
-| `derivedFrom` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
 
 #### MII PR Patho Untersuchungsauftrag (ServiceRequest)
 
@@ -354,8 +334,6 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `identifier` | Identifikator | Eindeutiger Identifikator des Auftrags |
 | `identifier:Placer-ID` | Auftraggeber-ID | Identifikator des Auftraggebers |
 | `identifier:Filler-ID` | Auftragnehmer-ID | Identifikator des Auftragnehmers |
@@ -382,25 +360,25 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `text` | Text summary of the resource, for human interpretation | A human-readable narrative that contains a summary of the resource and can be used to represent the content of the resource to a human. The narrative need not encode all the structured data, but is... |
-| `extension:probenebene` | MII EX Biobank Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
+| `extension:probenebene` | Erweiterung | FHIR-Erweiterung. |
 | `identifier` | Identifikator | Eindeutiger Identifikator der Probe |
 | `identifier:Placer-ID` | Auftraggeber-ID | Identifikator des Auftraggebers |
 | `identifier:Filler-ID` | Auftragnehmer-ID | Identifikator des Auftragnehmers |
 | `accessionIdentifier` | Labor-ID | Laborinterner Identifikator |
 | `status` | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |
 | `type` | Probenart | Die Art der Probe, codiert in SNOMED CT. |
+| `type.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
 | `subject` | Patient:in | Verweis auf die Person, von der die Probe stammt. |
 | `receivedTime` | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
 | `parent` | Ist gewonnen aus | Referenz auf eine übergeordnete Probe, aus der diese Probe gewonnen wurde. |
 | `request` | Entnahme-ID | Der Identifier der Probenentnahme. |
 | `collection` | Probenentnahme | Informationen über den Prozess der Probenentnahme, einschließlich Entnahmezeitpunkt und -stelle. |
+| `collection.extension:einstellungBlutversorgung` | MII EX Biobank Einstellung Blutversorgung | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
 | `processing` | Probenverarbeitung | Details zur Verarbeitung der Probe, einschließlich Prozeduren und Verarbeitungszeitraum. |
+| `processing.extension:temperaturbedingungen` | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing.time[x]:timePeriod` | Verarbeitungszeitraum | Der Zeitraum, in dem die Probe verarbeitet wurde. |
 | `processing:lagerprozess` | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
+| `processing:lagerprozess.extension:temperaturbedingungen` | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
 | `container` | Behälter | Probenbehälter |
 | `note` | Projektnutzung | Freitextangabe zur Verwendung der Probe in spezifischen Projekten. |
 
@@ -409,12 +387,40 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 ## English Translations
 
 <details>
+<summary>English translations - MII PR Patho Active Problems List</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `status` | Status | Status of the resource. |
+| `mode` | working \| snapshot \| changes | How this list was prepared - whether it is a working list that is suitable for being maintained on an ongoing basis, or if it represents a snapshot of a list of items from another source, or whethe... |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `entry` | Entries in the list | Entries in this list. |
+
+</details>
+
+<details>
 <summary>English translations - MII PR Patho Additional Specified Grouper</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `text` | Text | Narrative representation |
+| `identifier` | Identifier | Identifier for this resource. |
+| `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:laboratory-category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `bodySite.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Pathology findings | Reference to pathology findings |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
 
 </details>
 
@@ -433,6 +439,30 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
+<summary>English translations - MII PR Patho Base Observation</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:laboratory-category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `bodySite.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
+
+</details>
+
+<details>
 <summary>English translations - MII PR Patho Bundle</summary>
 
 | Element | Short (en) | Definition (en) |
@@ -440,8 +470,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifier | Unique identifier of the bundle |
 | `type` | fixed value on #document | fixed value on #document |
 | `timestamp` | Timestamp | Creation time of the bundle |
+| `entry` | Eintrag pro Ressource | An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only). |
 | `entry:Composition` | Composition entry | Entry for the composition |
 | `entry:Patient` | Patient entry | Entry for the patient |
+| `entry:Encounter` | Slice zur Hinterlegung einer Encounter-Instanz | An entry in a bundle resource - will either contain a resource or information about a resource (transactions and history only). |
 | `entry:ServiceRequest` | ServiceRequest entry | Entry for the examination request |
 | `entry:Specimen` | Specimen entry | Entry for the specimens |
 | `entry:DiagnosticReport` | DiagnosticReport entry | Entry for the diagnostic report |
@@ -457,12 +489,28 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:document-version` | Document version | Version number of the document |
 | `identifier` | Identifier | Unique identifier |
+| `status` | Status | Status of the resource. |
+| `type` | Type | Type or kind of the resource. |
+| `type.coding:KDL` | KDL | Coding in KDL. |
+| `type.coding:XDS` | IHE XDS Type Code | Coding in IHE XDS Type Code. |
+| `type.coding:sct` | SNOMED CT type | SNOMED CT coding for document type |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:LOINC` | LOINC | Coding in LOINC. |
+| `category.coding:IHE` | IHE XDS Class Code | Coding in IHE XDS Class Code. |
+| `category.coding:sct` | SNOMED CT category | SNOMED CT coding for document category |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `date` | Dokumentendatum | The composition editing time, when the composition was last logically changed by the author. |
+| `author` | Author can only be of type Practitioner or Organization | Identifies who is responsible for the information in the composition, not necessarily who typed it in. |
+| `title` | Dokumentenbezeichnung | Official human-readable label for the composition. |
 | `attester` | Attester | Person who attests the report |
 | `attester:legal` | Legal attester | Legal attestation of the report |
 | `attester:content-validator` | Content validator | Content validation of the report |
 | `custodian` | Custodian | Managing organization |
 | `relatesTo` | Relates to | Relationship to other documents |
+| `relatesTo.target[x]:targetReference` | Target of the relationship | The target composition/document of this relationship. |
 | `event` | Event | Documentation event |
+| `section` | Kapitel | The root of the sections that make up the composition. |
 | `section:patho-diagnostic-report` | Pathology diagnostic report | Pathology diagnostic report |
 
 </details>
@@ -472,9 +520,24 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `text` | Text | Narrative representation |
+| `identifier` | Identifier | Identifier for this resource. |
+| `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:laboratory-category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
 | `note` | Note | Additional notes |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `bodySite.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Pathology findings | Reference to pathology findings |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
 | `derivedFrom:grouper-observation` | Grouper observation | Reference to grouper observations |
 | `derivedFrom:questionnaire-response` | Questionnaire response | Reference to questionnaire responses |
 
@@ -489,16 +552,33 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Request | Reference to the request |
 | `status` | Status | Status of the observation |
 | `category` | Category | Classification of type of observation |
+| `category:laboratory-category` | Category | Categorization of the resource. |
 | `category:section-type` | Section type | Type of observation report section |
 | `code` | Code | Type of observation |
 | `subject` | Subject | Reference to associated patient |
 | `effective[x]` | Effective time | Time of observation |
 | `value[x]` | Value | Value of the observation |
 | `bodySite` | Body site | Anatomical site of observation |
+| `bodySite.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `method` | Method | Examination method |
 | `specimen` | Specimen | Reference to examined specimen |
 | `hasMember` | Has member | Observation / QuestionnaireResponse belonging to the examination/observation panel |
 | `derivedFrom` | Derived from | Reference to a measurement / image / QuestionnaireResponse / document from which the observation was derived |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR Patho History Of Present Illness</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `status` | Status | Status of the resource. |
+| `mode` | working \| snapshot \| changes | How this list was prepared - whether it is a working list that is suitable for being maintained on an ongoing basis, or if it represents a snapshot of a list of items from another source, or whethe... |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `entry` | Entries in the list | Entries in this list. |
 
 </details>
 
@@ -507,8 +587,23 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `text` | Text | Narrative representation |
+| `identifier` | Identifier | Identifier for this resource. |
+| `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:laboratory-category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `bodySite.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Pathology findings | Reference to pathology findings |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
 
 </details>
 
@@ -517,8 +612,23 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `text` | Text | Narrative representation |
+| `identifier` | Identifier | Identifier for this resource. |
+| `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:laboratory-category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `bodySite.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Pathology findings | Reference to pathology findings |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
 
 </details>
 
@@ -527,8 +637,35 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `text` | Text | Narrative representation |
+| `identifier` | Identifier | Identifier for this resource. |
+| `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:laboratory-category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `bodySite.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Pathology findings | Reference to pathology findings |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR Patho Problem List Item</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `category` | Category | Categorization of the resource. |
+| `category:problem-list-item` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
 
 </details>
 
@@ -538,11 +675,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension:related-report` | Related report | Reference to related reports |
+| `identifier` | Identifier | Identifier for this resource. |
 | `identifier:Set-ID` | Set-ID | Accession number of the report |
 | `basedOn` | Request | Reference to the respective examination request |
 | `status` | Status | Status of the report |
 | `category` | Category | Categorization of the report |
 | `code` | Code | Code of the pathology report |
+| `code.coding:pathology-report` | Pathology report code | Specific code for pathology report |
 | `subject` | Subject | Reference to the patient |
 | `encounter` | Encounter | Reference to the encounter |
 | `effective[x]` | Effective date | Time of report creation |
@@ -558,6 +697,31 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `media` | Media | Reference to attached images |
 | `conclusionCode` | Conclusion code | Coded diagnostic conclusion |
 | `presentedForm` | Presented form | pdf document |
+
+</details>
+
+<details>
+<summary>English translations - MII PR Patho Section Grouper</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:laboratory-category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `bodySite.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
+| `hasMember:pathology-finding` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
 
 </details>
 
@@ -593,17 +757,25 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
+| `extension:probenebene` | Extension | FHIR extension. |
 | `identifier` | Identifier | Unique identifier of the specimen |
 | `identifier:Placer-ID` | Placer ID | Identifier of the placer |
 | `identifier:Filler-ID` | Filler ID | Identifier of the filler |
 | `accessionIdentifier` | Accession identifier | Laboratory internal identifier |
 | `status` | Availability status | The status of the specimen in terms of its availability for research. |
 | `type` | Specimen type | The type of the specimen, encoded as SNOMED CT code. |
+| `type.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
 | `subject` | Patient | Reference to the person from whom the specimen was collected. |
+| `receivedTime` | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
 | `parent` | Derived from | Reference to a parent specimen from which this specimen was derived. |
 | `request` | Collection ID | The identifier for the specimen collection. |
 | `collection` | Specimen sampling | Information about the specimen collection process, including collection time and site. |
+| `collection.extension:einstellungBlutversorgung` | MII EX Biobank Einstellung Blutversorgung | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
 | `processing` | Specimen processing | Details about the processing of the specimen, including procedures and processing period. |
+| `processing.extension:temperaturbedingungen` | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing.time[x]:timePeriod` | Processing period | The time period during which the specimen was processed. |
+| `processing:lagerprozess` | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
+| `processing:lagerprozess.extension:temperaturbedingungen` | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
 | `container` | Container | Specimen container |
 | `note` | Project usage | Free-text information about the use of the specimen in specific projects. |
 

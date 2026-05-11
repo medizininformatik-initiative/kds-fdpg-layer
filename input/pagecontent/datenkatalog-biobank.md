@@ -2,7 +2,7 @@
 
 Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen und englischen Beschreibungen. Die Obligations werden auf der Seite [Obligations](obligations.html) beschrieben.
 
-**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.biobank](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.biobank/2026.0.0)
+**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.biobank](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.biobank/2026.0.1)
 
 #### Observation DNA Konzentration (Observation)
 
@@ -10,14 +10,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
+| `code` | Code | Kodierung des Inhalts. |
 | `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
 
 #### Observation Karyotyp (Observation)
 
@@ -25,14 +21,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
+| `code` | Code | Kodierung des Inhalts. |
 | `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
 
 #### Observation Morphologie (Observation)
 
@@ -40,13 +32,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
+| `code` | Code | Kodierung des Inhalts. |
 | `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
 
 #### Observation Proliferation (Observation)
 
@@ -54,13 +42,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
+| `code` | Code | Kodierung des Inhalts. |
 | `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
 
 #### Observation Qualitätsprüfung (Observation)
 
@@ -68,15 +52,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
+| `code` | Code | Kodierung des Inhalts. |
 | `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `component:type` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
-| `component:result` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `component:type` | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:result` | Komponente | Untergeordnete Beobachtungskomponente. |
 
 #### Observation Wachstumstyp (Observation)
 
@@ -84,83 +64,113 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
+| `code` | Code | Kodierung des Inhalts. |
 | `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
 
 #### Organization Sammlung Biobank (Organization)
 
-**FDPG Profil:** [FDPG_PR_Biobank_Organization_Sammlung_Biobank](StructureDefinition-fdpg-pr-biobank-organization.html) · **MII Elternprofil:** MII_PR_Biobank_Organization_Sammlung_Biobank
+**FDPG Profil:** [FDPG_PR_Biobank_Organization_Sammlung_Biobank](StructureDefinition-fdpg-pr-biobank-organization-sammlung-biobank.html) · **MII Elternprofil:** MII_PR_Biobank_Organization_Sammlung_Biobank
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
 | `extension:beschreibung` | Beschreibung der Sammlung/Biobank | Eine Freitextbeschreibung der Sammlung/Biobank, die z.B. in einer Suche angezeigt werden kann. |
-| `extension:collectionSetting` | Sample Collection Setting Extension | The context in which the sample collection was/is conducted. |
-| `extension:collectionDesign` | Collection Design Extension | The overall design of the collection that explains how the collection was/is built up. |
-| `identifier` | Identifies this organization across multiple systems | Identifier for the organization that is used to identify the organization across multiple disparate systems. |
+| `extension:collectionSetting` | Erweiterung | FHIR-Erweiterung. |
+| `extension:collectionDesign` | Erweiterung | FHIR-Erweiterung. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `identifier:bbmri-eric-id` | BBMRI-ERIC ID | Eindeutige Kennung im BBMRI-ERIC-Netzwerk. |
 | `name` | Name | Der vollständige Name der Sammlung oder Biobank. |
 | `alias` | Akronym | Das Akronym oder der Kurztitel der Sammlung oder Biobank. |
 | `partOf` | Teil von | Verweist auf eine übergeordnete Sammlung oder Biobank, zu der diese gehört. |
 | `contact` | Contact for the organization for a certain purpose | Contact for the organization for a certain purpose. |
 | `contact:forschungskontakt` | Contact for the organization for a certain purpose | Contact for the organization for a certain purpose. |
+| `contact:forschungskontakt.extension:rolle` | MII EX Biobank Rolle des Kontaktes | Mittels dieser Extension soll die Rolle der Kontaktperson in der probenverwaltenden Organisation angegeben werden, z.B. Principal Investigator, Direktor usw. |
 
 #### Specimen Bioprobe Core (Specimen)
 
-**FDPG Profil:** [FDPG_PR_Biobank_Specimen_Bioprobe_Core](StructureDefinition-fdpg-pr-biobank-specimen-core.html) · **MII Elternprofil:** MII_PR_Biobank_Specimen_Bioprobe_Core
+**FDPG Profil:** [FDPG_PR_Biobank_Specimen_Bioprobe_Core](StructureDefinition-fdpg-pr-biobank-specimen-bioprobe-core.html) · **MII Elternprofil:** MII_PR_Biobank_Specimen_Bioprobe_Core
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `id` |  |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` |  |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `extension:probenebene` |  |  | MII EX Biobank Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
+| `extension:probenebene` |  |  | Erweiterung | FHIR-Erweiterung. |
 | `identifier` | Proben-ID | Einrichtungsinterner Identifier der Probe | Proben-ID | Einrichtungsinterner Identifier der Probe. |
 | `status` | Verfuegbarkeitsstatus | Status der Probe / des Materials hinsichtlich der Verfügbarkeit | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |
 | `type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Probenart | Die Art der Probe, codiert in SNOMED CT. |
+| `type.coding:sct` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
 | `subject` |  |  | Patient:in | Verweis auf die Person, von der die Probe stammt. |
 | `receivedTime` |  |  | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
 | `parent` | Entstanden-aus | Referenz auf Bioprobe | Ist gewonnen aus | Referenz auf eine übergeordnete Probe, aus der diese Probe gewonnen wurde. |
 | `request` |  |  | Entnahme-ID | Der Identifier der Probenentnahme. |
 | `collection` | Probenentnahme | Informationen zur Entnahme der Probe | Probenentnahme | Informationen über den Prozess der Probenentnahme, einschließlich Entnahmezeitpunkt und -stelle. |
+| `collection.extension:einstellungBlutversorgung` | Probenentnahme | Informationen zur Entnahme der Probe | MII EX Biobank Einstellung Blutversorgung | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
 | `processing` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Probenverarbeitung | Details zur Verarbeitung der Probe, einschließlich Prozeduren und Verarbeitungszeitraum. |
+| `processing.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing.time[x]:timePeriod` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Verarbeitungszeitraum | Der Zeitraum, in dem die Probe verarbeitet wurde. |
 | `processing:lagerprozess` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
+| `processing:lagerprozess.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
 | `container` | Container | Probenbehältnis | Probenbehältnis | Informationen über den Behälter, in dem die Probe aufbewahrt wird. |
 | `note` | Projektverwendung, SonstigeEigenschaften | Freitextangabe zur Verwendung der Probe in Projekten | Projektnutzung | Freitextangabe zur Verwendung der Probe in spezifischen Projekten. |
 
 #### Specimen Bioprobe (Specimen)
 
-**FDPG Profil:** [FDPG_PR_Biobank_Specimen_Bioprobe](StructureDefinition-fdpg-pr-biobank-specimen.html) · **MII Elternprofil:** MII_PR_Biobank_Specimen_Bioprobe
+**FDPG Profil:** [FDPG_PR_Biobank_Specimen_Bioprobe](StructureDefinition-fdpg-pr-biobank-specimen-bioprobe.html) · **MII Elternprofil:** MII_PR_Biobank_Specimen_Bioprobe
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `id` |  |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` |  |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `extension:probenebene` |  |  | MII EX Biobank Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
+| `extension:probenebene` |  |  | Erweiterung | FHIR-Erweiterung. |
 | `extension:festgestellteDiagnose` |  |  | Festgestellte Diagnose | Verweis auf eine Diagnose, für die Material in der Probe enthalten ist. |
 | `extension:gehoertZu` |  |  | Verwaltende Organisation | Zuordnung der Probe zu einer Sammlung oder Biobank, die für die Verwaltung verantwortlich ist. |
-| `extension:anzahlAliquots` |  |  | MII EX Biobank Anzahl Aliquots | Die Extension ermöglicht es, die Anzahl der vorhandenen Aliquots zu einer Aliquot-Gruppe anzugeben. |
+| `extension:anzahlAliquots` |  |  | Erweiterung | FHIR-Erweiterung. |
 | `identifier` | Proben-ID | Einrichtungsinterner Identifier der Probe | Proben-ID | Einrichtungsinterner Identifier der Probe. |
 | `status` | Verfuegbarkeitsstatus | Status der Probe / des Materials hinsichtlich der Verfügbarkeit | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |
 | `type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Probenart | Die Art der Probe, codiert in SNOMED CT. |
+| `type.coding:sct` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `type.coding:miabis-type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
 | `subject` |  |  | Patient:in | Verweis auf die Person, von der die Probe stammt. |
 | `receivedTime` |  |  | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
 | `parent` | Entstanden-aus | Referenz auf Bioprobe | Ist gewonnen aus | Referenz auf eine übergeordnete Probe, aus der diese Probe gewonnen wurde. |
 | `request` |  |  | Entnahme-ID | Der Identifier der Probenentnahme. |
 | `collection` | Probenentnahme | Informationen zur Entnahme der Probe | Probenentnahme | Informationen über den Prozess der Probenentnahme, einschließlich Entnahmezeitpunkt und -stelle. |
+| `collection.extension:einstellungBlutversorgung` | Probenentnahme | Informationen zur Entnahme der Probe | MII EX Biobank Einstellung Blutversorgung | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
 | `processing` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Probenverarbeitung | Details zur Verarbeitung der Probe, einschließlich Prozeduren und Verarbeitungszeitraum. |
+| `processing.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing.extension:temperature-miabis` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Sample storage temperature | The long-term temperature at which the sample is stored after preparation, based on SPREC v3 |
+| `processing.time[x]:timePeriod` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Verarbeitungszeitraum | Der Zeitraum, in dem die Probe verarbeitet wurde. |
 | `processing:lagerprozess` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
+| `processing:lagerprozess.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `container` | Container | Probenbehältnis | Probenbehältnis | Informationen über den Behälter, in dem die Probe aufbewahrt wird. |
+| `note` | Projektverwendung, SonstigeEigenschaften | Freitextangabe zur Verwendung der Probe in Projekten | Projektnutzung | Freitextangabe zur Verwendung der Probe in spezifischen Projekten. |
+
+#### Specimen Zellinie Organoid (Specimen)
+
+**FDPG Profil:** [FDPG_PR_Biobank_Specimen_Zellinie_Organoid](StructureDefinition-fdpg-pr-biobank-specimen-zellinie-organoid.html) · **MII Elternprofil:** MII_PR_Biobank_Specimen_Zellinie_Organoid
+
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|---|---|
+| `extension:probenebene` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:festgestellteDiagnose` |  |  | Festgestellte Diagnose | Verweis auf eine Diagnose, für die Material in der Probe enthalten ist. |
+| `extension:gehoertZu` |  |  | Verwaltende Organisation | Zuordnung der Probe zu einer Sammlung oder Biobank, die für die Verwaltung verantwortlich ist. |
+| `extension:anzahlAliquots` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:kulturprotokoll` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:modifikationen` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:anzahlPassagen` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `identifier` | Proben-ID | Einrichtungsinterner Identifier der Probe | Proben-ID | Einrichtungsinterner Identifier der Probe. |
+| `status` | Verfuegbarkeitsstatus | Status der Probe / des Materials hinsichtlich der Verfügbarkeit | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |
+| `type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Probenart | Die Art der Probe, codiert in SNOMED CT. |
+| `type.coding:sct` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `type.coding:miabis-type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `subject` |  |  | Patient:in | Verweis auf die Person, von der die Probe stammt. |
+| `receivedTime` |  |  | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
+| `parent` | Entstanden-aus | Referenz auf Bioprobe | Ist gewonnen aus | Referenz auf eine übergeordnete Probe, aus der diese Probe gewonnen wurde. |
+| `request` |  |  | Entnahme-ID | Der Identifier der Probenentnahme. |
+| `collection` | Probenentnahme | Informationen zur Entnahme der Probe | Probenentnahme | Informationen über den Prozess der Probenentnahme, einschließlich Entnahmezeitpunkt und -stelle. |
+| `collection.extension:einstellungBlutversorgung` | Probenentnahme | Informationen zur Entnahme der Probe | MII EX Biobank Einstellung Blutversorgung | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
+| `processing` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Probenverarbeitung | Details zur Verarbeitung der Probe, einschließlich Prozeduren und Verarbeitungszeitraum. |
+| `processing.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing.extension:temperature-miabis` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Sample storage temperature | The long-term temperature at which the sample is stored after preparation, based on SPREC v3 |
+| `processing.time[x]:timePeriod` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Verarbeitungszeitraum | Der Zeitraum, in dem die Probe verarbeitet wurde. |
+| `processing:lagerprozess` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
+| `processing:lagerprozess.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
 | `container` | Container | Probenbehältnis | Probenbehältnis | Informationen über den Behälter, in dem die Probe aufbewahrt wird. |
 | `note` | Projektverwendung, SonstigeEigenschaften | Freitextangabe zur Verwendung der Probe in Projekten | Projektnutzung | Freitextangabe zur Verwendung der Probe in spezifischen Projekten. |
 
@@ -170,47 +180,83 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `category` | What class/type of substance this is | A code that classifies the general type of substance. This is used for searching, sorting and display purposes. |
-| `code` | What substance this is | A code (or set of codes) that identify this substance. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
 | `ingredient` | Composition information about the substance | A substance can be composed of other substances. |
-
-#### Specimen Zellinie Organoid (Specimen)
-
-**FDPG Profil:** [FDPG_PR_Biobank_Specimen_Zellinie_Organoid](StructureDefinition-fdpg-pr-biobank-zellinie-organoid.html) · **MII Elternprofil:** MII_PR_Biobank_Specimen_Zellinie_Organoid
-
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `id` |  |  | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` |  |  | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` |  |  | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` |  |  | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `extension:probenebene` |  |  | MII EX Biobank Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
-| `extension:festgestellteDiagnose` |  |  | Festgestellte Diagnose | Verweis auf eine Diagnose, für die Material in der Probe enthalten ist. |
-| `extension:gehoertZu` |  |  | Verwaltende Organisation | Zuordnung der Probe zu einer Sammlung oder Biobank, die für die Verwaltung verantwortlich ist. |
-| `extension:anzahlAliquots` |  |  | MII EX Biobank Anzahl Aliquots | Die Extension ermöglicht es, die Anzahl der vorhandenen Aliquots zu einer Aliquot-Gruppe anzugeben. |
-| `extension:kulturprotokoll` |  |  | MII EX Biobank Kulturprotokoll | Protokoll der Kultur der Zellinie oder des Organiods. |
-| `extension:modifikationen` |  |  | MII EX Biobank Zelllinien-Modifikation | Erweiterung zur Beschreibung von Modifikationen an Zelllinien, einschließlich Art der Modifikation, Zielgen und Referenz zum Protokoll. |
-| `extension:anzahlPassagen` |  |  | MII EX Biobank Anzahl Passagen | Zahl der Passagen, die die Zellinie oder das Organiod durchlaufen hat. |
-| `identifier` | Proben-ID | Einrichtungsinterner Identifier der Probe | Proben-ID | Einrichtungsinterner Identifier der Probe. |
-| `status` | Verfuegbarkeitsstatus | Status der Probe / des Materials hinsichtlich der Verfügbarkeit | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |
-| `type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Probenart | Die Art der Probe, codiert in SNOMED CT. |
-| `subject` |  |  | Patient:in | Verweis auf die Person, von der die Probe stammt. |
-| `receivedTime` |  |  | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
-| `parent` | Entstanden-aus | Referenz auf Bioprobe | Ist gewonnen aus | Referenz auf eine übergeordnete Probe, aus der diese Probe gewonnen wurde. |
-| `request` |  |  | Entnahme-ID | Der Identifier der Probenentnahme. |
-| `collection` | Probenentnahme | Informationen zur Entnahme der Probe | Probenentnahme | Informationen über den Prozess der Probenentnahme, einschließlich Entnahmezeitpunkt und -stelle. |
-| `processing` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Probenverarbeitung | Details zur Verarbeitung der Probe, einschließlich Prozeduren und Verarbeitungszeitraum. |
-| `processing:lagerprozess` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
-| `container` | Container | Probenbehältnis | Probenbehältnis | Informationen über den Behälter, in dem die Probe aufbewahrt wird. |
-| `note` | Projektverwendung, SonstigeEigenschaften | Freitextangabe zur Verwendung der Probe in Projekten | Projektnutzung | Freitextangabe zur Verwendung der Probe in spezifischen Projekten. |
 
 ---
 
 ## English Translations
+
+<details>
+<summary>English translations - Observation DNA Konzentration</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `code` | Code | Coding of the content. |
+| `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+
+</details>
+
+<details>
+<summary>English translations - Observation Karyotyp</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `code` | Code | Coding of the content. |
+| `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+
+</details>
+
+<details>
+<summary>English translations - Observation Morphologie</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `code` | Code | Coding of the content. |
+| `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
+| `value[x]` | Value | Value of the observation. |
+
+</details>
+
+<details>
+<summary>English translations - Observation Proliferation</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `code` | Code | Coding of the content. |
+| `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
+| `value[x]` | Value | Value of the observation. |
+
+</details>
+
+<details>
+<summary>English translations - Observation Qualitätsprüfung</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `code` | Code | Coding of the content. |
+| `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `component:type` | Component | Sub-observation component. |
+| `component:result` | Component | Sub-observation component. |
+
+</details>
+
+<details>
+<summary>English translations - Observation Wachstumstyp</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `code` | Code | Coding of the content. |
+| `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
+| `value[x]` | Value | Value of the observation. |
+
+</details>
 
 <details>
 <summary>English translations - Organization Sammlung Biobank</summary>
@@ -218,10 +264,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension:beschreibung` | Description of the collection/biobank | A free-text description of the collection/biobank, which can be displayed in a search, for example. |
+| `extension:collectionSetting` | Extension | FHIR extension. |
+| `extension:collectionDesign` | Extension | FHIR extension. |
+| `identifier` | Identifier | Identifier for this resource. |
 | `identifier:bbmri-eric-id` | BBMRI-ERIC ID | Unique identifier in the BBMRI-ERIC network. |
 | `name` | Name | The full name of the collection or biobank. |
 | `alias` | Acronym | The acronym or short title of the collection or biobank. |
 | `partOf` | Part of | Refers to a parent collection or biobank to which this belongs. |
+| `contact` | Contact for the organization for a certain purpose | Contact for the organization for a certain purpose. |
+| `contact:forschungskontakt` | Contact for the organization for a certain purpose | Contact for the organization for a certain purpose. |
+| `contact:forschungskontakt.extension:rolle` | MII EX Biobank Rolle des Kontaktes | Mittels dieser Extension soll die Rolle der Kontaktperson in der probenverwaltenden Organisation angegeben werden, z.B. Principal Investigator, Direktor usw. |
 
 </details>
 
@@ -230,14 +282,22 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
+| `extension:probenebene` | Extension | FHIR extension. |
 | `identifier` | Specimen ID | Internal identifier of the specimen at the institution. |
 | `status` | Availability status | The status of the specimen in terms of its availability for research. |
 | `type` | Specimen type | The type of the specimen, encoded as SNOMED CT code. |
+| `type.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
 | `subject` | Patient | Reference to the person from whom the specimen was collected. |
+| `receivedTime` | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
 | `parent` | Derived from | Reference to a parent specimen from which this specimen was derived. |
 | `request` | Collection ID | The identifier for the specimen collection. |
 | `collection` | Specimen sampling | Information about the specimen collection process, including collection time and site. |
+| `collection.extension:einstellungBlutversorgung` | MII EX Biobank Einstellung Blutversorgung | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
 | `processing` | Specimen processing | Details about the processing of the specimen, including procedures and processing period. |
+| `processing.extension:temperaturbedingungen` | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing.time[x]:timePeriod` | Processing period | The time period during which the specimen was processed. |
+| `processing:lagerprozess` | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
+| `processing:lagerprozess.extension:temperaturbedingungen` | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
 | `container` | Specimen container | Information about the container in which the specimen is stored. |
 | `note` | Project usage | Free-text information about the use of the specimen in specific projects. |
 
@@ -248,16 +308,27 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
+| `extension:probenebene` | Extension | FHIR extension. |
 | `extension:festgestellteDiagnose` | Diagnosed condition | Reference to a diagnosis for which material is present in the specimen. |
 | `extension:gehoertZu` | Managing organization | Assignment of the specimen to a collection or biobank responsible for its management. |
+| `extension:anzahlAliquots` | Extension | FHIR extension. |
 | `identifier` | Specimen ID | Internal identifier of the specimen at the institution. |
 | `status` | Availability status | The status of the specimen in terms of its availability for research. |
 | `type` | Specimen type | The type of the specimen, encoded as SNOMED CT code. |
+| `type.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `type.coding:miabis-type` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
 | `subject` | Patient | Reference to the person from whom the specimen was collected. |
+| `receivedTime` | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
 | `parent` | Derived from | Reference to a parent specimen from which this specimen was derived. |
 | `request` | Collection ID | The identifier for the specimen collection. |
 | `collection` | Specimen sampling | Information about the specimen collection process, including collection time and site. |
+| `collection.extension:einstellungBlutversorgung` | MII EX Biobank Einstellung Blutversorgung | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
 | `processing` | Specimen processing | Details about the processing of the specimen, including procedures and processing period. |
+| `processing.extension:temperaturbedingungen` | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing.extension:temperature-miabis` | Sample storage temperature | The long-term temperature at which the sample is stored after preparation, based on SPREC v3 |
+| `processing.time[x]:timePeriod` | Processing period | The time period during which the specimen was processed. |
+| `processing:lagerprozess` | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
+| `processing:lagerprozess.extension:temperaturbedingungen` | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
 | `container` | Specimen container | Information about the container in which the specimen is stored. |
 | `note` | Project usage | Free-text information about the use of the specimen in specific projects. |
 
@@ -268,18 +339,43 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
+| `extension:probenebene` | Extension | FHIR extension. |
 | `extension:festgestellteDiagnose` | Diagnosed condition | Reference to a diagnosis for which material is present in the specimen. |
 | `extension:gehoertZu` | Managing organization | Assignment of the specimen to a collection or biobank responsible for its management. |
+| `extension:anzahlAliquots` | Extension | FHIR extension. |
+| `extension:kulturprotokoll` | Extension | FHIR extension. |
+| `extension:modifikationen` | Extension | FHIR extension. |
+| `extension:anzahlPassagen` | Extension | FHIR extension. |
 | `identifier` | Specimen ID | Internal identifier of the specimen at the institution. |
 | `status` | Availability status | The status of the specimen in terms of its availability for research. |
 | `type` | Specimen type | The type of the specimen, encoded as SNOMED CT code. |
+| `type.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `type.coding:miabis-type` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
 | `subject` | Patient | Reference to the person from whom the specimen was collected. |
+| `receivedTime` | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
 | `parent` | Derived from | Reference to a parent specimen from which this specimen was derived. |
 | `request` | Collection ID | The identifier for the specimen collection. |
 | `collection` | Specimen sampling | Information about the specimen collection process, including collection time and site. |
+| `collection.extension:einstellungBlutversorgung` | MII EX Biobank Einstellung Blutversorgung | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
 | `processing` | Specimen processing | Details about the processing of the specimen, including procedures and processing period. |
+| `processing.extension:temperaturbedingungen` | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing.extension:temperature-miabis` | Sample storage temperature | The long-term temperature at which the sample is stored after preparation, based on SPREC v3 |
+| `processing.time[x]:timePeriod` | Processing period | The time period during which the specimen was processed. |
+| `processing:lagerprozess` | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
+| `processing:lagerprozess.extension:temperaturbedingungen` | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
 | `container` | Specimen container | Information about the container in which the specimen is stored. |
 | `note` | Project usage | Free-text information about the use of the specimen in specific projects. |
+
+</details>
+
+<details>
+<summary>English translations - Substance Additiv</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `ingredient` | Composition information about the substance | A substance can be composed of other substances. |
 
 </details>
 

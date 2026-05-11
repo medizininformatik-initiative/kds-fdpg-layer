@@ -2,1450 +2,3194 @@
 
 Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen und englischen Beschreibungen. Die Obligations werden auf der Seite [Obligations](obligations.html) beschrieben.
 
-**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.icu](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.icu/2026.0.1-rc1)
-
-### Vitalparameter und Monitoringwerte
-
-#### Arterieller Blutdruck (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Arterieller_Blutdruck](StructureDefinition-fdpg-pr-icu-muv-arterieller-blutdruck.html) · **MII Elternprofil:** MII_PR_ICU_Arterieller_Blutdruck
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
-| `component` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
-| `component:SystolicBP` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
-| `component:DiastolicBP` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
-| `component:meanBP` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
-
-#### Atemfrequenz (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Atemfrequenz](StructureDefinition-fdpg-pr-icu-muv-atemfrequenz.html) · **MII Elternprofil:** MII_PR_ICU_Atemfrequenz
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-
-#### Herzfrequenz (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Herzfrequenz](StructureDefinition-fdpg-pr-icu-muv-herzfrequenz.html) · **MII Elternprofil:** MII_PR_ICU_Herzfrequenz
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `id` | serverseitige, interne ID des Datensatzes | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `basedOn` | maximal Kardinalität bei Übernahme aus MII-Kerndatensatz-ICU entfernt | A plan, proposal or order that is fulfilled in whole or in part by this event. For example, a MedicationRequest may require a patient to have laboratory test performed before it is dispensed. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:vs-cat` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `performer` | Who is responsible for the observation | Who was responsible for asserting the observed value as "true". |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
-| `component` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
-
-#### Körpergewicht (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Koerpergewicht](StructureDefinition-fdpg-pr-icu-muv-koerpergewicht.html) · **MII Elternprofil:** MII_PR_ICU_Koerpergewicht
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `effective[x]:effectivePeriod` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `value[x]:valueQuantity` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
-
-#### Körpergröße (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Koerpergroesse](StructureDefinition-fdpg-pr-icu-muv-koerpergroesse.html) · **MII Elternprofil:** MII_PR_ICU_Koerpergroesse
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:VSCat` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `effective[x]:effectivePeriod` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `value[x]:valueQuantity` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-
-#### Kopfumfang (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Kopfumfang](StructureDefinition-fdpg-pr-icu-muv-kopfumfang.html) · **MII Elternprofil:** MII_PR_ICU_Kopfumfang
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `value[x]:valueQuantity` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
+**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.icu](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.icu/2026.0.2)
 
 ### Beatmung
 
-#### Beatmung (Procedure)
+#### MII PR ICU Beatmung (Procedure)
 
-**FDPG Profil:** [FDPG_PR_ICU_Beatmung](StructureDefinition-fdpg-pr-icu-vent-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Beatmung
+**FDPG Profil:** [FDPG_PR_ICU_Beatmung](StructureDefinition-fdpg-pr-icu-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Beatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `extension` | Additional content defined by implementations | May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance appl... |
+| `extension` | Erweiterung | FHIR-Erweiterung. |
 | `extension:Dokumentationsdatum` | Dokumentationsdatum | Dokumentationsdatum der Prozedur, falls abweichend vom Durchführungsdatum |
 | `extension:durchfuehrungsabsicht` | Durchführungsabsicht | therapeutisch \| palliativ \| diagnostisch \| präventiv \| rehabilitativ \| andere |
 | `status` | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
+| `category.coding:sct` | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `code` | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `subject` | Who the procedure was performed on | The person, animal or group on which the procedure was performed. |
+| `code.coding:ops` | OPS Code | Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel definierten Code |
+| `code.coding:sct` | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
-| `recorder` | Who recorded the procedure | Individual who recorded the record and takes responsibility for its content. |
+| `recorder` | Erfassende\*r | Person oder Organisation, die die Information aufgezeichnet hat. |
 | `bodySite` | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
+| `bodySite.coding:snomed-ct` | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `note` | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 
-#### Parameter von Beatmung (Observation)
+#### MII PR ICU Parameter von Beatmung (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Parameter_Von_Beatmung](StructureDefinition-fdpg-pr-vent-icu-parameter-von-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Parameter_Von_Beatmung
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Gerätemetrik - Eingestellte/gemessene Parameter Beatmung (DeviceMetric)
-
-**FDPG Profil:** [FDPG_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung](StructureDefinition-fdpg-pr-icu-vent-dm-eingestellte-gemessene-parameter-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung
+**FDPG Profil:** [FDPG_PR_ICU_Parameter_Von_Beatmung](StructureDefinition-fdpg-pr-icu-parameter-von-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Parameter_Von_Beatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `type` | Identity of metric, for example Heart Rate or PEEP Setting | Describes the type of the metric. For example: Heart Rate, PEEP Setting, etc. |
-| `source` | Describes the link to the source Device | Describes the link to the Device that this DeviceMetric belongs to and that contains administrative device information such as manufacturer, serial number, etc. |
-| `category` | measurement \| setting \| calculation \| unspecified | Indicates the category of the observation generation process. A DeviceMetric can be for example a setting, measurement, or calculation. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code.coding:loinc` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code.coding:IEEE-11073` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Atemwegsdruck bei null expiratorischem Gasfluss (Observation)
+#### MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung (DeviceMetric)
 
-**FDPG Profil:** [FDPG_PR_ICU_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss](StructureDefinition-fdpg-pr-icu-vent-atemwegsdruck-bei-null-expiratorischem-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Atemwegsdruck bei mittlerem expiratorischem Gasfluss (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss](StructureDefinition-fdpg-pr-icu-vent-atemwegsdruck-mittl-expirat-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss
+**FDPG Profil:** [FDPG_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung](StructureDefinition-fdpg-pr-icu-devicemetric-eingestellte-gemessene-parameter-beatmu.html) · **MII Elternprofil:** MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `type` | Typ | Typ oder Art der Ressource. |
+| `source` | Quelle | Quelle der Information. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
 
-#### Atemzugvolumen - Einstellung (Observation)
+#### MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Atemzugvolumen_Einstellung](StructureDefinition-fdpg-pr-icu-vent-atemzugvolumen-einstellung.html) · **MII Elternprofil:** MII_PR_ICU_Atemzugvolumen_Einstellung
+**FDPG Profil:** [FDPG_PR_ICU_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss](StructureDefinition-fdpg-pr-icu-atemwegsdruck-bei-null-expiratorischem-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Atemzugvolumen während Beatmung (Observation)
+#### MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Atemzugvolumen_Waehrend_Beatmung](StructureDefinition-fdpg-pr-icu-vent-atemzugvolumen-waehrend-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Atemzugvolumen_Waehrend_Beatmung
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Beatmungsvolumen pro Minute maschineller Beatmung (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung](StructureDefinition-fdpg-pr-icu-vent-beatmungsvolumen-min-maschineller-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung
+**FDPG Profil:** [FDPG_PR_ICU_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss](StructureDefinition-fdpg-pr-icu-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Beatmungszeit bei hohem Druck (Observation)
+#### MII PR ICU Atemzugvolumen Einstellung (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Beatmungszeit_Hohem_Druck](StructureDefinition-fdpg-pr-icu-vent-beatmungszeit-hohem-druck.html) · **MII Elternprofil:** MII_PR_ICU_Beatmungszeit_Hohem_Druck
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Beatmungszeit bei niedrigem Druck (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Beatmungszeit_Niedrigem_Druck](StructureDefinition-fdpg-pr-icu-vent-beatmungszeit-niedrigem-druck.html) · **MII Elternprofil:** MII_PR_ICU_Beatmungszeit_Niedrigem_Druck
+**FDPG Profil:** [FDPG_PR_ICU_Atemzugvolumen_Einstellung](StructureDefinition-fdpg-pr-icu-atemzugvolumen-einstellung.html) · **MII Elternprofil:** MII_PR_ICU_Atemzugvolumen_Einstellung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Dynamische Compliance (Observation)
+#### MII PR ICU Atemzugvolumen Waehrend Beatmung (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Dynamische_Kompliance](StructureDefinition-fdpg-pr-vent-icu-dynamische-kompliance.html) · **MII Elternprofil:** MII_PR_ICU_Dynamische_Kompliance
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Druckdifferenz Beatmung (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Druckdifferenz_Beatmung](StructureDefinition-fdpg-pr-vent-provided-icu-druckdifferenz-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Druckdifferenz_Beatmung
+**FDPG Profil:** [FDPG_PR_ICU_Atemzugvolumen_Waehrend_Beatmung](StructureDefinition-fdpg-pr-icu-atemzugvolumen-waehrend-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Atemzugvolumen_Waehrend_Beatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Eingestellter inspiratorischer Gasfluss (Observation)
+#### MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Eingestellter_Inspiratorischer_Gasfluss](StructureDefinition-fdpg-pr-icu-vent-eingestellter-inspiratorischer-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Eingestellter_Inspiratorischer_Gasfluss
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Einstellung Ausatmungszeit Beatmung (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Einstellung_Ausatmungszeit_Beatmung](StructureDefinition-fdpg-pr-icu-vent-einstellung-ausatmungszeit-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Einstellung_Ausatmungszeit_Beatmung
+**FDPG Profil:** [FDPG_PR_ICU_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung](StructureDefinition-fdpg-pr-icu-beatmungsvolumen-pro-minute-maschineller-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Einstellung Einatmungszeit Beatmung (Observation)
+#### MII ICU Beatmungszeit Hohem Druck (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Einstellung_Einatmungszeit_Beatmung](StructureDefinition-fdpg-pr-icu-vent-einstellung-einatmungszeit-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Einstellung_Einatmungszeit_Beatmung
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Endexpiratorischer Kohlendioxidpartialdruck (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Endexpiratorischer_Kohlendioxidpartialdruck](StructureDefinition-fdpg-pr-icu-vent-endexpiratorischer-kohlendioxidpartialdruck.html) · **MII Elternprofil:** MII_PR_ICU_Endexpiratorischer_Kohlendioxidpartialdruck
+**FDPG Profil:** [FDPG_PR_ICU_Beatmungszeit_Hohem_Druck](StructureDefinition-fdpg-pr-icu-beatmungszeit-hohem-druck.html) · **MII Elternprofil:** MII_PR_ICU_Beatmungszeit_Hohem_Druck
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Exspiratorischer Gasfluss (Observation)
+#### MII PR ICU Beatmungszeit Niedrigem Druck (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Exspiratorischer_Gasfluss](StructureDefinition-fdpg-pr-icu-vent-exspiratorischer-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Exspiratorischer_Gasfluss
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Exspiratorischer Sauerstoffpartialdruck (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Exspiratorischer_Sauerstoffpartialdruck](StructureDefinition-fdpg-pr-icu-event-xspiratorischer-sauerstoffpartialdruck.html) · **MII Elternprofil:** MII_PR_ICU_Exspiratorischer_Sauerstoffpartialdruck
+**FDPG Profil:** [FDPG_PR_ICU_Beatmungszeit_Niedrigem_Druck](StructureDefinition-fdpg-pr-icu-beatmungszeit-niedrigem-druck.html) · **MII Elternprofil:** MII_PR_ICU_Beatmungszeit_Niedrigem_Druck
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Horowitz-Index in arteriellem Blut (Observation)
+#### MII PR ICU Dynamische Kompliance (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Horowitz_In_Arteriellem_Blut](StructureDefinition-fdpg-pr-icu-vent-horowitz-in-arteriellem-blut.html) · **MII Elternprofil:** MII_PR_ICU_Horowitz_In_Arteriellem_Blut
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:vs-cat` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Inspiratorische Sauerstofffraktion (gemessen\ (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen](StructureDefinition-fdpg-pr-icu-vent-inspiratorische-sauerstofffraktion-gemessen.html) · **MII Elternprofil:** MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen
+**FDPG Profil:** [FDPG_PR_ICU_Dynamische_Kompliance](StructureDefinition-fdpg-pr-icu-dynamische-kompliance.html) · **MII Elternprofil:** MII_PR_ICU_Dynamische_Kompliance
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Inspiratorischer Gasfluss (Observation)
+#### MII PR ICU Druckdifferenz Beatmung (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Inspiratorischer_Gasfluss](StructureDefinition-fdpg-pr-icu-vent-inspiratorischer-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Inspiratorischer_Gasfluss
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Maximaler Beatmungsdruck (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Maximaler_Beatmungsdruck](StructureDefinition-fdpg-pr-icu-vent-maximaler-beatmungsdruck.html) · **MII Elternprofil:** MII_PR_ICU_Maximaler_Beatmungsdruck
+**FDPG Profil:** [FDPG_PR_ICU_Druckdifferenz_Beatmung](StructureDefinition-fdpg-pr-icu-druckdifferenz-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Druckdifferenz_Beatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Mechanische Atemfrequenz (beatmet\ (Observation)
+#### MII PR ICU Eingestellter Inspiratorischer Gasfluss (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Mechanische_Atemfrequenz_Beatmet](StructureDefinition-fdpg-pr-icu-vent-mechanische-atemfrequenz-beatmet.html) · **MII Elternprofil:** MII_PR_ICU_Mechanische_Atemfrequenz_Beatmet
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Mittlerer Beatmungsdruck (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Mittlerer_Beatmungsdruck](StructureDefinition-fdpg-pr-icu-vent-mittlerer-beatmungsdruck.html) · **MII Elternprofil:** MII_PR_ICU_Mittlerer_Beatmungsdruck
+**FDPG Profil:** [FDPG_PR_ICU_Eingestellter_Inspiratorischer_Gasfluss](StructureDefinition-fdpg-pr-icu-eingestellter-inspiratorischer-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Eingestellter_Inspiratorischer_Gasfluss
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Positiv-endexpiratorischer Druck (PEEP\ (Observation)
+#### MII PR ICU Einstellung Ausatmungszeit Beatmung (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Positiv_Endexpiratorischer_Druck](StructureDefinition-fdpg-pr-icu-vent-positiv-endexpiratorischer-druck.html) · **MII Elternprofil:** MII_PR_ICU_Positiv_Endexpiratorischer_Druck
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Spontane Atemfrequenz (beatmet\ (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Spontane_Atemfrequenz_Beatmet](StructureDefinition-fdpg-pr-icu-vent-spontane-atemfrequenz-beatmet.html) · **MII Elternprofil:** MII_PR_ICU_Spontane_Atemfrequenz_Beatmet
+**FDPG Profil:** [FDPG_PR_ICU_Einstellung_Ausatmungszeit_Beatmung](StructureDefinition-fdpg-pr-icu-einstellung-ausatmungszeit-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Einstellung_Ausatmungszeit_Beatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Spontane + mechanische Atemfrequenz (beatmet\ (Observation)
+#### MII PR ICU Einstellung Einatmungszeit Beatmung (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Spontane_Mechanische_Atemfrequenz_Beatmet](StructureDefinition-fdpg-pr-icu-vent-spontane-mechanische-atemfrequenz-beatmet.html) · **MII Elternprofil:** MII_PR_ICU_Spontane_Mechanische_Atemfrequenz_Beatmet
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Spontanes Atemzugvolumen (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Spontanes_Atemzugvolumen](StructureDefinition-fdpg-pr-icu-vent-spontanes-atemzugvolumen.html) · **MII Elternprofil:** MII_PR_ICU_Spontanes_Atemzugvolumen
+**FDPG Profil:** [FDPG_PR_ICU_Einstellung_Einatmungszeit_Beatmung](StructureDefinition-fdpg-pr-icu-einstellung-einatmungszeit-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Einstellung_Einatmungszeit_Beatmung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Spontanes + mechanisches Atemzugvolumen (Observation)
+#### MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Spontanes_Plus_Mechanisches_Atemzugvolumen](StructureDefinition-fdpg-pr-icu-vent-spontanes-plus-mechanisches-atemzugvolumen.html) · **MII Elternprofil:** MII_PR_ICU_Spontanes_Plus_Mechanisches_Atemzugvolumen
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Unterstützungsdruck Beatmung (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Unterstuezungsdruck_Beatmung](StructureDefinition-fdpg-pr-icu-vent-unterstuezungsdruck-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Unterstuezungsdruck_Beatmung
+**FDPG Profil:** [FDPG_PR_ICU_Endexpiratorischer_Kohlendioxidpartialdruck](StructureDefinition-fdpg-pr-icu-endexpiratorischer-kohlendioxidpartialdruck.html) · **MII Elternprofil:** MII_PR_ICU_Endexpiratorischer_Kohlendioxidpartialdruck
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Zeitverhältnis Ein-/Ausatmung (Observation)
+#### MII PR ICU Exspiratorischer Gasfluss (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Vent_Zeitverhaeltnis_Ein_Ausatmung](StructureDefinition-fdpg-pr-icu-vent-zeitverhaeltnis-ein-ausatmung.html) · **MII Elternprofil:** MIIPR_ICU_Zeitverhaeltnis_Ein_Ausatmung
+**FDPG Profil:** [FDPG_PR_ICU_Exspiratorischer_Gasfluss](StructureDefinition-fdpg-pr-icu-exspiratorischer-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Exspiratorischer_Gasfluss
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Exspiratorischer Sauerstoffpartialdruck (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Exspiratorischer_Sauerstoffpartialdruck](StructureDefinition-fdpg-pr-icu-exspiratorischer-sauerstoffpartialdruck.html) · **MII Elternprofil:** MII_PR_ICU_Exspiratorischer_Sauerstoffpartialdruck
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Horowitz In Arteriellem Blut (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Horowitz_In_Arteriellem_Blut](StructureDefinition-fdpg-pr-icu-horowitz-in-arteriellem-blut.html) · **MII Elternprofil:** MII_PR_ICU_Horowitz_In_Arteriellem_Blut
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:vs-cat` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen](StructureDefinition-fdpg-pr-icu-inspiratorische-sauerstofffraktion-gemessen.html) · **MII Elternprofil:** MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Inspiratorischer Gasfluss (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Inspiratorischer_Gasfluss](StructureDefinition-fdpg-pr-icu-inspiratorischer-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Inspiratorischer_Gasfluss
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Maximaler Beatmungsdruck (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Maximaler_Beatmungsdruck](StructureDefinition-fdpg-pr-icu-maximaler-beatmungsdruck.html) · **MII Elternprofil:** MII_PR_ICU_Maximaler_Beatmungsdruck
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Mechanische Atemfrequenz Beatmet (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Mechanische_Atemfrequenz_Beatmet](StructureDefinition-fdpg-pr-icu-mechanische-atemfrequenz-beatmet.html) · **MII Elternprofil:** MII_PR_ICU_Mechanische_Atemfrequenz_Beatmet
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Mittlerer Beatmungsdruck (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Mittlerer_Beatmungsdruck](StructureDefinition-fdpg-pr-icu-mittlerer-beatmungsdruck.html) · **MII Elternprofil:** MII_PR_ICU_Mittlerer_Beatmungsdruck
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Positiv Endexpiratorischer Druck (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Positiv_Endexpiratorischer_Druck](StructureDefinition-fdpg-pr-icu-positiv-endexpiratorischer-druck.html) · **MII Elternprofil:** MII_PR_ICU_Positiv_Endexpiratorischer_Druck
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Spontane Atemfrequenz Beatmet (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Spontane_Atemfrequenz_Beatmet](StructureDefinition-fdpg-pr-icu-spontane-atemfrequenz-beatmet.html) · **MII Elternprofil:** MII_PR_ICU_Spontane_Atemfrequenz_Beatmet
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Spontane Mechanische Atemfrequenz Beatmet (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Spontane_Mechanische_Atemfrequenz_Beatmet](StructureDefinition-fdpg-pr-icu-spontane-mechanische-atemfrequenz-beatmet.html) · **MII Elternprofil:** MII_PR_ICU_Spontane_Mechanische_Atemfrequenz_Beatmet
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Spontanes Atemzugvolumen (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Spontanes_Atemzugvolumen](StructureDefinition-fdpg-pr-icu-spontanes-atemzugvolumen.html) · **MII Elternprofil:** MII_PR_ICU_Spontanes_Atemzugvolumen
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Spontanes_Plus_Mechanisches_Atemzugvolumen](StructureDefinition-fdpg-pr-icu-spontanes-plus-mechanisches-atemzugvolumen.html) · **MII Elternprofil:** MII_PR_ICU_Spontanes_Plus_Mechanisches_Atemzugvolumen
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Unterstuezungsdruck Beatmung (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Unterstuezungsdruck_Beatmung](StructureDefinition-fdpg-pr-icu-unterstuezungsdruck-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Unterstuezungsdruck_Beatmung
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Zeitverhaeltnis Ein Ausatmung (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Zeitverhaeltnis_Ein_Ausatmung](StructureDefinition-fdpg-pr-icu-zeitverhaeltnis-ein-ausatmung.html) · **MII Elternprofil:** MIIPR_ICU_Zeitverhaeltnis_Ein_Ausatmung
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
 ### Extrakorporale Verfahren
 
-#### Extrakorporales Verfahren (Procedure)
+#### MII PR ICU Extrakorporales Verfahren (Procedure)
 
-**FDPG Profil:** [FDPG_PR_ICU_Extrakorporales_Verfahren](StructureDefinition-fdpg-pr-icu-ect-extrakorporales-verfahren.html) · **MII Elternprofil:** MII_PR_ICU_Extrakorporales_Verfahren
+**FDPG Profil:** [FDPG_PR_ICU_Extrakorporales_Verfahren](StructureDefinition-fdpg-pr-icu-extrakorporales-verfahren.html) · **MII Elternprofil:** MII_PR_ICU_Extrakorporales_Verfahren
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `id` | Logical id of this artifact | The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes. |
-| `meta` | Metadata about the resource | The metadata about the resource. This is content that is maintained by the infrastructure. Changes to the content might not always be associated with version changes to the resource. |
-| `meta.source` | Identifies where the resource comes from | A uri that identifies the source system of the resource. This provides a minimal amount of [Provenance](provenance.html#) information that can be used to track or differentiate the source of inform... |
-| `meta.profile` | Profiles this resource claims to conform to | A list of profiles (references to [StructureDefinition](structuredefinition.html#) resources) that this resource claims to conform to. The URL is a reference to [StructureDefinition.url](structured... |
-| `extension` | Additional content defined by implementations | May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance appl... |
+| `extension` | Erweiterung | FHIR-Erweiterung. |
 | `extension:Dokumentationsdatum` | Dokumentationsdatum | Dokumentationsdatum der Prozedur, falls abweichend vom Durchführungsdatum |
 | `extension:durchfuehrungsabsicht` | Durchführungsabsicht | therapeutisch \| palliativ \| diagnostisch \| präventiv \| rehabilitativ \| andere |
 | `status` | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
+| `category.coding:sct` | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `code` | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `subject` | Who the procedure was performed on | The person, animal or group on which the procedure was performed. |
+| `code.coding:ops` | OPS Code | Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel definierten Code |
+| `code.coding:sct` | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
-| `recorder` | Who recorded the procedure | Individual who recorded the record and takes responsibility for its content. |
+| `recorder` | Erfassende\*r | Person oder Organisation, die die Information aufgezeichnet hat. |
 | `bodySite` | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
+| `bodySite.coding:snomed-ct` | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `note` | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 
-#### Parameter von extrakorporalen Verfahren (Observation)
+#### MII PR ICU Parameter von Extrakorporalen Verfahren (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren](StructureDefinition-fdpg-pr-icu-ect-parameter-von-extrakorporalen-verfahren.html) · **MII Elternprofil:** MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Gerätemetrik - Eingestellte/gemessene Parameter extrakorporale Verfahren (DeviceMetric)
-
-**FDPG Profil:** [FDPG_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren](StructureDefinition-fdpg-pr-icu-ect-dm-eingest-param-extrakorporale-verfahren.html) · **MII Elternprofil:** MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren
+**FDPG Profil:** [FDPG_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren](StructureDefinition-fdpg-pr-icu-parameter-von-extrakorporalen-verfahren.html) · **MII Elternprofil:** MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `type` | Identity of metric, for example Heart Rate or PEEP Setting | Describes the type of the metric. For example: Heart Rate, PEEP Setting, etc. |
-| `source` | Describes the link to the source Device | Describes the link to the Device that this DeviceMetric belongs to and that contains administrative device information such as manufacturer, serial number, etc. |
-| `category` | measurement \| setting \| calculation \| unspecified | Indicates the category of the observation generation process. A DeviceMetric can be for example a setting, measurement, or calculation. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Arterieller Druck (Observation)
+#### MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren (DeviceMetric)
 
-**FDPG Profil:** [FDPG_PR_ICU_Arterieller_Druck](StructureDefinition-fdpg-pr-icu-ect-arterieller-druck.html) · **MII Elternprofil:** MII_PR_ICU_Arterieller_Druck
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Blutfluss - Kardiovaskuläres Gerät (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet](StructureDefinition-fdpg-pr-icu-ect-blutfluss-cardiovasculaeres-geraet.html) · **MII Elternprofil:** MII_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet
+**FDPG Profil:** [FDPG_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren](StructureDefinition-fdpg-pr-icu-devicemetric-eingestellte-gemessene-parameter-extrak.html) · **MII Elternprofil:** MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `type` | Typ | Typ oder Art der Ressource. |
+| `source` | Quelle | Quelle der Information. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
 
-#### Blutfluss - Extrakorporaler Gasaustausch (Observation)
+#### MII PR ICU Arterieller Druck (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Blutfluss_Extrakorporaler_Gasaustausch](StructureDefinition-fdpg-pr-icu-ect-blutfluss-extrakorporaler-gasaustausch.html) · **MII Elternprofil:** MII_PR_ICU_Blutfluss_Extrakorporaler_Gasaustausch
+**FDPG Profil:** [FDPG_PR_ICU_Arterieller_Druck](StructureDefinition-fdpg-pr-icu-arterieller-druck.html) · **MII Elternprofil:** MII_PR_ICU_Arterieller_Druck
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Blutflussindex - Extrakorporaler Gasaustausch (Observation)
+#### MII PR ICU Blutfluss Cardiovasculaeres Geraet (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Blutflussindex_Extrakorporaler_Gasaustausch](StructureDefinition-fdpg-pr-icu-ect-blutflussindex-extrakorporaler-gasaustausch.html) · **MII Elternprofil:** MII_PR_ICU_Blutflussindex_Extrakorporaler_Gasaustausch
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Dauer extrakorporaler Gasaustausch (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Dauer_Extrakorporaler_Gasaustausch](StructureDefinition-fdpg-pr-icu-ect-dauer-extrakorporaler-gasaustausch.html) · **MII Elternprofil:** MII_PR_ICU_Dauer_Extrakorporaler_Gasaustausch
+**FDPG Profil:** [FDPG_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet](StructureDefinition-fdpg-pr-icu-blutfluss-cardiovasculaeres-geraet.html) · **MII Elternprofil:** MII_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Dauer der Hämodialysesitzung (Observation)
+#### MII PR ICU Blutfluss Extrakorporaler Gasaustausch (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Dauer_Haemodialysesitzung](StructureDefinition-fdpg-pr-icu-ect-dauer-haemodialysesitzung.html) · **MII Elternprofil:** MII_PR_ICU_Dauer_Haemodialysesitzung
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Gasfluss (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Gasfluss](StructureDefinition-fdpg-pr-icu-ect-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Gasfluss
+**FDPG Profil:** [FDPG_PR_ICU_Blutfluss_Extrakorporaler_Gasaustausch](StructureDefinition-fdpg-pr-icu-blutfluss-extrakorporaler-gasaustausch.html) · **MII Elternprofil:** MII_PR_ICU_Blutfluss_Extrakorporaler_Gasaustausch
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Hämodialyse - Blutfluss (Observation)
+#### MII PR ICU Blutflussindex Extrakorporaler Gasaustausch (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Haemodialyse_Blutfluss](StructureDefinition-fdpg-pr-icu-ect-haemodialyse-blutfluss.html) · **MII Elternprofil:** MII_PR_ICU_Haemodialyse_Blutfluss
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Ionisiertes Kalzium - Nierenersatzverfahren (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren](StructureDefinition-fdpg-pr-icu-ect-onisiertes-kalzium-nierenersatzverfahren.html) · **MII Elternprofil:** MII_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren
+**FDPG Profil:** [FDPG_PR_ICU_Blutflussindex_Extrakorporaler_Gasaustausch](StructureDefinition-fdpg-pr-icu-blutflussindex-extrakorporaler-gasaustausch.html) · **MII Elternprofil:** MII_PR_ICU_Blutflussindex_Extrakorporaler_Gasaustausch
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Substituatfluss (Observation)
+#### MII PR ICU Dauer Extrakorporaler Gasaustausch (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Substituatfluss](StructureDefinition-fdpg-pr-icu-ect-substituatfluss.html) · **MII Elternprofil:** MII_PR_ICU_Substituatfluss
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-
-#### Substituatvolumen (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Substituatvolumen](StructureDefinition-fdpg-pr-icu-ect-substituatvolumen.html) · **MII Elternprofil:** MII_PR_ICU_Substituatvolumen
+**FDPG Profil:** [FDPG_PR_ICU_Dauer_Extrakorporaler_Gasaustausch](StructureDefinition-fdpg-pr-icu-dauer-extrakorporaler-gasaustausch.html) · **MII Elternprofil:** MII_PR_ICU_Dauer_Extrakorporaler_Gasaustausch
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### Venöser Druck (Observation)
+#### MII ICU Dauer Haemodialysesitzung (Observation)
 
-**FDPG Profil:** [FDPG_PR_ICU_Venoeser_Druck](StructureDefinition-fdpg-pr-icu-ect-venoeser-druck.html) · **MII Elternprofil:** MII_PR_ICU_Venoeser_Druck
+**FDPG Profil:** [FDPG_PR_ICU_Dauer_Haemodialysesitzung](StructureDefinition-fdpg-pr-icu-dauer-haemodialysesitzung.html) · **MII Elternprofil:** MII_PR_ICU_Dauer_Haemodialysesitzung
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `partOf` | Observation belongs to a specific extracorporeal procedure. | Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden. |
-| `status` | registered \| preliminary \| final \| amended + | The status of the result value. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Gasfluss (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Gasfluss](StructureDefinition-fdpg-pr-icu-gasfluss.html) · **MII Elternprofil:** MII_PR_ICU_Gasfluss
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Haemodialyse Blutfluss (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Haemodialyse_Blutfluss](StructureDefinition-fdpg-pr-icu-haemodialyse-blutfluss.html) · **MII Elternprofil:** MII_PR_ICU_Haemodialyse_Blutfluss
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren](StructureDefinition-fdpg-pr-icu-ionisiertes-kalzium-nierenersatzverfahren.html) · **MII Elternprofil:** MII_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Substituatfluss (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Substituatfluss](StructureDefinition-fdpg-pr-icu-substituatfluss.html) · **MII Elternprofil:** MII_PR_ICU_Substituatfluss
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Substituatvolumen (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Substituatvolumen](StructureDefinition-fdpg-pr-icu-substituatvolumen.html) · **MII Elternprofil:** MII_PR_ICU_Substituatvolumen
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU Venous Pressure (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Venoeser_Druck](StructureDefinition-fdpg-pr-icu-venoeser-druck.html) · **MII Elternprofil:** MII_PR_ICU_Venoeser_Druck
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
 ### Bilanzierung
 
-#### Bilanz (Observation)
+#### MII PR ICU Bilanz (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz](StructureDefinition-fdpg-pr-icu-bilanz.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 
-#### Bilanz - Gesamte Tagesbilanz (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Bilanz_Gesamte_Tages_Bilanz](StructureDefinition-fdpg-pr-icu-bilanz-gesamte-tages-bilanz.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Gesamte_Tages_Bilanz
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
-
-#### Bilanz - Gesamte Einfuhr (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Bilanz_Gesamte_Einfuhr](StructureDefinition-fdpg-pr-icu-bilanz-gesamte-einfuhr.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Gesamte_Einfuhr
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
-
-#### Bilanz - Gesamte Ausfuhr (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Bilanz_Gesamte_Ausfuhr](StructureDefinition-fdpg-pr-icu-bilanz-gesamte-ausfuhr.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Gesamte_Ausfuhr
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
-
-#### Bilanz - Einfuhr Flüssigkeit gesamt (Observation)
+#### MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt](StructureDefinition-fdpg-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Einfuhr_Fluessigkeit_Gesamt
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 
-#### Bilanz - Einfuhr enterale Flüssigkeit (Observation)
+#### MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit](StructureDefinition-fdpg-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 
-#### Bilanz - Einfuhr oraler Flüssigkeit (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Bilanz_Einfuhr_Oraler_Fluessigkeit](StructureDefinition-fdpg-pr-icu-bilanz-einfuhr-oraler-fluessigkeit.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Einfuhr_Oraler_Fluessigkeit
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
-
-#### Bilanz - Ausfuhr Flüssigkeit gesamt (Observation)
+#### MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Fluessigkeit_Gesamt
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 
-#### Bilanz - Ausfuhr Urin (Observation)
+#### MII PR ICU Bilanz Ausfuhr Urin (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Urin](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-urin.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Urin
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 
-#### Bilanz - Ausfuhr Stuhlgang (Observation)
+#### MII PR ICU Bilanz Ausfuhr Stuhlgang (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Stuhlgang](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-stuhlgang.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Stuhlgang
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 
-#### Bilanz - Ausfuhr Magensonde (Observation)
+#### MII PR ICU Bilanz Ausfuhr Magensonde (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Magensonde](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-magensonde.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Magensonde
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 
-#### Bilanz - Ausfuhr Gallenflüssigkeit (Observation)
+#### MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 
-#### Bilanz - Ausfuhr Gallengang (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Gallengang](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-gallengang.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Gallengang
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
-
-#### Bilanz - Ausfuhr Drainage (generisch\ (Observation)
+#### MII PR ICU Bilanz Ausfuhr Drainage Generisch (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-drainage-generisch.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Drainage_Generisch
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 
-#### Bilanz - Ausfuhr OP-Drainage (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Opdrainage](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-opdrainage.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Opdrainage
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
-
-#### Bilanz - Ausfuhr Pankreasdrainage (Observation)
+#### MII PR ICU Bilanz Ausfuhr Pankreasdrainage (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-pankreasdrainage.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Pankreasdrainage
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 
-#### Bilanz - Ausfuhr Wunddrainage (Observation)
+#### MII PR ICU Bilanz Ausfuhr Wunddrainage (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Wunddrainage](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-wunddrainage.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
-
-#### Bilanz - Blutverlust (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Bilanz_Blutverlust](StructureDefinition-fdpg-pr-icu-bilanz-blutverlust.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Blutverlust
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
-
-#### Bilanz - Abnahme Hämofiltration (Einzelmesswerte\ (Observation)
-
-**FDPG Profil:** [FDPG_PR_ICU_Bilanz_Abnahme_Haemofiltration_Einzelmesswerte](StructureDefinition-fdpg-pr-icu-bilanz-abnahme-haemofiltration-einzelmesswerte.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Abnahme_Haemofiltration_Einzelmesswerte
-
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Business Identifier for observation | A unique identifier assigned to this observation. |
-| `category` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `code` | Type of observation (code / type) | Describes what was observed. Sometimes this is called the observation "name". |
-| `subject` | Who and/or what the observation is about | The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subjec... |
-| `encounter` | Healthcare event during which this observation is made | The healthcare event (e.g. a patient and healthcare provider interaction) during which this observation is made. |
-| `effective[x]` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `issued` | Date/Time this version was made available | The date and time this version of the observation was made available to providers, typically after the results have been reviewed and verified. |
-| `value[x]` | Actual result | The information determined as a result of making the observation, if the information has a simple value. |
-| `dataAbsentReason` | Why the result is missing | Provides a reason why the expected value in the element Observation.value[x] is missing. |
-| `interpretation` | High, low, normal, etc. | A categorical assessment of an observation value. For example, high, low, normal. |
-| `bodySite` | Observed body part | Indicates the site on the subject's body where the observation was made (i.e. the target site). |
-| `method` | How it was done | Indicates the mechanism used to perform the observation. |
-| `specimen` | Specimen used for this observation | The specimen that was used when this observation was made. |
-| `device` | (Measurement) Device | The device used to generate the observation data. |
-| `referenceRange` | Provides guide for interpretation | Guidance on how to interpret the value by comparison to a normal or recommended range. Multiple reference ranges are interpreted as an "OR". In other words, to represent two distinct target populat... |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 
 ### Geraete
 
-#### Gerät (Device)
+#### MII PR ICU Device (Device)
 
 **FDPG Profil:** [FDPG_PR_ICU_Device](StructureDefinition-fdpg-pr-icu-device.html) · **MII Elternprofil:** MII_PR_ICU_Device
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `identifier` | Instance identifier | Unique instance identifiers assigned to a device by manufacturers other organizations or owners. |
-| `status` | active \| inactive \| entered-in-error \| unknown | Status of the Device availability. |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `status` | Status | Status der Ressource. |
 | `deviceName` | The name of the device as given by the manufacturer | This represents the manufacturer's name of the device as provided by the device, from a UDI label, or by a person describing the Device. This typically would be used when a person provides the name... |
-| `type` | The kind or type of device | The kind or type of device. |
+| `type` | Typ | Typ oder Art der Ressource. |
 | `version` | The actual design of the device or software version running on the device | The actual design of the device or software version running on the device. |
 | `property` | The actual configuration settings of a device as it actually operates, e.g., regulation status, time properties | The actual configuration settings of a device as it actually operates, e.g., regulation status, time properties. |
+
+### Weitere Profile
+
+#### MII PR ICU Bilanz Ausfuhr Blutverlust (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Blutverlust](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-blutverlust.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
+
+#### MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
+
+#### MII PR ICU Bilanz Ausfuhr OP Drainage (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_OP_Drainage](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-op-drainage.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
+
+#### MII PR ICU Bilanz Tagesbilanz Fluessigkeit (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit](StructureDefinition-fdpg-pr-icu-bilanz-tagesbilanz-fluessigkeit.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
+
+#### MII PR ICU Inspiratorische Sauerstofffraktion Eingestellt (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_Inspiratorische_Sauerstofffraktion_Eingestellt](StructureDefinition-fdpg-pr-icu-inspiratorische-sauerstofffraktion-eingestellt.html) · **MII Elternprofil:** MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Eingestellt
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
+#### MII PR ICU MUV Arterieller Blutdruck (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_MUV_Arterieller_Blutdruck](StructureDefinition-fdpg-pr-icu-muv-arterieller-blutdruck.html) · **MII Elternprofil:** MII_PR_ICU_MUV_Arterieller_Blutdruck
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
+| `component` | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:SystolicBP` | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:DiastolicBP` | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:meanBP` | Komponente | Untergeordnete Beobachtungskomponente. |
+
+#### MII PR ICU MUV Atemfrequenz (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_MUV_Atemfrequenz](StructureDefinition-fdpg-pr-icu-muv-atemfrequenz.html) · **MII Elternprofil:** MII_PR_ICU_MUV_Atemfrequenz
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+
+#### MII SD ICU MUV Herzfrequenz (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_MUV_Herzfrequenz](StructureDefinition-fdpg-pr-icu-muv-herzfrequenz.html) · **MII Elternprofil:** MII_PR_ICU_MUV_Herzfrequenz
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:vs-cat` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `performer` | Durchführende\*r | Person oder Organisation, die die Maßnahme durchgeführt hat. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
+| `component` | Komponente | Untergeordnete Beobachtungskomponente. |
+
+#### MII PR ICU MUV Koerpergewicht (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_MUV_Koerpergewicht](StructureDefinition-fdpg-pr-icu-muv-koerpergewicht.html) · **MII Elternprofil:** MII_PR_ICU_MUV_Koerpergewicht
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:sct` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:snomed` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `effective[x]:effectivePeriod` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
+| `component` | Komponente | Untergeordnete Beobachtungskomponente. |
+
+#### MII PR ICU MUV Koerpergroesse (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_MUV_Koerpergroesse](StructureDefinition-fdpg-pr-icu-muv-koerpergroesse.html) · **MII Elternprofil:** MII_PR_ICU_MUV_Koerpergroesse
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:VSCat` | Kategorie | Kategorisierung der Ressource. |
+| `category:sct` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `effective[x]:effectivePeriod` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+
+#### MII PR ICU MUV Kopfumfang (Observation)
+
+**FDPG Profil:** [FDPG_PR_ICU_MUV_Kopfumfang](StructureDefinition-fdpg-pr-icu-muv-kopfumfang.html) · **MII Elternprofil:** MII_PR_ICU_MUV_Kopfumfang
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `status` | Status | Status der Ressource. |
+| `category:sct` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:snomed` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
 
 ---
 
 ## English Translations
 
 <details>
-<summary>English translations - Beatmung</summary>
+<summary>English translations - MII PR ICU Beatmung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
+| `extension` | Extension | FHIR extension. |
 | `extension:Dokumentationsdatum` | Recorded date | The date the procedure was documented, if different from the performed date |
 | `extension:durchfuehrungsabsicht` | Intention | therapeutic \| palliative \| diagnostic \| preventive \| rehabilitative \| other |
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
+| `category.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
 | `code` | Code | Code from OPS - Operationen- und Prozedurenschlüssel, SNOMED CT or other. |
+| `code.coding:ops` | OPS code | A reference to a code defined by the German Procedure Classification OPS |
+| `code.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
+| `recorder` | Recorder | Person or organization that recorded the information. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
+| `bodySite.coding:snomed-ct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
 | `note` | Note | Additional information about the procedure as free text. |
 
 </details>
 
 <details>
-<summary>English translations - Extrakorporales Verfahren</summary>
+<summary>English translations - MII PR ICU Parameter von Beatmung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code.coding:loinc` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code.coding:IEEE-11073` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `type` | Type | Type or kind of the resource. |
+| `source` | Source | Source of the information. |
+| `category` | Category | Categorization of the resource. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Atemzugvolumen Einstellung</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Atemzugvolumen Waehrend Beatmung</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII ICU Beatmungszeit Hohem Druck</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Beatmungszeit Niedrigem Druck</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Dynamische Kompliance</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Druckdifferenz Beatmung</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Eingestellter Inspiratorischer Gasfluss</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:Beatmung` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Einstellung Ausatmungszeit Beatmung</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Einstellung Einatmungszeit Beatmung</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:Beatmung` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Exspiratorischer Gasfluss</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:Beatmung` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Exspiratorischer Sauerstoffpartialdruck</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:Beatmung` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Horowitz In Arteriellem Blut</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:vs-cat` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:Beatmung` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Inspiratorischer Gasfluss</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:Beatmung` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Maximaler Beatmungsdruck</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Mechanische Atemfrequenz Beatmet</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Mittlerer Beatmungsdruck</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Positiv Endexpiratorischer Druck</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Spontane Atemfrequenz Beatmet</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Spontane Mechanische Atemfrequenz Beatmet</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Spontanes Atemzugvolumen</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Unterstuezungsdruck Beatmung</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Zeitverhaeltnis Ein Ausatmung</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Extrakorporales Verfahren</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `extension` | Extension | FHIR extension. |
 | `extension:Dokumentationsdatum` | Recorded date | The date the procedure was documented, if different from the performed date |
 | `extension:durchfuehrungsabsicht` | Intention | therapeutic \| palliative \| diagnostic \| preventive \| rehabilitative \| other |
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
+| `category.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
 | `code` | Code | Code from OPS - Operationen- und Prozedurenschlüssel, SNOMED CT or other. |
+| `code.coding:ops` | OPS code | A reference to a code defined by the German Procedure Classification OPS |
+| `code.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
+| `recorder` | Recorder | Person or organization that recorded the information. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
+| `bodySite.coding:snomed-ct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
 | `note` | Note | Additional information about the procedure as free text. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Parameter von Extrakorporalen Verfahren</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `type` | Type | Type or kind of the resource. |
+| `source` | Source | Source of the information. |
+| `category` | Category | Categorization of the resource. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Arterieller Druck</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Blutfluss Cardiovasculaeres Geraet</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Blutfluss Extrakorporaler Gasaustausch</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Blutflussindex Extrakorporaler Gasaustausch</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Dauer Extrakorporaler Gasaustausch</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII ICU Dauer Haemodialysesitzung</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Gasfluss</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Haemodialyse Blutfluss</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Substituatfluss</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Substituatvolumen</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Venous Pressure</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Bilanz</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:hl7-category` | Observation category | Coding in Observation category. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `device` | Device | Device used to make the observation. |
+| `referenceRange` | Reference range | Clinical reference range for the value. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:hl7-category` | Observation category | Coding in Observation category. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `device` | Device | Device used to make the observation. |
+| `referenceRange` | Reference range | Clinical reference range for the value. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Bilanz Einfuhr Enterale Fluessigkeit</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:hl7-category` | Observation category | Coding in Observation category. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `device` | Device | Device used to make the observation. |
+| `referenceRange` | Reference range | Clinical reference range for the value. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Bilanz Ausfuhr Fluessigkeit Gesamt</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:hl7-category` | Observation category | Coding in Observation category. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `device` | Device | Device used to make the observation. |
+| `referenceRange` | Reference range | Clinical reference range for the value. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Bilanz Ausfuhr Urin</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:hl7-category` | Observation category | Coding in Observation category. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `device` | Device | Device used to make the observation. |
+| `referenceRange` | Reference range | Clinical reference range for the value. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Bilanz Ausfuhr Stuhlgang</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:hl7-category` | Observation category | Coding in Observation category. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `device` | Device | Device used to make the observation. |
+| `referenceRange` | Reference range | Clinical reference range for the value. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Bilanz Ausfuhr Magensonde</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:hl7-category` | Observation category | Coding in Observation category. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `device` | Device | Device used to make the observation. |
+| `referenceRange` | Reference range | Clinical reference range for the value. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:hl7-category` | Observation category | Coding in Observation category. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `device` | Device | Device used to make the observation. |
+| `referenceRange` | Reference range | Clinical reference range for the value. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Bilanz Ausfuhr Drainage Generisch</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:hl7-category` | Observation category | Coding in Observation category. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `device` | Device | Device used to make the observation. |
+| `referenceRange` | Reference range | Clinical reference range for the value. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Bilanz Ausfuhr Pankreasdrainage</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:hl7-category` | Observation category | Coding in Observation category. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `device` | Device | Device used to make the observation. |
+| `referenceRange` | Reference range | Clinical reference range for the value. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Bilanz Ausfuhr Wunddrainage</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:hl7-category` | Observation category | Coding in Observation category. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `device` | Device | Device used to make the observation. |
+| `referenceRange` | Reference range | Clinical reference range for the value. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Device</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `status` | Status | Status of the resource. |
+| `deviceName` | The name of the device as given by the manufacturer | This represents the manufacturer's name of the device as provided by the device, from a UDI label, or by a person describing the Device. This typically would be used when a person provides the name... |
+| `type` | Type | Type or kind of the resource. |
+| `version` | The actual design of the device or software version running on the device | The actual design of the device or software version running on the device. |
+| `property` | The actual configuration settings of a device as it actually operates, e.g., regulation status, time properties | The actual configuration settings of a device as it actually operates, e.g., regulation status, time properties. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Bilanz Ausfuhr Blutverlust</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:hl7-category` | Observation category | Coding in Observation category. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `device` | Device | Device used to make the observation. |
+| `referenceRange` | Reference range | Clinical reference range for the value. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:hl7-category` | Observation category | Coding in Observation category. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `device` | Device | Device used to make the observation. |
+| `referenceRange` | Reference range | Clinical reference range for the value. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Bilanz Ausfuhr OP Drainage</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:hl7-category` | Observation category | Coding in Observation category. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `device` | Device | Device used to make the observation. |
+| `referenceRange` | Reference range | Clinical reference range for the value. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Bilanz Tagesbilanz Fluessigkeit</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `category` | Category | Categorization of the resource. |
+| `category.coding:hl7-category` | Observation category | Coding in Observation category. |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `device` | Device | Device used to make the observation. |
+| `referenceRange` | Reference range | Clinical reference range for the value. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU Inspiratorische Sauerstofffraktion Eingestellt</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `partOf` | Part of | Reference to a parent resource that this is part of. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:Beatmung` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `issued` | Issued | Date when the resource was issued. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `device` | Device | Device used to make the observation. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU MUV Arterieller Blutdruck</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `method` | Method | Method used to make the observation. |
+| `device` | Device | Device used to make the observation. |
+| `referenceRange` | Reference range | Clinical reference range for the value. |
+| `component` | Component | Sub-observation component. |
+| `component:SystolicBP` | Component | Sub-observation component. |
+| `component:DiastolicBP` | Component | Sub-observation component. |
+| `component:meanBP` | Component | Sub-observation component. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU MUV Atemfrequenz</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+
+</details>
+
+<details>
+<summary>English translations - MII SD ICU MUV Herzfrequenz</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:vs-cat` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `performer` | Performer | Person or organization that performed the procedure. |
+| `value[x]` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `method` | Method | Method used to make the observation. |
+| `device` | Device | Device used to make the observation. |
+| `referenceRange` | Reference range | Clinical reference range for the value. |
+| `component` | Component | Sub-observation component. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU MUV Koerpergewicht</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:sct` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
+| `effective[x]:effectivePeriod` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Value | Value of the observation. |
+| `component` | Component | Sub-observation component. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU MUV Koerpergroesse</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:VSCat` | Category | Categorization of the resource. |
+| `category:sct` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
+| `effective[x]:effectivePeriod` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR ICU MUV Kopfumfang</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `status` | Status | Status of the resource. |
+| `category:sct` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `code.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Value | Value of the observation. |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `bodySite` | Body site | Body site the resource refers to. |
 
 </details>
 

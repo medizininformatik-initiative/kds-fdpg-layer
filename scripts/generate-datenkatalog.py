@@ -45,15 +45,15 @@ MODULES = {
     },
     "medikation": {
         "package": "de.medizininformatikinitiative.kerndatensatz.medikation",
-        "version": "2026.0.0",
+        "version": "2026.0.1",
         "title": "Medikation",
-        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.medikation/2026.0.0",
+        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.medikation/2026.0.1",
     },
     "biobank": {
         "package": "de.medizininformatikinitiative.kerndatensatz.biobank",
-        "version": "2026.0.0",
+        "version": "2026.0.1",
         "title": "Biobank",
-        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.biobank/2026.0.0",
+        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.biobank/2026.0.1",
     },
     "studie": {
         "package": "de.medizininformatikinitiative.kerndatensatz.studie",
@@ -75,9 +75,9 @@ MODULES = {
     },
     "icu": {
         "package": "de.medizininformatikinitiative.kerndatensatz.icu",
-        "version": "2026.0.1-rc1",
+        "version": "2026.0.2",
         "title": "Intensivmedizin",
-        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.icu/2026.0.1-rc1",
+        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.icu/2026.0.2",
     },
     "bildgebung": {
         "package": "de.medizininformatikinitiative.kerndatensatz.bildgebung",
@@ -87,39 +87,45 @@ MODULES = {
     },
     "seltene": {
         "package": "de.medizininformatikinitiative.kerndatensatz.seltene",
-        "version": "2026.0.0",
+        "version": "2026.0.1",
         "title": "Seltene Erkrankungen",
-        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.seltene/2026.0.0",
+        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.seltene/2026.0.1",
     },
     "onkologie": {
         "package": "de.medizininformatikinitiative.kerndatensatz.onkologie",
-        "version": "2026.0.1",
+        "version": "2026.0.3",
         "title": "Onkologie",
-        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/2026.0.1",
+        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/2026.0.3",
     },
     "consent": {
         "package": "de.medizininformatikinitiative.kerndatensatz.consent",
-        "version": "2026.0.1-rc-1",
+        "version": "2026.0.1-rc-2",
         "title": "Einwilligung",
-        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.consent/2026.0.1-rc-1",
+        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.consent/2026.0.1-rc-2",
     },
     "dokument": {
         "package": "de.medizininformatikinitiative.kerndatensatz.dokument",
-        "version": "2026.0.0",
+        "version": "2026.0.1",
         "title": "Dokument",
-        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.dokument/2026.0.0",
+        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.dokument/2026.0.1",
     },
     "mtb": {
         "package": "de.medizininformatikinitiative.kerndatensatz.mtb",
-        "version": "2026.0.0",
+        "version": "2026.0.1",
         "title": "MTB",
-        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.mtb/2026.0.0",
+        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.mtb/2026.0.1",
     },
     "proms": {
         "package": "de.medizininformatikinitiative.kerndatensatz.pros",
-        "version": "2026.0.1",
+        "version": "2026.3.0",
         "title": "PRO",
-        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.pros/2026.0.1",
+        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.pros/2026.3.0",
+    },
+    "mikrobiologie": {
+        "package": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
+        "version": "2027.0.0-alpha.2",
+        "title": "Mikrobiologie",
+        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.mikrobiologie/2027.0.0-alpha.2",
     },
 }
 
@@ -132,6 +138,69 @@ TRANSLATION_EXT_URL = "http://hl7.org/fhir/StructureDefinition/translation"
 
 # Obligation labels for the markdown table
 OBLIGATION_LABEL = "MustSupport"
+
+CANONICAL_LABELS_FILE = PROJECT_ROOT / "input" / "data" / "canonical-labels.json"
+
+# Override english-leaning leaf labels coming from upstream MII Logical Models.
+# Maps original LM element name -> {de, en} replacement.
+# Source: docs/datenkatalog-styleguide.md §3 / manual review of LM exports.
+LM_LABEL_OVERRIDES: dict[str, dict] = {
+    "FollowUpStatus":         {"de": "NachsorgeStatus",          "en": "FollowUpStatus"},
+    "ResponseBeurteilung":    {"de": "AnsprechenBeurteilung",    "en": "ResponseAssessment"},
+    "PatternTyp":             {"de": "MusterTyp",                "en": "PatternType"},
+    "IntraoperativesImaging": {"de": "IntraoperativeBildgebung", "en": "IntraoperativeImaging"},
+    "HPOExcluded":            {"de": "HPOAusgeschlossen",        "en": "HPOExcluded"},
+}
+
+
+def load_canonical_labels() -> dict:
+    """Load canonical DE+EN labels for fallback when profile/LM lacks translations.
+
+    Returns dict with 'elements' (path → labels) and 'coding_systems' (URL → labels).
+    """
+    if not CANONICAL_LABELS_FILE.exists():
+        return {"elements": {}, "coding_systems": {}}
+    with open(CANONICAL_LABELS_FILE) as f:
+        data = json.load(f)
+    elements = {k: v for k, v in data.get("elements", {}).items() if not k.startswith("_")}
+    systems = {k: v for k, v in data.get("coding_systems", {}).items() if not k.startswith("_")}
+    return {"elements": elements, "coding_systems": systems}
+
+
+def lookup_canonical(canonical: dict, display_path: str) -> dict:
+    """Look up canonical labels for a profile element display path.
+
+    Handles slice notation by stripping the slice suffix as fallback.
+    """
+    elements = canonical.get("elements", {})
+    if display_path in elements:
+        return elements[display_path]
+    base = re.sub(r":[^.]+", "", display_path)
+    if base != display_path and base in elements:
+        return elements[base]
+    return {}
+
+
+def get_coding_system(elem: dict) -> str:
+    """Extract the coding system URL from a coding-slice element.
+
+    Looks at patternCoding.system, pattern.system, or fixedUri.
+    Returns empty string if not found.
+    """
+    pc = elem.get("patternCoding") or {}
+    if pc.get("system"):
+        return pc["system"]
+    p = elem.get("pattern") or {}
+    if p.get("system"):
+        return p["system"]
+    if elem.get("fixedUri"):
+        return elem["fixedUri"]
+    return ""
+
+
+def lookup_coding_system_labels(canonical: dict, system_url: str) -> dict:
+    """Look up DE+EN labels for a coding system URL."""
+    return canonical.get("coding_systems", {}).get(system_url, {})
 
 # Logical model config: module name → LM filenames + FHIR mapping identity strings.
 # Modules without an entry (or without FHIR mappings) simply get no Fachbegriff column.
@@ -241,13 +310,22 @@ def extract_translation(element: dict, field: str, lang: str) -> str:
     return ""
 
 
+# Infrastructure/metadata elements excluded per Styleguide §1 and field_config.json
+# default.exclude. Applied at the top-level (depth 2) of any resource.
+METADATA_TOP_ELEMENTS = {
+    "id", "meta", "implicitRules", "language",
+    "text", "contained", "modifierExtension",
+}
+
+
 def get_ms_elements(profile_data: dict) -> list[dict]:
     """Extract top-level mustSupport elements from profile snapshot.
 
     Uses element.id (not path) to determine depth and slice membership:
     - Include elements at depth <= 2 (e.g. Observation.code)
     - Include named slices at depth 2 (e.g. Observation.identifier:analyseBefundCode)
-    - Always include meta.source and meta.profile
+    - Include named coding slices at depth 3 (e.g. Observation.code.coding:icd-10-gm)
+    - Exclude infrastructure elements (id, meta, meta.*, text, contained, ...)
     - Exclude deeper elements (e.g. Observation.code.coding.system)
     """
     elements = profile_data.get("snapshot", {}).get("element", [])
@@ -256,20 +334,19 @@ def get_ms_elements(profile_data: dict) -> list[dict]:
         if not elem.get("mustSupport"):
             continue
         elem_id = elem.get("id", elem.get("path", ""))
-        path = elem.get("path", "")
 
-        # Always include meta.source and meta.profile
-        if path.endswith("meta.source") or path.endswith("meta.profile"):
-            result.append(elem)
-            continue
-
-        # Split on '.' but treat slice notation ':' as part of the segment
-        # e.g. "Observation.component:SystolicBP" -> depth 2
-        # e.g. "Observation.component:SystolicBP.code" -> depth 3
         segments = elem_id.split(".")
         depth = len(segments)
 
+        if depth >= 2:
+            top = segments[1].split(":")[0]  # strip slice suffix
+            if top in METADATA_TOP_ELEMENTS:
+                continue
+
         if depth <= 2:
+            result.append(elem)
+        elif depth == 3 and ":" in segments[2]:
+            # Named slice on a sub-element (e.g. code.coding:icd-10-gm)
             result.append(elem)
 
     return result
@@ -481,12 +558,18 @@ def lookup_lm_label(
     resource_type: str,
     display_path: str,
     element: dict | None = None,
+    lang: str = "de",
 ) -> str:
-    """Resolve a profile element to its logical model concept name(s)."""
+    """Resolve a profile element to its logical model concept name(s).
+
+    Applies LM_LABEL_OVERRIDES to replace english-leaning upstream LM labels
+    with curated German/English equivalents. Pass lang="en" for EN labels;
+    falls back to the original LM label if no override is defined.
+    """
     entry = _resolve_lm_key(lm_lookup, resource_type, display_path, element)
     if not entry:
         return ""
-    labels = entry["labels"]
+    labels = [LM_LABEL_OVERRIDES.get(l, {}).get(lang, l) for l in entry["labels"]]
     if len(labels) <= 2:
         return ", ".join(labels)
     return ", ".join(labels[:2]) + ", ..."
@@ -604,7 +687,10 @@ def parse_module_sections(module_name: str) -> list[tuple[str, list[str]]]:
         "proms": "modul-pros.md",
     }
 
-    page_file = PAGECONTENT_DIR / page_map.get(module_name, "")
+    page_filename = page_map.get(module_name, "")
+    if not page_filename:
+        return []
+    page_file = PAGECONTENT_DIR / page_filename
     if not page_file.exists():
         return []
 
@@ -667,6 +753,102 @@ def _parse_basis_sections() -> list[tuple[str, list[str]]]:
 
 
 # ---------------------------------------------------------------------------
+# Per-element label resolution (shared between markdown + xlsx output)
+# ---------------------------------------------------------------------------
+
+def resolve_element_labels(
+    elem: dict,
+    resource_type: str,
+    lm_lookup: dict | None,
+    canonical: dict | None,
+    element_comments: dict,
+) -> dict | None:
+    """Resolve all DE+EN labels for one MS element.
+
+    Returns dict with keys: element, lm_label_de, lm_label_en, lm_desc,
+    de_short, de_def, en_short, en_def, comment. Returns None if the element
+    has no display path.
+    """
+    display_path = element_display_path(elem, resource_type)
+    if not display_path:
+        return None
+
+    de_short = extract_translation(elem, "short", "de-DE")
+    de_def = extract_translation(elem, "definition", "de-DE")
+    en_short = extract_translation(elem, "short", "en-US")
+    en_def = extract_translation(elem, "definition", "en-US")
+
+    canon = lookup_canonical(canonical or {}, display_path)
+    coding_label = {}
+    if ".coding:" in display_path:
+        sys_url = get_coding_system(elem)
+        if sys_url:
+            cs = lookup_coding_system_labels(canonical or {}, sys_url)
+            if cs:
+                coding_label = {
+                    "de_short": cs.get("de_short", ""),
+                    "en_short": cs.get("en_short", ""),
+                    "de_def": f"Kodierung nach {cs.get('de_short', '')}.",
+                    "en_def": f"Coding in {cs.get('en_short', '')}.",
+                }
+
+    if not de_short:
+        de_short = coding_label.get("de_short") or canon.get("de_short") or elem.get("short", "")
+    if not de_def:
+        de_def = coding_label.get("de_def") or canon.get("de_def") or elem.get("definition", "")
+    if not en_short:
+        en_short = coding_label.get("en_short") or canon.get("en_short") or elem.get("short", "")
+    if not en_def:
+        en_def = coding_label.get("en_def") or canon.get("en_def") or elem.get("definition", "")
+
+    lm_label_de = ""
+    lm_label_en = ""
+    lm_desc = ""
+    if lm_lookup:
+        lm_label_de = lookup_lm_label(lm_lookup, resource_type, display_path, elem, "de")
+        lm_label_en = lookup_lm_label(lm_lookup, resource_type, display_path, elem, "en")
+        lm_desc = lookup_lm_description(lm_lookup, resource_type, display_path, elem)
+
+    return {
+        "element": display_path,
+        "lm_label_de": lm_label_de,
+        "lm_label_en": lm_label_en,
+        "lm_desc": lm_desc,
+        "de_short": de_short,
+        "de_def": de_def,
+        "en_short": en_short,
+        "en_def": en_def,
+        "comment": element_comments.get(display_path, ""),
+    }
+
+
+def collect_profile_data(
+    profile_info: dict,
+    profile_data: dict,
+    resource_type: str,
+    lm_lookup: dict | None = None,
+    canonical: dict | None = None,
+) -> dict:
+    """Collect all data for one profile (header info + per-element rows) for xlsx output."""
+    ms_elements = get_ms_elements(profile_data)
+    element_comments = profile_info.get("element_comments", {})
+    rows = []
+    for elem in ms_elements:
+        row = resolve_element_labels(elem, resource_type, lm_lookup, canonical, element_comments)
+        if row:
+            rows.append(row)
+    return {
+        "fdpg_name": profile_info["fdpg_name"],
+        "fdpg_id": profile_info["fdpg_id"],
+        "parent_name": profile_info["parent_name"],
+        "title_de": profile_info.get("title_de", "") or _profile_display_name(profile_info["parent_name"]),
+        "resource_type": resource_type,
+        "description": profile_info.get("description", ""),
+        "rows": rows,
+    }
+
+
+# ---------------------------------------------------------------------------
 # Generate markdown for one profile
 # ---------------------------------------------------------------------------
 
@@ -675,6 +857,7 @@ def generate_profile_section(
     profile_data: dict,
     resource_type: str,
     lm_lookup: dict[tuple[str, str], dict] | None = None,
+    canonical: dict | None = None,
 ) -> tuple[str, str]:
     """Generate German table and English details block for one profile.
 
@@ -737,13 +920,29 @@ def generate_profile_section(
         if not display_path:
             continue
 
-        # German: prefer translation, fall back to FHIR default
+        # German: prefer translation → coding-system label (for *.coding:* slices)
+        # → canonical element fallback → FHIR default (often English)
         de_short = extract_translation(elem, "short", "de-DE")
         de_def = extract_translation(elem, "definition", "de-DE")
+        canon = lookup_canonical(canonical or {}, display_path)
+
+        coding_label = {}
+        if ".coding:" in display_path:
+            sys_url = get_coding_system(elem)
+            if sys_url:
+                cs = lookup_coding_system_labels(canonical or {}, sys_url)
+                if cs:
+                    coding_label = {
+                        "de_short": cs.get("de_short", ""),
+                        "en_short": cs.get("en_short", ""),
+                        "de_def": f"Kodierung nach {cs.get('de_short', '')}.",
+                        "en_def": f"Coding in {cs.get('en_short', '')}.",
+                    }
+
         if not de_short:
-            de_short = elem.get("short", "")
+            de_short = coding_label.get("de_short") or canon.get("de_short") or elem.get("short", "")
         if not de_def:
-            de_def = elem.get("definition", "")
+            de_def = coding_label.get("de_def") or canon.get("de_def") or elem.get("definition", "")
 
         # Look up element comment from FSH
         comment = element_comments.get(display_path, "")
@@ -763,16 +962,16 @@ def generate_profile_section(
             row_cols.append(md_escape(comment))
         german_lines.append("| " + " | ".join(row_cols) + " |")
 
-        # English
+        # English: prefer translation → coding-system label → canonical element fallback
+        # → FHIR default (always available, in English).
         en_short = extract_translation(elem, "short", "en-US")
         en_def = extract_translation(elem, "definition", "en-US")
+        if not en_short:
+            en_short = coding_label.get("en_short") or canon.get("en_short") or elem.get("short", "")
+        if not en_def:
+            en_def = coding_label.get("en_def") or canon.get("en_def") or elem.get("definition", "")
         if en_short or en_def:
             has_english = True
-            # Fall back to FHIR default for English if translation missing
-            if not en_short:
-                en_short = elem.get("short", "")
-            if not en_def:
-                en_def = elem.get("definition", "")
             english_rows.append(
                 f"| `{display_path}` | {md_escape(en_short)} | {md_escape(en_def)} |"
             )
@@ -806,7 +1005,7 @@ def _profile_display_name(parent_name: str) -> str:
 # Generate full page for one module
 # ---------------------------------------------------------------------------
 
-def generate_module_page(module_name: str) -> str:
+def generate_module_page(module_name: str, canonical: dict | None = None) -> str:
     """Generate the full datenkatalog markdown page for a module."""
     cfg = MODULES[module_name]
     package_dir = get_package_dir(cfg)
@@ -874,7 +1073,7 @@ def generate_module_page(module_name: str) -> str:
                 pinfo = parent_to_profile[parent_name]
                 pdata = parent_data[parent_name]
                 resource_type = pdata.get("type", "Resource")
-                german_md, english_md = generate_profile_section(pinfo, pdata, resource_type, lm_lookup)
+                german_md, english_md = generate_profile_section(pinfo, pdata, resource_type, lm_lookup, canonical)
                 if german_md:
                     section_german.append(german_md)
                 if english_md:
@@ -899,7 +1098,7 @@ def generate_module_page(module_name: str) -> str:
             for pinfo in remaining:
                 pdata = parent_data[pinfo["parent_name"]]
                 resource_type = pdata.get("type", "Resource")
-                german_md, english_md = generate_profile_section(pinfo, pdata, resource_type, lm_lookup)
+                german_md, english_md = generate_profile_section(pinfo, pdata, resource_type, lm_lookup, canonical)
                 if german_md:
                     lines.append(german_md)
                     lines.append("")
@@ -912,7 +1111,7 @@ def generate_module_page(module_name: str) -> str:
                 continue
             pdata = parent_data[pinfo["parent_name"]]
             resource_type = pdata.get("type", "Resource")
-            german_md, english_md = generate_profile_section(pinfo, pdata, resource_type, lm_lookup)
+            german_md, english_md = generate_profile_section(pinfo, pdata, resource_type, lm_lookup, canonical)
             if german_md:
                 lines.append(german_md)
                 lines.append("")
@@ -932,23 +1131,148 @@ def generate_module_page(module_name: str) -> str:
 # Main
 # ---------------------------------------------------------------------------
 
+def collect_module_data(module_name: str, canonical: dict) -> dict | None:
+    """Collect all profile data for one module (for xlsx output)."""
+    cfg = MODULES[module_name]
+    package_dir = get_package_dir(cfg)
+    if not package_dir.is_dir():
+        return None
+    profiles = parse_fsh_profiles(module_name)
+    if not profiles:
+        return None
+
+    lm_models = load_logical_models(module_name, package_dir)
+    lm_lookup = None
+    if lm_models:
+        lm_cfg = LOGICAL_MODEL_CONFIG.get(module_name, {})
+        lm_lookup = build_lm_lookup(lm_models, lm_cfg.get("fhir_identities", []))
+
+    profile_data_list = []
+    for p in profiles:
+        pdata = load_profile_json(package_dir, p["parent_name"])
+        if not pdata:
+            continue
+        resource_type = pdata.get("type", "Resource")
+        collected = collect_profile_data(p, pdata, resource_type, lm_lookup, canonical)
+        if collected["rows"]:
+            profile_data_list.append(collected)
+
+    return {
+        "module": module_name,
+        "title": cfg["title"],
+        "subtitle": cfg.get("subtitle", ""),
+        "package": cfg["package"],
+        "version": cfg["version"],
+        "simplifier_url": cfg["simplifier_url"],
+        "profiles": profile_data_list,
+    }
+
+
+def write_xlsx(modules_data: list[dict], output_path: Path) -> None:
+    """Write all module data to a single xlsx workbook (one sheet per module)."""
+    from openpyxl import Workbook
+    from openpyxl.styles import Font, PatternFill, Alignment
+    from openpyxl.utils import get_column_letter
+
+    wb = Workbook()
+    wb.remove(wb.active)
+
+    headers = [
+        "Profil (DE)", "FDPG ID", "MII Elternprofil", "Ressourcentyp",
+        "Element",
+        "Konzept LM (DE)", "Konzept LM (EN)", "Beschreibung LM",
+        "Kurzbeschreibung (DE)", "Kurzbeschreibung (EN)",
+        "Definition (DE)", "Definition (EN)",
+        "Kommentar",
+    ]
+    header_font = Font(bold=True, color="FFFFFF")
+    header_fill = PatternFill("solid", fgColor="305496")
+    header_align = Alignment(horizontal="left", vertical="center", wrap_text=True)
+    body_align = Alignment(vertical="top", wrap_text=True)
+
+    for module_info in modules_data:
+        sheet_title = module_info["title"][:31]  # xlsx sheet name max 31 chars
+        ws = wb.create_sheet(title=sheet_title)
+        ws.append(headers)
+        for col_idx, _ in enumerate(headers, start=1):
+            cell = ws.cell(row=1, column=col_idx)
+            cell.font = header_font
+            cell.fill = header_fill
+            cell.alignment = header_align
+
+        for prof in module_info["profiles"]:
+            for row in prof["rows"]:
+                ws.append([
+                    prof["title_de"],
+                    prof["fdpg_id"],
+                    prof["parent_name"],
+                    prof["resource_type"],
+                    row["element"],
+                    row["lm_label_de"],
+                    row["lm_label_en"],
+                    row["lm_desc"],
+                    row["de_short"],
+                    row["en_short"],
+                    row["de_def"],
+                    row["en_def"],
+                    row["comment"],
+                ])
+
+        # Column widths (rough heuristic) and body alignment
+        widths = [28, 32, 38, 14, 30, 22, 22, 40, 32, 32, 50, 50, 32]
+        for i, w in enumerate(widths, start=1):
+            ws.column_dimensions[get_column_letter(i)].width = w
+        for row_cells in ws.iter_rows(min_row=2):
+            for cell in row_cells:
+                cell.alignment = body_align
+
+        ws.freeze_panes = "A2"
+        ws.auto_filter.ref = ws.dimensions
+
+    wb.save(output_path)
+
+
 def main():
-    print("Generating Datenkatalog pages...")
-    generated = 0
+    import argparse
+    parser = argparse.ArgumentParser(description="Generate FDPG Datenkatalog markdown + xlsx.")
+    parser.add_argument("--no-md", action="store_true", help="Skip markdown generation")
+    parser.add_argument("--no-xlsx", action="store_true", help="Skip xlsx generation")
+    parser.add_argument("--xlsx-out", default="output/datenkatalog.xlsx",
+                        help="xlsx output path (default: output/datenkatalog.xlsx)")
+    args = parser.parse_args()
+
+    print("Generating Datenkatalog...")
+    canonical = load_canonical_labels()
+    print(f"  Loaded {len(canonical.get('elements', {}))} canonical element labels, "
+          f"{len(canonical.get('coding_systems', {}))} coding systems")
+
+    md_count = 0
+    modules_data = []
     for module_name, cfg in MODULES.items():
         print(f"  Processing {module_name} ({cfg['title']})...")
-        content = generate_module_page(module_name)
-        if not content:
-            print(f"  SKIPPED {module_name} (no content)")
-            continue
+        if not args.no_md:
+            content = generate_module_page(module_name, canonical)
+            if content:
+                output_file = PAGECONTENT_DIR / f"datenkatalog-{module_name}.md"
+                with open(output_file, "w") as f:
+                    f.write(content)
+                md_count += 1
+                print(f"  -> {output_file.name}")
+            else:
+                print(f"  SKIPPED markdown for {module_name} (no content)")
+        if not args.no_xlsx:
+            data = collect_module_data(module_name, canonical)
+            if data and data["profiles"]:
+                modules_data.append(data)
 
-        output_file = PAGECONTENT_DIR / f"datenkatalog-{module_name}.md"
-        with open(output_file, "w") as f:
-            f.write(content)
-        generated += 1
-        print(f"  -> {output_file.name}")
+    if not args.no_xlsx and modules_data:
+        xlsx_path = PROJECT_ROOT / args.xlsx_out
+        xlsx_path.parent.mkdir(parents=True, exist_ok=True)
+        write_xlsx(modules_data, xlsx_path)
+        print(f"\nWrote xlsx: {xlsx_path} ({len(modules_data)} sheets)")
 
-    print(f"\nDone. Generated {generated} datenkatalog pages.")
+    if not args.no_md:
+        print(f"Generated {md_count} markdown pages.")
 
 
 if __name__ == "__main__":
