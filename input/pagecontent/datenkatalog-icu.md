@@ -33,23 +33,23 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_ICU_Parameter_Von_Beatmung](StructureDefinition-fdpg-pr-icu-parameter-von-beatmung.html) · **MII Elternprofil:** MII_PR_ICU_Parameter_Von_Beatmung
 
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Identifikator | Identifikator dieser Ressource. |
-| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
-| `status` | Status | Status der Ressource. |
-| `category` | Kategorie | Kategorisierung der Ressource. |
-| `code` | Code | Kodierung des Inhalts. |
-| `code.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `code.coding:loinc` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `code.coding:IEEE-11073` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
-| `value[x]` | Messwert | Wert der Beobachtung. |
-| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
-| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| Element | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |  |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |  |
+| `status` | Status | Status der Ressource. |  |
+| `category` | Kategorie | Kategorisierung der Ressource. |  |
+| `code` | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `code.coding:loinc` | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `code.coding:IEEE-11073` | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |  |
+| `value[x]` | Messwert | Wert der Beobachtung. | ✓ |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. | ✓ |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |  |
 
 #### MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Beatmung (DeviceMetric)
 
@@ -713,22 +713,22 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren](StructureDefinition-fdpg-pr-icu-parameter-von-extrakorporalen-verfahren.html) · **MII Elternprofil:** MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren
 
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Identifikator | Identifikator dieser Ressource. |
-| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
-| `status` | Status | Status der Ressource. |
-| `category` | Kategorie | Kategorisierung der Ressource. |
-| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code` | Code | Kodierung des Inhalts. |
-| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
-| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
-| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]` | Messwert | Wert der Beobachtung. |
-| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| Element | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |  |
+| `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |  |
+| `status` | Status | Status der Ressource. |  |
+| `category` | Kategorie | Kategorisierung der Ressource. |  |
+| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |  |
+| `code` | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |  |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |  |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |  |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
+| `value[x]` | Messwert | Wert der Beobachtung. | ✓ |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |  |
 
 #### MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren (DeviceMetric)
 
@@ -998,28 +998,28 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz](StructureDefinition-fdpg-pr-icu-bilanz.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz
 
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Identifikator | Identifikator dieser Ressource. |
-| `category` | Kategorie | Kategorisierung der Ressource. |
-| `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `code` | Code | Kodierung des Inhalts. |
-| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
-| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
-| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |
-| `value[x]` | Messwert | Wert der Beobachtung. |
-| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
-| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
-| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
-| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
-| `specimen` | Probe | Verweis auf das Probenmaterial. |
-| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
-| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
+| Element | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |  |
+| `category` | Kategorie | Kategorisierung der Ressource. |  |
+| `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |  |
+| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `code` | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |  |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |  |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |  |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
+| `issued` | Freigabedatum | Datum, an dem die Ressource freigegeben wurde. |  |
+| `value[x]` | Messwert | Wert der Beobachtung. | ✓ |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. | ✓ |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). | ✓ |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |  |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |  |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |  |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. | ✓ |
 
 #### MII PR ICU Bilanz Einfuhr Fluessigkeit Gesamt (Observation)
 
@@ -1526,7 +1526,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `effective[x]:effectivePeriod` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `value[x]` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `component` | Komponente | Untergeordnete Beobachtungskomponente. |
 
 #### MII PR ICU MUV Koerpergroesse (Observation)
@@ -1546,7 +1546,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `effective[x]:effectivePeriod` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `value[x]` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
 
 #### MII PR ICU MUV Kopfumfang (Observation)
@@ -1563,7 +1563,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `value[x]` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
 | `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
 
@@ -3148,7 +3148,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
 | `effective[x]:effectivePeriod` | Effective | Date or period the observation refers to. |
 | `value[x]` | Value | Value of the observation. |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
 | `component` | Component | Sub-observation component. |
 
 </details>
@@ -3169,7 +3169,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
 | `effective[x]:effectivePeriod` | Effective | Date or period the observation refers to. |
 | `value[x]` | Value | Value of the observation. |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
 | `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
 
 </details>
@@ -3187,7 +3187,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Effective | Date or period the observation refers to. |
 | `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
 | `value[x]` | Value | Value of the observation. |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
 | `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
 | `bodySite` | Body site | Body site the resource refers to. |
 

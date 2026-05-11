@@ -159,22 +159,22 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Bildgebung_Radiologische_Beobachtung](StructureDefinition-fdpg-pr-bildgebung-radiologische-beobachtung.html) · **MII Elternprofil:** MII_PR_Bildgebung_Radiologische_Beobachtung
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `partOf` | TeilEinerBefundungsprozedur | Hier soll auf das MII KDS-Modul Prozedur referenziert werden | Teil von | Teil einer Befundungprozedur |
-| `status` | Status | Status der Beobachtung. | Status | angemeldet \| vorläufig \| endgültig \| geändert \| korrigiert \| abgebrochen \| fehlerhafte Eingabe \| unbekannt |
-| `category` | Beobachtungsklassifizierung | Klassifiziert eine Beobachtung | Kategorie | Klassifikation in diagnostischen Fachbereich und Gruppe |
-| `category.coding:loinc` | Beobachtungsklassifizierung | Klassifiziert eine Beobachtung | LOINC Code | Ein Verweis auf einen von LOINC definierten Code |
-| `code` | Beobachtungstyp | Typ der Beobachtung. | Code | Ein Code für die zu befundende Beoabchtung |
-| `code.coding:sct` | Beobachtungstyp | Typ der Beobachtung. | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
-| `subject` | Person | Person, auf die sich die Beobachtung bezieht. Hier soll das MII KDS-Modul Person verwendet werden. | Person | Person, auf die sich die Beobachtung bezieht |
-| `issued` | Beobachtungszeitpunkt | Zeitpunkt an dem die Beobachtung gemacht wird. | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde |
-| `value[x]` | Beschreibung | Detaillierte Beschreibung der Beobachtung mit value[x]. | Messwert | Wert der Analyse |
-| `bodySite` | Koerperregion | Codierte Körperregion der Beobachtung | Anatomie | betrachtete Anatomie der Beobachtung |
-| `bodySite.extension:bodyStructure` | Koerperregion | Codierte Körperregion der Beobachtung | Körperstruktur | Referenz auf eine Körperstruktur |
-| `hasMember` | WeitereBeobachtung | Weitere Beobachtung(en) als Referenz auf weitere Observation(s). | weitere Beobachtungen | Referenzierung weiterer Beobachtungen |
-| `derivedFrom` |  |  | abgeleitet | Abgeleitet von ImagingStudy, ect. |
-| `component` | ErweiterteBeschreibung | Kann mehrere Beschreibungen strukturiert abbilden. | Bestandteile | detailierte Bestandteile der Beobachtung |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `partOf` | TeilEinerBefundungsprozedur | Hier soll auf das MII KDS-Modul Prozedur referenziert werden | Teil von | Teil einer Befundungprozedur |  |
+| `status` | Status | Status der Beobachtung. | Status | angemeldet \| vorläufig \| endgültig \| geändert \| korrigiert \| abgebrochen \| fehlerhafte Eingabe \| unbekannt |  |
+| `category` | Beobachtungsklassifizierung | Klassifiziert eine Beobachtung | Kategorie | Klassifikation in diagnostischen Fachbereich und Gruppe |  |
+| `category.coding:loinc` | Beobachtungsklassifizierung | Klassifiziert eine Beobachtung | LOINC Code | Ein Verweis auf einen von LOINC definierten Code |  |
+| `code` | Beobachtungstyp | Typ der Beobachtung. | Code | Ein Code für die zu befundende Beoabchtung | ✓ |
+| `code.coding:sct` | Beobachtungstyp | Typ der Beobachtung. | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |  |
+| `subject` | Person | Person, auf die sich die Beobachtung bezieht. Hier soll das MII KDS-Modul Person verwendet werden. | Person | Person, auf die sich die Beobachtung bezieht |  |
+| `issued` | Beobachtungszeitpunkt | Zeitpunkt an dem die Beobachtung gemacht wird. | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde |  |
+| `value[x]` | Beschreibung | Detaillierte Beschreibung der Beobachtung mit value[x]. | Messwert | Wert der Analyse | ✓ |
+| `bodySite` | Koerperregion | Codierte Körperregion der Beobachtung | Anatomie | betrachtete Anatomie der Beobachtung |  |
+| `bodySite.extension:bodyStructure` | Koerperregion | Codierte Körperregion der Beobachtung | Körperstruktur | Referenz auf eine Körperstruktur |  |
+| `hasMember` | WeitereBeobachtung | Weitere Beobachtung(en) als Referenz auf weitere Observation(s). | weitere Beobachtungen | Referenzierung weiterer Beobachtungen |  |
+| `derivedFrom` |  |  | abgeleitet | Abgeleitet von ImagingStudy, ect. |  |
+| `component` | ErweiterteBeschreibung | Kann mehrere Beschreibungen strukturiert abbilden. | Bestandteile | detailierte Bestandteile der Beobachtung |  |
 
 #### Befundbericht (DiagnosticReport)
 
@@ -194,9 +194,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:loinc` | Code | Festgelegter Code des Befundberichts. Hier Radiologischer Befund | LOINC Code | Ein Verweis auf einen von LOINC definierten Code |
 | `subject` | Person | Die Person, für die der Befundbericht erstellt wurde. Hier sollte das MII KDS-Modul Person referenziert werden | Person | Person, auf die sich die Befundbericht bezieht |
 | `encounter` | Fall | Referenz über Fall auf den Versorgungsstellenkontakt. Hier soll das MII KDS-Modul Fall in Stufe 3 referenziert werden | Versorgungssstellenkontakt | Fall-Referenz auf den Versorgungssstellenkontakt |
-| `effective[x]` | Zeitpunkt | Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht. | Erstellungsdatum | Zeitpunkt der Erstellung |
-| `effective[x]:effectiveDateTime` | Zeitpunkt | Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `effective[x]:effectivePeriod` | Zeitpunkt | Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `effective[x]` | Periode | Klinisch relevante Periode, auf die sich der Bericht bezieht. | Erstellungsdatum | Zeitpunkt der Erstellung |
+| `effective[x]:effectiveDateTime` | Periode | Klinisch relevante Periode, auf die sich der Bericht bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `effective[x]:effectivePeriod` | Periode | Klinisch relevante Periode, auf die sich der Bericht bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `issued` | ZeitpunktErstellung | Zeitpunkt der Erstellung des Berichts. | Erstellungszeitpunkt | Zeit an der der Bericht erstellt wurde |
 | `result` | Beobachtung | Referenz auf die generische Beobachtung. | Ergebnis | Ergebnis einer Beobachtung |
 | `imagingStudy` |  |  | Bildgebungsstudie | Studie, die die vollständige Bildgebung umfasst |

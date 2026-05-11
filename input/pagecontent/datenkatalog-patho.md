@@ -57,24 +57,24 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Patho_Base_Observation](StructureDefinition-fdpg-pr-patho-base-observation.html) · **MII Elternprofil:** MII_PR_Patho_Base_Observation
 
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `identifier` | Identifikator | Identifikator dieser Ressource. |
-| `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
-| `status` | Status | Status der Ressource. |
-| `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
-| `code` | Code | Kodierung des Inhalts. |
-| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
-| `bodySite.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
-| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
-| `specimen` | Probe | Verweis auf das Probenmaterial. |
-| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
-| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
-| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
-| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| Element | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |  |
+| `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |  |
+| `status` | Status | Status der Ressource. |  |
+| `category` | Kategorie | Kategorisierung der Ressource. |  |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |  |
+| `code` | Code | Kodierung des Inhalts. | ✓ |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |  |
+| `bodySite.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |  |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |  |
+| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |  |
+| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |  |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |  |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |  |
 
 #### MII PR Patho Bundle (Bundle)
 
@@ -267,12 +267,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Patho_Problem_List_Item](StructureDefinition-fdpg-pr-patho-problem-list-item.html) · **MII Elternprofil:** MII_PR_Patho_Problem_List_Item
 
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:problem-list-item` | Kategorie | Kategorisierung der Ressource. |
-| `code` | Code | Kodierung des Inhalts. |
-| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| Element | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|
+| `category` | Kategorie | Kategorisierung der Ressource. |  |
+| `category:problem-list-item` | Kategorie | Kategorisierung der Ressource. |  |
+| `code` | Code | Kodierung des Inhalts. | ✓ |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 
 #### MII PR Patho Bericht (DiagnosticReport)
 

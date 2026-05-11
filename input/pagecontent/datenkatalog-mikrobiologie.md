@@ -29,10 +29,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -66,10 +66,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -103,10 +103,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -140,10 +140,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -177,10 +177,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -214,10 +214,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -281,10 +281,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `interpretation.extension:Norm` | Optional Extensions Element | Optional Extension Element - found in all resources. |
@@ -319,10 +319,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -356,10 +356,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -393,10 +393,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -430,10 +430,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -467,10 +467,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -504,10 +504,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -541,10 +541,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -578,10 +578,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -615,10 +615,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -652,10 +652,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -689,10 +689,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
 | `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
 | `value[x]` | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
 | `dataAbsentReason` | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
 | `interpretation` | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
 | `note` | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
@@ -729,10 +729,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |
@@ -767,10 +767,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |
@@ -805,10 +805,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |
@@ -843,10 +843,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |
@@ -881,10 +881,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |
@@ -919,10 +919,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |
@@ -988,10 +988,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `interpretation.extension:Norm` | Optional Extensions Element | Optional Extension Element - found in all resources. |
@@ -1027,10 +1027,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |
@@ -1065,10 +1065,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |
@@ -1103,10 +1103,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |
@@ -1141,10 +1141,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |
@@ -1179,10 +1179,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |
@@ -1217,10 +1217,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |
@@ -1255,10 +1255,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |
@@ -1293,10 +1293,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |
@@ -1331,10 +1331,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |
@@ -1369,10 +1369,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |
@@ -1407,10 +1407,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |

@@ -140,6 +140,37 @@ TRANSLATION_EXT_URL = "http://hl7.org/fhir/StructureDefinition/translation"
 OBLIGATION_LABEL = "MustSupport"
 
 CANONICAL_LABELS_FILE = PROJECT_ROOT / "input" / "data" / "canonical-labels.json"
+FIELD_CONFIG_FILE = PROJECT_ROOT / "input" / "data" / "field_config.json"
+
+
+def load_field_config() -> dict:
+    """Load field_config.json and return per-base-resource pre-select element IDs.
+
+    Returns dict of base-StructureDefinition URL → set of element IDs that should
+    be pre-selected (recommend.always in field_config.json).
+    """
+    if not FIELD_CONFIG_FILE.exists():
+        return {}
+    with open(FIELD_CONFIG_FILE) as f:
+        cfg = json.load(f)
+    result = {}
+    for base_url, prof in cfg.get("profiles", {}).items():
+        ids = set()
+        for entry in prof.get("recommend", {}).get("always", []):
+            elem_id = entry.get("pattern", {}).get("id")
+            if elem_id:
+                ids.add(elem_id)
+        if ids:
+            result[base_url] = ids
+    return result
+
+
+def get_pre_select_ids(profile_data: dict, field_config: dict) -> set:
+    """Return the set of element IDs flagged pre-select for this profile."""
+    base = profile_data.get("baseDefinition")
+    if base and base in field_config:
+        return field_config[base]
+    return set()
 
 # Override english-leaning leaf labels coming from upstream MII Logical Models.
 # Maps original LM element name -> {de, en} replacement.
@@ -762,6 +793,7 @@ def resolve_element_labels(
     lm_lookup: dict | None,
     canonical: dict | None,
     element_comments: dict,
+    pre_select_ids: set | None = None,
 ) -> dict | None:
     """Resolve all DE+EN labels for one MS element.
 
@@ -809,6 +841,9 @@ def resolve_element_labels(
         lm_label_en = lookup_lm_label(lm_lookup, resource_type, display_path, elem, "en")
         lm_desc = lookup_lm_description(lm_lookup, resource_type, display_path, elem)
 
+    elem_id = elem.get("id", "")
+    pre_selected = bool(pre_select_ids and elem_id in pre_select_ids)
+
     return {
         "element": display_path,
         "lm_label_de": lm_label_de,
@@ -819,6 +854,7 @@ def resolve_element_labels(
         "en_short": en_short,
         "en_def": en_def,
         "comment": element_comments.get(display_path, ""),
+        "pre_selected": pre_selected,
     }
 
 
@@ -828,13 +864,15 @@ def collect_profile_data(
     resource_type: str,
     lm_lookup: dict | None = None,
     canonical: dict | None = None,
+    field_config: dict | None = None,
 ) -> dict:
     """Collect all data for one profile (header info + per-element rows) for xlsx output."""
     ms_elements = get_ms_elements(profile_data)
     element_comments = profile_info.get("element_comments", {})
+    pre_select_ids = get_pre_select_ids(profile_data, field_config or {})
     rows = []
     for elem in ms_elements:
-        row = resolve_element_labels(elem, resource_type, lm_lookup, canonical, element_comments)
+        row = resolve_element_labels(elem, resource_type, lm_lookup, canonical, element_comments, pre_select_ids)
         if row:
             rows.append(row)
     return {
@@ -858,6 +896,7 @@ def generate_profile_section(
     resource_type: str,
     lm_lookup: dict[tuple[str, str], dict] | None = None,
     canonical: dict | None = None,
+    field_config: dict | None = None,
 ) -> tuple[str, str]:
     """Generate German table and English details block for one profile.
 
@@ -866,6 +905,8 @@ def generate_profile_section(
     ms_elements = get_ms_elements(profile_data)
     if not ms_elements:
         return "", ""
+
+    pre_select_ids = get_pre_select_ids(profile_data, field_config or {})
 
     fdpg_name = profile_info["fdpg_name"]
     fdpg_id = profile_info["fdpg_id"]
@@ -902,11 +943,15 @@ def generate_profile_section(
                 has_lm_column = True
                 break
 
-    # Build table header (combinations: ±LM columns × ±Kommentar)
+    has_pre_select_column = bool(pre_select_ids)
+
+    # Build table header (combinations: ±LM columns × ±Kommentar × ±Pre-Select)
     hdr_cols = ["Element"]
     if has_lm_column:
         hdr_cols += ["Konzept (LM)", "Beschreibung (LM)"]
     hdr_cols += ["Kurzbeschreibung (de)", "Definition (de)"]
+    if has_pre_select_column:
+        hdr_cols.append("Vorausgewählt")
     if has_any_comment:
         hdr_cols.append("Kommentar")
     german_lines.append("| " + " | ".join(hdr_cols) + " |")
@@ -958,6 +1003,8 @@ def generate_profile_section(
         if has_lm_column:
             row_cols += [md_escape(lm_label), md_escape(lm_desc)]
         row_cols += [md_escape(de_short), md_escape(de_def)]
+        if has_pre_select_column:
+            row_cols.append("✓" if elem.get("id") in pre_select_ids else "")
         if has_any_comment:
             row_cols.append(md_escape(comment))
         german_lines.append("| " + " | ".join(row_cols) + " |")
@@ -1005,7 +1052,7 @@ def _profile_display_name(parent_name: str) -> str:
 # Generate full page for one module
 # ---------------------------------------------------------------------------
 
-def generate_module_page(module_name: str, canonical: dict | None = None) -> str:
+def generate_module_page(module_name: str, canonical: dict | None = None, field_config: dict | None = None) -> str:
     """Generate the full datenkatalog markdown page for a module."""
     cfg = MODULES[module_name]
     package_dir = get_package_dir(cfg)
@@ -1073,7 +1120,7 @@ def generate_module_page(module_name: str, canonical: dict | None = None) -> str
                 pinfo = parent_to_profile[parent_name]
                 pdata = parent_data[parent_name]
                 resource_type = pdata.get("type", "Resource")
-                german_md, english_md = generate_profile_section(pinfo, pdata, resource_type, lm_lookup, canonical)
+                german_md, english_md = generate_profile_section(pinfo, pdata, resource_type, lm_lookup, canonical, field_config)
                 if german_md:
                     section_german.append(german_md)
                 if english_md:
@@ -1098,7 +1145,7 @@ def generate_module_page(module_name: str, canonical: dict | None = None) -> str
             for pinfo in remaining:
                 pdata = parent_data[pinfo["parent_name"]]
                 resource_type = pdata.get("type", "Resource")
-                german_md, english_md = generate_profile_section(pinfo, pdata, resource_type, lm_lookup, canonical)
+                german_md, english_md = generate_profile_section(pinfo, pdata, resource_type, lm_lookup, canonical, field_config)
                 if german_md:
                     lines.append(german_md)
                     lines.append("")
@@ -1111,7 +1158,7 @@ def generate_module_page(module_name: str, canonical: dict | None = None) -> str
                 continue
             pdata = parent_data[pinfo["parent_name"]]
             resource_type = pdata.get("type", "Resource")
-            german_md, english_md = generate_profile_section(pinfo, pdata, resource_type, lm_lookup, canonical)
+            german_md, english_md = generate_profile_section(pinfo, pdata, resource_type, lm_lookup, canonical, field_config)
             if german_md:
                 lines.append(german_md)
                 lines.append("")
@@ -1131,7 +1178,7 @@ def generate_module_page(module_name: str, canonical: dict | None = None) -> str
 # Main
 # ---------------------------------------------------------------------------
 
-def collect_module_data(module_name: str, canonical: dict) -> dict | None:
+def collect_module_data(module_name: str, canonical: dict, field_config: dict | None = None) -> dict | None:
     """Collect all profile data for one module (for xlsx output)."""
     cfg = MODULES[module_name]
     package_dir = get_package_dir(cfg)
@@ -1153,7 +1200,7 @@ def collect_module_data(module_name: str, canonical: dict) -> dict | None:
         if not pdata:
             continue
         resource_type = pdata.get("type", "Resource")
-        collected = collect_profile_data(p, pdata, resource_type, lm_lookup, canonical)
+        collected = collect_profile_data(p, pdata, resource_type, lm_lookup, canonical, field_config)
         if collected["rows"]:
             profile_data_list.append(collected)
 
@@ -1183,6 +1230,7 @@ def write_xlsx(modules_data: list[dict], output_path: Path) -> None:
         "Konzept LM (DE)", "Konzept LM (EN)", "Beschreibung LM",
         "Kurzbeschreibung (DE)", "Kurzbeschreibung (EN)",
         "Definition (DE)", "Definition (EN)",
+        "Vorausgewählt",
         "Kommentar",
     ]
     header_font = Font(bold=True, color="FFFFFF")
@@ -1215,11 +1263,12 @@ def write_xlsx(modules_data: list[dict], output_path: Path) -> None:
                     row["en_short"],
                     row["de_def"],
                     row["en_def"],
+                    "✓" if row.get("pre_selected") else "",
                     row["comment"],
                 ])
 
         # Column widths (rough heuristic) and body alignment
-        widths = [28, 32, 38, 14, 30, 22, 22, 40, 32, 32, 50, 50, 32]
+        widths = [28, 32, 38, 14, 30, 22, 22, 40, 32, 32, 50, 50, 14, 32]
         for i, w in enumerate(widths, start=1):
             ws.column_dimensions[get_column_letter(i)].width = w
         for row_cells in ws.iter_rows(min_row=2):
@@ -1243,15 +1292,17 @@ def main():
 
     print("Generating Datenkatalog...")
     canonical = load_canonical_labels()
+    field_config = load_field_config()
     print(f"  Loaded {len(canonical.get('elements', {}))} canonical element labels, "
-          f"{len(canonical.get('coding_systems', {}))} coding systems")
+          f"{len(canonical.get('coding_systems', {}))} coding systems, "
+          f"pre-select sets for {len(field_config)} FHIR base types")
 
     md_count = 0
     modules_data = []
     for module_name, cfg in MODULES.items():
         print(f"  Processing {module_name} ({cfg['title']})...")
         if not args.no_md:
-            content = generate_module_page(module_name, canonical)
+            content = generate_module_page(module_name, canonical, field_config)
             if content:
                 output_file = PAGECONTENT_DIR / f"datenkatalog-{module_name}.md"
                 with open(output_file, "w") as f:
@@ -1261,7 +1312,7 @@ def main():
             else:
                 print(f"  SKIPPED markdown for {module_name} (no content)")
         if not args.no_xlsx:
-            data = collect_module_data(module_name, canonical)
+            data = collect_module_data(module_name, canonical, field_config)
             if data and data["profiles"]:
                 modules_data.append(data)
 

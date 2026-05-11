@@ -118,7 +118,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` |  |  | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Mutationslast | Somat. Mutationen / Mutationslast | Ergebniswert | Der Genotyp als kodierter Wert oder Text |
+| `value[x]` | Zusammenfassung, Mikrosatelliteninstabilitaet | Zusammenfassung | Ergebniswert | Der Genotyp als kodierter Wert oder Text |
 | `derivedFrom` |  |  | Abgeleitet von | Die Varianten oder Haplotypen von denen der Genotyp abgeleitet wurde |
 | `component` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Komponenten | Einzelne Komponenten des Genotyps |
 | `component:conclusion-string` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Schlussfolgerung - Text | Textuelle Zusammenfassung des Genotyps |
@@ -153,7 +153,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` |  |  | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Mutationslast | Somat. Mutationen / Mutationslast | Ergebniswert | Das Ergebnis der MSI-Bestimmung wie z.B. stabil oder instabil |
+| `value[x]` | Zusammenfassung, Mikrosatelliteninstabilitaet | Zusammenfassung | Ergebniswert | Das Ergebnis der MSI-Bestimmung wie z.B. stabil oder instabil |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Komponenten | Einzelne Komponenten der Beobachtung |
 | `component:gene-studied` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Untersuchtes Gen | Das untersuchte Gen |
@@ -240,7 +240,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` |  |  | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Mutationslast | Somat. Mutationen / Mutationslast | Ergebniswert | Der numerische Wert der Mutationslast in Mutationen pro Megabase |
+| `value[x]` | Zusammenfassung, Mikrosatelliteninstabilitaet | Zusammenfassung | Ergebniswert | Der numerische Wert der Mutationslast in Mutationen pro Megabase |
 | `specimen` |  |  | Probe | Die untersuchte Tumorprobe |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Komponenten | Einzelne Komponenten der Beobachtung |
@@ -299,7 +299,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient oder Proband | Der Patient oder die Gruppe auf die sich die Variante bezieht |
 | `effective[x]` |  |  | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | Mutationslast | Somat. Mutationen / Mutationslast | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | Zusammenfassung, Mikrosatelliteninstabilitaet | Zusammenfassung | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Methode | Methode und Referenz zur Methode - beinhaltet alle sequenzbasierenden Analytik-Methoden, während nicht sequenzbasierende Aufarbeitungsmethoden in das Modul Pathologie zuzuordnen sind. | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |

@@ -8,33 +8,33 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Seltene_Blutgruppe](StructureDefinition-fdpg-pr-seltene-blutgruppe.html) · **MII Elternprofil:** MII_PR_Seltene_Blutgruppe
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `status` |  |  | Status | Status der Ressource. |
-| `category` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `category:laboratory` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `code` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | Code | Kodierung des Inhalts. |
-| `code.coding:loinc-abo-rh` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | LOINC | Kodierung nach LOINC. |
-| `code.coding:loinc-abo` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | LOINC | Kodierung nach LOINC. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `effective[x]:effectiveDateTime` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `effective[x]:effectivePeriod` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. |
-| `value[x].coding:loinc` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `value[x].coding:snomed` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `status` |  |  | Status | Status der Ressource. |  |
+| `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `category:laboratory` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `code` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:loinc-abo-rh` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | LOINC | Kodierung nach LOINC. |  |
+| `code.coding:loinc-abo` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | LOINC | Kodierung nach LOINC. |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
+| `effective[x]:effectiveDateTime` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |  |
+| `effective[x]:effectivePeriod` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |  |
+| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].coding:loinc` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `value[x].coding:snomed` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
 
 #### Body Mass Index (BMI\ (Observation)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Bodymassindex](StructureDefinition-fdpg-pr-seltene-bodymassindex.html) · **MII Elternprofil:** MII_PR_Seltene_Bodymassindex
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `status` |  |  | Status | Status der Ressource. |
-| `category` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `status` |  |  | Status | Status der Ressource. |  |
+| `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
+| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. | ✓ |
 
 #### MII PR SE Clinical Diagnosis (Condition)
 
@@ -154,33 +154,33 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Seltene_HPO_Assessment](StructureDefinition-fdpg-pr-seltene-hpo-assessment.html) · **MII Elternprofil:** MII_PR_Seltene_HPO_Assessment
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `status` |  |  | Status | Status der Ressource. |
-| `code` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `note` |  |  | Hinweis | Freitextkommentar zur Ressource. |
-| `bodySite` |  |  | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
-| `method` | MethodeDiagnosestellung | Gibt an, welche Methode zur Diagnosestellung verwendet wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
-| `derivedFrom` |  |  | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
-| `component` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:status` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:severity` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `status` |  |  | Status | Status der Ressource. |  |
+| `code` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
+| `note` |  |  | Hinweis | Freitextkommentar zur Ressource. |  |
+| `bodySite` |  |  | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |  |
+| `method` | MethodeDiagnosestellung | Gibt an, welche Methode zur Diagnosestellung verwendet wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
+| `derivedFrom` |  |  | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |  |
+| `component` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:status` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:severity` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |  |
 
 #### MII PR SE Hüftumfang (Observation)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Hueftumfang](StructureDefinition-fdpg-pr-seltene-hueftumfang.html) · **MII Elternprofil:** MII_PR_Seltene_Hueftumfang
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `status` |  |  | Status | Status der Ressource. |
-| `category` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `code` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `status` |  |  | Status | Status der Ressource. |  |
+| `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `code` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
+| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. | ✓ |
 
 #### MII PR SE Kopfumfang (Observation)
 
@@ -195,8 +195,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `effective[x]:effectiveDateTime` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. |
+| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `dataAbsentReason` |  |  | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
 | `bodySite` |  |  | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
 
@@ -220,53 +220,53 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Seltene_Symptom_Condition](StructureDefinition-fdpg-pr-seltene-symptom-condition.html) · **MII Elternprofil:** MII_PR_Seltene_Symptom_Condition
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `identifier` |  |  | Identifikator | Identifikator dieser Ressource. |
-| `clinicalStatus` |  |  | Klinischer Status | Klinischer Status der Diagnose: aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen. |
-| `verificationStatus` |  |  | Verifizierungsstatus | Verifizierungsstatus: unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe. |
-| `category` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `severity` |  |  | Schweregrad der Symptom-Erkrankung | Schweregradbewertung der Symptom-Erkrankung unter Verwendung von HPO-Schweregrad-Werten |
-| `code` |  |  | Code | Kodierung des Inhalts. |
-| `code.coding:hpoCoding` |  |  | HPO | Kodierung nach HPO. |
-| `code.coding:snomedCoding` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code.coding:icd10GMCoding` |  |  | ICD-10-GM | Kodierung nach ICD-10-GM. |
-| `code.coding:mondoCoding` |  |  | MONDO | Kodierung nach MONDO. |
-| `bodySite` |  |  | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `onset[x]` | ZeitraumSymptom | Zeitraum des Symptom | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
-| `abatement[x]` |  |  | Auflösung der Symptom-Erkrankung | Datum, Alter, Zeitraum oder zeitliche Beschreibung, wann die Symptom-Erkrankung abgeklungen ist oder in Remission ging |
-| `recordedDate` |  |  | Aufzeichnungsdatum | Datum, an dem die Ressource aufgezeichnet wurde. |
-| `stage` |  |  | Stadium oder Progression der Symptom-Erkrankung | Clinical stage or grade of a condition. May include formal severity assessments. |
-| `evidence` |  |  | Unterstützende Evidenz für die Symptom-Erkrankung | Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition. |
-| `note` |  |  | Hinweis | Freitextkommentar zur Ressource. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `identifier` |  |  | Identifikator | Identifikator dieser Ressource. |  |
+| `clinicalStatus` |  |  | Klinischer Status | Klinischer Status der Diagnose: aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen. | ✓ |
+| `verificationStatus` |  |  | Verifizierungsstatus | Verifizierungsstatus: unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe. | ✓ |
+| `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `severity` |  |  | Schweregrad der Symptom-Erkrankung | Schweregradbewertung der Symptom-Erkrankung unter Verwendung von HPO-Schweregrad-Werten |  |
+| `code` |  |  | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:hpoCoding` |  |  | HPO | Kodierung nach HPO. |  |
+| `code.coding:snomedCoding` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |  |
+| `code.coding:icd10GMCoding` |  |  | ICD-10-GM | Kodierung nach ICD-10-GM. |  |
+| `code.coding:mondoCoding` |  |  | MONDO | Kodierung nach MONDO. |  |
+| `bodySite` |  |  | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `onset[x]` | ZeitraumSymptom | Zeitraum des Symptom | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. | ✓ |
+| `abatement[x]` |  |  | Auflösung der Symptom-Erkrankung | Datum, Alter, Zeitraum oder zeitliche Beschreibung, wann die Symptom-Erkrankung abgeklungen ist oder in Remission ging | ✓ |
+| `recordedDate` |  |  | Aufzeichnungsdatum | Datum, an dem die Ressource aufgezeichnet wurde. | ✓ |
+| `stage` |  |  | Stadium oder Progression der Symptom-Erkrankung | Clinical stage or grade of a condition. May include formal severity assessments. |  |
+| `evidence` |  |  | Unterstützende Evidenz für die Symptom-Erkrankung | Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition. |  |
+| `note` |  |  | Hinweis | Freitextkommentar zur Ressource. |  |
 
 #### MII PR SE Taillenumfang (Observation)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Taillenumfang](StructureDefinition-fdpg-pr-seltene-taillenumfang.html) · **MII Elternprofil:** MII_PR_Seltene_Taillenumfang
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `status` |  |  | Status | Status der Ressource. |
-| `category` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `code` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `status` |  |  | Status | Status der Ressource. |  |
+| `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `code` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
+| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. | ✓ |
 
 #### MII PR Seltene Erkrankungen Therapie Durchgeführt (Procedure)
 
 **FDPG Profil:** [FDPG_PR_Seltene_TherapieDurchgefuehrt](StructureDefinition-fdpg-pr-seltene-therapie-durchgefuehrt.html) · **MII Elternprofil:** MII_PR_Seltene_TherapieDurchgefuehrt
 
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `status` | Status | Status der Ressource. |
-| `code` | Code | Kodierung des Inhalts. |
-| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `performed[x]` | Durchführungsdatum | Zeitpunkt oder Zeitraum der Durchführung. |
-| `performed[x]:performedDateTime` | Durchführungsdatum | Zeitpunkt oder Zeitraum der Durchführung. |
-| `performed[x]:performedPeriod` | Durchführungsdatum | Zeitpunkt oder Zeitraum der Durchführung. |
+| Element | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|
+| `status` | Status | Status der Ressource. | ✓ |
+| `code` | Code | Kodierung des Inhalts. | ✓ |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. | ✓ |
+| `performed[x]` | Durchführungsdatum | Zeitpunkt oder Zeitraum der Durchführung. | ✓ |
+| `performed[x]:performedDateTime` | Durchführungsdatum | Zeitpunkt oder Zeitraum der Durchführung. |  |
+| `performed[x]:performedPeriod` | Durchführungsdatum | Zeitpunkt oder Zeitraum der Durchführung. |  |
 
 #### MII PR SE Therapieempfehlung Kombinationstherapie (RequestGroup)
 
@@ -566,7 +566,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Effective | Date or period the observation refers to. |
 | `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
 | `value[x]` | Value | Value of the observation. |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
 | `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
 | `bodySite` | Body site | Body site the resource refers to. |
 

@@ -50,32 +50,32 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Labor_Laboruntersuchung](StructureDefinition-fdpg-pr-labor-laboruntersuchung.html) · **MII Elternprofil:** MII_PR_Labor_Laboruntersuchung
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `identifier` | Identifikation | Identifikator der Untersuchung | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Identifikation | Identifikator der Untersuchung | Identifikator | Identifikator dieser Ressource. |
-| `status` | Status | Status der Laboruntersuchung (durchgeführt, offen, storniert) | Status | abgeschlossen |
-| `category` | Bereich, Gruppe | Laboruntersuchungen werden in diagnostische Fachbereiche gruppiert, z.B. Hämatologie, Mikrobiologie, Pathologie etc. | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
-| `category.coding:loinc-observation` | Bereich, Gruppe | Laboruntersuchungen werden in diagnostische Fachbereiche gruppiert, z.B. Hämatologie, Mikrobiologie, Pathologie etc. | LOINC | Kodierung nach LOINC. |
-| `category.coding:observation-category` | Bereich, Gruppe | Laboruntersuchungen werden in diagnostische Fachbereiche gruppiert, z.B. Hämatologie, Mikrobiologie, Pathologie etc. | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
-| `code` | Code | Code des Laborparameters (LOINC) | Code | LOINC-Code, der den gemessenen Laborparameter bzw. durchgeführten Labortest beschreibt. |
-| `subject` |  |  | Subjekt | Subjekt auf welches sich die Laboruntersuchung bezieht. |
-| `encounter` |  |  | Fall oder Kontakt | Fall oder Kontakt, in dem die Laboruntersuchung durchgeführt wurde. |
-| `effective[x]` | KlinischerBezugszeitpunkt | Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird... | Untersuchungszeitpunkt | Klinischer Bezugszeitpunkt der Laboruntersuchung |
-| `effective[x].extension:QuelleKlinischesBezugsdatum` | KlinischerBezugszeitpunkt | Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird... | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
-| `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
-| `value[x]` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Messwert | Wert der Analyse |
-| `value[x]:valueQuantity` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRange` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Messwert | Wert der Beobachtung. |
-| `value[x]:valueRatio` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Messwert | Wert der Beobachtung. |
-| `dataAbsentReason` |  |  | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
-| `interpretation` | Interpretation | Codierte Bewertung des Ergebnisses. Wird sowohl für Referenzbereichbewertungen als auch für die Codierung der RAST-Klassen verwendet. | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
-| `note` | Kommentar | //type text | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
-| `method` | Untersuchungsmethode | konkrete Untersuchungsmethode, wenn ein verwendeter LOINC-Code für den Laborparameter keine Methode enthält | Untersuchungsmethode | Konkrete Untersuchungsmethode, wenn der verwendete LOINC-Code für den Laborparameter keine Methode enthält. |
-| `specimen` | Probenmaterial | Probe, auf deren Basis die Laboruntersuchungen angefertigt werden | Probenmaterial | Probe, auf deren Basis die Laboruntersuchungen angefertigt werden |
-| `device` |  |  | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
-| `referenceRange` | Referenzbereich | Für einen Analyse sind mehrere Referenzbereiche möglich, ein Labor wird einem Patienten anhand von Merkmalen wie Alter und Geschlecht in der Regel aber nur einem Referenzbereich zuordnen. Dieser ei... | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `identifier` | Identifikation | Identifikator der Untersuchung | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |  |
+| `identifier:analyseBefundCode` | Identifikation | Identifikator der Untersuchung | Identifikator | Identifikator dieser Ressource. |  |
+| `status` | Status | Status der Laboruntersuchung (durchgeführt, offen, storniert) | Status | abgeschlossen |  |
+| `category` | Bereich, Gruppe | Laboruntersuchungen werden in diagnostische Fachbereiche gruppiert, z.B. Hämatologie, Mikrobiologie, Pathologie etc. | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |  |
+| `category.coding:loinc-observation` | Bereich, Gruppe | Laboruntersuchungen werden in diagnostische Fachbereiche gruppiert, z.B. Hämatologie, Mikrobiologie, Pathologie etc. | LOINC | Kodierung nach LOINC. |  |
+| `category.coding:observation-category` | Bereich, Gruppe | Laboruntersuchungen werden in diagnostische Fachbereiche gruppiert, z.B. Hämatologie, Mikrobiologie, Pathologie etc. | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |  |
+| `code` | Code | Code des Laborparameters (LOINC) | Code | LOINC-Code, der den gemessenen Laborparameter bzw. durchgeführten Labortest beschreibt. | ✓ |
+| `subject` |  |  | Subjekt | Subjekt auf welches sich die Laboruntersuchung bezieht. |  |
+| `encounter` |  |  | Fall oder Kontakt | Fall oder Kontakt, in dem die Laboruntersuchung durchgeführt wurde. |  |
+| `effective[x]` | KlinischerBezugszeitpunkt | Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird... | Untersuchungszeitpunkt | Klinischer Bezugszeitpunkt der Laboruntersuchung | ✓ |
+| `effective[x].extension:QuelleKlinischesBezugsdatum` | KlinischerBezugszeitpunkt | Zeitpunkt, zu dem die gemessene Eigenschaft im Probenmaterial (e.g. Analytkonzentration) mutmaßlich der Eigenschaft im Patienten entsprach. Wenn der Zeitpunkt der Probenentnahme angegeben ist, wird... | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |  |
+| `issued` | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |  |
+| `value[x]` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Messwert | Wert der Analyse | ✓ |
+| `value[x]:valueQuantity` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |  |
+| `value[x]:valueCodeableConcept` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |  |
+| `value[x]:valueRange` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |  |
+| `value[x]:valueRatio` | Laborparameter, Messwert | in der Laboruntersuchung analysierter / gemessener Laborparameter | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |  |
+| `dataAbsentReason` |  |  | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt | ✓ |
+| `interpretation` | Interpretation | Codierte Bewertung des Ergebnisses. Wird sowohl für Referenzbereichbewertungen als auch für die Codierung der RAST-Klassen verwendet. | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. | ✓ |
+| `note` | Kommentar | //type text | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |  |
+| `method` | Untersuchungsmethode | konkrete Untersuchungsmethode, wenn ein verwendeter LOINC-Code für den Laborparameter keine Methode enthält | Untersuchungsmethode | Konkrete Untersuchungsmethode, wenn der verwendete LOINC-Code für den Laborparameter keine Methode enthält. |  |
+| `specimen` | Probenmaterial | Probe, auf deren Basis die Laboruntersuchungen angefertigt werden | Probenmaterial | Probe, auf deren Basis die Laboruntersuchungen angefertigt werden |  |
+| `device` |  |  | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |  |
+| `referenceRange` | Referenzbereich | Für einen Analyse sind mehrere Referenzbereiche möglich, ein Labor wird einem Patienten anhand von Merkmalen wie Alter und Geschlecht in der Regel aber nur einem Referenzbereich zuordnen. Dieser ei... | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. | ✓ |
 
 ---
 
@@ -143,10 +143,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
 | `issued` | Issued | The point in time when the laboratory result was documented. |
 | `value[x]` | Value | Value of the analysis |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
-| `value[x]:valueRange` | Value | Value of the observation. |
-| `value[x]:valueRatio` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
 | `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
 | `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
 | `note` | Note | Additional information about the laboratory test as free text. |

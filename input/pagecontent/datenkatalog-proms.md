@@ -8,17 +8,17 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_PRO_Depression_T_Score](StructureDefinition-fdpg-pr-pro-depression-t-score.html) · **MII Elternprofil:** MII_PR_PRO_Depression_T_Score
 
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `extension:instantiatesCanonical` | Erweiterung | FHIR-Erweiterung. |
-| `status` | Status | Status der Ressource. |
-| `category` | Kategorie | Kategorisierung der Ressource. |
-| `code` | Code | Kodierung des Inhalts. |
-| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
-| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| Element | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|
+| `extension:instantiatesCanonical` | Erweiterung | FHIR-Erweiterung. |  |
+| `status` | Status | Status der Ressource. |  |
+| `category` | Kategorie | Kategorisierung der Ressource. |  |
+| `code` | Code | Kodierung des Inhalts. | ✓ |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |  |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |  |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. | ✓ |
+| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |  |
 
 #### MII PR PRO Observation BDI-II (Observation)
 
@@ -306,17 +306,17 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_PRO_PROMIS_Depression_SF4a_Raw_Score](StructureDefinition-fdpg-pr-pro-promis-depression-sf4a-raw-score.html) · **MII Elternprofil:** MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score
 
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `extension:instantiatesCanonical` | Erweiterung | FHIR-Erweiterung. |
-| `status` | Status | Status der Ressource. |
-| `category` | Kategorie | Kategorisierung der Ressource. |
-| `code` | Code | Kodierung des Inhalts. |
-| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]:valueQuantity` | Messwert | Wert der Beobachtung. |
-| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
-| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| Element | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|
+| `extension:instantiatesCanonical` | Erweiterung | FHIR-Erweiterung. |  |
+| `status` | Status | Status der Ressource. |  |
+| `category` | Kategorie | Kategorisierung der Ressource. |  |
+| `code` | Code | Kodierung des Inhalts. | ✓ |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |  |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |  |
+| `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. | ✓ |
+| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |  |
 
 #### MII PR PRO QuestionnaireResponse (QuestionnaireResponse)
 
@@ -367,21 +367,21 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_PRO_Score_Instance](StructureDefinition-fdpg-pr-pro-score-instance.html) · **MII Elternprofil:** MII_PR_PRO_Score_Instance
 
-| Element | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|
-| `extension` | Erweiterung | FHIR-Erweiterung. |
-| `extension:instantiatesCanonical` | Erweiterung | FHIR-Erweiterung. |
-| `identifier` | Identifikator | Identifikator dieser Ressource. |
-| `status` | Status | Status der Ressource. |
-| `code` | Code | Kodierung des Inhalts. |
-| `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `performer` | Durchführende\*r | Person oder Organisation, die die Maßnahme durchgeführt hat. |
-| `value[x]` | Messwert | Wert der Beobachtung. |
-| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
-| `note` | Hinweis | Freitextkommentar zur Ressource. |
-| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
-| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| Element | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|
+| `extension` | Erweiterung | FHIR-Erweiterung. |  |
+| `extension:instantiatesCanonical` | Erweiterung | FHIR-Erweiterung. |  |
+| `identifier` | Identifikator | Identifikator dieser Ressource. |  |
+| `status` | Status | Status der Ressource. |  |
+| `code` | Code | Kodierung des Inhalts. | ✓ |
+| `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |  |
+| `performer` | Durchführende\*r | Person oder Organisation, die die Maßnahme durchgeführt hat. |  |
+| `value[x]` | Messwert | Wert der Beobachtung. | ✓ |
+| `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). | ✓ |
+| `note` | Hinweis | Freitextkommentar zur Ressource. |  |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
+| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |  |
 
 ---
 
@@ -398,7 +398,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
 | `referenceRange` | Reference range | Clinical reference range for the value. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 
@@ -711,7 +711,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
 | `referenceRange` | Reference range | Clinical reference range for the value. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 

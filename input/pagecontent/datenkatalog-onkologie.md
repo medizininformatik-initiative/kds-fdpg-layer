@@ -44,286 +44,286 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Onko_Fruehere_Tumorerkrankung](StructureDefinition-fdpg-pr-onko-fruehere-tumorerkrankung.html) · **MII Elternprofil:** MII_PR_Onko_Fruehere_Tumorerkrankung
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `extension` |  |  | Erweiterung | FHIR-Erweiterung. |
-| `extension:assertedDate` | Hauptdiagnosedatum | Datum der Erstdiagnose der Hauptdiagnose. Wenn Tag unbekannt -> 15. des Monats | Erweiterung | FHIR-Erweiterung. |
-| `extension:morphology-behavior-icdo3` | MorphologieCode, MorphologieICDOBlueBookVersion, ... | Gibt an, welche Histologie der Tumor aufweist. | Erweiterung | FHIR-Erweiterung. |
-| `clinicalStatus` |  |  | Klinischer Status | Klinischer Status der Diagnose: aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen. |
-| `verificationStatus` | PrimaertumorDiagnosesicherung | Höchste erreichte Diagnosesicherheit der Diagnose. | Verifizierungsstatus | Verifizierungsstatus: unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe. |
-| `category` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `category:oncology` |  |  | Kategorisierung als onkologische Diagnose | Kategorisierung der Ressource. |
-| `code` | PrimaertumorTumordiagnoseICDCode, PrimaertumorTumordiagnoseICDVersion, ... | Kodierung einer meldepflichtigen Erkrankung nach der aktuellen ICD-GM Version. | Code | Kodierung des Inhalts. |
-| `code.coding:icd10-gm` | PrimaertumorTumordiagnoseICDCode, PrimaertumorTumordiagnoseICDVersion, ... | Kodierung einer meldepflichtigen Erkrankung nach der aktuellen ICD-GM Version. | ICD-10-GM Kodierung (optional) | ICD-10-GM Kodierung der früheren Tumorerkrankung, falls verfügbar |
-| `bodySite` | PrimaertumorTopographieICDO, PrimaertumorTopographieICDOVersion, ... | Bezeichnung der Topographie einer Erkrankung nach der aktuellen ICD-O Version. | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
-| `bodySite.coding:icd-o-3` | PrimaertumorTopographieICDO, PrimaertumorTopographieICDOVersion, ... | Bezeichnung der Topographie einer Erkrankung nach der aktuellen ICD-O Version. | ICD-O-3 Topographie | Anatomische Lokalisation nach ICD-O-3 |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `recordedDate` |  |  | Aufzeichnungsdatum | Datum, an dem die Ressource aufgezeichnet wurde. |
-| `note` |  |  | Hinweis | Freitextkommentar zur Ressource. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `extension` |  |  | Erweiterung | FHIR-Erweiterung. |  |
+| `extension:assertedDate` | Hauptdiagnosedatum | Datum der Erstdiagnose der Hauptdiagnose. Wenn Tag unbekannt -> 15. des Monats | Erweiterung | FHIR-Erweiterung. |  |
+| `extension:morphology-behavior-icdo3` | MorphologieCode, MorphologieICDOBlueBookVersion, ... | Gibt an, welche Histologie der Tumor aufweist. | Erweiterung | FHIR-Erweiterung. |  |
+| `clinicalStatus` |  |  | Klinischer Status | Klinischer Status der Diagnose: aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen. | ✓ |
+| `verificationStatus` | PrimaertumorDiagnosesicherung | Höchste erreichte Diagnosesicherheit der Diagnose. | Verifizierungsstatus | Verifizierungsstatus: unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe. | ✓ |
+| `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `category:oncology` |  |  | Kategorisierung als onkologische Diagnose | Kategorisierung der Ressource. |  |
+| `code` | PrimaertumorTumordiagnoseICDCode, PrimaertumorTumordiagnoseICDVersion, ... | Kodierung einer meldepflichtigen Erkrankung nach der aktuellen ICD-GM Version. | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:icd10-gm` | PrimaertumorTumordiagnoseICDCode, PrimaertumorTumordiagnoseICDVersion, ... | Kodierung einer meldepflichtigen Erkrankung nach der aktuellen ICD-GM Version. | ICD-10-GM Kodierung (optional) | ICD-10-GM Kodierung der früheren Tumorerkrankung, falls verfügbar |  |
+| `bodySite` | PrimaertumorTopographieICDO, PrimaertumorTopographieICDOVersion, ... | Bezeichnung der Topographie einer Erkrankung nach der aktuellen ICD-O Version. | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |  |
+| `bodySite.coding:icd-o-3` | PrimaertumorTopographieICDO, PrimaertumorTopographieICDOVersion, ... | Bezeichnung der Topographie einer Erkrankung nach der aktuellen ICD-O Version. | ICD-O-3 Topographie | Anatomische Lokalisation nach ICD-O-3 |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `recordedDate` |  |  | Aufzeichnungsdatum | Datum, an dem die Ressource aufgezeichnet wurde. | ✓ |
+| `note` |  |  | Hinweis | Freitextkommentar zur Ressource. |  |
 
 #### MII PR Onkologie TNM-Klassifikation (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_Klassifikation](StructureDefinition-fdpg-pr-onko-tnm-klassifikation.html) · **MII Elternprofil:** MII_PR_Onko_TNM_Klassifikation
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `status` |  |  | Status | Status der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
-| `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
-| `hasMember` |  |  | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `status` |  |  | Status | Status der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
+| `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |  |
+| `hasMember` |  |  | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |  |
 
 #### MII PR Onkologie TNM T-Kategorie (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_T_Kategorie](StructureDefinition-fdpg-pr-onko-tnm-t-kategorie.html) · **MII Elternprofil:** MII_PR_Onko_TNM_T_Kategorie
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `status` |  |  | Status | Status der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `code.extension:cpPraefix` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | TNM c/p-Präfix T | Gibt an, ob die Klassifikation klinisch oder pathologisch erfolgte. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `status` |  |  | Status | Status der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `code.extension:cpPraefix` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | TNM c/p-Präfix T | Gibt an, ob die Klassifikation klinisch oder pathologisch erfolgte. |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
 
 #### MII PR Onkologie TNM N-Kategorie (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_N_Kategorie](StructureDefinition-fdpg-pr-onko-tnm-n-kategorie.html) · **MII Elternprofil:** MII_PR_Onko_TNM_N_Kategorie
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `status` |  |  | Status | Status der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `code.extension:cpPraefix` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | TNM c/p-Präfix N | Gibt an, ob die Klassifikation klinisch oder pathologisch erfolgte. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `value[x].extension:itcSuffix` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | isolierte Tumorzellen (ITC) Suffix | Die Extension verleiht TNM N- und M-Kategorien isolierte Tumorzellen (ITC) Suffixe. |
-| `value[x].extension:snSuffix` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Schildwächterlymphknoten (Sentinel Lymph Node) Suffix | Die Extension verleiht der TNM N-Kategorie das Schildwächterlymphknoten (Sentinel Lymph Node) Suffix. |
-| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
-| `hasMember` |  |  | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `status` |  |  | Status | Status der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `code.extension:cpPraefix` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | TNM c/p-Präfix N | Gibt an, ob die Klassifikation klinisch oder pathologisch erfolgte. |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].extension:itcSuffix` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | isolierte Tumorzellen (ITC) Suffix | Die Extension verleiht TNM N- und M-Kategorien isolierte Tumorzellen (ITC) Suffixe. |  |
+| `value[x].extension:snSuffix` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Schildwächterlymphknoten (Sentinel Lymph Node) Suffix | Die Extension verleiht der TNM N-Kategorie das Schildwächterlymphknoten (Sentinel Lymph Node) Suffix. |  |
+| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
+| `hasMember` |  |  | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |  |
 
 #### MII PR Onkologie TNM M-Kategorie (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_M_Kategorie](StructureDefinition-fdpg-pr-onko-tnm-m-kategorie.html) · **MII Elternprofil:** MII_PR_Onko_TNM_M_Kategorie
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
-| `status` |  |  | Status | Status der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `code.extension:cpPraefix` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | MII EX Onkologie TNM c/p Präfix | Die Extension verleiht einer TNM T-, N- oder M-Kategorie ein c, p oder u Präfix zur Angabe der Klassifikationsmethode: 'c' = klinische Klassifikation (basierend auf klinischen Angaben), 'p' = patho... |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `value[x].extension:itcSuffix` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | isolierte Tumorzellen (ITC) Suffix | Die Extension verleiht TNM N- und M-Kategorien isolierte Tumorzellen (ITC) Suffixe. |
-| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
-| `hasMember` |  |  | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |  |
+| `status` |  |  | Status | Status der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `code.extension:cpPraefix` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | MII EX Onkologie TNM c/p Präfix | Die Extension verleiht einer TNM T-, N- oder M-Kategorie ein c, p oder u Präfix zur Angabe der Klassifikationsmethode: 'c' = klinische Klassifikation (basierend auf klinischen Angaben), 'p' = patho... |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].extension:itcSuffix` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | isolierte Tumorzellen (ITC) Suffix | Die Extension verleiht TNM N- und M-Kategorien isolierte Tumorzellen (ITC) Suffixe. |  |
+| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
+| `hasMember` |  |  | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |  |
 
 #### MII PR Onkologie TNM L-Kategorie (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_L_Kategorie](StructureDefinition-fdpg-pr-onko-tnm-l-kategorie.html) · **MII Elternprofil:** MII_PR_Onko_TNM_L_Kategorie
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `status` |  |  | Status | Status der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `status` |  |  | Status | Status der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
 
 #### MII PR Onkologie TNM V-Kategorie (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_V_Kategorie](StructureDefinition-fdpg-pr-onko-tnm-v-kategorie.html) · **MII Elternprofil:** MII_PR_Onko_TNM_V_Kategorie
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `status` |  |  | Status | Status der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `status` |  |  | Status | Status der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
 
 #### MII PR Onkologie TNM Pn-Kategorie (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_Pn_Kategorie](StructureDefinition-fdpg-pr-onko-tnm-pn-kategorie.html) · **MII Elternprofil:** MII_PR_Onko_TNM_Pn_Kategorie
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `status` |  |  | Status | Status der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `status` |  |  | Status | Status der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
 
 #### MII PR Onkologie TNM S-Kategorie (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_S_Kategorie](StructureDefinition-fdpg-pr-onko-tnm-s-kategorie.html) · **MII Elternprofil:** MII_PR_Onko_TNM_S_Kategorie
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `status` |  |  | Status | Status der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `status` |  |  | Status | Status der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
 
 #### MII PR Onkologie TNM a-Symbol (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_a_Symbol](StructureDefinition-fdpg-pr-onko-tnm-a-symbol.html) · **MII Elternprofil:** MII_PR_Onko_TNM_a_Symbol
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `status` |  |  | Status | Status der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `status` |  |  | Status | Status der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 
 #### MII PR Onkologie TNM m-Symbol (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_m_Symbol](StructureDefinition-fdpg-pr-onko-tnm-m-symbol.html) · **MII Elternprofil:** MII_PR_Onko_TNM_m_Symbol
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `status` |  |  | Status | Status der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `status` |  |  | Status | Status der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 
 #### MII PR Onkologie TNM r-Symbol (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_r_Symbol](StructureDefinition-fdpg-pr-onko-tnm-r-symbol.html) · **MII Elternprofil:** MII_PR_Onko_TNM_r_Symbol
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `status` |  |  | Status | Status der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `status` |  |  | Status | Status der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 
 #### MII PR Onkologie TNM y-Symbol (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_TNM_y_Symbol](StructureDefinition-fdpg-pr-onko-tnm-y-symbol.html) · **MII Elternprofil:** MII_PR_Onko_TNM_y_Symbol
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `status` |  |  | Status | Status der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `status` |  |  | Status | Status der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 
 #### MII PR Onkologie Grading (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Grading](StructureDefinition-fdpg-pr-onko-grading.html) · **MII Elternprofil:** MII_PR_Onko_Grading
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `category` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `category:laboratory` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `category:laboratory` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 
 #### MII PR Onkologie Histologie ICD-O-3 (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Histologie_ICDO3](StructureDefinition-fdpg-pr-onko-histologie-icdo3.html) · **MII Elternprofil:** MII_PR_Onko_Histologie_ICDO3
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der histologischen Untersuchung | Datum der histologischen Untersuchung im Krankheitsverlauf |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `bodySite.coding:Seitenlokalisation` | LokalisationFernmetastase | Lokalisation der Fernmetastase(n). | Seitenlokalisation | Seitenlokalisation bei paarigen Organen |
-| `bodySite.coding:icd-o-3` | LokalisationFernmetastase | Lokalisation der Fernmetastase(n). | ICD-O-3 Topographie | ICD-O-3 Topographie bei vom Primärtumor abweichender Lokalisation in der Verlaufsbeschreibung |
-| `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der histologischen Untersuchung | Datum der histologischen Untersuchung im Krankheitsverlauf | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `bodySite.coding:Seitenlokalisation` | LokalisationFernmetastase | Lokalisation der Fernmetastase(n). | Seitenlokalisation | Seitenlokalisation bei paarigen Organen |  |
+| `bodySite.coding:icd-o-3` | LokalisationFernmetastase | Lokalisation der Fernmetastase(n). | ICD-O-3 Topographie | ICD-O-3 Topographie bei vom Primärtumor abweichender Lokalisation in der Verlaufsbeschreibung |  |
+| `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |  |
 
 #### MII PR Onkologie Weitere Klassifikationen (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Weitere_Klassifikationen](StructureDefinition-fdpg-pr-onko-weitere-klassifikationen.html) · **MII Elternprofil:** MII_PR_Onko_Weitere_Klassifikationen
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum | Datum der weiteren Klassifikation |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Wert der weiteren Klassifikation | Wert in oben ausgewählter Klassifikation |
-| `value[x]:valueCodeableConcept` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Verwendetes Klassifikationssystem | Das spezifische Klassifikationssystem oder die Bewertungsmethode zur Bestimmung des Klassifikationswertes |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum | Datum der weiteren Klassifikation | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Wert der weiteren Klassifikation | Wert in oben ausgewählter Klassifikation | ✓ |
+| `value[x]:valueCodeableConcept` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |  |
+| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Verwendetes Klassifikationssystem | Das spezifische Klassifikationssystem oder die Bewertungsmethode zur Bestimmung des Klassifikationswertes |  |
 
 #### MII PR Onkologie Fernmetastasen (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Fernmetastasen](StructureDefinition-fdpg-pr-onko-fernmetastasen.html) · **MII Elternprofil:** MII_PR_Onko_Fernmetastasen
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der diagnostischen Sicherung von Fernmetastasen | Gibt an wann die Fernmetastase festgestellt wurde. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der diagnostischen Sicherung von Fernmetastasen | Gibt an wann die Fernmetastase festgestellt wurde. | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 
 #### MII PR Onkologie Tumorgröße (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Tumorgroesse](StructureDefinition-fdpg-pr-onko-tumorgroesse.html) · **MII Elternprofil:** MII_PR_Onko_Tumorgroesse
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Tumorgröße in mm | Tumorgröße in größter Dimension in mm |
-| `bodySite` | LokalisationFernmetastase | Lokalisation der Fernmetastase(n). | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
-| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Tumorgröße in mm | Tumorgröße in größter Dimension in mm | ✓ |
+| `bodySite` | LokalisationFernmetastase | Lokalisation der Fernmetastase(n). | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |  |
+| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
 
 #### MII PR Onkologie Genetische Variante (Observation)
 
@@ -340,7 +340,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
 | `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
-| `value[x]:valueCodeableConcept` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
 | `interpretation` | GenetischeVarianteAuspraegung, Bewertung | Ausprägung der genetischen Variante nach oBDS | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `note` | GenetischeVarianteName | Name der genetischen Variante (z.B. K-ras, BRAFV600, NRAS, C-KIT) | Hinweis | Freitextkommentar zur Ressource. |
 | `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Die verwendete Untersuchungsmethode |
@@ -393,65 +393,65 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Onko_Anzahl_Befallene_Lymphknoten](StructureDefinition-fdpg-pr-onko-anzahl-befallene-lymphknoten.html) · **MII Elternprofil:** MII_PR_Onko_Anzahl_Befallene_Lymphknoten
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `category` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `category:laboratory` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Anzahl befallener Lymphknoten | Anzahl befallener Lymphknoten nach 6.8 oBDS 2021 |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `category:laboratory` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Anzahl befallener Lymphknoten | Anzahl befallener Lymphknoten nach 6.8 oBDS 2021 | ✓ |
 
 #### MII PR Onkologie Anzahl der untersuchten Lymphknoten (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Anzahl_Untersuchte_Lymphknoten](StructureDefinition-fdpg-pr-onko-anzahl-untersuchte-lymphknoten.html) · **MII Elternprofil:** MII_PR_Onko_Anzahl_Untersuchte_Lymphknoten
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `category` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `category:laboratory` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Anzahl untersuchter Lymphknoten | Anzahl untersuchter Lymphknoten nach 6.7 oBDS 2021 |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `category:laboratory` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Anzahl untersuchter Lymphknoten | Anzahl untersuchter Lymphknoten nach 6.7 oBDS 2021 | ✓ |
 
 #### MII PR Onkologie Anzahl der befallenen Sentinel-Lymphknoten (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Anzahl_Befallene_Sentinel_Lymphknoten](StructureDefinition-fdpg-pr-onko-anzahl-befallene-sentinel-lymphknoten.html) · **MII Elternprofil:** MII_PR_Onko_Anzahl_Befallene_Sentinel_Lymphknoten
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `category` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `category:laboratory` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Anzahl befallener Sentinel-Lymphknoten | Anzahl befallener Lymphknoten nach 6.10 oBDS 2021 |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `category:laboratory` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Anzahl befallener Sentinel-Lymphknoten | Anzahl befallener Lymphknoten nach 6.10 oBDS 2021 | ✓ |
 
 #### MII PR Onkologie Anzahl der untersuchten Sentinel-Lymphknoten (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Anzahl_Untersuchte_Sentinel_Lymphknoten](StructureDefinition-fdpg-pr-onko-anzahl-untersuchte-sentinel-lymphknoten.html) · **MII Elternprofil:** MII_PR_Onko_Anzahl_Untersuchte_Sentinel_Lymphknoten
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `category` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `category:laboratory` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `category:laboratory` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 
 ### Therapie
 
@@ -476,7 +476,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
@@ -508,7 +508,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:systemische_therapie_art` | Operationstyp | Art der Mamma-Operation. | Art der systemischen oder abwartenden Therapie | Art der systemischen oder abwartenden Therapie gemäß 16.3 oBDS 2021. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
@@ -570,7 +570,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
@@ -600,7 +600,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.extension:Seitenlokalisation` |  |  | MII EX Onko Strahlentherapie Bestrahlung Seitenlokalisation | Strahlentherapie: Seitenlokalisation einer Bestrahlung |
@@ -632,7 +632,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.extension:Seitenlokalisation` |  |  | MII EX Onko Strahlentherapie Bestrahlung Seitenlokalisation | Strahlentherapie: Seitenlokalisation einer Bestrahlung |
@@ -645,26 +645,26 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Onko_Residualstatus](StructureDefinition-fdpg-pr-onko-residualstatus.html) · **MII Elternprofil:** MII_PR_Onko_Residualstatus
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 
 #### MII PR Onkologie Specimen (Specimen)
 
 **FDPG Profil:** [FDPG_PR_Onko_Specimen](StructureDefinition-fdpg-pr-onko-specimen.html) · **MII Elternprofil:** MII_PR_Onko_Specimen
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `accessionIdentifier` | HistologieEinsendenummer | Die Histologie-Einsendenummer/Auftragsnummer wird vom Pathologischen Institut beim Eingang des Präparates vergeben. | Identifier assigned by the lab | The identifier assigned by the lab when accessioning specimen(s). This is not necessarily the same as the specimen identifier, depending on local lab procedures. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `collection` | TumorHistologiedatum | Datum, an dem die Gewebeprobe entnommen wurde. | Collection details | Details concerning the specimen collection. |
-| `collection.collected[x]:collectedDateTime` | TumorHistologiedatum | Datum, an dem die Gewebeprobe entnommen wurde. | Datum der Probenentnahme | Datum der Probenentnahme entspricht oBDS 6.1 Tumor Histologiedatum |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `accessionIdentifier` | HistologieEinsendenummer | Die Histologie-Einsendenummer/Auftragsnummer wird vom Pathologischen Institut beim Eingang des Präparates vergeben. | Identifier assigned by the lab | The identifier assigned by the lab when accessioning specimen(s). This is not necessarily the same as the specimen identifier, depending on local lab procedures. |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `collection` | TumorHistologiedatum | Datum, an dem die Gewebeprobe entnommen wurde. | Collection details | Details concerning the specimen collection. | ✓ |
+| `collection.collected[x]:collectedDateTime` | TumorHistologiedatum | Datum, an dem die Gewebeprobe entnommen wurde. | Datum der Probenentnahme | Datum der Probenentnahme entspricht oBDS 6.1 Tumor Histologiedatum |  |
 
 ### Therapieempfehlung und Tumorkonferenz
 
@@ -756,44 +756,44 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Onko_Allgemeiner_Leistungszustand_ECOG](StructureDefinition-fdpg-pr-onko-allgemeiner-leistungszustand-ecog.html) · **MII Elternprofil:** MII_PR_Onko_Allgemeiner_Leistungszustand_ECOG
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `code.coding:snomed` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `value[x].coding:obds` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `value[x].coding:loinc` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:snomed` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | SNOMED CT | Kodierung nach SNOMED CT. |  |
+| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].coding:obds` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `value[x].coding:loinc` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
 
 #### MII PR Onkologie Allgemeiner Leistungszustand nach Karnofsky (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Allgemeiner_Leistungszustand_Karnofsky](StructureDefinition-fdpg-pr-onko-allgemeiner-leistungszustand-karnofsky.html) · **MII Elternprofil:** MII_PR_Onko_Allgemeiner_Leistungszustand_Karnofsky
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `code.coding:snomed` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `value[x].coding:obds` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `value[x].coding:loinc` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:snomed` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | SNOMED CT | Kodierung nach SNOMED CT. |  |
+| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].coding:obds` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `value[x].coding:loinc` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
 
 #### MII PR Onkologie ASA-Klassifikation (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_ASA_Klassifikation](StructureDefinition-fdpg-pr-onko-asa-klassifikation.html) · **MII Elternprofil:** MII_PR_Onko_ASA_Klassifikation
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | ASA-Klassifikation | ASA-Klassifikation zur präoperativen Risikobewertung gemäß oBDS KR9 |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | ASA-Klassifikation | ASA-Klassifikation zur präoperativen Risikobewertung gemäß oBDS KR9 | ✓ |
 
 #### MII PR Onkologie Befund (DiagnosticReport)
 
@@ -827,50 +827,50 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Onko_Studienteilnahme](StructureDefinition-fdpg-pr-onko-studienteilnahme.html) · **MII Elternprofil:** MII_PR_Onko_Studienteilnahme
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `focus:primaertumor` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | Referenz zum Primärtumor | Referenz zur Primärtumordiagnose, auf die sich die Studienteilnahme bezieht |
-| `focus:studie` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | Referenz zur Studie | Referenz zur konkreten Studie (ResearchStudy), an der der Patient teilnimmt |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Studienteilnahme Datum | Studienteilnahme Datum gemäß 24.2 oBDS 2021 |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `focus:primaertumor` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | Referenz zum Primärtumor | Referenz zur Primärtumordiagnose, auf die sich die Studienteilnahme bezieht |  |
+| `focus:studie` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | Referenz zur Studie | Referenz zur konkreten Studie (ResearchStudy), an der der Patient teilnimmt |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Studienteilnahme Datum | Studienteilnahme Datum gemäß 24.2 oBDS 2021 | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 
 #### MII PR Onkologie Tod (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Tod](StructureDefinition-fdpg-pr-onko-tod.html) · **MII Elternprofil:** MII_PR_Onko_Tod
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Sterbedatum | Sterbedatum gemäß 20.1 oBDS 2021 |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `interpretation` | GenetischeVarianteAuspraegung, Bewertung | Ausprägung der genetischen Variante nach oBDS | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Sterbedatum | Sterbedatum gemäß 20.1 oBDS 2021 | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `interpretation` | GenetischeVarianteAuspraegung, Bewertung | Ausprägung der genetischen Variante nach oBDS | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). | ✓ |
 
 #### MII PR Onkologie Verlauf (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Verlauf](StructureDefinition-fdpg-pr-onko-verlauf.html) · **MII Elternprofil:** MII_PR_Onko_Verlauf
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `identifier` |  |  | Identifikator | Identifikator dieser Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `effective[x]:effectiveDateTime` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `hasMember` |  |  | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
-| `component` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:Tumor_Verlauf` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:Lymphknoten_Verlauf` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:Fernmetastasen_Verlauf` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `identifier` |  |  | Identifikator | Identifikator dieser Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
+| `effective[x]:effectiveDateTime` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |  |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `hasMember` |  |  | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |  |
+| `component` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:Tumor_Verlauf` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:Lymphknoten_Verlauf` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:Fernmetastasen_Verlauf` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
 
 ### Mamma-Karzinom
 
@@ -895,8 +895,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
-| `performed[x]:performedDateTime` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]:performedDateTime` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
@@ -913,13 +913,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Onko_Mamma_Praeoperative_Markierung](StructureDefinition-fdpg-pr-onko-mamma-praeoperative-markierung.html) · **MII Elternprofil:** MII_PR_Onko_Mamma_Praeoperative_Markierung
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
-| `status` | Status | Status der präoperativen Stoma-Markierung. | Status | Status der Ressource. |
-| `code` | Operationstyp | Art der Mamma-Operation. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |  |
+| `status` | Status | Status der präoperativen Stoma-Markierung. | Status | Status der Ressource. | ✓ |
+| `code` | Operationstyp | Art der Mamma-Operation. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. | ✓ |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
 
 #### MII PR Onkologie Präoperative Drahtmarkierung Mamma (Procedure)
 
@@ -942,8 +942,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
-| `performed[x]:performedDateTime` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]:performedDateTime` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
@@ -957,64 +957,64 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Onko_Mamma_Rezeptorstatus_Estrogen](StructureDefinition-fdpg-pr-onko-mamma-rezeptorstatus-estrogen.html) · **MII Elternprofil:** MII_PR_Onko_Mamma_Rezeptorstatus_Estrogen
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `value[x].coding:DefinitionOBDS` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `value[x].coding:DefinitionLeitlinie` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `component` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:AnteilPositiveZellen` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:Faerbeintensitaet` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].coding:DefinitionOBDS` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `value[x].coding:DefinitionLeitlinie` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `component` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:AnteilPositiveZellen` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:Faerbeintensitaet` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
 
 #### MII PR Onkologie Rezeptorstatus Progesteron (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Mamma_Rezeptorstatus_Progesteron](StructureDefinition-fdpg-pr-onko-mamma-rezeptorstatus-progesteron.html) · **MII Elternprofil:** MII_PR_Onko_Mamma_Rezeptorstatus_Progesteron
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `value[x].coding:DefinitionOBDS` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `value[x].coding:DefinitionLeitlinie` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `component` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:AnteilPositiveZellen` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:Faerbeintensitaet` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].coding:DefinitionOBDS` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `value[x].coding:DefinitionLeitlinie` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `component` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:AnteilPositiveZellen` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:Faerbeintensitaet` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
 
 #### MII PR Onkologie Her2neu Status (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Mamma_Her2neu_Status](StructureDefinition-fdpg-pr-onko-mamma-her2neu-status.html) · **MII Elternprofil:** MII_PR_Onko_Mamma_Her2neu_Status
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `value[x].coding:DefinitionOBDS` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `value[x].coding:DefinitionLeitlinie` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `component` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:IHCScore` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:ISHResult` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].coding:DefinitionOBDS` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `value[x].coding:DefinitionLeitlinie` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `component` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:IHCScore` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:ISHResult` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
 
 #### MII PR Onkologie Menopausenstatus Mamma (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Mamma_Menopausenstatus](StructureDefinition-fdpg-pr-onko-mamma-menopausenstatus.html) · **MII Elternprofil:** MII_PR_Onko_Mamma_Menopausenstatus
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 
 ### Prostata-Karzinom
 
@@ -1039,7 +1039,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
@@ -1053,96 +1053,96 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Onko_Prostata_PSA](StructureDefinition-fdpg-pr-onko-prostata-psa.html) · **MII Elternprofil:** MII_PR_Onko_Prostata_PSA
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | PSA-Wert | PSA-Wert aus Blut/Plasma in ng/ml |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | PSA-Wert | PSA-Wert aus Blut/Plasma in ng/ml | ✓ |
 
 #### MII PR Onkologie Prostata Gleason Grade Group (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Prostata_Gleason_Grade_Group](StructureDefinition-fdpg-pr-onko-prostata-gleason-grade-group.html) · **MII Elternprofil:** MII_PR_Onko_Prostata_Gleason_Grade_Group
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Probenentnahme | Datum der Probenentnahme der Prostata-Biopise oder des Prostata-Exzisats |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Probenentnahme | Datum der Probenentnahme der Prostata-Biopise oder des Prostata-Exzisats | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 
 #### MII PR Onkologie Prostata Gleason Primär (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Prostata_Gleason_Pattern](StructureDefinition-fdpg-pr-onko-prostata-gleason-pattern.html) · **MII Elternprofil:** MII_PR_Onko_Prostata_Gleason_Pattern
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Probenentnahme | Datum der Probenentnahme der Prostata-Biopise oder des Prostata-Exzisats |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Probenentnahme | Datum der Probenentnahme der Prostata-Biopise oder des Prostata-Exzisats | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |  |
 
 #### MII PR Onkologie Prostata Anzahl Stanzen (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Prostata_Anzahl_Stanzen](StructureDefinition-fdpg-pr-onko-prostata-anzahl-stanzen.html) · **MII Elternprofil:** MII_PR_Onko_Prostata_Anzahl_Stanzen
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Probenentnahme | Datum der Probenentnahme der Prostata-Biopise oder des Prostata-Exzisats |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Anzahl Stanzen | Anzahl Stanzen Prostata-Biopsie |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Probenentnahme | Datum der Probenentnahme der Prostata-Biopise oder des Prostata-Exzisats | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Anzahl Stanzen | Anzahl Stanzen Prostata-Biopsie | ✓ |
 
 #### MII PR Onkologie Prostata Anzahl positiver Stanzen (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Prostata_Anzahl_Positive_Stanzen](StructureDefinition-fdpg-pr-onko-prostata-anzahl-positive-stanzen.html) · **MII Elternprofil:** MII_PR_Onko_Prostata_Anzahl_Positive_Stanzen
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Probenentnahme | Datum der Probenentnahme der Prostata-Biopise oder des Prostata-Exzisats |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Primäres Gleason-Pattern | Primäres Gleason-Pattern einer Prostata-Biopsie oder Operation |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Probenentnahme | Datum der Probenentnahme der Prostata-Biopise oder des Prostata-Exzisats | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Primäres Gleason-Pattern | Primäres Gleason-Pattern einer Prostata-Biopsie oder Operation | ✓ |
 
 #### MII PR Onkologie Ca-Befall Stanze (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Prostata_CA_Befall_Stanze](StructureDefinition-fdpg-pr-onko-prostata-ca-befall-stanze.html) · **MII Elternprofil:** MII_PR_Onko_Prostata_CA_Befall_Stanze
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Prozentualer Karzinombefall | Prozentualer Karzinombefall der am stärksten befallenen Stanze einer Prostata-Biopsie |
-| `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Prozentualer Karzinombefall | Prozentualer Karzinombefall der am stärksten befallenen Stanze einer Prostata-Biopsie | ✓ |
+| `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |  |
 
 #### MII PR Onkologie Clavien Dindo (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Prostata_Clavien_Dindo](StructureDefinition-fdpg-pr-onko-prostata-clavien-dindo.html) · **MII Elternprofil:** MII_PR_Onko_Prostata_Clavien_Dindo
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `focus:Diagnose` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `focus:Operation` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `value[x].coding:ClavienDindo` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | PSA-Wert | PSA-Wert aus Blut/Plasma in ng/ml |
-| `value[x].coding:OBDSPostOPKompl` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `focus:Diagnose` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `focus:Operation` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].coding:ClavienDindo` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | PSA-Wert | PSA-Wert aus Blut/Plasma in ng/ml |  |
+| `value[x].coding:OBDSPostOPKompl` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |  |
 
 ### Melanom
 
@@ -1167,7 +1167,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
@@ -1181,61 +1181,61 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Onko_Melanom_Breslow_Tiefe](StructureDefinition-fdpg-pr-onko-melanom-breslow-tiefe.html) · **MII Elternprofil:** MII_PR_Onko_Melanom_Breslow_Tiefe
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Messung | Datum der histopathologischen Messung der Breslow-Tiefe |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Breslow Tiefe in mm | Breslow-Tumordicke in Millimetern gemessen von der Granularschicht der Epidermis bis zur tiefsten Stelle der Tumorinvasion |
-| `dataAbsentReason` |  |  | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
-| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Messung | Datum der histopathologischen Messung der Breslow-Tiefe | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Breslow Tiefe in mm | Breslow-Tumordicke in Millimetern gemessen von der Granularschicht der Epidermis bis zur tiefsten Stelle der Tumorinvasion | ✓ |
+| `dataAbsentReason` |  |  | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. | ✓ |
+| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
 
 #### MII PR Onkologie Melanom LDH (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Melanom_LDH](StructureDefinition-fdpg-pr-onko-melanom-ldh.html) · **MII Elternprofil:** MII_PR_Onko_Melanom_LDH
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `category` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Laboruntersuchung | Datum der Laktatdehydrogenase Bestimmung |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | LDH Wert | Laktatdehydrogenase enzymatische Aktivität in Units pro Liter als prognostischer Marker beim Malignen Melanom |
-| `interpretation` | GenetischeVarianteAuspraegung, Bewertung | Ausprägung der genetischen Variante nach oBDS | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
-| `note` | GenetischeVarianteName | Name der genetischen Variante (z.B. K-ras, BRAFV600, NRAS, C-KIT) | Hinweis | Freitextkommentar zur Ressource. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Laboruntersuchung | Datum der Laktatdehydrogenase Bestimmung | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | LDH Wert | Laktatdehydrogenase enzymatische Aktivität in Units pro Liter als prognostischer Marker beim Malignen Melanom | ✓ |
+| `interpretation` | GenetischeVarianteAuspraegung, Bewertung | Ausprägung der genetischen Variante nach oBDS | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). | ✓ |
+| `note` | GenetischeVarianteName | Name der genetischen Variante (z.B. K-ras, BRAFV600, NRAS, C-KIT) | Hinweis | Freitextkommentar zur Ressource. |  |
 
 #### MII PR Onkologie Melanom Sicherheitsabstand (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Melanom_Sicherheitsabstand](StructureDefinition-fdpg-pr-onko-melanom-sicherheitsabstand.html) · **MII Elternprofil:** MII_PR_Onko_Melanom_Sicherheitsabstand
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Messung | Datum der Messung des Sicherheitsabstands |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Sicherheitsabstand in mm | Minimaler Sicherheitsabstand zum Primärtumor in mm nach definitivem operativem Eingriff gemäß oBDS MM1. Wert 0 entspricht lokal R1 oder R2 bzw. marginal |
-| `dataAbsentReason` |  |  | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Messung | Datum der Messung des Sicherheitsabstands | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Sicherheitsabstand in mm | Minimaler Sicherheitsabstand zum Primärtumor in mm nach definitivem operativem Eingriff gemäß oBDS MM1. Wert 0 entspricht lokal R1 oder R2 bzw. marginal | ✓ |
+| `dataAbsentReason` |  |  | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. | ✓ |
 
 #### MII PR Onkologie Melanom Ulzeration (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_Melanom_Ulzeration](StructureDefinition-fdpg-pr-onko-melanom-ulzeration.html) · **MII Elternprofil:** MII_PR_Onko_Melanom_Ulzeration
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Untersuchung | Datum der histopathologischen Untersuchung zur Bestimmung der Ulzeration |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Ulzeration | Pathologisches Kriterium der Ulzeration - wird bei pT1b benötigt - therapierelevant; Ulzeration ist ein Merkmal für das biologische Verhalten |
-| `dataAbsentReason` |  |  | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
-| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Untersuchung | Datum der histopathologischen Untersuchung zur Bestimmung der Ulzeration | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Ulzeration | Pathologisches Kriterium der Ulzeration - wird bei pT1b benötigt - therapierelevant; Ulzeration ist ein Merkmal für das biologische Verhalten | ✓ |
+| `dataAbsentReason` |  |  | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. | ✓ |
+| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
 
 ### Kolorektales Karzinom
 
@@ -1260,7 +1260,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
@@ -1289,8 +1289,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
-| `performed[x]:performedDateTime` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Datum der Stoma-Markierung | Zeitpunkt oder Zeitraum der Durchführung. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]:performedDateTime` | OPDatum | Datum der OP | Datum der Stoma-Markierung | Zeitpunkt oder Zeitraum der Durchführung. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
@@ -1312,68 +1312,68 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **FDPG Profil:** [FDPG_PR_Onko_KRK_Abstand_Aboral](StructureDefinition-fdpg-pr-onko-krk-abstand-aboral.html) · **MII Elternprofil:** MII_PR_Onko_KRK_Abstand_Aboral
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Untersuchung | Datum der Untersuchung |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Minimaler Abstand Tumorrand aboral | Minimaler Abstand des aboralen Tumorrandes zum aboralen Resektionsrand in mm. gemäß oBDS 2021 KR2 |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Untersuchung | Datum der Untersuchung | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Minimaler Abstand Tumorrand aboral | Minimaler Abstand des aboralen Tumorrandes zum aboralen Resektionsrand in mm. gemäß oBDS 2021 KR2 | ✓ |
 
 #### MII PR Onkologie Abstand Anokutan (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_KRK_Abstand_Anokutan](StructureDefinition-fdpg-pr-onko-krk-abstand-anokutan.html) · **MII Elternprofil:** MII_PR_Onko_KRK_Abstand_Anokutan
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Untersuchung | Datum der Untersuchung |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Abstand des Tumorunterrandes zur Anokutanlinie | Abstand des Tumorunterrandes zur Anokutanlinie in cm nach oBDS 2021 KR1 |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Untersuchung | Datum der Untersuchung | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Abstand des Tumorunterrandes zur Anokutanlinie | Abstand des Tumorunterrandes zur Anokutanlinie in cm nach oBDS 2021 KR1 | ✓ |
 
 #### MII PR Onkologie Abstand Circumferelle Resektionsebene (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_KRK_Abstand_Circumferelle_Resektionsebene](StructureDefinition-fdpg-pr-onko-krk-abstand-circumferelle-resektionsebene.html) · **MII Elternprofil:** MII_PR_Onko_KRK_Abstand_Circumferelle_Resektionsebene
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Untersuchung | Datum der Untersuchung |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Minimaler Abstand Tumorrand circumferell | Minimaler Abstand des aboralen Tumorrandes zum aboralen Resektionsrand in mm. gemäß oBDS 2021 KR2 |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Untersuchung | Datum der Untersuchung | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Minimaler Abstand Tumorrand circumferell | Minimaler Abstand des aboralen Tumorrandes zum aboralen Resektionsrand in mm. gemäß oBDS 2021 KR2 | ✓ |
 
 #### MII PR Onkologie KRK Anastomoseninsuffizienz (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_KRK_Anastomoseninsuffizienz](StructureDefinition-fdpg-pr-onko-krk-anastomoseninsuffizienz.html) · **MII Elternprofil:** MII_PR_Onko_KRK_Anastomoseninsuffizienz
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Bewertung | Datum der Bewertung der Anastomoseninsuffizienz |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Anastomoseninsuffizienz Grad | Grad der Anastomoseninsuffizienz nach oBDS |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Bewertung | Datum der Bewertung der Anastomoseninsuffizienz | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Anastomoseninsuffizienz Grad | Grad der Anastomoseninsuffizienz nach oBDS | ✓ |
 
 #### MII PR Onkologie KRK MRT/CT Abstand Mesorektale Faszie (Observation)
 
 **FDPG Profil:** [FDPG_PR_Onko_KRK_MRT_Mesorektale_Faszie](StructureDefinition-fdpg-pr-onko-krk-mrt-mesorektale-faszie.html) · **MII Elternprofil:** MII_PR_Onko_KRK_MRT_Mesorektale_Faszie
 
-| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
-|---|---|---|---|---|
-| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
-| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
-| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum MRT/CT | Datum der MRT oder Dünnschicht-CT Untersuchung |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Abstand mesorektale Faszie | Abstand des Tumors zur mesorektalen Faszie in mm bei MRT/CT gemäß oBDS 2021 KR5 |
-| `value[x]:valueCodeableConcept` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | MRT/CT Status | Status der MRT/CT Untersuchung gemäß oBDS 2021 KR5 |
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum MRT/CT | Datum der MRT oder Dünnschicht-CT Untersuchung | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]:valueQuantity` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Abstand mesorektale Faszie | Abstand des Tumors zur mesorektalen Faszie in mm bei MRT/CT gemäß oBDS 2021 KR5 |  |
+| `value[x]:valueCodeableConcept` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | MRT/CT Status | Status der MRT/CT Untersuchung gemäß oBDS 2021 KR5 |  |
 
 ---
 
@@ -1681,7 +1681,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
 | `value[x]` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
 | `method` | Method | Method used to make the observation. |
 
 </details>
@@ -1731,7 +1731,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Effective | Date or period the observation refers to. |
 | `issued` | Issued | Date when the resource was issued. |
 | `value[x]` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
 | `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
 | `note` | Note | Free-text comment on the resource. |
 | `method` | Method | Method used to make the observation. |
@@ -2800,8 +2800,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
 | `value[x]` | Value | Value of the observation. |
-| `value[x]:valueQuantity` | Value | Value of the observation. |
-| `value[x]:valueCodeableConcept` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
 
 </details>
 
