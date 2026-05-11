@@ -8,9 +8,11 @@ Alias: $obligation = http://hl7.org/fhir/StructureDefinition/obligation
 Alias: $translation = http://hl7.org/fhir/StructureDefinition/translation
 Alias: $capabilitystatement-expectation = http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation
 
-// FDPG Actors
-Alias: $fdpg-provider = https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-data-provider
-Alias: $fdpg-consumer = https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-data-consumer
+// FDPG Actor (consumer-only scope; provider obligations live in a separate spec)
+Alias: $fdpg-extractor = https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor
+
+// FDPG-specific Obligation Codes
+Alias: $fdpg-obligation = https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-obligation-cs
 
 // MII Kerndatensatz Base
 Alias: $mii-diagnose-condition = https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
