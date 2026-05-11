@@ -46,6 +46,14 @@ parameters:
   show-inherited-invariants: false
   apply-jurisdiction: true
   apply-publisher: true
+  # Multi-language IG: render German (primary) + English (secondary).
+  # Translation extensions on ^short and ^definition (de-DE / en-US) sind
+  # in den Profilen vorhanden — IG Publisher rendert beide Sprachen, wenn
+  # i18n-lang gesetzt ist.
+  i18n-lang:
+    - de-DE
+    - en-US
+  default-translation-lang: de-DE
 
 pages:
   index.md:
@@ -92,6 +100,8 @@ pages:
     title: Modul MTB
   modul-pros.md:
     title: Modul PRO
+  modul-mikrobio.md:
+    title: Modul Mikrobiologie
   datenkatalog-basis.md:
     title: Datenkatalog Basisdaten
   datenkatalog-labor.md:
@@ -122,6 +132,8 @@ pages:
     title: Datenkatalog MTB
   datenkatalog-pros.md:
     title: Datenkatalog PRO
+  datenkatalog-mikrobiologie.md:
+    title: Datenkatalog Mikrobiologie
   pre-select-rationale.md:
     title: Pre-Select-Rationale
   changelog.md:
@@ -151,6 +163,7 @@ menu:
     Dokument: modul-dokument.html
     MTB: modul-mtb.html
     PRO: modul-pros.html
+    Mikrobiologie: modul-mikrobio.html
   Datenkatalog:
     Basisdaten: datenkatalog-basis.html
     Laborbefund: datenkatalog-labor.html
@@ -167,6 +180,7 @@ menu:
     Dokument: datenkatalog-dokument.html
     MTB: datenkatalog-mtb.html
     PRO: datenkatalog-pros.html
+    Mikrobiologie: datenkatalog-mikrobiologie.html
   Pre-Select: pre-select-rationale.html
   Changelog: changelog.html
   Artifacts: artifacts.html

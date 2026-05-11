@@ -81,6 +81,9 @@
       <li>
         <a href="modul-pros.html">PRO</a>
       </li>
+      <li>
+        <a href="modul-mikrobio.html">Mikrobiologie</a>
+      </li>
     </ul>
   </li>
   <li class="dropdown">
@@ -132,6 +135,9 @@
       </li>
       <li>
         <a href="datenkatalog-pros.html">PRO</a>
+      </li>
+      <li>
+        <a href="datenkatalog-mikrobiologie.html">Mikrobiologie</a>
       </li>
     </ul>
   </li>
