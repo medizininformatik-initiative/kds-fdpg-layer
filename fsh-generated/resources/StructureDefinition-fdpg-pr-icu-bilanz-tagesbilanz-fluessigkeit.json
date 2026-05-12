@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-bilanz-tagesbilanz-fluessigkeit",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-bilanz-tagesbilanz-fluessigkeit",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPG_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit",
   "title": "FDPG PR ICU Bilanz Tagesbilanz Fluessigkeit",
   "_title": {

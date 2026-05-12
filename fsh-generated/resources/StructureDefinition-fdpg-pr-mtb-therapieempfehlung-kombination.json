@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-mtb-therapieempfehlung-kombination",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-therapieempfehlung-kombination",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPG_PR_MTB_Therapieempfehlung_Kombination",
   "title": "FDPG PR MTB Therapieempfehlung Kombination",
   "_title": {

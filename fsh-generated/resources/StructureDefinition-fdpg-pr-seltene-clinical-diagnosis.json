@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-clinical-diagnosis",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPG_PR_Seltene_ClinicalDiagnosis",
   "title": "FDPG PR Seltene ClinicalDiagnosis",
   "_title": {

@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-melanom-exzision",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPG_PR_Onko_Melanom_Exzision",
   "title": "FDPG PR Onko Melanom Exzision",
   "_title": {

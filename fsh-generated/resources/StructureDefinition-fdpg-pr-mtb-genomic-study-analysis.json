@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-mtb-genomic-study-analysis",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-genomic-study-analysis",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPG_PR_MTB_Genomic_Study_Analysis",
   "title": "FDPG PR MTB Genomic Study Analysis",
   "_title": {

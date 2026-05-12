@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-pro-promis-29-pain-intensity",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-promis-29-pain-intensity",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPG_PR_PRO_PROMIS_29_Pain_Intensity",
   "title": "FDPG PR PRO PROMIS 29 Pain Intensity",
   "_title": {

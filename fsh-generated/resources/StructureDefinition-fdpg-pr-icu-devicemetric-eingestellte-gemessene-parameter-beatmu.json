@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-devicemetric-eingestellte-gemessene-parameter-beatmu",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-devicemetric-eingestellte-gemessene-parameter-beatmu",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPG_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Beatmung",
   "title": "FDPG PR ICU Devicemetric Eingestellte Gemessene Parameter Beatmung",
   "_title": {

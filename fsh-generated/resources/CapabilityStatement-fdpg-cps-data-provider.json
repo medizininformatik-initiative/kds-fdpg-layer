@@ -2,7 +2,7 @@
   "resourceType": "CapabilityStatement",
   "id": "fdpg-cps-data-provider",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CapabilityStatement/data-provider",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPG_CPS_DataProvider",
   "title": "FDPG CapabilityStatement für Datenlieferanten",
   "status": "active",

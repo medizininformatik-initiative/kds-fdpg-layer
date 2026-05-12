@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-consent-document-reference",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-consent-document-reference",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPG_PR_Consent_DocumentReference",
   "title": "FDPG PR Consent DocumentReference",
   "_title": {

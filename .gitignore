@@ -4,6 +4,10 @@ temp/
 template/
 input-cache/
 
+# Firely Bake artifacts
+.bake/
+*.tgz
+
 # Node
 node_modules/
 

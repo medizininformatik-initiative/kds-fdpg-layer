@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-patho-active-problems-list",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-active-problems-list",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPG_PR_Patho_Active_Problems_List",
   "title": "FDPG PR Patho Active Problems List",
   "_title": {

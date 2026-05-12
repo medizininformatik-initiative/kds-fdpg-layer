@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-mtb-tumorzellgehalt",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-tumorzellgehalt",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPG_PR_MTB_Tumorzellgehalt",
   "title": "FDPG PR MTB Tumorzellgehalt",
   "_title": {

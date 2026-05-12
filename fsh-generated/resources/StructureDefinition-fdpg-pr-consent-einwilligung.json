@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-consent-einwilligung",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-consent-einwilligung",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPG_PR_Consent_Einwilligung",
   "title": "FDPG PR Consent Einwilligung",
   "_title": {

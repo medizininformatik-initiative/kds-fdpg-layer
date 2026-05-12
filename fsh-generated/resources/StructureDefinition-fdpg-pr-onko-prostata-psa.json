@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-onko-prostata-psa",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-prostata-psa",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPG_PR_Onko_Prostata_PSA",
   "title": "FDPG PR Onko Prostata PSA",
   "_title": {

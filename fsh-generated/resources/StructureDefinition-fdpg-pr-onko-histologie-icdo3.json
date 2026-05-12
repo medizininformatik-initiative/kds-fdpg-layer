@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-onko-histologie-icdo3",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-histologie-icdo3",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPG_PR_Onko_Histologie_ICDO3",
   "title": "FDPG PR Onko Histologie ICDO3",
   "_title": {

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-parameter-von-extrakorporalen-verfahren",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-parameter-von-extrakorporalen-verfahren",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPG_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren",
   "title": "FDPG PR ICU Parameter Von Extrakorporalen Verfahren",
   "_title": {

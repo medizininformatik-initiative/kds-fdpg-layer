@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-seltene-hpo-assessment",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-hpo-assessment",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPG_PR_Seltene_HPO_Assessment",
   "title": "FDPG PR Seltene HPO Assessment",
   "_title": {

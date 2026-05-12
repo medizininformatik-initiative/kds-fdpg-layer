@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-spontanes-plus-mechanisches-atemzugvolumen",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-spontanes-plus-mechanisches-atemzugvolumen",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPG_PR_ICU_Spontanes_Plus_Mechanisches_Atemzugvolumen",
   "title": "FDPG PR ICU Spontanes Plus Mechanisches Atemzugvolumen",
   "_title": {

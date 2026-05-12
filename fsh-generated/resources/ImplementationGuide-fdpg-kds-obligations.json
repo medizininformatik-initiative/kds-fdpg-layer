@@ -3,7 +3,7 @@
   "id": "fdpg-kds-obligations",
   "language": "de-DE",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ImplementationGuide/fdpg-kds-obligations",
-  "version": "2026.0.0",
+  "version": "2026.1.0",
   "name": "FDPGKDSObligations",
   "title": "FDPG KDS Obligations Layer",
   "status": "active",
