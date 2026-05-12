@@ -1,0 +1,7 @@
+{
+  "database": "dolt",
+  "backend": "dolt",
+  "dolt_mode": "embedded",
+  "dolt_database": "kds_fdpg_layer",
+  "project_id": "a5bba2c3-0a99-44bd-b664-c9d5156a9d11"
+}
