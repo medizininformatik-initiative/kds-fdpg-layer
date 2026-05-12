@@ -4,8 +4,8 @@ Id: fdpg-pr-mikrobio-molekulare-pathogenlast
 Title: "FDPG PR Mikrobio Molekulare Pathogenlast"
 Description: "FDPG Profil - MII_PR_Mikrobio_Molekulare_Pathogenlast"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Mikrobio Molekulare Pathogenlast)
-* insert Translation(^title, en-US, FDPG PR Mikrobio Molekulare Pathogenlast)
+* insert Translation(^title, de-DE, Molekulare Pathogenlast)
+* insert Translation(^title, en-US, Molecular pathogen load)
 // --- Element Designations ---
 // Observation.extension:triggeredBy-r5
 * extension[triggeredBy-r5] ^short = "R5: Triggering observation(s) (new)"

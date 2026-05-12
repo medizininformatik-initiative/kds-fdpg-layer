@@ -4,8 +4,8 @@ Id: fdpg-pr-mikrobio-antigen-antikoerper-quantitativ
 Title: "FDPG PR Mikrobio Antigen Antikoerper Quantitativ"
 Description: "FDPG Profil - MII_PR_Mikrobio_Antigen_Antikoerper_Quantitativ"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Mikrobio Antigen Antikoerper Quantitativ)
-* insert Translation(^title, en-US, FDPG PR Mikrobio Antigen Antikoerper Quantitativ)
+* insert Translation(^title, de-DE, Quantitative Antigen-/Antikörperbestimmung)
+* insert Translation(^title, en-US, Quantitative antigen/antibody assay)
 // --- Element Designations ---
 // Observation.extension:triggeredBy-r5
 * extension[triggeredBy-r5] ^short = "R5: Triggering observation(s) (new)"

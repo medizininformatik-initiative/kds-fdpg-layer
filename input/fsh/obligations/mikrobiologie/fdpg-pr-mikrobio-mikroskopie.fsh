@@ -4,8 +4,8 @@ Id: fdpg-pr-mikrobio-mikroskopie
 Title: "FDPG PR Mikrobio Mikroskopie"
 Description: "FDPG Profil - MII_PR_Mikrobio_Mikroskopie"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Mikrobio Mikroskopie)
-* insert Translation(^title, en-US, FDPG PR Mikrobio Mikroskopie)
+* insert Translation(^title, de-DE, Mikroskopischer Befund)
+* insert Translation(^title, en-US, Microscopic finding)
 // --- Element Designations ---
 // Observation.extension:triggeredBy-r5
 * extension[triggeredBy-r5] ^short = "R5: Triggering observation(s) (new)"

@@ -4,8 +4,8 @@ Id: fdpg-pr-mikrobio-voraussichtliche-empfindlichkeit
 Title: "FDPG PR Mikrobio Voraussichtliche Empfindlichkeit"
 Description: "FDPG Profil - MII_PR_Mikrobio_Voraussichtliche_Empfindlichkeit"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Mikrobio Voraussichtliche Empfindlichkeit)
-* insert Translation(^title, en-US, FDPG PR Mikrobio Voraussichtliche Empfindlichkeit)
+* insert Translation(^title, de-DE, Voraussichtliche Antibiotika-Empfindlichkeit)
+* insert Translation(^title, en-US, Predicted antibiotic susceptibility)
 // --- Element Designations ---
 // Observation.extension:triggeredBy-r5
 * extension[triggeredBy-r5] ^short = "R5: Triggering observation(s) (new)"

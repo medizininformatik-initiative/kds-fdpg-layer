@@ -4,8 +4,8 @@ Id: fdpg-pr-mikrobio-nugent-score
 Title: "FDPG PR Mikrobio Nugent Score"
 Description: "FDPG Profil - MII_PR_Mikrobio_Nugent_Score"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Mikrobio Nugent Score)
-* insert Translation(^title, en-US, FDPG PR Mikrobio Nugent Score)
+* insert Translation(^title, de-DE, Nugent-Score)
+* insert Translation(^title, en-US, Nugent score)
 // --- Element Designations ---
 // Observation.extension:triggeredBy-r5
 * extension[triggeredBy-r5] ^short = "R5: Triggering observation(s) (new)"

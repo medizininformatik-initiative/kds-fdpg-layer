@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Mikrobio Barlett Score"
+            "valueString": "Bartlett-Score"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Mikrobio Barlett Score"
+            "valueString": "Bartlett score"
           }
         ]
       }

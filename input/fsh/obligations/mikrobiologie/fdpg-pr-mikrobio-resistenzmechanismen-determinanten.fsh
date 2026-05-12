@@ -4,8 +4,8 @@ Id: fdpg-pr-mikrobio-resistenzmechanismen-determinanten
 Title: "FDPG PR Mikrobio Resistenzmechanismen Determinanten"
 Description: "FDPG Profil - MII_PR_Mikrobio_Resistenzmechanismen_Determinanten"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Mikrobio Resistenzmechanismen Determinanten)
-* insert Translation(^title, en-US, FDPG PR Mikrobio Resistenzmechanismen Determinanten)
+* insert Translation(^title, de-DE, Resistenzmechanismen und -determinanten)
+* insert Translation(^title, en-US, Resistance mechanisms and determinants)
 // --- Element Designations ---
 // Observation.extension:triggeredBy-r5
 * extension[triggeredBy-r5] ^short = "R5: Triggering observation(s) (new)"

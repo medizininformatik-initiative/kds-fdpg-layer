@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Mikrobio Diagnostic Report"
+            "valueString": "Mikrobiologiebefund"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Mikrobio Diagnostic Report"
+            "valueString": "Microbiology report"
           }
         ]
       }

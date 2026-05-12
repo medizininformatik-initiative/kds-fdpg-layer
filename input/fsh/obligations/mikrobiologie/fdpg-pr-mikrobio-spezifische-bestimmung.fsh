@@ -4,8 +4,8 @@ Id: fdpg-pr-mikrobio-spezifische-bestimmung
 Title: "FDPG PR Mikrobio Spezifische Bestimmung"
 Description: "FDPG Profil - MII_PR_Mikrobio_Spezifische_Bestimmung"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Mikrobio Spezifische Bestimmung)
-* insert Translation(^title, en-US, FDPG PR Mikrobio Spezifische Bestimmung)
+* insert Translation(^title, de-DE, Spezifische mikrobiologische Bestimmung)
+* insert Translation(^title, en-US, Specific microbiological determination)
 // --- Element Designations ---
 // Observation.extension:triggeredBy-r5
 * extension[triggeredBy-r5] ^short = "R5: Triggering observation(s) (new)"

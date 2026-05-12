@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Mikrobio Aviditaet"
+            "valueString": "Antikörper-Avidität"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Mikrobio Aviditaet"
+            "valueString": "Antibody avidity"
           }
         ]
       }

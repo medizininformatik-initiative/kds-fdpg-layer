@@ -4,8 +4,8 @@ Id: fdpg-pr-mikrobio-virulenzfaktor
 Title: "FDPG PR Mikrobio Virulenzfaktor"
 Description: "FDPG Profil - MII_PR_Mikrobio_Virulenzfaktor"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Mikrobio Virulenzfaktor)
-* insert Translation(^title, en-US, FDPG PR Mikrobio Virulenzfaktor)
+* insert Translation(^title, de-DE, Virulenzfaktor)
+* insert Translation(^title, en-US, Virulence factor)
 // --- Element Designations ---
 // Observation.extension:triggeredBy-r5
 * extension[triggeredBy-r5] ^short = "R5: Triggering observation(s) (new)"

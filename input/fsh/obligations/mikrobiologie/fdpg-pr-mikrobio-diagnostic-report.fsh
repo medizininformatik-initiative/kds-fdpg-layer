@@ -4,8 +4,8 @@ Id: fdpg-pr-mikrobio-diagnostic-report
 Title: "FDPG PR Mikrobio Diagnostic Report"
 Description: "FDPG Profil - MII_PR_Mikrobio_Diagnostic_Report"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Mikrobio Diagnostic Report)
-* insert Translation(^title, en-US, FDPG PR Mikrobio Diagnostic Report)
+* insert Translation(^title, de-DE, Mikrobiologiebefund)
+* insert Translation(^title, en-US, Microbiology report)
 // --- Element Designations ---
 // DiagnosticReport.identifier
 * identifier ^short = "Identifikator"

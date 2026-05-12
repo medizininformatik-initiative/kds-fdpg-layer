@@ -4,8 +4,8 @@ Id: fdpg-pr-mikrobio-mrgn-klasse
 Title: "FDPG PR Mikrobio MRGN Klasse"
 Description: "FDPG Profil - MII_PR_Mikrobio_MRGN_Klasse"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Mikrobio MRGN Klasse)
-* insert Translation(^title, en-US, FDPG PR Mikrobio MRGN Klasse)
+* insert Translation(^title, de-DE, MRGN-Klassifikation)
+* insert Translation(^title, en-US, MRGN classification)
 // --- Element Designations ---
 // Observation.extension:triggeredBy-r5
 * extension[triggeredBy-r5] ^short = "R5: Triggering observation(s) (new)"

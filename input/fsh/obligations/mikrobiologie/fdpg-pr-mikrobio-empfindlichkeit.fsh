@@ -4,8 +4,8 @@ Id: fdpg-pr-mikrobio-empfindlichkeit
 Title: "FDPG PR Mikrobio Empfindlichkeit"
 Description: "FDPG Profil - MII_PR_Mikrobio_Empfindlichkeit"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Mikrobio Empfindlichkeit)
-* insert Translation(^title, en-US, FDPG PR Mikrobio Empfindlichkeit)
+* insert Translation(^title, de-DE, Antibiotika-Empfindlichkeit)
+* insert Translation(^title, en-US, Antibiotic susceptibility)
 // --- Element Designations ---
 // Observation.extension:triggeredBy-r5
 * extension[triggeredBy-r5] ^short = "R5: Triggering observation(s) (new)"

@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Mikrobio MRE Klasse"
+            "valueString": "MRE-Klassifikation"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Mikrobio MRE Klasse"
+            "valueString": "MDRO classification"
           }
         ]
       }

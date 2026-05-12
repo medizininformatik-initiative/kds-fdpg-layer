@@ -4,8 +4,8 @@ Id: fdpg-pr-mikrobio-barlett-score
 Title: "FDPG PR Mikrobio Barlett Score"
 Description: "FDPG Profil - MII_PR_Mikrobio_Barlett_Score"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Mikrobio Barlett Score)
-* insert Translation(^title, en-US, FDPG PR Mikrobio Barlett Score)
+* insert Translation(^title, de-DE, Bartlett-Score)
+* insert Translation(^title, en-US, Bartlett score)
 // --- Element Designations ---
 // Observation.extension:triggeredBy-r5
 * extension[triggeredBy-r5] ^short = "R5: Triggering observation(s) (new)"

@@ -4,8 +4,8 @@ Id: fdpg-pr-mikrobio-keimzahl
 Title: "FDPG PR Mikrobio Keimzahl"
 Description: "FDPG Profil - MII_PR_Mikrobio_Keimzahl"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Mikrobio Keimzahl)
-* insert Translation(^title, en-US, FDPG PR Mikrobio Keimzahl)
+* insert Translation(^title, de-DE, Keimzahl)
+* insert Translation(^title, en-US, Bacterial count)
 // --- Element Designations ---
 // Observation.extension:triggeredBy-r5
 * extension[triggeredBy-r5] ^short = "R5: Triggering observation(s) (new)"

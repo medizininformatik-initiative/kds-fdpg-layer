@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Mikrobio Titer"
+            "valueString": "Antikörpertiter"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Mikrobio Titer"
+            "valueString": "Antibody titer"
           }
         ]
       }

@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Mikrobio Nugent Score"
+            "valueString": "Nugent-Score"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Mikrobio Nugent Score"
+            "valueString": "Nugent score"
           }
         ]
       }

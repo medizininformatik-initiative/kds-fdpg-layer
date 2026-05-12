@@ -4,8 +4,8 @@ Id: fdpg-pr-mikrobio-ct-wert
 Title: "FDPG PR Mikrobio Ct Wert"
 Description: "FDPG Profil - MII_PR_Mikrobio_Ct_Wert"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Mikrobio CT Wert)
-* insert Translation(^title, en-US, FDPG PR Mikrobio Ct Wert)
+* insert Translation(^title, de-DE, Ct-Wert (PCR\))
+* insert Translation(^title, en-US, Ct value (PCR\))
 // --- Element Designations ---
 // Observation.extension:triggeredBy-r5
 * extension[triggeredBy-r5] ^short = "R5: Triggering observation(s) (new)"

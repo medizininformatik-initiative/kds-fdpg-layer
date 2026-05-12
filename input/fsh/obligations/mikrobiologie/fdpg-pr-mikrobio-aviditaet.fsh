@@ -4,8 +4,8 @@ Id: fdpg-pr-mikrobio-aviditaet
 Title: "FDPG PR Mikrobio Aviditaet"
 Description: "FDPG Profil - MII_PR_Mikrobio_Aviditaet"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Mikrobio Aviditaet)
-* insert Translation(^title, en-US, FDPG PR Mikrobio Aviditaet)
+* insert Translation(^title, de-DE, Antikörper-Avidität)
+* insert Translation(^title, en-US, Antibody avidity)
 // --- Element Designations ---
 // Observation.extension:triggeredBy-r5
 * extension[triggeredBy-r5] ^short = "R5: Triggering observation(s) (new)"

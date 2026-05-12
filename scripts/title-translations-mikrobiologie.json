@@ -1,0 +1,78 @@
+{
+  "MII_PR_Mikrobio_Diagnostic_Report": {
+    "de-DE": "Mikrobiologiebefund",
+    "en-US": "Microbiology report"
+  },
+  "MII_PR_Mikrobio_Allgemeine_Bestimmung": {
+    "de-DE": "Allgemeine mikrobiologische Bestimmung",
+    "en-US": "General microbiological determination"
+  },
+  "MII_PR_Mikrobio_Spezifische_Bestimmung": {
+    "de-DE": "Spezifische mikrobiologische Bestimmung",
+    "en-US": "Specific microbiological determination"
+  },
+  "MII_PR_Mikrobio_Allgemeine_Kultur": {
+    "de-DE": "Mikrobiologische Kultur",
+    "en-US": "Microbiological culture"
+  },
+  "MII_PR_Mikrobio_Antigen_Antikoerper_Quantitativ": {
+    "de-DE": "Quantitative Antigen-/Antikörperbestimmung",
+    "en-US": "Quantitative antigen/antibody assay"
+  },
+  "MII_PR_Mikrobio_Aviditaet": {
+    "de-DE": "Antikörper-Avidität",
+    "en-US": "Antibody avidity"
+  },
+  "MII_PR_Mikrobio_Barlett_Score": {
+    "de-DE": "Bartlett-Score",
+    "en-US": "Bartlett score"
+  },
+  "MII_PR_Mikrobio_Ct_Wert": {
+    "de-DE": "Ct-Wert (PCR)",
+    "en-US": "Ct value (PCR)"
+  },
+  "MII_PR_Mikrobio_Empfindlichkeit": {
+    "de-DE": "Antibiotika-Empfindlichkeit",
+    "en-US": "Antibiotic susceptibility"
+  },
+  "MII_PR_Mikrobio_Voraussichtliche_Empfindlichkeit": {
+    "de-DE": "Voraussichtliche Antibiotika-Empfindlichkeit",
+    "en-US": "Predicted antibiotic susceptibility"
+  },
+  "MII_PR_Mikrobio_Keimzahl": {
+    "de-DE": "Keimzahl",
+    "en-US": "Bacterial count"
+  },
+  "MII_PR_Mikrobio_Mikroskopie": {
+    "de-DE": "Mikroskopischer Befund",
+    "en-US": "Microscopic finding"
+  },
+  "MII_PR_Mikrobio_Molekulare_Pathogenlast": {
+    "de-DE": "Molekulare Pathogenlast",
+    "en-US": "Molecular pathogen load"
+  },
+  "MII_PR_Mikrobio_MRE_Klasse": {
+    "de-DE": "MRE-Klassifikation",
+    "en-US": "MDRO classification"
+  },
+  "MII_PR_Mikrobio_MRGN_Klasse": {
+    "de-DE": "MRGN-Klassifikation",
+    "en-US": "MRGN classification"
+  },
+  "MII_PR_Mikrobio_Nugent_Score": {
+    "de-DE": "Nugent-Score",
+    "en-US": "Nugent score"
+  },
+  "MII_PR_Mikrobio_Resistenzmechanismen_Determinanten": {
+    "de-DE": "Resistenzmechanismen und -determinanten",
+    "en-US": "Resistance mechanisms and determinants"
+  },
+  "MII_PR_Mikrobio_Titer": {
+    "de-DE": "Antikörpertiter",
+    "en-US": "Antibody titer"
+  },
+  "MII_PR_Mikrobio_Virulenzfaktor": {
+    "de-DE": "Virulenzfaktor",
+    "en-US": "Virulence factor"
+  }
+}

@@ -4,8 +4,8 @@ Id: fdpg-pr-mikrobio-titer
 Title: "FDPG PR Mikrobio Titer"
 Description: "FDPG Profil - MII_PR_Mikrobio_Titer"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Mikrobio Titer)
-* insert Translation(^title, en-US, FDPG PR Mikrobio Titer)
+* insert Translation(^title, de-DE, Antikörpertiter)
+* insert Translation(^title, en-US, Antibody titer)
 // --- Element Designations ---
 // Observation.extension:triggeredBy-r5
 * extension[triggeredBy-r5] ^short = "R5: Triggering observation(s) (new)"

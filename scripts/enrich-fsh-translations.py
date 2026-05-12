@@ -79,6 +79,10 @@ MODULES = {
         "package": "de.medizininformatikinitiative.kerndatensatz.pros",
         "version": "2026.0.1",
     },
+    "mikrobiologie": {
+        "package": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
+        "version": "2027.0.0-alpha.2",
+    },
 }
 
 FHIR_CACHE = Path.home() / ".fhir" / "packages"
@@ -253,6 +257,23 @@ def parse_fsh_file(filepath):
     return result, content
 
 
+OBLIGATIONS_MARKER = "// --- Obligations ---"
+
+
+def extract_obligations_block(original_content):
+    """Return the trailing obligations block (from marker to EOF) verbatim,
+    or empty string if the file has no obligations section.
+
+    enrich-fsh-translations only regenerates header + element designations;
+    the obligations block is owned by generate-obligation-stubs.py and must
+    survive an enrich pass untouched.
+    """
+    idx = original_content.find(OBLIGATIONS_MARKER)
+    if idx < 0:
+        return ""
+    return original_content[idx:].rstrip() + "\n"
+
+
 def generate_enriched_fsh(fsh_info, parent_sd, ms_elements, title_overrides=None):
     """Generate enriched FSH content with element translations."""
     lines = []
@@ -378,6 +399,9 @@ def process_module(module_name):
 
         try:
             new_content = generate_enriched_fsh(fsh_info, parent_sd, ms_elements, title_overrides)
+            obligations = extract_obligations_block(original_content)
+            if obligations:
+                new_content = new_content.rstrip() + "\n\n" + obligations
             with open(fsh_file, "w") as f:
                 f.write(new_content)
 
