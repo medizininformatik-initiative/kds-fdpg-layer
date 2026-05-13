@@ -4,9 +4,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.molgen](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.molgen/2026.0.4)
 
-#### MII PR MolGen Anforderung genetischer Test (ServiceRequest)
+#### Anforderung genetischer Test (ServiceRequest)
 
-**FDPG Profil:** [FDPG_PR_MolGen_AnforderungGenetischerTest](StructureDefinition-fdpg-pr-mol-gen-anforderung-genetischer-test.html) · **MII Elternprofil:** MII_PR_MolGen_AnforderungGenetischerTest
+**FDPG Profil:** [FDPG_PR_MolGen_AnforderungGenetischerTest](StructureDefinition-fdpg-pr-molgen-anforderung-genetischer-test.html) · **MII Elternprofil:** MII_PR_MolGen_AnforderungGenetischerTest
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -21,9 +21,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `supportingInfo` | Gesundheitszustand | Aktueller Gesundheitszustand; Angabe aktueller Beschwerden oder nachgewiesener Erkrankung - Terminologie: HPO | Unterstützende Informationen | Zusätzliche Informationen die die Anforderung unterstützen |
 | `note` | Bemerkungen | Bemerkungen | Anmerkung | Zusätzliche Anmerkungen oder Anforderungstext |
 
-#### MII PR MolGen Diagnostische Implikation (Observation)
+#### Diagnostische Implikation (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_DiagnostischeImplikation](StructureDefinition-fdpg-pr-mol-gen-diagnostische-implikation.html) · **MII Elternprofil:** MII_PR_MolGen_DiagnostischeImplikation
+**FDPG Profil:** [FDPG_PR_MolGen_DiagnostischeImplikation](StructureDefinition-fdpg-pr-molgen-diagnostische-implikation.html) · **MII Elternprofil:** MII_PR_MolGen_DiagnostischeImplikation
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -42,9 +42,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:predicted-phenotype` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Vorhergesagter Phänotyp | Der mit der Variante assoziierte vorhergesagte Phänotyp oder Erkrankung |
 | `component:mode-of-inheritance` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Vererbungsmodus | Der Vererbungsmodus der assoziierten Erkrankung |
 
-#### MII PR MolGen Empfohlene Folgemaßnahme (Task)
+#### Empfohlene Folgemaßnahme (Task)
 
-**FDPG Profil:** [FDPG_PR_MolGen_EmpfohleneFolgemassnahme](StructureDefinition-fdpg-pr-mol-gen-empfohlene-folgemassnahme.html) · **MII Elternprofil:** MII_PR_MolGen_EmpfohleneFolgemassnahme
+**FDPG Profil:** [FDPG_PR_MolGen_EmpfohleneFolgemassnahme](StructureDefinition-fdpg-pr-molgen-empfohlene-folgemassnahme.html) · **MII Elternprofil:** MII_PR_MolGen_EmpfohleneFolgemassnahme
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -56,9 +56,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonCode` |  |  | Begründung | Kodierte Begründung für die Empfehlung |
 | `reasonReference` |  |  | Referenz zur Begründung | Referenz zur therapeutischen Implikation die diese Empfehlung begründet |
 
-#### MII PR MolGen Familienanamnese (FamilyMemberHistory)
+#### Familienanamnese (FamilyMemberHistory)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Familienanamnese](StructureDefinition-fdpg-pr-mol-gen-familienanamnese.html) · **MII Elternprofil:** MII_PR_MolGen_Familienanamnese
+**FDPG Profil:** [FDPG_PR_MolGen_Familienanamnese](StructureDefinition-fdpg-pr-molgen-familienanamnese.html) · **MII Elternprofil:** MII_PR_MolGen_Familienanamnese
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
@@ -75,9 +75,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonReference` | Referenz zum Grund | Referenz zu einer Condition die den Grund der Familienanamnese beschreibt |
 | `condition` | Erkrankung | Erkrankung des Familienangehörigen |
 
-#### MII PR MolGen Genomic Study Analysis (Procedure)
+#### Genomische Studienanalyse (Procedure)
 
-**FDPG Profil:** [FDPG_PR_MolGen_GenomicStudyAnalysis](StructureDefinition-fdpg-pr-mol-gen-genomic-study-analysis.html) · **MII Elternprofil:** MII_PR_MolGen_GenomicStudyAnalysis
+**FDPG Profil:** [FDPG_PR_MolGen_GenomicStudyAnalysis](StructureDefinition-fdpg-pr-molgen-genomic-study-analysis.html) · **MII Elternprofil:** MII_PR_MolGen_GenomicStudyAnalysis
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
@@ -91,9 +91,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:regions` | Untersuchte genomische Regionen | Komplexe Extension zur Spezifikation der genomischen Regionen - v.a. Gene aber theoretisch erweiterbar durch z.B. Exonangaben - die in dieser Analyse untersucht wurden. Angabe der untersuchten Regi... |
 | `extension:device` | Verwendetes Analysegerät | Komplexe Extension mit Art des Gerätes und Referenz zum Device wie z.B. Sequenziergerät oder Library Preparation Kit oder bioinformatische Pipelines das für diese Analyse verwendet wurde |
 
-#### MII PR MolGen Genomic Study (Procedure)
+#### Genomische Studie (Procedure)
 
-**FDPG Profil:** [FDPG_PR_MolGen_GenomicStudy](StructureDefinition-fdpg-pr-mol-gen-genomic-study.html) · **MII Elternprofil:** MII_PR_MolGen_GenomicStudy
+**FDPG Profil:** [FDPG_PR_MolGen_GenomicStudy](StructureDefinition-fdpg-pr-molgen-genomic-study.html) · **MII Elternprofil:** MII_PR_MolGen_GenomicStudy
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
@@ -105,9 +105,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `performed[x]` | Zeitpunkt oder Zeitraum der Durchführung | Zeitpunkt oder Zeitraum in dem die genetische Studie durchgeführt wurde |
 | `reasonReference` | Anforderung/Indikation für die genetische Untersuchung | Referenz zur ServiceRequest-Ressource die die Anforderung für diese genetische Studie darstellt |
 
-#### MII PR MolGen Genotyp (Observation)
+#### Genotyp (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Genotyp](StructureDefinition-fdpg-pr-mol-gen-genotyp.html) · **MII Elternprofil:** MII_PR_MolGen_Genotyp
+**FDPG Profil:** [FDPG_PR_MolGen_Genotyp](StructureDefinition-fdpg-pr-molgen-genotyp.html) · **MII Elternprofil:** MII_PR_MolGen_Genotyp
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -118,7 +118,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` |  |  | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Zusammenfassung, Mikrosatelliteninstabilitaet | Zusammenfassung | Ergebniswert | Der Genotyp als kodierter Wert oder Text |
+| `value[x]` | Mutationslast | Somat. Mutationen / Mutationslast | Ergebniswert | Der Genotyp als kodierter Wert oder Text |
 | `derivedFrom` |  |  | Abgeleitet von | Die Varianten oder Haplotypen von denen der Genotyp abgeleitet wurde |
 | `component` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Komponenten | Einzelne Komponenten des Genotyps |
 | `component:conclusion-string` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Schlussfolgerung - Text | Textuelle Zusammenfassung des Genotyps |
@@ -126,9 +126,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:cytogenetic-location` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Zytogenetische Lokalisation | Chromosomale Position in Bandennomenklatur |
 | `component:reference-sequence-assembly` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Referenzgenom-Assembly | Die verwendete Referenzgenom-Version |
 
-#### MII PR MolGen Medikationsempfehlung (Task)
+#### Medikationsempfehlung (Task)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Medikationsempfehlung](StructureDefinition-fdpg-pr-mol-gen-medikationsempfehlung.html) · **MII Elternprofil:** MII_PR_MolGen_Medikationsempfehlung
+**FDPG Profil:** [FDPG_PR_MolGen_Medikationsempfehlung](StructureDefinition-fdpg-pr-molgen-medikationsempfehlung.html) · **MII Elternprofil:** MII_PR_MolGen_Medikationsempfehlung
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -140,9 +140,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonCode` |  |  | Begründung | Kodierte Begründung für die Medikationsempfehlung |
 | `reasonReference` |  |  | Referenz zur Begründung | Referenz zur therapeutischen Implikation die diese Empfehlung begründet |
 
-#### MII PR MolGen Mikrosatelliteninstabilität (Observation)
+#### Mikrosatelliteninstabilität (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Mikrosatelliteninstabilitaet](StructureDefinition-fdpg-pr-mol-gen-mikrosatelliteninstabilitaet.html) · **MII Elternprofil:** MII_PR_MolGen_Mikrosatelliteninstabilitaet
+**FDPG Profil:** [FDPG_PR_MolGen_Mikrosatelliteninstabilitaet](StructureDefinition-fdpg-pr-molgen-mikrosatelliteninstabilitaet.html) · **MII Elternprofil:** MII_PR_MolGen_Mikrosatelliteninstabilitaet
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -153,15 +153,15 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` |  |  | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Zusammenfassung, Mikrosatelliteninstabilitaet | Zusammenfassung | Ergebniswert | Das Ergebnis der MSI-Bestimmung wie z.B. stabil oder instabil |
+| `value[x]` | Mutationslast | Somat. Mutationen / Mutationslast | Ergebniswert | Das Ergebnis der MSI-Bestimmung wie z.B. stabil oder instabil |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Komponenten | Einzelne Komponenten der Beobachtung |
 | `component:gene-studied` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### MII PR MolGen Molekulare Konsequenz (Observation)
+#### Molekulare Konsequenz (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_MolekulareKonsequenz](StructureDefinition-fdpg-pr-mol-gen-molekulare-konsequenz.html) · **MII Elternprofil:** MII_PR_MolGen_MolekulareKonsequenz
+**FDPG Profil:** [FDPG_PR_MolGen_MolekulareKonsequenz](StructureDefinition-fdpg-pr-molgen-molekulare-konsequenz.html) · **MII Elternprofil:** MII_PR_MolGen_MolekulareKonsequenz
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -179,9 +179,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:clinical-significance` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Klinische Signifikanz | Die klinische Signifikanz der Variante |
 | `component:functional-effect` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Funktioneller Effekt | Der funktionelle Effekt der Variante auf das Genprodukt |
 
-#### MII PR MolGen Molekulare Biomarker (Observation)
+#### Molekularer Biomarker (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_MolekularerBiomarker](StructureDefinition-fdpg-pr-mol-gen-molekularer-biomarker.html) · **MII Elternprofil:** MII_PR_MolGen_MolekularerBiomarker
+**FDPG Profil:** [FDPG_PR_MolGen_MolekularerBiomarker](StructureDefinition-fdpg-pr-molgen-molekularer-biomarker.html) · **MII Elternprofil:** MII_PR_MolGen_MolekularerBiomarker
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -196,9 +196,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:gene-studied` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### MII PR MolGen Molekulargenetischer Befundbericht (DiagnosticReport)
+#### Molekulargenetischer Befundbericht (DiagnosticReport)
 
-**FDPG Profil:** [FDPG_PR_MolGen_MolekulargenetischerBefundbericht](StructureDefinition-fdpg-pr-mol-gen-molekulargenetischer-befundbericht.html) · **MII Elternprofil:** MII_PR_MolGen_MolekulargenetischerBefundbericht
+**FDPG Profil:** [FDPG_PR_MolGen_MolekulargenetischerBefundbericht](StructureDefinition-fdpg-pr-molgen-molekulargenetischer-befundbericht.html) · **MII Elternprofil:** MII_PR_MolGen_MolekulargenetischerBefundbericht
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -227,9 +227,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `conclusion` |  |  | Schlussfolgerung | Textuelle Zusammenfassung der Befundergebnisse |
 | `conclusionCode` |  |  | Schlussfolgerungscode | Kodierte Schlussfolgerung des Befundes |
 
-#### MII PR MolGen Mutationslast (Observation)
+#### Mutationslast (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Mutationslast](StructureDefinition-fdpg-pr-mol-gen-mutationslast.html) · **MII Elternprofil:** MII_PR_MolGen_Mutationslast
+**FDPG Profil:** [FDPG_PR_MolGen_Mutationslast](StructureDefinition-fdpg-pr-molgen-mutationslast.html) · **MII Elternprofil:** MII_PR_MolGen_Mutationslast
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -240,16 +240,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` |  |  | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Zusammenfassung, Mikrosatelliteninstabilitaet | Zusammenfassung | Ergebniswert | Der numerische Wert der Mutationslast in Mutationen pro Megabase |
+| `value[x]` | Mutationslast | Somat. Mutationen / Mutationslast | Ergebniswert | Der numerische Wert der Mutationslast in Mutationen pro Megabase |
 | `specimen` |  |  | Probe | Die untersuchte Tumorprobe |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Komponenten | Einzelne Komponenten der Beobachtung |
 | `component:gene-studied` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### MII PR MolGen Polygener Risiko Score (RiskAssessment)
+#### Polygener Risiko-Score (RiskAssessment)
 
-**FDPG Profil:** [FDPG_PR_MolGen_PolygenerRisikoScore](StructureDefinition-fdpg-pr-mol-gen-polygener-risiko-score.html) · **MII Elternprofil:** MII_PR_MolGen_PolygenerRisikoScore
+**FDPG Profil:** [FDPG_PR_MolGen_PolygenerRisikoScore](StructureDefinition-fdpg-pr-molgen-polygener-risiko-score.html) · **MII Elternprofil:** MII_PR_MolGen_PolygenerRisikoScore
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
@@ -264,9 +264,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `prediction` | Vorhersage | Die vorhergesagten Risiken |
 | `prediction.extension:whenCodeableConcept` | Einflussfaktor | Zusätzlicher Einflussfaktor für die Risikoberechnung |
 
-#### MII PR MolGen Therapeutische Implikation (Observation)
+#### Therapeutische Implikation (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_TherapeutischeImplikation](StructureDefinition-fdpg-pr-mol-gen-therapeutische-implikation.html) · **MII Elternprofil:** MII_PR_MolGen_TherapeutischeImplikation
+**FDPG Profil:** [FDPG_PR_MolGen_TherapeutischeImplikation](StructureDefinition-fdpg-pr-molgen-therapeutische-implikation.html) · **MII Elternprofil:** MII_PR_MolGen_TherapeutischeImplikation
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -287,9 +287,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:medication-assessed` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Bewertete Medikation | Die bewertete Medikation für die therapeutische Empfehlung |
 | `component:therapy-assessed` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Bewertete Therapie | Die bewertete nicht-medikamentöse Therapie |
 
-#### MII PR MolGen Variante (Observation)
+#### Variante (Observation)
 
-**FDPG Profil:** [FDPG_PR_MolGen_Variante](StructureDefinition-fdpg-pr-mol-gen-variante.html) · **MII Elternprofil:** MII_PR_MolGen_Variante
+**FDPG Profil:** [FDPG_PR_MolGen_Variante](StructureDefinition-fdpg-pr-molgen-variante.html) · **MII Elternprofil:** MII_PR_MolGen_Variante
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
@@ -299,7 +299,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient oder Proband | Der Patient oder die Gruppe auf die sich die Variante bezieht |
 | `effective[x]` |  |  | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | Zusammenfassung, Mikrosatelliteninstabilitaet | Zusammenfassung | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | Mutationslast | Somat. Mutationen / Mutationslast | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Methode | Methode und Referenz zur Methode - beinhaltet alle sequenzbasierenden Analytik-Methoden, während nicht sequenzbasierende Aufarbeitungsmethoden in das Modul Pathologie zuzuordnen sind. | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
@@ -336,7 +336,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 ## English Translations
 
 <details>
-<summary>English translations - MII PR MolGen Anforderung genetischer Test</summary>
+<summary>English translations - Anforderung genetischer Test</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -354,7 +354,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MolGen Diagnostische Implikation</summary>
+<summary>English translations - Diagnostische Implikation</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -376,7 +376,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MolGen Empfohlene Folgemaßnahme</summary>
+<summary>English translations - Empfohlene Folgemaßnahme</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -391,7 +391,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MolGen Familienanamnese</summary>
+<summary>English translations - Familienanamnese</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -411,7 +411,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MolGen Genomic Study Analysis</summary>
+<summary>English translations - Genomische Studienanalyse</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -428,7 +428,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MolGen Genomic Study</summary>
+<summary>English translations - Genomische Studie</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -443,7 +443,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MolGen Genotyp</summary>
+<summary>English translations - Genotyp</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -465,7 +465,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MolGen Medikationsempfehlung</summary>
+<summary>English translations - Medikationsempfehlung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -480,7 +480,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MolGen Mikrosatelliteninstabilität</summary>
+<summary>English translations - Mikrosatelliteninstabilität</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -500,7 +500,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MolGen Molekulare Konsequenz</summary>
+<summary>English translations - Molekulare Konsequenz</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -521,7 +521,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MolGen Molekulare Biomarker</summary>
+<summary>English translations - Molekularer Biomarker</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -539,7 +539,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MolGen Molekulargenetischer Befundbericht</summary>
+<summary>English translations - Molekulargenetischer Befundbericht</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -571,7 +571,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MolGen Mutationslast</summary>
+<summary>English translations - Mutationslast</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -592,7 +592,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MolGen Polygener Risiko Score</summary>
+<summary>English translations - Polygener Risiko-Score</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -610,7 +610,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MolGen Therapeutische Implikation</summary>
+<summary>English translations - Therapeutische Implikation</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -634,7 +634,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MolGen Variante</summary>
+<summary>English translations - Variante</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|

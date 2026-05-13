@@ -1220,7 +1220,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-mol-gen-anforderung-genetischer-test"
+          "reference": "StructureDefinition/fdpg-pr-molgen-anforderung-genetischer-test"
         },
         "name": "FDPG PR MolGen AnforderungGenetischerTest",
         "description": "FDPG Profil - MII_PR_MolGen_AnforderungGenetischerTest",
@@ -1228,7 +1228,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-mol-gen-diagnostische-implikation"
+          "reference": "StructureDefinition/fdpg-pr-molgen-diagnostische-implikation"
         },
         "name": "FDPG PR MolGen DiagnostischeImplikation",
         "description": "FDPG Profil - MII_PR_MolGen_DiagnostischeImplikation",
@@ -1236,7 +1236,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-mol-gen-empfohlene-folgemassnahme"
+          "reference": "StructureDefinition/fdpg-pr-molgen-empfohlene-folgemassnahme"
         },
         "name": "FDPG PR MolGen EmpfohleneFolgemassnahme",
         "description": "FDPG Profil - MII_PR_MolGen_EmpfohleneFolgemassnahme",
@@ -1244,7 +1244,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-mol-gen-familienanamnese"
+          "reference": "StructureDefinition/fdpg-pr-molgen-familienanamnese"
         },
         "name": "FDPG PR MolGen Familienanamnese",
         "description": "FDPG Profil - MII_PR_MolGen_Familienanamnese",
@@ -1252,7 +1252,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-mol-gen-genomic-study"
+          "reference": "StructureDefinition/fdpg-pr-molgen-genomic-study"
         },
         "name": "FDPG PR MolGen GenomicStudy",
         "description": "FDPG Profil - MII_PR_MolGen_GenomicStudy",
@@ -1260,7 +1260,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-mol-gen-genomic-study-analysis"
+          "reference": "StructureDefinition/fdpg-pr-molgen-genomic-study-analysis"
         },
         "name": "FDPG PR MolGen GenomicStudyAnalysis",
         "description": "FDPG Profil - MII_PR_MolGen_GenomicStudyAnalysis",
@@ -1268,7 +1268,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-mol-gen-genotyp"
+          "reference": "StructureDefinition/fdpg-pr-molgen-genotyp"
         },
         "name": "FDPG PR MolGen Genotyp",
         "description": "FDPG Profil - MII_PR_MolGen_Genotyp",
@@ -1276,7 +1276,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-mol-gen-medikationsempfehlung"
+          "reference": "StructureDefinition/fdpg-pr-molgen-medikationsempfehlung"
         },
         "name": "FDPG PR MolGen Medikationsempfehlung",
         "description": "FDPG Profil - MII_PR_MolGen_Medikationsempfehlung",
@@ -1284,7 +1284,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-mol-gen-mikrosatelliteninstabilitaet"
+          "reference": "StructureDefinition/fdpg-pr-molgen-mikrosatelliteninstabilitaet"
         },
         "name": "FDPG PR MolGen Mikrosatelliteninstabilitaet",
         "description": "FDPG Profil - MII_PR_MolGen_Mikrosatelliteninstabilitaet",
@@ -1292,7 +1292,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-mol-gen-molekulare-konsequenz"
+          "reference": "StructureDefinition/fdpg-pr-molgen-molekulare-konsequenz"
         },
         "name": "FDPG PR MolGen MolekulareKonsequenz",
         "description": "FDPG Profil - MII_PR_MolGen_MolekulareKonsequenz",
@@ -1300,7 +1300,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-mol-gen-molekularer-biomarker"
+          "reference": "StructureDefinition/fdpg-pr-molgen-molekularer-biomarker"
         },
         "name": "FDPG PR MolGen MolekularerBiomarker",
         "description": "FDPG Profil - MII_PR_MolGen_MolekularerBiomarker",
@@ -1308,7 +1308,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-mol-gen-molekulargenetischer-befundbericht"
+          "reference": "StructureDefinition/fdpg-pr-molgen-molekulargenetischer-befundbericht"
         },
         "name": "FDPG PR MolGen MolekulargenetischerBefundbericht",
         "description": "FDPG Profil - MII_PR_MolGen_MolekulargenetischerBefundbericht",
@@ -1316,7 +1316,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-mol-gen-mutationslast"
+          "reference": "StructureDefinition/fdpg-pr-molgen-mutationslast"
         },
         "name": "FDPG PR MolGen Mutationslast",
         "description": "FDPG Profil - MII_PR_MolGen_Mutationslast",
@@ -1324,7 +1324,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-mol-gen-polygener-risiko-score"
+          "reference": "StructureDefinition/fdpg-pr-molgen-polygener-risiko-score"
         },
         "name": "FDPG PR MolGen PolygenerRisikoScore",
         "description": "FDPG Profil - MII_PR_MolGen_PolygenerRisikoScore",
@@ -1332,7 +1332,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-mol-gen-therapeutische-implikation"
+          "reference": "StructureDefinition/fdpg-pr-molgen-therapeutische-implikation"
         },
         "name": "FDPG PR MolGen TherapeutischeImplikation",
         "description": "FDPG Profil - MII_PR_MolGen_TherapeutischeImplikation",
@@ -1340,7 +1340,7 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-mol-gen-variante"
+          "reference": "StructureDefinition/fdpg-pr-molgen-variante"
         },
         "name": "FDPG PR MolGen Variante",
         "description": "FDPG Profil - MII_PR_MolGen_Variante",
@@ -2332,14 +2332,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-patho-additional-specified-grouper"
-        },
-        "name": "FDPG PR Patho Additional Specified Grouper",
-        "description": "FDPG Profil - MII_PR_Patho_Additional_Specified_Grouper",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/fdpg-pr-patho-attached-image"
         },
         "name": "FDPG PR Patho Attached Image",
@@ -2372,14 +2364,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-patho-diagnostic-conclusion-grouper"
-        },
-        "name": "FDPG PR Patho Diagnostic Conclusion Grouper",
-        "description": "FDPG Profil - MII_PR_Patho_Diagnostic_Conclusion_Grouper",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/fdpg-pr-patho-finding"
         },
         "name": "FDPG PR Patho Finding",
@@ -2396,30 +2380,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-patho-intraoperative-grouper"
-        },
-        "name": "FDPG PR Patho Intraoperative Grouper",
-        "description": "FDPG Profil - MII_PR_Patho_Intraoperative_Grouper",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/fdpg-pr-patho-macroscopic-grouper"
-        },
-        "name": "FDPG PR Patho Macroscopic Grouper",
-        "description": "FDPG Profil - MII_PR_Patho_Macroscopic_Grouper",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/fdpg-pr-patho-microscopic-grouper"
-        },
-        "name": "FDPG PR Patho Microscopic Grouper",
-        "description": "FDPG Profil - MII_PR_Patho_Microscopic_Grouper",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/fdpg-pr-patho-problem-list-item"
         },
         "name": "FDPG PR Patho Problem List Item",
@@ -2432,14 +2392,6 @@
         },
         "name": "FDPG PR Patho Report",
         "description": "FDPG Profil - MII_PR_Patho_Report",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/fdpg-pr-patho-section-grouper"
-        },
-        "name": "FDPG PR Patho Section Grouper",
-        "description": "FDPG Profil - MII_PR_Patho_Section_Grouper",
         "exampleBoolean": false
       },
       {

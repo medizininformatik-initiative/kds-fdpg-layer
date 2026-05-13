@@ -4,7 +4,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.consent](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.consent/2026.0.1-rc-2)
 
-#### Profile - MI-I - Consent - DocumentReference (DocumentReference)
+#### Einwilligungsdokument (DocumentReference)
 
 **FDPG Profil:** [FDPG_PR_Consent_DocumentReference](StructureDefinition-fdpg-pr-consent-document-reference.html) · **MII Elternprofil:** MII_PR_Consent_DocumentReference
 
@@ -14,7 +14,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `content` | Document referenced | The document and format referenced. There may be multiple content element repetitions, each with a different format. |
 
-#### Profile - MI-I - Consent - Einwilligung (Consent)
+#### Einwilligung (Consent)
 
 **FDPG Profil:** [FDPG_PR_Consent_Einwilligung](StructureDefinition-fdpg-pr-consent-einwilligung.html) · **MII Elternprofil:** MII_PR_Consent_Einwilligung
 
@@ -38,7 +38,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `policyRule.extension:xacml` | Optional Extensions Element | Optional Extension Element - found in all resources. |
 | `provision` | Constraints to the base Consent.policyRule | An exception to the base policy of this consent. An exception can be an addition or removal of access permissions. |
 
-#### Profile - MI-I - Consent - Provenance (Provenance)
+#### Einwilligungsherkunft (Provenance)
 
 **FDPG Profil:** [FDPG_PR_Consent_Provenance](StructureDefinition-fdpg-pr-consent-provenance.html) · **MII Elternprofil:** MII_PR_Consent_Provenance
 
@@ -56,7 +56,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 ## English Translations
 
 <details>
-<summary>English translations - Profile - MI-I - Consent - DocumentReference</summary>
+<summary>English translations - Einwilligungsdokument</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -67,7 +67,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Profile - MI-I - Consent - Einwilligung</summary>
+<summary>English translations - Einwilligung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -92,7 +92,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Profile - MI-I - Consent - Provenance</summary>
+<summary>English translations - Einwilligungsherkunft</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|

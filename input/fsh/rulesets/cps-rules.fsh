@@ -174,14 +174,8 @@ RuleSet: FDPG_CPS_Observation
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-therapeutische-implikation)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-variante)
 // Patho
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-additional-specified-grouper)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-base-observation)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-diagnostic-conclusion-grouper)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-finding)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-intraoperative-grouper)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-macroscopic-grouper)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-microscopic-grouper)
-* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-section-grouper)
 // ICU
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-bilanz-ausfuhr-drainage-generisch)

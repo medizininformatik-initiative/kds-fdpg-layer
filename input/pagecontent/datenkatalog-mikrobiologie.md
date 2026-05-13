@@ -4,7 +4,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.mikrobiologie](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.mikrobiologie/2027.0.0-alpha.2)
 
-#### MII PR Mikrobio Allgemeine Bestimmung (Observation)
+#### Allgemeine mikrobiologische Bestimmung (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_Allgemeine_Bestimmung](StructureDefinition-fdpg-pr-mikrobio-allgemeine-bestimmung.html) · **MII Elternprofil:** MII_PR_Mikrobio_Allgemeine_Bestimmung
 
@@ -41,7 +41,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
 | `referenceRange` | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 
-#### MII PR Mikrobio Allgemeine Kultur (Observation)
+#### Mikrobiologische Kultur (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_Allgemeine_Kultur](StructureDefinition-fdpg-pr-mikrobio-allgemeine-kultur.html) · **MII Elternprofil:** MII_PR_Mikrobio_Allgemeine_Kultur
 
@@ -78,7 +78,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
 | `referenceRange` | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 
-#### MII PR Mikrobio Antigen Antikoerper Quantitativ (Observation)
+#### Quantitative Antigen-/Antikörperbestimmung (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_Antigen_Antikoerper_Quantitativ](StructureDefinition-fdpg-pr-mikrobio-antigen-antikoerper-quantitativ.html) · **MII Elternprofil:** MII_PR_Mikrobio_Antigen_Antikoerper_Quantitativ
 
@@ -115,7 +115,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
 | `referenceRange` | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 
-#### MII PR Mikrobio Aviditaet (Observation)
+#### Antikörper-Avidität (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_Aviditaet](StructureDefinition-fdpg-pr-mikrobio-aviditaet.html) · **MII Elternprofil:** MII_PR_Mikrobio_Aviditaet
 
@@ -152,7 +152,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
 | `referenceRange` | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 
-#### MII PR Mikrobio Barlett Score (Observation)
+#### Bartlett-Score (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_Barlett_Score](StructureDefinition-fdpg-pr-mikrobio-barlett-score.html) · **MII Elternprofil:** MII_PR_Mikrobio_Barlett_Score
 
@@ -189,7 +189,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
 | `referenceRange` | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 
-#### MII PR Mikrobio CT Wert (Observation)
+#### Ct-Wert (PCR\ (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_Ct_Wert](StructureDefinition-fdpg-pr-mikrobio-ct-wert.html) · **MII Elternprofil:** MII_PR_Mikrobio_Ct_Wert
 
@@ -227,7 +227,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `referenceRange` | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 | `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
 
-#### MII PR Mikrobio Diagnostic Report (DiagnosticReport)
+#### Mikrobiologiebefund (DiagnosticReport)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_Diagnostic_Report](StructureDefinition-fdpg-pr-mikrobio-diagnostic-report.html) · **MII Elternprofil:** MII_PR_Mikrobio_Diagnostic_Report
 
@@ -256,7 +256,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `result` | Ergebnis | Laborergebnisse, die Teil dieses Laborbefunds sind. |
 | `conclusion` | Schlussfolgerung | Klinische Schlussfolgerung/Interpretation der Testergebnisse |
 
-#### MII PR Mikrobio Empfindlichkeit (Observation)
+#### Antibiotika-Empfindlichkeit (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_Empfindlichkeit](StructureDefinition-fdpg-pr-mikrobio-empfindlichkeit.html) · **MII Elternprofil:** MII_PR_Mikrobio_Empfindlichkeit
 
@@ -294,7 +294,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
 | `referenceRange` | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 
-#### MII PR Mikrobio Keimzahl (Observation)
+#### Keimzahl (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_Keimzahl](StructureDefinition-fdpg-pr-mikrobio-keimzahl.html) · **MII Elternprofil:** MII_PR_Mikrobio_Keimzahl
 
@@ -331,7 +331,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
 | `referenceRange` | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 
-#### MII PR Mikrobio Mikroskopie (Observation)
+#### Mikroskopischer Befund (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_Mikroskopie](StructureDefinition-fdpg-pr-mikrobio-mikroskopie.html) · **MII Elternprofil:** MII_PR_Mikrobio_Mikroskopie
 
@@ -368,7 +368,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
 | `referenceRange` | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 
-#### MII PR Mikrobio Molekulare Pathogenlast (Observation)
+#### Molekulare Pathogenlast (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_Molekulare_Pathogenlast](StructureDefinition-fdpg-pr-mikrobio-molekulare-pathogenlast.html) · **MII Elternprofil:** MII_PR_Mikrobio_Molekulare_Pathogenlast
 
@@ -405,7 +405,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
 | `referenceRange` | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 
-#### MII PR Mikrobio MRE Klasse (Observation)
+#### MRE-Klassifikation (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_MRE_Klasse](StructureDefinition-fdpg-pr-mikrobio-mre-klasse.html) · **MII Elternprofil:** MII_PR_Mikrobio_MRE_Klasse
 
@@ -442,7 +442,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
 | `referenceRange` | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 
-#### MII PR Mikrobio MRGN Klasse (Observation)
+#### MRGN-Klassifikation (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_MRGN_Klasse](StructureDefinition-fdpg-pr-mikrobio-mrgn-klasse.html) · **MII Elternprofil:** MII_PR_Mikrobio_MRGN_Klasse
 
@@ -479,7 +479,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
 | `referenceRange` | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 
-#### MII PR Mikrobio Nugent Score (Observation)
+#### Nugent-Score (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_Nugent_Score](StructureDefinition-fdpg-pr-mikrobio-nugent-score.html) · **MII Elternprofil:** MII_PR_Mikrobio_Nugent_Score
 
@@ -516,7 +516,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
 | `referenceRange` | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 
-#### MII PR Mikrobio Resistenzmechanismen Determinanten (Observation)
+#### Resistenzmechanismen und -determinanten (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_Resistenzmechanismen_Determinanten](StructureDefinition-fdpg-pr-mikrobio-resistenzmechanismen-determinanten.html) · **MII Elternprofil:** MII_PR_Mikrobio_Resistenzmechanismen_Determinanten
 
@@ -553,7 +553,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
 | `referenceRange` | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 
-#### MII PR Mikrobio Spezifische Bestimmung (Observation)
+#### Spezifische mikrobiologische Bestimmung (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_Spezifische_Bestimmung](StructureDefinition-fdpg-pr-mikrobio-spezifische-bestimmung.html) · **MII Elternprofil:** MII_PR_Mikrobio_Spezifische_Bestimmung
 
@@ -590,7 +590,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
 | `referenceRange` | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 
-#### MII PR Mikrobio Titer (Observation)
+#### Antikörpertiter (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_Titer](StructureDefinition-fdpg-pr-mikrobio-titer.html) · **MII Elternprofil:** MII_PR_Mikrobio_Titer
 
@@ -627,7 +627,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
 | `referenceRange` | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 
-#### MII PR Mikrobio Virulenzfaktor (Observation)
+#### Virulenzfaktor (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_Virulenzfaktor](StructureDefinition-fdpg-pr-mikrobio-virulenzfaktor.html) · **MII Elternprofil:** MII_PR_Mikrobio_Virulenzfaktor
 
@@ -664,7 +664,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
 | `referenceRange` | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 
-#### MII PR Mikrobio Voraussichtliche Empfindlichkeit (Observation)
+#### Voraussichtliche Antibiotika-Empfindlichkeit (Observation)
 
 **FDPG Profil:** [FDPG_PR_Mikrobio_Voraussichtliche_Empfindlichkeit](StructureDefinition-fdpg-pr-mikrobio-voraussichtliche-empfindlichkeit.html) · **MII Elternprofil:** MII_PR_Mikrobio_Voraussichtliche_Empfindlichkeit
 
@@ -706,7 +706,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 ## English Translations
 
 <details>
-<summary>English translations - MII PR Mikrobio Allgemeine Bestimmung</summary>
+<summary>English translations - Allgemeine mikrobiologische Bestimmung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -744,7 +744,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio Allgemeine Kultur</summary>
+<summary>English translations - Mikrobiologische Kultur</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -782,7 +782,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio Antigen Antikoerper Quantitativ</summary>
+<summary>English translations - Quantitative Antigen-/Antikörperbestimmung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -820,7 +820,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio Aviditaet</summary>
+<summary>English translations - Antikörper-Avidität</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -858,7 +858,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio Barlett Score</summary>
+<summary>English translations - Bartlett-Score</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -896,7 +896,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio CT Wert</summary>
+<summary>English translations - Ct-Wert (PCR\</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -935,7 +935,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio Diagnostic Report</summary>
+<summary>English translations - Mikrobiologiebefund</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -965,7 +965,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio Empfindlichkeit</summary>
+<summary>English translations - Antibiotika-Empfindlichkeit</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1004,7 +1004,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio Keimzahl</summary>
+<summary>English translations - Keimzahl</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1042,7 +1042,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio Mikroskopie</summary>
+<summary>English translations - Mikroskopischer Befund</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1080,7 +1080,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio Molekulare Pathogenlast</summary>
+<summary>English translations - Molekulare Pathogenlast</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1118,7 +1118,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio MRE Klasse</summary>
+<summary>English translations - MRE-Klassifikation</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1156,7 +1156,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio MRGN Klasse</summary>
+<summary>English translations - MRGN-Klassifikation</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1194,7 +1194,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio Nugent Score</summary>
+<summary>English translations - Nugent-Score</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1232,7 +1232,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio Resistenzmechanismen Determinanten</summary>
+<summary>English translations - Resistenzmechanismen und -determinanten</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1270,7 +1270,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio Spezifische Bestimmung</summary>
+<summary>English translations - Spezifische mikrobiologische Bestimmung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1308,7 +1308,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio Titer</summary>
+<summary>English translations - Antikörpertiter</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1346,7 +1346,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio Virulenzfaktor</summary>
+<summary>English translations - Virulenzfaktor</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1384,7 +1384,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Mikrobio Voraussichtliche Empfindlichkeit</summary>
+<summary>English translations - Voraussichtliche Antibiotika-Empfindlichkeit</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|

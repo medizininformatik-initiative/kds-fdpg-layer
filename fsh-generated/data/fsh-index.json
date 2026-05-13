@@ -1032,130 +1032,130 @@
     "endLine": 241
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-mol-gen-anforderung-genetischer-test.json",
+    "outputFile": "StructureDefinition-fdpg-pr-molgen-anforderung-genetischer-test.json",
     "fshName": "FDPG_PR_MolGen_AnforderungGenetischerTest",
     "fshType": "Profile",
-    "fshFile": "obligations/molgen/fdpg-pr-mol-gen-anforderung-genetischer-test.fsh",
+    "fshFile": "obligations/molgen/fdpg-pr-molgen-anforderung-genetischer-test.fsh",
     "startLine": 1,
     "endLine": 72
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-mol-gen-diagnostische-implikation.json",
+    "outputFile": "StructureDefinition-fdpg-pr-molgen-diagnostische-implikation.json",
     "fshName": "FDPG_PR_MolGen_DiagnostischeImplikation",
     "fshType": "Profile",
-    "fshFile": "obligations/molgen/fdpg-pr-mol-gen-diagnostische-implikation.fsh",
+    "fshFile": "obligations/molgen/fdpg-pr-molgen-diagnostische-implikation.fsh",
     "startLine": 1,
     "endLine": 96
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-mol-gen-empfohlene-folgemassnahme.json",
+    "outputFile": "StructureDefinition-fdpg-pr-molgen-empfohlene-folgemassnahme.json",
     "fshName": "FDPG_PR_MolGen_EmpfohleneFolgemassnahme",
     "fshType": "Profile",
-    "fshFile": "obligations/molgen/fdpg-pr-mol-gen-empfohlene-folgemassnahme.fsh",
+    "fshFile": "obligations/molgen/fdpg-pr-molgen-empfohlene-folgemassnahme.fsh",
     "startLine": 1,
     "endLine": 54
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-mol-gen-familienanamnese.json",
+    "outputFile": "StructureDefinition-fdpg-pr-molgen-familienanamnese.json",
     "fshName": "FDPG_PR_MolGen_Familienanamnese",
     "fshType": "Profile",
-    "fshFile": "obligations/molgen/fdpg-pr-mol-gen-familienanamnese.fsh",
+    "fshFile": "obligations/molgen/fdpg-pr-molgen-familienanamnese.fsh",
     "startLine": 1,
     "endLine": 224
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-mol-gen-genomic-study-analysis.json",
+    "outputFile": "StructureDefinition-fdpg-pr-molgen-genomic-study-analysis.json",
     "fshName": "FDPG_PR_MolGen_GenomicStudyAnalysis",
     "fshType": "Profile",
-    "fshFile": "obligations/molgen/fdpg-pr-mol-gen-genomic-study-analysis.fsh",
+    "fshFile": "obligations/molgen/fdpg-pr-molgen-genomic-study-analysis.fsh",
     "startLine": 1,
     "endLine": 66
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-mol-gen-genomic-study.json",
+    "outputFile": "StructureDefinition-fdpg-pr-molgen-genomic-study.json",
     "fshName": "FDPG_PR_MolGen_GenomicStudy",
     "fshType": "Profile",
-    "fshFile": "obligations/molgen/fdpg-pr-mol-gen-genomic-study.fsh",
+    "fshFile": "obligations/molgen/fdpg-pr-molgen-genomic-study.fsh",
     "startLine": 1,
     "endLine": 54
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-mol-gen-genotyp.json",
+    "outputFile": "StructureDefinition-fdpg-pr-molgen-genotyp.json",
     "fshName": "FDPG_PR_MolGen_Genotyp",
     "fshType": "Profile",
-    "fshFile": "obligations/molgen/fdpg-pr-mol-gen-genotyp.fsh",
+    "fshFile": "obligations/molgen/fdpg-pr-molgen-genotyp.fsh",
     "startLine": 1,
     "endLine": 96
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-mol-gen-medikationsempfehlung.json",
+    "outputFile": "StructureDefinition-fdpg-pr-molgen-medikationsempfehlung.json",
     "fshName": "FDPG_PR_MolGen_Medikationsempfehlung",
     "fshType": "Profile",
-    "fshFile": "obligations/molgen/fdpg-pr-mol-gen-medikationsempfehlung.fsh",
+    "fshFile": "obligations/molgen/fdpg-pr-molgen-medikationsempfehlung.fsh",
     "startLine": 1,
     "endLine": 54
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-mol-gen-mikrosatelliteninstabilitaet.json",
+    "outputFile": "StructureDefinition-fdpg-pr-molgen-mikrosatelliteninstabilitaet.json",
     "fshName": "FDPG_PR_MolGen_Mikrosatelliteninstabilitaet",
     "fshType": "Profile",
-    "fshFile": "obligations/molgen/fdpg-pr-mol-gen-mikrosatelliteninstabilitaet.fsh",
+    "fshFile": "obligations/molgen/fdpg-pr-molgen-mikrosatelliteninstabilitaet.fsh",
     "startLine": 1,
     "endLine": 84
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-mol-gen-molekulare-konsequenz.json",
+    "outputFile": "StructureDefinition-fdpg-pr-molgen-molekulare-konsequenz.json",
     "fshName": "FDPG_PR_MolGen_MolekulareKonsequenz",
     "fshType": "Profile",
-    "fshFile": "obligations/molgen/fdpg-pr-mol-gen-molekulare-konsequenz.fsh",
+    "fshFile": "obligations/molgen/fdpg-pr-molgen-molekulare-konsequenz.fsh",
     "startLine": 1,
     "endLine": 90
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-mol-gen-molekularer-biomarker.json",
+    "outputFile": "StructureDefinition-fdpg-pr-molgen-molekularer-biomarker.json",
     "fshName": "FDPG_PR_MolGen_MolekularerBiomarker",
     "fshType": "Profile",
-    "fshFile": "obligations/molgen/fdpg-pr-mol-gen-molekularer-biomarker.fsh",
+    "fshFile": "obligations/molgen/fdpg-pr-molgen-molekularer-biomarker.fsh",
     "startLine": 1,
     "endLine": 72
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-mol-gen-molekulargenetischer-befundbericht.json",
+    "outputFile": "StructureDefinition-fdpg-pr-molgen-molekulargenetischer-befundbericht.json",
     "fshName": "FDPG_PR_MolGen_MolekulargenetischerBefundbericht",
     "fshType": "Profile",
-    "fshFile": "obligations/molgen/fdpg-pr-mol-gen-molekulargenetischer-befundbericht.fsh",
+    "fshFile": "obligations/molgen/fdpg-pr-molgen-molekulargenetischer-befundbericht.fsh",
     "startLine": 1,
     "endLine": 156
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-mol-gen-mutationslast.json",
+    "outputFile": "StructureDefinition-fdpg-pr-molgen-mutationslast.json",
     "fshName": "FDPG_PR_MolGen_Mutationslast",
     "fshType": "Profile",
-    "fshFile": "obligations/molgen/fdpg-pr-mol-gen-mutationslast.fsh",
+    "fshFile": "obligations/molgen/fdpg-pr-molgen-mutationslast.fsh",
     "startLine": 1,
     "endLine": 90
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-mol-gen-polygener-risiko-score.json",
+    "outputFile": "StructureDefinition-fdpg-pr-molgen-polygener-risiko-score.json",
     "fshName": "FDPG_PR_MolGen_PolygenerRisikoScore",
     "fshType": "Profile",
-    "fshFile": "obligations/molgen/fdpg-pr-mol-gen-polygener-risiko-score.fsh",
+    "fshFile": "obligations/molgen/fdpg-pr-molgen-polygener-risiko-score.fsh",
     "startLine": 1,
     "endLine": 97
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-mol-gen-therapeutische-implikation.json",
+    "outputFile": "StructureDefinition-fdpg-pr-molgen-therapeutische-implikation.json",
     "fshName": "FDPG_PR_MolGen_TherapeutischeImplikation",
     "fshType": "Profile",
-    "fshFile": "obligations/molgen/fdpg-pr-mol-gen-therapeutische-implikation.fsh",
+    "fshFile": "obligations/molgen/fdpg-pr-molgen-therapeutische-implikation.fsh",
     "startLine": 1,
     "endLine": 108
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-mol-gen-variante.json",
+    "outputFile": "StructureDefinition-fdpg-pr-molgen-variante.json",
     "fshName": "FDPG_PR_MolGen_Variante",
     "fshType": "Profile",
-    "fshFile": "obligations/molgen/fdpg-pr-mol-gen-variante.fsh",
+    "fshFile": "obligations/molgen/fdpg-pr-molgen-variante.fsh",
     "startLine": 1,
     "endLine": 234
   },
@@ -2144,14 +2144,6 @@
     "endLine": 27
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-patho-additional-specified-grouper.json",
-    "fshName": "FDPG_PR_Patho_Additional_Specified_Grouper",
-    "fshType": "Profile",
-    "fshFile": "obligations/patho/fdpg-pr-patho-additional-specified-grouper.fsh",
-    "startLine": 1,
-    "endLine": 79
-  },
-  {
     "outputFile": "StructureDefinition-fdpg-pr-patho-attached-image.json",
     "fshName": "FDPG_PR_Patho_Attached_Image",
     "fshType": "Profile",
@@ -2184,14 +2176,6 @@
     "endLine": 190
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-patho-diagnostic-conclusion-grouper.json",
-    "fshName": "FDPG_PR_Patho_Diagnostic_Conclusion_Grouper",
-    "fshType": "Profile",
-    "fshFile": "obligations/patho/fdpg-pr-patho-diagnostic-conclusion-grouper.fsh",
-    "startLine": 1,
-    "endLine": 103
-  },
-  {
     "outputFile": "StructureDefinition-fdpg-pr-patho-finding.json",
     "fshName": "FDPG_PR_Patho_Finding",
     "fshType": "Profile",
@@ -2208,30 +2192,6 @@
     "endLine": 27
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-patho-intraoperative-grouper.json",
-    "fshName": "FDPG_PR_Patho_Intraoperative_Grouper",
-    "fshType": "Profile",
-    "fshFile": "obligations/patho/fdpg-pr-patho-intraoperative-grouper.fsh",
-    "startLine": 1,
-    "endLine": 79
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-patho-macroscopic-grouper.json",
-    "fshName": "FDPG_PR_Patho_Macroscopic_Grouper",
-    "fshType": "Profile",
-    "fshFile": "obligations/patho/fdpg-pr-patho-macroscopic-grouper.fsh",
-    "startLine": 1,
-    "endLine": 79
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-patho-microscopic-grouper.json",
-    "fshName": "FDPG_PR_Patho_Microscopic_Grouper",
-    "fshType": "Profile",
-    "fshFile": "obligations/patho/fdpg-pr-patho-microscopic-grouper.fsh",
-    "startLine": 1,
-    "endLine": 79
-  },
-  {
     "outputFile": "StructureDefinition-fdpg-pr-patho-problem-list-item.json",
     "fshName": "FDPG_PR_Patho_Problem_List_Item",
     "fshType": "Profile",
@@ -2246,14 +2206,6 @@
     "fshFile": "obligations/patho/fdpg-pr-patho-report.fsh",
     "startLine": 1,
     "endLine": 213
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-patho-section-grouper.json",
-    "fshName": "FDPG_PR_Patho_Section_Grouper",
-    "fshType": "Profile",
-    "fshFile": "obligations/patho/fdpg-pr-patho-section-grouper.fsh",
-    "startLine": 1,
-    "endLine": 69
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-service-request.json",

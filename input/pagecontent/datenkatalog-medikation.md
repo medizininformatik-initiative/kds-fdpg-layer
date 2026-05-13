@@ -99,7 +99,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dosage.asNeeded[x]:asNeededBoolean` | Dosierung | Gibt an, wie das Medikament vom Patienten eingenommen wird/wurde oder werden soll. | Take "as needed" (for x) | Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept). |  |
 | `dosage.asNeeded[x]:asNeededCodeableConcept` | Dosierung | Gibt an, wie das Medikament vom Patienten eingenommen wird/wurde oder werden soll. | Take "as needed" (for x) | Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept). |  |
 
-#### MII PR Medikation Medication (Medication)
+#### Medikament (Medication)
 
 **FDPG Profil:** [FDPG_PR_Medikation_Medication](StructureDefinition-fdpg-pr-medikation-medication.html) · **MII Elternprofil:** MII_PR_Medikation_Medication
 
@@ -237,7 +237,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Medikation Medication</summary>
+<summary>English translations - Medikament</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|

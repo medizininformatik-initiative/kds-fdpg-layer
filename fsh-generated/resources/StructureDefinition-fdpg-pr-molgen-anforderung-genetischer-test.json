@@ -1,0 +1,390 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "fdpg-pr-molgen-anforderung-genetischer-test",
+  "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-anforderung-genetischer-test",
+  "version": "2026.1.0",
+  "name": "FDPG_PR_MolGen_AnforderungGenetischerTest",
+  "title": "FDPG PR MolGen AnforderungGenetischerTest",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "de-DE"
+          },
+          {
+            "url": "content",
+            "valueString": "Anforderung genetischer Test"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "Genetic Test Order"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "experimental": false,
+  "date": "2025-01-16",
+  "publisher": "FDPG / Medizininformatik-Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://forschen-fuer-gesundheit.de"
+        }
+      ]
+    }
+  ],
+  "description": "FDPG Profil - MII_PR_MolGen_AnforderungGenetischerTest",
+  "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
+  "keyword": [
+    {
+      "code": "molgen",
+      "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-module-cs"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-molgen/StructureDefinition/anforderung-genetischer-test",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest.basedOn",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "ServiceRequest.basedOn"
+      },
+      {
+        "id": "ServiceRequest.code",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "ServiceRequest.code"
+      },
+      {
+        "id": "ServiceRequest.subject",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "ServiceRequest.subject"
+      },
+      {
+        "id": "ServiceRequest.encounter",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "ServiceRequest.encounter"
+      },
+      {
+        "id": "ServiceRequest.authoredOn",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "ServiceRequest.authoredOn"
+      },
+      {
+        "id": "ServiceRequest.requester",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "ServiceRequest.requester"
+      },
+      {
+        "id": "ServiceRequest.reasonCode",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "ServiceRequest.reasonCode"
+      },
+      {
+        "id": "ServiceRequest.reasonReference",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "ServiceRequest.reasonReference"
+      },
+      {
+        "id": "ServiceRequest.supportingInfo",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "ServiceRequest.supportingInfo"
+      },
+      {
+        "id": "ServiceRequest.note",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "ServiceRequest.note"
+      }
+    ]
+  }
+}

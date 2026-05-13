@@ -4,7 +4,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.studie](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.studie/2026.0.2)
 
-#### MII PR Studie Beteiligte Person (PractitionerRole)
+#### Beteiligte Person (PractitionerRole)
 
 **FDPG Profil:** [FDPG_PR_Studie_Beteiligte_Person](StructureDefinition-fdpg-pr-studie-beteiligte-person.html) · **MII Elternprofil:** MII_PR_Studie_Beteiligte_Person
 
@@ -15,7 +15,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Kodierung des Inhalts. |
 | `telecom` | Kontaktdaten, die spezifisch für die Rolle/den Standort/die Dienstleistung sind. | Kontaktdaten, die spezifisch für die Rolle, den Standort oder die Dienstleistung sind. |
 
-#### MII PR Studie Dokument (DocumentReference)
+#### Studiendokument (DocumentReference)
 
 **FDPG Profil:** [FDPG_PR_Studie_Dokument](StructureDefinition-fdpg-pr-studie-dokument.html) · **MII Elternprofil:** MII_PR_Studie_Dokument
 
@@ -27,7 +27,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `content` | Content | Das referenzierte Dokument und Format. Es können mehrere Wiederholungen des Inhaltselements vorhanden sein, jeweils in einem anderen Format. |
 | `context` | Context | Der klinische Kontext, in dem das Dokument erstellt wurde. |
 
-#### MII PR Studie EinAuschlussKriterium (EvidenceVariable)
+#### Ein-/Ausschlusskriterium (EvidenceVariable)
 
 **FDPG Profil:** [FDPG_PR_Studie_EinAuschlussKriterium](StructureDefinition-fdpg-pr-studie-ein-auschluss-kriterium.html) · **MII Elternprofil:** MII_PR_Studie_EinAuschlussKriterium
 
@@ -41,7 +41,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `characteristic.extension:definitionByTypeAndValue` | Optional Extensions Element | Optional Extension Element - found in all resources. |
 | `characteristic.extension:definitionByCombination` | Optional Extensions Element | Optional Extension Element - found in all resources. |
 
-#### MII PR Studie Proband (ResearchSubject)
+#### Proband / Probandin (ResearchSubject)
 
 **FDPG Profil:** [FDPG_PR_Studie_Proband](StructureDefinition-fdpg-pr-studie-proband.html) · **MII Elternprofil:** MII_PR_Studie_Proband
 
@@ -55,7 +55,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `individual` | Wer an der Studie teilnimmt. | Der Datensatz der Person oder des Tieres, das an der Studie beteiligt ist. |
 | `consent` | Einverständnis zur Studienteilnahme | Ein Datensatz der informierten Zustimmung des Patienten zur Teilnahme an der Studie. |
 
-#### MII PR Studie Register (Library)
+#### Studienregister (Library)
 
 **FDPG Profil:** [FDPG_PR_Studie_Register](StructureDefinition-fdpg-pr-studie-register.html) · **MII Elternprofil:** MII_PR_Studie_Register
 
@@ -66,7 +66,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `type` | Typ | Typ oder Art der Ressource. |
 | `relatedArtifact` | RelatedArtifact | Zugehörige Artefakte wie zusätzliche Dokumentation, Begründungen oder bibliografische Referenzen. |
 
-#### MII PR Studie Studie (ResearchStudy)
+#### Studie (ResearchStudy)
 
 **FDPG Profil:** [FDPG_PR_Studie_Studie](StructureDefinition-fdpg-pr-studie-studie.html) · **MII Elternprofil:** MII_PR_Studie_Studie
 
@@ -90,7 +90,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `keyword` | Wird verwendet, um nach der Studie zu suchen. | Schlüsselbegriffe, die bei der Suche nach oder Filterung der Studie helfen. |
 | `arm` | Definierter Weg durch die Studie für ein Subjekt. | Beschreibt eine erwartete Abfolge von Ereignissen für einen der Teilnehmer einer Studie. Z. B. Exposition gegenüber Medikament A, Auswaschphase, Exposition gegenüber Medikament B, Auswaschphase, Na... |
 
-#### MII PR Studie Studieneinschluss Anfrage (ServiceRequest)
+#### Studieneinschluss-Anfrage (ServiceRequest)
 
 **FDPG Profil:** [FDPG_PR_Studie_Studieneinschluss_Anfrage](StructureDefinition-fdpg-pr-studie-studieneinschluss-anfrage.html) · **MII Elternprofil:** MII_PR_Studie_Studieneinschluss_Anfrage
 
@@ -110,7 +110,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 ## English Translations
 
 <details>
-<summary>English translations - MII PR Studie Beteiligte Person</summary>
+<summary>English translations - Beteiligte Person</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -122,7 +122,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Studie Dokument</summary>
+<summary>English translations - Studiendokument</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -135,7 +135,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Studie EinAuschlussKriterium</summary>
+<summary>English translations - Ein-/Ausschlusskriterium</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -150,7 +150,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Studie Proband</summary>
+<summary>English translations - Proband / Probandin</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -165,7 +165,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Studie Register</summary>
+<summary>English translations - Studienregister</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -177,7 +177,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Studie Studie</summary>
+<summary>English translations - Studie</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -202,7 +202,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Studie Studieneinschluss Anfrage</summary>
+<summary>English translations - Studieneinschluss-Anfrage</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|

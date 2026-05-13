@@ -231,6 +231,29 @@ def get_ms_elements_with_translations(sd):
     return elements
 
 
+# Module-Segment-Normalisierung: camelCase-Modulnamen kollabieren, damit die
+# Kebab-Conversion nicht mitten im Modul ein Hyphen einfügt.
+# MolGen -> Molgen, sodass aus "MolGen_Variante" am Ende "molgen-variante" wird
+# (statt "mol-gen-variante").
+MODULE_NAME_FIXES = {
+    "MolGen": "Molgen",
+}
+
+# Profile, die wir aus upstream KDS-Modulen NICHT in den FDPG-Layer übernehmen
+# (z.B. abstrakte Grouper-Container, die im Antragsportal keine sinnvolle
+# Auswahl-Granularität haben).
+EXCLUDED_PROFILES_BY_MODULE = {
+    "patho": {
+        "MII_PR_Patho_Additional_Specified_Grouper",
+        "MII_PR_Patho_Diagnostic_Conclusion_Grouper",
+        "MII_PR_Patho_Intraoperative_Grouper",
+        "MII_PR_Patho_Macroscopic_Grouper",
+        "MII_PR_Patho_Microscopic_Grouper",
+        "MII_PR_Patho_Section_Grouper",
+    },
+}
+
+
 def name_to_kebab(name):
     """Convert MII_PR_MTB_Einfache_Variante or MII_PR_Fall_KontaktGesundheitseinrichtung
     to mtb-einfache-variante / fall-kontakt-gesundheitseinrichtung.
@@ -240,6 +263,8 @@ def name_to_kebab(name):
     `MIIPR_…` (missing underscore between MII and PR).
     """
     without_prefix = re.sub(r'^MII_?PR_', '', name)
+    for camel, fixed in MODULE_NAME_FIXES.items():
+        without_prefix = re.sub(rf'^{camel}_', f'{fixed}_', without_prefix)
     s = without_prefix.replace("_", "-")
     # Insert hyphen between a lowercase letter and a following uppercase letter (camelCase boundary).
     s = re.sub(r'([a-z])([A-Z])', r'\1-\2', s)
@@ -396,6 +421,14 @@ def process_module(module_name, generate_files=True, print_aliases=False, print_
 
     config = MODULES[module_name]
     profiles = load_profiles_from_package(config["package"], config["version"])
+
+    excluded = EXCLUDED_PROFILES_BY_MODULE.get(module_name, set())
+    if excluded:
+        before = len(profiles)
+        profiles = [p for p in profiles if p["name"] not in excluded]
+        skipped = before - len(profiles)
+        if skipped:
+            print(f"  Excluded {skipped} profile(s) for {module_name}: {sorted(excluded)}")
 
     if not profiles:
         print(f"ERROR: No profiles found for {module_name}")

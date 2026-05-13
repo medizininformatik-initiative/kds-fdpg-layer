@@ -4,7 +4,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.dokument](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.dokument/2026.0.1)
 
-#### MII PR Dokument Dokument (DocumentReference)
+#### Dokument (DocumentReference)
 
 **FDPG Profil:** [FDPG_PR_Dokument_Dokument](StructureDefinition-fdpg-pr-dokument-dokument.html) · **MII Elternprofil:** MII_PR_Dokument_Dokument
 
@@ -38,7 +38,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 ## English Translations
 
 <details>
-<summary>English translations - MII PR Dokument Dokument</summary>
+<summary>English translations - Dokument</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|

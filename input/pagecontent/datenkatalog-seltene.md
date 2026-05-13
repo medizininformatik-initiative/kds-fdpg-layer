@@ -4,7 +4,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.seltene](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.seltene/2026.0.1)
 
-#### MII PR SE Blutgruppe (Observation)
+#### Blutgruppe (Observation)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Blutgruppe](StructureDefinition-fdpg-pr-seltene-blutgruppe.html) · **MII Elternprofil:** MII_PR_Seltene_Blutgruppe
 
@@ -20,11 +20,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
 | `effective[x]:effectiveDateTime` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |  |
 | `effective[x]:effectivePeriod` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |  |
-| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. | ✓ |
-| `value[x].coding:loinc` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
-| `value[x].coding:snomed` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].coding:loinc` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `value[x].coding:snomed` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
 
-#### Body Mass Index (BMI\ (Observation)
+#### Body-Mass-Index (BMI\ (Observation)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Bodymassindex](StructureDefinition-fdpg-pr-seltene-bodymassindex.html) · **MII Elternprofil:** MII_PR_Seltene_Bodymassindex
 
@@ -34,9 +34,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
-| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. | ✓ |
 
-#### MII PR SE Clinical Diagnosis (Condition)
+#### Klinische Diagnose (Condition)
 
 **FDPG Profil:** [FDPG_PR_Seltene_ClinicalDiagnosis](StructureDefinition-fdpg-pr-seltene-clinical-diagnosis.html) · **MII Elternprofil:** MII_PR_Seltene_ClinicalDiagnosis
 
@@ -70,7 +70,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `evidence` |  |  | Supporting evidence | Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition. |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Diagnose als Freitext. |
 
-#### MII Profile SE Clinical Impression (ClinicalImpression)
+#### Klinische Beurteilung (ClinicalImpression)
 
 **FDPG Profil:** [FDPG_PR_Seltene_ClinicalImpression](StructureDefinition-fdpg-pr-seltene-clinical-impression.html) · **MII Elternprofil:** MII_PR_Seltene_ClinicalImpression
 
@@ -91,7 +91,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `supportingInfo` |  |  | Unterstützende Informationen | Informationen, die die klinische Beurteilung unterstützen |
 | `note` |  |  | Hinweis | Freitextkommentar zur Ressource. |
 
-#### MII PR SE Familienanamnese (FamilyMemberHistory)
+#### Familienanamnese (FamilyMemberHistory)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Familienanamnese](StructureDefinition-fdpg-pr-seltene-familienanamnese.html) · **MII Elternprofil:** MII_PR_Seltene_Familienanamnese
 
@@ -115,7 +115,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `condition` | GleicheSE, AndereSE | Gibt an, ob das Familienmitglied an der gleichen SE leidet wie der Indexpatient. | Erkrankung | Erkrankung des Familienangehörigen |
 | `condition.extension:penetrance` | GleicheSE, AndereSE | Gibt an, ob das Familienmitglied an der gleichen SE leidet wie der Indexpatient. | Penetranz der genetischen Variante beim Familienmitglied | Angabe zur Penetranz der genetischen Variante bei der Erkrankung des Familienmitglieds |
 
-#### MII PR SE Genetic Diagnosis (Condition)
+#### Genetische Diagnose (Condition)
 
 **FDPG Profil:** [FDPG_PR_Seltene_GeneticDiagnosis](StructureDefinition-fdpg-pr-seltene-genetic-diagnosis.html) · **MII Elternprofil:** MII_PR_Seltene_GeneticDiagnosis
 
@@ -150,7 +150,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `evidence` |  |  | Genetic evidence supporting the diagnosis | Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition. |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Diagnose als Freitext. |
 
-#### MII Profile SE HPO Assessment (Observation)
+#### HPO-Beurteilung (Observation)
 
 **FDPG Profil:** [FDPG_PR_Seltene_HPO_Assessment](StructureDefinition-fdpg-pr-seltene-hpo-assessment.html) · **MII Elternprofil:** MII_PR_Seltene_HPO_Assessment
 
@@ -169,7 +169,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:status` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |  |
 | `component:severity` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |  |
 
-#### MII PR SE Hüftumfang (Observation)
+#### Hüftumfang (Observation)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Hueftumfang](StructureDefinition-fdpg-pr-seltene-hueftumfang.html) · **MII Elternprofil:** MII_PR_Seltene_Hueftumfang
 
@@ -180,9 +180,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | Code | Kodierung des Inhalts. | ✓ |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
-| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. | ✓ |
 
-#### MII PR SE Kopfumfang (Observation)
+#### Kopfumfang (Observation)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Kopfumfang](StructureDefinition-fdpg-pr-seltene-kopfumfang.html) · **MII Elternprofil:** MII_PR_Seltene_Kopfumfang
 
@@ -195,12 +195,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `effective[x]:effectiveDateTime` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `dataAbsentReason` |  |  | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
 | `bodySite` |  |  | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
 
-#### MII PR SE Studieneinschluss Anfrage (ServiceRequest)
+#### Studieneinschluss-Anfrage (ServiceRequest)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Studieneinschluss_Anfrage](StructureDefinition-fdpg-pr-seltene-studieneinschluss-anfrage.html) · **MII Elternprofil:** MII_PR_Seltene_Studieneinschluss_Anfrage
 
@@ -216,7 +216,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `supportingInfo` | Additional clinical information | Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations... |
 | `supportingInfo:Studie` | Additional clinical information | Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations... |
 
-#### MII Profile SE Symptom Condition (Condition)
+#### Symptom (Condition)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Symptom_Condition](StructureDefinition-fdpg-pr-seltene-symptom-condition.html) · **MII Elternprofil:** MII_PR_Seltene_Symptom_Condition
 
@@ -242,7 +242,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `evidence` |  |  | Unterstützende Evidenz für die Symptom-Erkrankung | Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition. |  |
 | `note` |  |  | Hinweis | Freitextkommentar zur Ressource. |  |
 
-#### MII PR SE Taillenumfang (Observation)
+#### Taillenumfang (Observation)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Taillenumfang](StructureDefinition-fdpg-pr-seltene-taillenumfang.html) · **MII Elternprofil:** MII_PR_Seltene_Taillenumfang
 
@@ -253,9 +253,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | Code | Kodierung des Inhalts. | ✓ |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
-| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. | ✓ |
 
-#### MII PR Seltene Erkrankungen Therapie Durchgeführt (Procedure)
+#### Therapie durchgeführt (Procedure)
 
 **FDPG Profil:** [FDPG_PR_Seltene_TherapieDurchgefuehrt](StructureDefinition-fdpg-pr-seltene-therapie-durchgefuehrt.html) · **MII Elternprofil:** MII_PR_Seltene_TherapieDurchgefuehrt
 
@@ -268,7 +268,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `performed[x]:performedDateTime` | Durchführungsdatum | Zeitpunkt oder Zeitraum der Durchführung. |  |
 | `performed[x]:performedPeriod` | Durchführungsdatum | Zeitpunkt oder Zeitraum der Durchführung. |  |
 
-#### MII PR SE Therapieempfehlung Kombinationstherapie (RequestGroup)
+#### Therapieempfehlung Kombinationstherapie (RequestGroup)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Therapieempfehlung_Kombination](StructureDefinition-fdpg-pr-seltene-therapieempfehlung-kombination.html) · **MII Elternprofil:** MII_PR_Seltene_Therapieempfehlung_Kombination
 
@@ -282,7 +282,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `action` | Proposed actions, if any | The actions, if any, produced by the evaluation of the artifact. |
 
-#### MII PR SE Therapieempfehlung Nicht-Medikamentös (ServiceRequest)
+#### Therapieempfehlung nicht-medikamentös (ServiceRequest)
 
 **FDPG Profil:** [FDPG_PR_Seltene_TherapieempfehlungNichtMedikamentoes](StructureDefinition-fdpg-pr-seltene-therapieempfehlung-nicht-medikamentoes.html) · **MII Elternprofil:** MII_PR_Seltene_TherapieempfehlungNichtMedikamentoes
 
@@ -311,7 +311,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `supportingInfo` | Unterstützende Informationen zur Empfehlung | Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations... |
 | `note` | Hinweis | Freitextkommentar zur Ressource. |
 
-#### MII PR SE Therapieempfehlung Systemische Therapie (MedicationRequest)
+#### Therapieempfehlung systemische Therapie (MedicationRequest)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Therapieempfehlung](StructureDefinition-fdpg-pr-seltene-therapieempfehlung.html) · **MII Elternprofil:** MII_PR_Seltene_Therapieempfehlung
 
@@ -349,7 +349,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `substitution.allowed[x]:allowedCodeableConcept` |  |  | Whether substitution is allowed or not | True if the prescriber allows a different drug to be dispensed from what was prescribed. |
 | `priorPrescription` |  |  | Vorherige Verschreibung | Eine Verschreibung, die ersetzt wird |
 
-#### MII PR SE Therapieplan (CarePlan)
+#### Therapieplan (CarePlan)
 
 **FDPG Profil:** [FDPG_PR_Seltene_Therapieplan](StructureDefinition-fdpg-pr-seltene-therapieplan.html) · **MII Elternprofil:** MII_PR_Seltene_Therapieplan
 
@@ -368,7 +368,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 ## English Translations
 
 <details>
-<summary>English translations - MII PR SE Blutgruppe</summary>
+<summary>English translations - Blutgruppe</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -389,7 +389,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Body Mass Index (BMI\</summary>
+<summary>English translations - Body-Mass-Index (BMI\</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -402,7 +402,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR SE Clinical Diagnosis</summary>
+<summary>English translations - Klinische Diagnose</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -437,7 +437,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII Profile SE Clinical Impression</summary>
+<summary>English translations - Klinische Beurteilung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -459,7 +459,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR SE Familienanamnese</summary>
+<summary>English translations - Familienanamnese</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -484,7 +484,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR SE Genetic Diagnosis</summary>
+<summary>English translations - Genetische Diagnose</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -520,7 +520,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII Profile SE HPO Assessment</summary>
+<summary>English translations - HPO-Beurteilung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -540,7 +540,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR SE Hüftumfang</summary>
+<summary>English translations - Hüftumfang</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -554,7 +554,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR SE Kopfumfang</summary>
+<summary>English translations - Kopfumfang</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -573,7 +573,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR SE Studieneinschluss Anfrage</summary>
+<summary>English translations - Studieneinschluss-Anfrage</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -590,7 +590,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII Profile SE Symptom Condition</summary>
+<summary>English translations - Symptom</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -617,7 +617,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR SE Taillenumfang</summary>
+<summary>English translations - Taillenumfang</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -631,7 +631,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Seltene Erkrankungen Therapie Durchgeführt</summary>
+<summary>English translations - Therapie durchgeführt</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -645,7 +645,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR SE Therapieempfehlung Kombinationstherapie</summary>
+<summary>English translations - Therapieempfehlung Kombinationstherapie</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -660,7 +660,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR SE Therapieempfehlung Nicht-Medikamentös</summary>
+<summary>English translations - Therapieempfehlung nicht-medikamentös</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -690,7 +690,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR SE Therapieempfehlung Systemische Therapie</summary>
+<summary>English translations - Therapieempfehlung systemische Therapie</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -729,7 +729,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR SE Therapieplan</summary>
+<summary>English translations - Therapieplan</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
