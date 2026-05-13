@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "Onkologische Diagnose im Rahmen einer onkologischen Erkrankung"
+            "valueString": "Onkologische Diagnose Primärtumor"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onko Diagnose Primaertumor"
+            "valueString": "Oncology Diagnosis Primary Tumor"
           }
         ]
       }
@@ -65,6 +65,12 @@
   ],
   "description": "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor",
   "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
+  "keyword": [
+    {
+      "code": "onkologie",
+      "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-module-cs"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

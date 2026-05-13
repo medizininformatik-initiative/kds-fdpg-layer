@@ -51,6 +51,12 @@
   ],
   "description": "FDPG Profil - MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Eingestellt",
   "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
+  "keyword": [
+    {
+      "code": "icu",
+      "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-module-cs"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

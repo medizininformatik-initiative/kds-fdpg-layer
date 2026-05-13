@@ -4,8 +4,9 @@ Id: fdpg-pr-seltene-therapieempfehlung-kombination
 Title: "FDPG PR Seltene Therapieempfehlung Kombination"
 Description: "FDPG Profil - MII_PR_Seltene_Therapieempfehlung_Kombination"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR SE Therapieempfehlung Kombinationstherapie)
-* insert Translation(^title, en-US, FDPG PR Seltene Therapieempfehlung Kombination)
+* insert FDPGModule(seltene)
+* insert Translation(^title, de-DE, Therapieempfehlung Kombinationstherapie)
+* insert Translation(^title, en-US, Therapy Recommendation Combination Therapy)
 // --- Element Designations ---
 // RequestGroup.extension:Prioritaet
 * extension[Prioritaet] ^short = "MII EX SE Empfehlung Priorität"

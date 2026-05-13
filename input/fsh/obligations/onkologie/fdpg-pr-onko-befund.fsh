@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-befund
 Title: "FDPG PR Onko Befund"
 Description: "FDPG Profil - MII_PR_Onko_Befund"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Befund)
-* insert Translation(^title, en-US, FDPG PR Onko Befund)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Onkologischer Befund)
+* insert Translation(^title, en-US, Oncology Finding)
 // --- Element Designations ---
 // DiagnosticReport.basedOn
 * basedOn ^short = "What was requested"

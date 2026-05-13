@@ -4,6 +4,7 @@ Id: fdpg-pr-pro-promis-29-sleep-disturbance-tscore
 Title: "FDPG PR PRO PROMIS 29 Sleep Disturbance TScore"
 Description: "FDPG Profil - MII_PR_PRO_PROMIS_29_Sleep_Disturbance_TScore"
 * insert FDPGMetadata
+* insert FDPGModule(proms)
 * insert Translation(^title, de-DE, MII PR PRO PROMIS-29 Sleep Disturbance T-Score)
 * insert Translation(^title, en-US, FDPG PR PRO PROMIS 29 Sleep Disturbance TScore)
 // --- Element Designations ---

@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-molekularer-biomarker
 Title: "FDPG PR MTB Molekularer Biomarker"
 Description: "FDPG Profil - MII_PR_MTB_Molekularer_Biomarker"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Molekularer Biomarker)
 * insert Translation(^title, en-US, FDPG PR MTB Molekularer Biomarker)
 // --- Element Designations ---

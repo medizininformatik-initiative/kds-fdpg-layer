@@ -4,8 +4,9 @@ Id: fdpg-pr-seltene-clinical-impression
 Title: "FDPG PR Seltene ClinicalImpression"
 Description: "FDPG Profil - MII_PR_Seltene_ClinicalImpression"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII Profile SE Clinical Impression)
-* insert Translation(^title, en-US, FDPG PR Seltene ClinicalImpression)
+* insert FDPGModule(seltene)
+* insert Translation(^title, de-DE, Klinische Beurteilung)
+* insert Translation(^title, en-US, Clinical Impression)
 // --- Element Designations ---
 // ClinicalImpression.identifier
 * identifier ^short = "Business identifier"

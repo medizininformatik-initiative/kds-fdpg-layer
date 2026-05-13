@@ -4,6 +4,7 @@ Id: fdpg-pr-mikrobio-aviditaet
 Title: "FDPG PR Mikrobio Aviditaet"
 Description: "FDPG Profil - MII_PR_Mikrobio_Aviditaet"
 * insert FDPGMetadata
+* insert FDPGModule(mikrobiologie)
 * insert Translation(^title, de-DE, Antikörper-Avidität)
 * insert Translation(^title, en-US, Antibody avidity)
 // --- Element Designations ---

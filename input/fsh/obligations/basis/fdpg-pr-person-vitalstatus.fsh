@@ -4,6 +4,7 @@ Id: fdpg-pr-person-vitalstatus
 Title: "FDPG PR Basis Vitalstatus"
 Description: "FDPG Profil - MII_PR_Person_Vitalstatus"
 * insert FDPGMetadata
+* insert FDPGModule(basis)
 * insert Translation(^title, de-DE, Vitalstatus)
 * insert Translation(^title, en-US, Vital status)
 // --- Element Designations ---

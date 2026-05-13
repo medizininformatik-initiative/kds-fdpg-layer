@@ -4,8 +4,9 @@ Id: fdpg-pr-mol-gen-mutationslast
 Title: "FDPG PR MolGen Mutationslast"
 Description: "FDPG Profil - MII_PR_MolGen_Mutationslast"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR MolGen Mutationslast)
-* insert Translation(^title, en-US, FDPG PR MolGen Mutationslast)
+* insert FDPGModule(molgen)
+* insert Translation(^title, de-DE, Mutationslast)
+* insert Translation(^title, en-US, Tumor Mutational Burden)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "Status"

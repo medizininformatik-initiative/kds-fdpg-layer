@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-ngs-bericht
 Title: "FDPG PR MTB NGS Bericht"
 Description: "FDPG Profil - MII_PR_MTB_NGS_Bericht"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB NGS-Bericht)
 * insert Translation(^title, en-US, FDPG PR MTB NGS Bericht)
 // --- Element Designations ---

@@ -4,7 +4,8 @@ Id: fdpg-pr-medikation-medication
 Title: "FDPG PR Medikation Medication"
 Description: "FDPG Profil - MII_PR_Medikation_Medication"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Medikation Medication)
+* insert FDPGModule(medikation)
+* insert Translation(^title, de-DE, Medikament)
 * insert Translation(^title, en-US, MII PR Medikation Medication)
 // --- Element Designations ---
 // Medication.code

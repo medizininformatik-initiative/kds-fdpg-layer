@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-einfache-variante
 Title: "FDPG PR MTB Einfache Variante"
 Description: "FDPG Profil - MII_PR_MTB_Einfache_Variante"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Einfache Variante)
 * insert Translation(^title, en-US, FDPG PR MTB Einfache Variante)
 // --- Element Designations ---

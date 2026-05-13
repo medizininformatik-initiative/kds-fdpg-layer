@@ -4,6 +4,7 @@ Id: fdpg-pr-prozedur-procedure
 Title: "FDPG PR Basis Procedure"
 Description: "FDPG Profil - MII_PR_Prozedur_Procedure"
 * insert FDPGMetadata
+* insert FDPGModule(basis)
 * insert Translation(^title, de-DE, Prozedur)
 * insert Translation(^title, en-US, Procedure)
 // --- Element Designations ---

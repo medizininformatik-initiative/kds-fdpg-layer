@@ -4,6 +4,7 @@ Id: fdpg-pr-pro-score-blueprint
 Title: "FDPG PR PRO Score Blueprint"
 Description: "FDPG Profil - MII_PR_PRO_Score_Blueprint"
 * insert FDPGMetadata
+* insert FDPGModule(proms)
 * insert Translation(^title, de-DE, MII PR PRO Score Blueprint / Template)
 * insert Translation(^title, en-US, FDPG PR PRO Score Blueprint)
 // --- Element Designations ---

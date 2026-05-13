@@ -4,6 +4,7 @@ Id: fdpg-pr-pro-depression-t-score
 Title: "FDPG PR PRO Depression T Score"
 Description: "FDPG Profil - MII_PR_PRO_Depression_T_Score"
 * insert FDPGMetadata
+* insert FDPGModule(proms)
 * insert Translation(^title, de-DE, MII PR PRO Depression Domain T-Score)
 * insert Translation(^title, en-US, FDPG PR PRO Depression T Score)
 // --- Element Designations ---

@@ -4,6 +4,7 @@ Id: fdpg-pr-biobank-observation-morphologie
 Title: "FDPG PR Biobank Observation Morphologie"
 Description: "FDPG Profil - MII_PR_Biobank_Observation_Morphologie"
 * insert FDPGMetadata
+* insert FDPGModule(biobank)
 * insert Translation(^title, de-DE, Observation Morphologie)
 * insert Translation(^title, en-US, Observation Morphology)
 // --- Element Designations ---

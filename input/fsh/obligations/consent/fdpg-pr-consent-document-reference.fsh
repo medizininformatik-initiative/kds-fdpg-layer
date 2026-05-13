@@ -4,8 +4,9 @@ Id: fdpg-pr-consent-document-reference
 Title: "FDPG PR Consent DocumentReference"
 Description: "FDPG Profil - MII_PR_Consent_DocumentReference"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Profile - MI-I - Consent - DocumentReference)
-* insert Translation(^title, en-US, FDPG PR Consent DocumentReference)
+* insert FDPGModule(consent)
+* insert Translation(^title, de-DE, Einwilligungsdokument)
+* insert Translation(^title, en-US, Consent document reference)
 // --- Element Designations ---
 // DocumentReference.status
 * status ^short = "current | superseded | entered-in-error"

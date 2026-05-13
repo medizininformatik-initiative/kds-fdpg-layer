@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-biopsie-auftrag
 Title: "FDPG PR MTB Biopsie Auftrag"
 Description: "FDPG Profil - MII_PR_MTB_Biopsie_Auftrag"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Biopsie Auftrag)
 * insert Translation(^title, en-US, FDPG PR MTB Biopsie Auftrag)
 // --- Element Designations ---

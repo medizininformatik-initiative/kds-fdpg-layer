@@ -4,6 +4,7 @@ Id: fdpg-pr-biobank-observation-wachstumstyp
 Title: "FDPG PR Biobank Observation Wachstumstyp"
 Description: "FDPG Profil - MII_PR_Biobank_Observation_Wachstumstyp"
 * insert FDPGMetadata
+* insert FDPGModule(biobank)
 * insert Translation(^title, de-DE, Observation Wachstumstyp)
 * insert Translation(^title, en-US, Observation Growth Type)
 // --- Element Designations ---

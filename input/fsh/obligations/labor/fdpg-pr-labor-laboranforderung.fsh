@@ -4,6 +4,7 @@ Id: fdpg-pr-labor-laboranforderung
 Title: "FDPG PR Labor Laboranforderung"
 Description: "FDPG Profil - MII_PR_Labor_Laboranforderung"
 * insert FDPGMetadata
+* insert FDPGModule(labor)
 * insert Translation(^title, de-DE, Laboranforderung)
 * insert Translation(^title, en-US, Laboratory order)
 // --- Element Designations ---

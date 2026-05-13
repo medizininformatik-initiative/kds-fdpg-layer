@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-systemische-therapie-medication-statement
 Title: "FDPG PR MTB Systemische Therapie Medication Statement"
 Description: "FDPG Profil - MII_PR_MTB_Systemische_Therapie_Medication_Statement"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Systemtherapie Medication Statement)
 * insert Translation(^title, en-US, FDPG PR MTB Systemische Therapie Medication Statement)
 // --- Element Designations ---

@@ -4,6 +4,7 @@ Id: fdpg-pr-mikrobio-virulenzfaktor
 Title: "FDPG PR Mikrobio Virulenzfaktor"
 Description: "FDPG Profil - MII_PR_Mikrobio_Virulenzfaktor"
 * insert FDPGMetadata
+* insert FDPGModule(mikrobiologie)
 * insert Translation(^title, de-DE, Virulenzfaktor)
 * insert Translation(^title, en-US, Virulence factor)
 // --- Element Designations ---

@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-therapieempfehlung-medikation
 Title: "FDPG PR Onko Therapieempfehlung Medikation"
 Description: "FDPG Profil - MII_PR_Onko_Therapieempfehlung_Medikation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Therapieempfehlung Medikation)
-* insert Translation(^title, en-US, FDPG PR Onko Therapieempfehlung Medikation)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Therapieempfehlung Medikation)
+* insert Translation(^title, en-US, Therapy Recommendation Medication)
 // --- Element Designations ---
 // MedicationRequest.identifier
 * identifier ^short = "Identifikator"

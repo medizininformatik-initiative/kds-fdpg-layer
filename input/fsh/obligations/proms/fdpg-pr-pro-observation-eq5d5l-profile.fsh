@@ -4,6 +4,7 @@ Id: fdpg-pr-pro-observation-eq5d5l-profile
 Title: "FDPG PR PRO Observation EQ5D5L Profile"
 Description: "FDPG Profil - MII_PR_PRO_Observation_EQ5D5L_Profile"
 * insert FDPGMetadata
+* insert FDPGModule(proms)
 * insert Translation(^title, de-DE, MII PR PRO Observation EQ-5D-5L Profile)
 * insert Translation(^title, en-US, FDPG PR PRO Observation EQ5D5L Profile)
 // --- Element Designations ---

@@ -4,8 +4,9 @@ Id: fdpg-pr-consent-provenance
 Title: "FDPG PR Consent Provenance"
 Description: "FDPG Profil - MII_PR_Consent_Provenance"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Profile - MI-I - Consent - Provenance)
-* insert Translation(^title, en-US, FDPG PR Consent Provenance)
+* insert FDPGModule(consent)
+* insert Translation(^title, de-DE, Einwilligungsherkunft)
+* insert Translation(^title, en-US, Consent provenance)
 // --- Element Designations ---
 // Provenance.target
 * target ^short = "Target Reference(s) (usually version specific)"

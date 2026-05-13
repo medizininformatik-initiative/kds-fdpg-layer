@@ -4,6 +4,7 @@ Id: fdpg-pr-mikrobio-nugent-score
 Title: "FDPG PR Mikrobio Nugent Score"
 Description: "FDPG Profil - MII_PR_Mikrobio_Nugent_Score"
 * insert FDPGMetadata
+* insert FDPGModule(mikrobiologie)
 * insert Translation(^title, de-DE, Nugent-Score)
 * insert Translation(^title, en-US, Nugent score)
 // --- Element Designations ---

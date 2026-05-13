@@ -4,6 +4,7 @@ Id: fdpg-pr-bildgebung-kontrastmittelgabe
 Title: "FDPG PR Bildgebung Kontrastmittelgabe"
 Description: "FDPG Profil - MII_PR_Bildgebung_Kontrastmittelgabe"
 * insert FDPGMetadata
+* insert FDPGModule(bildgebung)
 * insert Translation(^title, de-DE, Kontrastmittelgabe)
 * insert Translation(^title, en-US, contrast medication administration)
 // --- Element Designations ---

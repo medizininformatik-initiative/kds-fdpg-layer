@@ -4,6 +4,7 @@ Id: fdpg-pr-pro-score-instance
 Title: "FDPG PR PRO Score Instance"
 Description: "FDPG Profil - MII_PR_PRO_Score_Instance"
 * insert FDPGMetadata
+* insert FDPGModule(proms)
 * insert Translation(^title, de-DE, MII PR PRO Score Instance)
 * insert Translation(^title, en-US, FDPG PR PRO Score Instance)
 // --- Element Designations ---

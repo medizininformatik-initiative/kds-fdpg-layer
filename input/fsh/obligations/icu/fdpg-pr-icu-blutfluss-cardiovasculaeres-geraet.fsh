@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-blutfluss-cardiovasculaeres-geraet
 Title: "FDPG PR ICU Blutfluss Cardiovasculaeres Geraet"
 Description: "FDPG Profil - MII_PR_ICU_Blutfluss_Cardiovasculaeres_Geraet"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Blutfluss Cardiovasculaeres Geraet)
-* insert Translation(^title, en-US, FDPG PR ICU Blutfluss Cardiovasculaeres Geraet)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Blutfluss - Kardiovaskuläres Gerät)
+* insert Translation(^title, en-US, Blood Flow - Cardiovascular Device)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

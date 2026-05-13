@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-ionisiertes-kalzium-nierenersatzverfahren
 Title: "FDPG PR ICU Ionisiertes Kalzium Nierenersatzverfahren"
 Description: "FDPG Profil - MII_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Ionisiertes Kalzium Nierenersatzverfahren)
-* insert Translation(^title, en-US, FDPG PR ICU Ionisiertes Kalzium Nierenersatzverfahren)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Ionisiertes Kalzium - Nierenersatzverfahren)
+* insert Translation(^title, en-US, Ionized Calcium - Renal Replacement Therapy)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

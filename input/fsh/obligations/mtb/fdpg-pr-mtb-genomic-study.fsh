@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-genomic-study
 Title: "FDPG PR MTB Genomic Study"
 Description: "FDPG Profil - MII_PR_MTB_Genomic_Study"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Genomic Study)
 * insert Translation(^title, en-US, FDPG PR MTB Genomic Study)
 // --- Element Designations ---

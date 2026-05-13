@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-prostata-gleason-pattern
 Title: "FDPG PR Onko Prostata Gleason Pattern"
 Description: "FDPG Profil - MII_PR_Onko_Prostata_Gleason_Pattern"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Prostata Gleason Primär)
-* insert Translation(^title, en-US, FDPG PR Onko Prostata Gleason Pattern)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Prostata Gleason-Muster)
+* insert Translation(^title, en-US, Prostate Gleason Patterns)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Gleason Pattern (primär, sekundär, tertiär)"

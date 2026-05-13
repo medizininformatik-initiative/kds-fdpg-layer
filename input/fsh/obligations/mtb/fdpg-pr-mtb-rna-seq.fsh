@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-rna-seq
 Title: "FDPG PR MTB RNA Seq"
 Description: "FDPG Profil - MII_PR_MTB_RNA_Seq"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB RNA Seq)
 * insert Translation(^title, en-US, FDPG PR MTB RNA Seq)
 // --- Element Designations ---

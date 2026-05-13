@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-beatmungszeit-hohem-druck
 Title: "FDPG PR ICU Beatmungszeit Hohem Druck"
 Description: "FDPG Profil - MII_PR_ICU_Beatmungszeit_Hohem_Druck"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII ICU Beatmungszeit Hohem Druck)
-* insert Translation(^title, en-US, FDPG PR ICU Beatmungszeit Hohem Druck)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Beatmungszeit bei hohem Druck)
+* insert Translation(^title, en-US, Ventilation Time at High Pressure)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-mamma-her2neu-status
 Title: "FDPG PR Onko Mamma Her2neu Status"
 Description: "FDPG Profil - MII_PR_Onko_Mamma_Her2neu_Status"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Her2neu Status)
-* insert Translation(^title, en-US, FDPG PR Onko Mamma Her2neu Status)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, HER2/neu-Status)
+* insert Translation(^title, en-US, HER2/neu Status)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Her2neu Status"

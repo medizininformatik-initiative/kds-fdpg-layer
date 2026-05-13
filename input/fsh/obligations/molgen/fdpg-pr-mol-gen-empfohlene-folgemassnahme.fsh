@@ -4,8 +4,9 @@ Id: fdpg-pr-mol-gen-empfohlene-folgemassnahme
 Title: "FDPG PR MolGen EmpfohleneFolgemassnahme"
 Description: "FDPG Profil - MII_PR_MolGen_EmpfohleneFolgemassnahme"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR MolGen Empfohlene Folgemaßnahme)
-* insert Translation(^title, en-US, FDPG PR MolGen EmpfohleneFolgemassnahme)
+* insert FDPGModule(molgen)
+* insert Translation(^title, de-DE, Empfohlene Folgemaßnahme)
+* insert Translation(^title, en-US, Recommended Follow-up Action)
 // --- Element Designations ---
 // Task.status
 * status ^short = "Status"

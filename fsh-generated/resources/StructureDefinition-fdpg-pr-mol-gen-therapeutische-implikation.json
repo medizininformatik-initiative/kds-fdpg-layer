@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR MolGen Therapeutische Implikation"
+            "valueString": "Therapeutische Implikation"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MolGen TherapeutischeImplikation"
+            "valueString": "Therapeutic Implication"
           }
         ]
       }
@@ -51,6 +51,12 @@
   ],
   "description": "FDPG Profil - MII_PR_MolGen_TherapeutischeImplikation",
   "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
+  "keyword": [
+    {
+      "code": "molgen",
+      "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-module-cs"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

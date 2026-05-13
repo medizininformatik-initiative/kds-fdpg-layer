@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-parameter-von-beatmung
 Title: "FDPG PR ICU Parameter Von Beatmung"
 Description: "FDPG Profil - MII_PR_ICU_Parameter_Von_Beatmung"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Parameter von Beatmung)
-* insert Translation(^title, en-US, FDPG PR ICU Parameter Von Beatmung)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Parameter von Beatmung)
+* insert Translation(^title, en-US, Ventilation Parameters)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

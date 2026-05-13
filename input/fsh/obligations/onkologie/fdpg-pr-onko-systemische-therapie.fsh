@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-systemische-therapie
 Title: "FDPG PR Onko Systemische Therapie"
 Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Systemische Therapie)
-* insert Translation(^title, en-US, FDPG PR Onko Systemische Therapie)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Systemische Therapie)
+* insert Translation(^title, en-US, Systemic Therapy)
 // --- Element Designations ---
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"

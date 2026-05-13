@@ -4,6 +4,7 @@ Id: fdpg-pr-mikrobio-empfindlichkeit
 Title: "FDPG PR Mikrobio Empfindlichkeit"
 Description: "FDPG Profil - MII_PR_Mikrobio_Empfindlichkeit"
 * insert FDPGMetadata
+* insert FDPGModule(mikrobiologie)
 * insert Translation(^title, de-DE, Antibiotika-Empfindlichkeit)
 * insert Translation(^title, en-US, Antibiotic susceptibility)
 // --- Element Designations ---

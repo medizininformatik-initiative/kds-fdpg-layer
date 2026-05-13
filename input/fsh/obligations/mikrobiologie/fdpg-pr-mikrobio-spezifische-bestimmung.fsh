@@ -4,6 +4,7 @@ Id: fdpg-pr-mikrobio-spezifische-bestimmung
 Title: "FDPG PR Mikrobio Spezifische Bestimmung"
 Description: "FDPG Profil - MII_PR_Mikrobio_Spezifische_Bestimmung"
 * insert FDPGMetadata
+* insert FDPGModule(mikrobiologie)
 * insert Translation(^title, de-DE, Spezifische mikrobiologische Bestimmung)
 * insert Translation(^title, en-US, Specific microbiological determination)
 // --- Element Designations ---

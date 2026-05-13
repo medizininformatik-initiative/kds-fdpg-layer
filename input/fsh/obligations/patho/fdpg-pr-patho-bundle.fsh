@@ -4,6 +4,7 @@ Id: fdpg-pr-patho-bundle
 Title: "FDPG PR Patho Bundle"
 Description: "FDPG Profil - MII_PR_Patho_Bundle"
 * insert FDPGMetadata
+* insert FDPGModule(patho)
 * insert Translation(^title, de-DE, MII PR Patho Bundle)
 * insert Translation(^title, en-US, MII PR Patho Bundle)
 // --- Element Designations ---

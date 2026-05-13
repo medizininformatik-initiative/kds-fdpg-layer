@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-prostata-gleason-grade-group
 Title: "FDPG PR Onko Prostata Gleason Grade Group"
 Description: "FDPG Profil - MII_PR_Onko_Prostata_Gleason_Grade_Group"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Prostata Gleason Grade Group)
-* insert Translation(^title, en-US, FDPG PR Onko Prostata Gleason Grade Group)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Prostata Gleason Grade Group)
+* insert Translation(^title, en-US, Prostate Gleason Grade Group)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Gleason Grade Group"

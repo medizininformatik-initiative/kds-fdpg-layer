@@ -4,6 +4,7 @@ Id: fdpg-pr-mikrobio-ct-wert
 Title: "FDPG PR Mikrobio Ct Wert"
 Description: "FDPG Profil - MII_PR_Mikrobio_Ct_Wert"
 * insert FDPGMetadata
+* insert FDPGModule(mikrobiologie)
 * insert Translation(^title, de-DE, Ct-Wert (PCR\))
 * insert Translation(^title, en-US, Ct value (PCR\))
 // --- Element Designations ---

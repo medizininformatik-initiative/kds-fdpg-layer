@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-therapeutische-implikation
 Title: "FDPG PR MTB Therapeutische Implikation"
 Description: "FDPG Profil - MII_PR_MTB_Therapeutische_Implikation"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Therapeutische Implikation)
 * insert Translation(^title, en-US, FDPG PR MTB Therapeutische Implikation)
 // --- Element Designations ---

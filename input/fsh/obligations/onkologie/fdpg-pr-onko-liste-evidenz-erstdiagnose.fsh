@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-liste-evidenz-erstdiagnose
 Title: "FDPG PR Onko Liste Evidenz Erstdiagnose"
 Description: "FDPG Profil - MII_PR_Onko_Liste_Evidenz_Erstdiagnose"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Evidenz Diagnose Primärtumor)
-* insert Translation(^title, en-US, FDPG PR Onko Liste Evidenz Erstdiagnose)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Evidenz für Erstdiagnose)
+* insert Translation(^title, en-US, Evidence for Initial Diagnosis)
 // --- Element Designations ---
 // List.status
 * status ^short = "current | retired | entered-in-error"

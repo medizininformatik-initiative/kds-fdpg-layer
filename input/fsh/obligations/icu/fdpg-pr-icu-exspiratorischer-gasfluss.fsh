@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-exspiratorischer-gasfluss
 Title: "FDPG PR ICU Exspiratorischer Gasfluss"
 Description: "FDPG Profil - MII_PR_ICU_Exspiratorischer_Gasfluss"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Exspiratorischer Gasfluss)
-* insert Translation(^title, en-US, FDPG PR ICU Exspiratorischer Gasfluss)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Exspiratorischer Gasfluss)
+* insert Translation(^title, en-US, Expiratory Gas Flow)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

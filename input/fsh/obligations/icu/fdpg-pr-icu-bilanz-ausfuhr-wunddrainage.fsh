@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-bilanz-ausfuhr-wunddrainage
 Title: "FDPG PR ICU Bilanz Ausfuhr Wunddrainage"
 Description: "FDPG Profil - MII_PR_ICU_Bilanz_Ausfuhr_Wunddrainage"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Bilanz Ausfuhr Wunddrainage)
-* insert Translation(^title, en-US, FDPG PR ICU Bilanz Ausfuhr Wunddrainage)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Bilanz - Ausfuhr Wunddrainage)
+* insert Translation(^title, en-US, Fluid Balance - Wound Drainage Output)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

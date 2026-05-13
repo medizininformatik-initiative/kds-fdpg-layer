@@ -4,6 +4,7 @@ Id: fdpg-pr-mikrobio-mrgn-klasse
 Title: "FDPG PR Mikrobio MRGN Klasse"
 Description: "FDPG Profil - MII_PR_Mikrobio_MRGN_Klasse"
 * insert FDPGMetadata
+* insert FDPGModule(mikrobiologie)
 * insert Translation(^title, de-DE, MRGN-Klassifikation)
 * insert Translation(^title, en-US, MRGN classification)
 // --- Element Designations ---

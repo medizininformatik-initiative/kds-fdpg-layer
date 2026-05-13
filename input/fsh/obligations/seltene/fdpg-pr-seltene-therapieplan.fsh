@@ -4,8 +4,9 @@ Id: fdpg-pr-seltene-therapieplan
 Title: "FDPG PR Seltene Therapieplan"
 Description: "FDPG Profil - MII_PR_Seltene_Therapieplan"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR SE Therapieplan)
-* insert Translation(^title, en-US, FDPG PR Seltene Therapieplan)
+* insert FDPGModule(seltene)
+* insert Translation(^title, de-DE, Therapieplan)
+* insert Translation(^title, en-US, Therapy Plan)
 // --- Element Designations ---
 // CarePlan.description
 * description ^short = "Protokollauszug"

@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Her2neu Status"
+            "valueString": "HER2/neu-Status"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onko Mamma Her2neu Status"
+            "valueString": "HER2/neu Status"
           }
         ]
       }
@@ -51,6 +51,12 @@
   ],
   "description": "FDPG Profil - MII_PR_Onko_Mamma_Her2neu_Status",
   "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
+  "keyword": [
+    {
+      "code": "onkologie",
+      "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-module-cs"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

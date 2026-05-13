@@ -4,8 +4,9 @@ Id: fdpg-pr-mol-gen-diagnostische-implikation
 Title: "FDPG PR MolGen DiagnostischeImplikation"
 Description: "FDPG Profil - MII_PR_MolGen_DiagnostischeImplikation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR MolGen Diagnostische Implikation)
-* insert Translation(^title, en-US, FDPG PR MolGen DiagnostischeImplikation)
+* insert FDPGModule(molgen)
+* insert Translation(^title, de-DE, Diagnostische Implikation)
+* insert Translation(^title, en-US, Diagnostic Implication)
 // --- Element Designations ---
 // Observation.extension:workflow-relatedArtifact
 * extension[workflow-relatedArtifact] ^short = "Verknüpfte Artefakte"

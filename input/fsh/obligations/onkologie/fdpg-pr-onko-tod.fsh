@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-tod
 Title: "FDPG PR Onko Tod"
 Description: "FDPG Profil - MII_PR_Onko_Tod"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Tod)
-* insert Translation(^title, en-US, FDPG PR Onko Tod)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Tod bei onkologischer Erkrankung)
+* insert Translation(^title, en-US, Death in Oncological Disease)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Type of observation (code / type)"

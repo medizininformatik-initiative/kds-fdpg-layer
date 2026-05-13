@@ -4,6 +4,7 @@ Id: fdpg-pr-biobank-organization-sammlung-biobank
 Title: "FDPG PR Biobank Organization Sammlung Biobank"
 Description: "FDPG Profil - MII_PR_Biobank_Organization_Sammlung_Biobank"
 * insert FDPGMetadata
+* insert FDPGModule(biobank)
 * insert Translation(^title, de-DE, Organization Sammlung Biobank)
 * insert Translation(^title, en-US, Organization Sample Collection Biobank)
 // --- Element Designations ---

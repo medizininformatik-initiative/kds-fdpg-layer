@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-systemische-therapie-medikation
 Title: "FDPG PR Onko Systemische Therapie Medikation"
 Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie_Medikation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Systemische Therapie Medikation)
-* insert Translation(^title, en-US, FDPG PR Onko Systemische Therapie Medikation)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Systemische Therapie Medikation)
+* insert Translation(^title, en-US, Systemic Therapy Medication)
 // --- Element Designations ---
 // MedicationStatement.identifier
 * identifier ^short = "Identifikator"

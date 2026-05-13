@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-response-befund
 Title: "FDPG PR MTB Response Befund"
 Description: "FDPG Profil - MII_PR_MTB_Response_Befund"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Response Befund)
 * insert Translation(^title, en-US, FDPG PR MTB Response Befund)
 // --- Element Designations ---

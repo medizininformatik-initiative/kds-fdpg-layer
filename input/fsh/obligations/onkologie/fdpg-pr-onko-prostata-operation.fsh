@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-prostata-operation
 Title: "FDPG PR Onko Prostata Operation"
 Description: "FDPG Profil - MII_PR_Onko_Prostata_Operation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onko Prostata Operation)
-* insert Translation(^title, en-US, FDPG PR Onko Prostata Operation)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Prostata-Operation)
+* insert Translation(^title, en-US, Prostate Surgery)
 // --- Element Designations ---
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"

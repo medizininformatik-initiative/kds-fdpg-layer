@@ -4,8 +4,9 @@ Id: fdpg-pr-mol-gen-therapeutische-implikation
 Title: "FDPG PR MolGen TherapeutischeImplikation"
 Description: "FDPG Profil - MII_PR_MolGen_TherapeutischeImplikation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR MolGen Therapeutische Implikation)
-* insert Translation(^title, en-US, FDPG PR MolGen TherapeutischeImplikation)
+* insert FDPGModule(molgen)
+* insert Translation(^title, de-DE, Therapeutische Implikation)
+* insert Translation(^title, en-US, Therapeutic Implication)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "Status"

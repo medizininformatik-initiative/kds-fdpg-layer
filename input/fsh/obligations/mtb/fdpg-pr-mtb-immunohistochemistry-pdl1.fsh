@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-immunohistochemistry-pdl1
 Title: "FDPG PR MTB Immunohistochemistry PDL1"
 Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry_PDL1"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Immunohistochemistry)
 * insert Translation(^title, en-US, FDPG PR MTB Immunohistochemistry PDL1)
 // --- Element Designations ---

@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-tumorkonferenz
 Title: "FDPG PR Onko Tumorkonferenz"
 Description: "FDPG Profil - MII_PR_Onko_Tumorkonferenz"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Tumorkonferenz)
-* insert Translation(^title, en-US, FDPG PR Onko Tumorkonferenz)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Tumorkonferenz)
+* insert Translation(^title, en-US, Tumor Board)
 // --- Element Designations ---
 // CarePlan.status
 * status ^short = "draft | active | on-hold | revoked | completed | entered-in-error | unknown"

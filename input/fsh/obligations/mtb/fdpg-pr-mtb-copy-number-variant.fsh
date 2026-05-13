@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-copy-number-variant
 Title: "FDPG PR MTB Copy Number Variant"
 Description: "FDPG Profil - MII_PR_MTB_Copy_Number_Variant"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Copy Number Variant)
 * insert Translation(^title, en-US, FDPG PR MTB Copy Number Variant)
 // --- Element Designations ---

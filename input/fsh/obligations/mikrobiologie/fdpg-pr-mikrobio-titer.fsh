@@ -4,6 +4,7 @@ Id: fdpg-pr-mikrobio-titer
 Title: "FDPG PR Mikrobio Titer"
 Description: "FDPG Profil - MII_PR_Mikrobio_Titer"
 * insert FDPGMetadata
+* insert FDPGModule(mikrobiologie)
 * insert Translation(^title, de-DE, Antikörpertiter)
 * insert Translation(^title, en-US, Antibody titer)
 // --- Element Designations ---

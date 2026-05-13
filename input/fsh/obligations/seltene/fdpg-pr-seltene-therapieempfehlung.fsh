@@ -4,8 +4,9 @@ Id: fdpg-pr-seltene-therapieempfehlung
 Title: "FDPG PR Seltene Therapieempfehlung"
 Description: "FDPG Profil - MII_PR_Seltene_Therapieempfehlung"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR SE Therapieempfehlung Systemische Therapie)
-* insert Translation(^title, en-US, FDPG PR Seltene Therapieempfehlung)
+* insert FDPGModule(seltene)
+* insert Translation(^title, de-DE, Therapieempfehlung systemische Therapie)
+* insert Translation(^title, en-US, Therapy Recommendation Systemic Therapy)
 // --- Element Designations ---
 // MedicationRequest.extension:Prioritaet
 * extension[Prioritaet] ^short = "MII EX SE Empfehlung Priorität"

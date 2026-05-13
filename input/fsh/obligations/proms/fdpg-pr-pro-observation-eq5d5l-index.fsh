@@ -4,6 +4,7 @@ Id: fdpg-pr-pro-observation-eq5d5l-index
 Title: "FDPG PR PRO Observation EQ5D5L Index"
 Description: "FDPG Profil - MII_PR_PRO_Observation_EQ5D5L_Index"
 * insert FDPGMetadata
+* insert FDPGModule(proms)
 * insert Translation(^title, de-DE, MII PR PRO Observation EQ-5D-5L Index)
 * insert Translation(^title, en-US, FDPG PR PRO Observation EQ5D5L Index)
 // --- Element Designations ---

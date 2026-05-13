@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-substituatfluss
 Title: "FDPG PR ICU Substituatfluss"
 Description: "FDPG Profil - MII_PR_ICU_Substituatfluss"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Substituatfluss)
-* insert Translation(^title, en-US, FDPG PR ICU Substituatfluss)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Substituatfluss)
+* insert Translation(^title, en-US, Substitution Fluid Flow Rate)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

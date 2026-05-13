@@ -4,8 +4,9 @@ Id: fdpg-pr-mol-gen-genomic-study
 Title: "FDPG PR MolGen GenomicStudy"
 Description: "FDPG Profil - MII_PR_MolGen_GenomicStudy"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR MolGen Genomic Study)
-* insert Translation(^title, en-US, FDPG PR MolGen GenomicStudy)
+* insert FDPGModule(molgen)
+* insert Translation(^title, de-DE, Genomische Studie)
+* insert Translation(^title, en-US, Genomic Study)
 // --- Element Designations ---
 // Procedure.extension:genomic-study-analysis
 * extension[genomic-study-analysis] ^short = "Durchgeführte Analysen"

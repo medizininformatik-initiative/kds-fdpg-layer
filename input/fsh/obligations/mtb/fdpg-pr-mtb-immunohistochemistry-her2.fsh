@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-immunohistochemistry-her2
 Title: "FDPG PR MTB IMMUNOHISTOCHEMISTRY HER2"
 Description: "FDPG Profil - MII_PR_MTB_IMMUNOHISTOCHEMISTRY_HER2"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Immunohistochemistry)
 * insert Translation(^title, en-US, FDPG PR MTB IMMUNOHISTOCHEMISTRY HER2)
 // --- Element Designations ---

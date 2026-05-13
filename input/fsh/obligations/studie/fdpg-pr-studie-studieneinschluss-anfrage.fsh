@@ -4,8 +4,9 @@ Id: fdpg-pr-studie-studieneinschluss-anfrage
 Title: "FDPG PR Studie Studieneinschluss Anfrage"
 Description: "FDPG Profil - MII_PR_Studie_Studieneinschluss_Anfrage"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Studie Studieneinschluss Anfrage)
-* insert Translation(^title, en-US, FDPG PR Studie Studieneinschluss Anfrage)
+* insert FDPGModule(studie)
+* insert Translation(^title, de-DE, Studieneinschluss-Anfrage)
+* insert Translation(^title, en-US, Study Enrollment Request)
 // --- Element Designations ---
 // ServiceRequest.status
 * status ^short = "Entwurf | aktiv | pausiert | widerrufen | abgeschlossen | irrtümlich erstellt | unbekannt"

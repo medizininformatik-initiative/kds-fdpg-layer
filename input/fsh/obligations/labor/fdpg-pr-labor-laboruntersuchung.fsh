@@ -4,6 +4,7 @@ Id: fdpg-pr-labor-laboruntersuchung
 Title: "FDPG PR Labor Laboruntersuchung"
 Description: "FDPG Profil - MII_PR_Labor_Laboruntersuchung"
 * insert FDPGMetadata
+* insert FDPGModule(labor)
 * insert Translation(^title, de-DE, Laboruntersuchung)
 * insert Translation(^title, en-US, Laboratory test)
 // --- Element Designations ---

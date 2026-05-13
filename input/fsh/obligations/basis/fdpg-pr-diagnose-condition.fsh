@@ -4,6 +4,7 @@ Id: fdpg-pr-diagnose-condition
 Title: "FDPG PR Basis Condition"
 Description: "FDPG Profil - MII_PR_Diagnose_Condition"
 * insert FDPGMetadata
+* insert FDPGModule(basis)
 * insert Translation(^title, de-DE, Diagnose)
 * insert Translation(^title, en-US, Diagnosis)
 // --- Element Designations ---

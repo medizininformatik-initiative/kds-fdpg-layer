@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Onkologie Abstand Anokutan"
+            "valueString": "Abstand zur anokutanen Grenze"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Onko KRK Abstand Anokutan"
+            "valueString": "Distance to Anocutaneous Line"
           }
         ]
       }
@@ -51,6 +51,12 @@
   ],
   "description": "FDPG Profil - MII_PR_Onko_KRK_Abstand_Anokutan",
   "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
+  "keyword": [
+    {
+      "code": "onkologie",
+      "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-module-cs"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

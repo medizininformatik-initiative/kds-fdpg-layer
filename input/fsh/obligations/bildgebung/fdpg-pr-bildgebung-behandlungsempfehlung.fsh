@@ -4,6 +4,7 @@ Id: fdpg-pr-bildgebung-behandlungsempfehlung
 Title: "FDPG PR Bildgebung Behandlungsempfehlung"
 Description: "FDPG Profil - MII_PR_Bildgebung_Behandlungsempfehlung"
 * insert FDPGMetadata
+* insert FDPGModule(bildgebung)
 * insert Translation(^title, de-DE, Behandlungsempfehlung)
 * insert Translation(^title, en-US, care plan)
 // --- Element Designations ---

@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-device
 Title: "FDPG PR ICU Device"
 Description: "FDPG Profil - MII_PR_ICU_Device"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Device)
-* insert Translation(^title, en-US, FDPG PR ICU Device)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Gerät)
+* insert Translation(^title, en-US, Device)
 // --- Element Designations ---
 // Device.identifier
 * identifier ^short = "Instance identifier"

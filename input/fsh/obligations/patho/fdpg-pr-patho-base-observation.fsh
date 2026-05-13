@@ -4,9 +4,9 @@ Id: fdpg-pr-patho-base-observation
 Title: "FDPG PR Patho Base Observation"
 Description: "FDPG Profil - MII_PR_Patho_Base_Observation"
 * insert FDPGMetadata
-* ^abstract = true
-* insert Translation(^title, de-DE, MII PR Patho Base Observation)
-* insert Translation(^title, en-US, FDPG PR Patho Base Observation)
+* insert FDPGModule(patho)
+* insert Translation(^title, de-DE, MII PR Patho Basisbeobachtung)
+* insert Translation(^title, en-US, MII PR Patho Base Observation)
 // --- Element Designations ---
 // Observation.meta.lastUpdated
 * meta.lastUpdated ^short = "When the resource version last changed"

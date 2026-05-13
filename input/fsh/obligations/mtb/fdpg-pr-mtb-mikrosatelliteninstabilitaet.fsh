@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-mikrosatelliteninstabilitaet
 Title: "FDPG PR MTB Mikrosatelliteninstabilitaet"
 Description: "FDPG Profil - MII_PR_MTB_Mikrosatelliteninstabilitaet"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Mikrosatelliteninstabilität)
 * insert Translation(^title, en-US, FDPG PR MTB Mikrosatelliteninstabilitaet)
 // --- Element Designations ---

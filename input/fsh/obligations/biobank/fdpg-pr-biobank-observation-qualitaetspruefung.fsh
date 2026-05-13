@@ -4,6 +4,7 @@ Id: fdpg-pr-biobank-observation-qualitaetspruefung
 Title: "FDPG PR Biobank Observation Qualitaetspruefung"
 Description: "FDPG Profil - MII_PR_Biobank_Observation_Qualitaetspruefung"
 * insert FDPGMetadata
+* insert FDPGModule(biobank)
 * insert Translation(^title, de-DE, Observation Qualitätsprüfung)
 * insert Translation(^title, en-US, Observation Quality Check)
 // --- Element Designations ---

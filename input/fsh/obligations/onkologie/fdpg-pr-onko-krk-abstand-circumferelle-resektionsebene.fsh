@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-krk-abstand-circumferelle-resektionsebene
 Title: "FDPG PR Onko KRK Abstand Circumferelle Resektionsebene"
 Description: "FDPG Profil - MII_PR_Onko_KRK_Abstand_Circumferelle_Resektionsebene"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Abstand Circumferelle Resektionsebene)
-* insert Translation(^title, en-US, FDPG PR Onko KRK Abstand Circumferelle Resektionsebene)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Abstand zur circumferellen Resektionsebene)
+* insert Translation(^title, en-US, Distance to Circumferential Resection Margin)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Minimaler Abstand Tumorrand circumferell - makroskopisch oder mikroskopisch"

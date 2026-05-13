@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"
+            "valueString": "Beatmungsvolumen pro Minute maschineller Beatmung"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"
+            "valueString": "Minute Ventilation During Mechanical Ventilation"
           }
         ]
       }
@@ -51,6 +51,12 @@
   ],
   "description": "FDPG Profil - MII_PR_ICU_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung",
   "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
+  "keyword": [
+    {
+      "code": "icu",
+      "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-module-cs"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

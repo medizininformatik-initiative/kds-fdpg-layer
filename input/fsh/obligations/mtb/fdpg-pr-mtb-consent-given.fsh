@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-consent-given
 Title: "FDPG PR MTB Consent Given"
 Description: "FDPG Profil - MII_PR_MTB_Consent_Given"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Consent)
 * insert Translation(^title, en-US, FDPG PR MTB Consent Given)
 // --- Element Designations ---

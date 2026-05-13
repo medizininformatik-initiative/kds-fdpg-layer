@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-grading
 Title: "FDPG PR Onko Grading"
 Description: "FDPG Profil - MII_PR_Onko_Grading"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Grading)
-* insert Translation(^title, en-US, FDPG PR Onko Grading)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Grading)
+* insert Translation(^title, en-US, Grading)
 // --- Element Designations ---
 // Observation.category
 * category ^short = "Classification of  type of observation"

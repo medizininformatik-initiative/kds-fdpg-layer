@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-prostata-anzahl-positive-stanzen
 Title: "FDPG PR Onko Prostata Anzahl Positive Stanzen"
 Description: "FDPG Profil - MII_PR_Onko_Prostata_Anzahl_Positive_Stanzen"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Prostata Anzahl positiver Stanzen)
-* insert Translation(^title, en-US, FDPG PR Onko Prostata Anzahl Positive Stanzen)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Prostata Anzahl positiver Stanzen)
+* insert Translation(^title, en-US, Prostate Number of Positive Cores)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Anzahl Stanzen"

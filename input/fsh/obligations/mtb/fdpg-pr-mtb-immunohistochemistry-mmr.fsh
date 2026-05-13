@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-immunohistochemistry-mmr
 Title: "FDPG PR MTB Immunohistochemistry MMR"
 Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry_MMR"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Immunohistochemistry Mismatch Repair Status)
 * insert Translation(^title, en-US, FDPG PR MTB Immunohistochemistry MMR)
 // --- Element Designations ---

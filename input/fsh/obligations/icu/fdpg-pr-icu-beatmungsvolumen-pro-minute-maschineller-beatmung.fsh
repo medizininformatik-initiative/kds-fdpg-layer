@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-beatmungsvolumen-pro-minute-maschineller-beatmung
 Title: "FDPG PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung"
 Description: "FDPG Profil - MII_PR_ICU_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung)
-* insert Translation(^title, en-US, FDPG PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Beatmungsvolumen pro Minute maschineller Beatmung)
+* insert Translation(^title, en-US, Minute Ventilation During Mechanical Ventilation)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

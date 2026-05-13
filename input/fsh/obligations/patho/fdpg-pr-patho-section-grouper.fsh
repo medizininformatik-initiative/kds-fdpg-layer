@@ -4,9 +4,9 @@ Id: fdpg-pr-patho-section-grouper
 Title: "FDPG PR Patho Section Grouper"
 Description: "FDPG Profil - MII_PR_Patho_Section_Grouper"
 * insert FDPGMetadata
-* ^abstract = true
-* insert Translation(^title, de-DE, MII PR Patho Section Grouper)
-* insert Translation(^title, en-US, FDPG PR Patho Section Grouper)
+* insert FDPGModule(patho)
+* insert Translation(^title, de-DE, MII PR Patho Abschnittsgruppierung)
+* insert Translation(^title, en-US, MII PR Patho Section Grouper)
 // --- Element Designations ---
 // Observation.meta.lastUpdated
 * meta.lastUpdated ^short = "When the resource version last changed"

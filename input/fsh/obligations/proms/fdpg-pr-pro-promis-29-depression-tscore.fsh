@@ -4,6 +4,7 @@ Id: fdpg-pr-pro-promis-29-depression-tscore
 Title: "FDPG PR PRO PROMIS 29 Depression TScore"
 Description: "FDPG Profil - MII_PR_PRO_PROMIS_29_Depression_TScore"
 * insert FDPGMetadata
+* insert FDPGModule(proms)
 * insert Translation(^title, de-DE, MII PR PRO PROMIS-29 Depression T-Score)
 * insert Translation(^title, en-US, FDPG PR PRO PROMIS 29 Depression TScore)
 // --- Element Designations ---

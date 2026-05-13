@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-therapieempfehlung-operation
 Title: "FDPG PR Onko Therapieempfehlung Operation"
 Description: "FDPG Profil - MII_PR_Onko_Therapieempfehlung_Operation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Therapieempfehlung Operation)
-* insert Translation(^title, en-US, FDPG PR Onko Therapieempfehlung Operation)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Therapieempfehlung Operation)
+* insert Translation(^title, en-US, Therapy Recommendation Surgery)
 // --- Element Designations ---
 // ServiceRequest.identifier
 * identifier ^short = "Identifiers assigned to this order"

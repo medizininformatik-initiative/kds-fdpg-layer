@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-studie
 Title: "FDPG PR MTB Studie"
 Description: "FDPG Profil - MII_PR_MTB_Studie"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Studie)
 * insert Translation(^title, en-US, FDPG PR MTB Studie)
 // --- Element Designations ---

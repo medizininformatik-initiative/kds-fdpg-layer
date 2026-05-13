@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-diagnose-primaertumor
 Title: "FDPG PR Onko Diagnose Primaertumor"
 Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Onkologische Diagnose im Rahmen einer onkologischen Erkrankung)
-* insert Translation(^title, en-US, FDPG PR Onko Diagnose Primaertumor)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Onkologische Diagnose Primärtumor)
+* insert Translation(^title, en-US, Oncology Diagnosis Primary Tumor)
 // --- Element Designations ---
 // Condition.extension:ReferenzPrimaerdiagnose
 * extension[ReferenzPrimaerdiagnose] ^short = "Conditions associated with this condition"

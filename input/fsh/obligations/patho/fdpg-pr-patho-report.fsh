@@ -4,6 +4,7 @@ Id: fdpg-pr-patho-report
 Title: "FDPG PR Patho Report"
 Description: "FDPG Profil - MII_PR_Patho_Report"
 * insert FDPGMetadata
+* insert FDPGModule(patho)
 * insert Translation(^title, de-DE, MII PR Patho Bericht)
 * insert Translation(^title, en-US, MII PR Patho Report)
 // --- Element Designations ---

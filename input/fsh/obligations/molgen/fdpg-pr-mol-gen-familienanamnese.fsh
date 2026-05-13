@@ -4,8 +4,9 @@ Id: fdpg-pr-mol-gen-familienanamnese
 Title: "FDPG PR MolGen Familienanamnese"
 Description: "FDPG Profil - MII_PR_MolGen_Familienanamnese"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR MolGen Familienanamnese)
-* insert Translation(^title, en-US, FDPG PR MolGen Familienanamnese)
+* insert FDPGModule(molgen)
+* insert Translation(^title, de-DE, Familienanamnese)
+* insert Translation(^title, en-US, Family History)
 // --- Element Designations ---
 // FamilyMemberHistory.status
 * status ^short = "Status"

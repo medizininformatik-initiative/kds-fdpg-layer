@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-krk-abstand-anokutan
 Title: "FDPG PR Onko KRK Abstand Anokutan"
 Description: "FDPG Profil - MII_PR_Onko_KRK_Abstand_Anokutan"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Abstand Anokutan)
-* insert Translation(^title, en-US, FDPG PR Onko KRK Abstand Anokutan)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Abstand zur anokutanen Grenze)
+* insert Translation(^title, en-US, Distance to Anocutaneous Line)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Rektum: Abstand des Tumorunterrandes zur Anokutanlinie"

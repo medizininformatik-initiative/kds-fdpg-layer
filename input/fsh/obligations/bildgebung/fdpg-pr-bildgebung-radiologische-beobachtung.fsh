@@ -4,6 +4,7 @@ Id: fdpg-pr-bildgebung-radiologische-beobachtung
 Title: "FDPG PR Bildgebung Radiologische Beobachtung"
 Description: "FDPG Profil - MII_PR_Bildgebung_Radiologische_Beobachtung"
 * insert FDPGMetadata
+* insert FDPGModule(bildgebung)
 * insert Translation(^title, de-DE, radiologische Beobachtung)
 * insert Translation(^title, en-US, radiological observation)
 // --- Element Designations ---

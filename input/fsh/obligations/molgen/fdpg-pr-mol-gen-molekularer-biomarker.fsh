@@ -4,8 +4,9 @@ Id: fdpg-pr-mol-gen-molekularer-biomarker
 Title: "FDPG PR MolGen MolekularerBiomarker"
 Description: "FDPG Profil - MII_PR_MolGen_MolekularerBiomarker"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR MolGen Molekulare Biomarker)
-* insert Translation(^title, en-US, FDPG PR MolGen MolekularerBiomarker)
+* insert FDPGModule(molgen)
+* insert Translation(^title, de-DE, Molekularer Biomarker)
+* insert Translation(^title, en-US, Molecular Biomarker)
 // --- Element Designations ---
 // Observation.category
 * category ^short = "Kategorie"

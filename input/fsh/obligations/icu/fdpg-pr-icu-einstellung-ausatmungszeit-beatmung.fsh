@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-einstellung-ausatmungszeit-beatmung
 Title: "FDPG PR ICU Einstellung Ausatmungszeit Beatmung"
 Description: "FDPG Profil - MII_PR_ICU_Einstellung_Ausatmungszeit_Beatmung"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Einstellung Ausatmungszeit Beatmung)
-* insert Translation(^title, en-US, FDPG PR ICU Einstellung Ausatmungszeit Beatmung)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Einstellung Ausatmungszeit Beatmung)
+* insert Translation(^title, en-US, Expiratory Time Setting (Ventilation\))
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

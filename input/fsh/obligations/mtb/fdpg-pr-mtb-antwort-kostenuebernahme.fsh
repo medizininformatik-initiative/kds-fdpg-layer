@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-antwort-kostenuebernahme
 Title: "FDPG PR MTB Antwort Kostenuebernahme"
 Description: "FDPG Profil - MII_PR_MTB_Antwort_Kostenuebernahme"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Anwort Kostenuebernahme)
 * insert Translation(^title, en-US, FDPG PR MTB Antwort Kostenuebernahme)
 // --- Element Designations ---

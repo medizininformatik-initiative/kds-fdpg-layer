@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-bilanz-ausfuhr-stuhlgang
 Title: "FDPG PR ICU Bilanz Ausfuhr Stuhlgang"
 Description: "FDPG Profil - MII_PR_ICU_Bilanz_Ausfuhr_Stuhlgang"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Bilanz Ausfuhr Stuhlgang)
-* insert Translation(^title, en-US, FDPG PR ICU Bilanz Ausfuhr Stuhlgang)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Bilanz - Ausfuhr Stuhlgang)
+* insert Translation(^title, en-US, Fluid Balance - Stool Output)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

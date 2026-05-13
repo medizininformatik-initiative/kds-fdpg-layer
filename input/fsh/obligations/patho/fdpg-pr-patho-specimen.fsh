@@ -4,6 +4,7 @@ Id: fdpg-pr-patho-specimen
 Title: "FDPG PR Patho Specimen"
 Description: "FDPG Profil - MII_PR_Patho_Specimen"
 * insert FDPGMetadata
+* insert FDPGModule(patho)
 * insert Translation(^title, de-DE, MII PR Patho Probe)
 * insert Translation(^title, en-US, MII PR Patho Specimen)
 // --- Element Designations ---

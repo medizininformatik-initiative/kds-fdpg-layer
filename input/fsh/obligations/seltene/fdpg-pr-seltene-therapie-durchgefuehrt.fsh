@@ -4,8 +4,9 @@ Id: fdpg-pr-seltene-therapie-durchgefuehrt
 Title: "FDPG PR Seltene TherapieDurchgefuehrt"
 Description: "FDPG Profil - MII_PR_Seltene_TherapieDurchgefuehrt"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Seltene Erkrankungen Therapie Durchgeführt)
-* insert Translation(^title, en-US, FDPG PR Seltene TherapieDurchgefuehrt)
+* insert FDPGModule(seltene)
+* insert Translation(^title, de-DE, Therapie durchgeführt)
+* insert Translation(^title, en-US, Therapy Administered)
 // --- Element Designations ---
 // Procedure.status
 * status ^short = "preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown"

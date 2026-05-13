@@ -4,8 +4,9 @@ Id: fdpg-pr-seltene-symptom-condition
 Title: "FDPG PR Seltene Symptom Condition"
 Description: "FDPG Profil - MII_PR_Seltene_Symptom_Condition"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII Profile SE Symptom Condition)
-* insert Translation(^title, en-US, FDPG PR Seltene Symptom Condition)
+* insert FDPGModule(seltene)
+* insert Translation(^title, de-DE, Symptom)
+* insert Translation(^title, en-US, Symptom Condition)
 // --- Element Designations ---
 // Condition.identifier
 * identifier ^short = "External Ids for this condition"

@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-krk-operation
 Title: "FDPG PR Onko KRK Operation"
 Description: "FDPG Profil - MII_PR_Onko_KRK_Operation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Präoperative Drahtmarkierung Mamma)
-* insert Translation(^title, en-US, FDPG PR Onko KRK Operation)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, KRK Operation)
+* insert Translation(^title, en-US, Colorectal Surgery)
 // --- Element Designations ---
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"

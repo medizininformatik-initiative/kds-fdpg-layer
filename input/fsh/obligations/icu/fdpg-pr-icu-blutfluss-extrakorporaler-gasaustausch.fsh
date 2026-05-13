@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-blutfluss-extrakorporaler-gasaustausch
 Title: "FDPG PR ICU Blutfluss Extrakorporaler Gasaustausch"
 Description: "FDPG Profil - MII_PR_ICU_Blutfluss_Extrakorporaler_Gasaustausch"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Blutfluss Extrakorporaler Gasaustausch)
-* insert Translation(^title, en-US, FDPG PR ICU Blutfluss Extrakorporaler Gasaustausch)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Blutfluss - Extrakorporaler Gasaustausch)
+* insert Translation(^title, en-US, Blood Flow - Extracorporeal Gas Exchange)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

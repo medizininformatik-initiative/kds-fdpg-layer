@@ -4,6 +4,7 @@ Id: fdpg-pr-biobank-observation-proliferation
 Title: "FDPG PR Biobank Observation Proliferation"
 Description: "FDPG Profil - MII_PR_Biobank_Observation_Proliferation"
 * insert FDPGMetadata
+* insert FDPGModule(biobank)
 * insert Translation(^title, de-DE, Observation Proliferation)
 * insert Translation(^title, en-US, Observation Proliferation)
 // --- Element Designations ---

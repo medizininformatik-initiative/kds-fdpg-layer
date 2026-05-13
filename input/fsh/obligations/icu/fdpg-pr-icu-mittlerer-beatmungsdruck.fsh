@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-mittlerer-beatmungsdruck
 Title: "FDPG PR ICU Mittlerer Beatmungsdruck"
 Description: "FDPG Profil - MII_PR_ICU_Mittlerer_Beatmungsdruck"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Mittlerer Beatmungsdruck)
-* insert Translation(^title, en-US, FDPG PR ICU Mittlerer Beatmungsdruck)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Mittlerer Beatmungsdruck)
+* insert Translation(^title, en-US, Mean Ventilation Pressure)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

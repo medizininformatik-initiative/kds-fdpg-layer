@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-atemzugvolumen-einstellung
 Title: "FDPG PR ICU Atemzugvolumen Einstellung"
 Description: "FDPG Profil - MII_PR_ICU_Atemzugvolumen_Einstellung"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Atemzugvolumen Einstellung)
-* insert Translation(^title, en-US, FDPG PR ICU Atemzugvolumen Einstellung)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Atemzugvolumen - Einstellung)
+* insert Translation(^title, en-US, Tidal Volume - Setting)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

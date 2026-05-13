@@ -4,8 +4,9 @@ Id: fdpg-pr-seltene-kopfumfang
 Title: "FDPG PR Seltene Kopfumfang"
 Description: "FDPG Profil - MII_PR_Seltene_Kopfumfang"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR SE Kopfumfang)
-* insert Translation(^title, en-US, FDPG PR Seltene Kopfumfang)
+* insert FDPGModule(seltene)
+* insert Translation(^title, de-DE, Kopfumfang)
+* insert Translation(^title, en-US, Head Circumference)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"

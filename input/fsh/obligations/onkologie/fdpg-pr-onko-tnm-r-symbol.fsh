@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-tnm-r-symbol
 Title: "FDPG PR Onko TNM r Symbol"
 Description: "FDPG Profil - MII_PR_Onko_TNM_r_Symbol"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie TNM r-Symbol)
-* insert Translation(^title, en-US, FDPG PR Onko TNM r Symbol)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, TNM r-Symbol)
+* insert Translation(^title, en-US, TNM r-Symbol)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"

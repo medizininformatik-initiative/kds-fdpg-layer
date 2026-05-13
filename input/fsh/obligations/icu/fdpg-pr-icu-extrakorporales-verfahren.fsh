@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-extrakorporales-verfahren
 Title: "FDPG PR ICU Extrakorporales Verfahren"
 Description: "FDPG Profil - MII_PR_ICU_Extrakorporales_Verfahren"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Extrakorporales Verfahren)
-* insert Translation(^title, en-US, FDPG PR ICU Extrakorporales Verfahren)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Extrakorporales Verfahren)
+* insert Translation(^title, en-US, Extracorporeal Procedure)
 // --- Element Designations ---
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"

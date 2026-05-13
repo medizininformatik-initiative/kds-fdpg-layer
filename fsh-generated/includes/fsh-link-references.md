@@ -1,5 +1,6 @@
 [fdpg-cps-data-consumer]: CapabilityStatement-fdpg-cps-data-consumer.html
 [fdpg-cps-data-provider]: CapabilityStatement-fdpg-cps-data-provider.html
+[FDPGModuleCS]: CodeSystem-fdpg-module-cs.html
 [FDPGObligationCS]: CodeSystem-fdpg-obligation-cs.html
 [FDPG_PR_Diagnose_Condition]: StructureDefinition-fdpg-pr-diagnose-condition.html
 [FDPG_PR_Fall_KontaktGesundheitseinrichtung]: StructureDefinition-fdpg-pr-fall-kontakt-gesundheitseinrichtung.html

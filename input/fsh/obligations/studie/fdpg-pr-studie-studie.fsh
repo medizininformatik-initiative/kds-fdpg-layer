@@ -4,8 +4,9 @@ Id: fdpg-pr-studie-studie
 Title: "FDPG PR Studie Studie"
 Description: "FDPG Profil - MII_PR_Studie_Studie"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Studie Studie)
-* insert Translation(^title, en-US, FDPG PR Studie Studie)
+* insert FDPGModule(studie)
+* insert Translation(^title, de-DE, Studie)
+* insert Translation(^title, en-US, Research Study)
 // --- Element Designations ---
 // ResearchStudy.extension:Label
 * extension[Label] ^short = "Label"

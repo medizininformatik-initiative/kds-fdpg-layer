@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-haemodialyse-blutfluss
 Title: "FDPG PR ICU Haemodialyse Blutfluss"
 Description: "FDPG Profil - MII_PR_ICU_Haemodialyse_Blutfluss"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Haemodialyse Blutfluss)
-* insert Translation(^title, en-US, FDPG PR ICU Haemodialyse Blutfluss)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Hämodialyse - Blutfluss)
+* insert Translation(^title, en-US, Hemodialysis - Blood Flow)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

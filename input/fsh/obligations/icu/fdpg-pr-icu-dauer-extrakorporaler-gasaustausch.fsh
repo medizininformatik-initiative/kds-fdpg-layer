@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-dauer-extrakorporaler-gasaustausch
 Title: "FDPG PR ICU Dauer Extrakorporaler Gasaustausch"
 Description: "FDPG Profil - MII_PR_ICU_Dauer_Extrakorporaler_Gasaustausch"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Dauer Extrakorporaler Gasaustausch)
-* insert Translation(^title, en-US, FDPG PR ICU Dauer Extrakorporaler Gasaustausch)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Dauer extrakorporaler Gasaustausch)
+* insert Translation(^title, en-US, Duration of Extracorporeal Gas Exchange)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

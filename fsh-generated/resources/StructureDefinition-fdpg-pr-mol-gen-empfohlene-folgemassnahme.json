@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR MolGen Empfohlene Folgemaßnahme"
+            "valueString": "Empfohlene Folgemaßnahme"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MolGen EmpfohleneFolgemassnahme"
+            "valueString": "Recommended Follow-up Action"
           }
         ]
       }
@@ -51,6 +51,12 @@
   ],
   "description": "FDPG Profil - MII_PR_MolGen_EmpfohleneFolgemassnahme",
   "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
+  "keyword": [
+    {
+      "code": "molgen",
+      "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-module-cs"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

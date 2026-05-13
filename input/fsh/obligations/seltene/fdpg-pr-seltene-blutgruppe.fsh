@@ -4,8 +4,9 @@ Id: fdpg-pr-seltene-blutgruppe
 Title: "FDPG PR Seltene Blutgruppe"
 Description: "FDPG Profil - MII_PR_Seltene_Blutgruppe"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR SE Blutgruppe)
-* insert Translation(^title, en-US, FDPG PR Seltene Blutgruppe)
+* insert FDPGModule(seltene)
+* insert Translation(^title, de-DE, Blutgruppe)
+* insert Translation(^title, en-US, Blood Group)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"

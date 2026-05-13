@@ -4,6 +4,7 @@ Id: fdpg-pr-bildgebung-bildgebungsprozedur
 Title: "FDPG PR Bildgebung Bildgebungsprozedur"
 Description: "FDPG Profil - MII_PR_Bildgebung_Bildgebungsprozedur"
 * insert FDPGMetadata
+* insert FDPGModule(bildgebung)
 * insert Translation(^title, de-DE, Bildgebungsprozedur)
 * insert Translation(^title, en-US, imaging procedure)
 // --- Element Designations ---

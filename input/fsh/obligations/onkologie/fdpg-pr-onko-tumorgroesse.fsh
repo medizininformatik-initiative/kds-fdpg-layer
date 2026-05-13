@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-tumorgroesse
 Title: "FDPG PR Onko Tumorgroesse"
 Description: "FDPG Profil - MII_PR_Onko_Tumorgroesse"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Tumorgröße)
-* insert Translation(^title, en-US, FDPG PR Onko Tumorgroesse)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Tumorgröße)
+* insert Translation(^title, en-US, Tumor Size)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Type of observation (code / type)"

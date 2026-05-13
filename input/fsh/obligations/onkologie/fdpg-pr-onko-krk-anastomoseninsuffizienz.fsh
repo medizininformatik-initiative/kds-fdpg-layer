@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-krk-anastomoseninsuffizienz
 Title: "FDPG PR Onko KRK Anastomoseninsuffizienz"
 Description: "FDPG Profil - MII_PR_Onko_KRK_Anastomoseninsuffizienz"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie KRK Anastomoseninsuffizienz)
-* insert Translation(^title, en-US, FDPG PR Onko KRK Anastomoseninsuffizienz)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, KRK Anastomoseninsuffizienz)
+* insert Translation(^title, en-US, Colorectal Anastomotic Leakage)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Anastomoseninsuffizienz"

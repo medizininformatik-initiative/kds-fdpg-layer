@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-krk-abstand-aboral
 Title: "FDPG PR Onko KRK Abstand Aboral"
 Description: "FDPG Profil - MII_PR_Onko_KRK_Abstand_Aboral"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Abstand Aboral)
-* insert Translation(^title, en-US, FDPG PR Onko KRK Abstand Aboral)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Abstand zum aboralen Resektionsrand)
+* insert Translation(^title, en-US, Distance to Aboral Resection Margin)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Minimaler Abstand Tumorrand aboral - makroskopisch oder mikroskopisch"

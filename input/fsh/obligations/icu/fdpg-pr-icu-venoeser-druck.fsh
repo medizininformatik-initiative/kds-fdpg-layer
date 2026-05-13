@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-venoeser-druck
 Title: "FDPG PR ICU Venoeser Druck"
 Description: "FDPG Profil - MII_PR_ICU_Venoeser_Druck"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Venous Pressure)
-* insert Translation(^title, en-US, FDPG PR ICU Venoeser Druck)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Venöser Druck)
+* insert Translation(^title, en-US, Venous Pressure)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

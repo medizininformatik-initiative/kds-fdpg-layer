@@ -4,6 +4,7 @@ Id: fdpg-pr-fall-kontakt-gesundheitseinrichtung
 Title: "FDPG PR Basis KontaktGesundheitseinrichtung"
 Description: "FDPG Profil - MII_PR_Fall_KontaktGesundheitseinrichtung"
 * insert FDPGMetadata
+* insert FDPGModule(basis)
 * insert Translation(^title, de-DE, Fall - Kontakt mit einer Gesundheitseinrichtung)
 * insert Translation(^title, en-US, Treatment case - Encounter with Health Care Facility)
 // --- Element Designations ---

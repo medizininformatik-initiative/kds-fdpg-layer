@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-anzahl-untersuchte-lymphknoten
 Title: "FDPG PR Onko Anzahl Untersuchte Lymphknoten"
 Description: "FDPG Profil - MII_PR_Onko_Anzahl_Untersuchte_Lymphknoten"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Anzahl der untersuchten Lymphknoten)
-* insert Translation(^title, en-US, FDPG PR Onko Anzahl Untersuchte Lymphknoten)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Anzahl der untersuchten Lymphknoten)
+* insert Translation(^title, en-US, Number of Examined Lymph Nodes)
 // --- Element Designations ---
 // Observation.category
 * category ^short = "Classification of  type of observation"

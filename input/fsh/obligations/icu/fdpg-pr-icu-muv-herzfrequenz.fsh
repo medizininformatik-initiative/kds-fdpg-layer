@@ -4,6 +4,7 @@ Id: fdpg-pr-icu-muv-herzfrequenz
 Title: "FDPG PR ICU MUV Herzfrequenz"
 Description: "FDPG Profil - MII_PR_ICU_MUV_Herzfrequenz"
 * insert FDPGMetadata
+* insert FDPGModule(icu)
 * insert Translation(^title, de-DE, MII SD ICU MUV Herzfrequenz)
 * insert Translation(^title, en-US, FDPG PR ICU MUV Herzfrequenz)
 // --- Element Designations ---

@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-beatmungszeit-niedrigem-druck
 Title: "FDPG PR ICU Beatmungszeit Niedrigem Druck"
 Description: "FDPG Profil - MII_PR_ICU_Beatmungszeit_Niedrigem_Druck"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Beatmungszeit Niedrigem Druck)
-* insert Translation(^title, en-US, FDPG PR ICU Beatmungszeit Niedrigem Druck)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Beatmungszeit bei niedrigem Druck)
+* insert Translation(^title, en-US, Ventilation Time at Low Pressure)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

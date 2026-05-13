@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-horowitz-in-arteriellem-blut
 Title: "FDPG PR ICU Horowitz In Arteriellem Blut"
 Description: "FDPG Profil - MII_PR_ICU_Horowitz_In_Arteriellem_Blut"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Horowitz In Arteriellem Blut)
-* insert Translation(^title, en-US, FDPG PR ICU Horowitz In Arteriellem Blut)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Horowitz-Index in arteriellem Blut)
+* insert Translation(^title, en-US, Horowitz Index (P/F Ratio\) in Arterial Blood)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

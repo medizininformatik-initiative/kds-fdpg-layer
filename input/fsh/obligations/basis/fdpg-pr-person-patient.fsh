@@ -4,6 +4,7 @@ Id: fdpg-pr-person-patient
 Title: "FDPG PR Basis Patient"
 Description: "FDPG Profil - MII_PR_Person_Patient"
 * insert FDPGMetadata
+* insert FDPGModule(basis)
 * insert Translation(^title, de-DE, Patient / Patientin)
 * insert Translation(^title, en-US, Patient)
 // --- Element Designations ---

@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-atemwegsdruck-bei-null-expiratorischem-gasfluss
 Title: "FDPG PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss"
 Description: "FDPG Profil - MII_PR_ICU_Atemwegsdruck_Bei_Null_Expiratorischem_Gasfluss"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss)
-* insert Translation(^title, en-US, FDPG PR ICU Atemwegsdruck Bei Null Expiratorischem Gasfluss)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Atemwegsdruck bei null expiratorischem Gasfluss)
+* insert Translation(^title, en-US, Airway Pressure at Zero Expiratory Gas Flow)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

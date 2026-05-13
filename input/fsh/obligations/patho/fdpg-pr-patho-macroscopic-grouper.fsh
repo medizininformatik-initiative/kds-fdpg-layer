@@ -4,6 +4,7 @@ Id: fdpg-pr-patho-macroscopic-grouper
 Title: "FDPG PR Patho Macroscopic Grouper"
 Description: "FDPG Profil - MII_PR_Patho_Macroscopic_Grouper"
 * insert FDPGMetadata
+* insert FDPGModule(patho)
 * insert Translation(^title, de-DE, MII PR Patho Macroscopic Grouper)
 * insert Translation(^title, en-US, MII PR Patho Macroscopic Grouper)
 // --- Element Designations ---

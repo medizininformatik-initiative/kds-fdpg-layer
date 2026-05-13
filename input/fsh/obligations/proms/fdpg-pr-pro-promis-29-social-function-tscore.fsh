@@ -4,6 +4,7 @@ Id: fdpg-pr-pro-promis-29-social-function-tscore
 Title: "FDPG PR PRO PROMIS 29 Social Function TScore"
 Description: "FDPG Profil - MII_PR_PRO_PROMIS_29_Social_Function_TScore"
 * insert FDPGMetadata
+* insert FDPGModule(proms)
 * insert Translation(^title, de-DE, MII PR PRO PROMIS-29 Social Function T-Score)
 * insert Translation(^title, en-US, FDPG PR PRO PROMIS 29 Social Function TScore)
 // --- Element Designations ---

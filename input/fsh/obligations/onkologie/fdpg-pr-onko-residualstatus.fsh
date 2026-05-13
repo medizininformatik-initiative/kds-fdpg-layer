@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-residualstatus
 Title: "FDPG PR Onko Residualstatus"
 Description: "FDPG Profil - MII_PR_Onko_Residualstatus"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Residualstatus)
-* insert Translation(^title, en-US, FDPG PR Onko Residualstatus)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Residualstatus)
+* insert Translation(^title, en-US, Residual Status)
 // --- Element Designations ---
 // Observation.partOf
 * partOf ^short = "Part of referenced event"

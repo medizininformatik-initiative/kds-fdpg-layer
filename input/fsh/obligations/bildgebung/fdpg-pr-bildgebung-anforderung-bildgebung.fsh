@@ -4,6 +4,7 @@ Id: fdpg-pr-bildgebung-anforderung-bildgebung
 Title: "FDPG PR Bildgebung Anforderung Bildgebung"
 Description: "FDPG Profil - MII_PR_Bildgebung_Anforderung_Bildgebung"
 * insert FDPGMetadata
+* insert FDPGModule(bildgebung)
 * insert Translation(^title, de-DE, Anforderung Bildgebung)
 * insert Translation(^title, en-US, radiological service request)
 // --- Element Designations ---

@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-diagnostische-implikation
 Title: "FDPG PR MTB Diagnostische Implikation"
 Description: "FDPG Profil - MII_PR_MTB_Diagnostische_Implikation"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Diagnostische Implikation)
 * insert Translation(^title, en-US, FDPG PR MTB Diagnostische Implikation)
 // --- Element Designations ---

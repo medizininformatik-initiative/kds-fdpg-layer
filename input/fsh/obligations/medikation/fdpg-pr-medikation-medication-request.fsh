@@ -4,6 +4,7 @@ Id: fdpg-pr-medikation-medication-request
 Title: "FDPG PR Medikation MedicationRequest"
 Description: "FDPG Profil - MII_PR_Medikation_MedicationRequest"
 * insert FDPGMetadata
+* insert FDPGModule(medikation)
 * insert Translation(^title, de-DE, Medikationsverordnung)
 * insert Translation(^title, en-US, Medication request)
 // --- Element Designations ---

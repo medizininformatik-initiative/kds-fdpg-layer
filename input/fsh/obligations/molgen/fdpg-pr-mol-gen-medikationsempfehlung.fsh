@@ -4,8 +4,9 @@ Id: fdpg-pr-mol-gen-medikationsempfehlung
 Title: "FDPG PR MolGen Medikationsempfehlung"
 Description: "FDPG Profil - MII_PR_MolGen_Medikationsempfehlung"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR MolGen Medikationsempfehlung)
-* insert Translation(^title, en-US, FDPG PR MolGen Medikationsempfehlung)
+* insert FDPGModule(molgen)
+* insert Translation(^title, de-DE, Medikationsempfehlung)
+* insert Translation(^title, en-US, Medication Recommendation)
 // --- Element Designations ---
 // Task.status
 * status ^short = "Status"

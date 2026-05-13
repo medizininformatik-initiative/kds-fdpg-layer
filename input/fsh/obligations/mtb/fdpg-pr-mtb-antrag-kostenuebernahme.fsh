@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-antrag-kostenuebernahme
 Title: "FDPG PR MTB Antrag Kostenuebernahme"
 Description: "FDPG Profil - MII_PR_MTB_Antrag_Kostenuebernahme"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Antrag Kostenuebernahme)
 * insert Translation(^title, en-US, FDPG PR MTB Antrag Kostenuebernahme)
 // --- Element Designations ---

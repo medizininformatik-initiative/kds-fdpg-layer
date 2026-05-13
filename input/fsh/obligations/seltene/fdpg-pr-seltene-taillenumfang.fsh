@@ -4,8 +4,9 @@ Id: fdpg-pr-seltene-taillenumfang
 Title: "FDPG PR Seltene Taillenumfang"
 Description: "FDPG Profil - MII_PR_Seltene_Taillenumfang"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR SE Taillenumfang)
-* insert Translation(^title, en-US, FDPG PR Seltene Taillenumfang)
+* insert FDPGModule(seltene)
+* insert Translation(^title, de-DE, Taillenumfang)
+* insert Translation(^title, en-US, Waist Circumference)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"

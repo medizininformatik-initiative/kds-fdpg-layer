@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-anzahl-befallene-lymphknoten
 Title: "FDPG PR Onko Anzahl Befallene Lymphknoten"
 Description: "FDPG Profil - MII_PR_Onko_Anzahl_Befallene_Lymphknoten"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Anzahl der befallenen Lymphknoten)
-* insert Translation(^title, en-US, FDPG PR Onko Anzahl Befallene Lymphknoten)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Anzahl der befallenen Lymphknoten)
+* insert Translation(^title, en-US, Number of Involved Lymph Nodes)
 // --- Element Designations ---
 // Observation.category
 * category ^short = "Classification of  type of observation"

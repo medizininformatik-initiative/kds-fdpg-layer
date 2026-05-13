@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-mamma-rezeptorstatus-estrogen
 Title: "FDPG PR Onko Mamma Rezeptorstatus Estrogen"
 Description: "FDPG Profil - MII_PR_Onko_Mamma_Rezeptorstatus_Estrogen"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Rezeptorstatus Estrogen)
-* insert Translation(^title, en-US, FDPG PR Onko Mamma Rezeptorstatus Estrogen)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Rezeptorstatus Östrogen)
+* insert Translation(^title, en-US, Estrogen Receptor Status)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Rezeptorstatus Estrogen"

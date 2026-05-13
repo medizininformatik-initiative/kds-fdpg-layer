@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-therapieempfehlung
 Title: "FDPG PR MTB Therapieempfehlung"
 Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Therapieempfehlung Systemische Therapie)
 * insert Translation(^title, en-US, FDPG PR MTB Therapieempfehlung)
 // --- Element Designations ---

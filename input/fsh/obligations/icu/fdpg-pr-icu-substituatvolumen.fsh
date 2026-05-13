@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-substituatvolumen
 Title: "FDPG PR ICU Substituatvolumen"
 Description: "FDPG Profil - MII_PR_ICU_Substituatvolumen"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Substituatvolumen)
-* insert Translation(^title, en-US, FDPG PR ICU Substituatvolumen)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Substituatvolumen)
+* insert Translation(^title, en-US, Substitution Fluid Volume)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-immunohistochemistry-msi
 Title: "FDPG PR MTB Immunohistochemistry MSI"
 Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry_MSI"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Immunohistochemistry Microsatellite Instability)
 * insert Translation(^title, en-US, FDPG PR MTB Immunohistochemistry MSI)
 // --- Element Designations ---

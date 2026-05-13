@@ -4,6 +4,7 @@ Id: fdpg-pr-pro-promis-29-pain-intensity
 Title: "FDPG PR PRO PROMIS 29 Pain Intensity"
 Description: "FDPG Profil - MII_PR_PRO_PROMIS_29_Pain_Intensity"
 * insert FDPGMetadata
+* insert FDPGModule(proms)
 * insert Translation(^title, de-DE, MII PR PRO PROMIS-29 Pain Intensity)
 * insert Translation(^title, en-US, FDPG PR PRO PROMIS 29 Pain Intensity)
 // --- Element Designations ---

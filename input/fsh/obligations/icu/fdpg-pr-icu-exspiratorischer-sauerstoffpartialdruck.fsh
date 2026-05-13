@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-exspiratorischer-sauerstoffpartialdruck
 Title: "FDPG PR ICU Exspiratorischer Sauerstoffpartialdruck"
 Description: "FDPG Profil - MII_PR_ICU_Exspiratorischer_Sauerstoffpartialdruck"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Exspiratorischer Sauerstoffpartialdruck)
-* insert Translation(^title, en-US, FDPG PR ICU Exspiratorischer Sauerstoffpartialdruck)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Exspiratorischer Sauerstoffpartialdruck)
+* insert Translation(^title, en-US, Expiratory Oxygen Partial Pressure)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

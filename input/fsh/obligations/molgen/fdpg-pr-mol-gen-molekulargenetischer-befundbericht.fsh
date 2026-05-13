@@ -4,8 +4,9 @@ Id: fdpg-pr-mol-gen-molekulargenetischer-befundbericht
 Title: "FDPG PR MolGen MolekulargenetischerBefundbericht"
 Description: "FDPG Profil - MII_PR_MolGen_MolekulargenetischerBefundbericht"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR MolGen Molekulargenetischer Befundbericht)
-* insert Translation(^title, en-US, FDPG PR MolGen MolekulargenetischerBefundbericht)
+* insert FDPGModule(molgen)
+* insert Translation(^title, de-DE, Molekulargenetischer Befundbericht)
+* insert Translation(^title, en-US, Molecular Genetic Diagnostic Report)
 // --- Element Designations ---
 // DiagnosticReport.extension:recommended-action
 * extension[recommended-action] ^short = "Empfohlene Maßnahme"

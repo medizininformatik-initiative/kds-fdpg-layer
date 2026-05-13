@@ -4,6 +4,7 @@ Id: fdpg-pr-person-patient-pseudonymisiert
 Title: "FDPG PR Basis PatientPseudonymisiert"
 Description: "FDPG Profil - MII_PR_Person_PatientPseudonymisiert"
 * insert FDPGMetadata
+* insert FDPGModule(basis)
 * insert Translation(^title, de-DE, Patient / Patientin pseudonymisiert)
 * insert Translation(^title, en-US, Patient pseudonymized)
 // --- Element Designations ---

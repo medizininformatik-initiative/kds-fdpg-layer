@@ -4,8 +4,9 @@ Id: fdpg-pr-seltene-genetic-diagnosis
 Title: "FDPG PR Seltene GeneticDiagnosis"
 Description: "FDPG Profil - MII_PR_Seltene_GeneticDiagnosis"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR SE Genetic Diagnosis)
-* insert Translation(^title, en-US, FDPG PR Seltene GeneticDiagnosis)
+* insert FDPGModule(seltene)
+* insert Translation(^title, de-DE, Genetische Diagnose)
+* insert Translation(^title, en-US, Genetic Diagnosis)
 // --- Element Designations ---
 // Condition.extension:ReferenzPrimaerdiagnose
 * extension[ReferenzPrimaerdiagnose] ^short = "Conditions associated with this condition"

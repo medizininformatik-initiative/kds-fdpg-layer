@@ -4,6 +4,7 @@ Id: fdpg-pr-medikation-medication-administration
 Title: "FDPG PR Medikation MedicationAdministration"
 Description: "FDPG Profil - MII_PR_Medikation_MedicationAdministration"
 * insert FDPGMetadata
+* insert FDPGModule(medikation)
 * insert Translation(^title, de-DE, Medikationsverabreichung)
 * insert Translation(^title, en-US, Medication administration)
 // --- Element Designations ---

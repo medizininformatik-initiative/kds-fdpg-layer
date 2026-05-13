@@ -4,6 +4,7 @@ Id: fdpg-pr-mikrobio-mre-klasse
 Title: "FDPG PR Mikrobio MRE Klasse"
 Description: "FDPG Profil - MII_PR_Mikrobio_MRE_Klasse"
 * insert FDPGMetadata
+* insert FDPGModule(mikrobiologie)
 * insert Translation(^title, de-DE, MRE-Klassifikation)
 * insert Translation(^title, en-US, MDRO classification)
 // --- Element Designations ---

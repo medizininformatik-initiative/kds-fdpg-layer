@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-dauer-haemodialysesitzung
 Title: "FDPG PR ICU Dauer Haemodialysesitzung"
 Description: "FDPG Profil - MII_PR_ICU_Dauer_Haemodialysesitzung"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII ICU Dauer Haemodialysesitzung)
-* insert Translation(^title, en-US, FDPG PR ICU Dauer Haemodialysesitzung)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Dauer der Hämodialysesitzung)
+* insert Translation(^title, en-US, Duration of Hemodialysis Session)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

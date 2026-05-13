@@ -4,6 +4,7 @@ Id: fdpg-pr-bildgebung-radiologischer-befund
 Title: "FDPG PR Bildgebung Radiologischer Befund"
 Description: "FDPG Profil - MII_PR_Bildgebung_Radiologischer_Befund"
 * insert FDPGMetadata
+* insert FDPGModule(bildgebung)
 * insert Translation(^title, de-DE, Befundbericht)
 * insert Translation(^title, en-US, diagnostic report)
 // --- Element Designations ---

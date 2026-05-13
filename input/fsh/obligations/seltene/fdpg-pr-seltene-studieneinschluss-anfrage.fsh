@@ -4,8 +4,9 @@ Id: fdpg-pr-seltene-studieneinschluss-anfrage
 Title: "FDPG PR Seltene Studieneinschluss Anfrage"
 Description: "FDPG Profil - MII_PR_Seltene_Studieneinschluss_Anfrage"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR SE Studieneinschluss Anfrage)
-* insert Translation(^title, en-US, FDPG PR Seltene Studieneinschluss Anfrage)
+* insert FDPGModule(seltene)
+* insert Translation(^title, de-DE, Studieneinschluss-Anfrage)
+* insert Translation(^title, en-US, Study Enrollment Request)
 // --- Element Designations ---
 // ServiceRequest.extension:statusReason
 * extension[statusReason] ^short = "Reason for current status"

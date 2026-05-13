@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-fruehere-tumorerkrankung
 Title: "FDPG PR Onko Fruehere Tumorerkrankung"
 Description: "FDPG Profil - MII_PR_Onko_Fruehere_Tumorerkrankung"
 * insert FDPGMetadata
+* insert FDPGModule(onkologie)
 * insert Translation(^title, de-DE, Frühere Tumorerkrankung)
-* insert Translation(^title, en-US, FDPG PR Onko Fruehere Tumorerkrankung)
+* insert Translation(^title, en-US, Previous Tumor Disease)
 // --- Element Designations ---
 // Condition.extension:assertedDate
 * extension[assertedDate] ^short = "Diagnosedatum der früheren Tumorerkrankung"

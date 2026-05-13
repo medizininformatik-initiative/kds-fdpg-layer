@@ -4,6 +4,7 @@ Id: fdpg-pr-biobank-specimen-zellinie-organoid
 Title: "FDPG PR Biobank Specimen Zellinie Organoid"
 Description: "FDPG Profil - MII_PR_Biobank_Specimen_Zellinie_Organoid"
 * insert FDPGMetadata
+* insert FDPGModule(biobank)
 * insert Translation(^title, de-DE, Specimen Zellinie Organoid)
 * insert Translation(^title, en-US, Specimen Cellline Organoid)
 // --- Element Designations ---

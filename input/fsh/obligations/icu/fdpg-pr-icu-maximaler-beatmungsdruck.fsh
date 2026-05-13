@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-maximaler-beatmungsdruck
 Title: "FDPG PR ICU Maximaler Beatmungsdruck"
 Description: "FDPG Profil - MII_PR_ICU_Maximaler_Beatmungsdruck"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Maximaler Beatmungsdruck)
-* insert Translation(^title, en-US, FDPG PR ICU Maximaler Beatmungsdruck)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Maximaler Beatmungsdruck)
+* insert Translation(^title, en-US, Peak Ventilation Pressure)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

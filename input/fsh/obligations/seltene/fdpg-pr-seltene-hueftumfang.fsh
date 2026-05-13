@@ -4,8 +4,9 @@ Id: fdpg-pr-seltene-hueftumfang
 Title: "FDPG PR Seltene Hueftumfang"
 Description: "FDPG Profil - MII_PR_Seltene_Hueftumfang"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR SE Hüftumfang)
-* insert Translation(^title, en-US, FDPG PR Seltene Hueftumfang)
+* insert FDPGModule(seltene)
+* insert Translation(^title, de-DE, Hüftumfang)
+* insert Translation(^title, en-US, Hip Circumference)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"

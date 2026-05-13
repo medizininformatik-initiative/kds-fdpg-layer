@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-spontanes-atemzugvolumen
 Title: "FDPG PR ICU Spontanes Atemzugvolumen"
 Description: "FDPG Profil - MII_PR_ICU_Spontanes_Atemzugvolumen"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Spontanes Atemzugvolumen)
-* insert Translation(^title, en-US, FDPG PR ICU Spontanes Atemzugvolumen)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Spontanes Atemzugvolumen)
+* insert Translation(^title, en-US, Spontaneous Tidal Volume)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

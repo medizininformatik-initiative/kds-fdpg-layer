@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-bilanz-ausfuhr-gallenfluessigkeit
 Title: "FDPG PR ICU Bilanz Ausfuhr Gallenfluessigkeit"
 Description: "FDPG Profil - MII_PR_ICU_Bilanz_Ausfuhr_Gallenfluessigkeit"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Bilanz Ausfuhr Gallenfluessigkeit)
-* insert Translation(^title, en-US, FDPG PR ICU Bilanz Ausfuhr Gallenfluessigkeit)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Bilanz - Ausfuhr Gallenflüssigkeit)
+* insert Translation(^title, en-US, Fluid Balance - Bile Output)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

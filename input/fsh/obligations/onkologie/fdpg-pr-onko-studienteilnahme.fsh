@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-studienteilnahme
 Title: "FDPG PR Onko Studienteilnahme"
 Description: "FDPG Profil - MII_PR_Onko_Studienteilnahme"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Studienteilnahme)
-* insert Translation(^title, en-US, FDPG PR Onko Studienteilnahme)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Studienteilnahme)
+* insert Translation(^title, en-US, Study Participation)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Studienteilnahme laut oBDS"

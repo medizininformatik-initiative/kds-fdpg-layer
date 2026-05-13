@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-mamma-operation
 Title: "FDPG PR Onko Mamma Operation"
 Description: "FDPG Profil - MII_PR_Onko_Mamma_Operation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Mamma Operation)
-* insert Translation(^title, en-US, FDPG PR Onko Mamma Operation)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Mamma-Operation)
+* insert Translation(^title, en-US, Breast Surgery)
 // --- Element Designations ---
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"

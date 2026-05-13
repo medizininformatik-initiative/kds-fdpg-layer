@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-mamma-menopausenstatus
 Title: "FDPG PR Onko Mamma Menopausenstatus"
 Description: "FDPG Profil - MII_PR_Onko_Mamma_Menopausenstatus"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Menopausenstatus Mamma)
-* insert Translation(^title, en-US, FDPG PR Onko Mamma Menopausenstatus)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Menopausenstatus)
+* insert Translation(^title, en-US, Menopausal Status)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Status der Menopause"

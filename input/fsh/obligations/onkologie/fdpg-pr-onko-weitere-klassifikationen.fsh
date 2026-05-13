@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-weitere-klassifikationen
 Title: "FDPG PR Onko Weitere Klassifikationen"
 Description: "FDPG Profil - MII_PR_Onko_Weitere_Klassifikationen"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Weitere Klassifikationen)
-* insert Translation(^title, en-US, FDPG PR Onko Weitere Klassifikationen)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Weitere Klassifikationen)
+* insert Translation(^title, en-US, Additional Classifications)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Type of observation (code / type)"

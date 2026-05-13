@@ -4,8 +4,9 @@ Id: fdpg-pr-seltene-hpo-assessment
 Title: "FDPG PR Seltene HPO Assessment"
 Description: "FDPG Profil - MII_PR_Seltene_HPO_Assessment"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII Profile SE HPO Assessment)
-* insert Translation(^title, en-US, FDPG PR Seltene HPO Assessment)
+* insert FDPGModule(seltene)
+* insert Translation(^title, de-DE, HPO-Beurteilung)
+* insert Translation(^title, en-US, HPO Assessment)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"

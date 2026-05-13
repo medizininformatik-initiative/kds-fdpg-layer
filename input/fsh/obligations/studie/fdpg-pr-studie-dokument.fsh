@@ -4,8 +4,9 @@ Id: fdpg-pr-studie-dokument
 Title: "FDPG PR Studie Dokument"
 Description: "FDPG Profil - MII_PR_Studie_Dokument"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Studie Dokument)
-* insert Translation(^title, en-US, FDPG PR Studie Dokument)
+* insert FDPGModule(studie)
+* insert Translation(^title, de-DE, Studiendokument)
+* insert Translation(^title, en-US, Study Document)
 // --- Element Designations ---
 // DocumentReference.status
 * status ^short = "Status"

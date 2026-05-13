@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-spontane-atemfrequenz-beatmet
 Title: "FDPG PR ICU Spontane Atemfrequenz Beatmet"
 Description: "FDPG Profil - MII_PR_ICU_Spontane_Atemfrequenz_Beatmet"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Spontane Atemfrequenz Beatmet)
-* insert Translation(^title, en-US, FDPG PR ICU Spontane Atemfrequenz Beatmet)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Spontane Atemfrequenz (beatmet\))
+* insert Translation(^title, en-US, Spontaneous Respiratory Rate (Ventilated\))
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

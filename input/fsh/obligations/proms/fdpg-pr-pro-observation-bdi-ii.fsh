@@ -4,6 +4,7 @@ Id: fdpg-pr-pro-observation-bdi-ii
 Title: "FDPG PR PRO Observation BDI II"
 Description: "FDPG Profil - MII_PR_PRO_Observation_BDI_II"
 * insert FDPGMetadata
+* insert FDPGModule(proms)
 * insert Translation(^title, de-DE, MII PR PRO Observation BDI-II)
 * insert Translation(^title, en-US, FDPG PR PRO Observation BDI II)
 // --- Element Designations ---

@@ -4,6 +4,7 @@ Id: fdpg-pr-medikation-medikationsliste
 Title: "FDPG PR Medikation Medikationsliste"
 Description: "FDPG Profil - MII_PR_Medikation_Medikationsliste"
 * insert FDPGMetadata
+* insert FDPGModule(medikation)
 * insert Translation(^title, de-DE, Medikationsliste)
 * insert Translation(^title, en-US, Medicationlist)
 // --- Element Designations ---

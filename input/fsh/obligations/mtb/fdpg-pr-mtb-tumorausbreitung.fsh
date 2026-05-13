@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-tumorausbreitung
 Title: "FDPG PR MTB Tumorausbreitung"
 Description: "FDPG Profil - MII_PR_MTB_Tumorausbreitung"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Tumorausbreitung)
 * insert Translation(^title, en-US, FDPG PR MTB Tumorausbreitung)
 // --- Element Designations ---

@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-dna-fusion
 Title: "FDPG PR MTB DNA Fusion"
 Description: "FDPG Profil - MII_PR_MTB_DNA_Fusion"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB DNA Fusion)
 * insert Translation(^title, en-US, FDPG PR MTB DNA Fusion)
 // --- Element Designations ---

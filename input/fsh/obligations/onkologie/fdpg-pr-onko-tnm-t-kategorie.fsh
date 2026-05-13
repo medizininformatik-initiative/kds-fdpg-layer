@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-tnm-t-kategorie
 Title: "FDPG PR Onko TNM T Kategorie"
 Description: "FDPG Profil - MII_PR_Onko_TNM_T_Kategorie"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie TNM T-Kategorie)
-* insert Translation(^title, en-US, FDPG PR Onko TNM T Kategorie)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, TNM T-Kategorie)
+* insert Translation(^title, en-US, TNM T-Category)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"

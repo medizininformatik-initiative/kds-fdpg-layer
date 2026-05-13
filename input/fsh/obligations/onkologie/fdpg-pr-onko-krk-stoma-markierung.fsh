@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-krk-stoma-markierung
 Title: "FDPG PR Onko KRK Stoma Markierung"
 Description: "FDPG Profil - MII_PR_Onko_KRK_Stoma_Markierung"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie KRK Stoma-Markierung)
-* insert Translation(^title, en-US, FDPG PR Onko KRK Stoma Markierung)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, KRK Stoma-Markierung)
+* insert Translation(^title, en-US, Colorectal Stoma Marking)
 // --- Element Designations ---
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"

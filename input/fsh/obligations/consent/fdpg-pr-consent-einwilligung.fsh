@@ -4,8 +4,9 @@ Id: fdpg-pr-consent-einwilligung
 Title: "FDPG PR Consent Einwilligung"
 Description: "FDPG Profil - MII_PR_Consent_Einwilligung"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Profile - MI-I - Consent - Einwilligung)
-* insert Translation(^title, en-US, FDPG PR Consent Einwilligung)
+* insert FDPGModule(consent)
+* insert Translation(^title, de-DE, Einwilligung)
+* insert Translation(^title, en-US, Consent)
 // --- Element Designations ---
 // Consent.status
 * status ^short = "draft | proposed | active | rejected | inactive | entered-in-error"

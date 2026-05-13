@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-melanom-breslow-tiefe
 Title: "FDPG PR Onko Melanom Breslow Tiefe"
 Description: "FDPG Profil - MII_PR_Onko_Melanom_Breslow_Tiefe"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Melanom Breslow Tiefe)
-* insert Translation(^title, en-US, FDPG PR Onko Melanom Breslow Tiefe)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Melanom Breslow-Dicke)
+* insert Translation(^title, en-US, Melanoma Breslow Thickness)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Breslow Tiefe"

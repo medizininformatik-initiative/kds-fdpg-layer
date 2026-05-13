@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-mamma-rezeptorstatus-progesteron
 Title: "FDPG PR Onko Mamma Rezeptorstatus Progesteron"
 Description: "FDPG Profil - MII_PR_Onko_Mamma_Rezeptorstatus_Progesteron"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Rezeptorstatus Progesteron)
-* insert Translation(^title, en-US, FDPG PR Onko Mamma Rezeptorstatus Progesteron)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Rezeptorstatus Progesteron)
+* insert Translation(^title, en-US, Progesterone Receptor Status)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Rezeptorstatus Progesteron"

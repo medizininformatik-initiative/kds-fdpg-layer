@@ -21,6 +21,11 @@ RuleSet: FDPGMetadata
 * ^experimental = false
 * ^date = "2025-01-16"
 
+// Tags the profile with its source KDS module via StructureDefinition.keyword.
+// Code muss aus FDPGModuleCS stammen.
+RuleSet: FDPGModule(code)
+* ^keyword[+] = FDPGModuleCS#{code}
+
 // Translation helper - for simple content without special characters
 RuleSet: Translation(path, lang, content)
 * {path}.extension[+].url = $translation

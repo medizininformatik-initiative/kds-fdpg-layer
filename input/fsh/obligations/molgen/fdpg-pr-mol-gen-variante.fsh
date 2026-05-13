@@ -4,8 +4,9 @@ Id: fdpg-pr-mol-gen-variante
 Title: "FDPG PR MolGen Variante"
 Description: "FDPG Profil - MII_PR_MolGen_Variante"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR MolGen Variante)
-* insert Translation(^title, en-US, FDPG PR MolGen Variante)
+* insert FDPGModule(molgen)
+* insert Translation(^title, de-DE, Variante)
+* insert Translation(^title, en-US, Variant)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "Status"

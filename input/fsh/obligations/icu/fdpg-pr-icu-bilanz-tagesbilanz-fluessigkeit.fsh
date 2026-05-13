@@ -4,6 +4,7 @@ Id: fdpg-pr-icu-bilanz-tagesbilanz-fluessigkeit
 Title: "FDPG PR ICU Bilanz Tagesbilanz Fluessigkeit"
 Description: "FDPG Profil - MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit"
 * insert FDPGMetadata
+* insert FDPGModule(icu)
 * insert Translation(^title, de-DE, MII PR ICU Bilanz Tagesbilanz Fluessigkeit)
 * insert Translation(^title, en-US, FDPG PR ICU Bilanz Tagesbilanz Fluessigkeit)
 // --- Element Designations ---

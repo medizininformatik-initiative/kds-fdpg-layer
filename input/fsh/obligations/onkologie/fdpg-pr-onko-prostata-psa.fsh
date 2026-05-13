@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-prostata-psa
 Title: "FDPG PR Onko Prostata PSA"
 Description: "FDPG Profil - MII_PR_Onko_Prostata_PSA"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie PSA-Wert)
-* insert Translation(^title, en-US, FDPG PR Onko Prostata PSA)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, PSA-Wert)
+* insert Translation(^title, en-US, PSA Value)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "PSA-Wert"

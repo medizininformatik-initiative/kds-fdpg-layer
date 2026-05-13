@@ -4,6 +4,7 @@ Id: fdpg-pr-mikrobio-keimzahl
 Title: "FDPG PR Mikrobio Keimzahl"
 Description: "FDPG Profil - MII_PR_Mikrobio_Keimzahl"
 * insert FDPGMetadata
+* insert FDPGModule(mikrobiologie)
 * insert Translation(^title, de-DE, Keimzahl)
 * insert Translation(^title, en-US, Bacterial count)
 // --- Element Designations ---

@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-endexpiratorischer-kohlendioxidpartialdruck
 Title: "FDPG PR ICU Endexpiratorischer Kohlendioxidpartialdruck"
 Description: "FDPG Profil - MII_PR_ICU_Endexpiratorischer_Kohlendioxidpartialdruck"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Endexpiratorischer Kohlendioxidpartialdruck)
-* insert Translation(^title, en-US, FDPG PR ICU Endexpiratorischer Kohlendioxidpartialdruck)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Endexpiratorischer Kohlendioxidpartialdruck)
+* insert Translation(^title, en-US, End-Tidal Carbon Dioxide Partial Pressure (etCO2\))
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

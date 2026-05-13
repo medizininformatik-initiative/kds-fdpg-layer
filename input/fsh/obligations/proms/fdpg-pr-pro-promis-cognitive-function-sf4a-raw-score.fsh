@@ -4,6 +4,7 @@ Id: fdpg-pr-pro-promis-cognitive-function-sf4a-raw-score
 Title: "FDPG PR PRO PROMIS Cognitive Function SF4a Raw Score"
 Description: "FDPG Profil - MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score"
 * insert FDPGMetadata
+* insert FDPGModule(proms)
 * insert Translation(^title, de-DE, MII PR PRO PROMIS Cognitive Function SF 4a Raw Score)
 * insert Translation(^title, en-US, FDPG PR PRO PROMIS Cognitive Function SF4a Raw Score)
 // --- Element Designations ---

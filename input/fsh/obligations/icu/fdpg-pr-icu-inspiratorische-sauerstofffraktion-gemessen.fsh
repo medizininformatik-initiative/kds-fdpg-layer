@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-inspiratorische-sauerstofffraktion-gemessen
 Title: "FDPG PR ICU Inspiratorische Sauerstofffraktion Gemessen"
 Description: "FDPG Profil - MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MIIm PR ICU Inspiratorische Sauerstofffraktion Gemessen)
-* insert Translation(^title, en-US, FDPG PR ICU Inspiratorische Sauerstofffraktion Gemessen)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Inspiratorische Sauerstofffraktion (gemessen\))
+* insert Translation(^title, en-US, Fraction of Inspired Oxygen - Measured (FiO2\))
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

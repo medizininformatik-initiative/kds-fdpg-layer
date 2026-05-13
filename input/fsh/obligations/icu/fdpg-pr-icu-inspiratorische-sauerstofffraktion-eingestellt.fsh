@@ -4,6 +4,7 @@ Id: fdpg-pr-icu-inspiratorische-sauerstofffraktion-eingestellt
 Title: "FDPG PR ICU Inspiratorische Sauerstofffraktion Eingestellt"
 Description: "FDPG Profil - MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Eingestellt"
 * insert FDPGMetadata
+* insert FDPGModule(icu)
 * insert Translation(^title, de-DE, MII PR ICU Inspiratorische Sauerstofffraktion Eingestellt)
 * insert Translation(^title, en-US, FDPG PR ICU Inspiratorische Sauerstofffraktion Eingestellt)
 // --- Element Designations ---

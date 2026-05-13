@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-prostata-clavien-dindo
 Title: "FDPG PR Onko Prostata Clavien Dindo"
 Description: "FDPG Profil - MII_PR_Onko_Prostata_Clavien_Dindo"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Clavien Dindo)
-* insert Translation(^title, en-US, FDPG PR Onko Prostata Clavien Dindo)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Clavien-Dindo-Klassifikation)
+* insert Translation(^title, en-US, Clavien-Dindo Classification)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Postoperative Komplikation nach Clavien-Dindo"

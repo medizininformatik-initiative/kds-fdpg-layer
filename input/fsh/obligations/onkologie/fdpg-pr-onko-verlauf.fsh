@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-verlauf
 Title: "FDPG PR Onko Verlauf"
 Description: "FDPG Profil - MII_PR_Onko_Verlauf"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Verlauf)
-* insert Translation(^title, en-US, FDPG PR Onko Verlauf)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Onkologischer Verlauf)
+* insert Translation(^title, en-US, Oncology Disease Course)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

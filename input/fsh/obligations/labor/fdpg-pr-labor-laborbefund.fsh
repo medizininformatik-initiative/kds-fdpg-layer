@@ -4,6 +4,7 @@ Id: fdpg-pr-labor-laborbefund
 Title: "FDPG PR Labor Laborbefund"
 Description: "FDPG Profil - MII_PR_Labor_Laborbefund"
 * insert FDPGMetadata
+* insert FDPGModule(labor)
 * insert Translation(^title, de-DE, Laborbefund)
 * insert Translation(^title, en-US, Laboratory report)
 // --- Element Designations ---

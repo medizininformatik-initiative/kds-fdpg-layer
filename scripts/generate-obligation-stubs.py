@@ -268,7 +268,7 @@ def generate_fdpg_title(parent_name, module_label):
     return f"FDPG PR {module_label} {readable}"
 
 
-def generate_fsh_file(parent_sd, module_config, field_config=None):
+def generate_fsh_file(parent_sd, module_config, field_config=None, module_key=None):
     """Generate complete FSH file content for one profile."""
     parent_name = parent_sd["name"]
     fdpg_name = generate_fdpg_name(parent_name)
@@ -289,6 +289,8 @@ def generate_fsh_file(parent_sd, module_config, field_config=None):
     lines.append(f'Title: "{fdpg_title}"')
     lines.append(f'Description: "FDPG Profil - {parent_name}"')
     lines.append("* insert FDPGMetadata")
+    if module_key:
+        lines.append(f"* insert FDPGModule({module_key})")
     # Preserve abstract flag from upstream MII parent so FDPG overlay doesn't
     # accidentally turn an abstract type (e.g. Patho_Base_Observation) into a
     # concrete profile that researchers could select in the Antragsportal.
@@ -422,7 +424,7 @@ def process_module(module_name, generate_files=True, print_aliases=False, print_
         resource_type = sd.get("type", "Resource")
 
         # Generate FSH file
-        content, fdpg_id, fdpg_name = generate_fsh_file(sd, config, field_config)
+        content, fdpg_id, fdpg_name = generate_fsh_file(sd, config, field_config, module_key=module_name)
 
         if generate_files:
             filename = f"{fdpg_id}.fsh"

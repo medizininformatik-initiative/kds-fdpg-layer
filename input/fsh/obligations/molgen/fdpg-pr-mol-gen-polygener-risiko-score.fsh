@@ -4,8 +4,9 @@ Id: fdpg-pr-mol-gen-polygener-risiko-score
 Title: "FDPG PR MolGen PolygenerRisikoScore"
 Description: "FDPG Profil - MII_PR_MolGen_PolygenerRisikoScore"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR MolGen Polygener Risiko Score)
-* insert Translation(^title, en-US, FDPG PR MolGen PolygenerRisikoScore)
+* insert FDPGModule(molgen)
+* insert Translation(^title, de-DE, Polygener Risiko-Score)
+* insert Translation(^title, en-US, Polygenic Risk Score)
 // --- Element Designations ---
 // RiskAssessment.identifier
 * identifier ^short = "Identifikator"

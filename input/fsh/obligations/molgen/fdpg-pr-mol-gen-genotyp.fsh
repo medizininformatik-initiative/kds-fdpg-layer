@@ -4,8 +4,9 @@ Id: fdpg-pr-mol-gen-genotyp
 Title: "FDPG PR MolGen Genotyp"
 Description: "FDPG Profil - MII_PR_MolGen_Genotyp"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR MolGen Genotyp)
-* insert Translation(^title, en-US, FDPG PR MolGen Genotyp)
+* insert FDPGModule(molgen)
+* insert Translation(^title, de-DE, Genotyp)
+* insert Translation(^title, en-US, Genotype)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "Status"

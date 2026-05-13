@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-nebenwirkung-adverse-event
 Title: "FDPG PR Onko Nebenwirkung Adverse Event"
 Description: "FDPG Profil - MII_PR_Onko_Nebenwirkung_Adverse_Event"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Nebenwirkung von Strahlentherapie und systemische Therapie)
-* insert Translation(^title, en-US, FDPG PR Onko Nebenwirkung Adverse Event)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Nebenwirkung von Strahlentherapie und systemischer Therapie)
+* insert Translation(^title, en-US, Adverse Event of Radiation and Systemic Therapy)
 // --- Element Designations ---
 // AdverseEvent.event
 * event ^short = "Type of the event itself in relation to the subject"

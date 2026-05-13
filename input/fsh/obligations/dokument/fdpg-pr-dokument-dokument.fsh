@@ -4,8 +4,9 @@ Id: fdpg-pr-dokument-dokument
 Title: "FDPG PR Dokument Dokument"
 Description: "FDPG Profil - MII_PR_Dokument_Dokument"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Dokument Dokument)
-* insert Translation(^title, en-US, FDPG PR Dokument Dokument)
+* insert FDPGModule(dokument)
+* insert Translation(^title, de-DE, Dokument)
+* insert Translation(^title, en-US, Document)
 // --- Element Designations ---
 // DocumentReference.extension:nlp-processing-status
 * extension[nlp-processing-status] ^short = "NLP Processing Status"

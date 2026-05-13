@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-krk-specimen
 Title: "FDPG PR Onko KRK Specimen"
 Description: "FDPG Profil - MII_PR_Onko_KRK_Specimen"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Specimen)
-* insert Translation(^title, en-US, FDPG PR Onko KRK Specimen)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, KRK Probe)
+* insert Translation(^title, en-US, Colorectal Specimen)
 // --- Element Designations ---
 // Specimen.accessionIdentifier
 * accessionIdentifier ^short = "Identifier assigned by the lab"

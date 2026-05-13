@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-follow-up-clinical-impression
 Title: "FDPG PR MTB Follow Up ClinicalImpression"
 Description: "FDPG Profil - MII_PR_MTB_Follow_Up_ClinicalImpression"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Clinical Impresssion)
 * insert Translation(^title, en-US, FDPG PR MTB Follow Up ClinicalImpression)
 // --- Element Designations ---

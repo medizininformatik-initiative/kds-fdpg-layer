@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-melanom-ulzeration
 Title: "FDPG PR Onko Melanom Ulzeration"
 Description: "FDPG Profil - MII_PR_Onko_Melanom_Ulzeration"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Melanom Ulzeration)
-* insert Translation(^title, en-US, FDPG PR Onko Melanom Ulzeration)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Melanom Ulzeration)
+* insert Translation(^title, en-US, Melanoma Ulceration)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Ulzeration"

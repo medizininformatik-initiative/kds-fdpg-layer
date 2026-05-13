@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-diagnose-primaertumor
 Title: "FDPG PR MTB Diagnose Primaertumor"
 Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Diagnose Primärtumor)
 * insert Translation(^title, en-US, FDPG PR MTB Diagnose Primaertumor)
 // --- Element Designations ---

@@ -4,6 +4,7 @@ Id: fdpg-pr-biobank-observation-karyotyp
 Title: "FDPG PR Biobank Observation Karyotyp"
 Description: "FDPG Profil - MII_PR_Biobank_Observation_Karyotyp"
 * insert FDPGMetadata
+* insert FDPGModule(biobank)
 * insert Translation(^title, de-DE, Observation Karyotyp)
 * insert Translation(^title, en-US, Observation Karyotype)
 // --- Element Designations ---

@@ -4,8 +4,9 @@ Id: fdpg-pr-mol-gen-molekulare-konsequenz
 Title: "FDPG PR MolGen MolekulareKonsequenz"
 Description: "FDPG Profil - MII_PR_MolGen_MolekulareKonsequenz"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR MolGen Molekulare Konsequenz)
-* insert Translation(^title, en-US, FDPG PR MolGen MolekulareKonsequenz)
+* insert FDPGModule(molgen)
+* insert Translation(^title, de-DE, Molekulare Konsequenz)
+* insert Translation(^title, en-US, Molecular Consequence)
 // --- Element Designations ---
 // Observation.extension:workflow-relatedArtifact
 * extension[workflow-relatedArtifact] ^short = "Verknüpfte Artefakte"

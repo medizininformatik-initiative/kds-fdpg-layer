@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-mamma-sozialdienst
 Title: "FDPG PR Onko Mamma Sozialdienst"
 Description: "FDPG Profil - MII_PR_Onko_Mamma_Sozialdienst"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Präoperative Drahtmarkierung Mamma)
-* insert Translation(^title, en-US, FDPG PR Onko Mamma Sozialdienst)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Sozialdienst Mamma)
+* insert Translation(^title, en-US, Social Services Breast)
 // --- Element Designations ---
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"

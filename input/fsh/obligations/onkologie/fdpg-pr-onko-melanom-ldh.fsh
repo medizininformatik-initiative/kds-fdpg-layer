@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-melanom-ldh
 Title: "FDPG PR Onko Melanom LDH"
 Description: "FDPG Profil - MII_PR_Onko_Melanom_LDH"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Melanom LDH)
-* insert Translation(^title, en-US, FDPG PR Onko Melanom LDH)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Melanom LDH-Wert)
+* insert Translation(^title, en-US, Melanoma LDH Value)
 // --- Element Designations ---
 // Observation.category
 * category ^short = "Classification of  type of observation"

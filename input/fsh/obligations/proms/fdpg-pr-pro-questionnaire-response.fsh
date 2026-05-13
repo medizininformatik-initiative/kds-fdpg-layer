@@ -4,6 +4,7 @@ Id: fdpg-pr-pro-questionnaire-response
 Title: "FDPG PR PRO QuestionnaireResponse"
 Description: "FDPG Profil - MII_PR_PRO_QuestionnaireResponse"
 * insert FDPGMetadata
+* insert FDPGModule(proms)
 * insert Translation(^title, de-DE, MII PR PRO QuestionnaireResponse)
 * insert Translation(^title, en-US, FDPG PR PRO QuestionnaireResponse)
 // --- Element Designations ---

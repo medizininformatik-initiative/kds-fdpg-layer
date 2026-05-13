@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-arterieller-druck
 Title: "FDPG PR ICU Arterieller Druck"
 Description: "FDPG Profil - MII_PR_ICU_Arterieller_Druck"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Arterieller Druck)
-* insert Translation(^title, en-US, FDPG PR ICU Arterieller Druck)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Arterieller Druck)
+* insert Translation(^title, en-US, Arterial Pressure)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

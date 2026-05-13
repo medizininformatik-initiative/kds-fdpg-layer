@@ -4,6 +4,7 @@ Id: fdpg-pr-mikrobio-diagnostic-report
 Title: "FDPG PR Mikrobio Diagnostic Report"
 Description: "FDPG Profil - MII_PR_Mikrobio_Diagnostic_Report"
 * insert FDPGMetadata
+* insert FDPGModule(mikrobiologie)
 * insert Translation(^title, de-DE, Mikrobiologiebefund)
 * insert Translation(^title, en-US, Microbiology report)
 // --- Element Designations ---

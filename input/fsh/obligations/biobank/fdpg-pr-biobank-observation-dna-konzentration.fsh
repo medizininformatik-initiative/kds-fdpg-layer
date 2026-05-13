@@ -4,6 +4,7 @@ Id: fdpg-pr-biobank-observation-dna-konzentration
 Title: "FDPG PR Biobank Observation DNA Konzentration"
 Description: "FDPG Profil - MII_PR_Biobank_Observation_DNA_Konzentration"
 * insert FDPGMetadata
+* insert FDPGModule(biobank)
 * insert Translation(^title, de-DE, Observation DNA Konzentration)
 * insert Translation(^title, en-US, Observation DNA Concentration)
 // --- Element Designations ---

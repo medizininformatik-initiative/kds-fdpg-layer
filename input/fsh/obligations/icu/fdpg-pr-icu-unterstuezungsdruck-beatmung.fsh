@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-unterstuezungsdruck-beatmung
 Title: "FDPG PR ICU Unterstuezungsdruck Beatmung"
 Description: "FDPG Profil - MII_PR_ICU_Unterstuezungsdruck_Beatmung"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Unterstuezungsdruck Beatmung)
-* insert Translation(^title, en-US, FDPG PR ICU Unterstuezungsdruck Beatmung)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Unterstützungsdruck Beatmung)
+* insert Translation(^title, en-US, Pressure Support (Ventilation\))
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

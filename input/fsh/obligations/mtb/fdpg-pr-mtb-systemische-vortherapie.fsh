@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-systemische-vortherapie
 Title: "FDPG PR MTB Systemische Vortherapie"
 Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB Systemische Vortherapie)
 * insert Translation(^title, en-US, FDPG PR MTB Systemische Vortherapie)
 // --- Element Designations ---

@@ -4,6 +4,7 @@ Id: fdpg-pr-bildgebung-koerperstruktur
 Title: "FDPG PR Bildgebung Koerperstruktur"
 Description: "FDPG Profil - MII_PR_Bildgebung_Koerperstruktur"
 * insert FDPGMetadata
+* insert FDPGModule(bildgebung)
 * insert Translation(^title, de-DE, Körperstrukutur)
 * insert Translation(^title, en-US, body structure)
 // --- Element Designations ---

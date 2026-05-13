@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-biomarker-her2-status
 Title: "FDPG PR MTB BIOMARKER HER2 STATUS"
 Description: "FDPG Profil - MII_PR_MTB_BIOMARKER_HER2_STATUS"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR Biomarker Her2 Status)
 * insert Translation(^title, en-US, FDPG PR MTB BIOMARKER HER2 STATUS)
 // --- Element Designations ---

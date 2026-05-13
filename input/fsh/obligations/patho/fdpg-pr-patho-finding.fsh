@@ -4,6 +4,7 @@ Id: fdpg-pr-patho-finding
 Title: "FDPG PR Patho Finding"
 Description: "FDPG Profil - MII_PR_Patho_Finding"
 * insert FDPGMetadata
+* insert FDPGModule(patho)
 * insert Translation(^title, de-DE, MII PR Patho Befund)
 * insert Translation(^title, en-US, MII PR Patho Finding)
 // --- Element Designations ---

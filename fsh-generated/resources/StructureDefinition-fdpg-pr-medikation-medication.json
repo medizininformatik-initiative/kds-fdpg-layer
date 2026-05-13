@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Medikation Medication"
+            "valueString": "Medikament"
           }
         ]
       },
@@ -65,6 +65,12 @@
   ],
   "description": "FDPG Profil - MII_PR_Medikation_Medication",
   "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
+  "keyword": [
+    {
+      "code": "medikation",
+      "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-module-cs"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

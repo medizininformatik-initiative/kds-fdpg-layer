@@ -4,8 +4,9 @@ Id: fdpg-pr-mol-gen-anforderung-genetischer-test
 Title: "FDPG PR MolGen AnforderungGenetischerTest"
 Description: "FDPG Profil - MII_PR_MolGen_AnforderungGenetischerTest"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR MolGen Anforderung genetischer Test)
-* insert Translation(^title, en-US, FDPG PR MolGen AnforderungGenetischerTest)
+* insert FDPGModule(molgen)
+* insert Translation(^title, de-DE, Anforderung genetischer Test)
+* insert Translation(^title, en-US, Genetic Test Order)
 // --- Element Designations ---
 // ServiceRequest.basedOn
 * basedOn ^short = "Basiert auf"

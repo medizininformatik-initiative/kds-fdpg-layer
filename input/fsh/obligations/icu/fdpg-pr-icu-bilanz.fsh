@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-bilanz
 Title: "FDPG PR ICU Bilanz"
 Description: "FDPG Profil - MII_PR_ICU_Bilanz"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Bilanz)
-* insert Translation(^title, en-US, FDPG PR ICU Bilanz)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Bilanz)
+* insert Translation(^title, en-US, Fluid Balance)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

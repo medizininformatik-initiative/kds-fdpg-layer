@@ -4,6 +4,7 @@ Id: fdpg-pr-icu-bilanz-ausfuhr-op-drainage
 Title: "FDPG PR ICU Bilanz Ausfuhr OP Drainage"
 Description: "FDPG Profil - MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage"
 * insert FDPGMetadata
+* insert FDPGModule(icu)
 * insert Translation(^title, de-DE, MII PR ICU Bilanz Ausfuhr OP Drainage)
 * insert Translation(^title, en-US, FDPG PR ICU Bilanz Ausfuhr OP Drainage)
 // --- Element Designations ---

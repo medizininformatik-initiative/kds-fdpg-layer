@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-krk-mrt-mesorektale-faszie
 Title: "FDPG PR Onko KRK MRT Mesorektale Faszie"
 Description: "FDPG Profil - MII_PR_Onko_KRK_MRT_Mesorektale_Faszie"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie KRK MRT/CT Abstand Mesorektale Faszie)
-* insert Translation(^title, en-US, FDPG PR Onko KRK MRT Mesorektale Faszie)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, KRK MRT/CT Abstand mesorektale Faszie)
+* insert Translation(^title, en-US, Colorectal MRI/CT Distance to Mesorectal Fascia)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "MRT/CT Abstand mesorektale Faszie"

@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-genetische-variante
 Title: "FDPG PR Onko Genetische Variante"
 Description: "FDPG Profil - MII_PR_Onko_Genetische_Variante"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Genetische Variante)
-* insert Translation(^title, en-US, FDPG PR Onko Genetische Variante)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Genetische Variante)
+* insert Translation(^title, en-US, Genetic Variant)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "Status"

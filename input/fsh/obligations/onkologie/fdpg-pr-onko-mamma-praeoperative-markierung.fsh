@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-mamma-praeoperative-markierung
 Title: "FDPG PR Onko Mamma Praeoperative Markierung"
 Description: "FDPG Profil - MII_PR_Onko_Mamma_Praeoperative_Markierung"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Präoperative Markierung Mamma)
-* insert Translation(^title, en-US, FDPG PR Onko Mamma Praeoperative Markierung)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Präoperative Markierung Mamma)
+* insert Translation(^title, en-US, Preoperative Breast Marking)
 // --- Element Designations ---
 // Procedure.partOf
 * partOf ^short = "Part of referenced event"

@@ -4,6 +4,7 @@ Id: fdpg-pr-patho-composition
 Title: "FDPG PR Patho Composition"
 Description: "FDPG Profil - MII_PR_Patho_Composition"
 * insert FDPGMetadata
+* insert FDPGModule(patho)
 * insert Translation(^title, de-DE, MII PR Patho Zusammenstellung)
 * insert Translation(^title, en-US, MII PR Patho Composition)
 // --- Element Designations ---

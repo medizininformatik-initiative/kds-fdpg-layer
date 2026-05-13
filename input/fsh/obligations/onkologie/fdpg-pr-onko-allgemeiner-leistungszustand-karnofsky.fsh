@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-allgemeiner-leistungszustand-karnofsky
 Title: "FDPG PR Onko Allgemeiner Leistungszustand Karnofsky"
 Description: "FDPG Profil - MII_PR_Onko_Allgemeiner_Leistungszustand_Karnofsky"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Allgemeiner Leistungszustand nach Karnofsky)
-* insert Translation(^title, en-US, FDPG PR Onko Allgemeiner Leistungszustand Karnofsky)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Allgemeiner Leistungszustand nach Karnofsky)
+* insert Translation(^title, en-US, General Performance Status (Karnofsky\))
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Type of observation (code / type)"

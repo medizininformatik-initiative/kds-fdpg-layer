@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-histologie-icdo3
 Title: "FDPG PR Onko Histologie ICDO3"
 Description: "FDPG Profil - MII_PR_Onko_Histologie_ICDO3"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Histologie ICD-O-3)
-* insert Translation(^title, en-US, FDPG PR Onko Histologie ICDO3)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Histologie nach ICD-O-3)
+* insert Translation(^title, en-US, Histology (ICD-O-3\))
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Histologische Bewertung nach ICD-0-3"

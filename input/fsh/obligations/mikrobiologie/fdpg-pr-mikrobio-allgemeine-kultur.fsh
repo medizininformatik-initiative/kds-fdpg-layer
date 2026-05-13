@@ -4,6 +4,7 @@ Id: fdpg-pr-mikrobio-allgemeine-kultur
 Title: "FDPG PR Mikrobio Allgemeine Kultur"
 Description: "FDPG Profil - MII_PR_Mikrobio_Allgemeine_Kultur"
 * insert FDPGMetadata
+* insert FDPGModule(mikrobiologie)
 * insert Translation(^title, de-DE, Mikrobiologische Kultur)
 * insert Translation(^title, en-US, Microbiological culture)
 // --- Element Designations ---

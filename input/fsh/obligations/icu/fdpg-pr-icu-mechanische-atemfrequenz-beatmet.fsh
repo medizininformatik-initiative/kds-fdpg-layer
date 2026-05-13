@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-mechanische-atemfrequenz-beatmet
 Title: "FDPG PR ICU Mechanische Atemfrequenz Beatmet"
 Description: "FDPG Profil - MII_PR_ICU_Mechanische_Atemfrequenz_Beatmet"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Mechanische Atemfrequenz Beatmet)
-* insert Translation(^title, en-US, FDPG PR ICU Mechanische Atemfrequenz Beatmet)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Mechanische Atemfrequenz (beatmet\))
+* insert Translation(^title, en-US, Mechanical Respiratory Rate (Ventilated\))
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

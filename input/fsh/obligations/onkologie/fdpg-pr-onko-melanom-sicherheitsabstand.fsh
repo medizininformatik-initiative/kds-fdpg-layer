@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-melanom-sicherheitsabstand
 Title: "FDPG PR Onko Melanom Sicherheitsabstand"
 Description: "FDPG Profil - MII_PR_Onko_Melanom_Sicherheitsabstand"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Melanom Sicherheitsabstand)
-* insert Translation(^title, en-US, FDPG PR Onko Melanom Sicherheitsabstand)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Melanom Sicherheitsabstand)
+* insert Translation(^title, en-US, Melanoma Safety Margin)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Sicherheitsabstand Primärtumor"

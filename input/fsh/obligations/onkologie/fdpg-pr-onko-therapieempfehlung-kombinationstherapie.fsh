@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-therapieempfehlung-kombinationstherapie
 Title: "FDPG PR Onko Therapieempfehlung Kombinationstherapie"
 Description: "FDPG Profil - MII_PR_Onko_Therapieempfehlung_Kombinationstherapie"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Therapieempfehlung Kombinationstherapie)
-* insert Translation(^title, en-US, FDPG PR Onko Therapieempfehlung Kombinationstherapie)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Therapieempfehlung Kombinationstherapie)
+* insert Translation(^title, en-US, Therapy Recommendation Combination Therapy)
 // --- Element Designations ---
 // RequestGroup.identifier
 * identifier ^short = "Business identifier"

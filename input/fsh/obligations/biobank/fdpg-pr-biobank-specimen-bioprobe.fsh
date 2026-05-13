@@ -4,6 +4,7 @@ Id: fdpg-pr-biobank-specimen-bioprobe
 Title: "FDPG PR Biobank Specimen Bioprobe"
 Description: "FDPG Profil - MII_PR_Biobank_Specimen_Bioprobe"
 * insert FDPGMetadata
+* insert FDPGModule(biobank)
 * insert Translation(^title, de-DE, Specimen Bioprobe)
 * insert Translation(^title, en-US, Specimen Bioprobe)
 // --- Element Designations ---

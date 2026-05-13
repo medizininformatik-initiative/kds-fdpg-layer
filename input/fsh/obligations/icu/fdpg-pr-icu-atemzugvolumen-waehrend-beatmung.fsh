@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-atemzugvolumen-waehrend-beatmung
 Title: "FDPG PR ICU Atemzugvolumen Waehrend Beatmung"
 Description: "FDPG Profil - MII_PR_ICU_Atemzugvolumen_Waehrend_Beatmung"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Atemzugvolumen Waehrend Beatmung)
-* insert Translation(^title, en-US, FDPG PR ICU Atemzugvolumen Waehrend Beatmung)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Atemzugvolumen während Beatmung)
+* insert Translation(^title, en-US, Tidal Volume During Mechanical Ventilation)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

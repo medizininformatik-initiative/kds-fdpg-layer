@@ -29,7 +29,7 @@ MODULES = {
     },
     "medikation": {
         "package": "de.medizininformatikinitiative.kerndatensatz.medikation",
-        "version": "2026.0.0",
+        "version": "2026.0.1",
     },
     "biobank": {
         "package": "de.medizininformatikinitiative.kerndatensatz.biobank",
@@ -37,7 +37,7 @@ MODULES = {
     },
     "studie": {
         "package": "de.medizininformatikinitiative.kerndatensatz.studie",
-        "version": "2026.0.0",
+        "version": "2026.0.2",
     },
     "molgen": {
         "package": "de.medizininformatikinitiative.kerndatensatz.molgen",
@@ -45,11 +45,11 @@ MODULES = {
     },
     "patho": {
         "package": "de.medizininformatikinitiative.kerndatensatz.patho",
-        "version": "2026.0.0",
+        "version": "2026.0.1",
     },
     "icu": {
         "package": "de.medizininformatikinitiative.kerndatensatz.icu",
-        "version": "2026.0.1-rc1",
+        "version": "2026.0.2",
     },
     "bildgebung": {
         "package": "de.medizininformatikinitiative.kerndatensatz.bildgebung",
@@ -57,27 +57,27 @@ MODULES = {
     },
     "seltene": {
         "package": "de.medizininformatikinitiative.kerndatensatz.seltene",
-        "version": "2026.0.0",
+        "version": "2026.0.1",
     },
     "onkologie": {
         "package": "de.medizininformatikinitiative.kerndatensatz.onkologie",
-        "version": "2026.0.1",
+        "version": "2026.0.3",
     },
     "consent": {
         "package": "de.medizininformatikinitiative.kerndatensatz.consent",
-        "version": "2026.0.1-rc-1",
+        "version": "2026.0.1-rc-2",
     },
     "dokument": {
         "package": "de.medizininformatikinitiative.kerndatensatz.dokument",
-        "version": "2026.0.0",
+        "version": "2026.0.1",
     },
     "mtb": {
         "package": "de.medizininformatikinitiative.kerndatensatz.mtb",
-        "version": "2026.0.0",
+        "version": "2026.0.1",
     },
     "proms": {
         "package": "de.medizininformatikinitiative.kerndatensatz.pros",
-        "version": "2026.0.1",
+        "version": "2026.3.0",
     },
     "mikrobiologie": {
         "package": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
@@ -274,7 +274,7 @@ def extract_obligations_block(original_content):
     return original_content[idx:].rstrip() + "\n"
 
 
-def generate_enriched_fsh(fsh_info, parent_sd, ms_elements, title_overrides=None):
+def generate_enriched_fsh(fsh_info, parent_sd, ms_elements, title_overrides=None, module_key=None):
     """Generate enriched FSH content with element translations."""
     lines = []
 
@@ -285,6 +285,8 @@ def generate_enriched_fsh(fsh_info, parent_sd, ms_elements, title_overrides=None
     lines.append(f"Title: {fsh_info['Title']}")
     lines.append(f"Description: {fsh_info['Description']}")
     lines.append("* insert FDPGMetadata")
+    if module_key:
+        lines.append(f"* insert FDPGModule({module_key})")
 
     # Title translations: priority order
     # 1. title_overrides JSON (manually curated)
@@ -360,14 +362,22 @@ def process_module(module_name):
         print(f"  ERROR: Package not found: {pkg_dir}")
         return False
 
-    # Build name->SD map
+    # Build name->SD map. Filter to SD-named files first to avoid non-UTF-8
+    # auxiliary files (e.g., upstream packages occasionally ship binary blobs).
     parent_sds = {}
     for f in pkg_dir.iterdir():
-        if f.name.endswith(".json"):
-            with open(f) as fh:
+        if not f.name.endswith(".json"):
+            continue
+        if not (f.name.startswith("StructureDefinition-") or f.name.startswith("Profile_MII_")):
+            continue
+        try:
+            with open(f, encoding="utf-8") as fh:
                 sd = json.load(fh)
-            if sd.get("resourceType") == "StructureDefinition":
-                parent_sds[sd.get("name", "")] = sd
+        except (UnicodeDecodeError, json.JSONDecodeError) as e:
+            print(f"  WARN: Skipping {f.name}: {e}")
+            continue
+        if sd.get("resourceType") == "StructureDefinition":
+            parent_sds[sd.get("name", "")] = sd
 
     print(f"  Found {len(parent_sds)} parent StructureDefinitions")
 
@@ -398,7 +408,7 @@ def process_module(module_name):
         ms_elements = get_ms_elements_with_translations(parent_sd)
 
         try:
-            new_content = generate_enriched_fsh(fsh_info, parent_sd, ms_elements, title_overrides)
+            new_content = generate_enriched_fsh(fsh_info, parent_sd, ms_elements, title_overrides, module_key=module_name)
             obligations = extract_obligations_block(original_content)
             if obligations:
                 new_content = new_content.rstrip() + "\n\n" + obligations

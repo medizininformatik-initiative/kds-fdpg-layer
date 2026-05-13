@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-parameter-von-extrakorporalen-verfahren
 Title: "FDPG PR ICU Parameter Von Extrakorporalen Verfahren"
 Description: "FDPG Profil - MII_PR_ICU_Parameter_Von_Extrakorporalen_Verfahren"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Parameter von Extrakorporalen Verfahren)
-* insert Translation(^title, en-US, FDPG PR ICU Parameter Von Extrakorporalen Verfahren)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Parameter von extrakorporalen Verfahren)
+* insert Translation(^title, en-US, Extracorporeal Procedure Parameters)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

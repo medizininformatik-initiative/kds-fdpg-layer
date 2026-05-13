@@ -4,6 +4,7 @@ Id: fdpg-pr-bildgebung-radiologische-befundungsprozedur
 Title: "FDPG PR Bildgebung Radiologische Befundungsprozedur"
 Description: "FDPG Profil - MII_PR_Bildgebung_Radiologische_Befundungsprozedur"
 * insert FDPGMetadata
+* insert FDPGModule(bildgebung)
 * insert Translation(^title, de-DE, radiologische Befundungsprozedur)
 * insert Translation(^title, en-US, radiological read-procedure)
 // --- Element Designations ---

@@ -4,6 +4,7 @@ Id: fdpg-pr-mikrobio-mikroskopie
 Title: "FDPG PR Mikrobio Mikroskopie"
 Description: "FDPG Profil - MII_PR_Mikrobio_Mikroskopie"
 * insert FDPGMetadata
+* insert FDPGModule(mikrobiologie)
 * insert Translation(^title, de-DE, Mikroskopischer Befund)
 * insert Translation(^title, en-US, Microscopic finding)
 // --- Element Designations ---

@@ -4,6 +4,7 @@ Id: fdpg-pr-mikrobio-molekulare-pathogenlast
 Title: "FDPG PR Mikrobio Molekulare Pathogenlast"
 Description: "FDPG Profil - MII_PR_Mikrobio_Molekulare_Pathogenlast"
 * insert FDPGMetadata
+* insert FDPGModule(mikrobiologie)
 * insert Translation(^title, de-DE, Molekulare Pathogenlast)
 * insert Translation(^title, en-US, Molecular pathogen load)
 // --- Element Designations ---

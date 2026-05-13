@@ -172,6 +172,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/fdpg-module-cs"
+        },
+        "name": "FDPG KDS Module Codes",
+        "description": "Codes für die Zuordnung eines FDPG-Profils zum ursprünglichen MII-Kerndatensatzmodul. Verwendet im `keyword`-Feld der FDPG-StructureDefinitions, damit das Quellmodul maschinenlesbar am Profil hängt (Datenkatalog-Filterung, Antragsportal-Gruppierung).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/fdpg-obligation-cs"
         },
         "name": "FDPG Obligation Codes",

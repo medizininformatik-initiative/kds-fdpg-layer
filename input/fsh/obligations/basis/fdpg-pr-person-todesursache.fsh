@@ -4,6 +4,7 @@ Id: fdpg-pr-person-todesursache
 Title: "FDPG PR Basis Todesursache"
 Description: "FDPG Profil - MII_PR_Person_Todesursache"
 * insert FDPGMetadata
+* insert FDPGModule(basis)
 * insert Translation(^title, de-DE, Todesursache)
 * insert Translation(^title, en-US, Cause of Death)
 // --- Element Designations ---

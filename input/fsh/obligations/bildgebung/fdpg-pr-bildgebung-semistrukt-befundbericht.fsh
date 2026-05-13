@@ -4,6 +4,7 @@ Id: fdpg-pr-bildgebung-semistrukt-befundbericht
 Title: "FDPG PR Bildgebung Semistrukt Befundbericht"
 Description: "FDPG Profil - MII_PR_Bildgebung_Semistrukt_Befundbericht"
 * insert FDPGMetadata
+* insert FDPGModule(bildgebung)
 * insert Translation(^title, de-DE, Befundbericht semistrukturiert)
 * insert Translation(^title, en-US, composition)
 // --- Element Designations ---

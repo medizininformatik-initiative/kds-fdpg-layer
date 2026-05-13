@@ -4,8 +4,9 @@ Id: fdpg-pr-studie-proband
 Title: "FDPG PR Studie Proband"
 Description: "FDPG Profil - MII_PR_Studie_Proband"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Studie Proband)
-* insert Translation(^title, en-US, FDPG PR Studie Proband)
+* insert FDPGModule(studie)
+* insert Translation(^title, de-DE, Proband / Probandin)
+* insert Translation(^title, en-US, Research Subject)
 // --- Element Designations ---
 // ResearchSubject.identifier
 * identifier ^short = "Identifier des Probanden"

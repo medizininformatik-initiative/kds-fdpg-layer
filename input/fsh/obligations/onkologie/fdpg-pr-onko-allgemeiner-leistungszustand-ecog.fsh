@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-allgemeiner-leistungszustand-ecog
 Title: "FDPG PR Onko Allgemeiner Leistungszustand ECOG"
 Description: "FDPG Profil - MII_PR_Onko_Allgemeiner_Leistungszustand_ECOG"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Allgemeiner Leistungszustand ECOG)
-* insert Translation(^title, en-US, FDPG PR Onko Allgemeiner Leistungszustand ECOG)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Allgemeiner Leistungszustand nach ECOG)
+* insert Translation(^title, en-US, General Performance Status (ECOG\))
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Type of observation (code / type)"

@@ -4,6 +4,7 @@ Id: fdpg-pr-mikrobio-barlett-score
 Title: "FDPG PR Mikrobio Barlett Score"
 Description: "FDPG Profil - MII_PR_Mikrobio_Barlett_Score"
 * insert FDPGMetadata
+* insert FDPGModule(mikrobiologie)
 * insert Translation(^title, de-DE, Bartlett-Score)
 * insert Translation(^title, en-US, Bartlett score)
 // --- Element Designations ---

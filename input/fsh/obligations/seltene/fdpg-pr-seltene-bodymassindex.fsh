@@ -4,8 +4,9 @@ Id: fdpg-pr-seltene-bodymassindex
 Title: "FDPG PR Seltene Bodymassindex"
 Description: "FDPG Profil - MII_PR_Seltene_Bodymassindex"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, Body Mass Index (BMI\) of the patient)
-* insert Translation(^title, en-US, FDPG PR Seltene Bodymassindex)
+* insert FDPGModule(seltene)
+* insert Translation(^title, de-DE, Body-Mass-Index (BMI\))
+* insert Translation(^title, en-US, Body Mass Index (BMI\))
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"

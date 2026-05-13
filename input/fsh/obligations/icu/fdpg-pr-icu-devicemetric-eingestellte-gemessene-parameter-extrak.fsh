@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-devicemetric-eingestellte-gemessene-parameter-extrak
 Title: "FDPG PR ICU Devicemetric Eingestellte Gemessene Parameter Extrakorporale Verfahren"
 Description: "FDPG Profil - MII_PR_ICU_Devicemetric_Eingestellte_Gemessene_Parameter_Extrakorporale_Verfahren"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU DeviceMetric Eingestellte Gemessene Parameter Extrakorporale Verfahren)
-* insert Translation(^title, en-US, FDPG PR ICU Devicemetric Eingestellte Gemessene Parameter Extrakorporale Verfahren)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Gerätemetrik - Eingestellte/gemessene Parameter extrakorporale Verfahren)
+* insert Translation(^title, en-US, Device Metric - Set/Measured Extracorporeal Procedure Parameters)
 // --- Element Designations ---
 // DeviceMetric.type
 * type ^short = "Identity of metric, for example Heart Rate or PEEP Setting"

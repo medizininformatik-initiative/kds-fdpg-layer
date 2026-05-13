@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-zeitverhaeltnis-ein-ausatmung
 Title: "FDPG PR ICU Ein Ausatmung"
 Description: "FDPG Profil - MIIPR_ICU_Zeitverhaeltnis_Ein_Ausatmung"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Zeitverhaeltnis Ein Ausatmung)
-* insert Translation(^title, en-US, FDPG PR ICU Ein Ausatmung)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Zeitverhältnis Ein-/Ausatmung)
+* insert Translation(^title, en-US, Inspiration/Expiration Time Ratio)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

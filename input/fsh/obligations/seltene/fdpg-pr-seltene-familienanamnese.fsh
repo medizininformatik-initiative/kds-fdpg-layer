@@ -4,8 +4,9 @@ Id: fdpg-pr-seltene-familienanamnese
 Title: "FDPG PR Seltene Familienanamnese"
 Description: "FDPG Profil - MII_PR_Seltene_Familienanamnese"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR SE Familienanamnese)
-* insert Translation(^title, en-US, FDPG PR Seltene Familienanamnese)
+* insert FDPGModule(seltene)
+* insert Translation(^title, de-DE, Familienanamnese)
+* insert Translation(^title, en-US, Family History)
 // --- Element Designations ---
 // FamilyMemberHistory.extension:vonSEBetroffen
 * extension[vonSEBetroffen] ^short = "Gibt an, ob das Familienmitglied von der gleichen seltenen Erkrankung betroffen ist"

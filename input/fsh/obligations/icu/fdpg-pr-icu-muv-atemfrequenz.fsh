@@ -4,6 +4,7 @@ Id: fdpg-pr-icu-muv-atemfrequenz
 Title: "FDPG PR ICU MUV Atemfrequenz"
 Description: "FDPG Profil - MII_PR_ICU_MUV_Atemfrequenz"
 * insert FDPGMetadata
+* insert FDPGModule(icu)
 * insert Translation(^title, de-DE, MII PR ICU MUV Atemfrequenz)
 * insert Translation(^title, en-US, FDPG PR ICU MUV Atemfrequenz)
 // --- Element Designations ---

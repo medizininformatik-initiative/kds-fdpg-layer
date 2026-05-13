@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR SE Therapieempfehlung Systemische Therapie"
+            "valueString": "Therapieempfehlung systemische Therapie"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR Seltene Therapieempfehlung"
+            "valueString": "Therapy Recommendation Systemic Therapy"
           }
         ]
       }
@@ -65,6 +65,12 @@
   ],
   "description": "FDPG Profil - MII_PR_Seltene_Therapieempfehlung",
   "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
+  "keyword": [
+    {
+      "code": "seltene",
+      "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-module-cs"
+    }
+  ],
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,

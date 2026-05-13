@@ -4,6 +4,7 @@ Id: fdpg-pr-mikrobio-allgemeine-bestimmung
 Title: "FDPG PR Mikrobio Allgemeine Bestimmung"
 Description: "FDPG Profil - MII_PR_Mikrobio_Allgemeine_Bestimmung"
 * insert FDPGMetadata
+* insert FDPGModule(mikrobiologie)
 * insert Translation(^title, de-DE, Allgemeine mikrobiologische Bestimmung)
 * insert Translation(^title, en-US, General microbiological determination)
 // --- Element Designations ---

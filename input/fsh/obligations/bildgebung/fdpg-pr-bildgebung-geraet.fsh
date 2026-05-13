@@ -4,6 +4,7 @@ Id: fdpg-pr-bildgebung-geraet
 Title: "FDPG PR Bildgebung Geraet"
 Description: "FDPG Profil - MII_PR_Bildgebung_Geraet"
 * insert FDPGMetadata
+* insert FDPGModule(bildgebung)
 * insert Translation(^title, de-DE, Bildgebungsgerät)
 * insert Translation(^title, en-US, imaging device)
 // --- Element Designations ---

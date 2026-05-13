@@ -4,8 +4,9 @@ Id: fdpg-pr-seltene-therapieempfehlung-nicht-medikamentoes
 Title: "FDPG PR Seltene TherapieempfehlungNichtMedikamentoes"
 Description: "FDPG Profil - MII_PR_Seltene_TherapieempfehlungNichtMedikamentoes"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR SE Therapieempfehlung Nicht-Medikamentös)
-* insert Translation(^title, en-US, FDPG PR Seltene TherapieempfehlungNichtMedikamentoes)
+* insert FDPGModule(seltene)
+* insert Translation(^title, de-DE, Therapieempfehlung nicht-medikamentös)
+* insert Translation(^title, en-US, Therapy Recommendation Non-Pharmacological)
 // --- Element Designations ---
 // ServiceRequest.extension:Prioritaet
 * extension[Prioritaet] ^short = "MII EX SE Empfehlung Priorität"

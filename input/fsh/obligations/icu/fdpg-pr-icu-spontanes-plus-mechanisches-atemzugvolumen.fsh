@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-spontanes-plus-mechanisches-atemzugvolumen
 Title: "FDPG PR ICU Spontanes Plus Mechanisches Atemzugvolumen"
 Description: "FDPG Profil - MII_PR_ICU_Spontanes_Plus_Mechanisches_Atemzugvolumen"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Spontanes Plus Mechanisches Atemzugvolumen)
-* insert Translation(^title, en-US, FDPG PR ICU Spontanes Plus Mechanisches Atemzugvolumen)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Spontanes + mechanisches Atemzugvolumen)
+* insert Translation(^title, en-US, Spontaneous Plus Mechanical Tidal Volume)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

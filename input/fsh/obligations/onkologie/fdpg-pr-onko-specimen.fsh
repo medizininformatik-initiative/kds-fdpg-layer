@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-specimen
 Title: "FDPG PR Onko Specimen"
 Description: "FDPG Profil - MII_PR_Onko_Specimen"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Specimen)
-* insert Translation(^title, en-US, FDPG PR Onko Specimen)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Onkologische Probe)
+* insert Translation(^title, en-US, Oncology Specimen)
 // --- Element Designations ---
 // Specimen.accessionIdentifier
 * accessionIdentifier ^short = "Identifier assigned by the lab"

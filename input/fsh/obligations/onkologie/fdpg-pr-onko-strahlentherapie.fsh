@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-strahlentherapie
 Title: "FDPG PR Onko Strahlentherapie"
 Description: "FDPG Profil - MII_PR_Onko_Strahlentherapie"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie Strahlentherapie)
-* insert Translation(^title, en-US, FDPG PR Onko Strahlentherapie)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, Strahlentherapie)
+* insert Translation(^title, en-US, Radiation Therapy)
 // --- Element Designations ---
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"

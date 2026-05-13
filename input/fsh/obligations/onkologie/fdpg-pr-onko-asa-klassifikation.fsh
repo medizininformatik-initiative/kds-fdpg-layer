@@ -4,8 +4,9 @@ Id: fdpg-pr-onko-asa-klassifikation
 Title: "FDPG PR Onko ASA Klassifikation"
 Description: "FDPG Profil - MII_PR_Onko_ASA_Klassifikation"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR Onkologie ASA-Klassifikation)
-* insert Translation(^title, en-US, FDPG PR Onko ASA Klassifikation)
+* insert FDPGModule(onkologie)
+* insert Translation(^title, de-DE, ASA-Klassifikation)
+* insert Translation(^title, en-US, ASA Classification)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "ASA-Klassifikation"

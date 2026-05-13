@@ -4,6 +4,7 @@ Id: fdpg-pr-mtb-brcaness
 Title: "FDPG PR MTB BRCAness"
 Description: "FDPG Profil - MII_PR_MTB_BRCAness"
 * insert FDPGMetadata
+* insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, MII PR MTB BRCAness)
 * insert Translation(^title, en-US, FDPG PR MTB BRCAness)
 // --- Element Designations ---

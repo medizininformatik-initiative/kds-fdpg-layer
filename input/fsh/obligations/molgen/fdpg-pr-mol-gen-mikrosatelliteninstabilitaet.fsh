@@ -4,8 +4,9 @@ Id: fdpg-pr-mol-gen-mikrosatelliteninstabilitaet
 Title: "FDPG PR MolGen Mikrosatelliteninstabilitaet"
 Description: "FDPG Profil - MII_PR_MolGen_Mikrosatelliteninstabilitaet"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR MolGen Mikrosatelliteninstabilität)
-* insert Translation(^title, en-US, FDPG PR MolGen Mikrosatelliteninstabilitaet)
+* insert FDPGModule(molgen)
+* insert Translation(^title, de-DE, Mikrosatelliteninstabilität)
+* insert Translation(^title, en-US, Microsatellite Instability)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "Status"

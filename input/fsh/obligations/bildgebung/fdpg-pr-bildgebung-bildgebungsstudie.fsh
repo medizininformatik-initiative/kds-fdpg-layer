@@ -4,6 +4,7 @@ Id: fdpg-pr-bildgebung-bildgebungsstudie
 Title: "FDPG PR Bildgebung Bildgebungsstudie"
 Description: "FDPG Profil - MII_PR_Bildgebung_Bildgebungsstudie"
 * insert FDPGMetadata
+* insert FDPGModule(bildgebung)
 * insert Translation(^title, de-DE, Bildgebungsstudie)
 * insert Translation(^title, en-US, imaging study)
 // --- Element Designations ---

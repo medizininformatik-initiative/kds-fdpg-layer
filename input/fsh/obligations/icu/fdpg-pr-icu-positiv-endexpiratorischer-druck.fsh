@@ -4,8 +4,9 @@ Id: fdpg-pr-icu-positiv-endexpiratorischer-druck
 Title: "FDPG PR ICU Positiv Endexpiratorischer Druck"
 Description: "FDPG Profil - MII_PR_ICU_Positiv_Endexpiratorischer_Druck"
 * insert FDPGMetadata
-* insert Translation(^title, de-DE, MII PR ICU Positiv Endexpiratorischer Druck)
-* insert Translation(^title, en-US, FDPG PR ICU Positiv Endexpiratorischer Druck)
+* insert FDPGModule(icu)
+* insert Translation(^title, de-DE, Positiv-endexpiratorischer Druck (PEEP\))
+* insert Translation(^title, en-US, Positive End-Expiratory Pressure (PEEP\))
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"
