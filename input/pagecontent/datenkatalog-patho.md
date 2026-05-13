@@ -16,6 +16,30 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `entry` | Entries in the list | Entries in this list. |
 
+#### MII PR Patho Additional Specified Grouper (Observation)
+
+**FDPG Profil:** [FDPG_PR_Patho_Additional_Specified_Grouper](StructureDefinition-fdpg-pr-patho-additional-specified-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Additional_Specified_Grouper
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `bodySite.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
+| `hasMember:pathology-finding` | Einzelbeobachtungen | Referenz zu Einzelbeobachtungen |
+| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+
 #### MII PR Patho Angefügtes Bild (Media)
 
 **FDPG Profil:** [FDPG_PR_Patho_Attached_Image](StructureDefinition-fdpg-pr-patho-attached-image.html) · **MII Elternprofil:** MII_PR_Patho_Attached_Image
@@ -28,29 +52,6 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `modality` | Modalität | Bildgebungsmodalität |
 | `subject` | Gegenstand | Verweis auf die abgebildete Probe |
 | `content` | Inhalt | Daten des Bildes |
-
-#### MII PR Patho Basisbeobachtung (Observation)
-
-**FDPG Profil:** [FDPG_PR_Patho_Base_Observation](StructureDefinition-fdpg-pr-patho-base-observation.html) · **MII Elternprofil:** MII_PR_Patho_Base_Observation
-
-| Element | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
-|---|---|---|---|
-| `identifier` | Identifikator | Identifikator dieser Ressource. |  |
-| `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |  |
-| `status` | Status | Status der Ressource. |  |
-| `category` | Kategorie | Kategorisierung der Ressource. |  |
-| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |  |
-| `code` | Code | Kodierung des Inhalts. | ✓ |
-| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
-| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
-| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |  |
-| `bodySite.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |  |
-| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
-| `specimen` | Probe | Verweis auf das Probenmaterial. |  |
-| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |  |
-| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |  |
-| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |  |
-| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |  |
 
 #### MII PR Patho Bundle (Bundle)
 
@@ -103,6 +104,33 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `section` | Kapitel | The root of the sections that make up the composition. |
 | `section:patho-diagnostic-report` | Pathologie-Diagnostikbericht | Pathologie-Diagnostikbericht |
 
+#### MII PR Patho Diagnostic Conclusion Grouper (Observation)
+
+**FDPG Profil:** [FDPG_PR_Patho_Diagnostic_Conclusion_Grouper](StructureDefinition-fdpg-pr-patho-diagnostic-conclusion-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Diagnostic_Conclusion_Grouper
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `note` | Notiz | Zusätzliche Notizen |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `bodySite.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
+| `hasMember:pathology-finding` | Einzelbeobachtungen | Referenz zu Einzelbeobachtungen |
+| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:grouper-observation` | Gruppierte Beobachtung | Referenz zu gruppierten Beobachtungen |
+| `derivedFrom:questionnaire-response` | Fragebogen-Antwort | Referenz zu Fragebogen-Antworten |
+
 #### MII PR Patho Befund (Observation)
 
 **FDPG Profil:** [FDPG_PR_Patho_Finding](StructureDefinition-fdpg-pr-patho-finding.html) · **MII Elternprofil:** MII_PR_Patho_Finding
@@ -139,6 +167,78 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Kodierung des Inhalts. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `entry` | Entries in the list | Entries in this list. |
+
+#### MII PR Patho Intraoperative Grouper (Observation)
+
+**FDPG Profil:** [FDPG_PR_Patho_Intraoperative_Grouper](StructureDefinition-fdpg-pr-patho-intraoperative-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Intraoperative_Grouper
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `bodySite.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
+| `hasMember:pathology-finding` | Einzelbeobachtungen | Referenz zu Einzelbeobachtungen |
+| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+
+#### MII PR Patho Macroscopic Grouper (Observation)
+
+**FDPG Profil:** [FDPG_PR_Patho_Macroscopic_Grouper](StructureDefinition-fdpg-pr-patho-macroscopic-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Macroscopic_Grouper
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `bodySite.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
+| `hasMember:pathology-finding` | Einzelbeobachtungen | Referenz zu Einzelbeobachtungen |
+| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+
+#### MII PR Patho Microscopic Grouper (Observation)
+
+**FDPG Profil:** [FDPG_PR_Patho_Microscopic_Grouper](StructureDefinition-fdpg-pr-patho-microscopic-grouper.html) · **MII Elternprofil:** MII_PR_Patho_Microscopic_Grouper
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `identifier` | Identifikator | Identifikator dieser Ressource. |
+| `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
+| `code` | Code | Kodierung des Inhalts. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `bodySite` | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
+| `bodySite.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` | Probe | Verweis auf das Probenmaterial. |
+| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
+| `hasMember:pathology-finding` | Einzelbeobachtungen | Referenz zu Einzelbeobachtungen |
+| `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
 
 #### MII PR Patho Problemlisteneintrag (Condition)
 
@@ -253,21 +353,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR Patho Angefügtes Bild</summary>
-
-| Element | Short (en) | Definition (en) |
-|---------|-----------|-----------------|
-| `partOf` | Part of | Reference to parent medium |
-| `status` | Status | Status of the medium |
-| `type` | Type | Type of medium |
-| `modality` | Modality | Imaging modality |
-| `subject` | Subject | Reference to the depicted specimen |
-| `content` | Content | Data of the image |
-
-</details>
-
-<details>
-<summary>English translations - MII PR Patho Basisbeobachtung</summary>
+<summary>English translations - MII PR Patho Additional Specified Grouper</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -284,9 +370,24 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `method` | Method | Method used to make the observation. |
 | `specimen` | Specimen | Reference to the specimen. |
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
+| `hasMember:pathology-finding` | Pathology findings | Reference to pathology findings |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
 | `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR Patho Angefügtes Bild</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `partOf` | Part of | Reference to parent medium |
+| `status` | Status | Status of the medium |
+| `type` | Type | Type of medium |
+| `modality` | Modality | Imaging modality |
+| `subject` | Subject | Reference to the depicted specimen |
+| `content` | Content | Data of the image |
 
 </details>
 
@@ -344,6 +445,34 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
+<summary>English translations - MII PR Patho Diagnostic Conclusion Grouper</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:laboratory-category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `note` | Note | Additional notes |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `bodySite.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
+| `hasMember:pathology-finding` | Pathology findings | Reference to pathology findings |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:grouper-observation` | Grouper observation | Reference to grouper observations |
+| `derivedFrom:questionnaire-response` | Questionnaire response | Reference to questionnaire responses |
+
+</details>
+
+<details>
 <summary>English translations - MII PR Patho Befund</summary>
 
 | Element | Short (en) | Definition (en) |
@@ -379,6 +508,81 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `entry` | Entries in the list | Entries in this list. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR Patho Intraoperative Grouper</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:laboratory-category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `bodySite.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
+| `hasMember:pathology-finding` | Pathology findings | Reference to pathology findings |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR Patho Macroscopic Grouper</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:laboratory-category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `bodySite.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
+| `hasMember:pathology-finding` | Pathology findings | Reference to pathology findings |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
+
+</details>
+
+<details>
+<summary>English translations - MII PR Patho Microscopic Grouper</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier for this resource. |
+| `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:laboratory-category` | Category | Categorization of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `bodySite.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
+| `hasMember:pathology-finding` | Pathology findings | Reference to pathology findings |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
 
 </details>
 

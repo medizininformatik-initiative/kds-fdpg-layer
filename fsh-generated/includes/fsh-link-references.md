@@ -270,12 +270,16 @@
 [FDPG_PR_Onko_Verlauf]: StructureDefinition-fdpg-pr-onko-verlauf.html
 [FDPG_PR_Onko_Weitere_Klassifikationen]: StructureDefinition-fdpg-pr-onko-weitere-klassifikationen.html
 [FDPG_PR_Patho_Active_Problems_List]: StructureDefinition-fdpg-pr-patho-active-problems-list.html
+[FDPG_PR_Patho_Additional_Specified_Grouper]: StructureDefinition-fdpg-pr-patho-additional-specified-grouper.html
 [FDPG_PR_Patho_Attached_Image]: StructureDefinition-fdpg-pr-patho-attached-image.html
-[FDPG_PR_Patho_Base_Observation]: StructureDefinition-fdpg-pr-patho-base-observation.html
 [FDPG_PR_Patho_Bundle]: StructureDefinition-fdpg-pr-patho-bundle.html
 [FDPG_PR_Patho_Composition]: StructureDefinition-fdpg-pr-patho-composition.html
+[FDPG_PR_Patho_Diagnostic_Conclusion_Grouper]: StructureDefinition-fdpg-pr-patho-diagnostic-conclusion-grouper.html
 [FDPG_PR_Patho_Finding]: StructureDefinition-fdpg-pr-patho-finding.html
 [FDPG_PR_Patho_History_Of_Present_Illness]: StructureDefinition-fdpg-pr-patho-history-of-present-illness.html
+[FDPG_PR_Patho_Intraoperative_Grouper]: StructureDefinition-fdpg-pr-patho-intraoperative-grouper.html
+[FDPG_PR_Patho_Macroscopic_Grouper]: StructureDefinition-fdpg-pr-patho-macroscopic-grouper.html
+[FDPG_PR_Patho_Microscopic_Grouper]: StructureDefinition-fdpg-pr-patho-microscopic-grouper.html
 [FDPG_PR_Patho_Problem_List_Item]: StructureDefinition-fdpg-pr-patho-problem-list-item.html
 [FDPG_PR_Patho_Report]: StructureDefinition-fdpg-pr-patho-report.html
 [FDPG_PR_Patho_Service_Request]: StructureDefinition-fdpg-pr-patho-service-request.html

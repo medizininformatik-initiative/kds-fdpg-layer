@@ -243,12 +243,12 @@ MODULE_NAME_FIXES = {
 # (z.B. abstrakte Grouper-Container, die im Antragsportal keine sinnvolle
 # Auswahl-Granularität haben).
 EXCLUDED_PROFILES_BY_MODULE = {
+    # Patho: nur die upstream-abstrakten Observations weglassen
+    # (Base_Observation + Section_Grouper). Die konkreten Grouper bleiben
+    # drin, weil sie als Container für Befund-Sektionen real instanziiert
+    # werden und damit auch für die Antragsportal-Auswahl relevant sind.
     "patho": {
-        "MII_PR_Patho_Additional_Specified_Grouper",
-        "MII_PR_Patho_Diagnostic_Conclusion_Grouper",
-        "MII_PR_Patho_Intraoperative_Grouper",
-        "MII_PR_Patho_Macroscopic_Grouper",
-        "MII_PR_Patho_Microscopic_Grouper",
+        "MII_PR_Patho_Base_Observation",
         "MII_PR_Patho_Section_Grouper",
     },
 }

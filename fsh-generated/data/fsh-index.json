@@ -2144,20 +2144,20 @@
     "endLine": 27
   },
   {
+    "outputFile": "StructureDefinition-fdpg-pr-patho-additional-specified-grouper.json",
+    "fshName": "FDPG_PR_Patho_Additional_Specified_Grouper",
+    "fshType": "Profile",
+    "fshFile": "obligations/patho/fdpg-pr-patho-additional-specified-grouper.fsh",
+    "startLine": 1,
+    "endLine": 79
+  },
+  {
     "outputFile": "StructureDefinition-fdpg-pr-patho-attached-image.json",
     "fshName": "FDPG_PR_Patho_Attached_Image",
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-attached-image.fsh",
     "startLine": 1,
     "endLine": 64
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-patho-base-observation.json",
-    "fshName": "FDPG_PR_Patho_Base_Observation",
-    "fshType": "Profile",
-    "fshFile": "obligations/patho/fdpg-pr-patho-base-observation.fsh",
-    "startLine": 1,
-    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-bundle.json",
@@ -2176,6 +2176,14 @@
     "endLine": 190
   },
   {
+    "outputFile": "StructureDefinition-fdpg-pr-patho-diagnostic-conclusion-grouper.json",
+    "fshName": "FDPG_PR_Patho_Diagnostic_Conclusion_Grouper",
+    "fshType": "Profile",
+    "fshFile": "obligations/patho/fdpg-pr-patho-diagnostic-conclusion-grouper.fsh",
+    "startLine": 1,
+    "endLine": 103
+  },
+  {
     "outputFile": "StructureDefinition-fdpg-pr-patho-finding.json",
     "fshName": "FDPG_PR_Patho_Finding",
     "fshType": "Profile",
@@ -2190,6 +2198,30 @@
     "fshFile": "obligations/patho/fdpg-pr-patho-history-of-present-illness.fsh",
     "startLine": 1,
     "endLine": 27
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-patho-intraoperative-grouper.json",
+    "fshName": "FDPG_PR_Patho_Intraoperative_Grouper",
+    "fshType": "Profile",
+    "fshFile": "obligations/patho/fdpg-pr-patho-intraoperative-grouper.fsh",
+    "startLine": 1,
+    "endLine": 79
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-patho-macroscopic-grouper.json",
+    "fshName": "FDPG_PR_Patho_Macroscopic_Grouper",
+    "fshType": "Profile",
+    "fshFile": "obligations/patho/fdpg-pr-patho-macroscopic-grouper.fsh",
+    "startLine": 1,
+    "endLine": 79
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-patho-microscopic-grouper.json",
+    "fshName": "FDPG_PR_Patho_Microscopic_Grouper",
+    "fshType": "Profile",
+    "fshFile": "obligations/patho/fdpg-pr-patho-microscopic-grouper.fsh",
+    "startLine": 1,
+    "endLine": 79
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-problem-list-item.json",

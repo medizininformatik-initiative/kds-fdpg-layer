@@ -2332,18 +2332,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-patho-attached-image"
+          "reference": "StructureDefinition/fdpg-pr-patho-additional-specified-grouper"
         },
-        "name": "FDPG PR Patho Attached Image",
-        "description": "FDPG Profil - MII_PR_Patho_Attached_Image",
+        "name": "FDPG PR Patho Additional Specified Grouper",
+        "description": "FDPG Profil - MII_PR_Patho_Additional_Specified_Grouper",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/fdpg-pr-patho-base-observation"
+          "reference": "StructureDefinition/fdpg-pr-patho-attached-image"
         },
-        "name": "FDPG PR Patho Base Observation",
-        "description": "FDPG Profil - MII_PR_Patho_Base_Observation",
+        "name": "FDPG PR Patho Attached Image",
+        "description": "FDPG Profil - MII_PR_Patho_Attached_Image",
         "exampleBoolean": false
       },
       {
@@ -2364,6 +2364,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-diagnostic-conclusion-grouper"
+        },
+        "name": "FDPG PR Patho Diagnostic Conclusion Grouper",
+        "description": "FDPG Profil - MII_PR_Patho_Diagnostic_Conclusion_Grouper",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/fdpg-pr-patho-finding"
         },
         "name": "FDPG PR Patho Finding",
@@ -2376,6 +2384,30 @@
         },
         "name": "FDPG PR Patho History Of Present Illness",
         "description": "FDPG Profil - MII_PR_Patho_History_Of_Present_Illness",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-intraoperative-grouper"
+        },
+        "name": "FDPG PR Patho Intraoperative Grouper",
+        "description": "FDPG Profil - MII_PR_Patho_Intraoperative_Grouper",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-macroscopic-grouper"
+        },
+        "name": "FDPG PR Patho Macroscopic Grouper",
+        "description": "FDPG Profil - MII_PR_Patho_Macroscopic_Grouper",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-patho-microscopic-grouper"
+        },
+        "name": "FDPG PR Patho Microscopic Grouper",
+        "description": "FDPG Profil - MII_PR_Patho_Microscopic_Grouper",
         "exampleBoolean": false
       },
       {

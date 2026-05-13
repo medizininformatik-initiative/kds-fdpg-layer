@@ -20,9 +20,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
 | `effective[x]:effectiveDateTime` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |  |
 | `effective[x]:effectivePeriod` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |  |
-| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. | ✓ |
-| `value[x].coding:loinc` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
-| `value[x].coding:snomed` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].coding:loinc` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `value[x].coding:snomed` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
 
 #### Body-Mass-Index (BMI\ (Observation)
 
@@ -34,7 +34,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
-| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. | ✓ |
 
 #### Klinische Diagnose (Condition)
 
@@ -180,7 +180,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | Code | Kodierung des Inhalts. | ✓ |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
-| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. | ✓ |
 
 #### Kopfumfang (Observation)
 
@@ -195,8 +195,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `effective[x]:effectiveDateTime` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `dataAbsentReason` |  |  | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
 | `bodySite` |  |  | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
 
@@ -253,7 +253,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | Code | Kodierung des Inhalts. | ✓ |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
-| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. | ✓ |
 
 #### Therapie durchgeführt (Procedure)
 

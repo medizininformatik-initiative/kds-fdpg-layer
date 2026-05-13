@@ -194,9 +194,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:loinc` | Code | Festgelegter Code des Befundberichts. Hier Radiologischer Befund | LOINC Code | Ein Verweis auf einen von LOINC definierten Code |
 | `subject` | Person | Die Person, für die der Befundbericht erstellt wurde. Hier sollte das MII KDS-Modul Person referenziert werden | Person | Person, auf die sich die Befundbericht bezieht |
 | `encounter` | Fall | Referenz über Fall auf den Versorgungsstellenkontakt. Hier soll das MII KDS-Modul Fall in Stufe 3 referenziert werden | Versorgungssstellenkontakt | Fall-Referenz auf den Versorgungssstellenkontakt |
-| `effective[x]` | Periode | Klinisch relevante Periode, auf die sich der Bericht bezieht. | Erstellungsdatum | Zeitpunkt der Erstellung |
-| `effective[x]:effectiveDateTime` | Periode | Klinisch relevante Periode, auf die sich der Bericht bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `effective[x]:effectivePeriod` | Periode | Klinisch relevante Periode, auf die sich der Bericht bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `effective[x]` | Zeitpunkt | Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht. | Erstellungsdatum | Zeitpunkt der Erstellung |
+| `effective[x]:effectiveDateTime` | Zeitpunkt | Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `effective[x]:effectivePeriod` | Zeitpunkt | Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `issued` | ZeitpunktErstellung | Zeitpunkt der Erstellung des Berichts. | Erstellungszeitpunkt | Zeit an der der Bericht erstellt wurde |
 | `result` | Beobachtung | Referenz auf die generische Beobachtung. | Ergebnis | Ergebnis einer Beobachtung |
 | `imagingStudy` |  |  | Bildgebungsstudie | Studie, die die vollständige Bildgebung umfasst |

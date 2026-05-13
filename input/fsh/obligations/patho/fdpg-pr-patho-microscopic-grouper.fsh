@@ -1,15 +1,22 @@
-Profile: FDPG_PR_Patho_Base_Observation
-Parent: MII_PR_Patho_Base_Observation
-Id: fdpg-pr-patho-base-observation
-Title: "FDPG PR Patho Base Observation"
-Description: "FDPG Profil - MII_PR_Patho_Base_Observation"
+Profile: FDPG_PR_Patho_Microscopic_Grouper
+Parent: MII_PR_Patho_Microscopic_Grouper
+Id: fdpg-pr-patho-microscopic-grouper
+Title: "FDPG PR Patho Microscopic Grouper"
+Description: "FDPG Profil - MII_PR_Patho_Microscopic_Grouper"
 * insert FDPGMetadata
 * insert FDPGModule(patho)
-* insert Translation(^title, de-DE, MII PR Patho Basisbeobachtung)
-* insert Translation(^title, en-US, MII PR Patho Base Observation)
+* insert Translation(^title, de-DE, MII PR Patho Microscopic Grouper)
+* insert Translation(^title, en-US, MII PR Patho Microscopic Grouper)
 // --- Element Designations ---
 // Observation.meta.lastUpdated
 * meta.lastUpdated ^short = "When the resource version last changed"
+// Observation.text
+* text ^short = "Text"
+* insert Translation(text ^short, de-DE, Text)
+* insert Translation(text ^short, en-US, Text)
+* text ^definition = "Narrative Darstellung"
+* insert Translation(text ^definition, de-DE, Narrative Darstellung)
+* insert Translation(text ^definition, en-US, Narrative representation)
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"
 // Observation.basedOn
@@ -34,6 +41,13 @@ Description: "FDPG Profil - MII_PR_Patho_Base_Observation"
 * specimen ^short = "Specimen used for this observation"
 // Observation.hasMember
 * hasMember ^short = "Related resource that belongs to the Observation group"
+// Observation.hasMember:pathology-finding
+* hasMember[pathology-finding] ^short = "Einzelbeobachtungen"
+* insert Translation(hasMember[pathology-finding] ^short, de-DE, Einzelbeobachtungen)
+* insert Translation(hasMember[pathology-finding] ^short, en-US, Pathology findings)
+* hasMember[pathology-finding] ^definition = "Referenz zu Einzelbeobachtungen"
+* insert Translation(hasMember[pathology-finding] ^definition, de-DE, Referenz zu Einzelbeobachtungen)
+* insert Translation(hasMember[pathology-finding] ^definition, en-US, Reference to pathology findings)
 // Observation.derivedFrom
 * derivedFrom ^short = "Related measurements the observation is made from"
 // Observation.derivedFrom:attached-image
@@ -52,15 +66,14 @@ Description: "FDPG Profil - MII_PR_Patho_Base_Observation"
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[laboratory-category])
 * insert ObligationConsumerDefault(code)
-* insert ObligationConsumerPreSelect(code)
 * insert ObligationConsumerDefault(subject)
 * insert ObligationConsumerDefault(effective[x])
-* insert ObligationConsumerPreSelect(effective[x])
 * insert ObligationConsumerDefault(bodySite)
 * insert ObligationConsumerDefault(bodySite.coding[sct])
 * insert ObligationConsumerDefault(method)
 * insert ObligationConsumerDefault(specimen)
 * insert ObligationConsumerDefault(hasMember)
+* insert ObligationConsumerDefault(hasMember[pathology-finding])
 * insert ObligationConsumerDefault(derivedFrom)
 * insert ObligationConsumerDefault(derivedFrom[attached-image])
 * insert ObligationConsumerDefault(derivedFrom[dicom-image])
