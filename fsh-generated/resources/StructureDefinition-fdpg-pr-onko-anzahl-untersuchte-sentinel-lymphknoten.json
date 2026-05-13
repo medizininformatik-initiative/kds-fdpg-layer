@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-onko-anzahl-untersuchte-sentinel-lymphknoten",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-anzahl-untersuchte-sentinel-lymphknoten",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_Onko_Anzahl_Untersuchte_Sentinel_Lymphknoten",
   "title": "FDPG PR Onko Anzahl Untersuchte Sentinel Lymphknoten",
   "_title": {

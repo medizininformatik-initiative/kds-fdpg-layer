@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-anforderung-bildgebung",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_Bildgebung_Anforderung_Bildgebung",
   "title": "FDPG PR Bildgebung Anforderung Bildgebung",
   "_title": {

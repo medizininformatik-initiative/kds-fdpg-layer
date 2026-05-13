@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-dauer-extrakorporaler-gasaustausch",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-dauer-extrakorporaler-gasaustausch",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_ICU_Dauer_Extrakorporaler_Gasaustausch",
   "title": "FDPG PR ICU Dauer Extrakorporaler Gasaustausch",
   "_title": {

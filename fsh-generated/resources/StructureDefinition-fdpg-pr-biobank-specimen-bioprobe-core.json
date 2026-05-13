@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-specimen-bioprobe-core",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_Biobank_Specimen_Bioprobe_Core",
   "title": "FDPG PR Biobank Specimen Bioprobe Core",
   "_title": {

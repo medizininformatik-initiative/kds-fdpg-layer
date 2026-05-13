@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-beatmungsvolumen-pro-minute-maschineller-beatmung",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-beatmungsvolumen-pro-minute-maschineller-beatmung",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_ICU_Beatmungsvolumen_Pro_Minute_Maschineller_Beatmung",
   "title": "FDPG PR ICU Beatmungsvolumen Pro Minute Maschineller Beatmung",
   "_title": {

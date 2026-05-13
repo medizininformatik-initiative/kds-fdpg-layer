@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-mechanische-atemfrequenz-beatmet",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-mechanische-atemfrequenz-beatmet",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_ICU_Mechanische_Atemfrequenz_Beatmet",
   "title": "FDPG PR ICU Mechanische Atemfrequenz Beatmet",
   "_title": {

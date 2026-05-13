@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-muv-herzfrequenz",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-muv-herzfrequenz",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_ICU_MUV_Herzfrequenz",
   "title": "FDPG PR ICU MUV Herzfrequenz",
   "_title": {

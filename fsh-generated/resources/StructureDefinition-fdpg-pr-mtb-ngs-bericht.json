@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-mtb-ngs-bericht",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-ngs-bericht",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_MTB_NGS_Bericht",
   "title": "FDPG PR MTB NGS Bericht",
   "_title": {

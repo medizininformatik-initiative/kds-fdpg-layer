@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-pro-depression-t-score",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-depression-t-score",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_PRO_Depression_T_Score",
   "title": "FDPG PR PRO Depression T Score",
   "_title": {

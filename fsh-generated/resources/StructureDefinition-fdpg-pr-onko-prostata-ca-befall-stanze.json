@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-onko-prostata-ca-befall-stanze",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-prostata-ca-befall-stanze",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_Onko_Prostata_CA_Befall_Stanze",
   "title": "FDPG PR Onko Prostata CA Befall Stanze",
   "_title": {

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-onko-tnm-m-symbol",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-tnm-m-symbol",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_Onko_TNM_m_Symbol",
   "title": "FDPG PR Onko TNM m Symbol",
   "_title": {

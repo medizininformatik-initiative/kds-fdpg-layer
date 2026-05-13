@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-molgen-genomic-study",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-genomic-study",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_MolGen_GenomicStudy",
   "title": "FDPG PR MolGen GenomicStudy",
   "_title": {

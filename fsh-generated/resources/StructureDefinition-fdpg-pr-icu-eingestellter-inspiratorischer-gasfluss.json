@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-eingestellter-inspiratorischer-gasfluss",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-eingestellter-inspiratorischer-gasfluss",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_ICU_Eingestellter_Inspiratorischer_Gasfluss",
   "title": "FDPG PR ICU Eingestellter Inspiratorischer Gasfluss",
   "_title": {

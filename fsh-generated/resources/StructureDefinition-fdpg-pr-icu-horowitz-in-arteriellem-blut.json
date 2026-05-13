@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-horowitz-in-arteriellem-blut",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-horowitz-in-arteriellem-blut",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_ICU_Horowitz_In_Arteriellem_Blut",
   "title": "FDPG PR ICU Horowitz In Arteriellem Blut",
   "_title": {

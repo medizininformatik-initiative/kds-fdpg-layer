@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-radiologische-beobachtung",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_Bildgebung_Radiologische_Beobachtung",
   "title": "FDPG PR Bildgebung Radiologische Beobachtung",
   "_title": {

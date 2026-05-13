@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-mtb-immunohistochemistry-her2",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-immunohistochemistry-her2",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_MTB_IMMUNOHISTOCHEMISTRY_HER2",
   "title": "FDPG PR MTB IMMUNOHISTOCHEMISTRY HER2",
   "_title": {

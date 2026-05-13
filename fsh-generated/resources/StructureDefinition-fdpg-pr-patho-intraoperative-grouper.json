@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-patho-intraoperative-grouper",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-intraoperative-grouper",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_Patho_Intraoperative_Grouper",
   "title": "FDPG PR Patho Intraoperative Grouper",
   "_title": {

@@ -2,7 +2,7 @@ Instance: fdpg-cps-data-consumer
 InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CapabilityStatement/data-consumer"
-* version = "2026.1.0"
+* version = "2026.1.1"
 * name = "FDPG_CPS_DataConsumer"
 * title = "FDPG CapabilityStatement für Datenkonsumenten"
 * status = #active

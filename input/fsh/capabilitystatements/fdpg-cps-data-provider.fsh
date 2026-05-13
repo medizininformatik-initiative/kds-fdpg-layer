@@ -2,7 +2,7 @@ Instance: fdpg-cps-data-provider
 InstanceOf: CapabilityStatement
 Usage: #definition
 * url = "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CapabilityStatement/data-provider"
-* version = "2026.1.0"
+* version = "2026.1.1"
 * name = "FDPG_CPS_DataProvider"
 * title = "FDPG CapabilityStatement für Datenlieferanten"
 * status = #active

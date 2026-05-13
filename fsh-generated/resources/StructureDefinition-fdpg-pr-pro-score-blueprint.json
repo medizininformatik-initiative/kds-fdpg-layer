@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-pro-score-blueprint",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-score-blueprint",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_PRO_Score_Blueprint",
   "title": "FDPG PR PRO Score Blueprint",
   "_title": {

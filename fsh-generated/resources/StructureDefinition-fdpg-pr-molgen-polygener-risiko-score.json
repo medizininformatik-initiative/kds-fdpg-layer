@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-molgen-polygener-risiko-score",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-polygener-risiko-score",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_MolGen_PolygenerRisikoScore",
   "title": "FDPG PR MolGen PolygenerRisikoScore",
   "_title": {

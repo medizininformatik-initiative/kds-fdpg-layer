@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-ionisiertes-kalzium-nierenersatzverfahren",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-ionisiertes-kalzium-nierenersatzverfahren",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren",
   "title": "FDPG PR ICU Ionisiertes Kalzium Nierenersatzverfahren",
   "_title": {

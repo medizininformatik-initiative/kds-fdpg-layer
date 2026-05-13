@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-pro-observation-eq5d5l-index",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-observation-eq5d5l-index",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_PRO_Observation_EQ5D5L_Index",
   "title": "FDPG PR PRO Observation EQ5D5L Index",
   "_title": {

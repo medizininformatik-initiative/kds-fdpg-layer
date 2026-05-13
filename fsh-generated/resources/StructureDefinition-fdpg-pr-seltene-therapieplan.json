@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-seltene-therapieplan",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-therapieplan",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_Seltene_Therapieplan",
   "title": "FDPG PR Seltene Therapieplan",
   "_title": {

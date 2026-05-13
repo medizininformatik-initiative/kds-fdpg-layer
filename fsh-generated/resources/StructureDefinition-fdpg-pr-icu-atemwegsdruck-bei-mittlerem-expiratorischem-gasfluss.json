@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss",
-  "version": "2026.1.0",
+  "version": "2026.1.1",
   "name": "FDPG_PR_ICU_Atemwegsdruck_Bei_Mittlerem_Expiratorischem_Gasfluss",
   "title": "FDPG PR ICU Atemwegsdruck Bei Mittlerem Expiratorischem Gasfluss",
   "_title": {
