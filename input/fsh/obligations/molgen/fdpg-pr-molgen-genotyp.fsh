@@ -81,23 +81,31 @@ Description: "FDPG Profil - MII_PR_MolGen_Genotyp"
 // Observation.component:conclusion-string
 * component[conclusion-string] ^short = "Schlussfolgerung - Text"
 * insert Translation(component[conclusion-string] ^short, de-DE, Schlussfolgerung - Text)
+* insert Translation(component[conclusion-string] ^short, en-US, Conclusion (text\))
 * component[conclusion-string] ^definition = "Textuelle Zusammenfassung des Genotyps"
 * insert Translation(component[conclusion-string] ^definition, de-DE, Textuelle Zusammenfassung des Genotyps)
+* insert Translation(component[conclusion-string] ^definition, en-US, Textual summary or conclusion for the variant.)
 // Observation.component:gene-studied
 * component[gene-studied] ^short = "Untersuchtes Gen"
 * insert Translation(component[gene-studied] ^short, de-DE, Untersuchtes Gen)
+* insert Translation(component[gene-studied] ^short, en-US, Gene studied)
 * component[gene-studied] ^definition = "Das untersuchte Gen identifiziert durch HGNC-ID"
 * insert Translation(component[gene-studied] ^definition, de-DE, Das untersuchte Gen identifiziert durch HGNC-ID)
+* insert Translation(component[gene-studied] ^definition, en-US, The gene studied.)
 // Observation.component:cytogenetic-location
 * component[cytogenetic-location] ^short = "Zytogenetische Lokalisation"
 * insert Translation(component[cytogenetic-location] ^short, de-DE, Zytogenetische Lokalisation)
+* insert Translation(component[cytogenetic-location] ^short, en-US, Cytogenetic location)
 * component[cytogenetic-location] ^definition = "Chromosomale Position in Bandennomenklatur"
 * insert Translation(component[cytogenetic-location] ^definition, de-DE, Chromosomale Position in Bandennomenklatur)
+* insert Translation(component[cytogenetic-location] ^definition, en-US, Chromosomal position of the variant in band nomenclature.)
 // Observation.component:reference-sequence-assembly
 * component[reference-sequence-assembly] ^short = "Referenzgenom-Assembly"
 * insert Translation(component[reference-sequence-assembly] ^short, de-DE, Referenzgenom-Assembly)
+* insert Translation(component[reference-sequence-assembly] ^short, en-US, Reference genome assembly)
 * component[reference-sequence-assembly] ^definition = "Die verwendete Referenzgenom-Version"
 * insert Translation(component[reference-sequence-assembly] ^definition, de-DE, Die verwendete Referenzgenom-Version)
+* insert Translation(component[reference-sequence-assembly] ^definition, en-US, Reference genome version used\, e.g. GRCh37 or GRCh38.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(status)

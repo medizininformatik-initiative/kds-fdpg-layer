@@ -16,6 +16,11 @@ Description: "FDPG Profil - MII_PR_Onko_Fruehere_Tumorerkrankung"
 * extension[assertedDate] ^short = "Diagnosedatum der früheren Tumorerkrankung"
 // Condition.extension:morphology-behavior-icdo3
 * extension[morphology-behavior-icdo3] ^short = "ICD-O-Morphologie"
+* insert Translation(extension[morphology-behavior-icdo3] ^short, de-DE, ICD-O-Morphologie)
+* insert Translation(extension[morphology-behavior-icdo3] ^short, en-US, ICD-O morphology)
+* extension[morphology-behavior-icdo3] ^definition = "Morphologie der früheren Tumorerkrankung nach ICD-O-3"
+* insert Translation(extension[morphology-behavior-icdo3] ^definition, de-DE, Morphologie des Primärtumors nach ICD-O-3 gemäß oBDS §6.3.)
+* insert Translation(extension[morphology-behavior-icdo3] ^definition, en-US, Morphology of the primary tumor per ICD-O-3 per oBDS §6.3.)
 // Condition.clinicalStatus
 * clinicalStatus ^short = "active | recurrence | relapse | inactive | remission | resolved"
 * insert Translation(clinicalStatus ^short, de-DE, Klinischer Status)
@@ -40,6 +45,7 @@ Description: "FDPG Profil - MII_PR_Onko_Fruehere_Tumorerkrankung"
 // Condition.category:oncology
 * category[oncology] ^short = "Kategorisierung als onkologische Diagnose"
 * insert Translation(category[oncology] ^short, de-DE, Kategorisierung als onkologische Diagnose)
+* insert Translation(category[oncology] ^short, en-US, Classification as oncologic diagnosis)
 // Condition.code
 * code ^short = "Identification of the condition, problem or diagnosis"
 * insert Translation(code ^short, de-DE, Code)
@@ -51,6 +57,11 @@ Description: "FDPG Profil - MII_PR_Onko_Fruehere_Tumorerkrankung"
 * code.coding[icd10-gm] ^short = "ICD-10-GM Kodierung (optional)"
 // Condition.code.text
 * code.text ^short = "Textuelle Beschreibung der früheren Tumorerkrankung (Pflichtfeld)"
+* insert Translation(code.text ^short, de-DE, Name der Klassifikation)
+* insert Translation(code.text ^short, en-US, Classification name)
+* code.text ^definition = "Freitextbeschreibung der früheren Tumorerkrankung"
+* insert Translation(code.text ^definition, de-DE, Name der Klassifikation\, wie in der Krebsregistermeldung angegeben.)
+* insert Translation(code.text ^definition, en-US, Name of the classification as reported to the cancer registry.)
 // Condition.bodySite
 * bodySite ^short = "Anatomical location, if relevant"
 * insert Translation(bodySite ^short, de-DE, Körperstelle)
@@ -60,6 +71,11 @@ Description: "FDPG Profil - MII_PR_Onko_Fruehere_Tumorerkrankung"
 * insert Translation(bodySite ^definition, en-US, Body site the resource refers to.)
 // Condition.bodySite.coding:icd-o-3
 * bodySite.coding[icd-o-3] ^short = "ICD-O-3 Topographie"
+* insert Translation(bodySite.coding[icd-o-3] ^short, de-DE, ICD-O-3 Topographie)
+* insert Translation(bodySite.coding[icd-o-3] ^short, en-US, ICD-O-3 topography)
+* bodySite.coding[icd-o-3] ^definition = "Anatomische Lokalisation nach ICD-O-3"
+* insert Translation(bodySite.coding[icd-o-3] ^definition, de-DE, ICD-O-3-Topographie bei vom Primärtumor abweichender Lokalisation in der Verlaufsbeschreibung.)
+* insert Translation(bodySite.coding[icd-o-3] ^definition, en-US, ICD-O-3 topography when the location in follow-up differs from the primary tumor.)
 // Condition.subject
 * subject ^definition = "Indicates the patient or group who the condition record is associated with."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)

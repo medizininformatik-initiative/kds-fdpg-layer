@@ -29,13 +29,17 @@ Description: "FDPG Profil - MII_PR_Onko_Strahlentherapie"
 // Procedure.extension:Intention
 * extension[Intention] ^short = "Intention der Strahlentherapie"
 * insert Translation(extension[Intention] ^short, de-DE, Intention der Strahlentherapie)
+* insert Translation(extension[Intention] ^short, en-US, Radiotherapy intent)
 * extension[Intention] ^definition = "Intention der Strahlentherapie gemäß 14.1 oBDS 2021."
 * insert Translation(extension[Intention] ^definition, de-DE, Intention der Strahlentherapie gemäß 14.1 oBDS 2021.)
+* insert Translation(extension[Intention] ^definition, en-US, Intent of the radiotherapy per oBDS 2021 §14.1.)
 // Procedure.extension:StellungZurOp
 * extension[StellungZurOp] ^short = "Stellung der Strahlentherapie zu einer Operation"
 * insert Translation(extension[StellungZurOp] ^short, de-DE, Stellung der Strahlentherapie zu einer Operation)
+* insert Translation(extension[StellungZurOp] ^short, en-US, Radiotherapy position relative to surgery)
 * extension[StellungZurOp] ^definition = "Stellung der Strahlentherapie zu einer Operation gemäß 14.2 oBDS 2021."
 * insert Translation(extension[StellungZurOp] ^definition, de-DE, Stellung der Strahlentherapie zu einer Operation gemäß 14.2 oBDS 2021.)
+* insert Translation(extension[StellungZurOp] ^definition, en-US, Position of the radiotherapy relative to surgery per oBDS 2021 §14.2.)
 // Procedure.basedOn
 * basedOn ^short = "A request for this procedure"
 * insert Translation(basedOn ^short, de-DE, Basiert auf)
@@ -122,13 +126,17 @@ Description: "FDPG Profil - MII_PR_Onko_Strahlentherapie"
 // Procedure.performed[x]:performedPeriod.start
 * performed[x][performedPeriod].start ^short = "Start der Strahlentherapie"
 * insert Translation(performed[x][performedPeriod].start ^short, de-DE, Start der Strahlentherapie)
+* insert Translation(performed[x][performedPeriod].start ^short, en-US, Therapy start date)
 * performed[x][performedPeriod].start ^definition = "Start der gesamten Strahlentherapie mit allen Einzelbestrahlungen gemäß 14.5 oBDS 2021."
 * insert Translation(performed[x][performedPeriod].start ^definition, de-DE, Start der gesamten Strahlentherapie mit allen Einzelbestrahlungen gemäß 14.5 oBDS 2021.)
+* insert Translation(performed[x][performedPeriod].start ^definition, en-US, Start date of systemic or watchful-waiting therapy per oBDS 2021 §16.6.)
 // Procedure.performed[x]:performedPeriod.end
 * performed[x][performedPeriod].end ^short = "Ende der Strahlentherapie"
 * insert Translation(performed[x][performedPeriod].end ^short, de-DE, Ende der Strahlentherapie)
+* insert Translation(performed[x][performedPeriod].end ^short, en-US, Therapy end date)
 * performed[x][performedPeriod].end ^definition = "Ende der gesamten Strahlentherapie mit allen Einzelbestrahlungen gemäß 14.6 oBDS 2021."
 * insert Translation(performed[x][performedPeriod].end ^definition, de-DE, Ende der gesamten Strahlentherapie mit allen Einzelbestrahlungen gemäß 14.6 oBDS 2021.)
+* insert Translation(performed[x][performedPeriod].end ^definition, en-US, End date of systemic or watchful-waiting therapy\, if applicable\, per oBDS 2021 §16.8.)
 // Procedure.reasonReference
 * reasonReference ^short = "The justification that the procedure was performed"
 * insert Translation(reasonReference ^short, de-DE, Begründung (Verweis\))
@@ -143,6 +151,10 @@ Description: "FDPG Profil - MII_PR_Onko_Strahlentherapie"
 * bodySite ^definition = "Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität."
 * insert Translation(bodySite ^definition, de-DE, Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität.)
 * insert Translation(bodySite ^definition, en-US, The body site of the procedure using SNOMED CT including laterality.)
+// Procedure.bodySite.coding
+* bodySite.coding ^definition = "A reference to a code defined by a terminology system."
+* insert Translation(bodySite.coding ^definition, de-DE, Zielgebiet der Strahlentherapie gemäß oBDS 2021 §14.3.)
+* insert Translation(bodySite.coding ^definition, en-US, Target site of radiotherapy per oBDS 2021 §14.3.)
 // Procedure.bodySite.coding:snomed-ct
 * bodySite.coding[snomed-ct] ^short = "SNOMED CT Code"
 * insert Translation(bodySite.coding[snomed-ct] ^short, de-DE, SNOMED CT Code)
@@ -155,8 +167,10 @@ Description: "FDPG Profil - MII_PR_Onko_Strahlentherapie"
 // Procedure.outcome.coding
 * outcome.coding ^short = "Grund für Ende der Strahlentherapie"
 * insert Translation(outcome.coding ^short, de-DE, Grund für Ende der Strahlentherapie)
+* insert Translation(outcome.coding ^short, en-US, Reason for radiotherapy end)
 * outcome.coding ^definition = "Grund für Ende der Strahlentherapie - planmäßig oder abgebrochen -  gemäß 14.12 oBDS 2021."
 * insert Translation(outcome.coding ^definition, de-DE, Grund für Ende der Strahlentherapie - planmäßig oder abgebrochen -  gemäß 14.12 oBDS 2021.)
+* insert Translation(outcome.coding ^definition, en-US, Reason the radiotherapy ended — planned or terminated — per oBDS 2021 §14.12.)
 // Procedure.note
 * note ^short = "Hinweis"
 * insert Translation(note ^short, de-DE, Hinweis)

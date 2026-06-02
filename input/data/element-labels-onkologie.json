@@ -1,0 +1,380 @@
+{
+  "_doc": "Module-specific FDPG labels for the 'onkologie' module. Keys use FHIR element-id style (without resource type prefix). Authored per docs/datenkatalog-styleguide-en.md v0.3. oBDS, CTCAE, MedDRA, HGVS, ICD-O-3 kept as acronyms (§5.1).",
+
+  "elements": {
+    "accessionIdentifier.value": {
+      "de_short": "Histologie-Einsendenummer",
+      "en_short": "Histology accession number",
+      "de_def": "Histologie-Einsendenummer nach oBDS 2021 §6.2.",
+      "en_def": "Histology accession number per oBDS 2021 §6.2."
+    },
+    "action.code": {
+      "de_short": "Empfohlenes Therapieprotokoll",
+      "en_short": "Recommended therapy protocol",
+      "de_def": "Spezifisches Therapieprotokoll, empfohlen durch die Tumorkonferenz. Bei Kombinationstherapien repräsentiert dies das Gesamtprotokoll mit einzelnen Medikamenten als Sub-Actions.",
+      "en_def": "Specific therapy protocol recommended by the tumor board. For combination therapies this represents the overall protocol with individual medications as sub-actions."
+    },
+    "activity:obds.detail.status": {
+      "de_short": "Status der Therapieempfehlung",
+      "en_short": "Therapy recommendation status",
+      "de_def": "Status der Therapieempfehlung nach FHIR CarePlanActivityStatus: not-started | scheduled | in-progress | on-hold | completed | cancelled | stopped | unknown | entered-in-error.",
+      "en_def": "Status of the therapy recommendation per FHIR CarePlanActivityStatus: not-started | scheduled | in-progress | on-hold | completed | cancelled | stopped | unknown | entered-in-error."
+    },
+    "activity:obds.detail.statusReason": {
+      "de_short": "Therapieabweichung durch Patientenwunsch",
+      "en_short": "Patient-driven therapy deviation",
+      "de_def": "Bei Therapieabweichung (z.B. status = cancelled) Aussage, ob diese durch Patientenwunsch erfolgt ist, gemäß oBDS 2021 §19.2.",
+      "en_def": "If therapy deviates (e.g. status = cancelled), whether it was driven by the patient's wish, per oBDS 2021 §19.2."
+    },
+    "bodySite.coding": {
+      "de_short": "Zielgebiet",
+      "en_short": "Target site",
+      "de_def": "Zielgebiet der Strahlentherapie gemäß oBDS 2021 §14.3.",
+      "en_def": "Target site of radiotherapy per oBDS 2021 §14.3."
+    },
+    "bodySite.coding:Seitenlokalisation": {
+      "de_short": "Seitenlokalisation",
+      "en_short": "Laterality",
+      "de_def": "Seitenlokalisation bei paarigen Organen.",
+      "en_def": "Laterality for paired organs."
+    },
+    "bodySite.coding:icd-o-3": {
+      "de_short": "ICD-O-3 Topographie",
+      "en_short": "ICD-O-3 topography",
+      "de_def": "ICD-O-3-Topographie bei vom Primärtumor abweichender Lokalisation in der Verlaufsbeschreibung.",
+      "en_def": "ICD-O-3 topography when the location in follow-up differs from the primary tumor."
+    },
+    "bodySite.coding:primaertumorSeitenlokalisation": {
+      "de_short": "Seitenlokalisation des Primärtumors",
+      "en_short": "Primary tumor laterality",
+      "de_def": "Seitenlokalisation des Primärtumors nach oBDS 2021 §5.8.",
+      "en_def": "Laterality of the primary tumor per oBDS 2021 §5.8."
+    },
+    "category.coding": {
+      "de_short": "Art der Tumorkonferenz",
+      "en_short": "Tumor board type",
+      "de_def": "Art der Tumorkonferenz oder Therapieplanung gemäß oBDS 2021 §18.2.",
+      "en_def": "Type of tumor board or therapy planning per oBDS 2021 §18.2."
+    },
+    "category:oncology": {
+      "de_short": "Kategorisierung als onkologische Diagnose",
+      "en_short": "Classification as oncologic diagnosis"
+    },
+    "code.coding:systemische_therapie_art": {
+      "de_short": "Art der systemischen Therapie",
+      "en_short": "Type of systemic therapy",
+      "de_def": "Art der systemischen oder abwartenden Therapie gemäß oBDS 2021 §16.3.",
+      "en_def": "Type of systemic or watchful-waiting therapy per oBDS 2021 §16.3."
+    },
+    "code.text": {
+      "de_short": "Name der Klassifikation",
+      "en_short": "Classification name",
+      "de_def": "Name der Klassifikation, wie in der Krebsregistermeldung angegeben.",
+      "en_def": "Name of the classification as reported to the cancer registry."
+    },
+    "collection.collected[x]:collectedDateTime": {
+      "de_short": "Datum der Probenentnahme",
+      "en_short": "Specimen collection date",
+      "de_def": "Datum der Probenentnahme — entspricht oBDS 6.1 Histologiedatum.",
+      "en_def": "Date of specimen collection — corresponds to oBDS 6.1 histology date."
+    },
+    "component:allelic-read-depth": {
+      "de_short": "Allelische Lesetiefe",
+      "en_short": "Allelic read depth",
+      "de_def": "Anzahl der Reads, die das Allel unterstützen.",
+      "en_def": "Number of reads supporting the allele."
+    },
+    "component:allelic-state": {
+      "de_short": "Allelstatus",
+      "en_short": "Allelic state",
+      "de_def": "Allelstatus, z.B. heterozygot oder homozygot.",
+      "en_def": "Allelic state, e.g. heterozygous or homozygous."
+    },
+    "component:alt-allele": {
+      "de_short": "Alternatives Allel",
+      "en_short": "Alternative allele",
+      "de_def": "Nukleotidsequenz des alternativen (mutierten) Allels.",
+      "en_def": "Nucleotide sequence of the alternative (mutated) allele."
+    },
+    "component:chromosome-identifier": {
+      "de_short": "Chromosom",
+      "en_short": "Chromosome",
+      "de_def": "Das betroffene Chromosom.",
+      "en_def": "The affected chromosome."
+    },
+    "component:coding-change-type": {
+      "de_short": "DNA-Änderungstyp",
+      "en_short": "DNA change type",
+      "de_def": "Typ der DNA-Änderung, z.B. Substitution oder Deletion.",
+      "en_def": "Type of DNA change, e.g. substitution or deletion."
+    },
+    "component:conclusion-string": {
+      "de_short": "Schlussfolgerung (Text)",
+      "en_short": "Conclusion (text)",
+      "de_def": "Textuelle Zusammenfassung oder Schlussfolgerung zur Variante.",
+      "en_def": "Textual summary or conclusion for the variant."
+    },
+    "component:copy-number": {
+      "de_short": "Kopienzahl",
+      "en_short": "Copy number",
+      "de_def": "Anzahl der Kopien eines genomischen Abschnitts.",
+      "en_def": "Number of copies of a genomic region."
+    },
+    "component:cytogenetic-location": {
+      "de_short": "Zytogenetische Lokalisation",
+      "en_short": "Cytogenetic location",
+      "de_def": "Chromosomale Position der Variante in Bandennomenklatur.",
+      "en_def": "Chromosomal position of the variant in band nomenclature."
+    },
+    "component:detection-limit": {
+      "de_short": "Nachweisgrenze",
+      "en_short": "Detection limit",
+      "de_def": "Nachweisgrenze des Laborgeräts.",
+      "en_def": "Detection limit of the laboratory instrument."
+    },
+    "component:dna-region": {
+      "de_short": "DNA-Regionsname",
+      "en_short": "DNA region name",
+      "de_def": "Lesbarer Name für die untersuchte Region — typischerweise Exon # oder Intron #.",
+      "en_def": "Human-readable name of the examined region — typically Exon # or Intron #."
+    },
+    "component:exact-start-end": {
+      "de_short": "Exakte Start-/Endposition",
+      "en_short": "Exact start/end position",
+      "de_def": "Exakte genomische Koordinaten der Variante — Start und Ende.",
+      "en_def": "Exact genomic coordinates of the variant — start and end."
+    },
+    "component:gene-fusion": {
+      "de_short": "Genfusion",
+      "en_short": "Gene fusion",
+      "de_def": "Details zur Genfusion in Blut oder Gewebe, ermittelt durch molekulargenetische Methode.",
+      "en_def": "Details on gene fusion in blood or tissue, determined by molecular genetic method."
+    },
+    "component:gene-studied": {
+      "de_short": "Untersuchtes Gen",
+      "en_short": "Gene studied",
+      "de_def": "Das untersuchte Gen, identifiziert durch HGNC-ID.",
+      "en_def": "The gene studied, identified by HGNC ID."
+    },
+    "component:genomic-hgvs": {
+      "de_short": "Genomische DNA-Änderung (g.HGVS)",
+      "en_short": "Genomic DNA change (g.HGVS)",
+      "de_def": "Genomische DNA-Änderung in HGVS-Nomenklatur.",
+      "en_def": "Genomic DNA change in HGVS nomenclature."
+    },
+    "component:genomic-ref-seq": {
+      "de_short": "Genomische Referenzsequenz",
+      "en_short": "Genomic reference sequence",
+      "de_def": "Genomische Referenzsequenz-ID, z.B. NC_000007.14.",
+      "en_def": "Genomic reference sequence ID, e.g. NC_000007.14."
+    },
+    "component:genomic-source-class": {
+      "de_short": "Genomische Herkunftsklasse",
+      "en_short": "Genomic source class",
+      "de_def": "Herkunft der Variante, z.B. somatisch oder Keimbahn.",
+      "en_def": "Origin of the variant, e.g. somatic or germline."
+    },
+    "component:inner-start-end": {
+      "de_short": "Innere Start-/Endposition",
+      "en_short": "Inner start/end position",
+      "de_def": "Innerer Bereich bei strukturellen Varianten.",
+      "en_def": "Inner range for structural variants."
+    },
+    "component:outer-start-end": {
+      "de_short": "Äußere Start-/Endposition",
+      "en_short": "Outer start/end position",
+      "de_def": "Äußerer Bereich bei strukturellen Varianten.",
+      "en_def": "Outer range for structural variants."
+    },
+    "component:ref-allele": {
+      "de_short": "Referenz-Allel",
+      "en_short": "Reference allele",
+      "de_def": "Nukleotidsequenz des Referenz-Allels.",
+      "en_def": "Nucleotide sequence of the reference allele."
+    },
+    "component:reference-sequence-assembly": {
+      "de_short": "Referenzgenom-Assembly",
+      "en_short": "Reference genome assembly",
+      "de_def": "Verwendete Referenzgenom-Version, z.B. GRCh37 oder GRCh38.",
+      "en_def": "Reference genome version used, e.g. GRCh37 or GRCh38."
+    },
+    "component:representative-coding-hgvs": {
+      "de_short": "DNA-Änderung (c.HGVS)",
+      "en_short": "DNA change (c.HGVS)",
+      "de_def": "cDNA-Änderung in HGVS-Nomenklatur auf Transkriptebene.",
+      "en_def": "cDNA change in HGVS nomenclature at transcript level."
+    },
+    "component:representative-protein-hgvs": {
+      "de_short": "Aminosäure-Änderung (p.HGVS)",
+      "en_short": "Amino acid change (p.HGVS)",
+      "de_def": "Aminosäure-Änderung in HGVS-Nomenklatur auf Proteinebene.",
+      "en_def": "Amino acid change in HGVS nomenclature at protein level."
+    },
+    "component:representative-transcript-ref-seq": {
+      "de_short": "Transkript-Referenzsequenz",
+      "en_short": "Transcript reference sequence",
+      "de_def": "Transkript-Referenzsequenz-ID, z.B. NM_004333.4.",
+      "en_def": "Transcript reference sequence ID, e.g. NM_004333.4."
+    },
+    "component:sample-allelic-frequency": {
+      "de_short": "Allelfrequenz in der Probe",
+      "en_short": "Sample allelic frequency",
+      "de_def": "Häufigkeit des varianten Allels in der untersuchten Probe.",
+      "en_def": "Frequency of the variant allele in the examined sample."
+    },
+    "component:variant-confidence-status": {
+      "de_short": "Konfidenzstatus der Variante",
+      "en_short": "Variant confidence status",
+      "de_def": "Vertrauensstatus der Variantendetektion.",
+      "en_def": "Confidence status of the variant call."
+    },
+    "component:variant-inheritance": {
+      "de_short": "Varianten-Vererbung",
+      "en_short": "Variant inheritance",
+      "de_def": "Vererbungsart der Variante, z.B. maternal oder paternal.",
+      "en_def": "Inheritance pattern of the variant, e.g. maternal or paternal."
+    },
+    "component:variation-code": {
+      "de_short": "Varianten-Code",
+      "en_short": "Variation code",
+      "de_def": "Eindeutiger Variantenidentifikator aus externen Datenbanken, z.B. ClinVar oder dbSNP.",
+      "en_def": "Unique variant identifier from external databases, e.g. ClinVar or dbSNP."
+    },
+    "created": {
+      "de_short": "Datum der Tumorkonferenz",
+      "en_short": "Tumor board date",
+      "de_def": "Datum der Tumorkonferenz oder Therapieplanung gemäß oBDS 2021 §18.1.",
+      "en_def": "Date of the tumor board or therapy planning per oBDS 2021 §18.1."
+    },
+    "effective[x]:effectivePeriod.end": {
+      "de_short": "Enddatum der systemischen Medikation",
+      "en_short": "Systemic medication end date",
+      "de_def": "Enddatum der systemischen Medikation gemäß oBDS 2021 §16.9.",
+      "en_def": "End date of systemic medication per oBDS 2021 §16.9."
+    },
+    "effective[x]:effectivePeriod.start": {
+      "de_short": "Startdatum der systemischen Medikation",
+      "en_short": "Systemic medication start date",
+      "de_def": "Startdatum der systemischen Medikation gemäß oBDS 2021 §16.7.",
+      "en_def": "Start date of systemic medication per oBDS 2021 §16.7."
+    },
+    "event.coding.code": {
+      "de_short": "Art der Nebenwirkung",
+      "en_short": "Type of adverse event",
+      "de_def": "Art der Nebenwirkung nach CTCAE / MedDRA. Abweichend von oBDS 2021 §15.2 kann dieses Feld leer sein, wenn eine Nebenwirkung des Schweregrads 1 oder 2 vorliegt und keine spezifische Art dokumentiert wurde.",
+      "en_def": "Type of adverse event per CTCAE / MedDRA. Diverging from oBDS 2021 §15.2, this field may be empty for grade 1 or 2 adverse events with no specific type documented."
+    },
+    "event.coding.version": {
+      "de_short": "CTCAE-Version",
+      "en_short": "CTCAE version",
+      "de_def": "Version der CTCAE-Klassifikation, die für die Art der Nebenwirkung verwendet wurde, gemäß oBDS 2021 §15.3.",
+      "en_def": "Version of the CTCAE classification used for the adverse event type, per oBDS 2021 §15.3."
+    },
+    "evidence.detail": {
+      "de_short": "Evidenz für Erstdiagnose",
+      "en_short": "Evidence for initial diagnosis",
+      "de_def": "Liste aller für die Erstdiagnose ausschlaggebenden Beobachtungen.",
+      "en_def": "List of observations supporting the initial diagnosis."
+    },
+    "extension:Applikationsart": {
+      "de_short": "Applikationsart",
+      "en_short": "Application type",
+      "de_def": "Applikationsart der Bestrahlung gemäß oBDS 2021 §14.7.",
+      "en_def": "Application type of radiation per oBDS 2021 §14.7."
+    },
+    "extension:Intention": {
+      "de_short": "Intention der Strahlentherapie",
+      "en_short": "Radiotherapy intent",
+      "de_def": "Intention der Strahlentherapie gemäß oBDS 2021 §14.1.",
+      "en_def": "Intent of the radiotherapy per oBDS 2021 §14.1."
+    },
+    "extension:StellungZurOp": {
+      "de_short": "Stellung der Strahlentherapie zur OP",
+      "en_short": "Radiotherapy position relative to surgery",
+      "de_def": "Stellung der Strahlentherapie zu einer Operation gemäß oBDS 2021 §14.2.",
+      "en_def": "Position of the radiotherapy relative to surgery per oBDS 2021 §14.2."
+    },
+    "extension:Urgency": {
+      "de_short": "Art des Eingriffs",
+      "en_short": "Procedure urgency",
+      "de_def": "Modalität der Eingriffsdurchführung — Elektiv- vs. Notfalleingriff — gemäß oBDS 2021 KR6.",
+      "en_def": "Procedure modality — elective vs. emergency — per oBDS 2021 KR6."
+    },
+    "extension:morphology-behavior-icdo3": {
+      "de_short": "ICD-O-Morphologie",
+      "en_short": "ICD-O morphology",
+      "de_def": "Morphologie des Primärtumors nach ICD-O-3 gemäß oBDS §6.3.",
+      "en_def": "Morphology of the primary tumor per ICD-O-3 per oBDS §6.3."
+    },
+    "medication[x]:medicationCodeableConcept.coding": {
+      "de_short": "Wirkstoff/Substanz",
+      "en_short": "Active substance",
+      "de_def": "Wirkstoff oder Substanz der systemischen onkologischen Medikation gemäß oBDS 2021 §16.4.",
+      "en_def": "Active substance of the systemic oncologic medication per oBDS 2021 §16.4."
+    },
+    "method.coding": {
+      "de_short": "TNM-Version",
+      "en_short": "TNM version",
+      "de_def": "Version nach oBDS 2021 §8.2.",
+      "en_def": "Version per oBDS 2021 §8.2."
+    },
+    "note.text": {
+      "de_short": "Protokoll der systemischen Medikation",
+      "en_short": "Systemic medication protocol",
+      "de_def": "Protokoll der systemischen Medikation gemäß oBDS 2021 §16.6.",
+      "en_def": "Protocol of the systemic medication per oBDS 2021 §16.6."
+    },
+    "outcome.coding": {
+      "de_short": "Grund für Ende der Strahlentherapie",
+      "en_short": "Reason for radiotherapy end",
+      "de_def": "Grund für das Ende der Strahlentherapie — planmäßig oder abgebrochen — gemäß oBDS 2021 §14.12.",
+      "en_def": "Reason the radiotherapy ended — planned or terminated — per oBDS 2021 §14.12."
+    },
+    "performed[x]:performedDateTime": {
+      "de_short": "Datum der Stoma-Markierung",
+      "en_short": "Stoma marking date"
+    },
+    "performed[x]:performedPeriod.end": {
+      "de_short": "Enddatum der Therapie",
+      "en_short": "Therapy end date",
+      "de_def": "Enddatum der systemischen oder abwartenden Therapie, falls vorhanden, gemäß oBDS 2021 §16.8.",
+      "en_def": "End date of systemic or watchful-waiting therapy, if applicable, per oBDS 2021 §16.8."
+    },
+    "performed[x]:performedPeriod.start": {
+      "de_short": "Startdatum der Therapie",
+      "en_short": "Therapy start date",
+      "de_def": "Startdatum der systemischen oder abwartenden Therapie gemäß oBDS 2021 §16.6.",
+      "en_def": "Start date of systemic or watchful-waiting therapy per oBDS 2021 §16.6."
+    },
+    "seriousness.coding": {
+      "de_short": "Schweregrad der Nebenwirkung",
+      "en_short": "Adverse event severity",
+      "de_def": "Schweregrad der Nebenwirkung nach CTCAE gemäß oBDS 2021 §15.1.",
+      "en_def": "Severity of the adverse event per CTCAE per oBDS 2021 §15.1."
+    },
+    "usedCode:Strahlenart": {
+      "de_short": "Strahlenart",
+      "en_short": "Radiation type",
+      "de_def": "Strahlenart der Bestrahlung gemäß oBDS 2021 §14.8.",
+      "en_def": "Radiation type per oBDS 2021 §14.8."
+    },
+    "value[x].coding": {
+      "de_short": "Lokalisation der Fernmetastasen",
+      "en_short": "Metastasis location",
+      "de_def": "Lokalisation der Fernmetastasen gemäß oBDS 2021 §11.1 / TNM-Kodierung.",
+      "en_def": "Location of distant metastases per oBDS 2021 §11.1 / TNM coding."
+    },
+    "value[x].value": {
+      "de_short": "Anzahl untersuchter Sentinel-Lymphknoten",
+      "en_short": "Number of sentinel lymph nodes examined",
+      "de_def": "Anzahl untersuchter Sentinel-Lymphknoten nach oBDS 2021 §6.9.",
+      "en_def": "Number of sentinel lymph nodes examined per oBDS 2021 §6.9."
+    },
+    "verificationStatus.coding:primaertumorDiagnosesicherung": {
+      "de_short": "Diagnosesicherung",
+      "en_short": "Diagnosis verification",
+      "de_def": "Art der Diagnosesicherung nach oBDS 2021 §5.7.",
+      "en_def": "Type of diagnosis verification per oBDS 2021 §5.7."
+    }
+  }
+}

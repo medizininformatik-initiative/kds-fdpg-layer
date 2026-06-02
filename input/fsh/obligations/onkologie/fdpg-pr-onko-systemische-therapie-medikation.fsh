@@ -74,8 +74,10 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie_Medikation"
 // MedicationStatement.medication[x]:medicationCodeableConcept.coding
 * medication[x][medicationCodeableConcept].coding ^short = "Wirkstoff der systemischen Medikation"
 * insert Translation(medication[x][medicationCodeableConcept].coding ^short, de-DE, Wirkstoff/ Substanz der systemischen Medikation)
+* insert Translation(medication[x][medicationCodeableConcept].coding ^short, en-US, Active substance)
 * medication[x][medicationCodeableConcept].coding ^definition = "Wirkstoff der systemischen onkologischen Medikation. Nach Möglichkeit als ATC-kodiert anzugeben. Wirkstoffe sind einzeln zu kodieren. Kombinationstherapien können über MedicationStatement.partOf in übergeordneten MedicationStatements gruppiert werden - in diesem Fall ist bei jedem Wirkstoff unter `MedicationStatement.note.text` das Kürzel des (z.B. chemotherapeutischen) Protokolls zu hinterlegen."
 * insert Translation(medication[x][medicationCodeableConcept].coding ^definition, de-DE, Wirkstoff / Substanz der systemischen onkologischen Medikation gemäß 16.4  oBDS 2021.)
+* insert Translation(medication[x][medicationCodeableConcept].coding ^definition, en-US, Active substance of the systemic oncologic medication per oBDS 2021 §16.4.)
 // MedicationStatement.medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer
 * medication[x][medicationCodeableConcept].coding[Pharmazentralnummer] ^short = "PZN Code"
 * insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer] ^short, de-DE, PZN Code)
@@ -142,13 +144,17 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie_Medikation"
 // MedicationStatement.effective[x]:effectivePeriod.start
 * effective[x][effectivePeriod].start ^short = "Startdatum der systemischen Medikation"
 * insert Translation(effective[x][effectivePeriod].start ^short, de-DE, Startdatum der systemischen Medikation)
+* insert Translation(effective[x][effectivePeriod].start ^short, en-US, Systemic medication start date)
 * effective[x][effectivePeriod].start ^definition = "Startdatum der systemischen Medikation gemäß 16.7 oBDS 2021."
 * insert Translation(effective[x][effectivePeriod].start ^definition, de-DE, Startdatum der systemischen Medikation gemäß 16.7 oBDS 2021.)
+* insert Translation(effective[x][effectivePeriod].start ^definition, en-US, Start date of systemic medication per oBDS 2021 §16.7.)
 // MedicationStatement.effective[x]:effectivePeriod.end
 * effective[x][effectivePeriod].end ^short = "Enddatum der systemischen Medikation"
 * insert Translation(effective[x][effectivePeriod].end ^short, de-DE, Enddatum der systemischen Medikation)
+* insert Translation(effective[x][effectivePeriod].end ^short, en-US, Systemic medication end date)
 * effective[x][effectivePeriod].end ^definition = "Enddatum der systemischen Medikation gemäß 16.9 oBDS 2021."
 * insert Translation(effective[x][effectivePeriod].end ^definition, de-DE, Enddatum der systemischen Medikation gemäß 16.9 oBDS 2021.)
+* insert Translation(effective[x][effectivePeriod].end ^definition, en-US, End date of systemic medication per oBDS 2021 §16.9.)
 // MedicationStatement.dateAsserted
 * dateAsserted ^short = "Datum Bestätigung"
 * insert Translation(dateAsserted ^short, de-DE, Datum Bestätigung)
@@ -187,8 +193,10 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie_Medikation"
 // MedicationStatement.note.text
 * note.text ^short = "Protokoll"
 * insert Translation(note.text ^short, de-DE, Protokoll der systemischen Medikation)
+* insert Translation(note.text ^short, en-US, Systemic medication protocol)
 * note.text ^definition = "Protokoll der systemischen Medikation. Bei Angabe eines Schemas sind alle Wirkstoffe in einzelnen Ressourcen unter MedicationStatement.medication[x] gesondert zu kodieren"
 * insert Translation(note.text ^definition, de-DE, Protokoll der systemischen Medikation gemäß 16.6 oBDS 2021.)
+* insert Translation(note.text ^definition, en-US, Protocol of the systemic medication per oBDS 2021 §16.6.)
 // MedicationStatement.dosage
 * dosage ^short = "Dosierung"
 * insert Translation(dosage ^short, de-DE, Dosierung)

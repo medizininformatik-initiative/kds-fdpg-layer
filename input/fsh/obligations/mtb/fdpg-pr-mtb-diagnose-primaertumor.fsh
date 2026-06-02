@@ -24,8 +24,10 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 // Condition.extension:morphology-behavior-icdo3
 * extension[morphology-behavior-icdo3] ^short = "ICD-O-Morphologie"
 * insert Translation(extension[morphology-behavior-icdo3] ^short, de-DE, ICD-O-Morphologie)
+* insert Translation(extension[morphology-behavior-icdo3] ^short, en-US, ICD-O morphology)
 * extension[morphology-behavior-icdo3] ^definition = "Morphologie des Primärtumors nach ICD-O-3 nach 6.3 oBDS"
 * insert Translation(extension[morphology-behavior-icdo3] ^definition, de-DE, Morphologie des Primärtumors nach ICD-O-3 nach 6.3 oBDS)
+* insert Translation(extension[morphology-behavior-icdo3] ^definition, en-US, Morphology of the primary tumor per ICD-O-3 per oBDS §6.3.)
 // Condition.extension:occurredFollowing
 * extension[occurredFollowing] ^short = "Frühere Tumorerkrankungen"
 // Condition.clinicalStatus
@@ -45,8 +47,10 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 // Condition.verificationStatus.coding:primaertumorDiagnosesicherung
 * verificationStatus.coding[primaertumorDiagnosesicherung] ^short = "Diagnosesicherung gemäß oBDS"
 * insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung] ^short, de-DE, Diagnosesicherung gemäß oBDS)
+* insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung] ^short, en-US, Diagnosis verification)
 * verificationStatus.coding[primaertumorDiagnosesicherung] ^definition = "Art der Diagnosesicherung nach 5.7 oBDS 2021"
 * insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung] ^definition, de-DE, Art der Diagnosesicherung nach 5.7 oBDS 2021)
+* insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung] ^definition, en-US, Type of diagnosis verification per oBDS 2021 §5.7.)
 // Condition.code
 * code ^short = "Code"
 * insert Translation(code ^short, de-DE, Code)
@@ -109,13 +113,17 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 // Condition.bodySite.coding:primaertumorSeitenlokalisation
 * bodySite.coding[primaertumorSeitenlokalisation] ^short = "Seitenlokalisation des Primärtumors gemäß oBDS"
 * insert Translation(bodySite.coding[primaertumorSeitenlokalisation] ^short, de-DE, Seitenlokalisation des Primärtumors gemäß oBDS)
+* insert Translation(bodySite.coding[primaertumorSeitenlokalisation] ^short, en-US, Primary tumor laterality)
 * bodySite.coding[primaertumorSeitenlokalisation] ^definition = "Seitenlokalisation des Primärtumors nach 5.8 oBDS 2021"
 * insert Translation(bodySite.coding[primaertumorSeitenlokalisation] ^definition, de-DE, Seitenlokalisation des Primärtumors nach 5.8 oBDS 2021)
+* insert Translation(bodySite.coding[primaertumorSeitenlokalisation] ^definition, en-US, Laterality of the primary tumor per oBDS 2021 §5.8.)
 // Condition.bodySite.coding:icd-o-3
 * bodySite.coding[icd-o-3] ^short = "ICD-O-Topographie"
 * insert Translation(bodySite.coding[icd-o-3] ^short, de-DE, ICD-O-Topographie)
+* insert Translation(bodySite.coding[icd-o-3] ^short, en-US, ICD-O topography)
 * bodySite.coding[icd-o-3] ^definition = "Topographie des Primärtumors nach ICD-O-3 nach 5.4 oBDS 2021"
 * insert Translation(bodySite.coding[icd-o-3] ^definition, de-DE, Topographie des Primärtumors nach ICD-O-3 nach 5.4 oBDS 2021)
+* insert Translation(bodySite.coding[icd-o-3] ^definition, en-US, Topography of the primary tumor per ICD-O-3 per oBDS 2021 §5.4.)
 // Condition.subject
 * subject ^definition = "Indicates the patient or group who the condition record is associated with."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
@@ -152,8 +160,10 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 // Condition.stage:WHOGradZNS
 * stage[WHOGradZNS] ^short = "WHO Grad Tumor ZNS"
 * insert Translation(stage[WHOGradZNS] ^short, de-DE, WHO Grad Tumor ZNS)
+* insert Translation(stage[WHOGradZNS] ^short, en-US, WHO grade CNS tumor)
 * stage[WHOGradZNS] ^definition = "Grad eines Tumors nach WHO-Klassifikation der Tumoren des zentralen Nervensystems"
 * insert Translation(stage[WHOGradZNS] ^definition, de-DE, Grad eines Tumors nach WHO-Klassifikation der Tumoren des zentralen Nervensystems)
+* insert Translation(stage[WHOGradZNS] ^definition, en-US, Tumor grade per WHO classification of central nervous system tumors.)
 // Condition.stage:WHOGradZNS.assessment
 * stage[WHOGradZNS].assessment ^short = "Formal record of assessment"
 // Condition.stage:WHOGradZNS.type
@@ -161,8 +171,10 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 // Condition.stage:OncoTree
 * stage[OncoTree] ^short = "OncoTree Classification"
 * insert Translation(stage[OncoTree] ^short, de-DE, OncoTree Klassifikation)
+* insert Translation(stage[OncoTree] ^short, en-US, OncoTree classification)
 * stage[OncoTree] ^definition = "Klassifizierung eines Tumors nach OncoTree"
 * insert Translation(stage[OncoTree] ^definition, de-DE, Klassifizierung eines Tumors nach OncoTree)
+* insert Translation(stage[OncoTree] ^definition, en-US, Classification of the tumor per OncoTree.)
 // Condition.stage:OncoTree.assessment
 * stage[OncoTree].assessment ^short = "Formal record of assessment"
 // Condition.stage:OncoTree.type
@@ -170,8 +182,10 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 // Condition.stage:ErstdiagnoseZeitpunkt
 * stage[ErstdiagnoseZeitpunkt] ^short = "Tumorausbreitung Erstdiagnose"
 * insert Translation(stage[ErstdiagnoseZeitpunkt] ^short, de-DE, Tumorausbreitung Erstdiagnose)
+* insert Translation(stage[ErstdiagnoseZeitpunkt] ^short, en-US, Tumor extent at initial diagnosis)
 * stage[ErstdiagnoseZeitpunkt] ^definition = "Tumorausbreitung zum Zeitpunkt der Erstdiagnose"
 * insert Translation(stage[ErstdiagnoseZeitpunkt] ^definition, de-DE, Tumorausbreitung zum Zeitpunkt der Erstdiagnose)
+* insert Translation(stage[ErstdiagnoseZeitpunkt] ^definition, en-US, Tumor extent at the time of initial diagnosis.)
 // Condition.stage:ErstdiagnoseZeitpunkt.assessment
 * stage[ErstdiagnoseZeitpunkt].assessment ^short = "Formal record of assessment"
 // Condition.stage:ErstdiagnoseZeitpunkt.type
@@ -179,8 +193,10 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 // Condition.stage:MolekularesTumorboardZeitpunkt
 * stage[MolekularesTumorboardZeitpunkt] ^short = "Tumorausbreitung Molekulares Tumorboard"
 * insert Translation(stage[MolekularesTumorboardZeitpunkt] ^short, de-DE, Tumorausbreitung Molekulares Tumorboard)
+* insert Translation(stage[MolekularesTumorboardZeitpunkt] ^short, en-US, Tumor extent at MTB)
 * stage[MolekularesTumorboardZeitpunkt] ^definition = "Tumorausbreitung zum Zeitpunkt des Molekularen Tumorboard"
 * insert Translation(stage[MolekularesTumorboardZeitpunkt] ^definition, de-DE, Tumorausbreitung zum Zeitpunkt des Molekularen Tumorboard)
+* insert Translation(stage[MolekularesTumorboardZeitpunkt] ^definition, en-US, Tumor extent at the time of the MTB.)
 // Condition.stage:MolekularesTumorboardZeitpunkt.assessment
 * stage[MolekularesTumorboardZeitpunkt].assessment ^short = "Formal record of assessment"
 // Condition.stage:MolekularesTumorboardZeitpunkt.type
@@ -188,8 +204,10 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 // Condition.evidence.detail
 * evidence.detail ^short = "Evidenz für Erstdiagnose"
 * insert Translation(evidence.detail ^short, de-DE, Evidenz für Erstdiagnose)
+* insert Translation(evidence.detail ^short, en-US, Evidence for initial diagnosis)
 * evidence.detail ^definition = "Liste aller für die Erstdiagnose ausschlaggebenden Beobachtungen"
 * insert Translation(evidence.detail ^definition, de-DE, Liste aller für die Erstdiagnose ausschlaggebenden Beobachtungen)
+* insert Translation(evidence.detail ^definition, en-US, List of observations supporting the initial diagnosis.)
 // Condition.note
 * note ^short = "Hinweis"
 * insert Translation(note ^short, de-DE, Hinweis)

@@ -804,6 +804,40 @@
             }
           ]
         }
+      },
+      {
+        "id": "Observation.method.coding",
+        "path": "Observation.method.coding",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Version nach oBDS 2021 §8.2."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Version per oBDS 2021 §8.2."
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   }

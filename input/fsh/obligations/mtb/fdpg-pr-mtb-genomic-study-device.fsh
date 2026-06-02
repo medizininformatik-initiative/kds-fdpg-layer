@@ -11,11 +11,14 @@ Description: "FDPG Profil - MII_PR_MTB_Genomic_Study_Device"
 // Device.manufacturer
 * manufacturer ^short = "Hersteller des Geräts"
 * insert Translation(manufacturer ^short, de-DE, Hersteller des Geraets)
+* insert Translation(manufacturer ^short, en-US, Device manufacturer)
 * manufacturer ^definition = "Hersteller des Geräts, das in der Genomic Study Analysis verwendet wird."
 * insert Translation(manufacturer ^definition, de-DE, Hersteller des Geraets das in der Genomic Study Analysis verwendet wird.)
+* insert Translation(manufacturer ^definition, en-US, Manufacturer of the device used in the GenomicStudyAnalysis.)
 // Device.deviceName
 * deviceName ^short = "Name des Geräts"
 * insert Translation(deviceName ^short, de-DE, Name des Geraets)
+* insert Translation(deviceName ^short, en-US, Device name)
 // Device.deviceName.name
 * deviceName.name ^short = "The name of the device"
 // Device.type

@@ -42,6 +42,10 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Stoma_Markierung"
 * category ^definition = "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen"
 * insert Translation(category ^definition, de-DE, Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen)
 * insert Translation(category ^definition, en-US, Diagnostic procedures | Imaging procedures | Operations | Medications | Non-operative therapeutic procedures | Other procedures)
+// Procedure.category.coding
+* category.coding ^definition = "A reference to a code defined by a terminology system."
+* insert Translation(category.coding ^definition, de-DE, Art der Tumorkonferenz oder Therapieplanung gemäß oBDS 2021 §18.2.)
+* insert Translation(category.coding ^definition, en-US, Type of tumor board or therapy planning per oBDS 2021 §18.2.)
 // Procedure.category.coding:sct
 * category.coding[sct] ^short = "SNOMED CT Code"
 * insert Translation(category.coding[sct] ^short, de-DE, SNOMED CT Code)
@@ -100,6 +104,7 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Stoma_Markierung"
 // Procedure.performed[x]:performedDateTime
 * performed[x][performedDateTime] ^short = "Datum der Stoma-Markierung"
 * insert Translation(performed[x][performedDateTime] ^short, de-DE, Datum der Stoma-Markierung)
+* insert Translation(performed[x][performedDateTime] ^short, en-US, Stoma marking date)
 // Procedure.reasonReference
 * reasonReference ^short = "The justification that the procedure was performed"
 * insert Translation(reasonReference ^short, de-DE, Begründung (Verweis\))
@@ -114,6 +119,10 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Stoma_Markierung"
 * bodySite ^definition = "Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität."
 * insert Translation(bodySite ^definition, de-DE, Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität.)
 * insert Translation(bodySite ^definition, en-US, The body site of the procedure using SNOMED CT including laterality.)
+// Procedure.bodySite.coding
+* bodySite.coding ^definition = "A reference to a code defined by a terminology system."
+* insert Translation(bodySite.coding ^definition, de-DE, Zielgebiet der Strahlentherapie gemäß oBDS 2021 §14.3.)
+* insert Translation(bodySite.coding ^definition, en-US, Target site of radiotherapy per oBDS 2021 §14.3.)
 // Procedure.bodySite.coding:snomed-ct
 * bodySite.coding[snomed-ct] ^short = "SNOMED CT Code"
 * insert Translation(bodySite.coding[snomed-ct] ^short, de-DE, SNOMED CT Code)

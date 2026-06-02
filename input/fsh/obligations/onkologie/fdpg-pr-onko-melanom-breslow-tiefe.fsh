@@ -47,6 +47,11 @@ Description: "FDPG Profil - MII_PR_Onko_Melanom_Breslow_Tiefe"
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
 // Observation.value[x].value
 * value[x].value ^short = "Numerical value (with implicit precision)"
+* insert Translation(value[x].value ^short, de-DE, Anzahl untersuchter Sentinel-Lymphknoten)
+* insert Translation(value[x].value ^short, en-US, Number of sentinel lymph nodes examined)
+* value[x].value ^definition = "The value of the measured amount. The value includes an implicit precision in the presentation of the value."
+* insert Translation(value[x].value ^definition, de-DE, Anzahl untersuchter Sentinel-Lymphknoten nach oBDS 2021 §6.9.)
+* insert Translation(value[x].value ^definition, en-US, Number of sentinel lymph nodes examined per oBDS 2021 §6.9.)
 // Observation.value[x].unit
 * value[x].unit ^short = "Unit representation"
 // Observation.value[x].system
@@ -67,6 +72,10 @@ Description: "FDPG Profil - MII_PR_Onko_Melanom_Breslow_Tiefe"
 * method ^definition = "Indicates the mechanism used to perform the observation."
 * insert Translation(method ^definition, de-DE, Methode\, mit der die Beobachtung durchgeführt wurde.)
 * insert Translation(method ^definition, en-US, Method used to make the observation.)
+// Observation.method.coding
+* method.coding ^definition = "A reference to a code defined by a terminology system."
+* insert Translation(method.coding ^definition, de-DE, Version nach oBDS 2021 §8.2.)
+* insert Translation(method.coding ^definition, en-US, Version per oBDS 2021 §8.2.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(code)

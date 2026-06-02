@@ -32,8 +32,10 @@ Description: "FDPG Profil - MII_PR_Onko_Tumorkonferenz"
 // CarePlan.category.coding
 * category.coding ^short = "Art der Tumorkonferenz / Therapieplanung"
 * insert Translation(category.coding ^short, de-DE, Art der Tumorkonferenz / Therapieplanung)
+* insert Translation(category.coding ^short, en-US, Tumor board type)
 * category.coding ^definition = "Art der Tumorkonferenz / Therapieplanung gemäß 18.2 oBDS 2021."
 * insert Translation(category.coding ^definition, de-DE, Art der Tumorkonferenz / Therapieplanung gemäß 18.2 oBDS 2021.)
+* insert Translation(category.coding ^definition, en-US, Type of tumor board or therapy planning per oBDS 2021 §18.2.)
 // CarePlan.subject
 * subject ^short = "Who the care plan is for"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -51,8 +53,10 @@ Description: "FDPG Profil - MII_PR_Onko_Tumorkonferenz"
 // CarePlan.created
 * created ^short = "Datum der Tumorkonferenz / Therapieplanung"
 * insert Translation(created ^short, de-DE, Datum der Tumorkonferenz / Therapieplanung)
+* insert Translation(created ^short, en-US, Tumor board date)
 * created ^definition = "Datum der Tumorkonferenz / Therapieplanung gemäß 18.1 oBDS 2021."
 * insert Translation(created ^definition, de-DE, Datum der Tumorkonferenz / Therapieplanung gemäß 18.1 oBDS 2021.)
+* insert Translation(created ^definition, en-US, Date of the tumor board or therapy planning per oBDS 2021 §18.1.)
 // CarePlan.addresses
 * addresses ^short = "Health issues this plan addresses"
 // CarePlan.supportingInfo
@@ -66,13 +70,17 @@ Description: "FDPG Profil - MII_PR_Onko_Tumorkonferenz"
 // CarePlan.activity:obds.detail.status
 * activity[obds].detail.status ^short = "Status der Therapieempfehlung"
 * insert Translation(activity[obds].detail.status ^short, de-DE, Status der Therapieempfehlung)
+* insert Translation(activity[obds].detail.status ^short, en-US, Therapy recommendation status)
 * activity[obds].detail.status ^definition = "Status der Therapieempfehlung nach HL7 FHIR CarePlanActivityStatus | not-started | scheduled | in-progress | on-hold | completed | cancelled | stopped | unknown | entered-in-error |"
 * insert Translation(activity[obds].detail.status ^definition, de-DE, Status der Therapieempfehlung nach HL7 FHIR CarePlanActivityStatus | not-started | scheduled | in-progress | on-hold | completed | cancelled | stopped | unknown | entered-in-error |)
+* insert Translation(activity[obds].detail.status ^definition, en-US, Status of the therapy recommendation per FHIR CarePlanActivityStatus: not-started | scheduled | in-progress | on-hold | completed | cancelled | stopped | unknown | entered-in-error.)
 // CarePlan.activity:obds.detail.statusReason
 * activity[obds].detail.statusReason ^short = "Therapieabweichung aufgrund Patientenwunsch der Therapieempfehlung"
 * insert Translation(activity[obds].detail.statusReason ^short, de-DE, Therapieabweichung aufgrund Patientenwunsch der Therapieempfehlung)
+* insert Translation(activity[obds].detail.statusReason ^short, en-US, Patient-driven therapy deviation)
 * activity[obds].detail.statusReason ^definition = "wenn Therapieabweichung - z.B. status = cancelled - Aussage ob dies durch Patientenwunsch erfolgt ist gemäß 19.2 oBDS 2021."
 * insert Translation(activity[obds].detail.statusReason ^definition, de-DE, wenn Therapieabweichung - z.B. status = cancelled - Aussage ob dies durch Patientenwunsch erfolgt ist gemäß 19.2 oBDS 2021.)
+* insert Translation(activity[obds].detail.statusReason ^definition, en-US, If therapy deviates (e.g. status = cancelled\)\, whether it was driven by the patient's wish\, per oBDS 2021 §19.2.)
 // CarePlan.activity:extended.progress
 * activity[extended].progress ^short = "Progress notes for recommendation implementation"
 // CarePlan.activity:extended.reference

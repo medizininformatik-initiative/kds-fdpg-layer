@@ -158,6 +158,40 @@
         }
       },
       {
+        "id": "Observation.category.coding",
+        "path": "Observation.category.coding",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Art der Tumorkonferenz oder Therapieplanung gemäß oBDS 2021 §18.2."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Type of tumor board or therapy planning per oBDS 2021 §18.2."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "Observation.category.coding:ErstdiagnoseZeitpunkt",
         "extension": [
           {
@@ -732,6 +766,40 @@
         }
       },
       {
+        "id": "Observation.value[x].coding",
+        "path": "Observation.value[x].coding",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Dokumentation der Zustimmung oder Ablehnung eines Consents."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Documentation of consent or refusal."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "Observation.value[x].coding:Tumorausbreitung",
         "extension": [
           {
@@ -762,7 +830,67 @@
           }
         ],
         "path": "Observation.value[x].coding",
-        "sliceName": "Tumorausbreitung"
+        "sliceName": "Tumorausbreitung",
+        "_short": {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Tumorausbreitung"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            },
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Tumor extent"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Angabe zur Tumorausbreitung"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            },
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Tumor extent."
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            }
+          ]
+        }
       }
     ]
   }

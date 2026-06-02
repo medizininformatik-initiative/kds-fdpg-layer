@@ -62,8 +62,10 @@ Description: "FDPG Profil - MII_PR_Onko_TNM_Pn_Kategorie"
 // Observation.method.coding
 * method.coding ^short = "TNM Version"
 * insert Translation(method.coding ^short, de-DE, TNM Version)
+* insert Translation(method.coding ^short, en-US, TNM version)
 * method.coding ^definition = "Gibt an, nach welcher Version des TNM klassifiziert wurde."
 * insert Translation(method.coding ^definition, de-DE, Version nach 8.2 oBDS 2021)
+* insert Translation(method.coding ^definition, en-US, Version per oBDS 2021 §8.2.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(status)

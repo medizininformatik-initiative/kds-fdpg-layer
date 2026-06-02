@@ -39,8 +39,10 @@ Description: "FDPG Profil - MII_PR_Onko_Allgemeiner_Leistungszustand_Karnofsky"
 // Observation.value[x].coding
 * value[x].coding ^short = "Leistungszustand nach Karnofsky"
 * insert Translation(value[x].coding ^short, de-DE, Leistungszustand nach Karnofsky)
+* insert Translation(value[x].coding ^short, en-US, Metastasis location)
 * value[x].coding ^definition = "Leistungszustand nach Karnofsky 0-100% gemäß 12.1 oBDS 2021"
 * insert Translation(value[x].coding ^definition, de-DE, Leistungszustand nach Karnofsky 0-100% gemäß 12.1 oBDS 2021)
+* insert Translation(value[x].coding ^definition, en-US, Location of distant metastases per oBDS 2021 §11.1 / TNM coding.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(code)

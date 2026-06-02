@@ -97,43 +97,59 @@ Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry_MMR"
 // Observation.component:gene-studied
 * component[gene-studied] ^short = "Untersuchtes Gen"
 * insert Translation(component[gene-studied] ^short, de-DE, Untersuchtes Gen)
+* insert Translation(component[gene-studied] ^short, en-US, Gene studied)
 * component[gene-studied] ^definition = "Das untersuchte Gen"
 * insert Translation(component[gene-studied] ^definition, de-DE, Das untersuchte Gen)
+* insert Translation(component[gene-studied] ^definition, en-US, The gene studied\, identified by HGNC ID.)
 // Observation.component:biomarker-category
 * component[biomarker-category] ^short = "Biomarker-Kategorie"
 * insert Translation(component[biomarker-category] ^short, de-DE, Biomarker-Kategorie)
+* insert Translation(component[biomarker-category] ^short, en-US, Biomarker category)
 * component[biomarker-category] ^definition = "Die Kategorie des molekularen Biomarkers"
 * insert Translation(component[biomarker-category] ^definition, de-DE, Die Kategorie des molekularen Biomarkers)
+* insert Translation(component[biomarker-category] ^definition, en-US, Category of the molecular biomarker.)
 // Observation.component:mmr-mlh1
 * component[mmr-mlh1] ^short = "Komponenten"
 * insert Translation(component[mmr-mlh1] ^short, de-DE, Komponenten)
+* insert Translation(component[mmr-mlh1] ^short, en-US, Components)
 * component[mmr-mlh1] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[mmr-mlh1] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
+* insert Translation(component[mmr-mlh1] ^definition, en-US, Individual components of the observation.)
 // Observation.component:mmr-msh2
 * component[mmr-msh2] ^short = "Komponenten"
 * insert Translation(component[mmr-msh2] ^short, de-DE, Komponenten)
+* insert Translation(component[mmr-msh2] ^short, en-US, Components)
 * component[mmr-msh2] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[mmr-msh2] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
+* insert Translation(component[mmr-msh2] ^definition, en-US, Individual components of the observation.)
 // Observation.component:mmr-msh6
 * component[mmr-msh6] ^short = "Komponenten"
 * insert Translation(component[mmr-msh6] ^short, de-DE, Komponenten)
+* insert Translation(component[mmr-msh6] ^short, en-US, Components)
 * component[mmr-msh6] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[mmr-msh6] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
+* insert Translation(component[mmr-msh6] ^definition, en-US, Individual components of the observation.)
 // Observation.component:mmr-pms2
 * component[mmr-pms2] ^short = "Komponenten"
 * insert Translation(component[mmr-pms2] ^short, de-DE, Komponenten)
+* insert Translation(component[mmr-pms2] ^short, en-US, Components)
 * component[mmr-pms2] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[mmr-pms2] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
+* insert Translation(component[mmr-pms2] ^definition, en-US, Individual components of the observation.)
 // Observation.component:mmr-msh3
 * component[mmr-msh3] ^short = "Komponenten"
 * insert Translation(component[mmr-msh3] ^short, de-DE, Komponenten)
+* insert Translation(component[mmr-msh3] ^short, en-US, Components)
 * component[mmr-msh3] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[mmr-msh3] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
+* insert Translation(component[mmr-msh3] ^definition, en-US, Individual components of the observation.)
 // Observation.component:mmr-mlh3
 * component[mmr-mlh3] ^short = "Komponenten"
 * insert Translation(component[mmr-mlh3] ^short, de-DE, Komponenten)
+* insert Translation(component[mmr-mlh3] ^short, en-US, Components)
 * component[mmr-mlh3] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[mmr-mlh3] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
+* insert Translation(component[mmr-mlh3] ^definition, en-US, Individual components of the observation.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(identifier)

@@ -15,6 +15,10 @@ Description: "FDPG Profil - MII_PR_MTB_Tumorausbreitung"
 * category ^definition = "A code that classifies the general type of observation being made."
 * insert Translation(category ^definition, de-DE, Kategorisierung der Ressource.)
 * insert Translation(category ^definition, en-US, Categorization of the resource.)
+// Observation.category.coding
+* category.coding ^definition = "A reference to a code defined by a terminology system."
+* insert Translation(category.coding ^definition, de-DE, Art der Tumorkonferenz oder Therapieplanung gemäß oBDS 2021 §18.2.)
+* insert Translation(category.coding ^definition, en-US, Type of tumor board or therapy planning per oBDS 2021 §18.2.)
 // Observation.code
 * code ^short = "Type of observation (code / type)"
 * insert Translation(code ^short, de-DE, Code)
@@ -50,11 +54,17 @@ Description: "FDPG Profil - MII_PR_MTB_Tumorausbreitung"
 * value[x] ^definition = "The information determined as a result of making the observation, if the information has a simple value."
 * insert Translation(value[x] ^definition, de-DE, Wert der Beobachtung.)
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
+// Observation.value[x].coding
+* value[x].coding ^definition = "A reference to a code defined by a terminology system."
+* insert Translation(value[x].coding ^definition, de-DE, Dokumentation der Zustimmung oder Ablehnung eines Consents.)
+* insert Translation(value[x].coding ^definition, en-US, Documentation of consent or refusal.)
 // Observation.value[x].coding:Tumorausbreitung
 * value[x].coding[Tumorausbreitung] ^short = "Tumorausbreitung"
 * insert Translation(value[x].coding[Tumorausbreitung] ^short, de-DE, Tumorausbreitung)
+* insert Translation(value[x].coding[Tumorausbreitung] ^short, en-US, Tumor extent)
 * value[x].coding[Tumorausbreitung] ^definition = "Angabe zur Tumorausbreitung"
 * insert Translation(value[x].coding[Tumorausbreitung] ^definition, de-DE, Angabe zur Tumorausbreitung)
+* insert Translation(value[x].coding[Tumorausbreitung] ^definition, en-US, Tumor extent.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(category)

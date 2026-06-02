@@ -11,8 +11,10 @@ Description: "FDPG Profil - MII_PR_MTB_Studieneinschluss_Anfrage"
 // ServiceRequest.extension:statusReason
 * extension[statusReason] ^short = "Grund für Ablehnung"
 * insert Translation(extension[statusReason] ^short, de-DE, Grund für Ablehnung)
+* insert Translation(extension[statusReason] ^short, en-US, Reason for refusal)
 * extension[statusReason] ^definition = "Grund für Ablehnung des Studieneinschlusses (Tod, Studie geschlossen etc)"
 * insert Translation(extension[statusReason] ^definition, de-DE, Grund für Ablehnung des Studieneinschlusses - z.B. Tod oder Studie geschlossen)
+* insert Translation(extension[statusReason] ^definition, en-US, Reason for refusing study enrollment — e.g. death or study closed.)
 // ServiceRequest.extension:Prioritaet
 * extension[Prioritaet] ^short = "MII EX MTB Empfehlung Priorität"
 // ServiceRequest.extension:Publikation

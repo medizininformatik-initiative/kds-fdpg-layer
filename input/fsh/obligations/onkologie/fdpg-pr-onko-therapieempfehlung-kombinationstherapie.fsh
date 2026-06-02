@@ -64,8 +64,10 @@ Description: "FDPG Profil - MII_PR_Onko_Therapieempfehlung_Kombinationstherapie"
 // RequestGroup.action.code
 * action.code ^short = "Empfohlenes Therapieprotokoll"
 * insert Translation(action.code ^short, de-DE, Empfohlenes Therapieprotokoll)
+* insert Translation(action.code ^short, en-US, Recommended therapy protocol)
 * action.code ^definition = "Empfohlenes Therapieprotokoll gemäß Tumorkonferenz"
 * insert Translation(action.code ^definition, de-DE, Spezifisches Therapieprotokoll empfohlen durch Tumorkonferenz. Bei Kombinationstherapien repräsentiert dies das Gesamtprotokoll mit einzelnen Medikamenten als Sub-Actions.)
+* insert Translation(action.code ^definition, en-US, Specific therapy protocol recommended by the tumor board. For combination therapies this represents the overall protocol with individual medications as sub-actions.)
 // RequestGroup.action.action
 * action.action ^short = "Individual medications in protocol"
 // RequestGroup.action.action.resource

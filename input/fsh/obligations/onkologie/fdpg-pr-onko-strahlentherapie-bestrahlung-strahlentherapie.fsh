@@ -35,8 +35,10 @@ Description: "FDPG Profil - MII_PR_Onko_Strahlentherapie_Bestrahlung_Strahlenthe
 // Procedure.extension:Applikationsart
 * extension[Applikationsart] ^short = "Applikationsart"
 * insert Translation(extension[Applikationsart] ^short, de-DE, Applikationsart)
+* insert Translation(extension[Applikationsart] ^short, en-US, Application type)
 * extension[Applikationsart] ^definition = "Applikationsart der Bestrahlung gemäß 14.7 oBDS 2021."
 * insert Translation(extension[Applikationsart] ^definition, de-DE, Applikationsart der Bestrahlung gemäß 14.7 oBDS 2021.)
+* insert Translation(extension[Applikationsart] ^definition, en-US, Application type of radiation per oBDS 2021 §14.7.)
 // Procedure.basedOn
 * basedOn ^short = "A request for this procedure"
 * insert Translation(basedOn ^short, de-DE, Basiert auf)
@@ -123,13 +125,17 @@ Description: "FDPG Profil - MII_PR_Onko_Strahlentherapie_Bestrahlung_Strahlenthe
 // Procedure.performed[x]:performedPeriod.start
 * performed[x][performedPeriod].start ^short = "Start der Strahlentherapie"
 * insert Translation(performed[x][performedPeriod].start ^short, de-DE, Start der Strahlentherapie)
+* insert Translation(performed[x][performedPeriod].start ^short, en-US, Therapy start date)
 * performed[x][performedPeriod].start ^definition = "Start der gesamten Strahlentherapie mit allen Einzelbestrahlungen gemäß 14.5 oBDS 2021."
 * insert Translation(performed[x][performedPeriod].start ^definition, de-DE, Start der gesamten Strahlentherapie mit allen Einzelbestrahlungen gemäß 14.5 oBDS 2021.)
+* insert Translation(performed[x][performedPeriod].start ^definition, en-US, Start date of systemic or watchful-waiting therapy per oBDS 2021 §16.6.)
 // Procedure.performed[x]:performedPeriod.end
 * performed[x][performedPeriod].end ^short = "Ende der Strahlentherapie"
 * insert Translation(performed[x][performedPeriod].end ^short, de-DE, Ende der Strahlentherapie)
+* insert Translation(performed[x][performedPeriod].end ^short, en-US, Therapy end date)
 * performed[x][performedPeriod].end ^definition = "Ende der gesamten Strahlentherapie mit allen Einzelbestrahlungen gemäß 14.6 oBDS 2021."
 * insert Translation(performed[x][performedPeriod].end ^definition, de-DE, Ende der gesamten Strahlentherapie mit allen Einzelbestrahlungen gemäß 14.6 oBDS 2021.)
+* insert Translation(performed[x][performedPeriod].end ^definition, en-US, End date of systemic or watchful-waiting therapy\, if applicable\, per oBDS 2021 §16.8.)
 // Procedure.reasonReference
 * reasonReference ^short = "The justification that the procedure was performed"
 * insert Translation(reasonReference ^short, de-DE, Begründung (Verweis\))
@@ -149,8 +155,10 @@ Description: "FDPG Profil - MII_PR_Onko_Strahlentherapie_Bestrahlung_Strahlenthe
 // Procedure.bodySite.coding
 * bodySite.coding ^short = "Zielgebiet"
 * insert Translation(bodySite.coding ^short, de-DE, Zielgebiet)
+* insert Translation(bodySite.coding ^short, en-US, Target site)
 * bodySite.coding ^definition = "Zielgebiet der Strahlentherapie gemäß 14.3 oBDS 2021."
 * insert Translation(bodySite.coding ^definition, de-DE, Zielgebiet der Strahlentherapie gemäß 14.3 oBDS 2021.)
+* insert Translation(bodySite.coding ^definition, en-US, Target site of radiotherapy per oBDS 2021 §14.3.)
 // Procedure.bodySite.coding:snomed-ct
 * bodySite.coding[snomed-ct] ^short = "SNOMED CT Code"
 * insert Translation(bodySite.coding[snomed-ct] ^short, de-DE, SNOMED CT Code)
@@ -170,8 +178,10 @@ Description: "FDPG Profil - MII_PR_Onko_Strahlentherapie_Bestrahlung_Strahlenthe
 // Procedure.usedCode:Strahlenart
 * usedCode[Strahlenart] ^short = "Strahlenart"
 * insert Translation(usedCode[Strahlenart] ^short, de-DE, Strahlenart)
+* insert Translation(usedCode[Strahlenart] ^short, en-US, Radiation type)
 * usedCode[Strahlenart] ^definition = "Strahlenart der Bestrahlung gemäß 14.8 oBDS 2021."
 * insert Translation(usedCode[Strahlenart] ^definition, de-DE, Strahlenart der Bestrahlung gemäß 14.8 oBDS 2021.)
+* insert Translation(usedCode[Strahlenart] ^definition, en-US, Radiation type per oBDS 2021 §14.8.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(extension)

@@ -11,8 +11,10 @@ Description: "FDPG Profil - MII_PR_MolGen_GenomicStudy"
 // Procedure.extension:genomic-study-analysis
 * extension[genomic-study-analysis] ^short = "Durchgeführte Analysen"
 * insert Translation(extension[genomic-study-analysis] ^short, de-DE, Durchgeführte Analysen)
+* insert Translation(extension[genomic-study-analysis] ^short, en-US, Performed analyses)
 * extension[genomic-study-analysis] ^definition = "Referenzen zu den einzelnen GenomicStudyAnalysis-Ressourcen die die spezifischen Analysen und Assays dieser Studie beschreiben"
 * insert Translation(extension[genomic-study-analysis] ^definition, de-DE, Referenzen zu den einzelnen GenomicStudyAnalysis-Ressourcen die die spezifischen Analysen und Assays dieser Studie beschreiben)
+* insert Translation(extension[genomic-study-analysis] ^definition, en-US, References to the GenomicStudyAnalysis resources describing the specific analyses and assays of this study.)
 // Procedure.status
 * status ^short = "Status der genetischen Studie"
 * insert Translation(status ^short, de-DE, Status der genetischen Studie)

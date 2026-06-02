@@ -45,16 +45,28 @@ Description: "FDPG Profil - MII_PR_Onko_Histologie_ICDO3"
 * value[x] ^definition = "The information determined as a result of making the observation, if the information has a simple value."
 * insert Translation(value[x] ^definition, de-DE, Wert der Beobachtung.)
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
+// Observation.value[x].coding
+* value[x].coding ^definition = "A reference to a code defined by a terminology system."
+* insert Translation(value[x].coding ^definition, de-DE, Lokalisation der Fernmetastasen gemäß oBDS 2021 §11.1 / TNM-Kodierung.)
+* insert Translation(value[x].coding ^definition, en-US, Location of distant metastases per oBDS 2021 §11.1 / TNM coding.)
+// Observation.bodySite.coding
+* bodySite.coding ^definition = "A reference to a code defined by a terminology system."
+* insert Translation(bodySite.coding ^definition, de-DE, Zielgebiet der Strahlentherapie gemäß oBDS 2021 §14.3.)
+* insert Translation(bodySite.coding ^definition, en-US, Target site of radiotherapy per oBDS 2021 §14.3.)
 // Observation.bodySite.coding:Seitenlokalisation
 * bodySite.coding[Seitenlokalisation] ^short = "Seitenlokalisation"
 * insert Translation(bodySite.coding[Seitenlokalisation] ^short, de-DE, Seitenlokalisation)
+* insert Translation(bodySite.coding[Seitenlokalisation] ^short, en-US, Laterality)
 * bodySite.coding[Seitenlokalisation] ^definition = "Seitenlokalisation bei paarigen Organen"
 * insert Translation(bodySite.coding[Seitenlokalisation] ^definition, de-DE, Seitenlokalisation bei paarigen Organen)
+* insert Translation(bodySite.coding[Seitenlokalisation] ^definition, en-US, Laterality for paired organs.)
 // Observation.bodySite.coding:icd-o-3
 * bodySite.coding[icd-o-3] ^short = "ICD-O-3 Topographie"
 * insert Translation(bodySite.coding[icd-o-3] ^short, de-DE, ICD-O-3 Topographie)
+* insert Translation(bodySite.coding[icd-o-3] ^short, en-US, ICD-O-3 topography)
 * bodySite.coding[icd-o-3] ^definition = "ICD-O-3 Topographie bei vom Primärtumor abweichender Lokalisation in der Verlaufsbeschreibung"
 * insert Translation(bodySite.coding[icd-o-3] ^definition, de-DE, ICD-O-3 Topographie bei vom Primärtumor abweichender Lokalisation in der Verlaufsbeschreibung)
+* insert Translation(bodySite.coding[icd-o-3] ^definition, en-US, ICD-O-3 topography when the location in follow-up differs from the primary tumor.)
 // Observation.specimen
 * specimen ^short = "Specimen used for this observation"
 * insert Translation(specimen ^short, de-DE, Probe)

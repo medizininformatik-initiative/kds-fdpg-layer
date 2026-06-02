@@ -39,16 +39,21 @@ Description: "FDPG Profil - MII_PR_MTB_Molecular_Pathology_Report"
 // DiagnosticReport.result
 * result ^short = "Ergebnisse"
 * insert Translation(result ^short, de-DE, Ergebnisse)
+* insert Translation(result ^short, en-US, Results)
 * result ^definition = "Strukturierte Ergebnisse des Molekular-Pathologie-Befunds"
 * insert Translation(result ^definition, de-DE, Strukturierte Ergebnisse des Molekular-Pathologie-Befunds)
+* insert Translation(result ^definition, en-US, Structured results of the molecular pathology report.)
 // DiagnosticReport.result:Immunhistochemie
 * result[Immunhistochemie] ^short = "Immunhistochemie"
 * insert Translation(result[Immunhistochemie] ^short, de-DE, Immunhistochemie)
+* insert Translation(result[Immunhistochemie] ^short, en-US, Immunohistochemistry)
 * result[Immunhistochemie] ^definition = "Ergebnisse der Immunhistochemie, die im Kontext des Molekularen Tumorboards erstellt wurden. Umfasst neben regulärer IHC auch die Phospo-IHC, sowie komplexere IHC-Untersuchungen wie PDL1-Expression, Her2-Expression, etc."
 * insert Translation(result[Immunhistochemie] ^definition, de-DE, Ergebnisse der Immunhistochemie die im Kontext des Molekularen Tumorboards erstellt wurden. Umfasst neben regulaerer IHC auch die Phospho-IHC sowie komplexere IHC-Untersuchungen wie PDL1-Expression oder Her2-Expression.)
+* insert Translation(result[Immunhistochemie] ^definition, en-US, Immunohistochemistry results in the MTB context. Includes regular IHC and related techniques.)
 // DiagnosticReport.result:InSituHybridisierung
 * result[InSituHybridisierung] ^short = "Gewebebasierte In-Situ-Hybridisierung"
 * insert Translation(result[InSituHybridisierung] ^short, de-DE, Gewebebasierte In-Situ-Hybridisierung)
+* insert Translation(result[InSituHybridisierung] ^short, en-US, In-situ hybridization)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(code)

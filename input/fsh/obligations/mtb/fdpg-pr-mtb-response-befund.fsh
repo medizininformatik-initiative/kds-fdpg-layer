@@ -62,8 +62,10 @@ Description: "FDPG Profil - MII_PR_MTB_Response_Befund"
 // Observation.effective[x]:effectiveDateTime
 * effective[x][effectiveDateTime] ^short = "Zeitpunkt"
 * insert Translation(effective[x][effectiveDateTime] ^short, de-DE, Zeitpunkt)
+* insert Translation(effective[x][effectiveDateTime] ^short, en-US, Time)
 * effective[x][effectiveDateTime] ^definition = "Zeitpunkt des Response Befundes"
 * insert Translation(effective[x][effectiveDateTime] ^definition, de-DE, Zeitpunkt des Response Befundes)
+* insert Translation(effective[x][effectiveDateTime] ^definition, en-US, Time of the response report.)
 // Observation.value[x]
 * value[x] ^short = "Actual result"
 * insert Translation(value[x] ^short, de-DE, Messwert)
@@ -81,13 +83,17 @@ Description: "FDPG Profil - MII_PR_MTB_Response_Befund"
 // Observation.value[x]:valueCodeableConcept.coding:oBDS
 * value[x][valueCodeableConcept].coding[oBDS] ^short = "Response Beurteilung nach oBDS-Kriterien"
 * insert Translation(value[x][valueCodeableConcept].coding[oBDS] ^short, de-DE, Gesamtbeurteilung im Verlauf)
+* insert Translation(value[x][valueCodeableConcept].coding[oBDS] ^short, en-US, Overall assessment during follow-up)
 * value[x][valueCodeableConcept].coding[oBDS] ^definition = "Gesamtbeurteilung im Verlauf gemäß 17.2 oBDS 2021."
 * insert Translation(value[x][valueCodeableConcept].coding[oBDS] ^definition, de-DE, Gesamtbeurteilung im Verlauf gemäß 17.2 oBDS 2021.)
+* insert Translation(value[x][valueCodeableConcept].coding[oBDS] ^definition, en-US, Overall assessment during follow-up per oBDS 2021 §17.2.)
 // Observation.value[x]:valueCodeableConcept.coding:MTB
 * value[x][valueCodeableConcept].coding[MTB] ^short = "Response Beurteilung nach Recist oder Rano iM Rahmen des MTB"
 * insert Translation(value[x][valueCodeableConcept].coding[MTB] ^short, de-DE, Gesamtbeurteilung im Verlauf)
+* insert Translation(value[x][valueCodeableConcept].coding[MTB] ^short, en-US, Overall assessment during follow-up)
 * value[x][valueCodeableConcept].coding[MTB] ^definition = "Gesamtbeurteilung im Verlauf gemäß 17.2 oBDS 2021."
 * insert Translation(value[x][valueCodeableConcept].coding[MTB] ^definition, de-DE, Gesamtbeurteilung im Verlauf gemäß 17.2 oBDS 2021.)
+* insert Translation(value[x][valueCodeableConcept].coding[MTB] ^definition, en-US, Overall assessment during follow-up per oBDS 2021 §17.2.)
 // Observation.method
 * method ^short = "Beurteilungsmethode"
 * insert Translation(method ^short, de-DE, Beurteilungsmethode)

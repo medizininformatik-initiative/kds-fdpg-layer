@@ -1,0 +1,684 @@
+{
+  "_doc": "Module-specific FDPG labels for the 'molgen' (molecular genetics) module. Keys use FHIR element-id style (without resource type prefix). Authored per docs/datenkatalog-styleguide-en.md v0.3. HGVS, SNV/CNV, GRCh37/GRCh38, ClinVar, dbSNP, MSI/TMB kept as established acronyms.",
+
+  "elements": {
+    "authoredOn": {
+      "de_short": "Anforderungsdatum",
+      "en_short": "Request date",
+      "de_def": "Datum der Anforderung.",
+      "en_def": "Date the request was placed."
+    },
+    "basis": {
+      "de_short": "Grundlage",
+      "en_short": "Basis",
+      "de_def": "Grundlagen, auf denen die Risikobewertung basiert — z.B. genetische Varianten.",
+      "en_def": "Basis on which the risk assessment is built — e.g. genetic variants."
+    },
+    "component:allelic-read-depth": {
+      "de_short": "Allelische Lesetiefe",
+      "en_short": "Allelic read depth",
+      "de_def": "Anzahl der Reads, die das Allel unterstützen.",
+      "en_def": "Number of reads supporting the allele."
+    },
+    "component:allelic-state": {
+      "de_short": "Allelstatus",
+      "en_short": "Allelic state",
+      "de_def": "Allelstatus, z.B. heterozygot oder homozygot.",
+      "en_def": "Allelic state, e.g. heterozygous or homozygous."
+    },
+    "component:alt-allele": {
+      "de_short": "Alternatives Allel",
+      "en_short": "Alternative allele",
+      "de_def": "Nukleotidsequenz des alternativen (mutierten) Allels.",
+      "en_def": "Nucleotide sequence of the alternative (mutated) allele."
+    },
+    "component:biomarker-category": {
+      "de_short": "Biomarker-Kategorie",
+      "en_short": "Biomarker category",
+      "de_def": "Kategorie des molekularen Biomarkers.",
+      "en_def": "Category of the molecular biomarker."
+    },
+    "component:chromosome-identifier": {
+      "de_short": "Chromosom",
+      "en_short": "Chromosome",
+      "de_def": "Das betroffene Chromosom.",
+      "en_def": "The affected chromosome."
+    },
+    "component:clinical-significance": {
+      "de_short": "Klinische Signifikanz",
+      "en_short": "Clinical significance",
+      "de_def": "Klinische Signifikanz der Variante.",
+      "en_def": "Clinical significance of the variant."
+    },
+    "component:coding-change-type": {
+      "de_short": "DNA-Änderungstyp",
+      "en_short": "DNA change type",
+      "de_def": "Typ der DNA-Änderung, z.B. Substitution oder Deletion.",
+      "en_def": "Type of DNA change, e.g. substitution or deletion."
+    },
+    "component:conclusion-string": {
+      "de_short": "Schlussfolgerung (Text)",
+      "en_short": "Conclusion (text)",
+      "de_def": "Textuelle Zusammenfassung oder Schlussfolgerung zur Variante.",
+      "en_def": "Textual summary or conclusion for the variant."
+    },
+    "component:copy-number": {
+      "de_short": "Kopienzahl",
+      "en_short": "Copy number",
+      "de_def": "Anzahl der Kopien eines genomischen Abschnitts.",
+      "en_def": "Number of copies of a genomic region."
+    },
+    "component:cytogenetic-location": {
+      "de_short": "Zytogenetische Lokalisation",
+      "en_short": "Cytogenetic location",
+      "de_def": "Chromosomale Position der Variante in Bandennomenklatur.",
+      "en_def": "Chromosomal position of the variant in band nomenclature."
+    },
+    "component:detection-limit": {
+      "de_short": "Nachweisgrenze",
+      "en_short": "Detection limit",
+      "de_def": "Nachweisgrenze des Laborgeräts.",
+      "en_def": "Detection limit of the laboratory instrument."
+    },
+    "component:dna-region": {
+      "de_short": "DNA-Regionsname",
+      "en_short": "DNA region name",
+      "de_def": "Lesbarer Name für die untersuchte Region — typischerweise Exon # oder Intron #.",
+      "en_def": "Human-readable name of the examined region — typically Exon # or Intron #."
+    },
+    "component:evidence-level": {
+      "de_short": "Evidenzlevel",
+      "en_short": "Evidence level",
+      "de_def": "Evidenzlevel für die therapeutische Empfehlung.",
+      "en_def": "Evidence level for the therapy recommendation."
+    },
+    "component:exact-start-end": {
+      "de_short": "Exakte Start-/Endposition",
+      "en_short": "Exact start/end position",
+      "de_def": "Exakte genomische Koordinaten der Variante — Start und Ende.",
+      "en_def": "Exact genomic coordinates of the variant — start and end."
+    },
+    "component:functional-effect": {
+      "de_short": "Funktioneller Effekt",
+      "en_short": "Functional effect",
+      "de_def": "Funktioneller Effekt der Variante auf das Genprodukt.",
+      "en_def": "Functional effect of the variant on the gene product."
+    },
+    "component:gene-fusion": {
+      "de_short": "Genfusion",
+      "en_short": "Gene fusion",
+      "de_def": "Details zur Genfusion in Blut oder Gewebe, ermittelt durch molekulargenetische Methode.",
+      "en_def": "Details on gene fusion in blood or tissue, determined by molecular genetic method."
+    },
+    "component:gene-studied": {
+      "de_short": "Untersuchtes Gen",
+      "en_short": "Gene studied",
+      "de_def": "Das untersuchte Gen.",
+      "en_def": "The gene studied."
+    },
+    "component:genomic-hgvs": {
+      "de_short": "Genomische DNA-Änderung (g.HGVS)",
+      "en_short": "Genomic DNA change (g.HGVS)",
+      "de_def": "Genomische DNA-Änderung in HGVS-Nomenklatur.",
+      "en_def": "Genomic DNA change in HGVS nomenclature."
+    },
+    "component:genomic-ref-seq": {
+      "de_short": "Genomische Referenzsequenz",
+      "en_short": "Genomic reference sequence",
+      "de_def": "Genomische Referenzsequenz-ID, z.B. NC_000007.14.",
+      "en_def": "Genomic reference sequence ID, e.g. NC_000007.14."
+    },
+    "component:genomic-source-class": {
+      "de_short": "Genomische Herkunftsklasse",
+      "en_short": "Genomic source class",
+      "de_def": "Herkunft der Variante, z.B. somatisch oder Keimbahn.",
+      "en_def": "Origin of the variant, e.g. somatic or germline."
+    },
+    "component:inner-start-end": {
+      "de_short": "Innere Start-/Endposition",
+      "en_short": "Inner start/end position",
+      "de_def": "Innerer Bereich bei strukturellen Varianten.",
+      "en_def": "Inner range for structural variants."
+    },
+    "component:medication-assessed": {
+      "de_short": "Bewertete Medikation",
+      "en_short": "Medication assessed",
+      "de_def": "Bewertete Medikation für die therapeutische Empfehlung.",
+      "en_def": "Medication assessed for the therapy recommendation."
+    },
+    "component:mode-of-inheritance": {
+      "de_short": "Vererbungsmodus",
+      "en_short": "Mode of inheritance",
+      "de_def": "Vererbungsmodus der assoziierten Erkrankung.",
+      "en_def": "Mode of inheritance of the associated condition."
+    },
+    "component:outer-start-end": {
+      "de_short": "Äußere Start-/Endposition",
+      "en_short": "Outer start/end position",
+      "de_def": "Äußerer Bereich bei strukturellen Varianten.",
+      "en_def": "Outer range for structural variants."
+    },
+    "component:phenotypic-treatment-context": {
+      "de_short": "Phänotypischer Behandlungskontext",
+      "en_short": "Phenotypic treatment context",
+      "de_def": "Phänotypischer oder krankheitsbezogener Kontext der Behandlung.",
+      "en_def": "Phenotypic or disease-specific context of the treatment."
+    },
+    "component:predicted-phenotype": {
+      "de_short": "Vorhergesagter Phänotyp",
+      "en_short": "Predicted phenotype",
+      "de_def": "Mit der Variante assoziierter vorhergesagter Phänotyp oder Erkrankung.",
+      "en_def": "Predicted phenotype or condition associated with the variant."
+    },
+    "component:ref-allele": {
+      "de_short": "Referenz-Allel",
+      "en_short": "Reference allele",
+      "de_def": "Nukleotidsequenz des Referenz-Allels.",
+      "en_def": "Nucleotide sequence of the reference allele."
+    },
+    "component:reference-sequence-assembly": {
+      "de_short": "Referenzgenom-Assembly",
+      "en_short": "Reference genome assembly",
+      "de_def": "Verwendete Referenzgenom-Version, z.B. GRCh37 oder GRCh38.",
+      "en_def": "Reference genome version used, e.g. GRCh37 or GRCh38."
+    },
+    "component:representative-coding-hgvs": {
+      "de_short": "DNA-Änderung (c.HGVS)",
+      "en_short": "DNA change (c.HGVS)",
+      "de_def": "cDNA-Änderung in HGVS-Nomenklatur auf Transkriptebene.",
+      "en_def": "cDNA change in HGVS nomenclature at transcript level."
+    },
+    "component:representative-protein-hgvs": {
+      "de_short": "Aminosäure-Änderung (p.HGVS)",
+      "en_short": "Amino acid change (p.HGVS)",
+      "de_def": "Aminosäure-Änderung in HGVS-Nomenklatur auf Proteinebene.",
+      "en_def": "Amino acid change in HGVS nomenclature at protein level."
+    },
+    "component:representative-transcript-ref-seq": {
+      "de_short": "Transkript-Referenzsequenz",
+      "en_short": "Transcript reference sequence",
+      "de_def": "Transkript-Referenzsequenz-ID, z.B. NM_004333.4.",
+      "en_def": "Transcript reference sequence ID, e.g. NM_004333.4."
+    },
+    "component:sample-allelic-frequency": {
+      "de_short": "Allelfrequenz in der Probe",
+      "en_short": "Sample allelic frequency",
+      "de_def": "Häufigkeit des varianten Allels in der untersuchten Probe.",
+      "en_def": "Frequency of the variant allele in the examined sample."
+    },
+    "component:therapeutic-implication": {
+      "de_short": "Art der therapeutischen Implikation",
+      "en_short": "Therapeutic implication type",
+      "de_def": "Art der therapeutischen Implikation, z.B. Sensitivität oder Resistenz.",
+      "en_def": "Type of therapeutic implication, e.g. sensitivity or resistance."
+    },
+    "component:therapy-assessed": {
+      "de_short": "Bewertete Therapie",
+      "en_short": "Therapy assessed",
+      "de_def": "Bewertete nicht-medikamentöse Therapie.",
+      "en_def": "Non-pharmacologic therapy assessed."
+    },
+    "component:variant-confidence-status": {
+      "de_short": "Konfidenzstatus der Variante",
+      "en_short": "Variant confidence status",
+      "de_def": "Vertrauensstatus der Variantendetektion.",
+      "en_def": "Confidence status of the variant call."
+    },
+    "component:variant-inheritance": {
+      "de_short": "Varianten-Vererbung",
+      "en_short": "Variant inheritance",
+      "de_def": "Vererbungsart der Variante, z.B. maternal oder paternal.",
+      "en_def": "Inheritance pattern of the variant, e.g. maternal or paternal."
+    },
+    "component:variation-code": {
+      "de_short": "Varianten-Code",
+      "en_short": "Variation code",
+      "de_def": "Eindeutiger Variantenidentifikator aus externen Datenbanken, z.B. ClinVar oder dbSNP.",
+      "en_def": "Unique variant identifier from external databases, e.g. ClinVar or dbSNP."
+    },
+    "conclusionCode": {
+      "de_short": "Schlussfolgerungscode",
+      "en_short": "Conclusion code",
+      "de_def": "Kodierte Schlussfolgerung des Befundes.",
+      "en_def": "Coded conclusion of the report."
+    },
+    "condition": {
+      "de_short": "Erkrankung",
+      "en_short": "Condition",
+      "de_def": "Erkrankung, für die das Risiko bewertet wird.",
+      "en_def": "Condition for which the risk is assessed."
+    },
+    "condition.code": {
+      "de_short": "Erkrankungskode",
+      "en_short": "Condition code",
+      "de_def": "Kodierte Darstellung der Erkrankung.",
+      "en_def": "Coded representation of the condition."
+    },
+    "condition.code.coding": {
+      "de_short": "Kodierung",
+      "en_short": "Coding",
+      "de_def": "Kodierung der Erkrankung.",
+      "en_def": "Coding of the condition."
+    },
+    "condition.code.coding:alpha-id": {
+      "de_short": "Alpha-ID-Kodierung",
+      "en_short": "Alpha-ID coding",
+      "de_def": "Kodierung nach Alpha-ID.",
+      "en_def": "Coded by Alpha-ID."
+    },
+    "condition.code.coding:alpha-id.code": {
+      "de_short": "Code",
+      "en_short": "Code",
+      "de_def": "Der Alpha-ID-Code.",
+      "en_def": "The Alpha-ID code."
+    },
+    "condition.code.coding:alpha-id.system": {
+      "de_short": "System",
+      "en_short": "System",
+      "de_def": "Das Kodesystem Alpha-ID.",
+      "en_def": "The Alpha-ID codesystem."
+    },
+    "condition.code.coding:icd10-gm": {
+      "de_short": "ICD-10-GM-Kodierung",
+      "en_short": "ICD-10-GM coding",
+      "de_def": "Kodierung nach ICD-10-GM.",
+      "en_def": "Coded by ICD-10-GM."
+    },
+    "condition.code.coding:icd10-gm.code": {
+      "de_short": "Code",
+      "en_short": "Code",
+      "de_def": "Der ICD-10-GM-Code.",
+      "en_def": "The ICD-10-GM code."
+    },
+    "condition.code.coding:icd10-gm.system": {
+      "de_short": "System",
+      "en_short": "System",
+      "de_def": "Das Kodesystem ICD-10-GM.",
+      "en_def": "The ICD-10-GM codesystem."
+    },
+    "condition.code.coding:icd10-gm.version": {
+      "de_short": "Version",
+      "en_short": "Version",
+      "de_def": "Version des ICD-10-GM-Katalogs.",
+      "en_def": "Version of the ICD-10-GM catalogue."
+    },
+    "condition.code.coding:orphanet": {
+      "de_short": "Orphanet-Kodierung",
+      "en_short": "Orphanet coding",
+      "de_def": "Kodierung nach Orphanet für seltene Erkrankungen.",
+      "en_def": "Coded by Orphanet for rare diseases."
+    },
+    "condition.code.coding:orphanet.code": {
+      "de_short": "Code",
+      "en_short": "Code",
+      "de_def": "Der Orphanet-Code.",
+      "en_def": "The Orphanet code."
+    },
+    "condition.code.coding:orphanet.system": {
+      "de_short": "System",
+      "en_short": "System",
+      "de_def": "Das Kodesystem Orphanet.",
+      "en_def": "The Orphanet codesystem."
+    },
+    "condition.code.coding:sct": {
+      "de_short": "SNOMED-CT-Kodierung",
+      "en_short": "SNOMED CT coding",
+      "de_def": "Kodierung nach SNOMED CT.",
+      "en_def": "Coded by SNOMED CT."
+    },
+    "condition.code.coding:sct.code": {
+      "de_short": "Code",
+      "en_short": "Code",
+      "de_def": "Der SNOMED-CT-Code.",
+      "en_def": "The SNOMED CT code."
+    },
+    "condition.code.coding:sct.system": {
+      "de_short": "System",
+      "en_short": "System",
+      "de_def": "Das Kodesystem SNOMED CT.",
+      "en_def": "The SNOMED CT codesystem."
+    },
+    "date": {
+      "de_short": "Datum",
+      "en_short": "Date",
+      "de_def": "Datum der Erfassung der Familienanamnese.",
+      "en_def": "Date when the family history was recorded."
+    },
+    "derivedFrom:variant": {
+      "de_short": "Abgeleitet von Variante",
+      "en_short": "Derived from variant",
+      "de_def": "Genetische Variante, von der diese Implikation abgeleitet wurde.",
+      "en_def": "Genetic variant from which this implication is derived."
+    },
+    "extension:change-type": {
+      "de_short": "Untersuchte Variationstypen",
+      "en_short": "Variation types studied",
+      "de_def": "Typen genetischer Veränderungen, die mit dieser Analyse untersucht wurden — z.B. SNV, CNV oder Strukturvarianten.",
+      "en_def": "Types of genetic changes studied in this analysis — e.g. SNV, CNV or structural variants."
+    },
+    "extension:coded-note": {
+      "de_short": "Kodierte Anmerkung",
+      "en_short": "Coded note",
+      "de_def": "Kodierte Anmerkungen zum genetischen Bericht.",
+      "en_def": "Coded notes on the genetic report."
+    },
+    "extension:device": {
+      "de_short": "Verwendetes Analysegerät",
+      "en_short": "Analysis device used",
+      "de_def": "Komplexe Extension mit Geräteart und Referenz, z.B. Sequenziergerät, Library-Preparation-Kit oder bioinformatische Pipeline, die für diese Analyse verwendet wurde.",
+      "en_def": "Complex extension with device type and reference — e.g. sequencer, library preparation kit, or bioinformatics pipeline used for this analysis."
+    },
+    "extension:focus": {
+      "de_short": "Fokus der Analyse",
+      "en_short": "Analysis focus",
+      "de_def": "Spezifischer Fokus dieser Analyse — z.B. Referenz auf Krebserkrankung oder erbliche Erkrankung.",
+      "en_def": "Specific focus of this analysis — e.g. reference to a cancer or hereditary disease."
+    },
+    "extension:genome-build": {
+      "de_short": "Referenzgenom-Version",
+      "en_short": "Reference genome build",
+      "de_def": "Version des verwendeten Referenzgenoms, z.B. GRCh38 oder hg19.",
+      "en_def": "Version of the reference genome used, e.g. GRCh38 or hg19."
+    },
+    "extension:genomic-risk-assessment": {
+      "de_short": "Genomische Risikobewertung",
+      "en_short": "Genomic risk assessment",
+      "de_def": "Referenz zu einer genomischen Risikobewertung.",
+      "en_def": "Reference to a genomic risk assessment."
+    },
+    "extension:genomic-study-analysis": {
+      "de_short": "Durchgeführte Analysen",
+      "en_short": "Performed analyses",
+      "de_def": "Referenzen zu den einzelnen GenomicStudyAnalysis-Ressourcen, die die spezifischen Analysen und Assays dieser Studie beschreiben.",
+      "en_def": "References to the GenomicStudyAnalysis resources describing the specific analyses and assays of this study."
+    },
+    "extension:genomic-study": {
+      "de_short": "Genomische Studie",
+      "en_short": "Genomic study",
+      "de_def": "Referenz zur zugehörigen genomischen Studie.",
+      "en_def": "Reference to the associated genomic study."
+    },
+    "extension:method-type": {
+      "de_short": "Analysemethode",
+      "en_short": "Analysis method",
+      "de_def": "Art der durchgeführten Analysemethode — z.B. Sequenzierung, PCR oder Array-CGH.",
+      "en_def": "Type of analysis method used — e.g. sequencing, PCR or array CGH."
+    },
+    "extension:metrics": {
+      "de_short": "Qualitätsmetriken",
+      "en_short": "Quality metrics",
+      "de_def": "Qualitätsmetriken der Analyse — z.B. Coverage, Depth oder Call-Rate.",
+      "en_def": "Quality metrics of the analysis — e.g. coverage, depth or call rate."
+    },
+    "extension:recommended-action": {
+      "de_short": "Empfohlene Maßnahme",
+      "en_short": "Recommended action",
+      "de_def": "Referenz zu empfohlenen Folgemaßnahmen oder Medikationsempfehlungen.",
+      "en_def": "Reference to recommended follow-up actions or medication recommendations."
+    },
+    "extension:regions": {
+      "de_short": "Untersuchte genomische Regionen",
+      "en_short": "Genomic regions studied",
+      "de_def": "Komplexe Extension zur Spezifikation der genomischen Regionen, die in dieser Analyse untersucht wurden — vor allem Gene, optional mit callable/non-callable Regions.",
+      "en_def": "Complex extension specifying the genomic regions studied in this analysis — primarily genes, optionally with callable/non-callable regions."
+    },
+    "extension:specimen": {
+      "de_short": "Untersuchte Probe",
+      "en_short": "Specimen studied",
+      "de_def": "Referenz zur Specimen-Ressource, die die für diese Analyse verwendete Probe beschreibt.",
+      "en_def": "Reference to the Specimen resource describing the sample used for this analysis."
+    },
+    "extension:supporting-info": {
+      "de_short": "Unterstützende Informationen",
+      "en_short": "Supporting information",
+      "de_def": "Zusätzliche Informationen wie Familienanamnese oder Abrechnungsdaten.",
+      "en_def": "Additional information such as family history or billing data."
+    },
+    "extension:title": {
+      "de_short": "Bezeichnung der Analyse",
+      "en_short": "Analysis title",
+      "de_def": "Kurze prägnante Bezeichnung oder Titel dieser spezifischen Analyse.",
+      "en_def": "Short concise designation or title of this specific analysis."
+    },
+    "extension:workflow-relatedArtifact": {
+      "de_short": "Verknüpfte Artefakte",
+      "en_short": "Related artifacts",
+      "de_def": "Verknüpfte Literatur oder andere Artefakte, z.B. Zitationen.",
+      "en_def": "Linked literature or other artifacts, e.g. citations."
+    },
+    "for": {
+      "de_short": "Patient*in",
+      "en_short": "Patient",
+      "de_def": "Patient*in, für die die Medikation empfohlen wird.",
+      "en_def": "Patient for whom the medication is recommended."
+    },
+    "media": {
+      "de_short": "Medien",
+      "en_short": "Media",
+      "de_def": "Bilder oder andere Medien, die zum Bericht gehören.",
+      "en_def": "Images or other media that belong to the report."
+    },
+    "occurrence[x]": {
+      "de_short": "Zeitpunkt",
+      "en_short": "Time",
+      "de_def": "Zeitpunkt oder Zeitraum der Risikobewertung.",
+      "en_def": "Time or period of the risk assessment."
+    },
+    "prediction": {
+      "de_short": "Vorhersage",
+      "en_short": "Prediction",
+      "de_def": "Die vorhergesagten Risiken.",
+      "en_def": "The predicted risks."
+    },
+    "prediction.extension:whenCodeableConcept": {
+      "de_short": "Einflussfaktor",
+      "en_short": "Influencing factor",
+      "de_def": "Zusätzlicher Einflussfaktor für die Risikoberechnung.",
+      "en_def": "Additional factor influencing the risk calculation."
+    },
+    "prediction.outcome": {
+      "de_short": "Ergebnis",
+      "en_short": "Outcome",
+      "de_def": "Vorhergesagtes Ergebnis oder Erkrankung.",
+      "en_def": "Predicted outcome or condition."
+    },
+    "prediction.probability[x]": {
+      "de_short": "Wahrscheinlichkeit",
+      "en_short": "Probability",
+      "de_def": "Quantitative Wahrscheinlichkeit des Risikos.",
+      "en_def": "Quantitative probability of the risk."
+    },
+    "prediction.qualitativeRisk": {
+      "de_short": "Qualitatives Risiko",
+      "en_short": "Qualitative risk",
+      "de_def": "Qualitative Einschätzung des Risikos, z.B. hoch oder niedrig.",
+      "en_def": "Qualitative assessment of the risk, e.g. high or low."
+    },
+    "prediction.relativeRisk": {
+      "de_short": "Relatives Risiko",
+      "en_short": "Relative risk",
+      "de_def": "Relatives Risiko im Vergleich zur Normalbevölkerung.",
+      "en_def": "Relative risk compared to the general population."
+    },
+    "prediction.when[x]": {
+      "de_short": "Zeitrahmen",
+      "en_short": "Timeframe",
+      "de_def": "Zeitrahmen, für den die Vorhersage gilt.",
+      "en_def": "Timeframe to which the prediction applies."
+    },
+    "reasonCode.coding": {
+      "de_short": "Kodierung",
+      "en_short": "Coding",
+      "de_def": "Kodierung des Grundes.",
+      "en_def": "Coded reason."
+    },
+    "reasonCode.coding:alpha-id": {
+      "de_short": "Alpha-ID-Kodierung",
+      "en_short": "Alpha-ID coding",
+      "de_def": "Kodierung nach Alpha-ID.",
+      "en_def": "Coded by Alpha-ID."
+    },
+    "reasonCode.coding:alpha-id.code": {
+      "de_short": "Code",
+      "en_short": "Code",
+      "de_def": "Der Alpha-ID-Code.",
+      "en_def": "The Alpha-ID code."
+    },
+    "reasonCode.coding:alpha-id.system": {
+      "de_short": "System",
+      "en_short": "System",
+      "de_def": "Das Kodesystem Alpha-ID.",
+      "en_def": "The Alpha-ID codesystem."
+    },
+    "reasonCode.coding:icd10-gm": {
+      "de_short": "ICD-10-GM-Kodierung",
+      "en_short": "ICD-10-GM coding",
+      "de_def": "Kodierung nach ICD-10-GM.",
+      "en_def": "Coded by ICD-10-GM."
+    },
+    "reasonCode.coding:icd10-gm.code": {
+      "de_short": "Code",
+      "en_short": "Code",
+      "de_def": "Der ICD-10-GM-Code.",
+      "en_def": "The ICD-10-GM code."
+    },
+    "reasonCode.coding:icd10-gm.system": {
+      "de_short": "System",
+      "en_short": "System",
+      "de_def": "Das Kodesystem ICD-10-GM.",
+      "en_def": "The ICD-10-GM codesystem."
+    },
+    "reasonCode.coding:icd10-gm.version": {
+      "de_short": "Version",
+      "en_short": "Version",
+      "de_def": "Version des ICD-10-GM-Katalogs.",
+      "en_def": "Version of the ICD-10-GM catalogue."
+    },
+    "reasonCode.coding:orphanet": {
+      "de_short": "Orphanet-Kodierung",
+      "en_short": "Orphanet coding",
+      "de_def": "Kodierung nach Orphanet für seltene Erkrankungen.",
+      "en_def": "Coded by Orphanet for rare diseases."
+    },
+    "reasonCode.coding:orphanet.code": {
+      "de_short": "Code",
+      "en_short": "Code",
+      "de_def": "Der Orphanet-Code.",
+      "en_def": "The Orphanet code."
+    },
+    "reasonCode.coding:orphanet.system": {
+      "de_short": "System",
+      "en_short": "System",
+      "de_def": "Das Kodesystem Orphanet.",
+      "en_def": "The Orphanet codesystem."
+    },
+    "reasonCode.coding:sct": {
+      "de_short": "SNOMED-CT-Kodierung",
+      "en_short": "SNOMED CT coding",
+      "de_def": "Kodierung nach SNOMED CT.",
+      "en_def": "Coded by SNOMED CT."
+    },
+    "reasonCode.coding:sct.code": {
+      "de_short": "Code",
+      "en_short": "Code",
+      "de_def": "Der SNOMED-CT-Code.",
+      "en_def": "The SNOMED CT code."
+    },
+    "reasonCode.coding:sct.system": {
+      "de_short": "System",
+      "en_short": "System",
+      "de_def": "Das Kodesystem SNOMED CT.",
+      "en_def": "The SNOMED CT codesystem."
+    },
+    "relationship": {
+      "de_short": "Verwandtschaftsbeziehung",
+      "en_short": "Relationship",
+      "de_def": "Art der Verwandtschaft zum Patienten oder zur Patientin.",
+      "en_def": "Type of relationship to the patient."
+    },
+    "relationship.coding:snomed.extension:FamiliareLinie": {
+      "de_short": "Familiäre Linie",
+      "en_short": "Familial line",
+      "de_def": "Familiäre Linie — mütterlich oder väterlich.",
+      "en_def": "Familial line — maternal or paternal."
+    },
+    "relationship.coding:snomed.extension:Verwandtschaftsgrad": {
+      "de_short": "Verwandtschaftsgrad",
+      "en_short": "Degree of kinship",
+      "de_def": "Grad der Blutsverwandtschaft, z.B. ersten oder zweiten Grades.",
+      "en_def": "Degree of consanguinity, e.g. first or second degree."
+    },
+    "relationship.coding:snomed.extension:Verwandtschaftsverhaeltnis": {
+      "de_short": "Verwandtschaftsverhältnis",
+      "en_short": "Kinship",
+      "de_def": "Spezifisches Verwandtschaftsverhältnis, z.B. Elternteil oder Geschwister.",
+      "en_def": "Specific kinship, e.g. parent or sibling."
+    },
+    "result": {
+      "de_short": "Ergebnis",
+      "en_short": "Result",
+      "de_def": "Referenzen zu den einzelnen Beobachtungsergebnissen.",
+      "en_def": "References to the individual observation results."
+    },
+    "result:biomarker": {
+      "de_short": "Biomarker",
+      "en_short": "Biomarker",
+      "de_def": "Referenz zu molekularen Biomarkern wie TMB oder MSI.",
+      "en_def": "Reference to molecular biomarkers such as TMB or MSI."
+    },
+    "result:diagnostic-implication": {
+      "de_short": "Diagnostische Implikation",
+      "en_short": "Diagnostic implication",
+      "de_def": "Referenz zu diagnostischen Implikationen der genetischen Befunde.",
+      "en_def": "Reference to diagnostic implications of the genetic findings."
+    },
+    "result:genotype": {
+      "de_short": "Genotyp",
+      "en_short": "Genotype",
+      "de_def": "Referenz zu Genotyp-Ergebnissen.",
+      "en_def": "Reference to genotype results."
+    },
+    "result:haplotype": {
+      "de_short": "Haplotyp",
+      "en_short": "Haplotype",
+      "de_def": "Referenz zu Haplotyp-Ergebnissen.",
+      "en_def": "Reference to haplotype results."
+    },
+    "result:sequence-phase-relation": {
+      "de_short": "Sequenz-Phasen-Beziehung",
+      "en_short": "Sequence phase relation",
+      "de_def": "Referenz zu Sequenz-Phasen-Beziehungen.",
+      "en_def": "Reference to sequence phase relations."
+    },
+    "result:therapeutic-implication": {
+      "de_short": "Therapeutische Implikation",
+      "en_short": "Therapeutic implication",
+      "de_def": "Referenz zu therapeutischen Implikationen der genetischen Befunde.",
+      "en_def": "Reference to therapeutic implications of the genetic findings."
+    },
+    "result:variant": {
+      "de_short": "Variante",
+      "en_short": "Variant",
+      "de_def": "Referenz zu gefundenen genetischen Varianten.",
+      "en_def": "Reference to detected genetic variants."
+    },
+    "resultsInterpreter": {
+      "de_short": "Befundinterpreter",
+      "en_short": "Results interpreter",
+      "de_def": "Person oder Organisation, die die Ergebnisse interpretiert hat.",
+      "en_def": "Person or organization that interpreted the results."
+    },
+    "sex": {
+      "de_short": "Geschlecht",
+      "en_short": "Sex",
+      "de_def": "Geschlecht des Familienangehörigen.",
+      "en_def": "Sex of the family member."
+    },
+    "supportingInfo": {
+      "de_short": "Unterstützende Informationen",
+      "en_short": "Supporting information",
+      "de_def": "Zusätzliche Informationen, die die Anforderung unterstützen.",
+      "en_def": "Additional information supporting the request."
+    }
+  }
+}

@@ -57,8 +57,10 @@ Description: "FDPG Profil - MII_PR_Onko_Anzahl_Untersuchte_Sentinel_Lymphknoten"
 // Observation.value[x].value
 * value[x].value ^short = "Anzahl untersuchter Sentinel-Lymphknoten"
 * insert Translation(value[x].value ^short, de-DE, Anzahl untersuchter Sentinel-Lymphknoten)
+* insert Translation(value[x].value ^short, en-US, Number of sentinel lymph nodes examined)
 * value[x].value ^definition = "Anzahl untersuchter Sentinel-Lymphknoten nach 6.8 oBDS 2021"
 * insert Translation(value[x].value ^definition, de-DE, Anzahl untersuchter Sentinel-Lymphknoten nach 6.9 oBDS 2021)
+* insert Translation(value[x].value ^definition, en-US, Number of sentinel lymph nodes examined per oBDS 2021 §6.9.)
 // Observation.value[x].unit
 * value[x].unit ^short = "Unit representation"
 // Observation.value[x].system

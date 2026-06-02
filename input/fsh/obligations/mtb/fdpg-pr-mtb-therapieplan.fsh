@@ -29,13 +29,17 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 // CarePlan.category.coding
 * category.coding ^short = "Art der Tumorkonferenz / Therapieplanung"
 * insert Translation(category.coding ^short, de-DE, Art der Tumorkonferenz / Therapieplanung)
+* insert Translation(category.coding ^short, en-US, Tumor board type)
 * category.coding ^definition = "Art der Tumorkonferenz / Therapieplanung gemäß 18.2 oBDS 2021."
 * insert Translation(category.coding ^definition, de-DE, Art der Tumorkonferenz / Therapieplanung gemäß 18.2 oBDS 2021.)
+* insert Translation(category.coding ^definition, en-US, Type of tumor board or therapy planning per oBDS 2021 §18.2.)
 // CarePlan.description
 * description ^short = "Protokollauszug"
 * insert Translation(description ^short, de-DE, Protokollauszug)
+* insert Translation(description ^short, en-US, Protocol excerpt)
 * description ^definition = "Protokollauszug aus dem Beschluss des Molekularen Tumorboards"
 * insert Translation(description ^definition, de-DE, Protokollauszug aus dem Beschluss des Molekularen Tumorboards)
+* insert Translation(description ^definition, en-US, Protocol excerpt from the MTB decision.)
 // CarePlan.subject
 * subject ^short = "Who the care plan is for"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -52,6 +56,11 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 * insert Translation(encounter ^definition, en-US, Encounter in which the resource was recorded.)
 // CarePlan.created
 * created ^short = "Erstellungsdatum"
+* insert Translation(created ^short, de-DE, Datum der Zusage / des Widerspruchs)
+* insert Translation(created ^short, en-US, Approval / objection date)
+* created ^definition = "Erstellungsdatum des Therapieplans gemäß Beschluss des Molekularen Tumorboards"
+* insert Translation(created ^definition, de-DE, Datum der Antragstellung.)
+* insert Translation(created ^definition, en-US, Date the application was filed.)
 // CarePlan.addresses
 * addresses ^short = "Health issues this plan addresses"
 // CarePlan.supportingInfo
@@ -59,8 +68,10 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 // CarePlan.supportingInfo:Behandlungsepisode
 * supportingInfo[Behandlungsepisode] ^short = "Behandlungsepisode"
 * insert Translation(supportingInfo[Behandlungsepisode] ^short, de-DE, Behandlungsepisode)
+* insert Translation(supportingInfo[Behandlungsepisode] ^short, en-US, Treatment episode)
 * supportingInfo[Behandlungsepisode] ^definition = "Aktueller Krankheitszustand und bisherige Behandlungsmaßnahmen"
 * insert Translation(supportingInfo[Behandlungsepisode] ^definition, de-DE, Aktueller Krankheitszustand und bisherige Behandlungsmaßnahmen)
+* insert Translation(supportingInfo[Behandlungsepisode] ^definition, en-US, Current disease state and prior treatments.)
 // CarePlan.activity
 * activity ^short = "Therapy recommendations - either oBDS standard categorization or extended molecular protocols"
 // CarePlan.activity:obds.detail
@@ -70,13 +81,17 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 // CarePlan.activity:obds.detail.status
 * activity[obds].detail.status ^short = "Status der Therapieempfehlung"
 * insert Translation(activity[obds].detail.status ^short, de-DE, Status der Therapieempfehlung)
+* insert Translation(activity[obds].detail.status ^short, en-US, Therapy recommendation status)
 * activity[obds].detail.status ^definition = "Status der Therapieempfehlung nach HL7 FHIR CarePlanActivityStatus | not-started | scheduled | in-progress | on-hold | completed | cancelled | stopped | unknown | entered-in-error |"
 * insert Translation(activity[obds].detail.status ^definition, de-DE, Status der Therapieempfehlung nach HL7 FHIR CarePlanActivityStatus | not-started | scheduled | in-progress | on-hold | completed | cancelled | stopped | unknown | entered-in-error |)
+* insert Translation(activity[obds].detail.status ^definition, en-US, Status of the therapy recommendation per FHIR CarePlanActivityStatus: not-started | scheduled | in-progress | on-hold | completed | cancelled | stopped | unknown | entered-in-error.)
 // CarePlan.activity:obds.detail.statusReason
 * activity[obds].detail.statusReason ^short = "Therapieabweichung aufgrund Patientenwunsch der Therapieempfehlung"
 * insert Translation(activity[obds].detail.statusReason ^short, de-DE, Therapieabweichung aufgrund Patientenwunsch der Therapieempfehlung)
+* insert Translation(activity[obds].detail.statusReason ^short, en-US, Patient-driven therapy deviation)
 * activity[obds].detail.statusReason ^definition = "wenn Therapieabweichung - z.B. status = cancelled - Aussage ob dies durch Patientenwunsch erfolgt ist gemäß 19.2 oBDS 2021."
 * insert Translation(activity[obds].detail.statusReason ^definition, de-DE, wenn Therapieabweichung - z.B. status = cancelled - Aussage ob dies durch Patientenwunsch erfolgt ist gemäß 19.2 oBDS 2021.)
+* insert Translation(activity[obds].detail.statusReason ^definition, en-US, If therapy deviates (e.g. status = cancelled\)\, whether it was driven by the patient's wish\, per oBDS 2021 §19.2.)
 // CarePlan.activity:extended.progress
 * activity[extended].progress ^short = "Progress notes for recommendation implementation"
 // CarePlan.activity:extended.reference
@@ -84,8 +99,10 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 // CarePlan.activity:extended/Therapieempfehlung
 * activity[extended/Therapieempfehlung] ^short = "Therapieempfehlung Systemische Therapie"
 * insert Translation(activity[extended/Therapieempfehlung] ^short, de-DE, Therapieempfehlung Systemische Therapie)
+* insert Translation(activity[extended/Therapieempfehlung] ^short, en-US, Systemic therapy recommendation)
 * activity[extended/Therapieempfehlung] ^definition = "Therapieempfehlung für eine medikamentöse Systemische Therapie"
 * insert Translation(activity[extended/Therapieempfehlung] ^definition, de-DE, Therapieempfehlung für eine medikamentöse Systemische Therapie)
+* insert Translation(activity[extended/Therapieempfehlung] ^definition, en-US, Recommendation for a pharmacologic systemic therapy.)
 // CarePlan.activity:extended/Therapieempfehlung.progress
 * activity[extended/Therapieempfehlung].progress ^short = "Progress notes for recommendation implementation"
 // CarePlan.activity:extended/Therapieempfehlung.reference
@@ -93,8 +110,10 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 // CarePlan.activity:extended/HumangenetischeBeratung
 * activity[extended/HumangenetischeBeratung] ^short = "Empfehlung Human-genetische Beratung"
 * insert Translation(activity[extended/HumangenetischeBeratung] ^short, de-DE, Empfehlung Human-genetische Beratung)
+* insert Translation(activity[extended/HumangenetischeBeratung] ^short, en-US, Genetic counseling recommendation)
 * activity[extended/HumangenetischeBeratung] ^definition = "Auftrag zur (erneuten) Human-genetischen Beratung"
 * insert Translation(activity[extended/HumangenetischeBeratung] ^definition, de-DE, Auftrag zur erneuten Human-genetischen Beratung)
+* insert Translation(activity[extended/HumangenetischeBeratung] ^definition, en-US, Order for genetic counseling.)
 // CarePlan.activity:extended/HumangenetischeBeratung.progress
 * activity[extended/HumangenetischeBeratung].progress ^short = "Progress notes for recommendation implementation"
 // CarePlan.activity:extended/HumangenetischeBeratung.reference
@@ -102,8 +121,10 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 // CarePlan.activity:extended/HistologieEvaluation
 * activity[extended/HistologieEvaluation] ^short = "Empfehlung Histologie-Evaluation"
 * insert Translation(activity[extended/HistologieEvaluation] ^short, de-DE, Empfehlung Histologie-Evaluation)
+* insert Translation(activity[extended/HistologieEvaluation] ^short, en-US, Histology evaluation recommendation)
 * activity[extended/HistologieEvaluation] ^definition = "Auftrag zur (erneuten) Histologie-Evaluation"
 * insert Translation(activity[extended/HistologieEvaluation] ^definition, de-DE, Auftrag zur erneuten Histologie-Evaluation)
+* insert Translation(activity[extended/HistologieEvaluation] ^definition, en-US, Order for a repeat histology evaluation.)
 // CarePlan.activity:extended/HistologieEvaluation.progress
 * activity[extended/HistologieEvaluation].progress ^short = "Progress notes for recommendation implementation"
 // CarePlan.activity:extended/HistologieEvaluation.reference
@@ -111,8 +132,10 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 // CarePlan.activity:extended/Biopsie
 * activity[extended/Biopsie] ^short = "Empfehlung Biopsie"
 * insert Translation(activity[extended/Biopsie] ^short, de-DE, Empfehlung Biopsie)
+* insert Translation(activity[extended/Biopsie] ^short, en-US, Biopsy recommendation)
 * activity[extended/Biopsie] ^definition = "Auftrag zur (erneuten) Biopsie"
 * insert Translation(activity[extended/Biopsie] ^definition, de-DE, Auftrag zur erneuten Biopsie)
+* insert Translation(activity[extended/Biopsie] ^definition, en-US, Order for a repeat biopsy.)
 // CarePlan.activity:extended/Biopsie.progress
 * activity[extended/Biopsie].progress ^short = "Progress notes for recommendation implementation"
 // CarePlan.activity:extended/Biopsie.reference
@@ -120,8 +143,10 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 // CarePlan.activity:extended/Studieneinschlussempfehlung
 * activity[extended/Studieneinschlussempfehlung] ^short = "Studieneinschlussempfehlung"
 * insert Translation(activity[extended/Studieneinschlussempfehlung] ^short, de-DE, Studieneinschlussempfehlung)
+* insert Translation(activity[extended/Studieneinschlussempfehlung] ^short, en-US, Study enrollment recommendation)
 * activity[extended/Studieneinschlussempfehlung] ^definition = "Anfrage zum Studieneinschluss"
 * insert Translation(activity[extended/Studieneinschlussempfehlung] ^definition, de-DE, Anfrage zum Studieneinschluss)
+* insert Translation(activity[extended/Studieneinschlussempfehlung] ^definition, en-US, Request for study enrollment.)
 // CarePlan.activity:extended/Studieneinschlussempfehlung.progress
 * activity[extended/Studieneinschlussempfehlung].progress ^short = "Progress notes for recommendation implementation"
 // CarePlan.activity:extended/Studieneinschlussempfehlung.reference

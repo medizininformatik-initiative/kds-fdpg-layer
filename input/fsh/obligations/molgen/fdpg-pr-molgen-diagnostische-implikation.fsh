@@ -11,8 +11,10 @@ Description: "FDPG Profil - MII_PR_MolGen_DiagnostischeImplikation"
 // Observation.extension:workflow-relatedArtifact
 * extension[workflow-relatedArtifact] ^short = "Verknüpfte Artefakte"
 * insert Translation(extension[workflow-relatedArtifact] ^short, de-DE, Verknüpfte Artefakte)
+* insert Translation(extension[workflow-relatedArtifact] ^short, en-US, Related artifacts)
 * extension[workflow-relatedArtifact] ^definition = "Verknüpfte Literatur oder andere Artefakte wie Zitationen"
 * insert Translation(extension[workflow-relatedArtifact] ^definition, de-DE, Verknüpfte Literatur oder andere Artefakte wie Zitationen)
+* insert Translation(extension[workflow-relatedArtifact] ^definition, en-US, Linked literature or other artifacts\, e.g. citations.)
 // Observation.category
 * category ^short = "Kategorie"
 * insert Translation(category ^short, de-DE, Kategorie)
@@ -72,28 +74,38 @@ Description: "FDPG Profil - MII_PR_MolGen_DiagnostischeImplikation"
 // Observation.component:conclusion-string
 * component[conclusion-string] ^short = "Schlussfolgerung - Text"
 * insert Translation(component[conclusion-string] ^short, de-DE, Schlussfolgerung - Text)
+* insert Translation(component[conclusion-string] ^short, en-US, Conclusion (text\))
 * component[conclusion-string] ^definition = "Textuelle Zusammenfassung der diagnostischen Implikation"
 * insert Translation(component[conclusion-string] ^definition, de-DE, Textuelle Zusammenfassung der diagnostischen Implikation)
+* insert Translation(component[conclusion-string] ^definition, en-US, Textual summary or conclusion for the variant.)
 // Observation.component:evidence-level
 * component[evidence-level] ^short = "Evidenzlevel"
 * insert Translation(component[evidence-level] ^short, de-DE, Evidenzlevel)
+* insert Translation(component[evidence-level] ^short, en-US, Evidence level)
 * component[evidence-level] ^definition = "Das Evidenzlevel für die klinische Signifikanz"
 * insert Translation(component[evidence-level] ^definition, de-DE, Das Evidenzlevel für die klinische Signifikanz)
+* insert Translation(component[evidence-level] ^definition, en-US, Evidence level for the therapy recommendation.)
 // Observation.component:clinical-significance
 * component[clinical-significance] ^short = "Klinische Signifikanz"
 * insert Translation(component[clinical-significance] ^short, de-DE, Klinische Signifikanz)
+* insert Translation(component[clinical-significance] ^short, en-US, Clinical significance)
 * component[clinical-significance] ^definition = "Die klinische Signifikanz der Variante wie z.B. pathogen oder benigne"
 * insert Translation(component[clinical-significance] ^definition, de-DE, Die klinische Signifikanz der Variante wie z.B. pathogen oder benigne)
+* insert Translation(component[clinical-significance] ^definition, en-US, Clinical significance of the variant.)
 // Observation.component:predicted-phenotype
 * component[predicted-phenotype] ^short = "Vorhergesagter Phänotyp"
 * insert Translation(component[predicted-phenotype] ^short, de-DE, Vorhergesagter Phänotyp)
+* insert Translation(component[predicted-phenotype] ^short, en-US, Predicted phenotype)
 * component[predicted-phenotype] ^definition = "Der mit der Variante assoziierte vorhergesagte Phänotyp oder Erkrankung"
 * insert Translation(component[predicted-phenotype] ^definition, de-DE, Der mit der Variante assoziierte vorhergesagte Phänotyp oder Erkrankung)
+* insert Translation(component[predicted-phenotype] ^definition, en-US, Predicted phenotype or condition associated with the variant.)
 // Observation.component:mode-of-inheritance
 * component[mode-of-inheritance] ^short = "Vererbungsmodus"
 * insert Translation(component[mode-of-inheritance] ^short, de-DE, Vererbungsmodus)
+* insert Translation(component[mode-of-inheritance] ^short, en-US, Mode of inheritance)
 * component[mode-of-inheritance] ^definition = "Der Vererbungsmodus der assoziierten Erkrankung"
 * insert Translation(component[mode-of-inheritance] ^definition, de-DE, Der Vererbungsmodus der assoziierten Erkrankung)
+* insert Translation(component[mode-of-inheritance] ^definition, en-US, Mode of inheritance of the associated condition.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(extension[workflow-relatedArtifact])

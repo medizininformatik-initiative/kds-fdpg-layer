@@ -106,13 +106,17 @@ Description: "FDPG Profil - MII_PR_MTB_BRCAness"
 // Observation.component:gene-studied
 * component[gene-studied] ^short = "Untersuchtes Gen"
 * insert Translation(component[gene-studied] ^short, de-DE, Untersuchtes Gen)
+* insert Translation(component[gene-studied] ^short, en-US, Gene studied)
 * component[gene-studied] ^definition = "Das untersuchte Gen"
 * insert Translation(component[gene-studied] ^definition, de-DE, Das untersuchte Gen)
+* insert Translation(component[gene-studied] ^definition, en-US, The gene studied\, identified by HGNC ID.)
 // Observation.component:biomarker-category
 * component[biomarker-category] ^short = "Biomarker-Kategorie"
 * insert Translation(component[biomarker-category] ^short, de-DE, Biomarker-Kategorie)
+* insert Translation(component[biomarker-category] ^short, en-US, Biomarker category)
 * component[biomarker-category] ^definition = "Die Kategorie des molekularen Biomarkers"
 * insert Translation(component[biomarker-category] ^definition, de-DE, Die Kategorie des molekularen Biomarkers)
+* insert Translation(component[biomarker-category] ^definition, en-US, Category of the molecular biomarker.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(identifier)

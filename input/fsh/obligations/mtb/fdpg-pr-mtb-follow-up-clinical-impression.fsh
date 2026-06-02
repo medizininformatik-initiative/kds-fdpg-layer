@@ -18,8 +18,10 @@ Description: "FDPG Profil - MII_PR_MTB_Follow_Up_ClinicalImpression"
 // ClinicalImpression.statusReason
 * statusReason ^short = "Grund Nicht-Umsetzung"
 * insert Translation(statusReason ^short, de-DE, Grund Nicht-Umsetzung)
+* insert Translation(statusReason ^short, en-US, Systemic therapy termination reason)
 * statusReason ^definition = "Grund für die Nicht-Umsetzung des gesamten Therapieplans"
 * insert Translation(statusReason ^definition, de-DE, Grund fuer die Nicht-Umsetzung des gesamten Therapieplans)
+* insert Translation(statusReason ^definition, en-US, If terminated: reason for terminating the systemic therapy.)
 // ClinicalImpression.code
 * code ^short = "Follow-Up"
 * insert Translation(code ^short, de-DE, Follow-Up)
@@ -44,25 +46,33 @@ Description: "FDPG Profil - MII_PR_MTB_Follow_Up_ClinicalImpression"
 // ClinicalImpression.previous
 * previous ^short = "MTB-Behandlungsepisode"
 * insert Translation(previous ^short, de-DE, MTB-Behandlungsepisode)
+* insert Translation(previous ^short, en-US, MTB treatment episode)
 * previous ^definition = "MTB-Behandlungsepisode, auf die sich das Follow-Up bezieht"
 * insert Translation(previous ^definition, de-DE, MTB-Behandlungsepisode auf die sich das Follow-Up bezieht)
+* insert Translation(previous ^definition, en-US, MTB treatment episode to which the follow-up refers.)
 // ClinicalImpression.investigation
 * investigation ^short = "Status Follow-Up"
 * insert Translation(investigation ^short, de-DE, Status Follow-Up)
+* insert Translation(investigation ^short, en-US, Follow-up status)
 * investigation ^definition = "Status des Therapieplans im Hinblick auf das Follow-Up"
 * insert Translation(investigation ^definition, de-DE, Status des Therapieplans im Hinblick auf das Follow-Up)
+* insert Translation(investigation ^definition, en-US, Status of the therapy plan with respect to follow-up.)
 // ClinicalImpression.supportingInfo
 * supportingInfo ^short = "Information supporting the clinical impression"
 // ClinicalImpression.supportingInfo:UmgesetzteTherapien
 * supportingInfo[UmgesetzteTherapien] ^short = "Umgesetzte Therapien"
 * insert Translation(supportingInfo[UmgesetzteTherapien] ^short, de-DE, Umgesetzte Therapien)
+* insert Translation(supportingInfo[UmgesetzteTherapien] ^short, en-US, Therapies implemented)
 * supportingInfo[UmgesetzteTherapien] ^definition = "Umgesetzte Therapien mit oder auch ohne Bezug auf die MTB-Empfehlungen"
 * insert Translation(supportingInfo[UmgesetzteTherapien] ^definition, de-DE, Umgesetzte Therapien mit oder auch ohne Bezug auf die MTB-Empfehlungen)
+* insert Translation(supportingInfo[UmgesetzteTherapien] ^definition, en-US, Therapies implemented\, with or without reference to the MTB recommendations.)
 // ClinicalImpression.supportingInfo:AntraegeKostenuebernahme
 * supportingInfo[AntraegeKostenuebernahme] ^short = "Anträge Kostenübernahme"
 * insert Translation(supportingInfo[AntraegeKostenuebernahme] ^short, de-DE, Antraege Kostenuebernahme)
+* insert Translation(supportingInfo[AntraegeKostenuebernahme] ^short, en-US, Cost-coverage applications)
 * supportingInfo[AntraegeKostenuebernahme] ^definition = "Anträge Kostenübernahme für die empfohlenen Therapien"
 * insert Translation(supportingInfo[AntraegeKostenuebernahme] ^definition, de-DE, Antraege Kostenuebernahme fuer die empfohlenen Therapien)
+* insert Translation(supportingInfo[AntraegeKostenuebernahme] ^definition, en-US, Cost-coverage applications for the recommended therapies.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(status)

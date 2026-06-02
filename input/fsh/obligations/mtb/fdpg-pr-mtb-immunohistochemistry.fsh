@@ -32,8 +32,10 @@ Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry"
 // Observation.code.coding:generisch
 * code.coding[generisch] ^short = "Generischer Immunhistochemischer Untersuchungscode"
 * insert Translation(code.coding[generisch] ^short, de-DE, Generischer Immunhistochemischer Untersuchungscode)
+* insert Translation(code.coding[generisch] ^short, en-US, Generic IHC examination code)
 * code.coding[generisch] ^definition = "Generischer Code für immunhistochemische Untersuchungen. Wird immer angegeben, um die Interoperabilität zu gewährleisten. Zusätzliche spezifische Codes können über open slicing hinzugefügt werden."
 * insert Translation(code.coding[generisch] ^definition, de-DE, Generischer Code fuer immunhistochemische Untersuchungen. Wird immer angegeben um die Interoperabilitaet zu gewaehrleisten. Zusaetzliche spezifische Codes koennen ueber open slicing hinzugefuegt werden.)
+* insert Translation(code.coding[generisch] ^definition, en-US, Generic code for immunohistochemistry examinations — always provided for interoperability.)
 // Observation.subject
 * subject ^short = "Patient"
 * insert Translation(subject ^short, de-DE, Patient)
@@ -109,13 +111,17 @@ Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry"
 // Observation.component:gene-studied
 * component[gene-studied] ^short = "Untersuchtes Gen"
 * insert Translation(component[gene-studied] ^short, de-DE, Untersuchtes Gen)
+* insert Translation(component[gene-studied] ^short, en-US, Gene studied)
 * component[gene-studied] ^definition = "Das untersuchte Gen"
 * insert Translation(component[gene-studied] ^definition, de-DE, Das untersuchte Gen)
+* insert Translation(component[gene-studied] ^definition, en-US, The gene studied\, identified by HGNC ID.)
 // Observation.component:biomarker-category
 * component[biomarker-category] ^short = "Biomarker-Kategorie"
 * insert Translation(component[biomarker-category] ^short, de-DE, Biomarker-Kategorie)
+* insert Translation(component[biomarker-category] ^short, en-US, Biomarker category)
 * component[biomarker-category] ^definition = "Die Kategorie des molekularen Biomarkers"
 * insert Translation(component[biomarker-category] ^definition, de-DE, Die Kategorie des molekularen Biomarkers)
+* insert Translation(component[biomarker-category] ^definition, en-US, Category of the molecular biomarker.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(identifier)

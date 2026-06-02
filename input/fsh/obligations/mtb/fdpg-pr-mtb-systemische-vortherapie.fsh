@@ -42,8 +42,10 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 // Procedure.basedOn:Therapieplan
 * basedOn[Therapieplan] ^short = "Therpieplan"
 * insert Translation(basedOn[Therapieplan] ^short, de-DE, Therapieplan)
+* insert Translation(basedOn[Therapieplan] ^short, en-US, Therapy plan)
 * basedOn[Therapieplan] ^definition = "Verweis auf den im Molekularen Tumorboard beschlossenen Therpieplan"
 * insert Translation(basedOn[Therapieplan] ^definition, de-DE, Verweis auf den im Molekularen Tumorboard beschlossenen Therapieplan)
+* insert Translation(basedOn[Therapieplan] ^definition, en-US, Reference to the therapy plan decided by the MTB.)
 // Procedure.partOf
 * partOf ^short = "Part of referenced event"
 * insert Translation(partOf ^short, de-DE, Teil von)
@@ -61,13 +63,17 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 // Procedure.statusReason
 * statusReason ^short = "Abbruchsgrund Systemische Therapie"
 * insert Translation(statusReason ^short, de-DE, Abbruchsgrund Systemische Therapie)
+* insert Translation(statusReason ^short, en-US, Systemic therapy termination reason)
 * statusReason ^definition = "Falls abgebrochen: Angabe zum Abbruchsgrund der Systemischen Therapie"
 * insert Translation(statusReason ^definition, de-DE, Falls abgebrochen: Angabe zum Abbruchsgrund der Systemischen Therapie)
+* insert Translation(statusReason ^definition, en-US, If terminated: reason for terminating the systemic therapy.)
 // Procedure.statusReason.coding:Therapiestatusgrund
 * statusReason.coding[Therapiestatusgrund] ^short = "Therapiestatusgrund"
 * insert Translation(statusReason.coding[Therapiestatusgrund] ^short, de-DE, Therapiestatusgrund)
+* insert Translation(statusReason.coding[Therapiestatusgrund] ^short, en-US, Therapy status reason)
 * statusReason.coding[Therapiestatusgrund] ^definition = "Grund für den Status der Systemischen Therapie"
 * insert Translation(statusReason.coding[Therapiestatusgrund] ^definition, de-DE, Grund für den Status der Systemischen Therapie)
+* insert Translation(statusReason.coding[Therapiestatusgrund] ^definition, en-US, Reason for the status of the systemic therapy.)
 // Procedure.category
 * category ^short = "Kategorie"
 * insert Translation(category ^short, de-DE, Kategorie)
@@ -112,8 +118,10 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 // Procedure.code.coding:systemische_therapie_art
 * code.coding[systemische_therapie_art] ^short = "Art der systemischen oder abwartenden Therapie"
 * insert Translation(code.coding[systemische_therapie_art] ^short, de-DE, Art der systemischen oder abwartenden Therapie)
+* insert Translation(code.coding[systemische_therapie_art] ^short, en-US, Type of systemic therapy)
 * code.coding[systemische_therapie_art] ^definition = "Art der systemischen oder abwartenden Therapie gemäß 16.3 oBDS 2021."
 * insert Translation(code.coding[systemische_therapie_art] ^definition, de-DE, Art der systemischen oder abwartenden Therapie gemäß 16.3 oBDS 2021.)
+* insert Translation(code.coding[systemische_therapie_art] ^definition, en-US, Type of systemic or watchful-waiting therapy per oBDS 2021 §16.3.)
 // Procedure.subject
 * subject ^short = "Who the procedure was performed on"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -138,13 +146,17 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 // Procedure.performed[x]:performedPeriod.start
 * performed[x][performedPeriod].start ^short = "Startdatum der systemischen oder abwartenden Therapie"
 * insert Translation(performed[x][performedPeriod].start ^short, de-DE, Startdatum der systemischen oder abwartenden Therapie)
+* insert Translation(performed[x][performedPeriod].start ^short, en-US, Therapy start date)
 * performed[x][performedPeriod].start ^definition = "Startdatum der systemischen oder abwartenden Therapie gemäß 16.6 oBDS 2021."
 * insert Translation(performed[x][performedPeriod].start ^definition, de-DE, Startdatum der systemischen oder abwartenden Therapie gemäß 16.6 oBDS 2021.)
+* insert Translation(performed[x][performedPeriod].start ^definition, en-US, Start date of systemic or watchful-waiting therapy per oBDS 2021 §16.6.)
 // Procedure.performed[x]:performedPeriod.end
 * performed[x][performedPeriod].end ^short = "Enddatum der systemischen oder abwartenden Therapie"
 * insert Translation(performed[x][performedPeriod].end ^short, de-DE, Enddatum der systemischen oder abwartenden Therapie)
+* insert Translation(performed[x][performedPeriod].end ^short, en-US, Therapy end date)
 * performed[x][performedPeriod].end ^definition = "Enddatum der systemischen oder abwartenden Therapie gemäß 16.8 oBDS 2021."
 * insert Translation(performed[x][performedPeriod].end ^definition, de-DE, Enddatum der systemischen oder abwartenden Therapie - wenn vorhanden -  gemäß 16.8 oBDS 2021.)
+* insert Translation(performed[x][performedPeriod].end ^definition, en-US, End date of systemic or watchful-waiting therapy\, if applicable\, per oBDS 2021 §16.8.)
 // Procedure.reasonReference
 * reasonReference ^short = "The justification that the procedure was performed"
 * insert Translation(reasonReference ^short, de-DE, Begründung (Verweis\))
@@ -168,6 +180,11 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * insert Translation(bodySite.coding[snomed-ct] ^definition, en-US, A reference to a code defined by SNOMED CT)
 // Procedure.outcome
 * outcome ^short = "The result of procedure"
+* insert Translation(outcome ^short, de-DE, Ergebnis der Kostenübernahme)
+* insert Translation(outcome ^short, en-US, Cost-coverage outcome)
+* outcome ^definition = "The outcome of the procedure - did it resolve the reasons for the procedure being performed?"
+* insert Translation(outcome ^definition, de-DE, Ergebnis der Kostenübernahme. Für die Sekundärdatennutzung ist davon auszugehen\, dass die Kostenerstattung bereits erfolgt ist.)
+* insert Translation(outcome ^definition, en-US, Outcome of the cost-coverage decision. For secondary data use\, reimbursement is assumed to have already occurred.)
 // Procedure.note
 * note ^short = "Hinweis"
 * insert Translation(note ^short, de-DE, Hinweis)

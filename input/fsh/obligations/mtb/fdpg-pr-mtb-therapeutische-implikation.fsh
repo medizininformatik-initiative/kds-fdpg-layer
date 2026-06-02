@@ -71,8 +71,10 @@ Description: "FDPG Profil - MII_PR_MTB_Therapeutische_Implikation"
 // Observation.derivedFrom:variant
 * derivedFrom[variant] ^short = "Abgeleitet von Variante"
 * insert Translation(derivedFrom[variant] ^short, de-DE, Abgeleitet von Variante)
+* insert Translation(derivedFrom[variant] ^short, en-US, Derived from variant)
 * derivedFrom[variant] ^definition = "Die genetische Variante von der diese Implikation abgeleitet wurde"
 * insert Translation(derivedFrom[variant] ^definition, de-DE, Die genetische Variante von der diese Implikation abgeleitet wurde)
+* insert Translation(derivedFrom[variant] ^definition, en-US, Genetic variant from which this implication is derived.)
 // Observation.component
 * component ^short = "Komponenten"
 * insert Translation(component ^short, de-DE, Komponenten)
@@ -83,33 +85,45 @@ Description: "FDPG Profil - MII_PR_MTB_Therapeutische_Implikation"
 // Observation.component:conclusion-string
 * component[conclusion-string] ^short = "Schlussfolgerung - Text"
 * insert Translation(component[conclusion-string] ^short, de-DE, Schlussfolgerung - Text)
+* insert Translation(component[conclusion-string] ^short, en-US, Conclusion (text\))
 * component[conclusion-string] ^definition = "Textuelle Zusammenfassung der therapeutischen Implikation"
 * insert Translation(component[conclusion-string] ^definition, de-DE, Textuelle Zusammenfassung der therapeutischen Implikation)
+* insert Translation(component[conclusion-string] ^definition, en-US, Textual summary of the therapeutic implication.)
 // Observation.component:evidence-level
 * component[evidence-level] ^short = "Evidenzlevel"
 * insert Translation(component[evidence-level] ^short, de-DE, Evidenzlevel)
+* insert Translation(component[evidence-level] ^short, en-US, Evidence level)
 * component[evidence-level] ^definition = "Das Evidenzlevel für die therapeutische Empfehlung"
 * insert Translation(component[evidence-level] ^definition, de-DE, Das Evidenzlevel für die therapeutische Empfehlung)
+* insert Translation(component[evidence-level] ^definition, en-US, Evidence level for the therapy recommendation.)
 // Observation.component:therapeutic-implication
 * component[therapeutic-implication] ^short = "Art der therapeutischen Implikation"
 * insert Translation(component[therapeutic-implication] ^short, de-DE, Art der therapeutischen Implikation)
+* insert Translation(component[therapeutic-implication] ^short, en-US, Therapeutic implication type)
 * component[therapeutic-implication] ^definition = "Die Art der therapeutischen Implikation wie z.B. Sensitivität oder Resistenz"
 * insert Translation(component[therapeutic-implication] ^definition, de-DE, Die Art der therapeutischen Implikation wie z.B. Sensitivität oder Resistenz)
+* insert Translation(component[therapeutic-implication] ^definition, en-US, Type of therapeutic implication\, e.g. sensitivity or resistance.)
 // Observation.component:phenotypic-treatment-context
 * component[phenotypic-treatment-context] ^short = "Phänotypischer Behandlungskontext"
 * insert Translation(component[phenotypic-treatment-context] ^short, de-DE, Phänotypischer Behandlungskontext)
+* insert Translation(component[phenotypic-treatment-context] ^short, en-US, Phenotypic treatment context)
 * component[phenotypic-treatment-context] ^definition = "Der phänotypische oder krankheitsbezogene Kontext der Behandlung"
 * insert Translation(component[phenotypic-treatment-context] ^definition, de-DE, Der phänotypische oder krankheitsbezogene Kontext der Behandlung)
+* insert Translation(component[phenotypic-treatment-context] ^definition, en-US, Phenotypic or disease-specific context of the treatment.)
 // Observation.component:medication-assessed
 * component[medication-assessed] ^short = "Bewertete Medikation"
 * insert Translation(component[medication-assessed] ^short, de-DE, Bewertete Medikation)
+* insert Translation(component[medication-assessed] ^short, en-US, Medication assessed)
 * component[medication-assessed] ^definition = "Die bewertete Medikation für die therapeutische Empfehlung"
 * insert Translation(component[medication-assessed] ^definition, de-DE, Die bewertete Medikation für die therapeutische Empfehlung)
+* insert Translation(component[medication-assessed] ^definition, en-US, Medication assessed for the therapy recommendation.)
 // Observation.component:therapy-assessed
 * component[therapy-assessed] ^short = "Bewertete Therapie"
 * insert Translation(component[therapy-assessed] ^short, de-DE, Bewertete Therapie)
+* insert Translation(component[therapy-assessed] ^short, en-US, Therapy assessed)
 * component[therapy-assessed] ^definition = "Die bewertete nicht-medikamentöse Therapie"
 * insert Translation(component[therapy-assessed] ^definition, de-DE, Die bewertete nicht-medikamentöse Therapie)
+* insert Translation(component[therapy-assessed] ^definition, en-US, Non-pharmacologic therapy assessed.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(extension[Evidenzgraduierung])

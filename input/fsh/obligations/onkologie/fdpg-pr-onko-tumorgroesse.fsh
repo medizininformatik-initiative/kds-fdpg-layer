@@ -47,6 +47,11 @@ Description: "FDPG Profil - MII_PR_Onko_Tumorgroesse"
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
 // Observation.value[x].value
 * value[x].value ^short = "Numerical value (with implicit precision)"
+* insert Translation(value[x].value ^short, de-DE, Anzahl untersuchter Sentinel-Lymphknoten)
+* insert Translation(value[x].value ^short, en-US, Number of sentinel lymph nodes examined)
+* value[x].value ^definition = "The value of the measured amount. The value includes an implicit precision in the presentation of the value."
+* insert Translation(value[x].value ^definition, de-DE, Anzahl untersuchter Sentinel-Lymphknoten nach oBDS 2021 §6.9.)
+* insert Translation(value[x].value ^definition, en-US, Number of sentinel lymph nodes examined per oBDS 2021 §6.9.)
 // Observation.value[x].unit
 * value[x].unit ^short = "Unit representation"
 // Observation.value[x].system
@@ -60,6 +65,10 @@ Description: "FDPG Profil - MII_PR_Onko_Tumorgroesse"
 * bodySite ^definition = "Indicates the site on the subject's body where the observation was made (i.e. the target site)."
 * insert Translation(bodySite ^definition, de-DE, Körperstelle\, auf die sich die Ressource bezieht.)
 * insert Translation(bodySite ^definition, en-US, Body site the resource refers to.)
+// Observation.bodySite.coding
+* bodySite.coding ^definition = "A reference to a code defined by a terminology system."
+* insert Translation(bodySite.coding ^definition, de-DE, Zielgebiet der Strahlentherapie gemäß oBDS 2021 §14.3.)
+* insert Translation(bodySite.coding ^definition, en-US, Target site of radiotherapy per oBDS 2021 §14.3.)
 // Observation.method
 * method ^short = "How it was done"
 * insert Translation(method ^short, de-DE, Methode)

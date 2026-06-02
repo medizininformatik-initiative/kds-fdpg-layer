@@ -39,8 +39,10 @@ Description: "FDPG Profil - MII_PR_MolGen_AnforderungGenetischerTest"
 // ServiceRequest.authoredOn
 * authoredOn ^short = "Anforderungsdatum"
 * insert Translation(authoredOn ^short, de-DE, Anforderungsdatum)
+* insert Translation(authoredOn ^short, en-US, Request date)
 * authoredOn ^definition = "Datum der Anforderung"
 * insert Translation(authoredOn ^definition, de-DE, Datum der Anforderung)
+* insert Translation(authoredOn ^definition, en-US, Date the request was placed.)
 // ServiceRequest.requester
 * requester ^short = "Anforderer"
 * insert Translation(requester ^short, de-DE, Anforderer)
@@ -65,8 +67,10 @@ Description: "FDPG Profil - MII_PR_MolGen_AnforderungGenetischerTest"
 // ServiceRequest.supportingInfo
 * supportingInfo ^short = "Unterstützende Informationen"
 * insert Translation(supportingInfo ^short, de-DE, Unterstützende Informationen)
+* insert Translation(supportingInfo ^short, en-US, Supporting information)
 * supportingInfo ^definition = "Zusätzliche Informationen die die Anforderung unterstützen"
 * insert Translation(supportingInfo ^definition, de-DE, Zusätzliche Informationen die die Anforderung unterstützen)
+* insert Translation(supportingInfo ^definition, en-US, Additional information supporting the request.)
 // ServiceRequest.note
 * note ^short = "Anmerkung"
 * insert Translation(note ^short, de-DE, Anmerkung)

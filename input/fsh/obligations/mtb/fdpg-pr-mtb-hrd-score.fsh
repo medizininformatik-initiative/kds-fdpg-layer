@@ -97,29 +97,36 @@ Description: "FDPG Profil - MII_PR_MTB_HRD_Score"
 // Observation.component:gene-studied
 * component[gene-studied] ^short = "Untersuchtes Gen"
 * insert Translation(component[gene-studied] ^short, de-DE, Untersuchtes Gen)
+* insert Translation(component[gene-studied] ^short, en-US, Gene studied)
 * component[gene-studied] ^definition = "Das untersuchte Gen"
 * insert Translation(component[gene-studied] ^definition, de-DE, Das untersuchte Gen)
+* insert Translation(component[gene-studied] ^definition, en-US, The gene studied\, identified by HGNC ID.)
 // Observation.component:biomarker-category
 * component[biomarker-category] ^short = "Biomarker-Kategorie"
 * insert Translation(component[biomarker-category] ^short, de-DE, Biomarker-Kategorie)
+* insert Translation(component[biomarker-category] ^short, en-US, Biomarker category)
 * component[biomarker-category] ^definition = "Die Kategorie des molekularen Biomarkers"
 * insert Translation(component[biomarker-category] ^definition, de-DE, Die Kategorie des molekularen Biomarkers)
+* insert Translation(component[biomarker-category] ^definition, en-US, Category of the molecular biomarker.)
 // Observation.component:LOH
 * component[LOH] ^short = "Loss of heterozygosity"
 * component[LOH] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[LOH] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
+* insert Translation(component[LOH] ^definition, en-US, Individual components of the observation.)
 // Observation.component:LOH.value[x]
 * component[LOH].value[x] ^short = "Actual component result"
 // Observation.component:TAI
 * component[TAI] ^short = "Telomeric allelic imbalance"
 * component[TAI] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[TAI] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
+* insert Translation(component[TAI] ^definition, en-US, Individual components of the observation.)
 // Observation.component:TAI.value[x]
 * component[TAI].value[x] ^short = "Actual component result"
 // Observation.component:LST
 * component[LST] ^short = "Large-scale state transitions"
 * component[LST] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[LST] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
+* insert Translation(component[LST] ^definition, en-US, Individual components of the observation.)
 // Observation.component:LST.value[x]
 * component[LST].value[x] ^short = "Actual component result"
 

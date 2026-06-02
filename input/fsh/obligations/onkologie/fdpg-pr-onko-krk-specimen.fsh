@@ -13,8 +13,10 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Specimen"
 // Specimen.accessionIdentifier.value
 * accessionIdentifier.value ^short = "Histologie-Einsendenummer"
 * insert Translation(accessionIdentifier.value ^short, de-DE, Histologie-Einsendenummer)
+* insert Translation(accessionIdentifier.value ^short, en-US, Histology accession number)
 * accessionIdentifier.value ^definition = "Histologie-Einsendenummer nach 6.2 oBDS 2021"
 * insert Translation(accessionIdentifier.value ^definition, de-DE, Histologie-Einsendenummer nach 6.2 oBDS 2021)
+* insert Translation(accessionIdentifier.value ^definition, en-US, Histology accession number per oBDS 2021 §6.2.)
 // Specimen.subject
 * subject ^short = "Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -27,8 +29,10 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Specimen"
 // Specimen.collection.collected[x]:collectedDateTime
 * collection.collected[x][collectedDateTime] ^short = "Tumor Histologiedatum"
 * insert Translation(collection.collected[x][collectedDateTime] ^short, de-DE, Tumor Histologiedatum)
+* insert Translation(collection.collected[x][collectedDateTime] ^short, en-US, Specimen collection date)
 * collection.collected[x][collectedDateTime] ^definition = "Histologiedatum nach 6.1 oBDS 2021"
 * insert Translation(collection.collected[x][collectedDateTime] ^definition, de-DE, Histologiedatum nach 6.1 oBDS 2021)
+* insert Translation(collection.collected[x][collectedDateTime] ^definition, en-US, Date of specimen collection — corresponds to oBDS 6.1 histology date.)
 // Specimen.condition
 * condition ^short = "State of the specimen"
 

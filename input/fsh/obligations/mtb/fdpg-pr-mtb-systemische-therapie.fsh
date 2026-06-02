@@ -33,8 +33,10 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Therapie"
 // Procedure.extension:causedBy
 * extension[causedBy] ^short = "Therapieempfehlung"
 * insert Translation(extension[causedBy] ^short, de-DE, Therapieempfehlung)
+* insert Translation(extension[causedBy] ^short, en-US, Therapy recommendation)
 * extension[causedBy] ^definition = "Verweis auf die MTB Therapieempfehlung"
 * insert Translation(extension[causedBy] ^definition, de-DE, Verweis auf die MTB Therapieempfehlung)
+* insert Translation(extension[causedBy] ^definition, en-US, Reference to the MTB therapy recommendation.)
 // Procedure.basedOn
 * basedOn ^short = "MTB Therapieplan"
 * insert Translation(basedOn ^short, de-DE, MTB Therapieplan)
@@ -59,8 +61,10 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Therapie"
 // Procedure.statusReason
 * statusReason ^short = "Status Grund"
 * insert Translation(statusReason ^short, de-DE, Status Grund)
+* insert Translation(statusReason ^short, en-US, Systemic therapy termination reason)
 * statusReason ^definition = "Grund des Status der Therapie"
 * insert Translation(statusReason ^definition, de-DE, Grund des Status der Therapie)
+* insert Translation(statusReason ^definition, en-US, If terminated: reason for terminating the systemic therapy.)
 // Procedure.category
 * category ^short = "Kategorie"
 * insert Translation(category ^short, de-DE, Kategorie)
@@ -105,8 +109,10 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Therapie"
 // Procedure.code.coding:systemische_therapie_art
 * code.coding[systemische_therapie_art] ^short = "Art der systemischen oder abwartenden Therapie"
 * insert Translation(code.coding[systemische_therapie_art] ^short, de-DE, Art der systemischen oder abwartenden Therapie)
+* insert Translation(code.coding[systemische_therapie_art] ^short, en-US, Type of systemic therapy)
 * code.coding[systemische_therapie_art] ^definition = "Art der systemischen oder abwartenden Therapie gemäß 16.3 oBDS 2021."
 * insert Translation(code.coding[systemische_therapie_art] ^definition, de-DE, Art der systemischen oder abwartenden Therapie gemäß 16.3 oBDS 2021.)
+* insert Translation(code.coding[systemische_therapie_art] ^definition, en-US, Type of systemic or watchful-waiting therapy per oBDS 2021 §16.3.)
 // Procedure.subject
 * subject ^short = "Who the procedure was performed on"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -131,13 +137,17 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Therapie"
 // Procedure.performed[x]:performedPeriod.start
 * performed[x][performedPeriod].start ^short = "Startdatum der systemischen oder abwartenden Therapie"
 * insert Translation(performed[x][performedPeriod].start ^short, de-DE, Startdatum der systemischen oder abwartenden Therapie)
+* insert Translation(performed[x][performedPeriod].start ^short, en-US, Therapy start date)
 * performed[x][performedPeriod].start ^definition = "Startdatum der systemischen oder abwartenden Therapie gemäß 16.6 oBDS 2021."
 * insert Translation(performed[x][performedPeriod].start ^definition, de-DE, Startdatum der systemischen oder abwartenden Therapie gemäß 16.6 oBDS 2021.)
+* insert Translation(performed[x][performedPeriod].start ^definition, en-US, Start date of systemic or watchful-waiting therapy per oBDS 2021 §16.6.)
 // Procedure.performed[x]:performedPeriod.end
 * performed[x][performedPeriod].end ^short = "Enddatum der systemischen oder abwartenden Therapie"
 * insert Translation(performed[x][performedPeriod].end ^short, de-DE, Enddatum der systemischen oder abwartenden Therapie)
+* insert Translation(performed[x][performedPeriod].end ^short, en-US, Therapy end date)
 * performed[x][performedPeriod].end ^definition = "Enddatum der systemischen oder abwartenden Therapie gemäß 16.8 oBDS 2021."
 * insert Translation(performed[x][performedPeriod].end ^definition, de-DE, Enddatum der systemischen oder abwartenden Therapie - wenn vorhanden -  gemäß 16.8 oBDS 2021.)
+* insert Translation(performed[x][performedPeriod].end ^definition, en-US, End date of systemic or watchful-waiting therapy\, if applicable\, per oBDS 2021 §16.8.)
 // Procedure.reasonReference
 * reasonReference ^short = "The justification that the procedure was performed"
 * insert Translation(reasonReference ^short, de-DE, Begründung (Verweis\))
@@ -161,6 +171,11 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Therapie"
 * insert Translation(bodySite.coding[snomed-ct] ^definition, en-US, A reference to a code defined by SNOMED CT)
 // Procedure.outcome
 * outcome ^short = "The result of procedure"
+* insert Translation(outcome ^short, de-DE, Ergebnis der Kostenübernahme)
+* insert Translation(outcome ^short, en-US, Cost-coverage outcome)
+* outcome ^definition = "The outcome of the procedure - did it resolve the reasons for the procedure being performed?"
+* insert Translation(outcome ^definition, de-DE, Ergebnis der Kostenübernahme. Für die Sekundärdatennutzung ist davon auszugehen\, dass die Kostenerstattung bereits erfolgt ist.)
+* insert Translation(outcome ^definition, en-US, Outcome of the cost-coverage decision. For secondary data use\, reimbursement is assumed to have already occurred.)
 // Procedure.note
 * note ^short = "Bemerkungen"
 * insert Translation(note ^short, de-DE, Hinweis)

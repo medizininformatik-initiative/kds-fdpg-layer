@@ -18,8 +18,10 @@ Description: "FDPG Profil - MII_PR_Onko_Weitere_Klassifikationen"
 // Observation.code.text
 * code.text ^short = "Klassifikation Name Freitext"
 * insert Translation(code.text ^short, de-DE, Name der Klassifikation wie in Krebsregistermeldung angegeben)
+* insert Translation(code.text ^short, en-US, Classification name)
 * code.text ^definition = "Datum der weiteren Klassifikation"
 * insert Translation(code.text ^definition, de-DE, Name der Klassifikation wie in Krebsregistermeldung angegeben)
+* insert Translation(code.text ^definition, en-US, Name of the classification as reported to the cancer registry.)
 // Observation.subject
 * subject ^short = "Who and/or what the observation is about"
 * insert Translation(subject ^short, de-DE, Patient*in)

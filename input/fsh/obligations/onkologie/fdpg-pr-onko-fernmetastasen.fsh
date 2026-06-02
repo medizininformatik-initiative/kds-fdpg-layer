@@ -48,8 +48,10 @@ Description: "FDPG Profil - MII_PR_Onko_Fernmetastasen"
 // Observation.value[x].coding
 * value[x].coding ^short = "Lokalisation der Fernmetastase laut oBDS/TNM-Kodierung"
 * insert Translation(value[x].coding ^short, de-DE, Lokalisation der Fernmetastasen)
+* insert Translation(value[x].coding ^short, en-US, Metastasis location)
 * value[x].coding ^definition = "weitere Lokalisationen sind als einzelne Ressourcen zu kodieren"
 * insert Translation(value[x].coding ^definition, de-DE, Lokalisation der Fernmetastasen laut 11.1 oBDS 2021 / TNM Kodierung)
+* insert Translation(value[x].coding ^definition, en-US, Location of distant metastases per oBDS 2021 §11.1 / TNM coding.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(code)

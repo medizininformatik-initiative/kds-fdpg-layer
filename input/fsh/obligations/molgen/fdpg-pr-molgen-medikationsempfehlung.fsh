@@ -32,8 +32,10 @@ Description: "FDPG Profil - MII_PR_MolGen_Medikationsempfehlung"
 // Task.for
 * for ^short = "Patient"
 * insert Translation(for ^short, de-DE, Patient)
+* insert Translation(for ^short, en-US, Patient)
 * for ^definition = "Der Patient für den die Medikation empfohlen wird"
 * insert Translation(for ^definition, de-DE, Der Patient für den die Medikation empfohlen wird)
+* insert Translation(for ^definition, en-US, Patient for whom the medication is recommended.)
 // Task.encounter
 * encounter ^short = "Kontakt"
 * insert Translation(encounter ^short, de-DE, Kontakt)

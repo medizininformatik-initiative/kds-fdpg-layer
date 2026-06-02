@@ -28,8 +28,18 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie"
 * insert Translation(extension[durchfuehrungsabsicht] ^definition, en-US, therapeutic | palliative | diagnostic | preventive | rehabilitative | other)
 // Procedure.extension:Intention
 * extension[Intention] ^short = "MII EX Onko Systemische Therapie Intention"
+* insert Translation(extension[Intention] ^short, de-DE, Intention der Strahlentherapie)
+* insert Translation(extension[Intention] ^short, en-US, Radiotherapy intent)
+* extension[Intention] ^definition = "Systemische Therapie Intention"
+* insert Translation(extension[Intention] ^definition, de-DE, Intention der Strahlentherapie gemäß oBDS 2021 §14.1.)
+* insert Translation(extension[Intention] ^definition, en-US, Intent of the radiotherapy per oBDS 2021 §14.1.)
 // Procedure.extension:StellungZurOp
 * extension[StellungZurOp] ^short = "MII EX Onko Systemische Therapie Stellung zur OP"
+* insert Translation(extension[StellungZurOp] ^short, de-DE, Stellung der Strahlentherapie zur OP)
+* insert Translation(extension[StellungZurOp] ^short, en-US, Radiotherapy position relative to surgery)
+* extension[StellungZurOp] ^definition = "Systemische Therapie Stellung zur OP"
+* insert Translation(extension[StellungZurOp] ^definition, de-DE, Stellung der Strahlentherapie zu einer Operation gemäß oBDS 2021 §14.2.)
+* insert Translation(extension[StellungZurOp] ^definition, en-US, Position of the radiotherapy relative to surgery per oBDS 2021 §14.2.)
 // Procedure.basedOn
 * basedOn ^short = "A request for this procedure"
 * insert Translation(basedOn ^short, de-DE, Basiert auf)
@@ -95,8 +105,10 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie"
 // Procedure.code.coding:systemische_therapie_art
 * code.coding[systemische_therapie_art] ^short = "Art der systemischen oder abwartenden Therapie"
 * insert Translation(code.coding[systemische_therapie_art] ^short, de-DE, Art der systemischen oder abwartenden Therapie)
+* insert Translation(code.coding[systemische_therapie_art] ^short, en-US, Type of systemic therapy)
 * code.coding[systemische_therapie_art] ^definition = "Art der systemischen oder abwartenden Therapie gemäß 16.3 oBDS 2021."
 * insert Translation(code.coding[systemische_therapie_art] ^definition, de-DE, Art der systemischen oder abwartenden Therapie gemäß 16.3 oBDS 2021.)
+* insert Translation(code.coding[systemische_therapie_art] ^definition, en-US, Type of systemic or watchful-waiting therapy per oBDS 2021 §16.3.)
 // Procedure.subject
 * subject ^short = "Who the procedure was performed on"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -121,13 +133,17 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie"
 // Procedure.performed[x]:performedPeriod.start
 * performed[x][performedPeriod].start ^short = "Startdatum der systemischen oder abwartenden Therapie"
 * insert Translation(performed[x][performedPeriod].start ^short, de-DE, Startdatum der systemischen oder abwartenden Therapie)
+* insert Translation(performed[x][performedPeriod].start ^short, en-US, Therapy start date)
 * performed[x][performedPeriod].start ^definition = "Startdatum der systemischen oder abwartenden Therapie gemäß 16.6 oBDS 2021."
 * insert Translation(performed[x][performedPeriod].start ^definition, de-DE, Startdatum der systemischen oder abwartenden Therapie gemäß 16.6 oBDS 2021.)
+* insert Translation(performed[x][performedPeriod].start ^definition, en-US, Start date of systemic or watchful-waiting therapy per oBDS 2021 §16.6.)
 // Procedure.performed[x]:performedPeriod.end
 * performed[x][performedPeriod].end ^short = "Enddatum der systemischen oder abwartenden Therapie"
 * insert Translation(performed[x][performedPeriod].end ^short, de-DE, Enddatum der systemischen oder abwartenden Therapie)
+* insert Translation(performed[x][performedPeriod].end ^short, en-US, Therapy end date)
 * performed[x][performedPeriod].end ^definition = "Enddatum der systemischen oder abwartenden Therapie gemäß 16.8 oBDS 2021."
 * insert Translation(performed[x][performedPeriod].end ^definition, de-DE, Enddatum der systemischen oder abwartenden Therapie - wenn vorhanden -  gemäß 16.8 oBDS 2021.)
+* insert Translation(performed[x][performedPeriod].end ^definition, en-US, End date of systemic or watchful-waiting therapy\, if applicable\, per oBDS 2021 §16.8.)
 // Procedure.reasonReference
 * reasonReference ^short = "The justification that the procedure was performed"
 * insert Translation(reasonReference ^short, de-DE, Begründung (Verweis\))
@@ -142,6 +158,10 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie"
 * bodySite ^definition = "Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität."
 * insert Translation(bodySite ^definition, de-DE, Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität.)
 * insert Translation(bodySite ^definition, en-US, The body site of the procedure using SNOMED CT including laterality.)
+// Procedure.bodySite.coding
+* bodySite.coding ^definition = "A reference to a code defined by a terminology system."
+* insert Translation(bodySite.coding ^definition, de-DE, Zielgebiet der Strahlentherapie gemäß oBDS 2021 §14.3.)
+* insert Translation(bodySite.coding ^definition, en-US, Target site of radiotherapy per oBDS 2021 §14.3.)
 // Procedure.bodySite.coding:snomed-ct
 * bodySite.coding[snomed-ct] ^short = "SNOMED CT Code"
 * insert Translation(bodySite.coding[snomed-ct] ^short, de-DE, SNOMED CT Code)

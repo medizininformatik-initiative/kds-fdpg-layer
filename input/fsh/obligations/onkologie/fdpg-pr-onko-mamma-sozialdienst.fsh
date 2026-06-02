@@ -29,13 +29,17 @@ Description: "FDPG Profil - MII_PR_Onko_Mamma_Sozialdienst"
 // Procedure.extension:Intention
 * extension[Intention] ^short = "Intention der OP"
 * insert Translation(extension[Intention] ^short, de-DE, Intention der OP)
+* insert Translation(extension[Intention] ^short, en-US, Radiotherapy intent)
 * extension[Intention] ^definition = "Intention der OP gemäß 13.1 oBDS 2021"
 * insert Translation(extension[Intention] ^definition, de-DE, Intention der OP gemäß 13.1 oBDS 2021)
+* insert Translation(extension[Intention] ^definition, en-US, Intent of the radiotherapy per oBDS 2021 §14.1.)
 // Procedure.extension:Urgency
 * extension[Urgency] ^short = "Art des Eingriffs"
 * insert Translation(extension[Urgency] ^short, de-DE, Art des Eingriffs)
+* insert Translation(extension[Urgency] ^short, en-US, Procedure urgency)
 * extension[Urgency] ^definition = "Modalität der Eingriffsdurchführung gemäß KR6 oBDS 2021"
 * insert Translation(extension[Urgency] ^definition, de-DE, Modalität der Eingriffsdurchführung - Elektiveingriff vs. Notfalleingriff - gemäß KR6 oBDS 2021)
+* insert Translation(extension[Urgency] ^definition, en-US, Procedure modality — elective vs. emergency — per oBDS 2021 KR6.)
 // Procedure.basedOn
 * basedOn ^short = "A request for this procedure"
 * insert Translation(basedOn ^short, de-DE, Basiert auf)
@@ -117,6 +121,8 @@ Description: "FDPG Profil - MII_PR_Onko_Mamma_Sozialdienst"
 * insert Translation(performed[x] ^definition, en-US, The date or period of time the procedure was performed.)
 // Procedure.performed[x]:performedDateTime
 * performed[x][performedDateTime] ^short = "Datum"
+* insert Translation(performed[x][performedDateTime] ^short, de-DE, Datum der Stoma-Markierung)
+* insert Translation(performed[x][performedDateTime] ^short, en-US, Stoma marking date)
 * performed[x][performedDateTime] ^definition = "Datum des Kontakts mit dem Sozialdienst"
 * insert Translation(performed[x][performedDateTime] ^definition, de-DE, Durchführungsdatum der Prozedur.)
 * insert Translation(performed[x][performedDateTime] ^definition, en-US, The date the procedure was performed.)
@@ -134,6 +140,10 @@ Description: "FDPG Profil - MII_PR_Onko_Mamma_Sozialdienst"
 * bodySite ^definition = "Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität."
 * insert Translation(bodySite ^definition, de-DE, Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität.)
 * insert Translation(bodySite ^definition, en-US, The body site of the procedure using SNOMED CT including laterality.)
+// Procedure.bodySite.coding
+* bodySite.coding ^definition = "A reference to a code defined by a terminology system."
+* insert Translation(bodySite.coding ^definition, de-DE, Zielgebiet der Strahlentherapie gemäß oBDS 2021 §14.3.)
+* insert Translation(bodySite.coding ^definition, en-US, Target site of radiotherapy per oBDS 2021 §14.3.)
 // Procedure.bodySite.coding:snomed-ct
 * bodySite.coding[snomed-ct] ^short = "SNOMED CT Code"
 * insert Translation(bodySite.coding[snomed-ct] ^short, de-DE, SNOMED CT Code)

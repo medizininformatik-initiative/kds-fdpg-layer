@@ -11,8 +11,10 @@ Description: "FDPG Profil - MII_PR_MolGen_MolekulareKonsequenz"
 // Observation.extension:workflow-relatedArtifact
 * extension[workflow-relatedArtifact] ^short = "Verknüpfte Artefakte"
 * insert Translation(extension[workflow-relatedArtifact] ^short, de-DE, Verknüpfte Artefakte)
+* insert Translation(extension[workflow-relatedArtifact] ^short, en-US, Related artifacts)
 * extension[workflow-relatedArtifact] ^definition = "Verknüpfte Literatur oder andere Artefakte wie Zitationen"
 * insert Translation(extension[workflow-relatedArtifact] ^definition, de-DE, Verknüpfte Literatur oder andere Artefakte wie Zitationen)
+* insert Translation(extension[workflow-relatedArtifact] ^definition, en-US, Linked literature or other artifacts\, e.g. citations.)
 // Observation.category
 * category ^short = "Kategorie"
 * insert Translation(category ^short, de-DE, Kategorie)
@@ -72,23 +74,31 @@ Description: "FDPG Profil - MII_PR_MolGen_MolekulareKonsequenz"
 // Observation.component:conclusion-string
 * component[conclusion-string] ^short = "Schlussfolgerung - Text"
 * insert Translation(component[conclusion-string] ^short, de-DE, Schlussfolgerung - Text)
+* insert Translation(component[conclusion-string] ^short, en-US, Conclusion (text\))
 * component[conclusion-string] ^definition = "Textuelle Zusammenfassung der molekularen Konsequenz"
 * insert Translation(component[conclusion-string] ^definition, de-DE, Textuelle Zusammenfassung der molekularen Konsequenz)
+* insert Translation(component[conclusion-string] ^definition, en-US, Textual summary or conclusion for the variant.)
 // Observation.component:evidence-level
 * component[evidence-level] ^short = "Evidenzlevel"
 * insert Translation(component[evidence-level] ^short, de-DE, Evidenzlevel)
+* insert Translation(component[evidence-level] ^short, en-US, Evidence level)
 * component[evidence-level] ^definition = "Das Evidenzlevel für die molekulare Konsequenz"
 * insert Translation(component[evidence-level] ^definition, de-DE, Das Evidenzlevel für die molekulare Konsequenz)
+* insert Translation(component[evidence-level] ^definition, en-US, Evidence level for the therapy recommendation.)
 // Observation.component:clinical-significance
 * component[clinical-significance] ^short = "Klinische Signifikanz"
 * insert Translation(component[clinical-significance] ^short, de-DE, Klinische Signifikanz)
+* insert Translation(component[clinical-significance] ^short, en-US, Clinical significance)
 * component[clinical-significance] ^definition = "Die klinische Signifikanz der Variante"
 * insert Translation(component[clinical-significance] ^definition, de-DE, Die klinische Signifikanz der Variante)
+* insert Translation(component[clinical-significance] ^definition, en-US, Clinical significance of the variant.)
 // Observation.component:functional-effect
 * component[functional-effect] ^short = "Funktioneller Effekt"
 * insert Translation(component[functional-effect] ^short, de-DE, Funktioneller Effekt)
+* insert Translation(component[functional-effect] ^short, en-US, Functional effect)
 * component[functional-effect] ^definition = "Der funktionelle Effekt der Variante auf das Genprodukt"
 * insert Translation(component[functional-effect] ^definition, de-DE, Der funktionelle Effekt der Variante auf das Genprodukt)
+* insert Translation(component[functional-effect] ^definition, en-US, Functional effect of the variant on the gene product.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(extension[workflow-relatedArtifact])

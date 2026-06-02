@@ -24,8 +24,10 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 // Condition.extension:morphology-behavior-icdo3
 * extension[morphology-behavior-icdo3] ^short = "ICD-O-Morphologie"
 * insert Translation(extension[morphology-behavior-icdo3] ^short, de-DE, ICD-O-Morphologie)
+* insert Translation(extension[morphology-behavior-icdo3] ^short, en-US, ICD-O morphology)
 * extension[morphology-behavior-icdo3] ^definition = "Morphologie des Primärtumors nach ICD-O-3 nach 6.3 oBDS"
 * insert Translation(extension[morphology-behavior-icdo3] ^definition, de-DE, Morphologie des Primärtumors nach ICD-O-3 nach 6.3 oBDS)
+* insert Translation(extension[morphology-behavior-icdo3] ^definition, en-US, Morphology of the primary tumor per ICD-O-3 per oBDS §6.3.)
 // Condition.extension:occurredFollowing
 * extension[occurredFollowing] ^short = "Frühere Tumorerkrankungen"
 // Condition.clinicalStatus
@@ -45,8 +47,10 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 // Condition.verificationStatus.coding:primaertumorDiagnosesicherung
 * verificationStatus.coding[primaertumorDiagnosesicherung] ^short = "Diagnosesicherung gemäß oBDS"
 * insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung] ^short, de-DE, Diagnosesicherung gemäß oBDS)
+* insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung] ^short, en-US, Diagnosis verification)
 * verificationStatus.coding[primaertumorDiagnosesicherung] ^definition = "Art der Diagnosesicherung nach 5.7 oBDS 2021"
 * insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung] ^definition, de-DE, Art der Diagnosesicherung nach 5.7 oBDS 2021)
+* insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung] ^definition, en-US, Type of diagnosis verification per oBDS 2021 §5.7.)
 // Condition.code
 * code ^short = "Code"
 * insert Translation(code ^short, de-DE, Code)
@@ -99,6 +103,10 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 * bodySite ^definition = "Die Körperstelle der Diagnose mittels SNOMED oder anderem Code."
 * insert Translation(bodySite ^definition, de-DE, Körperstelle der Diagnose mittels SNOMED oder anderem Code.)
 * insert Translation(bodySite ^definition, en-US, The body site of the diagnosis using SNOMED or other systems.)
+// Condition.bodySite.coding
+* bodySite.coding ^definition = "A reference to a code defined by a terminology system."
+* insert Translation(bodySite.coding ^definition, de-DE, Zielgebiet der Strahlentherapie gemäß oBDS 2021 §14.3.)
+* insert Translation(bodySite.coding ^definition, en-US, Target site of radiotherapy per oBDS 2021 §14.3.)
 // Condition.bodySite.coding:snomed-ct
 * bodySite.coding[snomed-ct] ^short = "SNOMED CT Code"
 * insert Translation(bodySite.coding[snomed-ct] ^short, de-DE, SNOMED CT Code)
@@ -109,13 +117,17 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 // Condition.bodySite.coding:primaertumorSeitenlokalisation
 * bodySite.coding[primaertumorSeitenlokalisation] ^short = "Seitenlokalisation des Primärtumors gemäß oBDS"
 * insert Translation(bodySite.coding[primaertumorSeitenlokalisation] ^short, de-DE, Seitenlokalisation des Primärtumors gemäß oBDS)
+* insert Translation(bodySite.coding[primaertumorSeitenlokalisation] ^short, en-US, Primary tumor laterality)
 * bodySite.coding[primaertumorSeitenlokalisation] ^definition = "Seitenlokalisation des Primärtumors nach 5.8 oBDS 2021"
 * insert Translation(bodySite.coding[primaertumorSeitenlokalisation] ^definition, de-DE, Seitenlokalisation des Primärtumors nach 5.8 oBDS 2021)
+* insert Translation(bodySite.coding[primaertumorSeitenlokalisation] ^definition, en-US, Laterality of the primary tumor per oBDS 2021 §5.8.)
 // Condition.bodySite.coding:icd-o-3
 * bodySite.coding[icd-o-3] ^short = "ICD-O-Topographie"
 * insert Translation(bodySite.coding[icd-o-3] ^short, de-DE, ICD-O-Topographie)
+* insert Translation(bodySite.coding[icd-o-3] ^short, en-US, ICD-O-3 topography)
 * bodySite.coding[icd-o-3] ^definition = "Topographie des Primärtumors nach ICD-O-3 nach 5.4 oBDS 2021"
 * insert Translation(bodySite.coding[icd-o-3] ^definition, de-DE, Topographie des Primärtumors nach ICD-O-3 nach 5.4 oBDS 2021)
+* insert Translation(bodySite.coding[icd-o-3] ^definition, en-US, ICD-O-3 topography when the location in follow-up differs from the primary tumor.)
 // Condition.subject
 * subject ^definition = "Indicates the patient or group who the condition record is associated with."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
@@ -150,8 +162,10 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 // Condition.evidence.detail
 * evidence.detail ^short = "Evidenz für Erstdiagnose"
 * insert Translation(evidence.detail ^short, de-DE, Evidenz für Erstdiagnose)
+* insert Translation(evidence.detail ^short, en-US, Evidence for initial diagnosis)
 * evidence.detail ^definition = "Liste aller für die Erstdiagnose ausschlaggebenden Beobachtungen"
 * insert Translation(evidence.detail ^definition, de-DE, Liste aller für die Erstdiagnose ausschlaggebenden Beobachtungen)
+* insert Translation(evidence.detail ^definition, en-US, List of observations supporting the initial diagnosis.)
 // Condition.note
 * note ^short = "Hinweis"
 * insert Translation(note ^short, de-DE, Hinweis)

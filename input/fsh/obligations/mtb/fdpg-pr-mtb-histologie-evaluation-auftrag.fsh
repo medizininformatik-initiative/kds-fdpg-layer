@@ -18,13 +18,17 @@ Description: "FDPG Profil - MII_PR_MTB_Histologie_Evaluation_Auftrag"
 // ServiceRequest.reasonReference:Histologie
 * reasonReference[Histologie] ^short = "Histologiebefund"
 * insert Translation(reasonReference[Histologie] ^short, de-DE, Histologiebefund)
+* insert Translation(reasonReference[Histologie] ^short, en-US, Histology report)
 * reasonReference[Histologie] ^definition = "Verweis auf Histologiebefund"
 * insert Translation(reasonReference[Histologie] ^definition, de-DE, Verweis auf Histologiebefund)
+* insert Translation(reasonReference[Histologie] ^definition, en-US, Reference to the histology report.)
 // ServiceRequest.reasonReference:Tumorzellgehalt
 * reasonReference[Tumorzellgehalt] ^short = "Tumorzellgehalt"
 * insert Translation(reasonReference[Tumorzellgehalt] ^short, de-DE, Tumorzellgehalt)
+* insert Translation(reasonReference[Tumorzellgehalt] ^short, en-US, Tumor cell content)
 * reasonReference[Tumorzellgehalt] ^definition = "Verweis auf bestimmten Tumorzellgehalt"
 * insert Translation(reasonReference[Tumorzellgehalt] ^definition, de-DE, Verweis auf bestimmten Tumorzellgehalt)
+* insert Translation(reasonReference[Tumorzellgehalt] ^definition, en-US, Reference to a specific tumor cell content.)
 // ServiceRequest.specimen
 * specimen ^short = "Procedure Samples"
 * insert Translation(specimen ^short, de-DE, Probe)

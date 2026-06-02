@@ -32,8 +32,10 @@ Description: "FDPG Profil - MII_PR_MTB_INSITUHYBRIDIZATION_HER2"
 // Observation.code.coding:generisch
 * code.coding[generisch] ^short = "Generischer ISH Code"
 * insert Translation(code.coding[generisch] ^short, de-DE, Generischer ISH Code)
+* insert Translation(code.coding[generisch] ^short, en-US, Generic IHC examination code)
 * code.coding[generisch] ^definition = "Generischer Code für ISH-Untersuchungen. Wird immer angegeben, um die Interoperabilität zu gewährleisten. Zusätzliche spezifische Codes können über open slicing hinzugefügt werden."
 * insert Translation(code.coding[generisch] ^definition, de-DE, Generischer Code fuer ISH-Untersuchungen. Wird immer angegeben um die Interoperabilitaet zu gewaehrleisten. Zusaetzliche spezifische Codes koennen ueber open slicing hinzugefuegt werden.)
+* insert Translation(code.coding[generisch] ^definition, en-US, Generic code for immunohistochemistry examinations — always provided for interoperability.)
 // Observation.subject
 * subject ^short = "Patient"
 * insert Translation(subject ^short, de-DE, Patient)
@@ -120,23 +122,32 @@ Description: "FDPG Profil - MII_PR_MTB_INSITUHYBRIDIZATION_HER2"
 * component ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component ^definition, de-DE, Einzelne Komponenten der Beobachtung)
 * insert Translation(component ^definition, en-US, Sub-observation component.)
+// Observation.component:gene-studied
+* component[gene-studied] ^definition = "Das mit der Target-Sonde untersuchte Gen (z.B. ERBB2)"
+* insert Translation(component[gene-studied] ^definition, de-DE, Das untersuchte Gen\, identifiziert durch HGNC-ID.)
+* insert Translation(component[gene-studied] ^definition, en-US, The gene studied\, identified by HGNC ID.)
 // Observation.component:biomarker-category
 * component[biomarker-category] ^short = "Biomarker-Kategorie"
 * insert Translation(component[biomarker-category] ^short, de-DE, Biomarker-Kategorie)
+* insert Translation(component[biomarker-category] ^short, en-US, Biomarker category)
 * component[biomarker-category] ^definition = "Die Kategorie des molekularen Biomarkers"
 * insert Translation(component[biomarker-category] ^definition, de-DE, Die Kategorie des molekularen Biomarkers)
+* insert Translation(component[biomarker-category] ^definition, en-US, Category of the molecular biomarker.)
 // Observation.component:target-signals
 * component[target-signals] ^short = "ERBB2 Signale pro Zellkern"
 * component[target-signals] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[target-signals] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
+* insert Translation(component[target-signals] ^definition, en-US, Individual components of the observation.)
 // Observation.component:reference-signals
 * component[reference-signals] ^short = "CEP17 Signale pro Zellkern"
 * component[reference-signals] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[reference-signals] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
+* insert Translation(component[reference-signals] ^definition, en-US, Individual components of the observation.)
 // Observation.component:cells-counted
 * component[cells-counted] ^short = "Anzahl gezählter Zellkerne"
 * component[cells-counted] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[cells-counted] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
+* insert Translation(component[cells-counted] ^definition, en-US, Individual components of the observation.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(identifier)

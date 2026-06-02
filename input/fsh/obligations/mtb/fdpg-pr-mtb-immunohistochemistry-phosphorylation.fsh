@@ -32,8 +32,10 @@ Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry_Phosphorylation"
 // Observation.code.coding:generisch
 * code.coding[generisch] ^short = "Generischer Immunhistochemischer Untersuchungscode"
 * insert Translation(code.coding[generisch] ^short, de-DE, Generischer Immunhistochemischer Untersuchungscode)
+* insert Translation(code.coding[generisch] ^short, en-US, Generic IHC examination code)
 * code.coding[generisch] ^definition = "Generischer Code für immunhistochemische Untersuchungen. Wird immer angegeben, um die Interoperabilität zu gewährleisten. Zusätzliche spezifische Codes können über open slicing hinzugefügt werden."
 * insert Translation(code.coding[generisch] ^definition, de-DE, Generischer Code fuer immunhistochemische Untersuchungen. Wird immer angegeben um die Interoperabilitaet zu gewaehrleisten. Zusaetzliche spezifische Codes koennen ueber open slicing hinzugefuegt werden.)
+* insert Translation(code.coding[generisch] ^definition, en-US, Generic code for immunohistochemistry examinations — always provided for interoperability.)
 // Observation.subject
 * subject ^short = "Patient"
 * insert Translation(subject ^short, de-DE, Patient)
@@ -109,33 +111,45 @@ Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry_Phosphorylation"
 // Observation.component:gene-studied
 * component[gene-studied] ^short = "Untersuchtes Gen"
 * insert Translation(component[gene-studied] ^short, de-DE, Untersuchtes Gen)
+* insert Translation(component[gene-studied] ^short, en-US, Gene studied)
 * component[gene-studied] ^definition = "Das untersuchte Gen"
 * insert Translation(component[gene-studied] ^definition, de-DE, Das untersuchte Gen)
+* insert Translation(component[gene-studied] ^definition, en-US, The gene studied\, identified by HGNC ID.)
 // Observation.component:biomarker-category
 * component[biomarker-category] ^short = "Biomarker-Kategorie"
 * insert Translation(component[biomarker-category] ^short, de-DE, Biomarker-Kategorie)
+* insert Translation(component[biomarker-category] ^short, en-US, Biomarker category)
 * component[biomarker-category] ^definition = "Die Kategorie des molekularen Biomarkers"
 * insert Translation(component[biomarker-category] ^definition, de-DE, Die Kategorie des molekularen Biomarkers)
+* insert Translation(component[biomarker-category] ^definition, en-US, Category of the molecular biomarker.)
 // Observation.component:phosphorylation-localization
 * component[phosphorylation-localization] ^short = "Komponenten"
 * insert Translation(component[phosphorylation-localization] ^short, de-DE, Komponenten)
+* insert Translation(component[phosphorylation-localization] ^short, en-US, Components)
 * component[phosphorylation-localization] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[phosphorylation-localization] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
+* insert Translation(component[phosphorylation-localization] ^definition, en-US, Individual components of the observation.)
 // Observation.component:phosphorylation-localization.code
 * component[phosphorylation-localization].code ^short = "Phosphorylation localization"
 * insert Translation(component[phosphorylation-localization].code ^short, de-DE, Phosphorylierungslokalisation)
+* insert Translation(component[phosphorylation-localization].code ^short, en-US, Phosphorylation site)
 * component[phosphorylation-localization].code ^definition = "Phosphorylation localization according to UniProt"
 * insert Translation(component[phosphorylation-localization].code ^definition, de-DE, Phosphorylierungslokalisation gemaess UniProt)
+* insert Translation(component[phosphorylation-localization].code ^definition, en-US, Phosphorylation site per UniProt.)
 // Observation.component:phosphorylation-localization.value[x]:valueCodeableConcept
 * component[phosphorylation-localization].value[x][valueCodeableConcept] ^short = "Phosphorylation localization"
 * insert Translation(component[phosphorylation-localization].value[x][valueCodeableConcept] ^short, de-DE, Phosphorylierungslokalisation)
+* insert Translation(component[phosphorylation-localization].value[x][valueCodeableConcept] ^short, en-US, Phosphorylation site)
 * component[phosphorylation-localization].value[x][valueCodeableConcept] ^definition = "Phosphorylation localization according to UniProt"
 * insert Translation(component[phosphorylation-localization].value[x][valueCodeableConcept] ^definition, de-DE, Phosphorylierungslokalisation gemaess UniProt)
+* insert Translation(component[phosphorylation-localization].value[x][valueCodeableConcept] ^definition, en-US, Phosphorylation site per UniProt.)
 // Observation.component:protein-isoform
 * component[protein-isoform] ^short = "Komponenten"
 * insert Translation(component[protein-isoform] ^short, de-DE, Komponenten)
+* insert Translation(component[protein-isoform] ^short, en-US, Components)
 * component[protein-isoform] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[protein-isoform] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
+* insert Translation(component[protein-isoform] ^definition, en-US, Individual components of the observation.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(identifier)

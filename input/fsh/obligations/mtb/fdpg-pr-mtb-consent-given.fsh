@@ -39,8 +39,10 @@ Description: "FDPG Profil - MII_PR_MTB_Consent_Given"
 // Observation.value[x].coding
 * value[x].coding ^short = "Dokumentierter Consent"
 * insert Translation(value[x].coding ^short, de-DE, Dokumentierter Consent)
+* insert Translation(value[x].coding ^short, en-US, Documented consent)
 * value[x].coding ^definition = "Dokumentation der Zustimmung der Ablehnung eines Consents"
 * insert Translation(value[x].coding ^definition, de-DE, Dokumentation der Zustimmung der Ablehnung eines Consents)
+* insert Translation(value[x].coding ^definition, en-US, Documentation of consent or refusal.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(code)

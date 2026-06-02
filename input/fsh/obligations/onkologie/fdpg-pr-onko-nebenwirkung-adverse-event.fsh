@@ -13,13 +13,17 @@ Description: "FDPG Profil - MII_PR_Onko_Nebenwirkung_Adverse_Event"
 // AdverseEvent.event.coding.version
 * event.coding.version ^short = "CTCAE-Version"
 * insert Translation(event.coding.version ^short, de-DE, CTCAE-Version)
+* insert Translation(event.coding.version ^short, en-US, CTCAE version)
 * event.coding.version ^definition = "Version der für Art der Nebenwirkung verwendeten CTCAE-Klassifikation gemäß 15.3 oBDS 2021."
 * insert Translation(event.coding.version ^definition, de-DE, Version der für Art der Nebenwirkung verwendeten CTCAE-Klassifikation gemäß 15.3 oBDS 2021.)
+* insert Translation(event.coding.version ^definition, en-US, Version of the CTCAE classification used for the adverse event type\, per oBDS 2021 §15.3.)
 // AdverseEvent.event.coding.code
 * event.coding.code ^short = "Art der Nebenwirkung"
 * insert Translation(event.coding.code ^short, de-DE, Art der Nebenwirkung)
+* insert Translation(event.coding.code ^short, en-US, Type of adverse event)
 * event.coding.code ^definition = "Art der Nebenwirkung nach CTCAE / MedDRA.  Abweichend von 15.2 oBDS 2021 kann dieses Feld leer sein falls eine Nebenwirkung des Schweregrads 1 oder 2 vorliegt und keine spezifische Art der Nebenwirkung dokumentiert wurde"
 * insert Translation(event.coding.code ^definition, de-DE, Art der Nebenwirkung nach CTCAE / MedDRA . Abweichend von 15.2 oBDS 2021 kann dieses Feld leer sein falls eine Nebenwirkung des Schweregrads 1 oder 2 vorliegt und keine spezifische Art der Nebenwirkung dokumentiert wurde)
+* insert Translation(event.coding.code ^definition, en-US, Type of adverse event per CTCAE / MedDRA. Diverging from oBDS 2021 §15.2\, this field may be empty for grade 1 or 2 adverse events with no specific type documented.)
 // AdverseEvent.subject
 * subject ^short = "Subject impacted by event"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -39,8 +43,10 @@ Description: "FDPG Profil - MII_PR_Onko_Nebenwirkung_Adverse_Event"
 // AdverseEvent.seriousness.coding
 * seriousness.coding ^short = "Schweregrad der Nebenwirkung nach CTCAE"
 * insert Translation(seriousness.coding ^short, de-DE, Schweregrad der Nebenwirkung nach CTCAE)
+* insert Translation(seriousness.coding ^short, en-US, Adverse event severity)
 * seriousness.coding ^definition = "Schweregrad der Nebenwirkung nach CTCAE gemäß 15.1 oBDS 2021."
 * insert Translation(seriousness.coding ^definition, de-DE, Schweregrad der Nebenwirkung nach CTCAE gemäß 15.1 oBDS 2021.)
+* insert Translation(seriousness.coding ^definition, en-US, Severity of the adverse event per CTCAE per oBDS 2021 §15.1.)
 // AdverseEvent.suspectEntity
 * suspectEntity ^short = "The suspected agent causing the adverse event"
 // AdverseEvent.suspectEntity.instance

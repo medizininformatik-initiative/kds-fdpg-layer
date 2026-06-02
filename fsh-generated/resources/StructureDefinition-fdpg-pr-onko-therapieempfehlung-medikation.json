@@ -287,6 +287,40 @@
         ]
       },
       {
+        "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding",
+        "path": "MedicationRequest.medication[x].coding",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Wirkstoff oder Substanz der systemischen onkologischen Medikation gemäß oBDS 2021 §16.4."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Active substance of the systemic oncologic medication per oBDS 2021 §16.4."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer",
         "extension": [
           {
