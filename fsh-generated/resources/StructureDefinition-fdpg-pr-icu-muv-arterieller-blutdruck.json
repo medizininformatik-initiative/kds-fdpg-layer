@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU MUV Arterieller Blutdruck"
+            "valueString": "MUV Arterieller Blutdruck"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU MUV Arterieller Blutdruck"
+            "valueString": "MUV Arterieller Blutdruck"
           }
         ]
       }

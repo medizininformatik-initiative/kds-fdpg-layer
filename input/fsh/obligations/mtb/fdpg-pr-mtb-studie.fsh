@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Studie"
 Description: "FDPG Profil - MII_PR_MTB_Studie"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, MII PR MTB Studie)
-* insert Translation(^title, en-US, FDPG PR MTB Studie)
+* insert Translation(^title, de-DE, Studie)
+* insert Translation(^title, en-US, Studie)
 // --- Element Designations ---
 // ResearchStudy.extension
 * extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."

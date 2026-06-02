@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Immunohistochemistry Phosphorylation"
 Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry_Phosphorylation"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, MII PR MTB Immunohistochemistry Phosphorylation)
-* insert Translation(^title, en-US, FDPG PR MTB Immunohistochemistry Phosphorylation)
+* insert Translation(^title, de-DE, Immunhistochemie Phosphorylierung)
+* insert Translation(^title, en-US, Immunohistochemistry phosphorylation)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

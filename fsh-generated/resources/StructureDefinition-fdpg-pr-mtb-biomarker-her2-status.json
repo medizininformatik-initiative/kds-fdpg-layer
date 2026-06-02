@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR Biomarker Her2 Status"
+            "valueString": "Biomarker HER2-Status"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MTB BIOMARKER HER2 STATUS"
+            "valueString": "Biomarker HER2 status"
           }
         ]
       }

@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Molecular Pathology Report"
 Description: "FDPG Profil - MII_PR_MTB_Molecular_Pathology_Report"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, MII PR MTB Molecular Pathology Report)
-* insert Translation(^title, en-US, FDPG PR MTB Molecular Pathology Report)
+* insert Translation(^title, de-DE, Molecular Pathology Report)
+* insert Translation(^title, en-US, Molecular Pathology Report)
 // --- Element Designations ---
 // DiagnosticReport.code
 * code ^short = "Molekular-Pathologie-Befund"

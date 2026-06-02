@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR MTB HRD Score"
+            "valueString": "HRD-Score"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MTB HRD Score"
+            "valueString": "HRD score"
           }
         ]
       }

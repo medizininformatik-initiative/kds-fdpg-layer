@@ -5,8 +5,8 @@ Title: "FDPG PR Patho Report"
 Description: "FDPG Profil - MII_PR_Patho_Report"
 * insert FDPGMetadata
 * insert FDPGModule(patho)
-* insert Translation(^title, de-DE, MII PR Patho Bericht)
-* insert Translation(^title, en-US, MII PR Patho Report)
+* insert Translation(^title, de-DE, Bericht)
+* insert Translation(^title, en-US, Report)
 // --- Element Designations ---
 // DiagnosticReport.meta.lastUpdated
 * meta.lastUpdated ^short = "When the resource version last changed"

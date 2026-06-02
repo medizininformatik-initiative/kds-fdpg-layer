@@ -5,8 +5,8 @@ Title: "FDPG PR ICU Bilanz Ausfuhr Blutverlust"
 Description: "FDPG Profil - MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust"
 * insert FDPGMetadata
 * insert FDPGModule(icu)
-* insert Translation(^title, de-DE, MII PR ICU Bilanz Ausfuhr Blutverlust)
-* insert Translation(^title, en-US, FDPG PR ICU Bilanz Ausfuhr Blutverlust)
+* insert Translation(^title, de-DE, Bilanz Ausfuhr Blutverlust)
+* insert Translation(^title, en-US, Bilanz Ausfuhr Blutverlust)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

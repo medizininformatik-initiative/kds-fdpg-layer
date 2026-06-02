@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Follow Up ClinicalImpression"
 Description: "FDPG Profil - MII_PR_MTB_Follow_Up_ClinicalImpression"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, MII PR MTB Clinical Impresssion)
-* insert Translation(^title, en-US, FDPG PR MTB Follow Up ClinicalImpression)
+* insert Translation(^title, de-DE, Clinical Impresssion)
+* insert Translation(^title, en-US, Clinical Impresssion)
 // --- Element Designations ---
 // ClinicalImpression.status
 * status ^short = "in-progress | completed | entered-in-error"

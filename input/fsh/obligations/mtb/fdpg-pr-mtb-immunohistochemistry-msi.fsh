@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Immunohistochemistry MSI"
 Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry_MSI"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, MII PR MTB Immunohistochemistry Microsatellite Instability)
-* insert Translation(^title, en-US, FDPG PR MTB Immunohistochemistry MSI)
+* insert Translation(^title, de-DE, Immunhistochemie Mikrosatelliteninstabilität)
+* insert Translation(^title, en-US, Immunohistochemistry microsatellite instability)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

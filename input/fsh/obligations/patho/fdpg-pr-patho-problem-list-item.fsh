@@ -5,8 +5,8 @@ Title: "FDPG PR Patho Problem List Item"
 Description: "FDPG Profil - MII_PR_Patho_Problem_List_Item"
 * insert FDPGMetadata
 * insert FDPGModule(patho)
-* insert Translation(^title, de-DE, MII PR Patho Problemlisteneintrag)
-* insert Translation(^title, en-US, MII PR Patho Problem List Item)
+* insert Translation(^title, de-DE, Problemlisteneintrag)
+* insert Translation(^title, en-US, Problem List Item)
 // --- Element Designations ---
 // Condition.category
 * category ^short = "problem-list-item | encounter-diagnosis"

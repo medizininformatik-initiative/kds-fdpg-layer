@@ -5,8 +5,8 @@ Title: "FDPG PR ICU MUV Koerpergewicht"
 Description: "FDPG Profil - MII_PR_ICU_MUV_Koerpergewicht"
 * insert FDPGMetadata
 * insert FDPGModule(icu)
-* insert Translation(^title, de-DE, MII PR ICU MUV Koerpergewicht)
-* insert Translation(^title, en-US, FDPG PR ICU MUV Koerpergewicht)
+* insert Translation(^title, de-DE, MUV Koerpergewicht)
+* insert Translation(^title, en-US, MUV Koerpergewicht)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"

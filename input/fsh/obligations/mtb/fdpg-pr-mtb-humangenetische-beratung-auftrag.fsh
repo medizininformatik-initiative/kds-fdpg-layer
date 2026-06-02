@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Humangenetische Beratung Auftrag"
 Description: "FDPG Profil - MII_PR_MTB_Humangenetische_Beratung_Auftrag"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, MII PR MTB Human-genetische Beratung Auftrag)
-* insert Translation(^title, en-US, FDPG PR MTB Humangenetische Beratung Auftrag)
+* insert Translation(^title, de-DE, Human-genetische Beratung Auftrag)
+* insert Translation(^title, en-US, Human-genetische Beratung Auftrag)
 // --- Element Designations ---
 // ServiceRequest.code
 * code ^short = "Empfehlung zur Humangenetischen Beratung"

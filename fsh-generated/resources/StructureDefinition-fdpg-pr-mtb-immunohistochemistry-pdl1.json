@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR MTB Immunohistochemistry"
+            "valueString": "Immunhistochemie PD-L1"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MTB Immunohistochemistry PDL1"
+            "valueString": "Immunohistochemistry PD-L1"
           }
         ]
       }

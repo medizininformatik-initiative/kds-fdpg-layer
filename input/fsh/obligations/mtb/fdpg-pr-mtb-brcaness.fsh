@@ -5,8 +5,8 @@ Title: "FDPG PR MTB BRCAness"
 Description: "FDPG Profil - MII_PR_MTB_BRCAness"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, MII PR MTB BRCAness)
-* insert Translation(^title, en-US, FDPG PR MTB BRCAness)
+* insert Translation(^title, de-DE, BRCAness)
+* insert Translation(^title, en-US, BRCAness)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Biomarker-ID im Kontext des NGS-Befundes"

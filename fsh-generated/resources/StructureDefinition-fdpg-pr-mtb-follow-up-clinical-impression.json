@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR MTB Clinical Impresssion"
+            "valueString": "Clinical Impresssion"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MTB Follow Up ClinicalImpression"
+            "valueString": "Clinical Impresssion"
           }
         ]
       }

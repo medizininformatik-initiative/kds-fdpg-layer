@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Behandlungsepisode"
 Description: "FDPG Profil - MII_PR_MTB_Behandlungsepisode"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, MII PR MTB Behandlungsepisode)
-* insert Translation(^title, en-US, FDPG PR MTB Behandlungsepisode)
+* insert Translation(^title, de-DE, Behandlungsepisode)
+* insert Translation(^title, en-US, Behandlungsepisode)
 // --- Element Designations ---
 // ClinicalImpression.extension:LeitlinienbehandlungStatus
 * extension[LeitlinienbehandlungStatus] ^short = "MII EX MTB Leitlinienbehandlung Status"

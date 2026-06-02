@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Studieneinschluss Anfrage"
 Description: "FDPG Profil - MII_PR_MTB_Studieneinschluss_Anfrage"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, MII PR MTB Studieneinschluss Anfrage)
-* insert Translation(^title, en-US, FDPG PR MTB Studieneinschluss Anfrage)
+* insert Translation(^title, de-DE, Studieneinschluss Anfrage)
+* insert Translation(^title, en-US, Studieneinschluss Anfrage)
 // --- Element Designations ---
 // ServiceRequest.extension:statusReason
 * extension[statusReason] ^short = "Grund für Ablehnung"

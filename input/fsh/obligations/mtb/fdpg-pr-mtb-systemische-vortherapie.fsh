@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Systemische Vortherapie"
 Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, MII PR MTB Systemische Vortherapie)
-* insert Translation(^title, en-US, FDPG PR MTB Systemische Vortherapie)
+* insert Translation(^title, de-DE, Systemische Vortherapie)
+* insert Translation(^title, en-US, Systemische Vortherapie)
 // --- Element Designations ---
 // Procedure.extension
 * extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."

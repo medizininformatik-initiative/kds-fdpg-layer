@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Diagnostische Implikation"
 Description: "FDPG Profil - MII_PR_MTB_Diagnostische_Implikation"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, MII PR MTB Diagnostische Implikation)
-* insert Translation(^title, en-US, FDPG PR MTB Diagnostische Implikation)
+* insert Translation(^title, de-DE, Diagnostische Implikation)
+* insert Translation(^title, en-US, Diagnostische Implikation)
 // --- Element Designations ---
 // Observation.extension:workflow-relatedArtifact
 * extension[workflow-relatedArtifact] ^short = "Verknüpfte Artefakte"

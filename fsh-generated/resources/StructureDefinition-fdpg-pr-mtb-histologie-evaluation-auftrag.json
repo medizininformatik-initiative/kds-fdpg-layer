@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR MTB Histologie-Evaluation Auftrag"
+            "valueString": "Histologie-Evaluation (Auftrag)"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR MTB Histologie Evaluation Auftrag"
+            "valueString": "Histology evaluation (order)"
           }
         ]
       }

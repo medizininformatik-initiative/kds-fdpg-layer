@@ -5,8 +5,8 @@ Title: "FDPG PR Patho Composition"
 Description: "FDPG Profil - MII_PR_Patho_Composition"
 * insert FDPGMetadata
 * insert FDPGModule(patho)
-* insert Translation(^title, de-DE, MII PR Patho Zusammenstellung)
-* insert Translation(^title, en-US, MII PR Patho Composition)
+* insert Translation(^title, de-DE, Zusammenstellung)
+* insert Translation(^title, en-US, Composition)
 // --- Element Designations ---
 // Composition.id
 * id ^short = "serverseitige, interne ID des Datensatzes"

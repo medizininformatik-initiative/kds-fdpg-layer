@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Copy Number Variant"
 Description: "FDPG Profil - MII_PR_MTB_Copy_Number_Variant"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, MII PR MTB Copy Number Variant)
-* insert Translation(^title, en-US, FDPG PR MTB Copy Number Variant)
+* insert Translation(^title, de-DE, Copy Number Variant)
+* insert Translation(^title, en-US, Copy Number Variant)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "VariantenId im Kontext des NGS-Befundes"

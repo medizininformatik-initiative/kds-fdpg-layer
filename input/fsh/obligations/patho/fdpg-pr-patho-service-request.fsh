@@ -5,8 +5,8 @@ Title: "FDPG PR Patho Service Request"
 Description: "FDPG Profil - MII_PR_Patho_Service_Request"
 * insert FDPGMetadata
 * insert FDPGModule(patho)
-* insert Translation(^title, de-DE, MII PR Patho Untersuchungsauftrag)
-* insert Translation(^title, en-US, MII PR Patho Service Request)
+* insert Translation(^title, de-DE, Untersuchungsauftrag)
+* insert Translation(^title, en-US, Service Request)
 // --- Element Designations ---
 // ServiceRequest.meta.lastUpdated
 * meta.lastUpdated ^short = "When the resource version last changed"

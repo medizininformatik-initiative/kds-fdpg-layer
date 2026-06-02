@@ -5,8 +5,8 @@ Title: "FDPG PR MTB INSITUHYBRIDIZATION HER2"
 Description: "FDPG Profil - MII_PR_MTB_INSITUHYBRIDIZATION_HER2"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, MII PR MTB In Situ Hybridization HER2)
-* insert Translation(^title, en-US, FDPG PR MTB INSITUHYBRIDIZATION HER2)
+* insert Translation(^title, de-DE, In-situ-Hybridisierung HER2)
+* insert Translation(^title, en-US, In-situ hybridization HER2)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Identifier zur Abgrenzung anderer gleichartiger Untersuchungen"

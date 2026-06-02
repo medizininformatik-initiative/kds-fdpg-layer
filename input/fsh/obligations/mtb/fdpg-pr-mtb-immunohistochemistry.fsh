@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Immunohistochemistry"
 Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, MII PR MTB Immunohistochemistry)
-* insert Translation(^title, en-US, FDPG PR MTB Immunohistochemistry)
+* insert Translation(^title, de-DE, Immunhistochemie)
+* insert Translation(^title, en-US, Immunohistochemistry)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

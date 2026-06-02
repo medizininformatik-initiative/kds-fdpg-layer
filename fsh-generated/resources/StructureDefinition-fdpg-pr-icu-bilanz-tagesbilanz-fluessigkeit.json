@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU Bilanz Tagesbilanz Fluessigkeit"
+            "valueString": "Bilanz Tagesbilanz Fluessigkeit"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU Bilanz Tagesbilanz Fluessigkeit"
+            "valueString": "Bilanz Tagesbilanz Fluessigkeit"
           }
         ]
       }

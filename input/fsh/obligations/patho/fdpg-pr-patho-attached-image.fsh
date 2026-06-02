@@ -5,8 +5,8 @@ Title: "FDPG PR Patho Attached Image"
 Description: "FDPG Profil - MII_PR_Patho_Attached_Image"
 * insert FDPGMetadata
 * insert FDPGModule(patho)
-* insert Translation(^title, de-DE, MII PR Patho Angefügtes Bild)
-* insert Translation(^title, en-US, MII PR Patho Attached Image)
+* insert Translation(^title, de-DE, Angefügtes Bild)
+* insert Translation(^title, en-US, Attached Image)
 // --- Element Designations ---
 // Media.meta.lastUpdated
 * meta.lastUpdated ^short = "When the resource version last changed"

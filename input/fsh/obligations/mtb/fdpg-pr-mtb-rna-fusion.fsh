@@ -5,8 +5,8 @@ Title: "FDPG PR MTB RNA Fusion"
 Description: "FDPG Profil - MII_PR_MTB_RNA_Fusion"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, MII PR MTB RNA Fusion)
-* insert Translation(^title, en-US, FDPG PR MTB RNA Fusion)
+* insert Translation(^title, de-DE, RNA Fusion)
+* insert Translation(^title, en-US, RNA Fusion)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "VariantenId innerhalb des NGS-Befundes"

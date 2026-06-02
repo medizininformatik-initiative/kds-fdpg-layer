@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR ICU MUV Atemfrequenz"
+            "valueString": "MUV Atemfrequenz"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR ICU MUV Atemfrequenz"
+            "valueString": "MUV Atemfrequenz"
           }
         ]
       }

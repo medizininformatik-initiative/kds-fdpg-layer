@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Ploidie"
 Description: "FDPG Profil - MII_PR_MTB_Ploidie"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, MII PR MTB Ploidie)
-* insert Translation(^title, en-US, FDPG PR MTB Ploidie)
+* insert Translation(^title, de-DE, Ploidie)
+* insert Translation(^title, en-US, Ploidie)
 // --- Element Designations ---
 // Observation.category
 * category ^short = "Kategorie"

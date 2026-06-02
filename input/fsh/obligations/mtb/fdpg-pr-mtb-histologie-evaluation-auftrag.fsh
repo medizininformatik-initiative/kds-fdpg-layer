@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Histologie Evaluation Auftrag"
 Description: "FDPG Profil - MII_PR_MTB_Histologie_Evaluation_Auftrag"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, MII PR MTB Histologie-Evaluation Auftrag)
-* insert Translation(^title, en-US, FDPG PR MTB Histologie Evaluation Auftrag)
+* insert Translation(^title, de-DE, Histologie-Evaluation (Auftrag\))
+* insert Translation(^title, en-US, Histology evaluation (order\))
 // --- Element Designations ---
 // ServiceRequest.code
 * code ^short = "Empfehlung zur histologischen (Re-)Evaluation"

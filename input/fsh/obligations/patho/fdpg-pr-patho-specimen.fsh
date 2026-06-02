@@ -5,8 +5,8 @@ Title: "FDPG PR Patho Specimen"
 Description: "FDPG Profil - MII_PR_Patho_Specimen"
 * insert FDPGMetadata
 * insert FDPGModule(patho)
-* insert Translation(^title, de-DE, MII PR Patho Probe)
-* insert Translation(^title, en-US, MII PR Patho Specimen)
+* insert Translation(^title, de-DE, Probe)
+* insert Translation(^title, en-US, Specimen)
 // --- Element Designations ---
 // Specimen.meta.lastUpdated
 * meta.lastUpdated ^short = "When the resource version last changed"
