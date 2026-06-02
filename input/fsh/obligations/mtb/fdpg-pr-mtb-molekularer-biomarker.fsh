@@ -6,7 +6,7 @@ Description: "FDPG Profil - MII_PR_MTB_Molekularer_Biomarker"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, Molekularer Biomarker)
-* insert Translation(^title, en-US, Molekularer Biomarker)
+* insert Translation(^title, en-US, Molecular biomarker)
 // --- Element Designations ---
 // Observation.category
 * category ^short = "Kategorie"

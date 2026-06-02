@@ -6,7 +6,7 @@ Description: "FDPG Profil - MII_PR_MTB_Einfache_Variante"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, Einfache Variante)
-* insert Translation(^title, en-US, Einfache Variante)
+* insert Translation(^title, en-US, Simple variant)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "VariantenId im Kontext des NGS-Befundes"

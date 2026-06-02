@@ -5,8 +5,8 @@ Title: "FDPG PR Patho Diagnostic Conclusion Grouper"
 Description: "FDPG Profil - MII_PR_Patho_Diagnostic_Conclusion_Grouper"
 * insert FDPGMetadata
 * insert FDPGModule(patho)
-* insert Translation(^title, de-DE, Diagnostic Conclusion Grouper)
-* insert Translation(^title, en-US, Diagnostic Conclusion Grouper)
+* insert Translation(^title, de-DE, Diagnostische Schlussfolgerung (Grouper\))
+* insert Translation(^title, en-US, Diagnostic conclusion grouper)
 // --- Element Designations ---
 // Observation.meta.lastUpdated
 * meta.lastUpdated ^short = "When the resource version last changed"

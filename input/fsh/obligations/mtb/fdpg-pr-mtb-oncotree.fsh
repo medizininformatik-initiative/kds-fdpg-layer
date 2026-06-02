@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Oncotree"
 Description: "FDPG Profil - MII_PR_MTB_Oncotree"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, Oncotree Klassifikation)
-* insert Translation(^title, en-US, Oncotree Klassifikation)
+* insert Translation(^title, de-DE, OncoTree-Klassifikation)
+* insert Translation(^title, en-US, OncoTree classification)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Type of observation (code / type)"

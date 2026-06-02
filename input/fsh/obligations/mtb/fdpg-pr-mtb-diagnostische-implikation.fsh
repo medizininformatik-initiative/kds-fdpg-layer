@@ -6,7 +6,7 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnostische_Implikation"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, Diagnostische Implikation)
-* insert Translation(^title, en-US, Diagnostische Implikation)
+* insert Translation(^title, en-US, Diagnostic implication)
 // --- Element Designations ---
 // Observation.extension:workflow-relatedArtifact
 * extension[workflow-relatedArtifact] ^short = "Verknüpfte Artefakte"

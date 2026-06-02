@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Antrag Kostenuebernahme"
 Description: "FDPG Profil - MII_PR_MTB_Antrag_Kostenuebernahme"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, Antrag Kostenuebernahme)
-* insert Translation(^title, en-US, Antrag Kostenuebernahme)
+* insert Translation(^title, de-DE, Antrag Kostenübernahme)
+* insert Translation(^title, en-US, Cost coverage application)
 // --- Element Designations ---
 // Claim.status
 * status ^short = "Antrag"

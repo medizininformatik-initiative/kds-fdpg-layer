@@ -6,7 +6,7 @@ Description: "FDPG Profil - MII_PR_MTB_NGS_Bericht"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, NGS-Bericht)
-* insert Translation(^title, en-US, NGS-Bericht)
+* insert Translation(^title, en-US, NGS report)
 // --- Element Designations ---
 // DiagnosticReport.subject
 * subject ^short = "Referenz auf Patient"

@@ -5,8 +5,8 @@ Title: "FDPG PR MTB RNA Seq"
 Description: "FDPG Profil - MII_PR_MTB_RNA_Seq"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, RNA Seq)
-* insert Translation(^title, en-US, RNA Seq)
+* insert Translation(^title, de-DE, RNA-Seq)
+* insert Translation(^title, en-US, RNA-Seq)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "Status"

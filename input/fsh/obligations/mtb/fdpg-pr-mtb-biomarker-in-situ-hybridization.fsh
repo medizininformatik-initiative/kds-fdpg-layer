@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Biomarker InSituHybridization"
 Description: "FDPG Profil - MII_PR_MTB_Biomarker_InSituHybridization"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, In Situ Hybridization)
-* insert Translation(^title, en-US, In Situ Hybridization)
+* insert Translation(^title, de-DE, In-situ-Hybridisierung)
+* insert Translation(^title, en-US, In-situ hybridization)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Identifier zur Abgrenzung anderer gleichartiger Untersuchungen"

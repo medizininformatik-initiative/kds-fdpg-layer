@@ -5,8 +5,8 @@ Title: "FDPG PR ICU MUV Kopfumfang"
 Description: "FDPG Profil - MII_PR_ICU_MUV_Kopfumfang"
 * insert FDPGMetadata
 * insert FDPGModule(icu)
-* insert Translation(^title, de-DE, MUV Kopfumfang)
-* insert Translation(^title, en-US, MUV Kopfumfang)
+* insert Translation(^title, de-DE, MUV — Kopfumfang)
+* insert Translation(^title, en-US, MUV — head circumference)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"

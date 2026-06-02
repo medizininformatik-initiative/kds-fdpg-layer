@@ -6,7 +6,7 @@ Description: "FDPG Profil - MII_PR_MTB_Tumorausbreitung"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, Tumorausbreitung)
-* insert Translation(^title, en-US, Tumorausbreitung)
+* insert Translation(^title, en-US, Tumor extent)
 // --- Element Designations ---
 // Observation.category
 * category ^short = "Classification of  type of observation"

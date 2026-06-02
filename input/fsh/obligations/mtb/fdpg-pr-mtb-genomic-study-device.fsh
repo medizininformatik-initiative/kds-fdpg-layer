@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Genomic Study Device"
 Description: "FDPG Profil - MII_PR_MTB_Genomic_Study_Device"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, Genomic Study Device)
-* insert Translation(^title, en-US, Genomic Study Device)
+* insert Translation(^title, de-DE, Genomische Studie — Gerät)
+* insert Translation(^title, en-US, Genomic study device)
 // --- Element Designations ---
 // Device.manufacturer
 * manufacturer ^short = "Hersteller des Geräts"

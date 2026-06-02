@@ -6,7 +6,7 @@ Description: "FDPG Profil - MII_PR_MTB_Mutationslast"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, Mutationslast)
-* insert Translation(^title, en-US, Mutationslast)
+* insert Translation(^title, en-US, Mutational burden)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"

@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Systemische Therapie Medication Statement"
 Description: "FDPG Profil - MII_PR_MTB_Systemische_Therapie_Medication_Statement"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, Systemtherapie Medication Statement)
-* insert Translation(^title, en-US, Systemtherapie Medication Statement)
+* insert Translation(^title, de-DE, Systemtherapie (MedicationStatement\))
+* insert Translation(^title, en-US, Systemic therapy (MedicationStatement\))
 // --- Element Designations ---
 // MedicationStatement.identifier
 * identifier ^short = "Identifikator"

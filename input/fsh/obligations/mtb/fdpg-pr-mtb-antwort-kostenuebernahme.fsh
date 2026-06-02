@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Antwort Kostenuebernahme"
 Description: "FDPG Profil - MII_PR_MTB_Antwort_Kostenuebernahme"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, Anwort Kostenuebernahme)
-* insert Translation(^title, en-US, Anwort Kostenuebernahme)
+* insert Translation(^title, de-DE, Antwort Kostenübernahme)
+* insert Translation(^title, en-US, Cost coverage response)
 // --- Element Designations ---
 // ClaimResponse.extension
 * extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."

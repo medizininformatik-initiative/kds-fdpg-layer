@@ -5,8 +5,8 @@ Title: "FDPG PR ICU MUV Arterieller Blutdruck"
 Description: "FDPG Profil - MII_PR_ICU_MUV_Arterieller_Blutdruck"
 * insert FDPGMetadata
 * insert FDPGModule(icu)
-* insert Translation(^title, de-DE, MUV Arterieller Blutdruck)
-* insert Translation(^title, en-US, MUV Arterieller Blutdruck)
+* insert Translation(^title, de-DE, MUV — Arterieller Blutdruck)
+* insert Translation(^title, en-US, MUV — arterial blood pressure)
 // --- Element Designations ---
 // Observation.category
 * category ^short = "Classification of  type of observation"

@@ -5,8 +5,8 @@ Title: "FDPG PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte"
 Description: "FDPG Profil - MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte"
 * insert FDPGMetadata
 * insert FDPGModule(icu)
-* insert Translation(^title, de-DE, Bilanz Ausfuhr Haemofiltration Einzelmesswerte)
-* insert Translation(^title, en-US, Bilanz Ausfuhr Haemofiltration Einzelmesswerte)
+* insert Translation(^title, de-DE, Bilanz Ausfuhr Hämofiltration Einzelmesswerte)
+* insert Translation(^title, en-US, Fluid balance — hemofiltration output (individual measurements\))
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

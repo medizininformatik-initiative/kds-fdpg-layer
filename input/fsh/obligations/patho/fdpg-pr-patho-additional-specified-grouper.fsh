@@ -5,8 +5,8 @@ Title: "FDPG PR Patho Additional Specified Grouper"
 Description: "FDPG Profil - MII_PR_Patho_Additional_Specified_Grouper"
 * insert FDPGMetadata
 * insert FDPGModule(patho)
-* insert Translation(^title, de-DE, Additional Specified Grouper)
-* insert Translation(^title, en-US, Additional Specified Grouper)
+* insert Translation(^title, de-DE, Weiterer spezifizierter Grouper)
+* insert Translation(^title, en-US, Additional specified grouper)
 // --- Element Designations ---
 // Observation.meta.lastUpdated
 * meta.lastUpdated ^short = "When the resource version last changed"

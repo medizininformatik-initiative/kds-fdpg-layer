@@ -6,7 +6,7 @@ Description: "FDPG Profil - MII_PR_MTB_Mikrosatelliteninstabilitaet"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, Mikrosatelliteninstabilität)
-* insert Translation(^title, en-US, Mikrosatelliteninstabilität)
+* insert Translation(^title, en-US, Microsatellite instability)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"

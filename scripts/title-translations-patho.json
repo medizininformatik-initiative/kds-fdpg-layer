@@ -5,8 +5,8 @@
     "en-US": "Active Problems List"
   },
   "MII_PR_Patho_Additional_Specified_Grouper": {
-    "de-DE": "Additional Specified Grouper",
-    "en-US": "Additional Specified Grouper"
+    "de-DE": "Weiterer spezifizierter Grouper",
+    "en-US": "Additional specified grouper"
   },
   "MII_PR_Patho_Attached_Image": {
     "de-DE": "Angefügtes Bild",
@@ -17,16 +17,16 @@
     "en-US": "Base Observation"
   },
   "MII_PR_Patho_Bundle": {
-    "de-DE": "Bundle",
-    "en-US": "Bundle"
+    "de-DE": "Pathologie-Bundle",
+    "en-US": "Pathology bundle"
   },
   "MII_PR_Patho_Composition": {
     "de-DE": "Zusammenstellung",
     "en-US": "Composition"
   },
   "MII_PR_Patho_Diagnostic_Conclusion_Grouper": {
-    "de-DE": "Diagnostic Conclusion Grouper",
-    "en-US": "Diagnostic Conclusion Grouper"
+    "de-DE": "Diagnostische Schlussfolgerung (Grouper)",
+    "en-US": "Diagnostic conclusion grouper"
   },
   "MII_PR_Patho_Finding": {
     "de-DE": "Befund",
@@ -37,16 +37,16 @@
     "en-US": "History of Present Illness"
   },
   "MII_PR_Patho_Intraoperative_Grouper": {
-    "de-DE": "Intraoperative Grouper",
-    "en-US": "Intraoperative Grouper"
+    "de-DE": "Intraoperativer Grouper",
+    "en-US": "Intraoperative grouper"
   },
   "MII_PR_Patho_Macroscopic_Grouper": {
-    "de-DE": "Macroscopic Grouper",
-    "en-US": "Macroscopic Grouper"
+    "de-DE": "Makroskopischer Grouper",
+    "en-US": "Macroscopic grouper"
   },
   "MII_PR_Patho_Microscopic_Grouper": {
-    "de-DE": "Microscopic Grouper",
-    "en-US": "Microscopic Grouper"
+    "de-DE": "Mikroskopischer Grouper",
+    "en-US": "Microscopic grouper"
   },
   "MII_PR_Patho_Problem_List_Item": {
     "de-DE": "Problemlisteneintrag",

@@ -5,8 +5,8 @@ Title: "FDPG PR Patho Macroscopic Grouper"
 Description: "FDPG Profil - MII_PR_Patho_Macroscopic_Grouper"
 * insert FDPGMetadata
 * insert FDPGModule(patho)
-* insert Translation(^title, de-DE, Macroscopic Grouper)
-* insert Translation(^title, en-US, Macroscopic Grouper)
+* insert Translation(^title, de-DE, Makroskopischer Grouper)
+* insert Translation(^title, en-US, Macroscopic grouper)
 // --- Element Designations ---
 // Observation.meta.lastUpdated
 * meta.lastUpdated ^short = "When the resource version last changed"

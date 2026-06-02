@@ -6,7 +6,7 @@ Description: "FDPG Profil - MII_PR_MTB_Therapeutische_Implikation"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, Therapeutische Implikation)
-* insert Translation(^title, en-US, Therapeutische Implikation)
+* insert Translation(^title, en-US, Therapeutic implication)
 // --- Element Designations ---
 // Observation.extension:Evidenzgraduierung
 * extension[Evidenzgraduierung] ^short = "MII EX MTB Empfehlung Evidenzgraduierung"

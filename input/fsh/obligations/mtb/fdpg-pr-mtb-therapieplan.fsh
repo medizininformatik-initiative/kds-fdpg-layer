@@ -6,7 +6,7 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
 * insert Translation(^title, de-DE, Therapieplan)
-* insert Translation(^title, en-US, Therapieplan)
+* insert Translation(^title, en-US, Therapy plan)
 // --- Element Designations ---
 // CarePlan.status
 * status ^definition = "Status der Umsetzung des beschlossenen Therapieplans"

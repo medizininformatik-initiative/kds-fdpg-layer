@@ -5,8 +5,8 @@ Title: "FDPG PR ICU MUV Koerpergroesse"
 Description: "FDPG Profil - MII_PR_ICU_MUV_Koerpergroesse"
 * insert FDPGMetadata
 * insert FDPGModule(icu)
-* insert Translation(^title, de-DE, MUV Koerpergroesse)
-* insert Translation(^title, en-US, MUV Koerpergroesse)
+* insert Translation(^title, de-DE, MUV — Körpergröße)
+* insert Translation(^title, en-US, MUV — body height)
 // --- Element Designations ---
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"

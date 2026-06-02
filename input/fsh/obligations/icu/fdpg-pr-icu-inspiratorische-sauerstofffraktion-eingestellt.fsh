@@ -5,8 +5,8 @@ Title: "FDPG PR ICU Inspiratorische Sauerstofffraktion Eingestellt"
 Description: "FDPG Profil - MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Eingestellt"
 * insert FDPGMetadata
 * insert FDPGModule(icu)
-* insert Translation(^title, de-DE, Inspiratorische Sauerstofffraktion Eingestellt)
-* insert Translation(^title, en-US, Inspiratorische Sauerstofffraktion Eingestellt)
+* insert Translation(^title, de-DE, Inspiratorische Sauerstofffraktion (eingestellt\))
+* insert Translation(^title, en-US, Inspiratory oxygen fraction (set\))
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

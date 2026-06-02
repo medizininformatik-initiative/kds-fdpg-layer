@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Genomic Study"
 Description: "FDPG Profil - MII_PR_MTB_Genomic_Study"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, Genomic Study)
-* insert Translation(^title, en-US, Genomic Study)
+* insert Translation(^title, de-DE, Genomische Studie)
+* insert Translation(^title, en-US, Genomic study)
 // --- Element Designations ---
 // Procedure.identifier
 * identifier ^short = "GenomicStudy.identifier"

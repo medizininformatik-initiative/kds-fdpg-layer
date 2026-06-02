@@ -289,47 +289,47 @@
     "en-US": "Venous Pressure"
   },
   "MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Eingestellt": {
-    "de-DE": "Inspiratorische Sauerstofffraktion Eingestellt",
-    "en-US": "Inspiratorische Sauerstofffraktion Eingestellt"
+    "de-DE": "Inspiratorische Sauerstofffraktion (eingestellt)",
+    "en-US": "Inspiratory oxygen fraction (set)"
   },
   "MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust": {
     "de-DE": "Bilanz Ausfuhr Blutverlust",
-    "en-US": "Bilanz Ausfuhr Blutverlust"
+    "en-US": "Fluid balance — blood loss output"
   },
   "MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte": {
-    "de-DE": "Bilanz Ausfuhr Haemofiltration Einzelmesswerte",
-    "en-US": "Bilanz Ausfuhr Haemofiltration Einzelmesswerte"
+    "de-DE": "Bilanz Ausfuhr Hämofiltration Einzelmesswerte",
+    "en-US": "Fluid balance — hemofiltration output (individual measurements)"
   },
   "MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage": {
-    "de-DE": "Bilanz Ausfuhr OP Drainage",
-    "en-US": "Bilanz Ausfuhr OP Drainage"
+    "de-DE": "Bilanz Ausfuhr OP-Drainage",
+    "en-US": "Fluid balance — surgical drainage output"
   },
   "MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit": {
-    "de-DE": "Bilanz Tagesbilanz Fluessigkeit",
-    "en-US": "Bilanz Tagesbilanz Fluessigkeit"
+    "de-DE": "Tagesbilanz Flüssigkeit",
+    "en-US": "Daily fluid balance"
   },
   "MII_PR_ICU_MUV_Arterieller_Blutdruck": {
-    "de-DE": "MUV Arterieller Blutdruck",
-    "en-US": "MUV Arterieller Blutdruck"
+    "de-DE": "MUV — Arterieller Blutdruck",
+    "en-US": "MUV — arterial blood pressure"
   },
   "MII_PR_ICU_MUV_Atemfrequenz": {
-    "de-DE": "MUV Atemfrequenz",
-    "en-US": "MUV Atemfrequenz"
+    "de-DE": "MUV — Atemfrequenz",
+    "en-US": "MUV — respiratory rate"
   },
   "MII_PR_ICU_MUV_Herzfrequenz": {
-    "de-DE": "MII SD ICU MUV Herzfrequenz",
-    "en-US": "MII SD ICU MUV Herzfrequenz"
+    "de-DE": "MUV — Herzfrequenz",
+    "en-US": "MUV — heart rate"
   },
   "MII_PR_ICU_MUV_Koerpergewicht": {
-    "de-DE": "MUV Koerpergewicht",
-    "en-US": "MUV Koerpergewicht"
+    "de-DE": "MUV — Körpergewicht",
+    "en-US": "MUV — body weight"
   },
   "MII_PR_ICU_MUV_Koerpergroesse": {
-    "de-DE": "MUV Koerpergroesse",
-    "en-US": "MUV Koerpergroesse"
+    "de-DE": "MUV — Körpergröße",
+    "en-US": "MUV — body height"
   },
   "MII_PR_ICU_MUV_Kopfumfang": {
-    "de-DE": "MUV Kopfumfang",
-    "en-US": "MUV Kopfumfang"
+    "de-DE": "MUV — Kopfumfang",
+    "en-US": "MUV — head circumference"
   }
 }

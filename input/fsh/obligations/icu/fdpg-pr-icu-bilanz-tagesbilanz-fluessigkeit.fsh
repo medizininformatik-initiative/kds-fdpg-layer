@@ -5,8 +5,8 @@ Title: "FDPG PR ICU Bilanz Tagesbilanz Fluessigkeit"
 Description: "FDPG Profil - MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit"
 * insert FDPGMetadata
 * insert FDPGModule(icu)
-* insert Translation(^title, de-DE, Bilanz Tagesbilanz Fluessigkeit)
-* insert Translation(^title, en-US, Bilanz Tagesbilanz Fluessigkeit)
+* insert Translation(^title, de-DE, Tagesbilanz Flüssigkeit)
+* insert Translation(^title, en-US, Daily fluid balance)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

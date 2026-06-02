@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Consent Given"
 Description: "FDPG Profil - MII_PR_MTB_Consent_Given"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, Consent)
-* insert Translation(^title, en-US, Consent)
+* insert Translation(^title, de-DE, Einwilligung erteilt)
+* insert Translation(^title, en-US, Consent given)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Type of observation (code / type)"

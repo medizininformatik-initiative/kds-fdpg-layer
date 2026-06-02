@@ -5,8 +5,8 @@ Title: "FDPG PR MTB Therapieempfehlung"
 Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, Therapieempfehlung Systemische Therapie)
-* insert Translation(^title, en-US, Therapieempfehlung Systemische Therapie)
+* insert Translation(^title, de-DE, Therapieempfehlung systemische Therapie)
+* insert Translation(^title, en-US, Systemic therapy recommendation)
 // --- Element Designations ---
 // MedicationRequest.extension:Prioritaet
 * extension[Prioritaet] ^short = "MII EX MTB Empfehlung Priorität"

@@ -5,8 +5,8 @@ Title: "FDPG PR ICU MUV Atemfrequenz"
 Description: "FDPG Profil - MII_PR_ICU_MUV_Atemfrequenz"
 * insert FDPGMetadata
 * insert FDPGModule(icu)
-* insert Translation(^title, de-DE, MUV Atemfrequenz)
-* insert Translation(^title, en-US, MUV Atemfrequenz)
+* insert Translation(^title, de-DE, MUV — Atemfrequenz)
+* insert Translation(^title, en-US, MUV — respiratory rate)
 // --- Element Designations ---
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"

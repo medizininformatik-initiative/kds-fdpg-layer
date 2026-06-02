@@ -5,8 +5,8 @@ Title: "FDPG PR ICU MUV Herzfrequenz"
 Description: "FDPG Profil - MII_PR_ICU_MUV_Herzfrequenz"
 * insert FDPGMetadata
 * insert FDPGModule(icu)
-* insert Translation(^title, de-DE, MII SD ICU MUV Herzfrequenz)
-* insert Translation(^title, en-US, MII SD ICU MUV Herzfrequenz)
+* insert Translation(^title, de-DE, MUV — Herzfrequenz)
+* insert Translation(^title, en-US, MUV — heart rate)
 // --- Element Designations ---
 // Observation.id
 * id ^short = "serverseitige, interne ID des Datensatzes"

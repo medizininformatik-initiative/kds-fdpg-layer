@@ -5,8 +5,8 @@ Title: "FDPG PR MTB WHO Grad Tumor ZNS"
 Description: "FDPG Profil - MII_PR_MTB_WHO_Grad_Tumor_ZNS"
 * insert FDPGMetadata
 * insert FDPGModule(mtb)
-* insert Translation(^title, de-DE, WHO Grad Tumor ZNS)
-* insert Translation(^title, en-US, WHO Grad Tumor ZNS)
+* insert Translation(^title, de-DE, WHO-Grad ZNS-Tumor)
+* insert Translation(^title, en-US, WHO grade CNS tumor)
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Type of observation (code / type)"
