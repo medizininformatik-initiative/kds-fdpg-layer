@@ -87,7 +87,7 @@
     },
     {
       "packageId": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
-      "version": "2027.0.0-alpha.2",
+      "version": "2027.0.0-alpha.3",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.mikrobiologie/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
       "id": "de_medizininformatikinitiative_kerndatensatz_mikrobiologie"
     },
@@ -1068,10 +1068,154 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-allgemeine-bestimmung"
+        },
+        "name": "FDPG PR Mikrobio Allgemeine Bestimmung",
+        "description": "FDPG Profil - MII_PR_Mikrobio_Allgemeine_Bestimmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-allgemeine-kultur"
+        },
+        "name": "FDPG PR Mikrobio Allgemeine Kultur",
+        "description": "FDPG Profil - MII_PR_Mikrobio_Allgemeine_Kultur",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-antigen-antikoerper-quantitativ"
+        },
+        "name": "FDPG PR Mikrobio Antigen Antikoerper Quantitativ",
+        "description": "FDPG Profil - MII_PR_Mikrobio_Antigen_Antikoerper_Quantitativ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-aviditaet"
+        },
+        "name": "FDPG PR Mikrobio Aviditaet",
+        "description": "FDPG Profil - MII_PR_Mikrobio_Aviditaet",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-barlett-score"
+        },
+        "name": "FDPG PR Mikrobio Barlett Score",
+        "description": "FDPG Profil - MII_PR_Mikrobio_Barlett_Score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-ct-wert"
+        },
+        "name": "FDPG PR Mikrobio Ct Wert",
+        "description": "FDPG Profil - MII_PR_Mikrobio_Ct_Wert",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/fdpg-pr-mikrobio-diagnostic-report"
         },
         "name": "FDPG PR Mikrobio Diagnostic Report",
         "description": "FDPG Profil - MII_PR_Mikrobio_Diagnostic_Report",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-empfindlichkeit"
+        },
+        "name": "FDPG PR Mikrobio Empfindlichkeit",
+        "description": "FDPG Profil - MII_PR_Mikrobio_Empfindlichkeit",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-keimzahl"
+        },
+        "name": "FDPG PR Mikrobio Keimzahl",
+        "description": "FDPG Profil - MII_PR_Mikrobio_Keimzahl",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-mikroskopie"
+        },
+        "name": "FDPG PR Mikrobio Mikroskopie",
+        "description": "FDPG Profil - MII_PR_Mikrobio_Mikroskopie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-molekulare-pathogenlast"
+        },
+        "name": "FDPG PR Mikrobio Molekulare Pathogenlast",
+        "description": "FDPG Profil - MII_PR_Mikrobio_Molekulare_Pathogenlast",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-mre-klasse"
+        },
+        "name": "FDPG PR Mikrobio MRE Klasse",
+        "description": "FDPG Profil - MII_PR_Mikrobio_MRE_Klasse",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-mrgn-klasse"
+        },
+        "name": "FDPG PR Mikrobio MRGN Klasse",
+        "description": "FDPG Profil - MII_PR_Mikrobio_MRGN_Klasse",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-nugent-score"
+        },
+        "name": "FDPG PR Mikrobio Nugent Score",
+        "description": "FDPG Profil - MII_PR_Mikrobio_Nugent_Score",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-resistenzmechanismen-determinanten"
+        },
+        "name": "FDPG PR Mikrobio Resistenzmechanismen Determinanten",
+        "description": "FDPG Profil - MII_PR_Mikrobio_Resistenzmechanismen_Determinanten",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-spezifische-bestimmung"
+        },
+        "name": "FDPG PR Mikrobio Spezifische Bestimmung",
+        "description": "FDPG Profil - MII_PR_Mikrobio_Spezifische_Bestimmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-titer"
+        },
+        "name": "FDPG PR Mikrobio Titer",
+        "description": "FDPG Profil - MII_PR_Mikrobio_Titer",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-virulenzfaktor"
+        },
+        "name": "FDPG PR Mikrobio Virulenzfaktor",
+        "description": "FDPG Profil - MII_PR_Mikrobio_Virulenzfaktor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-mikrobio-voraussichtliche-empfindlichkeit"
+        },
+        "name": "FDPG PR Mikrobio Voraussichtliche Empfindlichkeit",
+        "description": "FDPG Profil - MII_PR_Mikrobio_Voraussichtliche_Empfindlichkeit",
         "exampleBoolean": false
       },
       {

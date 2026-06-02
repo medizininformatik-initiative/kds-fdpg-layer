@@ -81,7 +81,7 @@ MODULES = {
     },
     "mikrobiologie": {
         "package": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
-        "version": "2027.0.0-alpha.2",
+        "version": "2027.0.0-alpha.3",
     },
 }
 

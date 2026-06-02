@@ -47,7 +47,7 @@
     "de.medizininformatikinitiative.kerndatensatz.mtb": "2026.0.1",
     "de.medizininformatikinitiative.kerndatensatz.pros": "2026.3.0",
     "de.gematik.isik": "5.1.1",
-    "de.medizininformatikinitiative.kerndatensatz.mikrobiologie": "2027.0.0-alpha.2",
+    "de.medizininformatikinitiative.kerndatensatz.mikrobiologie": "2027.0.0-alpha.3",
     "hl7.fhir.uv.xver-r5.r4": "0.1.0"
   },
   "missing": {}

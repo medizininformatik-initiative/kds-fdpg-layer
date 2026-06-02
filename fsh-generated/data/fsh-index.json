@@ -880,12 +880,156 @@
     "endLine": 94
   },
   {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-allgemeine-bestimmung.json",
+    "fshName": "FDPG_PR_Mikrobio_Allgemeine_Bestimmung",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-allgemeine-bestimmung.fsh",
+    "startLine": 1,
+    "endLine": 261
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-allgemeine-kultur.json",
+    "fshName": "FDPG_PR_Mikrobio_Allgemeine_Kultur",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-allgemeine-kultur.fsh",
+    "startLine": 1,
+    "endLine": 261
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-antigen-antikoerper-quantitativ.json",
+    "fshName": "FDPG_PR_Mikrobio_Antigen_Antikoerper_Quantitativ",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-antigen-antikoerper-quantitativ.fsh",
+    "startLine": 1,
+    "endLine": 261
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-aviditaet.json",
+    "fshName": "FDPG_PR_Mikrobio_Aviditaet",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-aviditaet.fsh",
+    "startLine": 1,
+    "endLine": 261
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-barlett-score.json",
+    "fshName": "FDPG_PR_Mikrobio_Barlett_Score",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-barlett-score.fsh",
+    "startLine": 1,
+    "endLine": 261
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-ct-wert.json",
+    "fshName": "FDPG_PR_Mikrobio_Ct_Wert",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-ct-wert.fsh",
+    "startLine": 1,
+    "endLine": 269
+  },
+  {
     "outputFile": "StructureDefinition-fdpg-pr-mikrobio-diagnostic-report.json",
     "fshName": "FDPG_PR_Mikrobio_Diagnostic_Report",
     "fshType": "Profile",
     "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-diagnostic-report.fsh",
     "startLine": 1,
     "endLine": 191
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-empfindlichkeit.json",
+    "fshName": "FDPG_PR_Mikrobio_Empfindlichkeit",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-empfindlichkeit.fsh",
+    "startLine": 1,
+    "endLine": 262
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-keimzahl.json",
+    "fshName": "FDPG_PR_Mikrobio_Keimzahl",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-keimzahl.fsh",
+    "startLine": 1,
+    "endLine": 261
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-mikroskopie.json",
+    "fshName": "FDPG_PR_Mikrobio_Mikroskopie",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-mikroskopie.fsh",
+    "startLine": 1,
+    "endLine": 261
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-molekulare-pathogenlast.json",
+    "fshName": "FDPG_PR_Mikrobio_Molekulare_Pathogenlast",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-molekulare-pathogenlast.fsh",
+    "startLine": 1,
+    "endLine": 261
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-mre-klasse.json",
+    "fshName": "FDPG_PR_Mikrobio_MRE_Klasse",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-mre-klasse.fsh",
+    "startLine": 1,
+    "endLine": 261
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-mrgn-klasse.json",
+    "fshName": "FDPG_PR_Mikrobio_MRGN_Klasse",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-mrgn-klasse.fsh",
+    "startLine": 1,
+    "endLine": 261
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-nugent-score.json",
+    "fshName": "FDPG_PR_Mikrobio_Nugent_Score",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-nugent-score.fsh",
+    "startLine": 1,
+    "endLine": 261
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-resistenzmechanismen-determinanten.json",
+    "fshName": "FDPG_PR_Mikrobio_Resistenzmechanismen_Determinanten",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-resistenzmechanismen-determinanten.fsh",
+    "startLine": 1,
+    "endLine": 261
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-spezifische-bestimmung.json",
+    "fshName": "FDPG_PR_Mikrobio_Spezifische_Bestimmung",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-spezifische-bestimmung.fsh",
+    "startLine": 1,
+    "endLine": 261
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-titer.json",
+    "fshName": "FDPG_PR_Mikrobio_Titer",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-titer.fsh",
+    "startLine": 1,
+    "endLine": 267
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-virulenzfaktor.json",
+    "fshName": "FDPG_PR_Mikrobio_Virulenzfaktor",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-virulenzfaktor.fsh",
+    "startLine": 1,
+    "endLine": 261
+  },
+  {
+    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-voraussichtliche-empfindlichkeit.json",
+    "fshName": "FDPG_PR_Mikrobio_Voraussichtliche_Empfindlichkeit",
+    "fshType": "Profile",
+    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-voraussichtliche-empfindlichkeit.fsh",
+    "startLine": 1,
+    "endLine": 261
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-anforderung-genetischer-test.json",

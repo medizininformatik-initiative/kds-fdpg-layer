@@ -37,7 +37,7 @@ MODULES = {
     "dokument":     {"package": "de.medizininformatikinitiative.kerndatensatz.dokument",    "version": "2026.0.1",          "module_short": "Dokument",    "module_label": "Dokument"},
     "mtb":          {"package": "de.medizininformatikinitiative.kerndatensatz.mtb",         "version": "2026.0.1",          "module_short": "Mtb",         "module_label": "MTB"},
     "proms":        {"package": "de.medizininformatikinitiative.kerndatensatz.pros",        "version": "2026.3.0",          "module_short": "Pro",         "module_label": "PRO"},
-    "mikrobiologie":{"package": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie","version": "2027.0.0-alpha.2", "module_short": "Mikrobio",    "module_label": "Mikrobio"},
+    "mikrobiologie":{"package": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie","version": "2027.0.0-alpha.3", "module_short": "Mikrobio",    "module_label": "Mikrobio"},
 }
 
 FHIR_CACHE = Path.home() / ".fhir" / "packages"

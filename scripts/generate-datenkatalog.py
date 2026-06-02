@@ -123,9 +123,9 @@ MODULES = {
     },
     "mikrobiologie": {
         "package": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
-        "version": "2027.0.0-alpha.2",
+        "version": "2027.0.0-alpha.3",
         "title": "Mikrobiologie",
-        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.mikrobiologie/2027.0.0-alpha.2",
+        "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.mikrobiologie/2027.0.0-alpha.3",
     },
 }
 

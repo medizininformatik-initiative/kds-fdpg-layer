@@ -6,9 +6,9 @@ Das Modul Mikrobiologie strukturiert mikrobiologische Befunde inklusive Kulturen
 
 ## Quellmodul
 
-[MII KDS Mikrobiologie](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.mikrobiologie/2027.0.0-alpha.2)
+[MII KDS Mikrobiologie](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.mikrobiologie/2027.0.0-alpha.3)
 
-> **Hinweis:** Aktuell auf Basis der Alpha-2-Version (2027.0.0-alpha.2). Die Profile sind noch in der Konsolidierung.
+> **Hinweis:** Aktuell auf Basis der Alpha-3-Version (2027.0.0-alpha.3). Die Profile sind noch in der Konsolidierung.
 
 ## FDPG Profile
 

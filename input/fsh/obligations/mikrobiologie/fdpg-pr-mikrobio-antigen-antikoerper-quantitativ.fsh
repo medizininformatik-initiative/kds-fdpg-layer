@@ -126,6 +126,11 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Antigen_Antikoerper_Quantitativ"
 * insert Translation(value[x] ^definition, en-US, Value of the analysis)
 // Observation.value[x]:valueQuantity
 * value[x][valueQuantity] ^short = "Actual result"
+* insert Translation(value[x][valueQuantity] ^short, de-DE, Quantitativer Wert)
+* insert Translation(value[x][valueQuantity] ^short, en-US, Quantity value)
+* value[x][valueQuantity] ^definition = "The information determined as a result of making the observation, if the information has a simple value."
+* insert Translation(value[x][valueQuantity] ^definition, de-DE, Wert als numerische Größe mit Einheit (z.B. mmol/L\).)
+* insert Translation(value[x][valueQuantity] ^definition, en-US, Value as numeric quantity with unit (e.g. mmol/L\).)
 // Observation.value[x]:valueQuantity.value
 * value[x][valueQuantity].value ^short = "Numerical value (with implicit precision)"
 // Observation.value[x]:valueQuantity.value.extension:quantityPrecision
@@ -140,10 +145,25 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Antigen_Antikoerper_Quantitativ"
 * value[x][valueQuantity].code ^short = "Coded form of the unit"
 // Observation.value[x]:valueCodeableConcept
 * value[x][valueCodeableConcept] ^short = "Actual result"
+* insert Translation(value[x][valueCodeableConcept] ^short, de-DE, Kodierter Wert)
+* insert Translation(value[x][valueCodeableConcept] ^short, en-US, Coded value)
+* value[x][valueCodeableConcept] ^definition = "The information determined as a result of making the observation, if the information has a simple value."
+* insert Translation(value[x][valueCodeableConcept] ^definition, de-DE, Wert als kodierter Begriff aus einer Terminologie.)
+* insert Translation(value[x][valueCodeableConcept] ^definition, en-US, Value as a coded concept from a terminology.)
 // Observation.value[x]:valueRange
 * value[x][valueRange] ^short = "Actual result"
+* insert Translation(value[x][valueRange] ^short, de-DE, Wertebereich)
+* insert Translation(value[x][valueRange] ^short, en-US, Range value)
+* value[x][valueRange] ^definition = "The information determined as a result of making the observation, if the information has a simple value."
+* insert Translation(value[x][valueRange] ^definition, de-DE, Wert als Bereich von Unter- zu Obergrenze.)
+* insert Translation(value[x][valueRange] ^definition, en-US, Value as range from lower to upper bound.)
 // Observation.value[x]:valueRatio
 * value[x][valueRatio] ^short = "Actual result"
+* insert Translation(value[x][valueRatio] ^short, de-DE, Verhältnis)
+* insert Translation(value[x][valueRatio] ^short, en-US, Ratio value)
+* value[x][valueRatio] ^definition = "The information determined as a result of making the observation, if the information has a simple value."
+* insert Translation(value[x][valueRatio] ^definition, de-DE, Wert als Verhältnis (Zähler/Nenner\).)
+* insert Translation(value[x][valueRatio] ^definition, en-US, Value as ratio (numerator/denominator\).)
 // Observation.dataAbsentReason
 * dataAbsentReason ^short = "Grund für fehlende Daten"
 * insert Translation(dataAbsentReason ^short, de-DE, Grund für fehlende Daten)
