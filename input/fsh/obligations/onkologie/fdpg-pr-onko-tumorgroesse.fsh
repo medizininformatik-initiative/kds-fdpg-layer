@@ -10,19 +10,41 @@ Description: "FDPG Profil - MII_PR_Onko_Tumorgroesse"
 // --- Element Designations ---
 // Observation.code
 * code ^short = "Type of observation (code / type)"
+* insert Translation(code ^short, de-DE, Code)
+* insert Translation(code ^short, en-US, Code)
+* code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\"."
+* insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
+* insert Translation(code ^definition, en-US, Coding of the content.)
 // Observation.subject
 * subject ^short = "Who and/or what the observation is about"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // Observation.focus
 * focus ^short = "What the observation is about, when it is not about the subject of record"
 // Observation.encounter
 * encounter ^short = "Healthcare event during which this observation is made"
+* insert Translation(encounter ^short, de-DE, Behandlungsfall)
+* insert Translation(encounter ^short, en-US, Encounter)
+* encounter ^definition = "The healthcare event  (e.g. a patient and healthcare provider interaction) during which this observation is made."
+* insert Translation(encounter ^definition, de-DE, Fall oder Kontakt\, in dem die Ressource erfasst wurde.)
+* insert Translation(encounter ^definition, en-US, Encounter in which the resource was recorded.)
 // Observation.effective[x]
 * effective[x] ^short = "Datum der Messung"
+* insert Translation(effective[x] ^short, de-DE, Klinisch relevanter Zeitpunkt)
+* insert Translation(effective[x] ^short, en-US, Effective)
+* effective[x] ^definition = "Datum der Messung der Tumorgröße in mm. Bei Bildgebung Datum der Bildgebung, bei Pathologie Datum der histologischen Untersuchung. Dieser Datenpunkt ist nicht im oBDS enthalten, weil er sich dort aus dem Kontext der MammaCa-Untersuchung ergibt"
+* insert Translation(effective[x] ^definition, de-DE, Zeitpunkt oder Zeitraum\, auf den sich die Beobachtung bezieht.)
+* insert Translation(effective[x] ^definition, en-US, Date or period the observation refers to.)
 // Observation.value[x]
 * value[x] ^short = "Tumorgröße in mm"
 * insert Translation(value[x] ^short, de-DE, Tumorgröße in mm)
+* insert Translation(value[x] ^short, en-US, Value)
 * value[x] ^definition = "Tumorgröße in größter Dimension in mm"
 * insert Translation(value[x] ^definition, de-DE, Tumorgröße in größter Dimension in mm)
+* insert Translation(value[x] ^definition, en-US, Value of the observation.)
 // Observation.value[x].value
 * value[x].value ^short = "Numerical value (with implicit precision)"
 // Observation.value[x].unit
@@ -33,8 +55,18 @@ Description: "FDPG Profil - MII_PR_Onko_Tumorgroesse"
 * value[x].code ^short = "Coded form of the unit"
 // Observation.bodySite
 * bodySite ^short = "Observed body part"
+* insert Translation(bodySite ^short, de-DE, Körperstelle)
+* insert Translation(bodySite ^short, en-US, Body site)
+* bodySite ^definition = "Indicates the site on the subject's body where the observation was made (i.e. the target site)."
+* insert Translation(bodySite ^definition, de-DE, Körperstelle\, auf die sich die Ressource bezieht.)
+* insert Translation(bodySite ^definition, en-US, Body site the resource refers to.)
 // Observation.method
 * method ^short = "How it was done"
+* insert Translation(method ^short, de-DE, Methode)
+* insert Translation(method ^short, en-US, Method)
+* method ^definition = "Indicates the mechanism used to perform the observation."
+* insert Translation(method ^definition, de-DE, Methode\, mit der die Beobachtung durchgeführt wurde.)
+* insert Translation(method ^definition, en-US, Method used to make the observation.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(code)

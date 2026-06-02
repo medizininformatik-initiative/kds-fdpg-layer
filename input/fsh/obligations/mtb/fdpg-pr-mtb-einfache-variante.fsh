@@ -11,60 +11,82 @@ Description: "FDPG Profil - MII_PR_MTB_Einfache_Variante"
 // Observation.identifier
 * identifier ^short = "VariantenId im Kontext des NGS-Befundes"
 * insert Translation(identifier ^short, de-DE, VariantenId im Kontext des NGS-Befundes)
+* insert Translation(identifier ^short, en-US, Identifier)
 * identifier ^definition = "Eindeutige ID der Variante im Kontext des NGS-Befundes."
 * insert Translation(identifier ^definition, de-DE, Eindeutige ID der Variante im Kontext des NGS-Befundes.)
+* insert Translation(identifier ^definition, en-US, Identifier for this resource.)
 // Observation.status
 * status ^short = "Status"
 * insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, en-US, Status)
 * status ^definition = "Status der Beobachtung"
 * insert Translation(status ^definition, de-DE, Status der Beobachtung)
+* insert Translation(status ^definition, en-US, Status of the resource.)
 // Observation.category
 * category ^short = "Kategorie"
 * insert Translation(category ^short, de-DE, Kategorie)
+* insert Translation(category ^short, en-US, Category)
 * category ^definition = "Klassifizierung der Beobachtungsart"
 * insert Translation(category ^definition, de-DE, Klassifizierung der Beobachtungsart)
+* insert Translation(category ^definition, en-US, Categorization of the resource.)
 // Observation.code
 * code ^short = "Code"
 * insert Translation(code ^short, de-DE, Code)
+* insert Translation(code ^short, en-US, Code)
 * code ^definition = "Code zur Identifizierung der Varianten-Beobachtung"
 * insert Translation(code ^definition, de-DE, Code zur Identifizierung der Varianten-Beobachtung)
+* insert Translation(code ^definition, en-US, Coding of the content.)
 // Observation.subject
 * subject ^short = "Patient oder Proband"
 * insert Translation(subject ^short, de-DE, Patient oder Proband)
+* insert Translation(subject ^short, en-US, Patient)
 * subject ^definition = "Der Patient oder die Gruppe auf die sich die Variante bezieht"
 * insert Translation(subject ^definition, de-DE, Der Patient oder die Gruppe auf die sich die Variante bezieht)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // Observation.focus
 * focus ^short = "What the observation is about, when it is not about the subject of record"
 // Observation.effective[x]
 * effective[x] ^short = "Zeitpunkt der Beobachtung"
 * insert Translation(effective[x] ^short, de-DE, Zeitpunkt der Beobachtung)
+* insert Translation(effective[x] ^short, en-US, Effective)
 * effective[x] ^definition = "Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung"
 * insert Translation(effective[x] ^definition, de-DE, Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung)
+* insert Translation(effective[x] ^definition, en-US, Date or period the observation refers to.)
 // Observation.issued
 * issued ^short = "Freigabedatum"
 * insert Translation(issued ^short, de-DE, Freigabedatum)
+* insert Translation(issued ^short, en-US, Issued)
 * issued ^definition = "Datum und Uhrzeit der Freigabe der Beobachtung"
 * insert Translation(issued ^definition, de-DE, Datum und Uhrzeit der Freigabe der Beobachtung)
+* insert Translation(issued ^definition, en-US, Date when the resource was issued.)
 // Observation.value[x]
 * value[x] ^short = "Ergebniswert"
 * insert Translation(value[x] ^short, de-DE, Ergebniswert)
+* insert Translation(value[x] ^short, en-US, Value)
 * value[x] ^definition = "Das Ergebnis der Variantenanalyse - vorhanden oder abwesend"
 * insert Translation(value[x] ^definition, de-DE, Das Ergebnis der Variantenanalyse - vorhanden oder abwesend)
+* insert Translation(value[x] ^definition, en-US, Value of the observation.)
 // Observation.method
 * method ^short = "Methode"
 * insert Translation(method ^short, de-DE, Methode)
+* insert Translation(method ^short, en-US, Method)
 * method ^definition = "Die verwendete Untersuchungsmethode"
 * insert Translation(method ^definition, de-DE, Die verwendete Untersuchungsmethode)
+* insert Translation(method ^definition, en-US, Method used to make the observation.)
 // Observation.specimen
 * specimen ^short = "Probe"
 * insert Translation(specimen ^short, de-DE, Probe)
+* insert Translation(specimen ^short, en-US, Specimen)
 * specimen ^definition = "Die untersuchte Probe"
 * insert Translation(specimen ^definition, de-DE, Die untersuchte Probe)
+* insert Translation(specimen ^definition, en-US, Reference to the specimen.)
 // Observation.device
 * device ^short = "Gerät"
 * insert Translation(device ^short, de-DE, Gerät)
+* insert Translation(device ^short, en-US, Device)
 * device ^definition = "Das verwendete Analysegerät"
 * insert Translation(device ^definition, de-DE, Das verwendete Analysegerät)
+* insert Translation(device ^definition, en-US, Device used to make the observation.)
 // Observation.component:conclusion-string
 * component[conclusion-string] ^short = "Schlussfolgerung - Text"
 * insert Translation(component[conclusion-string] ^short, de-DE, Schlussfolgerung - Text)

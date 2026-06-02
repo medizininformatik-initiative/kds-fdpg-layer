@@ -8,6 +8,10 @@ Description: "FDPG Profil - MII_PR_ICU_Extrakorporales_Verfahren"
 * insert Translation(^title, de-DE, Extrakorporales Verfahren)
 * insert Translation(^title, en-US, Extracorporeal Procedure)
 // --- Element Designations ---
+// Procedure.extension
+* extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+* insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
+* insert Translation(extension ^definition, en-US, FHIR extension.)
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"
 * insert Translation(extension[Dokumentationsdatum] ^short, de-DE, Dokumentationsdatum)
@@ -76,6 +80,11 @@ Description: "FDPG Profil - MII_PR_ICU_Extrakorporales_Verfahren"
 * code.coding[sct].display ^short = "Representation defined by the system"
 // Procedure.subject
 * subject ^short = "Who the procedure was performed on"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "The person, animal or group on which the procedure was performed."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // Procedure.encounter
 * encounter ^short = "Kontakt (Aufenthaltsbezug)"
 * insert Translation(encounter ^short, de-DE, Kontakt)
@@ -92,6 +101,11 @@ Description: "FDPG Profil - MII_PR_ICU_Extrakorporales_Verfahren"
 * insert Translation(performed[x] ^definition, en-US, The date or period of time the procedure was performed.)
 // Procedure.recorder
 * recorder ^short = "Who recorded the procedure"
+* insert Translation(recorder ^short, de-DE, Erfassende*r)
+* insert Translation(recorder ^short, en-US, Recorder)
+* recorder ^definition = "Individual who recorded the record and takes responsibility for its content."
+* insert Translation(recorder ^definition, de-DE, Person oder Organisation\, die die Information aufgezeichnet hat.)
+* insert Translation(recorder ^definition, en-US, Person or organization that recorded the information.)
 // Procedure.bodySite
 * bodySite ^short = "Körperstelle"
 * insert Translation(bodySite ^short, de-DE, Körperstelle)

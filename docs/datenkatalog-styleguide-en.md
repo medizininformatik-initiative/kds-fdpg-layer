@@ -194,15 +194,17 @@ When listing values inline, use the **English display values** from the codesyst
 
 | Priority | Source | When available | Quality |
 |---|---|---|---|
-| 1 | **FDPG canonical-labels.json** (`en_short`, `en_def`) | For elements listed in the central table | Curated, FDPG-authored |
-| 2 | **FDPG module-specific label file** (planned: `element-labels-<module>.json`) | For module-specific clinical terms | Curated per module |
-| 3 | **MII profile EN designation** (`ElementDefinition.designation` lang=`en`) | Sporadic per KDS module | Inconsistent — review needed |
-| 4 | **Derived from DE label** following this guide | When neither canonical nor upstream has EN | Requires translation review |
+| 1 | **MII profile EN designation** (`ElementDefinition.designation` lang=`en`) | When the upstream KDS team set it — sporadic per module | Profile-specific, when present |
+| 2 | **FDPG module-specific label file** (planned: `element-labels-<module>.json`) | Domain-specific terms per module | Curated per module |
+| 3 | **FDPG canonical-labels.json** (`en_short`, `en_def`) | Cross-module elements (status, subject, encounter, value[x], etc.) | Curated, FDPG-authored |
+| 4 | **Derived from DE label** following this guide | One-off cases not yet in any table | Requires translation review + write-back |
 | 5 | **FHIR base default** (`elem.short` / `elem.definition` in English) | Always | Generic, often verbose — **avoid** |
 
-**Rule:** Priority 1–2 are authoritative. Priority 3 is accepted only after checking it matches the form/register rules above. Priority 4 produces a new entry that **must be written back to canonical-labels.json** so the next consumer doesn't re-derive it.
+**Rule:** Priority 1 wins when set, because the upstream profile team encoded clinical context we can't second-guess. Priorities 2–3 fill the gap for everything else; canonical labels are explicitly cross-module fallbacks, not overrides. Priority 4 produces a new entry that **must be written back to the appropriate label table** so the next consumer doesn't re-derive it.
 
 Priority 5 is a smell — finding a FHIR base default in production means we forgot to author. CI should flag it.
+
+> **Why is canonical not Priority 1?** Earlier drafts placed `canonical-labels.json` as Priority 1, but in practice the canonical entries are deliberately generic (e.g., `code` → "Code" / "Coding of the content."). Many upstream profiles override `code` with a profile-specific meaning ("LOINC code for the laboratory parameter") — those must win. Canonical labels are a fallback for the cross-module elements where they really *are* universal (status, subject, encounter, value[x]-slices).
 
 ### The "MS-only" problem (EN edition)
 
@@ -377,28 +379,30 @@ For LM-label upstream outliers (English LM concept names from MII KDS that shoul
 
 ## Appendix: EN coverage status (June 2026)
 
-Snapshot for the v0.2 baseline. Tracks progress toward 100% EN coverage.
+Snapshot after Phase 1 of `bd kds-fdpg-layer-bl6` — `enrich-fsh-translations.py` now uses `canonical-labels.json` as a fallback source when upstream MII packages lack EN designations. Numbers compare before/after.
 
-| Module | DE inserts | EN inserts | EN coverage |
-|---|---:|---:|---:|
-| basis | 171 | 171 | 100% |
-| bildgebung | 327 | 327 | 100% |
-| biobank | 155 | 155 | 100% |
-| consent | 3 | 3 | 100% |
-| dokument | 1 | 1 | 100% |
-| icu | 121 | 121 | 100% |
-| labor | 89 | 89 | 100% |
-| medikation | 181 | 181 | 100% |
-| mikrobiologie | 737 | 737 | 100% |
-| **molgen** | **512** | **16** | **3%** |
-| **mtb** | **1283** | **230** | **18%** |
-| **onkologie** | **787** | **487** | **62%** |
-| patho | 263 | 263 | 100% |
-| proms | 20 | 20 | 100% |
-| **seltene** | **201** | **119** | **59%** |
-| studie | 7 | 7 | 100% |
-| **Total** | **4858** | **2927** | **60%** |
+| Module | DE before | DE after | EN before | EN after | EN coverage |
+|---|---:|---:|---:|---:|---:|
+| basis | 171 | 180 | 171 | 180 | 100% |
+| bildgebung | 327 | 329 | 327 | 329 | 100% |
+| biobank | 155 | 189 | 155 | 189 | 100% |
+| consent | 3 | 3 | 3 | 3 | 100% |
+| dokument | 1 | 11 | 1 | 11 | 100% |
+| icu | 121 | **1705** | 121 | **1705** | 100% |
+| labor | 89 | 97 | 89 | 97 | 100% |
+| medikation | 181 | 193 | 181 | 193 | 100% |
+| mikrobiologie | 737 | 737 | 737 | 737 | 100% |
+| molgen | 512 | 512 | 16 | **248** | 48% |
+| mtb | 1283 | 1538 | 230 | **941** | 61% |
+| onkologie | 787 | 1448 | 487 | **1272** | 88% |
+| patho | 263 | 402 | 263 | 402 | 100% |
+| proms | 20 | 20 | 20 | 20 | 100% |
+| seltene | 201 | 201 | 119 | 119 | 59% (package not in cache) |
+| studie | 7 | 40 | 7 | 40 | 100% |
+| **Total** | **4858** | **7605** | **2927** | **6486** | **85%** |
 
-**Gap:** 1931 EN inserts missing, concentrated in 4 modules (molgen, mtb, onkologie, seltene). Target: 100% across all modules — tracked in `bd kds-fdpg-layer-bl6`.
+**Phase 1 result:** EN coverage 60% → 85%. Remaining gaps are in molgen / mtb / onkologie / seltene, where `canonical-labels.json` doesn't yet cover the module-specific clinical terminology.
 
-**Important caveat:** Even the 100%-coverage modules currently propagate EN from upstream MII packages — they meet *quantity*, not necessarily *quality* of researcher-tailored labels. Reaching full guide compliance means re-authoring all EN labels from the FDPG canonical source, regardless of current coverage number.
+**Phase 2 plan:** Expand `canonical-labels.json` from 50 to ~150 entries (common oncology / molecular genetics terms). Then introduce module-specific `element-labels-<module>.json` files for domain-specific clinical terms — the same authoring pattern as `title-translations-<module>.json`.
+
+**Important caveat — coverage ≠ quality:** A 100% number means every MS element has *some* DE+EN Translation, not that those labels are researcher-tailored. Many ICU/Patho/Onko elements now show generic canonical labels ("Status of the resource.") because that's better than the FHIR base default English text — but neither is profile-specific. The end state per `bd kds-fdpg-layer-bl6` is to re-author the cross-module canonical entries themselves to be researcher-tailored, then add module-specific entries where needed.

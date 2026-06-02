@@ -11,8 +11,10 @@ Description: "FDPG Profil - MII_PR_MTB_Histologie_Evaluation_Auftrag"
 // ServiceRequest.code
 * code ^short = "Empfehlung zur histologischen (Re-)Evaluation"
 * insert Translation(code ^short, de-DE, Empfehlung zur histologischen Re-Evaluation)
+* insert Translation(code ^short, en-US, Code)
 * code ^definition = "Empfehlung zur histologischen (Re-)Evaluation"
 * insert Translation(code ^definition, de-DE, Empfehlung zur histologischen Re-Evaluation)
+* insert Translation(code ^definition, en-US, Coding of the content.)
 // ServiceRequest.reasonReference:Histologie
 * reasonReference[Histologie] ^short = "Histologiebefund"
 * insert Translation(reasonReference[Histologie] ^short, de-DE, Histologiebefund)
@@ -25,6 +27,11 @@ Description: "FDPG Profil - MII_PR_MTB_Histologie_Evaluation_Auftrag"
 * insert Translation(reasonReference[Tumorzellgehalt] ^definition, de-DE, Verweis auf bestimmten Tumorzellgehalt)
 // ServiceRequest.specimen
 * specimen ^short = "Procedure Samples"
+* insert Translation(specimen ^short, de-DE, Probe)
+* insert Translation(specimen ^short, en-US, Specimen)
+* specimen ^definition = "One or more specimens that the laboratory procedure will use."
+* insert Translation(specimen ^definition, de-DE, Verweis auf das Probenmaterial.)
+* insert Translation(specimen ^definition, en-US, Reference to the specimen.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(code)

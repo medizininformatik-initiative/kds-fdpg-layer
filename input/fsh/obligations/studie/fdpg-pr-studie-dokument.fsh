@@ -10,6 +10,11 @@ Description: "FDPG Profil - MII_PR_Studie_Dokument"
 // --- Element Designations ---
 // DocumentReference.status
 * status ^short = "Status"
+* insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, en-US, Status)
+* status ^definition = "aktuell | ersetzt | irrtümlich eingegeben"
+* insert Translation(status ^definition, de-DE, Status der Ressource.)
+* insert Translation(status ^definition, en-US, Status of the resource.)
 // DocumentReference.author
 * author ^short = "Author"
 // DocumentReference.custodian

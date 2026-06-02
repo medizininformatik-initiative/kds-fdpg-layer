@@ -61,7 +61,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/bildgebung/fdpg-pr-bildgebung-bildgebungsprozedur.fsh",
     "startLine": 1,
-    "endLine": 147
+    "endLine": 151
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-bildgebung-bildgebungsstudie.json",
@@ -101,7 +101,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/bildgebung/fdpg-pr-bildgebung-radiologische-befundungsprozedur.fsh",
     "startLine": 1,
-    "endLine": 139
+    "endLine": 143
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-bildgebung-radiologische-beobachtung.json",
@@ -133,7 +133,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-observation-dna-konzentration.fsh",
     "startLine": 1,
-    "endLine": 27
+    "endLine": 42
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-observation-karyotyp.json",
@@ -141,7 +141,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-observation-karyotyp.fsh",
     "startLine": 1,
-    "endLine": 27
+    "endLine": 42
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-observation-morphologie.json",
@@ -149,7 +149,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-observation-morphologie.fsh",
     "startLine": 1,
-    "endLine": 23
+    "endLine": 33
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-observation-proliferation.json",
@@ -157,7 +157,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-observation-proliferation.fsh",
     "startLine": 1,
-    "endLine": 23
+    "endLine": 33
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-observation-qualitaetspruefung.json",
@@ -165,7 +165,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-observation-qualitaetspruefung.fsh",
     "startLine": 1,
-    "endLine": 29
+    "endLine": 39
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-observation-wachstumstyp.json",
@@ -173,7 +173,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-observation-wachstumstyp.fsh",
     "startLine": 1,
-    "endLine": 23
+    "endLine": 33
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-organization-sammlung-biobank.json",
@@ -181,7 +181,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-organization-sammlung-biobank.fsh",
     "startLine": 1,
-    "endLine": 76
+    "endLine": 81
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-biobank-specimen-bioprobe-core.json",
@@ -213,7 +213,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/biobank/fdpg-pr-biobank-substance-additiv.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 31
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-consent-document-reference.json",
@@ -245,7 +245,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/basis/fdpg-pr-diagnose-condition.fsh",
     "startLine": 1,
-    "endLine": 153
+    "endLine": 157
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-dokument-dokument.json",
@@ -253,7 +253,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/dokument/fdpg-pr-dokument-dokument.fsh",
     "startLine": 1,
-    "endLine": 108
+    "endLine": 133
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-fall-kontakt-gesundheitseinrichtung.json",
@@ -261,7 +261,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/basis/fdpg-pr-fall-kontakt-gesundheitseinrichtung.fsh",
     "startLine": 1,
-    "endLine": 204
+    "endLine": 209
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-arterieller-druck.json",
@@ -269,7 +269,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-arterieller-druck.fsh",
     "startLine": 1,
-    "endLine": 60
+    "endLine": 110
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss.json",
@@ -277,7 +277,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-atemwegsdruck-bei-mittlerem-expiratorischem-gasfluss.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-atemwegsdruck-bei-null-expiratorischem-gasfluss.json",
@@ -285,7 +285,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-atemwegsdruck-bei-null-expiratorischem-gasfluss.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-atemzugvolumen-einstellung.json",
@@ -293,7 +293,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-atemzugvolumen-einstellung.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-atemzugvolumen-waehrend-beatmung.json",
@@ -301,7 +301,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-atemzugvolumen-waehrend-beatmung.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-beatmung.json",
@@ -309,7 +309,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-beatmung.fsh",
     "startLine": 1,
-    "endLine": 133
+    "endLine": 147
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-beatmungsvolumen-pro-minute-maschineller-beatmung.json",
@@ -317,7 +317,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-beatmungsvolumen-pro-minute-maschineller-beatmung.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-beatmungszeit-hohem-druck.json",
@@ -325,7 +325,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-beatmungszeit-hohem-druck.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-beatmungszeit-niedrigem-druck.json",
@@ -333,7 +333,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-beatmungszeit-niedrigem-druck.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-blutverlust.json",
@@ -341,7 +341,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-blutverlust.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 145
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-drainage-generisch.json",
@@ -349,7 +349,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-drainage-generisch.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 145
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.json",
@@ -357,7 +357,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-fluessigkeit-gesamt.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 145
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.json",
@@ -365,7 +365,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-gallenfluessigkeit.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 145
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.json",
@@ -373,7 +373,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 145
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-magensonde.json",
@@ -381,7 +381,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-magensonde.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 145
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-op-drainage.json",
@@ -389,7 +389,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-op-drainage.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 145
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-pankreasdrainage.json",
@@ -397,7 +397,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-pankreasdrainage.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 145
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-stuhlgang.json",
@@ -405,7 +405,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-stuhlgang.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 145
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-urin.json",
@@ -413,7 +413,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-urin.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 145
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-wunddrainage.json",
@@ -421,7 +421,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-ausfuhr-wunddrainage.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 145
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.json",
@@ -429,7 +429,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-einfuhr-enterale-fluessigkeit.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 145
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.json",
@@ -437,7 +437,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-einfuhr-fluessigkeit-gesamt.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 145
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz-tagesbilanz-fluessigkeit.json",
@@ -445,7 +445,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz-tagesbilanz-fluessigkeit.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 145
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-bilanz.json",
@@ -453,7 +453,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-bilanz.fsh",
     "startLine": 1,
-    "endLine": 72
+    "endLine": 147
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-blutfluss-cardiovasculaeres-geraet.json",
@@ -461,7 +461,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-blutfluss-cardiovasculaeres-geraet.fsh",
     "startLine": 1,
-    "endLine": 60
+    "endLine": 110
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-blutfluss-extrakorporaler-gasaustausch.json",
@@ -469,7 +469,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-blutfluss-extrakorporaler-gasaustausch.fsh",
     "startLine": 1,
-    "endLine": 60
+    "endLine": 110
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-blutflussindex-extrakorporaler-gasaustausch.json",
@@ -477,7 +477,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-blutflussindex-extrakorporaler-gasaustausch.fsh",
     "startLine": 1,
-    "endLine": 60
+    "endLine": 110
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-dauer-extrakorporaler-gasaustausch.json",
@@ -485,7 +485,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-dauer-extrakorporaler-gasaustausch.fsh",
     "startLine": 1,
-    "endLine": 60
+    "endLine": 110
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-dauer-haemodialysesitzung.json",
@@ -493,7 +493,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-dauer-haemodialysesitzung.fsh",
     "startLine": 1,
-    "endLine": 60
+    "endLine": 110
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-device.json",
@@ -501,7 +501,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-device.fsh",
     "startLine": 1,
-    "endLine": 42
+    "endLine": 57
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-devicemetric-eingestellte-gemessene-parameter-beatmu.json",
@@ -509,7 +509,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-devicemetric-eingestellte-gemessene-parameter-beatmu.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 36
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-devicemetric-eingestellte-gemessene-parameter-extrak.json",
@@ -517,7 +517,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-devicemetric-eingestellte-gemessene-parameter-extrak.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 36
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-druckdifferenz-beatmung.json",
@@ -525,7 +525,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-druckdifferenz-beatmung.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-dynamische-kompliance.json",
@@ -533,7 +533,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-dynamische-kompliance.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-eingestellter-inspiratorischer-gasfluss.json",
@@ -541,7 +541,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-eingestellter-inspiratorischer-gasfluss.fsh",
     "startLine": 1,
-    "endLine": 62
+    "endLine": 122
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-einstellung-ausatmungszeit-beatmung.json",
@@ -549,7 +549,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-einstellung-ausatmungszeit-beatmung.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-einstellung-einatmungszeit-beatmung.json",
@@ -557,7 +557,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-einstellung-einatmungszeit-beatmung.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-endexpiratorischer-kohlendioxidpartialdruck.json",
@@ -565,7 +565,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-endexpiratorischer-kohlendioxidpartialdruck.fsh",
     "startLine": 1,
-    "endLine": 62
+    "endLine": 122
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-exspiratorischer-gasfluss.json",
@@ -573,7 +573,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-exspiratorischer-gasfluss.fsh",
     "startLine": 1,
-    "endLine": 62
+    "endLine": 122
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-exspiratorischer-sauerstoffpartialdruck.json",
@@ -581,7 +581,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-exspiratorischer-sauerstoffpartialdruck.fsh",
     "startLine": 1,
-    "endLine": 62
+    "endLine": 122
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-extrakorporales-verfahren.json",
@@ -589,7 +589,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-extrakorporales-verfahren.fsh",
     "startLine": 1,
-    "endLine": 133
+    "endLine": 147
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-gasfluss.json",
@@ -597,7 +597,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-gasfluss.fsh",
     "startLine": 1,
-    "endLine": 60
+    "endLine": 110
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-haemodialyse-blutfluss.json",
@@ -605,7 +605,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-haemodialyse-blutfluss.fsh",
     "startLine": 1,
-    "endLine": 60
+    "endLine": 110
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-horowitz-in-arteriellem-blut.json",
@@ -613,7 +613,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-horowitz-in-arteriellem-blut.fsh",
     "startLine": 1,
-    "endLine": 62
+    "endLine": 122
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-inspiratorische-sauerstofffraktion-eingestellt.json",
@@ -621,7 +621,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-inspiratorische-sauerstofffraktion-eingestellt.fsh",
     "startLine": 1,
-    "endLine": 62
+    "endLine": 122
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-inspiratorische-sauerstofffraktion-gemessen.json",
@@ -629,7 +629,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-inspiratorische-sauerstofffraktion-gemessen.fsh",
     "startLine": 1,
-    "endLine": 62
+    "endLine": 122
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-inspiratorischer-gasfluss.json",
@@ -637,7 +637,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-inspiratorischer-gasfluss.fsh",
     "startLine": 1,
-    "endLine": 62
+    "endLine": 122
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-ionisiertes-kalzium-nierenersatzverfahren.json",
@@ -645,7 +645,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-ionisiertes-kalzium-nierenersatzverfahren.fsh",
     "startLine": 1,
-    "endLine": 60
+    "endLine": 110
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-maximaler-beatmungsdruck.json",
@@ -653,7 +653,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-maximaler-beatmungsdruck.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-mechanische-atemfrequenz-beatmet.json",
@@ -661,7 +661,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-mechanische-atemfrequenz-beatmet.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-mittlerer-beatmungsdruck.json",
@@ -669,7 +669,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-mittlerer-beatmungsdruck.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-arterieller-blutdruck.json",
@@ -677,7 +677,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-arterieller-blutdruck.fsh",
     "startLine": 1,
-    "endLine": 128
+    "endLine": 193
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-atemfrequenz.json",
@@ -685,7 +685,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-atemfrequenz.fsh",
     "startLine": 1,
-    "endLine": 48
+    "endLine": 93
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-herzfrequenz.json",
@@ -693,7 +693,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-herzfrequenz.fsh",
     "startLine": 1,
-    "endLine": 89
+    "endLine": 174
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-koerpergewicht.json",
@@ -701,7 +701,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-koerpergewicht.fsh",
     "startLine": 1,
-    "endLine": 63
+    "endLine": 103
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-koerpergroesse.json",
@@ -709,7 +709,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-koerpergroesse.fsh",
     "startLine": 1,
-    "endLine": 65
+    "endLine": 105
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-muv-kopfumfang.json",
@@ -717,7 +717,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-muv-kopfumfang.fsh",
     "startLine": 1,
-    "endLine": 53
+    "endLine": 93
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-parameter-von-beatmung.json",
@@ -725,7 +725,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-parameter-von-beatmung.fsh",
     "startLine": 1,
-    "endLine": 63
+    "endLine": 123
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-parameter-von-extrakorporalen-verfahren.json",
@@ -733,7 +733,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-parameter-von-extrakorporalen-verfahren.fsh",
     "startLine": 1,
-    "endLine": 63
+    "endLine": 113
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-positiv-endexpiratorischer-druck.json",
@@ -741,7 +741,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-positiv-endexpiratorischer-druck.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-spontane-atemfrequenz-beatmet.json",
@@ -749,7 +749,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-spontane-atemfrequenz-beatmet.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-spontane-mechanische-atemfrequenz-beatmet.json",
@@ -757,7 +757,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-spontane-mechanische-atemfrequenz-beatmet.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-spontanes-atemzugvolumen.json",
@@ -765,7 +765,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-spontanes-atemzugvolumen.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-spontanes-plus-mechanisches-atemzugvolumen.json",
@@ -773,7 +773,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-spontanes-plus-mechanisches-atemzugvolumen.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-substituatfluss.json",
@@ -781,7 +781,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-substituatfluss.fsh",
     "startLine": 1,
-    "endLine": 60
+    "endLine": 110
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-substituatvolumen.json",
@@ -789,7 +789,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-substituatvolumen.fsh",
     "startLine": 1,
-    "endLine": 60
+    "endLine": 110
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-unterstuezungsdruck-beatmung.json",
@@ -797,7 +797,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-unterstuezungsdruck-beatmung.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-venoeser-druck.json",
@@ -805,7 +805,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-venoeser-druck.fsh",
     "startLine": 1,
-    "endLine": 60
+    "endLine": 110
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-icu-zeitverhaeltnis-ein-ausatmung.json",
@@ -813,7 +813,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/icu/fdpg-pr-icu-zeitverhaeltnis-ein-ausatmung.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 119
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-labor-laboranforderung.json",
@@ -837,7 +837,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/labor/fdpg-pr-labor-laboruntersuchung.fsh",
     "startLine": 1,
-    "endLine": 226
+    "endLine": 246
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-medikation-medication-administration.json",
@@ -845,7 +845,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/medikation/fdpg-pr-medikation-medication-administration.fsh",
     "startLine": 1,
-    "endLine": 264
+    "endLine": 269
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-medikation-medication-request.json",
@@ -853,7 +853,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/medikation/fdpg-pr-medikation-medication-request.fsh",
     "startLine": 1,
-    "endLine": 410
+    "endLine": 415
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-medikation-medication-statement.json",
@@ -861,7 +861,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/medikation/fdpg-pr-medikation-medication-statement.fsh",
     "startLine": 1,
-    "endLine": 433
+    "endLine": 438
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-medikation-medication.json",
@@ -869,7 +869,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/medikation/fdpg-pr-medikation-medication.fsh",
     "startLine": 1,
-    "endLine": 82
+    "endLine": 87
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-medikation-medikationsliste.json",
@@ -877,55 +877,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/medikation/fdpg-pr-medikation-medikationsliste.fsh",
     "startLine": 1,
-    "endLine": 84
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-allgemeine-bestimmung.json",
-    "fshName": "FDPG_PR_Mikrobio_Allgemeine_Bestimmung",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-allgemeine-bestimmung.fsh",
-    "startLine": 1,
-    "endLine": 241
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-allgemeine-kultur.json",
-    "fshName": "FDPG_PR_Mikrobio_Allgemeine_Kultur",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-allgemeine-kultur.fsh",
-    "startLine": 1,
-    "endLine": 241
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-antigen-antikoerper-quantitativ.json",
-    "fshName": "FDPG_PR_Mikrobio_Antigen_Antikoerper_Quantitativ",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-antigen-antikoerper-quantitativ.fsh",
-    "startLine": 1,
-    "endLine": 241
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-aviditaet.json",
-    "fshName": "FDPG_PR_Mikrobio_Aviditaet",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-aviditaet.fsh",
-    "startLine": 1,
-    "endLine": 241
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-barlett-score.json",
-    "fshName": "FDPG_PR_Mikrobio_Barlett_Score",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-barlett-score.fsh",
-    "startLine": 1,
-    "endLine": 241
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-ct-wert.json",
-    "fshName": "FDPG_PR_Mikrobio_Ct_Wert",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-ct-wert.fsh",
-    "startLine": 1,
-    "endLine": 244
+    "endLine": 94
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mikrobio-diagnostic-report.json",
@@ -936,108 +888,12 @@
     "endLine": 191
   },
   {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-empfindlichkeit.json",
-    "fshName": "FDPG_PR_Mikrobio_Empfindlichkeit",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-empfindlichkeit.fsh",
-    "startLine": 1,
-    "endLine": 242
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-keimzahl.json",
-    "fshName": "FDPG_PR_Mikrobio_Keimzahl",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-keimzahl.fsh",
-    "startLine": 1,
-    "endLine": 241
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-mikroskopie.json",
-    "fshName": "FDPG_PR_Mikrobio_Mikroskopie",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-mikroskopie.fsh",
-    "startLine": 1,
-    "endLine": 241
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-molekulare-pathogenlast.json",
-    "fshName": "FDPG_PR_Mikrobio_Molekulare_Pathogenlast",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-molekulare-pathogenlast.fsh",
-    "startLine": 1,
-    "endLine": 241
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-mre-klasse.json",
-    "fshName": "FDPG_PR_Mikrobio_MRE_Klasse",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-mre-klasse.fsh",
-    "startLine": 1,
-    "endLine": 241
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-mrgn-klasse.json",
-    "fshName": "FDPG_PR_Mikrobio_MRGN_Klasse",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-mrgn-klasse.fsh",
-    "startLine": 1,
-    "endLine": 241
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-nugent-score.json",
-    "fshName": "FDPG_PR_Mikrobio_Nugent_Score",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-nugent-score.fsh",
-    "startLine": 1,
-    "endLine": 241
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-resistenzmechanismen-determinanten.json",
-    "fshName": "FDPG_PR_Mikrobio_Resistenzmechanismen_Determinanten",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-resistenzmechanismen-determinanten.fsh",
-    "startLine": 1,
-    "endLine": 241
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-spezifische-bestimmung.json",
-    "fshName": "FDPG_PR_Mikrobio_Spezifische_Bestimmung",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-spezifische-bestimmung.fsh",
-    "startLine": 1,
-    "endLine": 241
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-titer.json",
-    "fshName": "FDPG_PR_Mikrobio_Titer",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-titer.fsh",
-    "startLine": 1,
-    "endLine": 247
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-virulenzfaktor.json",
-    "fshName": "FDPG_PR_Mikrobio_Virulenzfaktor",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-virulenzfaktor.fsh",
-    "startLine": 1,
-    "endLine": 241
-  },
-  {
-    "outputFile": "StructureDefinition-fdpg-pr-mikrobio-voraussichtliche-empfindlichkeit.json",
-    "fshName": "FDPG_PR_Mikrobio_Voraussichtliche_Empfindlichkeit",
-    "fshType": "Profile",
-    "fshFile": "obligations/mikrobiologie/fdpg-pr-mikrobio-voraussichtliche-empfindlichkeit.fsh",
-    "startLine": 1,
-    "endLine": 241
-  },
-  {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-anforderung-genetischer-test.json",
     "fshName": "FDPG_PR_MolGen_AnforderungGenetischerTest",
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-anforderung-genetischer-test.fsh",
     "startLine": 1,
-    "endLine": 72
+    "endLine": 88
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-diagnostische-implikation.json",
@@ -1045,7 +901,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-diagnostische-implikation.fsh",
     "startLine": 1,
-    "endLine": 96
+    "endLine": 112
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-empfohlene-folgemassnahme.json",
@@ -1053,7 +909,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-empfohlene-folgemassnahme.fsh",
     "startLine": 1,
-    "endLine": 54
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-familienanamnese.json",
@@ -1061,7 +917,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-familienanamnese.fsh",
     "startLine": 1,
-    "endLine": 224
+    "endLine": 232
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-genomic-study-analysis.json",
@@ -1077,7 +933,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-genomic-study.fsh",
     "startLine": 1,
-    "endLine": 54
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-genotyp.json",
@@ -1085,7 +941,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-genotyp.fsh",
     "startLine": 1,
-    "endLine": 96
+    "endLine": 116
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-medikationsempfehlung.json",
@@ -1093,7 +949,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-medikationsempfehlung.fsh",
     "startLine": 1,
-    "endLine": 54
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-mikrosatelliteninstabilitaet.json",
@@ -1101,7 +957,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-mikrosatelliteninstabilitaet.fsh",
     "startLine": 1,
-    "endLine": 84
+    "endLine": 104
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-molekulare-konsequenz.json",
@@ -1109,7 +965,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-molekulare-konsequenz.fsh",
     "startLine": 1,
-    "endLine": 90
+    "endLine": 106
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-molekularer-biomarker.json",
@@ -1117,7 +973,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-molekularer-biomarker.fsh",
     "startLine": 1,
-    "endLine": 72
+    "endLine": 88
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-molekulargenetischer-befundbericht.json",
@@ -1125,7 +981,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-molekulargenetischer-befundbericht.fsh",
     "startLine": 1,
-    "endLine": 156
+    "endLine": 170
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-mutationslast.json",
@@ -1133,7 +989,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-mutationslast.fsh",
     "startLine": 1,
-    "endLine": 90
+    "endLine": 112
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-polygener-risiko-score.json",
@@ -1141,7 +997,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-polygener-risiko-score.fsh",
     "startLine": 1,
-    "endLine": 97
+    "endLine": 107
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-therapeutische-implikation.json",
@@ -1149,7 +1005,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-therapeutische-implikation.fsh",
     "startLine": 1,
-    "endLine": 108
+    "endLine": 126
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-molgen-variante.json",
@@ -1157,7 +1013,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/molgen/fdpg-pr-molgen-variante.fsh",
     "startLine": 1,
-    "endLine": 234
+    "endLine": 254
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-antrag-kostenuebernahme.json",
@@ -1165,7 +1021,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-antrag-kostenuebernahme.fsh",
     "startLine": 1,
-    "endLine": 107
+    "endLine": 116
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-antwort-kostenuebernahme.json",
@@ -1173,7 +1029,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-antwort-kostenuebernahme.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 72
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-behandlungsepisode.json",
@@ -1189,7 +1045,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-biomarker-her2-status.fsh",
     "startLine": 1,
-    "endLine": 75
+    "endLine": 91
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-biomarker-in-situ-hybridization.json",
@@ -1197,7 +1053,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-biomarker-in-situ-hybridization.fsh",
     "startLine": 1,
-    "endLine": 106
+    "endLine": 148
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-biopsie-auftrag.json",
@@ -1205,7 +1061,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-biopsie-auftrag.fsh",
     "startLine": 1,
-    "endLine": 33
+    "endLine": 40
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-brcaness.json",
@@ -1213,7 +1069,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-brcaness.fsh",
     "startLine": 1,
-    "endLine": 92
+    "endLine": 133
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-consent-given.json",
@@ -1221,7 +1077,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-consent-given.fsh",
     "startLine": 1,
-    "endLine": 34
+    "endLine": 51
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-copy-number-variant.json",
@@ -1229,7 +1085,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-copy-number-variant.fsh",
     "startLine": 1,
-    "endLine": 309
+    "endLine": 331
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-diagnose-primaertumor.json",
@@ -1237,7 +1093,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-diagnose-primaertumor.fsh",
     "startLine": 1,
-    "endLine": 225
+    "endLine": 233
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-diagnostische-implikation.json",
@@ -1245,7 +1101,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-diagnostische-implikation.fsh",
     "startLine": 1,
-    "endLine": 97
+    "endLine": 113
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-dna-fusion.json",
@@ -1253,7 +1109,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-dna-fusion.fsh",
     "startLine": 1,
-    "endLine": 292
+    "endLine": 314
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-einfache-variante.json",
@@ -1261,7 +1117,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-einfache-variante.fsh",
     "startLine": 1,
-    "endLine": 220
+    "endLine": 242
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-follow-up-clinical-impression.json",
@@ -1269,7 +1125,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-follow-up-clinical-impression.fsh",
     "startLine": 1,
-    "endLine": 63
+    "endLine": 77
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-genomic-study-analysis.json",
@@ -1277,7 +1133,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-genomic-study-analysis.fsh",
     "startLine": 1,
-    "endLine": 82
+    "endLine": 106
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-genomic-study-device.json",
@@ -1285,7 +1141,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-genomic-study-device.fsh",
     "startLine": 1,
-    "endLine": 28
+    "endLine": 32
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-genomic-study.json",
@@ -1293,7 +1149,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-genomic-study.fsh",
     "startLine": 1,
-    "endLine": 33
+    "endLine": 68
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-histologie-evaluation-auftrag.json",
@@ -1301,7 +1157,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-histologie-evaluation-auftrag.fsh",
     "startLine": 1,
-    "endLine": 33
+    "endLine": 40
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-hrd-score.json",
@@ -1309,7 +1165,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-hrd-score.fsh",
     "startLine": 1,
-    "endLine": 111
+    "endLine": 144
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-humangenetische-beratung-auftrag.json",
@@ -1317,7 +1173,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-humangenetische-beratung-auftrag.fsh",
     "startLine": 1,
-    "endLine": 24
+    "endLine": 36
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-immunohistochemistry-her2.json",
@@ -1325,7 +1181,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-immunohistochemistry-her2.fsh",
     "startLine": 1,
-    "endLine": 100
+    "endLine": 138
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-immunohistochemistry-mmr.json",
@@ -1333,7 +1189,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-immunohistochemistry-mmr.fsh",
     "startLine": 1,
-    "endLine": 126
+    "endLine": 159
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-immunohistochemistry-msi.json",
@@ -1341,7 +1197,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-immunohistochemistry-msi.fsh",
     "startLine": 1,
-    "endLine": 96
+    "endLine": 128
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-immunohistochemistry-pdl1.json",
@@ -1349,7 +1205,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-immunohistochemistry-pdl1.fsh",
     "startLine": 1,
-    "endLine": 136
+    "endLine": 177
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-immunohistochemistry-phosphorylation.json",
@@ -1357,7 +1213,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-immunohistochemistry-phosphorylation.fsh",
     "startLine": 1,
-    "endLine": 122
+    "endLine": 160
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-immunohistochemistry.json",
@@ -1365,7 +1221,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-immunohistochemistry.fsh",
     "startLine": 1,
-    "endLine": 99
+    "endLine": 137
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-insituhybridization-her2.json",
@@ -1373,7 +1229,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-insituhybridization-her2.fsh",
     "startLine": 1,
-    "endLine": 121
+    "endLine": 164
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-mikrosatelliteninstabilitaet.json",
@@ -1381,7 +1237,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-mikrosatelliteninstabilitaet.fsh",
     "startLine": 1,
-    "endLine": 93
+    "endLine": 131
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-molecular-pathology-report.json",
@@ -1389,7 +1245,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-molecular-pathology-report.fsh",
     "startLine": 1,
-    "endLine": 49
+    "endLine": 60
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-molekularer-biomarker.json",
@@ -1397,7 +1253,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-molekularer-biomarker.fsh",
     "startLine": 1,
-    "endLine": 75
+    "endLine": 91
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-mutationslast.json",
@@ -1405,7 +1261,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-mutationslast.fsh",
     "startLine": 1,
-    "endLine": 87
+    "endLine": 123
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-ngs-bericht.json",
@@ -1413,7 +1269,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-ngs-bericht.fsh",
     "startLine": 1,
-    "endLine": 99
+    "endLine": 111
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-oncotree.json",
@@ -1421,7 +1277,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-oncotree.fsh",
     "startLine": 1,
-    "endLine": 29
+    "endLine": 46
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-ploidie.json",
@@ -1429,7 +1285,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-ploidie.fsh",
     "startLine": 1,
-    "endLine": 82
+    "endLine": 116
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-response-befund.json",
@@ -1437,7 +1293,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-response-befund.fsh",
     "startLine": 1,
-    "endLine": 84
+    "endLine": 133
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-rna-fusion.json",
@@ -1445,7 +1301,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-rna-fusion.fsh",
     "startLine": 1,
-    "endLine": 313
+    "endLine": 337
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-rna-seq.json",
@@ -1453,7 +1309,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-rna-seq.fsh",
     "startLine": 1,
-    "endLine": 259
+    "endLine": 279
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-studie.json",
@@ -1461,7 +1317,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-studie.fsh",
     "startLine": 1,
-    "endLine": 88
+    "endLine": 112
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-studieneinschluss-anfrage.json",
@@ -1469,7 +1325,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-studieneinschluss-anfrage.fsh",
     "startLine": 1,
-    "endLine": 46
+    "endLine": 59
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-systemische-therapie-medication-statement.json",
@@ -1477,7 +1333,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-systemische-therapie-medication-statement.fsh",
     "startLine": 1,
-    "endLine": 463
+    "endLine": 468
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-systemische-therapie.json",
@@ -1485,7 +1341,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-systemische-therapie.fsh",
     "startLine": 1,
-    "endLine": 173
+    "endLine": 199
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-systemische-vortherapie.json",
@@ -1493,7 +1349,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-systemische-vortherapie.fsh",
     "startLine": 1,
-    "endLine": 184
+    "endLine": 208
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-therapeutische-implikation.json",
@@ -1501,7 +1357,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-therapeutische-implikation.fsh",
     "startLine": 1,
-    "endLine": 114
+    "endLine": 132
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-therapieempfehlung-kombination.json",
@@ -1509,7 +1365,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-therapieempfehlung-kombination.fsh",
     "startLine": 1,
-    "endLine": 63
+    "endLine": 91
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-therapieempfehlung.json",
@@ -1517,7 +1373,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-therapieempfehlung.fsh",
     "startLine": 1,
-    "endLine": 419
+    "endLine": 432
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-therapieplan.json",
@@ -1525,7 +1381,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-therapieplan.fsh",
     "startLine": 1,
-    "endLine": 125
+    "endLine": 146
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-tumorausbreitung.json",
@@ -1533,7 +1389,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-tumorausbreitung.fsh",
     "startLine": 1,
-    "endLine": 44
+    "endLine": 71
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-tumorzellgehalt.json",
@@ -1541,7 +1397,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-tumorzellgehalt.fsh",
     "startLine": 1,
-    "endLine": 21
+    "endLine": 31
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-mtb-who-grad-tumor-zns.json",
@@ -1549,7 +1405,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/mtb/fdpg-pr-mtb-who-grad-tumor-zns.fsh",
     "startLine": 1,
-    "endLine": 35
+    "endLine": 52
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-allgemeiner-leistungszustand-ecog.json",
@@ -1557,7 +1413,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-allgemeiner-leistungszustand-ecog.fsh",
     "startLine": 1,
-    "endLine": 35
+    "endLine": 55
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-allgemeiner-leistungszustand-karnofsky.json",
@@ -1565,7 +1421,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-allgemeiner-leistungszustand-karnofsky.fsh",
     "startLine": 1,
-    "endLine": 35
+    "endLine": 55
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-anzahl-befallene-lymphknoten.json",
@@ -1573,7 +1429,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-anzahl-befallene-lymphknoten.fsh",
     "startLine": 1,
-    "endLine": 51
+    "endLine": 78
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-anzahl-befallene-sentinel-lymphknoten.json",
@@ -1581,7 +1437,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-anzahl-befallene-sentinel-lymphknoten.fsh",
     "startLine": 1,
-    "endLine": 51
+    "endLine": 78
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-anzahl-untersuchte-lymphknoten.json",
@@ -1589,7 +1445,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-anzahl-untersuchte-lymphknoten.fsh",
     "startLine": 1,
-    "endLine": 51
+    "endLine": 78
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-anzahl-untersuchte-sentinel-lymphknoten.json",
@@ -1597,7 +1453,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-anzahl-untersuchte-sentinel-lymphknoten.fsh",
     "startLine": 1,
-    "endLine": 51
+    "endLine": 81
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-asa-klassifikation.json",
@@ -1605,7 +1461,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-asa-klassifikation.fsh",
     "startLine": 1,
-    "endLine": 36
+    "endLine": 58
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-befund.json",
@@ -1613,7 +1469,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-befund.fsh",
     "startLine": 1,
-    "endLine": 37
+    "endLine": 64
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-diagnose-primaertumor.json",
@@ -1621,7 +1477,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-diagnose-primaertumor.fsh",
     "startLine": 1,
-    "endLine": 182
+    "endLine": 190
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-fernmetastasen.json",
@@ -1629,7 +1485,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-fernmetastasen.fsh",
     "startLine": 1,
-    "endLine": 41
+    "endLine": 63
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-fruehere-tumorerkrankung.json",
@@ -1637,7 +1493,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-fruehere-tumorerkrankung.fsh",
     "startLine": 1,
-    "endLine": 60
+    "endLine": 108
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-genetische-variante.json",
@@ -1645,7 +1501,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-genetische-variante.fsh",
     "startLine": 1,
-    "endLine": 254
+    "endLine": 294
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-grading.json",
@@ -1653,7 +1509,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-grading.fsh",
     "startLine": 1,
-    "endLine": 40
+    "endLine": 70
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-histologie-icdo3.json",
@@ -1661,7 +1517,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-histologie-icdo3.fsh",
     "startLine": 1,
-    "endLine": 51
+    "endLine": 78
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-krk-abstand-aboral.json",
@@ -1669,7 +1525,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-krk-abstand-aboral.fsh",
     "startLine": 1,
-    "endLine": 47
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-krk-abstand-anokutan.json",
@@ -1677,7 +1533,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-krk-abstand-anokutan.fsh",
     "startLine": 1,
-    "endLine": 47
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-krk-abstand-circumferelle-resektionsebene.json",
@@ -1685,7 +1541,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-krk-abstand-circumferelle-resektionsebene.fsh",
     "startLine": 1,
-    "endLine": 47
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-krk-anastomoseninsuffizienz.json",
@@ -1693,7 +1549,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-krk-anastomoseninsuffizienz.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 58
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-krk-mrt-mesorektale-faszie.json",
@@ -1701,7 +1557,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-krk-mrt-mesorektale-faszie.fsh",
     "startLine": 1,
-    "endLine": 56
+    "endLine": 82
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-krk-operation.json",
@@ -1709,7 +1565,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-krk-operation.fsh",
     "startLine": 1,
-    "endLine": 158
+    "endLine": 182
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-krk-specimen.json",
@@ -1717,7 +1573,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-krk-specimen.fsh",
     "startLine": 1,
-    "endLine": 35
+    "endLine": 40
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-krk-stoma-markierung.json",
@@ -1725,7 +1581,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-krk-stoma-markierung.fsh",
     "startLine": 1,
-    "endLine": 136
+    "endLine": 150
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-liste-evidenz-erstdiagnose.json",
@@ -1733,7 +1589,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-liste-evidenz-erstdiagnose.fsh",
     "startLine": 1,
-    "endLine": 34
+    "endLine": 49
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-mamma-her2neu-status.json",
@@ -1741,7 +1597,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-mamma-her2neu-status.fsh",
     "startLine": 1,
-    "endLine": 44
+    "endLine": 69
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-mamma-menopausenstatus.json",
@@ -1749,7 +1605,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-mamma-menopausenstatus.fsh",
     "startLine": 1,
-    "endLine": 29
+    "endLine": 49
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-mamma-operation.json",
@@ -1757,7 +1613,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-mamma-operation.fsh",
     "startLine": 1,
-    "endLine": 170
+    "endLine": 194
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-mamma-praeoperative-markierung.json",
@@ -1765,7 +1621,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-mamma-praeoperative-markierung.fsh",
     "startLine": 1,
-    "endLine": 30
+    "endLine": 55
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-mamma-rezeptorstatus-estrogen.json",
@@ -1773,7 +1629,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-mamma-rezeptorstatus-estrogen.fsh",
     "startLine": 1,
-    "endLine": 48
+    "endLine": 73
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-mamma-rezeptorstatus-progesteron.json",
@@ -1781,7 +1637,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-mamma-rezeptorstatus-progesteron.fsh",
     "startLine": 1,
-    "endLine": 46
+    "endLine": 71
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-mamma-sozialdienst.json",
@@ -1789,7 +1645,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-mamma-sozialdienst.fsh",
     "startLine": 1,
-    "endLine": 161
+    "endLine": 185
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-melanom-breslow-tiefe.json",
@@ -1797,7 +1653,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-melanom-breslow-tiefe.fsh",
     "startLine": 1,
-    "endLine": 54
+    "endLine": 83
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-melanom-exzision.json",
@@ -1805,7 +1661,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-melanom-exzision.fsh",
     "startLine": 1,
-    "endLine": 155
+    "endLine": 179
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-melanom-ldh.json",
@@ -1813,7 +1669,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-melanom-ldh.fsh",
     "startLine": 1,
-    "endLine": 57
+    "endLine": 91
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-melanom-sicherheitsabstand.json",
@@ -1821,7 +1677,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-melanom-sicherheitsabstand.fsh",
     "startLine": 1,
-    "endLine": 51
+    "endLine": 75
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-melanom-ulzeration.json",
@@ -1829,7 +1685,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-melanom-ulzeration.fsh",
     "startLine": 1,
-    "endLine": 46
+    "endLine": 75
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-nebenwirkung-adverse-event.json",
@@ -1837,7 +1693,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-nebenwirkung-adverse-event.fsh",
     "startLine": 1,
-    "endLine": 45
+    "endLine": 55
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-operation.json",
@@ -1845,7 +1701,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-operation.fsh",
     "startLine": 1,
-    "endLine": 155
+    "endLine": 179
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-prostata-anzahl-positive-stanzen.json",
@@ -1853,7 +1709,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-prostata-anzahl-positive-stanzen.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 58
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-prostata-anzahl-stanzen.json",
@@ -1861,7 +1717,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-prostata-anzahl-stanzen.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 58
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-prostata-ca-befall-stanze.json",
@@ -1869,7 +1725,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-prostata-ca-befall-stanze.fsh",
     "startLine": 1,
-    "endLine": 35
+    "endLine": 57
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-prostata-clavien-dindo.json",
@@ -1877,7 +1733,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-prostata-clavien-dindo.fsh",
     "startLine": 1,
-    "endLine": 42
+    "endLine": 67
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-prostata-gleason-grade-group.json",
@@ -1885,7 +1741,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-prostata-gleason-grade-group.fsh",
     "startLine": 1,
-    "endLine": 36
+    "endLine": 58
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-prostata-gleason-pattern.json",
@@ -1893,7 +1749,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-prostata-gleason-pattern.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-prostata-operation.json",
@@ -1901,7 +1757,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-prostata-operation.fsh",
     "startLine": 1,
-    "endLine": 155
+    "endLine": 179
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-prostata-psa.json",
@@ -1909,7 +1765,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-prostata-psa.fsh",
     "startLine": 1,
-    "endLine": 32
+    "endLine": 49
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-residualstatus.json",
@@ -1917,7 +1773,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-residualstatus.fsh",
     "startLine": 1,
-    "endLine": 33
+    "endLine": 58
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-specimen.json",
@@ -1925,7 +1781,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-specimen.fsh",
     "startLine": 1,
-    "endLine": 33
+    "endLine": 38
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin.json",
@@ -1933,7 +1789,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-strahlentherapie-bestrahlung-nuklearmedizin.fsh",
     "startLine": 1,
-    "endLine": 177
+    "endLine": 201
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-strahlentherapie-bestrahlung-strahlentherapie.json",
@@ -1941,7 +1797,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-strahlentherapie-bestrahlung-strahlentherapie.fsh",
     "startLine": 1,
-    "endLine": 177
+    "endLine": 201
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-strahlentherapie.json",
@@ -1949,7 +1805,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-strahlentherapie.fsh",
     "startLine": 1,
-    "endLine": 165
+    "endLine": 189
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-studienteilnahme.json",
@@ -1957,7 +1813,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-studienteilnahme.fsh",
     "startLine": 1,
-    "endLine": 42
+    "endLine": 64
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-systemische-therapie-medikation.json",
@@ -1965,7 +1821,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-systemische-therapie-medikation.fsh",
     "startLine": 1,
-    "endLine": 458
+    "endLine": 463
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-systemische-therapie.json",
@@ -1973,7 +1829,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-systemische-therapie.fsh",
     "startLine": 1,
-    "endLine": 163
+    "endLine": 187
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-therapieempfehlung-kombinationstherapie.json",
@@ -1981,7 +1837,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-therapieempfehlung-kombinationstherapie.fsh",
     "startLine": 1,
-    "endLine": 48
+    "endLine": 83
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-therapieempfehlung-medikation.json",
@@ -1989,7 +1845,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-therapieempfehlung-medikation.fsh",
     "startLine": 1,
-    "endLine": 417
+    "endLine": 422
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-therapieempfehlung-operation.json",
@@ -1997,7 +1853,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-therapieempfehlung-operation.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 74
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-a-symbol.json",
@@ -2005,7 +1861,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-a-symbol.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-klassifikation.json",
@@ -2013,7 +1869,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-klassifikation.fsh",
     "startLine": 1,
-    "endLine": 48
+    "endLine": 85
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-l-kategorie.json",
@@ -2021,7 +1877,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-l-kategorie.fsh",
     "startLine": 1,
-    "endLine": 42
+    "endLine": 74
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-m-kategorie.json",
@@ -2029,7 +1885,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-m-kategorie.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 96
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-m-symbol.json",
@@ -2037,7 +1893,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-m-symbol.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-n-kategorie.json",
@@ -2045,7 +1901,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-n-kategorie.fsh",
     "startLine": 1,
-    "endLine": 59
+    "endLine": 91
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-pn-kategorie.json",
@@ -2053,7 +1909,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-pn-kategorie.fsh",
     "startLine": 1,
-    "endLine": 47
+    "endLine": 79
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-r-symbol.json",
@@ -2061,7 +1917,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-r-symbol.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-s-kategorie.json",
@@ -2069,7 +1925,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-s-kategorie.fsh",
     "startLine": 1,
-    "endLine": 42
+    "endLine": 74
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-t-kategorie.json",
@@ -2077,7 +1933,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-t-kategorie.fsh",
     "startLine": 1,
-    "endLine": 50
+    "endLine": 82
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-v-kategorie.json",
@@ -2085,7 +1941,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-v-kategorie.fsh",
     "startLine": 1,
-    "endLine": 42
+    "endLine": 74
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tnm-y-symbol.json",
@@ -2093,7 +1949,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tnm-y-symbol.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 66
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tod.json",
@@ -2101,7 +1957,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tod.fsh",
     "startLine": 1,
-    "endLine": 40
+    "endLine": 67
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tumorgroesse.json",
@@ -2109,7 +1965,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tumorgroesse.fsh",
     "startLine": 1,
-    "endLine": 51
+    "endLine": 83
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-tumorkonferenz.json",
@@ -2117,7 +1973,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-tumorkonferenz.fsh",
     "startLine": 1,
-    "endLine": 65
+    "endLine": 90
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-verlauf.json",
@@ -2125,7 +1981,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-verlauf.fsh",
     "startLine": 1,
-    "endLine": 54
+    "endLine": 89
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-onko-weitere-klassifikationen.json",
@@ -2133,7 +1989,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/onkologie/fdpg-pr-onko-weitere-klassifikationen.fsh",
     "startLine": 1,
-    "endLine": 53
+    "endLine": 79
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-active-problems-list.json",
@@ -2141,7 +1997,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-active-problems-list.fsh",
     "startLine": 1,
-    "endLine": 27
+    "endLine": 42
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-additional-specified-grouper.json",
@@ -2149,7 +2005,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-additional-specified-grouper.fsh",
     "startLine": 1,
-    "endLine": 79
+    "endLine": 134
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-attached-image.json",
@@ -2173,7 +2029,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-composition.fsh",
     "startLine": 1,
-    "endLine": 190
+    "endLine": 215
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-diagnostic-conclusion-grouper.json",
@@ -2181,7 +2037,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-diagnostic-conclusion-grouper.fsh",
     "startLine": 1,
-    "endLine": 103
+    "endLine": 158
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-finding.json",
@@ -2197,7 +2053,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-history-of-present-illness.fsh",
     "startLine": 1,
-    "endLine": 27
+    "endLine": 42
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-intraoperative-grouper.json",
@@ -2205,7 +2061,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-intraoperative-grouper.fsh",
     "startLine": 1,
-    "endLine": 79
+    "endLine": 134
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-macroscopic-grouper.json",
@@ -2213,7 +2069,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-macroscopic-grouper.fsh",
     "startLine": 1,
-    "endLine": 79
+    "endLine": 134
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-microscopic-grouper.json",
@@ -2221,7 +2077,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-microscopic-grouper.fsh",
     "startLine": 1,
-    "endLine": 79
+    "endLine": 134
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-problem-list-item.json",
@@ -2229,7 +2085,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-problem-list-item.fsh",
     "startLine": 1,
-    "endLine": 23
+    "endLine": 37
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-report.json",
@@ -2237,7 +2093,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/patho/fdpg-pr-patho-report.fsh",
     "startLine": 1,
-    "endLine": 213
+    "endLine": 218
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-patho-service-request.json",
@@ -2277,7 +2133,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/basis/fdpg-pr-person-todesursache.fsh",
     "startLine": 1,
-    "endLine": 81
+    "endLine": 85
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-person-vitalstatus.json",
@@ -2285,7 +2141,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/basis/fdpg-pr-person-vitalstatus.fsh",
     "startLine": 1,
-    "endLine": 83
+    "endLine": 88
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-pro-depression-t-score.json",
@@ -2453,7 +2309,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/basis/fdpg-pr-prozedur-procedure.fsh",
     "startLine": 1,
-    "endLine": 131
+    "endLine": 140
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-seltene-blutgruppe.json",
@@ -2597,7 +2453,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/studie/fdpg-pr-studie-beteiligte-person.fsh",
     "startLine": 1,
-    "endLine": 24
+    "endLine": 29
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-studie-dokument.json",
@@ -2605,7 +2461,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/studie/fdpg-pr-studie-dokument.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 44
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-studie-ein-auschluss-kriterium.json",
@@ -2613,7 +2469,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/studie/fdpg-pr-studie-ein-auschluss-kriterium.fsh",
     "startLine": 1,
-    "endLine": 29
+    "endLine": 34
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-studie-proband.json",
@@ -2621,7 +2477,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/studie/fdpg-pr-studie-proband.fsh",
     "startLine": 1,
-    "endLine": 39
+    "endLine": 49
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-studie-register.json",
@@ -2629,7 +2485,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/studie/fdpg-pr-studie-register.fsh",
     "startLine": 1,
-    "endLine": 32
+    "endLine": 42
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-studie-studie.json",
@@ -2637,7 +2493,7 @@
     "fshType": "Profile",
     "fshFile": "obligations/studie/fdpg-pr-studie-studie.fsh",
     "startLine": 1,
-    "endLine": 67
+    "endLine": 91
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-studie-studieneinschluss-anfrage.json",
@@ -2645,6 +2501,6 @@
     "fshType": "Profile",
     "fshFile": "obligations/studie/fdpg-pr-studie-studieneinschluss-anfrage.fsh",
     "startLine": 1,
-    "endLine": 36
+    "endLine": 61
   }
 ]

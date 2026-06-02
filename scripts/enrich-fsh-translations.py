@@ -88,6 +88,44 @@ MODULES = {
 FHIR_CACHE = Path.home() / ".fhir" / "packages"
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 OBLIGATIONS_DIR = PROJECT_ROOT / "input" / "fsh" / "obligations"
+CANONICAL_LABELS_PATH = PROJECT_ROOT / "input" / "data" / "canonical-labels.json"
+
+
+def load_canonical_labels():
+    """Load FDPG canonical labels. Per styleguide §5, canonical is priority 1
+    and overrides upstream MII designations for any element it covers."""
+    if not CANONICAL_LABELS_PATH.exists():
+        print(f"  WARNING: canonical-labels.json not found at {CANONICAL_LABELS_PATH}")
+        return {}
+    with open(CANONICAL_LABELS_PATH, encoding="utf-8") as f:
+        return json.load(f).get("elements", {})
+
+
+def canonical_key_for_element(el_id, resource_type):
+    """Map a FHIR element ID to a canonical-labels.json key.
+
+    Element IDs are 'ResourceType.path[.slice]'; canonical keys drop the
+    leading resource type. Example: 'Condition.code.coding:icd-10-gm'
+    -> 'code.coding:icd-10-gm'.
+    """
+    parts = el_id.split(".", 1)
+    if len(parts) <= 1:
+        return None
+    return parts[1]
+
+
+def canonical_lookup(canonical_map, el_id, resource_type):
+    """Lookup canonical entry for an element. Exact path match only.
+
+    No slice-strip fallback: 'extension:Dokumentationsdatum' must NOT inherit
+    the generic 'extension' canonical entry — extensions are semantically
+    specific per slice. Coding-slice harmonisation (styleguide §8) is handled
+    separately via the coding_systems table, not via this lookup.
+    """
+    key = canonical_key_for_element(el_id, resource_type)
+    if not key:
+        return None
+    return canonical_map.get(key)
 
 
 def extract_translations(ext_obj):
@@ -181,17 +219,23 @@ def load_parent_sd(package_name, version, parent_name):
     return None
 
 
-def get_ms_elements_with_translations(sd):
-    """Extract MustSupport elements with their translations from snapshot."""
+def get_ms_elements_with_translations(sd, canonical_map=None):
+    """Extract MustSupport elements with their translations from snapshot.
+
+    Canonical labels fill the Translation-extension gap for elements that
+    upstream did not translate. The ^short / ^definition base text is left
+    as upstream provided it (we can't reliably distinguish FHIR-base-default
+    inheritance from intermediate-profile customisation, so we don't touch).
+    """
+    canonical_map = canonical_map or {}
     elements = []
-    resource_type = sd.get("type", "")
 
     for el in sd.get("snapshot", {}).get("element", []):
         if not el.get("mustSupport"):
             continue
 
         el_id = el.get("id", "")
-        fsh_path = element_id_to_fsh_path(el_id, resource_type)
+        fsh_path = element_id_to_fsh_path(el_id, sd.get("type", ""))
         if not fsh_path:
             continue
 
@@ -200,14 +244,15 @@ def get_ms_elements_with_translations(sd):
         short_trans = extract_translations(el.get("_short"))
         def_trans = extract_translations(el.get("_definition"))
 
-        # Only include elements that have at least a German short or definition
-        # that differs from FHIR base defaults
+        canonical = canonical_lookup(canonical_map, el_id, sd.get("type", ""))
+
+        has_canonical = canonical and (canonical.get("de_short") or canonical.get("de_def"))
         has_german_short = short_trans.get("de-DE") or (
             short_val and not _is_fhir_default(short_val)
         )
         has_german_def = def_trans.get("de-DE")
 
-        if has_german_short or has_german_def:
+        if has_canonical or has_german_short or has_german_def:
             elements.append({
                 "id": el_id,
                 "fsh_path": fsh_path,
@@ -215,6 +260,7 @@ def get_ms_elements_with_translations(sd):
                 "definition": definition_val,
                 "short_trans": short_trans,
                 "def_trans": def_trans,
+                "canonical": canonical,
             })
 
     return elements
@@ -318,23 +364,33 @@ def generate_enriched_fsh(fsh_info, parent_sd, ms_elements, title_overrides=None
         definition = el["definition"]
         short_trans = el["short_trans"]
         def_trans = el["def_trans"]
+        canonical = el.get("canonical") or {}
 
         lines.append(f"// {el['id']}")
 
-        # ^short
+        # Canonical labels are a FALLBACK for Translation extensions only.
+        # The ^short / ^definition base text comes from upstream verbatim —
+        # we can't reliably tell whether upstream's text is FHIR-base-default
+        # noise or an intermediate-profile customisation, so leave it alone.
+        de_short = short_trans.get("de-DE") or canonical.get("de_short")
+        en_short = short_trans.get("en-US") or canonical.get("en_short")
+        de_def = def_trans.get("de-DE") or canonical.get("de_def")
+        en_def = def_trans.get("en-US") or canonical.get("en_def")
+
+        # ^short — upstream base text, canonical only fills missing translations.
         if short and not _is_fhir_default(short):
             lines.append(f'* {fsh_path} ^short = "{escape_fsh_string(short)}"')
-            if "de-DE" in short_trans:
-                lines.append(f"* insert Translation({fsh_path} ^short, de-DE, {escape_fsh_commas(short_trans['de-DE'])})")
-            if "en-US" in short_trans:
-                lines.append(f"* insert Translation({fsh_path} ^short, en-US, {escape_fsh_commas(short_trans['en-US'])})")
+            if de_short:
+                lines.append(f"* insert Translation({fsh_path} ^short, de-DE, {escape_fsh_commas(de_short)})")
+            if en_short:
+                lines.append(f"* insert Translation({fsh_path} ^short, en-US, {escape_fsh_commas(en_short)})")
 
-        # ^definition
-        if def_trans.get("de-DE") and definition:
+        # ^definition — same logic, but only emit when at least DE is known.
+        if de_def and definition:
             lines.append(f'* {fsh_path} ^definition = "{escape_fsh_string(definition)}"')
-            lines.append(f"* insert Translation({fsh_path} ^definition, de-DE, {escape_fsh_commas(def_trans['de-DE'])})")
-            if "en-US" in def_trans:
-                lines.append(f"* insert Translation({fsh_path} ^definition, en-US, {escape_fsh_commas(def_trans['en-US'])})")
+            lines.append(f"* insert Translation({fsh_path} ^definition, de-DE, {escape_fsh_commas(de_def)})")
+            if en_def:
+                lines.append(f"* insert Translation({fsh_path} ^definition, en-US, {escape_fsh_commas(en_def)})")
 
     lines.append("")  # trailing newline
     return "\n".join(lines)
@@ -355,6 +411,9 @@ def process_module(module_name):
 
     print(f"\n=== Processing module: {module_name} ===")
     print(f"  Package: {module_config['package']}#{module_config['version']}")
+
+    canonical_map = load_canonical_labels()
+    print(f"  Loaded {len(canonical_map)} canonical labels")
 
     # Load all parent SDs from package
     pkg_dir = FHIR_CACHE / f"{module_config['package']}#{module_config['version']}" / "package"
@@ -405,7 +464,7 @@ def process_module(module_name):
             continue
 
         parent_sd = parent_sds[parent_name]
-        ms_elements = get_ms_elements_with_translations(parent_sd)
+        ms_elements = get_ms_elements_with_translations(parent_sd, canonical_map)
 
         try:
             new_content = generate_enriched_fsh(fsh_info, parent_sd, ms_elements, title_overrides, module_key=module_name)

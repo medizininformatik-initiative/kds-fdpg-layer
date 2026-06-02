@@ -10,6 +10,11 @@ Description: "FDPG Profil - MII_PR_Studie_EinAuschlussKriterium"
 // --- Element Designations ---
 // EvidenceVariable.status
 * status ^short = "Status"
+* insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, en-US, Status)
+* status ^definition = "Der Status dieser EvidenceVariable. Ermöglicht die Verfolgung des Lebenszyklus des Inhalts."
+* insert Translation(status ^definition, de-DE, Status der Ressource.)
+* insert Translation(status ^definition, en-US, Status of the resource.)
 // EvidenceVariable.characteristic
 * characteristic ^short = "Characteristic"
 // EvidenceVariable.characteristic.description

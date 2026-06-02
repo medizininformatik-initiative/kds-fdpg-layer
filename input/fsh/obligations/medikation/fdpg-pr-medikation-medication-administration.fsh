@@ -77,6 +77,11 @@ Description: "FDPG Profil - MII_PR_Medikation_MedicationAdministration"
 * insert Translation(medication[x][medicationCodeableConcept].coding[UNII] ^definition, en-US, A Unique Ingredient Identifier (UNII\) from the american Food & Drug Administration's Global Substance Registration System)
 // MedicationAdministration.subject
 * subject ^short = "Who received medication"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "The person or animal or group receiving the medication."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // MedicationAdministration.context
 * context ^short = "Kontext"
 * insert Translation(context ^short, de-DE, Kontext)

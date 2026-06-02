@@ -8,6 +8,10 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Stoma_Markierung"
 * insert Translation(^title, de-DE, KRK Stoma-Markierung)
 * insert Translation(^title, en-US, Colorectal Stoma Marking)
 // --- Element Designations ---
+// Procedure.extension
+* extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+* insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
+* insert Translation(extension ^definition, en-US, FHIR extension.)
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"
 * insert Translation(extension[Dokumentationsdatum] ^short, de-DE, Dokumentationsdatum)
@@ -74,6 +78,11 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Stoma_Markierung"
 * insert Translation(code.coding[sct] ^definition, en-US, A reference to a code defined by SNOMED CT)
 // Procedure.subject
 * subject ^short = "Who the procedure was performed on"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "The person, animal or group on which the procedure was performed."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // Procedure.encounter
 * encounter ^short = "Kontakt (Aufenthaltsbezug)"
 * insert Translation(encounter ^short, de-DE, Kontakt)
@@ -93,6 +102,11 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Stoma_Markierung"
 * insert Translation(performed[x][performedDateTime] ^short, de-DE, Datum der Stoma-Markierung)
 // Procedure.reasonReference
 * reasonReference ^short = "The justification that the procedure was performed"
+* insert Translation(reasonReference ^short, de-DE, Begründung (Verweis\))
+* insert Translation(reasonReference ^short, en-US, Reason (reference\))
+* reasonReference ^definition = "The justification of why the procedure was performed."
+* insert Translation(reasonReference ^definition, de-DE, Verweis auf eine Ressource\, die die Begründung enthält.)
+* insert Translation(reasonReference ^definition, en-US, Reference to a resource containing the reason.)
 // Procedure.bodySite
 * bodySite ^short = "Körperstelle"
 * insert Translation(bodySite ^short, de-DE, Körperstelle)

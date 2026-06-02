@@ -17,6 +17,11 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Specimen"
 * insert Translation(accessionIdentifier.value ^definition, de-DE, Histologie-Einsendenummer nach 6.2 oBDS 2021)
 // Specimen.subject
 * subject ^short = "Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // Specimen.collection
 * collection ^short = "Collection details"
 // Specimen.collection.collected[x]:collectedDateTime

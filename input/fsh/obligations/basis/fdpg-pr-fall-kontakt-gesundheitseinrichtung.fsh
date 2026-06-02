@@ -114,6 +114,11 @@ Description: "FDPG Profil - MII_PR_Fall_KontaktGesundheitseinrichtung"
 * insert Translation(serviceType.coding[ErweiterterFachabteilungsschluessel] ^definition, en-US, Departments according to appendix 1 of the Bundespflegesatzverordnung)
 // Encounter.subject
 * subject ^short = "Patientenidentifikator"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "VERPFLICHTEND, Referenz auf Patient:in."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // Encounter.period
 * period ^short = "Zeitraum des Kontaktes"
 * insert Translation(period ^short, de-DE, Zeitraum des Kontaktes)

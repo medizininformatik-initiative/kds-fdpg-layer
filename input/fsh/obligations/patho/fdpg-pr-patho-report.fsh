@@ -21,6 +21,11 @@ Description: "FDPG Profil - MII_PR_Patho_Report"
 * insert Translation(extension[related-report] ^definition, en-US, Reference to related reports)
 // DiagnosticReport.identifier
 * identifier ^short = "Business identifier for report"
+* insert Translation(identifier ^short, de-DE, Identifikator)
+* insert Translation(identifier ^short, en-US, Identifier)
+* identifier ^definition = "Identifiers assigned to this report by the performer or other systems."
+* insert Translation(identifier ^definition, de-DE, Identifikator dieser Ressource.)
+* insert Translation(identifier ^definition, en-US, Identifier for this resource.)
 // DiagnosticReport.identifier:Set-ID
 * identifier[Set-ID] ^short = "Set-ID"
 * insert Translation(identifier[Set-ID] ^short, de-DE, Set-ID)

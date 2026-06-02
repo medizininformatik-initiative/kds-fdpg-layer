@@ -8,6 +8,10 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 * insert Translation(^title, de-DE, Onkologische Diagnose Primärtumor)
 * insert Translation(^title, en-US, Oncology Diagnosis Primary Tumor)
 // --- Element Designations ---
+// Condition.extension
+* extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+* insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
+* insert Translation(extension ^definition, en-US, FHIR extension.)
 // Condition.extension:ReferenzPrimaerdiagnose
 * extension[ReferenzPrimaerdiagnose] ^short = "Conditions associated with this condition"
 // Condition.extension:Feststellungsdatum
@@ -112,6 +116,10 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 * insert Translation(bodySite.coding[icd-o-3] ^short, de-DE, ICD-O-Topographie)
 * bodySite.coding[icd-o-3] ^definition = "Topographie des Primärtumors nach ICD-O-3 nach 5.4 oBDS 2021"
 * insert Translation(bodySite.coding[icd-o-3] ^definition, de-DE, Topographie des Primärtumors nach ICD-O-3 nach 5.4 oBDS 2021)
+// Condition.subject
+* subject ^definition = "Indicates the patient or group who the condition record is associated with."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // Condition.encounter
 * encounter ^short = "Kontakt (Aufenthaltsbezug)"
 * insert Translation(encounter ^short, de-DE, Kontakt)

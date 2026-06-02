@@ -14,6 +14,11 @@ Description: "FDPG Profil - MII_PR_Studie_Beteiligte_Person"
 * organization ^short = "Organisation, in der die Rollen verfügbar sind."
 // PractitionerRole.code
 * code ^short = "Rollen, die dieser Praktiker ausüben kann."
+* insert Translation(code ^short, de-DE, Code)
+* insert Translation(code ^short, en-US, Code)
+* code ^definition = "Rollen, die dieser Praktiker für die Organisation ausüben darf."
+* insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
+* insert Translation(code ^definition, en-US, Coding of the content.)
 // PractitionerRole.telecom
 * telecom ^short = "Kontaktdaten, die spezifisch für die Rolle/den Standort/die Dienstleistung sind."
 

@@ -11,20 +11,31 @@ Description: "FDPG Profil - MII_PR_MTB_Molecular_Pathology_Report"
 // DiagnosticReport.code
 * code ^short = "Molekular-Pathologie-Befund"
 * insert Translation(code ^short, de-DE, Molekular-Pathologie-Befund)
+* insert Translation(code ^short, en-US, Code)
 * code ^definition = "Molekular-Pathologie-Befund, der im Kontext des Molekularen Tumorboards erstellt wurde."
 * insert Translation(code ^definition, de-DE, Molekular-Pathologie-Befund der im Kontext des Molekularen Tumorboards erstellt wurde.)
+* insert Translation(code ^definition, en-US, Coding of the content.)
 // DiagnosticReport.subject
 * subject ^short = "The subject of the report - usually, but not always, the patient"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "The subject of the report. Usually, but not always, this is a patient. However, diagnostic services also perform analyses on specimens collected from a variety of other sources."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // DiagnosticReport.issued
 * issued ^short = "Erstellungsdatum"
 * insert Translation(issued ^short, de-DE, Erstellungsdatum)
+* insert Translation(issued ^short, en-US, Issued)
 * issued ^definition = "Erstellungsdatum des Berichts"
 * insert Translation(issued ^definition, de-DE, Erstellungsdatum des Berichts)
+* insert Translation(issued ^definition, en-US, Date when the resource was issued.)
 // DiagnosticReport.specimen
 * specimen ^short = "Probe"
 * insert Translation(specimen ^short, de-DE, Probe)
+* insert Translation(specimen ^short, en-US, Specimen)
 * specimen ^definition = "Dem Bericht zugrunde liegende Probe"
 * insert Translation(specimen ^definition, de-DE, Dem Bericht zugrunde liegende Probe)
+* insert Translation(specimen ^definition, en-US, Reference to the specimen.)
 // DiagnosticReport.result
 * result ^short = "Ergebnisse"
 * insert Translation(result ^short, de-DE, Ergebnisse)

@@ -23,7 +23,15 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * insert Translation(identifier ^definition, en-US, An identifier for this medication request)
 // MedicationRequest.status
 * status ^short = "active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown"
+* insert Translation(status ^short, de-DE, Status)
 * insert Translation(status ^short, en-US, Status)
+* status ^definition = "Status der Umsetzung der Therapieempfehlung"
+* insert Translation(status ^definition, de-DE, Status der Ressource.)
+* insert Translation(status ^definition, en-US, active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown)
+// MedicationRequest.intent
+* intent ^definition = "Da das MTB nur Empfehlungen abgibt, wird hier typischerweise 'proposal' stehen. Es sei denn,         diese Therapieempfehlung ist Teil einer RequestGroup (z.B. Kombinationstherapie). In dem Fall muss hier 'option' stehen."
+* insert Translation(intent ^definition, de-DE, Absicht der Anforderung: Vorschlag | Plan | Auftrag.)
+* insert Translation(intent ^definition, en-US, proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option)
 // MedicationRequest.medication[x]
 * medication[x] ^short = "Medikation"
 * insert Translation(medication[x] ^short, de-DE, Medikation)
@@ -65,6 +73,11 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * insert Translation(medication[x][medicationCodeableConcept].coding[UNII] ^definition, en-US, A Unique Ingredient Identifier (UNII\) from the american Food & Drug Administration's Global Substance Registration System)
 // MedicationRequest.subject
 * subject ^short = "Who or group medication request is for"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "A link to a resource representing the person or set of individuals to whom the medication will be given."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // MedicationRequest.encounter
 * encounter ^short = "Fall oder Kontakt"
 * insert Translation(encounter ^short, de-DE, Fall / Kontakt)

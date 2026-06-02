@@ -10,6 +10,11 @@ Description: "FDPG Profil - MII_PR_Medikation_Medikationsliste"
 // --- Element Designations ---
 // List.identifier
 * identifier ^short = "Business identifier"
+* insert Translation(identifier ^short, de-DE, Identifikator)
+* insert Translation(identifier ^short, en-US, Identifier)
+* identifier ^definition = "Identifier for the List assigned for business purposes outside the context of FHIR."
+* insert Translation(identifier ^definition, de-DE, Identifikator dieser Ressource.)
+* insert Translation(identifier ^definition, en-US, Identifier for this resource.)
 // List.status
 * status ^short = "Status"
 * insert Translation(status ^short, de-DE, Status)
@@ -47,6 +52,11 @@ Description: "FDPG Profil - MII_PR_Medikation_Medikationsliste"
 * insert Translation(code.coding[contextCode] ^definition, en-US, ambulatory contact | inpatient stay | inpatient admission | inpatient discharge)
 // List.subject
 * subject ^short = "If all resources have the same subject"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "The common subject (or patient) of the resources that are in the list if there is one."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // List.encounter
 * encounter ^short = "Fall oder Kontakt"
 * insert Translation(encounter ^short, de-DE, Fall oder Kontakt)

@@ -41,28 +41,38 @@ Description: "FDPG Profil - MII_PR_MolGen_MolekulargenetischerBefundbericht"
 // DiagnosticReport.status
 * status ^short = "Status"
 * insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, en-US, Status)
 * status ^definition = "Status des Befundberichts"
 * insert Translation(status ^definition, de-DE, Status des Befundberichts)
+* insert Translation(status ^definition, en-US, Status of the resource.)
 // DiagnosticReport.subject
 * subject ^short = "Patient"
 * insert Translation(subject ^short, de-DE, Patient)
+* insert Translation(subject ^short, en-US, Patient)
 * subject ^definition = "Der Patient auf den sich der Befundbericht bezieht"
 * insert Translation(subject ^definition, de-DE, Der Patient auf den sich der Befundbericht bezieht)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // DiagnosticReport.encounter
 * encounter ^short = "Kontakt"
 * insert Translation(encounter ^short, de-DE, Kontakt)
+* insert Translation(encounter ^short, en-US, Encounter)
 * encounter ^definition = "Der Kontakt in dessen Rahmen der Bericht erstellt wurde"
 * insert Translation(encounter ^definition, de-DE, Der Kontakt in dessen Rahmen der Bericht erstellt wurde)
+* insert Translation(encounter ^definition, en-US, Encounter in which the resource was recorded.)
 // DiagnosticReport.issued
 * issued ^short = "Freigabedatum"
 * insert Translation(issued ^short, de-DE, Freigabedatum)
+* insert Translation(issued ^short, en-US, Issued)
 * issued ^definition = "Datum und Uhrzeit der Freigabe des Berichts"
 * insert Translation(issued ^definition, de-DE, Datum und Uhrzeit der Freigabe des Berichts)
+* insert Translation(issued ^definition, en-US, Date when the resource was issued.)
 // DiagnosticReport.performer
 * performer ^short = "Durchführende Stelle"
 * insert Translation(performer ^short, de-DE, Durchführende Stelle)
+* insert Translation(performer ^short, en-US, Performer)
 * performer ^definition = "Das Labor oder die Institution die den Bericht erstellt hat"
 * insert Translation(performer ^definition, de-DE, Das Labor oder die Institution die den Bericht erstellt hat)
+* insert Translation(performer ^definition, en-US, Person or organization that performed the procedure.)
 // DiagnosticReport.resultsInterpreter
 * resultsInterpreter ^short = "Befundinterpreter"
 * insert Translation(resultsInterpreter ^short, de-DE, Befundinterpreter)
@@ -71,8 +81,10 @@ Description: "FDPG Profil - MII_PR_MolGen_MolekulargenetischerBefundbericht"
 // DiagnosticReport.specimen
 * specimen ^short = "Probe"
 * insert Translation(specimen ^short, de-DE, Probe)
+* insert Translation(specimen ^short, en-US, Specimen)
 * specimen ^definition = "Die untersuchte Probe"
 * insert Translation(specimen ^definition, de-DE, Die untersuchte Probe)
+* insert Translation(specimen ^definition, en-US, Reference to the specimen.)
 // DiagnosticReport.result
 * result ^short = "Ergebnis"
 * insert Translation(result ^short, de-DE, Ergebnis)
@@ -121,8 +133,10 @@ Description: "FDPG Profil - MII_PR_MolGen_MolekulargenetischerBefundbericht"
 // DiagnosticReport.conclusion
 * conclusion ^short = "Schlussfolgerung"
 * insert Translation(conclusion ^short, de-DE, Schlussfolgerung)
+* insert Translation(conclusion ^short, en-US, Conclusion)
 * conclusion ^definition = "Textuelle Zusammenfassung der Befundergebnisse"
 * insert Translation(conclusion ^definition, de-DE, Textuelle Zusammenfassung der Befundergebnisse)
+* insert Translation(conclusion ^definition, en-US, Clinical conclusion.)
 // DiagnosticReport.conclusionCode
 * conclusionCode ^short = "Schlussfolgerungscode"
 * insert Translation(conclusionCode ^short, de-DE, Schlussfolgerungscode)

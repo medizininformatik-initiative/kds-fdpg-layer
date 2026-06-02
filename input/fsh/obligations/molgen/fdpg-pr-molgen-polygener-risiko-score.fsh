@@ -11,28 +11,38 @@ Description: "FDPG Profil - MII_PR_MolGen_PolygenerRisikoScore"
 // RiskAssessment.identifier
 * identifier ^short = "Identifikator"
 * insert Translation(identifier ^short, de-DE, Identifikator)
+* insert Translation(identifier ^short, en-US, Identifier)
 * identifier ^definition = "Eindeutiger Identifikator für die Risikobewertung"
 * insert Translation(identifier ^definition, de-DE, Eindeutiger Identifikator für die Risikobewertung)
+* insert Translation(identifier ^definition, en-US, Identifier for this resource.)
 // RiskAssessment.status
 * status ^short = "Status"
 * insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, en-US, Status)
 * status ^definition = "Status der Risikobewertung"
 * insert Translation(status ^definition, de-DE, Status der Risikobewertung)
+* insert Translation(status ^definition, en-US, Status of the resource.)
 // RiskAssessment.code
 * code ^short = "Code"
 * insert Translation(code ^short, de-DE, Code)
+* insert Translation(code ^short, en-US, Code)
 * code ^definition = "Art der Risikobewertung"
 * insert Translation(code ^definition, de-DE, Art der Risikobewertung)
+* insert Translation(code ^definition, en-US, Coding of the content.)
 // RiskAssessment.subject
 * subject ^short = "Patient"
 * insert Translation(subject ^short, de-DE, Patient)
+* insert Translation(subject ^short, en-US, Patient)
 * subject ^definition = "Der Patient für den die Risikobewertung erstellt wurde"
 * insert Translation(subject ^definition, de-DE, Der Patient für den die Risikobewertung erstellt wurde)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // RiskAssessment.encounter
 * encounter ^short = "Kontakt"
 * insert Translation(encounter ^short, de-DE, Kontakt)
+* insert Translation(encounter ^short, en-US, Encounter)
 * encounter ^definition = "Der Kontakt in dessen Rahmen die Risikobewertung erstellt wurde"
 * insert Translation(encounter ^definition, de-DE, Der Kontakt in dessen Rahmen die Risikobewertung erstellt wurde)
+* insert Translation(encounter ^definition, en-US, Encounter in which the resource was recorded.)
 // RiskAssessment.occurrence[x]
 * occurrence[x] ^short = "Zeitpunkt"
 * insert Translation(occurrence[x] ^short, de-DE, Zeitpunkt)

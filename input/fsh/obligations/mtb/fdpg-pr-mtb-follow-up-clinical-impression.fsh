@@ -10,6 +10,11 @@ Description: "FDPG Profil - MII_PR_MTB_Follow_Up_ClinicalImpression"
 // --- Element Designations ---
 // ClinicalImpression.status
 * status ^short = "in-progress | completed | entered-in-error"
+* insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, en-US, Status)
+* status ^definition = "Identifies the workflow status of the assessment."
+* insert Translation(status ^definition, de-DE, Status der Ressource.)
+* insert Translation(status ^definition, en-US, Status of the resource.)
 // ClinicalImpression.statusReason
 * statusReason ^short = "Grund Nicht-Umsetzung"
 * insert Translation(statusReason ^short, de-DE, Grund Nicht-Umsetzung)
@@ -18,15 +23,24 @@ Description: "FDPG Profil - MII_PR_MTB_Follow_Up_ClinicalImpression"
 // ClinicalImpression.code
 * code ^short = "Follow-Up"
 * insert Translation(code ^short, de-DE, Follow-Up)
+* insert Translation(code ^short, en-US, Code)
 * code ^definition = "Follow-Up als Prozess des Einholens von Informationen über durchgeführte Therapien & Kostenuebernahmen"
 * insert Translation(code ^definition, de-DE, Follow-Up als Prozess des Einholens von Informationen ueber durchgefuehrte Therapien & Kostenuebernahmen)
+* insert Translation(code ^definition, en-US, Coding of the content.)
 // ClinicalImpression.subject
 * subject ^short = "Patient or group assessed"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "The patient or group of individuals assessed as part of this record."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // ClinicalImpression.effective[x]
 * effective[x] ^short = "Erfassungsdatum"
 * insert Translation(effective[x] ^short, de-DE, Erfassungsdatum)
+* insert Translation(effective[x] ^short, en-US, Effective)
 * effective[x] ^definition = "Erfassungsdatum Durchführung Follow-Up"
 * insert Translation(effective[x] ^definition, de-DE, Erfassungsdatum Durchfuehrung Follow-Up)
+* insert Translation(effective[x] ^definition, en-US, Date or period the observation refers to.)
 // ClinicalImpression.previous
 * previous ^short = "MTB-Behandlungsepisode"
 * insert Translation(previous ^short, de-DE, MTB-Behandlungsepisode)

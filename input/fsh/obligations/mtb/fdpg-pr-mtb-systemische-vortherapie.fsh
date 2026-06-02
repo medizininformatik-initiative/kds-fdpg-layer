@@ -8,6 +8,10 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * insert Translation(^title, de-DE, MII PR MTB Systemische Vortherapie)
 * insert Translation(^title, en-US, FDPG PR MTB Systemische Vortherapie)
 // --- Element Designations ---
+// Procedure.extension
+* extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+* insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
+* insert Translation(extension ^definition, en-US, FHIR extension.)
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"
 * insert Translation(extension[Dokumentationsdatum] ^short, de-DE, Dokumentationsdatum)
@@ -30,6 +34,11 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * extension[Leitlinie] ^short = "MII EX MTB Leitlinie Dokumentation"
 // Procedure.basedOn
 * basedOn ^short = "A request for this procedure"
+* insert Translation(basedOn ^short, de-DE, Basiert auf)
+* insert Translation(basedOn ^short, en-US, Based on)
+* basedOn ^definition = "A reference to a resource that contains details of the request for this procedure."
+* insert Translation(basedOn ^definition, de-DE, Verweis auf die Anforderung\, auf der diese Ressource basiert.)
+* insert Translation(basedOn ^definition, en-US, Reference to the request that this resource is based on.)
 // Procedure.basedOn:Therapieplan
 * basedOn[Therapieplan] ^short = "Therpieplan"
 * insert Translation(basedOn[Therapieplan] ^short, de-DE, Therapieplan)
@@ -37,6 +46,11 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * insert Translation(basedOn[Therapieplan] ^definition, de-DE, Verweis auf den im Molekularen Tumorboard beschlossenen Therapieplan)
 // Procedure.partOf
 * partOf ^short = "Part of referenced event"
+* insert Translation(partOf ^short, de-DE, Teil von)
+* insert Translation(partOf ^short, en-US, Part of)
+* partOf ^definition = "A larger event of which this particular procedure is a component or step."
+* insert Translation(partOf ^definition, de-DE, Verweis auf eine übergeordnete Ressource\, von der diese ein Teil ist.)
+* insert Translation(partOf ^definition, en-US, Reference to a parent resource that this is part of.)
 // Procedure.status
 * status ^short = "Status"
 * insert Translation(status ^short, de-DE, Status)
@@ -102,6 +116,11 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * insert Translation(code.coding[systemische_therapie_art] ^definition, de-DE, Art der systemischen oder abwartenden Therapie gemäß 16.3 oBDS 2021.)
 // Procedure.subject
 * subject ^short = "Who the procedure was performed on"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "The person, animal or group on which the procedure was performed."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // Procedure.encounter
 * encounter ^short = "Kontakt (Aufenthaltsbezug)"
 * insert Translation(encounter ^short, de-DE, Kontakt)
@@ -128,6 +147,11 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * insert Translation(performed[x][performedPeriod].end ^definition, de-DE, Enddatum der systemischen oder abwartenden Therapie - wenn vorhanden -  gemäß 16.8 oBDS 2021.)
 // Procedure.reasonReference
 * reasonReference ^short = "The justification that the procedure was performed"
+* insert Translation(reasonReference ^short, de-DE, Begründung (Verweis\))
+* insert Translation(reasonReference ^short, en-US, Reason (reference\))
+* reasonReference ^definition = "The justification of why the procedure was performed."
+* insert Translation(reasonReference ^definition, de-DE, Verweis auf eine Ressource\, die die Begründung enthält.)
+* insert Translation(reasonReference ^definition, en-US, Reference to a resource containing the reason.)
 // Procedure.bodySite
 * bodySite ^short = "Körperstelle"
 * insert Translation(bodySite ^short, de-DE, Körperstelle)

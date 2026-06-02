@@ -40,8 +40,18 @@ Description: "FDPG Profil - MII_PR_Patho_Composition"
 * identifier.value ^short = "The value that is unique"
 // Composition.status
 * status ^short = "Status des Dokumentes"
+* insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, en-US, Status)
+* status ^definition = "The workflow/clinical status of this composition. The status is a marker for the clinical standing of the document."
+* insert Translation(status ^definition, de-DE, Status der Ressource.)
+* insert Translation(status ^definition, en-US, Status of the resource.)
 // Composition.type
 * type ^short = "Dokumenttyp"
+* insert Translation(type ^short, de-DE, Typ)
+* insert Translation(type ^short, en-US, Type)
+* type ^definition = "Specifies the particular kind of composition (e.g. History and Physical, Discharge Summary, Progress Note). This usually equates to the purpose of making the composition."
+* insert Translation(type ^definition, de-DE, Typ oder Art der Ressource.)
+* insert Translation(type ^definition, en-US, Type or kind of the resource.)
 // Composition.type.coding:sct
 * type.coding[sct] ^short = "SNOMED CT Typ"
 * insert Translation(type.coding[sct] ^short, de-DE, SNOMED CT Typ)
@@ -53,6 +63,11 @@ Description: "FDPG Profil - MII_PR_Patho_Composition"
 * type.text ^short = "Dokumenttyp (Freitext)"
 // Composition.category
 * category ^short = "Dokument-Kategorie"
+* insert Translation(category ^short, de-DE, Kategorie)
+* insert Translation(category ^short, en-US, Category)
+* category ^definition = "A categorization for the type of the composition - helps for indexing and searching. This may be implied by or derived from the code specified in the Composition Type."
+* insert Translation(category ^definition, de-DE, Kategorisierung der Ressource.)
+* insert Translation(category ^definition, en-US, Categorization of the resource.)
 // Composition.category.coding:sct
 * category.coding[sct] ^short = "SNOMED CT Kategorie"
 * insert Translation(category.coding[sct] ^short, de-DE, SNOMED CT Kategorie)
@@ -62,10 +77,20 @@ Description: "FDPG Profil - MII_PR_Patho_Composition"
 * insert Translation(category.coding[sct] ^definition, en-US, SNOMED CT coding for document category)
 // Composition.subject
 * subject ^short = "Patientenbezug"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "Who or what the composition is about. The composition can be about a person, (patient or healthcare practitioner), a device (e.g. a machine) or even a group of subjects (such as a document about a herd of livestock, or a set of patients that share a common exposure)."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // Composition.subject.reference
 * subject.reference ^short = "Patienten-Link"
 // Composition.encounter
 * encounter ^short = "Aufenthaltsbezug"
+* insert Translation(encounter ^short, de-DE, Behandlungsfall)
+* insert Translation(encounter ^short, en-US, Encounter)
+* encounter ^definition = "Describes the clinical encounter or type of care this documentation is associated with."
+* insert Translation(encounter ^definition, de-DE, Fall oder Kontakt\, in dem die Ressource erfasst wurde.)
+* insert Translation(encounter ^definition, en-US, Encounter in which the resource was recorded.)
 // Composition.encounter.reference
 * encounter.reference ^short = "Encounter-Link"
 // Composition.date

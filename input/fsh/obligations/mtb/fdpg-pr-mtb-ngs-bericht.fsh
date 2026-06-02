@@ -11,12 +11,24 @@ Description: "FDPG Profil - MII_PR_MTB_NGS_Bericht"
 // DiagnosticReport.subject
 * subject ^short = "Referenz auf Patient"
 * insert Translation(subject ^short, de-DE, Referenz auf Patient)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "The subject of the report. Usually, but not always, this is a patient. However, diagnostic services also perform analyses on specimens collected from a variety of other sources."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // DiagnosticReport.issued
 * issued ^short = "Erstellungsdatum"
 * insert Translation(issued ^short, de-DE, Erstellungsdatum)
+* insert Translation(issued ^short, en-US, Issued)
+* issued ^definition = "The date and time that this version of the report was made available to providers, typically after the report was reviewed and verified."
+* insert Translation(issued ^definition, de-DE, Datum\, an dem die Ressource freigegeben wurde.)
+* insert Translation(issued ^definition, en-US, Date when the resource was issued.)
 // DiagnosticReport.specimen
 * specimen ^short = "Referenz auf Probe"
 * insert Translation(specimen ^short, de-DE, Referenz auf Probe)
+* insert Translation(specimen ^short, en-US, Specimen)
+* specimen ^definition = "Details about the specimens on which this diagnostic report is based."
+* insert Translation(specimen ^definition, de-DE, Verweis auf das Probenmaterial.)
+* insert Translation(specimen ^definition, en-US, Reference to the specimen.)
 // DiagnosticReport.result:TumorMutionalBurden
 * result[TumorMutionalBurden] ^short = "Tumor Mutational Burden"
 * insert Translation(result[TumorMutionalBurden] ^short, de-DE, Tumormutationslast)

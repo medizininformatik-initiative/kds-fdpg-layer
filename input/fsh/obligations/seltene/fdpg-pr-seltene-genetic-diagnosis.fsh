@@ -35,6 +35,11 @@ Description: "FDPG Profil - MII_PR_Seltene_GeneticDiagnosis"
 * insert Translation(verificationStatus ^definition, en-US, unconfirmed | provisional | differential | confirmed | refuted | entered-in-error)
 // Condition.category
 * category ^short = "Kategorisierung als genetische Erkrankung"
+* insert Translation(category ^short, de-DE, Kategorie)
+* insert Translation(category ^short, en-US, Category)
+* category ^definition = "Pflicht-Kategorie zur Kennzeichnung als genetisch bestätigte Erkrankung"
+* insert Translation(category ^definition, de-DE, Kategorisierung der Ressource.)
+* insert Translation(category ^definition, en-US, Categorization of the resource.)
 // Condition.severity
 * severity ^short = "Subjective severity of condition"
 // Condition.code
@@ -100,6 +105,10 @@ Description: "FDPG Profil - MII_PR_Seltene_GeneticDiagnosis"
 * bodySite.coding[snomed-ct] ^definition = "Ein Verweis auf einen von SNOMED CT definierten Code"
 * insert Translation(bodySite.coding[snomed-ct] ^definition, de-DE, Ein Verweis auf einen von SNOMED CT definierten Code)
 * insert Translation(bodySite.coding[snomed-ct] ^definition, en-US, A reference to a code defined by SNOMED CT)
+// Condition.subject
+* subject ^definition = "Indicates the patient or group who the condition record is associated with."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // Condition.encounter
 * encounter ^short = "Kontakt (Aufenthaltsbezug)"
 * insert Translation(encounter ^short, de-DE, Kontakt)
@@ -131,6 +140,11 @@ Description: "FDPG Profil - MII_PR_Seltene_GeneticDiagnosis"
 * insert Translation(recordedDate ^definition, en-US, Date when the diagnosis was first recorded.)
 // Condition.recorder
 * recorder ^short = "Who recorded the condition"
+* insert Translation(recorder ^short, de-DE, Erfassende*r)
+* insert Translation(recorder ^short, en-US, Recorder)
+* recorder ^definition = "Individual who recorded the record and takes responsibility for its content."
+* insert Translation(recorder ^definition, de-DE, Person oder Organisation\, die die Information aufgezeichnet hat.)
+* insert Translation(recorder ^definition, en-US, Person or organization that recorded the information.)
 // Condition.asserter
 * asserter ^short = "Person who asserts this condition"
 // Condition.stage

@@ -11,13 +11,17 @@ Description: "FDPG Profil - MII_PR_MolGen_Familienanamnese"
 // FamilyMemberHistory.status
 * status ^short = "Status"
 * insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, en-US, Status)
 * status ^definition = "Status der Familienanamnese"
 * insert Translation(status ^definition, de-DE, Status der Familienanamnese)
+* insert Translation(status ^definition, en-US, Status of the resource.)
 // FamilyMemberHistory.patient
 * patient ^short = "Patient"
 * insert Translation(patient ^short, de-DE, Patient)
+* insert Translation(patient ^short, en-US, Patient)
 * patient ^definition = "Der Patient zu dem die Familienanamnese gehört"
 * insert Translation(patient ^definition, de-DE, Der Patient zu dem die Familienanamnese gehört)
+* insert Translation(patient ^definition, en-US, The patient that the resource relates to.)
 // FamilyMemberHistory.date
 * date ^short = "Datum"
 * insert Translation(date ^short, de-DE, Datum)
@@ -51,8 +55,10 @@ Description: "FDPG Profil - MII_PR_MolGen_Familienanamnese"
 // FamilyMemberHistory.reasonCode
 * reasonCode ^short = "Grund der Erhebung"
 * insert Translation(reasonCode ^short, de-DE, Grund der Erhebung)
+* insert Translation(reasonCode ^short, en-US, Reason (coded\))
 * reasonCode ^definition = "Der Grund für die Erhebung dieser Familienanamnese"
 * insert Translation(reasonCode ^definition, de-DE, Der Grund für die Erhebung dieser Familienanamnese)
+* insert Translation(reasonCode ^definition, en-US, Coded reason for the resource.)
 // FamilyMemberHistory.reasonCode.coding
 * reasonCode.coding ^short = "Kodierung"
 * insert Translation(reasonCode.coding ^short, de-DE, Kodierung)
@@ -126,8 +132,10 @@ Description: "FDPG Profil - MII_PR_MolGen_Familienanamnese"
 // FamilyMemberHistory.reasonReference
 * reasonReference ^short = "Referenz zum Grund"
 * insert Translation(reasonReference ^short, de-DE, Referenz zum Grund)
+* insert Translation(reasonReference ^short, en-US, Reason (reference\))
 * reasonReference ^definition = "Referenz zu einer Condition die den Grund der Familienanamnese beschreibt"
 * insert Translation(reasonReference ^definition, de-DE, Referenz zu einer Condition die den Grund der Familienanamnese beschreibt)
+* insert Translation(reasonReference ^definition, en-US, Reference to a resource containing the reason.)
 // FamilyMemberHistory.condition
 * condition ^short = "Erkrankung"
 * insert Translation(condition ^short, de-DE, Erkrankung)

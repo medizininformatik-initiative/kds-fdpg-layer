@@ -70,6 +70,11 @@ Description: "FDPG Profil - MII_PR_Medikation_MedicationRequest"
 * insert Translation(medication[x][medicationCodeableConcept].coding[UNII] ^definition, en-US, A Unique Ingredient Identifier (UNII\) from the american Food & Drug Administration's Global Substance Registration System)
 // MedicationRequest.subject
 * subject ^short = "Who or group medication request is for"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "A link to a resource representing the person or set of individuals to whom the medication will be given."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // MedicationRequest.encounter
 * encounter ^short = "Fall oder Kontakt"
 * insert Translation(encounter ^short, de-DE, Fall / Kontakt)

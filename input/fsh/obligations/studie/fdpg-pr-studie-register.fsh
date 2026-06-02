@@ -10,6 +10,11 @@ Description: "FDPG Profil - MII_PR_Studie_Register"
 // --- Element Designations ---
 // Library.identifier
 * identifier ^short = "Identifier"
+* insert Translation(identifier ^short, de-DE, Identifikator)
+* insert Translation(identifier ^short, en-US, Identifier)
+* identifier ^definition = "Ein formaler Bezeichner, der verwendet wird, um diese Bibliothek zu identifizieren, wenn sie in anderen Formaten dargestellt oder in einer Spezifikation, einem Modell, einem Design oder einer Instanz referenziert wird, z. B. CMS- oder NQF-Bezeichner für ein Maßnahme-Artefakt. Es ist zu beachten, dass mindestens ein Bezeichner für nicht-experimentelle, aktive Artefakte erforderlich ist."
+* insert Translation(identifier ^definition, de-DE, Identifikator dieser Ressource.)
+* insert Translation(identifier ^definition, en-US, Identifier for this resource.)
 // Library.identifier.system
 * identifier.system ^short = "The namespace for the identifier value"
 // Library.identifier.value
@@ -18,6 +23,11 @@ Description: "FDPG Profil - MII_PR_Studie_Register"
 * name ^short = "Name"
 // Library.type
 * type ^short = "Type"
+* insert Translation(type ^short, de-DE, Typ)
+* insert Translation(type ^short, en-US, Type)
+* type ^definition = "dentifiziert den Typ der Bibliothek, wie z. B. eine Logikbibliothek, Modelldefinition, Asset-Sammlung oder Moduldefinition."
+* insert Translation(type ^definition, de-DE, Typ oder Art der Ressource.)
+* insert Translation(type ^definition, en-US, Type or kind of the resource.)
 // Library.relatedArtifact
 * relatedArtifact ^short = "RelatedArtifact"
 // Library.relatedArtifact.document

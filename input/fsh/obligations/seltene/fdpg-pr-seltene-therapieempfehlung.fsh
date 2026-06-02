@@ -37,6 +37,11 @@ Description: "FDPG Profil - MII_PR_Seltene_Therapieempfehlung"
 * insert Translation(intent ^definition, en-US, proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option)
 // MedicationRequest.category
 * category ^short = "Type of medication usage"
+* insert Translation(category ^short, de-DE, Kategorie)
+* insert Translation(category ^short, en-US, Category)
+* category ^definition = "Indicates the type of medication request (for example, where the medication is expected to be consumed or administered (i.e. inpatient or outpatient))."
+* insert Translation(category ^definition, de-DE, Kategorisierung der Ressource.)
+* insert Translation(category ^definition, en-US, Categorization of the resource.)
 // MedicationRequest.category:MVGenomSeqTherapieStrategie
 * category[MVGenomSeqTherapieStrategie] ^short = "Modellvorhaben GenomSeq Therapiestrategie-Typ (Medikamentös)"
 // MedicationRequest.category:MVGenomSeqTherapieTyp
@@ -82,6 +87,11 @@ Description: "FDPG Profil - MII_PR_Seltene_Therapieempfehlung"
 * insert Translation(medication[x][medicationCodeableConcept].coding[UNII] ^definition, en-US, A Unique Ingredient Identifier (UNII\) from the american Food & Drug Administration's Global Substance Registration System)
 // MedicationRequest.subject
 * subject ^short = "Who or group medication request is for"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "A link to a resource representing the person or set of individuals to whom the medication will be given."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // MedicationRequest.encounter
 * encounter ^short = "Fall oder Kontakt"
 * insert Translation(encounter ^short, de-DE, Fall / Kontakt)

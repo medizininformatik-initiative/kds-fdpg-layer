@@ -8,6 +8,10 @@ Description: "FDPG Profil - MII_PR_MTB_Genomic_Study_Analysis"
 * insert Translation(^title, de-DE, MII PR MTB Genomic Study Analysis)
 * insert Translation(^title, en-US, FDPG PR MTB Genomic Study Analysis)
 // --- Element Designations ---
+// Procedure.extension
+* extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+* insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
+* insert Translation(extension ^definition, en-US, FHIR extension.)
 // Procedure.extension:method-type
 * extension[method-type] ^short = "Analysemethode"
 * insert Translation(extension[method-type] ^short, de-DE, Analysemethode)
@@ -57,12 +61,32 @@ Description: "FDPG Profil - MII_PR_MTB_Genomic_Study_Analysis"
 * extension[qc] ^short = "MII EX MTB Antrag GenomicsStudyAnalysis Metrics"
 // Procedure.identifier
 * identifier ^short = "GenomicStudy.analysis.identifier"
+* insert Translation(identifier ^short, de-DE, Identifikator)
+* insert Translation(identifier ^short, en-US, Identifier)
+* identifier ^definition = "Business identifiers assigned to this procedure by the performer or other systems which remain constant as the resource is updated and is propagated from server to server."
+* insert Translation(identifier ^definition, de-DE, Identifikator dieser Ressource.)
+* insert Translation(identifier ^definition, en-US, Identifier for this resource.)
 // Procedure.status
 * status ^short = "preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown"
+* insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, en-US, Status)
+* status ^definition = "A code specifying the state of the procedure. Generally, this will be the in-progress or completed state."
+* insert Translation(status ^definition, de-DE, Status der Ressource.)
+* insert Translation(status ^definition, en-US, Status of the resource.)
 // Procedure.category
 * category ^short = "Classification of the procedure"
+* insert Translation(category ^short, de-DE, Kategorie)
+* insert Translation(category ^short, en-US, Category)
+* category ^definition = "A code that classifies the procedure for searching, sorting and display purposes (e.g. \"Surgical Procedure\")."
+* insert Translation(category ^definition, de-DE, Kategorisierung der Ressource.)
+* insert Translation(category ^definition, en-US, Categorization of the resource.)
 // Procedure.performed[x]
 * performed[x] ^short = "GenomicStudy.analysis.date"
+* insert Translation(performed[x] ^short, de-DE, Durchführungsdatum)
+* insert Translation(performed[x] ^short, en-US, Performed)
+* performed[x] ^definition = "Estimated or actual date, date-time, period, or age when the procedure was performed.  Allows a period to support complex procedures that span more than one date, and also allows for the length of the procedure to be captured."
+* insert Translation(performed[x] ^definition, de-DE, Zeitpunkt oder Zeitraum der Durchführung.)
+* insert Translation(performed[x] ^definition, en-US, Date or period when the procedure was performed.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(extension)

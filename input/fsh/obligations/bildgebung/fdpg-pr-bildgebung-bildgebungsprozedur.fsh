@@ -8,6 +8,10 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Bildgebungsprozedur"
 * insert Translation(^title, de-DE, Bildgebungsprozedur)
 * insert Translation(^title, en-US, imaging procedure)
 // --- Element Designations ---
+// Procedure.extension
+* extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+* insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
+* insert Translation(extension ^definition, en-US, FHIR extension.)
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"
 * insert Translation(extension[Dokumentationsdatum] ^short, de-DE, Dokumentationsdatum)

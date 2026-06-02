@@ -16,10 +16,25 @@ Description: "FDPG Profil - MII_PR_Seltene_Therapieempfehlung_Kombination"
 * extension[Publikation] ^short = "MII EX SE Empfehlung Publikation"
 // RequestGroup.identifier
 * identifier ^short = "Business identifier"
+* insert Translation(identifier ^short, de-DE, Identifikator)
+* insert Translation(identifier ^short, en-US, Identifier)
+* identifier ^definition = "Allows a service to provide a unique, business identifier for the request."
+* insert Translation(identifier ^definition, de-DE, Identifikator dieser Ressource.)
+* insert Translation(identifier ^definition, en-US, Identifier for this resource.)
 // RequestGroup.intent
 * intent ^short = "proposal | option"
+* insert Translation(intent ^short, de-DE, Absicht)
+* insert Translation(intent ^short, en-US, Intent)
+* intent ^definition = "Da nur Empfehlungen abgegeben werden, wird hier typischerweise 'proposal' stehen. Es sei denn, diese Therapieempfehlung ist selbst nochmal Teil einer RequestGroup. In dem Fall muss hier 'option' stehen."
+* insert Translation(intent ^definition, de-DE, Absicht der Anforderung: Vorschlag | Plan | Auftrag.)
+* insert Translation(intent ^definition, en-US, Intent of the request: proposal | plan | order.)
 // RequestGroup.subject
 * subject ^short = "Who the request group is about"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "The subject for which the request group was created."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // RequestGroup.action
 * action ^short = "Proposed actions, if any"
 // RequestGroup.action.resource

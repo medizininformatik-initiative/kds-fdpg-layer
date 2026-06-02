@@ -10,10 +10,25 @@ Description: "FDPG Profil - MII_PR_Onko_Tumorkonferenz"
 // --- Element Designations ---
 // CarePlan.status
 * status ^short = "draft | active | on-hold | revoked | completed | entered-in-error | unknown"
+* insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, en-US, Status)
+* status ^definition = "Indicates whether the plan is currently being acted upon, represents future intentions or is now a historical record."
+* insert Translation(status ^definition, de-DE, Status der Ressource.)
+* insert Translation(status ^definition, en-US, Status of the resource.)
 // CarePlan.intent
 * intent ^short = "proposal | plan | order | option"
+* insert Translation(intent ^short, de-DE, Absicht)
+* insert Translation(intent ^short, en-US, Intent)
+* intent ^definition = "Indicates the level of authority/intentionality associated with the care plan and where the care plan fits into the workflow chain."
+* insert Translation(intent ^definition, de-DE, Absicht der Anforderung: Vorschlag | Plan | Auftrag.)
+* insert Translation(intent ^definition, en-US, Intent of the request: proposal | plan | order.)
 // CarePlan.category
 * category ^short = "Type of plan"
+* insert Translation(category ^short, de-DE, Kategorie)
+* insert Translation(category ^short, en-US, Category)
+* category ^definition = "Identifies what \"kind\" of plan this is to support differentiation between multiple co-existing plans; e.g. \"Home health\", \"psychiatric\", \"asthma\", \"disease management\", \"wellness plan\", etc."
+* insert Translation(category ^definition, de-DE, Kategorisierung der Ressource.)
+* insert Translation(category ^definition, en-US, Categorization of the resource.)
 // CarePlan.category.coding
 * category.coding ^short = "Art der Tumorkonferenz / Therapieplanung"
 * insert Translation(category.coding ^short, de-DE, Art der Tumorkonferenz / Therapieplanung)
@@ -21,8 +36,18 @@ Description: "FDPG Profil - MII_PR_Onko_Tumorkonferenz"
 * insert Translation(category.coding ^definition, de-DE, Art der Tumorkonferenz / Therapieplanung gemäß 18.2 oBDS 2021.)
 // CarePlan.subject
 * subject ^short = "Who the care plan is for"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "Identifies the patient or group whose intended care is described by the plan."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // CarePlan.encounter
 * encounter ^short = "Encounter created as part of"
+* insert Translation(encounter ^short, de-DE, Behandlungsfall)
+* insert Translation(encounter ^short, en-US, Encounter)
+* encounter ^definition = "The Encounter during which this CarePlan was created or to which the creation of this record is tightly associated."
+* insert Translation(encounter ^definition, de-DE, Fall oder Kontakt\, in dem die Ressource erfasst wurde.)
+* insert Translation(encounter ^definition, en-US, Encounter in which the resource was recorded.)
 // CarePlan.created
 * created ^short = "Datum der Tumorkonferenz / Therapieplanung"
 * insert Translation(created ^short, de-DE, Datum der Tumorkonferenz / Therapieplanung)

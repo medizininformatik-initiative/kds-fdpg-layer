@@ -14,16 +14,41 @@ Description: "FDPG Profil - MII_PR_Dokument_Dokument"
 * masterIdentifier ^short = "Versionsspezifische OID des Dokuments"
 // DocumentReference.identifier
 * identifier ^short = "Weitere Dokumente assoziierte Identifikatoren"
+* insert Translation(identifier ^short, de-DE, Identifikator)
+* insert Translation(identifier ^short, en-US, Identifier)
+* identifier ^definition = "Weitere Dokumente assoziierte Identifikatoren. Die Angabe ist optional [MAY]."
+* insert Translation(identifier ^definition, de-DE, Identifikator dieser Ressource.)
+* insert Translation(identifier ^definition, en-US, Identifier for this resource.)
 // DocumentReference.status
 * status ^short = "Zustand des Dokumentenmetadatensatzes"
+* insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, en-US, Status)
+* status ^definition = "Zustand des Dokumentenmetadatensatzes. Die Angabe ist dringend empfohlen [SHALL]."
+* insert Translation(status ^definition, de-DE, Status der Ressource.)
+* insert Translation(status ^definition, en-US, Status of the resource.)
 // DocumentReference.docStatus
 * docStatus ^short = "Bearbeitungsstatus des Dokumentes"
 // DocumentReference.type
 * type ^short = "Charakterisierung der Dokumentart im Detail"
+* insert Translation(type ^short, de-DE, Typ)
+* insert Translation(type ^short, en-US, Type)
+* type ^definition = "Charakterisierung der Dokumentart im Detail. Die Angabe ist dringend empfohlen [SHALL]."
+* insert Translation(type ^definition, de-DE, Typ oder Art der Ressource.)
+* insert Translation(type ^definition, en-US, Type or kind of the resource.)
 // DocumentReference.category
 * category ^short = "Charakterisierung der Dokumentenart in Übersicht"
+* insert Translation(category ^short, de-DE, Kategorie)
+* insert Translation(category ^short, en-US, Category)
+* category ^definition = "Charakterisierung der Dokumentenart in Übersicht. Die Angabe ist dringend empfohlen [SHALL]."
+* insert Translation(category ^definition, de-DE, Kategorisierung der Ressource.)
+* insert Translation(category ^definition, en-US, Categorization of the resource.)
 // DocumentReference.subject
 * subject ^short = "Referenz auf den Patient des Dokumentes"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "Referenz auf den Patient des Dokumentes. Die Angabe ist verpflichtend [MUST]."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // DocumentReference.relatesTo
 * relatesTo ^short = "Beziehung des Dokuments"
 // DocumentReference.relatesTo.code

@@ -11,13 +11,17 @@ Description: "FDPG Profil - MII_PR_MTB_Antrag_Kostenuebernahme"
 // Claim.status
 * status ^short = "Antrag"
 * insert Translation(status ^short, de-DE, Antrag)
+* insert Translation(status ^short, en-US, Status)
 * status ^definition = "Status der FHIR-Ressource - statisch auf #active gesetzt"
 * insert Translation(status ^definition, de-DE, Status der FHIR-Ressource - statisch auf #active gesetzt)
+* insert Translation(status ^definition, en-US, Status of the resource.)
 // Claim.type
 * type ^short = "Kategorie des Antragstellers"
 * insert Translation(type ^short, de-DE, Kategorie des Antragstellers)
+* insert Translation(type ^short, en-US, Type)
 * type ^definition = "Kategorie des Antragstellers - z.B. stationär, ambulant, Apotheke"
 * insert Translation(type ^definition, de-DE, Kategorie des Antragstellers - z.B. stationaer - ambulant - Apotheke)
+* insert Translation(type ^definition, en-US, Type or kind of the resource.)
 // Claim.use
 * use ^short = "Art des Kostenerstattungsantrags (claim, predetermination, preauthorization)"
 * insert Translation(use ^short, de-DE, Art des Kostenerstattungsantrags - claim oder predetermination oder preauthorization)
@@ -25,6 +29,11 @@ Description: "FDPG Profil - MII_PR_MTB_Antrag_Kostenuebernahme"
 * insert Translation(use ^definition, de-DE, folgt den Definitionen wie im amerikanischen Gesundsheitswesen gebraeuchlich. claim: Erstattungsantrag nach erfolgter Therapie; predetermination: unverbindliche Anfrage insb. zu Anteilen der Kostenuebernahme; preauthorization: Anfrage nach moeglicher Erstattung fuer zukuenftige Therapie)
 // Claim.patient
 * patient ^short = "The recipient of the products and services"
+* insert Translation(patient ^short, de-DE, Patient*in)
+* insert Translation(patient ^short, en-US, Patient)
+* patient ^definition = "The party to whom the professional services and/or products have been supplied or are being considered and for whom actual or forecast reimbursement is sought."
+* insert Translation(patient ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(patient ^definition, en-US, The patient that the resource relates to.)
 // Claim.created
 * created ^short = "Antragsdatum"
 * insert Translation(created ^short, de-DE, Antragsdatum)

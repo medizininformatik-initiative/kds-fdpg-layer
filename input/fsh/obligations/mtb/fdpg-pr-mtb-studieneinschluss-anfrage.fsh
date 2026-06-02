@@ -20,15 +20,28 @@ Description: "FDPG Profil - MII_PR_MTB_Studieneinschluss_Anfrage"
 // ServiceRequest.status
 * status ^definition = "Status des Studieneinschlusses"
 * insert Translation(status ^definition, de-DE, Status des Studieneinschlusses)
+* insert Translation(status ^definition, en-US, Status of the resource.)
 // ServiceRequest.category
 * category ^short = "Classification of service"
+* insert Translation(category ^short, de-DE, Kategorie)
+* insert Translation(category ^short, en-US, Category)
+* category ^definition = "A code that classifies the service for searching, sorting and display purposes (e.g. \"Surgical Procedure\")."
+* insert Translation(category ^definition, de-DE, Kategorisierung der Ressource.)
+* insert Translation(category ^definition, en-US, Categorization of the resource.)
 // ServiceRequest.code
 * code ^short = "Studieneinschlussempfehlung"
 * insert Translation(code ^short, de-DE, Studieneinschlussempfehlung)
+* insert Translation(code ^short, en-US, Code)
 * code ^definition = "Empfehlung zum Einschluss in eine Studie"
 * insert Translation(code ^definition, de-DE, Empfehlung zum Einschluss in eine Studie)
+* insert Translation(code ^definition, en-US, Coding of the content.)
 // ServiceRequest.reasonReference
 * reasonReference ^short = "Explanation/Justification for service or service"
+* insert Translation(reasonReference ^short, de-DE, Begründung (Verweis\))
+* insert Translation(reasonReference ^short, en-US, Reason (reference\))
+* reasonReference ^definition = "Indicates another resource that provides a justification for why this service is being requested.   May relate to the resources referred to in `supportingInfo`."
+* insert Translation(reasonReference ^definition, de-DE, Verweis auf eine Ressource\, die die Begründung enthält.)
+* insert Translation(reasonReference ^definition, en-US, Reference to a resource containing the reason.)
 // ServiceRequest.supportingInfo
 * supportingInfo ^short = "Additional clinical information"
 // ServiceRequest.supportingInfo:Studie

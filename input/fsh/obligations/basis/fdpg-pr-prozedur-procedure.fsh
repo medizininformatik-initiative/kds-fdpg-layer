@@ -8,6 +8,10 @@ Description: "FDPG Profil - MII_PR_Prozedur_Procedure"
 * insert Translation(^title, de-DE, Prozedur)
 * insert Translation(^title, en-US, Procedure)
 // --- Element Designations ---
+// Procedure.extension
+* extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+* insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
+* insert Translation(extension ^definition, en-US, FHIR extension.)
 // Procedure.extension:Dokumentationsdatum
 * extension[Dokumentationsdatum] ^short = "Dokumentationsdatum"
 * insert Translation(extension[Dokumentationsdatum] ^short, de-DE, Dokumentationsdatum)
@@ -72,6 +76,11 @@ Description: "FDPG Profil - MII_PR_Prozedur_Procedure"
 * insert Translation(code.coding[sct] ^definition, en-US, A reference to a code defined by SNOMED CT)
 // Procedure.subject
 * subject ^short = "Who the procedure was performed on"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "The person, animal or group on which the procedure was performed."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // Procedure.encounter
 * encounter ^short = "Kontakt (Aufenthaltsbezug)"
 * insert Translation(encounter ^short, de-DE, Kontakt)

@@ -21,6 +21,11 @@ Description: "FDPG Profil - MII_PR_Biobank_Organization_Sammlung_Biobank"
 * extension[collectionDesign] ^short = "Collection Design Extension"
 // Organization.identifier
 * identifier ^short = "Identifies this organization  across multiple systems"
+* insert Translation(identifier ^short, de-DE, Identifikator)
+* insert Translation(identifier ^short, en-US, Identifier)
+* identifier ^definition = "Identifier for the organization that is used to identify the organization across multiple disparate systems."
+* insert Translation(identifier ^definition, de-DE, Identifikator dieser Ressource.)
+* insert Translation(identifier ^definition, en-US, Identifier for this resource.)
 // Organization.identifier:bbmri-eric-id
 * identifier[bbmri-eric-id] ^short = "Identifies this organization  across multiple systems"
 * insert Translation(identifier[bbmri-eric-id] ^short, de-DE, BBMRI-ERIC ID)

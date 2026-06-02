@@ -10,6 +10,11 @@ Description: "FDPG Profil - MII_PR_Medikation_Medication"
 // --- Element Designations ---
 // Medication.code
 * code ^short = "Code"
+* insert Translation(code ^short, de-DE, Code)
+* insert Translation(code ^short, en-US, Code)
+* code ^definition = "Code für Medikation"
+* insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
+* insert Translation(code ^definition, en-US, Coding of the content.)
 // Medication.code.coding:Pharmazentralnummer
 * code.coding[Pharmazentralnummer] ^short = "PZN Code"
 * insert Translation(code.coding[Pharmazentralnummer] ^short, de-DE, PZN Code)
