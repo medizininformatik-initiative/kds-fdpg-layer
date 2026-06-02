@@ -1,0 +1,84 @@
+{
+  "_doc": "Curated DE/EN titles for PROMs profiles. PROMIS, BDI-II, EQ-5D-5L, SF4a, VAS, T-Score kept as established acronyms (§5.1 EN styleguide). Domain names translated to DE clinical terms where established (Schmerzintensität, Kognitive Funktion); kept in EN where DE has no idiomatic equivalent (Fatigue).",
+
+  "MII_PR_PRO_Depression_T_Score": {
+    "de-DE": "Depression Domain T-Score",
+    "en-US": "Depression Domain T-Score"
+  },
+  "MII_PR_PRO_Observation_BDI_II": {
+    "de-DE": "Beck-Depressions-Inventar (BDI-II)",
+    "en-US": "Beck Depression Inventory (BDI-II)"
+  },
+  "MII_PR_PRO_Observation_EQ5D5L_Index": {
+    "de-DE": "EQ-5D-5L Index",
+    "en-US": "EQ-5D-5L Index"
+  },
+  "MII_PR_PRO_Observation_EQ5D5L_Profile": {
+    "de-DE": "EQ-5D-5L Profil",
+    "en-US": "EQ-5D-5L Profile"
+  },
+  "MII_PR_PRO_Observation_EQ5D5L_VAS": {
+    "de-DE": "EQ-5D-5L Visuelle Analogskala (VAS)",
+    "en-US": "EQ-5D-5L Visual Analogue Scale (VAS)"
+  },
+  "MII_PR_PRO_PROMIS_29_Anxiety_TScore": {
+    "de-DE": "PROMIS-29 Angst T-Score",
+    "en-US": "PROMIS-29 Anxiety T-Score"
+  },
+  "MII_PR_PRO_PROMIS_29_Depression_TScore": {
+    "de-DE": "PROMIS-29 Depression T-Score",
+    "en-US": "PROMIS-29 Depression T-Score"
+  },
+  "MII_PR_PRO_PROMIS_29_Fatigue_TScore": {
+    "de-DE": "PROMIS-29 Fatigue T-Score",
+    "en-US": "PROMIS-29 Fatigue T-Score"
+  },
+  "MII_PR_PRO_PROMIS_29_Pain_Intensity": {
+    "de-DE": "PROMIS-29 Schmerzintensität",
+    "en-US": "PROMIS-29 Pain Intensity"
+  },
+  "MII_PR_PRO_PROMIS_29_Pain_Interference_TScore": {
+    "de-DE": "PROMIS-29 Schmerzbeeinträchtigung T-Score",
+    "en-US": "PROMIS-29 Pain Interference T-Score"
+  },
+  "MII_PR_PRO_PROMIS_29_Physical_Function_TScore": {
+    "de-DE": "PROMIS-29 Körperliche Funktion T-Score",
+    "en-US": "PROMIS-29 Physical Function T-Score"
+  },
+  "MII_PR_PRO_PROMIS_29_Sleep_Disturbance_TScore": {
+    "de-DE": "PROMIS-29 Schlafstörung T-Score",
+    "en-US": "PROMIS-29 Sleep Disturbance T-Score"
+  },
+  "MII_PR_PRO_PROMIS_29_Social_Function_TScore": {
+    "de-DE": "PROMIS-29 Soziale Funktion T-Score",
+    "en-US": "PROMIS-29 Social Function T-Score"
+  },
+  "MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score": {
+    "de-DE": "PROMIS Kognitive Funktion SF-4a Rohwert",
+    "en-US": "PROMIS Cognitive Function SF-4a Raw Score"
+  },
+  "MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore": {
+    "de-DE": "PROMIS Kognitive Funktion SF-4a T-Score",
+    "en-US": "PROMIS Cognitive Function SF-4a T-Score"
+  },
+  "MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score": {
+    "de-DE": "PROMIS Depression SF-4a Rohwert",
+    "en-US": "PROMIS Depression SF-4a Raw Score"
+  },
+  "MII_PR_PRO_Questionnaire": {
+    "de-DE": "Fragebogen",
+    "en-US": "Questionnaire"
+  },
+  "MII_PR_PRO_QuestionnaireResponse": {
+    "de-DE": "Fragebogen-Antwort",
+    "en-US": "Questionnaire response"
+  },
+  "MII_PR_PRO_Score_Blueprint": {
+    "de-DE": "Score-Vorlage",
+    "en-US": "Score blueprint"
+  },
+  "MII_PR_PRO_Score_Instance": {
+    "de-DE": "Score-Instanz",
+    "en-US": "Score instance"
+  }
+}

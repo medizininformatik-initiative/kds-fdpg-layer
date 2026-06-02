@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR PRO Score Blueprint / Template"
+            "valueString": "Score-Vorlage"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR PRO Score Blueprint"
+            "valueString": "Score blueprint"
           }
         ]
       }
@@ -107,7 +107,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Code"
+                  "valueString": "PROMs-Item"
                 }
               ]
             },
@@ -120,7 +120,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Code"
+                  "valueString": "PROMs item"
                 }
               ]
             }
@@ -137,7 +137,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Kodierung des Inhalts."
+                  "valueString": "Kodierung des PROMs-Instruments oder Score-Typs."
                 }
               ]
             },
@@ -150,7 +150,41 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Coding of the content."
+                  "valueString": "Code of the PROMs instrument or score type."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "ObservationDefinition.code.coding",
+        "path": "ObservationDefinition.code.coding",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kodierung des PROMs-Items."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Coding of the PROMs item."
                 }
               ]
             }
@@ -200,7 +234,7 @@
       {
         "id": "ObservationDefinition.code.coding:snomed.code",
         "path": "ObservationDefinition.code.coding.code",
-        "short": "Code as SNOMED CT",
+        "short": "PROMs item as SNOMED CT",
         "_short": {
           "extension": [
             {
@@ -212,7 +246,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Code als SNOMED CT"
+                  "valueString": "PROMs-Item als SNOMED CT"
                 }
               ]
             },
@@ -225,7 +259,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Code as SNOMED CT"
+                  "valueString": "PROMs item as SNOMED CT"
                 }
               ]
             }
@@ -275,7 +309,7 @@
       {
         "id": "ObservationDefinition.code.coding:loinc.code",
         "path": "ObservationDefinition.code.coding.code",
-        "short": "Code as LOINC",
+        "short": "PROMs item as LOINC",
         "_short": {
           "extension": [
             {
@@ -287,7 +321,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Code als LOINC"
+                  "valueString": "PROMs-Item als LOINC"
                 }
               ]
             },
@@ -300,7 +334,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Code as LOINC"
+                  "valueString": "PROMs item as LOINC"
                 }
               ]
             }

@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR PRO Depression Domain T-Score"
+            "valueString": "Depression Domain T-Score"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR PRO Depression T Score"
+            "valueString": "Depression Domain T-Score"
           }
         ]
       }
@@ -341,7 +341,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Code"
+                  "valueString": "PROMs-Item"
                 }
               ]
             },
@@ -354,7 +354,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Code"
+                  "valueString": "PROMs item"
                 }
               ]
             }
@@ -371,7 +371,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Kodierung des Inhalts."
+                  "valueString": "Kodierung des PROMs-Instruments oder Score-Typs."
                 }
               ]
             },
@@ -384,7 +384,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Coding of the content."
+                  "valueString": "Code of the PROMs instrument or score type."
                 }
               ]
             }
@@ -519,7 +519,67 @@
           {
             "code": "dateTime"
           }
-        ]
+        ],
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Befragungsdatum"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Survey date"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Datum, an dem das PROMs-Instrument vom Patienten ausgefüllt wurde."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Date when the PROMs instrument was completed by the patient."
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Observation.value[x]:valueQuantity",
@@ -769,7 +829,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Abgeleitet von"
+                  "valueString": "Zugehöriger Fragebogen"
                 }
               ]
             },
@@ -782,7 +842,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Derived from"
+                  "valueString": "Source questionnaire"
                 }
               ]
             }
@@ -799,7 +859,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Verweis auf die Ressource, von der diese abgeleitet ist."
+                  "valueString": "Verweis auf die QuestionnaireResponse, aus der dieser Score abgeleitet wurde."
                 }
               ]
             },
@@ -812,7 +872,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Reference to the resource this is derived from."
+                  "valueString": "Reference to the QuestionnaireResponse this score is derived from."
                 }
               ]
             }

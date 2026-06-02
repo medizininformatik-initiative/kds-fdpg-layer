@@ -5,8 +5,8 @@ Title: "FDPG PR PRO PROMIS Cognitive Function SF4a Raw Score"
 Description: "FDPG Profil - MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score"
 * insert FDPGMetadata
 * insert FDPGModule(proms)
-* insert Translation(^title, de-DE, MII PR PRO PROMIS Cognitive Function SF 4a Raw Score)
-* insert Translation(^title, en-US, FDPG PR PRO PROMIS Cognitive Function SF4a Raw Score)
+* insert Translation(^title, de-DE, PROMIS Kognitive Funktion SF-4a Rohwert)
+* insert Translation(^title, en-US, PROMIS Cognitive Function SF-4a Raw Score)
 // --- Element Designations ---
 // Observation.extension
 * extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
@@ -30,15 +30,20 @@ Description: "FDPG Profil - MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score"
 * insert Translation(status ^definition, en-US, Status of the resource.)
 // Observation.code
 * code ^short = "Type of observation (code / type)"
-* insert Translation(code ^short, de-DE, Code)
-* insert Translation(code ^short, en-US, Code)
+* insert Translation(code ^short, de-DE, PROMs-Item)
+* insert Translation(code ^short, en-US, PROMs item)
 * code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\"."
-* insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
-* insert Translation(code ^definition, en-US, Coding of the content.)
+* insert Translation(code ^definition, de-DE, Kodierung des PROMs-Instruments oder Score-Typs.)
+* insert Translation(code ^definition, en-US, Code of the PROMs instrument or score type.)
 // Observation.focus
 * focus ^short = "What the observation is about, when it is not about the subject of record"
 // Observation.effective[x]:effectiveDateTime
 * effective[x][effectiveDateTime] ^short = "Clinically relevant time/time-period for observation"
+* insert Translation(effective[x][effectiveDateTime] ^short, de-DE, Befragungsdatum)
+* insert Translation(effective[x][effectiveDateTime] ^short, en-US, Survey date)
+* effective[x][effectiveDateTime] ^definition = "The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the \"physiologically relevant time\". This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself."
+* insert Translation(effective[x][effectiveDateTime] ^definition, de-DE, Datum\, an dem das PROMs-Instrument vom Patienten ausgefüllt wurde.)
+* insert Translation(effective[x][effectiveDateTime] ^definition, en-US, Date when the PROMs instrument was completed by the patient.)
 // Observation.performer
 * performer ^short = "Who is responsible for the observation"
 * insert Translation(performer ^short, de-DE, Durchführende*r)
@@ -48,11 +53,11 @@ Description: "FDPG Profil - MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score"
 * insert Translation(performer ^definition, en-US, Person or organization that performed the procedure.)
 // Observation.value[x]
 * value[x] ^short = "Actual result"
-* insert Translation(value[x] ^short, de-DE, Messwert)
-* insert Translation(value[x] ^short, en-US, Value)
+* insert Translation(value[x] ^short, de-DE, Score-Wert)
+* insert Translation(value[x] ^short, en-US, Score value)
 * value[x] ^definition = "The information determined as a result of making the observation, if the information has a simple value."
-* insert Translation(value[x] ^definition, de-DE, Wert der Beobachtung.)
-* insert Translation(value[x] ^definition, en-US, Value of the observation.)
+* insert Translation(value[x] ^definition, de-DE, Ergebniswert des PROMs-Items oder Scores.)
+* insert Translation(value[x] ^definition, en-US, Result value of the PROMs item or score.)
 // Observation.value[x].value
 * value[x].value ^short = "Numerical value (with implicit precision)"
 // Observation.interpretation
@@ -85,11 +90,11 @@ Description: "FDPG Profil - MII_PR_PRO_PROMIS_Cognitive_Function_SF4a_Raw_Score"
 * insert Translation(referenceRange ^definition, en-US, Clinical reference range for the value.)
 // Observation.derivedFrom
 * derivedFrom ^short = "Related measurements the observation is made from"
-* insert Translation(derivedFrom ^short, de-DE, Abgeleitet von)
-* insert Translation(derivedFrom ^short, en-US, Derived from)
+* insert Translation(derivedFrom ^short, de-DE, Zugehöriger Fragebogen)
+* insert Translation(derivedFrom ^short, en-US, Source questionnaire)
 * derivedFrom ^definition = "The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image."
-* insert Translation(derivedFrom ^definition, de-DE, Verweis auf die Ressource\, von der diese abgeleitet ist.)
-* insert Translation(derivedFrom ^definition, en-US, Reference to the resource this is derived from.)
+* insert Translation(derivedFrom ^definition, de-DE, Verweis auf die QuestionnaireResponse\, aus der dieser Score abgeleitet wurde.)
+* insert Translation(derivedFrom ^definition, en-US, Reference to the QuestionnaireResponse this score is derived from.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(extension)

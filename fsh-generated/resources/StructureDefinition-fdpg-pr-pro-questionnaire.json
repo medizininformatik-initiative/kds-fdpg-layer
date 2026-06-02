@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR PRO Questionnaire"
+            "valueString": "Fragebogen"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR PRO Questionnaire"
+            "valueString": "Questionnaire"
           }
         ]
       }
@@ -302,7 +302,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Abgeleitet von"
+                  "valueString": "Zugehöriger Fragebogen"
                 }
               ]
             },
@@ -315,7 +315,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Derived from"
+                  "valueString": "Source questionnaire"
                 }
               ]
             }
@@ -332,7 +332,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Verweis auf die Ressource, von der diese abgeleitet ist."
+                  "valueString": "Verweis auf die QuestionnaireResponse, aus der dieser Score abgeleitet wurde."
                 }
               ]
             },
@@ -345,7 +345,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Reference to the resource this is derived from."
+                  "valueString": "Reference to the QuestionnaireResponse this score is derived from."
                 }
               ]
             }
@@ -550,7 +550,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Code"
+                  "valueString": "PROMs-Item"
                 }
               ]
             },
@@ -563,7 +563,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Code"
+                  "valueString": "PROMs item"
                 }
               ]
             }
@@ -580,7 +580,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Kodierung des Inhalts."
+                  "valueString": "Kodierung des PROMs-Instruments oder Score-Typs."
                 }
               ]
             },
@@ -593,7 +593,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Coding of the content."
+                  "valueString": "Code of the PROMs instrument or score type."
                 }
               ]
             }

@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR PRO PROMIS-29 Depression T-Score"
+            "valueString": "PROMIS-29 Depression T-Score"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR PRO PROMIS 29 Depression TScore"
+            "valueString": "PROMIS-29 Depression T-Score"
           }
         ]
       }
@@ -387,7 +387,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Code"
+                  "valueString": "PROMs-Item"
                 }
               ]
             },
@@ -400,7 +400,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Code"
+                  "valueString": "PROMs item"
                 }
               ]
             }
@@ -417,7 +417,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Kodierung des Inhalts."
+                  "valueString": "Kodierung des PROMs-Instruments oder Score-Typs."
                 }
               ]
             },
@@ -430,7 +430,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Coding of the content."
+                  "valueString": "Code of the PROMs instrument or score type."
                 }
               ]
             }
@@ -505,7 +505,67 @@
           {
             "code": "dateTime"
           }
-        ]
+        ],
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Befragungsdatum"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Survey date"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Datum, an dem das PROMs-Instrument vom Patienten ausgefüllt wurde."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Date when the PROMs instrument was completed by the patient."
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Observation.performer",
@@ -641,7 +701,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Messwert"
+                  "valueString": "Score-Wert"
                 }
               ]
             },
@@ -654,7 +714,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Value"
+                  "valueString": "Score value"
                 }
               ]
             }
@@ -671,7 +731,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Wert der Beobachtung."
+                  "valueString": "Ergebniswert des PROMs-Items oder Scores."
                 }
               ]
             },
@@ -684,7 +744,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Value of the observation."
+                  "valueString": "Result value of the PROMs item or score."
                 }
               ]
             }
@@ -1009,7 +1069,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Abgeleitet von"
+                  "valueString": "Zugehöriger Fragebogen"
                 }
               ]
             },
@@ -1022,7 +1082,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Derived from"
+                  "valueString": "Source questionnaire"
                 }
               ]
             }
@@ -1039,7 +1099,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Verweis auf die Ressource, von der diese abgeleitet ist."
+                  "valueString": "Verweis auf die QuestionnaireResponse, aus der dieser Score abgeleitet wurde."
                 }
               ]
             },
@@ -1052,7 +1112,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Reference to the resource this is derived from."
+                  "valueString": "Reference to the QuestionnaireResponse this score is derived from."
                 }
               ]
             }

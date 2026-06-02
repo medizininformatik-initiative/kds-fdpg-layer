@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII PR PRO QuestionnaireResponse"
+            "valueString": "Fragebogen-Antwort"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "FDPG PR PRO QuestionnaireResponse"
+            "valueString": "Questionnaire response"
           }
         ]
       }

@@ -5,8 +5,8 @@ Title: "FDPG PR PRO QuestionnaireResponse"
 Description: "FDPG Profil - MII_PR_PRO_QuestionnaireResponse"
 * insert FDPGMetadata
 * insert FDPGModule(proms)
-* insert Translation(^title, de-DE, MII PR PRO QuestionnaireResponse)
-* insert Translation(^title, en-US, FDPG PR PRO QuestionnaireResponse)
+* insert Translation(^title, de-DE, Fragebogen-Antwort)
+* insert Translation(^title, en-US, Questionnaire response)
 // --- Element Designations ---
 // QuestionnaireResponse.language
 * language ^short = "Language of the resource content"

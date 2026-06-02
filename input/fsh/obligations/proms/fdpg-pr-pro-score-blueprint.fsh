@@ -5,32 +5,36 @@ Title: "FDPG PR PRO Score Blueprint"
 Description: "FDPG Profil - MII_PR_PRO_Score_Blueprint"
 * insert FDPGMetadata
 * insert FDPGModule(proms)
-* insert Translation(^title, de-DE, MII PR PRO Score Blueprint / Template)
-* insert Translation(^title, en-US, FDPG PR PRO Score Blueprint)
+* insert Translation(^title, de-DE, Score-Vorlage)
+* insert Translation(^title, en-US, Score blueprint)
 // --- Element Designations ---
 // ObservationDefinition.code
 * code ^short = "Type of observation (code / type)"
-* insert Translation(code ^short, de-DE, Code)
-* insert Translation(code ^short, en-US, Code)
+* insert Translation(code ^short, de-DE, PROMs-Item)
+* insert Translation(code ^short, en-US, PROMs item)
 * code ^definition = "Describes what will be observed. Sometimes this is called the observation \"name\"."
-* insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
-* insert Translation(code ^definition, en-US, Coding of the content.)
+* insert Translation(code ^definition, de-DE, Kodierung des PROMs-Instruments oder Score-Typs.)
+* insert Translation(code ^definition, en-US, Code of the PROMs instrument or score type.)
+// ObservationDefinition.code.coding
+* code.coding ^definition = "A reference to a code defined by a terminology system."
+* insert Translation(code.coding ^definition, de-DE, Kodierung des PROMs-Items.)
+* insert Translation(code.coding ^definition, en-US, Coding of the PROMs item.)
 // ObservationDefinition.code.coding:snomed.system
 * code.coding[snomed].system ^short = "SNOMED CT system URL"
 * insert Translation(code.coding[snomed].system ^short, de-DE, SNOMED CT-System-URL)
 * insert Translation(code.coding[snomed].system ^short, en-US, SNOMED CT system URL)
 // ObservationDefinition.code.coding:snomed.code
-* code.coding[snomed].code ^short = "Code as SNOMED CT"
-* insert Translation(code.coding[snomed].code ^short, de-DE, Code als SNOMED CT)
-* insert Translation(code.coding[snomed].code ^short, en-US, Code as SNOMED CT)
+* code.coding[snomed].code ^short = "PROMs item as SNOMED CT"
+* insert Translation(code.coding[snomed].code ^short, de-DE, PROMs-Item als SNOMED CT)
+* insert Translation(code.coding[snomed].code ^short, en-US, PROMs item as SNOMED CT)
 // ObservationDefinition.code.coding:loinc.system
 * code.coding[loinc].system ^short = "LOINC system URL"
 * insert Translation(code.coding[loinc].system ^short, de-DE, LOINC-System-URL)
 * insert Translation(code.coding[loinc].system ^short, en-US, LOINC system URL)
 // ObservationDefinition.code.coding:loinc.code
-* code.coding[loinc].code ^short = "Code as LOINC"
-* insert Translation(code.coding[loinc].code ^short, de-DE, Code als LOINC)
-* insert Translation(code.coding[loinc].code ^short, en-US, Code as LOINC)
+* code.coding[loinc].code ^short = "PROMs item as LOINC"
+* insert Translation(code.coding[loinc].code ^short, de-DE, PROMs-Item als LOINC)
+* insert Translation(code.coding[loinc].code ^short, en-US, PROMs item as LOINC)
 // ObservationDefinition.code.coding:mii.system
 // ObservationDefinition.code.coding:mii.code
 // ObservationDefinition.permittedDataType

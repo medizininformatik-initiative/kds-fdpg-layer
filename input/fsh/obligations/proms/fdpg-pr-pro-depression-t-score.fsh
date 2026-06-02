@@ -5,8 +5,8 @@ Title: "FDPG PR PRO Depression T Score"
 Description: "FDPG Profil - MII_PR_PRO_Depression_T_Score"
 * insert FDPGMetadata
 * insert FDPGModule(proms)
-* insert Translation(^title, de-DE, MII PR PRO Depression Domain T-Score)
-* insert Translation(^title, en-US, FDPG PR PRO Depression T Score)
+* insert Translation(^title, de-DE, Depression Domain T-Score)
+* insert Translation(^title, en-US, Depression Domain T-Score)
 // --- Element Designations ---
 // Observation.extension:instantiatesCanonical
 * extension[instantiatesCanonical] ^short = "FHIR protocol or definition"
@@ -26,11 +26,11 @@ Description: "FDPG Profil - MII_PR_PRO_Depression_T_Score"
 * insert Translation(category ^definition, en-US, Categorization of the resource.)
 // Observation.code
 * code ^short = "Type of observation (code / type)"
-* insert Translation(code ^short, de-DE, Code)
-* insert Translation(code ^short, en-US, Code)
+* insert Translation(code ^short, de-DE, PROMs-Item)
+* insert Translation(code ^short, en-US, PROMs item)
 * code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\"."
-* insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
-* insert Translation(code ^definition, en-US, Coding of the content.)
+* insert Translation(code ^definition, de-DE, Kodierung des PROMs-Instruments oder Score-Typs.)
+* insert Translation(code ^definition, en-US, Code of the PROMs instrument or score type.)
 // Observation.subject
 * subject ^short = "Who and/or what the observation is about"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -40,6 +40,11 @@ Description: "FDPG Profil - MII_PR_PRO_Depression_T_Score"
 * insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // Observation.effective[x]:effectiveDateTime
 * effective[x][effectiveDateTime] ^short = "Clinically relevant time/time-period for observation"
+* insert Translation(effective[x][effectiveDateTime] ^short, de-DE, Befragungsdatum)
+* insert Translation(effective[x][effectiveDateTime] ^short, en-US, Survey date)
+* effective[x][effectiveDateTime] ^definition = "The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the \"physiologically relevant time\". This is usually either the time of the procedure or of specimen collection, but very often the source of the date/time is not known, only the date/time itself."
+* insert Translation(effective[x][effectiveDateTime] ^definition, de-DE, Datum\, an dem das PROMs-Instrument vom Patienten ausgefüllt wurde.)
+* insert Translation(effective[x][effectiveDateTime] ^definition, en-US, Date when the PROMs instrument was completed by the patient.)
 // Observation.value[x]:valueQuantity
 * value[x][valueQuantity] ^short = "Actual result"
 * insert Translation(value[x][valueQuantity] ^short, de-DE, Quantitativer Wert)
@@ -58,11 +63,11 @@ Description: "FDPG Profil - MII_PR_PRO_Depression_T_Score"
 * insert Translation(referenceRange ^definition, en-US, Clinical reference range for the value.)
 // Observation.derivedFrom
 * derivedFrom ^short = "Related measurements the observation is made from"
-* insert Translation(derivedFrom ^short, de-DE, Abgeleitet von)
-* insert Translation(derivedFrom ^short, en-US, Derived from)
+* insert Translation(derivedFrom ^short, de-DE, Zugehöriger Fragebogen)
+* insert Translation(derivedFrom ^short, en-US, Source questionnaire)
 * derivedFrom ^definition = "The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image."
-* insert Translation(derivedFrom ^definition, de-DE, Verweis auf die Ressource\, von der diese abgeleitet ist.)
-* insert Translation(derivedFrom ^definition, en-US, Reference to the resource this is derived from.)
+* insert Translation(derivedFrom ^definition, de-DE, Verweis auf die QuestionnaireResponse\, aus der dieser Score abgeleitet wurde.)
+* insert Translation(derivedFrom ^definition, en-US, Reference to the QuestionnaireResponse this score is derived from.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(extension[instantiatesCanonical])

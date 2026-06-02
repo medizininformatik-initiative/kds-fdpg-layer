@@ -5,8 +5,8 @@ Title: "FDPG PR PRO Questionnaire"
 Description: "FDPG Profil - MII_PR_PRO_Questionnaire"
 * insert FDPGMetadata
 * insert FDPGModule(proms)
-* insert Translation(^title, de-DE, MII PR PRO Questionnaire)
-* insert Translation(^title, en-US, FDPG PR PRO Questionnaire)
+* insert Translation(^title, de-DE, Fragebogen)
+* insert Translation(^title, en-US, Questionnaire)
 // --- Element Designations ---
 // Questionnaire.extension:performerType
 * extension[performerType] ^short = "Resource that can record answers to this Questionnaire"
@@ -22,11 +22,11 @@ Description: "FDPG Profil - MII_PR_PRO_Questionnaire"
 * title ^short = "Name for this questionnaire (human friendly)"
 // Questionnaire.derivedFrom
 * derivedFrom ^short = "Instantiates protocol or definition"
-* insert Translation(derivedFrom ^short, de-DE, Abgeleitet von)
-* insert Translation(derivedFrom ^short, en-US, Derived from)
+* insert Translation(derivedFrom ^short, de-DE, Zugehöriger Fragebogen)
+* insert Translation(derivedFrom ^short, en-US, Source questionnaire)
 * derivedFrom ^definition = "The URL of a Questionnaire that this Questionnaire is based on."
-* insert Translation(derivedFrom ^definition, de-DE, Verweis auf die Ressource\, von der diese abgeleitet ist.)
-* insert Translation(derivedFrom ^definition, en-US, Reference to the resource this is derived from.)
+* insert Translation(derivedFrom ^definition, de-DE, Verweis auf die QuestionnaireResponse\, aus der dieser Score abgeleitet wurde.)
+* insert Translation(derivedFrom ^definition, en-US, Reference to the QuestionnaireResponse this score is derived from.)
 // Questionnaire.status
 * status ^short = "draft | active | retired | unknown"
 * insert Translation(status ^short, de-DE, Status)
@@ -40,11 +40,11 @@ Description: "FDPG Profil - MII_PR_PRO_Questionnaire"
 * copyright ^short = "Use and/or publishing restrictions"
 // Questionnaire.code
 * code ^short = "Concept that represents the overall questionnaire"
-* insert Translation(code ^short, de-DE, Code)
-* insert Translation(code ^short, en-US, Code)
+* insert Translation(code ^short, de-DE, PROMs-Item)
+* insert Translation(code ^short, en-US, PROMs item)
 * code ^definition = "An identifier for this question or group of questions in a particular terminology such as LOINC."
-* insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
-* insert Translation(code ^definition, en-US, Coding of the content.)
+* insert Translation(code ^definition, de-DE, Kodierung des PROMs-Instruments oder Score-Typs.)
+* insert Translation(code ^definition, en-US, Code of the PROMs instrument or score type.)
 // Questionnaire.item
 * item ^short = "Questions and sections within the Questionnaire"
 // Questionnaire.item.linkId
