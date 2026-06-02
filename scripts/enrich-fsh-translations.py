@@ -88,16 +88,30 @@ MODULES = {
 FHIR_CACHE = Path.home() / ".fhir" / "packages"
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 OBLIGATIONS_DIR = PROJECT_ROOT / "input" / "fsh" / "obligations"
-CANONICAL_LABELS_PATH = PROJECT_ROOT / "input" / "data" / "canonical-labels.json"
+DATA_DIR = PROJECT_ROOT / "input" / "data"
+CANONICAL_LABELS_PATH = DATA_DIR / "canonical-labels.json"
 
 
 def load_canonical_labels():
-    """Load FDPG canonical labels. Per styleguide §5, canonical is priority 1
-    and overrides upstream MII designations for any element it covers."""
+    """Load cross-module FDPG canonical labels."""
     if not CANONICAL_LABELS_PATH.exists():
         print(f"  WARNING: canonical-labels.json not found at {CANONICAL_LABELS_PATH}")
         return {}
     with open(CANONICAL_LABELS_PATH, encoding="utf-8") as f:
+        return json.load(f).get("elements", {})
+
+
+def load_module_labels(module_name):
+    """Load module-specific labels from input/data/element-labels-<module>.json.
+
+    Per styleguide §1 step 3 and §2 decision tree, module-specific labels
+    take priority over the generic canonical table. Returns {} if file
+    doesn't exist (module hasn't been authored for Phase 2 yet).
+    """
+    path = DATA_DIR / f"element-labels-{module_name}.json"
+    if not path.exists():
+        return {}
+    with open(path, encoding="utf-8") as f:
         return json.load(f).get("elements", {})
 
 
@@ -126,6 +140,14 @@ def canonical_lookup(canonical_map, el_id, resource_type):
     if not key:
         return None
     return canonical_map.get(key)
+
+
+def module_lookup(module_map, el_id, resource_type):
+    """Lookup module-specific entry. Same path-format as canonical."""
+    key = canonical_key_for_element(el_id, resource_type)
+    if not key:
+        return None
+    return module_map.get(key)
 
 
 def extract_translations(ext_obj):
@@ -219,15 +241,17 @@ def load_parent_sd(package_name, version, parent_name):
     return None
 
 
-def get_ms_elements_with_translations(sd, canonical_map=None):
+def get_ms_elements_with_translations(sd, canonical_map=None, module_map=None):
     """Extract MustSupport elements with their translations from snapshot.
 
-    Canonical labels fill the Translation-extension gap for elements that
-    upstream did not translate. The ^short / ^definition base text is left
-    as upstream provided it (we can't reliably distinguish FHIR-base-default
-    inheritance from intermediate-profile customisation, so we don't touch).
+    Module-specific labels (element-labels-<module>.json) and canonical labels
+    fill the Translation-extension gap for elements that upstream did not
+    translate. The ^short / ^definition base text is left as upstream provided
+    it (we can't reliably distinguish FHIR-base-default inheritance from
+    intermediate-profile customisation, so we don't touch).
     """
     canonical_map = canonical_map or {}
+    module_map = module_map or {}
     elements = []
 
     for el in sd.get("snapshot", {}).get("element", []):
@@ -244,15 +268,17 @@ def get_ms_elements_with_translations(sd, canonical_map=None):
         short_trans = extract_translations(el.get("_short"))
         def_trans = extract_translations(el.get("_definition"))
 
+        module_entry = module_lookup(module_map, el_id, sd.get("type", ""))
         canonical = canonical_lookup(canonical_map, el_id, sd.get("type", ""))
 
-        has_canonical = canonical and (canonical.get("de_short") or canonical.get("de_def"))
+        has_authored = (module_entry and (module_entry.get("de_short") or module_entry.get("de_def"))) or \
+                       (canonical and (canonical.get("de_short") or canonical.get("de_def")))
         has_german_short = short_trans.get("de-DE") or (
             short_val and not _is_fhir_default(short_val)
         )
         has_german_def = def_trans.get("de-DE")
 
-        if has_canonical or has_german_short or has_german_def:
+        if has_authored or has_german_short or has_german_def:
             elements.append({
                 "id": el_id,
                 "fsh_path": fsh_path,
@@ -260,6 +286,7 @@ def get_ms_elements_with_translations(sd, canonical_map=None):
                 "definition": definition_val,
                 "short_trans": short_trans,
                 "def_trans": def_trans,
+                "module_entry": module_entry,
                 "canonical": canonical,
             })
 
@@ -364,18 +391,21 @@ def generate_enriched_fsh(fsh_info, parent_sd, ms_elements, title_overrides=None
         definition = el["definition"]
         short_trans = el["short_trans"]
         def_trans = el["def_trans"]
+        module_entry = el.get("module_entry") or {}
         canonical = el.get("canonical") or {}
 
         lines.append(f"// {el['id']}")
 
-        # Canonical labels are a FALLBACK for Translation extensions only.
-        # The ^short / ^definition base text comes from upstream verbatim —
-        # we can't reliably tell whether upstream's text is FHIR-base-default
-        # noise or an intermediate-profile customisation, so leave it alone.
-        de_short = short_trans.get("de-DE") or canonical.get("de_short")
-        en_short = short_trans.get("en-US") or canonical.get("en_short")
-        de_def = def_trans.get("de-DE") or canonical.get("de_def")
-        en_def = def_trans.get("en-US") or canonical.get("en_def")
+        # Translation source priority (styleguide §1 step 2 / §5):
+        # 1. Upstream Translation extension — profile-specific, win when set
+        # 2. Module-specific authored label — element-labels-<module>.json
+        # 3. Cross-module canonical label — canonical-labels.json
+        # ^short / ^definition base text is untouched (we don't know whether
+        # upstream's text is FHIR-default noise or intermediate customisation).
+        de_short = short_trans.get("de-DE") or module_entry.get("de_short") or canonical.get("de_short")
+        en_short = short_trans.get("en-US") or module_entry.get("en_short") or canonical.get("en_short")
+        de_def = def_trans.get("de-DE") or module_entry.get("de_def") or canonical.get("de_def")
+        en_def = def_trans.get("en-US") or module_entry.get("en_def") or canonical.get("en_def")
 
         # ^short — upstream base text, canonical only fills missing translations.
         if short and not _is_fhir_default(short):
@@ -413,7 +443,8 @@ def process_module(module_name):
     print(f"  Package: {module_config['package']}#{module_config['version']}")
 
     canonical_map = load_canonical_labels()
-    print(f"  Loaded {len(canonical_map)} canonical labels")
+    module_map = load_module_labels(module_name)
+    print(f"  Loaded {len(canonical_map)} canonical labels, {len(module_map)} module-specific labels")
 
     # Load all parent SDs from package
     pkg_dir = FHIR_CACHE / f"{module_config['package']}#{module_config['version']}" / "package"
@@ -464,7 +495,7 @@ def process_module(module_name):
             continue
 
         parent_sd = parent_sds[parent_name]
-        ms_elements = get_ms_elements_with_translations(parent_sd, canonical_map)
+        ms_elements = get_ms_elements_with_translations(parent_sd, canonical_map, module_map)
 
         try:
             new_content = generate_enriched_fsh(fsh_info, parent_sd, ms_elements, title_overrides, module_key=module_name)

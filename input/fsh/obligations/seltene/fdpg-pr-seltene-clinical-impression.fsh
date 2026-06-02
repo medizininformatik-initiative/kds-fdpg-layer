@@ -54,6 +54,11 @@ Description: "FDPG Profil - MII_PR_Seltene_ClinicalImpression"
 * insert Translation(effective[x] ^definition, en-US, Date or period the observation refers to.)
 // ClinicalImpression.date
 * date ^short = "Wann die Beurteilung dokumentiert wurde"
+* insert Translation(date ^short, de-DE, Datum)
+* insert Translation(date ^short, en-US, Date)
+* date ^definition = "Gibt an, wann die klinische Beurteilung dokumentiert wurde"
+* insert Translation(date ^definition, de-DE, Datum der Erfassung der Familienanamnese.)
+* insert Translation(date ^definition, en-US, Date when the family history was recorded.)
 // ClinicalImpression.problem
 * problem ^short = "Relevante Probleme/Erkrankungen"
 // ClinicalImpression.investigation

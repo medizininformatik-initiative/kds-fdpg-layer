@@ -1,0 +1,230 @@
+{
+  "_doc": "Module-specific FDPG labels for the 'seltene' (rare diseases) module. Keys use FHIR element-id style (without resource type prefix). Used by enrich-fsh-translations.py as priority-2 override after canonical-labels.json. Authored per docs/datenkatalog-styleguide-en.md v0.3.",
+
+  "elements": {
+    "date": {
+      "de_short": "Datum",
+      "en_short": "Date",
+      "de_def": "Datum der Erfassung der Familienanamnese.",
+      "en_def": "Date when the family history was recorded."
+    },
+    "relationship": {
+      "de_short": "Verwandtschaftsbeziehung",
+      "en_short": "Relationship",
+      "de_def": "Art der Verwandtschaft zum Patienten oder zur Patientin.",
+      "en_def": "Type of relationship to the patient."
+    },
+    "relationship.coding:snomed.extension:Verwandtschaftsgrad": {
+      "de_short": "Verwandtschaftsgrad",
+      "en_short": "Degree of kinship",
+      "de_def": "Grad der Blutsverwandtschaft, z.B. ersten oder zweiten Grades.",
+      "en_def": "Degree of consanguinity, e.g. first or second degree."
+    },
+    "relationship.coding:snomed.extension:Verwandtschaftsverhaeltnis": {
+      "de_short": "Verwandtschaftsverhältnis",
+      "en_short": "Kinship",
+      "de_def": "Spezifisches Verwandtschaftsverhältnis, z.B. Elternteil oder Geschwister.",
+      "en_def": "Specific kinship, e.g. parent or sibling."
+    },
+    "relationship.coding:snomed.extension:FamiliareLinie": {
+      "de_short": "Familiäre Linie",
+      "en_short": "Familial line",
+      "de_def": "Familiäre Linie — mütterlich oder väterlich.",
+      "en_def": "Familial line — maternal or paternal."
+    },
+    "sex": {
+      "de_short": "Geschlecht",
+      "en_short": "Sex",
+      "de_def": "Geschlecht des Familienangehörigen.",
+      "en_def": "Sex of the family member."
+    },
+
+    "reasonCode.coding": {
+      "de_short": "Kodierung",
+      "en_short": "Coding",
+      "de_def": "Kodierung des Grundes.",
+      "en_def": "Coded reason."
+    },
+    "reasonCode.coding:icd10-gm": {
+      "de_short": "ICD-10-GM-Kodierung",
+      "en_short": "ICD-10-GM coding",
+      "de_def": "Kodierung nach ICD-10-GM.",
+      "en_def": "Coded by ICD-10-GM."
+    },
+    "reasonCode.coding:icd10-gm.system": {
+      "de_short": "System",
+      "en_short": "System",
+      "de_def": "Das Kodesystem ICD-10-GM.",
+      "en_def": "The ICD-10-GM codesystem."
+    },
+    "reasonCode.coding:icd10-gm.version": {
+      "de_short": "Version",
+      "en_short": "Version",
+      "de_def": "Version des ICD-10-GM-Katalogs.",
+      "en_def": "Version of the ICD-10-GM catalogue."
+    },
+    "reasonCode.coding:icd10-gm.code": {
+      "de_short": "Code",
+      "en_short": "Code",
+      "de_def": "Der ICD-10-GM-Code.",
+      "en_def": "The ICD-10-GM code."
+    },
+    "reasonCode.coding:alpha-id": {
+      "de_short": "Alpha-ID-Kodierung",
+      "en_short": "Alpha-ID coding",
+      "de_def": "Kodierung nach Alpha-ID.",
+      "en_def": "Coded by Alpha-ID."
+    },
+    "reasonCode.coding:alpha-id.system": {
+      "de_short": "System",
+      "en_short": "System",
+      "de_def": "Das Kodesystem Alpha-ID.",
+      "en_def": "The Alpha-ID codesystem."
+    },
+    "reasonCode.coding:alpha-id.code": {
+      "de_short": "Code",
+      "en_short": "Code",
+      "de_def": "Der Alpha-ID-Code.",
+      "en_def": "The Alpha-ID code."
+    },
+    "reasonCode.coding:sct": {
+      "de_short": "SNOMED-CT-Kodierung",
+      "en_short": "SNOMED CT coding",
+      "de_def": "Kodierung nach SNOMED CT.",
+      "en_def": "Coded by SNOMED CT."
+    },
+    "reasonCode.coding:sct.system": {
+      "de_short": "System",
+      "en_short": "System",
+      "de_def": "Das Kodesystem SNOMED CT.",
+      "en_def": "The SNOMED CT codesystem."
+    },
+    "reasonCode.coding:sct.code": {
+      "de_short": "Code",
+      "en_short": "Code",
+      "de_def": "Der SNOMED-CT-Code.",
+      "en_def": "The SNOMED CT code."
+    },
+    "reasonCode.coding:orphanet": {
+      "de_short": "Orphanet-Kodierung",
+      "en_short": "Orphanet coding",
+      "de_def": "Kodierung nach Orphanet für seltene Erkrankungen.",
+      "en_def": "Coded by Orphanet for rare diseases."
+    },
+    "reasonCode.coding:orphanet.system": {
+      "de_short": "System",
+      "en_short": "System",
+      "de_def": "Das Kodesystem Orphanet.",
+      "en_def": "The Orphanet codesystem."
+    },
+    "reasonCode.coding:orphanet.code": {
+      "de_short": "Code",
+      "en_short": "Code",
+      "de_def": "Der Orphanet-Code.",
+      "en_def": "The Orphanet code."
+    },
+
+    "condition": {
+      "de_short": "Erkrankung",
+      "en_short": "Condition",
+      "de_def": "Erkrankung des Familienangehörigen.",
+      "en_def": "Condition of the family member."
+    },
+    "condition.code": {
+      "de_short": "Erkrankungskode",
+      "en_short": "Condition code",
+      "de_def": "Kodierte Darstellung der Erkrankung.",
+      "en_def": "Coded representation of the condition."
+    },
+    "condition.code.coding": {
+      "de_short": "Kodierung",
+      "en_short": "Coding",
+      "de_def": "Kodierung der Erkrankung.",
+      "en_def": "Coding of the condition."
+    },
+    "condition.code.coding:icd10-gm": {
+      "de_short": "ICD-10-GM-Kodierung",
+      "en_short": "ICD-10-GM coding",
+      "de_def": "Kodierung nach ICD-10-GM.",
+      "en_def": "Coded by ICD-10-GM."
+    },
+    "condition.code.coding:icd10-gm.system": {
+      "de_short": "System",
+      "en_short": "System",
+      "de_def": "Das Kodesystem ICD-10-GM.",
+      "en_def": "The ICD-10-GM codesystem."
+    },
+    "condition.code.coding:icd10-gm.version": {
+      "de_short": "Version",
+      "en_short": "Version",
+      "de_def": "Version des ICD-10-GM-Katalogs.",
+      "en_def": "Version of the ICD-10-GM catalogue."
+    },
+    "condition.code.coding:icd10-gm.code": {
+      "de_short": "Code",
+      "en_short": "Code",
+      "de_def": "Der ICD-10-GM-Code.",
+      "en_def": "The ICD-10-GM code."
+    },
+    "condition.code.coding:alpha-id": {
+      "de_short": "Alpha-ID-Kodierung",
+      "en_short": "Alpha-ID coding",
+      "de_def": "Kodierung nach Alpha-ID.",
+      "en_def": "Coded by Alpha-ID."
+    },
+    "condition.code.coding:alpha-id.system": {
+      "de_short": "System",
+      "en_short": "System",
+      "de_def": "Das Kodesystem Alpha-ID.",
+      "en_def": "The Alpha-ID codesystem."
+    },
+    "condition.code.coding:alpha-id.code": {
+      "de_short": "Code",
+      "en_short": "Code",
+      "de_def": "Der Alpha-ID-Code.",
+      "en_def": "The Alpha-ID code."
+    },
+    "condition.code.coding:sct": {
+      "de_short": "SNOMED-CT-Kodierung",
+      "en_short": "SNOMED CT coding",
+      "de_def": "Kodierung nach SNOMED CT.",
+      "en_def": "Coded by SNOMED CT."
+    },
+    "condition.code.coding:sct.system": {
+      "de_short": "System",
+      "en_short": "System",
+      "de_def": "Das Kodesystem SNOMED CT.",
+      "en_def": "The SNOMED CT codesystem."
+    },
+    "condition.code.coding:sct.code": {
+      "de_short": "Code",
+      "en_short": "Code",
+      "de_def": "Der SNOMED-CT-Code.",
+      "en_def": "The SNOMED CT code."
+    },
+    "condition.code.coding:orphanet": {
+      "de_short": "Orphanet-Kodierung",
+      "en_short": "Orphanet coding",
+      "de_def": "Kodierung nach Orphanet für seltene Erkrankungen.",
+      "en_def": "Coded by Orphanet for rare diseases."
+    },
+    "condition.code.coding:orphanet.system": {
+      "de_short": "System",
+      "en_short": "System",
+      "de_def": "Das Kodesystem Orphanet.",
+      "en_def": "The Orphanet codesystem."
+    },
+    "condition.code.coding:orphanet.code": {
+      "de_short": "Code",
+      "en_short": "Code",
+      "de_def": "Der Orphanet-Code.",
+      "en_def": "The Orphanet code."
+    },
+    "condition.code.coding:mondo": {
+      "de_short": "MONDO-Kodierung",
+      "en_short": "MONDO coding",
+      "de_def": "Kodierung der Erkrankung nach MONDO.",
+      "en_def": "Coding of the condition by MONDO."
+    }
+  }
+}
