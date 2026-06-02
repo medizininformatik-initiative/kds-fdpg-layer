@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "Clinical Impresssion"
+            "valueString": "Follow-Up Klinischer Eindruck"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "Clinical Impresssion"
+            "valueString": "Follow-up clinical impression"
           }
         ]
       }

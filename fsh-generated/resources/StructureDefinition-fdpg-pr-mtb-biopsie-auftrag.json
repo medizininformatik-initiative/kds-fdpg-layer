@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "Biopsie Auftrag"
+            "valueString": "Biopsie (Auftrag)"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "Biopsie Auftrag"
+            "valueString": "Biopsy (order)"
           }
         ]
       }

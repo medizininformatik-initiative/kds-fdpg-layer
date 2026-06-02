@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "Studieneinschluss Anfrage"
+            "valueString": "Studieneinschluss (Anfrage)"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "Studieneinschluss Anfrage"
+            "valueString": "Study enrollment (request)"
           }
         ]
       }

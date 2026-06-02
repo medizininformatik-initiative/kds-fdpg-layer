@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MUV Koerpergewicht"
+            "valueString": "MUV — Körpergewicht"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "MUV Koerpergewicht"
+            "valueString": "MUV — body weight"
           }
         ]
       }

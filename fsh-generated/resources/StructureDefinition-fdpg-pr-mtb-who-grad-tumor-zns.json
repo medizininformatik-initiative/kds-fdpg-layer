@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "WHO Grad Tumor ZNS"
+            "valueString": "WHO-Grad ZNS-Tumor"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "WHO Grad Tumor ZNS"
+            "valueString": "WHO grade CNS tumor"
           }
         ]
       }

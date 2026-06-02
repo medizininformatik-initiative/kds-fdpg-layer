@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "Bundle"
+            "valueString": "Pathologie-Bundle"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "Bundle"
+            "valueString": "Pathology bundle"
           }
         ]
       }

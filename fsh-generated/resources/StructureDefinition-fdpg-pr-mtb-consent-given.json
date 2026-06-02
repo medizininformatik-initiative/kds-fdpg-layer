@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "Consent"
+            "valueString": "Einwilligung erteilt"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "Consent"
+            "valueString": "Consent given"
           }
         ]
       }

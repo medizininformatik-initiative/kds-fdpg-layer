@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MUV Koerpergroesse"
+            "valueString": "MUV — Körpergröße"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "MUV Koerpergroesse"
+            "valueString": "MUV — body height"
           }
         ]
       }

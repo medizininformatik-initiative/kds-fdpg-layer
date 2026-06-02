@@ -30,7 +30,7 @@
           },
           {
             "url": "content",
-            "valueString": "Therapieempfehlung Systemische Therapie"
+            "valueString": "Therapieempfehlung systemische Therapie"
           }
         ]
       },
@@ -43,7 +43,7 @@
           },
           {
             "url": "content",
-            "valueString": "Therapieempfehlung Systemische Therapie"
+            "valueString": "Systemic therapy recommendation"
           }
         ]
       }

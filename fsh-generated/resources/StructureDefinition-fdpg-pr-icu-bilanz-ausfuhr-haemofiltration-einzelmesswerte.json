@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "Bilanz Ausfuhr Haemofiltration Einzelmesswerte"
+            "valueString": "Bilanz Ausfuhr Hämofiltration Einzelmesswerte"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "Bilanz Ausfuhr Haemofiltration Einzelmesswerte"
+            "valueString": "Fluid balance — hemofiltration output (individual measurements)"
           }
         ]
       }

@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "Anwort Kostenuebernahme"
+            "valueString": "Antwort Kostenübernahme"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "Anwort Kostenuebernahme"
+            "valueString": "Cost coverage response"
           }
         ]
       }

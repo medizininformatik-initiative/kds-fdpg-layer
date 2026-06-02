@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "Bilanz Ausfuhr OP Drainage"
+            "valueString": "Bilanz Ausfuhr OP-Drainage"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "Bilanz Ausfuhr OP Drainage"
+            "valueString": "Fluid balance — surgical drainage output"
           }
         ]
       }

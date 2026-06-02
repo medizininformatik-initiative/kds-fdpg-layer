@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII SD ICU MUV Herzfrequenz"
+            "valueString": "MUV — Herzfrequenz"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "MII SD ICU MUV Herzfrequenz"
+            "valueString": "MUV — heart rate"
           }
         ]
       }

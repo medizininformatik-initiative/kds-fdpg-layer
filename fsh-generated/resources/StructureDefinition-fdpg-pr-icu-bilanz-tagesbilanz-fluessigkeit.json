@@ -16,7 +16,7 @@
           },
           {
             "url": "content",
-            "valueString": "Bilanz Tagesbilanz Fluessigkeit"
+            "valueString": "Tagesbilanz Flüssigkeit"
           }
         ]
       },
@@ -29,7 +29,7 @@
           },
           {
             "url": "content",
-            "valueString": "Bilanz Tagesbilanz Fluessigkeit"
+            "valueString": "Daily fluid balance"
           }
         ]
       }
