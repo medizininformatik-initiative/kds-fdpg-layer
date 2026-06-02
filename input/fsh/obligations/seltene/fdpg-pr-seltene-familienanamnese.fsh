@@ -307,6 +307,8 @@ Description: "FDPG Profil - MII_PR_Seltene_Familienanamnese"
 * insert Translation(condition.code.coding[mondo] ^definition, en-US, Coding of the condition by MONDO.)
 // FamilyMemberHistory.condition.code.coding:mondo.display
 * condition.code.coding[mondo].display ^short = "Representation defined by the system"
+* insert Translation(condition.code.coding[mondo].display ^short, de-DE, MONDO-Anzeige)
+* insert Translation(condition.code.coding[mondo].display ^short, en-US, MONDO display)
 // FamilyMemberHistory.condition.contributedToDeath
 * condition.contributedToDeath ^short = "Tod durch diese Erkrankung"
 // FamilyMemberHistory.condition.onset[x]

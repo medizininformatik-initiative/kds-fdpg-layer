@@ -85,6 +85,14 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Therapie_Medication_Statement
 * medication[x][medicationCodeableConcept].coding[Pharmazentralnummer] ^definition = "Ein Verweis auf einen von der Pharmazentralnummer (PZN) definierten Code"
 * insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer] ^definition, de-DE, Ein Verweis auf einen von der Pharmazentralnummer definierten Code)
 * insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer] ^definition, en-US, A reference to a code defined by Pharmazentralnummer)
+// MedicationStatement.medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer.system
+* medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].system ^short = "PZN system URL"
+* insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].system ^short, de-DE, Pharmazentralnummer-System-URL)
+* insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].system ^short, en-US, PZN system URL)
+// MedicationStatement.medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer.code
+* medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].code ^short = "Medication code as PZN"
+* insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].code ^short, de-DE, Medikation Code als Pharmazentralnummer)
+* insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].code ^short, en-US, Medication code as PZN)
 // MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassDe
 * medication[x][medicationCodeableConcept].coding[atcClassDe] ^short = "ATC Klassifikation deutsche Version"
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe] ^short, de-DE, ATC Code)
@@ -92,6 +100,14 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Therapie_Medication_Statement
 * medication[x][medicationCodeableConcept].coding[atcClassDe] ^definition = "ATC-Codes für Fertigarzneimittel bspw. von Kombiprodukten"
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe] ^definition, de-DE, Ein Verweis auf einen von der deutschen Fassung der Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code)
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe] ^definition, en-US, A reference to a code defined by the German edition of the Anatomical Therapeutic Chemical classification system)
+// MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassDe.system
+* medication[x][medicationCodeableConcept].coding[atcClassDe].system ^short = "ATC (BfArM) system URL"
+* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe].system ^short, de-DE, ATC (BfArM\)-System-URL)
+* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe].system ^short, en-US, ATC (BfArM\) system URL)
+// MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassDe.code
+* medication[x][medicationCodeableConcept].coding[atcClassDe].code ^short = "Medication code as ATC (BfArM)"
+* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe].code ^short, de-DE, Medikation Code als ATC (BfArM\))
+* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe].code ^short, en-US, Medication code as ATC (BfArM\))
 // MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassEn
 * medication[x][medicationCodeableConcept].coding[atcClassEn] ^short = "Anatomical Therapeutic Chemical Classification System"
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn] ^short, de-DE, ATC WHO Code)
@@ -99,6 +115,14 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Therapie_Medication_Statement
 * medication[x][medicationCodeableConcept].coding[atcClassEn] ^definition = "ATC Classification International WHO Version"
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn] ^definition, de-DE, Ein Verweis auf einen von der WHO Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code)
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn] ^definition, en-US, A reference to a code defined by the WHO edition of the Anatomical Therapeutic Chemical classification system)
+// MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassEn.system
+* medication[x][medicationCodeableConcept].coding[atcClassEn].system ^short = "ATC (WHO) system URL"
+* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn].system ^short, de-DE, ATC (WHO\)-System-URL)
+* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn].system ^short, en-US, ATC (WHO\) system URL)
+// MedicationStatement.medication[x]:medicationCodeableConcept.coding:atcClassEn.code
+* medication[x][medicationCodeableConcept].coding[atcClassEn].code ^short = "Medication code as ATC (WHO)"
+* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn].code ^short, de-DE, Medikation Code als ATC (WHO\))
+* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn].code ^short, en-US, Medication code as ATC (WHO\))
 // MedicationStatement.medication[x]:medicationCodeableConcept.coding:UNII
 * medication[x][medicationCodeableConcept].coding[UNII] ^short = "Unique Ingredient Identifier"
 * insert Translation(medication[x][medicationCodeableConcept].coding[UNII] ^short, de-DE, Unique Ingredient Identifier)
@@ -106,6 +130,14 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Therapie_Medication_Statement
 * medication[x][medicationCodeableConcept].coding[UNII] ^definition = "Global Susbstance Registration System Unique Ingredient Identifier. Soll nur eingesetzt werden, wenn weder ATC-Code noch PZN existiert, z.B. bei experimentellen Krebsmedikamenten."
 * insert Translation(medication[x][medicationCodeableConcept].coding[UNII] ^definition, de-DE, Ein Unique Ingredient Identifier (UNII\) aus dem Global Substance Registration System der amerikanischen Food & Drug Administration)
 * insert Translation(medication[x][medicationCodeableConcept].coding[UNII] ^definition, en-US, A Unique Ingredient Identifier (UNII\) from the american Food & Drug Administration's Global Substance Registration System)
+// MedicationStatement.medication[x]:medicationCodeableConcept.coding:UNII.system
+* medication[x][medicationCodeableConcept].coding[UNII].system ^short = "UNII system URL"
+* insert Translation(medication[x][medicationCodeableConcept].coding[UNII].system ^short, de-DE, UNII-System-URL)
+* insert Translation(medication[x][medicationCodeableConcept].coding[UNII].system ^short, en-US, UNII system URL)
+// MedicationStatement.medication[x]:medicationCodeableConcept.coding:UNII.code
+* medication[x][medicationCodeableConcept].coding[UNII].code ^short = "Medication code as UNII"
+* insert Translation(medication[x][medicationCodeableConcept].coding[UNII].code ^short, de-DE, Medikation Code als UNII)
+* insert Translation(medication[x][medicationCodeableConcept].coding[UNII].code ^short, en-US, Medication code as UNII)
 // MedicationStatement.subject
 * subject ^short = "Who is/was taking  the medication"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -298,6 +330,14 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Therapie_Medication_Statement
 * dosage.site.coding[SNOMED] ^definition = "Ein Verweis auf einen von SNOMED CT definierten Code"
 * insert Translation(dosage.site.coding[SNOMED] ^definition, de-DE, Ein Verweis auf einen von SNOMED CT definierten Code)
 * insert Translation(dosage.site.coding[SNOMED] ^definition, en-US, A reference to a code defined by SNOMED CT)
+// MedicationStatement.dosage.site.coding:SNOMED.system
+* dosage.site.coding[SNOMED].system ^short = "SNOMED CT system URL"
+* insert Translation(dosage.site.coding[SNOMED].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(dosage.site.coding[SNOMED].system ^short, en-US, SNOMED CT system URL)
+// MedicationStatement.dosage.site.coding:SNOMED.code
+* dosage.site.coding[SNOMED].code ^short = "Site of administration as SNOMED CT"
+* insert Translation(dosage.site.coding[SNOMED].code ^short, de-DE, Verabreichungsort als SNOMED CT)
+* insert Translation(dosage.site.coding[SNOMED].code ^short, en-US, Site of administration as SNOMED CT)
 // MedicationStatement.dosage.route
 * dosage.route ^short = "Verabreichungsweg"
 * insert Translation(dosage.route ^short, de-DE, Verabreichungsweg)
@@ -312,6 +352,14 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Therapie_Medication_Statement
 * dosage.route.coding[EDQM] ^definition = "Ein Verweis auf einen durch EDQM Standard Terms definierten Code"
 * insert Translation(dosage.route.coding[EDQM] ^definition, de-DE, Ein Verweis auf einen durch EDQM Standard Terms definierten Code)
 * insert Translation(dosage.route.coding[EDQM] ^definition, en-US, A reference to a code defined by EDQM Standard Terms)
+// MedicationStatement.dosage.route.coding:EDQM.system
+* dosage.route.coding[EDQM].system ^short = "EDQM Standard Terms system URL"
+* insert Translation(dosage.route.coding[EDQM].system ^short, de-DE, EDQM Standard Terms-System-URL)
+* insert Translation(dosage.route.coding[EDQM].system ^short, en-US, EDQM Standard Terms system URL)
+// MedicationStatement.dosage.route.coding:EDQM.code
+* dosage.route.coding[EDQM].code ^short = "Route of administration as EDQM Standard Terms"
+* insert Translation(dosage.route.coding[EDQM].code ^short, de-DE, Verabreichungsweg als EDQM Standard Terms)
+* insert Translation(dosage.route.coding[EDQM].code ^short, en-US, Route of administration as EDQM Standard Terms)
 // MedicationStatement.dosage.route.coding:SNOMED
 * dosage.route.coding[SNOMED] ^short = "SNOMED CT Code"
 * insert Translation(dosage.route.coding[SNOMED] ^short, de-DE, SNOMED CT Code)
@@ -319,6 +367,14 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Therapie_Medication_Statement
 * dosage.route.coding[SNOMED] ^definition = "Ein Verweis auf einen von SNOMED CT definierten Code"
 * insert Translation(dosage.route.coding[SNOMED] ^definition, de-DE, Ein Verweis auf einen von SNOMED CT definierten Code)
 * insert Translation(dosage.route.coding[SNOMED] ^definition, en-US, A reference to a code defined by SNOMED CT)
+// MedicationStatement.dosage.route.coding:SNOMED.system
+* dosage.route.coding[SNOMED].system ^short = "SNOMED CT system URL"
+* insert Translation(dosage.route.coding[SNOMED].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(dosage.route.coding[SNOMED].system ^short, en-US, SNOMED CT system URL)
+// MedicationStatement.dosage.route.coding:SNOMED.code
+* dosage.route.coding[SNOMED].code ^short = "Route of administration as SNOMED CT"
+* insert Translation(dosage.route.coding[SNOMED].code ^short, de-DE, Verabreichungsweg als SNOMED CT)
+* insert Translation(dosage.route.coding[SNOMED].code ^short, en-US, Route of administration as SNOMED CT)
 // MedicationStatement.dosage.doseAndRate
 * dosage.doseAndRate ^short = "Menge des verabreichten Medikaments"
 // MedicationStatement.dosage.doseAndRate.type

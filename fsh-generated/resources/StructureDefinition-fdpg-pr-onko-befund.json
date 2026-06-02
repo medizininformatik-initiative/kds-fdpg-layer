@@ -316,6 +316,76 @@
         "sliceName": "pathology-report"
       },
       {
+        "id": "DiagnosticReport.code.coding:pathology-report.system",
+        "path": "DiagnosticReport.code.coding.system",
+        "short": "LOINC system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "DiagnosticReport.code.coding:pathology-report.code",
+        "path": "DiagnosticReport.code.coding.code",
+        "short": "Code as LOINC",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code als LOINC"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code as LOINC"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "DiagnosticReport.subject",
         "extension": [
           {

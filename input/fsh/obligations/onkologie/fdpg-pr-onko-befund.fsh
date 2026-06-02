@@ -24,6 +24,14 @@ Description: "FDPG Profil - MII_PR_Onko_Befund"
 * code ^definition = "A code or name that describes this diagnostic report."
 * insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
+// DiagnosticReport.code.coding:pathology-report.system
+* code.coding[pathology-report].system ^short = "LOINC system URL"
+* insert Translation(code.coding[pathology-report].system ^short, de-DE, LOINC-System-URL)
+* insert Translation(code.coding[pathology-report].system ^short, en-US, LOINC system URL)
+// DiagnosticReport.code.coding:pathology-report.code
+* code.coding[pathology-report].code ^short = "Code as LOINC"
+* insert Translation(code.coding[pathology-report].code ^short, de-DE, Code als LOINC)
+* insert Translation(code.coding[pathology-report].code ^short, en-US, Code as LOINC)
 // DiagnosticReport.subject
 * subject ^short = "The subject of the report - usually, but not always, the patient"
 * insert Translation(subject ^short, de-DE, Patient*in)

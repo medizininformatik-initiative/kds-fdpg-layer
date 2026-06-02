@@ -87,6 +87,8 @@ Description: "FDPG Profil - MII_PR_MTB_Response_Befund"
 * value[x][valueCodeableConcept].coding[oBDS] ^definition = "Gesamtbeurteilung im Verlauf gemäß 17.2 oBDS 2021."
 * insert Translation(value[x][valueCodeableConcept].coding[oBDS] ^definition, de-DE, Gesamtbeurteilung im Verlauf gemäß 17.2 oBDS 2021.)
 * insert Translation(value[x][valueCodeableConcept].coding[oBDS] ^definition, en-US, Overall assessment during follow-up per oBDS 2021 §17.2.)
+// Observation.value[x]:valueCodeableConcept.coding:oBDS.system
+// Observation.value[x]:valueCodeableConcept.coding:oBDS.code
 // Observation.value[x]:valueCodeableConcept.coding:MTB
 * value[x][valueCodeableConcept].coding[MTB] ^short = "Response Beurteilung nach Recist oder Rano iM Rahmen des MTB"
 * insert Translation(value[x][valueCodeableConcept].coding[MTB] ^short, de-DE, Gesamtbeurteilung im Verlauf)
@@ -94,6 +96,8 @@ Description: "FDPG Profil - MII_PR_MTB_Response_Befund"
 * value[x][valueCodeableConcept].coding[MTB] ^definition = "Gesamtbeurteilung im Verlauf gemäß 17.2 oBDS 2021."
 * insert Translation(value[x][valueCodeableConcept].coding[MTB] ^definition, de-DE, Gesamtbeurteilung im Verlauf gemäß 17.2 oBDS 2021.)
 * insert Translation(value[x][valueCodeableConcept].coding[MTB] ^definition, en-US, Overall assessment during follow-up per oBDS 2021 §17.2.)
+// Observation.value[x]:valueCodeableConcept.coding:MTB.system
+// Observation.value[x]:valueCodeableConcept.coding:MTB.code
 // Observation.method
 * method ^short = "Beurteilungsmethode"
 * insert Translation(method ^short, de-DE, Beurteilungsmethode)

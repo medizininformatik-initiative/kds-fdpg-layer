@@ -242,6 +242,76 @@
         "sliceName": "loinc"
       },
       {
+        "id": "DiagnosticReport.category.coding:loinc.system",
+        "path": "DiagnosticReport.category.coding.system",
+        "short": "LOINC system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "DiagnosticReport.category.coding:loinc.code",
+        "path": "DiagnosticReport.category.coding.code",
+        "short": "category as LOINC",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kategorie als LOINC"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "category as LOINC"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "DiagnosticReport.category.coding:diagnostic-service-sections",
         "extension": [
           {
@@ -275,6 +345,76 @@
         "sliceName": "diagnostic-service-sections"
       },
       {
+        "id": "DiagnosticReport.category.coding:diagnostic-service-sections.system",
+        "path": "DiagnosticReport.category.coding.system",
+        "short": "HL7 v2 Microbiology system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "HL7 v2 Mikrobiologie-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "HL7 v2 Microbiology system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "DiagnosticReport.category.coding:diagnostic-service-sections.code",
+        "path": "DiagnosticReport.category.coding.code",
+        "short": "category as HL7 v2 Microbiology",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kategorie als HL7 v2 Mikrobiologie"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "category as HL7 v2 Microbiology"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "DiagnosticReport.category.coding:sct",
         "extension": [
           {
@@ -306,6 +446,76 @@
         ],
         "path": "DiagnosticReport.category.coding",
         "sliceName": "sct"
+      },
+      {
+        "id": "DiagnosticReport.category.coding:sct.system",
+        "path": "DiagnosticReport.category.coding.system",
+        "short": "SNOMED CT system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "DiagnosticReport.category.coding:sct.code",
+        "path": "DiagnosticReport.category.coding.code",
+        "short": "category as SNOMED CT",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kategorie als SNOMED CT"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "category as SNOMED CT"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "DiagnosticReport.code",

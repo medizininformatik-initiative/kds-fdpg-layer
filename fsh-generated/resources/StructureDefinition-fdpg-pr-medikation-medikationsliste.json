@@ -301,6 +301,76 @@
         "sliceName": "medCode"
       },
       {
+        "id": "List.code.coding:medCode.system",
+        "path": "List.code.coding.system",
+        "short": "List Use Code system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "List Use Code-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "List Use Code system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "List.code.coding:medCode.code",
+        "path": "List.code.coding.code",
+        "short": "Code as List Use Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code als List Use Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code as List Use Code"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "List.code.coding:contextCode",
         "extension": [
           {
@@ -332,6 +402,76 @@
         ],
         "path": "List.code.coding",
         "sliceName": "contextCode"
+      },
+      {
+        "id": "List.code.coding:contextCode.system",
+        "path": "List.code.coding.system",
+        "short": "Encounter context system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Fallkontext-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Encounter context system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "List.code.coding:contextCode.code",
+        "path": "List.code.coding.code",
+        "short": "Code as Encounter context",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code als Fallkontext"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code as Encounter context"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "List.subject",

@@ -24,6 +24,14 @@ Description: "FDPG Profil - MII_PR_Onko_Anzahl_Befallene_Sentinel_Lymphknoten"
 * code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\"."
 * insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
+// Observation.code.coding:loinc.system
+* code.coding[loinc].system ^short = "LOINC system URL"
+* insert Translation(code.coding[loinc].system ^short, de-DE, LOINC-System-URL)
+* insert Translation(code.coding[loinc].system ^short, en-US, LOINC system URL)
+// Observation.code.coding:loinc.code
+* code.coding[loinc].code ^short = "Code as LOINC"
+* insert Translation(code.coding[loinc].code ^short, de-DE, Code als LOINC)
+* insert Translation(code.coding[loinc].code ^short, en-US, Code as LOINC)
 // Observation.subject
 * subject ^short = "Who and/or what the observation is about"
 * insert Translation(subject ^short, de-DE, Patient*in)

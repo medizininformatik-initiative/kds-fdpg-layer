@@ -10,6 +10,29 @@ Description: "FDPG Profil - MII_PR_PRO_Score_Blueprint"
 // --- Element Designations ---
 // ObservationDefinition.code
 * code ^short = "Type of observation (code / type)"
+* insert Translation(code ^short, de-DE, Code)
+* insert Translation(code ^short, en-US, Code)
+* code ^definition = "Describes what will be observed. Sometimes this is called the observation \"name\"."
+* insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
+* insert Translation(code ^definition, en-US, Coding of the content.)
+// ObservationDefinition.code.coding:snomed.system
+* code.coding[snomed].system ^short = "SNOMED CT system URL"
+* insert Translation(code.coding[snomed].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(code.coding[snomed].system ^short, en-US, SNOMED CT system URL)
+// ObservationDefinition.code.coding:snomed.code
+* code.coding[snomed].code ^short = "Code as SNOMED CT"
+* insert Translation(code.coding[snomed].code ^short, de-DE, Code als SNOMED CT)
+* insert Translation(code.coding[snomed].code ^short, en-US, Code as SNOMED CT)
+// ObservationDefinition.code.coding:loinc.system
+* code.coding[loinc].system ^short = "LOINC system URL"
+* insert Translation(code.coding[loinc].system ^short, de-DE, LOINC-System-URL)
+* insert Translation(code.coding[loinc].system ^short, en-US, LOINC system URL)
+// ObservationDefinition.code.coding:loinc.code
+* code.coding[loinc].code ^short = "Code as LOINC"
+* insert Translation(code.coding[loinc].code ^short, de-DE, Code als LOINC)
+* insert Translation(code.coding[loinc].code ^short, en-US, Code as LOINC)
+// ObservationDefinition.code.coding:mii.system
+// ObservationDefinition.code.coding:mii.code
 // ObservationDefinition.permittedDataType
 * permittedDataType ^short = "Quantity | CodeableConcept | string | boolean | integer | Range | Ratio | SampledData | time | dateTime | Period"
 // ObservationDefinition.preferredReportName

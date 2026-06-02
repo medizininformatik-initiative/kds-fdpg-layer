@@ -15,6 +15,14 @@ Description: "FDPG Profil - MII_PR_Onko_Allgemeiner_Leistungszustand_Karnofsky"
 * code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\"."
 * insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
+// Observation.code.coding:snomed.system
+* code.coding[snomed].system ^short = "SNOMED CT system URL"
+* insert Translation(code.coding[snomed].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(code.coding[snomed].system ^short, en-US, SNOMED CT system URL)
+// Observation.code.coding:snomed.code
+* code.coding[snomed].code ^short = "Code as SNOMED CT"
+* insert Translation(code.coding[snomed].code ^short, de-DE, Code als SNOMED CT)
+* insert Translation(code.coding[snomed].code ^short, en-US, Code as SNOMED CT)
 // Observation.subject
 * subject ^short = "Who and/or what the observation is about"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -43,6 +51,7 @@ Description: "FDPG Profil - MII_PR_Onko_Allgemeiner_Leistungszustand_Karnofsky"
 * value[x].coding ^definition = "Leistungszustand nach Karnofsky 0-100% gemäß 12.1 oBDS 2021"
 * insert Translation(value[x].coding ^definition, de-DE, Leistungszustand nach Karnofsky 0-100% gemäß 12.1 oBDS 2021)
 * insert Translation(value[x].coding ^definition, en-US, Location of distant metastases per oBDS 2021 §11.1 / TNM coding.)
+// Observation.value[x].coding:obds.code
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(code)

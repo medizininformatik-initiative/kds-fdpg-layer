@@ -43,6 +43,14 @@ Description: "FDPG Profil - MII_PR_Medikation_Medikationsliste"
 * code.coding[medCode] ^definition = "Code für Medikationsliste"
 * insert Translation(code.coding[medCode] ^definition, de-DE, Code für Medikationsliste)
 * insert Translation(code.coding[medCode] ^definition, en-US, Code for medication list)
+// List.code.coding:medCode.system
+* code.coding[medCode].system ^short = "List Use Code system URL"
+* insert Translation(code.coding[medCode].system ^short, de-DE, List Use Code-System-URL)
+* insert Translation(code.coding[medCode].system ^short, en-US, List Use Code system URL)
+// List.code.coding:medCode.code
+* code.coding[medCode].code ^short = "Code as List Use Code"
+* insert Translation(code.coding[medCode].code ^short, de-DE, Code als List Use Code)
+* insert Translation(code.coding[medCode].code ^short, en-US, Code as List Use Code)
 // List.code.coding:contextCode
 * code.coding[contextCode] ^short = "Kontext der Medikationsliste"
 * insert Translation(code.coding[contextCode] ^short, de-DE, Kontext der Medikationsliste)
@@ -50,6 +58,14 @@ Description: "FDPG Profil - MII_PR_Medikation_Medikationsliste"
 * code.coding[contextCode] ^definition = "ambulanter Kontakt | stationärer Aufenthalt | stationäre Aufnahme | stationäre Entlassung"
 * insert Translation(code.coding[contextCode] ^definition, de-DE, ambulanter Kontakt | stationärer Aufenthalt | stationäre Aufnahme | stationäre Entlassung)
 * insert Translation(code.coding[contextCode] ^definition, en-US, ambulatory contact | inpatient stay | inpatient admission | inpatient discharge)
+// List.code.coding:contextCode.system
+* code.coding[contextCode].system ^short = "Encounter context system URL"
+* insert Translation(code.coding[contextCode].system ^short, de-DE, Fallkontext-System-URL)
+* insert Translation(code.coding[contextCode].system ^short, en-US, Encounter context system URL)
+// List.code.coding:contextCode.code
+* code.coding[contextCode].code ^short = "Code as Encounter context"
+* insert Translation(code.coding[contextCode].code ^short, de-DE, Code als Fallkontext)
+* insert Translation(code.coding[contextCode].code ^short, en-US, Code as Encounter context)
 // List.subject
 * subject ^short = "If all resources have the same subject"
 * insert Translation(subject ^short, de-DE, Patient*in)

@@ -93,12 +93,13 @@ CANONICAL_LABELS_PATH = DATA_DIR / "canonical-labels.json"
 
 
 def load_canonical_labels():
-    """Load cross-module FDPG canonical labels."""
+    """Load cross-module FDPG canonical labels (elements + coding_systems)."""
     if not CANONICAL_LABELS_PATH.exists():
         print(f"  WARNING: canonical-labels.json not found at {CANONICAL_LABELS_PATH}")
-        return {}
+        return {}, {}
     with open(CANONICAL_LABELS_PATH, encoding="utf-8") as f:
-        return json.load(f).get("elements", {})
+        data = json.load(f)
+    return data.get("elements", {}), data.get("coding_systems", {})
 
 
 def load_module_labels(module_name):
@@ -148,6 +149,93 @@ def module_lookup(module_map, el_id, resource_type):
     if not key:
         return None
     return module_map.get(key)
+
+
+# Sub-element qualifier suffixes for coding-slice derivation (§3 of guide).
+# ".code" uses the {parent} als {codesystem} pattern; the others append a
+# qualifier directly to the codesystem display.
+CODING_SUB_QUALIFIERS = {
+    "code":    {"de": "als",         "en": "as"},
+    "system":  {"de": "System-URL",  "en": "system URL"},
+    "version": {"de": "Version",     "en": "version"},
+    "display": {"de": "Anzeige",     "en": "display"},
+}
+
+
+def collect_slice_system_urls(sd):
+    """Build a map of slice element-id -> codesystem URL by inspecting the
+    pattern[Coding] or fixedUri attributes the upstream profile sets on its
+    coding slices. Used to resolve which codesystem a slice binds to.
+    """
+    out = {}
+    for el in sd.get("snapshot", {}).get("element", []):
+        el_id = el.get("id", "")
+        if ":" not in el_id or ".coding:" not in el_id and not el_id.endswith(".coding"):
+            # Only care about coding slices and their .system children
+            pass
+        # The slice's own pattern[Coding].system gives us the URL
+        pattern = el.get("patternCoding") or {}
+        if pattern.get("system"):
+            out[el_id] = pattern["system"]
+            continue
+        # Fallback: a .system sub-element with fixedUri / patternUri
+        if el_id.endswith(".system") and (el.get("fixedUri") or el.get("patternUri")):
+            slice_id = el_id[: -len(".system")]
+            out[slice_id] = el.get("fixedUri") or el.get("patternUri")
+    return out
+
+
+def derive_coding_subelement_label(el_id, parent_labels, slice_systems, coding_systems_map):
+    """Derive a templated label for a coding-slice sub-element.
+
+    Patterns handled:
+        *.coding:<slice>.code     -> "{parent} als {codesystem}"      / "{parent} as {codesystem}"
+        *.coding:<slice>.system   -> "{codesystem}-System-URL"        / "{codesystem} system URL"
+        *.coding:<slice>.version  -> "{codesystem}-Version"           / "{codesystem} version"
+        *.coding:<slice>.display  -> "{codesystem}-Anzeige"           / "{codesystem} display"
+
+    Returns dict {de_short, en_short} or None.
+
+    parent_labels: dict mapping element-id -> (de_short, en_short) collected
+    during the same emission pass, so the *parent CodeableConcept's* curated
+    label feeds into the derived child label.
+    """
+    m = re.match(r"^(.+?)\.(code|system|version|display)$", el_id)
+    if not m:
+        return None
+    base_id, sub = m.group(1), m.group(2)
+    # base_id must be a coding slice, i.e., end with .coding:<sliceName>
+    if not re.search(r"\.coding:[^.]+$", base_id):
+        return None
+
+    system_url = slice_systems.get(base_id)
+    if not system_url:
+        return None
+    cs_entry = coding_systems_map.get(system_url)
+    if not cs_entry:
+        return None
+    cs_de = cs_entry.get("de_short")
+    cs_en = cs_entry.get("en_short")
+    if not cs_de or not cs_en:
+        return None
+
+    if sub == "code":
+        # CodeableConcept parent is two segments up: drop ".coding:<slice>"
+        parent_cc_id = re.sub(r"\.coding:[^.]+$", "", base_id)
+        parent_de, parent_en = parent_labels.get(parent_cc_id, (None, None))
+        if not parent_de or not parent_en:
+            # Fallback to codesystem-only when we couldn't resolve a parent
+            return {"de_short": f"{cs_de}-Code", "en_short": f"{cs_en} code"}
+        return {
+            "de_short": f"{parent_de} als {cs_de}",
+            "en_short": f"{parent_en} as {cs_en}",
+        }
+
+    q = CODING_SUB_QUALIFIERS[sub]
+    return {
+        "de_short": f"{cs_de}-{q['de']}",
+        "en_short": f"{cs_en} {q['en']}",
+    }
 
 
 def extract_translations(ext_obj):
@@ -241,14 +329,21 @@ def load_parent_sd(package_name, version, parent_name):
     return None
 
 
+def _is_derivable_coding_subelement(el_id):
+    """Returns True if el_id matches the *.coding:<slice>.{code|system|version|display}
+    pattern — these get auto-derived labels from parent + codesystem."""
+    return bool(re.search(r"\.coding:[^.]+\.(code|system|version|display)$", el_id))
+
+
 def get_ms_elements_with_translations(sd, canonical_map=None, module_map=None):
     """Extract MustSupport elements with their translations from snapshot.
 
     Module-specific labels (element-labels-<module>.json) and canonical labels
     fill the Translation-extension gap for elements that upstream did not
-    translate. The ^short / ^definition base text is left as upstream provided
-    it (we can't reliably distinguish FHIR-base-default inheritance from
-    intermediate-profile customisation, so we don't touch).
+    translate. Coding-slice sub-elements (.code/.system/.version/.display)
+    are additionally eligible for auto-derived labels (handled in
+    generate_enriched_fsh via derive_coding_subelement_label). The ^short /
+    ^definition base text is left as upstream provided it.
     """
     canonical_map = canonical_map or {}
     module_map = module_map or {}
@@ -277,8 +372,9 @@ def get_ms_elements_with_translations(sd, canonical_map=None, module_map=None):
             short_val and not _is_fhir_default(short_val)
         )
         has_german_def = def_trans.get("de-DE")
+        is_derivable_subelement = _is_derivable_coding_subelement(el_id)
 
-        if has_authored or has_german_short or has_german_def:
+        if has_authored or has_german_short or has_german_def or is_derivable_subelement:
             elements.append({
                 "id": el_id,
                 "fsh_path": fsh_path,
@@ -347,9 +443,16 @@ def extract_obligations_block(original_content):
     return original_content[idx:].rstrip() + "\n"
 
 
-def generate_enriched_fsh(fsh_info, parent_sd, ms_elements, title_overrides=None, module_key=None):
+def generate_enriched_fsh(fsh_info, parent_sd, ms_elements, title_overrides=None,
+                          module_key=None, coding_systems_map=None):
     """Generate enriched FSH content with element translations."""
     lines = []
+    coding_systems_map = coding_systems_map or {}
+    slice_systems = collect_slice_system_urls(parent_sd)
+    # parent_labels: el_id -> (de_short, en_short). Filled as we emit, so
+    # later coding-sub-elements can reach back into their CodeableConcept
+    # parent for context-derived labels (styleguide §3.1 derivation).
+    parent_labels = {}
 
     # Header
     lines.append(f"Profile: {fsh_info['Profile']}")
@@ -400,6 +503,8 @@ def generate_enriched_fsh(fsh_info, parent_sd, ms_elements, title_overrides=None
         # 1. Upstream Translation extension — profile-specific, win when set
         # 2. Module-specific authored label — element-labels-<module>.json
         # 3. Cross-module canonical label — canonical-labels.json
+        # 4. Auto-derived from coding-slice context (only for .code/.system/
+        #    .version/.display sub-elements of coding slices)
         # ^short / ^definition base text is untouched (we don't know whether
         # upstream's text is FHIR-default noise or intermediate customisation).
         de_short = short_trans.get("de-DE") or module_entry.get("de_short") or canonical.get("de_short")
@@ -407,9 +512,33 @@ def generate_enriched_fsh(fsh_info, parent_sd, ms_elements, title_overrides=None
         de_def = def_trans.get("de-DE") or module_entry.get("de_def") or canonical.get("de_def")
         en_def = def_trans.get("en-US") or module_entry.get("en_def") or canonical.get("en_def")
 
-        # ^short — upstream base text, canonical only fills missing translations.
+        # Coding-slice sub-elements: derive from parent CodeableConcept's label
+        # + codesystem display when no curated translation is available.
+        if (not de_short or not en_short) and _is_derivable_coding_subelement(el["id"]):
+            derived = derive_coding_subelement_label(
+                el["id"], parent_labels, slice_systems, coding_systems_map
+            )
+            if derived:
+                de_short = de_short or derived["de_short"]
+                en_short = en_short or derived["en_short"]
+
+        # Track this element's label so descendant sub-elements can use it.
+        if de_short and en_short:
+            parent_labels[el["id"]] = (de_short, en_short)
+
+        # ^short — emit base text + translations. For derivable coding sub-
+        # elements we may not have a non-default upstream short; emit the
+        # derived EN as ^short in that case so the FHIR base default doesn't
+        # bleed through to FHIR tooling.
         if short and not _is_fhir_default(short):
-            lines.append(f'* {fsh_path} ^short = "{escape_fsh_string(short)}"')
+            base_short = short
+        elif en_short and _is_derivable_coding_subelement(el["id"]):
+            base_short = en_short
+        else:
+            base_short = None
+
+        if base_short:
+            lines.append(f'* {fsh_path} ^short = "{escape_fsh_string(base_short)}"')
             if de_short:
                 lines.append(f"* insert Translation({fsh_path} ^short, de-DE, {escape_fsh_commas(de_short)})")
             if en_short:
@@ -442,9 +571,11 @@ def process_module(module_name):
     print(f"\n=== Processing module: {module_name} ===")
     print(f"  Package: {module_config['package']}#{module_config['version']}")
 
-    canonical_map = load_canonical_labels()
+    canonical_map, coding_systems_map = load_canonical_labels()
     module_map = load_module_labels(module_name)
-    print(f"  Loaded {len(canonical_map)} canonical labels, {len(module_map)} module-specific labels")
+    print(f"  Loaded {len(canonical_map)} canonical labels, "
+          f"{len(coding_systems_map)} coding systems, "
+          f"{len(module_map)} module-specific labels")
 
     # Load all parent SDs from package
     pkg_dir = FHIR_CACHE / f"{module_config['package']}#{module_config['version']}" / "package"
@@ -498,7 +629,10 @@ def process_module(module_name):
         ms_elements = get_ms_elements_with_translations(parent_sd, canonical_map, module_map)
 
         try:
-            new_content = generate_enriched_fsh(fsh_info, parent_sd, ms_elements, title_overrides, module_key=module_name)
+            new_content = generate_enriched_fsh(
+                fsh_info, parent_sd, ms_elements, title_overrides,
+                module_key=module_name, coding_systems_map=coding_systems_map,
+            )
             obligations = extract_obligations_block(original_content)
             if obligations:
                 new_content = new_content.rstrip() + "\n\n" + obligations

@@ -75,6 +75,14 @@ Description: "FDPG Profil - MII_PR_Onko_Melanom_Exzision"
 * category.coding[sct] ^definition = "Ein Verweis auf einen von SNOMED CT definierten Code"
 * insert Translation(category.coding[sct] ^definition, de-DE, Ein Verweis auf einen von SNOMED CT definierten Code)
 * insert Translation(category.coding[sct] ^definition, en-US, A reference to a code defined by SNOMED CT)
+// Procedure.category.coding:sct.system
+* category.coding[sct].system ^short = "SNOMED CT system URL"
+* insert Translation(category.coding[sct].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(category.coding[sct].system ^short, en-US, SNOMED CT system URL)
+// Procedure.category.coding:sct.code
+* category.coding[sct].code ^short = "Category as SNOMED CT"
+* insert Translation(category.coding[sct].code ^short, de-DE, Kategorie als SNOMED CT)
+* insert Translation(category.coding[sct].code ^short, en-US, Category as SNOMED CT)
 // Procedure.code
 * code ^short = "Code"
 * insert Translation(code ^short, de-DE, Code)
@@ -87,10 +95,16 @@ Description: "FDPG Profil - MII_PR_Onko_Melanom_Exzision"
 * insert Translation(code.coding[ops] ^short, en-US, OPS code)
 // Procedure.code.coding:ops.system
 * code.coding[ops].system ^short = "Canonische CodeSystem URL für OPS"
+* insert Translation(code.coding[ops].system ^short, de-DE, OPS-System-URL)
+* insert Translation(code.coding[ops].system ^short, en-US, OPS system URL)
 // Procedure.code.coding:ops.version
 * code.coding[ops].version ^short = "Die Jahresversion des OPS Kataloges. Angegeben wird immer die vierstellige Jahreszahl (z.B. \"2017\")"
+* insert Translation(code.coding[ops].version ^short, de-DE, OPS-Version)
+* insert Translation(code.coding[ops].version ^short, en-US, OPS version)
 // Procedure.code.coding:ops.code
 * code.coding[ops].code ^short = "Der OPS-Code"
+* insert Translation(code.coding[ops].code ^short, de-DE, Code als OPS)
+* insert Translation(code.coding[ops].code ^short, en-US, Code as OPS)
 // Procedure.code.coding:sct
 * code.coding[sct] ^short = "SNOMED CT Code für Melanom-Exzision"
 * insert Translation(code.coding[sct] ^short, de-DE, SNOMED CT Code)
@@ -98,6 +112,14 @@ Description: "FDPG Profil - MII_PR_Onko_Melanom_Exzision"
 * code.coding[sct] ^definition = "SNOMED CT Code für die spezifische Melanom-Exzision. Bevorzugt werden Codes für Hautexzisionen und Melanom-spezifische Eingriffe."
 * insert Translation(code.coding[sct] ^definition, de-DE, Ein Verweis auf einen von SNOMED CT definierten Code)
 * insert Translation(code.coding[sct] ^definition, en-US, A reference to a code defined by SNOMED CT)
+// Procedure.code.coding:sct.system
+* code.coding[sct].system ^short = "SNOMED CT system URL"
+* insert Translation(code.coding[sct].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(code.coding[sct].system ^short, en-US, SNOMED CT system URL)
+// Procedure.code.coding:sct.code
+* code.coding[sct].code ^short = "Code as SNOMED CT"
+* insert Translation(code.coding[sct].code ^short, de-DE, Code als SNOMED CT)
+* insert Translation(code.coding[sct].code ^short, en-US, Code as SNOMED CT)
 // Procedure.subject
 * subject ^short = "Who the procedure was performed on"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -144,6 +166,18 @@ Description: "FDPG Profil - MII_PR_Onko_Melanom_Exzision"
 * bodySite.coding[snomed-ct] ^definition = "Ein Verweis auf einen von SNOMED CT definierten Code"
 * insert Translation(bodySite.coding[snomed-ct] ^definition, de-DE, Ein Verweis auf einen von SNOMED CT definierten Code)
 * insert Translation(bodySite.coding[snomed-ct] ^definition, en-US, A reference to a code defined by SNOMED CT)
+// Procedure.bodySite.coding:snomed-ct.system
+* bodySite.coding[snomed-ct].system ^short = "SNOMED CT system URL"
+* insert Translation(bodySite.coding[snomed-ct].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(bodySite.coding[snomed-ct].system ^short, en-US, SNOMED CT system URL)
+// Procedure.bodySite.coding:snomed-ct.version
+* bodySite.coding[snomed-ct].version ^short = "SNOMED CT version"
+* insert Translation(bodySite.coding[snomed-ct].version ^short, de-DE, SNOMED CT-Version)
+* insert Translation(bodySite.coding[snomed-ct].version ^short, en-US, SNOMED CT version)
+// Procedure.bodySite.coding:snomed-ct.code
+* bodySite.coding[snomed-ct].code ^short = "Body site as SNOMED CT"
+* insert Translation(bodySite.coding[snomed-ct].code ^short, de-DE, Körperstelle als SNOMED CT)
+* insert Translation(bodySite.coding[snomed-ct].code ^short, en-US, Body site as SNOMED CT)
 // Procedure.outcome
 * outcome ^short = "The result of procedure"
 // Procedure.complication

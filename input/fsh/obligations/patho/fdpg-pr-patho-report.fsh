@@ -74,6 +74,14 @@ Description: "FDPG Profil - MII_PR_Patho_Report"
 * code.coding[pathology-report] ^definition = "Spezifischer Code für Pathologie-Befunde"
 * insert Translation(code.coding[pathology-report] ^definition, de-DE, Spezifischer Code für Pathologie-Befunde)
 * insert Translation(code.coding[pathology-report] ^definition, en-US, Specific code for pathology report)
+// DiagnosticReport.code.coding:pathology-report.system
+* code.coding[pathology-report].system ^short = "LOINC system URL"
+* insert Translation(code.coding[pathology-report].system ^short, de-DE, LOINC-System-URL)
+* insert Translation(code.coding[pathology-report].system ^short, en-US, LOINC system URL)
+// DiagnosticReport.code.coding:pathology-report.code
+* code.coding[pathology-report].code ^short = "Code as LOINC"
+* insert Translation(code.coding[pathology-report].code ^short, de-DE, Code als LOINC)
+* insert Translation(code.coding[pathology-report].code ^short, en-US, Code as LOINC)
 // DiagnosticReport.subject
 * subject ^short = "Patient"
 * insert Translation(subject ^short, de-DE, Patient)

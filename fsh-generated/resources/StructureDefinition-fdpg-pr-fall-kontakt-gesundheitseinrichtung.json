@@ -573,6 +573,76 @@
         "definition": "OPTIONAL, required Binding auf http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel Fachabteilungen gemäß Anhang 1 der BPflV in der am 31.12.2003 geltenden Fassung"
       },
       {
+        "id": "Encounter.serviceType.coding:Fachabteilungsschluessel.system",
+        "path": "Encounter.serviceType.coding.system",
+        "short": "DKG department key system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Fachabteilungsschlüssel-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "DKG department key system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Encounter.serviceType.coding:Fachabteilungsschluessel.code",
+        "path": "Encounter.serviceType.coding.code",
+        "short": "Department as DKG department key",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Fachabteilung als Fachabteilungsschlüssel"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Department as DKG department key"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "Encounter.serviceType.coding:ErweiterterFachabteilungsschluessel",
         "extension": [
           {
@@ -605,6 +675,76 @@
         "path": "Encounter.serviceType.coding",
         "sliceName": "ErweiterterFachabteilungsschluessel",
         "definition": "OPTIONAL, required Binding auf http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel-erweitert Fachabteilungen gemäß Anhang 1 der BPflV in der am 31.12.2003 geltenden Fassung inkl. Spezialisierungen."
+      },
+      {
+        "id": "Encounter.serviceType.coding:ErweiterterFachabteilungsschluessel.system",
+        "path": "Encounter.serviceType.coding.system",
+        "short": "DKG department key (extended) system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Fachabteilungsschlüssel (erweitert)-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "DKG department key (extended) system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Encounter.serviceType.coding:ErweiterterFachabteilungsschluessel.code",
+        "path": "Encounter.serviceType.coding.code",
+        "short": "Department as DKG department key (extended)",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Fachabteilung als Fachabteilungsschlüssel (erweitert)"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Department as DKG department key (extended)"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Encounter.subject",

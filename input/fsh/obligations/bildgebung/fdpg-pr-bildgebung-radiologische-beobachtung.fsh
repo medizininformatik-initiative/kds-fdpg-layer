@@ -36,6 +36,14 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Radiologische_Beobachtung"
 * category.coding[loinc] ^definition = "Ein Verweis auf einen vom LOINC definierten Code"
 * insert Translation(category.coding[loinc] ^definition, de-DE, Ein Verweis auf einen von LOINC definierten Code)
 * insert Translation(category.coding[loinc] ^definition, en-US, A reference to a code defined by LOINC)
+// Observation.category.coding:loinc.system
+* category.coding[loinc].system ^short = "LOINC system URL"
+* insert Translation(category.coding[loinc].system ^short, de-DE, LOINC-System-URL)
+* insert Translation(category.coding[loinc].system ^short, en-US, LOINC system URL)
+// Observation.category.coding:loinc.code
+* category.coding[loinc].code ^short = "Category as LOINC"
+* insert Translation(category.coding[loinc].code ^short, de-DE, Kategorie als LOINC)
+* insert Translation(category.coding[loinc].code ^short, en-US, Category as LOINC)
 // Observation.code
 * code ^short = "Code"
 * insert Translation(code ^short, de-DE, Code)

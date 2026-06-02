@@ -531,6 +531,41 @@
         "sliceName": "DefinitionOBDS"
       },
       {
+        "id": "Observation.value[x].coding:DefinitionOBDS.code",
+        "path": "Observation.value[x].coding.code",
+        "short": "Value as LOINC",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Messwert als LOINC"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Value as LOINC"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "Observation.value[x].coding:DefinitionLeitlinie",
         "extension": [
           {

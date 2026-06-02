@@ -30,6 +30,8 @@ Description: "FDPG Profil - MII_PR_Mikrobio_MRGN_Klasse"
 * identifier[analyseBefundCode] ^short = "Analyse-Befund-Code"
 // Observation.identifier:analyseBefundCode.type
 * identifier[analyseBefundCode].type ^short = "Description of identifier"
+// Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.system
+// Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.code
 // Observation.identifier:analyseBefundCode.system
 * identifier[analyseBefundCode].system ^short = "The namespace for the identifier value"
 // Observation.identifier:analyseBefundCode.value
@@ -61,10 +63,30 @@ Description: "FDPG Profil - MII_PR_Mikrobio_MRGN_Klasse"
 * insert Translation(category[mibi-category] ^definition, en-US, Classification of the laboratory test in the diagnostic service section and laboratory group)
 // Observation.category:mibi-category.coding.display
 * category[mibi-category].coding.display ^short = "Representation defined by the system"
+// Observation.category:mibi-category.coding:v2-microbiology.system
+* category[mibi-category].coding[v2-microbiology].system ^short = "HL7 v2 Microbiology system URL"
+* insert Translation(category[mibi-category].coding[v2-microbiology].system ^short, de-DE, HL7 v2 Mikrobiologie-System-URL)
+* insert Translation(category[mibi-category].coding[v2-microbiology].system ^short, en-US, HL7 v2 Microbiology system URL)
+// Observation.category:mibi-category.coding:v2-microbiology.code
+* category[mibi-category].coding[v2-microbiology].code ^short = "Category as HL7 v2 Microbiology"
+* insert Translation(category[mibi-category].coding[v2-microbiology].code ^short, de-DE, Kategorie als HL7 v2 Mikrobiologie)
+* insert Translation(category[mibi-category].coding[v2-microbiology].code ^short, en-US, Category as HL7 v2 Microbiology)
 // Observation.category:mibi-category.coding:v2-microbiology.display
 * category[mibi-category].coding[v2-microbiology].display ^short = "Representation defined by the system"
+* insert Translation(category[mibi-category].coding[v2-microbiology].display ^short, de-DE, HL7 v2 Mikrobiologie-Anzeige)
+* insert Translation(category[mibi-category].coding[v2-microbiology].display ^short, en-US, HL7 v2 Microbiology display)
+// Observation.category:mibi-category.coding:loinc-microbiology-studies.system
+* category[mibi-category].coding[loinc-microbiology-studies].system ^short = "LOINC system URL"
+* insert Translation(category[mibi-category].coding[loinc-microbiology-studies].system ^short, de-DE, LOINC-System-URL)
+* insert Translation(category[mibi-category].coding[loinc-microbiology-studies].system ^short, en-US, LOINC system URL)
+// Observation.category:mibi-category.coding:loinc-microbiology-studies.code
+* category[mibi-category].coding[loinc-microbiology-studies].code ^short = "Category as LOINC"
+* insert Translation(category[mibi-category].coding[loinc-microbiology-studies].code ^short, de-DE, Kategorie als LOINC)
+* insert Translation(category[mibi-category].coding[loinc-microbiology-studies].code ^short, en-US, Category as LOINC)
 // Observation.category:mibi-category.coding:loinc-microbiology-studies.display
 * category[mibi-category].coding[loinc-microbiology-studies].display ^short = "Representation defined by the system"
+* insert Translation(category[mibi-category].coding[loinc-microbiology-studies].display ^short, de-DE, LOINC-Anzeige)
+* insert Translation(category[mibi-category].coding[loinc-microbiology-studies].display ^short, en-US, LOINC display)
 // Observation.code
 * code ^short = "Code"
 * insert Translation(code ^short, de-DE, Code)

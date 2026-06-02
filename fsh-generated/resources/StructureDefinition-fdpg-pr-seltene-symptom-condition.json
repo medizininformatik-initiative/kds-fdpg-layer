@@ -639,6 +639,40 @@
         "sliceName": "hpoCoding"
       },
       {
+        "id": "Condition.code.coding:hpoCoding.display",
+        "path": "Condition.code.coding.display",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "HPO-Anzeige"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "HPO display"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "Condition.code.coding:snomedCoding",
         "extension": [
           {
@@ -670,6 +704,40 @@
         ],
         "path": "Condition.code.coding",
         "sliceName": "snomedCoding"
+      },
+      {
+        "id": "Condition.code.coding:snomedCoding.display",
+        "path": "Condition.code.coding.display",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-Anzeige"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT display"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Condition.code.coding:icd10GMCoding",
@@ -705,6 +773,40 @@
         "sliceName": "icd10GMCoding"
       },
       {
+        "id": "Condition.code.coding:icd10GMCoding.display",
+        "path": "Condition.code.coding.display",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ICD-10-GM-Anzeige"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ICD-10-GM display"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "Condition.code.coding:mondoCoding",
         "extension": [
           {
@@ -736,6 +838,40 @@
         ],
         "path": "Condition.code.coding",
         "sliceName": "mondoCoding"
+      },
+      {
+        "id": "Condition.code.coding:mondoCoding.display",
+        "path": "Condition.code.coding.display",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "MONDO-Anzeige"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "MONDO display"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Condition.bodySite",

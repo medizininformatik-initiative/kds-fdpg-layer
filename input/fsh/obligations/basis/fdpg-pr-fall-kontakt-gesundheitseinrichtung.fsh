@@ -52,6 +52,8 @@ Description: "FDPG Profil - MII_PR_Fall_KontaktGesundheitseinrichtung"
 * insert Translation(identifier[Aufnahmenummer] ^definition, en-US, Admission number\, the patient receives during an admission.)
 // Encounter.identifier:Aufnahmenummer.type
 * identifier[Aufnahmenummer].type ^short = "Description of identifier"
+// Encounter.identifier:Aufnahmenummer.type.coding:vn-type.system
+// Encounter.identifier:Aufnahmenummer.type.coding:vn-type.code
 // Encounter.identifier:Aufnahmenummer.system
 * identifier[Aufnahmenummer].system ^short = "The namespace for the identifier value"
 // Encounter.identifier:Aufnahmenummer.value
@@ -105,6 +107,14 @@ Description: "FDPG Profil - MII_PR_Fall_KontaktGesundheitseinrichtung"
 * serviceType.coding[Fachabteilungsschluessel] ^definition = "OPTIONAL, required Binding auf http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel Fachabteilungen gemäß Anhang 1 der BPflV in der am 31.12.2003 geltenden Fassung"
 * insert Translation(serviceType.coding[Fachabteilungsschluessel] ^definition, de-DE, Fachabteilungen gemäß Anhang 1 der Bundespflegesatzverordnung)
 * insert Translation(serviceType.coding[Fachabteilungsschluessel] ^definition, en-US, Departments according to appendix 1 of the Bundespflegesatzverordnung)
+// Encounter.serviceType.coding:Fachabteilungsschluessel.system
+* serviceType.coding[Fachabteilungsschluessel].system ^short = "DKG department key system URL"
+* insert Translation(serviceType.coding[Fachabteilungsschluessel].system ^short, de-DE, Fachabteilungsschlüssel-System-URL)
+* insert Translation(serviceType.coding[Fachabteilungsschluessel].system ^short, en-US, DKG department key system URL)
+// Encounter.serviceType.coding:Fachabteilungsschluessel.code
+* serviceType.coding[Fachabteilungsschluessel].code ^short = "Department as DKG department key"
+* insert Translation(serviceType.coding[Fachabteilungsschluessel].code ^short, de-DE, Fachabteilung als Fachabteilungsschlüssel)
+* insert Translation(serviceType.coding[Fachabteilungsschluessel].code ^short, en-US, Department as DKG department key)
 // Encounter.serviceType.coding:ErweiterterFachabteilungsschluessel
 * serviceType.coding[ErweiterterFachabteilungsschluessel] ^short = "Erweiterter Fachabteilungsschlüssel"
 * insert Translation(serviceType.coding[ErweiterterFachabteilungsschluessel] ^short, de-DE, Erweiterter Fachabteilungsschlüssel)
@@ -112,6 +122,14 @@ Description: "FDPG Profil - MII_PR_Fall_KontaktGesundheitseinrichtung"
 * serviceType.coding[ErweiterterFachabteilungsschluessel] ^definition = "OPTIONAL, required Binding auf http://fhir.de/ValueSet/dkgev/Fachabteilungsschluessel-erweitert Fachabteilungen gemäß Anhang 1 der BPflV in der am 31.12.2003 geltenden Fassung inkl. Spezialisierungen."
 * insert Translation(serviceType.coding[ErweiterterFachabteilungsschluessel] ^definition, de-DE, Fachabteilungen gemäß Anhang 1 der Bundespflegesatzverordnung)
 * insert Translation(serviceType.coding[ErweiterterFachabteilungsschluessel] ^definition, en-US, Departments according to appendix 1 of the Bundespflegesatzverordnung)
+// Encounter.serviceType.coding:ErweiterterFachabteilungsschluessel.system
+* serviceType.coding[ErweiterterFachabteilungsschluessel].system ^short = "DKG department key (extended) system URL"
+* insert Translation(serviceType.coding[ErweiterterFachabteilungsschluessel].system ^short, de-DE, Fachabteilungsschlüssel (erweitert\)-System-URL)
+* insert Translation(serviceType.coding[ErweiterterFachabteilungsschluessel].system ^short, en-US, DKG department key (extended\) system URL)
+// Encounter.serviceType.coding:ErweiterterFachabteilungsschluessel.code
+* serviceType.coding[ErweiterterFachabteilungsschluessel].code ^short = "Department as DKG department key (extended)"
+* insert Translation(serviceType.coding[ErweiterterFachabteilungsschluessel].code ^short, de-DE, Fachabteilung als Fachabteilungsschlüssel (erweitert\))
+* insert Translation(serviceType.coding[ErweiterterFachabteilungsschluessel].code ^short, en-US, Department as DKG department key (extended\))
 // Encounter.subject
 * subject ^short = "Patientenidentifikator"
 * insert Translation(subject ^short, de-DE, Patient*in)

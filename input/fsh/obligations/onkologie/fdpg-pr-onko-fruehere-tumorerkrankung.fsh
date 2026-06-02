@@ -55,6 +55,18 @@ Description: "FDPG Profil - MII_PR_Onko_Fruehere_Tumorerkrankung"
 * insert Translation(code ^definition, en-US, Coding of the content.)
 // Condition.code.coding:icd10-gm
 * code.coding[icd10-gm] ^short = "ICD-10-GM Kodierung (optional)"
+// Condition.code.coding:icd10-gm.system
+* code.coding[icd10-gm].system ^short = "ICD-10-GM system URL"
+* insert Translation(code.coding[icd10-gm].system ^short, de-DE, ICD-10-GM-System-URL)
+* insert Translation(code.coding[icd10-gm].system ^short, en-US, ICD-10-GM system URL)
+// Condition.code.coding:icd10-gm.version
+* code.coding[icd10-gm].version ^short = "ICD-10-GM version"
+* insert Translation(code.coding[icd10-gm].version ^short, de-DE, ICD-10-GM-Version)
+* insert Translation(code.coding[icd10-gm].version ^short, en-US, ICD-10-GM version)
+// Condition.code.coding:icd10-gm.code
+* code.coding[icd10-gm].code ^short = "Code as ICD-10-GM"
+* insert Translation(code.coding[icd10-gm].code ^short, de-DE, Code als ICD-10-GM)
+* insert Translation(code.coding[icd10-gm].code ^short, en-US, Code as ICD-10-GM)
 // Condition.code.text
 * code.text ^short = "Textuelle Beschreibung der früheren Tumorerkrankung (Pflichtfeld)"
 * insert Translation(code.text ^short, de-DE, Name der Klassifikation)
@@ -76,6 +88,14 @@ Description: "FDPG Profil - MII_PR_Onko_Fruehere_Tumorerkrankung"
 * bodySite.coding[icd-o-3] ^definition = "Anatomische Lokalisation nach ICD-O-3"
 * insert Translation(bodySite.coding[icd-o-3] ^definition, de-DE, ICD-O-3-Topographie bei vom Primärtumor abweichender Lokalisation in der Verlaufsbeschreibung.)
 * insert Translation(bodySite.coding[icd-o-3] ^definition, en-US, ICD-O-3 topography when the location in follow-up differs from the primary tumor.)
+// Condition.bodySite.coding:icd-o-3.system
+* bodySite.coding[icd-o-3].system ^short = "ICD-O-3 system URL"
+* insert Translation(bodySite.coding[icd-o-3].system ^short, de-DE, ICD-O-3-System-URL)
+* insert Translation(bodySite.coding[icd-o-3].system ^short, en-US, ICD-O-3 system URL)
+// Condition.bodySite.coding:icd-o-3.code
+* bodySite.coding[icd-o-3].code ^short = "Body site as ICD-O-3"
+* insert Translation(bodySite.coding[icd-o-3].code ^short, de-DE, Körperstelle als ICD-O-3)
+* insert Translation(bodySite.coding[icd-o-3].code ^short, en-US, Body site as ICD-O-3)
 // Condition.subject
 * subject ^definition = "Indicates the patient or group who the condition record is associated with."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)

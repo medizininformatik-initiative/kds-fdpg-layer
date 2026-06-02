@@ -24,6 +24,8 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Diagnostic_Report"
 * insert Translation(identifier[befund] ^definition, en-US, Identifier assigned by the laboratory information system (Filler\).)
 // DiagnosticReport.identifier:befund.type
 * identifier[befund].type ^short = "Description of identifier"
+// DiagnosticReport.identifier:befund.type.coding:fillerV2.system
+// DiagnosticReport.identifier:befund.type.coding:fillerV2.code
 // DiagnosticReport.identifier:befund.system
 * identifier[befund].system ^short = "The namespace for the identifier value"
 // DiagnosticReport.identifier:befund.value

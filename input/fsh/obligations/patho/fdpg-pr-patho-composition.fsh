@@ -59,6 +59,14 @@ Description: "FDPG Profil - MII_PR_Patho_Composition"
 * type.coding[sct] ^definition = "SNOMED CT Kodierung für Dokumenttyp"
 * insert Translation(type.coding[sct] ^definition, de-DE, SNOMED CT Kodierung für Dokumenttyp)
 * insert Translation(type.coding[sct] ^definition, en-US, SNOMED CT coding for document type)
+// Composition.type.coding:sct.system
+* type.coding[sct].system ^short = "SNOMED CT system URL"
+* insert Translation(type.coding[sct].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(type.coding[sct].system ^short, en-US, SNOMED CT system URL)
+// Composition.type.coding:sct.code
+* type.coding[sct].code ^short = "Type as SNOMED CT"
+* insert Translation(type.coding[sct].code ^short, de-DE, Typ als SNOMED CT)
+* insert Translation(type.coding[sct].code ^short, en-US, Type as SNOMED CT)
 // Composition.type.text
 * type.text ^short = "Dokumenttyp (Freitext)"
 // Composition.category

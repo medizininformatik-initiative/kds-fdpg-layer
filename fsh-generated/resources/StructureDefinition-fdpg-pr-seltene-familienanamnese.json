@@ -3203,6 +3203,40 @@
             }
           ]
         }
+      },
+      {
+        "id": "FamilyMemberHistory.condition.code.coding:mondo.display",
+        "path": "FamilyMemberHistory.condition.code.coding.display",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "MONDO-Anzeige"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "MONDO display"
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   }

@@ -29,6 +29,14 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Semistrukt_Befundbericht"
 * type.coding[loinc] ^definition = "Ein Verweis auf einen vom LOINC definierten Code"
 * insert Translation(type.coding[loinc] ^definition, de-DE, Ein Verweis auf einen von LOINC definierten Code)
 * insert Translation(type.coding[loinc] ^definition, en-US, A reference to a code defined by LOINC)
+// Composition.type.coding:loinc.system
+* type.coding[loinc].system ^short = "LOINC system URL"
+* insert Translation(type.coding[loinc].system ^short, de-DE, LOINC-System-URL)
+* insert Translation(type.coding[loinc].system ^short, en-US, LOINC system URL)
+// Composition.type.coding:loinc.code
+* type.coding[loinc].code ^short = "compositiontype as LOINC"
+* insert Translation(type.coding[loinc].code ^short, de-DE, Kompositionstyp als LOINC)
+* insert Translation(type.coding[loinc].code ^short, en-US, compositiontype as LOINC)
 // Composition.subject
 * subject ^short = "Person"
 * insert Translation(subject ^short, de-DE, Person)

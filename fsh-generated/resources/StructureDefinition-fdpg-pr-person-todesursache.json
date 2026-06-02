@@ -388,6 +388,111 @@
         "sliceName": "icd10-who"
       },
       {
+        "id": "Condition.code.coding:icd10-who.system",
+        "path": "Condition.code.coding.system",
+        "short": "ICD-10 (WHO) system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ICD-10 (WHO)-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ICD-10 (WHO) system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Condition.code.coding:icd10-who.version",
+        "path": "Condition.code.coding.version",
+        "short": "ICD-10 (WHO) version",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ICD-10 (WHO)-Version"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ICD-10 (WHO) version"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Condition.code.coding:icd10-who.code",
+        "path": "Condition.code.coding.code",
+        "short": "Code as ICD-10 (WHO)",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code als ICD-10 (WHO)"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code as ICD-10 (WHO)"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "Condition.subject",
         "extension": [
           {

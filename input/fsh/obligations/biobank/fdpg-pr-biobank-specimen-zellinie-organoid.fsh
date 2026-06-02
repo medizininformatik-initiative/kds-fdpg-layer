@@ -53,6 +53,8 @@ Description: "FDPG Profil - MII_PR_Biobank_Specimen_Zellinie_Organoid"
 * type ^definition = "The kind of material that forms the specimen."
 * insert Translation(type ^definition, de-DE, Die Art der Probe\, codiert in SNOMED CT.)
 * insert Translation(type ^definition, en-US, The type of the specimen\, encoded as SNOMED CT code.)
+// Specimen.type.coding:miabis-type.system
+// Specimen.type.coding:miabis-type.code
 // Specimen.subject
 * subject ^short = "Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device"
 * insert Translation(subject ^short, de-DE, Patient:in)

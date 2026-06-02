@@ -60,6 +60,14 @@ Description: "FDPG Profil - MII_PR_Onko_Histologie_ICDO3"
 * bodySite.coding[Seitenlokalisation] ^definition = "Seitenlokalisation bei paarigen Organen"
 * insert Translation(bodySite.coding[Seitenlokalisation] ^definition, de-DE, Seitenlokalisation bei paarigen Organen)
 * insert Translation(bodySite.coding[Seitenlokalisation] ^definition, en-US, Laterality for paired organs.)
+// Observation.bodySite.coding:Seitenlokalisation.system
+* bodySite.coding[Seitenlokalisation].system ^short = "MII Onko laterality system URL"
+* insert Translation(bodySite.coding[Seitenlokalisation].system ^short, de-DE, MII Onko Seitenlokalisation-System-URL)
+* insert Translation(bodySite.coding[Seitenlokalisation].system ^short, en-US, MII Onko laterality system URL)
+// Observation.bodySite.coding:Seitenlokalisation.code
+* bodySite.coding[Seitenlokalisation].code ^short = "MII Onko laterality code"
+* insert Translation(bodySite.coding[Seitenlokalisation].code ^short, de-DE, MII Onko Seitenlokalisation-Code)
+* insert Translation(bodySite.coding[Seitenlokalisation].code ^short, en-US, MII Onko laterality code)
 // Observation.bodySite.coding:icd-o-3
 * bodySite.coding[icd-o-3] ^short = "ICD-O-3 Topographie"
 * insert Translation(bodySite.coding[icd-o-3] ^short, de-DE, ICD-O-3 Topographie)
@@ -67,6 +75,14 @@ Description: "FDPG Profil - MII_PR_Onko_Histologie_ICDO3"
 * bodySite.coding[icd-o-3] ^definition = "ICD-O-3 Topographie bei vom Primärtumor abweichender Lokalisation in der Verlaufsbeschreibung"
 * insert Translation(bodySite.coding[icd-o-3] ^definition, de-DE, ICD-O-3 Topographie bei vom Primärtumor abweichender Lokalisation in der Verlaufsbeschreibung)
 * insert Translation(bodySite.coding[icd-o-3] ^definition, en-US, ICD-O-3 topography when the location in follow-up differs from the primary tumor.)
+// Observation.bodySite.coding:icd-o-3.system
+* bodySite.coding[icd-o-3].system ^short = "ICD-O-3 system URL"
+* insert Translation(bodySite.coding[icd-o-3].system ^short, de-DE, ICD-O-3-System-URL)
+* insert Translation(bodySite.coding[icd-o-3].system ^short, en-US, ICD-O-3 system URL)
+// Observation.bodySite.coding:icd-o-3.code
+* bodySite.coding[icd-o-3].code ^short = "ICD-O-3 code"
+* insert Translation(bodySite.coding[icd-o-3].code ^short, de-DE, ICD-O-3-Code)
+* insert Translation(bodySite.coding[icd-o-3].code ^short, en-US, ICD-O-3 code)
 // Observation.specimen
 * specimen ^short = "Specimen used for this observation"
 * insert Translation(specimen ^short, de-DE, Probe)

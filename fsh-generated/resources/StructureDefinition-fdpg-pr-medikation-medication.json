@@ -221,6 +221,76 @@
         "sliceName": "Pharmazentralnummer"
       },
       {
+        "id": "Medication.code.coding:Pharmazentralnummer.system",
+        "path": "Medication.code.coding.system",
+        "short": "PZN system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Pharmazentralnummer-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "PZN system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Medication.code.coding:Pharmazentralnummer.code",
+        "path": "Medication.code.coding.code",
+        "short": "Code as PZN",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code als Pharmazentralnummer"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code as PZN"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "Medication.code.coding:atcClassDe",
         "extension": [
           {
@@ -254,6 +324,111 @@
         "sliceName": "atcClassDe"
       },
       {
+        "id": "Medication.code.coding:atcClassDe.system",
+        "path": "Medication.code.coding.system",
+        "short": "ATC (BfArM) system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ATC (BfArM)-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ATC (BfArM) system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Medication.code.coding:atcClassDe.version",
+        "path": "Medication.code.coding.version",
+        "short": "ATC (BfArM) version",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ATC (BfArM)-Version"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ATC (BfArM) version"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Medication.code.coding:atcClassDe.code",
+        "path": "Medication.code.coding.code",
+        "short": "Code as ATC (BfArM)",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code als ATC (BfArM)"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code as ATC (BfArM)"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "Medication.code.coding:atcClassEn",
         "extension": [
           {
@@ -285,6 +460,111 @@
         ],
         "path": "Medication.code.coding",
         "sliceName": "atcClassEn"
+      },
+      {
+        "id": "Medication.code.coding:atcClassEn.system",
+        "path": "Medication.code.coding.system",
+        "short": "ATC (WHO) system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ATC (WHO)-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ATC (WHO) system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Medication.code.coding:atcClassEn.version",
+        "path": "Medication.code.coding.version",
+        "short": "ATC (WHO) version",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ATC (WHO)-Version"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ATC (WHO) version"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Medication.code.coding:atcClassEn.code",
+        "path": "Medication.code.coding.code",
+        "short": "Code as ATC (WHO)",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code als ATC (WHO)"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code as ATC (WHO)"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Medication.form",
@@ -350,6 +630,76 @@
         ],
         "path": "Medication.form.coding",
         "sliceName": "EDQM"
+      },
+      {
+        "id": "Medication.form.coding:EDQM.system",
+        "path": "Medication.form.coding.system",
+        "short": "EDQM Standard Terms system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "EDQM Standard Terms-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "EDQM Standard Terms system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Medication.form.coding:EDQM.code",
+        "path": "Medication.form.coding.code",
+        "short": "EDQM Standard Terms code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "EDQM Standard Terms-Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "EDQM Standard Terms code"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Medication.ingredient",
@@ -544,6 +894,156 @@
             "code": "CodeableConcept"
           }
         ]
+      },
+      {
+        "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII",
+        "path": "Medication.ingredient.item[x].coding",
+        "sliceName": "UNII"
+      },
+      {
+        "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII.system",
+        "path": "Medication.ingredient.item[x].coding.system",
+        "short": "UNII system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "UNII-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "UNII system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII.code",
+        "path": "Medication.ingredient.item[x].coding.code",
+        "short": "UNII code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "UNII-Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "UNII code"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:SNOMED",
+        "path": "Medication.ingredient.item[x].coding",
+        "sliceName": "SNOMED"
+      },
+      {
+        "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:SNOMED.system",
+        "path": "Medication.ingredient.item[x].coding.system",
+        "short": "SNOMED CT system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:SNOMED.code",
+        "path": "Medication.ingredient.item[x].coding.code",
+        "short": "SNOMED CT code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   }

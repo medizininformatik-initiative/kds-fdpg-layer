@@ -38,6 +38,8 @@ Description: "FDPG Profil - MII_PR_Onko_Mamma_Her2neu_Status"
 * value[x] ^definition = "The information determined as a result of making the observation, if the information has a simple value."
 * insert Translation(value[x] ^definition, de-DE, Wert der Beobachtung.)
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
+// Observation.value[x].coding:DefinitionOBDS.code
+// Observation.value[x].coding:DefinitionLeitlinie.code
 // Observation.component
 * component ^short = "Component results"
 * insert Translation(component ^short, de-DE, Komponente)

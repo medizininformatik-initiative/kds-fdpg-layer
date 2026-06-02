@@ -35,10 +35,30 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Koerpergewicht"
 * code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\"."
 * insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
+// Observation.code.coding:loinc.system
+* code.coding[loinc].system ^short = "LOINC system URL"
+* insert Translation(code.coding[loinc].system ^short, de-DE, LOINC-System-URL)
+* insert Translation(code.coding[loinc].system ^short, en-US, LOINC system URL)
+// Observation.code.coding:loinc.code
+* code.coding[loinc].code ^short = "Code as LOINC"
+* insert Translation(code.coding[loinc].code ^short, de-DE, Code als LOINC)
+* insert Translation(code.coding[loinc].code ^short, en-US, Code as LOINC)
 // Observation.code.coding:loinc.display
 * code.coding[loinc].display ^short = "Representation defined by the system"
+* insert Translation(code.coding[loinc].display ^short, de-DE, LOINC-Anzeige)
+* insert Translation(code.coding[loinc].display ^short, en-US, LOINC display)
+// Observation.code.coding:snomed.system
+* code.coding[snomed].system ^short = "SNOMED CT system URL"
+* insert Translation(code.coding[snomed].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(code.coding[snomed].system ^short, en-US, SNOMED CT system URL)
+// Observation.code.coding:snomed.code
+* code.coding[snomed].code ^short = "Code as SNOMED CT"
+* insert Translation(code.coding[snomed].code ^short, de-DE, Code als SNOMED CT)
+* insert Translation(code.coding[snomed].code ^short, en-US, Code as SNOMED CT)
 // Observation.code.coding:snomed.display
 * code.coding[snomed].display ^short = "Representation defined by the system"
+* insert Translation(code.coding[snomed].display ^short, de-DE, SNOMED CT-Anzeige)
+* insert Translation(code.coding[snomed].display ^short, en-US, SNOMED CT display)
 // Observation.subject
 * subject ^short = "Who and/or what the observation is about"
 * insert Translation(subject ^short, de-DE, Patient*in)

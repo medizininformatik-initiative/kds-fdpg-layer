@@ -12,14 +12,29 @@ Description: "FDPG Profil - MII_PR_PRO_QuestionnaireResponse"
 * language ^short = "Language of the resource content"
 // QuestionnaireResponse.identifier
 * identifier ^short = "Unique id for this set of answers"
+* insert Translation(identifier ^short, de-DE, Identifikator)
+* insert Translation(identifier ^short, en-US, Identifier)
+* identifier ^definition = "A business identifier assigned to a particular completed (or partially completed) questionnaire."
+* insert Translation(identifier ^definition, de-DE, Identifikator dieser Ressource.)
+* insert Translation(identifier ^definition, en-US, Identifier for this resource.)
 // QuestionnaireResponse.questionnaire
 * questionnaire ^short = "Form being answered"
 // QuestionnaireResponse.questionnaire.extension:questionnaireDisplay
 * questionnaire.extension[questionnaireDisplay] ^short = "Display name for canonical reference"
 // QuestionnaireResponse.status
 * status ^short = "in-progress | completed | amended | entered-in-error | stopped"
+* insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, en-US, Status)
+* status ^definition = "The position of the questionnaire response within its overall lifecycle."
+* insert Translation(status ^definition, de-DE, Status der Ressource.)
+* insert Translation(status ^definition, en-US, Status of the resource.)
 // QuestionnaireResponse.subject
 * subject ^short = "The subject of the questions"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
+* subject ^definition = "The subject of the questionnaire response.  This could be a patient, organization, practitioner, device, etc.  This is who/what the answers apply to, but is not necessarily the source of information."
+* insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // QuestionnaireResponse.authored
 * authored ^short = "Date the answers were gathered"
 // QuestionnaireResponse.author

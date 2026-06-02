@@ -40,6 +40,18 @@ Description: "FDPG Profil - MII_PR_Person_Todesursache"
 * insert Translation(code ^definition, en-US, An ICD-10-WHO code identifying the cause of death.)
 // Condition.code.coding:icd10-who
 * code.coding[icd10-who] ^short = "ICD-10-WHO"
+// Condition.code.coding:icd10-who.system
+* code.coding[icd10-who].system ^short = "ICD-10 (WHO) system URL"
+* insert Translation(code.coding[icd10-who].system ^short, de-DE, ICD-10 (WHO\)-System-URL)
+* insert Translation(code.coding[icd10-who].system ^short, en-US, ICD-10 (WHO\) system URL)
+// Condition.code.coding:icd10-who.version
+* code.coding[icd10-who].version ^short = "ICD-10 (WHO) version"
+* insert Translation(code.coding[icd10-who].version ^short, de-DE, ICD-10 (WHO\)-Version)
+* insert Translation(code.coding[icd10-who].version ^short, en-US, ICD-10 (WHO\) version)
+// Condition.code.coding:icd10-who.code
+* code.coding[icd10-who].code ^short = "Code as ICD-10 (WHO)"
+* insert Translation(code.coding[icd10-who].code ^short, de-DE, Code als ICD-10 (WHO\))
+* insert Translation(code.coding[icd10-who].code ^short, en-US, Code as ICD-10 (WHO\))
 // Condition.subject
 * subject ^definition = "Indicates the patient or group who the condition record is associated with."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)

@@ -28,6 +28,8 @@ Description: "FDPG Profil - MII_PR_Labor_Laboruntersuchung"
 * identifier[analyseBefundCode] ^short = "Analyse-Befund-Code"
 // Observation.identifier:analyseBefundCode.type
 * identifier[analyseBefundCode].type ^short = "Description of identifier"
+// Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.system
+// Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.code
 // Observation.identifier:analyseBefundCode.system
 * identifier[analyseBefundCode].system ^short = "The namespace for the identifier value"
 // Observation.identifier:analyseBefundCode.value

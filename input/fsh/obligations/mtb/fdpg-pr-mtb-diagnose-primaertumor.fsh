@@ -51,6 +51,14 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 * verificationStatus.coding[primaertumorDiagnosesicherung] ^definition = "Art der Diagnosesicherung nach 5.7 oBDS 2021"
 * insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung] ^definition, de-DE, Art der Diagnosesicherung nach 5.7 oBDS 2021)
 * insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung] ^definition, en-US, Type of diagnosis verification per oBDS 2021 §5.7.)
+// Condition.verificationStatus.coding:primaertumorDiagnosesicherung.system
+* verificationStatus.coding[primaertumorDiagnosesicherung].system ^short = "MII Onko diagnosis confirmation system URL"
+* insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung].system ^short, de-DE, MII Onko Diagnosesicherung-System-URL)
+* insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung].system ^short, en-US, MII Onko diagnosis confirmation system URL)
+// Condition.verificationStatus.coding:primaertumorDiagnosesicherung.code
+* verificationStatus.coding[primaertumorDiagnosesicherung].code ^short = "Verification status as MII Onko diagnosis confirmation"
+* insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung].code ^short, de-DE, Verifizierungsstatus als MII Onko Diagnosesicherung)
+* insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung].code ^short, en-US, Verification status as MII Onko diagnosis confirmation)
 // Condition.code
 * code ^short = "Code"
 * insert Translation(code ^short, de-DE, Code)
@@ -67,10 +75,16 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 * insert Translation(code.coding[icd10-gm] ^definition, en-US, A reference to a code defined by the ICD-10-GM)
 // Condition.code.coding:icd10-gm.system
 * code.coding[icd10-gm].system ^short = "Canonische CodeSystem URL für ICD-10-GM"
+* insert Translation(code.coding[icd10-gm].system ^short, de-DE, ICD-10-GM-System-URL)
+* insert Translation(code.coding[icd10-gm].system ^short, en-US, ICD-10-GM system URL)
 // Condition.code.coding:icd10-gm.version
 * code.coding[icd10-gm].version ^short = "Die Jahresversion von ICD-10-GM. Angegeben wird immer die vierstellige Jahreszahl (z.B. \"2017\")"
+* insert Translation(code.coding[icd10-gm].version ^short, de-DE, ICD-10-GM-Version)
+* insert Translation(code.coding[icd10-gm].version ^short, en-US, ICD-10-GM version)
 // Condition.code.coding:icd10-gm.code
 * code.coding[icd10-gm].code ^short = "Der ICD-10-Code"
+* insert Translation(code.coding[icd10-gm].code ^short, de-DE, Code als ICD-10-GM)
+* insert Translation(code.coding[icd10-gm].code ^short, en-US, Code as ICD-10-GM)
 // Condition.code.coding:alpha-id
 * code.coding[alpha-id] ^short = "Alpha-ID Code"
 * insert Translation(code.coding[alpha-id] ^short, de-DE, Alpha-ID Code)
@@ -80,8 +94,12 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 * insert Translation(code.coding[alpha-id] ^definition, en-US, A reference to a code defined by the Alpha-ID)
 // Condition.code.coding:alpha-id.system
 * code.coding[alpha-id].system ^short = "Canonische CodeSystem URL für Alpha-ID"
+* insert Translation(code.coding[alpha-id].system ^short, de-DE, Alpha-ID-System-URL)
+* insert Translation(code.coding[alpha-id].system ^short, en-US, Alpha-ID system URL)
 // Condition.code.coding:alpha-id.code
 * code.coding[alpha-id].code ^short = "Der Alpha-ID-Code"
+* insert Translation(code.coding[alpha-id].code ^short, de-DE, Code als Alpha-ID)
+* insert Translation(code.coding[alpha-id].code ^short, en-US, Code as Alpha-ID)
 // Condition.code.coding:sct
 * code.coding[sct] ^short = "SNOMED CT Code"
 * insert Translation(code.coding[sct] ^short, de-DE, SNOMED CT Code)
@@ -89,6 +107,18 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 * code.coding[sct] ^definition = "Ein Verweis auf einen von SNOMED CT definierten Code"
 * insert Translation(code.coding[sct] ^definition, de-DE, Ein Verweis auf einen von SNOMED CT definierten Code)
 * insert Translation(code.coding[sct] ^definition, en-US, A reference to a code defined by SNOMED CT)
+// Condition.code.coding:sct.system
+* code.coding[sct].system ^short = "SNOMED CT system URL"
+* insert Translation(code.coding[sct].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(code.coding[sct].system ^short, en-US, SNOMED CT system URL)
+// Condition.code.coding:sct.version
+* code.coding[sct].version ^short = "SNOMED CT version"
+* insert Translation(code.coding[sct].version ^short, de-DE, SNOMED CT-Version)
+* insert Translation(code.coding[sct].version ^short, en-US, SNOMED CT version)
+// Condition.code.coding:sct.code
+* code.coding[sct].code ^short = "Code as SNOMED CT"
+* insert Translation(code.coding[sct].code ^short, de-DE, Code als SNOMED CT)
+* insert Translation(code.coding[sct].code ^short, en-US, Code as SNOMED CT)
 // Condition.code.coding:orphanet
 * code.coding[orphanet] ^short = "ORPHAcode"
 * insert Translation(code.coding[orphanet] ^short, de-DE, ORPHAcode)
@@ -96,6 +126,14 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 * code.coding[orphanet] ^definition = "Ein Verweis auf einen von der Orphanet Nomenklatur der Seltenen Krankheiten definierten Code"
 * insert Translation(code.coding[orphanet] ^definition, de-DE, Ein Verweis auf einen von der Orphanet Nomenklatur der Seltenen Krankheiten definierten Code)
 * insert Translation(code.coding[orphanet] ^definition, en-US, A reference to a code defined by the Orphanet nomenclature of rare diseases)
+// Condition.code.coding:orphanet.system
+* code.coding[orphanet].system ^short = "Orphanet system URL"
+* insert Translation(code.coding[orphanet].system ^short, de-DE, Orphanet-System-URL)
+* insert Translation(code.coding[orphanet].system ^short, en-US, Orphanet system URL)
+// Condition.code.coding:orphanet.code
+* code.coding[orphanet].code ^short = "Code as Orphanet"
+* insert Translation(code.coding[orphanet].code ^short, de-DE, Code als Orphanet)
+* insert Translation(code.coding[orphanet].code ^short, en-US, Code as Orphanet)
 // Condition.bodySite
 * bodySite ^short = "Körperstelle"
 * insert Translation(bodySite ^short, de-DE, Körperstelle)
@@ -110,6 +148,18 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 * bodySite.coding[snomed-ct] ^definition = "Ein Verweis auf einen von SNOMED CT definierten Code"
 * insert Translation(bodySite.coding[snomed-ct] ^definition, de-DE, Ein Verweis auf einen von SNOMED CT definierten Code)
 * insert Translation(bodySite.coding[snomed-ct] ^definition, en-US, A reference to a code defined by SNOMED CT)
+// Condition.bodySite.coding:snomed-ct.system
+* bodySite.coding[snomed-ct].system ^short = "SNOMED CT system URL"
+* insert Translation(bodySite.coding[snomed-ct].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(bodySite.coding[snomed-ct].system ^short, en-US, SNOMED CT system URL)
+// Condition.bodySite.coding:snomed-ct.version
+* bodySite.coding[snomed-ct].version ^short = "SNOMED CT version"
+* insert Translation(bodySite.coding[snomed-ct].version ^short, de-DE, SNOMED CT-Version)
+* insert Translation(bodySite.coding[snomed-ct].version ^short, en-US, SNOMED CT version)
+// Condition.bodySite.coding:snomed-ct.code
+* bodySite.coding[snomed-ct].code ^short = "Body site as SNOMED CT"
+* insert Translation(bodySite.coding[snomed-ct].code ^short, de-DE, Körperstelle als SNOMED CT)
+* insert Translation(bodySite.coding[snomed-ct].code ^short, en-US, Body site as SNOMED CT)
 // Condition.bodySite.coding:primaertumorSeitenlokalisation
 * bodySite.coding[primaertumorSeitenlokalisation] ^short = "Seitenlokalisation des Primärtumors gemäß oBDS"
 * insert Translation(bodySite.coding[primaertumorSeitenlokalisation] ^short, de-DE, Seitenlokalisation des Primärtumors gemäß oBDS)
@@ -117,6 +167,14 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 * bodySite.coding[primaertumorSeitenlokalisation] ^definition = "Seitenlokalisation des Primärtumors nach 5.8 oBDS 2021"
 * insert Translation(bodySite.coding[primaertumorSeitenlokalisation] ^definition, de-DE, Seitenlokalisation des Primärtumors nach 5.8 oBDS 2021)
 * insert Translation(bodySite.coding[primaertumorSeitenlokalisation] ^definition, en-US, Laterality of the primary tumor per oBDS 2021 §5.8.)
+// Condition.bodySite.coding:primaertumorSeitenlokalisation.system
+* bodySite.coding[primaertumorSeitenlokalisation].system ^short = "MII Onko laterality system URL"
+* insert Translation(bodySite.coding[primaertumorSeitenlokalisation].system ^short, de-DE, MII Onko Seitenlokalisation-System-URL)
+* insert Translation(bodySite.coding[primaertumorSeitenlokalisation].system ^short, en-US, MII Onko laterality system URL)
+// Condition.bodySite.coding:primaertumorSeitenlokalisation.code
+* bodySite.coding[primaertumorSeitenlokalisation].code ^short = "Body site as MII Onko laterality"
+* insert Translation(bodySite.coding[primaertumorSeitenlokalisation].code ^short, de-DE, Körperstelle als MII Onko Seitenlokalisation)
+* insert Translation(bodySite.coding[primaertumorSeitenlokalisation].code ^short, en-US, Body site as MII Onko laterality)
 // Condition.bodySite.coding:icd-o-3
 * bodySite.coding[icd-o-3] ^short = "ICD-O-Topographie"
 * insert Translation(bodySite.coding[icd-o-3] ^short, de-DE, ICD-O-Topographie)
@@ -124,6 +182,14 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 * bodySite.coding[icd-o-3] ^definition = "Topographie des Primärtumors nach ICD-O-3 nach 5.4 oBDS 2021"
 * insert Translation(bodySite.coding[icd-o-3] ^definition, de-DE, Topographie des Primärtumors nach ICD-O-3 nach 5.4 oBDS 2021)
 * insert Translation(bodySite.coding[icd-o-3] ^definition, en-US, Topography of the primary tumor per ICD-O-3 per oBDS 2021 §5.4.)
+// Condition.bodySite.coding:icd-o-3.system
+* bodySite.coding[icd-o-3].system ^short = "ICD-O-3 system URL"
+* insert Translation(bodySite.coding[icd-o-3].system ^short, de-DE, ICD-O-3-System-URL)
+* insert Translation(bodySite.coding[icd-o-3].system ^short, en-US, ICD-O-3 system URL)
+// Condition.bodySite.coding:icd-o-3.code
+* bodySite.coding[icd-o-3].code ^short = "Body site as ICD-O-3"
+* insert Translation(bodySite.coding[icd-o-3].code ^short, de-DE, Körperstelle als ICD-O-3)
+* insert Translation(bodySite.coding[icd-o-3].code ^short, en-US, Body site as ICD-O-3)
 // Condition.subject
 * subject ^definition = "Indicates the patient or group who the condition record is associated with."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)

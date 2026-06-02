@@ -43,10 +43,38 @@ Description: "FDPG Profil - MII_PR_ICU_Beatmungsvolumen_Pro_Minute_Maschineller_
 * code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\"."
 * insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
+// Observation.code.coding:sct.system
+* code.coding[sct].system ^short = "SNOMED CT system URL"
+* insert Translation(code.coding[sct].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(code.coding[sct].system ^short, en-US, SNOMED CT system URL)
+// Observation.code.coding:sct.code
+* code.coding[sct].code ^short = "Code as SNOMED CT"
+* insert Translation(code.coding[sct].code ^short, de-DE, Code als SNOMED CT)
+* insert Translation(code.coding[sct].code ^short, en-US, Code as SNOMED CT)
 // Observation.code.coding:sct.display
 * code.coding[sct].display ^short = "Representation defined by the system"
+* insert Translation(code.coding[sct].display ^short, de-DE, SNOMED CT-Anzeige)
+* insert Translation(code.coding[sct].display ^short, en-US, SNOMED CT display)
+// Observation.code.coding:loinc.system
+* code.coding[loinc].system ^short = "LOINC system URL"
+* insert Translation(code.coding[loinc].system ^short, de-DE, LOINC-System-URL)
+* insert Translation(code.coding[loinc].system ^short, en-US, LOINC system URL)
+// Observation.code.coding:loinc.code
+* code.coding[loinc].code ^short = "Code as LOINC"
+* insert Translation(code.coding[loinc].code ^short, de-DE, Code als LOINC)
+* insert Translation(code.coding[loinc].code ^short, en-US, Code as LOINC)
 // Observation.code.coding:loinc.display
 * code.coding[loinc].display ^short = "Representation defined by the system"
+* insert Translation(code.coding[loinc].display ^short, de-DE, LOINC-Anzeige)
+* insert Translation(code.coding[loinc].display ^short, en-US, LOINC display)
+// Observation.code.coding:IEEE-11073.system
+* code.coding[IEEE-11073].system ^short = "IEEE 11073 system URL"
+* insert Translation(code.coding[IEEE-11073].system ^short, de-DE, IEEE 11073-System-URL)
+* insert Translation(code.coding[IEEE-11073].system ^short, en-US, IEEE 11073 system URL)
+// Observation.code.coding:IEEE-11073.code
+* code.coding[IEEE-11073].code ^short = "Code as IEEE 11073"
+* insert Translation(code.coding[IEEE-11073].code ^short, de-DE, Code als IEEE 11073)
+* insert Translation(code.coding[IEEE-11073].code ^short, en-US, Code as IEEE 11073)
 // Observation.subject
 * subject ^short = "Who and/or what the observation is about"
 * insert Translation(subject ^short, de-DE, Patient*in)

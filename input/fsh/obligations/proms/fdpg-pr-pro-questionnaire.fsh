@@ -22,14 +22,29 @@ Description: "FDPG Profil - MII_PR_PRO_Questionnaire"
 * title ^short = "Name for this questionnaire (human friendly)"
 // Questionnaire.derivedFrom
 * derivedFrom ^short = "Instantiates protocol or definition"
+* insert Translation(derivedFrom ^short, de-DE, Abgeleitet von)
+* insert Translation(derivedFrom ^short, en-US, Derived from)
+* derivedFrom ^definition = "The URL of a Questionnaire that this Questionnaire is based on."
+* insert Translation(derivedFrom ^definition, de-DE, Verweis auf die Ressource\, von der diese abgeleitet ist.)
+* insert Translation(derivedFrom ^definition, en-US, Reference to the resource this is derived from.)
 // Questionnaire.status
 * status ^short = "draft | active | retired | unknown"
+* insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, en-US, Status)
+* status ^definition = "The status of this questionnaire. Enables tracking the life-cycle of the content."
+* insert Translation(status ^definition, de-DE, Status der Ressource.)
+* insert Translation(status ^definition, en-US, Status of the resource.)
 // Questionnaire.subjectType
 * subjectType ^short = "Resource that can be subject of QuestionnaireResponse"
 // Questionnaire.copyright
 * copyright ^short = "Use and/or publishing restrictions"
 // Questionnaire.code
 * code ^short = "Concept that represents the overall questionnaire"
+* insert Translation(code ^short, de-DE, Code)
+* insert Translation(code ^short, en-US, Code)
+* code ^definition = "An identifier for this question or group of questions in a particular terminology such as LOINC."
+* insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
+* insert Translation(code ^definition, en-US, Coding of the content.)
 // Questionnaire.item
 * item ^short = "Questions and sections within the Questionnaire"
 // Questionnaire.item.linkId

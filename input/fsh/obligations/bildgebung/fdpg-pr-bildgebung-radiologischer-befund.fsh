@@ -43,6 +43,14 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Radiologischer_Befund"
 * category.coding[loinc] ^definition = "Ein Verweis auf einen vom LOINC definierten Code"
 * insert Translation(category.coding[loinc] ^definition, de-DE, Ein Verweis auf einen von LOINC definierten Code)
 * insert Translation(category.coding[loinc] ^definition, en-US, A reference to a code defined by LOINC)
+// DiagnosticReport.category.coding:loinc.system
+* category.coding[loinc].system ^short = "LOINC system URL"
+* insert Translation(category.coding[loinc].system ^short, de-DE, LOINC-System-URL)
+* insert Translation(category.coding[loinc].system ^short, en-US, LOINC system URL)
+// DiagnosticReport.category.coding:loinc.code
+* category.coding[loinc].code ^short = "category as LOINC"
+* insert Translation(category.coding[loinc].code ^short, de-DE, Kategorie als LOINC)
+* insert Translation(category.coding[loinc].code ^short, en-US, category as LOINC)
 // DiagnosticReport.category.coding:diagnostic-service-sections
 * category.coding[diagnostic-service-sections] ^short = "Diagnostic Service Section Code"
 * insert Translation(category.coding[diagnostic-service-sections] ^short, de-DE, Diagnostische Serviceabteilung Code)
@@ -50,6 +58,14 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Radiologischer_Befund"
 * category.coding[diagnostic-service-sections] ^definition = "Ein Verweis auf einen von HL7 International definierten Code zur diagnostischen Serviceabteilung"
 * insert Translation(category.coding[diagnostic-service-sections] ^definition, de-DE, Ein Verweis auf einen von HL7 International definierten Code)
 * insert Translation(category.coding[diagnostic-service-sections] ^definition, en-US, A reference to a code defined by HL7 International)
+// DiagnosticReport.category.coding:diagnostic-service-sections.system
+* category.coding[diagnostic-service-sections].system ^short = "HL7 v2 Microbiology system URL"
+* insert Translation(category.coding[diagnostic-service-sections].system ^short, de-DE, HL7 v2 Mikrobiologie-System-URL)
+* insert Translation(category.coding[diagnostic-service-sections].system ^short, en-US, HL7 v2 Microbiology system URL)
+// DiagnosticReport.category.coding:diagnostic-service-sections.code
+* category.coding[diagnostic-service-sections].code ^short = "category as HL7 v2 Microbiology"
+* insert Translation(category.coding[diagnostic-service-sections].code ^short, de-DE, Kategorie als HL7 v2 Mikrobiologie)
+* insert Translation(category.coding[diagnostic-service-sections].code ^short, en-US, category as HL7 v2 Microbiology)
 // DiagnosticReport.category.coding:sct
 * category.coding[sct] ^short = "SNOMED CT Code"
 * insert Translation(category.coding[sct] ^short, de-DE, SNOMED CT Code)
@@ -57,6 +73,14 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Radiologischer_Befund"
 * category.coding[sct] ^definition = "Ein Verweis auf einen von SNOMED CT definierten Code"
 * insert Translation(category.coding[sct] ^definition, de-DE, Ein Verweis auf einen von SNOMED CT definierten Code)
 * insert Translation(category.coding[sct] ^definition, en-US, A reference to a code defined by SNOMED CT)
+// DiagnosticReport.category.coding:sct.system
+* category.coding[sct].system ^short = "SNOMED CT system URL"
+* insert Translation(category.coding[sct].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(category.coding[sct].system ^short, en-US, SNOMED CT system URL)
+// DiagnosticReport.category.coding:sct.code
+* category.coding[sct].code ^short = "category as SNOMED CT"
+* insert Translation(category.coding[sct].code ^short, de-DE, Kategorie als SNOMED CT)
+* insert Translation(category.coding[sct].code ^short, en-US, category as SNOMED CT)
 // DiagnosticReport.code
 * code ^short = "Code"
 * insert Translation(code ^short, de-DE, Code)

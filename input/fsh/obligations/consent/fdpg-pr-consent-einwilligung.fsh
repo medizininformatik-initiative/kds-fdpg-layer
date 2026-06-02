@@ -10,8 +10,18 @@ Description: "FDPG Profil - MII_PR_Consent_Einwilligung"
 // --- Element Designations ---
 // Consent.status
 * status ^short = "draft | proposed | active | rejected | inactive | entered-in-error"
+* insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, en-US, Status)
+* status ^definition = "Indicates the current state of this consent."
+* insert Translation(status ^definition, de-DE, Status der Ressource.)
+* insert Translation(status ^definition, en-US, Status of the resource.)
 // Consent.category
 * category ^short = "Classification of the consent statement - for indexing/retrieval"
+* insert Translation(category ^short, de-DE, Kategorie)
+* insert Translation(category ^short, en-US, Category)
+* category ^definition = "A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements."
+* insert Translation(category ^definition, de-DE, Kategorisierung der Ressource.)
+* insert Translation(category ^definition, en-US, Categorization of the resource.)
 // Consent.category:consentCategory
 * category[consentCategory] ^short = "Classification of the consent statement - for indexing/retrieval"
 // Consent.category:resultType
@@ -24,6 +34,11 @@ Description: "FDPG Profil - MII_PR_Consent_Einwilligung"
 * category[mii] ^short = "Classification of the consent statement - for indexing/retrieval"
 // Consent.patient
 * patient ^short = "Who the consent applies to"
+* insert Translation(patient ^short, de-DE, Patient*in)
+* insert Translation(patient ^short, en-US, Patient)
+* patient ^definition = "The patient/healthcare consumer to whom this consent applies."
+* insert Translation(patient ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
+* insert Translation(patient ^definition, en-US, The patient that the resource relates to.)
 // Consent.patient.reference
 * patient.reference ^short = "Literal reference, Relative, internal or absolute URL"
 // Consent.patient.identifier

@@ -49,18 +49,26 @@ Description: "FDPG Profil - MII_PR_Seltene_Symptom_Condition"
 * code.coding[hpoCoding] ^short = "HPO Code für das Symptom"
 // Condition.code.coding:hpoCoding.display
 * code.coding[hpoCoding].display ^short = "Representation defined by the system"
+* insert Translation(code.coding[hpoCoding].display ^short, de-DE, HPO-Anzeige)
+* insert Translation(code.coding[hpoCoding].display ^short, en-US, HPO display)
 // Condition.code.coding:snomedCoding
 * code.coding[snomedCoding] ^short = "SNOMED CT Code für das Symptom"
 // Condition.code.coding:snomedCoding.display
 * code.coding[snomedCoding].display ^short = "Representation defined by the system"
+* insert Translation(code.coding[snomedCoding].display ^short, de-DE, SNOMED CT-Anzeige)
+* insert Translation(code.coding[snomedCoding].display ^short, en-US, SNOMED CT display)
 // Condition.code.coding:icd10GMCoding
 * code.coding[icd10GMCoding] ^short = "ICD-10-GM Code für das Symptom"
 // Condition.code.coding:icd10GMCoding.display
 * code.coding[icd10GMCoding].display ^short = "Representation defined by the system"
+* insert Translation(code.coding[icd10GMCoding].display ^short, de-DE, ICD-10-GM-Anzeige)
+* insert Translation(code.coding[icd10GMCoding].display ^short, en-US, ICD-10-GM display)
 // Condition.code.coding:mondoCoding
 * code.coding[mondoCoding] ^short = "MONDO Code für das Symptom"
 // Condition.code.coding:mondoCoding.display
 * code.coding[mondoCoding].display ^short = "Representation defined by the system"
+* insert Translation(code.coding[mondoCoding].display ^short, de-DE, MONDO-Anzeige)
+* insert Translation(code.coding[mondoCoding].display ^short, en-US, MONDO display)
 // Condition.bodySite
 * bodySite ^short = "Anatomische Lokalisation des Symptoms"
 * insert Translation(bodySite ^short, de-DE, Körperstelle)

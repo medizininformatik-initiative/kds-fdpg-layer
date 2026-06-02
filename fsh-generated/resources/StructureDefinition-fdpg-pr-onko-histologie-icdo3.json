@@ -767,6 +767,76 @@
         }
       },
       {
+        "id": "Observation.bodySite.coding:Seitenlokalisation.system",
+        "path": "Observation.bodySite.coding.system",
+        "short": "MII Onko laterality system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "MII Onko Seitenlokalisation-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "MII Onko laterality system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.bodySite.coding:Seitenlokalisation.code",
+        "path": "Observation.bodySite.coding.code",
+        "short": "MII Onko laterality code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "MII Onko Seitenlokalisation-Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "MII Onko laterality code"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "Observation.bodySite.coding:icd-o-3",
         "extension": [
           {
@@ -853,6 +923,76 @@
                 {
                   "url": "content",
                   "valueString": "ICD-O-3 topography when the location in follow-up differs from the primary tumor."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.bodySite.coding:icd-o-3.system",
+        "path": "Observation.bodySite.coding.system",
+        "short": "ICD-O-3 system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ICD-O-3-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ICD-O-3 system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.bodySite.coding:icd-o-3.code",
+        "path": "Observation.bodySite.coding.code",
+        "short": "ICD-O-3 code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ICD-O-3-Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ICD-O-3 code"
                 }
               ]
             }

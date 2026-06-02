@@ -24,6 +24,8 @@ Description: "FDPG Profil - MII_PR_Labor_Laboranforderung"
 * insert Translation(identifier[anforderung] ^definition, en-US, The unique identifier of the laboratory order.)
 // ServiceRequest.identifier:anforderung.type
 * identifier[anforderung].type ^short = "Description of identifier"
+// ServiceRequest.identifier:anforderung.type.coding:placerv2.system
+// ServiceRequest.identifier:anforderung.type.coding:placerv2.code
 // ServiceRequest.identifier:anforderung.system
 * identifier[anforderung].system ^short = "The namespace for the identifier value"
 // ServiceRequest.identifier:anforderung.value
