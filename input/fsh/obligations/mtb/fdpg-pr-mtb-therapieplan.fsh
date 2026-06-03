@@ -66,8 +66,18 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 * insert Translation(created ^definition, en-US, Date the application was filed.)
 // CarePlan.addresses
 * addresses ^short = "Health issues this plan addresses"
+* insert Translation(addresses ^short, de-DE, Adressiert)
+* insert Translation(addresses ^short, en-US, Addresses)
+* addresses ^definition = "Identifies the conditions/problems/concerns/diagnoses/etc. whose management and/or mitigation are handled by this plan."
+* insert Translation(addresses ^definition, de-DE, Verweis auf die Diagnose(n\) bzw. Erkrankung(en\)\, die dieser Plan adressiert.)
+* insert Translation(addresses ^definition, en-US, Reference to the condition(s\) that this plan addresses.)
 // CarePlan.supportingInfo
 * supportingInfo ^short = "Information considered as part of plan"
+* insert Translation(supportingInfo ^short, de-DE, Unterstützende Informationen)
+* insert Translation(supportingInfo ^short, en-US, Supporting information)
+* supportingInfo ^definition = "Identifies portions of the patient's record that specifically influenced the formation of the plan.  These might include comorbidities, recent procedures, limitations, recent assessments, etc."
+* insert Translation(supportingInfo ^definition, de-DE, Zusätzliche Informationen\, die den Plan stützen.)
+* insert Translation(supportingInfo ^definition, en-US, Additional information that supports the plan.)
 // CarePlan.supportingInfo:Behandlungsepisode
 * supportingInfo[Behandlungsepisode] ^short = "Behandlungsepisode"
 * insert Translation(supportingInfo[Behandlungsepisode] ^short, de-DE, Behandlungsepisode)
@@ -77,6 +87,11 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 * insert Translation(supportingInfo[Behandlungsepisode] ^definition, en-US, Current disease state and prior treatments.)
 // CarePlan.activity
 * activity ^short = "Therapy recommendations - either oBDS standard categorization or extended molecular protocols"
+* insert Translation(activity ^short, de-DE, Maßnahme)
+* insert Translation(activity ^short, en-US, Activity)
+* activity ^definition = "Identifies a planned action to occur as part of the plan.  For example, a medication to be used, lab tests to perform, self-monitoring, education, etc."
+* insert Translation(activity ^definition, de-DE, Geplante Maßnahme als Teil des Plans.)
+* insert Translation(activity ^definition, en-US, Planned action as part of the plan.)
 // CarePlan.activity:obds.detail
 * activity[obds].detail ^short = "In-line definition of activity"
 // CarePlan.activity:obds.detail.code

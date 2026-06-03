@@ -50,8 +50,18 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * insert Translation(medication[x] ^definition, en-US, The medication that was requested. Code or a reference to a Medication resource.)
 // MedicationRequest.medication[x]:medicationReference
 * medication[x][medicationReference] ^short = "Medication to be taken"
+* insert Translation(medication[x][medicationReference] ^short, de-DE, Medikation (Verweis\))
+* insert Translation(medication[x][medicationReference] ^short, en-US, Medication (reference\))
+* medication[x][medicationReference] ^definition = "Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications."
+* insert Translation(medication[x][medicationReference] ^definition, de-DE, Verweis auf die Medikament-Ressource.)
+* insert Translation(medication[x][medicationReference] ^definition, en-US, Reference to the medication resource.)
 // MedicationRequest.medication[x]:medicationCodeableConcept
 * medication[x][medicationCodeableConcept] ^short = "Medication to be taken"
+* insert Translation(medication[x][medicationCodeableConcept] ^short, de-DE, Medikation (Code\))
+* insert Translation(medication[x][medicationCodeableConcept] ^short, en-US, Medication (coded\))
+* medication[x][medicationCodeableConcept] ^definition = "Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications."
+* insert Translation(medication[x][medicationCodeableConcept] ^definition, de-DE, Inline-Kodierung der Medikation.)
+* insert Translation(medication[x][medicationCodeableConcept] ^definition, en-US, Inline coding of the medication.)
 // MedicationRequest.medication[x]:medicationCodeableConcept.coding
 * medication[x][medicationCodeableConcept].coding ^short = "Active substance"
 * insert Translation(medication[x][medicationCodeableConcept].coding ^short, de-DE, Wirkstoff/Substanz)
@@ -71,9 +81,9 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].system ^short, de-DE, Pharmazentralnummer-System-URL)
 * insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].system ^short, en-US, PZN system URL)
 // MedicationRequest.medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer.code
-* medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].code ^short = "PZN code"
-* insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].code ^short, de-DE, Pharmazentralnummer-Code)
-* insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].code ^short, en-US, PZN code)
+* medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].code ^short = "Medication (coded) as PZN"
+* insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].code ^short, de-DE, Medikation (Code\) als Pharmazentralnummer)
+* insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].code ^short, en-US, Medication (coded\) as PZN)
 // MedicationRequest.medication[x]:medicationCodeableConcept.coding:atcClassDe
 * medication[x][medicationCodeableConcept].coding[atcClassDe] ^short = "ATC Klassifikation deutsche Version"
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe] ^short, de-DE, ATC Code)
@@ -86,9 +96,9 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe].system ^short, de-DE, ATC (BfArM\)-System-URL)
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe].system ^short, en-US, ATC (BfArM\) system URL)
 // MedicationRequest.medication[x]:medicationCodeableConcept.coding:atcClassDe.code
-* medication[x][medicationCodeableConcept].coding[atcClassDe].code ^short = "ATC (BfArM) code"
-* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe].code ^short, de-DE, ATC (BfArM\)-Code)
-* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe].code ^short, en-US, ATC (BfArM\) code)
+* medication[x][medicationCodeableConcept].coding[atcClassDe].code ^short = "Medication (coded) as ATC (BfArM)"
+* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe].code ^short, de-DE, Medikation (Code\) als ATC (BfArM\))
+* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe].code ^short, en-US, Medication (coded\) as ATC (BfArM\))
 // MedicationRequest.medication[x]:medicationCodeableConcept.coding:atcClassEn
 * medication[x][medicationCodeableConcept].coding[atcClassEn] ^short = "Anatomical Therapeutic Chemical Classification System"
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn] ^short, de-DE, ATC WHO Code)
@@ -101,9 +111,9 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn].system ^short, de-DE, ATC (WHO\)-System-URL)
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn].system ^short, en-US, ATC (WHO\) system URL)
 // MedicationRequest.medication[x]:medicationCodeableConcept.coding:atcClassEn.code
-* medication[x][medicationCodeableConcept].coding[atcClassEn].code ^short = "ATC (WHO) code"
-* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn].code ^short, de-DE, ATC (WHO\)-Code)
-* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn].code ^short, en-US, ATC (WHO\) code)
+* medication[x][medicationCodeableConcept].coding[atcClassEn].code ^short = "Medication (coded) as ATC (WHO)"
+* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn].code ^short, de-DE, Medikation (Code\) als ATC (WHO\))
+* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn].code ^short, en-US, Medication (coded\) as ATC (WHO\))
 // MedicationRequest.medication[x]:medicationCodeableConcept.coding:UNII
 * medication[x][medicationCodeableConcept].coding[UNII] ^short = "Unique Ingredient Identifier"
 * insert Translation(medication[x][medicationCodeableConcept].coding[UNII] ^short, de-DE, Unique Ingredient Identifier)
@@ -116,9 +126,9 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * insert Translation(medication[x][medicationCodeableConcept].coding[UNII].system ^short, de-DE, UNII-System-URL)
 * insert Translation(medication[x][medicationCodeableConcept].coding[UNII].system ^short, en-US, UNII system URL)
 // MedicationRequest.medication[x]:medicationCodeableConcept.coding:UNII.code
-* medication[x][medicationCodeableConcept].coding[UNII].code ^short = "UNII code"
-* insert Translation(medication[x][medicationCodeableConcept].coding[UNII].code ^short, de-DE, UNII-Code)
-* insert Translation(medication[x][medicationCodeableConcept].coding[UNII].code ^short, en-US, UNII code)
+* medication[x][medicationCodeableConcept].coding[UNII].code ^short = "Medication (coded) as UNII"
+* insert Translation(medication[x][medicationCodeableConcept].coding[UNII].code ^short, de-DE, Medikation (Code\) als UNII)
+* insert Translation(medication[x][medicationCodeableConcept].coding[UNII].code ^short, en-US, Medication (coded\) as UNII)
 // MedicationRequest.subject
 * subject ^short = "Who or group medication request is for"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -272,8 +282,18 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * dosageInstruction.asNeeded[x] ^short = "Take \"as needed\" (for x)"
 // MedicationRequest.dosageInstruction.asNeeded[x]:asNeededBoolean
 * dosageInstruction.asNeeded[x][asNeededBoolean] ^short = "Take \"as needed\" (for x)"
+* insert Translation(dosageInstruction.asNeeded[x][asNeededBoolean] ^short, de-DE, Bei Bedarf)
+* insert Translation(dosageInstruction.asNeeded[x][asNeededBoolean] ^short, en-US, As needed)
+* dosageInstruction.asNeeded[x][asNeededBoolean] ^definition = "Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept)."
+* insert Translation(dosageInstruction.asNeeded[x][asNeededBoolean] ^definition, de-DE, Gibt an\, ob die Medikation nur bei Bedarf eingenommen wird.)
+* insert Translation(dosageInstruction.asNeeded[x][asNeededBoolean] ^definition, en-US, Indicates whether the medication is only taken when needed.)
 // MedicationRequest.dosageInstruction.asNeeded[x]:asNeededCodeableConcept
 * dosageInstruction.asNeeded[x][asNeededCodeableConcept] ^short = "Take \"as needed\" (for x)"
+* insert Translation(dosageInstruction.asNeeded[x][asNeededCodeableConcept] ^short, de-DE, Bei Bedarf (Begründung\))
+* insert Translation(dosageInstruction.asNeeded[x][asNeededCodeableConcept] ^short, en-US, As needed (reason\))
+* dosageInstruction.asNeeded[x][asNeededCodeableConcept] ^definition = "Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept)."
+* insert Translation(dosageInstruction.asNeeded[x][asNeededCodeableConcept] ^definition, de-DE, Bei Bedarf mit kodierter Begründung.)
+* insert Translation(dosageInstruction.asNeeded[x][asNeededCodeableConcept] ^definition, en-US, As needed with coded reason.)
 // MedicationRequest.dosageInstruction.site
 * dosageInstruction.site ^short = "Verabreichungsort"
 * insert Translation(dosageInstruction.site ^short, de-DE, Verabreichungsort)

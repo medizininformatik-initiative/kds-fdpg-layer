@@ -39,8 +39,18 @@ Description: "FDPG Profil - MII_PR_PRO_QuestionnaireResponse"
 * insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // QuestionnaireResponse.authored
 * authored ^short = "Date the answers were gathered"
+* insert Translation(authored ^short, de-DE, Erstellungsdatum)
+* insert Translation(authored ^short, en-US, Authored date)
+* authored ^definition = "Identifies when this version of the answer set was created.  Changes whenever the answers are updated."
+* insert Translation(authored ^definition, de-DE, Datum der Erstellung.)
+* insert Translation(authored ^definition, en-US, Date when this was authored.)
 // QuestionnaireResponse.author
 * author ^short = "Person who received and recorded the answers"
+* insert Translation(author ^short, de-DE, Autor*in)
+* insert Translation(author ^short, en-US, Author)
+* author ^definition = "Person who received the answers to the questions in the QuestionnaireResponse and recorded them in the system."
+* insert Translation(author ^definition, de-DE, Person oder Organisation\, die für den Inhalt verantwortlich ist.)
+* insert Translation(author ^definition, en-US, Person or organization responsible for the content.)
 // QuestionnaireResponse.item
 * item ^short = "Groups and questions"
 // QuestionnaireResponse.item.linkId

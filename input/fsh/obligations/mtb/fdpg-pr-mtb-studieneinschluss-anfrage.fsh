@@ -53,6 +53,11 @@ Description: "FDPG Profil - MII_PR_MTB_Studieneinschluss_Anfrage"
 * insert Translation(reasonReference ^definition, en-US, Reference to a resource containing the reason.)
 // ServiceRequest.supportingInfo
 * supportingInfo ^short = "Additional clinical information"
+* insert Translation(supportingInfo ^short, de-DE, Unterstützende Informationen)
+* insert Translation(supportingInfo ^short, en-US, Supporting information)
+* supportingInfo ^definition = "Additional clinical information about the patient or specimen that may influence the services or their interpretations.     This information includes diagnosis, clinical findings and other observations.  In laboratory ordering these are typically referred to as \"ask at order entry questions (AOEs)\".  This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example,  reporting the amount of inspired oxygen for blood gas measurements."
+* insert Translation(supportingInfo ^definition, de-DE, Zusätzliche Informationen\, die den Plan stützen.)
+* insert Translation(supportingInfo ^definition, en-US, Additional information that supports the plan.)
 // ServiceRequest.supportingInfo:Studie
 * supportingInfo[Studie] ^short = "Additional clinical information"
 

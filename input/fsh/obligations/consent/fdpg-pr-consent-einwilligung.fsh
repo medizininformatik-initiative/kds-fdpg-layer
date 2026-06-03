@@ -8,6 +8,13 @@ Description: "FDPG Profil - MII_PR_Consent_Einwilligung"
 * insert Translation(^title, de-DE, Einwilligung)
 * insert Translation(^title, en-US, Consent)
 // --- Element Designations ---
+// Consent.extension:domainReference
+* extension[domainReference] ^short = "Domain reference"
+* insert Translation(extension[domainReference] ^short, de-DE, Domänen-Verweis)
+* insert Translation(extension[domainReference] ^short, en-US, Domain reference)
+* extension[domainReference] ^definition = "Optional Extension Element - found in all resources."
+* insert Translation(extension[domainReference] ^definition, de-DE, Verweis auf eine assoziierte Domäne (Behandlungseinrichtung\, Fall\, Studie\).)
+* insert Translation(extension[domainReference] ^definition, en-US, Reference to an associated domain (treatment facility\, encounter\, study\).)
 // Consent.status
 * status ^short = "draft | proposed | active | rejected | inactive | entered-in-error"
 * insert Translation(status ^short, de-DE, Status)
@@ -61,6 +68,11 @@ Description: "FDPG Profil - MII_PR_Consent_Einwilligung"
 * policy.uri ^short = "Specific policy covered by this consent"
 // Consent.policyRule
 * policyRule ^short = "Regulation that this consents to"
+* insert Translation(policyRule ^short, de-DE, Regel-Verweis)
+* insert Translation(policyRule ^short, en-US, Policy rule)
+* policyRule ^definition = "A reference to the specific base computable regulation or policy."
+* insert Translation(policyRule ^definition, de-DE, Verweis auf die zugrundeliegende Regel oder Richtlinie.)
+* insert Translation(policyRule ^definition, en-US, Reference to the underlying policy or rule.)
 // Consent.provision
 * provision ^short = "Constraints to the base Consent.policyRule"
 // Consent.provision.type

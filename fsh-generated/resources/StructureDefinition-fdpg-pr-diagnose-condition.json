@@ -138,7 +138,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Referenz Primaerdiagnose"
+                  "valueString": "Referenz zur Primärdiagnose"
                 }
               ]
             },
@@ -152,6 +152,36 @@
                 {
                   "url": "content",
                   "valueString": "Primary diagnosis reference"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Verweis auf die Primärdiagnose, mit der diese Diagnose assoziiert ist."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Reference to the primary diagnosis this condition is associated with."
                 }
               ]
             }

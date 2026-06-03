@@ -57,7 +57,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Score-Wert | Ergebniswert des PROMs-Items oder Scores. |
 | `interpretation` | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `note` | Hinweis | Freitextkommentar zur Ressource. |
-| `note:reference` | Comments about the observation | Comments about the observation or the results. |
+| `note:reference` | Hinweis | Freitextkommentar zur Ressource. |
 | `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
 | `derivedFrom` | Zugehöriger Fragebogen | Verweis auf die QuestionnaireResponse, aus der dieser Score abgeleitet wurde. |
 
@@ -329,8 +329,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `questionnaire.extension:questionnaireDisplay` | Fragebogen-Anzeige | The title or other name to display when referencing a resource by canonical URL. |
 | `status` | Status | Status der Ressource. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `authored` | Date the answers were gathered | Identifies when this version of the answer set was created. Changes whenever the answers are updated. |
-| `author` | Person who received and recorded the answers | Person who received the answers to the questions in the QuestionnaireResponse and recorded them in the system. |
+| `authored` | Erstellungsdatum | Datum der Erstellung. |
+| `author` | Autor\*in | Person oder Organisation, die für den Inhalt verantwortlich ist. |
 | `item` | Groups and questions | A group or question item from the original questionnaire for which answers are provided. |
 
 #### Fragebogen (Questionnaire)
@@ -339,7 +339,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `extension:performerType` | Durchführenden-Typ | Indicates the types of resources that can record answers to a Questionnaire. Open Issue: Should this extension be moved to core? |
+| `extension:performerType` | Durchführenden-Typ | Ressourcentyp, der Antworten auf den Fragebogen erfassen kann. |
 | `extension:assemble-expectation` | Assemble-Erwartung | If present, indicates that this questionnaire has expectations with respect to assembly. Specifically, indicates whether this form requires assembly (i.e. it can't be used directly without invoking... |
 | `extension:capabilities` | Capabilities | MII PR PRO Questionnaire Capabilities, based on the FHIR Structure Data Capture Specification |
 | `url` | Canonical identifier for this questionnaire, represented as a URI (globally unique) | An absolute URI that is used to identify this questionnaire when it is referenced in a specification, model, design or an instance; also called its canonical identifier. This SHOULD be globally uni... |
@@ -441,7 +441,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Score value | Result value of the PROMs item or score. |
 | `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
 | `note` | Note | Free-text comment on the resource. |
-| `note:reference` | Comments about the observation | Comments about the observation or the results. |
+| `note:reference` | Note | Free-text comment on the resource. |
 | `method` | Method | Method used to make the observation. |
 | `derivedFrom` | Source questionnaire | Reference to the QuestionnaireResponse this score is derived from. |
 
@@ -727,8 +727,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `questionnaire.extension:questionnaireDisplay` | Questionnaire display | The title or other name to display when referencing a resource by canonical URL. |
 | `status` | Status | Status of the resource. |
 | `subject` | Patient | The patient that the resource relates to. |
-| `authored` | Date the answers were gathered | Identifies when this version of the answer set was created. Changes whenever the answers are updated. |
-| `author` | Person who received and recorded the answers | Person who received the answers to the questions in the QuestionnaireResponse and recorded them in the system. |
+| `authored` | Authored date | Date when this was authored. |
+| `author` | Author | Person or organization responsible for the content. |
 | `item` | Groups and questions | A group or question item from the original questionnaire for which answers are provided. |
 
 </details>
@@ -738,7 +738,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:performerType` | Performer type | Indicates the types of resources that can record answers to a Questionnaire. Open Issue: Should this extension be moved to core? |
+| `extension:performerType` | Performer type | Resource type that can record answers to the questionnaire. |
 | `extension:assemble-expectation` | Assemble expectation | If present, indicates that this questionnaire has expectations with respect to assembly. Specifically, indicates whether this form requires assembly (i.e. it can't be used directly without invoking... |
 | `extension:capabilities` | Capabilities | MII PR PRO Questionnaire Capabilities, based on the FHIR Structure Data Capture Specification |
 | `url` | Canonical identifier for this questionnaire, represented as a URI (globally unique) | An absolute URI that is used to identify this questionnaire when it is referenced in a specification, model, design or an instance; also called its canonical identifier. This SHOULD be globally uni... |

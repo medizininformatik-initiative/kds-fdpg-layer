@@ -121,6 +121,11 @@ Description: "FDPG Profil - MII_PR_Patho_Composition"
 * date ^short = "Dokumentendatum"
 // Composition.author
 * author ^short = "Author can only be of type Practitioner or Organization"
+* insert Translation(author ^short, de-DE, Autor*in)
+* insert Translation(author ^short, en-US, Author)
+* author ^definition = "Identifies who is responsible for the information in the composition, not necessarily who typed it in."
+* insert Translation(author ^definition, de-DE, Person oder Organisation\, die für den Inhalt verantwortlich ist.)
+* insert Translation(author ^definition, en-US, Person or organization responsible for the content.)
 // Composition.author.display
 * author.display ^short = "Bezeichnung des Verfassers (Freitext)"
 // Composition.title

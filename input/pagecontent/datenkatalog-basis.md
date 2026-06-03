@@ -39,8 +39,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
 |---|---|---|---|---|---|
 | `identifier` | PatientenIdentifikator, Pseudonym | Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als "Codesystem" gesehen werden, und Patienten-Identifikator als "Code" | Identifikator | Ein Identifikator für den/die Patient\*in |  |
-| `identifier:PseudonymisierterIdentifier` | PatientenIdentifikator, Pseudonym | Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als "Codesystem" gesehen werden, und Patienten-Identifikator als "Code" | Pseudonymisierter Identifikator | Ein Pseudonym ersetzt einen Originalwert. Die Verarbeitung ist umkehrbar. Zusätzliche Informationen sind erforderlich, um den Originalwert zu rekonstruieren, bspw. eine Trusted Third Party. |  |
-| `identifier:AnonymisierterIdentifier` | PatientenIdentifikator, Pseudonym | Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als "Codesystem" gesehen werden, und Patienten-Identifikator als "Code" | Anonymisierter Identifikator | Ein Anonymisierter Identifikator ersetzt einen Originalwert. Die Verarbeitung ist unumkehrbar. Der Originalwert kann nicht oder nur mit unverhältnismäßigem Aufwand rekonstruiert werden. |  |
+| `identifier:PseudonymisierterIdentifier` | PatientenIdentifikator, Pseudonym | Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als "Codesystem" gesehen werden, und Patienten-Identifikator als "Code" | Identifikator | Identifikator dieser Ressource. |  |
+| `identifier:AnonymisierterIdentifier` | PatientenIdentifikator, Pseudonym | Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als "Codesystem" gesehen werden, und Patienten-Identifikator als "Code" | Identifikator | Identifikator dieser Ressource. |  |
 | `identifier:MaskierterVersichertenIdentifer` | PatientenIdentifikator, Pseudonym | Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als "Codesystem" gesehen werden, und Patienten-Identifikator als "Code" | Maskierter Identifier der Krankenversicherten-ID | Identifier der Krankenversichertennummer, bei dem der Wert maskiert wurde. |  |
 | `active` |  |  | Aktiv | Gibt an, ob diese Patient-Ressource aktiv verwendet wird. |  |
 | `gender` | AdministrativesGeschlecht | Administratives Geschlecht der Person | Administratives Geschlecht | männlich \| weiblich \| andere \| unbekannt \| unbestimmt \| divers |  |
@@ -57,7 +57,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|---|---|---|
 | `status` |  |  | Status | abgeschlossen |  |
 | `category` |  |  | Kategorie | Klassifikation des Typs der Beobachtung für den Vitalstatus. |  |
-| `category:survey` |  |  | Classification of type of observation | A code that classifies the general type of observation being made. |  |
+| `category:survey` |  |  | Kategorie | Kategorisierung der Ressource. |  |
 | `code` |  |  | Code | Ein LOINC Code, der die Vitalstatus Beobachtung identifiziert. | ✓ |
 | `code.coding:loinc` |  |  | LOINC | Kodierung nach LOINC. |  |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
@@ -76,7 +76,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `clinicalStatus` | KlinischerStatus | aktiv, Rezidiv, Rückfall, inaktiv, Remission, geheilt | Klinischer Status | aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen | ✓ |
 | `verificationStatus` |  |  | Verifizierungsstatus | unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe | ✓ |
 | `category` |  |  | Kategorie | Eine Kategorie, die der Diagnose zugeordnet ist. |  |
-| `category:todesDiagnose` |  |  | problem-list-item \| encounter-diagnosis | A category assigned to the condition. |  |
+| `category:todesDiagnose` |  |  | Kategorie | Kategorisierung der Ressource. |  |
 | `category:todesDiagnose.coding:snomed` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |  |
 | `category:todesDiagnose.coding:loinc` |  |  | LOINC | Kodierung nach LOINC. |  |
 | `code` | ICD10GMDiagnoseKodiert, Diagnosecode, ... | Im Bereich der administrativen und statistischen Auswertung wird die Diagnose mit Hilfe von Codiersystemen verschlüsselt. So wird z.B. bei der Abrechnung nach §301 und §295 SGB V die Codierung von ... | Code | Ein ICD-10-WHO Code, der die Todesursache identifiziert. | ✓ |
@@ -94,23 +94,23 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
 |---|---|---|---|---|---|
-| `extension:ReferenzPrimaerdiagnose` |  |  | Referenz Primaerdiagnose | This condition has an unspecified relationship with another condition. | ✓ |
+| `extension:ReferenzPrimaerdiagnose` |  |  | Referenz zur Primärdiagnose | Verweis auf die Primärdiagnose, mit der diese Diagnose assoziiert ist. | ✓ |
 | `extension:Feststellungsdatum` | Feststellungsdatum | Das Datum ist der Zeitpunkt, an dem eine Krankheit z. B. durch einen Arzt festgestellt wurde. Dies wird im Folgenden mit Diagnosedatum bezeichnet. | Feststellungsdatum | Datum, an dem die Diagnose erstmals festgestellt wurde |  |
 | `clinicalStatus` | KlinischerStatus | aktiv, Rezidiv, Rückfall, inaktiv, Remission, geheilt | Klinischer Status | aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen | ✓ |
 | `verificationStatus` |  |  | Verifizierungsstatus | unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe | ✓ |
 | `code` | ICD10GMDiagnoseKodiert, Diagnosecode, ... | Im Bereich der administrativen und statistischen Auswertung wird die Diagnose mit Hilfe von Codiersystemen verschlüsselt. So wird z.B. bei der Abrechnung nach §301 und §295 SGB V die Codierung von ... | Code | Ein ICD-10-, Alpha-ID-, SNOMED-, Orpha- oder anderer Code, der die Diagnose identifiziert. | ✓ |
-| `code.coding:icd10-gm` | ICD10GMDiagnoseKodiert, Diagnosecode, ... | Im Bereich der administrativen und statistischen Auswertung wird die Diagnose mit Hilfe von Codiersystemen verschlüsselt. So wird z.B. bei der Abrechnung nach §301 und §295 SGB V die Codierung von ... | ICD-10-GM Code | Ein Verweis auf einen von der ICD-10-GM definierten Code |  |
-| `code.coding:alpha-id` | ICD10GMDiagnoseKodiert, Diagnosecode, ... | Im Bereich der administrativen und statistischen Auswertung wird die Diagnose mit Hilfe von Codiersystemen verschlüsselt. So wird z.B. bei der Abrechnung nach §301 und §295 SGB V die Codierung von ... | Alpha-ID Code | Ein Verweis auf einen von der Alpha-ID definierten Code |  |
-| `code.coding:sct` | ICD10GMDiagnoseKodiert, Diagnosecode, ... | Im Bereich der administrativen und statistischen Auswertung wird die Diagnose mit Hilfe von Codiersystemen verschlüsselt. So wird z.B. bei der Abrechnung nach §301 und §295 SGB V die Codierung von ... | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |  |
-| `code.coding:orphanet` | ICD10GMDiagnoseKodiert, Diagnosecode, ... | Im Bereich der administrativen und statistischen Auswertung wird die Diagnose mit Hilfe von Codiersystemen verschlüsselt. So wird z.B. bei der Abrechnung nach §301 und §295 SGB V die Codierung von ... | ORPHAcode | Ein Verweis auf einen von der Orphanet Nomenklatur der Seltenen Krankheiten definierten Code |  |
+| `code.coding:icd10-gm` | ICD10GMDiagnoseKodiert, Diagnosecode, ... | Im Bereich der administrativen und statistischen Auswertung wird die Diagnose mit Hilfe von Codiersystemen verschlüsselt. So wird z.B. bei der Abrechnung nach §301 und §295 SGB V die Codierung von ... | ICD-10-GM | Kodierung nach ICD-10-GM. |  |
+| `code.coding:alpha-id` | ICD10GMDiagnoseKodiert, Diagnosecode, ... | Im Bereich der administrativen und statistischen Auswertung wird die Diagnose mit Hilfe von Codiersystemen verschlüsselt. So wird z.B. bei der Abrechnung nach §301 und §295 SGB V die Codierung von ... | Alpha-ID | Kodierung nach Alpha-ID. |  |
+| `code.coding:sct` | ICD10GMDiagnoseKodiert, Diagnosecode, ... | Im Bereich der administrativen und statistischen Auswertung wird die Diagnose mit Hilfe von Codiersystemen verschlüsselt. So wird z.B. bei der Abrechnung nach §301 und §295 SGB V die Codierung von ... | SNOMED CT | Kodierung nach SNOMED CT. |  |
+| `code.coding:orphanet` | ICD10GMDiagnoseKodiert, Diagnosecode, ... | Im Bereich der administrativen und statistischen Auswertung wird die Diagnose mit Hilfe von Codiersystemen verschlüsselt. So wird z.B. bei der Abrechnung nach §301 und §295 SGB V die Codierung von ... | Orphanet | Kodierung nach Orphanet. |  |
 | `bodySite` | Koerperstelle | Über die Körperstelle kann angegeben werden, in welchem Bereich des Körpers eine Krankheit diagnostiziert wurde (Topografische Informatiomn) | Körperstelle | Körperstelle der Diagnose mittels SNOMED oder anderem Code. |  |
-| `bodySite.coding:snomed-ct` | Koerperstelle | Über die Körperstelle kann angegeben werden, in welchem Bereich des Körpers eine Krankheit diagnostiziert wurde (Topografische Informatiomn) | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |  |
+| `bodySite.coding:snomed-ct` | Koerperstelle | Über die Körperstelle kann angegeben werden, in welchem Bereich des Körpers eine Krankheit diagnostiziert wurde (Topografische Informatiomn) | SNOMED CT | Kodierung nach SNOMED CT. |  |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Diagnose erstellt wurde oder mit dem die Diagnose in Zusammenhang steht. |  |
 | `onset[x]` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Beginn | Geschätztes oder tatsächliches Datum oder Zeitraum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. | ✓ |
-| `onset[x]:onsetPeriod` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Beginn Zeitraum | Der Zeitraum, in dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |  |
-| `onset[x]:onsetDateTime` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Beginn Datum | Das Datum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |  |
-| `onset[x]:onsetAge` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Erkrankungsbeginn als Alter | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |  |
+| `onset[x]:onsetPeriod` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |  |
+| `onset[x]:onsetDateTime` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |  |
+| `onset[x]:onsetAge` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |  |
 | `recordedDate` | Dokumentationsdatum | Das Datum ist der Zeitpunkt, an dem eine Krankheit z. B. durch einen Arzt dokumentiert wurde. Hinweis: Wenn zwischen Feststellung der Diagnose und Dokumentationsdatum nicht unterschieden werden mus... | Aufzeichnungsdatum | Datum, an dem die Diagnose erstmals dokumentiert wurde. | ✓ |
 | `note` | Diagnoseerlaeuterung | Damit soll dem Arzt die Möglichkeit gegeben werden, umfangreichere Angaben zusätzlich zu einer Diagnose abzufassen. | Hinweis | Zusätzliche Informationen zur Diagnose als Freitext. |  |
 
@@ -127,15 +127,15 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:durchfuehrungsabsicht` | Durchfuehrungsabsicht | Intention mit der die Prozedur durchgeführt wird. | Durchführungsabsicht | therapeutisch \| palliativ \| diagnostisch \| präventiv \| rehabilitativ \| andere |  |
 | `status` |  |  | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt | ✓ |
 | `category` |  |  | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |  |
-| `category.coding:sct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |  |
+| `category.coding:sct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |  |
 | `code` | OPSProzedurKodiert, VollstaendigerProzedurencode, ... | Kodierung der durchgeführten Prozedur mittels OPS. | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. | ✓ |
-| `code.coding:ops` | OPSProzedurKodiert, VollstaendigerProzedurencode, ... | Kodierung der durchgeführten Prozedur mittels OPS. | OPS Code | Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel definierten Code |  |
-| `code.coding:sct` | OPSProzedurKodiert, VollstaendigerProzedurencode, ... | Kodierung der durchgeführten Prozedur mittels OPS. | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |  |
+| `code.coding:ops` | OPSProzedurKodiert, VollstaendigerProzedurencode, ... | Kodierung der durchgeführten Prozedur mittels OPS. | OPS | Kodierung nach OPS. |  |
+| `code.coding:sct` | OPSProzedurKodiert, VollstaendigerProzedurencode, ... | Kodierung der durchgeführten Prozedur mittels OPS. | SNOMED CT | Kodierung nach SNOMED CT. |  |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. | ✓ |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |  |
 | `performed[x]` | Durchfuehrungsdatum | Das Datum ist der Zeitpunkt, an dem eine Prozedur durchgeführt wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. | ✓ |
 | `bodySite` | Koerperstelle | Körperstelle der Prozedur mittels SNOMED CT inkl. Lateralität (R, L, B) | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. | ✓ |
-| `bodySite.coding:snomed-ct` | Koerperstelle | Körperstelle der Prozedur mittels SNOMED CT inkl. Lateralität (R, L, B) | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |  |
+| `bodySite.coding:snomed-ct` | Koerperstelle | Körperstelle der Prozedur mittels SNOMED CT inkl. Lateralität (R, L, B) | SNOMED CT | Kodierung nach SNOMED CT. |  |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |  |
 
 ### Fall
@@ -158,8 +158,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `type:Kontaktebene` | KontaktEbene, KontaktArt | Für die Unterscheidung der Kontakt-Hierarchieebenen im Modul FALL werden folgende Ausprägungen unterschieden: 1. Einrichtungskontakt 2. Abteilungskontakt 3. Versorgungsstellenkontakt. Diese Glieder... | Kontaktebene | Unterscheidung der Kontakt-Hierarchieebenen: Einrichtungskontakt \| Abteilungskontakt \| Versorgungsstellenkontakt |  |
 | `type:KontaktArt` | KontaktEbene, KontaktArt | Für die Unterscheidung der Kontakt-Hierarchieebenen im Modul FALL werden folgende Ausprägungen unterschieden: 1. Einrichtungskontakt 2. Abteilungskontakt 3. Versorgungsstellenkontakt. Diese Glieder... | Kontaktart | Kontaktarten wie vorstationär \| nachstationär \| intensivstationär |  |
 | `serviceType` | Fachabteilungsschluessel | Bis auf Weiteres wird der proprietäre deutsche Fachabteilungsschlüssel des § 301 SGB V und des Datensatzes gemäß § 21 KHentgG als Fachrichtungsschlüssel genutzt, weil dieser in jedem Krankenhaus al... | Fachabteilung | Fachabteilung Klassifizierung durch Fachabteilungsschlüssel | ✓ |
-| `serviceType.coding:Fachabteilungsschluessel` | Fachabteilungsschluessel | Bis auf Weiteres wird der proprietäre deutsche Fachabteilungsschlüssel des § 301 SGB V und des Datensatzes gemäß § 21 KHentgG als Fachrichtungsschlüssel genutzt, weil dieser in jedem Krankenhaus al... | Fachabteilungsschlüssel | Fachabteilungen gemäß Anhang 1 der Bundespflegesatzverordnung |  |
-| `serviceType.coding:ErweiterterFachabteilungsschluessel` | Fachabteilungsschluessel | Bis auf Weiteres wird der proprietäre deutsche Fachabteilungsschlüssel des § 301 SGB V und des Datensatzes gemäß § 21 KHentgG als Fachrichtungsschlüssel genutzt, weil dieser in jedem Krankenhaus al... | Erweiterter Fachabteilungsschlüssel | Fachabteilungen gemäß Anhang 1 der Bundespflegesatzverordnung |  |
+| `serviceType.coding:Fachabteilungsschluessel` | Fachabteilungsschluessel | Bis auf Weiteres wird der proprietäre deutsche Fachabteilungsschlüssel des § 301 SGB V und des Datensatzes gemäß § 21 KHentgG als Fachrichtungsschlüssel genutzt, weil dieser in jedem Krankenhaus al... | Fachabteilungsschlüssel | Kodierung nach Fachabteilungsschlüssel. |  |
+| `serviceType.coding:ErweiterterFachabteilungsschluessel` | Fachabteilungsschluessel | Bis auf Weiteres wird der proprietäre deutsche Fachabteilungsschlüssel des § 301 SGB V und des Datensatzes gemäß § 21 KHentgG als Fachrichtungsschlüssel genutzt, weil dieser in jedem Krankenhaus al... | Fachabteilungsschlüssel (erweitert) | Kodierung nach Fachabteilungsschlüssel (erweitert). |  |
 | `subject` | PatientenIdentifikator | Bei der internen Nutzung dient die sogenannte Patientennummer als Identifikator. Diese wird bei der ersten Aufnahme in die Einrichtung parallel zur ersten Fallnummer (Aufnahmenummer) vergeben. | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `period` | Beginndatum, Enddatum | Start des Kontakt Zeitraums | Zeitraum des Kontaktes | Beginn- und Endzeitpunkt des Kontaktes. | ✓ |
 | `diagnosis` |  |  | Diagnosen | Angaben zu für den Kontakt relevanten Diagnosen |  |
@@ -202,8 +202,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `identifier` | Identifier | An identifier for this patient |
-| `identifier:PseudonymisierterIdentifier` | Pseudonymisierter Identifikator | Ein Pseudonym ersetzt einen Originalwert. Die Verarbeitung ist umkehrbar. Zusätzliche Informationen sind erforderlich, um den Originalwert zu rekonstruieren, bspw. eine Trusted Third Party. |
-| `identifier:AnonymisierterIdentifier` | Anonymisierter Identifikator | Ein Anonymisierter Identifikator ersetzt einen Originalwert. Die Verarbeitung ist unumkehrbar. Der Originalwert kann nicht oder nur mit unverhältnismäßigem Aufwand rekonstruiert werden. |
+| `identifier:PseudonymisierterIdentifier` | Identifier | Identifier for this resource. |
+| `identifier:AnonymisierterIdentifier` | Identifier | Identifier for this resource. |
 | `identifier:MaskierterVersichertenIdentifer` | Masked identifier of the health insurance ID | Health insurance number identifier with masked value. |
 | `active` | Active | Whether this patient's record is in active use |
 | `gender` | Administrative gender | male \| female \| other \| unknown \| undetermined \| diverse |
@@ -221,7 +221,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `status` | Status | completed |
 | `category` | Category | Classification of type of observation for vital status. |
-| `category:survey` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:survey` | Category | Categorization of the resource. |
 | `code` | Code | A LOINC code identifying the vital status observation. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
 | `subject` | Patient | The patient that the resource relates to. |
@@ -241,7 +241,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `clinicalStatus` | Clinical status | active \| recurrence \| relapse \| inactive \| remission \| resolved |
 | `verificationStatus` | Verification status | unconfirmed \| provisional \| differential \| confirmed \| refuted \| entered-in-error |
 | `category` | Category | A category assigned to the condition. |
-| `category:todesDiagnose` | problem-list-item \| encounter-diagnosis | A category assigned to the condition. |
+| `category:todesDiagnose` | Category | Categorization of the resource. |
 | `category:todesDiagnose.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
 | `category:todesDiagnose.coding:loinc` | LOINC | Coding in LOINC. |
 | `code` | Code | An ICD-10-WHO code identifying the cause of death. |
@@ -258,23 +258,23 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:ReferenzPrimaerdiagnose` | Primary diagnosis reference | This condition has an unspecified relationship with another condition. |
+| `extension:ReferenzPrimaerdiagnose` | Primary diagnosis reference | Reference to the primary diagnosis this condition is associated with. |
 | `extension:Feststellungsdatum` | Asserted date | Date the condition was first asserted |
 | `clinicalStatus` | Clinical status | active \| recurrence \| relapse \| inactive \| remission \| resolved |
 | `verificationStatus` | Verification status | unconfirmed \| provisional \| differential \| confirmed \| refuted \| entered-in-error |
 | `code` | Code | An ICD-10-, Alpha-ID-, SNOMED-, Orpha- or other code that identifies the diagnosis. |
-| `code.coding:icd10-gm` | ICD-10-GM code | A reference to a code defined by the ICD-10-GM |
-| `code.coding:alpha-id` | Alpha-ID code | A reference to a code defined by the Alpha-ID |
-| `code.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
-| `code.coding:orphanet` | ORPHAcode | A reference to a code defined by the Orphanet nomenclature of rare diseases |
+| `code.coding:icd10-gm` | ICD-10-GM | Coding in ICD-10-GM. |
+| `code.coding:alpha-id` | Alpha-ID | Coding in Alpha-ID. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:orphanet` | Orphanet | Coding in Orphanet. |
 | `bodySite` | Body site | The body site of the diagnosis using SNOMED or other systems. |
-| `bodySite.coding:snomed-ct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Condition was created or to which the creation of this record is tightly associated. |
 | `onset[x]` | Onset | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
-| `onset[x]:onsetPeriod` | Beginn Zeitraum | Der Zeitraum, in dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
-| `onset[x]:onsetDateTime` | Beginn Datum | Das Datum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
-| `onset[x]:onsetAge` | Erkrankungsbeginn als Alter | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
+| `onset[x]:onsetPeriod` | Onset | Date or period when the condition first appeared. |
+| `onset[x]:onsetDateTime` | Onset | Date or period when the condition first appeared. |
+| `onset[x]:onsetAge` | Onset | Date or period when the condition first appeared. |
 | `recordedDate` | Recorded date | Date when the diagnosis was first recorded. |
 | `note` | Note | Additional information about the diagnosis as free text. |
 
@@ -290,15 +290,15 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:durchfuehrungsabsicht` | Intention | therapeutic \| palliative \| diagnostic \| preventive \| rehabilitative \| other |
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
-| `category.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code` | Code | Code from OPS - Operationen- und Prozedurenschlüssel, SNOMED CT or other. |
-| `code.coding:ops` | OPS code | A reference to a code defined by the German Procedure Classification OPS |
-| `code.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `code.coding:ops` | OPS | Coding in OPS. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
-| `bodySite.coding:snomed-ct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
 | `note` | Note | Additional information about the procedure as free text. |
 
 </details>
@@ -320,8 +320,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `type:Kontaktebene` | Level of encounter | Differentiation of the encounter hierarchy levels: facility contact \| department contact \| care provider contact |
 | `type:KontaktArt` | Type of encounter | Type of encounter such as pre-admission \| post-admission \| intensive care |
 | `serviceType` | Department | Department classification by department key |
-| `serviceType.coding:Fachabteilungsschluessel` | Department key | Departments according to appendix 1 of the Bundespflegesatzverordnung |
-| `serviceType.coding:ErweiterterFachabteilungsschluessel` | Extended department key | Departments according to appendix 1 of the Bundespflegesatzverordnung |
+| `serviceType.coding:Fachabteilungsschluessel` | DKG department key | Coding in DKG department key. |
+| `serviceType.coding:ErweiterterFachabteilungsschluessel` | DKG department key (extended) | Coding in DKG department key (extended). |
 | `subject` | Patient | The patient that the resource relates to. |
 | `period` | Period of encounter | Start and end time of the encounter. |
 | `diagnosis` | Diagnoses | Information about diagnoses relevant for the encounter |

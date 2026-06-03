@@ -223,10 +223,6 @@
       "de_def": "Kodierung der Erkrankung nach MONDO.",
       "en_def": "Coding of the condition by MONDO."
     },
-    "extension:ReferenzPrimaerdiagnose": {
-      "de_short": "Referenz Primaerdiagnose",
-      "en_short": "Primary diagnosis reference"
-    },
     "extension:vonSEBetroffen": {
       "de_short": "Gibt an, ob das Familienmitglied von der gleichen seltenen Erkrankung betroffen ist",
       "en_short": "Affected by same rare disease"

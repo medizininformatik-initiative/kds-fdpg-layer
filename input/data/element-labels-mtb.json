@@ -983,10 +983,6 @@
       "de_short": "Leitlinienbehandlung Status",
       "en_short": "Guideline treatment status"
     },
-    "extension:ReferenzPrimaerdiagnose": {
-      "de_short": "Referenz Primaerdiagnose",
-      "en_short": "Primary diagnosis reference"
-    },
     "extension:occurredFollowing": {
       "de_short": "Frühere Tumorerkrankungen",
       "en_short": "Prior tumor diseases"

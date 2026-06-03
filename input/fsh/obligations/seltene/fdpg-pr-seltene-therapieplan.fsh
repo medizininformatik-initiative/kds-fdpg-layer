@@ -14,8 +14,18 @@ Description: "FDPG Profil - MII_PR_Seltene_Therapieplan"
 * created ^short = "Erstellungsdatum"
 // CarePlan.supportingInfo
 * supportingInfo ^short = "Information considered as part of plan"
+* insert Translation(supportingInfo ^short, de-DE, Unterstützende Informationen)
+* insert Translation(supportingInfo ^short, en-US, Supporting information)
+* supportingInfo ^definition = "Identifies portions of the patient's record that specifically influenced the formation of the plan.  These might include comorbidities, recent procedures, limitations, recent assessments, etc."
+* insert Translation(supportingInfo ^definition, de-DE, Zusätzliche Informationen\, die den Plan stützen.)
+* insert Translation(supportingInfo ^definition, en-US, Additional information that supports the plan.)
 // CarePlan.activity
 * activity ^short = "Action to occur as part of plan"
+* insert Translation(activity ^short, de-DE, Maßnahme)
+* insert Translation(activity ^short, en-US, Activity)
+* activity ^definition = "Identifies a planned action to occur as part of the plan.  For example, a medication to be used, lab tests to perform, self-monitoring, education, etc."
+* insert Translation(activity ^definition, de-DE, Geplante Maßnahme als Teil des Plans.)
+* insert Translation(activity ^definition, en-US, Planned action as part of the plan.)
 // CarePlan.activity:MedikamentoesTherapie
 * activity[MedikamentoesTherapie] ^short = "Medikamentöse Therapieempfehlung"
 // CarePlan.activity:MedikamentoesTherapie.reference

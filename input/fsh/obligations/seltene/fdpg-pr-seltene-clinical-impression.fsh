@@ -71,6 +71,11 @@ Description: "FDPG Profil - MII_PR_Seltene_ClinicalImpression"
 * finding ^short = "Klinische Befunde der Untersuchung"
 // ClinicalImpression.supportingInfo
 * supportingInfo ^short = "Unterstützende Informationen"
+* insert Translation(supportingInfo ^short, de-DE, Unterstützende Informationen)
+* insert Translation(supportingInfo ^short, en-US, Supporting information)
+* supportingInfo ^definition = "Informationen, die die klinische Beurteilung unterstützen"
+* insert Translation(supportingInfo ^definition, de-DE, Zusätzliche Informationen\, die den Plan stützen.)
+* insert Translation(supportingInfo ^definition, en-US, Additional information that supports the plan.)
 // ClinicalImpression.note
 * note ^short = "Zusätzliche Anmerkungen"
 * insert Translation(note ^short, de-DE, Hinweis)

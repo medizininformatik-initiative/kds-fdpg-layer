@@ -33,7 +33,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` |  |  | Basiert auf | Bezug zum Laborauftrag, auf dem dieser Laborbefund basiert. |
 | `status` | Status | vorläufig (noch nicht final validiert, noch Untersuchungen ausstehend, Änderungen sind noch möglich) final (Endbefund, sollte nicht mehr geändert werden.) final korrigiert (nachdem eine finale Vers... | Status | registriert \| teilweise \| vorläufig \| final |
 | `category` |  |  | Kategorie | Klassifikation des Befunds |
-| `category:lab-category` |  |  | Labor-Kategorie | Kategorie-Slice für Laborbefunde |
+| `category:lab-category` |  |  | Kategorie | Kategorisierung der Ressource. |
 | `code` |  |  | Code | LOINC Code zur Identifikation des Befunds als Laborbefund. |
 | `code.coding:loinc-labReport` |  |  | LOINC | Kodierung nach LOINC. |
 | `subject` |  |  | Subjekt | Subjekt, auf welches sich der Laborbefund bezieht |
@@ -53,7 +53,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
 |---|---|---|---|---|---|
 | `identifier` | Identifikation | Identifikator der Untersuchung | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |  |
-| `identifier:analyseBefundCode` | Identifikation | Identifikator der Untersuchung | Analyse-Befund-Code | A unique identifier assigned to this observation. |  |
+| `identifier:analyseBefundCode` | Identifikation | Identifikator der Untersuchung | Identifikator | Identifikator dieser Ressource. |  |
 | `status` | Status | Status der Laboruntersuchung (durchgeführt, offen, storniert) | Status | abgeschlossen |  |
 | `category` | Bereich, Gruppe | Laboruntersuchungen werden in diagnostische Fachbereiche gruppiert, z.B. Hämatologie, Mikrobiologie, Pathologie etc. | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |  |
 | `category.coding:loinc-observation` | Bereich, Gruppe | Laboruntersuchungen werden in diagnostische Fachbereiche gruppiert, z.B. Hämatologie, Mikrobiologie, Pathologie etc. | LOINC | Kodierung nach LOINC. |  |
@@ -110,7 +110,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Based on | Reference to the laboratory order on which this laboratory report is based. |
 | `status` | Status | registered \| partial \| preliminary \| final |
 | `category` | Category | Classification of the report |
-| `category:lab-category` | Labor-Kategorie | Kategorie-Slice für Laborbefunde |
+| `category:lab-category` | Category | Categorization of the resource. |
 | `code` | Code | A LOINC code identifying the report as laboratory report. |
 | `code.coding:loinc-labReport` | LOINC | Coding in LOINC. |
 | `subject` | Subject | Subject to whom the laboratory report refers |
@@ -131,7 +131,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |

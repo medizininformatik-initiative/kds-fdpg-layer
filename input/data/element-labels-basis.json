@@ -1,10 +1,6 @@
 {
   "_doc": "Module-specific FDPG labels for the 'basis' module.",
   "elements": {
-    "extension:ReferenzPrimaerdiagnose": {
-      "de_short": "Referenz Primaerdiagnose",
-      "en_short": "Primary diagnosis reference"
-    },
     "extension:Aufnahmegrund.extension:ErsteUndZweiteStelle": {
       "de_short": "Erste Und Zweite Stelle",
       "en_short": "First and second digit"

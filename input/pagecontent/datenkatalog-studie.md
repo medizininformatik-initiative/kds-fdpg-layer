@@ -22,7 +22,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
 | `status` | Status | Status der Ressource. |
-| `author` | Author | Identifiziert, wer für das Hinzufügen der Informationen zum Dokument verantwortlich ist. |
+| `author` | Autor\*in | Person oder Organisation, die für den Inhalt verantwortlich ist. |
 | `custodian` | Custodian | Identifiziert die Organisation oder Gruppe, die für die laufende Pflege und den Zugriff auf das Dokument verantwortlich ist. |
 | `content` | Content | Das referenzierte Dokument und Format. Es können mehrere Wiederholungen des Inhaltselements vorhanden sein, jeweils in einem anderen Format. |
 | `context` | Context | Der klinische Kontext, in dem das Dokument erstellt wurde. |
@@ -48,7 +48,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
-| `identifier:subjectIdentificationCode` | Business Identifier for research subject in a study | Identifiers assigned to this research subject for a study. |
+| `identifier:subjectIdentificationCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | Status der Ressource. |
 | `period` | Anfang und Ende der Teilnahme | Zeitrum, in denen die Teilnahme an der Studie begann und endete. |
 | `study` | Studie, der der Proband angehört | Referenz auf die Studie, an der der Proband teilnimmt |
@@ -101,9 +101,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `supportingInfo` | Zusätzliche klinische Informationen | Zusätzliche klinische Informationen über den Patienten oder die Probe, die die Dienstleistungen oder deren Interpretationen beeinflussen können. |
-| `supportingInfo:Studie` | Additional clinical information | Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations... |
-| `supportingInfo:Proband` | Additional clinical information | Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations... |
+| `supportingInfo` | Unterstützende Informationen | Zusätzliche Informationen, die den Plan stützen. |
+| `supportingInfo:Studie` | Unterstützende Informationen | Zusätzliche Informationen, die den Plan stützen. |
+| `supportingInfo:Proband` | Unterstützende Informationen | Zusätzliche Informationen, die den Plan stützen. |
 
 ---
 
@@ -127,7 +127,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `status` | Status | Status of the resource. |
-| `author` | Author | Identifiziert, wer für das Hinzufügen der Informationen zum Dokument verantwortlich ist. |
+| `author` | Author | Person or organization responsible for the content. |
 | `custodian` | Custodian | Identifiziert die Organisation oder Gruppe, die für die laufende Pflege und den Zugriff auf das Dokument verantwortlich ist. |
 | `content` | Content | Das referenzierte Dokument und Format. Es können mehrere Wiederholungen des Inhaltselements vorhanden sein, jeweils in einem anderen Format. |
 | `context` | Context | Der klinische Kontext, in dem das Dokument erstellt wurde. |
@@ -155,7 +155,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `identifier` | Identifier | Identifier for this resource. |
-| `identifier:subjectIdentificationCode` | Business Identifier for research subject in a study | Identifiers assigned to this research subject for a study. |
+| `identifier:subjectIdentificationCode` | Identifier | Identifier for this resource. |
 | `status` | Status | Status of the resource. |
 | `period` | Anfang und Ende der Teilnahme | Zeitrum, in denen die Teilnahme an der Studie begann und endete. |
 | `study` | Studie, der der Proband angehört | Referenz auf die Studie, an der der Proband teilnimmt |
@@ -211,9 +211,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `category` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
-| `supportingInfo` | Zusätzliche klinische Informationen | Zusätzliche klinische Informationen über den Patienten oder die Probe, die die Dienstleistungen oder deren Interpretationen beeinflussen können. |
-| `supportingInfo:Studie` | Additional clinical information | Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations... |
-| `supportingInfo:Proband` | Additional clinical information | Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations... |
+| `supportingInfo` | Supporting information | Additional information that supports the plan. |
+| `supportingInfo:Studie` | Supporting information | Additional information that supports the plan. |
+| `supportingInfo:Proband` | Supporting information | Additional information that supports the plan. |
 
 </details>
 

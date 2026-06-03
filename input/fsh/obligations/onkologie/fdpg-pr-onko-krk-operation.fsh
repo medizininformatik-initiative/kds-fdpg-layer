@@ -202,6 +202,11 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Operation"
 * insert Translation(note ^definition, en-US, Additional information about the procedure as free text.)
 // Procedure.usedCode
 * usedCode ^short = "Coded items used during the procedure"
+* insert Translation(usedCode ^short, de-DE, Verwendete Items)
+* insert Translation(usedCode ^short, en-US, Used items)
+* usedCode ^definition = "Identifies coded items that were used as part of the procedure."
+* insert Translation(usedCode ^definition, de-DE, Kodierte Items\, die im Rahmen der Prozedur verwendet wurden.)
+* insert Translation(usedCode ^definition, en-US, Coded items used as part of the procedure.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(extension)

@@ -42,8 +42,18 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Kontrastmittelgabe"
 * insert Translation(medication[x] ^definition, en-US, The medication that was administered. Code or a reference to a Medication resource.)
 // MedicationAdministration.medication[x]:medicationReference
 * medication[x][medicationReference] ^short = "What was administered"
+* insert Translation(medication[x][medicationReference] ^short, de-DE, Medikation (Verweis\))
+* insert Translation(medication[x][medicationReference] ^short, en-US, Medication (reference\))
+* medication[x][medicationReference] ^definition = "Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications."
+* insert Translation(medication[x][medicationReference] ^definition, de-DE, Verweis auf die Medikament-Ressource.)
+* insert Translation(medication[x][medicationReference] ^definition, en-US, Reference to the medication resource.)
 // MedicationAdministration.medication[x]:medicationCodeableConcept
 * medication[x][medicationCodeableConcept] ^short = "What was administered"
+* insert Translation(medication[x][medicationCodeableConcept] ^short, de-DE, Medikation (Code\))
+* insert Translation(medication[x][medicationCodeableConcept] ^short, en-US, Medication (coded\))
+* medication[x][medicationCodeableConcept] ^definition = "Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication from a known list of medications."
+* insert Translation(medication[x][medicationCodeableConcept] ^definition, de-DE, Inline-Kodierung der Medikation.)
+* insert Translation(medication[x][medicationCodeableConcept] ^definition, en-US, Inline coding of the medication.)
 // MedicationAdministration.medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer
 * medication[x][medicationCodeableConcept].coding[Pharmazentralnummer] ^short = "PZN Code"
 * insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer] ^short, de-DE, PZN Code)
@@ -56,9 +66,9 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Kontrastmittelgabe"
 * insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].system ^short, de-DE, Pharmazentralnummer-System-URL)
 * insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].system ^short, en-US, PZN system URL)
 // MedicationAdministration.medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer.code
-* medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].code ^short = "PZN code"
-* insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].code ^short, de-DE, Pharmazentralnummer-Code)
-* insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].code ^short, en-US, PZN code)
+* medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].code ^short = "Medication (coded) as PZN"
+* insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].code ^short, de-DE, Medikation (Code\) als Pharmazentralnummer)
+* insert Translation(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer].code ^short, en-US, Medication (coded\) as PZN)
 // MedicationAdministration.medication[x]:medicationCodeableConcept.coding:atcClassDe
 * medication[x][medicationCodeableConcept].coding[atcClassDe] ^short = "ATC Klassifikation deutsche Version"
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe] ^short, de-DE, ATC Code)
@@ -71,9 +81,9 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Kontrastmittelgabe"
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe].system ^short, de-DE, ATC (BfArM\)-System-URL)
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe].system ^short, en-US, ATC (BfArM\) system URL)
 // MedicationAdministration.medication[x]:medicationCodeableConcept.coding:atcClassDe.code
-* medication[x][medicationCodeableConcept].coding[atcClassDe].code ^short = "ATC (BfArM) code"
-* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe].code ^short, de-DE, ATC (BfArM\)-Code)
-* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe].code ^short, en-US, ATC (BfArM\) code)
+* medication[x][medicationCodeableConcept].coding[atcClassDe].code ^short = "Medication (coded) as ATC (BfArM)"
+* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe].code ^short, de-DE, Medikation (Code\) als ATC (BfArM\))
+* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassDe].code ^short, en-US, Medication (coded\) as ATC (BfArM\))
 // MedicationAdministration.medication[x]:medicationCodeableConcept.coding:atcClassEn
 * medication[x][medicationCodeableConcept].coding[atcClassEn] ^short = "Anatomical Therapeutic Chemical Classification System"
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn] ^short, de-DE, ATC WHO Code)
@@ -86,9 +96,9 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Kontrastmittelgabe"
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn].system ^short, de-DE, ATC (WHO\)-System-URL)
 * insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn].system ^short, en-US, ATC (WHO\) system URL)
 // MedicationAdministration.medication[x]:medicationCodeableConcept.coding:atcClassEn.code
-* medication[x][medicationCodeableConcept].coding[atcClassEn].code ^short = "ATC (WHO) code"
-* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn].code ^short, de-DE, ATC (WHO\)-Code)
-* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn].code ^short, en-US, ATC (WHO\) code)
+* medication[x][medicationCodeableConcept].coding[atcClassEn].code ^short = "Medication (coded) as ATC (WHO)"
+* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn].code ^short, de-DE, Medikation (Code\) als ATC (WHO\))
+* insert Translation(medication[x][medicationCodeableConcept].coding[atcClassEn].code ^short, en-US, Medication (coded\) as ATC (WHO\))
 // MedicationAdministration.medication[x]:medicationCodeableConcept.coding:UNII
 * medication[x][medicationCodeableConcept].coding[UNII] ^short = "Unique Ingredient Identifier"
 * insert Translation(medication[x][medicationCodeableConcept].coding[UNII] ^short, de-DE, Unique Ingredient Identifier)
@@ -101,9 +111,9 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Kontrastmittelgabe"
 * insert Translation(medication[x][medicationCodeableConcept].coding[UNII].system ^short, de-DE, UNII-System-URL)
 * insert Translation(medication[x][medicationCodeableConcept].coding[UNII].system ^short, en-US, UNII system URL)
 // MedicationAdministration.medication[x]:medicationCodeableConcept.coding:UNII.code
-* medication[x][medicationCodeableConcept].coding[UNII].code ^short = "UNII code"
-* insert Translation(medication[x][medicationCodeableConcept].coding[UNII].code ^short, de-DE, UNII-Code)
-* insert Translation(medication[x][medicationCodeableConcept].coding[UNII].code ^short, en-US, UNII code)
+* medication[x][medicationCodeableConcept].coding[UNII].code ^short = "Medication (coded) as UNII"
+* insert Translation(medication[x][medicationCodeableConcept].coding[UNII].code ^short, de-DE, Medikation (Code\) als UNII)
+* insert Translation(medication[x][medicationCodeableConcept].coding[UNII].code ^short, en-US, Medication (coded\) as UNII)
 // MedicationAdministration.subject
 * subject ^short = "Person"
 * insert Translation(subject ^short, de-DE, Person)
@@ -244,6 +254,11 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Kontrastmittelgabe"
 * dosage.rate[x] ^short = "Dose quantity per unit of time"
 // MedicationAdministration.dosage.rate[x]:rateRatio
 * dosage.rate[x][rateRatio] ^short = "Dose quantity per unit of time"
+* insert Translation(dosage.rate[x][rateRatio] ^short, de-DE, Verabreichungsrate (Verhältnis\))
+* insert Translation(dosage.rate[x][rateRatio] ^short, en-US, Administration rate (ratio\))
+* dosage.rate[x][rateRatio] ^definition = "Identifies the speed with which the medication was or will be introduced into the patient.  Typically, the rate for an infusion e.g. 100 ml per 1 hour or 100 ml/hr.  May also be expressed as a rate per unit of time, e.g. 500 ml per 2 hours.  Other examples:  200 mcg/min or 200 mcg/1 minute; 1 liter/8 hours."
+* insert Translation(dosage.rate[x][rateRatio] ^definition, de-DE, Verabreichungsrate als Verhältnis (z.B. mg / Stunde\).)
+* insert Translation(dosage.rate[x][rateRatio] ^definition, en-US, Administration rate as a ratio (e.g. mg / hour\).)
 // MedicationAdministration.dosage.rate[x]:rateRatio.numerator
 * dosage.rate[x][rateRatio].numerator ^short = "Numerator value"
 // MedicationAdministration.dosage.rate[x]:rateRatio.numerator.value
@@ -266,6 +281,11 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Kontrastmittelgabe"
 * dosage.rate[x][rateRatio].denominator.code ^short = "Coded form of the unit"
 // MedicationAdministration.dosage.rate[x]:rateQuantity
 * dosage.rate[x][rateQuantity] ^short = "A fixed quantity (no comparator)"
+* insert Translation(dosage.rate[x][rateQuantity] ^short, de-DE, Verabreichungsrate (Quantität\))
+* insert Translation(dosage.rate[x][rateQuantity] ^short, en-US, Administration rate (quantity\))
+* dosage.rate[x][rateQuantity] ^definition = "The comparator is not used on a SimpleQuantity"
+* insert Translation(dosage.rate[x][rateQuantity] ^definition, de-DE, Verabreichungsrate als Quantität.)
+* insert Translation(dosage.rate[x][rateQuantity] ^definition, en-US, Administration rate as quantity.)
 // MedicationAdministration.dosage.rate[x]:rateQuantity.value
 * dosage.rate[x][rateQuantity].value ^short = "Numerical value (with implicit precision)"
 // MedicationAdministration.dosage.rate[x]:rateQuantity.unit

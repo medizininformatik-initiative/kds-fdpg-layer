@@ -12,7 +12,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -49,7 +49,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -86,7 +86,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -123,7 +123,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -160,7 +160,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -197,7 +197,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -238,7 +238,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Basiert auf | Bezug zum Laborauftrag, auf dem dieser Laborbefund basiert. |
 | `status` | Status | registriert \| teilweise \| vorläufig \| final |
 | `category` | Kategorie | Klassifikation des Befunds |
-| `category:lab-category` | Labor-Kategorie | Kategorie-Slice für Laborbefunde |
+| `category:lab-category` | Kategorie | Kategorisierung der Ressource. |
 | `category:mibi-category` | Kategorie | Klassifikation des Befunds |
 | `category:mibi-category.coding:v2-microbiology` | HL7 v2 Mikrobiologie | Kodierung nach HL7 v2 Mikrobiologie. |
 | `category:mibi-category.coding:loinc-microbiology-studies` | LOINC | Kodierung nach LOINC. |
@@ -264,7 +264,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -302,7 +302,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -339,7 +339,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -376,7 +376,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -413,7 +413,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -450,7 +450,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -487,7 +487,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -524,7 +524,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -561,7 +561,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -598,7 +598,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -635,7 +635,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -672,7 +672,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:triggeredBy-r5` | Ausgelöst durch (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | abgeschlossen |
 | `category` | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
 | `category.coding:loinc-observation` | LOINC | Kodierung nach LOINC. |
@@ -712,7 +712,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
@@ -750,7 +750,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
@@ -788,7 +788,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
@@ -826,7 +826,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
@@ -864,7 +864,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
@@ -902,7 +902,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
@@ -944,7 +944,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Based on | Reference to the laboratory order on which this laboratory report is based. |
 | `status` | Status | registered \| partial \| preliminary \| final |
 | `category` | Category | Classification of the report |
-| `category:lab-category` | Labor-Kategorie | Kategorie-Slice für Laborbefunde |
+| `category:lab-category` | Category | Categorization of the resource. |
 | `category:mibi-category` | Category | Classification of the report |
 | `category:mibi-category.coding:v2-microbiology` | HL7 v2 Microbiology | Coding in HL7 v2 Microbiology. |
 | `category:mibi-category.coding:loinc-microbiology-studies` | LOINC | Coding in LOINC. |
@@ -971,7 +971,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
@@ -1010,7 +1010,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
@@ -1048,7 +1048,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
@@ -1086,7 +1086,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
@@ -1124,7 +1124,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
@@ -1162,7 +1162,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
@@ -1200,7 +1200,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
@@ -1238,7 +1238,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
@@ -1276,7 +1276,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
@@ -1314,7 +1314,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
@@ -1352,7 +1352,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |
@@ -1390,7 +1390,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `extension:triggeredBy-r5` | Triggered by (R5) | R5: `Observation.triggeredBy` (new:BackboneElement) |
 | `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
-| `identifier:analyseBefundCode` | Analyse-Befund-Code | A unique identifier assigned to this observation. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
 | `status` | Status | completed |
 | `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
 | `category.coding:loinc-observation` | LOINC | Coding in LOINC. |

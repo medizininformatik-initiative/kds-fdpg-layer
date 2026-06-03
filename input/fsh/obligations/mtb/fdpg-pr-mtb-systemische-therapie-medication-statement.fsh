@@ -314,8 +314,18 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Therapie_Medication_Statement
 * dosage.asNeeded[x] ^short = "Take \"as needed\" (for x)"
 // MedicationStatement.dosage.asNeeded[x]:asNeededBoolean
 * dosage.asNeeded[x][asNeededBoolean] ^short = "Take \"as needed\" (for x)"
+* insert Translation(dosage.asNeeded[x][asNeededBoolean] ^short, de-DE, Bei Bedarf)
+* insert Translation(dosage.asNeeded[x][asNeededBoolean] ^short, en-US, As needed)
+* dosage.asNeeded[x][asNeededBoolean] ^definition = "Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept)."
+* insert Translation(dosage.asNeeded[x][asNeededBoolean] ^definition, de-DE, Gibt an\, ob die Medikation nur bei Bedarf eingenommen wird.)
+* insert Translation(dosage.asNeeded[x][asNeededBoolean] ^definition, en-US, Indicates whether the medication is only taken when needed.)
 // MedicationStatement.dosage.asNeeded[x]:asNeededCodeableConcept
 * dosage.asNeeded[x][asNeededCodeableConcept] ^short = "Take \"as needed\" (for x)"
+* insert Translation(dosage.asNeeded[x][asNeededCodeableConcept] ^short, de-DE, Bei Bedarf (Begründung\))
+* insert Translation(dosage.asNeeded[x][asNeededCodeableConcept] ^short, en-US, As needed (reason\))
+* dosage.asNeeded[x][asNeededCodeableConcept] ^definition = "Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept)."
+* insert Translation(dosage.asNeeded[x][asNeededCodeableConcept] ^definition, de-DE, Bei Bedarf mit kodierter Begründung.)
+* insert Translation(dosage.asNeeded[x][asNeededCodeableConcept] ^definition, en-US, As needed with coded reason.)
 // MedicationStatement.dosage.site
 * dosage.site ^short = "Verabreichungsort"
 * insert Translation(dosage.site ^short, de-DE, Verabreichungsort)

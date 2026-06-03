@@ -17,16 +17,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:durchfuehrungsabsicht` | Durchführungsabsicht | therapeutisch \| palliativ \| diagnostisch \| präventiv \| rehabilitativ \| andere |
 | `status` | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
-| `category.coding:sct` | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
+| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code` | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `code.coding:ops` | OPS Code | Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel definierten Code |
-| `code.coding:sct` | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
+| `code.coding:ops` | OPS | Kodierung nach OPS. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `recorder` | Erfassende\*r | Person oder Organisation, die die Information aufgezeichnet hat. |
 | `bodySite` | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
-| `bodySite.coding:snomed-ct` | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
+| `bodySite.coding:snomed-ct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `note` | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 
 #### Parameter von Beatmung (Observation)
@@ -269,7 +269,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -336,7 +336,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -359,7 +359,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -382,7 +382,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -405,7 +405,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:vs-cat` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:vs-cat` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -428,7 +428,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -451,7 +451,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -697,16 +697,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:durchfuehrungsabsicht` | Durchführungsabsicht | therapeutisch \| palliativ \| diagnostisch \| präventiv \| rehabilitativ \| andere |
 | `status` | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
-| `category.coding:sct` | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
+| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code` | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `code.coding:ops` | OPS Code | Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel definierten Code |
-| `code.coding:sct` | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
+| `code.coding:ops` | OPS | Kodierung nach OPS. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `recorder` | Erfassende\*r | Person oder Organisation, die die Information aufgezeichnet hat. |
 | `bodySite` | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
-| `bodySite.coding:snomed-ct` | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
+| `bodySite.coding:snomed-ct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `note` | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 
 #### Parameter von extrakorporalen Verfahren (Observation)
@@ -1003,7 +1003,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifikator | Identifikator dieser Ressource. |  |
 | `category` | Kategorie | Kategorisierung der Ressource. |  |
 | `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |  |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `category.coding:kdsicu-category` | KDS ICU | Kodierung nach KDS ICU. |  |
 | `code` | Code | Kodierung des Inhalts. | ✓ |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |  |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |  |
@@ -1030,7 +1030,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Kodierung nach KDS ICU. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1057,7 +1057,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Kodierung nach KDS ICU. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1084,7 +1084,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Kodierung nach KDS ICU. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1111,7 +1111,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Kodierung nach KDS ICU. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1138,7 +1138,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Kodierung nach KDS ICU. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1165,7 +1165,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Kodierung nach KDS ICU. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1192,7 +1192,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Kodierung nach KDS ICU. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1219,7 +1219,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Kodierung nach KDS ICU. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1246,7 +1246,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Kodierung nach KDS ICU. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1273,7 +1273,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Kodierung nach KDS ICU. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1317,7 +1317,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Kodierung nach KDS ICU. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1344,7 +1344,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Kodierung nach KDS ICU. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1371,7 +1371,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Kodierung nach KDS ICU. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1398,7 +1398,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `category.coding:hl7-category` | Beobachtungskategorie | Kodierung nach Beobachtungskategorie. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Kodierung nach KDS ICU. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1426,7 +1426,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1460,9 +1460,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 | `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 | `component` | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:SystolicBP` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
-| `component:DiastolicBP` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
-| `component:meanBP` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:SystolicBP` | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:DiastolicBP` | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:meanBP` | Komponente | Untergeordnete Beobachtungskomponente. |
 
 #### MUV — Atemfrequenz (Observation)
 
@@ -1491,7 +1491,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:vs-cat` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:vs-cat` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1517,14 +1517,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:sct` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
 | `code.coding:snomed` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `effective[x]:effectivePeriod` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
+| `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `effective[x]:effectivePeriod` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `value[x]` | Messwert | Wert der Beobachtung. |
 | `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `component` | Komponente | Untergeordnete Beobachtungskomponente. |
@@ -1537,14 +1537,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:VSCat` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:VSCat` | Kategorie | Kategorisierung der Ressource. |
+| `category:sct` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `effective[x]:effectivePeriod` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
+| `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `effective[x]:effectivePeriod` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `value[x]` | Messwert | Wert der Beobachtung. |
 | `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
@@ -1556,12 +1556,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
 | `status` | Status | Status der Ressource. |
-| `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:sct` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:snomed` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
+| `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `value[x]` | Messwert | Wert der Beobachtung. |
 | `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
@@ -1581,16 +1581,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:durchfuehrungsabsicht` | Intention | therapeutic \| palliative \| diagnostic \| preventive \| rehabilitative \| other |
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
-| `category.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code` | Code | Code from OPS - Operationen- und Prozedurenschlüssel, SNOMED CT or other. |
-| `code.coding:ops` | OPS code | A reference to a code defined by the German Procedure Classification OPS |
-| `code.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `code.coding:ops` | OPS | Coding in OPS. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
 | `recorder` | Recorder | Person or organization that recorded the information. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
-| `bodySite.coding:snomed-ct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
 | `note` | Note | Additional information about the procedure as free text. |
 
 </details>
@@ -1845,7 +1845,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:Beatmung` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -1915,7 +1915,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:Beatmung` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -1939,7 +1939,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:Beatmung` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -1963,7 +1963,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:Beatmung` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -1987,7 +1987,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:vs-cat` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:vs-cat` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2011,7 +2011,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:Beatmung` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2035,7 +2035,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:Beatmung` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2290,16 +2290,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:durchfuehrungsabsicht` | Intention | therapeutic \| palliative \| diagnostic \| preventive \| rehabilitative \| other |
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
-| `category.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code` | Code | Code from OPS - Operationen- und Prozedurenschlüssel, SNOMED CT or other. |
-| `code.coding:ops` | OPS code | A reference to a code defined by the German Procedure Classification OPS |
-| `code.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `code.coding:ops` | OPS | Coding in OPS. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
 | `recorder` | Recorder | Person or organization that recorded the information. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
-| `bodySite.coding:snomed-ct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
 | `note` | Note | Additional information about the procedure as free text. |
 
 </details>
@@ -2609,7 +2609,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifier | Identifier for this resource. |
 | `category` | Category | Categorization of the resource. |
 | `category.coding:hl7-category` | Observation category | Coding in Observation category. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Coding in KDS ICU. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2637,7 +2637,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifier | Identifier for this resource. |
 | `category` | Category | Categorization of the resource. |
 | `category.coding:hl7-category` | Observation category | Coding in Observation category. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Coding in KDS ICU. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2665,7 +2665,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifier | Identifier for this resource. |
 | `category` | Category | Categorization of the resource. |
 | `category.coding:hl7-category` | Observation category | Coding in Observation category. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Coding in KDS ICU. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2693,7 +2693,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifier | Identifier for this resource. |
 | `category` | Category | Categorization of the resource. |
 | `category.coding:hl7-category` | Observation category | Coding in Observation category. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Coding in KDS ICU. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2721,7 +2721,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifier | Identifier for this resource. |
 | `category` | Category | Categorization of the resource. |
 | `category.coding:hl7-category` | Observation category | Coding in Observation category. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Coding in KDS ICU. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2749,7 +2749,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifier | Identifier for this resource. |
 | `category` | Category | Categorization of the resource. |
 | `category.coding:hl7-category` | Observation category | Coding in Observation category. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Coding in KDS ICU. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2777,7 +2777,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifier | Identifier for this resource. |
 | `category` | Category | Categorization of the resource. |
 | `category.coding:hl7-category` | Observation category | Coding in Observation category. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Coding in KDS ICU. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2805,7 +2805,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifier | Identifier for this resource. |
 | `category` | Category | Categorization of the resource. |
 | `category.coding:hl7-category` | Observation category | Coding in Observation category. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Coding in KDS ICU. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2833,7 +2833,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifier | Identifier for this resource. |
 | `category` | Category | Categorization of the resource. |
 | `category.coding:hl7-category` | Observation category | Coding in Observation category. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Coding in KDS ICU. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2861,7 +2861,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifier | Identifier for this resource. |
 | `category` | Category | Categorization of the resource. |
 | `category.coding:hl7-category` | Observation category | Coding in Observation category. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Coding in KDS ICU. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2889,7 +2889,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifier | Identifier for this resource. |
 | `category` | Category | Categorization of the resource. |
 | `category.coding:hl7-category` | Observation category | Coding in Observation category. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Coding in KDS ICU. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2931,7 +2931,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifier | Identifier for this resource. |
 | `category` | Category | Categorization of the resource. |
 | `category.coding:hl7-category` | Observation category | Coding in Observation category. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Coding in KDS ICU. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2959,7 +2959,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifier | Identifier for this resource. |
 | `category` | Category | Categorization of the resource. |
 | `category.coding:hl7-category` | Observation category | Coding in Observation category. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Coding in KDS ICU. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2987,7 +2987,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifier | Identifier for this resource. |
 | `category` | Category | Categorization of the resource. |
 | `category.coding:hl7-category` | Observation category | Coding in Observation category. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Coding in KDS ICU. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -3015,7 +3015,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` | Identifier | Identifier for this resource. |
 | `category` | Category | Categorization of the resource. |
 | `category.coding:hl7-category` | Observation category | Coding in Observation category. |
-| `category.coding:kdsicu-category` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:kdsicu-category` | KDS ICU | Coding in KDS ICU. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -3044,7 +3044,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:Beatmung` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -3079,9 +3079,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Device | Device used to make the observation. |
 | `referenceRange` | Reference range | Clinical reference range for the value. |
 | `component` | Component | Sub-observation component. |
-| `component:SystolicBP` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
-| `component:DiastolicBP` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
-| `component:meanBP` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:SystolicBP` | Component | Sub-observation component. |
+| `component:DiastolicBP` | Component | Sub-observation component. |
+| `component:meanBP` | Component | Sub-observation component. |
 
 </details>
 
@@ -3112,7 +3112,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Based on | Reference to the request that this resource is based on. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:vs-cat` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:vs-cat` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -3139,14 +3139,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:sct` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
 | `code.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
-| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `effective[x]:effectivePeriod` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
+| `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
+| `effective[x]:effectivePeriod` | Effective | Date or period the observation refers to. |
 | `value[x]` | Value | Value of the observation. |
 | `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
 | `component` | Component | Sub-observation component. |
@@ -3160,14 +3160,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:VSCat` | Classification of type of observation | A code that classifies the general type of observation being made. |
-| `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:VSCat` | Category | Categorization of the resource. |
+| `category:sct` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
-| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
-| `effective[x]:effectivePeriod` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
+| `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
+| `effective[x]:effectivePeriod` | Effective | Date or period the observation refers to. |
 | `value[x]` | Value | Value of the observation. |
 | `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
 | `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
@@ -3180,12 +3180,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `status` | Status | Status of the resource. |
-| `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:sct` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `code.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
-| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
+| `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
 | `value[x]` | Value | Value of the observation. |
 | `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
 | `dataAbsentReason` | Data absent reason | Reason why no value is provided. |

@@ -49,11 +49,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]:effectivePeriod` | Zeitraum | Zeitraum von Einschluss bis Abschluss im Molekulare Tumorboard | Zeitraum der Behandlungsepisode | Zeitraum von Einschluss bis Abschluss im Molekularen Tumorboard |
 | `problem` |  |  | Relevant impressions of patient state | A list of the relevant problems/conditions for a patient. |
 | `problem:PrimaertumorDiagnose` |  |  | Primärtumor Diagnose | Verweise auf Diagnose des Primärtumors |
-| `investigation:KrankengeschichteFamilie` | KrankengeschichteFamilie, NGSBericht, ... | Verweis auf die familiäre Krankengeschichte | One or more sets of investigations (signs, symptoms, etc.) | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
-| `investigation:ECOG` | KrankengeschichteFamilie, NGSBericht, ... | Verweis auf die familiäre Krankengeschichte | One or more sets of investigations (signs, symptoms, etc.) | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
-| `investigation:NgsBericht` | KrankengeschichteFamilie, NGSBericht, ... | Verweis auf die familiäre Krankengeschichte | One or more sets of investigations (signs, symptoms, etc.) | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
-| `investigation:MolekularPathologieBefund` | KrankengeschichteFamilie, NGSBericht, ... | Verweis auf die familiäre Krankengeschichte | One or more sets of investigations (signs, symptoms, etc.) | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
-| `investigation:Einwilligung` | KrankengeschichteFamilie, NGSBericht, ... | Verweis auf die familiäre Krankengeschichte | One or more sets of investigations (signs, symptoms, etc.) | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
+| `investigation:KrankengeschichteFamilie` | KrankengeschichteFamilie, NGSBericht, ... | Verweis auf die familiäre Krankengeschichte | Status Follow-Up | Status des Therapieplans im Hinblick auf das Follow-Up. |
+| `investigation:ECOG` | KrankengeschichteFamilie, NGSBericht, ... | Verweis auf die familiäre Krankengeschichte | Status Follow-Up | Status des Therapieplans im Hinblick auf das Follow-Up. |
+| `investigation:NgsBericht` | KrankengeschichteFamilie, NGSBericht, ... | Verweis auf die familiäre Krankengeschichte | Status Follow-Up | Status des Therapieplans im Hinblick auf das Follow-Up. |
+| `investigation:MolekularPathologieBefund` | KrankengeschichteFamilie, NGSBericht, ... | Verweis auf die familiäre Krankengeschichte | Status Follow-Up | Status des Therapieplans im Hinblick auf das Follow-Up. |
+| `investigation:Einwilligung` | KrankengeschichteFamilie, NGSBericht, ... | Verweis auf die familiäre Krankengeschichte | Status Follow-Up | Status des Therapieplans im Hinblick auf das Follow-Up. |
 | `supportingInfo:Vorbefund` | Vorbefund, LeitlinieDokumentation | Verweis auf relevanten Vorbefund | Vorbefund | Relevanter Vorbefund |
 | `supportingInfo:Vortherapie` | Vorbefund, LeitlinieDokumentation | Verweis auf relevanten Vorbefund | Vortherapie | Relevante Leitlinien-basierte Vortherapie |
 | `supportingInfo:Vortherapie.extension:LeitlinieDokumentation` | Vorbefund, LeitlinieDokumentation | Verweis auf relevanten Vorbefund | Leitlinie Dokumentation | Dokumentation zur Leitlinien-konformen Umsetzung der Prozedur |
@@ -86,16 +86,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` |  |  | Identifier zur Abgrenzung anderer gleichartiger Untersuchungen | Identifier der Untersuchung damit die Untersuchung auch ausserhalb von FHIR eindeutig identifiziert werden kann. Sollte ISH oder aehnliches beinhalten um von anderen Biomarkeruntersuchungen abzugre... |
 | `category` |  |  | Kategorie | Klassifizierung der Beobachtungsart |
 | `code` | Code | Code der Untersuchung (z.B. LOINC) | Code | Kodierung des Inhalts. |
-| `code.coding:generisch` | Code | Code der Untersuchung (z.B. LOINC) | Generischer ISH Code | Generischer Code fuer ISH-Untersuchungen. Wird immer angegeben um die Interoperabilitaet zu gewaehrleisten. Zusaetzliche spezifische Codes koennen ueber open slicing hinzugefuegt werden. |
+| `code.coding:generisch` | Code | Code der Untersuchung (z.B. LOINC) | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient | Der Patient auf den sich die Beobachtung bezieht |
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | Wert | Wert | Quantitatives Ergebnis - z.B. Signalanzahl | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
-| `value[x]:valueRatio` | Wert | Wert | Ratio-Ergebnis - z.B. HER2/CEP17 | Wert als Verhältnis (Zähler/Nenner). |
-| `value[x]:valueCodeableConcept` | Wert | Wert | Kategorisches Ergebnis - z.B. positiv/negativ | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Quantitatives Ergebnis - z.B. Signalanzahl | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueRatio` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ratio-Ergebnis - z.B. HER2/CEP17 | Wert als Verhältnis (Zähler/Nenner). |
+| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Kategorisches Ergebnis - z.B. positiv/negativ | Wert als kodierter Begriff aus einer Terminologie. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Interpretation der ISH Signale. Die Interpretation kann auf Vergleich mit Referenzwerten basieren. |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | FISH \| CISH \| SISH | In Situ Hybridization Methode: Fluoreszenz - FISH - Chromogen - CISH - oder Silber - SISH |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -128,8 +128,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | Wert | Wert | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -146,7 +146,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Code der Untersuchung (z.B. LOINC) | Code | Kodierung des Inhalts. | ✓ |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `encounter` |  |  | Gesundheitseinrichtungskontakt | Kontakt zur Gesundheitseinrichtung |  |
-| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. | ✓ |
 
 #### Kopienzahlvariante (Observation)
 
@@ -162,7 +162,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
@@ -214,29 +214,29 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
 | `extension` |  |  | Erweiterung | FHIR-Erweiterung. |
-| `extension:ReferenzPrimaerdiagnose` |  |  | Referenz Primaerdiagnose | This condition has an unspecified relationship with another condition. |
+| `extension:ReferenzPrimaerdiagnose` |  |  | Referenz zur Primärdiagnose | Verweis auf die Primärdiagnose, mit der diese Diagnose assoziiert ist. |
 | `extension:Feststellungsdatum` |  |  | Feststellungsdatum | Datum, an dem die Diagnose erstmals festgestellt wurde |
 | `extension:morphology-behavior-icdo3` |  |  | ICD-O-Morphologie | Morphologie des Primärtumors nach ICD-O-3 nach 6.3 oBDS |
 | `extension:occurredFollowing` |  |  | Frühere Tumorerkrankungen | Verweis auf frühere Tumorerkrankungen, nach denen die aktuelle Diagnose aufgetreten ist |
 | `clinicalStatus` |  |  | Klinischer Status | aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen |
 | `verificationStatus` |  |  | Verifizierungsstatus | unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe |
 | `verificationStatus.coding:condition-ver-status` |  |  | Verifizierungsstatus | Kodierung nach Verifizierungsstatus. |
-| `verificationStatus.coding:primaertumorDiagnosesicherung` |  |  | Diagnosesicherung gemäß oBDS | Art der Diagnosesicherung nach 5.7 oBDS 2021 |
+| `verificationStatus.coding:primaertumorDiagnosesicherung` |  |  | MII Onko Diagnosesicherung | Kodierung nach MII Onko Diagnosesicherung. |
 | `code` |  |  | Code | Ein ICD-10-, Alpha-ID-, SNOMED-, Orpha- oder anderer Code, der die Diagnose identifiziert. |
-| `code.coding:icd10-gm` |  |  | ICD-10-GM Code | Ein Verweis auf einen von der ICD-10-GM definierten Code |
-| `code.coding:alpha-id` |  |  | Alpha-ID Code | Ein Verweis auf einen von der Alpha-ID definierten Code |
-| `code.coding:sct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
-| `code.coding:orphanet` |  |  | ORPHAcode | Ein Verweis auf einen von der Orphanet Nomenklatur der Seltenen Krankheiten definierten Code |
+| `code.coding:icd10-gm` |  |  | ICD-10-GM | Kodierung nach ICD-10-GM. |
+| `code.coding:alpha-id` |  |  | Alpha-ID | Kodierung nach Alpha-ID. |
+| `code.coding:sct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:orphanet` |  |  | Orphanet | Kodierung nach Orphanet. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Diagnose mittels SNOMED oder anderem Code. |
-| `bodySite.coding:snomed-ct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
+| `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
 | `bodySite.coding:primaertumorSeitenlokalisation` |  |  | Seitenlokalisation des Primärtumors gemäß oBDS | Seitenlokalisation des Primärtumors nach 5.8 oBDS 2021 |
-| `bodySite.coding:icd-o-3` |  |  | ICD-O-Topographie | Topographie des Primärtumors nach ICD-O-3 nach 5.4 oBDS 2021 |
+| `bodySite.coding:icd-o-3` |  |  | ICD-O-3 | Kodierung nach ICD-O-3. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Diagnose erstellt wurde oder mit dem die Diagnose in Zusammenhang steht. |
 | `onset[x]` |  |  | Beginn | Geschätztes oder tatsächliches Datum oder Zeitraum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
-| `onset[x]:onsetPeriod` |  |  | Beginn Zeitraum | Der Zeitraum, in dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
-| `onset[x]:onsetDateTime` |  |  | Beginn Datum | Das Datum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
-| `onset[x]:onsetAge` |  |  | Erkrankungsbeginn als Alter | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
+| `onset[x]:onsetPeriod` |  |  | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
+| `onset[x]:onsetDateTime` |  |  | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
+| `onset[x]:onsetAge` |  |  | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
 | `recordedDate` |  |  | Aufzeichnungsdatum | Datum, an dem die Diagnose erstmals dokumentiert wurde. |
 | `stage` | WHOGradZNS, OncoTree, ... | Grad des Tumors nach WHO Klassifikation der Tumoren des zentralen Nervensystems (ZNS) | Stage/grade, usually assessed formally | Clinical stage or grade of a condition. May include formal severity assessments. |
 | `stage:WHOGradZNS` | WHOGradZNS, OncoTree, ... | Grad des Tumors nach WHO Klassifikation der Tumoren des zentralen Nervensystems (ZNS) | WHO Grad Tumor ZNS | Grad eines Tumors nach WHO-Klassifikation der Tumoren des zentralen Nervensystems |
@@ -282,7 +282,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
@@ -338,7 +338,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
@@ -383,7 +383,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Zeitraum | Zeitraum von Einschluss bis Abschluss im Molekulare Tumorboard | Erfassungsdatum | Erfassungsdatum Durchfuehrung Follow-Up |
 | `previous` |  |  | MTB-Behandlungsepisode | MTB-Behandlungsepisode auf die sich das Follow-Up bezieht |
 | `investigation` | KrankengeschichteFamilie, NGSBericht, ... | Verweis auf die familiäre Krankengeschichte | Status Follow-Up | Status des Therapieplans im Hinblick auf das Follow-Up |
-| `supportingInfo` | Vorbefund, LeitlinieDokumentation | Verweis auf relevanten Vorbefund | Information supporting the clinical impression | Information supporting the clinical impression. |
+| `supportingInfo` | Vorbefund, LeitlinieDokumentation | Verweis auf relevanten Vorbefund | Unterstützende Informationen | Zusätzliche Informationen, die den Plan stützen. |
 | `supportingInfo:UmgesetzteTherapien` | Vorbefund, LeitlinieDokumentation | Verweis auf relevanten Vorbefund | Umgesetzte Therapien | Umgesetzte Therapien mit oder auch ohne Bezug auf die MTB-Empfehlungen |
 | `supportingInfo:AntraegeKostenuebernahme` | Vorbefund, LeitlinieDokumentation | Verweis auf relevanten Vorbefund | Antraege Kostenuebernahme | Antraege Kostenuebernahme fuer die empfohlenen Therapien |
 
@@ -458,7 +458,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Wert | Wert | HRD-Score | HRD-Score als Summe der LOH - TAI und LST-Werte |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | HRD-Score | HRD-Score als Summe der LOH - TAI und LST-Werte |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -488,15 +488,15 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` |  |  | Identifikator | Identifikator dieser Ressource. |
 | `category` |  |  | Kategorie | Klassifizierung der Beobachtungsart |
 | `code` | Code | Code der Untersuchung (z.B. LOINC) | Code | Kodierung des Inhalts. |
-| `code.coding:generisch` | Code | Code der Untersuchung (z.B. LOINC) | Generischer Immunhistochemischer Untersuchungscode | Generischer Code fuer immunhistochemische Untersuchungen. Wird immer angegeben um die Interoperabilitaet zu gewaehrleisten. Zusaetzliche spezifische Codes koennen ueber open slicing hinzugefuegt we... |
+| `code.coding:generisch` | Code | Code der Untersuchung (z.B. LOINC) | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:spezifisch` | Code | Code der Untersuchung (z.B. LOINC) | LOINC | Kodierung nach LOINC. |
 | `subject` |  |  | Patient | Der Patient auf den sich die Beobachtung bezieht |
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Wert | Wert | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Block / Material-Nr. der Probe | Block-Material-Nr. der Probe. Da jede FHIR-Observation nur eine Referenz auf Specimen haben kann wird die gesamte Probe - z.B. Biopsie oder Exzisat - von den Einzelschnitten referenziert. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -518,8 +518,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Wert | Wert | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
 | `specimen` |  |  | Probe | Probe |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` |  |  | Komponenten | Einzelne Komponenten der Beobachtung |
@@ -546,8 +546,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der MSI-Bestimmung wie z.B. stabil oder instabil |
-| `value[x]:valueCodeableConcept` | Wert | Wert | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der MSI-Bestimmung wie z.B. stabil oder instabil |
+| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
 | `specimen` |  |  | Probe | Probe |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` |  |  | Komponenten | Einzelne Komponenten der Beobachtung |
@@ -563,27 +563,27 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` |  |  | Identifikator | Identifikator dieser Ressource. |
 | `category` |  |  | Kategorie | Klassifizierung der Beobachtungsart |
 | `code` | Code | Code der Untersuchung (z.B. LOINC) | Code | Kodierung des Inhalts. |
-| `code.coding:generisch` | Code | Code der Untersuchung (z.B. LOINC) | Generischer Immunhistochemischer Untersuchungscode | Generischer Code fuer immunhistochemische Untersuchungen. Wird immer angegeben um die Interoperabilitaet zu gewaehrleisten. Zusaetzliche spezifische Codes koennen ueber open slicing hinzugefuegt we... |
+| `code.coding:generisch` | Code | Code der Untersuchung (z.B. LOINC) | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient | Der Patient auf den sich die Beobachtung bezieht |
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Wert | Wert | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` |  |  | Komponenten | Einzelne Komponenten der Beobachtung |
 | `component:gene-studied` |  |  | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` |  |  | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
-| `component:tps-score` |  |  | TPS-Score | Tumor Proportion Score (TPS) - Score für PD-L1-Expression in Tumorzellen. Der TPS ist der Anteil der PD-L1-positiven Tumorzellen im Verhältnis zu den Gesamtzellen. Der TPS wird in Prozent angegeben... |
+| `component:tps-score` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
 | `component:tps-score.value[x]:valueQuantity` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:cps-score` |  |  | CPS-Score | Combined Positive Score (CPS) - Score für PD-L1-Expression in Tumorzellen und Immunzellen. Der CPS ist der Anteil der PD-L1-positiven Tumorzellen und Immunzellen im Verhältnis zu den Gesamtzellen. ... |
+| `component:cps-score` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
 | `component:cps-score.value[x]:valueQuantity` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:ics-score` |  |  | ICS-Score | Immune Cell Score (ICS) - Score für PD-L1-Expression in Immunzellen. Der ICS ist der Anteil der PD-L1-positiven Immunzellen im Verhältnis zu den Gesamtzellen. Der ICS wird in Prozent angegeben. Ein... |
+| `component:ics-score` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
 | `component:ics-score.value[x]:valueQuantity` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:tc-score` |  |  | TC-Score / TPS-Score | Tumor Cell Score (TC-Score) - Score für PD-L1-Expression in Tumorzellen. Der TC-Score ist der Anteil der PD-L1-positiven Tumorzellen im Verhältnis zu den Gesamtzellen. Der TC-Score wird in Prozent ... |
+| `component:tc-score` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
 | `component:tc-score.value[x]:valueQuantity` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
 
 #### Immunhistochemie Phosphorylierung (Observation)
@@ -595,14 +595,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` |  |  | Identifikator | Identifikator dieser Ressource. |
 | `category` |  |  | Kategorie | Klassifizierung der Beobachtungsart |
 | `code` | Code | Code der Untersuchung (z.B. LOINC) | Code | Kodierung des Inhalts. |
-| `code.coding:generisch` | Code | Code der Untersuchung (z.B. LOINC) | Generischer Immunhistochemischer Untersuchungscode | Generischer Code fuer immunhistochemische Untersuchungen. Wird immer angegeben um die Interoperabilitaet zu gewaehrleisten. Zusaetzliche spezifische Codes koennen ueber open slicing hinzugefuegt we... |
+| `code.coding:generisch` | Code | Code der Untersuchung (z.B. LOINC) | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient | Der Patient auf den sich die Beobachtung bezieht |
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Wert | Wert | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Block / Material-Nr. der Probe | Block-Material-Nr. der Probe. Da jede FHIR-Observation nur eine Referenz auf Specimen haben kann wird die gesamte Probe - z.B. Biopsie oder Exzisat - von den Einzelschnitten referenziert. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -622,14 +622,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` |  |  | Identifikator | Identifikator dieser Ressource. |
 | `category` |  |  | Kategorie | Klassifizierung der Beobachtungsart |
 | `code` | Code | Code der Untersuchung (z.B. LOINC) | Code | Kodierung des Inhalts. |
-| `code.coding:generisch` | Code | Code der Untersuchung (z.B. LOINC) | Generischer Immunhistochemischer Untersuchungscode | Generischer Code fuer immunhistochemische Untersuchungen. Wird immer angegeben um die Interoperabilitaet zu gewaehrleisten. Zusaetzliche spezifische Codes koennen ueber open slicing hinzugefuegt we... |
+| `code.coding:generisch` | Code | Code der Untersuchung (z.B. LOINC) | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient | Der Patient auf den sich die Beobachtung bezieht |
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Wert | Wert | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Block / Material-Nr. der Probe | Block-Material-Nr. der Probe. Da jede FHIR-Observation nur eine Referenz auf Specimen haben kann wird die gesamte Probe - z.B. Biopsie oder Exzisat - von den Einzelschnitten referenziert. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -646,17 +646,17 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `identifier` |  |  | Identifier zur Abgrenzung anderer gleichartiger Untersuchungen | Identifier der Untersuchung damit die Untersuchung auch ausserhalb von FHIR eindeutig identifiziert werden kann. Sollte ISH oder aehnliches beinhalten um von anderen Biomarkeruntersuchungen abzugre... |
 | `category` |  |  | Kategorie | Klassifizierung der Beobachtungsart |
 | `code` | Code | Code der Untersuchung (z.B. LOINC) | Code | Kodierung des Inhalts. |
-| `code.coding:generisch` | Code | Code der Untersuchung (z.B. LOINC) | Generischer ISH Code | Generischer Code fuer ISH-Untersuchungen. Wird immer angegeben um die Interoperabilitaet zu gewaehrleisten. Zusaetzliche spezifische Codes koennen ueber open slicing hinzugefuegt werden. |
+| `code.coding:generisch` | Code | Code der Untersuchung (z.B. LOINC) | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:spezifisch` | Code | Code der Untersuchung (z.B. LOINC) | LOINC | Kodierung nach LOINC. |
 | `subject` |  |  | Patient | Der Patient auf den sich die Beobachtung bezieht |
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | Wert | Wert | Quantitatives Ergebnis - z.B. Signalanzahl | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
-| `value[x]:valueRatio` | Wert | Wert | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
-| `value[x]:valueCodeableConcept` | Wert | Wert | Kategorisches Ergebnis - z.B. positiv/negativ | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Quantitatives Ergebnis - z.B. Signalanzahl | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueRatio` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
+| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Kategorisches Ergebnis - z.B. positiv/negativ | Wert als kodierter Begriff aus einer Terminologie. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Interpretation der ISH Signale. Die Interpretation kann auf Vergleich mit Referenzwerten basieren. |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | FISH \| CISH \| SISH | In Situ Hybridization Methode: Fluoreszenz - FISH - Chromogen - CISH - oder Silber - SISH |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -681,7 +681,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | IHC\|PCR\|bioinformatisch | Methode der Untersuchung - IHC oder PCR oder NGS-basierte Untersuchung. |
 | `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
@@ -736,7 +736,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -765,7 +765,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `result:RNASeq` |  |  | RNASeq | Verweis auf RNASeq |
 | `result:MolekularerBiomarkerHER2Status` |  |  | Molekularer Biomarker HER2 Status | Verweis auf Molekularer Biomarker HER2 Status |
 | `result:MolekularerBiomarker` |  |  | Molekularer Biomarker | Verweis auf Molekularer Biomarker |
-| `result:Tumorzellgehalt` |  |  | Observations | [Observations](observation.html) that are part of this diagnostic report. |
+| `result:Tumorzellgehalt` |  |  | Ergebnisse | Strukturierte Ergebnisse des Molekular-Pathologie-Befunds. |
 
 #### OncoTree-Klassifikation (Observation)
 
@@ -776,7 +776,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Code der Untersuchung (z.B. LOINC) | Code | Kodierung des Inhalts. | ✓ |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `encounter` |  |  | Gesundheitseinrichtungskontakt | Kontakt zur Gesundheitseinrichtung |  |
-| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. | ✓ |
 
 #### Ploidie (Observation)
 
@@ -792,8 +792,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | Wert | Wert | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` |  |  | Komponenten | Einzelne Komponenten der Beobachtung |
@@ -815,16 +815,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `effective[x]:effectiveDateTime` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt | Zeitpunkt des Response Befundes |
-| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | Wert | Wert | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
-| `value[x]:valueCodeableConcept.coding:oBDS` | Wert | Wert | Gesamtbeurteilung im Verlauf | Datum der letzten Untersuchung in dieser Verlaufsbeurteilung gemäß 17.1 oBDS 2021. |
-| `value[x]:valueCodeableConcept.coding:MTB` | Wert | Wert | Gesamtbeurteilung im Verlauf | Datum der letzten Untersuchung in dieser Verlaufsbeurteilung gemäß 17.1 oBDS 2021. |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueCodeableConcept.coding:oBDS` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | oBDS | Kodierung nach oBDS. |
+| `value[x]:valueCodeableConcept.coding:MTB` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Gesamtbeurteilung im Verlauf | Datum der letzten Untersuchung in dieser Verlaufsbeurteilung gemäß 17.1 oBDS 2021. |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Beurteilungsmethode | Beurteilungsmethode RECIST oder RANO |
 | `hasMember` |  |  | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `component` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:Tumor_Verlauf` |  |  | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
-| `component:Lymphknoten_Verlauf` |  |  | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
-| `component:Fernmetastasen_Verlauf` |  |  | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:Tumor_Verlauf` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:Lymphknoten_Verlauf` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:Fernmetastasen_Verlauf` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
 
 #### RNA-Fusion (Observation)
 
@@ -840,7 +840,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
@@ -905,7 +905,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
@@ -959,9 +959,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Rekrutierung` | Rekrutierung | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
 | `extension:Finanzierung` | Finanzierung | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
-| `identifier:NCT` | Name für diese Studie | Kennungen, die dieser Forschungsstudie vom Sponsor oder anderen Systemen zugewiesen wurden. |
-| `identifier:DRKS` | Name für diese Studie | Kennungen, die dieser Forschungsstudie vom Sponsor oder anderen Systemen zugewiesen wurden. |
-| `identifier:EudraCT` | Name für diese Studie | Kennungen, die dieser Forschungsstudie vom Sponsor oder anderen Systemen zugewiesen wurden. |
+| `identifier:NCT` | Identifikator | Identifikator dieser Ressource. |
+| `identifier:DRKS` | Identifikator | Identifikator dieser Ressource. |
+| `identifier:EudraCT` | Identifikator | Identifikator dieser Ressource. |
 | `title` | Name für diese Studie | Ein kurzer, beschreibender und benutzerfreundlicher Bezeichner für die Studie. |
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
@@ -983,8 +983,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `category` |  |  | Kategorie | Kategorisierung der Ressource. |
 | `code` |  |  | Studieneinschlussempfehlung | Empfehlung zum Einschluss in eine Studie |
 | `reasonReference` | StuetzendeEntitaet, Histologie | Stützende Entität | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
-| `supportingInfo` | NctNummer, EudraCtNummer, ... | Identifikator NCT Studie | Additional clinical information | Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations... |
-| `supportingInfo:Studie` | NctNummer, EudraCtNummer, ... | Identifikator NCT Studie | Additional clinical information | Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations... |
+| `supportingInfo` | NctNummer, EudraCtNummer, ... | Identifikator NCT Studie | Unterstützende Informationen | Zusätzliche Informationen, die den Plan stützen. |
+| `supportingInfo:Studie` | NctNummer, EudraCtNummer, ... | Identifikator NCT Studie | Unterstützende Informationen | Zusätzliche Informationen, die den Plan stützen. |
 
 #### Systemtherapie (MedicationStatement\ (MedicationStatement)
 
@@ -1001,10 +1001,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `medication[x]` | Wirkstoffe | Wirkstoffe | Medikation | Medikation, welche Gegenstand des Eintrags ist. Code oder Referenz auf Medication-Objekt. |
 | `medication[x]:medicationReference` | Wirkstoffe | Wirkstoffe | Medikation Referenz | Referenz auf eine Medication-Ressource. |
 | `medication[x]:medicationCodeableConcept` | Wirkstoffe | Wirkstoffe | Medikation Code | Code für das Medikament, welches Gegenstand des Eintrags ist. |
-| `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | Wirkstoffe | Wirkstoffe | PZN Code | Ein Verweis auf einen von der Pharmazentralnummer definierten Code |
-| `medication[x]:medicationCodeableConcept.coding:atcClassDe` | Wirkstoffe | Wirkstoffe | ATC Code | Ein Verweis auf einen von der deutschen Fassung der Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code |
-| `medication[x]:medicationCodeableConcept.coding:atcClassEn` | Wirkstoffe | Wirkstoffe | ATC WHO Code | Ein Verweis auf einen von der WHO Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code |
-| `medication[x]:medicationCodeableConcept.coding:UNII` | Wirkstoffe | Wirkstoffe | Unique Ingredient Identifier | Ein Unique Ingredient Identifier (UNII) aus dem Global Substance Registration System der amerikanischen Food & Drug Administration |
+| `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | Wirkstoffe | Wirkstoffe | Pharmazentralnummer | Kodierung nach Pharmazentralnummer. |
+| `medication[x]:medicationCodeableConcept.coding:atcClassDe` | Wirkstoffe | Wirkstoffe | ATC (BfArM) | Kodierung nach ATC (BfArM). |
+| `medication[x]:medicationCodeableConcept.coding:atcClassEn` | Wirkstoffe | Wirkstoffe | ATC (WHO) | Kodierung nach ATC (WHO). |
+| `medication[x]:medicationCodeableConcept.coding:UNII` | Wirkstoffe | Wirkstoffe | UNII | Kodierung nach UNII. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `context` |  |  | Kontext | Fall oder Kontakt in Verbindung mit dem Medikationseintrag |
 | `effective[x]` |  |  | Zeitpunkt oder Zeitraum | Die Zeitspanne, in der angegeben wird, dass der Patient das Medikament eingenommen hat oder einnehmen wird. |
@@ -1016,8 +1016,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonReference` |  |  | Grund Referenz | Grund für den Medikationseintrag als Referenz auf Condition- oder Observation-Ressource. |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zum Medikationseintrag als Freitext. |
 | `dosage` | Dosisdichte | Dosisdichte | Dosierung | Details zur Dosierung des Medikamentes. |
-| `dosage.asNeeded[x]:asNeededBoolean` | Dosisdichte | Dosisdichte | Take "as needed" (for x) | Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept). |
-| `dosage.asNeeded[x]:asNeededCodeableConcept` | Dosisdichte | Dosisdichte | Take "as needed" (for x) | Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept). |
+| `dosage.asNeeded[x]:asNeededBoolean` | Dosisdichte | Dosisdichte | Bei Bedarf | Gibt an, ob die Medikation nur bei Bedarf eingenommen wird. |
+| `dosage.asNeeded[x]:asNeededCodeableConcept` | Dosisdichte | Dosisdichte | Bei Bedarf (Begründung) | Bei Bedarf mit kodierter Begründung. |
 
 #### Systemische Therapie (Procedure)
 
@@ -1036,20 +1036,20 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Status | WENN STATUS COMPLETED ODER STOPPED -> SYSTEMISCHE THERAPIE ENDE GRUND AUSFÜLLEN | Status | Status der Ressource. |
 | `statusReason` | Therapiestatusgrund, SystemischeTherapieEndeGrund | Gibt den Grund an, warum die Systemtherapie beendet wurde | Status Grund | Grund des Status der Therapie |
 | `category` | Kategorie | Kategorie der Leitlinientherapie (Prozedur) | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
-| `category.coding:sct` | Kategorie | Kategorie der Leitlinientherapie (Prozedur) | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
+| `category.coding:sct` | Kategorie | Kategorie der Leitlinientherapie (Prozedur) | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code` |  |  | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `code.coding:ops` |  |  | OPS Code | Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel definierten Code |
-| `code.coding:sct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
+| `code.coding:ops` |  |  | OPS | Kodierung nach OPS. |
+| `code.coding:sct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:systemische_therapie_art` |  |  | Art der systemischen oder abwartenden Therapie | Art der systemischen oder abwartenden Therapie gemäß 16.3 oBDS 2021. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | Startdatum, Enddatum, ... | Startdatum der Vortherapie | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` | Diagnose | Verweis auf i.d.R. die Anmeldediagnose, in seltenen Fällen weitere Diagnosen | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
-| `bodySite.coding:snomed-ct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
+| `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
 | `outcome` |  |  | Ergebnis der Kostenübernahme | Ergebnis der Kostenübernahme. Für die Sekundärdatennutzung ist davon auszugehen, dass die Kostenerstattung bereits erfolgt ist. |
 | `note` | Bemerkungen | Bemerkungen | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
-| `usedCode` |  |  | Coded items used during the procedure | Identifies coded items that were used as part of the procedure. |
+| `usedCode` |  |  | Verwendete Items | Kodierte Items, die im Rahmen der Prozedur verwendet wurden. |
 
 #### Systemische Vortherapie (Procedure)
 
@@ -1070,20 +1070,20 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `statusReason` | Therapiestatusgrund, SystemischeTherapieEndeGrund | Gibt den Grund an, warum die Systemtherapie beendet wurde | Abbruchsgrund Systemische Therapie | Falls abgebrochen: Angabe zum Abbruchsgrund der Systemischen Therapie |
 | `statusReason.coding:Therapiestatusgrund` | Therapiestatusgrund, SystemischeTherapieEndeGrund | Gibt den Grund an, warum die Systemtherapie beendet wurde | Therapiestatusgrund | Grund für den Status der Systemischen Therapie |
 | `category` | Kategorie | Kategorie der Leitlinientherapie (Prozedur) | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
-| `category.coding:sct` | Kategorie | Kategorie der Leitlinientherapie (Prozedur) | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
+| `category.coding:sct` | Kategorie | Kategorie der Leitlinientherapie (Prozedur) | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code` |  |  | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `code.coding:ops` |  |  | OPS Code | Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel definierten Code |
-| `code.coding:sct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
+| `code.coding:ops` |  |  | OPS | Kodierung nach OPS. |
+| `code.coding:sct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:systemische_therapie_art` |  |  | Art der systemischen oder abwartenden Therapie | Art der systemischen oder abwartenden Therapie gemäß 16.3 oBDS 2021. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | Startdatum, Enddatum, ... | Startdatum der Vortherapie | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` | Diagnose | Verweis auf i.d.R. die Anmeldediagnose, in seltenen Fällen weitere Diagnosen | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
-| `bodySite.coding:snomed-ct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
+| `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
 | `outcome` |  |  | Ergebnis der Kostenübernahme | Ergebnis der Kostenübernahme. Für die Sekundärdatennutzung ist davon auszugehen, dass die Kostenerstattung bereits erfolgt ist. |
 | `note` | Bemerkungen | Bemerkungen | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
-| `usedCode` |  |  | Coded items used during the procedure | Identifies coded items that were used as part of the procedure. |
+| `usedCode` |  |  | Verwendete Items | Kodierte Items, die im Rahmen der Prozedur verwendet wurden. |
 
 #### Therapeutische Implikation (Observation)
 
@@ -1125,7 +1125,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Kodierung des Inhalts. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `authoredOn` | When the request group was authored | Indicates when the request group was created. |
+| `authoredOn` | Erstellungszeitpunkt | Zeitpunkt, zu dem die Ressource erstellt wurde. |
 | `reasonReference` | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `action` | Proposed actions, if any | The actions, if any, produced by the evaluation of the artifact. |
 
@@ -1142,12 +1142,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` |  |  | Status | Status der Ressource. |
 | `intent` |  |  | Absicht | Absicht der Anforderung: Vorschlag \| Plan \| Auftrag. |
 | `medication[x]` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | Medikation | Medikation, die verordnet wurde. Code oder Referenz auf Medication-Objekt. |
-| `medication[x]:medicationReference` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | Medication to be taken | Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identif... |
-| `medication[x]:medicationCodeableConcept` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | Medication to be taken | Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identif... |
-| `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | PZN Code | Ein Verweis auf einen von der Pharmazentralnummer definierten Code |
-| `medication[x]:medicationCodeableConcept.coding:atcClassDe` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | ATC Code | Ein Verweis auf einen von der deutschen Fassung der Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code |
-| `medication[x]:medicationCodeableConcept.coding:atcClassEn` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | ATC WHO Code | Ein Verweis auf einen von der WHO Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code |
-| `medication[x]:medicationCodeableConcept.coding:UNII` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | Unique Ingredient Identifier | Ein Unique Ingredient Identifier (UNII) aus dem Global Substance Registration System der amerikanischen Food & Drug Administration |
+| `medication[x]:medicationReference` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | Medikation (Verweis) | Verweis auf die Medikament-Ressource. |
+| `medication[x]:medicationCodeableConcept` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | Medikation (Code) | Inline-Kodierung der Medikation. |
+| `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | Pharmazentralnummer | Kodierung nach Pharmazentralnummer. |
+| `medication[x]:medicationCodeableConcept.coding:atcClassDe` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | ATC (BfArM) | Kodierung nach ATC (BfArM). |
+| `medication[x]:medicationCodeableConcept.coding:atcClassEn` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | ATC (WHO) | Kodierung nach ATC (WHO). |
+| `medication[x]:medicationCodeableConcept.coding:UNII` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | UNII | Kodierung nach UNII. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Fall / Kontakt | Fall oder Kontakt, bei dem die Medikation verordnet wurde. |
 | `supportingInformation` |  |  | Information to support ordering of the medication | Include additional information (for example, patient height and weight) that supports the ordering of the medication. |
@@ -1156,12 +1156,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonCode` |  |  | Grund Code | Grund für die Medikationverordnung als Code. |
 | `reasonReference` | StuetzendeMolekularAlterationen, StuetzendeEntitaet | Verweis auf entsprechendes Feld in NGS Bericht und/oder IHC (Verweis auf KDS Molekular-Pathologischer Befundbericht) | Grund Referenz | Grund für die Medikationsverordnung als Referenz auf Condition- oder Observation-Objekt. |
 | `reasonReference:Primaertumor` | StuetzendeMolekularAlterationen, StuetzendeEntitaet | Verweis auf entsprechendes Feld in NGS Bericht und/oder IHC (Verweis auf KDS Molekular-Pathologischer Befundbericht) | Grund Referenz | Grund für die Medikationsverordnung als Referenz auf Condition- oder Observation-Objekt. |
-| `reasonReference:StuetzendeMolekulareAlteration` | StuetzendeMolekularAlterationen, StuetzendeEntitaet | Verweis auf entsprechendes Feld in NGS Bericht und/oder IHC (Verweis auf KDS Molekular-Pathologischer Befundbericht) | Stützende molekulare Alteration(en) | Verweis auf entsprechendes Feld in NGS Bericht und/oder IHC (Verweis auf KDS Molekular-Pathologischer Befundbericht) |
+| `reasonReference:StuetzendeMolekulareAlteration` | StuetzendeMolekularAlterationen, StuetzendeEntitaet | Verweis auf entsprechendes Feld in NGS Bericht und/oder IHC (Verweis auf KDS Molekular-Pathologischer Befundbericht) | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `basedOn` |  |  | Basiert auf | Ein Plan oder eine Anforderung, die ganz oder teilweise durch diese Medikationsverordnung erfüllt wird. |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Medikationsverordnung als Freitext. |
 | `dosageInstruction` |  |  | Dosierungsanweisung | Gibt an, wie das Medikament vom Patienten zu verwenden ist. |
-| `dosageInstruction.asNeeded[x]:asNeededBoolean` |  |  | Take "as needed" (for x) | Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept). |
-| `dosageInstruction.asNeeded[x]:asNeededCodeableConcept` |  |  | Take "as needed" (for x) | Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept). |
+| `dosageInstruction.asNeeded[x]:asNeededBoolean` |  |  | Bei Bedarf | Gibt an, ob die Medikation nur bei Bedarf eingenommen wird. |
+| `dosageInstruction.asNeeded[x]:asNeededCodeableConcept` |  |  | Bei Bedarf (Begründung) | Bei Bedarf mit kodierter Begründung. |
 | `substitution` |  |  | Substitution | Etwaige Einschränkungen bei der Substitution von Medikamenten |
 | `substitution.allowed[x]:allowedBoolean` |  |  | Whether substitution is allowed or not | True if the prescriber allows a different drug to be dispensed from what was prescribed. |
 | `substitution.allowed[x]:allowedCodeableConcept` |  |  | Whether substitution is allowed or not | True if the prescriber allows a different drug to be dispensed from what was prescribed. |
@@ -1180,10 +1180,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
 | `created` | Erstellungsdatum | Erstellungsdatum des Therapieplans gemäß Beschluss des Molekularen Tumorboards | Datum der Zusage / des Widerspruchs | Datum der Antragstellung. |
-| `addresses` |  |  | Health issues this plan addresses | Identifies the conditions/problems/concerns/diagnoses/etc. whose management and/or mitigation are handled by this plan. |
-| `supportingInfo` | Behandlungsepisode | Verweis auf Behandlungsepisode mit Angaben zum aktuellen Krankheitszustand und bisherige Behandlungsmaßnahmen | Information considered as part of plan | Identifies portions of the patient's record that specifically influenced the formation of the plan. These might include comorbidities, recent procedures, limitations, recent assessments, etc. |
+| `addresses` |  |  | Adressiert | Verweis auf die Diagnose(n) bzw. Erkrankung(en), die dieser Plan adressiert. |
+| `supportingInfo` | Behandlungsepisode | Verweis auf Behandlungsepisode mit Angaben zum aktuellen Krankheitszustand und bisherige Behandlungsmaßnahmen | Unterstützende Informationen | Zusätzliche Informationen, die den Plan stützen. |
 | `supportingInfo:Behandlungsepisode` | Behandlungsepisode | Verweis auf Behandlungsepisode mit Angaben zum aktuellen Krankheitszustand und bisherige Behandlungsmaßnahmen | Behandlungsepisode | Aktueller Krankheitszustand und bisherige Behandlungsmaßnahmen |
-| `activity` | StatusBegruendung, UmgesetzteEmpfehlung | Erforderliche Begründung für den Fall, dass der Beschluss keine Therapieempfehlungen enthält | Therapy recommendations - either oBDS standard categorization or extended molecular protocols | Identifies a planned action to occur as part of the plan. For example, a medication to be used, lab tests to perform, self-monitoring, education, etc. |
+| `activity` | StatusBegruendung, UmgesetzteEmpfehlung | Erforderliche Begründung für den Fall, dass der Beschluss keine Therapieempfehlungen enthält | Maßnahme | Geplante Maßnahme als Teil des Plans. |
 | `activity:extended/Therapieempfehlung` | StatusBegruendung, UmgesetzteEmpfehlung | Erforderliche Begründung für den Fall, dass der Beschluss keine Therapieempfehlungen enthält | Therapieempfehlung Systemische Therapie | Therapieempfehlung für eine medikamentöse Systemische Therapie |
 | `activity:extended/HumangenetischeBeratung` | StatusBegruendung, UmgesetzteEmpfehlung | Erforderliche Begründung für den Fall, dass der Beschluss keine Therapieempfehlungen enthält | Empfehlung Human-genetische Beratung | Auftrag zur erneuten Human-genetischen Beratung |
 | `activity:extended/HistologieEvaluation` | StatusBegruendung, UmgesetzteEmpfehlung | Erforderliche Begründung für den Fall, dass der Beschluss keine Therapieempfehlungen enthält | Empfehlung Histologie-Evaluation | Auftrag zur erneuten Histologie-Evaluation |
@@ -1197,14 +1197,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
 |---|---|---|---|---|---|
 | `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
-| `category.coding:ErstdiagnoseZeitpunkt` |  |  | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
-| `category.coding:MolekularesTumorboardZeitpunkt` |  |  | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `category.coding:ErstdiagnoseZeitpunkt` |  |  | Art der Tumorkonferenz | Art der Tumorkonferenz oder Therapieplanung gemäß oBDS 2021 §18.2. |  |
+| `category.coding:MolekularesTumorboardZeitpunkt` |  |  | Art der Tumorkonferenz | Art der Tumorkonferenz oder Therapieplanung gemäß oBDS 2021 §18.2. |  |
 | `code` | Code | Code der Untersuchung (z.B. LOINC) | Code | Kodierung des Inhalts. | ✓ |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt Tumorausbreitung | Zeitpunkt der Feststellung der Tumorausbreitung | ✓ |
-| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. | ✓ |
-| `value[x].coding:Tumorausbreitung` | Wert | Wert | Tumorausbreitung | Angabe zur Tumorausbreitung |  |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].coding:Tumorausbreitung` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Tumorausbreitung | Angabe zur Tumorausbreitung |  |
 
 #### Tumorzellgehalt (Observation)
 
@@ -1212,7 +1212,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
 |---|---|---|---|---|---|
-| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. | ✓ |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
 
 #### WHO-Grad ZNS-Tumor (Observation)
@@ -1224,8 +1224,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Code der Untersuchung (z.B. LOINC) | Code | Kodierung des Inhalts. | ✓ |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `encounter` |  |  | Gesundheitseinrichtungskontakt | Kontakt zur Gesundheitseinrichtung |  |
-| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. | ✓ |
-| `value[x].coding:SCT` | Wert | Wert | WHO-Klassifikation gemäß SNOMED CT | Grad eines Tumors nach WHO-Klassifikation der Tumoren des zentralen Nervensystems gemäß SNOMED CT |  |
+| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].coding:SCT` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | SNOMED CT | Kodierung nach SNOMED CT. |  |
 
 ---
 
@@ -1277,11 +1277,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]:effectivePeriod` | Treatment episode period | Period from MTB inclusion to MTB completion. |
 | `problem` | Relevant impressions of patient state | A list of the relevant problems/conditions for a patient. |
 | `problem:PrimaertumorDiagnose` | Primary tumor diagnosis | References to primary tumor diagnoses. |
-| `investigation:KrankengeschichteFamilie` | One or more sets of investigations (signs, symptoms, etc.) | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
-| `investigation:ECOG` | One or more sets of investigations (signs, symptoms, etc.) | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
-| `investigation:NgsBericht` | One or more sets of investigations (signs, symptoms, etc.) | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
-| `investigation:MolekularPathologieBefund` | One or more sets of investigations (signs, symptoms, etc.) | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
-| `investigation:Einwilligung` | One or more sets of investigations (signs, symptoms, etc.) | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
+| `investigation:KrankengeschichteFamilie` | Follow-up status | Status of the therapy plan with respect to follow-up. |
+| `investigation:ECOG` | Follow-up status | Status of the therapy plan with respect to follow-up. |
+| `investigation:NgsBericht` | Follow-up status | Status of the therapy plan with respect to follow-up. |
+| `investigation:MolekularPathologieBefund` | Follow-up status | Status of the therapy plan with respect to follow-up. |
+| `investigation:Einwilligung` | Follow-up status | Status of the therapy plan with respect to follow-up. |
 | `supportingInfo:Vorbefund` | Prior report | Relevant prior report. |
 | `supportingInfo:Vortherapie` | Prior therapy | Relevant guideline-based prior therapy. |
 | `supportingInfo:Vortherapie.extension:LeitlinieDokumentation` | Guideline documentation | Documentation of guideline-conformant procedure implementation. |
@@ -1449,7 +1449,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension` | Extension | FHIR extension. |
-| `extension:ReferenzPrimaerdiagnose` | Primary diagnosis reference | This condition has an unspecified relationship with another condition. |
+| `extension:ReferenzPrimaerdiagnose` | Primary diagnosis reference | Reference to the primary diagnosis this condition is associated with. |
 | `extension:Feststellungsdatum` | Asserted date | Date the condition was first asserted |
 | `extension:morphology-behavior-icdo3` | ICD-O morphology | Morphology of the primary tumor per ICD-O-3 per oBDS §6.3. |
 | `extension:occurredFollowing` | Prior tumor diseases | Verweis auf frühere Tumorerkrankungen, nach denen die aktuelle Diagnose aufgetreten ist |
@@ -1458,20 +1458,20 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `verificationStatus.coding:condition-ver-status` | Verification status | Coding in Verification status. |
 | `verificationStatus.coding:primaertumorDiagnosesicherung` | MII Onko diagnosis confirmation | Coding in MII Onko diagnosis confirmation. |
 | `code` | Code | An ICD-10-, Alpha-ID-, SNOMED-, Orpha- or other code that identifies the diagnosis. |
-| `code.coding:icd10-gm` | ICD-10-GM code | A reference to a code defined by the ICD-10-GM |
-| `code.coding:alpha-id` | Alpha-ID code | A reference to a code defined by the Alpha-ID |
-| `code.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
-| `code.coding:orphanet` | ORPHAcode | A reference to a code defined by the Orphanet nomenclature of rare diseases |
+| `code.coding:icd10-gm` | ICD-10-GM | Coding in ICD-10-GM. |
+| `code.coding:alpha-id` | Alpha-ID | Coding in Alpha-ID. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:orphanet` | Orphanet | Coding in Orphanet. |
 | `bodySite` | Body site | The body site of the diagnosis using SNOMED or other systems. |
-| `bodySite.coding:snomed-ct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
 | `bodySite.coding:primaertumorSeitenlokalisation` | Primary tumor laterality | Laterality of the primary tumor per oBDS 2021 §5.8. |
 | `bodySite.coding:icd-o-3` | ICD-O-3 | Coding in ICD-O-3. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Condition was created or to which the creation of this record is tightly associated. |
 | `onset[x]` | Onset | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
-| `onset[x]:onsetPeriod` | Beginn Zeitraum | Der Zeitraum, in dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
-| `onset[x]:onsetDateTime` | Beginn Datum | Das Datum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
-| `onset[x]:onsetAge` | Erkrankungsbeginn als Alter | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
+| `onset[x]:onsetPeriod` | Onset | Date or period when the condition first appeared. |
+| `onset[x]:onsetDateTime` | Onset | Date or period when the condition first appeared. |
+| `onset[x]:onsetAge` | Onset | Date or period when the condition first appeared. |
 | `recordedDate` | Recorded date | Date when the diagnosis was first recorded. |
 | `stage` | Stage/grade, usually assessed formally | Clinical stage or grade of a condition. May include formal severity assessments. |
 | `stage:WHOGradZNS` | WHO grade CNS tumor | Tumor grade per WHO classification of central nervous system tumors. |
@@ -1622,7 +1622,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Effective | Date or period the observation refers to. |
 | `previous` | MTB treatment episode | MTB treatment episode to which the follow-up refers. |
 | `investigation` | Follow-up status | Status of the therapy plan with respect to follow-up. |
-| `supportingInfo` | Information supporting the clinical impression | Information supporting the clinical impression. |
+| `supportingInfo` | Supporting information | Additional information that supports the plan. |
 | `supportingInfo:UmgesetzteTherapien` | Therapies implemented | Therapies implemented, with or without reference to the MTB recommendations. |
 | `supportingInfo:AntraegeKostenuebernahme` | Cost-coverage applications | Cost-coverage applications for the recommended therapies. |
 
@@ -1826,13 +1826,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component` | Component | Sub-observation component. |
 | `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
 | `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
-| `component:tps-score` | TPS-Score | Tumor Proportion Score (TPS) - Score für PD-L1-Expression in Tumorzellen. Der TPS ist der Anteil der PD-L1-positiven Tumorzellen im Verhältnis zu den Gesamtzellen. Der TPS wird in Prozent angegeben... |
+| `component:tps-score` | Component | Sub-observation component. |
 | `component:tps-score.value[x]:valueQuantity` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:cps-score` | CPS-Score | Combined Positive Score (CPS) - Score für PD-L1-Expression in Tumorzellen und Immunzellen. Der CPS ist der Anteil der PD-L1-positiven Tumorzellen und Immunzellen im Verhältnis zu den Gesamtzellen. ... |
+| `component:cps-score` | Component | Sub-observation component. |
 | `component:cps-score.value[x]:valueQuantity` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:ics-score` | ICS-Score | Immune Cell Score (ICS) - Score für PD-L1-Expression in Immunzellen. Der ICS ist der Anteil der PD-L1-positiven Immunzellen im Verhältnis zu den Gesamtzellen. Der ICS wird in Prozent angegeben. Ein... |
+| `component:ics-score` | Component | Sub-observation component. |
 | `component:ics-score.value[x]:valueQuantity` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:tc-score` | TC-Score / TPS-Score | Tumor Cell Score (TC-Score) - Score für PD-L1-Expression in Tumorzellen. Der TC-Score ist der Anteil der PD-L1-positiven Tumorzellen im Verhältnis zu den Gesamtzellen. Der TC-Score wird in Prozent ... |
+| `component:tc-score` | Component | Sub-observation component. |
 | `component:tc-score.value[x]:valueQuantity` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
 
 </details>
@@ -2022,7 +2022,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `result:RNASeq` | RNA-Seq | Reference to RNA-Seq. |
 | `result:MolekularerBiomarkerHER2Status` | Molecular biomarker — HER2 status | Reference to the HER2 status molecular biomarker. |
 | `result:MolekularerBiomarker` | Molecular biomarker | Reference to a molecular biomarker. |
-| `result:Tumorzellgehalt` | Observations | [Observations](observation.html) that are part of this diagnostic report. |
+| `result:Tumorzellgehalt` | Results | Structured results of the molecular pathology report. |
 
 </details>
 
@@ -2082,9 +2082,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `method` | Method | Method used to make the observation. |
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `component` | Component | Sub-observation component. |
-| `component:Tumor_Verlauf` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
-| `component:Lymphknoten_Verlauf` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
-| `component:Fernmetastasen_Verlauf` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:Tumor_Verlauf` | Component | Sub-observation component. |
+| `component:Lymphknoten_Verlauf` | Component | Sub-observation component. |
+| `component:Fernmetastasen_Verlauf` | Component | Sub-observation component. |
 
 </details>
 
@@ -2222,9 +2222,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Rekrutierung` | Recruitment | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
 | `extension:Finanzierung` | Funding | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
 | `identifier` | Identifier | Identifier for this resource. |
-| `identifier:NCT` | Name für diese Studie | Kennungen, die dieser Forschungsstudie vom Sponsor oder anderen Systemen zugewiesen wurden. |
-| `identifier:DRKS` | Name für diese Studie | Kennungen, die dieser Forschungsstudie vom Sponsor oder anderen Systemen zugewiesen wurden. |
-| `identifier:EudraCT` | Name für diese Studie | Kennungen, die dieser Forschungsstudie vom Sponsor oder anderen Systemen zugewiesen wurden. |
+| `identifier:NCT` | Identifier | Identifier for this resource. |
+| `identifier:DRKS` | Identifier | Identifier for this resource. |
+| `identifier:EudraCT` | Identifier | Identifier for this resource. |
 | `title` | Name für diese Studie | Ein kurzer, beschreibender und benutzerfreundlicher Bezeichner für die Studie. |
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
@@ -2247,8 +2247,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `category` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
-| `supportingInfo` | Additional clinical information | Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations... |
-| `supportingInfo:Studie` | Additional clinical information | Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations... |
+| `supportingInfo` | Supporting information | Additional information that supports the plan. |
+| `supportingInfo:Studie` | Supporting information | Additional information that supports the plan. |
 
 </details>
 
@@ -2266,10 +2266,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `medication[x]` | Medication | The medication that the statement is about. Code or a reference to a Medication resource. |
 | `medication[x]:medicationReference` | Medication Reference | Reference to a Medication resource. |
 | `medication[x]:medicationCodeableConcept` | Medication code | Code for the medication that the statement is about. |
-| `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | PZN code | A reference to a code defined by Pharmazentralnummer |
-| `medication[x]:medicationCodeableConcept.coding:atcClassDe` | ATC code | A reference to a code defined by the German edition of the Anatomical Therapeutic Chemical classification system |
-| `medication[x]:medicationCodeableConcept.coding:atcClassEn` | ATC WHO code | A reference to a code defined by the WHO edition of the Anatomical Therapeutic Chemical classification system |
-| `medication[x]:medicationCodeableConcept.coding:UNII` | Unique Ingredient Identifier | A Unique Ingredient Identifier (UNII) from the american Food & Drug Administration's Global Substance Registration System |
+| `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | PZN | Coding in PZN. |
+| `medication[x]:medicationCodeableConcept.coding:atcClassDe` | ATC (BfArM) | Coding in ATC (BfArM). |
+| `medication[x]:medicationCodeableConcept.coding:atcClassEn` | ATC (WHO) | Coding in ATC (WHO). |
+| `medication[x]:medicationCodeableConcept.coding:UNII` | UNII | Coding in UNII. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `context` | Context | Encounter / Episode associated with MedicationStatement |
 | `effective[x]` | Date or period | The interval of time during which it is being asserted that the patient is/was/will be taking the medication. |
@@ -2281,8 +2281,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonReference` | Reason reference | Condition or observation that supports why the medication is being/was taken |
 | `note` | Note | Additional information about the medication statement as free text. |
 | `dosage` | Dosage | Details of how the medication is/was taken or should be taken. |
-| `dosage.asNeeded[x]:asNeededBoolean` | Take "as needed" (for x) | Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept). |
-| `dosage.asNeeded[x]:asNeededCodeableConcept` | Take "as needed" (for x) | Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept). |
+| `dosage.asNeeded[x]:asNeededBoolean` | As needed | Indicates whether the medication is only taken when needed. |
+| `dosage.asNeeded[x]:asNeededCodeableConcept` | As needed (reason) | As needed with coded reason. |
 
 </details>
 
@@ -2302,20 +2302,20 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
 | `statusReason` | Systemic therapy termination reason | If terminated: reason for terminating the systemic therapy. |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
-| `category.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code` | Code | Code from OPS - Operationen- und Prozedurenschlüssel, SNOMED CT or other. |
-| `code.coding:ops` | OPS code | A reference to a code defined by the German Procedure Classification OPS |
-| `code.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `code.coding:ops` | OPS | Coding in OPS. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:systemische_therapie_art` | Type of systemic therapy | Type of systemic or watchful-waiting therapy per oBDS 2021 §16.3. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
-| `bodySite.coding:snomed-ct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
 | `outcome` | Cost-coverage outcome | Outcome of the cost-coverage decision. For secondary data use, reimbursement is assumed to have already occurred. |
 | `note` | Note | Additional information about the procedure as free text. |
-| `usedCode` | Coded items used during the procedure | Identifies coded items that were used as part of the procedure. |
+| `usedCode` | Used items | Coded items used as part of the procedure. |
 
 </details>
 
@@ -2337,20 +2337,20 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `statusReason` | Systemic therapy termination reason | If terminated: reason for terminating the systemic therapy. |
 | `statusReason.coding:Therapiestatusgrund` | Therapy status reason | Reason for the status of the systemic therapy. |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
-| `category.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code` | Code | Code from OPS - Operationen- und Prozedurenschlüssel, SNOMED CT or other. |
-| `code.coding:ops` | OPS code | A reference to a code defined by the German Procedure Classification OPS |
-| `code.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `code.coding:ops` | OPS | Coding in OPS. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:systemische_therapie_art` | Type of systemic therapy | Type of systemic or watchful-waiting therapy per oBDS 2021 §16.3. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
-| `bodySite.coding:snomed-ct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
+| `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
 | `outcome` | Cost-coverage outcome | Outcome of the cost-coverage decision. For secondary data use, reimbursement is assumed to have already occurred. |
 | `note` | Note | Additional information about the procedure as free text. |
-| `usedCode` | Coded items used during the procedure | Identifies coded items that were used as part of the procedure. |
+| `usedCode` | Used items | Coded items used as part of the procedure. |
 
 </details>
 
@@ -2394,7 +2394,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
-| `authoredOn` | When the request group was authored | Indicates when the request group was created. |
+| `authoredOn` | Authored on | Time when the resource was authored. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
 | `action` | Proposed actions, if any | The actions, if any, produced by the evaluation of the artifact. |
 
@@ -2412,12 +2412,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Status | active \| on-hold \| cancelled \| completed \| entered-in-error \| stopped \| draft \| unknown |
 | `intent` | Intent | proposal \| plan \| order \| original-order \| reflex-order \| filler-order \| instance-order \| option |
 | `medication[x]` | Medication | The medication that was requested. Code or a reference to a Medication resource. |
-| `medication[x]:medicationReference` | Medication to be taken | Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identif... |
-| `medication[x]:medicationCodeableConcept` | Medication to be taken | Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identif... |
-| `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | PZN code | A reference to a code defined by Pharmazentralnummer |
-| `medication[x]:medicationCodeableConcept.coding:atcClassDe` | ATC code | A reference to a code defined by the German edition of the Anatomical Therapeutic Chemical classification system |
-| `medication[x]:medicationCodeableConcept.coding:atcClassEn` | ATC WHO code | A reference to a code defined by the WHO edition of the Anatomical Therapeutic Chemical classification system |
-| `medication[x]:medicationCodeableConcept.coding:UNII` | Unique Ingredient Identifier | A Unique Ingredient Identifier (UNII) from the american Food & Drug Administration's Global Substance Registration System |
+| `medication[x]:medicationReference` | Medication (reference) | Reference to the medication resource. |
+| `medication[x]:medicationCodeableConcept` | Medication (coded) | Inline coding of the medication. |
+| `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | PZN | Coding in PZN. |
+| `medication[x]:medicationCodeableConcept.coding:atcClassDe` | ATC (BfArM) | Coding in ATC (BfArM). |
+| `medication[x]:medicationCodeableConcept.coding:atcClassEn` | ATC (WHO) | Coding in ATC (WHO). |
+| `medication[x]:medicationCodeableConcept.coding:UNII` | UNII | Coding in UNII. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | Encounter or episode of care during which the medication was requested. |
 | `supportingInformation` | Information to support ordering of the medication | Include additional information (for example, patient height and weight) that supports the ordering of the medication. |
@@ -2430,8 +2430,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Based on | A plan or request that is fulfilled in whole or in part by this medication request. |
 | `note` | Note | Additional information about the medication request as free text. |
 | `dosageInstruction` | Dosage instruction | Indicates how the medication is to be used by the patient. |
-| `dosageInstruction.asNeeded[x]:asNeededBoolean` | Take "as needed" (for x) | Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept). |
-| `dosageInstruction.asNeeded[x]:asNeededCodeableConcept` | Take "as needed" (for x) | Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept). |
+| `dosageInstruction.asNeeded[x]:asNeededBoolean` | As needed | Indicates whether the medication is only taken when needed. |
+| `dosageInstruction.asNeeded[x]:asNeededCodeableConcept` | As needed (reason) | As needed with coded reason. |
 | `substitution` | Substitution | Any restrictions on medication substitution |
 | `substitution.allowed[x]:allowedBoolean` | Whether substitution is allowed or not | True if the prescriber allows a different drug to be dispensed from what was prescribed. |
 | `substitution.allowed[x]:allowedCodeableConcept` | Whether substitution is allowed or not | True if the prescriber allows a different drug to be dispensed from what was prescribed. |
@@ -2451,10 +2451,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `created` | Approval / objection date | Date the application was filed. |
-| `addresses` | Health issues this plan addresses | Identifies the conditions/problems/concerns/diagnoses/etc. whose management and/or mitigation are handled by this plan. |
-| `supportingInfo` | Information considered as part of plan | Identifies portions of the patient's record that specifically influenced the formation of the plan. These might include comorbidities, recent procedures, limitations, recent assessments, etc. |
+| `addresses` | Addresses | Reference to the condition(s) that this plan addresses. |
+| `supportingInfo` | Supporting information | Additional information that supports the plan. |
 | `supportingInfo:Behandlungsepisode` | Treatment episode | Current disease state and prior treatments. |
-| `activity` | Therapy recommendations - either oBDS standard categorization or extended molecular protocols | Identifies a planned action to occur as part of the plan. For example, a medication to be used, lab tests to perform, self-monitoring, education, etc. |
+| `activity` | Activity | Planned action as part of the plan. |
 | `activity:extended/Therapieempfehlung` | Systemic therapy recommendation | Recommendation for a pharmacologic systemic therapy. |
 | `activity:extended/HumangenetischeBeratung` | Genetic counseling recommendation | Order for genetic counseling. |
 | `activity:extended/HistologieEvaluation` | Histology evaluation recommendation | Order for a repeat histology evaluation. |
@@ -2469,8 +2469,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `category` | Category | Categorization of the resource. |
-| `category.coding:ErstdiagnoseZeitpunkt` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `category.coding:MolekularesTumorboardZeitpunkt` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:ErstdiagnoseZeitpunkt` | Tumor board type | Type of tumor board or therapy planning per oBDS 2021 §18.2. |
+| `category.coding:MolekularesTumorboardZeitpunkt` | Tumor board type | Type of tumor board or therapy planning per oBDS 2021 §18.2. |
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |

@@ -55,8 +55,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Kodierung des Inhalts. | ✓ |
 | `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
 | `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
-| `component:type` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |  |
-| `component:result` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |  |
+| `component:type` | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:result` | Komponente | Untergeordnete Beobachtungskomponente. |  |
 
 #### Observation Wachstumstyp (Observation)
 
@@ -125,7 +125,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Verfuegbarkeitsstatus | Status der Probe / des Materials hinsichtlich der Verfügbarkeit | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |
 | `type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Probenart | Die Art der Probe, codiert in SNOMED CT. |
 | `type.coding:sct` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | SNOMED CT | Kodierung nach SNOMED CT. |
-| `type.coding:miabis-type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `type.coding:miabis-type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | MIABIS Specimen Type | Kodierung nach MIABIS Specimen Type. |
 | `subject` |  |  | Patient:in | Verweis auf die Person, von der die Probe stammt. |
 | `receivedTime` |  |  | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
 | `parent` | Entstanden-aus | Referenz auf Bioprobe | Ist gewonnen aus | Referenz auf eine übergeordnete Probe, aus der diese Probe gewonnen wurde. |
@@ -158,7 +158,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Verfuegbarkeitsstatus | Status der Probe / des Materials hinsichtlich der Verfügbarkeit | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |
 | `type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Probenart | Die Art der Probe, codiert in SNOMED CT. |
 | `type.coding:sct` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | SNOMED CT | Kodierung nach SNOMED CT. |
-| `type.coding:miabis-type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `type.coding:miabis-type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | MIABIS Specimen Type | Kodierung nach MIABIS Specimen Type. |
 | `subject` |  |  | Patient:in | Verweis auf die Person, von der die Probe stammt. |
 | `receivedTime` |  |  | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
 | `parent` | Entstanden-aus | Referenz auf Bioprobe | Ist gewonnen aus | Referenz auf eine übergeordnete Probe, aus der diese Probe gewonnen wurde. |
@@ -242,8 +242,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Coding of the content. |
 | `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `effective[x]` | Effective | Date or period the observation refers to. |
-| `component:type` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
-| `component:result` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:type` | Component | Sub-observation component. |
+| `component:result` | Component | Sub-observation component. |
 
 </details>
 
@@ -316,7 +316,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Availability status | The status of the specimen in terms of its availability for research. |
 | `type` | Specimen type | The type of the specimen, encoded as SNOMED CT code. |
 | `type.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
-| `type.coding:miabis-type` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `type.coding:miabis-type` | MIABIS Specimen Type | Coding in MIABIS Specimen Type. |
 | `subject` | Patient | Reference to the person from whom the specimen was collected. |
 | `receivedTime` | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
 | `parent` | Derived from | Reference to a parent specimen from which this specimen was derived. |
@@ -350,7 +350,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Availability status | The status of the specimen in terms of its availability for research. |
 | `type` | Specimen type | The type of the specimen, encoded as SNOMED CT code. |
 | `type.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
-| `type.coding:miabis-type` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `type.coding:miabis-type` | MIABIS Specimen Type | Coding in MIABIS Specimen Type. |
 | `subject` | Patient | Reference to the person from whom the specimen was collected. |
 | `receivedTime` | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
 | `parent` | Derived from | Reference to a parent specimen from which this specimen was derived. |

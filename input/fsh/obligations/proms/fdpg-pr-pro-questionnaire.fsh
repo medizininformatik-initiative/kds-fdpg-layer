@@ -12,6 +12,9 @@ Description: "FDPG Profil - MII_PR_PRO_Questionnaire"
 * extension[performerType] ^short = "Resource that can record answers to this Questionnaire"
 * insert Translation(extension[performerType] ^short, de-DE, Durchführenden-Typ)
 * insert Translation(extension[performerType] ^short, en-US, Performer type)
+* extension[performerType] ^definition = "Indicates the types of resources that can record answers to a Questionnaire. Open Issue: Should this extension be moved to core?"
+* insert Translation(extension[performerType] ^definition, de-DE, Ressourcentyp\, der Antworten auf den Fragebogen erfassen kann.)
+* insert Translation(extension[performerType] ^definition, en-US, Resource type that can record answers to the questionnaire.)
 // Questionnaire.extension:assemble-expectation
 * extension[assemble-expectation] ^short = "Questionnaire is modular"
 * insert Translation(extension[assemble-expectation] ^short, de-DE, Assemble-Erwartung)

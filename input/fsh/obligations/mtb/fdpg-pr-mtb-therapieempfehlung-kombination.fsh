@@ -64,6 +64,11 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung_Kombination"
 * insert Translation(encounter ^definition, en-US, Encounter in which the resource was recorded.)
 // RequestGroup.authoredOn
 * authoredOn ^short = "When the request group was authored"
+* insert Translation(authoredOn ^short, de-DE, Erstellungszeitpunkt)
+* insert Translation(authoredOn ^short, en-US, Authored on)
+* authoredOn ^definition = "Indicates when the request group was created."
+* insert Translation(authoredOn ^definition, de-DE, Zeitpunkt\, zu dem die Ressource erstellt wurde.)
+* insert Translation(authoredOn ^definition, en-US, Time when the resource was authored.)
 // RequestGroup.reasonReference
 * reasonReference ^short = "Why the request group is needed"
 * insert Translation(reasonReference ^short, de-DE, Begründung (Verweis\))

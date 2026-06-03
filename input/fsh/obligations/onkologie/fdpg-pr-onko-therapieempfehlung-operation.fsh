@@ -52,6 +52,11 @@ Description: "FDPG Profil - MII_PR_Onko_Therapieempfehlung_Operation"
 * insert Translation(encounter ^definition, en-US, Encounter in which the resource was recorded.)
 // ServiceRequest.authoredOn
 * authoredOn ^short = "Date request signed"
+* insert Translation(authoredOn ^short, de-DE, Erstellungszeitpunkt)
+* insert Translation(authoredOn ^short, en-US, Authored on)
+* authoredOn ^definition = "When the request transitioned to being actionable."
+* insert Translation(authoredOn ^definition, de-DE, Zeitpunkt\, zu dem die Ressource erstellt wurde.)
+* insert Translation(authoredOn ^definition, en-US, Time when the resource was authored.)
 // ServiceRequest.reasonReference
 * reasonReference ^short = "Explanation/Justification for service or service"
 * insert Translation(reasonReference ^short, de-DE, Begründung (Verweis\))
@@ -61,6 +66,11 @@ Description: "FDPG Profil - MII_PR_Onko_Therapieempfehlung_Operation"
 * insert Translation(reasonReference ^definition, en-US, Reference to a resource containing the reason.)
 // ServiceRequest.supportingInfo
 * supportingInfo ^short = "Additional clinical information"
+* insert Translation(supportingInfo ^short, de-DE, Unterstützende Informationen)
+* insert Translation(supportingInfo ^short, en-US, Supporting information)
+* supportingInfo ^definition = "Additional clinical information about the patient or specimen that may influence the services or their interpretations.     This information includes diagnosis, clinical findings and other observations.  In laboratory ordering these are typically referred to as \"ask at order entry questions (AOEs)\".  This includes observations explicitly requested by the producer (filler) to provide context or supporting information needed to complete the order. For example,  reporting the amount of inspired oxygen for blood gas measurements."
+* insert Translation(supportingInfo ^definition, de-DE, Zusätzliche Informationen\, die den Plan stützen.)
+* insert Translation(supportingInfo ^definition, en-US, Additional information that supports the plan.)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(identifier)

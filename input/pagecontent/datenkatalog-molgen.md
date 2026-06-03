@@ -68,10 +68,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `relationship` | Verwandtschaftsbeziehung | Die Art der Verwandtschaft zum Patienten |
 | `sex` | Geschlecht | Das Geschlecht des Familienangehörigen |
 | `reasonCode` | Grund der Erhebung | Der Grund für die Erhebung dieser Familienanamnese |
-| `reasonCode.coding:icd10-gm` | ICD-10-GM Kodierung | Kodierung nach ICD-10-GM |
-| `reasonCode.coding:alpha-id` | Alpha-ID Kodierung | Kodierung nach Alpha-ID |
-| `reasonCode.coding:sct` | SNOMED CT Kodierung | Kodierung nach SNOMED CT |
-| `reasonCode.coding:orphanet` | Orphanet Kodierung | Kodierung nach Orphanet für seltene Erkrankungen |
+| `reasonCode.coding:icd10-gm` | ICD-10-GM | Kodierung nach ICD-10-GM. |
+| `reasonCode.coding:alpha-id` | Alpha-ID | Kodierung nach Alpha-ID. |
+| `reasonCode.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `reasonCode.coding:orphanet` | Orphanet | Kodierung nach Orphanet. |
 | `reasonReference` | Referenz zum Grund | Referenz zu einer Condition die den Grund der Familienanamnese beschreibt |
 | `condition` | Erkrankung | Erkrankung des Familienangehörigen |
 

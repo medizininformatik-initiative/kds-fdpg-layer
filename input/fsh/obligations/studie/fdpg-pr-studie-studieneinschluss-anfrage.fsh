@@ -45,6 +45,11 @@ Description: "FDPG Profil - MII_PR_Studie_Studieneinschluss_Anfrage"
 * insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
 // ServiceRequest.supportingInfo
 * supportingInfo ^short = "Zusätzliche klinische Informationen"
+* insert Translation(supportingInfo ^short, de-DE, Unterstützende Informationen)
+* insert Translation(supportingInfo ^short, en-US, Supporting information)
+* supportingInfo ^definition = "Zusätzliche klinische Informationen über den Patienten oder die Probe, die die Dienstleistungen oder deren Interpretationen beeinflussen können."
+* insert Translation(supportingInfo ^definition, de-DE, Zusätzliche Informationen\, die den Plan stützen.)
+* insert Translation(supportingInfo ^definition, en-US, Additional information that supports the plan.)
 // ServiceRequest.supportingInfo:Studie
 * supportingInfo[Studie] ^short = "Additional clinical information"
 // ServiceRequest.supportingInfo:Proband

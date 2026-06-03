@@ -17,6 +17,11 @@ Description: "FDPG Profil - MII_PR_Studie_Dokument"
 * insert Translation(status ^definition, en-US, Status of the resource.)
 // DocumentReference.author
 * author ^short = "Author"
+* insert Translation(author ^short, de-DE, Autor*in)
+* insert Translation(author ^short, en-US, Author)
+* author ^definition = "Identifiziert, wer für das Hinzufügen der Informationen zum Dokument verantwortlich ist."
+* insert Translation(author ^definition, de-DE, Person oder Organisation\, die für den Inhalt verantwortlich ist.)
+* insert Translation(author ^definition, en-US, Person or organization responsible for the content.)
 // DocumentReference.custodian
 * custodian ^short = "Custodian"
 // DocumentReference.content

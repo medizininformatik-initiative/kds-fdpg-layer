@@ -74,6 +74,11 @@ Description: "FDPG Profil - MII_PR_Seltene_Familienanamnese"
 * age[x] ^short = "(approximate) age"
 // FamilyMemberHistory.deceased[x]
 * deceased[x] ^short = "Dead? How old/when?"
+* insert Translation(deceased[x] ^short, de-DE, Verstorben)
+* insert Translation(deceased[x] ^short, en-US, Deceased)
+* deceased[x] ^definition = "Deceased flag or the actual or approximate age of the relative at the time of death for the family member history record."
+* insert Translation(deceased[x] ^definition, de-DE, Gibt an\, ob die Patient*in verstorben ist.)
+* insert Translation(deceased[x] ^definition, en-US, Indicates whether the patient is deceased.)
 // FamilyMemberHistory.reasonCode
 * reasonCode ^short = "Grund der Erhebung"
 * insert Translation(reasonCode ^short, de-DE, Grund der Erhebung)

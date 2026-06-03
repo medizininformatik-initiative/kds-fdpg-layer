@@ -10,8 +10,11 @@ Description: "FDPG Profil - MII_PR_Seltene_ClinicalDiagnosis"
 // --- Element Designations ---
 // Condition.extension:ReferenzPrimaerdiagnose
 * extension[ReferenzPrimaerdiagnose] ^short = "Conditions associated with this condition"
-* insert Translation(extension[ReferenzPrimaerdiagnose] ^short, de-DE, Referenz Primaerdiagnose)
+* insert Translation(extension[ReferenzPrimaerdiagnose] ^short, de-DE, Referenz zur Primärdiagnose)
 * insert Translation(extension[ReferenzPrimaerdiagnose] ^short, en-US, Primary diagnosis reference)
+* extension[ReferenzPrimaerdiagnose] ^definition = "This condition has an unspecified relationship with another condition."
+* insert Translation(extension[ReferenzPrimaerdiagnose] ^definition, de-DE, Verweis auf die Primärdiagnose\, mit der diese Diagnose assoziiert ist.)
+* insert Translation(extension[ReferenzPrimaerdiagnose] ^definition, en-US, Reference to the primary diagnosis this condition is associated with.)
 // Condition.extension:Feststellungsdatum
 * extension[Feststellungsdatum] ^short = "Feststellungsdatum"
 * insert Translation(extension[Feststellungsdatum] ^short, de-DE, Feststellungsdatum)

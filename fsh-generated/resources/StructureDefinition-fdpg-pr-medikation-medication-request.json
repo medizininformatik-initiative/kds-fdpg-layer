@@ -294,7 +294,67 @@
               "https://www.medizininformatik-initiative.de/fhir/core/modul-medikation/StructureDefinition/Medication"
             ]
           }
-        ]
+        ],
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Medikation (Verweis)"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Medication (reference)"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Verweis auf die Medikament-Ressource."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Reference to the medication resource."
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "MedicationRequest.medication[x]:medicationCodeableConcept",
@@ -332,7 +392,67 @@
           {
             "code": "CodeableConcept"
           }
-        ]
+        ],
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Medikation (Code)"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Medication (coded)"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Inline-Kodierung der Medikation."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Inline coding of the medication."
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer",
@@ -405,7 +525,7 @@
       {
         "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer.code",
         "path": "MedicationRequest.medication[x].coding.code",
-        "short": "PZN code",
+        "short": "Medication (coded) as PZN",
         "_short": {
           "extension": [
             {
@@ -417,7 +537,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Pharmazentralnummer-Code"
+                  "valueString": "Medikation (Code) als Pharmazentralnummer"
                 }
               ]
             },
@@ -430,7 +550,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "PZN code"
+                  "valueString": "Medication (coded) as PZN"
                 }
               ]
             }
@@ -508,7 +628,7 @@
       {
         "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:atcClassDe.code",
         "path": "MedicationRequest.medication[x].coding.code",
-        "short": "ATC (BfArM) code",
+        "short": "Medication (coded) as ATC (BfArM)",
         "_short": {
           "extension": [
             {
@@ -520,7 +640,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "ATC (BfArM)-Code"
+                  "valueString": "Medikation (Code) als ATC (BfArM)"
                 }
               ]
             },
@@ -533,7 +653,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "ATC (BfArM) code"
+                  "valueString": "Medication (coded) as ATC (BfArM)"
                 }
               ]
             }
@@ -611,7 +731,7 @@
       {
         "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:atcClassEn.code",
         "path": "MedicationRequest.medication[x].coding.code",
-        "short": "ATC (WHO) code",
+        "short": "Medication (coded) as ATC (WHO)",
         "_short": {
           "extension": [
             {
@@ -623,7 +743,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "ATC (WHO)-Code"
+                  "valueString": "Medikation (Code) als ATC (WHO)"
                 }
               ]
             },
@@ -636,7 +756,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "ATC (WHO) code"
+                  "valueString": "Medication (coded) as ATC (WHO)"
                 }
               ]
             }
@@ -714,7 +834,7 @@
       {
         "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding:UNII.code",
         "path": "MedicationRequest.medication[x].coding.code",
-        "short": "UNII code",
+        "short": "Medication (coded) as UNII",
         "_short": {
           "extension": [
             {
@@ -726,7 +846,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "UNII-Code"
+                  "valueString": "Medikation (Code) als UNII"
                 }
               ]
             },
@@ -739,7 +859,7 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "UNII code"
+                  "valueString": "Medication (coded) as UNII"
                 }
               ]
             }
@@ -1146,7 +1266,67 @@
           {
             "code": "boolean"
           }
-        ]
+        ],
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Bei Bedarf"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "As needed"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Gibt an, ob die Medikation nur bei Bedarf eingenommen wird."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Indicates whether the medication is only taken when needed."
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "MedicationRequest.dosageInstruction.asNeeded[x]:asNeededCodeableConcept",
@@ -1184,7 +1364,67 @@
           {
             "code": "CodeableConcept"
           }
-        ]
+        ],
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Bei Bedarf (Begründung)"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "As needed (reason)"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Bei Bedarf mit kodierter Begründung."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "As needed with coded reason."
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "MedicationRequest.dosageInstruction.site.coding:SNOMED",

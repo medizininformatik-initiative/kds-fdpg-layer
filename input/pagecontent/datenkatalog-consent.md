@@ -20,21 +20,21 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `extension:domainReference` | Optional Extensions Element | Optional Extension Element - found in all resources. |
+| `extension:domainReference` | Domänen-Verweis | Verweis auf eine assoziierte Domäne (Behandlungseinrichtung, Fall, Studie). |
 | `extension:domainReference.extension:domain` | Additional content defined by implementations | May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance appli... |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:consentCategory` | Classification of the consent statement - for indexing/retrieval | A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements. |
-| `category:resultType` | Classification of the consent statement - for indexing/retrieval | A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements. |
-| `category:templateType` | Classification of the consent statement - for indexing/retrieval | A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements. |
-| `category:loinc` | Classification of the consent statement - for indexing/retrieval | A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements. |
-| `category:mii` | Classification of the consent statement - for indexing/retrieval | A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements. |
+| `category:consentCategory` | Kategorie | Kategorisierung der Ressource. |
+| `category:resultType` | Kategorie | Kategorisierung der Ressource. |
+| `category:templateType` | Kategorie | Kategorisierung der Ressource. |
+| `category:loinc` | Kategorie | Kategorisierung der Ressource. |
+| `category:mii` | Kategorie | Kategorisierung der Ressource. |
 | `patient` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `dateTime` | Erstellungszeitpunkt der Einwilligung | Dieser Zeitpunkt sollte in der Praxis, zumindest bei vollelektronischer Verarbeitung, identisch mit dem Unterschriftsdatum des Fragebogens sein (Provenance.signature.when des Patienten) |
 | `organization` | Organisation, in der die Einwilligung erfasst wurde. | Dies ist die Organisation, die den Consent erfasst hat. |
 | `source[x]` | Source from which this consent is taken | The source on which this consent statement is based. The source might be a scanned original paper form, or a reference to a consent that links back to such a source, a reference to a document repos... |
 | `policy` | Policies covered by this consent | The references to the policies that are included in this consent scope. Policies may be organizational, but are often defined jurisdictionally, or in law. |
-| `policyRule` | Regulation that this consents to | A reference to the specific base computable regulation or policy. |
+| `policyRule` | Regel-Verweis | Verweis auf die zugrundeliegende Regel oder Richtlinie. |
 | `policyRule.extension:xacml` | Optional Extensions Element | Optional Extension Element - found in all resources. |
 | `provision` | Constraints to the base Consent.policyRule | An exception to the base policy of this consent. An exception can be an addition or removal of access permissions. |
 
@@ -71,21 +71,21 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:domainReference` | Optional Extensions Element | Optional Extension Element - found in all resources. |
+| `extension:domainReference` | Domain reference | Reference to an associated domain (treatment facility, encounter, study). |
 | `extension:domainReference.extension:domain` | Additional content defined by implementations | May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance appli... |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:consentCategory` | Classification of the consent statement - for indexing/retrieval | A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements. |
-| `category:resultType` | Classification of the consent statement - for indexing/retrieval | A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements. |
-| `category:templateType` | Classification of the consent statement - for indexing/retrieval | A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements. |
-| `category:loinc` | Classification of the consent statement - for indexing/retrieval | A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements. |
-| `category:mii` | Classification of the consent statement - for indexing/retrieval | A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements. |
+| `category:consentCategory` | Category | Categorization of the resource. |
+| `category:resultType` | Category | Categorization of the resource. |
+| `category:templateType` | Category | Categorization of the resource. |
+| `category:loinc` | Category | Categorization of the resource. |
+| `category:mii` | Category | Categorization of the resource. |
 | `patient` | Patient | The patient that the resource relates to. |
 | `dateTime` | Erstellungszeitpunkt der Einwilligung | Dieser Zeitpunkt sollte in der Praxis, zumindest bei vollelektronischer Verarbeitung, identisch mit dem Unterschriftsdatum des Fragebogens sein (Provenance.signature.when des Patienten) |
 | `organization` | Organisation, in der die Einwilligung erfasst wurde. | Dies ist die Organisation, die den Consent erfasst hat. |
 | `source[x]` | Source from which this consent is taken | The source on which this consent statement is based. The source might be a scanned original paper form, or a reference to a consent that links back to such a source, a reference to a document repos... |
 | `policy` | Policies covered by this consent | The references to the policies that are included in this consent scope. Policies may be organizational, but are often defined jurisdictionally, or in law. |
-| `policyRule` | Regulation that this consents to | A reference to the specific base computable regulation or policy. |
+| `policyRule` | Policy rule | Reference to the underlying policy or rule. |
 | `policyRule.extension:xacml` | Optional Extensions Element | Optional Extension Element - found in all resources. |
 | `provision` | Constraints to the base Consent.policyRule | An exception to the base policy of this consent. An exception can be an addition or removal of access permissions. |
 

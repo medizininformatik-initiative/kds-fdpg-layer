@@ -197,13 +197,19 @@ def load_module_labels(module_name: str) -> dict:
 
 def merge_module_labels(canonical: dict, module_name: str) -> dict:
     """Return a canonical-shaped dict with module labels overlaid on the
-    'elements' section. Module entries take priority over canonical.
+    'elements' section. Module entries override canonical fields per-key
+    but missing fields fall back to canonical (deep merge).
     """
     module = load_module_labels(module_name)
     if not module:
         return canonical
     merged = dict(canonical or {})
-    merged_elements = {**(canonical or {}).get("elements", {}), **module}
+    merged_elements = dict((canonical or {}).get("elements", {}))
+    for key, mod_entry in module.items():
+        if key in merged_elements:
+            merged_elements[key] = {**merged_elements[key], **mod_entry}
+        else:
+            merged_elements[key] = mod_entry
     merged["elements"] = merged_elements
     return merged
 
@@ -222,15 +228,34 @@ def load_canonical_labels() -> dict:
     return {"elements": elements, "coding_systems": systems}
 
 
+def _strip_slices_except_extension(path: str) -> str:
+    """Drop ':sliceName' from each segment, except segments starting with
+    'extension:' (named extensions carry semantic per slice, not inheritable).
+    """
+    parts = []
+    for seg in path.split("."):
+        if seg.startswith("extension:") or ":" not in seg:
+            parts.append(seg)
+        else:
+            parts.append(seg.split(":", 1)[0])
+    return ".".join(parts)
+
+
 def lookup_canonical(canonical: dict, display_path: str) -> dict:
     """Look up canonical labels for a profile element display path.
 
-    Exact match only. NO slice-strip fallback: 'extension:Dokumentationsdatum'
-    must NOT inherit the generic 'extension' canonical entry — named extensions
-    are semantically specific per slice. Coding-slice harmonisation is handled
-    via the coding_systems table at the call site.
+    Tries exact match first, then a slice-strip fallback that preserves
+    'extension:X' slices (named extensions are semantically specific and
+    must not collapse to the generic 'extension' canonical entry).
+    Coding-slice harmonisation uses the coding_systems table at the call site.
     """
-    return canonical.get("elements", {}).get(display_path, {})
+    elements = canonical.get("elements", {})
+    if display_path in elements:
+        return elements[display_path]
+    base = _strip_slices_except_extension(display_path)
+    if base != display_path and base in elements:
+        return elements[base]
+    return {}
 
 
 def get_coding_system(elem: dict) -> str:
@@ -274,6 +299,17 @@ SLICE_NAME_ALIASES = {
     "iso-3166-2":   "ISO 3166-2",
     "ieee-11073":   "IEEE 11073",
     "v2-microbiology": "HL7 v2 Microbiology",
+    "lnc":          "LOINC",
+    "kdl":          "KDL",
+    "xds":          "IHE XDS",
+    "miabis-type":  "MIABIS Specimen Type",
+    "kdsicu-category": "KDS ICU",
+    "meddra":       "MedDRA",
+    "section-type": "Befundabschnitt",
+    "Beatmung":     "Beatmung",
+    "vs-cat":       "Vital Signs",
+    "consentCategory": "Consent Category",
+    "resultType":   "Result Type",
 }
 
 
@@ -379,8 +415,29 @@ def load_profile_json(package_dir: Path, profile_name: str) -> dict | None:
     return None
 
 
+_EN_LEAK_RE = re.compile(
+    r'(?i)^(May be used|Defined by|Identifies|Indicates|A reference|This (resource|element|condition)|Code defined by|Symbol in syntax|Healthcare event|Who has|Business Identifier|Type of observation|Classification of|Identity of the terminology|Version of the system|Plain text representation|Optional Extensions|Conditions associated|Free text|Additional content|Logical id|Metadata about|The healthcare event)'
+)
+
+
+def _looks_english_as_de(text: str) -> bool:
+    """Heuristic: text claims to be DE but reads as English-as-DE leak."""
+    if not text:
+        return False
+    if re.search(r'[äöüÄÖÜß]', text):
+        return False  # umlauts → really German
+    if re.search(r'\b(der|die|das|und|für|nach|mit|von|zur|zum|bei|als|im|am|ist|sind|werden)\b', text, re.IGNORECASE):
+        return False  # German function words → really German
+    return bool(_EN_LEAK_RE.match(text))
+
+
 def extract_translation(element: dict, field: str, lang: str) -> str:
-    """Extract a translation string from _short or _definition."""
+    """Extract a translation string from _short or _definition.
+
+    For de-DE, filters out 'English-as-DE leak' translations (upstream
+    profile-team mis-tagged an English string with lang=de-DE). Callers
+    then fall back to canonical / module labels which are reliably German.
+    """
     underscored = f"_{field}"
     ext_container = element.get(underscored, {})
     if not ext_container:
@@ -396,6 +453,8 @@ def extract_translation(element: dict, field: str, lang: str) -> str:
             elif sub.get("url") == "content":
                 found_content = sub.get("valueString", "")
         if found_lang == lang:
+            if lang == "de-DE" and _looks_english_as_de(found_content):
+                continue  # leak — let canonical/module fallback take over
             return found_content
     return ""
 
@@ -877,7 +936,6 @@ def resolve_element_labels(
         if sys_url:
             cs = lookup_coding_system_labels(canonical or {}, sys_url)
         if not cs:
-            # Fallback: derive display from the slice name (e.g. ":obds" -> "oBDS")
             slice_name = display_path.rsplit(":", 1)[-1]
             cs = coding_system_display_from_slice(slice_name)
         if cs:
@@ -887,15 +945,22 @@ def resolve_element_labels(
                 "de_def": f"Kodierung nach {cs.get('de_short', '')}.",
                 "en_def": f"Coding in {cs.get('en_short', '')}.",
             }
+            # For coding slices, coding_label is more reliable than upstream
+            # Translation (upstream often has English-as-DE leaks like
+            # "A reference to a code defined by SNOMED CT"). Override.
+            de_short = coding_label["de_short"]
+            de_def = coding_label["de_def"]
+            en_short = coding_label["en_short"]
+            en_def = coding_label["en_def"]
 
     if not de_short:
-        de_short = coding_label.get("de_short") or canon.get("de_short") or elem.get("short", "")
+        de_short = canon.get("de_short") or elem.get("short", "")
     if not de_def:
-        de_def = coding_label.get("de_def") or canon.get("de_def") or elem.get("definition", "")
+        de_def = canon.get("de_def") or elem.get("definition", "")
     if not en_short:
-        en_short = coding_label.get("en_short") or canon.get("en_short") or elem.get("short", "")
+        en_short = canon.get("en_short") or elem.get("short", "")
     if not en_def:
-        en_def = coding_label.get("en_def") or canon.get("en_def") or elem.get("definition", "")
+        en_def = canon.get("en_def") or elem.get("definition", "")
 
     lm_label_de = ""
     lm_label_en = ""
@@ -1051,11 +1116,13 @@ def generate_profile_section(
                     "de_def": f"Kodierung nach {cs.get('de_short', '')}.",
                     "en_def": f"Coding in {cs.get('en_short', '')}.",
                 }
+                de_short = coding_label["de_short"]
+                de_def = coding_label["de_def"]
 
         if not de_short:
-            de_short = coding_label.get("de_short") or canon.get("de_short") or elem.get("short", "")
+            de_short = canon.get("de_short") or elem.get("short", "")
         if not de_def:
-            de_def = coding_label.get("de_def") or canon.get("de_def") or elem.get("definition", "")
+            de_def = canon.get("de_def") or elem.get("definition", "")
 
         # Look up element comment from FSH
         comment = element_comments.get(display_path, "")
@@ -1077,14 +1144,18 @@ def generate_profile_section(
             row_cols.append(md_escape(comment))
         german_lines.append("| " + " | ".join(row_cols) + " |")
 
-        # English: prefer translation → coding-system label → canonical element fallback
-        # → FHIR default (always available, in English).
+        # English: for coding-slices use coding_label override (upstream en-US
+        # is often verbose FHIR-spec text); otherwise prefer upstream translation,
+        # then canonical, then upstream short.
         en_short = extract_translation(elem, "short", "en-US")
         en_def = extract_translation(elem, "definition", "en-US")
+        if coding_label:
+            en_short = coding_label["en_short"]
+            en_def = coding_label["en_def"]
         if not en_short:
-            en_short = coding_label.get("en_short") or canon.get("en_short") or elem.get("short", "")
+            en_short = canon.get("en_short") or elem.get("short", "")
         if not en_def:
-            en_def = coding_label.get("en_def") or canon.get("en_def") or elem.get("definition", "")
+            en_def = canon.get("en_def") or elem.get("definition", "")
         if en_short or en_def:
             has_english = True
             english_rows.append(

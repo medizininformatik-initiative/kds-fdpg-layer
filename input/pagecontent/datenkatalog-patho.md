@@ -26,7 +26,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
@@ -37,8 +37,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Einzelbeobachtungen | Referenz zu Einzelbeobachtungen |
 | `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
 
 #### Angefügtes Bild (Media)
 
@@ -84,15 +84,15 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `type` | Typ | Typ oder Art der Ressource. |
 | `type.coding:KDL` | KDL | Kodierung nach KDL. |
 | `type.coding:XDS` | IHE XDS Type Code | Kodierung nach IHE XDS Type Code. |
-| `type.coding:sct` | SNOMED CT Typ | SNOMED CT Kodierung für Dokumenttyp |
+| `type.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `category.coding:LOINC` | LOINC | Kodierung nach LOINC. |
 | `category.coding:IHE` | IHE XDS Class Code | Kodierung nach IHE XDS Class Code. |
-| `category.coding:sct` | SNOMED CT Kategorie | SNOMED CT Kodierung für Dokumentkategorie |
+| `category.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
 | `date` | Dokumentendatum | The composition editing time, when the composition was last logically changed by the author. |
-| `author` | Author can only be of type Practitioner or Organization | Identifies who is responsible for the information in the composition, not necessarily who typed it in. |
+| `author` | Autor\*in | Person oder Organisation, die für den Inhalt verantwortlich ist. |
 | `title` | Dokumentenbezeichnung | Official human-readable label for the composition. |
 | `attester` | Bestätiger | Person die den Bericht bestätigt |
 | `attester:legal` | Rechtlicher Bestätiger | Rechtliche Bestätigung des Berichts |
@@ -114,7 +114,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
@@ -126,8 +126,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Einzelbeobachtungen | Referenz zu Einzelbeobachtungen |
 | `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
 | `derivedFrom:grouper-observation` | Gruppierte Beobachtung | Referenz zu gruppierten Beobachtungen |
 | `derivedFrom:questionnaire-response` | Fragebogen-Antwort | Referenz zu Fragebogen-Antworten |
 
@@ -141,7 +141,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Untersuchungsauftrag | Verweis auf den Untersuchungsauftrag |
 | `status` | Status | Status der Einzelbeobachtung |
 | `category` | Kategorie | Klassifikation der Art der Einzelbeobachtung |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
 | `category:section-type` | Beobachtungsberichtsabschnitt | Typ des Beobachtungsberichtsabschnitts |
 | `code` | Code | Art der durchgeführten Einzelbeobachtung |
 | `subject` | Patient | Referenz auf zugehöhrigen Patient |
@@ -153,8 +153,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `specimen` | Probe | Referenz zur untersuchten Probe |
 | `hasMember` | Zugehöhrige Einzelbeobachtung | Zum Untersuchungs-/Beobachtungspanel zugehörige Beobachtung / QuestionnaireResponse |
 | `derivedFrom` | Abgeleitet von | Referenz auf eine Messung / ein Bild / eine QuestionnaireResponse / ein Dokument von dem die Beobachtung abgeleitet wurde |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
 
 #### Anamnese der aktuellen Erkrankung (List)
 
@@ -178,7 +178,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
@@ -189,8 +189,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Einzelbeobachtungen | Referenz zu Einzelbeobachtungen |
 | `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
 
 #### Makroskopischer Grouper (Observation)
 
@@ -202,7 +202,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
@@ -213,8 +213,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Einzelbeobachtungen | Referenz zu Einzelbeobachtungen |
 | `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
 
 #### Mikroskopischer Grouper (Observation)
 
@@ -226,7 +226,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:laboratory-category` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
@@ -237,8 +237,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Einzelbeobachtungen | Referenz zu Einzelbeobachtungen |
 | `derivedFrom` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom:attached-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
+| `derivedFrom:dicom-image` | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |
 
 #### Problemlisteneintrag (Condition)
 
@@ -247,7 +247,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
 |---|---|---|---|
 | `category` | Kategorie | Kategorisierung der Ressource. |  |
-| `category:problem-list-item` | problem-list-item \| encounter-diagnosis | A category assigned to the condition. |  |
+| `category:problem-list-item` | Kategorie | Kategorisierung der Ressource. |  |
 | `code` | Code | Kodierung des Inhalts. | ✓ |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 
@@ -264,7 +264,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Status | Status des Befundes |
 | `category` | Kategorie | Kategorisierung des Befundes |
 | `code` | Code | Code des Pathologie-Befundes |
-| `code.coding:pathology-report` | Pathologie-Befund Code | Spezifischer Code für Pathologie-Befunde |
+| `code.coding:pathology-report` | LOINC | Kodierung nach LOINC. |
 | `subject` | Patient | Verweis auf den Patienten |
 | `encounter` | Fall | Verweis auf den Fall |
 | `effective[x]` | Dokumentationsdatum | Zeitpunkt der Befunderstellung |
@@ -315,8 +315,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `extension:probenebene` | Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
-| `identifier:Placer-ID` | Placer identifier | Identifier for the placer of the pathology request |
-| `identifier:Filler-ID` | Filler Identifier | Identifier for the filler of the pathology request |
+| `identifier:Placer-ID` | Identifikator | Identifikator dieser Ressource. |
+| `identifier:Filler-ID` | Identifikator | Identifikator dieser Ressource. |
 | `accessionIdentifier` | Labor-ID | Laborinterner Identifikator |
 | `status` | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |
 | `type` | Probenart | Die Art der Probe, codiert in SNOMED CT. |
@@ -361,7 +361,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Based on | Reference to the request that this resource is based on. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:laboratory-category` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
@@ -372,8 +372,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Pathology findings | Reference to pathology findings |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
 
 </details>
 
@@ -422,15 +422,15 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `type` | Type | Type or kind of the resource. |
 | `type.coding:KDL` | KDL | Coding in KDL. |
 | `type.coding:XDS` | IHE XDS Type Code | Coding in IHE XDS Type Code. |
-| `type.coding:sct` | SNOMED CT type | SNOMED CT coding for document type |
+| `type.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `category` | Category | Categorization of the resource. |
 | `category.coding:LOINC` | LOINC | Coding in LOINC. |
 | `category.coding:IHE` | IHE XDS Class Code | Coding in IHE XDS Class Code. |
-| `category.coding:sct` | SNOMED CT category | SNOMED CT coding for document category |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `date` | Dokumentendatum | The composition editing time, when the composition was last logically changed by the author. |
-| `author` | Author can only be of type Practitioner or Organization | Identifies who is responsible for the information in the composition, not necessarily who typed it in. |
+| `author` | Author | Person or organization responsible for the content. |
 | `title` | Dokumentenbezeichnung | Official human-readable label for the composition. |
 | `attester` | Attester | Person who attests the report |
 | `attester:legal` | Legal attester | Legal attestation of the report |
@@ -453,7 +453,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Based on | Reference to the request that this resource is based on. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:laboratory-category` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
@@ -465,8 +465,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Pathology findings | Reference to pathology findings |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
 | `derivedFrom:grouper-observation` | Grouper observation | Reference to grouper observations |
 | `derivedFrom:questionnaire-response` | Questionnaire response | Reference to questionnaire responses |
 
@@ -481,7 +481,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Request | Reference to the request |
 | `status` | Status | Status of the observation |
 | `category` | Category | Classification of type of observation |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:laboratory-category` | Category | Categorization of the resource. |
 | `category:section-type` | Section type | Type of observation report section |
 | `code` | Code | Type of observation |
 | `subject` | Subject | Reference to associated patient |
@@ -493,8 +493,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `specimen` | Specimen | Reference to examined specimen |
 | `hasMember` | Has member | Observation / QuestionnaireResponse belonging to the examination/observation panel |
 | `derivedFrom` | Derived from | Reference to a measurement / image / QuestionnaireResponse / document from which the observation was derived |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
 
 </details>
 
@@ -520,7 +520,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Based on | Reference to the request that this resource is based on. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:laboratory-category` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
@@ -531,8 +531,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Pathology findings | Reference to pathology findings |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
 
 </details>
 
@@ -545,7 +545,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Based on | Reference to the request that this resource is based on. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:laboratory-category` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
@@ -556,8 +556,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Pathology findings | Reference to pathology findings |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
 
 </details>
 
@@ -570,7 +570,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Based on | Reference to the request that this resource is based on. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:laboratory-category` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:laboratory-category` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
@@ -581,8 +581,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `hasMember:pathology-finding` | Pathology findings | Reference to pathology findings |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
-| `derivedFrom:attached-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
-| `derivedFrom:dicom-image` | Related measurements the observation is made from | The target resource that represents a measurement from which this observation value is derived. For example, a calculated anion gap or a fetal measurement based on an ultrasound image. |
+| `derivedFrom:attached-image` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:dicom-image` | Derived from | Reference to the resource this is derived from. |
 
 </details>
 
@@ -592,7 +592,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `category` | Category | Categorization of the resource. |
-| `category:problem-list-item` | problem-list-item \| encounter-diagnosis | A category assigned to the condition. |
+| `category:problem-list-item` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
 
@@ -610,7 +610,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Status | Status of the report |
 | `category` | Category | Categorization of the report |
 | `code` | Code | Code of the pathology report |
-| `code.coding:pathology-report` | Pathology report code | Specific code for pathology report |
+| `code.coding:pathology-report` | LOINC | Coding in LOINC. |
 | `subject` | Subject | Reference to the patient |
 | `encounter` | Encounter | Reference to the encounter |
 | `effective[x]` | Effective date | Time of report creation |

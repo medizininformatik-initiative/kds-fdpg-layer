@@ -59,6 +59,11 @@ Description: "FDPG Profil - MII_PR_MTB_Follow_Up_ClinicalImpression"
 * insert Translation(investigation ^definition, en-US, Status of the therapy plan with respect to follow-up.)
 // ClinicalImpression.supportingInfo
 * supportingInfo ^short = "Information supporting the clinical impression"
+* insert Translation(supportingInfo ^short, de-DE, Unterstützende Informationen)
+* insert Translation(supportingInfo ^short, en-US, Supporting information)
+* supportingInfo ^definition = "Information supporting the clinical impression."
+* insert Translation(supportingInfo ^definition, de-DE, Zusätzliche Informationen\, die den Plan stützen.)
+* insert Translation(supportingInfo ^definition, en-US, Additional information that supports the plan.)
 // ClinicalImpression.supportingInfo:UmgesetzteTherapien
 * supportingInfo[UmgesetzteTherapien] ^short = "Umgesetzte Therapien"
 * insert Translation(supportingInfo[UmgesetzteTherapien] ^short, de-DE, Umgesetzte Therapien)

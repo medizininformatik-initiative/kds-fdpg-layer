@@ -307,6 +307,138 @@
       "en_short": "Supporting observations",
       "de_def": "Referenzen auf einzelne Beobachtungen, die die Diagnose stützen.",
       "en_def": "References to individual observations that support the diagnosis."
+    },
+    "extension:ReferenzPrimaerdiagnose": {
+      "de_short": "Referenz zur Primärdiagnose",
+      "en_short": "Primary diagnosis reference",
+      "de_def": "Verweis auf die Primärdiagnose, mit der diese Diagnose assoziiert ist.",
+      "en_def": "Reference to the primary diagnosis this condition is associated with."
+    },
+    "medication[x]:medicationReference": {
+      "de_short": "Medikation (Verweis)",
+      "en_short": "Medication (reference)",
+      "de_def": "Verweis auf die Medikament-Ressource.",
+      "en_def": "Reference to the medication resource."
+    },
+    "medication[x]:medicationCodeableConcept": {
+      "de_short": "Medikation (Code)",
+      "en_short": "Medication (coded)",
+      "de_def": "Inline-Kodierung der Medikation.",
+      "en_def": "Inline coding of the medication."
+    },
+    "dosage.rate[x]:rateRatio": {
+      "de_short": "Verabreichungsrate (Verhältnis)",
+      "en_short": "Administration rate (ratio)",
+      "de_def": "Verabreichungsrate als Verhältnis (z.B. mg / Stunde).",
+      "en_def": "Administration rate as a ratio (e.g. mg / hour)."
+    },
+    "dosage.rate[x]:rateQuantity": {
+      "de_short": "Verabreichungsrate (Quantität)",
+      "en_short": "Administration rate (quantity)",
+      "de_def": "Verabreichungsrate als Quantität.",
+      "en_def": "Administration rate as quantity."
+    },
+    "dosage.rate[x]:rateRange": {
+      "de_short": "Verabreichungsrate (Bereich)",
+      "en_short": "Administration rate (range)",
+      "de_def": "Verabreichungsrate als Bereich.",
+      "en_def": "Administration rate as range."
+    },
+    "dosage.asNeeded[x]:asNeededBoolean": {
+      "de_short": "Bei Bedarf",
+      "en_short": "As needed",
+      "de_def": "Gibt an, ob die Medikation nur bei Bedarf eingenommen wird.",
+      "en_def": "Indicates whether the medication is only taken when needed."
+    },
+    "dosage.asNeeded[x]:asNeededCodeableConcept": {
+      "de_short": "Bei Bedarf (Begründung)",
+      "en_short": "As needed (reason)",
+      "de_def": "Bei Bedarf mit kodierter Begründung.",
+      "en_def": "As needed with coded reason."
+    },
+    "extension:domainReference": {
+      "de_short": "Domänen-Verweis",
+      "en_short": "Domain reference",
+      "de_def": "Verweis auf eine assoziierte Domäne (Behandlungseinrichtung, Fall, Studie).",
+      "en_def": "Reference to an associated domain (treatment facility, encounter, study)."
+    },
+    "deceased[x]": {
+      "de_short": "Verstorben",
+      "en_short": "Deceased",
+      "de_def": "Gibt an, ob die Patient*in verstorben ist.",
+      "en_def": "Indicates whether the patient is deceased."
+    },
+    "author": {
+      "de_short": "Autor*in",
+      "en_short": "Author",
+      "de_def": "Person oder Organisation, die für den Inhalt verantwortlich ist.",
+      "en_def": "Person or organization responsible for the content."
+    },
+    "authored": {
+      "de_short": "Erstellungsdatum",
+      "en_short": "Authored date",
+      "de_def": "Datum der Erstellung.",
+      "en_def": "Date when this was authored."
+    },
+    "usedCode": {
+      "de_short": "Verwendete Items",
+      "en_short": "Used items",
+      "de_def": "Kodierte Items, die im Rahmen der Prozedur verwendet wurden.",
+      "en_def": "Coded items used as part of the procedure."
+    },
+    "dosageInstruction": {
+      "de_short": "Dosierungsanweisung",
+      "en_short": "Dosage instruction",
+      "de_def": "Anweisung zur Anwendung der Medikation.",
+      "en_def": "Instruction on how the medication is to be used."
+    },
+    "dosageInstruction.asNeeded[x]:asNeededBoolean": {
+      "de_short": "Bei Bedarf",
+      "en_short": "As needed",
+      "de_def": "Gibt an, ob die Medikation nur bei Bedarf eingenommen wird.",
+      "en_def": "Indicates whether the medication is only taken when needed."
+    },
+    "dosageInstruction.asNeeded[x]:asNeededCodeableConcept": {
+      "de_short": "Bei Bedarf (Begründung)",
+      "en_short": "As needed (reason)",
+      "de_def": "Bei Bedarf mit kodierter Begründung.",
+      "en_def": "As needed with coded reason."
+    },
+    "activity": {
+      "de_short": "Maßnahme",
+      "en_short": "Activity",
+      "de_def": "Geplante Maßnahme als Teil des Plans.",
+      "en_def": "Planned action as part of the plan."
+    },
+    "addresses": {
+      "de_short": "Adressiert",
+      "en_short": "Addresses",
+      "de_def": "Verweis auf die Diagnose(n) bzw. Erkrankung(en), die dieser Plan adressiert.",
+      "en_def": "Reference to the condition(s) that this plan addresses."
+    },
+    "supportingInfo": {
+      "de_short": "Unterstützende Informationen",
+      "en_short": "Supporting information",
+      "de_def": "Zusätzliche Informationen, die den Plan stützen.",
+      "en_def": "Additional information that supports the plan."
+    },
+    "authoredOn": {
+      "de_short": "Erstellungszeitpunkt",
+      "en_short": "Authored on",
+      "de_def": "Zeitpunkt, zu dem die Ressource erstellt wurde.",
+      "en_def": "Time when the resource was authored."
+    },
+    "policyRule": {
+      "de_short": "Regel-Verweis",
+      "en_short": "Policy rule",
+      "de_def": "Verweis auf die zugrundeliegende Regel oder Richtlinie.",
+      "en_def": "Reference to the underlying policy or rule."
+    },
+    "extension:performerType": {
+      "de_short": "Durchführenden-Typ",
+      "en_short": "Performer type",
+      "de_def": "Ressourcentyp, der Antworten auf den Fragebogen erfassen kann.",
+      "en_def": "Resource type that can record answers to the questionnaire."
     }
   },
   "coding_systems": {
