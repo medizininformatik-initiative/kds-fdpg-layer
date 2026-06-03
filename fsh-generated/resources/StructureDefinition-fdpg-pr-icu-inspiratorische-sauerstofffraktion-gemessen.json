@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-inspiratorische-sauerstofffraktion-gemessen",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-inspiratorische-sauerstofffraktion-gemessen",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_ICU_Inspiratorische_Sauerstofffraktion_Gemessen",
   "title": "FDPG PR ICU Inspiratorische Sauerstofffraktion Gemessen",
   "_title": {

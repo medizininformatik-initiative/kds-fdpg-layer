@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-substituatvolumen",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-substituatvolumen",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_ICU_Substituatvolumen",
   "title": "FDPG PR ICU Substituatvolumen",
   "_title": {

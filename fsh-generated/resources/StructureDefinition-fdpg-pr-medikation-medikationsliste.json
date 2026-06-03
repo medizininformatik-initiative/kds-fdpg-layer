@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-medikation-medikationsliste",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_Medikation_Medikationsliste",
   "title": "FDPG PR Medikation Medikationsliste",
   "_title": {

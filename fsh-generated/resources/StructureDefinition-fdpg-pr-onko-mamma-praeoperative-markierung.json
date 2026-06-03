@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-onko-mamma-praeoperative-markierung",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-mamma-praeoperative-markierung",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_Onko_Mamma_Praeoperative_Markierung",
   "title": "FDPG PR Onko Mamma Praeoperative Markierung",
   "_title": {

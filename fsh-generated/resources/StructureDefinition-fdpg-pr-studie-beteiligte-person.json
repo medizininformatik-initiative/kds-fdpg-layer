@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-studie-beteiligte-person",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-beteiligte-person",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_Studie_Beteiligte_Person",
   "title": "FDPG PR Studie Beteiligte Person",
   "_title": {

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-seltene-blutgruppe",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-blutgruppe",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_Seltene_Blutgruppe",
   "title": "FDPG PR Seltene Blutgruppe",
   "_title": {

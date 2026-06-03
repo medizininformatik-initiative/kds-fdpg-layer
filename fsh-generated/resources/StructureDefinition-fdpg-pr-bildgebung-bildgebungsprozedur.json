@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-bildgebung-bildgebungsprozedur",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_Bildgebung_Bildgebungsprozedur",
   "title": "FDPG PR Bildgebung Bildgebungsprozedur",
   "_title": {

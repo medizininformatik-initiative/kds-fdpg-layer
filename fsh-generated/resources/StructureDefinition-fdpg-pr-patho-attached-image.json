@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-patho-attached-image",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-attached-image",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_Patho_Attached_Image",
   "title": "FDPG PR Patho Attached Image",
   "_title": {

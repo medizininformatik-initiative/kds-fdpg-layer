@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-bilanz-einfuhr-enterale-fluessigkeit",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-bilanz-einfuhr-enterale-fluessigkeit",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_ICU_Bilanz_Einfuhr_Enterale_Fluessigkeit",
   "title": "FDPG PR ICU Bilanz Einfuhr Enterale Fluessigkeit",
   "_title": {

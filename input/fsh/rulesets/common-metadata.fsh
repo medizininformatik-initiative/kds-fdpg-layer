@@ -3,7 +3,7 @@
 // ============================================================================
 
 RuleSet: FDPGVersion
-* ^version = "2026.1.1"
+* ^version = "2026.1.2"
 
 RuleSet: FDPGPublisher
 * ^publisher = "FDPG / Medizininformatik-Initiative"

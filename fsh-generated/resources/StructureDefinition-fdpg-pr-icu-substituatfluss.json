@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-substituatfluss",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-substituatfluss",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_ICU_Substituatfluss",
   "title": "FDPG PR ICU Substituatfluss",
   "_title": {

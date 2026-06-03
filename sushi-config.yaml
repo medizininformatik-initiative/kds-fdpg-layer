@@ -4,7 +4,7 @@ name: FDPGKDSObligations
 title: FDPG KDS Obligations Layer
 description: FDPG-spezifische Obligations und Anforderungen für MII Kerndatensatz Profile
 status: active
-version: 2026.1.1
+version: 2026.1.2
 fhirVersion: 4.0.1
 language: de-DE
 copyrightYear: 2025+

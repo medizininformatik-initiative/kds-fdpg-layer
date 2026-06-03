@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-pro-promis-cognitive-function-sf4a-tscore",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-pro-promis-cognitive-function-sf4a-tscore",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_PRO_PROMIS_Cognitive_Function_SF4a_TScore",
   "title": "FDPG PR PRO PROMIS Cognitive Function SF4a TScore",
   "_title": {

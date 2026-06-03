@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-molgen-medikationsempfehlung",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-medikationsempfehlung",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_MolGen_Medikationsempfehlung",
   "title": "FDPG PR MolGen Medikationsempfehlung",
   "_title": {

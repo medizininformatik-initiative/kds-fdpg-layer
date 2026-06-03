@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-patho-report",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-report",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_Patho_Report",
   "title": "FDPG PR Patho Report",
   "_title": {

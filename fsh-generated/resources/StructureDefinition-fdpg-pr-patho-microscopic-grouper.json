@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-patho-microscopic-grouper",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-patho-microscopic-grouper",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_Patho_Microscopic_Grouper",
   "title": "FDPG PR Patho Microscopic Grouper",
   "_title": {

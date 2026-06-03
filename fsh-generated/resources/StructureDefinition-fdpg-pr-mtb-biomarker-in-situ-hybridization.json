@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-mtb-biomarker-in-situ-hybridization",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-biomarker-in-situ-hybridization",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_MTB_Biomarker_InSituHybridization",
   "title": "FDPG PR MTB Biomarker InSituHybridization",
   "_title": {

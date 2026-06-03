@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-zeitverhaeltnis-ein-ausatmung",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-zeitverhaeltnis-ein-ausatmung",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_ICU_Zeitverhaeltnis_Ein_Ausatmung",
   "title": "FDPG PR ICU Ein Ausatmung",
   "_title": {

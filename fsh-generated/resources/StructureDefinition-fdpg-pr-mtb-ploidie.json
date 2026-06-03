@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-mtb-ploidie",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-ploidie",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_MTB_Ploidie",
   "title": "FDPG PR MTB Ploidie",
   "_title": {

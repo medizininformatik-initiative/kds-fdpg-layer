@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-molgen-molekularer-biomarker",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-molekularer-biomarker",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_MolGen_MolekularerBiomarker",
   "title": "FDPG PR MolGen MolekularerBiomarker",
   "_title": {

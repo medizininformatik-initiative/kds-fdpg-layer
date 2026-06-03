@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-mittlerer-beatmungsdruck",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-mittlerer-beatmungsdruck",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_ICU_Mittlerer_Beatmungsdruck",
   "title": "FDPG PR ICU Mittlerer Beatmungsdruck",
   "_title": {

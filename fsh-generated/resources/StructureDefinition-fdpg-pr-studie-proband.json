@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-studie-proband",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-studie-proband",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_Studie_Proband",
   "title": "FDPG PR Studie Proband",
   "_title": {

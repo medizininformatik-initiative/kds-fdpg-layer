@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-endexpiratorischer-kohlendioxidpartialdruck",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-endexpiratorischer-kohlendioxidpartialdruck",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_ICU_Endexpiratorischer_Kohlendioxidpartialdruck",
   "title": "FDPG PR ICU Endexpiratorischer Kohlendioxidpartialdruck",
   "_title": {

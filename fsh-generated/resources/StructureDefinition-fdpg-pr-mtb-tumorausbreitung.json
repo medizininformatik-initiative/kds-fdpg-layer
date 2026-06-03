@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-mtb-tumorausbreitung",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-tumorausbreitung",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_MTB_Tumorausbreitung",
   "title": "FDPG PR MTB Tumorausbreitung",
   "_title": {

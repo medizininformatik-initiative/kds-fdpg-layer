@@ -476,7 +476,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
@@ -508,7 +508,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:systemische_therapie_art` | Operationstyp | Art der Mamma-Operation. | Art der systemischen oder abwartenden Therapie | Art der systemischen oder abwartenden Therapie gemäß 16.3 oBDS 2021. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
@@ -528,13 +528,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf:systemischeTherapie` |  |  | Teil von | Ein größeres Ereignis, von dem dieses spezielle Ereignis ein Bestandteil oder Schritt ist. |
 | `status` |  |  | Status | aktiv \| abgeschlossen \| Eingabe fehlerhaft \| intendiert \| gestoppt \| pausiert \| unbekannt\| nicht eingenommen |
 | `category` |  |  | Kategorie | Eine Kategorie, die dem Medikationseintrag zugeordnet ist. |
-| `medication[x]` | Substanz | Substanz der Vortherapie nach ATC oder Text bei nicht-ATC-Wirkstoffen | Medikation | Medikation, welche Gegenstand des Eintrags ist. Code oder Referenz auf Medication-Objekt. |
-| `medication[x]:medicationReference` | Substanz | Substanz der Vortherapie nach ATC oder Text bei nicht-ATC-Wirkstoffen | Medikation Referenz | Referenz auf eine Medication-Ressource. |
-| `medication[x]:medicationCodeableConcept` | Substanz | Substanz der Vortherapie nach ATC oder Text bei nicht-ATC-Wirkstoffen | Medikation Code | Code für das Medikament, welches Gegenstand des Eintrags ist. |
-| `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | Substanz | Substanz der Vortherapie nach ATC oder Text bei nicht-ATC-Wirkstoffen | Pharmazentralnummer | Kodierung nach Pharmazentralnummer. |
-| `medication[x]:medicationCodeableConcept.coding:atcClassDe` | Substanz | Substanz der Vortherapie nach ATC oder Text bei nicht-ATC-Wirkstoffen | ATC (BfArM) | Kodierung nach ATC (BfArM). |
-| `medication[x]:medicationCodeableConcept.coding:atcClassEn` | Substanz | Substanz der Vortherapie nach ATC oder Text bei nicht-ATC-Wirkstoffen | ATC (WHO) | Kodierung nach ATC (WHO). |
-| `medication[x]:medicationCodeableConcept.coding:UNII` | Substanz | Substanz der Vortherapie nach ATC oder Text bei nicht-ATC-Wirkstoffen | UNII | Kodierung nach UNII. |
+| `medication[x]` | SystemischeTherapieProtokoll | Gibt an, nach welchem Protokoll die Systemtherapie durchgeführt wurde. | Medikation | Medikation, welche Gegenstand des Eintrags ist. Code oder Referenz auf Medication-Objekt. |
+| `medication[x]:medicationReference` | SystemischeTherapieProtokoll | Gibt an, nach welchem Protokoll die Systemtherapie durchgeführt wurde. | Medikation Referenz | Referenz auf eine Medication-Ressource. |
+| `medication[x]:medicationCodeableConcept` | SystemischeTherapieProtokoll | Gibt an, nach welchem Protokoll die Systemtherapie durchgeführt wurde. | Medikation Code | Code für das Medikament, welches Gegenstand des Eintrags ist. |
+| `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | SystemischeTherapieProtokoll | Gibt an, nach welchem Protokoll die Systemtherapie durchgeführt wurde. | Pharmazentralnummer | Kodierung nach Pharmazentralnummer. |
+| `medication[x]:medicationCodeableConcept.coding:atcClassDe` | SystemischeTherapieProtokoll | Gibt an, nach welchem Protokoll die Systemtherapie durchgeführt wurde. | ATC (BfArM) | Kodierung nach ATC (BfArM). |
+| `medication[x]:medicationCodeableConcept.coding:atcClassEn` | SystemischeTherapieProtokoll | Gibt an, nach welchem Protokoll die Systemtherapie durchgeführt wurde. | ATC (WHO) | Kodierung nach ATC (WHO). |
+| `medication[x]:medicationCodeableConcept.coding:UNII` | SystemischeTherapieProtokoll | Gibt an, nach welchem Protokoll die Systemtherapie durchgeführt wurde. | UNII | Kodierung nach UNII. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `context` |  |  | Kontext | Fall oder Kontakt in Verbindung mit dem Medikationseintrag |
 | `effective[x]` |  |  | Zeitpunkt oder Zeitraum | Die Zeitspanne, in der angegeben wird, dass der Patient das Medikament eingenommen hat oder einnehmen wird. |
@@ -570,7 +570,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
@@ -600,7 +600,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.extension:Seitenlokalisation` |  |  | Seitenlokalisation | Seitenlokalisation der Bestrahlung gemäß oBDS 2021. |
@@ -632,7 +632,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.extension:Seitenlokalisation` |  |  | Seitenlokalisation | Seitenlokalisation der Bestrahlung gemäß oBDS 2021. |
@@ -895,8 +895,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
-| `performed[x]:performedDateTime` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Datum der Stoma-Markierung | Durchführungsdatum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]:performedDateTime` | OPDatum | Datum der OP | Datum der Stoma-Markierung | Durchführungsdatum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
@@ -942,8 +942,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
-| `performed[x]:performedDateTime` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Datum der Stoma-Markierung | Durchführungsdatum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]:performedDateTime` | OPDatum | Datum der OP | Datum der Stoma-Markierung | Durchführungsdatum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
@@ -1039,7 +1039,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
@@ -1167,7 +1167,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
@@ -1260,7 +1260,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
@@ -1289,8 +1289,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
-| `performed[x]` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
-| `performed[x]:performedDateTime` | StrahlentherapieBeginn, StrahlentherapieEnde, ... | Gibt an, wann die Strahlentherapie begonnen wurde. | Datum der Stoma-Markierung | Datum der präoperativen Stoma-Markierung |
+| `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]:performedDateTime` | OPDatum | Datum der OP | Datum der Stoma-Markierung | Datum der präoperativen Stoma-Markierung |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |

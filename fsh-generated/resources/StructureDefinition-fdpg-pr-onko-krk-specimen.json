@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-onko-krk-specimen",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-krk-specimen",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_Onko_KRK_Specimen",
   "title": "FDPG PR Onko KRK Specimen",
   "_title": {

@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-molgen-variante",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-molgen-variante",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_MolGen_Variante",
   "title": "FDPG PR MolGen Variante",
   "_title": {

@@ -16,7 +16,7 @@
     }
   ],
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-biobank-observation-morphologie",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_Biobank_Observation_Morphologie",
   "title": "FDPG PR Biobank Observation Morphologie",
   "_title": {

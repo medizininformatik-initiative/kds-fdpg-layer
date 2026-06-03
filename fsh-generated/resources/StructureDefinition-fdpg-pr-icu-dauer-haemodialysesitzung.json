@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-dauer-haemodialysesitzung",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-dauer-haemodialysesitzung",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_ICU_Dauer_Haemodialysesitzung",
   "title": "FDPG PR ICU Dauer Haemodialysesitzung",
   "_title": {

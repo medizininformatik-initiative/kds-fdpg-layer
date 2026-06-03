@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-mtb-follow-up-clinical-impression",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-follow-up-clinical-impression",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_MTB_Follow_Up_ClinicalImpression",
   "title": "FDPG PR MTB Follow Up ClinicalImpression",
   "_title": {

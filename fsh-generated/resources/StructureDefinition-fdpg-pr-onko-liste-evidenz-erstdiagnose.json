@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-onko-liste-evidenz-erstdiagnose",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-onko-liste-evidenz-erstdiagnose",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_Onko_Liste_Evidenz_Erstdiagnose",
   "title": "FDPG PR Onko Liste Evidenz Erstdiagnose",
   "_title": {

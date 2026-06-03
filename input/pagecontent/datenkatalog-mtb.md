@@ -46,7 +46,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
 | `extension:LeitlinienbehandlungStatus` |  |  | Leitlinienbehandlung Status | Status der Behandlung nach Leitlinie |
-| `effective[x]:effectivePeriod` | Zeitraum | Zeitraum von Einschluss bis Abschluss im Molekulare Tumorboard | Zeitraum der Behandlungsepisode | Zeitraum von Einschluss bis Abschluss im Molekularen Tumorboard |
+| `effective[x]:effectivePeriod` | Erfassungsdatum | Erfassungsdatum Durchführung Follow-Up | Zeitraum der Behandlungsepisode | Zeitraum von Einschluss bis Abschluss im Molekularen Tumorboard |
 | `problem` |  |  | Relevant impressions of patient state | A list of the relevant problems/conditions for a patient. |
 | `problem:PrimaertumorDiagnose` |  |  | Primärtumor Diagnose | Verweise auf Diagnose des Primärtumors |
 | `investigation:KrankengeschichteFamilie` | KrankengeschichteFamilie, NGSBericht, ... | Verweis auf die familiäre Krankengeschichte | Status Follow-Up | Status des Therapieplans im Hinblick auf das Follow-Up. |
@@ -92,10 +92,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Quantitatives Ergebnis - z.B. Signalanzahl | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
-| `value[x]:valueRatio` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ratio-Ergebnis - z.B. HER2/CEP17 | Wert als Verhältnis (Zähler/Nenner). |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Kategorisches Ergebnis - z.B. positiv/negativ | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Wert | Wert | Quantitatives Ergebnis - z.B. Signalanzahl | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueRatio` | Wert | Wert | Ratio-Ergebnis - z.B. HER2/CEP17 | Wert als Verhältnis (Zähler/Nenner). |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Kategorisches Ergebnis - z.B. positiv/negativ | Wert als kodierter Begriff aus einer Terminologie. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Interpretation der ISH Signale. Die Interpretation kann auf Vergleich mit Referenzwerten basieren. |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | FISH \| CISH \| SISH | In Situ Hybridization Methode: Fluoreszenz - FISH - Chromogen - CISH - oder Silber - SISH |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -128,8 +128,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Wert | Wert | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -146,7 +146,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Code der Untersuchung (z.B. LOINC) | Code | Kodierung des Inhalts. | ✓ |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `encounter` |  |  | Gesundheitseinrichtungskontakt | Kontakt zur Gesundheitseinrichtung |  |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. | ✓ |
 
 #### Kopienzahlvariante (Observation)
 
@@ -162,7 +162,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
@@ -282,7 +282,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
@@ -338,7 +338,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
@@ -380,7 +380,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `statusReason` | GrundNichtUmsetzung | Grund für die Nicht-Umsetzung des gesamten Therapieplans. Wird entweder evaluiert, wenn Patient ein zweites mal im MTB vorgestellt wird oder Patient verstorben ist. | Grund Nicht-Umsetzung | Grund fuer die Nicht-Umsetzung des gesamten Therapieplans |
 | `code` |  |  | Follow-Up | Follow-Up als Prozess des Einholens von Informationen ueber durchgefuehrte Therapien & Kostenuebernahmen |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `effective[x]` | Zeitraum | Zeitraum von Einschluss bis Abschluss im Molekulare Tumorboard | Erfassungsdatum | Erfassungsdatum Durchfuehrung Follow-Up |
+| `effective[x]` | Erfassungsdatum | Erfassungsdatum Durchführung Follow-Up | Erfassungsdatum | Erfassungsdatum Durchfuehrung Follow-Up |
 | `previous` |  |  | MTB-Behandlungsepisode | MTB-Behandlungsepisode auf die sich das Follow-Up bezieht |
 | `investigation` | KrankengeschichteFamilie, NGSBericht, ... | Verweis auf die familiäre Krankengeschichte | Status Follow-Up | Status des Therapieplans im Hinblick auf das Follow-Up |
 | `supportingInfo` | Vorbefund, LeitlinieDokumentation | Verweis auf relevanten Vorbefund | Unterstützende Informationen | Zusätzliche Informationen, die den Plan stützen. |
@@ -458,7 +458,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | HRD-Score | HRD-Score als Summe der LOH - TAI und LST-Werte |
+| `value[x]` | Wert | Wert | HRD-Score | HRD-Score als Summe der LOH - TAI und LST-Werte |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -495,8 +495,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Block / Material-Nr. der Probe | Block-Material-Nr. der Probe. Da jede FHIR-Observation nur eine Referenz auf Specimen haben kann wird die gesamte Probe - z.B. Biopsie oder Exzisat - von den Einzelschnitten referenziert. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -518,8 +518,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
 | `specimen` |  |  | Probe | Probe |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` |  |  | Komponenten | Einzelne Komponenten der Beobachtung |
@@ -546,8 +546,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der MSI-Bestimmung wie z.B. stabil oder instabil |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der MSI-Bestimmung wie z.B. stabil oder instabil |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
 | `specimen` |  |  | Probe | Probe |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` |  |  | Komponenten | Einzelne Komponenten der Beobachtung |
@@ -569,8 +569,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -601,8 +601,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Block / Material-Nr. der Probe | Block-Material-Nr. der Probe. Da jede FHIR-Observation nur eine Referenz auf Specimen haben kann wird die gesamte Probe - z.B. Biopsie oder Exzisat - von den Einzelschnitten referenziert. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -628,8 +628,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Block / Material-Nr. der Probe | Block-Material-Nr. der Probe. Da jede FHIR-Observation nur eine Referenz auf Specimen haben kann wird die gesamte Probe - z.B. Biopsie oder Exzisat - von den Einzelschnitten referenziert. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -653,10 +653,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Quantitatives Ergebnis - z.B. Signalanzahl | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
-| `value[x]:valueRatio` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Kategorisches Ergebnis - z.B. positiv/negativ | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Wert | Wert | Quantitatives Ergebnis - z.B. Signalanzahl | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueRatio` | Wert | Wert | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Kategorisches Ergebnis - z.B. positiv/negativ | Wert als kodierter Begriff aus einer Terminologie. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Interpretation der ISH Signale. Die Interpretation kann auf Vergleich mit Referenzwerten basieren. |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | FISH \| CISH \| SISH | In Situ Hybridization Methode: Fluoreszenz - FISH - Chromogen - CISH - oder Silber - SISH |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -681,7 +681,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | IHC\|PCR\|bioinformatisch | Methode der Untersuchung - IHC oder PCR oder NGS-basierte Untersuchung. |
 | `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
@@ -736,7 +736,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -776,7 +776,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Code der Untersuchung (z.B. LOINC) | Code | Kodierung des Inhalts. | ✓ |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `encounter` |  |  | Gesundheitseinrichtungskontakt | Kontakt zur Gesundheitseinrichtung |  |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. | ✓ |
 
 #### Ploidie (Observation)
 
@@ -792,8 +792,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Wert | Wert | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` |  |  | Komponenten | Einzelne Komponenten der Beobachtung |
@@ -815,10 +815,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `effective[x]:effectiveDateTime` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt | Zeitpunkt des Response Befundes |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
-| `value[x]:valueCodeableConcept.coding:oBDS` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | oBDS | Kodierung nach oBDS. |
-| `value[x]:valueCodeableConcept.coding:MTB` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Gesamtbeurteilung im Verlauf | Datum der letzten Untersuchung in dieser Verlaufsbeurteilung gemäß 17.1 oBDS 2021. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueCodeableConcept.coding:oBDS` | Wert | Wert | oBDS | Kodierung nach oBDS. |
+| `value[x]:valueCodeableConcept.coding:MTB` | Wert | Wert | Gesamtbeurteilung im Verlauf | Datum der letzten Untersuchung in dieser Verlaufsbeurteilung gemäß 17.1 oBDS 2021. |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Beurteilungsmethode | Beurteilungsmethode RECIST oder RANO |
 | `hasMember` |  |  | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `component` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
@@ -840,7 +840,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
@@ -905,7 +905,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
@@ -1203,8 +1203,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt Tumorausbreitung | Zeitpunkt der Feststellung der Tumorausbreitung | ✓ |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. | ✓ |
-| `value[x].coding:Tumorausbreitung` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Tumorausbreitung | Angabe zur Tumorausbreitung |  |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].coding:Tumorausbreitung` | Wert | Wert | Tumorausbreitung | Angabe zur Tumorausbreitung |  |
 
 #### Tumorzellgehalt (Observation)
 
@@ -1212,7 +1212,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
 |---|---|---|---|---|---|
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. | ✓ |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
 
 #### WHO-Grad ZNS-Tumor (Observation)
@@ -1224,8 +1224,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Code der Untersuchung (z.B. LOINC) | Code | Kodierung des Inhalts. | ✓ |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `encounter` |  |  | Gesundheitseinrichtungskontakt | Kontakt zur Gesundheitseinrichtung |  |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. | ✓ |
-| `value[x].coding:SCT` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | SNOMED CT | Kodierung nach SNOMED CT. |  |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].coding:SCT` | Wert | Wert | SNOMED CT | Kodierung nach SNOMED CT. |  |
 
 ---
 

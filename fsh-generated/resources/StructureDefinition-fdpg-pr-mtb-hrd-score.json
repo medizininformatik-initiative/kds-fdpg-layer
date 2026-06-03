@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-mtb-hrd-score",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-hrd-score",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_MTB_HRD_Score",
   "title": "FDPG PR MTB HRD Score",
   "_title": {

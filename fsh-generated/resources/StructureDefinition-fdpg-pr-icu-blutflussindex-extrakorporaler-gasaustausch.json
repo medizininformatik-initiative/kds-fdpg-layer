@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-blutflussindex-extrakorporaler-gasaustausch",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-blutflussindex-extrakorporaler-gasaustausch",
-  "version": "2026.1.1",
+  "version": "2026.1.2",
   "name": "FDPG_PR_ICU_Blutflussindex_Extrakorporaler_Gasaustausch",
   "title": "FDPG PR ICU Blutflussindex Extrakorporaler Gasaustausch",
   "_title": {
