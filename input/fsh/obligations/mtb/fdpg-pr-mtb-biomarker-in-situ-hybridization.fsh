@@ -123,6 +123,9 @@ Description: "FDPG Profil - MII_PR_MTB_Biomarker_InSituHybridization"
 * insert Translation(component ^definition, de-DE, Einzelne Komponenten der Beobachtung)
 * insert Translation(component ^definition, en-US, Sub-observation component.)
 // Observation.component:gene-studied
+* component[gene-studied] ^short = "Gene studied"
+* insert Translation(component[gene-studied] ^short, de-DE, Untersuchtes Gen)
+* insert Translation(component[gene-studied] ^short, en-US, Gene studied)
 * component[gene-studied] ^definition = "Das mit der Target-Sonde untersuchte Gen (z.B. ERBB2)"
 * insert Translation(component[gene-studied] ^definition, de-DE, Das untersuchte Gen\, identifiziert durch HGNC-ID.)
 * insert Translation(component[gene-studied] ^definition, en-US, The gene studied\, identified by HGNC ID.)

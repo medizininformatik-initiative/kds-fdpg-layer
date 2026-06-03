@@ -280,7 +280,38 @@
           }
         ],
         "path": "Observation.code.coding",
-        "sliceName": "NCIT"
+        "sliceName": "NCIT",
+        "short": "NCIt coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "NCIt-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "NCIt coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Observation.subject",

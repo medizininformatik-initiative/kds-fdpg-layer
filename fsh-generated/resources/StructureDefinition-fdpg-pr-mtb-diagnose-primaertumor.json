@@ -110,6 +110,37 @@
           }
         ],
         "path": "Condition.extension",
+        "short": "Extension",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Erweiterung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Extension"
+                }
+              ]
+            }
+          ]
+        },
         "_definition": {
           "extension": [
             {
@@ -172,7 +203,37 @@
           }
         ],
         "path": "Condition.extension",
-        "sliceName": "ReferenzPrimaerdiagnose"
+        "sliceName": "ReferenzPrimaerdiagnose",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Referenz Primaerdiagnose"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Primary diagnosis reference"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Condition.extension:Feststellungsdatum",
@@ -331,7 +392,37 @@
           }
         ],
         "path": "Condition.extension",
-        "sliceName": "occurredFollowing"
+        "sliceName": "occurredFollowing",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Frühere Tumorerkrankungen"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Prior tumor diseases"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Condition.clinicalStatus",
@@ -428,7 +519,38 @@
           }
         ],
         "path": "Condition.verificationStatus.coding",
-        "sliceName": "condition-ver-status"
+        "sliceName": "condition-ver-status",
+        "short": "Verification status coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Verifizierungsstatus-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Verification status coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Condition.verificationStatus.coding:primaertumorDiagnosesicherung",
@@ -1629,6 +1751,37 @@
           }
         ],
         "path": "Condition.subject",
+        "short": "Patient",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Patient*in"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Patient"
+                }
+              ]
+            }
+          ]
+        },
         "_definition": {
           "extension": [
             {
@@ -2304,7 +2457,68 @@
             ]
           }
         ],
-        "path": "Condition.evidence"
+        "path": "Condition.evidence",
+        "short": "Evidence",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Evidenz"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Evidence"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Hinweise oder Befunde, die den Verifizierungsstatus der Diagnose stützen."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Manifestations or evidence supporting the verification status of the condition."
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Condition.evidence.detail",

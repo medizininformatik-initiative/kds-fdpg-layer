@@ -24,6 +24,7 @@ Description: "FDPG Profil - MII_PR_Labor_Laboranforderung"
 * insert Translation(identifier[anforderung] ^definition, en-US, The unique identifier of the laboratory order.)
 // ServiceRequest.identifier:anforderung.type
 * identifier[anforderung].type ^short = "Description of identifier"
+// ServiceRequest.identifier:anforderung.type.coding:placerv2
 // ServiceRequest.identifier:anforderung.type.coding:placerv2.system
 // ServiceRequest.identifier:anforderung.type.coding:placerv2.code
 // ServiceRequest.identifier:anforderung.system
@@ -55,6 +56,10 @@ Description: "FDPG Profil - MII_PR_Labor_Laboranforderung"
 * insert Translation(category ^definition, en-US, Classification as laboratory order)
 // ServiceRequest.category.coding.display
 * category.coding.display ^short = "Representation defined by the system"
+// ServiceRequest.category.coding:laboratory
+* category.coding[laboratory] ^short = "Observation category coding"
+* insert Translation(category.coding[laboratory] ^short, de-DE, Beobachtungskategorie-Kodierung)
+* insert Translation(category.coding[laboratory] ^short, en-US, Observation category coding)
 // ServiceRequest.code
 * code ^short = "Code"
 * insert Translation(code ^short, de-DE, Code)

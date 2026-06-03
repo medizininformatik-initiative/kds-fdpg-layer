@@ -96,6 +96,37 @@
           }
         ],
         "path": "Observation.extension",
+        "short": "Extension",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Erweiterung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Extension"
+                }
+              ]
+            }
+          ]
+        },
         "_definition": {
           "extension": [
             {
@@ -158,7 +189,37 @@
           }
         ],
         "path": "Observation.extension",
-        "sliceName": "instantiatesCanonical"
+        "sliceName": "instantiatesCanonical",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Instanziiert kanonisches Profil"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Instantiates canonical"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Observation.identifier",

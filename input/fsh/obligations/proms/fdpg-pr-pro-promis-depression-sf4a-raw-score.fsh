@@ -10,6 +10,8 @@ Description: "FDPG Profil - MII_PR_PRO_PROMIS_Depression_SF4a_Raw_Score"
 // --- Element Designations ---
 // Observation.extension:instantiatesCanonical
 * extension[instantiatesCanonical] ^short = "FHIR protocol or definition"
+* insert Translation(extension[instantiatesCanonical] ^short, de-DE, Instanziiert kanonisches Profil)
+* insert Translation(extension[instantiatesCanonical] ^short, en-US, Instantiates canonical)
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"
 * insert Translation(status ^short, de-DE, Status)

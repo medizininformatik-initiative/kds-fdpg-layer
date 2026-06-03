@@ -608,6 +608,37 @@
       {
         "id": "Observation.value[x].coding",
         "path": "Observation.value[x].coding",
+        "short": "Metastasis location",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Lokalisation der Fernmetastasen"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Metastasis location"
+                }
+              ]
+            }
+          ]
+        },
         "_definition": {
           "extension": [
             {
@@ -642,6 +673,37 @@
       {
         "id": "Observation.bodySite.coding",
         "path": "Observation.bodySite.coding",
+        "short": "Target site",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Zielgebiet"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Target site"
+                }
+              ]
+            }
+          ]
+        },
         "_definition": {
           "extension": [
             {

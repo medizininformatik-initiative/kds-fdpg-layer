@@ -9,6 +9,9 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Therapie"
 * insert Translation(^title, en-US, Systemic therapy)
 // --- Element Designations ---
 // Procedure.extension
+* extension ^short = "Extension"
+* insert Translation(extension ^short, de-DE, Erweiterung)
+* insert Translation(extension ^short, en-US, Extension)
 * extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
 * insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
 * insert Translation(extension ^definition, en-US, FHIR extension.)
@@ -28,8 +31,12 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Therapie"
 * insert Translation(extension[durchfuehrungsabsicht] ^definition, en-US, therapeutic | palliative | diagnostic | preventive | rehabilitative | other)
 // Procedure.extension:Intention
 * extension[Intention] ^short = "MII EX Onko Systemische Therapie Intention"
+* insert Translation(extension[Intention] ^short, de-DE, Systemische Therapie Intention)
+* insert Translation(extension[Intention] ^short, en-US, Intent)
 // Procedure.extension:StellungZurOp
 * extension[StellungZurOp] ^short = "MII EX Onko Systemische Therapie Stellung zur OP"
+* insert Translation(extension[StellungZurOp] ^short, de-DE, Systemische Therapie Stellung zur OP)
+* insert Translation(extension[StellungZurOp] ^short, en-US, Position relative to surgery)
 // Procedure.extension:causedBy
 * extension[causedBy] ^short = "Therapieempfehlung"
 * insert Translation(extension[causedBy] ^short, de-DE, Therapieempfehlung)

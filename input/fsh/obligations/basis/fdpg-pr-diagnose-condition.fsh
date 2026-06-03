@@ -10,6 +10,8 @@ Description: "FDPG Profil - MII_PR_Diagnose_Condition"
 // --- Element Designations ---
 // Condition.extension:ReferenzPrimaerdiagnose
 * extension[ReferenzPrimaerdiagnose] ^short = "Conditions associated with this condition"
+* insert Translation(extension[ReferenzPrimaerdiagnose] ^short, de-DE, Referenz Primaerdiagnose)
+* insert Translation(extension[ReferenzPrimaerdiagnose] ^short, en-US, Primary diagnosis reference)
 // Condition.extension:Feststellungsdatum
 * extension[Feststellungsdatum] ^short = "Feststellungsdatum"
 * insert Translation(extension[Feststellungsdatum] ^short, de-DE, Feststellungsdatum)
@@ -133,6 +135,9 @@ Description: "FDPG Profil - MII_PR_Diagnose_Condition"
 * insert Translation(bodySite.coding[snomed-ct].code ^short, de-DE, Körperstelle als SNOMED CT)
 * insert Translation(bodySite.coding[snomed-ct].code ^short, en-US, Body site as SNOMED CT)
 // Condition.subject
+* subject ^short = "Patient"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
 * subject ^definition = "Indicates the patient or group who the condition record is associated with."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
 * insert Translation(subject ^definition, en-US, The patient that the resource relates to.)

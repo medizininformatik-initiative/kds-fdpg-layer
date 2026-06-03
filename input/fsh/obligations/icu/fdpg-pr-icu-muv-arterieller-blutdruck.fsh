@@ -22,6 +22,10 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Arterieller_Blutdruck"
 * code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\"."
 * insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
+// Observation.code.coding:loinc
+* code.coding[loinc] ^short = "LOINC coding"
+* insert Translation(code.coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[loinc] ^short, en-US, LOINC coding)
 // Observation.code.coding:loinc.system
 * code.coding[loinc].system ^short = "LOINC system URL"
 * insert Translation(code.coding[loinc].system ^short, de-DE, LOINC-System-URL)
@@ -34,6 +38,10 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Arterieller_Blutdruck"
 * code.coding[loinc].display ^short = "Representation defined by the system"
 * insert Translation(code.coding[loinc].display ^short, de-DE, LOINC-Anzeige)
 * insert Translation(code.coding[loinc].display ^short, en-US, LOINC display)
+// Observation.code.coding:sct
+* code.coding[sct] ^short = "SNOMED CT coding"
+* insert Translation(code.coding[sct] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(code.coding[sct] ^short, en-US, SNOMED CT coding)
 // Observation.code.coding:sct.system
 * code.coding[sct].system ^short = "SNOMED CT system URL"
 * insert Translation(code.coding[sct].system ^short, de-DE, SNOMED CT-System-URL)
@@ -125,6 +133,10 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Arterieller_Blutdruck"
 * insert Translation(component ^definition, en-US, Sub-observation component.)
 // Observation.component:SystolicBP
 * component[SystolicBP] ^short = "Component results"
+// Observation.component:SystolicBP.code.coding:loinc
+* component[SystolicBP].code.coding[loinc] ^short = "LOINC coding"
+* insert Translation(component[SystolicBP].code.coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(component[SystolicBP].code.coding[loinc] ^short, en-US, LOINC coding)
 // Observation.component:SystolicBP.code.coding:loinc.system
 * component[SystolicBP].code.coding[loinc].system ^short = "LOINC system URL"
 * insert Translation(component[SystolicBP].code.coding[loinc].system ^short, de-DE, LOINC-System-URL)
@@ -137,6 +149,10 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Arterieller_Blutdruck"
 * component[SystolicBP].code.coding[loinc].display ^short = "Representation defined by the system"
 * insert Translation(component[SystolicBP].code.coding[loinc].display ^short, de-DE, LOINC-Anzeige)
 * insert Translation(component[SystolicBP].code.coding[loinc].display ^short, en-US, LOINC display)
+// Observation.component:SystolicBP.code.coding:sct
+* component[SystolicBP].code.coding[sct] ^short = "SNOMED CT coding"
+* insert Translation(component[SystolicBP].code.coding[sct] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(component[SystolicBP].code.coding[sct] ^short, en-US, SNOMED CT coding)
 // Observation.component:SystolicBP.code.coding:sct.system
 * component[SystolicBP].code.coding[sct].system ^short = "SNOMED CT system URL"
 * insert Translation(component[SystolicBP].code.coding[sct].system ^short, de-DE, SNOMED CT-System-URL)
@@ -149,6 +165,10 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Arterieller_Blutdruck"
 * component[SystolicBP].code.coding[sct].display ^short = "Representation defined by the system"
 * insert Translation(component[SystolicBP].code.coding[sct].display ^short, de-DE, SNOMED CT-Anzeige)
 * insert Translation(component[SystolicBP].code.coding[sct].display ^short, en-US, SNOMED CT display)
+// Observation.component:SystolicBP.code.coding:IEEE-11073
+* component[SystolicBP].code.coding[IEEE-11073] ^short = "IEEE 11073 coding"
+* insert Translation(component[SystolicBP].code.coding[IEEE-11073] ^short, de-DE, IEEE 11073-Kodierung)
+* insert Translation(component[SystolicBP].code.coding[IEEE-11073] ^short, en-US, IEEE 11073 coding)
 // Observation.component:SystolicBP.code.coding:IEEE-11073.system
 * component[SystolicBP].code.coding[IEEE-11073].system ^short = "IEEE 11073 system URL"
 * insert Translation(component[SystolicBP].code.coding[IEEE-11073].system ^short, de-DE, IEEE 11073-System-URL)
@@ -183,6 +203,10 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Arterieller_Blutdruck"
 * component[SystolicBP].dataAbsentReason ^short = "Why the component result is missing"
 // Observation.component:DiastolicBP
 * component[DiastolicBP] ^short = "Component results"
+// Observation.component:DiastolicBP.code.coding:loinc
+* component[DiastolicBP].code.coding[loinc] ^short = "LOINC coding"
+* insert Translation(component[DiastolicBP].code.coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(component[DiastolicBP].code.coding[loinc] ^short, en-US, LOINC coding)
 // Observation.component:DiastolicBP.code.coding:loinc.system
 * component[DiastolicBP].code.coding[loinc].system ^short = "LOINC system URL"
 * insert Translation(component[DiastolicBP].code.coding[loinc].system ^short, de-DE, LOINC-System-URL)
@@ -195,6 +219,10 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Arterieller_Blutdruck"
 * component[DiastolicBP].code.coding[loinc].display ^short = "Representation defined by the system"
 * insert Translation(component[DiastolicBP].code.coding[loinc].display ^short, de-DE, LOINC-Anzeige)
 * insert Translation(component[DiastolicBP].code.coding[loinc].display ^short, en-US, LOINC display)
+// Observation.component:DiastolicBP.code.coding:sct
+* component[DiastolicBP].code.coding[sct] ^short = "SNOMED CT coding"
+* insert Translation(component[DiastolicBP].code.coding[sct] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(component[DiastolicBP].code.coding[sct] ^short, en-US, SNOMED CT coding)
 // Observation.component:DiastolicBP.code.coding:sct.system
 * component[DiastolicBP].code.coding[sct].system ^short = "SNOMED CT system URL"
 * insert Translation(component[DiastolicBP].code.coding[sct].system ^short, de-DE, SNOMED CT-System-URL)
@@ -207,6 +235,10 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Arterieller_Blutdruck"
 * component[DiastolicBP].code.coding[sct].display ^short = "Representation defined by the system"
 * insert Translation(component[DiastolicBP].code.coding[sct].display ^short, de-DE, SNOMED CT-Anzeige)
 * insert Translation(component[DiastolicBP].code.coding[sct].display ^short, en-US, SNOMED CT display)
+// Observation.component:DiastolicBP.code.coding:IEEE-11073
+* component[DiastolicBP].code.coding[IEEE-11073] ^short = "IEEE 11073 coding"
+* insert Translation(component[DiastolicBP].code.coding[IEEE-11073] ^short, de-DE, IEEE 11073-Kodierung)
+* insert Translation(component[DiastolicBP].code.coding[IEEE-11073] ^short, en-US, IEEE 11073 coding)
 // Observation.component:DiastolicBP.code.coding:IEEE-11073.system
 * component[DiastolicBP].code.coding[IEEE-11073].system ^short = "IEEE 11073 system URL"
 * insert Translation(component[DiastolicBP].code.coding[IEEE-11073].system ^short, de-DE, IEEE 11073-System-URL)
@@ -241,6 +273,10 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Arterieller_Blutdruck"
 * component[DiastolicBP].dataAbsentReason ^short = "Why the component result is missing"
 // Observation.component:meanBP
 * component[meanBP] ^short = "Component results"
+// Observation.component:meanBP.code.coding:loinc
+* component[meanBP].code.coding[loinc] ^short = "LOINC coding"
+* insert Translation(component[meanBP].code.coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(component[meanBP].code.coding[loinc] ^short, en-US, LOINC coding)
 // Observation.component:meanBP.code.coding:loinc.system
 * component[meanBP].code.coding[loinc].system ^short = "LOINC system URL"
 * insert Translation(component[meanBP].code.coding[loinc].system ^short, de-DE, LOINC-System-URL)
@@ -253,6 +289,10 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Arterieller_Blutdruck"
 * component[meanBP].code.coding[loinc].display ^short = "Representation defined by the system"
 * insert Translation(component[meanBP].code.coding[loinc].display ^short, de-DE, LOINC-Anzeige)
 * insert Translation(component[meanBP].code.coding[loinc].display ^short, en-US, LOINC display)
+// Observation.component:meanBP.code.coding:sct
+* component[meanBP].code.coding[sct] ^short = "SNOMED CT coding"
+* insert Translation(component[meanBP].code.coding[sct] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(component[meanBP].code.coding[sct] ^short, en-US, SNOMED CT coding)
 // Observation.component:meanBP.code.coding:sct.system
 * component[meanBP].code.coding[sct].system ^short = "SNOMED CT system URL"
 * insert Translation(component[meanBP].code.coding[sct].system ^short, de-DE, SNOMED CT-System-URL)
@@ -265,6 +305,10 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Arterieller_Blutdruck"
 * component[meanBP].code.coding[sct].display ^short = "Representation defined by the system"
 * insert Translation(component[meanBP].code.coding[sct].display ^short, de-DE, SNOMED CT-Anzeige)
 * insert Translation(component[meanBP].code.coding[sct].display ^short, en-US, SNOMED CT display)
+// Observation.component:meanBP.code.coding:IEEE-11073
+* component[meanBP].code.coding[IEEE-11073] ^short = "IEEE 11073 coding"
+* insert Translation(component[meanBP].code.coding[IEEE-11073] ^short, de-DE, IEEE 11073-Kodierung)
+* insert Translation(component[meanBP].code.coding[IEEE-11073] ^short, en-US, IEEE 11073 coding)
 // Observation.component:meanBP.code.coding:IEEE-11073.system
 * component[meanBP].code.coding[IEEE-11073].system ^short = "IEEE 11073 system URL"
 * insert Translation(component[meanBP].code.coding[IEEE-11073].system ^short, de-DE, IEEE 11073-System-URL)

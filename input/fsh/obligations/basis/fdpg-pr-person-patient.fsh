@@ -75,16 +75,24 @@ Description: "FDPG Profil - MII_PR_Person_Patient"
 * name[name].family ^short = "Familienname"
 // Patient.name:name.family.extension:namenszusatz
 * name[name].family.extension[namenszusatz] ^short = "Namenszusatz gemäß VSDM (Versichertenstammdatenmanagement, \"eGK\")"
+* insert Translation(name[name].family.extension[namenszusatz] ^short, de-DE, namenszusatz)
+* insert Translation(name[name].family.extension[namenszusatz] ^short, en-US, namenszusatz)
 // Patient.name:name.family.extension:nachname
 * name[name].family.extension[nachname] ^short = "Nachname ohne Vor- und Zusätze"
+* insert Translation(name[name].family.extension[nachname] ^short, de-DE, nachname)
+* insert Translation(name[name].family.extension[nachname] ^short, en-US, nachname)
 // Patient.name:name.family.extension:vorsatzwort
 * name[name].family.extension[vorsatzwort] ^short = "Vorsatzwort"
+* insert Translation(name[name].family.extension[vorsatzwort] ^short, de-DE, vorsatzwort)
+* insert Translation(name[name].family.extension[vorsatzwort] ^short, en-US, vorsatzwort)
 // Patient.name:name.given
 * name[name].given ^short = "Vorname"
 // Patient.name:name.prefix
 * name[name].prefix ^short = "Namensteile vor dem Vornamen"
 // Patient.name:name.prefix.extension:prefix-qualifier
 * name[name].prefix.extension[prefix-qualifier] ^short = "LS | AC | NB | PR | HON | BR | AD | SP | MID | CL | IN | VV"
+* insert Translation(name[name].prefix.extension[prefix-qualifier] ^short, de-DE, prefix-qualifier)
+* insert Translation(name[name].prefix.extension[prefix-qualifier] ^short, en-US, prefix-qualifier)
 // Patient.name:geburtsname
 * name[geburtsname] ^short = "Geburtsname"
 * insert Translation(name[geburtsname] ^short, de-DE, Geburtsname)
@@ -98,12 +106,20 @@ Description: "FDPG Profil - MII_PR_Person_Patient"
 * name[geburtsname].family ^short = "Familienname"
 // Patient.name:geburtsname.family.extension:namenszusatz
 * name[geburtsname].family.extension[namenszusatz] ^short = "Namenszusatz gemäß VSDM (Versichertenstammdatenmanagement, \"eGK\")"
+* insert Translation(name[geburtsname].family.extension[namenszusatz] ^short, de-DE, namenszusatz)
+* insert Translation(name[geburtsname].family.extension[namenszusatz] ^short, en-US, namenszusatz)
 // Patient.name:geburtsname.family.extension:nachname
 * name[geburtsname].family.extension[nachname] ^short = "Nachname ohne Vor- und Zusätze"
+* insert Translation(name[geburtsname].family.extension[nachname] ^short, de-DE, nachname)
+* insert Translation(name[geburtsname].family.extension[nachname] ^short, en-US, nachname)
 // Patient.name:geburtsname.family.extension:vorsatzwort
 * name[geburtsname].family.extension[vorsatzwort] ^short = "Vorsatzwort"
+* insert Translation(name[geburtsname].family.extension[vorsatzwort] ^short, de-DE, vorsatzwort)
+* insert Translation(name[geburtsname].family.extension[vorsatzwort] ^short, en-US, vorsatzwort)
 // Patient.name:geburtsname.prefix.extension:prefix-qualifier
 * name[geburtsname].prefix.extension[prefix-qualifier] ^short = "LS | AC | NB | PR | HON | BR | AD | SP | MID | CL | IN | VV"
+* insert Translation(name[geburtsname].prefix.extension[prefix-qualifier] ^short, de-DE, prefix-qualifier)
+* insert Translation(name[geburtsname].prefix.extension[prefix-qualifier] ^short, en-US, prefix-qualifier)
 // Patient.gender
 * gender ^short = "Administratives Geschlecht"
 * insert Translation(gender ^short, de-DE, Administratives Geschlecht)
@@ -127,6 +143,8 @@ Description: "FDPG Profil - MII_PR_Person_Patient"
 * insert Translation(birthDate ^definition, en-US, The date of birth for the individual)
 // Patient.birthDate.extension:data-absent-reason
 * birthDate.extension[data-absent-reason] ^short = "unknown | asked | temp | notasked | masked | unsupported | astext | error"
+* insert Translation(birthDate.extension[data-absent-reason] ^short, de-DE, Grund für fehlende Angabe)
+* insert Translation(birthDate.extension[data-absent-reason] ^short, en-US, Data absent reason)
 // Patient.deceased[x]
 * deceased[x] ^short = "Verstorben"
 * insert Translation(deceased[x] ^short, de-DE, Verstorben)
@@ -150,18 +168,28 @@ Description: "FDPG Profil - MII_PR_Person_Patient"
 * insert Translation(address[Strassenanschrift] ^definition, en-US, A street address for the individual)
 // Patient.address:Strassenanschrift.extension:Stadtteil
 * address[Strassenanschrift].extension[Stadtteil] ^short = "Stadt- oder Ortsteil"
+* insert Translation(address[Strassenanschrift].extension[Stadtteil] ^short, de-DE, Stadtteil)
+* insert Translation(address[Strassenanschrift].extension[Stadtteil] ^short, en-US, District)
 // Patient.address:Strassenanschrift.type
 * address[Strassenanschrift].type ^short = "postal | physical | both"
 // Patient.address:Strassenanschrift.line
 * address[Strassenanschrift].line ^short = "Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung"
 // Patient.address:Strassenanschrift.line.extension:Strasse
 * address[Strassenanschrift].line.extension[Strasse] ^short = "Strassenname (ohne Hausnummer)"
+* insert Translation(address[Strassenanschrift].line.extension[Strasse] ^short, de-DE, Straße)
+* insert Translation(address[Strassenanschrift].line.extension[Strasse] ^short, en-US, Street)
 // Patient.address:Strassenanschrift.line.extension:Hausnummer
 * address[Strassenanschrift].line.extension[Hausnummer] ^short = "Hausnummer"
+* insert Translation(address[Strassenanschrift].line.extension[Hausnummer] ^short, de-DE, Hausnummer)
+* insert Translation(address[Strassenanschrift].line.extension[Hausnummer] ^short, en-US, House number)
 // Patient.address:Strassenanschrift.line.extension:Adresszusatz
 * address[Strassenanschrift].line.extension[Adresszusatz] ^short = "Adresszusatz"
+* insert Translation(address[Strassenanschrift].line.extension[Adresszusatz] ^short, de-DE, Adresszusatz)
+* insert Translation(address[Strassenanschrift].line.extension[Adresszusatz] ^short, en-US, Address suffix)
 // Patient.address:Strassenanschrift.line.extension:Postfach
 * address[Strassenanschrift].line.extension[Postfach] ^short = "Postfach"
+* insert Translation(address[Strassenanschrift].line.extension[Postfach] ^short, de-DE, Postfach)
+* insert Translation(address[Strassenanschrift].line.extension[Postfach] ^short, en-US, PO box)
 // Patient.address:Strassenanschrift.city
 * address[Strassenanschrift].city ^short = "Name of city, town etc."
 // Patient.address:Strassenanschrift.postalCode
@@ -177,12 +205,16 @@ Description: "FDPG Profil - MII_PR_Person_Patient"
 * insert Translation(address[Postfach] ^definition, en-US, A postbox address for the individual)
 // Patient.address:Postfach.extension:Stadtteil
 * address[Postfach].extension[Stadtteil] ^short = "Stadt- oder Ortsteil"
+* insert Translation(address[Postfach].extension[Stadtteil] ^short, de-DE, Stadtteil)
+* insert Translation(address[Postfach].extension[Stadtteil] ^short, en-US, District)
 // Patient.address:Postfach.type
 * address[Postfach].type ^short = "postal | physical | both"
 // Patient.address:Postfach.line
 * address[Postfach].line ^short = "Straßenname mit Hausnummer oder Postfach sowie weitere Angaben zur Zustellung"
 // Patient.address:Postfach.line.extension:Postfach
 * address[Postfach].line.extension[Postfach] ^short = "Postfach"
+* insert Translation(address[Postfach].line.extension[Postfach] ^short, de-DE, Postfach)
+* insert Translation(address[Postfach].line.extension[Postfach] ^short, en-US, PO box)
 // Patient.address:Postfach.city
 * address[Postfach].city ^short = "Name of city, town etc."
 // Patient.address:Postfach.postalCode

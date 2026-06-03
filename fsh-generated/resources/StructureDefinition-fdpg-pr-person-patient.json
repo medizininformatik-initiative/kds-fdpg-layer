@@ -243,6 +243,146 @@
         "sliceName": "name"
       },
       {
+        "id": "Patient.name:name.family.extension:namenszusatz",
+        "path": "Patient.name.family.extension",
+        "sliceName": "namenszusatz",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "namenszusatz"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "namenszusatz"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Patient.name:name.family.extension:nachname",
+        "path": "Patient.name.family.extension",
+        "sliceName": "nachname",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "nachname"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "nachname"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Patient.name:name.family.extension:vorsatzwort",
+        "path": "Patient.name.family.extension",
+        "sliceName": "vorsatzwort",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "vorsatzwort"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "vorsatzwort"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Patient.name:name.prefix.extension:prefix-qualifier",
+        "path": "Patient.name.prefix.extension",
+        "sliceName": "prefix-qualifier",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "prefix-qualifier"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "prefix-qualifier"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "Patient.name:geburtsname",
         "extension": [
           {
@@ -274,6 +414,146 @@
         ],
         "path": "Patient.name",
         "sliceName": "geburtsname"
+      },
+      {
+        "id": "Patient.name:geburtsname.family.extension:namenszusatz",
+        "path": "Patient.name.family.extension",
+        "sliceName": "namenszusatz",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "namenszusatz"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "namenszusatz"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Patient.name:geburtsname.family.extension:nachname",
+        "path": "Patient.name.family.extension",
+        "sliceName": "nachname",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "nachname"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "nachname"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Patient.name:geburtsname.family.extension:vorsatzwort",
+        "path": "Patient.name.family.extension",
+        "sliceName": "vorsatzwort",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "vorsatzwort"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "vorsatzwort"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Patient.name:geburtsname.prefix.extension:prefix-qualifier",
+        "path": "Patient.name.prefix.extension",
+        "sliceName": "prefix-qualifier",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "prefix-qualifier"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "prefix-qualifier"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Patient.gender",
@@ -403,7 +683,37 @@
           }
         ],
         "path": "Patient.birthDate.extension",
-        "sliceName": "data-absent-reason"
+        "sliceName": "data-absent-reason",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Grund für fehlende Angabe"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Data absent reason"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Patient.deceased[x]",
@@ -549,7 +859,177 @@
           }
         ],
         "path": "Patient.address.extension",
-        "sliceName": "Stadtteil"
+        "sliceName": "Stadtteil",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Stadtteil"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "District"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Patient.address:Strassenanschrift.line.extension:Strasse",
+        "path": "Patient.address.line.extension",
+        "sliceName": "Strasse",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Straße"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Street"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Patient.address:Strassenanschrift.line.extension:Hausnummer",
+        "path": "Patient.address.line.extension",
+        "sliceName": "Hausnummer",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Hausnummer"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "House number"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Patient.address:Strassenanschrift.line.extension:Adresszusatz",
+        "path": "Patient.address.line.extension",
+        "sliceName": "Adresszusatz",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Adresszusatz"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Address suffix"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Patient.address:Strassenanschrift.line.extension:Postfach",
+        "path": "Patient.address.line.extension",
+        "sliceName": "Postfach",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Postfach"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "PO box"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Patient.address:Postfach",
@@ -615,7 +1095,72 @@
           }
         ],
         "path": "Patient.address.extension",
-        "sliceName": "Stadtteil"
+        "sliceName": "Stadtteil",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Stadtteil"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "District"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Patient.address:Postfach.line.extension:Postfach",
+        "path": "Patient.address.line.extension",
+        "sliceName": "Postfach",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Postfach"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "PO box"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Patient.link",

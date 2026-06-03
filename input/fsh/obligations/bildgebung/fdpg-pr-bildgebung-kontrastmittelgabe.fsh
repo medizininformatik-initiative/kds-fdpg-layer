@@ -16,16 +16,13 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Kontrastmittelgabe"
 * insert Translation(identifier ^definition, de-DE, Ein Identifikator für die Medikationsverabreichung)
 * insert Translation(identifier ^definition, en-US, An identifier for this medication administration)
 // MedicationAdministration.partOf
-* partOf ^short = "Teil von"
+* partOf ^short = "Part of"
 * insert Translation(partOf ^short, de-DE, Teil von)
-* insert Translation(partOf ^short, en-US, part of)
-* partOf ^definition = "Teil einer weiteren Medikationsverabreichung"
-* insert Translation(partOf ^definition, de-DE, Teil einer weiteren Medikationsverabreichung)
-* insert Translation(partOf ^definition, en-US, part of another medication administration)
+* insert Translation(partOf ^short, en-US, Part of)
 // MedicationAdministration.status
 * status ^short = "Status"
 * insert Translation(status ^short, de-DE, Status)
-* insert Translation(status ^short, en-US, status)
+* insert Translation(status ^short, en-US, Status)
 * status ^definition = "in Durchführung | nicht durchgeführt | in Wartestellung | abgeschlossen | Eingabe fehlerhaft | abgebrochen | unbekannt"
 * insert Translation(status ^definition, de-DE, in Durchführung | nicht durchgeführt | in Wartestellung | abgeschlossen | Eingabe fehlerhaft | abgebrochen | unbekannt)
 * insert Translation(status ^definition, en-US, in-progress | not-done | on-hold | completed | entered-in-error | stopped | unknown)
@@ -37,12 +34,12 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Kontrastmittelgabe"
 * insert Translation(category ^definition, de-DE, Eine Kategorie\, die der Medikationsverabreichung zugeordnet ist.)
 * insert Translation(category ^definition, en-US, A category assigned to the medication administration.)
 // MedicationAdministration.medication[x]
-* medication[x] ^short = "Medikation"
+* medication[x] ^short = "Medication"
 * insert Translation(medication[x] ^short, de-DE, Medikation)
-* insert Translation(medication[x] ^short, en-US, medication)
+* insert Translation(medication[x] ^short, en-US, Medication)
 * medication[x] ^definition = "Medikation, die verarbreicht wurde. Code oder Referenz auf Medication-Objekt."
-* insert Translation(medication[x] ^definition, de-DE, Medikation\, die verarbreicht wurde. Code oder Referenz auf Medication-Objekt.)
-* insert Translation(medication[x] ^definition, en-US, The medication that was administered. Code or a reference to a medication resource.)
+* insert Translation(medication[x] ^definition, de-DE, Verweis auf das Medikament oder die Medikation.)
+* insert Translation(medication[x] ^definition, en-US, The medication that was administered. Code or a reference to a Medication resource.)
 // MedicationAdministration.medication[x]:medicationReference
 * medication[x][medicationReference] ^short = "What was administered"
 // MedicationAdministration.medication[x]:medicationCodeableConcept
@@ -174,9 +171,6 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Kontrastmittelgabe"
 * dosage ^short = "Dosierung"
 * insert Translation(dosage ^short, de-DE, Dosierung)
 * insert Translation(dosage ^short, en-US, Dosage)
-* dosage ^definition = "Details der Medikamentendosierung, wie Dosis, Menge, Applikationsort, Verabreichungsweg, etc."
-* insert Translation(dosage ^definition, de-DE, Details der Medikamentendosierung\, wie Dosis\, Menge\, Applikationsort\, Verabreichungsweg\, etc.)
-* insert Translation(dosage ^definition, en-US, dose of the medication administration.)
 // MedicationAdministration.dosage.text
 * dosage.text ^short = "Free text dosage instructions e.g. SIG"
 // MedicationAdministration.dosage.site
@@ -238,13 +232,6 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Kontrastmittelgabe"
 * dosage.route.coding[SNOMED].code ^short = "Route of administration as SNOMED CT"
 * insert Translation(dosage.route.coding[SNOMED].code ^short, de-DE, Verabreichungsweg als SNOMED CT)
 * insert Translation(dosage.route.coding[SNOMED].code ^short, en-US, Route of administration as SNOMED CT)
-// MedicationAdministration.dosage.dose
-* dosage.dose ^short = "Dosis"
-* insert Translation(dosage.dose ^short, de-DE, Dosis)
-* insert Translation(dosage.dose ^short, en-US, dose)
-* dosage.dose ^definition = "Dosis der Medikamentenverabreichung."
-* insert Translation(dosage.dose ^definition, de-DE, Dosis der Medikamentenverabreichung.)
-* insert Translation(dosage.dose ^definition, en-US, The amount of medication per dose)
 // MedicationAdministration.dosage.dose.value
 * dosage.dose.value ^short = "Numerical value (with implicit precision)"
 // MedicationAdministration.dosage.dose.unit

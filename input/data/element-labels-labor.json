@@ -1,0 +1,13 @@
+{
+  "_doc": "Module-specific FDPG labels for the 'labor' module.",
+  "elements": {
+    "effective[x].extension:QuelleKlinischesBezugsdatum": {
+      "de_short": "Quelle des klinischen Bezugsdatums",
+      "en_short": "Source of clinical reference date"
+    },
+    "value[x]:valueQuantity.value.extension:quantityPrecision": {
+      "de_short": "Präzision der Quantität",
+      "en_short": "Quantity precision"
+    }
+  }
+}

@@ -73,6 +73,9 @@ Description: "FDPG Profil - MII_PR_Onko_Melanom_Breslow_Tiefe"
 * insert Translation(method ^definition, de-DE, Methode\, mit der die Beobachtung durchgeführt wurde.)
 * insert Translation(method ^definition, en-US, Method used to make the observation.)
 // Observation.method.coding
+* method.coding ^short = "TNM version"
+* insert Translation(method.coding ^short, de-DE, TNM-Version)
+* insert Translation(method.coding ^short, en-US, TNM version)
 * method.coding ^definition = "A reference to a code defined by a terminology system."
 * insert Translation(method.coding ^definition, de-DE, Version nach oBDS 2021 §8.2.)
 * insert Translation(method.coding ^definition, en-US, Version per oBDS 2021 §8.2.)

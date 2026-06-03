@@ -16,6 +16,9 @@ Description: "FDPG Profil - MII_PR_Onko_Melanom_LDH"
 * insert Translation(category ^definition, de-DE, Kategorisierung der Ressource.)
 * insert Translation(category ^definition, en-US, Categorization of the resource.)
 // Observation.category.coding
+* category.coding ^short = "Tumor board type"
+* insert Translation(category.coding ^short, de-DE, Art der Tumorkonferenz)
+* insert Translation(category.coding ^short, en-US, Tumor board type)
 * category.coding ^definition = "A reference to a code defined by a terminology system."
 * insert Translation(category.coding ^definition, de-DE, Art der Tumorkonferenz oder Therapieplanung gemäß oBDS 2021 §18.2.)
 * insert Translation(category.coding ^definition, en-US, Type of tumor board or therapy planning per oBDS 2021 §18.2.)

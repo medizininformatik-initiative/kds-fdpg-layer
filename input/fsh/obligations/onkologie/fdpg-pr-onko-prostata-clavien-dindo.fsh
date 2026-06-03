@@ -44,6 +44,9 @@ Description: "FDPG Profil - MII_PR_Onko_Prostata_Clavien_Dindo"
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
 // Observation.value[x].coding:ClavienDindo
 * value[x].coding[ClavienDindo] ^short = "PSA-Wert"
+* insert Translation(value[x].coding[ClavienDindo] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(value[x].coding[ClavienDindo] ^short, en-US, SNOMED CT coding)
+// Observation.value[x].coding:OBDSPostOPKompl
 // Observation.specimen
 * specimen ^short = "Specimen used for this observation"
 * insert Translation(specimen ^short, de-DE, Probe)

@@ -110,7 +110,37 @@
           }
         ],
         "path": "Observation.extension",
-        "sliceName": "triggeredBy-r5"
+        "sliceName": "triggeredBy-r5",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ausgelöst durch (R5)"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Triggered by (R5)"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Observation.identifier",
@@ -385,7 +415,38 @@
           }
         ],
         "path": "Observation.category.coding",
-        "sliceName": "loinc-observation"
+        "sliceName": "loinc-observation",
+        "short": "LOINC coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Observation.category.coding:observation-category",
@@ -418,7 +479,38 @@
           }
         ],
         "path": "Observation.category.coding",
-        "sliceName": "observation-category"
+        "sliceName": "observation-category",
+        "short": "Observation category coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Beobachtungskategorie-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Observation category coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Observation.category:mibi-category",
@@ -484,7 +576,38 @@
           }
         ],
         "path": "Observation.category.coding",
-        "sliceName": "loinc-observation"
+        "sliceName": "loinc-observation",
+        "short": "LOINC coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Observation.category:mibi-category.coding:observation-category",
@@ -517,7 +640,38 @@
           }
         ],
         "path": "Observation.category.coding",
-        "sliceName": "observation-category"
+        "sliceName": "observation-category",
+        "short": "Observation category coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Beobachtungskategorie-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Observation category coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Observation.category:mibi-category.coding:v2-microbiology",
@@ -550,7 +704,38 @@
           }
         ],
         "path": "Observation.category.coding",
-        "sliceName": "v2-microbiology"
+        "sliceName": "v2-microbiology",
+        "short": "HL7 v2 Microbiology coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "HL7 v2 Mikrobiologie-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "HL7 v2 Microbiology coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Observation.category:mibi-category.coding:v2-microbiology.system",
@@ -687,7 +872,38 @@
           }
         ],
         "path": "Observation.category.coding",
-        "sliceName": "loinc-microbiology-studies"
+        "sliceName": "loinc-microbiology-studies",
+        "short": "LOINC coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Observation.category:mibi-category.coding:loinc-microbiology-studies.system",
@@ -1110,6 +1326,41 @@
                 {
                   "url": "content",
                   "valueString": "Value as numeric quantity with unit (e.g. mmol/L)."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueQuantity.value.extension:quantityPrecision",
+        "path": "Observation.value[x].value.extension",
+        "sliceName": "quantityPrecision",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Präzision der Quantität"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Quantity precision"
                 }
               ]
             }

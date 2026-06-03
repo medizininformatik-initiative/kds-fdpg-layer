@@ -16,9 +16,14 @@ Description: "FDPG Profil - MII_PR_MTB_Tumorausbreitung"
 * insert Translation(category ^definition, de-DE, Kategorisierung der Ressource.)
 * insert Translation(category ^definition, en-US, Categorization of the resource.)
 // Observation.category.coding
+* category.coding ^short = "Tumor board type"
+* insert Translation(category.coding ^short, de-DE, Art der Tumorkonferenz)
+* insert Translation(category.coding ^short, en-US, Tumor board type)
 * category.coding ^definition = "A reference to a code defined by a terminology system."
 * insert Translation(category.coding ^definition, de-DE, Art der Tumorkonferenz oder Therapieplanung gemäß oBDS 2021 §18.2.)
 * insert Translation(category.coding ^definition, en-US, Type of tumor board or therapy planning per oBDS 2021 §18.2.)
+// Observation.category.coding:ErstdiagnoseZeitpunkt
+// Observation.category.coding:MolekularesTumorboardZeitpunkt
 // Observation.code
 * code ^short = "Type of observation (code / type)"
 * insert Translation(code ^short, de-DE, Code)
@@ -55,6 +60,9 @@ Description: "FDPG Profil - MII_PR_MTB_Tumorausbreitung"
 * insert Translation(value[x] ^definition, de-DE, Wert der Beobachtung.)
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
 // Observation.value[x].coding
+* value[x].coding ^short = "Documented consent"
+* insert Translation(value[x].coding ^short, de-DE, Dokumentierter Consent)
+* insert Translation(value[x].coding ^short, en-US, Documented consent)
 * value[x].coding ^definition = "A reference to a code defined by a terminology system."
 * insert Translation(value[x].coding ^definition, de-DE, Dokumentation der Zustimmung oder Ablehnung eines Consents.)
 * insert Translation(value[x].coding ^definition, en-US, Documentation of consent or refusal.)

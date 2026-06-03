@@ -1,6 +1,5 @@
 {
   "_doc": "Module-specific FDPG labels for the 'mtb' (Molecular Tumor Board) module. Keys use FHIR element-id style. Authored per docs/datenkatalog-styleguide-en.md v0.3. MTB, oBDS, HGVS, CTCAE, BRCAness, HRD-Score, MSI, TMB, IHC, ZPM, SNV/CNV, GRCh37/GRCh38, ClinVar, dbSNP, UICC kept as established acronyms.",
-
   "elements": {
     "action.code": {
       "de_short": "Empfohlenes Therapieprotokoll",
@@ -979,6 +978,78 @@
       "en_short": "Diagnosis verification",
       "de_def": "Art der Diagnosesicherung nach oBDS 2021 §5.7.",
       "en_def": "Type of diagnosis verification per oBDS 2021 §5.7."
+    },
+    "extension:LeitlinienbehandlungStatus": {
+      "de_short": "Leitlinienbehandlung Status",
+      "en_short": "Guideline treatment status"
+    },
+    "extension:ReferenzPrimaerdiagnose": {
+      "de_short": "Referenz Primaerdiagnose",
+      "en_short": "Primary diagnosis reference"
+    },
+    "extension:occurredFollowing": {
+      "de_short": "Frühere Tumorerkrankungen",
+      "en_short": "Prior tumor diseases"
+    },
+    "extension:qc": {
+      "de_short": "Antrag GenomicsStudyAnalysis Metrics",
+      "en_short": "Quality control metrics"
+    },
+    "extension:Label": {
+      "de_short": "Label",
+      "en_short": "Label"
+    },
+    "extension:AssociatedParty": {
+      "de_short": "Associated Party",
+      "en_short": "Associated party"
+    },
+    "extension:Ethikvotum": {
+      "de_short": "Ethikvotum",
+      "en_short": "Ethics vote"
+    },
+    "extension:Studienregister": {
+      "de_short": "Studienregister",
+      "en_short": "Study registry"
+    },
+    "extension:Eligibility": {
+      "de_short": "Eligibility",
+      "en_short": "Eligibility"
+    },
+    "extension:Akronym": {
+      "de_short": "Akronym",
+      "en_short": "Acronym"
+    },
+    "extension:Rekrutierung": {
+      "de_short": "Rekrutierung",
+      "en_short": "Recruitment"
+    },
+    "extension:Finanzierung": {
+      "de_short": "Finanzierung",
+      "en_short": "Funding"
+    },
+    "extension:Prioritaet": {
+      "de_short": "Priorität",
+      "en_short": "Priority"
+    },
+    "extension:Publikation": {
+      "de_short": "Empfehlung Publikation",
+      "en_short": "Publication"
+    },
+    "extension:Intention": {
+      "de_short": "Systemische Therapie Intention",
+      "en_short": "Intent"
+    },
+    "extension:StellungZurOp": {
+      "de_short": "Systemische Therapie Stellung zur OP",
+      "en_short": "Position relative to surgery"
+    },
+    "extension:Leitlinie": {
+      "de_short": "Leitlinie Dokumentation",
+      "en_short": "Guideline"
+    },
+    "extension:Evidenzgraduierung": {
+      "de_short": "Empfehlung Evidenzgraduierung",
+      "en_short": "Evidence grade"
     }
   }
 }

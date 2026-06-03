@@ -329,7 +329,38 @@
           }
         ],
         "path": "Observation.code.coding",
-        "sliceName": "loinc"
+        "sliceName": "loinc",
+        "short": "LOINC coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Observation.code.coding:loinc.system",

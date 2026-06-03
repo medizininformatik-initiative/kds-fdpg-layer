@@ -9,6 +9,9 @@ Description: "FDPG Profil - MII_PR_Onko_Strahlentherapie_Bestrahlung_Nuklearmedi
 * insert Translation(^title, en-US, Radiation Therapy Nuclear Medicine)
 // --- Element Designations ---
 // Procedure.extension
+* extension ^short = "Extension"
+* insert Translation(extension ^short, de-DE, Erweiterung)
+* insert Translation(extension ^short, en-US, Extension)
 * extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
 * insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
 * insert Translation(extension ^definition, en-US, FHIR extension.)
@@ -35,10 +38,25 @@ Description: "FDPG Profil - MII_PR_Onko_Strahlentherapie_Bestrahlung_Nuklearmedi
 * insert Translation(extension[Applikationsart] ^definition, en-US, Application type of radiation per oBDS 2021 §14.7.)
 // Procedure.extension:Gesamtdosis
 * extension[Gesamtdosis] ^short = "MII EX Onko Strahlentherapie Bestrahlung Gesamtdosis"
+* insert Translation(extension[Gesamtdosis] ^short, de-DE, Gesamtdosis)
+* insert Translation(extension[Gesamtdosis] ^short, en-US, Total dose)
+* extension[Gesamtdosis] ^definition = "Strahlentherapie: Gesamtdosis einer Bestrahlung"
+* insert Translation(extension[Gesamtdosis] ^definition, de-DE, Gesamtdosis der Bestrahlung gemäß oBDS 2021 §14.5.)
+* insert Translation(extension[Gesamtdosis] ^definition, en-US, Total dose of radiation per oBDS 2021 §14.5.)
 // Procedure.extension:Einzeldosis
 * extension[Einzeldosis] ^short = "MII EX Onko Strahlentherapie Bestrahlung Einzeldosis"
+* insert Translation(extension[Einzeldosis] ^short, de-DE, Einzeldosis)
+* insert Translation(extension[Einzeldosis] ^short, en-US, Single dose)
+* extension[Einzeldosis] ^definition = "Strahlentherapie: Einzeldosis einer Bestrahlung"
+* insert Translation(extension[Einzeldosis] ^definition, de-DE, Einzeldosis der Bestrahlung gemäß oBDS 2021 §14.6.)
+* insert Translation(extension[Einzeldosis] ^definition, en-US, Single dose of radiation per oBDS 2021 §14.6.)
 // Procedure.extension:Boost
 * extension[Boost] ^short = "MII EX Onko Strahlentherapie Bestrahlung Boost"
+* insert Translation(extension[Boost] ^short, de-DE, Boost-Bestrahlung)
+* insert Translation(extension[Boost] ^short, en-US, Boost radiation)
+* extension[Boost] ^definition = "Strahlentherapie: Boost einer Bestrahlung"
+* insert Translation(extension[Boost] ^definition, de-DE, Zusätzliche Boost-Bestrahlung des Tumors gemäß oBDS 2021 §14.10.)
+* insert Translation(extension[Boost] ^definition, en-US, Additional boost radiation of the tumor per oBDS 2021 §14.10.)
 // Procedure.basedOn
 * basedOn ^short = "A request for this procedure"
 * insert Translation(basedOn ^short, de-DE, Basiert auf)
@@ -174,6 +192,11 @@ Description: "FDPG Profil - MII_PR_Onko_Strahlentherapie_Bestrahlung_Nuklearmedi
 * insert Translation(bodySite ^definition, en-US, The body site of the procedure using SNOMED CT including laterality.)
 // Procedure.bodySite.extension:Seitenlokalisation
 * bodySite.extension[Seitenlokalisation] ^short = "MII EX Onko Strahlentherapie Bestrahlung Seitenlokalisation"
+* insert Translation(bodySite.extension[Seitenlokalisation] ^short, de-DE, Seitenlokalisation)
+* insert Translation(bodySite.extension[Seitenlokalisation] ^short, en-US, Laterality)
+* bodySite.extension[Seitenlokalisation] ^definition = "Strahlentherapie: Seitenlokalisation einer Bestrahlung"
+* insert Translation(bodySite.extension[Seitenlokalisation] ^definition, de-DE, Seitenlokalisation der Bestrahlung gemäß oBDS 2021.)
+* insert Translation(bodySite.extension[Seitenlokalisation] ^definition, en-US, Laterality of the radiation site per oBDS 2021.)
 // Procedure.bodySite.coding
 * bodySite.coding ^short = "Zielgebiet"
 * insert Translation(bodySite.coding ^short, de-DE, Zielgebiet)

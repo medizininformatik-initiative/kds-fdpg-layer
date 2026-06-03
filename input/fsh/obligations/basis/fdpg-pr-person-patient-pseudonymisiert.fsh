@@ -34,6 +34,8 @@ Description: "FDPG Profil - MII_PR_Person_PatientPseudonymisiert"
 * identifier[MaskierterVersichertenIdentifer].value ^short = "The value that is unique"
 // Patient.identifier:MaskierterVersichertenIdentifer.value.extension:data-absent-reason
 * identifier[MaskierterVersichertenIdentifer].value.extension[data-absent-reason] ^short = "unknown | asked | temp | notasked | masked | unsupported | astext | error"
+* insert Translation(identifier[MaskierterVersichertenIdentifer].value.extension[data-absent-reason] ^short, de-DE, Grund für fehlende Angabe)
+* insert Translation(identifier[MaskierterVersichertenIdentifer].value.extension[data-absent-reason] ^short, en-US, Data absent reason)
 // Patient.identifier:MaskierterVersichertenIdentifer.assigner
 * identifier[MaskierterVersichertenIdentifer].assigner ^short = "Organization that issued id (may be just text)"
 // Patient.identifier:MaskierterVersichertenIdentifer.assigner.identifier

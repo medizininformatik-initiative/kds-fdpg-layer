@@ -10,6 +10,8 @@ Description: "FDPG Profil - MII_PR_Dokument_Dokument"
 // --- Element Designations ---
 // DocumentReference.extension:nlp-processing-status
 * extension[nlp-processing-status] ^short = "NLP Processing Status"
+* insert Translation(extension[nlp-processing-status] ^short, de-DE, NLP-Verarbeitungsstatus)
+* insert Translation(extension[nlp-processing-status] ^short, en-US, NLP processing status)
 // DocumentReference.masterIdentifier
 * masterIdentifier ^short = "Versionsspezifische OID des Dokuments"
 // DocumentReference.identifier
@@ -35,6 +37,22 @@ Description: "FDPG Profil - MII_PR_Dokument_Dokument"
 * type ^definition = "Charakterisierung der Dokumentart im Detail. Die Angabe ist dringend empfohlen [SHALL]."
 * insert Translation(type ^definition, de-DE, Typ oder Art der Ressource.)
 * insert Translation(type ^definition, en-US, Type or kind of the resource.)
+// DocumentReference.type.coding:KDL
+* type.coding[KDL] ^short = "KDL coding"
+* insert Translation(type.coding[KDL] ^short, de-DE, KDL-Kodierung)
+* insert Translation(type.coding[KDL] ^short, en-US, KDL coding)
+// DocumentReference.type.coding:LNC
+* type.coding[LNC] ^short = "LOINC coding"
+* insert Translation(type.coding[LNC] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(type.coding[LNC] ^short, en-US, LOINC coding)
+// DocumentReference.type.coding:SCT
+* type.coding[SCT] ^short = "SNOMED CT coding"
+* insert Translation(type.coding[SCT] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(type.coding[SCT] ^short, en-US, SNOMED CT coding)
+// DocumentReference.type.coding:XDS
+* type.coding[XDS] ^short = "IHE XDS Type Code coding"
+* insert Translation(type.coding[XDS] ^short, de-DE, IHE XDS Type Code-Kodierung)
+* insert Translation(type.coding[XDS] ^short, en-US, IHE XDS Type Code coding)
 // DocumentReference.category
 * category ^short = "Charakterisierung der Dokumentenart in Übersicht"
 * insert Translation(category ^short, de-DE, Kategorie)
@@ -42,6 +60,18 @@ Description: "FDPG Profil - MII_PR_Dokument_Dokument"
 * category ^definition = "Charakterisierung der Dokumentenart in Übersicht. Die Angabe ist dringend empfohlen [SHALL]."
 * insert Translation(category ^definition, de-DE, Kategorisierung der Ressource.)
 * insert Translation(category ^definition, en-US, Categorization of the resource.)
+// DocumentReference.category.coding:LNC
+* category.coding[LNC] ^short = "LOINC coding"
+* insert Translation(category.coding[LNC] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(category.coding[LNC] ^short, en-US, LOINC coding)
+// DocumentReference.category.coding:SCT
+* category.coding[SCT] ^short = "SNOMED CT coding"
+* insert Translation(category.coding[SCT] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(category.coding[SCT] ^short, en-US, SNOMED CT coding)
+// DocumentReference.category.coding:XDS
+* category.coding[XDS] ^short = "IHE XDS Class Code coding"
+* insert Translation(category.coding[XDS] ^short, de-DE, IHE XDS Class Code-Kodierung)
+* insert Translation(category.coding[XDS] ^short, en-US, IHE XDS Class Code coding)
 // DocumentReference.subject
 * subject ^short = "Referenz auf den Patient des Dokumentes"
 * insert Translation(subject ^short, de-DE, Patient*in)

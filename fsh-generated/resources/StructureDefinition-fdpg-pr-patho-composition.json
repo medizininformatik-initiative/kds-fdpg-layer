@@ -345,7 +345,38 @@
           }
         ],
         "path": "Composition.type.coding",
-        "sliceName": "KDL"
+        "sliceName": "KDL",
+        "short": "KDL coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "KDL-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "KDL coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Composition.type.coding:XDS",
@@ -378,7 +409,38 @@
           }
         ],
         "path": "Composition.type.coding",
-        "sliceName": "XDS"
+        "sliceName": "XDS",
+        "short": "IHE XDS Type Code coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "IHE XDS Type Code-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "IHE XDS Type Code coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Composition.type.coding:sct",
@@ -606,7 +668,38 @@
           }
         ],
         "path": "Composition.category.coding",
-        "sliceName": "LOINC"
+        "sliceName": "LOINC",
+        "short": "LOINC coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Composition.category.coding:IHE",
@@ -639,7 +732,38 @@
           }
         ],
         "path": "Composition.category.coding",
-        "sliceName": "IHE"
+        "sliceName": "IHE",
+        "short": "IHE XDS Class Code coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "IHE XDS Class Code-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "IHE XDS Class Code coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Composition.category.coding:sct",

@@ -23,13 +23,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `gender` | AdministrativesGeschlecht | Administratives Geschlecht der Person | Administratives Geschlecht | männlich \| weiblich \| andere \| unbekannt \| unbestimmt \| divers |  |
 | `gender.extension:other-amtlich` | AdministrativesGeschlecht | Administratives Geschlecht der Person | Extension Administratives Geschlecht | Extension zur genaueren Differenzierung des administrativen Geschlechts |  |
 | `birthDate` | Geburtsdatum | Geburtsdatum des Person. | Geburtsdatum | Das Geburtsdatum der Patientin oder des Patienten |  |
-| `birthDate.extension:data-absent-reason` | Geburtsdatum | Geburtsdatum des Person. | unknown \| asked \| temp \| notasked \| masked \| unsupported \| astext \| error | Provides a reason why the expected value or elements in the element that is extended are missing. |  |
+| `birthDate.extension:data-absent-reason` | Geburtsdatum | Geburtsdatum des Person. | Grund für fehlende Angabe | Provides a reason why the expected value or elements in the element that is extended are missing. |  |
 | `deceased[x]` | PatientVerstorben, Todeszeitpunkt | Gibt an, ob der Patient am Leben oder verstorben ist. | Verstorben | Gibt an, ob die Person verstorben ist oder nicht | ✓ |
 | `address` | Adresse | Vollständige Anschrift einer Person für die postlische Kommunikation. | Adresse | Eine Adresse der Patientin oder des Patienten |  |
 | `address:Strassenanschrift` | Adresse | Vollständige Anschrift einer Person für die postlische Kommunikation. | Straßenanschrift | Eine Straßenanschrift der Patientin oder des Patienten |  |
-| `address:Strassenanschrift.extension:Stadtteil` | Adresse | Vollständige Anschrift einer Person für die postlische Kommunikation. | Stadt- oder Ortsteil | A subsection of a municipality. |  |
+| `address:Strassenanschrift.extension:Stadtteil` | Adresse | Vollständige Anschrift einer Person für die postlische Kommunikation. | Stadtteil | A subsection of a municipality. |  |
 | `address:Postfach` | Adresse | Vollständige Anschrift einer Person für die postlische Kommunikation. | Postfach | Eine Postfachanschrift der Patientin oder des Patienten |  |
-| `address:Postfach.extension:Stadtteil` | Adresse | Vollständige Anschrift einer Person für die postlische Kommunikation. | Stadt- oder Ortsteil | A subsection of a municipality. |  |
+| `address:Postfach.extension:Stadtteil` | Adresse | Vollständige Anschrift einer Person für die postlische Kommunikation. | Stadtteil | A subsection of a municipality. |  |
 | `link` |  |  | Verweis | Verweis auf eine andere Patientenressource, die die gleiche tatsächliche Person betrifft |  |
 
 #### Patient / Patientin pseudonymisiert (Patient)
@@ -39,8 +39,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
 |---|---|---|---|---|---|
 | `identifier` | PatientenIdentifikator, Pseudonym | Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als "Codesystem" gesehen werden, und Patienten-Identifikator als "Code" | Identifikator | Ein Identifikator für den/die Patient\*in |  |
-| `identifier:PseudonymisierterIdentifier` | PatientenIdentifikator, Pseudonym | Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als "Codesystem" gesehen werden, und Patienten-Identifikator als "Code" | Identifikator | Identifikator dieser Ressource. |  |
-| `identifier:AnonymisierterIdentifier` | PatientenIdentifikator, Pseudonym | Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als "Codesystem" gesehen werden, und Patienten-Identifikator als "Code" | Identifikator | Identifikator dieser Ressource. |  |
+| `identifier:PseudonymisierterIdentifier` | PatientenIdentifikator, Pseudonym | Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als "Codesystem" gesehen werden, und Patienten-Identifikator als "Code" | Pseudonymisierter Identifikator | Ein Pseudonym ersetzt einen Originalwert. Die Verarbeitung ist umkehrbar. Zusätzliche Informationen sind erforderlich, um den Originalwert zu rekonstruieren, bspw. eine Trusted Third Party. |  |
+| `identifier:AnonymisierterIdentifier` | PatientenIdentifikator, Pseudonym | Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als "Codesystem" gesehen werden, und Patienten-Identifikator als "Code" | Anonymisierter Identifikator | Ein Anonymisierter Identifikator ersetzt einen Originalwert. Die Verarbeitung ist unumkehrbar. Der Originalwert kann nicht oder nur mit unverhältnismäßigem Aufwand rekonstruiert werden. |  |
 | `identifier:MaskierterVersichertenIdentifer` | PatientenIdentifikator, Pseudonym | Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als "Codesystem" gesehen werden, und Patienten-Identifikator als "Code" | Maskierter Identifier der Krankenversicherten-ID | Identifier der Krankenversichertennummer, bei dem der Wert maskiert wurde. |  |
 | `active` |  |  | Aktiv | Gibt an, ob diese Patient-Ressource aktiv verwendet wird. |  |
 | `gender` | AdministrativesGeschlecht | Administratives Geschlecht der Person | Administratives Geschlecht | männlich \| weiblich \| andere \| unbekannt \| unbestimmt \| divers |  |
@@ -57,7 +57,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|---|---|---|
 | `status` |  |  | Status | abgeschlossen |  |
 | `category` |  |  | Kategorie | Klassifikation des Typs der Beobachtung für den Vitalstatus. |  |
-| `category:survey` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `category:survey` |  |  | Classification of type of observation | A code that classifies the general type of observation being made. |  |
 | `code` |  |  | Code | Ein LOINC Code, der die Vitalstatus Beobachtung identifiziert. | ✓ |
 | `code.coding:loinc` |  |  | LOINC | Kodierung nach LOINC. |  |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
@@ -76,7 +76,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `clinicalStatus` | KlinischerStatus | aktiv, Rezidiv, Rückfall, inaktiv, Remission, geheilt | Klinischer Status | aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen | ✓ |
 | `verificationStatus` |  |  | Verifizierungsstatus | unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe | ✓ |
 | `category` |  |  | Kategorie | Eine Kategorie, die der Diagnose zugeordnet ist. |  |
-| `category:todesDiagnose` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `category:todesDiagnose` |  |  | problem-list-item \| encounter-diagnosis | A category assigned to the condition. |  |
 | `category:todesDiagnose.coding:snomed` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |  |
 | `category:todesDiagnose.coding:loinc` |  |  | LOINC | Kodierung nach LOINC. |  |
 | `code` | ICD10GMDiagnoseKodiert, Diagnosecode, ... | Im Bereich der administrativen und statistischen Auswertung wird die Diagnose mit Hilfe von Codiersystemen verschlüsselt. So wird z.B. bei der Abrechnung nach §301 und §295 SGB V die Codierung von ... | Code | Ein ICD-10-WHO Code, der die Todesursache identifiziert. | ✓ |
@@ -94,7 +94,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
 |---|---|---|---|---|---|
-| `extension:ReferenzPrimaerdiagnose` |  |  | Erweiterung | FHIR-Erweiterung. | ✓ |
+| `extension:ReferenzPrimaerdiagnose` |  |  | Referenz Primaerdiagnose | This condition has an unspecified relationship with another condition. | ✓ |
 | `extension:Feststellungsdatum` | Feststellungsdatum | Das Datum ist der Zeitpunkt, an dem eine Krankheit z. B. durch einen Arzt festgestellt wurde. Dies wird im Folgenden mit Diagnosedatum bezeichnet. | Feststellungsdatum | Datum, an dem die Diagnose erstmals festgestellt wurde |  |
 | `clinicalStatus` | KlinischerStatus | aktiv, Rezidiv, Rückfall, inaktiv, Remission, geheilt | Klinischer Status | aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen | ✓ |
 | `verificationStatus` |  |  | Verifizierungsstatus | unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe | ✓ |
@@ -108,9 +108,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Diagnose erstellt wurde oder mit dem die Diagnose in Zusammenhang steht. |  |
 | `onset[x]` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Beginn | Geschätztes oder tatsächliches Datum oder Zeitraum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. | ✓ |
-| `onset[x]:onsetPeriod` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |  |
-| `onset[x]:onsetDateTime` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |  |
-| `onset[x]:onsetAge` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |  |
+| `onset[x]:onsetPeriod` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Beginn Zeitraum | Der Zeitraum, in dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |  |
+| `onset[x]:onsetDateTime` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Beginn Datum | Das Datum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |  |
+| `onset[x]:onsetAge` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Erkrankungsbeginn als Alter | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |  |
 | `recordedDate` | Dokumentationsdatum | Das Datum ist der Zeitpunkt, an dem eine Krankheit z. B. durch einen Arzt dokumentiert wurde. Hinweis: Wenn zwischen Feststellung der Diagnose und Dokumentationsdatum nicht unterschieden werden mus... | Aufzeichnungsdatum | Datum, an dem die Diagnose erstmals dokumentiert wurde. | ✓ |
 | `note` | Diagnoseerlaeuterung | Damit soll dem Arzt die Möglichkeit gegeben werden, umfangreichere Angaben zusätzlich zu einer Diagnose abzufassen. | Hinweis | Zusätzliche Informationen zur Diagnose als Freitext. |  |
 
@@ -185,13 +185,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `gender` | Administrative gender | male \| female \| other \| unknown \| undetermined \| diverse |
 | `gender.extension:other-amtlich` | Extension administrative gender | Extension for detailed differentiation of administrative gender |
 | `birthDate` | Date of birth | The date of birth for the individual |
-| `birthDate.extension:data-absent-reason` | unknown \| asked \| temp \| notasked \| masked \| unsupported \| astext \| error | Provides a reason why the expected value or elements in the element that is extended are missing. |
+| `birthDate.extension:data-absent-reason` | Data absent reason | Provides a reason why the expected value or elements in the element that is extended are missing. |
 | `deceased[x]` | Deceased | Indicates if the individual is deceased or not |
 | `address` | Address | An address for the individual |
 | `address:Strassenanschrift` | Street address | A street address for the individual |
-| `address:Strassenanschrift.extension:Stadtteil` | Stadt- oder Ortsteil | A subsection of a municipality. |
+| `address:Strassenanschrift.extension:Stadtteil` | District | A subsection of a municipality. |
 | `address:Postfach` | Postbox | A postbox address for the individual |
-| `address:Postfach.extension:Stadtteil` | Stadt- oder Ortsteil | A subsection of a municipality. |
+| `address:Postfach.extension:Stadtteil` | District | A subsection of a municipality. |
 | `link` | Link | Link to another patient resource that concerns the same actual person |
 
 </details>
@@ -202,8 +202,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `identifier` | Identifier | An identifier for this patient |
-| `identifier:PseudonymisierterIdentifier` | Identifier | Identifier for this resource. |
-| `identifier:AnonymisierterIdentifier` | Identifier | Identifier for this resource. |
+| `identifier:PseudonymisierterIdentifier` | Pseudonymisierter Identifikator | Ein Pseudonym ersetzt einen Originalwert. Die Verarbeitung ist umkehrbar. Zusätzliche Informationen sind erforderlich, um den Originalwert zu rekonstruieren, bspw. eine Trusted Third Party. |
+| `identifier:AnonymisierterIdentifier` | Anonymisierter Identifikator | Ein Anonymisierter Identifikator ersetzt einen Originalwert. Die Verarbeitung ist unumkehrbar. Der Originalwert kann nicht oder nur mit unverhältnismäßigem Aufwand rekonstruiert werden. |
 | `identifier:MaskierterVersichertenIdentifer` | Masked identifier of the health insurance ID | Health insurance number identifier with masked value. |
 | `active` | Active | Whether this patient's record is in active use |
 | `gender` | Administrative gender | male \| female \| other \| unknown \| undetermined \| diverse |
@@ -221,7 +221,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `status` | Status | completed |
 | `category` | Category | Classification of type of observation for vital status. |
-| `category:survey` | Category | Categorization of the resource. |
+| `category:survey` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | A LOINC code identifying the vital status observation. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
 | `subject` | Patient | The patient that the resource relates to. |
@@ -241,7 +241,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `clinicalStatus` | Clinical status | active \| recurrence \| relapse \| inactive \| remission \| resolved |
 | `verificationStatus` | Verification status | unconfirmed \| provisional \| differential \| confirmed \| refuted \| entered-in-error |
 | `category` | Category | A category assigned to the condition. |
-| `category:todesDiagnose` | Category | Categorization of the resource. |
+| `category:todesDiagnose` | problem-list-item \| encounter-diagnosis | A category assigned to the condition. |
 | `category:todesDiagnose.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
 | `category:todesDiagnose.coding:loinc` | LOINC | Coding in LOINC. |
 | `code` | Code | An ICD-10-WHO code identifying the cause of death. |
@@ -258,7 +258,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:ReferenzPrimaerdiagnose` | Extension | FHIR extension. |
+| `extension:ReferenzPrimaerdiagnose` | Primary diagnosis reference | This condition has an unspecified relationship with another condition. |
 | `extension:Feststellungsdatum` | Asserted date | Date the condition was first asserted |
 | `clinicalStatus` | Clinical status | active \| recurrence \| relapse \| inactive \| remission \| resolved |
 | `verificationStatus` | Verification status | unconfirmed \| provisional \| differential \| confirmed \| refuted \| entered-in-error |
@@ -272,9 +272,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Condition was created or to which the creation of this record is tightly associated. |
 | `onset[x]` | Onset | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
-| `onset[x]:onsetPeriod` | Onset | Date or period when the condition first appeared. |
-| `onset[x]:onsetDateTime` | Onset | Date or period when the condition first appeared. |
-| `onset[x]:onsetAge` | Onset | Date or period when the condition first appeared. |
+| `onset[x]:onsetPeriod` | Beginn Zeitraum | Der Zeitraum, in dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
+| `onset[x]:onsetDateTime` | Beginn Datum | Das Datum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
+| `onset[x]:onsetAge` | Erkrankungsbeginn als Alter | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
 | `recordedDate` | Recorded date | Date when the diagnosis was first recorded. |
 | `note` | Note | Additional information about the diagnosis as free text. |
 

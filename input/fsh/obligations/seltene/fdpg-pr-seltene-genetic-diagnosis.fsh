@@ -10,6 +10,8 @@ Description: "FDPG Profil - MII_PR_Seltene_GeneticDiagnosis"
 // --- Element Designations ---
 // Condition.extension:ReferenzPrimaerdiagnose
 * extension[ReferenzPrimaerdiagnose] ^short = "Conditions associated with this condition"
+* insert Translation(extension[ReferenzPrimaerdiagnose] ^short, de-DE, Referenz Primaerdiagnose)
+* insert Translation(extension[ReferenzPrimaerdiagnose] ^short, en-US, Primary diagnosis reference)
 // Condition.extension:Feststellungsdatum
 * extension[Feststellungsdatum] ^short = "Feststellungsdatum"
 * insert Translation(extension[Feststellungsdatum] ^short, de-DE, Feststellungsdatum)
@@ -19,6 +21,8 @@ Description: "FDPG Profil - MII_PR_Seltene_GeneticDiagnosis"
 * insert Translation(extension[Feststellungsdatum] ^definition, en-US, Date the condition was first asserted)
 // Condition.extension:penetrance
 * extension[penetrance] ^short = "Penetranz der genetischen Variante"
+* insert Translation(extension[penetrance] ^short, de-DE, Penetranz der genetischen Variante)
+* insert Translation(extension[penetrance] ^short, en-US, Penetrance)
 // Condition.clinicalStatus
 * clinicalStatus ^short = "Klinischer Status"
 * insert Translation(clinicalStatus ^short, de-DE, Klinischer Status)
@@ -119,6 +123,8 @@ Description: "FDPG Profil - MII_PR_Seltene_GeneticDiagnosis"
 * insert Translation(code.coding[orphanet].code ^short, en-US, Code as Orphanet)
 // Condition.code.coding:omim
 * code.coding[omim] ^short = "OMIM disease code"
+* insert Translation(code.coding[omim] ^short, de-DE, OMIM-Kodierung)
+* insert Translation(code.coding[omim] ^short, en-US, OMIM coding)
 // Condition.code.coding:omim.system
 * code.coding[omim].system ^short = "OMIM system URL"
 * insert Translation(code.coding[omim].system ^short, de-DE, OMIM-System-URL)
@@ -158,6 +164,9 @@ Description: "FDPG Profil - MII_PR_Seltene_GeneticDiagnosis"
 * insert Translation(bodySite.coding[snomed-ct].code ^short, de-DE, Körperstelle als SNOMED CT)
 * insert Translation(bodySite.coding[snomed-ct].code ^short, en-US, Body site as SNOMED CT)
 // Condition.subject
+* subject ^short = "Patient"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
 * subject ^definition = "Indicates the patient or group who the condition record is associated with."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
 * insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
@@ -203,12 +212,24 @@ Description: "FDPG Profil - MII_PR_Seltene_GeneticDiagnosis"
 * stage ^short = "Stage/grade, usually assessed formally"
 // Condition.evidence
 * evidence ^short = "Genetic evidence supporting the diagnosis"
+* insert Translation(evidence ^short, de-DE, Evidenz)
+* insert Translation(evidence ^short, en-US, Evidence)
+* evidence ^definition = "Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition."
+* insert Translation(evidence ^definition, de-DE, Hinweise oder Befunde\, die den Verifizierungsstatus der Diagnose stützen.)
+* insert Translation(evidence ^definition, en-US, Manifestations or evidence supporting the verification status of the condition.)
 // Condition.evidence.code
 * evidence.code ^short = "Type of genetic evidence"
 // Condition.evidence.code.coding:geneticEvidence
 * evidence.code.coding[geneticEvidence] ^short = "Indicates genetic evidence"
+* insert Translation(evidence.code.coding[geneticEvidence] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(evidence.code.coding[geneticEvidence] ^short, en-US, SNOMED CT coding)
 // Condition.evidence.detail
 * evidence.detail ^short = "Reference to MolGen Variant or Diagnostic Implication"
+* insert Translation(evidence.detail ^short, de-DE, Belege)
+* insert Translation(evidence.detail ^short, en-US, Supporting observations)
+* evidence.detail ^definition = "Must reference either MII PR MolGen Variante or MII PR MolGen DiagnostischeImplikation resources that contain the genetic findings supporting this diagnosis"
+* insert Translation(evidence.detail ^definition, de-DE, Referenzen auf einzelne Beobachtungen\, die die Diagnose stützen.)
+* insert Translation(evidence.detail ^definition, en-US, References to individual observations that support the diagnosis.)
 // Condition.note
 * note ^short = "Hinweis"
 * insert Translation(note ^short, de-DE, Hinweis)

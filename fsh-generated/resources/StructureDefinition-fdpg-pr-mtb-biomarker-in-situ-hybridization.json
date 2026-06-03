@@ -1620,6 +1620,37 @@
         ],
         "path": "Observation.component",
         "sliceName": "gene-studied",
+        "short": "Gene studied",
+        "_short": {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Untersuchtes Gen"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Gene studied"
+                }
+              ]
+            }
+          ]
+        },
         "_definition": {
           "extension": [
             {

@@ -22,6 +22,10 @@ Description: "FDPG Profil - MII_PR_MTB_Ploidie"
 * code ^definition = "Ploidie der Tumorprobe"
 * insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
+// Observation.code.coding:NCIT
+* code.coding[NCIT] ^short = "NCIt coding"
+* insert Translation(code.coding[NCIT] ^short, de-DE, NCIt-Kodierung)
+* insert Translation(code.coding[NCIT] ^short, en-US, NCIt coding)
 // Observation.subject
 * subject ^short = "Patient"
 * insert Translation(subject ^short, de-DE, Patient)

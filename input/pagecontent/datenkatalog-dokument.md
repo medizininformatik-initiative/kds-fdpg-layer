@@ -10,7 +10,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `extension:nlp-processing-status` | Erweiterung | FHIR-Erweiterung. |
+| `extension:nlp-processing-status` | NLP-Verarbeitungsstatus | Status der NLP-Verarbeitung des referenzierten Dokuments |
 | `masterIdentifier` | Versionsspezifische OID des Dokuments | Versionsspezifische OID des Dokuments. Die Angabe ist dringend empfohlen [SHALL]. |
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | Status der Ressource. |
@@ -18,11 +18,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `type` | Typ | Typ oder Art der Ressource. |
 | `type.coding:KDL` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
 | `type.coding:LNC` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `type.coding:SCT` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `type.coding:SCT` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `type.coding:XDS` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `category.coding:LNC` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `category.coding:SCT` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:SCT` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `category.coding:XDS` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `relatesTo` | Beziehung des Dokuments | Beziehungen des verwiesenen Dokuments zu anderen Dokumenten. |
@@ -42,7 +42,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:nlp-processing-status` | Extension | FHIR extension. |
+| `extension:nlp-processing-status` | NLP processing status | Status der NLP-Verarbeitung des referenzierten Dokuments |
 | `masterIdentifier` | Versionsspezifische OID des Dokuments | Versionsspezifische OID des Dokuments. Die Angabe ist dringend empfohlen [SHALL]. |
 | `identifier` | Identifier | Identifier for this resource. |
 | `status` | Status | Status of the resource. |
@@ -50,11 +50,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `type` | Type | Type or kind of the resource. |
 | `type.coding:KDL` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
 | `type.coding:LNC` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `type.coding:SCT` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `type.coding:SCT` | SNOMED CT | Coding in SNOMED CT. |
 | `type.coding:XDS` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
 | `category` | Category | Categorization of the resource. |
 | `category.coding:LNC` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `category.coding:SCT` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `category.coding:SCT` | SNOMED CT | Coding in SNOMED CT. |
 | `category.coding:XDS` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `relatesTo` | Beziehung des Dokuments | Beziehungen des verwiesenen Dokuments zu anderen Dokumenten. |

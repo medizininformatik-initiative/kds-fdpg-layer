@@ -110,7 +110,8 @@
           }
         ],
         "path": "Organization.extension",
-        "sliceName": "beschreibung"
+        "sliceName": "beschreibung",
+        "short": "Description of the collection/biobank"
       },
       {
         "id": "Organization.extension:collectionSetting",
@@ -143,7 +144,37 @@
           }
         ],
         "path": "Organization.extension",
-        "sliceName": "collectionSetting"
+        "sliceName": "collectionSetting",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Probenentnahme-Setting"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Collection setting"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Organization.extension:collectionDesign",
@@ -176,7 +207,37 @@
           }
         ],
         "path": "Organization.extension",
-        "sliceName": "collectionDesign"
+        "sliceName": "collectionDesign",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Sammlungsdesign"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Collection design"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Organization.identifier",
@@ -301,7 +362,8 @@
           }
         ],
         "path": "Organization.identifier",
-        "sliceName": "bbmri-eric-id"
+        "sliceName": "bbmri-eric-id",
+        "short": "BBMRI-ERIC ID"
       },
       {
         "id": "Organization.name",
@@ -333,7 +395,8 @@
             ]
           }
         ],
-        "path": "Organization.name"
+        "path": "Organization.name",
+        "short": "Name"
       },
       {
         "id": "Organization.alias",
@@ -365,7 +428,8 @@
             ]
           }
         ],
-        "path": "Organization.alias"
+        "path": "Organization.alias",
+        "short": "Acronym"
       },
       {
         "id": "Organization.partOf",
@@ -397,7 +461,8 @@
             ]
           }
         ],
-        "path": "Organization.partOf"
+        "path": "Organization.partOf",
+        "short": "Part of"
       },
       {
         "id": "Organization.contact",
@@ -495,7 +560,37 @@
           }
         ],
         "path": "Organization.contact.extension",
-        "sliceName": "rolle"
+        "sliceName": "rolle",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "rolle"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Role"
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   }

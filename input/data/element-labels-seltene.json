@@ -1,6 +1,5 @@
 {
   "_doc": "Module-specific FDPG labels for the 'seltene' (rare diseases) module. Keys use FHIR element-id style (without resource type prefix). Used by enrich-fsh-translations.py as priority-2 override after canonical-labels.json. Authored per docs/datenkatalog-styleguide-en.md v0.3.",
-
   "elements": {
     "date": {
       "de_short": "Datum",
@@ -38,7 +37,6 @@
       "de_def": "Geschlecht des Familienangehörigen.",
       "en_def": "Sex of the family member."
     },
-
     "reasonCode.coding": {
       "de_short": "Kodierung",
       "en_short": "Coding",
@@ -123,7 +121,6 @@
       "de_def": "Der Orphanet-Code.",
       "en_def": "The Orphanet code."
     },
-
     "condition": {
       "de_short": "Erkrankung",
       "en_short": "Condition",
@@ -225,6 +222,38 @@
       "en_short": "MONDO coding",
       "de_def": "Kodierung der Erkrankung nach MONDO.",
       "en_def": "Coding of the condition by MONDO."
+    },
+    "extension:ReferenzPrimaerdiagnose": {
+      "de_short": "Referenz Primaerdiagnose",
+      "en_short": "Primary diagnosis reference"
+    },
+    "extension:vonSEBetroffen": {
+      "de_short": "Gibt an, ob das Familienmitglied von der gleichen seltenen Erkrankung betroffen ist",
+      "en_short": "Affected by same rare disease"
+    },
+    "condition.extension:penetrance": {
+      "de_short": "penetrance",
+      "en_short": "Penetrance"
+    },
+    "extension:penetrance": {
+      "de_short": "Penetranz der genetischen Variante",
+      "en_short": "Penetrance"
+    },
+    "extension:statusReason": {
+      "de_short": "status Reason",
+      "en_short": "status Reason"
+    },
+    "extension:Prioritaet": {
+      "de_short": "Priorität",
+      "en_short": "Priority"
+    },
+    "extension:Publikation": {
+      "de_short": "Empfehlung Publikation",
+      "en_short": "Publication"
+    },
+    "extension:Evidenzgraduierung": {
+      "de_short": "Empfehlung Evidenzgraduierung",
+      "en_short": "Evidence grade"
     }
   }
 }

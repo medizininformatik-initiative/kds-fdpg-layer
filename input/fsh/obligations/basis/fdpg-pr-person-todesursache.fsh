@@ -31,6 +31,14 @@ Description: "FDPG Profil - MII_PR_Person_Todesursache"
 * insert Translation(category ^definition, en-US, A category assigned to the condition.)
 // Condition.category:todesDiagnose
 * category[todesDiagnose] ^short = "problem-list-item | encounter-diagnosis"
+// Condition.category:todesDiagnose.coding:snomed
+* category[todesDiagnose].coding[snomed] ^short = "SNOMED CT coding"
+* insert Translation(category[todesDiagnose].coding[snomed] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(category[todesDiagnose].coding[snomed] ^short, en-US, SNOMED CT coding)
+// Condition.category:todesDiagnose.coding:loinc
+* category[todesDiagnose].coding[loinc] ^short = "LOINC coding"
+* insert Translation(category[todesDiagnose].coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(category[todesDiagnose].coding[loinc] ^short, en-US, LOINC coding)
 // Condition.code
 * code ^short = "Code"
 * insert Translation(code ^short, de-DE, Code)
@@ -40,6 +48,8 @@ Description: "FDPG Profil - MII_PR_Person_Todesursache"
 * insert Translation(code ^definition, en-US, An ICD-10-WHO code identifying the cause of death.)
 // Condition.code.coding:icd10-who
 * code.coding[icd10-who] ^short = "ICD-10-WHO"
+* insert Translation(code.coding[icd10-who] ^short, de-DE, ICD-10 (WHO\)-Kodierung)
+* insert Translation(code.coding[icd10-who] ^short, en-US, ICD-10 (WHO\) coding)
 // Condition.code.coding:icd10-who.system
 * code.coding[icd10-who].system ^short = "ICD-10 (WHO) system URL"
 * insert Translation(code.coding[icd10-who].system ^short, de-DE, ICD-10 (WHO\)-System-URL)
@@ -53,6 +63,9 @@ Description: "FDPG Profil - MII_PR_Person_Todesursache"
 * insert Translation(code.coding[icd10-who].code ^short, de-DE, Code als ICD-10 (WHO\))
 * insert Translation(code.coding[icd10-who].code ^short, en-US, Code as ICD-10 (WHO\))
 // Condition.subject
+* subject ^short = "Patient"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
 * subject ^definition = "Indicates the patient or group who the condition record is associated with."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
 * insert Translation(subject ^definition, en-US, The patient that the resource relates to.)

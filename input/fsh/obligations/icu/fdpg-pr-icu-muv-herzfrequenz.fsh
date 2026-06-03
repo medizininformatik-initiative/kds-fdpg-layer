@@ -47,6 +47,10 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Herzfrequenz"
 * code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\"."
 * insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
+// Observation.code.coding:sct
+* code.coding[sct] ^short = "SNOMED CT coding"
+* insert Translation(code.coding[sct] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(code.coding[sct] ^short, en-US, SNOMED CT coding)
 // Observation.code.coding:sct.system
 * code.coding[sct].system ^short = "SNOMED CT system URL"
 * insert Translation(code.coding[sct].system ^short, de-DE, SNOMED CT-System-URL)
@@ -55,6 +59,10 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Herzfrequenz"
 * code.coding[sct].code ^short = "Code as SNOMED CT"
 * insert Translation(code.coding[sct].code ^short, de-DE, Code als SNOMED CT)
 * insert Translation(code.coding[sct].code ^short, en-US, Code as SNOMED CT)
+// Observation.code.coding:loinc
+* code.coding[loinc] ^short = "LOINC coding"
+* insert Translation(code.coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[loinc] ^short, en-US, LOINC coding)
 // Observation.code.coding:loinc.system
 * code.coding[loinc].system ^short = "LOINC system URL"
 * insert Translation(code.coding[loinc].system ^short, de-DE, LOINC-System-URL)
@@ -63,6 +71,10 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Herzfrequenz"
 * code.coding[loinc].code ^short = "Code as LOINC"
 * insert Translation(code.coding[loinc].code ^short, de-DE, Code als LOINC)
 * insert Translation(code.coding[loinc].code ^short, en-US, Code as LOINC)
+// Observation.code.coding:IEEE-11073
+* code.coding[IEEE-11073] ^short = "IEEE 11073 coding"
+* insert Translation(code.coding[IEEE-11073] ^short, de-DE, IEEE 11073-Kodierung)
+* insert Translation(code.coding[IEEE-11073] ^short, en-US, IEEE 11073 coding)
 // Observation.code.coding:IEEE-11073.system
 * code.coding[IEEE-11073].system ^short = "IEEE 11073 system URL"
 * insert Translation(code.coding[IEEE-11073].system ^short, de-DE, IEEE 11073-System-URL)

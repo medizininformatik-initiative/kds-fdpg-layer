@@ -636,7 +636,37 @@
           }
         ],
         "path": "Condition.code.coding",
-        "sliceName": "hpoCoding"
+        "sliceName": "hpoCoding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "HPO-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "HPO coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Condition.code.coding:hpoCoding.display",
@@ -703,7 +733,37 @@
           }
         ],
         "path": "Condition.code.coding",
-        "sliceName": "snomedCoding"
+        "sliceName": "snomedCoding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Condition.code.coding:snomedCoding.display",
@@ -770,7 +830,37 @@
           }
         ],
         "path": "Condition.code.coding",
-        "sliceName": "icd10GMCoding"
+        "sliceName": "icd10GMCoding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ICD-10-GM-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ICD-10-GM coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Condition.code.coding:icd10GMCoding.display",
@@ -837,7 +927,37 @@
           }
         ],
         "path": "Condition.code.coding",
-        "sliceName": "mondoCoding"
+        "sliceName": "mondoCoding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "MONDO-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "MONDO coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Condition.code.coding:mondoCoding.display",
@@ -1475,7 +1595,67 @@
             ]
           }
         ],
-        "path": "Condition.evidence"
+        "path": "Condition.evidence",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Evidenz"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Evidence"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Hinweise oder Befunde, die den Verifizierungsstatus der Diagnose stützen."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Manifestations or evidence supporting the verification status of the condition."
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Condition.note",

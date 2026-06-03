@@ -17,9 +17,16 @@ Description: "FDPG Profil - MII_PR_MTB_Studieneinschluss_Anfrage"
 * insert Translation(extension[statusReason] ^definition, en-US, Reason for refusing study enrollment — e.g. death or study closed.)
 // ServiceRequest.extension:Prioritaet
 * extension[Prioritaet] ^short = "MII EX MTB Empfehlung Priorität"
+* insert Translation(extension[Prioritaet] ^short, de-DE, Priorität)
+* insert Translation(extension[Prioritaet] ^short, en-US, Priority)
 // ServiceRequest.extension:Publikation
 * extension[Publikation] ^short = "MII EX MTB Empfehlung Publikation"
+* insert Translation(extension[Publikation] ^short, de-DE, Empfehlung Publikation)
+* insert Translation(extension[Publikation] ^short, en-US, Publication)
 // ServiceRequest.status
+* status ^short = "Status"
+* insert Translation(status ^short, de-DE, draft | active | on-hold | revoked | completed | entered-in-error | unknown)
+* insert Translation(status ^short, en-US, Status)
 * status ^definition = "Status des Studieneinschlusses"
 * insert Translation(status ^definition, de-DE, Status des Studieneinschlusses)
 * insert Translation(status ^definition, en-US, Status of the resource.)

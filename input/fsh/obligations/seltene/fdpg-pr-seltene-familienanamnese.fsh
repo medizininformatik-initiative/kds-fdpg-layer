@@ -10,6 +10,8 @@ Description: "FDPG Profil - MII_PR_Seltene_Familienanamnese"
 // --- Element Designations ---
 // FamilyMemberHistory.extension:vonSEBetroffen
 * extension[vonSEBetroffen] ^short = "Gibt an, ob das Familienmitglied von der gleichen seltenen Erkrankung betroffen ist"
+* insert Translation(extension[vonSEBetroffen] ^short, de-DE, Gibt an\, ob das Familienmitglied von der gleichen seltenen Erkrankung betroffen ist)
+* insert Translation(extension[vonSEBetroffen] ^short, en-US, Affected by same rare disease)
 // FamilyMemberHistory.status
 * status ^short = "Status"
 * insert Translation(status ^short, de-DE, Status)
@@ -193,6 +195,8 @@ Description: "FDPG Profil - MII_PR_Seltene_Familienanamnese"
 * insert Translation(condition ^definition, en-US, Condition of the family member.)
 // FamilyMemberHistory.condition.extension:penetrance
 * condition.extension[penetrance] ^short = "Penetranz der genetischen Variante beim Familienmitglied"
+* insert Translation(condition.extension[penetrance] ^short, de-DE, penetrance)
+* insert Translation(condition.extension[penetrance] ^short, en-US, Penetrance)
 // FamilyMemberHistory.condition.code
 * condition.code ^short = "Erkrankungscode"
 * insert Translation(condition.code ^short, de-DE, Erkrankungscode)

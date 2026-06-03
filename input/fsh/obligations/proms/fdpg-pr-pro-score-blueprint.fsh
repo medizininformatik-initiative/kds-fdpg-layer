@@ -16,6 +16,9 @@ Description: "FDPG Profil - MII_PR_PRO_Score_Blueprint"
 * insert Translation(code ^definition, de-DE, Kodierung des PROMs-Instruments oder Score-Typs.)
 * insert Translation(code ^definition, en-US, Code of the PROMs instrument or score type.)
 // ObservationDefinition.code.coding
+* code.coding ^short = "Item coding"
+* insert Translation(code.coding ^short, de-DE, Item-Kodierung)
+* insert Translation(code.coding ^short, en-US, Item coding)
 * code.coding ^definition = "A reference to a code defined by a terminology system."
 * insert Translation(code.coding ^definition, de-DE, Kodierung des PROMs-Items.)
 * insert Translation(code.coding ^definition, en-US, Coding of the PROMs item.)
@@ -53,6 +56,8 @@ Description: "FDPG Profil - MII_PR_PRO_Score_Blueprint"
 * qualifiedInterval.category ^short = "reference | critical | absolute"
 // ObservationDefinition.qualifiedInterval.range.extension:ScoreHealthCorrelation
 * qualifiedInterval.range.extension[ScoreHealthCorrelation] ^short = "MII Ex PRO Score Score Health Correlation"
+* insert Translation(qualifiedInterval.range.extension[ScoreHealthCorrelation] ^short, de-DE, Score-Gesundheits-Korrelation)
+* insert Translation(qualifiedInterval.range.extension[ScoreHealthCorrelation] ^short, en-US, Score-health correlation)
 // ObservationDefinition.qualifiedInterval.range.extension:ScoreHealthCorrelation.value[x]
 * qualifiedInterval.range.extension[ScoreHealthCorrelation].value[x] ^short = "Value of extension"
 // ObservationDefinition.qualifiedInterval.range.low

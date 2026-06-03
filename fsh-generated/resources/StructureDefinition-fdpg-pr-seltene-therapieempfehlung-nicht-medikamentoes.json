@@ -96,7 +96,37 @@
           }
         ],
         "path": "ServiceRequest.extension",
-        "sliceName": "Prioritaet"
+        "sliceName": "Prioritaet",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Priorität"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Priority"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "ServiceRequest.extension:Evidenzgraduierung",
@@ -129,7 +159,37 @@
           }
         ],
         "path": "ServiceRequest.extension",
-        "sliceName": "Evidenzgraduierung"
+        "sliceName": "Evidenzgraduierung",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Empfehlung Evidenzgraduierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Evidence grade"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "ServiceRequest.extension:Publikation",
@@ -162,7 +222,37 @@
           }
         ],
         "path": "ServiceRequest.extension",
-        "sliceName": "Publikation"
+        "sliceName": "Publikation",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Empfehlung Publikation"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Publication"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "ServiceRequest.status",
@@ -661,7 +751,38 @@
           }
         ],
         "path": "ServiceRequest.code.coding",
-        "sliceName": "snomed"
+        "sliceName": "snomed",
+        "short": "SNOMED CT coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "ServiceRequest.code.coding:ops",
@@ -694,7 +815,38 @@
           }
         ],
         "path": "ServiceRequest.code.coding",
-        "sliceName": "ops"
+        "sliceName": "ops",
+        "short": "OPS coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "OPS-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "OPS coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "ServiceRequest.code.coding:loinc",
@@ -727,7 +879,38 @@
           }
         ],
         "path": "ServiceRequest.code.coding",
-        "sliceName": "loinc"
+        "sliceName": "loinc",
+        "short": "LOINC coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "ServiceRequest.subject",

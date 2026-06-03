@@ -590,7 +590,38 @@
           }
         ],
         "path": "Observation.code.coding",
-        "sliceName": "sct"
+        "sliceName": "sct",
+        "short": "SNOMED CT coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Observation.code.coding:sct.system",
@@ -727,7 +758,38 @@
           }
         ],
         "path": "Observation.code.coding",
-        "sliceName": "loinc"
+        "sliceName": "loinc",
+        "short": "LOINC coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Observation.code.coding:loinc.system",
@@ -864,7 +926,38 @@
           }
         ],
         "path": "Observation.code.coding",
-        "sliceName": "IEEE-11073"
+        "sliceName": "IEEE-11073",
+        "short": "IEEE 11073 coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "IEEE 11073-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "IEEE 11073 coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Observation.code.coding:IEEE-11073.system",

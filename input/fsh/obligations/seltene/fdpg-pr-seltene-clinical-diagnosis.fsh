@@ -10,6 +10,8 @@ Description: "FDPG Profil - MII_PR_Seltene_ClinicalDiagnosis"
 // --- Element Designations ---
 // Condition.extension:ReferenzPrimaerdiagnose
 * extension[ReferenzPrimaerdiagnose] ^short = "Conditions associated with this condition"
+* insert Translation(extension[ReferenzPrimaerdiagnose] ^short, de-DE, Referenz Primaerdiagnose)
+* insert Translation(extension[ReferenzPrimaerdiagnose] ^short, en-US, Primary diagnosis reference)
 // Condition.extension:Feststellungsdatum
 * extension[Feststellungsdatum] ^short = "Feststellungsdatum"
 * insert Translation(extension[Feststellungsdatum] ^short, de-DE, Feststellungsdatum)
@@ -117,6 +119,8 @@ Description: "FDPG Profil - MII_PR_Seltene_ClinicalDiagnosis"
 * insert Translation(code.coding[orphanet].code ^short, en-US, Code as Orphanet)
 // Condition.code.coding:hpo
 * code.coding[hpo] ^short = "HPO Phenotype code"
+* insert Translation(code.coding[hpo] ^short, de-DE, HPO-Kodierung)
+* insert Translation(code.coding[hpo] ^short, en-US, HPO coding)
 // Condition.code.coding:hpo.system
 * code.coding[hpo].system ^short = "HPO system URL"
 * insert Translation(code.coding[hpo].system ^short, de-DE, HPO-System-URL)
@@ -156,6 +160,9 @@ Description: "FDPG Profil - MII_PR_Seltene_ClinicalDiagnosis"
 * insert Translation(bodySite.coding[snomed-ct].code ^short, de-DE, Körperstelle als SNOMED CT)
 * insert Translation(bodySite.coding[snomed-ct].code ^short, en-US, Body site as SNOMED CT)
 // Condition.subject
+* subject ^short = "Patient"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
 * subject ^definition = "Indicates the patient or group who the condition record is associated with."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
 * insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
@@ -203,10 +210,22 @@ Description: "FDPG Profil - MII_PR_Seltene_ClinicalDiagnosis"
 * stage.assessment ^short = "Reference to HPO-based severity assessment"
 // Condition.stage.type
 * stage.type ^short = "Stage type (e.g., severity, progression)"
+// Condition.evidence
+* evidence ^short = "Evidence"
+* insert Translation(evidence ^short, de-DE, Evidenz)
+* insert Translation(evidence ^short, en-US, Evidence)
+* evidence ^definition = "Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition."
+* insert Translation(evidence ^definition, de-DE, Hinweise oder Befunde\, die den Verifizierungsstatus der Diagnose stützen.)
+* insert Translation(evidence ^definition, en-US, Manifestations or evidence supporting the verification status of the condition.)
 // Condition.evidence.code
 * evidence.code ^short = "Manifestation/symptom supporting the diagnosis"
 // Condition.evidence.detail
 * evidence.detail ^short = "Reference to Observation resources containing HPO-coded symptoms"
+* insert Translation(evidence.detail ^short, de-DE, Belege)
+* insert Translation(evidence.detail ^short, en-US, Supporting observations)
+* evidence.detail ^definition = "Links to other relevant information, including pathology reports."
+* insert Translation(evidence.detail ^definition, de-DE, Referenzen auf einzelne Beobachtungen\, die die Diagnose stützen.)
+* insert Translation(evidence.detail ^definition, en-US, References to individual observations that support the diagnosis.)
 // Condition.note
 * note ^short = "Hinweis"
 * insert Translation(note ^short, de-DE, Hinweis)

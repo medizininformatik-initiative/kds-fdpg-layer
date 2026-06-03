@@ -10,12 +10,18 @@ Description: "FDPG Profil - MII_PR_Seltene_Studieneinschluss_Anfrage"
 // --- Element Designations ---
 // ServiceRequest.extension:statusReason
 * extension[statusReason] ^short = "Reason for current status"
+* insert Translation(extension[statusReason] ^short, de-DE, status Reason)
+* insert Translation(extension[statusReason] ^short, en-US, status Reason)
 // ServiceRequest.extension:statusReason.value[x].coding
 * extension[statusReason].value[x].coding ^short = "Grund für Ablehnung"
 // ServiceRequest.extension:Prioritaet
 * extension[Prioritaet] ^short = "MII EX SE Empfehlung Priorität"
+* insert Translation(extension[Prioritaet] ^short, de-DE, Priorität)
+* insert Translation(extension[Prioritaet] ^short, en-US, Priority)
 // ServiceRequest.extension:Publikation
 * extension[Publikation] ^short = "MII EX SE Empfehlung Publikation"
+* insert Translation(extension[Publikation] ^short, de-DE, Empfehlung Publikation)
+* insert Translation(extension[Publikation] ^short, en-US, Publication)
 // ServiceRequest.status
 * status ^short = "draft | active | on-hold | revoked | completed | entered-in-error | unknown"
 * insert Translation(status ^short, de-DE, Status)

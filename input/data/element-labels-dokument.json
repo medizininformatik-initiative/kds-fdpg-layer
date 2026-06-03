@@ -1,0 +1,9 @@
+{
+  "_doc": "Module-specific FDPG labels for the 'dokument' module.",
+  "elements": {
+    "extension:nlp-processing-status": {
+      "de_short": "NLP-Verarbeitungsstatus",
+      "en_short": "NLP processing status"
+    }
+  }
+}

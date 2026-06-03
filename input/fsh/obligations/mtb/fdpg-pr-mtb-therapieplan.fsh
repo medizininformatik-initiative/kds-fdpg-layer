@@ -9,6 +9,9 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 * insert Translation(^title, en-US, Therapy plan)
 // --- Element Designations ---
 // CarePlan.status
+* status ^short = "Status"
+* insert Translation(status ^short, de-DE, draft | active | on-hold | revoked | completed | entered-in-error | unknown)
+* insert Translation(status ^short, en-US, Status)
 * status ^definition = "Status der Umsetzung des beschlossenen Therapieplans"
 * insert Translation(status ^definition, de-DE, Status der Umsetzung des beschlossenen Therapieplans)
 * insert Translation(status ^definition, en-US, Status of the resource.)

@@ -12,17 +12,17 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|---|---|---|
 | `status` |  |  | Status | Status der Ressource. |  |
 | `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
-| `category:laboratory` |  |  | Kategorie | Kategorisierung der Ressource. |  |
+| `category:laboratory` |  |  | Classification of type of observation | A code that classifies the general type of observation being made. |  |
 | `code` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | Code | Kodierung des Inhalts. | ✓ |
 | `code.coding:loinc-abo-rh` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | LOINC | Kodierung nach LOINC. |  |
 | `code.coding:loinc-abo` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | LOINC | Kodierung nach LOINC. |  |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
-| `effective[x]:effectiveDateTime` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |  |
-| `effective[x]:effectivePeriod` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |  |
-| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. | ✓ |
-| `value[x].coding:loinc` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
-| `value[x].coding:snomed` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `effective[x]:effectiveDateTime` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |  |
+| `effective[x]:effectivePeriod` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |  |
+| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].coding:loinc` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | LOINC | Kodierung nach LOINC. |  |
+| `value[x].coding:snomed` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | SNOMED CT | Kodierung nach SNOMED CT. |  |
 
 #### Body-Mass-Index (BMI\ (Observation)
 
@@ -34,7 +34,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
-| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. | ✓ |
 
 #### Klinische Diagnose (Condition)
 
@@ -42,7 +42,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `extension:ReferenzPrimaerdiagnose` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:ReferenzPrimaerdiagnose` |  |  | Referenz Primaerdiagnose | This condition has an unspecified relationship with another condition. |
 | `extension:Feststellungsdatum` | FeststellungsdatumKlinischeDia, FeststellungsdatumGenDia, ... | Datum, an dem die klinische SE-Diagnose festgestellt wurde. | Feststellungsdatum | Datum, an dem die Diagnose erstmals festgestellt wurde |
 | `clinicalStatus` |  |  | Klinischer Status | aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen |
 | `verificationStatus` |  |  | Verifizierungsstatus | unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe |
@@ -59,15 +59,15 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Diagnose erstellt wurde oder mit dem die Diagnose in Zusammenhang steht. |
 | `onset[x]` | ZeitraumSymptom | Zeitraum des Symptom | Beginn | Geschätztes oder tatsächliches Datum oder Zeitraum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
-| `onset[x]:onsetPeriod` | ZeitraumSymptom | Zeitraum des Symptom | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
-| `onset[x]:onsetDateTime` | ZeitraumSymptom | Zeitraum des Symptom | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
-| `onset[x]:onsetAge` | ZeitraumSymptom | Zeitraum des Symptom | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
+| `onset[x]:onsetPeriod` | ZeitraumSymptom | Zeitraum des Symptom | Beginn Zeitraum | Der Zeitraum, in dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
+| `onset[x]:onsetDateTime` | ZeitraumSymptom | Zeitraum des Symptom | Beginn Datum | Das Datum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
+| `onset[x]:onsetAge` | ZeitraumSymptom | Zeitraum des Symptom | Erkrankungsbeginn als Alter | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
 | `abatement[x]` |  |  | When in resolution/remission | The date or estimated date that the condition resolved or went into remission. This is called "abatement" because of the many overloaded connotations associated with "remission" or "resolution" - C... |
 | `recordedDate` |  |  | Aufzeichnungsdatum | Datum, an dem die Diagnose erstmals dokumentiert wurde. |
 | `recorder` |  |  | Erfassende\*r | Person oder Organisation, die die Information aufgezeichnet hat. |
 | `asserter` |  |  | Person who asserts this condition | Individual who is making the condition statement. |
 | `stage` |  |  | Stage/grade, usually assessed formally | Clinical stage or grade of a condition. May include formal severity assessments. |
-| `evidence` |  |  | Supporting evidence | Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition. |
+| `evidence` |  |  | Evidenz | Hinweise oder Befunde, die den Verifizierungsstatus der Diagnose stützen. |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Diagnose als Freitext. |
 
 #### Klinische Beurteilung (ClinicalImpression)
@@ -83,7 +83,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
 | `effective[x]` | Untersuchungsdatum | Datum der durchgeführten Untersuchung eines SE-Patienten. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `date` |  |  | Wann die Beurteilung dokumentiert wurde | Gibt an, wann die klinische Beurteilung dokumentiert wurde |
+| `date` |  |  | Datum | Datum der Erfassung der Familienanamnese. |
 | `problem` |  |  | Relevante Probleme/Erkrankungen | Eine Liste der relevanten Probleme/Erkrankungen für diesen Patienten, die die klinische Beurteilung beeinflussen können |
 | `investigation` |  |  | Eine oder mehrere Untersuchungsserien | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
 | `summary` |  |  | Zusammenfassung der klinischen Beurteilung | Eine Textzusammenfassung der Beurteilung mit hervorgehobenen wichtigsten Aspekten |
@@ -97,7 +97,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `extension:vonSEBetroffen` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:vonSEBetroffen` |  |  | Gibt an, ob das Familienmitglied von der gleichen seltenen Erkrankung betroffen ist | Extension zur Angabe, ob ein Familienmitglied von der gleichen seltenen Erkrankung betroffen ist wie der Patient |
 | `status` |  |  | Status | Status der Familienanamnese |
 | `patient` |  |  | Patient | Der Patient zu dem die Familienanamnese gehört |
 | `date` |  |  | Datum | Datum der Erfassung der Familienanamnese |
@@ -113,7 +113,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonCode.coding:orphanet` |  |  | Orphanet Kodierung | Kodierung nach Orphanet für seltene Erkrankungen |
 | `reasonReference` |  |  | Referenz zum Grund | Referenz zu einer Condition die den Grund der Familienanamnese beschreibt |
 | `condition` | GleicheSE, AndereSE | Gibt an, ob das Familienmitglied an der gleichen SE leidet wie der Indexpatient. | Erkrankung | Erkrankung des Familienangehörigen |
-| `condition.extension:penetrance` | GleicheSE, AndereSE | Gibt an, ob das Familienmitglied an der gleichen SE leidet wie der Indexpatient. | Penetranz der genetischen Variante beim Familienmitglied | Angabe zur Penetranz der genetischen Variante bei der Erkrankung des Familienmitglieds |
+| `condition.extension:penetrance` | GleicheSE, AndereSE | Gibt an, ob das Familienmitglied an der gleichen SE leidet wie der Indexpatient. | penetrance | Angabe zur Penetranz der genetischen Variante bei der Erkrankung des Familienmitglieds |
 
 #### Genetische Diagnose (Condition)
 
@@ -121,9 +121,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `extension:ReferenzPrimaerdiagnose` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:ReferenzPrimaerdiagnose` |  |  | Referenz Primaerdiagnose | This condition has an unspecified relationship with another condition. |
 | `extension:Feststellungsdatum` | FeststellungsdatumKlinischeDia, FeststellungsdatumGenDia, ... | Datum, an dem die klinische SE-Diagnose festgestellt wurde. | Feststellungsdatum | Datum, an dem die Diagnose erstmals festgestellt wurde |
-| `extension:penetrance` | GenDiaFehlendePenetranz | Gibt an, ob bei einer genetischen Diagnose die Penetranz (Wahrscheinlichkeit Genotyp bildet Phaenotyp aus) fehlt | Erweiterung | FHIR-Erweiterung. |
+| `extension:penetrance` | GenDiaFehlendePenetranz | Gibt an, ob bei einer genetischen Diagnose die Penetranz (Wahrscheinlichkeit Genotyp bildet Phaenotyp aus) fehlt | Penetranz der genetischen Variante | Angabe zur Penetranz der genetischen Variante bei dieser Erkrankung |
 | `clinicalStatus` |  |  | Klinischer Status | aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen |
 | `verificationStatus` |  |  | Verifizierungsstatus | unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe |
 | `category` |  |  | Kategorie | Kategorisierung der Ressource. |
@@ -139,15 +139,15 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Diagnose erstellt wurde oder mit dem die Diagnose in Zusammenhang steht. |
 | `onset[x]` | ZeitraumSymptom | Zeitraum des Symptom | Beginn | Geschätztes oder tatsächliches Datum oder Zeitraum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
-| `onset[x]:onsetPeriod` | ZeitraumSymptom | Zeitraum des Symptom | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
-| `onset[x]:onsetDateTime` | ZeitraumSymptom | Zeitraum des Symptom | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
-| `onset[x]:onsetAge` | ZeitraumSymptom | Zeitraum des Symptom | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
+| `onset[x]:onsetPeriod` | ZeitraumSymptom | Zeitraum des Symptom | Beginn Zeitraum | Der Zeitraum, in dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
+| `onset[x]:onsetDateTime` | ZeitraumSymptom | Zeitraum des Symptom | Beginn Datum | Das Datum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
+| `onset[x]:onsetAge` | ZeitraumSymptom | Zeitraum des Symptom | Erkrankungsbeginn als Alter | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
 | `abatement[x]` |  |  | When in resolution/remission | The date or estimated date that the condition resolved or went into remission. This is called "abatement" because of the many overloaded connotations associated with "remission" or "resolution" - C... |
 | `recordedDate` |  |  | Aufzeichnungsdatum | Datum, an dem die Diagnose erstmals dokumentiert wurde. |
 | `recorder` |  |  | Erfassende\*r | Person oder Organisation, die die Information aufgezeichnet hat. |
 | `asserter` |  |  | Person who asserts this condition | Individual who is making the condition statement. |
 | `stage` |  |  | Stage/grade, usually assessed formally | Clinical stage or grade of a condition. May include formal severity assessments. |
-| `evidence` |  |  | Genetic evidence supporting the diagnosis | Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition. |
+| `evidence` |  |  | Evidenz | Hinweise oder Befunde, die den Verifizierungsstatus der Diagnose stützen. |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Diagnose als Freitext. |
 
 #### HPO-Beurteilung (Observation)
@@ -166,8 +166,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `method` | MethodeDiagnosestellung | Gibt an, welche Methode zur Diagnosestellung verwendet wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
 | `derivedFrom` |  |  | Abgeleitet von | Verweis auf die Ressource, von der diese abgeleitet ist. |  |
 | `component` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |  |
-| `component:status` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |  |
-| `component:severity` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:status` |  |  | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |  |
+| `component:severity` |  |  | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |  |
 
 #### Hüftumfang (Observation)
 
@@ -180,7 +180,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | Code | Kodierung des Inhalts. | ✓ |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
-| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. | ✓ |
 
 #### Kopfumfang (Observation)
 
@@ -189,14 +189,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
 | `status` |  |  | Status | Status der Ressource. |
-| `category:sct` |  |  | Kategorie | Kategorisierung der Ressource. |
+| `category:sct` |  |  | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | Code | Kodierung des Inhalts. |
 | `code.coding:snomed` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `effective[x]:effectiveDateTime` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `effective[x]:effectiveDateTime` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
+| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `dataAbsentReason` |  |  | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
 | `bodySite` |  |  | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |
 
@@ -206,9 +206,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `extension:statusReason` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Prioritaet` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Publikation` | Erweiterung | FHIR-Erweiterung. |
+| `extension:statusReason` | status Reason | Captures the reason for the current state of the resource. |
+| `extension:Prioritaet` | Priorität | Priorität der (einzelnen) Empfehlung |
+| `extension:Publikation` | Empfehlung Publikation | Verweis auf Publikation der (einzelnen) Empfehlung |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
@@ -239,7 +239,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `abatement[x]` |  |  | Auflösung der Symptom-Erkrankung | Datum, Alter, Zeitraum oder zeitliche Beschreibung, wann die Symptom-Erkrankung abgeklungen ist oder in Remission ging | ✓ |
 | `recordedDate` |  |  | Aufzeichnungsdatum | Datum, an dem die Ressource aufgezeichnet wurde. | ✓ |
 | `stage` |  |  | Stadium oder Progression der Symptom-Erkrankung | Clinical stage or grade of a condition. May include formal severity assessments. |  |
-| `evidence` |  |  | Unterstützende Evidenz für die Symptom-Erkrankung | Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition. |  |
+| `evidence` |  |  | Evidenz | Hinweise oder Befunde, die den Verifizierungsstatus der Diagnose stützen. |  |
 | `note` |  |  | Hinweis | Freitextkommentar zur Ressource. |  |
 
 #### Taillenumfang (Observation)
@@ -253,7 +253,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | HPOTerm, HPOVersion | Phaenotypisierung des SE-Patienten mittels HPO-Term (Human Phenotype Ontology) oder anderer Terminologien (SNOMED CT, ICD-10, LOINC). | Code | Kodierung des Inhalts. | ✓ |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `effective[x]` | DatumKoerpergewicht, DatumKoerpergroesse, ... | Datum der Körpergewichtsmessung. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
-| `value[x]` | HPOAusgeschlossen, HPOStatus | Gibt an, ob das HPO-Merkmal explizit ausgeschlossen wurde (negated finding). Abgeleitet aus valueCodeableConcept: LOINC LA9634-2 'Absent' = true, LA9633-4 'Present' = false. Folgt HL7 Phenomics IG ... | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | Koerpergewicht, Koerpergroesse, ... | Körpergewicht des SE-Patienten in kg (aus MII ICU Modul). | Messwert | Wert der Beobachtung. | ✓ |
 
 #### Therapie durchgeführt (Procedure)
 
@@ -265,8 +265,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Kodierung des Inhalts. | ✓ |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. | ✓ |
 | `performed[x]` | Durchführungsdatum | Zeitpunkt oder Zeitraum der Durchführung. | ✓ |
-| `performed[x]:performedDateTime` | Durchführungsdatum | Zeitpunkt oder Zeitraum der Durchführung. |  |
-| `performed[x]:performedPeriod` | Durchführungsdatum | Zeitpunkt oder Zeitraum der Durchführung. |  |
+| `performed[x]:performedDateTime` | When the procedure was performed | Estimated or actual date, date-time, period, or age when the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of t... |  |
+| `performed[x]:performedPeriod` | When the procedure was performed | Estimated or actual date, date-time, period, or age when the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of t... |  |
 
 #### Therapieempfehlung Kombinationstherapie (RequestGroup)
 
@@ -274,9 +274,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `extension:Prioritaet` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Evidenzgraduierung` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Publikation` | Erweiterung | FHIR-Erweiterung. |
+| `extension:Prioritaet` | Priorität | Priorität der (einzelnen) Empfehlung |
+| `extension:Evidenzgraduierung` | Empfehlung Evidenzgraduierung | Evidenzgraduierung der (einzelnen) Empfehlung |
+| `extension:Publikation` | Empfehlung Publikation | Verweis auf Publikation der (einzelnen) Empfehlung |
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `intent` | Absicht | Absicht der Anforderung: Vorschlag \| Plan \| Auftrag. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
@@ -288,19 +288,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `extension:Prioritaet` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Evidenzgraduierung` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Publikation` | Erweiterung | FHIR-Erweiterung. |
+| `extension:Prioritaet` | Priorität | Priorität der (einzelnen) Empfehlung |
+| `extension:Evidenzgraduierung` | Empfehlung Evidenzgraduierung | Evidenzgraduierung der (einzelnen) Empfehlung |
+| `extension:Publikation` | Empfehlung Publikation | Verweis auf Publikation der (einzelnen) Empfehlung |
 | `status` | Status | Status der Ressource. |
 | `intent` | Absicht | Absicht der Anforderung: Vorschlag \| Plan \| Auftrag. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:MVGenomSeqTherapieStrategie` | Kategorie | Kategorisierung der Ressource. |
-| `category:MVGenomSeqTherapieTyp` | Kategorie | Kategorisierung der Ressource. |
+| `category:MVGenomSeqTherapieStrategie` | Modellvorhaben GenomSeq Therapiestrategie-Typ (Nicht-Medikamentös) | Kategorisierung der nicht-medikamentösen Therapieempfehlung nach Modellvorhaben GenomSeq |
+| `category:MVGenomSeqTherapieTyp` | Modellvorhaben GenomSeq Therapietyp (Kausal/Symptomatisch) | Kategorisierung der Therapieempfehlung nach Therapietyp (kausal vs. symptomatisch) gemäß Modellvorhaben GenomSeq |
 | `priority` | routine \| urgent \| asap \| stat | Dringlichkeit der Therapieempfehlung |
 | `code` | Code | Kodierung des Inhalts. |
-| `code.coding:snomed` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `code.coding:ops` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `code.coding:loinc` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code.coding:snomed` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:ops` | OPS | Kodierung nach OPS. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
 | `occurrence[x]` | Empfohlener Zeitpunkt oder Zeitraum für die Intervention | The date/time at which the requested service should occur. |
@@ -317,18 +317,18 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `extension:Prioritaet` |  |  | Erweiterung | FHIR-Erweiterung. |
-| `extension:Evidenzgraduierung` |  |  | Erweiterung | FHIR-Erweiterung. |
-| `extension:Publikation` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:Prioritaet` |  |  | Priorität | Priorität der (einzelnen) Empfehlung |
+| `extension:Evidenzgraduierung` |  |  | Empfehlung Evidenzgraduierung | Evidenzgraduierung der (einzelnen) Empfehlung |
+| `extension:Publikation` |  |  | Empfehlung Publikation | Verweis auf Publikation der (einzelnen) Empfehlung |
 | `identifier` |  |  | Identifikator | Ein Identifikator für die Medikationsverordnung |
 | `status` |  |  | Status | aktiv \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| abgebrochen \| Entwurf \| unbekannt |
 | `intent` |  |  | Intention | Vorschlag \| Plan \| Auftrag \| Original-Auftrag \| ergänzender Auftrag \| Erfüllungsauftrag \| Vorgangsauftrag \| Option |
 | `category` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `category:MVGenomSeqTherapieStrategie` |  |  | Kategorie | Kategorisierung der Ressource. |
-| `category:MVGenomSeqTherapieTyp` |  |  | Kategorie | Kategorisierung der Ressource. |
+| `category:MVGenomSeqTherapieStrategie` |  |  | Modellvorhaben GenomSeq Therapiestrategie-Typ (Medikamentös) | Kategorisierung der medikamentösen Therapieempfehlung nach Modellvorhaben GenomSeq Strategietyp |
+| `category:MVGenomSeqTherapieTyp` |  |  | Modellvorhaben GenomSeq Therapietyp (Kausal/Symptomatisch) | Kategorisierung der Therapieempfehlung nach Therapietyp (kausal vs. symptomatisch) gemäß Modellvorhaben GenomSeq |
 | `medication[x]` | OffLabelMedikament | Gibt an, welches Medikament Off-Label gegeben wurde. | Medikation | Medikation, die verordnet wurde. Code oder Referenz auf Medication-Objekt. |
-| `medication[x]:medicationReference` | OffLabelMedikament | Gibt an, welches Medikament Off-Label gegeben wurde. | Medikation | Verweis auf das Medikament oder die Medikation. |
-| `medication[x]:medicationCodeableConcept` | OffLabelMedikament | Gibt an, welches Medikament Off-Label gegeben wurde. | Medikation | Verweis auf das Medikament oder die Medikation. |
+| `medication[x]:medicationReference` | OffLabelMedikament | Gibt an, welches Medikament Off-Label gegeben wurde. | Medication to be taken | Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identif... |
+| `medication[x]:medicationCodeableConcept` | OffLabelMedikament | Gibt an, welches Medikament Off-Label gegeben wurde. | Medication to be taken | Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identif... |
 | `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | OffLabelMedikament | Gibt an, welches Medikament Off-Label gegeben wurde. | PZN Code | Ein Verweis auf einen von der Pharmazentralnummer definierten Code |
 | `medication[x]:medicationCodeableConcept.coding:atcClassDe` | OffLabelMedikament | Gibt an, welches Medikament Off-Label gegeben wurde. | ATC Code | Ein Verweis auf einen von der deutschen Fassung der Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code |
 | `medication[x]:medicationCodeableConcept.coding:atcClassEn` | OffLabelMedikament | Gibt an, welches Medikament Off-Label gegeben wurde. | ATC WHO Code | Ein Verweis auf einen von der WHO Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code |
@@ -374,17 +374,17 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:laboratory` | Category | Categorization of the resource. |
+| `category:laboratory` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Coding of the content. |
 | `code.coding:loinc-abo-rh` | LOINC | Coding in LOINC. |
 | `code.coding:loinc-abo` | LOINC | Coding in LOINC. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
-| `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
-| `effective[x]:effectivePeriod` | Effective | Date or period the observation refers to. |
+| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
+| `effective[x]:effectivePeriod` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
 | `value[x]` | Value | Value of the observation. |
-| `value[x].coding:loinc` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `value[x].coding:snomed` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `value[x].coding:loinc` | LOINC | Coding in LOINC. |
+| `value[x].coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
 
 </details>
 
@@ -406,7 +406,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:ReferenzPrimaerdiagnose` | Extension | FHIR extension. |
+| `extension:ReferenzPrimaerdiagnose` | Primary diagnosis reference | This condition has an unspecified relationship with another condition. |
 | `extension:Feststellungsdatum` | Asserted date | Date the condition was first asserted |
 | `clinicalStatus` | Clinical status | active \| recurrence \| relapse \| inactive \| remission \| resolved |
 | `verificationStatus` | Verification status | unconfirmed \| provisional \| differential \| confirmed \| refuted \| entered-in-error |
@@ -423,15 +423,15 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Condition was created or to which the creation of this record is tightly associated. |
 | `onset[x]` | Onset | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
-| `onset[x]:onsetPeriod` | Onset | Date or period when the condition first appeared. |
-| `onset[x]:onsetDateTime` | Onset | Date or period when the condition first appeared. |
-| `onset[x]:onsetAge` | Onset | Date or period when the condition first appeared. |
+| `onset[x]:onsetPeriod` | Beginn Zeitraum | Der Zeitraum, in dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
+| `onset[x]:onsetDateTime` | Beginn Datum | Das Datum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
+| `onset[x]:onsetAge` | Erkrankungsbeginn als Alter | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
 | `abatement[x]` | When in resolution/remission | The date or estimated date that the condition resolved or went into remission. This is called "abatement" because of the many overloaded connotations associated with "remission" or "resolution" - C... |
 | `recordedDate` | Recorded date | Date when the diagnosis was first recorded. |
 | `recorder` | Recorder | Person or organization that recorded the information. |
 | `asserter` | Person who asserts this condition | Individual who is making the condition statement. |
 | `stage` | Stage/grade, usually assessed formally | Clinical stage or grade of a condition. May include formal severity assessments. |
-| `evidence` | Supporting evidence | Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition. |
+| `evidence` | Evidence | Manifestations or evidence supporting the verification status of the condition. |
 | `note` | Note | Additional information about the diagnosis as free text. |
 
 </details>
@@ -448,7 +448,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
-| `date` | Wann die Beurteilung dokumentiert wurde | Gibt an, wann die klinische Beurteilung dokumentiert wurde |
+| `date` | Date | Date when the family history was recorded. |
 | `problem` | Relevante Probleme/Erkrankungen | Eine Liste der relevanten Probleme/Erkrankungen für diesen Patienten, die die klinische Beurteilung beeinflussen können |
 | `investigation` | Eine oder mehrere Untersuchungsserien | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
 | `summary` | Zusammenfassung der klinischen Beurteilung | Eine Textzusammenfassung der Beurteilung mit hervorgehobenen wichtigsten Aspekten |
@@ -463,12 +463,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:vonSEBetroffen` | Extension | FHIR extension. |
+| `extension:vonSEBetroffen` | Affected by same rare disease | Extension zur Angabe, ob ein Familienmitglied von der gleichen seltenen Erkrankung betroffen ist wie der Patient |
 | `status` | Status | Status of the resource. |
 | `patient` | Patient | The patient that the resource relates to. |
-| `date` | Datum | Datum der Erfassung der Familienanamnese |
-| `relationship` | Verwandtschaftsbeziehung | Die Art der Verwandtschaft zum Patienten |
-| `sex` | Geschlecht | Das Geschlecht des Familienangehörigen |
+| `date` | Date | Date when the family history was recorded. |
+| `relationship` | Relationship | Type of relationship to the patient. |
+| `sex` | Sex | Sex of the family member. |
 | `born[x]` | (approximate) date of birth | The actual or approximate date of birth of the relative. |
 | `age[x]` | (approximate) age | The age of the relative at the time the family member history is recorded. |
 | `deceased[x]` | Dead? How old/when? | Deceased flag or the actual or approximate age of the relative at the time of death for the family member history record. |
@@ -478,8 +478,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonCode.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `reasonCode.coding:orphanet` | Orphanet | Coding in Orphanet. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
-| `condition` | Erkrankung | Erkrankung des Familienangehörigen |
-| `condition.extension:penetrance` | Penetranz der genetischen Variante beim Familienmitglied | Angabe zur Penetranz der genetischen Variante bei der Erkrankung des Familienmitglieds |
+| `condition` | Condition | Condition of the family member. |
+| `condition.extension:penetrance` | Penetrance | Angabe zur Penetranz der genetischen Variante bei der Erkrankung des Familienmitglieds |
 
 </details>
 
@@ -488,9 +488,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:ReferenzPrimaerdiagnose` | Extension | FHIR extension. |
+| `extension:ReferenzPrimaerdiagnose` | Primary diagnosis reference | This condition has an unspecified relationship with another condition. |
 | `extension:Feststellungsdatum` | Asserted date | Date the condition was first asserted |
-| `extension:penetrance` | Extension | FHIR extension. |
+| `extension:penetrance` | Penetrance | Angabe zur Penetranz der genetischen Variante bei dieser Erkrankung |
 | `clinicalStatus` | Clinical status | active \| recurrence \| relapse \| inactive \| remission \| resolved |
 | `verificationStatus` | Verification status | unconfirmed \| provisional \| differential \| confirmed \| refuted \| entered-in-error |
 | `category` | Category | Categorization of the resource. |
@@ -506,15 +506,15 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Condition was created or to which the creation of this record is tightly associated. |
 | `onset[x]` | Onset | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
-| `onset[x]:onsetPeriod` | Onset | Date or period when the condition first appeared. |
-| `onset[x]:onsetDateTime` | Onset | Date or period when the condition first appeared. |
-| `onset[x]:onsetAge` | Onset | Date or period when the condition first appeared. |
+| `onset[x]:onsetPeriod` | Beginn Zeitraum | Der Zeitraum, in dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
+| `onset[x]:onsetDateTime` | Beginn Datum | Das Datum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
+| `onset[x]:onsetAge` | Erkrankungsbeginn als Alter | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
 | `abatement[x]` | When in resolution/remission | The date or estimated date that the condition resolved or went into remission. This is called "abatement" because of the many overloaded connotations associated with "remission" or "resolution" - C... |
 | `recordedDate` | Recorded date | Date when the diagnosis was first recorded. |
 | `recorder` | Recorder | Person or organization that recorded the information. |
 | `asserter` | Person who asserts this condition | Individual who is making the condition statement. |
 | `stage` | Stage/grade, usually assessed formally | Clinical stage or grade of a condition. May include formal severity assessments. |
-| `evidence` | Genetic evidence supporting the diagnosis | Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition. |
+| `evidence` | Evidence | Manifestations or evidence supporting the verification status of the condition. |
 | `note` | Note | Additional information about the diagnosis as free text. |
 
 </details>
@@ -534,8 +534,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `method` | Method | Method used to make the observation. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:status` | Component | Sub-observation component. |
-| `component:severity` | Component | Sub-observation component. |
+| `component:status` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:severity` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 
 </details>
 
@@ -559,12 +559,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `status` | Status | Status of the resource. |
-| `category:sct` | Category | Categorization of the resource. |
+| `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Coding of the content. |
 | `code.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
-| `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
+| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
 | `value[x]` | Value | Value of the observation. |
 | `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
 | `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
@@ -577,9 +577,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:statusReason` | Extension | FHIR extension. |
-| `extension:Prioritaet` | Extension | FHIR extension. |
-| `extension:Publikation` | Extension | FHIR extension. |
+| `extension:statusReason` | status Reason | Captures the reason for the current state of the resource. |
+| `extension:Prioritaet` | Priority | Priorität der (einzelnen) Empfehlung |
+| `extension:Publikation` | Publication | Verweis auf Publikation der (einzelnen) Empfehlung |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
@@ -611,7 +611,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `abatement[x]` | Auflösung der Symptom-Erkrankung | Datum, Alter, Zeitraum oder zeitliche Beschreibung, wann die Symptom-Erkrankung abgeklungen ist oder in Remission ging |
 | `recordedDate` | Recorded date | Date when the resource was recorded. |
 | `stage` | Stadium oder Progression der Symptom-Erkrankung | Clinical stage or grade of a condition. May include formal severity assessments. |
-| `evidence` | Unterstützende Evidenz für die Symptom-Erkrankung | Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition. |
+| `evidence` | Evidence | Manifestations or evidence supporting the verification status of the condition. |
 | `note` | Note | Free-text comment on the resource. |
 
 </details>
@@ -639,8 +639,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `performed[x]` | Performed | Date or period when the procedure was performed. |
-| `performed[x]:performedDateTime` | Performed | Date or period when the procedure was performed. |
-| `performed[x]:performedPeriod` | Performed | Date or period when the procedure was performed. |
+| `performed[x]:performedDateTime` | When the procedure was performed | Estimated or actual date, date-time, period, or age when the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of t... |
+| `performed[x]:performedPeriod` | When the procedure was performed | Estimated or actual date, date-time, period, or age when the procedure was performed. Allows a period to support complex procedures that span more than one date, and also allows for the length of t... |
 
 </details>
 
@@ -649,9 +649,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:Prioritaet` | Extension | FHIR extension. |
-| `extension:Evidenzgraduierung` | Extension | FHIR extension. |
-| `extension:Publikation` | Extension | FHIR extension. |
+| `extension:Prioritaet` | Priority | Priorität der (einzelnen) Empfehlung |
+| `extension:Evidenzgraduierung` | Evidence grade | Evidenzgraduierung der (einzelnen) Empfehlung |
+| `extension:Publikation` | Publication | Verweis auf Publikation der (einzelnen) Empfehlung |
 | `identifier` | Identifier | Identifier for this resource. |
 | `intent` | Intent | Intent of the request: proposal \| plan \| order. |
 | `subject` | Patient | The patient that the resource relates to. |
@@ -664,19 +664,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:Prioritaet` | Extension | FHIR extension. |
-| `extension:Evidenzgraduierung` | Extension | FHIR extension. |
-| `extension:Publikation` | Extension | FHIR extension. |
+| `extension:Prioritaet` | Priority | Priorität der (einzelnen) Empfehlung |
+| `extension:Evidenzgraduierung` | Evidence grade | Evidenzgraduierung der (einzelnen) Empfehlung |
+| `extension:Publikation` | Publication | Verweis auf Publikation der (einzelnen) Empfehlung |
 | `status` | Status | Status of the resource. |
 | `intent` | Intent | Intent of the request: proposal \| plan \| order. |
 | `category` | Category | Categorization of the resource. |
-| `category:MVGenomSeqTherapieStrategie` | Category | Categorization of the resource. |
-| `category:MVGenomSeqTherapieTyp` | Category | Categorization of the resource. |
+| `category:MVGenomSeqTherapieStrategie` | Modellvorhaben GenomSeq Therapiestrategie-Typ (Nicht-Medikamentös) | Kategorisierung der nicht-medikamentösen Therapieempfehlung nach Modellvorhaben GenomSeq |
+| `category:MVGenomSeqTherapieTyp` | Modellvorhaben GenomSeq Therapietyp (Kausal/Symptomatisch) | Kategorisierung der Therapieempfehlung nach Therapietyp (kausal vs. symptomatisch) gemäß Modellvorhaben GenomSeq |
 | `priority` | routine \| urgent \| asap \| stat | Dringlichkeit der Therapieempfehlung |
 | `code` | Code | Coding of the content. |
-| `code.coding:snomed` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `code.coding:ops` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `code.coding:loinc` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:ops` | OPS | Coding in OPS. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `occurrence[x]` | Empfohlener Zeitpunkt oder Zeitraum für die Intervention | The date/time at which the requested service should occur. |
@@ -694,18 +694,18 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:Prioritaet` | Extension | FHIR extension. |
-| `extension:Evidenzgraduierung` | Extension | FHIR extension. |
-| `extension:Publikation` | Extension | FHIR extension. |
+| `extension:Prioritaet` | Priority | Priorität der (einzelnen) Empfehlung |
+| `extension:Evidenzgraduierung` | Evidence grade | Evidenzgraduierung der (einzelnen) Empfehlung |
+| `extension:Publikation` | Publication | Verweis auf Publikation der (einzelnen) Empfehlung |
 | `identifier` | Identifier | An identifier for this medication request |
 | `status` | Status | active \| on-hold \| cancelled \| completed \| entered-in-error \| stopped \| draft \| unknown |
 | `intent` | Intent | proposal \| plan \| order \| original-order \| reflex-order \| filler-order \| instance-order \| option |
 | `category` | Category | Categorization of the resource. |
-| `category:MVGenomSeqTherapieStrategie` | Category | Categorization of the resource. |
-| `category:MVGenomSeqTherapieTyp` | Category | Categorization of the resource. |
+| `category:MVGenomSeqTherapieStrategie` | Modellvorhaben GenomSeq Therapiestrategie-Typ (Medikamentös) | Kategorisierung der medikamentösen Therapieempfehlung nach Modellvorhaben GenomSeq Strategietyp |
+| `category:MVGenomSeqTherapieTyp` | Modellvorhaben GenomSeq Therapietyp (Kausal/Symptomatisch) | Kategorisierung der Therapieempfehlung nach Therapietyp (kausal vs. symptomatisch) gemäß Modellvorhaben GenomSeq |
 | `medication[x]` | Medication | The medication that was requested. Code or a reference to a Medication resource. |
-| `medication[x]:medicationReference` | Medication | Reference to the medication. |
-| `medication[x]:medicationCodeableConcept` | Medication | Reference to the medication. |
+| `medication[x]:medicationReference` | Medication to be taken | Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identif... |
+| `medication[x]:medicationCodeableConcept` | Medication to be taken | Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identif... |
 | `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | PZN code | A reference to a code defined by Pharmazentralnummer |
 | `medication[x]:medicationCodeableConcept.coding:atcClassDe` | ATC code | A reference to a code defined by the German edition of the Anatomical Therapeutic Chemical classification system |
 | `medication[x]:medicationCodeableConcept.coding:atcClassEn` | ATC WHO code | A reference to a code defined by the WHO edition of the Anatomical Therapeutic Chemical classification system |

@@ -110,7 +110,37 @@
           }
         ],
         "path": "Specimen.extension",
-        "sliceName": "probenebene"
+        "sliceName": "probenebene",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ebene"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Specimen level"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Specimen.identifier",
@@ -142,7 +172,8 @@
             ]
           }
         ],
-        "path": "Specimen.identifier"
+        "path": "Specimen.identifier",
+        "short": "Specimen ID"
       },
       {
         "id": "Specimen.status",
@@ -174,7 +205,8 @@
             ]
           }
         ],
-        "path": "Specimen.status"
+        "path": "Specimen.status",
+        "short": "Availability status"
       },
       {
         "id": "Specimen.type",
@@ -222,7 +254,8 @@
             ]
           }
         ],
-        "path": "Specimen.type"
+        "path": "Specimen.type",
+        "short": "Specimen type"
       },
       {
         "id": "Specimen.type.coding:sct",
@@ -255,7 +288,38 @@
           }
         ],
         "path": "Specimen.type.coding",
-        "sliceName": "sct"
+        "sliceName": "sct",
+        "short": "SNOMED CT coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Specimen.subject",
@@ -287,7 +351,8 @@
             ]
           }
         ],
-        "path": "Specimen.subject"
+        "path": "Specimen.subject",
+        "short": "Patient"
       },
       {
         "id": "Specimen.receivedTime",
@@ -351,7 +416,8 @@
             ]
           }
         ],
-        "path": "Specimen.parent"
+        "path": "Specimen.parent",
+        "short": "Derived from"
       },
       {
         "id": "Specimen.request",
@@ -383,7 +449,8 @@
             ]
           }
         ],
-        "path": "Specimen.request"
+        "path": "Specimen.request",
+        "short": "Collection ID"
       },
       {
         "id": "Specimen.collection",
@@ -431,7 +498,8 @@
             ]
           }
         ],
-        "path": "Specimen.collection"
+        "path": "Specimen.collection",
+        "short": "Specimen sampling"
       },
       {
         "id": "Specimen.collection.extension:einstellungBlutversorgung",
@@ -464,7 +532,129 @@
           }
         ],
         "path": "Specimen.collection.extension",
-        "sliceName": "einstellungBlutversorgung"
+        "sliceName": "einstellungBlutversorgung",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Einstellung Blutversorgung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Blood supply discontinuation"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Specimen.collection.collected[x]",
+        "path": "Specimen.collection.collected[x]",
+        "short": "Sampling time"
+      },
+      {
+        "id": "Specimen.collection.quantity",
+        "path": "Specimen.collection.quantity",
+        "short": "Specimen quantity"
+      },
+      {
+        "id": "Specimen.collection.bodySite",
+        "path": "Specimen.collection.bodySite",
+        "short": "anatomical localisation"
+      },
+      {
+        "id": "Specimen.collection.bodySite.coding:sct",
+        "path": "Specimen.collection.bodySite.coding",
+        "sliceName": "sct",
+        "short": "SNOMED CT coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT coding"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Specimen.collection.bodySite.coding:icd-o-3",
+        "path": "Specimen.collection.bodySite.coding",
+        "sliceName": "icd-o-3",
+        "short": "ICD-O-3 coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ICD-O-3-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ICD-O-3 coding"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Specimen.collection.fastingStatus[x]",
+        "path": "Specimen.collection.fastingStatus[x]",
+        "short": "Fasting status"
       },
       {
         "id": "Specimen.processing",
@@ -496,7 +686,8 @@
             ]
           }
         ],
-        "path": "Specimen.processing"
+        "path": "Specimen.processing",
+        "short": "Specimen processing"
       },
       {
         "id": "Specimen.processing.extension:temperaturbedingungen",
@@ -529,7 +720,83 @@
           }
         ],
         "path": "Specimen.processing.extension",
-        "sliceName": "temperaturbedingungen"
+        "sliceName": "temperaturbedingungen",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "temperaturbedingungen"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Temperature conditions"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Specimen.processing.procedure",
+        "path": "Specimen.processing.procedure",
+        "short": "Processing procedure"
+      },
+      {
+        "id": "Specimen.processing.procedure.coding:sct",
+        "path": "Specimen.processing.procedure.coding",
+        "sliceName": "sct",
+        "short": "SNOMED CT coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT coding"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Specimen.processing.additive",
+        "path": "Specimen.processing.additive",
+        "short": "Processing additives"
       },
       {
         "id": "Specimen.processing.time[x]:timePeriod",
@@ -563,6 +830,7 @@
         ],
         "path": "Specimen.processing.time[x]",
         "sliceName": "timePeriod",
+        "short": "Processing period",
         "type": [
           {
             "code": "Period"
@@ -633,7 +901,37 @@
           }
         ],
         "path": "Specimen.processing.extension",
-        "sliceName": "temperaturbedingungen"
+        "sliceName": "temperaturbedingungen",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "temperaturbedingungen"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Temperature conditions"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Specimen.container",
@@ -665,7 +963,28 @@
             ]
           }
         ],
-        "path": "Specimen.container"
+        "path": "Specimen.container",
+        "short": "Specimen container"
+      },
+      {
+        "id": "Specimen.container.type",
+        "path": "Specimen.container.type",
+        "short": "Container type"
+      },
+      {
+        "id": "Specimen.container.capacity",
+        "path": "Specimen.container.capacity",
+        "short": "Capacity"
+      },
+      {
+        "id": "Specimen.container.specimenQuantity",
+        "path": "Specimen.container.specimenQuantity",
+        "short": "Specimen quantity"
+      },
+      {
+        "id": "Specimen.container.additive[x]",
+        "path": "Specimen.container.additive[x]",
+        "short": "Additives"
       },
       {
         "id": "Specimen.note",
@@ -697,7 +1016,8 @@
             ]
           }
         ],
-        "path": "Specimen.note"
+        "path": "Specimen.note",
+        "short": "Project usage"
       }
     ]
   }

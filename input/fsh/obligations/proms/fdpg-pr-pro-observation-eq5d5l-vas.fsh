@@ -9,11 +9,16 @@ Description: "FDPG Profil - MII_PR_PRO_Observation_EQ5D5L_VAS"
 * insert Translation(^title, en-US, EQ-5D-5L Visual Analogue Scale (VAS\))
 // --- Element Designations ---
 // Observation.extension
+* extension ^short = "Extension"
+* insert Translation(extension ^short, de-DE, Erweiterung)
+* insert Translation(extension ^short, en-US, Extension)
 * extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
 * insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
 * insert Translation(extension ^definition, en-US, FHIR extension.)
 // Observation.extension:instantiatesCanonical
 * extension[instantiatesCanonical] ^short = "FHIR protocol or definition"
+* insert Translation(extension[instantiatesCanonical] ^short, de-DE, Instanziiert kanonisches Profil)
+* insert Translation(extension[instantiatesCanonical] ^short, en-US, Instantiates canonical)
 // Observation.identifier
 * identifier ^short = "Business Identifier for observation"
 * insert Translation(identifier ^short, de-DE, Identifikator)

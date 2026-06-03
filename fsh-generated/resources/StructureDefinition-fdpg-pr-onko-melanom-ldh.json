@@ -160,6 +160,37 @@
       {
         "id": "Observation.category.coding",
         "path": "Observation.category.coding",
+        "short": "Tumor board type",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Art der Tumorkonferenz"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Tumor board type"
+                }
+              ]
+            }
+          ]
+        },
         "_definition": {
           "extension": [
             {

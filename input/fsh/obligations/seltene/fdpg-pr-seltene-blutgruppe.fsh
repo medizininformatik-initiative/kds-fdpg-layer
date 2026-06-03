@@ -33,8 +33,12 @@ Description: "FDPG Profil - MII_PR_Seltene_Blutgruppe"
 * insert Translation(code ^definition, en-US, Coding of the content.)
 // Observation.code.coding:loinc-abo-rh
 * code.coding[loinc-abo-rh] ^short = "AB0 und Rhesusfaktor"
+* insert Translation(code.coding[loinc-abo-rh] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[loinc-abo-rh] ^short, en-US, LOINC coding)
 // Observation.code.coding:loinc-abo
 * code.coding[loinc-abo] ^short = "AB0 Blutgruppe"
+* insert Translation(code.coding[loinc-abo] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[loinc-abo] ^short, en-US, LOINC coding)
 // Observation.subject
 * subject ^short = "Who and/or what the observation is about"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -60,6 +64,14 @@ Description: "FDPG Profil - MII_PR_Seltene_Blutgruppe"
 * value[x] ^definition = "The information determined as a result of making the observation, if the information has a simple value."
 * insert Translation(value[x] ^definition, de-DE, Wert der Beobachtung.)
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
+// Observation.value[x].coding:loinc
+* value[x].coding[loinc] ^short = "LOINC coding"
+* insert Translation(value[x].coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(value[x].coding[loinc] ^short, en-US, LOINC coding)
+// Observation.value[x].coding:snomed
+* value[x].coding[snomed] ^short = "SNOMED CT coding"
+* insert Translation(value[x].coding[snomed] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(value[x].coding[snomed] ^short, en-US, SNOMED CT coding)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(status)

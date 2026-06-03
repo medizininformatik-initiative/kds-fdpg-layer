@@ -10,10 +10,16 @@ Description: "FDPG Profil - MII_PR_Seltene_TherapieempfehlungNichtMedikamentoes"
 // --- Element Designations ---
 // ServiceRequest.extension:Prioritaet
 * extension[Prioritaet] ^short = "MII EX SE Empfehlung Priorität"
+* insert Translation(extension[Prioritaet] ^short, de-DE, Priorität)
+* insert Translation(extension[Prioritaet] ^short, en-US, Priority)
 // ServiceRequest.extension:Evidenzgraduierung
 * extension[Evidenzgraduierung] ^short = "MII EX SE Empfehlung Evidenzgraduierung"
+* insert Translation(extension[Evidenzgraduierung] ^short, de-DE, Empfehlung Evidenzgraduierung)
+* insert Translation(extension[Evidenzgraduierung] ^short, en-US, Evidence grade)
 // ServiceRequest.extension:Publikation
 * extension[Publikation] ^short = "MII EX SE Empfehlung Publikation"
+* insert Translation(extension[Publikation] ^short, de-DE, Empfehlung Publikation)
+* insert Translation(extension[Publikation] ^short, en-US, Publication)
 // ServiceRequest.status
 * status ^short = "draft | active | on-hold | revoked | completed | entered-in-error | unknown"
 * insert Translation(status ^short, de-DE, Status)
@@ -48,6 +54,18 @@ Description: "FDPG Profil - MII_PR_Seltene_TherapieempfehlungNichtMedikamentoes"
 * code ^definition = "Spezifische Codierung der empfohlenen nicht-medikamentösen Therapie"
 * insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
+// ServiceRequest.code.coding:snomed
+* code.coding[snomed] ^short = "SNOMED CT coding"
+* insert Translation(code.coding[snomed] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(code.coding[snomed] ^short, en-US, SNOMED CT coding)
+// ServiceRequest.code.coding:ops
+* code.coding[ops] ^short = "OPS coding"
+* insert Translation(code.coding[ops] ^short, de-DE, OPS-Kodierung)
+* insert Translation(code.coding[ops] ^short, en-US, OPS coding)
+// ServiceRequest.code.coding:loinc
+* code.coding[loinc] ^short = "LOINC coding"
+* insert Translation(code.coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[loinc] ^short, en-US, LOINC coding)
 // ServiceRequest.subject
 * subject ^short = "Patient, für den die Therapie empfohlen wird"
 * insert Translation(subject ^short, de-DE, Patient*in)

@@ -161,6 +161,34 @@ CODING_SUB_QUALIFIERS = {
     "display": {"de": "Anzeige",     "en": "display"},
 }
 
+# Fallback display names for coding-slice names where the slice's codesystem
+# URL is non-standard (e.g., MII-specific) and not present in canonical-labels
+# coding_systems. Used by derive_coding_subelement_label as a last resort.
+SLICE_NAME_ALIASES = {
+    "obds":         "oBDS",
+    "sct":          "SNOMED CT",
+    "snomed":       "SNOMED CT",
+    "snomed-ct":    "SNOMED CT",
+    "loinc":        "LOINC",
+    "icd10-gm":     "ICD-10-GM",
+    "icd-10-gm":    "ICD-10-GM",
+    "icd-o-3":      "ICD-O-3",
+    "icdo3":        "ICD-O-3",
+    "alpha-id":     "Alpha-ID",
+    "orphanet":     "Orphanet",
+    "mondo":        "MONDO",
+    "omim":         "OMIM",
+    "hpo":          "HPO",
+    "atc":          "ATC",
+    "ops":          "OPS",
+    "pzn":          "Pharmazentralnummer",
+    "ucum":         "UCUM",
+    "iso-3166":     "ISO 3166",
+    "iso-3166-2":   "ISO 3166-2",
+    "ieee-11073":   "IEEE 11073",
+    "v2-microbiology": "HL7 v2 Microbiology",
+}
+
 
 def collect_slice_system_urls(sd):
     """Build a map of slice element-id -> codesystem URL by inspecting the
@@ -186,13 +214,14 @@ def collect_slice_system_urls(sd):
 
 
 def derive_coding_subelement_label(el_id, parent_labels, slice_systems, coding_systems_map):
-    """Derive a templated label for a coding-slice sub-element.
+    """Derive a templated label for a coding-slice (depth 3) or its sub-element.
 
     Patterns handled:
-        *.coding:<slice>.code     -> "{parent} als {codesystem}"      / "{parent} as {codesystem}"
-        *.coding:<slice>.system   -> "{codesystem}-System-URL"        / "{codesystem} system URL"
-        *.coding:<slice>.version  -> "{codesystem}-Version"           / "{codesystem} version"
-        *.coding:<slice>.display  -> "{codesystem}-Anzeige"           / "{codesystem} display"
+        *.coding:<slice>          -> "{codesystem_de}-Kodierung"        / "{codesystem_en} coding"
+        *.coding:<slice>.code     -> "{parent} als {codesystem}"        / "{parent} as {codesystem}"
+        *.coding:<slice>.system   -> "{codesystem}-System-URL"          / "{codesystem} system URL"
+        *.coding:<slice>.version  -> "{codesystem}-Version"             / "{codesystem} version"
+        *.coding:<slice>.display  -> "{codesystem}-Anzeige"             / "{codesystem} display"
 
     Returns dict {de_short, en_short} or None.
 
@@ -200,31 +229,37 @@ def derive_coding_subelement_label(el_id, parent_labels, slice_systems, coding_s
     during the same emission pass, so the *parent CodeableConcept's* curated
     label feeds into the derived child label.
     """
+    # Case A: the slice itself, e.g. "Observation.value[x].coding:obds"
+    slice_match = re.match(r"^.+\.coding:([^.]+)$", el_id)
+    if slice_match:
+        cs_de, cs_en = _resolve_codesystem_display(el_id, slice_match.group(1),
+                                                  slice_systems, coding_systems_map)
+        if not cs_de:
+            return None
+        return {
+            "de_short": f"{cs_de}-Kodierung",
+            "en_short": f"{cs_en} coding",
+        }
+
+    # Case B: sub-element of a coding slice
     m = re.match(r"^(.+?)\.(code|system|version|display)$", el_id)
     if not m:
         return None
     base_id, sub = m.group(1), m.group(2)
-    # base_id must be a coding slice, i.e., end with .coding:<sliceName>
-    if not re.search(r"\.coding:[^.]+$", base_id):
+    slice_m = re.search(r"\.coding:([^.]+)$", base_id)
+    if not slice_m:
         return None
+    slice_name = slice_m.group(1)
 
-    system_url = slice_systems.get(base_id)
-    if not system_url:
-        return None
-    cs_entry = coding_systems_map.get(system_url)
-    if not cs_entry:
-        return None
-    cs_de = cs_entry.get("de_short")
-    cs_en = cs_entry.get("en_short")
-    if not cs_de or not cs_en:
+    cs_de, cs_en = _resolve_codesystem_display(base_id, slice_name,
+                                              slice_systems, coding_systems_map)
+    if not cs_de:
         return None
 
     if sub == "code":
-        # CodeableConcept parent is two segments up: drop ".coding:<slice>"
         parent_cc_id = re.sub(r"\.coding:[^.]+$", "", base_id)
         parent_de, parent_en = parent_labels.get(parent_cc_id, (None, None))
         if not parent_de or not parent_en:
-            # Fallback to codesystem-only when we couldn't resolve a parent
             return {"de_short": f"{cs_de}-Code", "en_short": f"{cs_en} code"}
         return {
             "de_short": f"{parent_de} als {cs_de}",
@@ -236,6 +271,27 @@ def derive_coding_subelement_label(el_id, parent_labels, slice_systems, coding_s
         "de_short": f"{cs_de}-{q['de']}",
         "en_short": f"{cs_en} {q['en']}",
     }
+
+
+def _resolve_codesystem_display(slice_id, slice_name, slice_systems, coding_systems_map):
+    """Return (de_short, en_short) for a coding-slice's codesystem.
+
+    Tries the system URL → canonical coding_systems lookup first; falls back
+    to a slice-name alias when the slice's codesystem URL is non-canonical
+    (e.g., MII-specific value-set CSs). Returns (None, None) when neither
+    source provides a display name.
+    """
+    system_url = slice_systems.get(slice_id)
+    if system_url:
+        cs_entry = coding_systems_map.get(system_url) or {}
+        de = cs_entry.get("de_short")
+        en = cs_entry.get("en_short")
+        if de and en:
+            return de, en
+    alias = SLICE_NAME_ALIASES.get(slice_name.lower())
+    if alias:
+        return alias, alias
+    return None, None
 
 
 def extract_translations(ext_obj):
@@ -330,9 +386,14 @@ def load_parent_sd(package_name, version, parent_name):
 
 
 def _is_derivable_coding_subelement(el_id):
-    """Returns True if el_id matches the *.coding:<slice>.{code|system|version|display}
-    pattern — these get auto-derived labels from parent + codesystem."""
-    return bool(re.search(r"\.coding:[^.]+\.(code|system|version|display)$", el_id))
+    """Returns True if el_id matches either:
+      - the coding slice itself:    *.coding:<slice>$
+      - or a coding-sub-element:    *.coding:<slice>.{code|system|version|display}$
+    Both get auto-derived labels from parent + codesystem."""
+    return bool(
+        re.search(r"\.coding:[^.]+$", el_id)
+        or re.search(r"\.coding:[^.]+\.(code|system|version|display)$", el_id)
+    )
 
 
 def get_ms_elements_with_translations(sd, canonical_map=None, module_map=None):
@@ -526,14 +587,19 @@ def generate_enriched_fsh(fsh_info, parent_sd, ms_elements, title_overrides=None
         if de_short and en_short:
             parent_labels[el["id"]] = (de_short, en_short)
 
-        # ^short — emit base text + translations. For derivable coding sub-
-        # elements we may not have a non-default upstream short; emit the
-        # derived EN as ^short in that case so the FHIR base default doesn't
-        # bleed through to FHIR tooling.
+        # ^short — emit base text + translations. Priority for base text:
+        # 1. upstream profile-curated short (when not a FHIR default)
+        # 2. derived EN short for coding-slice sub-elements
+        # 3. module/canonical EN short, even if upstream is empty/inherited
         if short and not _is_fhir_default(short):
             base_short = short
         elif en_short and _is_derivable_coding_subelement(el["id"]):
             base_short = en_short
+        elif en_short or de_short:
+            # Module/canonical provides a label but upstream has none —
+            # use the authored EN (fallback to DE) so FHIR-base-defaults
+            # don't bleed through to downstream consumers.
+            base_short = en_short or de_short
         else:
             base_short = None
 

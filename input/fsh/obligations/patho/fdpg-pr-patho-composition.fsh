@@ -52,6 +52,14 @@ Description: "FDPG Profil - MII_PR_Patho_Composition"
 * type ^definition = "Specifies the particular kind of composition (e.g. History and Physical, Discharge Summary, Progress Note). This usually equates to the purpose of making the composition."
 * insert Translation(type ^definition, de-DE, Typ oder Art der Ressource.)
 * insert Translation(type ^definition, en-US, Type or kind of the resource.)
+// Composition.type.coding:KDL
+* type.coding[KDL] ^short = "KDL coding"
+* insert Translation(type.coding[KDL] ^short, de-DE, KDL-Kodierung)
+* insert Translation(type.coding[KDL] ^short, en-US, KDL coding)
+// Composition.type.coding:XDS
+* type.coding[XDS] ^short = "IHE XDS Type Code coding"
+* insert Translation(type.coding[XDS] ^short, de-DE, IHE XDS Type Code-Kodierung)
+* insert Translation(type.coding[XDS] ^short, en-US, IHE XDS Type Code coding)
 // Composition.type.coding:sct
 * type.coding[sct] ^short = "SNOMED CT Typ"
 * insert Translation(type.coding[sct] ^short, de-DE, SNOMED CT Typ)
@@ -76,6 +84,14 @@ Description: "FDPG Profil - MII_PR_Patho_Composition"
 * category ^definition = "A categorization for the type of the composition - helps for indexing and searching. This may be implied by or derived from the code specified in the Composition Type."
 * insert Translation(category ^definition, de-DE, Kategorisierung der Ressource.)
 * insert Translation(category ^definition, en-US, Categorization of the resource.)
+// Composition.category.coding:LOINC
+* category.coding[LOINC] ^short = "LOINC coding"
+* insert Translation(category.coding[LOINC] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(category.coding[LOINC] ^short, en-US, LOINC coding)
+// Composition.category.coding:IHE
+* category.coding[IHE] ^short = "IHE XDS Class Code coding"
+* insert Translation(category.coding[IHE] ^short, de-DE, IHE XDS Class Code-Kodierung)
+* insert Translation(category.coding[IHE] ^short, en-US, IHE XDS Class Code coding)
 // Composition.category.coding:sct
 * category.coding[sct] ^short = "SNOMED CT Kategorie"
 * insert Translation(category.coding[sct] ^short, de-DE, SNOMED CT Kategorie)

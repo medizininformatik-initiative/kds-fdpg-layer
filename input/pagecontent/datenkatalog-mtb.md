@@ -4,7 +4,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 **Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.mtb](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.mtb/2026.0.1)
 
-#### MII PR MTB Antrag Kostenuebernahme (Claim)
+#### Antrag Kostenübernahme (Claim)
 
 **FDPG Profil:** [FDPG_PR_MTB_Antrag_Kostenuebernahme](StructureDefinition-fdpg-pr-mtb-antrag-kostenuebernahme.html) · **MII Elternprofil:** MII_PR_MTB_Antrag_Kostenuebernahme
 
@@ -22,7 +22,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `careTeam:ZPMBeteiligung` |  |  | Antragstellung ZPM | Verweis auf entsprechendes Feld in NGS Bericht und/oder IHC - Verweis auf KDS Molekular-Pathologischer Befundbericht |
 | `insurance` |  |  | Patient insurance information | Financial instruments for reimbursement for the health care products and services specified on the claim. |
 
-#### MII PR MTB Anwort Kostenuebernahme (ClaimResponse)
+#### Antwort Kostenübernahme (ClaimResponse)
 
 **FDPG Profil:** [FDPG_PR_MTB_Antwort_Kostenuebernahme](StructureDefinition-fdpg-pr-mtb-antwort-kostenuebernahme.html) · **MII Elternprofil:** MII_PR_MTB_Antwort_Kostenuebernahme
 
@@ -34,19 +34,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `type` |  |  | Kategorie des Antragstellers | Kategorie des Antragstellers - z.B. stationaer - ambulant - Apotheke |
 | `use` |  |  | Art des Kostenerstattungsantrags - claim oder predetermination oder preauthorization | folgt den Definitionen wie im amerikanischen Gesundsheitswesen gebraeuchlich. claim: Erstattungsantrag nach erfolgter Therapie; predetermination: unverbindliche Anfrage insb. zu Anteilen der Kosten... |
 | `patient` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `created` | Datum | Datum | Datum der Zusage / des Widerspruchs | The date this resource was created. |
+| `created` | Datum | Datum | Datum der Zusage / des Widerspruchs | Datum der Antragstellung. |
 | `insurer` |  |  | Party responsible for reimbursement | The party responsible for authorization, adjudication and reimbursement. |
 | `request` | Antrag | Antrag | Antrag | Dazugehoeriger Antrag zur Kostenuebernahme |
 | `outcome` |  |  | Ergebnis der Kostenuebernahme | Ergebnis der Kostenuebernahme. Fuer den Fall der Sekundaerdatennutzung ist davon auszugehen dass die Kostenerstattung bereits erfolgt ist. Daher ist der Status auf #complete gesetzt. |
 
-#### MII PR MTB Behandlungsepisode (ClinicalImpression)
+#### Behandlungsepisode (ClinicalImpression)
 
 **FDPG Profil:** [FDPG_PR_MTB_Behandlungsepisode](StructureDefinition-fdpg-pr-mtb-behandlungsepisode.html) · **MII Elternprofil:** MII_PR_MTB_Behandlungsepisode
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `extension:LeitlinienbehandlungStatus` |  |  | Erweiterung | FHIR-Erweiterung. |
-| `effective[x]:effectivePeriod` | Erfassungsdatum | Erfassungsdatum Durchführung Follow-Up | Zeitraum der Behandlungsepisode | Zeitraum von Einschluss bis Abschluss im Molekularen Tumorboard |
+| `extension:LeitlinienbehandlungStatus` |  |  | Leitlinienbehandlung Status | Status der Behandlung nach Leitlinie |
+| `effective[x]:effectivePeriod` | Zeitraum | Zeitraum von Einschluss bis Abschluss im Molekulare Tumorboard | Zeitraum der Behandlungsepisode | Zeitraum von Einschluss bis Abschluss im Molekularen Tumorboard |
 | `problem` |  |  | Relevant impressions of patient state | A list of the relevant problems/conditions for a patient. |
 | `problem:PrimaertumorDiagnose` |  |  | Primärtumor Diagnose | Verweise auf Diagnose des Primärtumors |
 | `investigation:KrankengeschichteFamilie` | KrankengeschichteFamilie, NGSBericht, ... | Verweis auf die familiäre Krankengeschichte | One or more sets of investigations (signs, symptoms, etc.) | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
@@ -59,7 +59,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `supportingInfo:Vortherapie.extension:LeitlinieDokumentation` | Vorbefund, LeitlinieDokumentation | Verweis auf relevanten Vorbefund | Leitlinie Dokumentation | Dokumentation zur Leitlinien-konformen Umsetzung der Prozedur |
 | `supportingInfo:Therapieplan` | Vorbefund, LeitlinieDokumentation | Verweis auf relevanten Vorbefund | Therapieplan | Therapieplan gemäß Beschluss des Molekularen Tumorboards |
 
-#### MII PR Biomarker Her2 Status (Observation)
+#### Biomarker HER2-Status (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_BIOMARKER_HER2_STATUS](StructureDefinition-fdpg-pr-mtb-biomarker-her2-status.html) · **MII Elternprofil:** MII_PR_MTB_BIOMARKER_HER2_STATUS
 
@@ -77,7 +77,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:gene-studied` |  |  | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` |  |  | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### MII PR MTB In Situ Hybridization (Observation)
+#### In-situ-Hybridisierung (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Biomarker_InSituHybridization](StructureDefinition-fdpg-pr-mtb-biomarker-in-situ-hybridization.html) · **MII Elternprofil:** MII_PR_MTB_Biomarker_InSituHybridization
 
@@ -92,18 +92,18 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Quantitatives Ergebnis - z.B. Signalanzahl | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
-| `value[x]:valueRatio` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ratio-Ergebnis - z.B. HER2/CEP17 | Wert als Verhältnis (Zähler/Nenner). |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Kategorisches Ergebnis - z.B. positiv/negativ | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Wert | Wert | Quantitatives Ergebnis - z.B. Signalanzahl | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueRatio` | Wert | Wert | Ratio-Ergebnis - z.B. HER2/CEP17 | Wert als Verhältnis (Zähler/Nenner). |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Kategorisches Ergebnis - z.B. positiv/negativ | Wert als kodierter Begriff aus einer Terminologie. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Interpretation der ISH Signale. Die Interpretation kann auf Vergleich mit Referenzwerten basieren. |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | FISH \| CISH \| SISH | In Situ Hybridization Methode: Fluoreszenz - FISH - Chromogen - CISH - oder Silber - SISH |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` |  |  | Komponenten | Einzelne Komponenten der Beobachtung |
-| `component:gene-studied` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:gene-studied` |  |  | Untersuchtes Gen | Das untersuchte Gen, identifiziert durch HGNC-ID. |
 | `component:biomarker-category` |  |  | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### MII PR MTB Biopsie Auftrag (ServiceRequest)
+#### Biopsie (Auftrag\ (ServiceRequest)
 
 **FDPG Profil:** [FDPG_PR_MTB_Biopsie_Auftrag](StructureDefinition-fdpg-pr-mtb-biopsie-auftrag.html) · **MII Elternprofil:** MII_PR_MTB_Biopsie_Auftrag
 
@@ -114,7 +114,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonReference:Tumorzellgehalt` | StuetzendeEntitaet, Histologie | Stützende Entität | Tumorzellgehalt | Verweis auf bestimmten - häufig zu niedrigen - Tumorzellgehalt der eine Rebiopsie notwendig macht |
 | `specimen` | Probe | Verweis auf entnommene Probe | Probe | Verweis auf das Probenmaterial. |
 
-#### MII PR MTB BRCAness (Observation)
+#### BRCAness (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_BRCAness](StructureDefinition-fdpg-pr-mtb-brcaness.html) · **MII Elternprofil:** MII_PR_MTB_BRCAness
 
@@ -128,8 +128,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Wert | Wert | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -137,7 +137,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:gene-studied` |  |  | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` |  |  | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### MII PR MTB Consent (Observation)
+#### Einwilligung erteilt (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Consent_Given](StructureDefinition-fdpg-pr-mtb-consent-given.html) · **MII Elternprofil:** MII_PR_MTB_Consent_Given
 
@@ -146,9 +146,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Code der Untersuchung (z.B. LOINC) | Code | Kodierung des Inhalts. | ✓ |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `encounter` |  |  | Gesundheitseinrichtungskontakt | Kontakt zur Gesundheitseinrichtung |  |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. | ✓ |
 
-#### MII PR MTB Copy Number Variant (Observation)
+#### Kopienzahlvariante (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Copy_Number_Variant](StructureDefinition-fdpg-pr-mtb-copy-number-variant.html) · **MII Elternprofil:** MII_PR_MTB_Copy_Number_Variant
 
@@ -162,20 +162,20 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
 | `component:conclusion-string` |  |  | Schlussfolgerung - Text | Textuelle Zusammenfassung oder Schlussfolgerung zur Variante |
-| `component:gene-studied` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:gene-studied` |  |  | Untersuchtes Gen | Das untersuchte Gen, identifiziert durch HGNC-ID. |
 | `component:cytogenetic-location` |  |  | Zytogenetische Lokalisation | Chromosomale Position der Variante in Bandennomenklatur |
 | `component:reference-sequence-assembly` |  |  | Referenzgenom-Assembly | Die verwendete Referenzgenom-Version wie z.B. GRCh37 oder GRCh38 |
-| `component:chromosome-identifier` |  |  | Chromosom | Untergeordnete Beobachtungskomponente. |
+| `component:chromosome-identifier` |  |  | Chromosom | Das betroffene Chromosom. |
 | `component:representative-coding-hgvs` |  |  | DNA-Änderung c.HGVS | Die cDNA-Änderung in HGVS-Nomenklatur auf Transkriptebene |
 | `component:genomic-hgvs` |  |  | Genomische DNA-Änderung g.HGVS | Die genomische DNA-Änderung in HGVS-Nomenklatur |
 | `component:genomic-ref-seq` |  |  | Genomische Referenzsequenz | Die genomische Referenzsequenz-ID wie z.B. NC_000007.14 |
 | `component:representative-transcript-ref-seq` |  |  | Transkript-Referenzsequenz | Die Transkript-Referenzsequenz-ID wie z.B. NM_004333.4 |
-| `component:exact-start-end` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:exact-start-end` |  |  | Exakte Start-/Endposition | Exakte genomische Koordinaten der Variante — Start und Ende. |
 | `component:inner-start-end` |  |  | Innere Start-End-Position | Der innere Bereich bei strukturellen Varianten |
 | `component:outer-start-end` |  |  | Äußere Start-End-Position | Der äußere Bereich bei strukturellen Varianten |
 | `component:ref-allele` |  |  | Referenz-Allel | Die Nukleotidsequenz des Referenz-Allels |
@@ -188,7 +188,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:variant-inheritance` |  |  | Varianten-Vererbung | Die Vererbungsart der Variante wie z.B. maternal oder paternal |
 | `component:variation-code` |  |  | Varianten-Code | Eindeutiger Identifikator der Variante aus externen Datenbanken wie z.B. ClinVar oder dbSNP |
 | `component:representative-protein-hgvs` |  |  | Aminosäure-Änderung p.HGVS | Die Aminosäure-Änderung in HGVS-Nomenklatur auf Proteinebene |
-| `component:copy-number` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:copy-number` |  |  | Kopienzahl | Anzahl der Kopien eines genomischen Abschnitts. |
 | `component:copy-number.value[x]:valueQuantity` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
 | `component:variant-confidence-status` |  |  | Konfidenzstatus der Variante | Der Vertrauensstatus der Variantendetektion |
 | `component:dna-region` |  |  | DNA-Regionsname | Ein lesbarer Name für die untersuchte Region. Typischerweise Exon # oder Intron # oder andere. |
@@ -207,17 +207,17 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:copy-number-neutral-loh` |  |  | Kopienzahlneutraler LoH | Kopienzahlneutraler Verlust der Heterozygotie |
 | `component:copy-number-neutral-loh.value[x]:valueCodeableConcept` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### MII PR MTB Diagnose Primärtumor (Condition)
+#### Diagnose Primärtumor (Condition)
 
 **FDPG Profil:** [FDPG_PR_MTB_Diagnose_Primaertumor](StructureDefinition-fdpg-pr-mtb-diagnose-primaertumor.html) · **MII Elternprofil:** MII_PR_MTB_Diagnose_Primaertumor
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
 | `extension` |  |  | Erweiterung | FHIR-Erweiterung. |
-| `extension:ReferenzPrimaerdiagnose` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:ReferenzPrimaerdiagnose` |  |  | Referenz Primaerdiagnose | This condition has an unspecified relationship with another condition. |
 | `extension:Feststellungsdatum` |  |  | Feststellungsdatum | Datum, an dem die Diagnose erstmals festgestellt wurde |
 | `extension:morphology-behavior-icdo3` |  |  | ICD-O-Morphologie | Morphologie des Primärtumors nach ICD-O-3 nach 6.3 oBDS |
-| `extension:occurredFollowing` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:occurredFollowing` |  |  | Frühere Tumorerkrankungen | Verweis auf frühere Tumorerkrankungen, nach denen die aktuelle Diagnose aufgetreten ist |
 | `clinicalStatus` |  |  | Klinischer Status | aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen |
 | `verificationStatus` |  |  | Verifizierungsstatus | unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe |
 | `verificationStatus.coding:condition-ver-status` |  |  | Verifizierungsstatus | Kodierung nach Verifizierungsstatus. |
@@ -234,19 +234,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Diagnose erstellt wurde oder mit dem die Diagnose in Zusammenhang steht. |
 | `onset[x]` |  |  | Beginn | Geschätztes oder tatsächliches Datum oder Zeitraum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
-| `onset[x]:onsetPeriod` |  |  | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
-| `onset[x]:onsetDateTime` |  |  | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
-| `onset[x]:onsetAge` |  |  | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
+| `onset[x]:onsetPeriod` |  |  | Beginn Zeitraum | Der Zeitraum, in dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
+| `onset[x]:onsetDateTime` |  |  | Beginn Datum | Das Datum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
+| `onset[x]:onsetAge` |  |  | Erkrankungsbeginn als Alter | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
 | `recordedDate` |  |  | Aufzeichnungsdatum | Datum, an dem die Diagnose erstmals dokumentiert wurde. |
 | `stage` | WHOGradZNS, OncoTree, ... | Grad des Tumors nach WHO Klassifikation der Tumoren des zentralen Nervensystems (ZNS) | Stage/grade, usually assessed formally | Clinical stage or grade of a condition. May include formal severity assessments. |
 | `stage:WHOGradZNS` | WHOGradZNS, OncoTree, ... | Grad des Tumors nach WHO Klassifikation der Tumoren des zentralen Nervensystems (ZNS) | WHO Grad Tumor ZNS | Grad eines Tumors nach WHO-Klassifikation der Tumoren des zentralen Nervensystems |
 | `stage:OncoTree` | WHOGradZNS, OncoTree, ... | Grad des Tumors nach WHO Klassifikation der Tumoren des zentralen Nervensystems (ZNS) | OncoTree Klassifikation | Klassifizierung eines Tumors nach OncoTree |
 | `stage:ErstdiagnoseZeitpunkt` | WHOGradZNS, OncoTree, ... | Grad des Tumors nach WHO Klassifikation der Tumoren des zentralen Nervensystems (ZNS) | Tumorausbreitung Erstdiagnose | Tumorausbreitung zum Zeitpunkt der Erstdiagnose |
 | `stage:MolekularesTumorboardZeitpunkt` | WHOGradZNS, OncoTree, ... | Grad des Tumors nach WHO Klassifikation der Tumoren des zentralen Nervensystems (ZNS) | Tumorausbreitung Molekulares Tumorboard | Tumorausbreitung zum Zeitpunkt des Molekularen Tumorboard |
-| `evidence` |  |  | Supporting evidence | Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition. |
+| `evidence` |  |  | Evidenz | Hinweise oder Befunde, die den Verifizierungsstatus der Diagnose stützen. |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Diagnose als Freitext. |
 
-#### MII PR MTB Diagnostische Implikation (Observation)
+#### Diagnostische Implikation (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Diagnostische_Implikation](StructureDefinition-fdpg-pr-mtb-diagnostische-implikation.html) · **MII Elternprofil:** MII_PR_MTB_Diagnostische_Implikation
 
@@ -264,11 +264,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component` |  |  | Komponenten | Einzelne Komponenten der diagnostischen Implikation |
 | `component:conclusion-string` |  |  | Schlussfolgerung - Text | Textuelle Zusammenfassung der diagnostischen Implikation |
 | `component:evidence-level` |  |  | Evidenzlevel | Das Evidenzlevel für die klinische Signifikanz |
-| `component:clinical-significance` |  |  | Klinische Signifikanz | Untergeordnete Beobachtungskomponente. |
+| `component:clinical-significance` |  |  | Klinische Signifikanz | Interpretation oder Einschätzung einer oder mehrerer genetischer Varianten. |
 | `component:predicted-phenotype` |  |  | Vorhergesagter Phänotyp | Der mit der Variante assoziierte vorhergesagte Phänotyp oder Erkrankung |
 | `component:mode-of-inheritance` |  |  | Vererbungsmodus | Der Vererbungsmodus der assoziierten Erkrankung |
 
-#### MII PR MTB DNA Fusion (Observation)
+#### DNA-Fusion (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_DNA_Fusion](StructureDefinition-fdpg-pr-mtb-dna-fusion.html) · **MII Elternprofil:** MII_PR_MTB_DNA_Fusion
 
@@ -282,7 +282,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
@@ -303,7 +303,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:coding-change-type` |  |  | DNA-Änderungstyp | Der Typ der DNA-Änderung wie z.B. Substitution oder Deletion |
 | `component:genomic-source-class` |  |  | Genomische Herkunftsklasse | Die Herkunft der Variante wie z.B. somatisch oder Keimbahn |
 | `component:sample-allelic-frequency` |  |  | Allelfrequenz in der Probe | Die Häufigkeit des varianten Allels in der untersuchten Probe |
-| `component:allelic-read-depth` |  |  | Komponente | Die Anzahl der Reads die das Allel unterstützen |
+| `component:allelic-read-depth` |  |  | Allelische Lesetiefe | Die Anzahl der Reads die das Allel unterstützen |
 | `component:allelic-state` |  |  | Allelstatus | Der Allelstatus wie z.B. heterozygot oder homozygot |
 | `component:variant-inheritance` |  |  | Varianten-Vererbung | Die Vererbungsart der Variante wie z.B. maternal oder paternal |
 | `component:variation-code` |  |  | Varianten-Code | Eindeutiger Identifikator der Variante aus externen Datenbanken wie z.B. ClinVar oder dbSNP |
@@ -313,18 +313,18 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:dna-region` |  |  | DNA-Regionsname | Ein lesbarer Name für die untersuchte Region. Typischerweise Exon # oder Intron # oder andere. |
 | `component:gene-fusion` |  |  | Genfusion | Details zur Genfusion in Blut oder Gewebe mittels molekulargenetischer Methode |
 | `component:detection-limit` |  |  | Nachweisgrenze | Die Nachweisgrenze des Laborgeräts |
-| `component:five-prime-chromosome` |  |  | 5' Domaene - Chromosom | Untergeordnete Beobachtungskomponente. |
+| `component:five-prime-chromosome` |  |  | 5' Domaene - Chromosom | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:five-prime-chromosome.value[x]:valueCodeableConcept` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:three-prime-chromosome` |  |  | 3' Domaene - Chromosom | Untergeordnete Beobachtungskomponente. |
+| `component:three-prime-chromosome` |  |  | 3' Domaene - Chromosom | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:three-prime-chromosome.value[x]:valueCodeableConcept` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:five-prime-position` |  |  | 5' Domaene - Position | Untergeordnete Beobachtungskomponente. |
+| `component:five-prime-position` |  |  | 5' Domaene - Position | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:five-prime-position.value[x]:valueRange` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:three-prime-position` |  |  | 3' Domaene - Position | Untergeordnete Beobachtungskomponente. |
-| `component:five-prime-gene` |  |  | 5' Domaene - Gen | Untergeordnete Beobachtungskomponente. |
-| `component:three-prime-gene` |  |  | 3' Domaene - Gen | Untergeordnete Beobachtungskomponente. |
+| `component:three-prime-position` |  |  | 3' Domaene - Position | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:five-prime-gene` |  |  | 5' Domaene - Gen | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:three-prime-gene` |  |  | 3' Domaene - Gen | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:three-prime-gene.value[x]:valueCodeableConcept` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### MII PR MTB Einfache Variante (Observation)
+#### Einfache Variante (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Einfache_Variante](StructureDefinition-fdpg-pr-mtb-einfache-variante.html) · **MII Elternprofil:** MII_PR_MTB_Einfache_Variante
 
@@ -338,39 +338,39 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
 | `component:conclusion-string` |  |  | Schlussfolgerung - Text | Textuelle Zusammenfassung oder Schlussfolgerung zur Variante |
-| `component:gene-studied` |  |  | Untersuchtes Gen | Untergeordnete Beobachtungskomponente. |
+| `component:gene-studied` |  |  | Untersuchtes Gen | Das untersuchte Gen, identifiziert durch HGNC-ID. |
 | `component:cytogenetic-location` |  |  | Zytogenetische Lokalisation | Chromosomale Position der Variante in Bandennomenklatur |
 | `component:reference-sequence-assembly` |  |  | Referenzgenom-Assembly | Die verwendete Referenzgenom-Version wie z.B. GRCh37 oder GRCh38 |
-| `component:chromosome-identifier` |  |  | Chromosom | Untergeordnete Beobachtungskomponente. |
-| `component:representative-coding-hgvs` |  |  | DNA-Änderung c.HGVS | Untergeordnete Beobachtungskomponente. |
+| `component:chromosome-identifier` |  |  | Chromosom | Das betroffene Chromosom. |
+| `component:representative-coding-hgvs` |  |  | DNA-Änderung c.HGVS | cDNA-Änderung in HGVS-Nomenklatur auf Transkriptebene. |
 | `component:genomic-hgvs` |  |  | Genomische DNA-Änderung g.HGVS | Die genomische DNA-Änderung in HGVS-Nomenklatur |
 | `component:genomic-ref-seq` |  |  | Genomische Referenzsequenz | Die genomische Referenzsequenz-ID wie z.B. NC_000007.14 |
-| `component:representative-transcript-ref-seq` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:exact-start-end` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:representative-transcript-ref-seq` |  |  | Transkript-Referenzsequenz | Transkript-Referenzsequenz-ID, z.B. NM_004333.4. |
+| `component:exact-start-end` |  |  | Exakte Start-/Endposition | Exakte genomische Koordinaten der Variante — Start und Ende. |
 | `component:inner-start-end` |  |  | Innere Start-End-Position | Der innere Bereich bei strukturellen Varianten |
 | `component:outer-start-end` |  |  | Äußere Start-End-Position | Der äußere Bereich bei strukturellen Varianten |
-| `component:ref-allele` |  |  | Referenz-Allel | Untergeordnete Beobachtungskomponente. |
-| `component:alt-allele` |  |  | Alternatives Allel | Untergeordnete Beobachtungskomponente. |
+| `component:ref-allele` |  |  | Referenz-Allel | Nukleotidsequenz des Referenz-Allels. |
+| `component:alt-allele` |  |  | Alternatives Allel | Nukleotidsequenz des alternativen (mutierten) Allels. |
 | `component:coding-change-type` |  |  | DNA-Änderungstyp | Der Typ der DNA-Änderung wie z.B. Substitution oder Deletion |
 | `component:genomic-source-class` |  |  | Genomische Herkunftsklasse | Die Herkunft der Variante wie z.B. somatisch oder Keimbahn |
-| `component:sample-allelic-frequency` |  |  | Allelfrequenz in der Probe | Untergeordnete Beobachtungskomponente. |
-| `component:allelic-read-depth` |  |  | Allelische Lesetiefe | Untergeordnete Beobachtungskomponente. |
+| `component:sample-allelic-frequency` |  |  | Allelfrequenz in der Probe | Häufigkeit des varianten Allels in der untersuchten Probe. |
+| `component:allelic-read-depth` |  |  | Allelische Lesetiefe | Anzahl der Reads, die das Allel unterstützen. |
 | `component:allelic-state` |  |  | Allelstatus | Der Allelstatus wie z.B. heterozygot oder homozygot |
 | `component:variant-inheritance` |  |  | Varianten-Vererbung | Die Vererbungsart der Variante wie z.B. maternal oder paternal |
-| `component:variation-code` |  |  | Varianten-Code | Untergeordnete Beobachtungskomponente. |
-| `component:representative-protein-hgvs` |  |  | Aminosäure-Änderung p.HGVS | Untergeordnete Beobachtungskomponente. |
+| `component:variation-code` |  |  | Varianten-Code | Eindeutiger Variantenidentifikator aus externen Datenbanken, z.B. ClinVar oder dbSNP. |
+| `component:representative-protein-hgvs` |  |  | Aminosäure-Änderung p.HGVS | Aminosäure-Änderung in HGVS-Nomenklatur auf Proteinebene. |
 | `component:copy-number` |  |  | Kopienzahl | Die Anzahl der Kopien eines genomischen Abschnitts |
 | `component:variant-confidence-status` |  |  | Konfidenzstatus der Variante | Der Vertrauensstatus der Variantendetektion |
-| `component:dna-region` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:dna-region` |  |  | DNA-Regionsname | Lesbarer Name für die untersuchte Region — typischerweise Exon # oder Intron #. |
 | `component:gene-fusion` |  |  | Genfusion | Details zur Genfusion in Blut oder Gewebe mittels molekulargenetischer Methode |
 | `component:detection-limit` |  |  | Nachweisgrenze | Die Nachweisgrenze des Laborgeräts |
 
-#### MII PR MTB Clinical Impresssion (ClinicalImpression)
+#### Follow-Up Klinischer Eindruck (ClinicalImpression)
 
 **FDPG Profil:** [FDPG_PR_MTB_Follow_Up_ClinicalImpression](StructureDefinition-fdpg-pr-mtb-follow-up-clinical-impression.html) · **MII Elternprofil:** MII_PR_MTB_Follow_Up_ClinicalImpression
 
@@ -380,14 +380,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `statusReason` | GrundNichtUmsetzung | Grund für die Nicht-Umsetzung des gesamten Therapieplans. Wird entweder evaluiert, wenn Patient ein zweites mal im MTB vorgestellt wird oder Patient verstorben ist. | Grund Nicht-Umsetzung | Grund fuer die Nicht-Umsetzung des gesamten Therapieplans |
 | `code` |  |  | Follow-Up | Follow-Up als Prozess des Einholens von Informationen ueber durchgefuehrte Therapien & Kostenuebernahmen |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `effective[x]` | Erfassungsdatum | Erfassungsdatum Durchführung Follow-Up | Erfassungsdatum | Erfassungsdatum Durchfuehrung Follow-Up |
+| `effective[x]` | Zeitraum | Zeitraum von Einschluss bis Abschluss im Molekulare Tumorboard | Erfassungsdatum | Erfassungsdatum Durchfuehrung Follow-Up |
 | `previous` |  |  | MTB-Behandlungsepisode | MTB-Behandlungsepisode auf die sich das Follow-Up bezieht |
 | `investigation` | KrankengeschichteFamilie, NGSBericht, ... | Verweis auf die familiäre Krankengeschichte | Status Follow-Up | Status des Therapieplans im Hinblick auf das Follow-Up |
 | `supportingInfo` | Vorbefund, LeitlinieDokumentation | Verweis auf relevanten Vorbefund | Information supporting the clinical impression | Information supporting the clinical impression. |
 | `supportingInfo:UmgesetzteTherapien` | Vorbefund, LeitlinieDokumentation | Verweis auf relevanten Vorbefund | Umgesetzte Therapien | Umgesetzte Therapien mit oder auch ohne Bezug auf die MTB-Empfehlungen |
 | `supportingInfo:AntraegeKostenuebernahme` | Vorbefund, LeitlinieDokumentation | Verweis auf relevanten Vorbefund | Antraege Kostenuebernahme | Antraege Kostenuebernahme fuer die empfohlenen Therapien |
 
-#### MII PR MTB Genomic Study Analysis (Procedure)
+#### Genomische Studienanalyse (Procedure)
 
 **FDPG Profil:** [FDPG_PR_MTB_Genomic_Study_Analysis](StructureDefinition-fdpg-pr-mtb-genomic-study-analysis.html) · **MII Elternprofil:** MII_PR_MTB_Genomic_Study_Analysis
 
@@ -403,13 +403,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:metrics` |  |  | Qualitätsmetriken | Qualitätsmetriken der Analyse wie z.B. Coverage oder Depth oder Call-Rate |
 | `extension:regions` |  |  | Untersuchte genomische Regionen | Komplexe Extension zur Spezifikation der genomischen Regionen - v.a. Gene aber theoretisch erweiterbar durch z.B. Exonangaben - die in dieser Analyse untersucht wurden. Angabe der untersuchten Regi... |
 | `extension:device` |  |  | Verwendetes Analysegerät | Komplexe Extension mit Art des Gerätes und Referenz zum Device wie z.B. Sequenziergerät oder Library Preparation Kit oder bioinformatische Pipelines das für diese Analyse verwendet wurde |
-| `extension:qc` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:qc` |  |  | Antrag GenomicsStudyAnalysis Metrics | Sequenzierbezogenen Metriken der Genomic Study Analysis |
 | `identifier` |  |  | Identifikator | Identifikator dieser Ressource. |
 | `status` | Status | WENN STATUS COMPLETED ODER STOPPED -> SYSTEMISCHE THERAPIE ENDE GRUND AUSFÜLLEN | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorie der Leitlinientherapie (Prozedur) | Kategorie | Kategorisierung der Ressource. |
 | `performed[x]` | Startdatum, Enddatum, ... | Startdatum der Vortherapie | Durchführungsdatum | Zeitpunkt oder Zeitraum der Durchführung. |
 
-#### Genomic Study Device (Device)
+#### Genomische Studie — Gerät (Device)
 
 **FDPG Profil:** [FDPG_PR_MTB_Genomic_Study_Device](StructureDefinition-fdpg-pr-mtb-genomic-study-device.html) · **MII Elternprofil:** MII_PR_MTB_Genomic_Study_Device
 
@@ -419,7 +419,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `deviceName` | Name des Geraets | This represents the manufacturer's name of the device as provided by the device, from a UDI label, or by a person describing the Device. This typically would be used when a person provides the name... |
 | `type` | Geraetetyp der Genomic Study | Typ oder Art der Ressource. |
 
-#### MII PR MTB Genomic Study (Procedure)
+#### Genomische Studie (Procedure)
 
 **FDPG Profil:** [FDPG_PR_MTB_Genomic_Study](StructureDefinition-fdpg-pr-mtb-genomic-study.html) · **MII Elternprofil:** MII_PR_MTB_Genomic_Study
 
@@ -433,7 +433,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `performed[x]` | Startdatum, Enddatum, ... | Startdatum der Vortherapie | Durchführungsdatum | Zeitpunkt oder Zeitraum der Durchführung. |
 | `reasonReference` | Diagnose | Verweis auf i.d.R. die Anmeldediagnose, in seltenen Fällen weitere Diagnosen | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 
-#### MII PR MTB Histologie-Evaluation Auftrag (ServiceRequest)
+#### Histologie-Evaluation (Auftrag\ (ServiceRequest)
 
 **FDPG Profil:** [FDPG_PR_MTB_Histologie_Evaluation_Auftrag](StructureDefinition-fdpg-pr-mtb-histologie-evaluation-auftrag.html) · **MII Elternprofil:** MII_PR_MTB_Histologie_Evaluation_Auftrag
 
@@ -444,7 +444,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonReference:Tumorzellgehalt` | StuetzendeEntitaet, Histologie | Stützende Entität | Tumorzellgehalt | Verweis auf bestimmten Tumorzellgehalt |
 | `specimen` | Probe | Verweis auf entnommene Probe | Probe | Verweis auf das Probenmaterial. |
 
-#### MII PR MTB HRD Score (Observation)
+#### HRD-Score (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_HRD_Score](StructureDefinition-fdpg-pr-mtb-hrd-score.html) · **MII Elternprofil:** MII_PR_MTB_HRD_Score
 
@@ -458,18 +458,18 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | HRD-Score | HRD-Score als Summe der LOH - TAI und LST-Werte |
+| `value[x]` | Wert | Wert | HRD-Score | HRD-Score als Summe der LOH - TAI und LST-Werte |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` |  |  | Komponenten | Einzelne Komponenten der Beobachtung |
 | `component:gene-studied` |  |  | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` |  |  | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
-| `component:LOH` |  |  | Komponente | Einzelne Komponenten der Beobachtung |
-| `component:TAI` |  |  | Komponente | Einzelne Komponenten der Beobachtung |
-| `component:LST` |  |  | Komponente | Einzelne Komponenten der Beobachtung |
+| `component:LOH` |  |  | Loss of heterozygosity | Einzelne Komponenten der Beobachtung |
+| `component:TAI` |  |  | Telomeric allelic imbalance | Einzelne Komponenten der Beobachtung |
+| `component:LST` |  |  | Large-scale state transitions | Einzelne Komponenten der Beobachtung |
 
-#### MII PR MTB Human-genetische Beratung Auftrag (ServiceRequest)
+#### Humangenetische Beratung (Auftrag\ (ServiceRequest)
 
 **FDPG Profil:** [FDPG_PR_MTB_Humangenetische_Beratung_Auftrag](StructureDefinition-fdpg-pr-mtb-humangenetische-beratung-auftrag.html) · **MII Elternprofil:** MII_PR_MTB_Humangenetische_Beratung_Auftrag
 
@@ -479,7 +479,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonCode` | Begruendung | Begründung für die Beauftragung einer erneuten Human-genetischen Beratung | Begründung (kodiert) | Kodierte Begründung für die Ressource. |
 | `specimen` | Probe | Verweis auf entnommene Probe | Probe | Verweis auf das Probenmaterial. |
 
-#### MII PR MTB Immunohistochemistry (Observation)
+#### Immunhistochemie HER2 (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_IMMUNOHISTOCHEMISTRY_HER2](StructureDefinition-fdpg-pr-mtb-immunohistochemistry-her2.html) · **MII Elternprofil:** MII_PR_MTB_IMMUNOHISTOCHEMISTRY_HER2
 
@@ -495,8 +495,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Block / Material-Nr. der Probe | Block-Material-Nr. der Probe. Da jede FHIR-Observation nur eine Referenz auf Specimen haben kann wird die gesamte Probe - z.B. Biopsie oder Exzisat - von den Einzelschnitten referenziert. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -504,7 +504,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:gene-studied` |  |  | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` |  |  | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### MII PR MTB Immunohistochemistry Mismatch Repair Status (Observation)
+#### Immunhistochemie Mismatch-Repair-Status (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Immunohistochemistry_MMR](StructureDefinition-fdpg-pr-mtb-immunohistochemistry-mmr.html) · **MII Elternprofil:** MII_PR_MTB_Immunohistochemistry_MMR
 
@@ -518,8 +518,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
 | `specimen` |  |  | Probe | Probe |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` |  |  | Komponenten | Einzelne Komponenten der Beobachtung |
@@ -532,7 +532,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:mmr-msh3` |  |  | Komponenten | Einzelne Komponenten der Beobachtung |
 | `component:mmr-mlh3` |  |  | Komponenten | Einzelne Komponenten der Beobachtung |
 
-#### MII PR MTB Immunohistochemistry Microsatellite Instability (Observation)
+#### Immunhistochemie Mikrosatelliteninstabilität (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Immunohistochemistry_MSI](StructureDefinition-fdpg-pr-mtb-immunohistochemistry-msi.html) · **MII Elternprofil:** MII_PR_MTB_Immunohistochemistry_MSI
 
@@ -546,15 +546,15 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der MSI-Bestimmung wie z.B. stabil oder instabil |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der MSI-Bestimmung wie z.B. stabil oder instabil |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
 | `specimen` |  |  | Probe | Probe |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` |  |  | Komponenten | Einzelne Komponenten der Beobachtung |
 | `component:gene-studied` |  |  | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` |  |  | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### MII PR MTB Immunohistochemistry (Observation)
+#### Immunhistochemie PD-L1 (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Immunohistochemistry_PDL1](StructureDefinition-fdpg-pr-mtb-immunohistochemistry-pdl1.html) · **MII Elternprofil:** MII_PR_MTB_Immunohistochemistry_PDL1
 
@@ -569,24 +569,24 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` |  |  | Komponenten | Einzelne Komponenten der Beobachtung |
 | `component:gene-studied` |  |  | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` |  |  | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
-| `component:tps-score` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:tps-score` |  |  | TPS-Score | Tumor Proportion Score (TPS) - Score für PD-L1-Expression in Tumorzellen. Der TPS ist der Anteil der PD-L1-positiven Tumorzellen im Verhältnis zu den Gesamtzellen. Der TPS wird in Prozent angegeben... |
 | `component:tps-score.value[x]:valueQuantity` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:cps-score` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:cps-score` |  |  | CPS-Score | Combined Positive Score (CPS) - Score für PD-L1-Expression in Tumorzellen und Immunzellen. Der CPS ist der Anteil der PD-L1-positiven Tumorzellen und Immunzellen im Verhältnis zu den Gesamtzellen. ... |
 | `component:cps-score.value[x]:valueQuantity` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:ics-score` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:ics-score` |  |  | ICS-Score | Immune Cell Score (ICS) - Score für PD-L1-Expression in Immunzellen. Der ICS ist der Anteil der PD-L1-positiven Immunzellen im Verhältnis zu den Gesamtzellen. Der ICS wird in Prozent angegeben. Ein... |
 | `component:ics-score.value[x]:valueQuantity` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:tc-score` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:tc-score` |  |  | TC-Score / TPS-Score | Tumor Cell Score (TC-Score) - Score für PD-L1-Expression in Tumorzellen. Der TC-Score ist der Anteil der PD-L1-positiven Tumorzellen im Verhältnis zu den Gesamtzellen. Der TC-Score wird in Prozent ... |
 | `component:tc-score.value[x]:valueQuantity` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### MII PR MTB Immunohistochemistry Phosphorylation (Observation)
+#### Immunhistochemie Phosphorylierung (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Immunohistochemistry_Phosphorylation](StructureDefinition-fdpg-pr-mtb-immunohistochemistry-phosphorylation.html) · **MII Elternprofil:** MII_PR_MTB_Immunohistochemistry_Phosphorylation
 
@@ -601,8 +601,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Block / Material-Nr. der Probe | Block-Material-Nr. der Probe. Da jede FHIR-Observation nur eine Referenz auf Specimen haben kann wird die gesamte Probe - z.B. Biopsie oder Exzisat - von den Einzelschnitten referenziert. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -613,7 +613,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:phosphorylation-localization.value[x]:valueCodeableConcept` |  |  | Phosphorylierungslokalisation | Phosphorylierungslokalisation gemaess UniProt |
 | `component:protein-isoform` |  |  | Komponenten | Einzelne Komponenten der Beobachtung |
 
-#### MII PR MTB Immunohistochemistry (Observation)
+#### Immunhistochemie (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Immunohistochemistry](StructureDefinition-fdpg-pr-mtb-immunohistochemistry.html) · **MII Elternprofil:** MII_PR_MTB_Immunohistochemistry
 
@@ -628,8 +628,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Ergebnis der immunhistochemischen Untersuchung | Ergebnis der immunhistochemischen Untersuchung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Block / Material-Nr. der Probe | Block-Material-Nr. der Probe. Da jede FHIR-Observation nur eine Referenz auf Specimen haben kann wird die gesamte Probe - z.B. Biopsie oder Exzisat - von den Einzelschnitten referenziert. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -637,7 +637,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:gene-studied` |  |  | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` |  |  | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### MII PR MTB In Situ Hybridization HER2 (Observation)
+#### In-situ-Hybridisierung HER2 (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_INSITUHYBRIDIZATION_HER2](StructureDefinition-fdpg-pr-mtb-insituhybridization-her2.html) · **MII Elternprofil:** MII_PR_MTB_INSITUHYBRIDIZATION_HER2
 
@@ -653,21 +653,21 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Quantitatives Ergebnis - z.B. Signalanzahl | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
-| `value[x]:valueRatio` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Kategorisches Ergebnis - z.B. positiv/negativ | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Wert | Wert | Quantitatives Ergebnis - z.B. Signalanzahl | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueRatio` | Wert | Wert | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Kategorisches Ergebnis - z.B. positiv/negativ | Wert als kodierter Begriff aus einer Terminologie. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Interpretation der ISH Signale. Die Interpretation kann auf Vergleich mit Referenzwerten basieren. |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | FISH \| CISH \| SISH | In Situ Hybridization Methode: Fluoreszenz - FISH - Chromogen - CISH - oder Silber - SISH |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` |  |  | Komponenten | Einzelne Komponenten der Beobachtung |
-| `component:gene-studied` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:gene-studied` |  |  | Untersuchtes Gen | Das untersuchte Gen, identifiziert durch HGNC-ID. |
 | `component:biomarker-category` |  |  | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
-| `component:target-signals` |  |  | Komponente | Einzelne Komponenten der Beobachtung |
-| `component:reference-signals` |  |  | Komponente | Einzelne Komponenten der Beobachtung |
-| `component:cells-counted` |  |  | Komponente | Einzelne Komponenten der Beobachtung |
+| `component:target-signals` |  |  | ERBB2 Signale pro Zellkern | Einzelne Komponenten der Beobachtung |
+| `component:reference-signals` |  |  | CEP17 Signale pro Zellkern | Einzelne Komponenten der Beobachtung |
+| `component:cells-counted` |  |  | Anzahl gezählter Zellkerne | Einzelne Komponenten der Beobachtung |
 
-#### MII PR MTB Mikrosatelliteninstabilität (Observation)
+#### Mikrosatelliteninstabilität (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Mikrosatelliteninstabilitaet](StructureDefinition-fdpg-pr-mtb-mikrosatelliteninstabilitaet.html) · **MII Elternprofil:** MII_PR_MTB_Mikrosatelliteninstabilitaet
 
@@ -681,7 +681,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | IHC\|PCR\|bioinformatisch | Methode der Untersuchung - IHC oder PCR oder NGS-basierte Untersuchung. |
 | `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
@@ -690,7 +690,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:gene-studied` |  |  | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` |  |  | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### MII PR MTB Molecular Pathology Report (DiagnosticReport)
+#### Molekular-Pathologie-Bericht (DiagnosticReport)
 
 **FDPG Profil:** [FDPG_PR_MTB_Molecular_Pathology_Report](StructureDefinition-fdpg-pr-mtb-molecular-pathology-report.html) · **MII Elternprofil:** MII_PR_MTB_Molecular_Pathology_Report
 
@@ -704,7 +704,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `result:Immunhistochemie` |  |  | Immunhistochemie | Ergebnisse der Immunhistochemie die im Kontext des Molekularen Tumorboards erstellt wurden. Umfasst neben regulaerer IHC auch die Phospho-IHC sowie komplexere IHC-Untersuchungen wie PDL1-Expression... |
 | `result:InSituHybridisierung` |  |  | Gewebebasierte In-Situ-Hybridisierung | [Observations](observation.html) that are part of this diagnostic report. |
 
-#### MII PR MTB Molekularer Biomarker (Observation)
+#### Molekularer Biomarker (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Molekularer_Biomarker](StructureDefinition-fdpg-pr-mtb-molekularer-biomarker.html) · **MII Elternprofil:** MII_PR_MTB_Molekularer_Biomarker
 
@@ -722,7 +722,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:gene-studied` |  |  | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` |  |  | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### MII PR MTB Mutationslast (Observation)
+#### Mutationslast (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Mutationslast](StructureDefinition-fdpg-pr-mtb-mutationslast.html) · **MII Elternprofil:** MII_PR_MTB_Mutationslast
 
@@ -736,7 +736,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
@@ -744,7 +744,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:gene-studied` |  |  | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` |  |  | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### MII PR MTB NGS-Bericht (DiagnosticReport)
+#### NGS-Bericht (DiagnosticReport)
 
 **FDPG Profil:** [FDPG_PR_MTB_NGS_Bericht](StructureDefinition-fdpg-pr-mtb-ngs-bericht.html) · **MII Elternprofil:** MII_PR_MTB_NGS_Bericht
 
@@ -767,7 +767,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `result:MolekularerBiomarker` |  |  | Molekularer Biomarker | Verweis auf Molekularer Biomarker |
 | `result:Tumorzellgehalt` |  |  | Observations | [Observations](observation.html) that are part of this diagnostic report. |
 
-#### MII PR MTB Oncotree Klassifikation (Observation)
+#### OncoTree-Klassifikation (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Oncotree](StructureDefinition-fdpg-pr-mtb-oncotree.html) · **MII Elternprofil:** MII_PR_MTB_Oncotree
 
@@ -776,9 +776,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Code der Untersuchung (z.B. LOINC) | Code | Kodierung des Inhalts. | ✓ |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `encounter` |  |  | Gesundheitseinrichtungskontakt | Kontakt zur Gesundheitseinrichtung |  |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. | ✓ |
 
-#### MII PR MTB Ploidie (Observation)
+#### Ploidie (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Ploidie](StructureDefinition-fdpg-pr-mtb-ploidie.html) · **MII Elternprofil:** MII_PR_MTB_Ploidie
 
@@ -792,15 +792,15 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueQuantity` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Wert | Wert | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `interpretation` | Interpretation | Interpretation | Interpretation | Klinische Interpretation des Wertes (z.B. normal, hoch, niedrig). |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` |  |  | Komponenten | Einzelne Komponenten der Beobachtung |
 | `component:gene-studied` |  |  | Untersuchtes Gen | Das untersuchte Gen |
 | `component:biomarker-category` |  |  | Biomarker-Kategorie | Die Kategorie des molekularen Biomarkers |
 
-#### MII PR MTB Response Befund (Observation)
+#### Response-Befund (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Response_Befund](StructureDefinition-fdpg-pr-mtb-response-befund.html) · **MII Elternprofil:** MII_PR_MTB_Response_Befund
 
@@ -815,18 +815,18 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
 | `effective[x]:effectiveDateTime` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt | Zeitpunkt des Response Befundes |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. |
-| `value[x]:valueCodeableConcept` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
-| `value[x]:valueCodeableConcept.coding:oBDS` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Gesamtbeurteilung im Verlauf | Datum der letzten Untersuchung in dieser Verlaufsbeurteilung gemäß 17.1 oBDS 2021. |
-| `value[x]:valueCodeableConcept.coding:MTB` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Gesamtbeurteilung im Verlauf | Datum der letzten Untersuchung in dieser Verlaufsbeurteilung gemäß 17.1 oBDS 2021. |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. |
+| `value[x]:valueCodeableConcept` | Wert | Wert | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueCodeableConcept.coding:oBDS` | Wert | Wert | Gesamtbeurteilung im Verlauf | Datum der letzten Untersuchung in dieser Verlaufsbeurteilung gemäß 17.1 oBDS 2021. |
+| `value[x]:valueCodeableConcept.coding:MTB` | Wert | Wert | Gesamtbeurteilung im Verlauf | Datum der letzten Untersuchung in dieser Verlaufsbeurteilung gemäß 17.1 oBDS 2021. |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Beurteilungsmethode | Beurteilungsmethode RECIST oder RANO |
 | `hasMember` |  |  | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `component` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:Tumor_Verlauf` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:Lymphknoten_Verlauf` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:Fernmetastasen_Verlauf` |  |  | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:Tumor_Verlauf` |  |  | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:Lymphknoten_Verlauf` |  |  | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:Fernmetastasen_Verlauf` |  |  | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 
-#### MII PR MTB RNA Fusion (Observation)
+#### RNA-Fusion (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_RNA_Fusion](StructureDefinition-fdpg-pr-mtb-rna-fusion.html) · **MII Elternprofil:** MII_PR_MTB_RNA_Fusion
 
@@ -840,7 +840,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
@@ -861,38 +861,38 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:coding-change-type` |  |  | DNA-Änderungstyp | Der Typ der DNA-Änderung wie z.B. Substitution oder Deletion |
 | `component:genomic-source-class` |  |  | Genomische Herkunftsklasse | Die Herkunft der Variante wie z.B. somatisch oder Keimbahn |
 | `component:sample-allelic-frequency` |  |  | Allelfrequenz in der Probe | Die Häufigkeit des varianten Allels in der untersuchten Probe |
-| `component:allelic-read-depth` |  |  | Komponente | Die Anzahl der Reads die das Allel unterstützen |
+| `component:allelic-read-depth` |  |  | Allelische Lesetiefe | Die Anzahl der Reads die das Allel unterstützen |
 | `component:allelic-state` |  |  | Allelstatus | Der Allelstatus wie z.B. heterozygot oder homozygot |
 | `component:variant-inheritance` |  |  | Varianten-Vererbung | Die Vererbungsart der Variante wie z.B. maternal oder paternal |
-| `component:variation-code` |  |  | Komponente | Eindeutiger Identifikator der Variante aus externen Datenbanken wie z.B. ClinVar oder dbSNP |
+| `component:variation-code` |  |  | Varianten-Code | Eindeutiger Identifikator der Variante aus externen Datenbanken wie z.B. ClinVar oder dbSNP |
 | `component:representative-protein-hgvs` |  |  | Aminosäure-Änderung p.HGVS | Die Aminosäure-Änderung in HGVS-Nomenklatur auf Proteinebene |
 | `component:copy-number` |  |  | Kopienzahl | Die Anzahl der Kopien eines genomischen Abschnitts |
 | `component:variant-confidence-status` |  |  | Konfidenzstatus der Variante | Der Vertrauensstatus der Variantendetektion |
 | `component:dna-region` |  |  | DNA-Regionsname | Ein lesbarer Name für die untersuchte Region. Typischerweise Exon # oder Intron # oder andere. |
 | `component:gene-fusion` |  |  | Genfusion | Details zur Genfusion in Blut oder Gewebe mittels molekulargenetischer Methode |
 | `component:detection-limit` |  |  | Nachweisgrenze | Die Nachweisgrenze des Laborgeräts |
-| `component:five-prime-gene` |  |  | 5' Domaene - Gen | Untergeordnete Beobachtungskomponente. |
+| `component:five-prime-gene` |  |  | 5' Domaene - Gen | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:five-prime-gene.value[x]:valueCodeableConcept` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:five-prime-transcript-id` |  |  | 5' Transkript - Identifier | Untergeordnete Beobachtungskomponente. |
+| `component:five-prime-transcript-id` |  |  | 5' Transkript - Identifier | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:five-prime-transcript-id.value[x]:valueCodeableConcept` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:five-prime-exon-id` |  |  | 5' Exon - Identifier | Untergeordnete Beobachtungskomponente. |
+| `component:five-prime-exon-id` |  |  | 5' Exon - Identifier | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:five-prime-exon-id.value[x]:valueCodeableConcept` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:five-prime-position` |  |  | 5' Domaene - Position | Untergeordnete Beobachtungskomponente. |
+| `component:five-prime-position` |  |  | 5' Domaene - Position | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:five-prime-position.value[x]:valueRange` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:five-prime-strand` |  |  | 5' Strang | Untergeordnete Beobachtungskomponente. |
+| `component:five-prime-strand` |  |  | 5' Strang | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:five-prime-strand.value[x]:valueCodeableConcept` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:three-prime-gene` |  |  | 3' Domaene - Gen | Untergeordnete Beobachtungskomponente. |
+| `component:three-prime-gene` |  |  | 3' Domaene - Gen | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:three-prime-gene.value[x]:valueCodeableConcept` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:three-prime-transcript-id` |  |  | 3' Transkript - Identifier | Untergeordnete Beobachtungskomponente. |
+| `component:three-prime-transcript-id` |  |  | 3' Transkript - Identifier | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:three-prime-transcript-id.value[x]:valueCodeableConcept` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:three-prime-exon-id` |  |  | 3' Exon - Identifier | Untergeordnete Beobachtungskomponente. |
+| `component:three-prime-exon-id` |  |  | 3' Exon - Identifier | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:three-prime-exon-id.value[x]:valueCodeableConcept` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:three-prime-position` |  |  | 3' Domaene - Position | Untergeordnete Beobachtungskomponente. |
+| `component:three-prime-position` |  |  | 3' Domaene - Position | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:three-prime-position.value[x]:valueRange` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:three-prime-strand` |  |  | 3' Strang | Untergeordnete Beobachtungskomponente. |
+| `component:three-prime-strand` |  |  | 3' Strang | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:three-prime-strand.value[x]:valueCodeableConcept` |  |  | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
 
-#### MII PR MTB RNA Seq (Observation)
+#### RNA-Seq (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_RNA_Seq](StructureDefinition-fdpg-pr-mtb-rna-seq.html) · **MII Elternprofil:** MII_PR_MTB_RNA_Seq
 
@@ -905,12 +905,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` |  |  | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | Wert | Wert | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
 | `component:conclusion-string` |  |  | Schlussfolgerung - Text | Textuelle Zusammenfassung oder Schlussfolgerung zur Variante |
-| `component:gene-studied` |  |  | Komponente | Das untersuchte Gen identifiziert durch HGNC-ID |
+| `component:gene-studied` |  |  | Untersuchtes Gen | Das untersuchte Gen identifiziert durch HGNC-ID |
 | `component:cytogenetic-location` |  |  | Zytogenetische Lokalisation | Chromosomale Position der Variante in Bandennomenklatur |
 | `component:reference-sequence-assembly` |  |  | Referenzgenom-Assembly | Die verwendete Referenzgenom-Version wie z.B. GRCh37 oder GRCh38 |
 | `component:chromosome-identifier` |  |  | Chromosom | Das betroffene Chromosom |
@@ -929,39 +929,39 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:allelic-read-depth` |  |  | Allelische Lesetiefe | Die Anzahl der Reads die das Allel unterstützen |
 | `component:allelic-state` |  |  | Allelstatus | Der Allelstatus wie z.B. heterozygot oder homozygot |
 | `component:variant-inheritance` |  |  | Varianten-Vererbung | Die Vererbungsart der Variante wie z.B. maternal oder paternal |
-| `component:variation-code` |  |  | Komponente | Eindeutiger Identifikator der Variante aus externen Datenbanken wie z.B. ClinVar oder dbSNP |
+| `component:variation-code` |  |  | Varianten-Code | Eindeutiger Identifikator der Variante aus externen Datenbanken wie z.B. ClinVar oder dbSNP |
 | `component:representative-protein-hgvs` |  |  | Aminosäure-Änderung p.HGVS | Die Aminosäure-Änderung in HGVS-Nomenklatur auf Proteinebene |
 | `component:copy-number` |  |  | Kopienzahl | Die Anzahl der Kopien eines genomischen Abschnitts |
 | `component:variant-confidence-status` |  |  | Konfidenzstatus der Variante | Der Vertrauensstatus der Variantendetektion |
 | `component:dna-region` |  |  | DNA-Regionsname | Ein lesbarer Name für die untersuchte Region. Typischerweise Exon # oder Intron # oder andere. |
 | `component:gene-fusion` |  |  | Genfusion | Details zur Genfusion in Blut oder Gewebe mittels molekulargenetischer Methode |
 | `component:detection-limit` |  |  | Nachweisgrenze | Die Nachweisgrenze des Laborgeräts |
-| `component:transcript-id` |  |  | Transkript-ID | Untergeordnete Beobachtungskomponente. |
-| `component:transcripts-per-million` |  |  | Transkripte pro Million | Untergeordnete Beobachtungskomponente. |
-| `component:tissue-corrected-expression` |  |  | Gewebekorrigierte Expression | Untergeordnete Beobachtungskomponente. |
-| `component:raw-counts` |  |  | Rohzaehlungen | Untergeordnete Beobachtungskomponente. |
-| `component:library-size` |  |  | Bibliotheksgroesse | Untergeordnete Beobachtungskomponente. |
-| `component:cohort-ranking` |  |  | Kohortenranking | Untergeordnete Beobachtungskomponente. |
+| `component:transcript-id` |  |  | Transkript-ID | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:transcripts-per-million` |  |  | Transkripte pro Million | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:tissue-corrected-expression` |  |  | Gewebekorrigierte Expression | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:raw-counts` |  |  | Rohzaehlungen | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:library-size` |  |  | Bibliotheksgroesse | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:cohort-ranking` |  |  | Kohortenranking | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 
-#### MII PR MTB Studie (ResearchStudy)
+#### Studie (ResearchStudy)
 
 **FDPG Profil:** [FDPG_PR_MTB_Studie](StructureDefinition-fdpg-pr-mtb-studie.html) · **MII Elternprofil:** MII_PR_MTB_Studie
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
 | `extension` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Label` | Erweiterung | FHIR-Erweiterung. |
-| `extension:AssociatedParty` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Ethikvotum` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Studienregister` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Eligibility` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Akronym` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Rekrutierung` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Finanzierung` | Erweiterung | FHIR-Erweiterung. |
+| `extension:Label` | Label | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:AssociatedParty` | Associated Party | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Ethikvotum` | Ethikvotum | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Studienregister` | Studienregister | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Eligibility` | Eligibility | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Akronym` | Akronym | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Rekrutierung` | Rekrutierung | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Finanzierung` | Finanzierung | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
-| `identifier:NCT` | Identifikator | Identifikator dieser Ressource. |
-| `identifier:DRKS` | Identifikator | Identifikator dieser Ressource. |
-| `identifier:EudraCT` | Identifikator | Identifikator dieser Ressource. |
+| `identifier:NCT` | Name für diese Studie | Kennungen, die dieser Forschungsstudie vom Sponsor oder anderen Systemen zugewiesen wurden. |
+| `identifier:DRKS` | Name für diese Studie | Kennungen, die dieser Forschungsstudie vom Sponsor oder anderen Systemen zugewiesen wurden. |
+| `identifier:EudraCT` | Name für diese Studie | Kennungen, die dieser Forschungsstudie vom Sponsor oder anderen Systemen zugewiesen wurden. |
 | `title` | Name für diese Studie | Ein kurzer, beschreibender und benutzerfreundlicher Bezeichner für die Studie. |
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
@@ -970,15 +970,15 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `keyword` | Wird verwendet, um nach der Studie zu suchen. | Schlüsselbegriffe, die bei der Suche nach oder Filterung der Studie helfen. |
 | `arm` | Definierter Weg durch die Studie für ein Subjekt. | Beschreibt eine erwartete Abfolge von Ereignissen für einen der Teilnehmer einer Studie. Z. B. Exposition gegenüber Medikament A, Auswaschphase, Exposition gegenüber Medikament B, Auswaschphase, Na... |
 
-#### MII PR MTB Studieneinschluss Anfrage (ServiceRequest)
+#### Studieneinschluss (Anfrage\ (ServiceRequest)
 
 **FDPG Profil:** [FDPG_PR_MTB_Studieneinschluss_Anfrage](StructureDefinition-fdpg-pr-mtb-studieneinschluss-anfrage.html) · **MII Elternprofil:** MII_PR_MTB_Studieneinschluss_Anfrage
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
 | `extension:statusReason` |  |  | Grund für Ablehnung | Grund für Ablehnung des Studieneinschlusses - z.B. Tod oder Studie geschlossen |
-| `extension:Prioritaet` |  |  | Erweiterung | FHIR-Erweiterung. |
-| `extension:Publikation` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:Prioritaet` |  |  | Priorität | Priorität der (einzelnen) Empfehlung |
+| `extension:Publikation` |  |  | Empfehlung Publikation | Verweis auf Publikation der (einzelnen) Empfehlung |
 | `status` |  |  | draft \| active \| on-hold \| revoked \| completed \| entered-in-error \| unknown | Status des Studieneinschlusses |
 | `category` |  |  | Kategorie | Kategorisierung der Ressource. |
 | `code` |  |  | Studieneinschlussempfehlung | Empfehlung zum Einschluss in eine Studie |
@@ -986,7 +986,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `supportingInfo` | NctNummer, EudraCtNummer, ... | Identifikator NCT Studie | Additional clinical information | Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations... |
 | `supportingInfo:Studie` | NctNummer, EudraCtNummer, ... | Identifikator NCT Studie | Additional clinical information | Additional clinical information about the patient or specimen that may influence the services or their interpretations. This information includes diagnosis, clinical findings and other observations... |
 
-#### MII PR MTB Systemtherapie Medication Statement (MedicationStatement)
+#### Systemtherapie (MedicationStatement\ (MedicationStatement)
 
 **FDPG Profil:** [FDPG_PR_MTB_Systemische_Therapie_Medication_Statement](StructureDefinition-fdpg-pr-mtb-systemische-therapie-medication-statement.html) · **MII Elternprofil:** MII_PR_MTB_Systemische_Therapie_Medication_Statement
 
@@ -1019,7 +1019,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dosage.asNeeded[x]:asNeededBoolean` | Dosisdichte | Dosisdichte | Take "as needed" (for x) | Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept). |
 | `dosage.asNeeded[x]:asNeededCodeableConcept` | Dosisdichte | Dosisdichte | Take "as needed" (for x) | Indicates whether the Medication is only taken when needed within a specific dosing schedule (Boolean option), or it indicates the precondition for taking the Medication (CodeableConcept). |
 
-#### MII PR MTB Systemische Therapie (Procedure)
+#### Systemische Therapie (Procedure)
 
 **FDPG Profil:** [FDPG_PR_MTB_Systemische_Therapie](StructureDefinition-fdpg-pr-mtb-systemische-therapie.html) · **MII Elternprofil:** MII_PR_MTB_Systemische_Therapie
 
@@ -1028,8 +1028,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension` |  |  | Erweiterung | FHIR-Erweiterung. |
 | `extension:Dokumentationsdatum` |  |  | Dokumentationsdatum | Dokumentationsdatum der Prozedur, falls abweichend vom Durchführungsdatum |
 | `extension:durchfuehrungsabsicht` |  |  | Durchführungsabsicht | therapeutisch \| palliativ \| diagnostisch \| präventiv \| rehabilitativ \| andere |
-| `extension:Intention` |  |  | Erweiterung | FHIR-Erweiterung. |
-| `extension:StellungZurOp` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:Intention` |  |  | Systemische Therapie Intention | Systemische Therapie Intention |
+| `extension:StellungZurOp` |  |  | Systemische Therapie Stellung zur OP | Systemische Therapie Stellung zur OP |
 | `extension:causedBy` |  |  | Therapieempfehlung | Verweis auf die MTB Therapieempfehlung |
 | `basedOn` | Therapieplan | Verweis auf den im Molekularen Tumorboard beschlossenen Therapieplan | MTB Therapieplan | Therapieplan gemäß Beschluss des Molekularen Tumorboards |
 | `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
@@ -1047,11 +1047,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonReference` | Diagnose | Verweis auf i.d.R. die Anmeldediagnose, in seltenen Fällen weitere Diagnosen | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
-| `outcome` |  |  | The result of procedure | The outcome of the procedure - did it resolve the reasons for the procedure being performed? |
+| `outcome` |  |  | Ergebnis der Kostenübernahme | Ergebnis der Kostenübernahme. Für die Sekundärdatennutzung ist davon auszugehen, dass die Kostenerstattung bereits erfolgt ist. |
 | `note` | Bemerkungen | Bemerkungen | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 | `usedCode` |  |  | Coded items used during the procedure | Identifies coded items that were used as part of the procedure. |
 
-#### MII PR MTB Systemische Vortherapie (Procedure)
+#### Systemische Vortherapie (Procedure)
 
 **FDPG Profil:** [FDPG_PR_MTB_Systemische_Vortherapie](StructureDefinition-fdpg-pr-mtb-systemische-vortherapie.html) · **MII Elternprofil:** MII_PR_MTB_Systemische_Vortherapie
 
@@ -1060,9 +1060,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension` |  |  | Erweiterung | FHIR-Erweiterung. |
 | `extension:Dokumentationsdatum` |  |  | Dokumentationsdatum | Dokumentationsdatum der Prozedur, falls abweichend vom Durchführungsdatum |
 | `extension:durchfuehrungsabsicht` |  |  | Durchführungsabsicht | therapeutisch \| palliativ \| diagnostisch \| präventiv \| rehabilitativ \| andere |
-| `extension:Intention` |  |  | Erweiterung | FHIR-Erweiterung. |
-| `extension:StellungZurOp` |  |  | Erweiterung | FHIR-Erweiterung. |
-| `extension:Leitlinie` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:Intention` |  |  | Systemische Therapie Intention | Systemische Therapie Intention |
+| `extension:StellungZurOp` |  |  | Systemische Therapie Stellung zur OP | Systemische Therapie Stellung zur OP |
+| `extension:Leitlinie` |  |  | Leitlinie Dokumentation | Dokumentation zur Leitlinien-konformen Umsetzung der Prozedur |
 | `basedOn` | Therapieplan | Verweis auf den im Molekularen Tumorboard beschlossenen Therapieplan | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `basedOn:Therapieplan` | Therapieplan | Verweis auf den im Molekularen Tumorboard beschlossenen Therapieplan | Therapieplan | Verweis auf den im Molekularen Tumorboard beschlossenen Therapieplan |
 | `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
@@ -1081,17 +1081,17 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonReference` | Diagnose | Verweis auf i.d.R. die Anmeldediagnose, in seltenen Fällen weitere Diagnosen | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
-| `outcome` |  |  | The result of procedure | The outcome of the procedure - did it resolve the reasons for the procedure being performed? |
+| `outcome` |  |  | Ergebnis der Kostenübernahme | Ergebnis der Kostenübernahme. Für die Sekundärdatennutzung ist davon auszugehen, dass die Kostenerstattung bereits erfolgt ist. |
 | `note` | Bemerkungen | Bemerkungen | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
 | `usedCode` |  |  | Coded items used during the procedure | Identifies coded items that were used as part of the procedure. |
 
-#### MII PR MTB Therapeutische Implikation (Observation)
+#### Therapeutische Implikation (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Therapeutische_Implikation](StructureDefinition-fdpg-pr-mtb-therapeutische-implikation.html) · **MII Elternprofil:** MII_PR_MTB_Therapeutische_Implikation
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `extension:Evidenzgraduierung` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:Evidenzgraduierung` |  |  | Empfehlung Evidenzgraduierung | Evidenzgraduierung der (einzelnen) Empfehlung |
 | `status` | Status | Status der Einwilligung zum Molekularen Tumorboard | Status | Status der Beobachtung |
 | `category` |  |  | Kategorie | Klassifizierung der Beobachtungsart |
 | `code` | Code | Code der Untersuchung (z.B. LOINC) | Code | Code zur Identifizierung der therapeutischen Implikation |
@@ -1110,15 +1110,15 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `component:medication-assessed` |  |  | Bewertete Medikation | Die bewertete Medikation für die therapeutische Empfehlung |
 | `component:therapy-assessed` |  |  | Bewertete Therapie | Die bewertete nicht-medikamentöse Therapie |
 
-#### MII PR MTB Therapieempfehlung Kombinationstherapie (RequestGroup)
+#### Therapieempfehlung Kombinationstherapie (RequestGroup)
 
 **FDPG Profil:** [FDPG_PR_MTB_Therapieempfehlung_Kombination](StructureDefinition-fdpg-pr-mtb-therapieempfehlung-kombination.html) · **MII Elternprofil:** MII_PR_MTB_Therapieempfehlung_Kombination
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
-| `extension:Prioritaet` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Evidenzgraduierung` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Publikation` | Erweiterung | FHIR-Erweiterung. |
+| `extension:Prioritaet` | Priorität | Priorität der (einzelnen) Empfehlung |
+| `extension:Evidenzgraduierung` | Empfehlung Evidenzgraduierung | Evidenzgraduierung der (einzelnen) Empfehlung |
+| `extension:Publikation` | Empfehlung Publikation | Verweis auf Publikation der (einzelnen) Empfehlung |
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `status` | draft \| active \| on-hold \| revoked \| completed \| entered-in-error \| unknown | Status der Umsetzung der Therapieempfehlung |
 | `intent` | proposal \| option | Da das MTB nur Empfehlungen abgibt wird hier typischerweise proposal stehen. Es sei denn diese Therapieempfehlung ist selbst nochmal Teil einer RequestGroup. In dem Fall muss hier option stehen. |
@@ -1129,21 +1129,21 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonReference` | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `action` | Proposed actions, if any | The actions, if any, produced by the evaluation of the artifact. |
 
-#### MII PR MTB Therapieempfehlung Systemische Therapie (MedicationRequest)
+#### Therapieempfehlung systemische Therapie (MedicationRequest)
 
 **FDPG Profil:** [FDPG_PR_MTB_Therapieempfehlung](StructureDefinition-fdpg-pr-mtb-therapieempfehlung.html) · **MII Elternprofil:** MII_PR_MTB_Therapieempfehlung
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `extension:Prioritaet` |  |  | Erweiterung | FHIR-Erweiterung. |
-| `extension:Evidenzgraduierung` |  |  | Erweiterung | FHIR-Erweiterung. |
-| `extension:Publikation` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:Prioritaet` |  |  | Priorität | Priorität der (einzelnen) Empfehlung |
+| `extension:Evidenzgraduierung` |  |  | Empfehlung Evidenzgraduierung | Evidenzgraduierung der (einzelnen) Empfehlung |
+| `extension:Publikation` |  |  | Empfehlung Publikation | Verweis auf Publikation der (einzelnen) Empfehlung |
 | `identifier` |  |  | Identifikator | Ein Identifikator für die Medikationsverordnung |
 | `status` |  |  | Status | Status der Ressource. |
 | `intent` |  |  | Absicht | Absicht der Anforderung: Vorschlag \| Plan \| Auftrag. |
 | `medication[x]` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | Medikation | Medikation, die verordnet wurde. Code oder Referenz auf Medication-Objekt. |
-| `medication[x]:medicationReference` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | Medikation | Verweis auf das Medikament oder die Medikation. |
-| `medication[x]:medicationCodeableConcept` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | Medikation | Verweis auf das Medikament oder die Medikation. |
+| `medication[x]:medicationReference` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | Medication to be taken | Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identif... |
+| `medication[x]:medicationCodeableConcept` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | Medication to be taken | Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identif... |
 | `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | PZN Code | Ein Verweis auf einen von der Pharmazentralnummer definierten Code |
 | `medication[x]:medicationCodeableConcept.coding:atcClassDe` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | ATC Code | Ein Verweis auf einen von der deutschen Fassung der Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code |
 | `medication[x]:medicationCodeableConcept.coding:atcClassEn` | Wirkstoffe | Empfohlene Wirkstoffe zur Therapie | ATC WHO Code | Ein Verweis auf einen von der WHO Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code |
@@ -1156,7 +1156,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonCode` |  |  | Grund Code | Grund für die Medikationverordnung als Code. |
 | `reasonReference` | StuetzendeMolekularAlterationen, StuetzendeEntitaet | Verweis auf entsprechendes Feld in NGS Bericht und/oder IHC (Verweis auf KDS Molekular-Pathologischer Befundbericht) | Grund Referenz | Grund für die Medikationsverordnung als Referenz auf Condition- oder Observation-Objekt. |
 | `reasonReference:Primaertumor` | StuetzendeMolekularAlterationen, StuetzendeEntitaet | Verweis auf entsprechendes Feld in NGS Bericht und/oder IHC (Verweis auf KDS Molekular-Pathologischer Befundbericht) | Grund Referenz | Grund für die Medikationsverordnung als Referenz auf Condition- oder Observation-Objekt. |
-| `reasonReference:StuetzendeMolekulareAlteration` | StuetzendeMolekularAlterationen, StuetzendeEntitaet | Verweis auf entsprechendes Feld in NGS Bericht und/oder IHC (Verweis auf KDS Molekular-Pathologischer Befundbericht) | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
+| `reasonReference:StuetzendeMolekulareAlteration` | StuetzendeMolekularAlterationen, StuetzendeEntitaet | Verweis auf entsprechendes Feld in NGS Bericht und/oder IHC (Verweis auf KDS Molekular-Pathologischer Befundbericht) | Stützende molekulare Alteration(en) | Verweis auf entsprechendes Feld in NGS Bericht und/oder IHC (Verweis auf KDS Molekular-Pathologischer Befundbericht) |
 | `basedOn` |  |  | Basiert auf | Ein Plan oder eine Anforderung, die ganz oder teilweise durch diese Medikationsverordnung erfüllt wird. |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Medikationsverordnung als Freitext. |
 | `dosageInstruction` |  |  | Dosierungsanweisung | Gibt an, wie das Medikament vom Patienten zu verwenden ist. |
@@ -1167,7 +1167,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `substitution.allowed[x]:allowedCodeableConcept` |  |  | Whether substitution is allowed or not | True if the prescriber allows a different drug to be dispensed from what was prescribed. |
 | `priorPrescription` |  |  | Vorherige Verschreibung | Eine Verschreibung, die ersetzt wird |
 
-#### MII PR MTB Therapieplan (CarePlan)
+#### Therapieplan (CarePlan)
 
 **FDPG Profil:** [FDPG_PR_MTB_Therapieplan](StructureDefinition-fdpg-pr-mtb-therapieplan.html) · **MII Elternprofil:** MII_PR_MTB_Therapieplan
 
@@ -1179,7 +1179,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `description` | Protokollauszug | Protokollauszug aus dem Beschluss des Molekularen Tumorboards | Protokollauszug | Protokollauszug aus dem Beschluss des Molekularen Tumorboards |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
-| `created` | Erstellungsdatum | Erstellungsdatum des Therapieplans gemäß Beschluss des Molekularen Tumorboards | Erstellungsdatum | Erstellungsdatum des Therapieplans gemäß Beschluss des Molekularen Tumorboards |
+| `created` | Erstellungsdatum | Erstellungsdatum des Therapieplans gemäß Beschluss des Molekularen Tumorboards | Datum der Zusage / des Widerspruchs | Datum der Antragstellung. |
 | `addresses` |  |  | Health issues this plan addresses | Identifies the conditions/problems/concerns/diagnoses/etc. whose management and/or mitigation are handled by this plan. |
 | `supportingInfo` | Behandlungsepisode | Verweis auf Behandlungsepisode mit Angaben zum aktuellen Krankheitszustand und bisherige Behandlungsmaßnahmen | Information considered as part of plan | Identifies portions of the patient's record that specifically influenced the formation of the plan. These might include comorbidities, recent procedures, limitations, recent assessments, etc. |
 | `supportingInfo:Behandlungsepisode` | Behandlungsepisode | Verweis auf Behandlungsepisode mit Angaben zum aktuellen Krankheitszustand und bisherige Behandlungsmaßnahmen | Behandlungsepisode | Aktueller Krankheitszustand und bisherige Behandlungsmaßnahmen |
@@ -1190,7 +1190,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `activity:extended/Biopsie` | StatusBegruendung, UmgesetzteEmpfehlung | Erforderliche Begründung für den Fall, dass der Beschluss keine Therapieempfehlungen enthält | Empfehlung Biopsie | Auftrag zur erneuten Biopsie |
 | `activity:extended/Studieneinschlussempfehlung` | StatusBegruendung, UmgesetzteEmpfehlung | Erforderliche Begründung für den Fall, dass der Beschluss keine Therapieempfehlungen enthält | Studieneinschlussempfehlung | Anfrage zum Studieneinschluss |
 
-#### MII PR MTB Tumorausbreitung (Observation)
+#### Tumorausbreitung (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Tumorausbreitung](StructureDefinition-fdpg-pr-mtb-tumorausbreitung.html) · **MII Elternprofil:** MII_PR_MTB_Tumorausbreitung
 
@@ -1203,19 +1203,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
 | `effective[x]` | Datum | Bestimmungsdatum des ECOG Performance Status | Zeitpunkt Tumorausbreitung | Zeitpunkt der Feststellung der Tumorausbreitung | ✓ |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. | ✓ |
-| `value[x].coding:Tumorausbreitung` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Tumorausbreitung | Angabe zur Tumorausbreitung |  |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].coding:Tumorausbreitung` | Wert | Wert | Tumorausbreitung | Angabe zur Tumorausbreitung |  |
 
-#### MII PR MTB Tumorzellgehalt (Observation)
+#### Tumorzellgehalt (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_Tumorzellgehalt](StructureDefinition-fdpg-pr-mtb-tumorzellgehalt.html) · **MII Elternprofil:** MII_PR_MTB_Tumorzellgehalt
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
 |---|---|---|---|---|---|
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. | ✓ |
 | `method` | Beurteilungsmethode, Metadaten | Beurteilungsmethode des Response Befundes | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
 
-#### MII PR MTB WHO Grad Tumor ZNS (Observation)
+#### WHO-Grad ZNS-Tumor (Observation)
 
 **FDPG Profil:** [FDPG_PR_MTB_WHO_Grad_Tumor_ZNS](StructureDefinition-fdpg-pr-mtb-who-grad-tumor-zns.html) · **MII Elternprofil:** MII_PR_MTB_WHO_Grad_Tumor_ZNS
 
@@ -1224,73 +1224,73 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Code der Untersuchung (z.B. LOINC) | Code | Kodierung des Inhalts. | ✓ |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `encounter` |  |  | Gesundheitseinrichtungskontakt | Kontakt zur Gesundheitseinrichtung |  |
-| `value[x]` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | Messwert | Wert der Beobachtung. | ✓ |
-| `value[x].coding:SCT` | AllgemeinerLeistungszustand, AnsprechenBeurteilung | Verweis auf die Bewertung des allgemeinen Leistungszustandes | WHO-Klassifikation gemäß SNOMED CT | Grad eines Tumors nach WHO-Klassifikation der Tumoren des zentralen Nervensystems gemäß SNOMED CT |  |
+| `value[x]` | Wert | Wert | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].coding:SCT` | Wert | Wert | WHO-Klassifikation gemäß SNOMED CT | Grad eines Tumors nach WHO-Klassifikation der Tumoren des zentralen Nervensystems gemäß SNOMED CT |  |
 
 ---
 
 ## English Translations
 
 <details>
-<summary>English translations - MII PR MTB Antrag Kostenuebernahme</summary>
+<summary>English translations - Antrag Kostenübernahme</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `status` | Status | Status of the resource. |
 | `type` | Type | Type or kind of the resource. |
-| `use` | Art des Kostenerstattungsantrags (claim, predetermination, preauthorization) | folgt den Definitionen wie im amerikanischen Gesundsheitswesen gebräuchlich. claim: Erstattungsantrag nach erfolgter Therapie; predetermination: unverbindliche Anfrage, insb. zu Anteilen der Kosten... |
+| `use` | Type of reimbursement claim | Follows US-healthcare definitions: claim = reimbursement after therapy; predetermination = advance check; preauthorization = advance approval. |
 | `patient` | Patient | The patient that the resource relates to. |
-| `created` | Antragsdatum | Datum der Antragstellung |
-| `provider` | Antragstellende Einrichtung / Klinik / Person | Einrichtung, die den Antrag stellt. In der Regel die Klinik, die den Patienten behandelt |
-| `priority` | Priorität des Antrags | Priorität des Antrags. Pflichtfeld in FHIR, aber nicht in der MII-Logik relevant |
+| `created` | Approval / objection date | Date the application was filed. |
+| `provider` | Requesting facility | Facility filing the application — usually the treating clinic. |
+| `priority` | Application priority | Application priority. Required by FHIR, not relevant in MII logic. |
 | `related` | Prior or corollary claims | Other claims which are related to this claim such as prior submissions or claims for related services or for the same event. |
-| `prescription` | Therapieempfehlung | Verweis auf die Therapieempfehlung des MTB, die zu diesem Antrag führt |
-| `careTeam:ZPMBeteiligung` | Antragstellung ZPM | Verweis auf entsprechendes Feld in NGS Bericht und/oder IHC (Verweis auf KDS Molekular-Pathologischer Befundbericht) |
+| `prescription` | Therapy recommendation | Reference to the MTB therapy recommendation that triggers this application. |
+| `careTeam:ZPMBeteiligung` | ZPM application | Reference to the corresponding field in the NGS report and/or IHC, and to the KDS molecular pathology dataset. |
 | `insurance` | Patient insurance information | Financial instruments for reimbursement for the health care products and services specified on the claim. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Anwort Kostenuebernahme</summary>
+<summary>English translations - Antwort Kostenübernahme</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension` | Extension | FHIR extension. |
-| `extension:Entscheidung` | Extension | FHIR extension. |
+| `extension:Entscheidung` | Decision | Stage of the response to the cost-coverage application. |
 | `status` | Status | Status of the resource. |
 | `type` | Type | Type or kind of the resource. |
-| `use` | Art des Kostenerstattungsantrags (claim, predetermination, preauthorization) | folgt den Definitionen wie im amerikanischen Gesundsheitswesen gebräuchlich. claim: Erstattungsantrag nach erfolgter Therapie; predetermination: unverbindliche Anfrage, insb. zu Anteilen der Kosten... |
+| `use` | Type of reimbursement claim | Follows US-healthcare definitions: claim = reimbursement after therapy; predetermination = advance check; preauthorization = advance approval. |
 | `patient` | Patient | The patient that the resource relates to. |
-| `created` | Datum der Zusage / des Widerspruchs | The date this resource was created. |
+| `created` | Approval / objection date | Date the application was filed. |
 | `insurer` | Party responsible for reimbursement | The party responsible for authorization, adjudication and reimbursement. |
-| `request` | Antrag | Dazugehöriger Antrag zur Kostenübernahme |
-| `outcome` | Ergebnis der Kostenübernahme | Ergebnis der Kostenübernahme. Für den Fall der Sekundärdatenenutzung ist davon auszugehen, dass die Kostenerstattung bereits erfolgt ist. Daher ist der Status auf #complete gesetzt. |
+| `request` | Application | Associated cost-coverage application. |
+| `outcome` | Cost-coverage outcome | Outcome of the cost-coverage decision. For secondary data use, reimbursement is assumed to have already occurred. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Behandlungsepisode</summary>
+<summary>English translations - Behandlungsepisode</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:LeitlinienbehandlungStatus` | Extension | FHIR extension. |
-| `effective[x]:effectivePeriod` | Effective | Date or period the observation refers to. |
+| `extension:LeitlinienbehandlungStatus` | Guideline treatment status | Status der Behandlung nach Leitlinie |
+| `effective[x]:effectivePeriod` | Treatment episode period | Period from MTB inclusion to MTB completion. |
 | `problem` | Relevant impressions of patient state | A list of the relevant problems/conditions for a patient. |
-| `problem:PrimaertumorDiagnose` | Primärtumor Diagnose | Verweise auf Diagnose des Primärtumors |
+| `problem:PrimaertumorDiagnose` | Primary tumor diagnosis | References to primary tumor diagnoses. |
 | `investigation:KrankengeschichteFamilie` | One or more sets of investigations (signs, symptoms, etc.) | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
 | `investigation:ECOG` | One or more sets of investigations (signs, symptoms, etc.) | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
 | `investigation:NgsBericht` | One or more sets of investigations (signs, symptoms, etc.) | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
 | `investigation:MolekularPathologieBefund` | One or more sets of investigations (signs, symptoms, etc.) | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
 | `investigation:Einwilligung` | One or more sets of investigations (signs, symptoms, etc.) | One or more sets of investigations (signs, symptoms, etc.). The actual grouping of investigations varies greatly depending on the type and context of the assessment. These investigations may includ... |
-| `supportingInfo:Vorbefund` | Vorbefund | Relevanter Vorbefund |
-| `supportingInfo:Vortherapie` | Vortherapie | Relevante Leitlinien-basierte Vortherapie |
-| `supportingInfo:Vortherapie.extension:LeitlinieDokumentation` | Leitlinie Dokumentation | Dokumentation zur Leitlinien-konformen Umsetzung der Prozedur |
-| `supportingInfo:Therapieplan` | Therapieplan | Therapieplan gemäß Beschluss des Molekularen Tumorboards |
+| `supportingInfo:Vorbefund` | Prior report | Relevant prior report. |
+| `supportingInfo:Vortherapie` | Prior therapy | Relevant guideline-based prior therapy. |
+| `supportingInfo:Vortherapie.extension:LeitlinieDokumentation` | Guideline documentation | Documentation of guideline-conformant procedure implementation. |
+| `supportingInfo:Therapieplan` | Therapy plan | Therapy plan per the MTB decision. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR Biomarker Her2 Status</summary>
+<summary>English translations - Biomarker HER2-Status</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1303,13 +1303,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `issued` | Issued | Date when the resource was issued. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB In Situ Hybridization</summary>
+<summary>English translations - In-situ-Hybridisierung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1330,25 +1330,25 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `method` | Method | Method used to make the observation. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Biopsie Auftrag</summary>
+<summary>English translations - Biopsie (Auftrag\</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `code` | Code | Coding of the content. |
-| `reasonReference:Histologie` | Reason (reference) | Reference to a resource containing the reason. |
-| `reasonReference:Tumorzellgehalt` | Reason (reference) | Reference to a resource containing the reason. |
+| `reasonReference:Histologie` | Histology report | Reference to the histology report. |
+| `reasonReference:Tumorzellgehalt` | Tumor cell content | Reference to a specific tumor cell content. |
 | `specimen` | Specimen | Reference to the specimen. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB BRCAness</summary>
+<summary>English translations - BRCAness</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1366,13 +1366,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `specimen` | Specimen | Reference to the specimen. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Consent</summary>
+<summary>English translations - Einwilligung erteilt</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1384,7 +1384,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Copy Number Variant</summary>
+<summary>English translations - Kopienzahlvariante</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1400,59 +1400,59 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `method` | Method | Method used to make the observation. |
 | `specimen` | Specimen | Reference to the specimen. |
 | `device` | Device | Device used to make the observation. |
-| `component:conclusion-string` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:cytogenetic-location` | Component | Sub-observation component. |
-| `component:reference-sequence-assembly` | Component | Sub-observation component. |
-| `component:chromosome-identifier` | Component | Sub-observation component. |
-| `component:representative-coding-hgvs` | Component | Sub-observation component. |
-| `component:genomic-hgvs` | Component | Sub-observation component. |
-| `component:genomic-ref-seq` | Component | Sub-observation component. |
-| `component:representative-transcript-ref-seq` | Component | Sub-observation component. |
-| `component:exact-start-end` | Component | Sub-observation component. |
-| `component:inner-start-end` | Component | Sub-observation component. |
-| `component:outer-start-end` | Component | Sub-observation component. |
-| `component:ref-allele` | Component | Sub-observation component. |
-| `component:alt-allele` | Component | Sub-observation component. |
-| `component:coding-change-type` | Component | Sub-observation component. |
-| `component:genomic-source-class` | Component | Sub-observation component. |
-| `component:sample-allelic-frequency` | Component | Sub-observation component. |
-| `component:allelic-read-depth` | Component | Sub-observation component. |
-| `component:allelic-state` | Component | Sub-observation component. |
-| `component:variant-inheritance` | Component | Sub-observation component. |
-| `component:variation-code` | Component | Sub-observation component. |
-| `component:representative-protein-hgvs` | Component | Sub-observation component. |
-| `component:copy-number` | Component | Sub-observation component. |
+| `component:conclusion-string` | Conclusion (text) | Textual summary of the therapeutic implication. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:cytogenetic-location` | Cytogenetic location | Chromosomal position of the variant in band nomenclature. |
+| `component:reference-sequence-assembly` | Reference genome assembly | Reference genome version used, e.g. GRCh37 or GRCh38. |
+| `component:chromosome-identifier` | Chromosome | The affected chromosome. |
+| `component:representative-coding-hgvs` | DNA change (c.HGVS) | cDNA change in HGVS nomenclature at transcript level. |
+| `component:genomic-hgvs` | Genomic DNA change (g.HGVS) | Genomic DNA change in HGVS nomenclature. |
+| `component:genomic-ref-seq` | Genomic reference sequence | Genomic reference sequence ID, e.g. NC_000007.14. |
+| `component:representative-transcript-ref-seq` | Transcript reference sequence | Transcript reference sequence ID, e.g. NM_004333.4. |
+| `component:exact-start-end` | Exact start/end position | Exact genomic coordinates of the variant — start and end. |
+| `component:inner-start-end` | Inner start/end position | Inner range for structural variants. |
+| `component:outer-start-end` | Outer start/end position | Outer range for structural variants. |
+| `component:ref-allele` | Reference allele | Nucleotide sequence of the reference allele. |
+| `component:alt-allele` | Alternative allele | Nucleotide sequence of the alternative (mutated) allele. |
+| `component:coding-change-type` | DNA change type | Type of DNA change, e.g. substitution or deletion. |
+| `component:genomic-source-class` | Genomic source class | Origin of the variant, e.g. somatic or germline. |
+| `component:sample-allelic-frequency` | Sample allelic frequency | Frequency of the variant allele in the examined sample. |
+| `component:allelic-read-depth` | Allelic read depth | Number of reads supporting the allele. |
+| `component:allelic-state` | Allelic state | Allelic state, e.g. heterozygous or homozygous. |
+| `component:variant-inheritance` | Variant inheritance | Inheritance pattern of the variant, e.g. maternal or paternal. |
+| `component:variation-code` | Variation code | Unique variant identifier from external databases, e.g. ClinVar or dbSNP. |
+| `component:representative-protein-hgvs` | Amino acid change (p.HGVS) | Amino acid change in HGVS nomenclature at protein level. |
+| `component:copy-number` | Copy number | Number of copies of a genomic region. |
 | `component:copy-number.value[x]:valueQuantity` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:variant-confidence-status` | Component | Sub-observation component. |
-| `component:dna-region` | Component | Sub-observation component. |
-| `component:gene-fusion` | Component | Sub-observation component. |
-| `component:detection-limit` | Component | Sub-observation component. |
-| `component:relative-copy-number` | Component | Sub-observation component. |
+| `component:variant-confidence-status` | Variant confidence status | Confidence status of the variant call. |
+| `component:dna-region` | DNA region name | Human-readable name of the examined region — typically Exon # or Intron #. |
+| `component:gene-fusion` | Gene fusion | Details on gene fusion in blood or tissue, determined by molecular genetic method. |
+| `component:detection-limit` | Detection limit | Detection limit of the laboratory instrument. |
+| `component:relative-copy-number` | Relative copy number | Relative copy number. |
 | `component:relative-copy-number.value[x]:valueQuantity` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:cna` | Component | Sub-observation component. |
+| `component:cna` | CNA | Copy number of allele A. |
 | `component:cna.value[x]:valueQuantity` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:cnb` | Component | Sub-observation component. |
+| `component:cnb` | CNB | Copy number of allele B. |
 | `component:cnb.value[x]:valueQuantity` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:reported-focality` | Component | Sub-observation component. |
+| `component:reported-focality` | Reported focality | Reported focality. |
 | `component:reported-focality.value[x]:valueQuantity` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:cnv-type` | Component | Sub-observation component. |
+| `component:cnv-type` | CNV type | Copy number variant type. |
 | `component:cnv-type.value[x]:valueCodeableConcept` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:copy-number-neutral-loh` | Component | Sub-observation component. |
+| `component:copy-number-neutral-loh` | Copy-number-neutral LoH | Copy-number-neutral loss of heterozygosity. |
 | `component:copy-number-neutral-loh.value[x]:valueCodeableConcept` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Diagnose Primärtumor</summary>
+<summary>English translations - Diagnose Primärtumor</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension` | Extension | FHIR extension. |
-| `extension:ReferenzPrimaerdiagnose` | Extension | FHIR extension. |
+| `extension:ReferenzPrimaerdiagnose` | Primary diagnosis reference | This condition has an unspecified relationship with another condition. |
 | `extension:Feststellungsdatum` | Asserted date | Date the condition was first asserted |
-| `extension:morphology-behavior-icdo3` | Extension | FHIR extension. |
-| `extension:occurredFollowing` | Extension | FHIR extension. |
+| `extension:morphology-behavior-icdo3` | ICD-O morphology | Morphology of the primary tumor per ICD-O-3 per oBDS §6.3. |
+| `extension:occurredFollowing` | Prior tumor diseases | Verweis auf frühere Tumorerkrankungen, nach denen die aktuelle Diagnose aufgetreten ist |
 | `clinicalStatus` | Clinical status | active \| recurrence \| relapse \| inactive \| remission \| resolved |
 | `verificationStatus` | Verification status | unconfirmed \| provisional \| differential \| confirmed \| refuted \| entered-in-error |
 | `verificationStatus.coding:condition-ver-status` | Verification status | Coding in Verification status. |
@@ -1464,31 +1464,31 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:orphanet` | ORPHAcode | A reference to a code defined by the Orphanet nomenclature of rare diseases |
 | `bodySite` | Body site | The body site of the diagnosis using SNOMED or other systems. |
 | `bodySite.coding:snomed-ct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
-| `bodySite.coding:primaertumorSeitenlokalisation` | Seitenlokalisation des Primärtumors gemäß oBDS | Seitenlokalisation des Primärtumors nach 5.8 oBDS 2021 |
-| `bodySite.coding:icd-o-3` | ICD-O-Topographie | Topographie des Primärtumors nach ICD-O-3 nach 5.4 oBDS 2021 |
+| `bodySite.coding:primaertumorSeitenlokalisation` | Primary tumor laterality | Laterality of the primary tumor per oBDS 2021 §5.8. |
+| `bodySite.coding:icd-o-3` | ICD-O-3 | Coding in ICD-O-3. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Condition was created or to which the creation of this record is tightly associated. |
 | `onset[x]` | Onset | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
-| `onset[x]:onsetPeriod` | Onset | Date or period when the condition first appeared. |
-| `onset[x]:onsetDateTime` | Onset | Date or period when the condition first appeared. |
-| `onset[x]:onsetAge` | Onset | Date or period when the condition first appeared. |
+| `onset[x]:onsetPeriod` | Beginn Zeitraum | Der Zeitraum, in dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
+| `onset[x]:onsetDateTime` | Beginn Datum | Das Datum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
+| `onset[x]:onsetAge` | Erkrankungsbeginn als Alter | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
 | `recordedDate` | Recorded date | Date when the diagnosis was first recorded. |
 | `stage` | Stage/grade, usually assessed formally | Clinical stage or grade of a condition. May include formal severity assessments. |
-| `stage:WHOGradZNS` | WHO Grad Tumor ZNS | Grad eines Tumors nach WHO-Klassifikation der Tumoren des zentralen Nervensystems |
-| `stage:OncoTree` | OncoTree Classification | Klassifizierung eines Tumors nach OncoTree |
-| `stage:ErstdiagnoseZeitpunkt` | Tumorausbreitung Erstdiagnose | Tumorausbreitung zum Zeitpunkt der Erstdiagnose |
-| `stage:MolekularesTumorboardZeitpunkt` | Tumorausbreitung Molekulares Tumorboard | Tumorausbreitung zum Zeitpunkt des Molekularen Tumorboard |
-| `evidence` | Supporting evidence | Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition. |
+| `stage:WHOGradZNS` | WHO grade CNS tumor | Tumor grade per WHO classification of central nervous system tumors. |
+| `stage:OncoTree` | OncoTree classification | Classification of the tumor per OncoTree. |
+| `stage:ErstdiagnoseZeitpunkt` | Tumor extent at initial diagnosis | Tumor extent at the time of initial diagnosis. |
+| `stage:MolekularesTumorboardZeitpunkt` | Tumor extent at MTB | Tumor extent at the time of the MTB. |
+| `evidence` | Evidence | Manifestations or evidence supporting the verification status of the condition. |
 | `note` | Note | Additional information about the diagnosis as free text. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Diagnostische Implikation</summary>
+<summary>English translations - Diagnostische Implikation</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:workflow-relatedArtifact` | Extension | FHIR extension. |
+| `extension:workflow-relatedArtifact` | Related artifacts | Linked literature or other artifacts, e.g. citations. |
 | `category` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
@@ -1498,16 +1498,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `issued` | Issued | Date when the resource was issued. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:conclusion-string` | Component | Sub-observation component. |
-| `component:evidence-level` | Component | Sub-observation component. |
-| `component:clinical-significance` | Component | Sub-observation component. |
-| `component:predicted-phenotype` | Component | Sub-observation component. |
-| `component:mode-of-inheritance` | Component | Sub-observation component. |
+| `component:conclusion-string` | Conclusion (text) | Textual summary of the therapeutic implication. |
+| `component:evidence-level` | Evidence level | Evidence level for the therapy recommendation. |
+| `component:clinical-significance` | Clinical significance | Interpretation oder Einschätzung einer oder mehrerer genetischer Varianten. |
+| `component:predicted-phenotype` | Predicted phenotype | Predicted phenotype or condition associated with the variant. |
+| `component:mode-of-inheritance` | Mode of inheritance | Mode of inheritance of the associated condition. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB DNA Fusion</summary>
+<summary>English translations - DNA-Fusion</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1523,48 +1523,48 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `method` | Method | Method used to make the observation. |
 | `specimen` | Specimen | Reference to the specimen. |
 | `device` | Device | Device used to make the observation. |
-| `component:conclusion-string` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:cytogenetic-location` | Component | Sub-observation component. |
-| `component:reference-sequence-assembly` | Component | Sub-observation component. |
-| `component:chromosome-identifier` | Component | Sub-observation component. |
-| `component:representative-coding-hgvs` | Component | Sub-observation component. |
-| `component:genomic-hgvs` | Component | Sub-observation component. |
-| `component:genomic-ref-seq` | Component | Sub-observation component. |
-| `component:representative-transcript-ref-seq` | Component | Sub-observation component. |
-| `component:exact-start-end` | Component | Sub-observation component. |
-| `component:inner-start-end` | Component | Sub-observation component. |
-| `component:outer-start-end` | Component | Sub-observation component. |
-| `component:ref-allele` | Component | Sub-observation component. |
-| `component:alt-allele` | Component | Sub-observation component. |
-| `component:coding-change-type` | Component | Sub-observation component. |
-| `component:genomic-source-class` | Component | Sub-observation component. |
-| `component:sample-allelic-frequency` | Component | Sub-observation component. |
-| `component:allelic-read-depth` | Component | Sub-observation component. |
-| `component:allelic-state` | Component | Sub-observation component. |
-| `component:variant-inheritance` | Component | Sub-observation component. |
-| `component:variation-code` | Component | Sub-observation component. |
-| `component:representative-protein-hgvs` | Component | Sub-observation component. |
-| `component:copy-number` | Component | Sub-observation component. |
-| `component:variant-confidence-status` | Component | Sub-observation component. |
-| `component:dna-region` | Component | Sub-observation component. |
-| `component:gene-fusion` | Component | Sub-observation component. |
-| `component:detection-limit` | Component | Sub-observation component. |
-| `component:five-prime-chromosome` | Component | Sub-observation component. |
+| `component:conclusion-string` | Conclusion (text) | Textual summary of the therapeutic implication. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:cytogenetic-location` | Cytogenetic location | Chromosomal position of the variant in band nomenclature. |
+| `component:reference-sequence-assembly` | Reference genome assembly | Reference genome version used, e.g. GRCh37 or GRCh38. |
+| `component:chromosome-identifier` | Chromosome | The affected chromosome. |
+| `component:representative-coding-hgvs` | DNA change (c.HGVS) | cDNA change in HGVS nomenclature at transcript level. |
+| `component:genomic-hgvs` | Genomic DNA change (g.HGVS) | Genomic DNA change in HGVS nomenclature. |
+| `component:genomic-ref-seq` | Genomic reference sequence | Genomic reference sequence ID, e.g. NC_000007.14. |
+| `component:representative-transcript-ref-seq` | Transcript reference sequence | Transcript reference sequence ID, e.g. NM_004333.4. |
+| `component:exact-start-end` | Exact start/end position | Exact genomic coordinates of the variant — start and end. |
+| `component:inner-start-end` | Inner start/end position | Inner range for structural variants. |
+| `component:outer-start-end` | Outer start/end position | Outer range for structural variants. |
+| `component:ref-allele` | Reference allele | Nucleotide sequence of the reference allele. |
+| `component:alt-allele` | Alternative allele | Nucleotide sequence of the alternative (mutated) allele. |
+| `component:coding-change-type` | DNA change type | Type of DNA change, e.g. substitution or deletion. |
+| `component:genomic-source-class` | Genomic source class | Origin of the variant, e.g. somatic or germline. |
+| `component:sample-allelic-frequency` | Sample allelic frequency | Frequency of the variant allele in the examined sample. |
+| `component:allelic-read-depth` | Allelic read depth | Number of reads supporting the allele. |
+| `component:allelic-state` | Allelic state | Allelic state, e.g. heterozygous or homozygous. |
+| `component:variant-inheritance` | Variant inheritance | Inheritance pattern of the variant, e.g. maternal or paternal. |
+| `component:variation-code` | Variation code | Unique variant identifier from external databases, e.g. ClinVar or dbSNP. |
+| `component:representative-protein-hgvs` | Amino acid change (p.HGVS) | Amino acid change in HGVS nomenclature at protein level. |
+| `component:copy-number` | Copy number | Number of copies of a genomic region. |
+| `component:variant-confidence-status` | Variant confidence status | Confidence status of the variant call. |
+| `component:dna-region` | DNA region name | Human-readable name of the examined region — typically Exon # or Intron #. |
+| `component:gene-fusion` | Gene fusion | Details on gene fusion in blood or tissue, determined by molecular genetic method. |
+| `component:detection-limit` | Detection limit | Detection limit of the laboratory instrument. |
+| `component:five-prime-chromosome` | 5' domain — chromosome | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:five-prime-chromosome.value[x]:valueCodeableConcept` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:three-prime-chromosome` | Component | Sub-observation component. |
+| `component:three-prime-chromosome` | 3' domain — chromosome | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:three-prime-chromosome.value[x]:valueCodeableConcept` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:five-prime-position` | Component | Sub-observation component. |
+| `component:five-prime-position` | 5' domain — position | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:five-prime-position.value[x]:valueRange` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:three-prime-position` | Component | Sub-observation component. |
-| `component:five-prime-gene` | Component | Sub-observation component. |
-| `component:three-prime-gene` | Component | Sub-observation component. |
+| `component:three-prime-position` | 3' domain — position | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:five-prime-gene` | 5' domain — gene | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:three-prime-gene` | 3' domain — gene | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:three-prime-gene.value[x]:valueCodeableConcept` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Einfache Variante</summary>
+<summary>English translations - Einfache Variante</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1580,70 +1580,70 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `method` | Method | Method used to make the observation. |
 | `specimen` | Specimen | Reference to the specimen. |
 | `device` | Device | Device used to make the observation. |
-| `component:conclusion-string` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:cytogenetic-location` | Component | Sub-observation component. |
-| `component:reference-sequence-assembly` | Component | Sub-observation component. |
-| `component:chromosome-identifier` | Component | Sub-observation component. |
-| `component:representative-coding-hgvs` | Component | Sub-observation component. |
-| `component:genomic-hgvs` | Component | Sub-observation component. |
-| `component:genomic-ref-seq` | Component | Sub-observation component. |
-| `component:representative-transcript-ref-seq` | Component | Sub-observation component. |
-| `component:exact-start-end` | Component | Sub-observation component. |
-| `component:inner-start-end` | Component | Sub-observation component. |
-| `component:outer-start-end` | Component | Sub-observation component. |
-| `component:ref-allele` | Component | Sub-observation component. |
-| `component:alt-allele` | Component | Sub-observation component. |
-| `component:coding-change-type` | Component | Sub-observation component. |
-| `component:genomic-source-class` | Component | Sub-observation component. |
-| `component:sample-allelic-frequency` | Component | Sub-observation component. |
-| `component:allelic-read-depth` | Component | Sub-observation component. |
-| `component:allelic-state` | Component | Sub-observation component. |
-| `component:variant-inheritance` | Component | Sub-observation component. |
-| `component:variation-code` | Component | Sub-observation component. |
-| `component:representative-protein-hgvs` | Component | Sub-observation component. |
-| `component:copy-number` | Component | Sub-observation component. |
-| `component:variant-confidence-status` | Component | Sub-observation component. |
-| `component:dna-region` | Component | Sub-observation component. |
-| `component:gene-fusion` | Component | Sub-observation component. |
-| `component:detection-limit` | Component | Sub-observation component. |
+| `component:conclusion-string` | Conclusion (text) | Textual summary of the therapeutic implication. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:cytogenetic-location` | Cytogenetic location | Chromosomal position of the variant in band nomenclature. |
+| `component:reference-sequence-assembly` | Reference genome assembly | Reference genome version used, e.g. GRCh37 or GRCh38. |
+| `component:chromosome-identifier` | Chromosome | The affected chromosome. |
+| `component:representative-coding-hgvs` | DNA change (c.HGVS) | cDNA change in HGVS nomenclature at transcript level. |
+| `component:genomic-hgvs` | Genomic DNA change (g.HGVS) | Genomic DNA change in HGVS nomenclature. |
+| `component:genomic-ref-seq` | Genomic reference sequence | Genomic reference sequence ID, e.g. NC_000007.14. |
+| `component:representative-transcript-ref-seq` | Transcript reference sequence | Transcript reference sequence ID, e.g. NM_004333.4. |
+| `component:exact-start-end` | Exact start/end position | Exact genomic coordinates of the variant — start and end. |
+| `component:inner-start-end` | Inner start/end position | Inner range for structural variants. |
+| `component:outer-start-end` | Outer start/end position | Outer range for structural variants. |
+| `component:ref-allele` | Reference allele | Nucleotide sequence of the reference allele. |
+| `component:alt-allele` | Alternative allele | Nucleotide sequence of the alternative (mutated) allele. |
+| `component:coding-change-type` | DNA change type | Type of DNA change, e.g. substitution or deletion. |
+| `component:genomic-source-class` | Genomic source class | Origin of the variant, e.g. somatic or germline. |
+| `component:sample-allelic-frequency` | Sample allelic frequency | Frequency of the variant allele in the examined sample. |
+| `component:allelic-read-depth` | Allelic read depth | Number of reads supporting the allele. |
+| `component:allelic-state` | Allelic state | Allelic state, e.g. heterozygous or homozygous. |
+| `component:variant-inheritance` | Variant inheritance | Inheritance pattern of the variant, e.g. maternal or paternal. |
+| `component:variation-code` | Variation code | Unique variant identifier from external databases, e.g. ClinVar or dbSNP. |
+| `component:representative-protein-hgvs` | Amino acid change (p.HGVS) | Amino acid change in HGVS nomenclature at protein level. |
+| `component:copy-number` | Copy number | Number of copies of a genomic region. |
+| `component:variant-confidence-status` | Variant confidence status | Confidence status of the variant call. |
+| `component:dna-region` | DNA region name | Human-readable name of the examined region — typically Exon # or Intron #. |
+| `component:gene-fusion` | Gene fusion | Details on gene fusion in blood or tissue, determined by molecular genetic method. |
+| `component:detection-limit` | Detection limit | Detection limit of the laboratory instrument. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Clinical Impresssion</summary>
+<summary>English translations - Follow-Up Klinischer Eindruck</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `status` | Status | Status of the resource. |
-| `statusReason` | Grund Nicht-Umsetzung | Grund für die Nicht-Umsetzung des gesamten Therapieplans |
+| `statusReason` | Systemic therapy termination reason | If terminated: reason for terminating the systemic therapy. |
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
-| `previous` | MTB-Behandlungsepisode | MTB-Behandlungsepisode, auf die sich das Follow-Up bezieht |
-| `investigation` | Status Follow-Up | Status des Therapieplans im Hinblick auf das Follow-Up |
+| `previous` | MTB treatment episode | MTB treatment episode to which the follow-up refers. |
+| `investigation` | Follow-up status | Status of the therapy plan with respect to follow-up. |
 | `supportingInfo` | Information supporting the clinical impression | Information supporting the clinical impression. |
-| `supportingInfo:UmgesetzteTherapien` | Umgesetzte Therapien | Umgesetzte Therapien mit oder auch ohne Bezug auf die MTB-Empfehlungen |
-| `supportingInfo:AntraegeKostenuebernahme` | Anträge Kostenübernahme | Anträge Kostenübernahme für die empfohlenen Therapien |
+| `supportingInfo:UmgesetzteTherapien` | Therapies implemented | Therapies implemented, with or without reference to the MTB recommendations. |
+| `supportingInfo:AntraegeKostenuebernahme` | Cost-coverage applications | Cost-coverage applications for the recommended therapies. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Genomic Study Analysis</summary>
+<summary>English translations - Genomische Studienanalyse</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension` | Extension | FHIR extension. |
-| `extension:method-type` | Extension | FHIR extension. |
-| `extension:change-type` | Extension | FHIR extension. |
-| `extension:genome-build` | Extension | FHIR extension. |
-| `extension:title` | Extension | FHIR extension. |
-| `extension:focus` | Extension | FHIR extension. |
-| `extension:specimen` | Extension | FHIR extension. |
-| `extension:metrics` | Extension | FHIR extension. |
-| `extension:regions` | Extension | FHIR extension. |
-| `extension:device` | Extension | FHIR extension. |
-| `extension:qc` | Extension | FHIR extension. |
+| `extension:method-type` | Analysis method | Type of analysis method used — e.g. sequencing, PCR or array CGH. |
+| `extension:change-type` | Variation types studied | Types of genetic changes studied in this analysis — e.g. SNV, CNV or structural variants. |
+| `extension:genome-build` | Reference genome build | Version of the reference genome used, e.g. GRCh38 or hg19. |
+| `extension:title` | Analysis title | Short concise designation or title of this specific analysis. |
+| `extension:focus` | Analysis focus | Specific focus of this analysis — e.g. reference to a cancer or hereditary disease. |
+| `extension:specimen` | Specimen studied | Reference to the Specimen resource describing the sample used for this analysis. |
+| `extension:metrics` | Quality metrics | Quality metrics of the analysis — e.g. coverage, depth or call rate. |
+| `extension:regions` | Genomic regions studied | Complex extension specifying the genomic regions studied in this analysis — primarily genes, optionally with callable/non-callable regions. |
+| `extension:device` | Analysis device used | Complex extension with device type and reference — e.g. sequencer, library preparation kit, or bioinformatics pipeline used for this analysis. |
+| `extension:qc` | Quality control metrics | Sequenzierbezogenen Metriken der Genomic Study Analysis |
 | `identifier` | Identifier | Identifier for this resource. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
@@ -1652,18 +1652,18 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - Genomic Study Device</summary>
+<summary>English translations - Genomische Studie — Gerät</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `manufacturer` | Hersteller des Geräts | Hersteller des Geräts, das in der Genomic Study Analysis verwendet wird. |
-| `deviceName` | Name des Geräts | This represents the manufacturer's name of the device as provided by the device, from a UDI label, or by a person describing the Device. This typically would be used when a person provides the name... |
+| `manufacturer` | Device manufacturer | Manufacturer of the device used in the GenomicStudyAnalysis. |
+| `deviceName` | Device name | This represents the manufacturer's name of the device as provided by the device, from a UDI label, or by a person describing the Device. This typically would be used when a person provides the name... |
 | `type` | Type | Type or kind of the resource. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Genomic Study</summary>
+<summary>English translations - Genomische Studie</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1678,19 +1678,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Histologie-Evaluation Auftrag</summary>
+<summary>English translations - Histologie-Evaluation (Auftrag\</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `code` | Code | Coding of the content. |
-| `reasonReference:Histologie` | Reason (reference) | Reference to a resource containing the reason. |
-| `reasonReference:Tumorzellgehalt` | Reason (reference) | Reference to a resource containing the reason. |
+| `reasonReference:Histologie` | Histology report | Reference to the histology report. |
+| `reasonReference:Tumorzellgehalt` | Tumor cell content | Reference to a specific tumor cell content. |
 | `specimen` | Specimen | Reference to the specimen. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB HRD Score</summary>
+<summary>English translations - HRD-Score</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1707,16 +1707,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `specimen` | Specimen | Reference to the specimen. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
-| `component:LOH` | Component | Sub-observation component. |
-| `component:TAI` | Component | Sub-observation component. |
-| `component:LST` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
+| `component:LOH` | Loss of heterozygosity | Individual components of the observation. |
+| `component:TAI` | Telomeric allelic imbalance | Individual components of the observation. |
+| `component:LST` | Large-scale state transitions | Individual components of the observation. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Human-genetische Beratung Auftrag</summary>
+<summary>English translations - Humangenetische Beratung (Auftrag\</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1727,7 +1727,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Immunohistochemistry</summary>
+<summary>English translations - Immunhistochemie HER2</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1747,13 +1747,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `specimen` | Specimen | Reference to the specimen. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Immunohistochemistry Mismatch Repair Status</summary>
+<summary>English translations - Immunhistochemie Mismatch-Repair-Status</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1770,19 +1770,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `specimen` | Specimen | Reference to the specimen. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
-| `component:mmr-mlh1` | Component | Sub-observation component. |
-| `component:mmr-msh2` | Component | Sub-observation component. |
-| `component:mmr-msh6` | Component | Sub-observation component. |
-| `component:mmr-pms2` | Component | Sub-observation component. |
-| `component:mmr-msh3` | Component | Sub-observation component. |
-| `component:mmr-mlh3` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
+| `component:mmr-mlh1` | Components | Individual components of the observation. |
+| `component:mmr-msh2` | Components | Individual components of the observation. |
+| `component:mmr-msh6` | Components | Individual components of the observation. |
+| `component:mmr-pms2` | Components | Individual components of the observation. |
+| `component:mmr-msh3` | Components | Individual components of the observation. |
+| `component:mmr-mlh3` | Components | Individual components of the observation. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Immunohistochemistry Microsatellite Instability</summary>
+<summary>English translations - Immunhistochemie Mikrosatelliteninstabilität</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1799,13 +1799,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `specimen` | Specimen | Reference to the specimen. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Immunohistochemistry</summary>
+<summary>English translations - Immunhistochemie PD-L1</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1824,21 +1824,21 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `specimen` | Specimen | Reference to the specimen. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
-| `component:tps-score` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
+| `component:tps-score` | TPS-Score | Tumor Proportion Score (TPS) - Score für PD-L1-Expression in Tumorzellen. Der TPS ist der Anteil der PD-L1-positiven Tumorzellen im Verhältnis zu den Gesamtzellen. Der TPS wird in Prozent angegeben... |
 | `component:tps-score.value[x]:valueQuantity` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:cps-score` | Component | Sub-observation component. |
+| `component:cps-score` | CPS-Score | Combined Positive Score (CPS) - Score für PD-L1-Expression in Tumorzellen und Immunzellen. Der CPS ist der Anteil der PD-L1-positiven Tumorzellen und Immunzellen im Verhältnis zu den Gesamtzellen. ... |
 | `component:cps-score.value[x]:valueQuantity` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:ics-score` | Component | Sub-observation component. |
+| `component:ics-score` | ICS-Score | Immune Cell Score (ICS) - Score für PD-L1-Expression in Immunzellen. Der ICS ist der Anteil der PD-L1-positiven Immunzellen im Verhältnis zu den Gesamtzellen. Der ICS wird in Prozent angegeben. Ein... |
 | `component:ics-score.value[x]:valueQuantity` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:tc-score` | Component | Sub-observation component. |
+| `component:tc-score` | TC-Score / TPS-Score | Tumor Cell Score (TC-Score) - Score für PD-L1-Expression in Tumorzellen. Der TC-Score ist der Anteil der PD-L1-positiven Tumorzellen im Verhältnis zu den Gesamtzellen. Der TC-Score wird in Prozent ... |
 | `component:tc-score.value[x]:valueQuantity` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Immunohistochemistry Phosphorylation</summary>
+<summary>English translations - Immunhistochemie Phosphorylierung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1857,16 +1857,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `specimen` | Specimen | Reference to the specimen. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
-| `component:phosphorylation-localization` | Component | Sub-observation component. |
-| `component:phosphorylation-localization.value[x]:valueCodeableConcept` | Phosphorylation localization | Phosphorylation localization according to UniProt |
-| `component:protein-isoform` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
+| `component:phosphorylation-localization` | Components | Individual components of the observation. |
+| `component:phosphorylation-localization.value[x]:valueCodeableConcept` | Phosphorylation site | Phosphorylation site per UniProt. |
+| `component:protein-isoform` | Components | Individual components of the observation. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Immunohistochemistry</summary>
+<summary>English translations - Immunhistochemie</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1885,13 +1885,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `specimen` | Specimen | Reference to the specimen. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB In Situ Hybridization HER2</summary>
+<summary>English translations - In-situ-Hybridisierung HER2</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1913,16 +1913,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `method` | Method | Method used to make the observation. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
-| `component:target-signals` | Component | Sub-observation component. |
-| `component:reference-signals` | Component | Sub-observation component. |
-| `component:cells-counted` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
+| `component:target-signals` | ERBB2 Signale pro Zellkern | Individual components of the observation. |
+| `component:reference-signals` | CEP17 Signale pro Zellkern | Individual components of the observation. |
+| `component:cells-counted` | Anzahl gezählter Zellkerne | Individual components of the observation. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Mikrosatelliteninstabilität</summary>
+<summary>English translations - Mikrosatelliteninstabilität</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1940,13 +1940,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `specimen` | Specimen | Reference to the specimen. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Molecular Pathology Report</summary>
+<summary>English translations - Molekular-Pathologie-Bericht</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1954,14 +1954,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `issued` | Issued | Date when the resource was issued. |
 | `specimen` | Specimen | Reference to the specimen. |
-| `result` | Ergebnisse | Strukturierte Ergebnisse des Molekular-Pathologie-Befunds |
-| `result:Immunhistochemie` | Immunhistochemie | Ergebnisse der Immunhistochemie, die im Kontext des Molekularen Tumorboards erstellt wurden. Umfasst neben regulärer IHC auch die Phospo-IHC, sowie komplexere IHC-Untersuchungen wie PDL1-Expression... |
-| `result:InSituHybridisierung` | Gewebebasierte In-Situ-Hybridisierung | [Observations](observation.html) that are part of this diagnostic report. |
+| `result` | Results | Structured results of the molecular pathology report. |
+| `result:Immunhistochemie` | Immunohistochemistry | Immunohistochemistry results in the MTB context. Includes regular IHC and related techniques. |
+| `result:InSituHybridisierung` | In-situ hybridization | [Observations](observation.html) that are part of this diagnostic report. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Molekularer Biomarker</summary>
+<summary>English translations - Molekularer Biomarker</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1974,13 +1974,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `issued` | Issued | Date when the resource was issued. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Mutationslast</summary>
+<summary>English translations - Mutationslast</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -1997,37 +1997,37 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `specimen` | Specimen | Reference to the specimen. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB NGS-Bericht</summary>
+<summary>English translations - NGS-Bericht</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `subject` | Patient | The patient that the resource relates to. |
 | `issued` | Issued | Date when the resource was issued. |
 | `specimen` | Specimen | Reference to the specimen. |
-| `result:TumorMutionalBurden` | Tumor Mutational Burden | Verweis auf Tumor Mutational Burden |
-| `result:MSI` | Micro-Satellite Instabilities | Verweis auf Micro-Satellite Instabilities |
-| `result:Ploidie` | Ploidie | Ploidie |
-| `result:HRDScore` | HRD-Score | Verweis auf HRD-Score |
-| `result:BRCAness` | BRCAness | Verweis auf BRCAness |
-| `result:EinfacheVariante` | Einfache Variante | Verweis auf Einfache Variante |
-| `result:CopyNumberVariant` | Copy Number Variant | Verweis auf Copy Number Variant |
-| `result:DNAFusion` | DNA-Fusion | Verweis auf DNA-Fusion |
-| `result:RNAFusion` | RNA-Fusion | Verweis auf RNA-Fusion |
-| `result:RNASeq` | RNASeq | Verweis auf RNASeq |
-| `result:MolekularerBiomarkerHER2Status` | Molekularer Biomarker HER2 Status | Verweis auf Molekularer Biomarker HER2 Status |
-| `result:MolekularerBiomarker` | Molekularer Biomarker | Verweis auf Molekularer Biomarker |
+| `result:TumorMutionalBurden` | Tumor mutational burden | Reference to the tumor mutational burden. |
+| `result:MSI` | Microsatellite instability | Reference to microsatellite instability. |
+| `result:Ploidie` | Ploidy | Ploidy. |
+| `result:HRDScore` | HRD score | Reference to the HRD score. |
+| `result:BRCAness` | BRCAness | Reference to BRCAness. |
+| `result:EinfacheVariante` | Simple variant | Reference to a simple variant. |
+| `result:CopyNumberVariant` | Copy number variant | Reference to a copy number variant. |
+| `result:DNAFusion` | DNA fusion | Reference to a DNA fusion. |
+| `result:RNAFusion` | RNA fusion | Reference to an RNA fusion. |
+| `result:RNASeq` | RNA-Seq | Reference to RNA-Seq. |
+| `result:MolekularerBiomarkerHER2Status` | Molecular biomarker — HER2 status | Reference to the HER2 status molecular biomarker. |
+| `result:MolekularerBiomarker` | Molecular biomarker | Reference to a molecular biomarker. |
 | `result:Tumorzellgehalt` | Observations | [Observations](observation.html) that are part of this diagnostic report. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Oncotree Klassifikation</summary>
+<summary>English translations - OncoTree-Klassifikation</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -2039,7 +2039,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Ploidie</summary>
+<summary>English translations - Ploidie</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -2056,13 +2056,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `interpretation` | Interpretation | Clinical interpretation of the value (e.g. normal, high, low). |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Response Befund</summary>
+<summary>English translations - Response-Befund</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -2074,22 +2074,22 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
-| `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
+| `effective[x]:effectiveDateTime` | Time | Time of the response report. |
 | `value[x]` | Value | Value of the observation. |
 | `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
-| `value[x]:valueCodeableConcept.coding:oBDS` | Response Beurteilung nach oBDS-Kriterien | Gesamtbeurteilung im Verlauf gemäß 17.2 oBDS 2021. |
-| `value[x]:valueCodeableConcept.coding:MTB` | Response Beurteilung nach Recist oder Rano iM Rahmen des MTB | Gesamtbeurteilung im Verlauf gemäß 17.2 oBDS 2021. |
+| `value[x]:valueCodeableConcept.coding:oBDS` | oBDS | Coding in oBDS. |
+| `value[x]:valueCodeableConcept.coding:MTB` | Overall assessment during follow-up | Overall assessment during follow-up per oBDS 2021 §17.2. |
 | `method` | Method | Method used to make the observation. |
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 | `component` | Component | Sub-observation component. |
-| `component:Tumor_Verlauf` | Component | Sub-observation component. |
-| `component:Lymphknoten_Verlauf` | Component | Sub-observation component. |
-| `component:Fernmetastasen_Verlauf` | Component | Sub-observation component. |
+| `component:Tumor_Verlauf` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:Lymphknoten_Verlauf` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:Fernmetastasen_Verlauf` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB RNA Fusion</summary>
+<summary>English translations - RNA-Fusion</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -2105,58 +2105,58 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `method` | Method | Method used to make the observation. |
 | `specimen` | Specimen | Reference to the specimen. |
 | `device` | Device | Device used to make the observation. |
-| `component:conclusion-string` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:cytogenetic-location` | Component | Sub-observation component. |
-| `component:reference-sequence-assembly` | Component | Sub-observation component. |
-| `component:chromosome-identifier` | Component | Sub-observation component. |
-| `component:representative-coding-hgvs` | Component | Sub-observation component. |
-| `component:genomic-hgvs` | Component | Sub-observation component. |
-| `component:genomic-ref-seq` | Component | Sub-observation component. |
-| `component:representative-transcript-ref-seq` | Component | Sub-observation component. |
-| `component:exact-start-end` | Component | Sub-observation component. |
-| `component:inner-start-end` | Component | Sub-observation component. |
-| `component:outer-start-end` | Component | Sub-observation component. |
-| `component:ref-allele` | Component | Sub-observation component. |
-| `component:alt-allele` | Component | Sub-observation component. |
-| `component:coding-change-type` | Component | Sub-observation component. |
-| `component:genomic-source-class` | Component | Sub-observation component. |
-| `component:sample-allelic-frequency` | Component | Sub-observation component. |
-| `component:allelic-read-depth` | Component | Sub-observation component. |
-| `component:allelic-state` | Component | Sub-observation component. |
-| `component:variant-inheritance` | Component | Sub-observation component. |
-| `component:variation-code` | Component | Sub-observation component. |
-| `component:representative-protein-hgvs` | Component | Sub-observation component. |
-| `component:copy-number` | Component | Sub-observation component. |
-| `component:variant-confidence-status` | Component | Sub-observation component. |
-| `component:dna-region` | Component | Sub-observation component. |
-| `component:gene-fusion` | Component | Sub-observation component. |
-| `component:detection-limit` | Component | Sub-observation component. |
-| `component:five-prime-gene` | Component | Sub-observation component. |
+| `component:conclusion-string` | Conclusion (text) | Textual summary of the therapeutic implication. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:cytogenetic-location` | Cytogenetic location | Chromosomal position of the variant in band nomenclature. |
+| `component:reference-sequence-assembly` | Reference genome assembly | Reference genome version used, e.g. GRCh37 or GRCh38. |
+| `component:chromosome-identifier` | Chromosome | The affected chromosome. |
+| `component:representative-coding-hgvs` | DNA change (c.HGVS) | cDNA change in HGVS nomenclature at transcript level. |
+| `component:genomic-hgvs` | Genomic DNA change (g.HGVS) | Genomic DNA change in HGVS nomenclature. |
+| `component:genomic-ref-seq` | Genomic reference sequence | Genomic reference sequence ID, e.g. NC_000007.14. |
+| `component:representative-transcript-ref-seq` | Transcript reference sequence | Transcript reference sequence ID, e.g. NM_004333.4. |
+| `component:exact-start-end` | Exact start/end position | Exact genomic coordinates of the variant — start and end. |
+| `component:inner-start-end` | Inner start/end position | Inner range for structural variants. |
+| `component:outer-start-end` | Outer start/end position | Outer range for structural variants. |
+| `component:ref-allele` | Reference allele | Nucleotide sequence of the reference allele. |
+| `component:alt-allele` | Alternative allele | Nucleotide sequence of the alternative (mutated) allele. |
+| `component:coding-change-type` | DNA change type | Type of DNA change, e.g. substitution or deletion. |
+| `component:genomic-source-class` | Genomic source class | Origin of the variant, e.g. somatic or germline. |
+| `component:sample-allelic-frequency` | Sample allelic frequency | Frequency of the variant allele in the examined sample. |
+| `component:allelic-read-depth` | Allelic read depth | Number of reads supporting the allele. |
+| `component:allelic-state` | Allelic state | Allelic state, e.g. heterozygous or homozygous. |
+| `component:variant-inheritance` | Variant inheritance | Inheritance pattern of the variant, e.g. maternal or paternal. |
+| `component:variation-code` | Variation code | Unique variant identifier from external databases, e.g. ClinVar or dbSNP. |
+| `component:representative-protein-hgvs` | Amino acid change (p.HGVS) | Amino acid change in HGVS nomenclature at protein level. |
+| `component:copy-number` | Copy number | Number of copies of a genomic region. |
+| `component:variant-confidence-status` | Variant confidence status | Confidence status of the variant call. |
+| `component:dna-region` | DNA region name | Human-readable name of the examined region — typically Exon # or Intron #. |
+| `component:gene-fusion` | Gene fusion | Details on gene fusion in blood or tissue, determined by molecular genetic method. |
+| `component:detection-limit` | Detection limit | Detection limit of the laboratory instrument. |
+| `component:five-prime-gene` | 5' domain — gene | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:five-prime-gene.value[x]:valueCodeableConcept` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:five-prime-transcript-id` | Component | Sub-observation component. |
+| `component:five-prime-transcript-id` | 5' transcript identifier | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:five-prime-transcript-id.value[x]:valueCodeableConcept` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:five-prime-exon-id` | Component | Sub-observation component. |
+| `component:five-prime-exon-id` | 5' exon identifier | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:five-prime-exon-id.value[x]:valueCodeableConcept` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:five-prime-position` | Component | Sub-observation component. |
+| `component:five-prime-position` | 5' domain — position | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:five-prime-position.value[x]:valueRange` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:five-prime-strand` | Component | Sub-observation component. |
+| `component:five-prime-strand` | 5' strand | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:five-prime-strand.value[x]:valueCodeableConcept` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:three-prime-gene` | Component | Sub-observation component. |
+| `component:three-prime-gene` | 3' domain — gene | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:three-prime-gene.value[x]:valueCodeableConcept` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:three-prime-transcript-id` | Component | Sub-observation component. |
+| `component:three-prime-transcript-id` | 3' transcript identifier | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:three-prime-transcript-id.value[x]:valueCodeableConcept` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:three-prime-exon-id` | Component | Sub-observation component. |
+| `component:three-prime-exon-id` | 3' exon identifier | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:three-prime-exon-id.value[x]:valueCodeableConcept` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:three-prime-position` | Component | Sub-observation component. |
+| `component:three-prime-position` | 3' domain — position | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:three-prime-position.value[x]:valueRange` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
-| `component:three-prime-strand` | Component | Sub-observation component. |
+| `component:three-prime-strand` | 3' strand | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 | `component:three-prime-strand.value[x]:valueCodeableConcept` | Actual component result | The information determined as a result of making the observation, if the information has a simple value. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB RNA Seq</summary>
+<summary>English translations - RNA-Seq</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -2171,60 +2171,60 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `method` | Method | Method used to make the observation. |
 | `specimen` | Specimen | Reference to the specimen. |
 | `device` | Device | Device used to make the observation. |
-| `component:conclusion-string` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:cytogenetic-location` | Component | Sub-observation component. |
-| `component:reference-sequence-assembly` | Component | Sub-observation component. |
-| `component:chromosome-identifier` | Component | Sub-observation component. |
-| `component:representative-coding-hgvs` | Component | Sub-observation component. |
-| `component:genomic-hgvs` | Component | Sub-observation component. |
-| `component:genomic-ref-seq` | Component | Sub-observation component. |
-| `component:representative-transcript-ref-seq` | Component | Sub-observation component. |
-| `component:exact-start-end` | Component | Sub-observation component. |
-| `component:inner-start-end` | Component | Sub-observation component. |
-| `component:outer-start-end` | Component | Sub-observation component. |
-| `component:ref-allele` | Component | Sub-observation component. |
-| `component:alt-allele` | Component | Sub-observation component. |
-| `component:coding-change-type` | Component | Sub-observation component. |
-| `component:genomic-source-class` | Component | Sub-observation component. |
-| `component:sample-allelic-frequency` | Component | Sub-observation component. |
-| `component:allelic-read-depth` | Component | Sub-observation component. |
-| `component:allelic-state` | Component | Sub-observation component. |
-| `component:variant-inheritance` | Component | Sub-observation component. |
-| `component:variation-code` | Component | Sub-observation component. |
-| `component:representative-protein-hgvs` | Component | Sub-observation component. |
-| `component:copy-number` | Component | Sub-observation component. |
-| `component:variant-confidence-status` | Component | Sub-observation component. |
-| `component:dna-region` | Component | Sub-observation component. |
-| `component:gene-fusion` | Component | Sub-observation component. |
-| `component:detection-limit` | Component | Sub-observation component. |
-| `component:transcript-id` | Component | Sub-observation component. |
-| `component:transcripts-per-million` | Component | Sub-observation component. |
-| `component:tissue-corrected-expression` | Component | Sub-observation component. |
-| `component:raw-counts` | Component | Sub-observation component. |
-| `component:library-size` | Component | Sub-observation component. |
-| `component:cohort-ranking` | Component | Sub-observation component. |
+| `component:conclusion-string` | Conclusion (text) | Textual summary of the therapeutic implication. |
+| `component:gene-studied` | Gene studied | The gene studied, identified by HGNC ID. |
+| `component:cytogenetic-location` | Cytogenetic location | Chromosomal position of the variant in band nomenclature. |
+| `component:reference-sequence-assembly` | Reference genome assembly | Reference genome version used, e.g. GRCh37 or GRCh38. |
+| `component:chromosome-identifier` | Chromosome | The affected chromosome. |
+| `component:representative-coding-hgvs` | DNA change (c.HGVS) | cDNA change in HGVS nomenclature at transcript level. |
+| `component:genomic-hgvs` | Genomic DNA change (g.HGVS) | Genomic DNA change in HGVS nomenclature. |
+| `component:genomic-ref-seq` | Genomic reference sequence | Genomic reference sequence ID, e.g. NC_000007.14. |
+| `component:representative-transcript-ref-seq` | Transcript reference sequence | Transcript reference sequence ID, e.g. NM_004333.4. |
+| `component:exact-start-end` | Exact start/end position | Exact genomic coordinates of the variant — start and end. |
+| `component:inner-start-end` | Inner start/end position | Inner range for structural variants. |
+| `component:outer-start-end` | Outer start/end position | Outer range for structural variants. |
+| `component:ref-allele` | Reference allele | Nucleotide sequence of the reference allele. |
+| `component:alt-allele` | Alternative allele | Nucleotide sequence of the alternative (mutated) allele. |
+| `component:coding-change-type` | DNA change type | Type of DNA change, e.g. substitution or deletion. |
+| `component:genomic-source-class` | Genomic source class | Origin of the variant, e.g. somatic or germline. |
+| `component:sample-allelic-frequency` | Sample allelic frequency | Frequency of the variant allele in the examined sample. |
+| `component:allelic-read-depth` | Allelic read depth | Number of reads supporting the allele. |
+| `component:allelic-state` | Allelic state | Allelic state, e.g. heterozygous or homozygous. |
+| `component:variant-inheritance` | Variant inheritance | Inheritance pattern of the variant, e.g. maternal or paternal. |
+| `component:variation-code` | Variation code | Unique variant identifier from external databases, e.g. ClinVar or dbSNP. |
+| `component:representative-protein-hgvs` | Amino acid change (p.HGVS) | Amino acid change in HGVS nomenclature at protein level. |
+| `component:copy-number` | Copy number | Number of copies of a genomic region. |
+| `component:variant-confidence-status` | Variant confidence status | Confidence status of the variant call. |
+| `component:dna-region` | DNA region name | Human-readable name of the examined region — typically Exon # or Intron #. |
+| `component:gene-fusion` | Gene fusion | Details on gene fusion in blood or tissue, determined by molecular genetic method. |
+| `component:detection-limit` | Detection limit | Detection limit of the laboratory instrument. |
+| `component:transcript-id` | Transcript ID | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:transcripts-per-million` | Transcripts per million | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:tissue-corrected-expression` | Tissue-corrected expression | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:raw-counts` | Raw counts | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:library-size` | Library size | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:cohort-ranking` | Cohort ranking | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Studie</summary>
+<summary>English translations - Studie</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension` | Extension | FHIR extension. |
-| `extension:Label` | Extension | FHIR extension. |
-| `extension:AssociatedParty` | Extension | FHIR extension. |
-| `extension:Ethikvotum` | Extension | FHIR extension. |
-| `extension:Studienregister` | Extension | FHIR extension. |
-| `extension:Eligibility` | Extension | FHIR extension. |
-| `extension:Akronym` | Extension | FHIR extension. |
-| `extension:Rekrutierung` | Extension | FHIR extension. |
-| `extension:Finanzierung` | Extension | FHIR extension. |
+| `extension:Label` | Label | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:AssociatedParty` | Associated party | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Ethikvotum` | Ethics vote | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Studienregister` | Study registry | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Eligibility` | Eligibility | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Akronym` | Acronym | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Rekrutierung` | Recruitment | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Finanzierung` | Funding | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
 | `identifier` | Identifier | Identifier for this resource. |
-| `identifier:NCT` | Identifier | Identifier for this resource. |
-| `identifier:DRKS` | Identifier | Identifier for this resource. |
-| `identifier:EudraCT` | Identifier | Identifier for this resource. |
+| `identifier:NCT` | Name für diese Studie | Kennungen, die dieser Forschungsstudie vom Sponsor oder anderen Systemen zugewiesen wurden. |
+| `identifier:DRKS` | Name für diese Studie | Kennungen, die dieser Forschungsstudie vom Sponsor oder anderen Systemen zugewiesen wurden. |
+| `identifier:EudraCT` | Name für diese Studie | Kennungen, die dieser Forschungsstudie vom Sponsor oder anderen Systemen zugewiesen wurden. |
 | `title` | Name für diese Studie | Ein kurzer, beschreibender und benutzerfreundlicher Bezeichner für die Studie. |
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
@@ -2236,13 +2236,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Studieneinschluss Anfrage</summary>
+<summary>English translations - Studieneinschluss (Anfrage\</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:statusReason` | Extension | FHIR extension. |
-| `extension:Prioritaet` | Extension | FHIR extension. |
-| `extension:Publikation` | Extension | FHIR extension. |
+| `extension:statusReason` | Reason for refusal | Reason for refusing study enrollment — e.g. death or study closed. |
+| `extension:Prioritaet` | Priority | Priorität der (einzelnen) Empfehlung |
+| `extension:Publikation` | Publication | Verweis auf Publikation der (einzelnen) Empfehlung |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
@@ -2253,7 +2253,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Systemtherapie Medication Statement</summary>
+<summary>English translations - Systemtherapie (MedicationStatement\</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -2287,79 +2287,79 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Systemische Therapie</summary>
+<summary>English translations - Systemische Therapie</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension` | Extension | FHIR extension. |
 | `extension:Dokumentationsdatum` | Recorded date | The date the procedure was documented, if different from the performed date |
 | `extension:durchfuehrungsabsicht` | Intention | therapeutic \| palliative \| diagnostic \| preventive \| rehabilitative \| other |
-| `extension:Intention` | Extension | FHIR extension. |
-| `extension:StellungZurOp` | Extension | FHIR extension. |
-| `extension:causedBy` | Extension | FHIR extension. |
+| `extension:Intention` | Intent | Systemische Therapie Intention |
+| `extension:StellungZurOp` | Position relative to surgery | Systemische Therapie Stellung zur OP |
+| `extension:causedBy` | Therapy recommendation | Reference to the MTB therapy recommendation. |
 | `basedOn` | Based on | Reference to the request that this resource is based on. |
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
-| `statusReason` | Status Grund | Grund des Status der Therapie |
+| `statusReason` | Systemic therapy termination reason | If terminated: reason for terminating the systemic therapy. |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
 | `category.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
 | `code` | Code | Code from OPS - Operationen- und Prozedurenschlüssel, SNOMED CT or other. |
 | `code.coding:ops` | OPS code | A reference to a code defined by the German Procedure Classification OPS |
 | `code.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
-| `code.coding:systemische_therapie_art` | Art der systemischen oder abwartenden Therapie | Art der systemischen oder abwartenden Therapie gemäß 16.3 oBDS 2021. |
+| `code.coding:systemische_therapie_art` | Type of systemic therapy | Type of systemic or watchful-waiting therapy per oBDS 2021 §16.3. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
 | `bodySite.coding:snomed-ct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
-| `outcome` | The result of procedure | The outcome of the procedure - did it resolve the reasons for the procedure being performed? |
+| `outcome` | Cost-coverage outcome | Outcome of the cost-coverage decision. For secondary data use, reimbursement is assumed to have already occurred. |
 | `note` | Note | Additional information about the procedure as free text. |
 | `usedCode` | Coded items used during the procedure | Identifies coded items that were used as part of the procedure. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Systemische Vortherapie</summary>
+<summary>English translations - Systemische Vortherapie</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension` | Extension | FHIR extension. |
 | `extension:Dokumentationsdatum` | Recorded date | The date the procedure was documented, if different from the performed date |
 | `extension:durchfuehrungsabsicht` | Intention | therapeutic \| palliative \| diagnostic \| preventive \| rehabilitative \| other |
-| `extension:Intention` | Extension | FHIR extension. |
-| `extension:StellungZurOp` | Extension | FHIR extension. |
-| `extension:Leitlinie` | Extension | FHIR extension. |
+| `extension:Intention` | Intent | Systemische Therapie Intention |
+| `extension:StellungZurOp` | Position relative to surgery | Systemische Therapie Stellung zur OP |
+| `extension:Leitlinie` | Guideline | Dokumentation zur Leitlinien-konformen Umsetzung der Prozedur |
 | `basedOn` | Based on | Reference to the request that this resource is based on. |
-| `basedOn:Therapieplan` | Based on | Reference to the request that this resource is based on. |
+| `basedOn:Therapieplan` | Therapy plan | Reference to the therapy plan decided by the MTB. |
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
-| `statusReason` | Abbruchsgrund Systemische Therapie | Falls abgebrochen: Angabe zum Abbruchsgrund der Systemischen Therapie |
-| `statusReason.coding:Therapiestatusgrund` | Therapiestatusgrund | Grund für den Status der Systemischen Therapie |
+| `statusReason` | Systemic therapy termination reason | If terminated: reason for terminating the systemic therapy. |
+| `statusReason.coding:Therapiestatusgrund` | Therapy status reason | Reason for the status of the systemic therapy. |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
 | `category.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
 | `code` | Code | Code from OPS - Operationen- und Prozedurenschlüssel, SNOMED CT or other. |
 | `code.coding:ops` | OPS code | A reference to a code defined by the German Procedure Classification OPS |
 | `code.coding:sct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
-| `code.coding:systemische_therapie_art` | Art der systemischen oder abwartenden Therapie | Art der systemischen oder abwartenden Therapie gemäß 16.3 oBDS 2021. |
+| `code.coding:systemische_therapie_art` | Type of systemic therapy | Type of systemic or watchful-waiting therapy per oBDS 2021 §16.3. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
 | `bodySite.coding:snomed-ct` | SNOMED CT code | A reference to a code defined by SNOMED CT |
-| `outcome` | The result of procedure | The outcome of the procedure - did it resolve the reasons for the procedure being performed? |
+| `outcome` | Cost-coverage outcome | Outcome of the cost-coverage decision. For secondary data use, reimbursement is assumed to have already occurred. |
 | `note` | Note | Additional information about the procedure as free text. |
 | `usedCode` | Coded items used during the procedure | Identifies coded items that were used as part of the procedure. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Therapeutische Implikation</summary>
+<summary>English translations - Therapeutische Implikation</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:Evidenzgraduierung` | Extension | FHIR extension. |
+| `extension:Evidenzgraduierung` | Evidence grade | Evidenzgraduierung der (einzelnen) Empfehlung |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
@@ -2369,25 +2369,25 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Effective | Date or period the observation refers to. |
 | `issued` | Issued | Date when the resource was issued. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
-| `derivedFrom:variant` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:variant` | Derived from variant | Genetic variant from which this implication is derived. |
 | `component` | Component | Sub-observation component. |
-| `component:conclusion-string` | Component | Sub-observation component. |
-| `component:evidence-level` | Component | Sub-observation component. |
-| `component:therapeutic-implication` | Component | Sub-observation component. |
-| `component:phenotypic-treatment-context` | Component | Sub-observation component. |
-| `component:medication-assessed` | Component | Sub-observation component. |
-| `component:therapy-assessed` | Component | Sub-observation component. |
+| `component:conclusion-string` | Conclusion (text) | Textual summary of the therapeutic implication. |
+| `component:evidence-level` | Evidence level | Evidence level for the therapy recommendation. |
+| `component:therapeutic-implication` | Therapeutic implication type | Type of therapeutic implication, e.g. sensitivity or resistance. |
+| `component:phenotypic-treatment-context` | Phenotypic treatment context | Phenotypic or disease-specific context of the treatment. |
+| `component:medication-assessed` | Medication assessed | Medication assessed for the therapy recommendation. |
+| `component:therapy-assessed` | Therapy assessed | Non-pharmacologic therapy assessed. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Therapieempfehlung Kombinationstherapie</summary>
+<summary>English translations - Therapieempfehlung Kombinationstherapie</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:Prioritaet` | Extension | FHIR extension. |
-| `extension:Evidenzgraduierung` | Extension | FHIR extension. |
-| `extension:Publikation` | Extension | FHIR extension. |
+| `extension:Prioritaet` | Priority | Priorität der (einzelnen) Empfehlung |
+| `extension:Evidenzgraduierung` | Evidence grade | Evidenzgraduierung der (einzelnen) Empfehlung |
+| `extension:Publikation` | Publication | Verweis auf Publikation der (einzelnen) Empfehlung |
 | `identifier` | Identifier | Identifier for this resource. |
 | `status` | Status | Status of the resource. |
 | `intent` | Intent | Intent of the request: proposal \| plan \| order. |
@@ -2401,19 +2401,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Therapieempfehlung Systemische Therapie</summary>
+<summary>English translations - Therapieempfehlung systemische Therapie</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:Prioritaet` | Extension | FHIR extension. |
-| `extension:Evidenzgraduierung` | Extension | FHIR extension. |
-| `extension:Publikation` | Extension | FHIR extension. |
+| `extension:Prioritaet` | Priority | Priorität der (einzelnen) Empfehlung |
+| `extension:Evidenzgraduierung` | Evidence grade | Evidenzgraduierung der (einzelnen) Empfehlung |
+| `extension:Publikation` | Publication | Verweis auf Publikation der (einzelnen) Empfehlung |
 | `identifier` | Identifier | An identifier for this medication request |
 | `status` | Status | active \| on-hold \| cancelled \| completed \| entered-in-error \| stopped \| draft \| unknown |
 | `intent` | Intent | proposal \| plan \| order \| original-order \| reflex-order \| filler-order \| instance-order \| option |
 | `medication[x]` | Medication | The medication that was requested. Code or a reference to a Medication resource. |
-| `medication[x]:medicationReference` | Medication | Reference to the medication. |
-| `medication[x]:medicationCodeableConcept` | Medication | Reference to the medication. |
+| `medication[x]:medicationReference` | Medication to be taken | Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identif... |
+| `medication[x]:medicationCodeableConcept` | Medication to be taken | Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identif... |
 | `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | PZN code | A reference to a code defined by Pharmazentralnummer |
 | `medication[x]:medicationCodeableConcept.coding:atcClassDe` | ATC code | A reference to a code defined by the German edition of the Anatomical Therapeutic Chemical classification system |
 | `medication[x]:medicationCodeableConcept.coding:atcClassEn` | ATC WHO code | A reference to a code defined by the WHO edition of the Anatomical Therapeutic Chemical classification system |
@@ -2440,31 +2440,31 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Therapieplan</summary>
+<summary>English translations - Therapieplan</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `status` | Status | Status of the resource. |
 | `intent` | Intent | Intent of the request: proposal \| plan \| order. |
 | `category` | Category | Categorization of the resource. |
-| `description` | Protokollauszug | Protokollauszug aus dem Beschluss des Molekularen Tumorboards |
+| `description` | Protocol excerpt | Protocol excerpt from the MTB decision. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
-| `created` | Erstellungsdatum | Erstellungsdatum des Therapieplans gemäß Beschluss des Molekularen Tumorboards |
+| `created` | Approval / objection date | Date the application was filed. |
 | `addresses` | Health issues this plan addresses | Identifies the conditions/problems/concerns/diagnoses/etc. whose management and/or mitigation are handled by this plan. |
 | `supportingInfo` | Information considered as part of plan | Identifies portions of the patient's record that specifically influenced the formation of the plan. These might include comorbidities, recent procedures, limitations, recent assessments, etc. |
-| `supportingInfo:Behandlungsepisode` | Behandlungsepisode | Aktueller Krankheitszustand und bisherige Behandlungsmaßnahmen |
+| `supportingInfo:Behandlungsepisode` | Treatment episode | Current disease state and prior treatments. |
 | `activity` | Therapy recommendations - either oBDS standard categorization or extended molecular protocols | Identifies a planned action to occur as part of the plan. For example, a medication to be used, lab tests to perform, self-monitoring, education, etc. |
-| `activity:extended/Therapieempfehlung` | Therapieempfehlung Systemische Therapie | Therapieempfehlung für eine medikamentöse Systemische Therapie |
-| `activity:extended/HumangenetischeBeratung` | Empfehlung Human-genetische Beratung | Auftrag zur (erneuten) Human-genetischen Beratung |
-| `activity:extended/HistologieEvaluation` | Empfehlung Histologie-Evaluation | Auftrag zur (erneuten) Histologie-Evaluation |
-| `activity:extended/Biopsie` | Empfehlung Biopsie | Auftrag zur (erneuten) Biopsie |
-| `activity:extended/Studieneinschlussempfehlung` | Studieneinschlussempfehlung | Anfrage zum Studieneinschluss |
+| `activity:extended/Therapieempfehlung` | Systemic therapy recommendation | Recommendation for a pharmacologic systemic therapy. |
+| `activity:extended/HumangenetischeBeratung` | Genetic counseling recommendation | Order for genetic counseling. |
+| `activity:extended/HistologieEvaluation` | Histology evaluation recommendation | Order for a repeat histology evaluation. |
+| `activity:extended/Biopsie` | Biopsy recommendation | Order for a repeat biopsy. |
+| `activity:extended/Studieneinschlussempfehlung` | Study enrollment recommendation | Request for study enrollment. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Tumorausbreitung</summary>
+<summary>English translations - Tumorausbreitung</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -2476,12 +2476,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
 | `value[x]` | Value | Value of the observation. |
-| `value[x].coding:Tumorausbreitung` | Tumorausbreitung | Angabe zur Tumorausbreitung |
+| `value[x].coding:Tumorausbreitung` | Tumor extent | Tumor extent. |
 
 </details>
 
 <details>
-<summary>English translations - MII PR MTB Tumorzellgehalt</summary>
+<summary>English translations - Tumorzellgehalt</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -2491,7 +2491,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR MTB WHO Grad Tumor ZNS</summary>
+<summary>English translations - WHO-Grad ZNS-Tumor</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -2499,7 +2499,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `value[x]` | Value | Value of the observation. |
-| `value[x].coding:SCT` | WHO-Klassifikation gemäß SNOMED CT | Grad eines Tumors nach WHO-Klassifikation der Tumoren des zentralen Nervensystems gemäß SNOMED CT |
+| `value[x].coding:SCT` | SNOMED CT | Coding in SNOMED CT. |
 
 </details>
 

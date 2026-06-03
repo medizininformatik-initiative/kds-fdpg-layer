@@ -15,6 +15,10 @@ Description: "FDPG Profil - MII_PR_Onko_Allgemeiner_Leistungszustand_ECOG"
 * code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\"."
 * insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
+// Observation.code.coding:snomed
+* code.coding[snomed] ^short = "SNOMED CT coding"
+* insert Translation(code.coding[snomed] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(code.coding[snomed] ^short, en-US, SNOMED CT coding)
 // Observation.code.coding:snomed.system
 * code.coding[snomed].system ^short = "SNOMED CT system URL"
 * insert Translation(code.coding[snomed].system ^short, de-DE, SNOMED CT-System-URL)
@@ -23,6 +27,10 @@ Description: "FDPG Profil - MII_PR_Onko_Allgemeiner_Leistungszustand_ECOG"
 * code.coding[snomed].code ^short = "Code as SNOMED CT"
 * insert Translation(code.coding[snomed].code ^short, de-DE, Code als SNOMED CT)
 * insert Translation(code.coding[snomed].code ^short, en-US, Code as SNOMED CT)
+// Observation.code.coding:loinc
+* code.coding[loinc] ^short = "LOINC coding"
+* insert Translation(code.coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[loinc] ^short, en-US, LOINC coding)
 // Observation.subject
 * subject ^short = "Who and/or what the observation is about"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -51,8 +59,22 @@ Description: "FDPG Profil - MII_PR_Onko_Allgemeiner_Leistungszustand_ECOG"
 * value[x].coding ^definition = "Leistungszustand nach ECOG Stufen 0-4 gemäß 12.1 oBDS 2021"
 * insert Translation(value[x].coding ^definition, de-DE, Leistungszustand nach ECOG Stufen 0-4 gemäß 12.1 oBDS 2021)
 * insert Translation(value[x].coding ^definition, en-US, Location of distant metastases per oBDS 2021 §11.1 / TNM coding.)
+// Observation.value[x].coding:obds
+* value[x].coding[obds] ^short = "oBDS coding"
+* insert Translation(value[x].coding[obds] ^short, de-DE, oBDS-Kodierung)
+* insert Translation(value[x].coding[obds] ^short, en-US, oBDS coding)
 // Observation.value[x].coding:obds.system
+* value[x].coding[obds].system ^short = "oBDS system URL"
+* insert Translation(value[x].coding[obds].system ^short, de-DE, oBDS-System-URL)
+* insert Translation(value[x].coding[obds].system ^short, en-US, oBDS system URL)
 // Observation.value[x].coding:obds.code
+* value[x].coding[obds].code ^short = "Value as oBDS"
+* insert Translation(value[x].coding[obds].code ^short, de-DE, Messwert als oBDS)
+* insert Translation(value[x].coding[obds].code ^short, en-US, Value as oBDS)
+// Observation.value[x].coding:loinc
+* value[x].coding[loinc] ^short = "LOINC coding"
+* insert Translation(value[x].coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(value[x].coding[loinc] ^short, en-US, LOINC coding)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(code)

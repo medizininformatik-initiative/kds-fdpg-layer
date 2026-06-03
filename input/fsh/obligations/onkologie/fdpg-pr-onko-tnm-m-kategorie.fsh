@@ -31,6 +31,11 @@ Description: "FDPG Profil - MII_PR_Onko_TNM_M_Kategorie"
 * insert Translation(code ^definition, en-US, Coding of the content.)
 // Observation.code.extension:cpPraefix
 * code.extension[cpPraefix] ^short = "MII EX Onkologie TNM c/p Präfix"
+* insert Translation(code.extension[cpPraefix] ^short, de-DE, TNM c/p-Präfix)
+* insert Translation(code.extension[cpPraefix] ^short, en-US, TNM c/p prefix)
+* code.extension[cpPraefix] ^definition = "Die Extension verleiht einer TNM T-, N- oder M-Kategorie ein c, p oder u Präfix zur Angabe der Klassifikationsmethode: 'c' = klinische Klassifikation (basierend auf klinischen Angaben), 'p' = pathologische Klassifikation (basierend auf pathohistologischer Untersuchung), 'u' = Ultraschall-basierte Klassifikation."
+* insert Translation(code.extension[cpPraefix] ^definition, de-DE, TNM clinical/pathological-Präfix (c = klinisch\, p = pathologisch\).)
+* insert Translation(code.extension[cpPraefix] ^definition, en-US, TNM clinical/pathological prefix (c = clinical\, p = pathological\).)
 // Observation.subject
 * subject ^short = "Who and/or what the observation is about"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -63,6 +68,11 @@ Description: "FDPG Profil - MII_PR_Onko_TNM_M_Kategorie"
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
 // Observation.value[x].extension:itcSuffix
 * value[x].extension[itcSuffix] ^short = "isolierte Tumorzellen (ITC) Suffix"
+* insert Translation(value[x].extension[itcSuffix] ^short, de-DE, ITC-Suffix)
+* insert Translation(value[x].extension[itcSuffix] ^short, en-US, ITC suffix)
+* value[x].extension[itcSuffix] ^definition = "Die Extension verleiht TNM N- und M-Kategorien isolierte Tumorzellen (ITC) Suffixe."
+* insert Translation(value[x].extension[itcSuffix] ^definition, de-DE, Suffix für isolierte Tumorzellen (ITC\) im TNM-Staging.)
+* insert Translation(value[x].extension[itcSuffix] ^definition, en-US, Isolated Tumor Cells (ITC\) suffix in TNM staging.)
 // Observation.method
 * method ^short = "How it was done"
 * insert Translation(method ^short, de-DE, Methode)

@@ -1,0 +1,97 @@
+{
+  "_doc": "Module-specific FDPG labels for the 'basis' module.",
+  "elements": {
+    "extension:ReferenzPrimaerdiagnose": {
+      "de_short": "Referenz Primaerdiagnose",
+      "en_short": "Primary diagnosis reference"
+    },
+    "extension:Aufnahmegrund.extension:ErsteUndZweiteStelle": {
+      "de_short": "Erste Und Zweite Stelle",
+      "en_short": "First and second digit"
+    },
+    "extension:Aufnahmegrund.extension:DritteStelle": {
+      "de_short": "Dritte Stelle",
+      "en_short": "Third digit"
+    },
+    "extension:Aufnahmegrund.extension:VierteStelle": {
+      "de_short": "Vierte Stelle",
+      "en_short": "Fourth digit"
+    },
+    "hospitalization.dischargeDisposition.extension:Entlassungsgrund": {
+      "de_short": "Entlassungsgrund",
+      "en_short": "Discharge reason"
+    },
+    "identifier:MaskierterVersichertenIdentifer.value.extension:data-absent-reason": {
+      "de_short": "Grund für fehlende Angabe",
+      "en_short": "Data absent reason"
+    },
+    "gender.extension:other-amtlich": {
+      "de_short": "Sonstige (amtlich)",
+      "en_short": "Other (official)"
+    },
+    "name:name.family.extension:namenszusatz": {
+      "de_short": "namenszusatz",
+      "en_short": "namenszusatz"
+    },
+    "name:name.family.extension:nachname": {
+      "de_short": "nachname",
+      "en_short": "nachname"
+    },
+    "name:name.family.extension:vorsatzwort": {
+      "de_short": "vorsatzwort",
+      "en_short": "vorsatzwort"
+    },
+    "name:name.prefix.extension:prefix-qualifier": {
+      "de_short": "prefix-qualifier",
+      "en_short": "prefix-qualifier"
+    },
+    "name:geburtsname.family.extension:namenszusatz": {
+      "de_short": "namenszusatz",
+      "en_short": "namenszusatz"
+    },
+    "name:geburtsname.family.extension:nachname": {
+      "de_short": "nachname",
+      "en_short": "nachname"
+    },
+    "name:geburtsname.family.extension:vorsatzwort": {
+      "de_short": "vorsatzwort",
+      "en_short": "vorsatzwort"
+    },
+    "name:geburtsname.prefix.extension:prefix-qualifier": {
+      "de_short": "prefix-qualifier",
+      "en_short": "prefix-qualifier"
+    },
+    "birthDate.extension:data-absent-reason": {
+      "de_short": "Grund für fehlende Angabe",
+      "en_short": "Data absent reason"
+    },
+    "address:Strassenanschrift.extension:Stadtteil": {
+      "de_short": "Stadtteil",
+      "en_short": "District"
+    },
+    "address:Strassenanschrift.line.extension:Strasse": {
+      "de_short": "Straße",
+      "en_short": "Street"
+    },
+    "address:Strassenanschrift.line.extension:Hausnummer": {
+      "de_short": "Hausnummer",
+      "en_short": "House number"
+    },
+    "address:Strassenanschrift.line.extension:Adresszusatz": {
+      "de_short": "Adresszusatz",
+      "en_short": "Address suffix"
+    },
+    "address:Strassenanschrift.line.extension:Postfach": {
+      "de_short": "Postfach",
+      "en_short": "PO box"
+    },
+    "address:Postfach.extension:Stadtteil": {
+      "de_short": "Stadtteil",
+      "en_short": "District"
+    },
+    "address:Postfach.line.extension:Postfach": {
+      "de_short": "Postfach",
+      "en_short": "PO box"
+    }
+  }
+}

@@ -52,6 +52,7 @@ Description: "FDPG Profil - MII_PR_Fall_KontaktGesundheitseinrichtung"
 * insert Translation(identifier[Aufnahmenummer] ^definition, en-US, Admission number\, the patient receives during an admission.)
 // Encounter.identifier:Aufnahmenummer.type
 * identifier[Aufnahmenummer].type ^short = "Description of identifier"
+// Encounter.identifier:Aufnahmenummer.type.coding:vn-type
 // Encounter.identifier:Aufnahmenummer.type.coding:vn-type.system
 // Encounter.identifier:Aufnahmenummer.type.coding:vn-type.code
 // Encounter.identifier:Aufnahmenummer.system
@@ -185,6 +186,8 @@ Description: "FDPG Profil - MII_PR_Fall_KontaktGesundheitseinrichtung"
 * hospitalization.dischargeDisposition ^short = "Entlassung"
 // Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund
 * hospitalization.dischargeDisposition.extension[Entlassungsgrund] ^short = "Entlassungsgrund"
+* insert Translation(hospitalization.dischargeDisposition.extension[Entlassungsgrund] ^short, de-DE, Entlassungsgrund)
+* insert Translation(hospitalization.dischargeDisposition.extension[Entlassungsgrund] ^short, en-US, Discharge reason)
 // Encounter.location:Zimmer.status
 * location[Zimmer].status ^short = "planned | active | reserved | completed"
 // Encounter.location:Bett.status

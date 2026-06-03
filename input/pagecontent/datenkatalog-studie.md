@@ -48,7 +48,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
-| `identifier:subjectIdentificationCode` | Identifikator | Identifikator dieser Ressource. |
+| `identifier:subjectIdentificationCode` | Business Identifier for research subject in a study | Identifiers assigned to this research subject for a study. |
 | `status` | Status | Status der Ressource. |
 | `period` | Anfang und Ende der Teilnahme | Zeitrum, in denen die Teilnahme an der Studie begann und endete. |
 | `study` | Studie, der der Proband angehört | Referenz auf die Studie, an der der Proband teilnimmt |
@@ -73,14 +73,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
 | `extension` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Label` | Erweiterung | FHIR-Erweiterung. |
-| `extension:AssociatedParty` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Ethikvotum` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Studienregister` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Eligibility` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Akronym` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Rekrutierung` | Erweiterung | FHIR-Erweiterung. |
-| `extension:Finanzierung` | Erweiterung | FHIR-Erweiterung. |
+| `extension:Label` | Label | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:AssociatedParty` | Associated Party | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Ethikvotum` | Ethikvotum | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Studienregister` | Studienregister | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Eligibility` | Eligibility | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Akronym` | Akronym | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Rekrutierung` | Rekrutierung | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Finanzierung` | Finanzierung | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `title` | Name für diese Studie | Ein kurzer, beschreibender und benutzerfreundlicher Bezeichner für die Studie. |
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
@@ -155,7 +155,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `identifier` | Identifier | Identifier for this resource. |
-| `identifier:subjectIdentificationCode` | Identifier | Identifier for this resource. |
+| `identifier:subjectIdentificationCode` | Business Identifier for research subject in a study | Identifiers assigned to this research subject for a study. |
 | `status` | Status | Status of the resource. |
 | `period` | Anfang und Ende der Teilnahme | Zeitrum, in denen die Teilnahme an der Studie begann und endete. |
 | `study` | Studie, der der Proband angehört | Referenz auf die Studie, an der der Proband teilnimmt |
@@ -182,14 +182,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension` | Extension | FHIR extension. |
-| `extension:Label` | Extension | FHIR extension. |
-| `extension:AssociatedParty` | Extension | FHIR extension. |
-| `extension:Ethikvotum` | Extension | FHIR extension. |
-| `extension:Studienregister` | Extension | FHIR extension. |
-| `extension:Eligibility` | Extension | FHIR extension. |
-| `extension:Akronym` | Extension | FHIR extension. |
-| `extension:Rekrutierung` | Extension | FHIR extension. |
-| `extension:Finanzierung` | Extension | FHIR extension. |
+| `extension:Label` | Label | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:AssociatedParty` | Associated party | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Ethikvotum` | Ethics vote | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Studienregister` | Study registry | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Eligibility` | Eligibility | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Akronym` | Acronym | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Rekrutierung` | Recruitment | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
+| `extension:Finanzierung` | Funding | Optionales Erweiterungselement – in allen Ressourcen vorhanden. |
 | `identifier` | Identifier | Identifier for this resource. |
 | `title` | Name für diese Studie | Ein kurzer, beschreibender und benutzerfreundlicher Bezeichner für die Studie. |
 | `partOf` | Part of | Reference to a parent resource that this is part of. |

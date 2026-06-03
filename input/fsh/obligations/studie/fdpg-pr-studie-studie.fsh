@@ -9,25 +9,44 @@ Description: "FDPG Profil - MII_PR_Studie_Studie"
 * insert Translation(^title, en-US, Research Study)
 // --- Element Designations ---
 // ResearchStudy.extension
+* extension ^short = "Extension"
+* insert Translation(extension ^short, de-DE, Erweiterung)
+* insert Translation(extension ^short, en-US, Extension)
 * extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
 * insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
 * insert Translation(extension ^definition, en-US, FHIR extension.)
 // ResearchStudy.extension:Label
 * extension[Label] ^short = "Label"
+* insert Translation(extension[Label] ^short, de-DE, Label)
+* insert Translation(extension[Label] ^short, en-US, Label)
 // ResearchStudy.extension:AssociatedParty
 * extension[AssociatedParty] ^short = "AssociatedParty"
+* insert Translation(extension[AssociatedParty] ^short, de-DE, Associated Party)
+* insert Translation(extension[AssociatedParty] ^short, en-US, Associated party)
 // ResearchStudy.extension:Ethikvotum
 * extension[Ethikvotum] ^short = "Ethikvotum"
+* insert Translation(extension[Ethikvotum] ^short, de-DE, Ethikvotum)
+* insert Translation(extension[Ethikvotum] ^short, en-US, Ethics vote)
 // ResearchStudy.extension:Studienregister
 * extension[Studienregister] ^short = "Studienregister"
+* insert Translation(extension[Studienregister] ^short, de-DE, Studienregister)
+* insert Translation(extension[Studienregister] ^short, en-US, Study registry)
 // ResearchStudy.extension:Eligibility
 * extension[Eligibility] ^short = "Eligibility"
+* insert Translation(extension[Eligibility] ^short, de-DE, Eligibility)
+* insert Translation(extension[Eligibility] ^short, en-US, Eligibility)
 // ResearchStudy.extension:Akronym
 * extension[Akronym] ^short = "Akronym"
+* insert Translation(extension[Akronym] ^short, de-DE, Akronym)
+* insert Translation(extension[Akronym] ^short, en-US, Acronym)
 // ResearchStudy.extension:Rekrutierung
 * extension[Rekrutierung] ^short = "Rekrutierung"
+* insert Translation(extension[Rekrutierung] ^short, de-DE, Rekrutierung)
+* insert Translation(extension[Rekrutierung] ^short, en-US, Recruitment)
 // ResearchStudy.extension:Finanzierung
 * extension[Finanzierung] ^short = "Finanzierung"
+* insert Translation(extension[Finanzierung] ^short, de-DE, Finanzierung)
+* insert Translation(extension[Finanzierung] ^short, en-US, Funding)
 // ResearchStudy.identifier
 * identifier ^short = "Name für diese Studie"
 * insert Translation(identifier ^short, de-DE, Identifikator)

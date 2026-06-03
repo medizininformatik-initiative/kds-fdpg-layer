@@ -96,7 +96,37 @@
           }
         ],
         "path": "ServiceRequest.extension",
-        "sliceName": "statusReason"
+        "sliceName": "statusReason",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "status Reason"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "status Reason"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "ServiceRequest.extension:Prioritaet",
@@ -129,7 +159,37 @@
           }
         ],
         "path": "ServiceRequest.extension",
-        "sliceName": "Prioritaet"
+        "sliceName": "Prioritaet",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Priorität"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Priority"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "ServiceRequest.extension:Publikation",
@@ -162,7 +222,37 @@
           }
         ],
         "path": "ServiceRequest.extension",
-        "sliceName": "Publikation"
+        "sliceName": "Publikation",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Empfehlung Publikation"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Publication"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "ServiceRequest.status",

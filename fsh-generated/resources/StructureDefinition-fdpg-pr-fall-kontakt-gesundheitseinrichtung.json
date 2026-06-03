@@ -985,6 +985,41 @@
         "path": "Encounter.hospitalization"
       },
       {
+        "id": "Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund",
+        "path": "Encounter.hospitalization.dischargeDisposition.extension",
+        "sliceName": "Entlassungsgrund",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Entlassungsgrund"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Discharge reason"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "Encounter.partOf",
         "extension": [
           {

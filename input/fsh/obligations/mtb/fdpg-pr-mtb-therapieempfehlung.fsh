@@ -10,10 +10,16 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 // --- Element Designations ---
 // MedicationRequest.extension:Prioritaet
 * extension[Prioritaet] ^short = "MII EX MTB Empfehlung Priorität"
+* insert Translation(extension[Prioritaet] ^short, de-DE, Priorität)
+* insert Translation(extension[Prioritaet] ^short, en-US, Priority)
 // MedicationRequest.extension:Evidenzgraduierung
 * extension[Evidenzgraduierung] ^short = "MII EX MTB Empfehlung Evidenzgraduierung"
+* insert Translation(extension[Evidenzgraduierung] ^short, de-DE, Empfehlung Evidenzgraduierung)
+* insert Translation(extension[Evidenzgraduierung] ^short, en-US, Evidence grade)
 // MedicationRequest.extension:Publikation
 * extension[Publikation] ^short = "MII EX MTB Empfehlung Publikation"
+* insert Translation(extension[Publikation] ^short, de-DE, Empfehlung Publikation)
+* insert Translation(extension[Publikation] ^short, en-US, Publication)
 // MedicationRequest.identifier
 * identifier ^short = "Identifikator"
 * insert Translation(identifier ^short, de-DE, Identifikator)
@@ -29,6 +35,9 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * insert Translation(status ^definition, de-DE, Status der Ressource.)
 * insert Translation(status ^definition, en-US, active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown)
 // MedicationRequest.intent
+* intent ^short = "Intent"
+* insert Translation(intent ^short, de-DE, Absicht)
+* insert Translation(intent ^short, en-US, Intent)
 * intent ^definition = "Da das MTB nur Empfehlungen abgibt, wird hier typischerweise 'proposal' stehen. Es sei denn,         diese Therapieempfehlung ist Teil einer RequestGroup (z.B. Kombinationstherapie). In dem Fall muss hier 'option' stehen."
 * insert Translation(intent ^definition, de-DE, Absicht der Anforderung: Vorschlag | Plan | Auftrag.)
 * insert Translation(intent ^definition, en-US, proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option)
@@ -44,6 +53,9 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 // MedicationRequest.medication[x]:medicationCodeableConcept
 * medication[x][medicationCodeableConcept] ^short = "Medication to be taken"
 // MedicationRequest.medication[x]:medicationCodeableConcept.coding
+* medication[x][medicationCodeableConcept].coding ^short = "Active substance"
+* insert Translation(medication[x][medicationCodeableConcept].coding ^short, de-DE, Wirkstoff/Substanz)
+* insert Translation(medication[x][medicationCodeableConcept].coding ^short, en-US, Active substance)
 * medication[x][medicationCodeableConcept].coding ^definition = "A reference to a code defined by a terminology system."
 * insert Translation(medication[x][medicationCodeableConcept].coding ^definition, de-DE, Wirkstoff oder Substanz der systemischen onkologischen Medikation gemäß oBDS 2021 §16.4.)
 * insert Translation(medication[x][medicationCodeableConcept].coding ^definition, en-US, Active substance of the systemic oncologic medication per oBDS 2021 §16.4.)

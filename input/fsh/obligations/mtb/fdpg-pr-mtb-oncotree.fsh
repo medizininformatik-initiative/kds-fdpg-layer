@@ -37,6 +37,9 @@ Description: "FDPG Profil - MII_PR_MTB_Oncotree"
 * insert Translation(value[x] ^definition, de-DE, Wert der Beobachtung.)
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
 // Observation.value[x].coding
+* value[x].coding ^short = "Documented consent"
+* insert Translation(value[x].coding ^short, de-DE, Dokumentierter Consent)
+* insert Translation(value[x].coding ^short, en-US, Documented consent)
 * value[x].coding ^definition = "A reference to a code defined by a terminology system."
 * insert Translation(value[x].coding ^definition, de-DE, Dokumentation der Zustimmung oder Ablehnung eines Consents.)
 * insert Translation(value[x].coding ^definition, en-US, Documentation of consent or refusal.)

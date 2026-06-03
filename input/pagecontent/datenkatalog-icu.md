@@ -40,9 +40,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Status | Status der Ressource. |  |
 | `category` | Kategorie | Kategorisierung der Ressource. |  |
 | `code` | Code | Kodierung des Inhalts. | ✓ |
-| `code.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
-| `code.coding:loinc` | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
-| `code.coding:IEEE-11073` | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |  |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |  |
+| `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |  |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
 | `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
@@ -269,7 +269,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
+| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -336,7 +336,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
+| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -359,7 +359,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
+| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -382,7 +382,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
+| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -405,7 +405,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:vs-cat` | Kategorie | Kategorisierung der Ressource. |
+| `category:vs-cat` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -428,7 +428,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
+| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -451,7 +451,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
+| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -563,7 +563,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `code` | Code | Kodierung des Inhalts. |
-| `code.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
 | `code.coding:IEEE-11073` | IEEE 11073 | Kodierung nach IEEE 11073. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
@@ -1308,7 +1308,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 ### Weitere Profile
 
-#### MII PR ICU Bilanz Ausfuhr Blutverlust (Observation)
+#### Bilanz Ausfuhr Blutverlust (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Blutverlust](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-blutverlust.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Blutverlust
 
@@ -1335,7 +1335,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 | `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 
-#### MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte (Observation)
+#### Bilanz Ausfuhr Hämofiltration Einzelmesswerte (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-haemofiltration-einzelmesswerte.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmesswerte
 
@@ -1362,7 +1362,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 | `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 
-#### MII PR ICU Bilanz Ausfuhr OP Drainage (Observation)
+#### Bilanz Ausfuhr OP-Drainage (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Ausfuhr_OP_Drainage](StructureDefinition-fdpg-pr-icu-bilanz-ausfuhr-op-drainage.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Ausfuhr_OP_Drainage
 
@@ -1389,7 +1389,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 | `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 
-#### MII PR ICU Bilanz Tagesbilanz Fluessigkeit (Observation)
+#### Tagesbilanz Flüssigkeit (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit](StructureDefinition-fdpg-pr-icu-bilanz-tagesbilanz-fluessigkeit.html) · **MII Elternprofil:** MII_PR_ICU_Bilanz_Tagesbilanz_Fluessigkeit
 
@@ -1416,7 +1416,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 | `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 
-#### MII PR ICU Inspiratorische Sauerstofffraktion Eingestellt (Observation)
+#### Inspiratorische Sauerstofffraktion (eingestellt\ (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_Inspiratorische_Sauerstofffraktion_Eingestellt](StructureDefinition-fdpg-pr-icu-inspiratorische-sauerstofffraktion-eingestellt.html) · **MII Elternprofil:** MII_PR_ICU_Inspiratorische_Sauerstofffraktion_Eingestellt
 
@@ -1426,7 +1426,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:Beatmung` | Kategorie | Kategorisierung der Ressource. |
+| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1439,7 +1439,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
 | `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 
-#### MII PR ICU MUV Arterieller Blutdruck (Observation)
+#### MUV — Arterieller Blutdruck (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_MUV_Arterieller_Blutdruck](StructureDefinition-fdpg-pr-icu-muv-arterieller-blutdruck.html) · **MII Elternprofil:** MII_PR_ICU_MUV_Arterieller_Blutdruck
 
@@ -1460,11 +1460,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
 | `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 | `component` | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:SystolicBP` | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:DiastolicBP` | Komponente | Untergeordnete Beobachtungskomponente. |
-| `component:meanBP` | Komponente | Untergeordnete Beobachtungskomponente. |
+| `component:SystolicBP` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:DiastolicBP` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:meanBP` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 
-#### MII PR ICU MUV Atemfrequenz (Observation)
+#### MUV — Atemfrequenz (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_MUV_Atemfrequenz](StructureDefinition-fdpg-pr-icu-muv-atemfrequenz.html) · **MII Elternprofil:** MII_PR_ICU_MUV_Atemfrequenz
 
@@ -1481,7 +1481,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Messwert | Wert der Beobachtung. |
 | `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
 
-#### MII SD ICU MUV Herzfrequenz (Observation)
+#### MUV — Herzfrequenz (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_MUV_Herzfrequenz](StructureDefinition-fdpg-pr-icu-muv-herzfrequenz.html) · **MII Elternprofil:** MII_PR_ICU_MUV_Herzfrequenz
 
@@ -1491,7 +1491,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:vs-cat` | Kategorie | Kategorisierung der Ressource. |
+| `category:vs-cat` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:sct` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
@@ -1509,7 +1509,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 | `component` | Komponente | Untergeordnete Beobachtungskomponente. |
 
-#### MII PR ICU MUV Koerpergewicht (Observation)
+#### MUV — Körpergewicht (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_MUV_Koerpergewicht](StructureDefinition-fdpg-pr-icu-muv-koerpergewicht.html) · **MII Elternprofil:** MII_PR_ICU_MUV_Koerpergewicht
 
@@ -1517,19 +1517,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:sct` | Kategorie | Kategorisierung der Ressource. |
+| `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
 | `code.coding:snomed` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `effective[x]:effectivePeriod` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
+| `effective[x]:effectivePeriod` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
 | `value[x]` | Messwert | Wert der Beobachtung. |
 | `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `component` | Komponente | Untergeordnete Beobachtungskomponente. |
 
-#### MII PR ICU MUV Koerpergroesse (Observation)
+#### MUV — Körpergröße (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_MUV_Koerpergroesse](StructureDefinition-fdpg-pr-icu-muv-koerpergroesse.html) · **MII Elternprofil:** MII_PR_ICU_MUV_Koerpergroesse
 
@@ -1537,31 +1537,31 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
-| `category:VSCat` | Kategorie | Kategorisierung der Ressource. |
-| `category:sct` | Kategorie | Kategorisierung der Ressource. |
+| `category:VSCat` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `effective[x]:effectivePeriod` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
+| `effective[x]:effectivePeriod` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
 | `value[x]` | Messwert | Wert der Beobachtung. |
 | `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
 
-#### MII PR ICU MUV Kopfumfang (Observation)
+#### MUV — Kopfumfang (Observation)
 
 **FDPG Profil:** [FDPG_PR_ICU_MUV_Kopfumfang](StructureDefinition-fdpg-pr-icu-muv-kopfumfang.html) · **MII Elternprofil:** MII_PR_ICU_MUV_Kopfumfang
 
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
 | `status` | Status | Status der Ressource. |
-| `category:sct` | Kategorie | Kategorisierung der Ressource. |
+| `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Kodierung des Inhalts. |
 | `code.coding:snomed` | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `effective[x]:effectiveDateTime` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
 | `value[x]` | Messwert | Wert der Beobachtung. |
 | `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
 | `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
@@ -1605,9 +1605,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
-| `code.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `code.coding:loinc` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
-| `code.coding:IEEE-11073` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
@@ -1845,7 +1845,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:Beatmung` | Category | Categorization of the resource. |
+| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -1915,7 +1915,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:Beatmung` | Category | Categorization of the resource. |
+| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -1939,7 +1939,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:Beatmung` | Category | Categorization of the resource. |
+| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -1963,7 +1963,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:Beatmung` | Category | Categorization of the resource. |
+| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -1987,7 +1987,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:vs-cat` | Category | Categorization of the resource. |
+| `category:vs-cat` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2011,7 +2011,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:Beatmung` | Category | Categorization of the resource. |
+| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2035,7 +2035,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:Beatmung` | Category | Categorization of the resource. |
+| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -2152,7 +2152,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
-| `code.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
 | `code.coding:IEEE-11073` | IEEE 11073 | Coding in IEEE 11073. |
 | `subject` | Patient | The patient that the resource relates to. |
@@ -2924,7 +2924,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR ICU Bilanz Ausfuhr Blutverlust</summary>
+<summary>English translations - Bilanz Ausfuhr Blutverlust</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -2952,7 +2952,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR ICU Bilanz Ausfuhr Haemofiltration Einzelmesswerte</summary>
+<summary>English translations - Bilanz Ausfuhr Hämofiltration Einzelmesswerte</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -2980,7 +2980,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR ICU Bilanz Ausfuhr OP Drainage</summary>
+<summary>English translations - Bilanz Ausfuhr OP-Drainage</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -3008,7 +3008,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR ICU Bilanz Tagesbilanz Fluessigkeit</summary>
+<summary>English translations - Tagesbilanz Flüssigkeit</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -3036,7 +3036,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR ICU Inspiratorische Sauerstofffraktion Eingestellt</summary>
+<summary>English translations - Inspiratorische Sauerstofffraktion (eingestellt\</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -3044,7 +3044,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:Beatmung` | Category | Categorization of the resource. |
+| `category:Beatmung` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -3060,7 +3060,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR ICU MUV Arterieller Blutdruck</summary>
+<summary>English translations - MUV — Arterieller Blutdruck</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -3079,14 +3079,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Device | Device used to make the observation. |
 | `referenceRange` | Reference range | Clinical reference range for the value. |
 | `component` | Component | Sub-observation component. |
-| `component:SystolicBP` | Component | Sub-observation component. |
-| `component:DiastolicBP` | Component | Sub-observation component. |
-| `component:meanBP` | Component | Sub-observation component. |
+| `component:SystolicBP` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:DiastolicBP` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:meanBP` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 
 </details>
 
 <details>
-<summary>English translations - MII PR ICU MUV Atemfrequenz</summary>
+<summary>English translations - MUV — Atemfrequenz</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -3104,7 +3104,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII SD ICU MUV Herzfrequenz</summary>
+<summary>English translations - MUV — Herzfrequenz</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
@@ -3112,7 +3112,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `basedOn` | Based on | Reference to the request that this resource is based on. |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:vs-cat` | Category | Categorization of the resource. |
+| `category:vs-cat` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Coding of the content. |
 | `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
@@ -3133,20 +3133,20 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR ICU MUV Koerpergewicht</summary>
+<summary>English translations - MUV — Körpergewicht</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:sct` | Category | Categorization of the resource. |
+| `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Coding of the content. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
 | `code.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
-| `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
-| `effective[x]:effectivePeriod` | Effective | Date or period the observation refers to. |
+| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
+| `effective[x]:effectivePeriod` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
 | `value[x]` | Value | Value of the observation. |
 | `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
 | `component` | Component | Sub-observation component. |
@@ -3154,20 +3154,20 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR ICU MUV Koerpergroesse</summary>
+<summary>English translations - MUV — Körpergröße</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
-| `category:VSCat` | Category | Categorization of the resource. |
-| `category:sct` | Category | Categorization of the resource. |
+| `category:VSCat` | Classification of type of observation | A code that classifies the general type of observation being made. |
+| `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Coding of the content. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
-| `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
-| `effective[x]:effectivePeriod` | Effective | Date or period the observation refers to. |
+| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
+| `effective[x]:effectivePeriod` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
 | `value[x]` | Value | Value of the observation. |
 | `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
 | `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
@@ -3175,17 +3175,17 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
-<summary>English translations - MII PR ICU MUV Kopfumfang</summary>
+<summary>English translations - MUV — Kopfumfang</summary>
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `status` | Status | Status of the resource. |
-| `category:sct` | Category | Categorization of the resource. |
+| `category:sct` | Classification of type of observation | A code that classifies the general type of observation being made. |
 | `code` | Code | Coding of the content. |
 | `code.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
-| `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
+| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for observation | The time or time-period the observed value is asserted as being true. For biological subjects - e.g. human patients - this is usually called the "physiologically relevant time". This is usually eit... |
 | `value[x]` | Value | Value of the observation. |
 | `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
 | `dataAbsentReason` | Data absent reason | Reason why no value is provided. |

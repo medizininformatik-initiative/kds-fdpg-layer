@@ -97,6 +97,8 @@ Description: "FDPG Profil - MII_PR_Medikation_Medication"
 // Medication.ingredient.item[x]:itemCodeableConcept.coding:ASK.code
 // Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII
 * ingredient.item[x][itemCodeableConcept].coding[UNII] ^short = "UNII Code"
+* insert Translation(ingredient.item[x][itemCodeableConcept].coding[UNII] ^short, de-DE, UNII-Kodierung)
+* insert Translation(ingredient.item[x][itemCodeableConcept].coding[UNII] ^short, en-US, UNII coding)
 // Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII.system
 * ingredient.item[x][itemCodeableConcept].coding[UNII].system ^short = "UNII system URL"
 * insert Translation(ingredient.item[x][itemCodeableConcept].coding[UNII].system ^short, de-DE, UNII-System-URL)

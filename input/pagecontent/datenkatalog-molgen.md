@@ -118,7 +118,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` |  |  | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Zusammenfassung, Mikrosatelliteninstabilitaet | Zusammenfassung | Ergebniswert | Der Genotyp als kodierter Wert oder Text |
+| `value[x]` | Mutationslast | Somat. Mutationen / Mutationslast | Ergebniswert | Der Genotyp als kodierter Wert oder Text |
 | `derivedFrom` |  |  | Abgeleitet von | Die Varianten oder Haplotypen von denen der Genotyp abgeleitet wurde |
 | `component` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Komponenten | Einzelne Komponenten des Genotyps |
 | `component:conclusion-string` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Schlussfolgerung - Text | Textuelle Zusammenfassung des Genotyps |
@@ -153,7 +153,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` |  |  | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Zusammenfassung, Mikrosatelliteninstabilitaet | Zusammenfassung | Ergebniswert | Das Ergebnis der MSI-Bestimmung wie z.B. stabil oder instabil |
+| `value[x]` | Mutationslast | Somat. Mutationen / Mutationslast | Ergebniswert | Das Ergebnis der MSI-Bestimmung wie z.B. stabil oder instabil |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Komponenten | Einzelne Komponenten der Beobachtung |
 | `component:gene-studied` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Untersuchtes Gen | Das untersuchte Gen |
@@ -240,7 +240,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Kontakt | Der Kontakt in dessen Rahmen die Beobachtung gemacht wurde |
 | `effective[x]` |  |  | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe |
-| `value[x]` | Zusammenfassung, Mikrosatelliteninstabilitaet | Zusammenfassung | Ergebniswert | Der numerische Wert der Mutationslast in Mutationen pro Megabase |
+| `value[x]` | Mutationslast | Somat. Mutationen / Mutationslast | Ergebniswert | Der numerische Wert der Mutationslast in Mutationen pro Megabase |
 | `specimen` |  |  | Probe | Die untersuchte Tumorprobe |
 | `derivedFrom` |  |  | Abgeleitet von | Referenzen zu anderen Beobachtungen von denen diese abgeleitet ist |
 | `component` | GetesteteGene, Referenzsequenz, ... | Angabe der getesteten Gene | Komponenten | Einzelne Komponenten der Beobachtung |
@@ -299,7 +299,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient oder Proband | Der Patient oder die Gruppe auf die sich die Variante bezieht |
 | `effective[x]` |  |  | Zeitpunkt der Beobachtung | Klinisch relevanter Zeitpunkt oder Zeitraum der Beobachtung |
 | `issued` |  |  | Freigabedatum | Datum und Uhrzeit der Freigabe der Beobachtung |
-| `value[x]` | Zusammenfassung, Mikrosatelliteninstabilitaet | Zusammenfassung | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
+| `value[x]` | Mutationslast | Somat. Mutationen / Mutationslast | Ergebniswert | Das Ergebnis der Variantenanalyse - vorhanden oder abwesend |
 | `method` | Methode | Methode und Referenz zur Methode - beinhaltet alle sequenzbasierenden Analytik-Methoden, während nicht sequenzbasierende Aufarbeitungsmethoden in das Modul Pathologie zuzuordnen sind. | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
@@ -344,11 +344,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
-| `authoredOn` | Anforderungsdatum | Datum der Anforderung |
+| `authoredOn` | Request date | Date the request was placed. |
 | `requester` | Requester | Person or organization that made the request. |
 | `reasonCode` | Reason (coded) | Coded reason for the resource. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
-| `supportingInfo` | Unterstützende Informationen | Zusätzliche Informationen die die Anforderung unterstützen |
+| `supportingInfo` | Supporting information | Additional information supporting the request. |
 | `note` | Note | Free-text comment on the resource. |
 
 </details>
@@ -358,7 +358,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:workflow-relatedArtifact` | Extension | FHIR extension. |
+| `extension:workflow-relatedArtifact` | Related artifacts | Linked literature or other artifacts, e.g. citations. |
 | `category` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
@@ -367,11 +367,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `issued` | Issued | Date when the resource was issued. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:conclusion-string` | Component | Sub-observation component. |
-| `component:evidence-level` | Component | Sub-observation component. |
-| `component:clinical-significance` | Component | Sub-observation component. |
-| `component:predicted-phenotype` | Component | Sub-observation component. |
-| `component:mode-of-inheritance` | Component | Sub-observation component. |
+| `component:conclusion-string` | Conclusion (text) | Textual summary or conclusion for the variant. |
+| `component:evidence-level` | Evidence level | Evidence level for the therapy recommendation. |
+| `component:clinical-significance` | Clinical significance | Clinical significance of the variant. |
+| `component:predicted-phenotype` | Predicted phenotype | Predicted phenotype or condition associated with the variant. |
+| `component:mode-of-inheritance` | Mode of inheritance | Mode of inheritance of the associated condition. |
 
 </details>
 
@@ -383,7 +383,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Status | Status of the resource. |
 | `intent` | Intent | Intent of the request: proposal \| plan \| order. |
 | `code` | Code | Coding of the content. |
-| `for` | Patient | Der Patient für den die Maßnahme empfohlen wird |
+| `for` | Patient | Patient for whom the medication is recommended. |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `reasonCode` | Reason (coded) | Coded reason for the resource. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
@@ -397,16 +397,16 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `status` | Status | Status of the resource. |
 | `patient` | Patient | The patient that the resource relates to. |
-| `date` | Datum | Datum der Erfassung der Familienanamnese |
-| `relationship` | Verwandtschaftsbeziehung | Die Art der Verwandtschaft zum Patienten |
-| `sex` | Geschlecht | Das Geschlecht des Familienangehörigen |
+| `date` | Date | Date when the family history was recorded. |
+| `relationship` | Relationship | Type of relationship to the patient. |
+| `sex` | Sex | Sex of the family member. |
 | `reasonCode` | Reason (coded) | Coded reason for the resource. |
 | `reasonCode.coding:icd10-gm` | ICD-10-GM | Coding in ICD-10-GM. |
 | `reasonCode.coding:alpha-id` | Alpha-ID | Coding in Alpha-ID. |
 | `reasonCode.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `reasonCode.coding:orphanet` | Orphanet | Coding in Orphanet. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
-| `condition` | Erkrankung | Erkrankung des Familienangehörigen |
+| `condition` | Condition | Condition for which the risk is assessed. |
 
 </details>
 
@@ -415,15 +415,15 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:method-type` | Extension | FHIR extension. |
-| `extension:change-type` | Extension | FHIR extension. |
-| `extension:genome-build` | Extension | FHIR extension. |
-| `extension:title` | Extension | FHIR extension. |
-| `extension:focus` | Extension | FHIR extension. |
-| `extension:specimen` | Extension | FHIR extension. |
-| `extension:metrics` | Extension | FHIR extension. |
-| `extension:regions` | Extension | FHIR extension. |
-| `extension:device` | Extension | FHIR extension. |
+| `extension:method-type` | Analysis method | Type of analysis method used — e.g. sequencing, PCR or array CGH. |
+| `extension:change-type` | Variation types studied | Types of genetic changes studied in this analysis — e.g. SNV, CNV or structural variants. |
+| `extension:genome-build` | Reference genome build | Version of the reference genome used, e.g. GRCh38 or hg19. |
+| `extension:title` | Analysis title | Short concise designation or title of this specific analysis. |
+| `extension:focus` | Analysis focus | Specific focus of this analysis — e.g. reference to a cancer or hereditary disease. |
+| `extension:specimen` | Specimen studied | Reference to the Specimen resource describing the sample used for this analysis. |
+| `extension:metrics` | Quality metrics | Quality metrics of the analysis — e.g. coverage, depth or call rate. |
+| `extension:regions` | Genomic regions studied | Complex extension specifying the genomic regions studied in this analysis — primarily genes, optionally with callable/non-callable regions. |
+| `extension:device` | Analysis device used | Complex extension with device type and reference — e.g. sequencer, library preparation kit, or bioinformatics pipeline used for this analysis. |
 
 </details>
 
@@ -432,7 +432,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:genomic-study-analysis` | Extension | FHIR extension. |
+| `extension:genomic-study-analysis` | Performed analyses | References to the GenomicStudyAnalysis resources describing the specific analyses and assays of this study. |
 | `status` | Status | Status of the resource. |
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
@@ -457,10 +457,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Value | Value of the observation. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:conclusion-string` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:cytogenetic-location` | Component | Sub-observation component. |
-| `component:reference-sequence-assembly` | Component | Sub-observation component. |
+| `component:conclusion-string` | Conclusion (text) | Textual summary or conclusion for the variant. |
+| `component:gene-studied` | Gene studied | The gene studied. |
+| `component:cytogenetic-location` | Cytogenetic location | Chromosomal position of the variant in band nomenclature. |
+| `component:reference-sequence-assembly` | Reference genome assembly | Reference genome version used, e.g. GRCh37 or GRCh38. |
 
 </details>
 
@@ -472,7 +472,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Status | Status of the resource. |
 | `intent` | Intent | Intent of the request: proposal \| plan \| order. |
 | `code` | Code | Coding of the content. |
-| `for` | Patient | Der Patient für den die Medikation empfohlen wird |
+| `for` | Patient | Patient for whom the medication is recommended. |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `reasonCode` | Reason (coded) | Coded reason for the resource. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
@@ -494,8 +494,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Value | Value of the observation. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
 
 </details>
 
@@ -504,7 +504,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:workflow-relatedArtifact` | Extension | FHIR extension. |
+| `extension:workflow-relatedArtifact` | Related artifacts | Linked literature or other artifacts, e.g. citations. |
 | `category` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
@@ -513,10 +513,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `issued` | Issued | Date when the resource was issued. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:conclusion-string` | Component | Sub-observation component. |
-| `component:evidence-level` | Component | Sub-observation component. |
-| `component:clinical-significance` | Component | Sub-observation component. |
-| `component:functional-effect` | Component | Sub-observation component. |
+| `component:conclusion-string` | Conclusion (text) | Textual summary or conclusion for the variant. |
+| `component:evidence-level` | Evidence level | Evidence level for the therapy recommendation. |
+| `component:clinical-significance` | Clinical significance | Clinical significance of the variant. |
+| `component:functional-effect` | Functional effect | Functional effect of the variant on the gene product. |
 
 </details>
 
@@ -533,8 +533,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `issued` | Issued | Date when the resource was issued. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
 
 </details>
 
@@ -543,30 +543,30 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:recommended-action` | Extension | FHIR extension. |
-| `extension:genomic-risk-assessment` | Extension | FHIR extension. |
-| `extension:coded-note` | Extension | FHIR extension. |
-| `extension:supporting-info` | Extension | FHIR extension. |
-| `extension:genomic-study` | Extension | FHIR extension. |
-| `extension:workflow-relatedArtifact` | Extension | FHIR extension. |
+| `extension:recommended-action` | Recommended action | Reference to recommended follow-up actions or medication recommendations. |
+| `extension:genomic-risk-assessment` | Genomic risk assessment | Reference to a genomic risk assessment. |
+| `extension:coded-note` | Coded note | Coded notes on the genetic report. |
+| `extension:supporting-info` | Supporting information | Additional information such as family history or billing data. |
+| `extension:genomic-study` | Genomic study | Reference to the associated genomic study. |
+| `extension:workflow-relatedArtifact` | Related artifacts | Linked literature or other artifacts, e.g. citations. |
 | `status` | Status | Status of the resource. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `issued` | Issued | Date when the resource was issued. |
 | `performer` | Performer | Person or organization that performed the procedure. |
-| `resultsInterpreter` | Befundinterpreter | Die Person oder Organisation die die Ergebnisse interpretiert hat |
+| `resultsInterpreter` | Results interpreter | Person or organization that interpreted the results. |
 | `specimen` | Specimen | Reference to the specimen. |
-| `result` | Ergebnis | Referenzen zu den einzelnen Beobachtungsergebnissen |
-| `result:diagnostic-implication` | Diagnostische Implikation | Referenz zu diagnostischen Implikationen der genetischen Befunde |
-| `result:therapeutic-implication` | Therapeutische Implikation | Referenz zu therapeutischen Implikationen der genetischen Befunde |
-| `result:variant` | Variante | Referenz zu gefundenen genetischen Varianten |
-| `result:sequence-phase-relation` | Sequenz-Phasen-Beziehung | Referenz zu Sequenz-Phasen-Beziehungen |
-| `result:genotype` | Genotyp | Referenz zu Genotyp-Ergebnissen |
-| `result:haplotype` | Haplotyp | Referenz zu Haplotyp-Ergebnissen |
-| `result:biomarker` | Biomarker | Referenz zu molekularen Biomarkern wie TMB oder MSI |
-| `media` | Medien | Bilder oder andere Medien die zum Bericht gehören |
+| `result` | Result | References to the individual observation results. |
+| `result:diagnostic-implication` | Diagnostic implication | Reference to diagnostic implications of the genetic findings. |
+| `result:therapeutic-implication` | Therapeutic implication | Reference to therapeutic implications of the genetic findings. |
+| `result:variant` | Variant | Reference to detected genetic variants. |
+| `result:sequence-phase-relation` | Sequence phase relation | Reference to sequence phase relations. |
+| `result:genotype` | Genotype | Reference to genotype results. |
+| `result:haplotype` | Haplotype | Reference to haplotype results. |
+| `result:biomarker` | Biomarker | Reference to molecular biomarkers such as TMB or MSI. |
+| `media` | Media | Images or other media that belong to the report. |
 | `conclusion` | Conclusion | Clinical conclusion. |
-| `conclusionCode` | Schlussfolgerungscode | Kodierte Schlussfolgerung des Befundes |
+| `conclusionCode` | Conclusion code | Coded conclusion of the report. |
 
 </details>
 
@@ -586,8 +586,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `specimen` | Specimen | Reference to the specimen. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
 | `component` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:biomarker-category` | Component | Sub-observation component. |
+| `component:gene-studied` | Gene studied | The gene studied. |
+| `component:biomarker-category` | Biomarker category | Category of the molecular biomarker. |
 
 </details>
 
@@ -601,11 +601,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Coding of the content. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
-| `occurrence[x]` | Zeitpunkt | Zeitpunkt oder Zeitraum der Risikobewertung |
-| `condition` | Erkrankung | Die Erkrankung für die das Risiko bewertet wird |
-| `basis` | Grundlage | Die Grundlagen auf denen die Risikobewertung basiert wie z.B. genetische Varianten |
-| `prediction` | Vorhersage | Die vorhergesagten Risiken |
-| `prediction.extension:whenCodeableConcept` | Einflussfaktor | Zusätzlicher Einflussfaktor für die Risikoberechnung |
+| `occurrence[x]` | Time | Time or period of the risk assessment. |
+| `condition` | Condition | Condition for which the risk is assessed. |
+| `basis` | Basis | Basis on which the risk assessment is built — e.g. genetic variants. |
+| `prediction` | Prediction | The predicted risks. |
+| `prediction.extension:whenCodeableConcept` | Influencing factor | Additional factor influencing the risk calculation. |
 
 </details>
 
@@ -622,14 +622,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Effective | Date or period the observation refers to. |
 | `issued` | Issued | Date when the resource was issued. |
 | `derivedFrom` | Derived from | Reference to the resource this is derived from. |
-| `derivedFrom:variant` | Derived from | Reference to the resource this is derived from. |
+| `derivedFrom:variant` | Derived from variant | Genetic variant from which this implication is derived. |
 | `component` | Component | Sub-observation component. |
-| `component:conclusion-string` | Component | Sub-observation component. |
-| `component:evidence-level` | Component | Sub-observation component. |
-| `component:therapeutic-implication` | Component | Sub-observation component. |
-| `component:phenotypic-treatment-context` | Component | Sub-observation component. |
-| `component:medication-assessed` | Component | Sub-observation component. |
-| `component:therapy-assessed` | Component | Sub-observation component. |
+| `component:conclusion-string` | Conclusion (text) | Textual summary or conclusion for the variant. |
+| `component:evidence-level` | Evidence level | Evidence level for the therapy recommendation. |
+| `component:therapeutic-implication` | Therapeutic implication type | Type of therapeutic implication, e.g. sensitivity or resistance. |
+| `component:phenotypic-treatment-context` | Phenotypic treatment context | Phenotypic or disease-specific context of the treatment. |
+| `component:medication-assessed` | Medication assessed | Medication assessed for the therapy recommendation. |
+| `component:therapy-assessed` | Therapy assessed | Non-pharmacologic therapy assessed. |
 
 </details>
 
@@ -648,33 +648,33 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `method` | Method | Method used to make the observation. |
 | `specimen` | Specimen | Reference to the specimen. |
 | `device` | Device | Device used to make the observation. |
-| `component:conclusion-string` | Component | Sub-observation component. |
-| `component:gene-studied` | Component | Sub-observation component. |
-| `component:cytogenetic-location` | Component | Sub-observation component. |
-| `component:reference-sequence-assembly` | Component | Sub-observation component. |
-| `component:chromosome-identifier` | Component | Sub-observation component. |
-| `component:representative-coding-hgvs` | Component | Sub-observation component. |
-| `component:genomic-hgvs` | Component | Sub-observation component. |
-| `component:genomic-ref-seq` | Component | Sub-observation component. |
-| `component:representative-transcript-ref-seq` | Component | Sub-observation component. |
-| `component:exact-start-end` | Component | Sub-observation component. |
-| `component:inner-start-end` | Component | Sub-observation component. |
-| `component:outer-start-end` | Component | Sub-observation component. |
-| `component:ref-allele` | Component | Sub-observation component. |
-| `component:alt-allele` | Component | Sub-observation component. |
-| `component:coding-change-type` | Component | Sub-observation component. |
-| `component:genomic-source-class` | Component | Sub-observation component. |
-| `component:sample-allelic-frequency` | Component | Sub-observation component. |
-| `component:allelic-read-depth` | Component | Sub-observation component. |
-| `component:allelic-state` | Component | Sub-observation component. |
-| `component:variant-inheritance` | Component | Sub-observation component. |
-| `component:variation-code` | Component | Sub-observation component. |
-| `component:representative-protein-hgvs` | Component | Sub-observation component. |
-| `component:copy-number` | Component | Sub-observation component. |
-| `component:variant-confidence-status` | Component | Sub-observation component. |
-| `component:dna-region` | Component | Sub-observation component. |
-| `component:gene-fusion` | Component | Sub-observation component. |
-| `component:detection-limit` | Component | Sub-observation component. |
+| `component:conclusion-string` | Conclusion (text) | Textual summary or conclusion for the variant. |
+| `component:gene-studied` | Gene studied | The gene studied. |
+| `component:cytogenetic-location` | Cytogenetic location | Chromosomal position of the variant in band nomenclature. |
+| `component:reference-sequence-assembly` | Reference genome assembly | Reference genome version used, e.g. GRCh37 or GRCh38. |
+| `component:chromosome-identifier` | Chromosome | The affected chromosome. |
+| `component:representative-coding-hgvs` | DNA change (c.HGVS) | cDNA change in HGVS nomenclature at transcript level. |
+| `component:genomic-hgvs` | Genomic DNA change (g.HGVS) | Genomic DNA change in HGVS nomenclature. |
+| `component:genomic-ref-seq` | Genomic reference sequence | Genomic reference sequence ID, e.g. NC_000007.14. |
+| `component:representative-transcript-ref-seq` | Transcript reference sequence | Transcript reference sequence ID, e.g. NM_004333.4. |
+| `component:exact-start-end` | Exact start/end position | Exact genomic coordinates of the variant — start and end. |
+| `component:inner-start-end` | Inner start/end position | Inner range for structural variants. |
+| `component:outer-start-end` | Outer start/end position | Outer range for structural variants. |
+| `component:ref-allele` | Reference allele | Nucleotide sequence of the reference allele. |
+| `component:alt-allele` | Alternative allele | Nucleotide sequence of the alternative (mutated) allele. |
+| `component:coding-change-type` | DNA change type | Type of DNA change, e.g. substitution or deletion. |
+| `component:genomic-source-class` | Genomic source class | Origin of the variant, e.g. somatic or germline. |
+| `component:sample-allelic-frequency` | Sample allelic frequency | Frequency of the variant allele in the examined sample. |
+| `component:allelic-read-depth` | Allelic read depth | Number of reads supporting the allele. |
+| `component:allelic-state` | Allelic state | Allelic state, e.g. heterozygous or homozygous. |
+| `component:variant-inheritance` | Variant inheritance | Inheritance pattern of the variant, e.g. maternal or paternal. |
+| `component:variation-code` | Variation code | Unique variant identifier from external databases, e.g. ClinVar or dbSNP. |
+| `component:representative-protein-hgvs` | Amino acid change (p.HGVS) | Amino acid change in HGVS nomenclature at protein level. |
+| `component:copy-number` | Copy number | Number of copies of a genomic region. |
+| `component:variant-confidence-status` | Variant confidence status | Confidence status of the variant call. |
+| `component:dna-region` | DNA region name | Human-readable name of the examined region — typically Exon # or Intron #. |
+| `component:gene-fusion` | Gene fusion | Details on gene fusion in blood or tissue, determined by molecular genetic method. |
+| `component:detection-limit` | Detection limit | Detection limit of the laboratory instrument. |
 
 </details>
 

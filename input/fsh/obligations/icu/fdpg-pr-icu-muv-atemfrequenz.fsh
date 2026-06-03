@@ -36,6 +36,10 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Atemfrequenz"
 * code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\"."
 * insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
+// Observation.code.coding:loinc
+* code.coding[loinc] ^short = "LOINC coding"
+* insert Translation(code.coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[loinc] ^short, en-US, LOINC coding)
 // Observation.code.coding:loinc.system
 * code.coding[loinc].system ^short = "LOINC system URL"
 * insert Translation(code.coding[loinc].system ^short, de-DE, LOINC-System-URL)

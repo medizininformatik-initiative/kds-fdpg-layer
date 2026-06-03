@@ -110,7 +110,37 @@
           }
         ],
         "path": "MedicationRequest.extension",
-        "sliceName": "Prioritaet"
+        "sliceName": "Prioritaet",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Priorität"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Priority"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "MedicationRequest.extension:Evidenzgraduierung",
@@ -143,7 +173,37 @@
           }
         ],
         "path": "MedicationRequest.extension",
-        "sliceName": "Evidenzgraduierung"
+        "sliceName": "Evidenzgraduierung",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Empfehlung Evidenzgraduierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Evidence grade"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "MedicationRequest.extension:Publikation",
@@ -176,7 +236,37 @@
           }
         ],
         "path": "MedicationRequest.extension",
-        "sliceName": "Publikation"
+        "sliceName": "Publikation",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Empfehlung Publikation"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Publication"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "MedicationRequest.identifier",
@@ -333,6 +423,37 @@
           }
         ],
         "path": "MedicationRequest.intent",
+        "short": "Intent",
+        "_short": {
+          "extension": [
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Absicht"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            },
+            {
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Intent"
+                }
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
+            }
+          ]
+        },
         "definition": "Da das MTB nur Empfehlungen abgibt, wird hier typischerweise 'proposal' stehen. Es sei denn,         diese Therapieempfehlung ist Teil einer RequestGroup (z.B. Kombinationstherapie). In dem Fall muss hier 'option' stehen.",
         "_definition": {
           "extension": [
@@ -479,6 +600,37 @@
       {
         "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding",
         "path": "MedicationRequest.medication[x].coding",
+        "short": "Active substance",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Wirkstoff/Substanz"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Active substance"
+                }
+              ]
+            }
+          ]
+        },
         "_definition": {
           "extension": [
             {

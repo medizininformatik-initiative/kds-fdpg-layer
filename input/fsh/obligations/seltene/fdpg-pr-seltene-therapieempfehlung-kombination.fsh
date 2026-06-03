@@ -10,10 +10,16 @@ Description: "FDPG Profil - MII_PR_Seltene_Therapieempfehlung_Kombination"
 // --- Element Designations ---
 // RequestGroup.extension:Prioritaet
 * extension[Prioritaet] ^short = "MII EX SE Empfehlung Priorität"
+* insert Translation(extension[Prioritaet] ^short, de-DE, Priorität)
+* insert Translation(extension[Prioritaet] ^short, en-US, Priority)
 // RequestGroup.extension:Evidenzgraduierung
 * extension[Evidenzgraduierung] ^short = "MII EX SE Empfehlung Evidenzgraduierung"
+* insert Translation(extension[Evidenzgraduierung] ^short, de-DE, Empfehlung Evidenzgraduierung)
+* insert Translation(extension[Evidenzgraduierung] ^short, en-US, Evidence grade)
 // RequestGroup.extension:Publikation
 * extension[Publikation] ^short = "MII EX SE Empfehlung Publikation"
+* insert Translation(extension[Publikation] ^short, de-DE, Empfehlung Publikation)
+* insert Translation(extension[Publikation] ^short, en-US, Publication)
 // RequestGroup.identifier
 * identifier ^short = "Business identifier"
 * insert Translation(identifier ^short, de-DE, Identifikator)

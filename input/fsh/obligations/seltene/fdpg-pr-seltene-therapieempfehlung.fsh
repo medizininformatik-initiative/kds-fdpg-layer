@@ -10,10 +10,16 @@ Description: "FDPG Profil - MII_PR_Seltene_Therapieempfehlung"
 // --- Element Designations ---
 // MedicationRequest.extension:Prioritaet
 * extension[Prioritaet] ^short = "MII EX SE Empfehlung Priorität"
+* insert Translation(extension[Prioritaet] ^short, de-DE, Priorität)
+* insert Translation(extension[Prioritaet] ^short, en-US, Priority)
 // MedicationRequest.extension:Evidenzgraduierung
 * extension[Evidenzgraduierung] ^short = "MII EX SE Empfehlung Evidenzgraduierung"
+* insert Translation(extension[Evidenzgraduierung] ^short, de-DE, Empfehlung Evidenzgraduierung)
+* insert Translation(extension[Evidenzgraduierung] ^short, en-US, Evidence grade)
 // MedicationRequest.extension:Publikation
 * extension[Publikation] ^short = "MII EX SE Empfehlung Publikation"
+* insert Translation(extension[Publikation] ^short, de-DE, Empfehlung Publikation)
+* insert Translation(extension[Publikation] ^short, en-US, Publication)
 // MedicationRequest.identifier
 * identifier ^short = "Identifikator"
 * insert Translation(identifier ^short, de-DE, Identifikator)

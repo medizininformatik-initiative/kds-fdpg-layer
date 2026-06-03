@@ -51,7 +51,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Status | Status der Befundungsprozedur | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` | Kategorie | Kategorisiert die Prozedur | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
 | `category.coding:sct` | Kategorie | Kategorisiert die Prozedur | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
-| `code` | Code | Definiert einen spezifischen Code für die Prozedur nach LOINC | Code | Code aus LOINC |
+| `code` | Code | Definiert einen spezifischen Code für die Prozedur nach LOINC | Code | Kodierung des Inhalts. |
 | `code.coding:ops` | Code | Definiert einen spezifischen Code für die Prozedur nach LOINC | OPS Code | Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel definierten Code |
 | `code.coding:sct` | Code | Definiert einen spezifischen Code für die Prozedur nach LOINC | SNOMED CT Code | Ein Verweis auf einen von SNOMED CT definierten Code |
 | `code.coding:loinc` | Code | Definiert einen spezifischen Code für die Prozedur nach LOINC | LOINC Code | Ein Verweis auf einen von LOINC definierten Code |
@@ -109,12 +109,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
 | `identifier` |  |  | Identifikator | Ein Identifikator für die Medikationsverabreichung |
-| `partOf` | TeilVon | Teil einer Prozedur oder einer Medikationsgabe | Teil von | Teil einer weiteren Medikationsverabreichung |
+| `partOf` | TeilVon | Teil einer Prozedur oder einer Medikationsgabe | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
 | `status` | Status | Status der Kontrastmittelgabe | Status | in Durchführung \| nicht durchgeführt \| in Wartestellung \| abgeschlossen \| Eingabe fehlerhaft \| abgebrochen \| unbekannt |
 | `category` |  |  | Kategorie | Eine Kategorie, die der Medikationsverabreichung zugeordnet ist. |
-| `medication[x]` | Medikament | Beschreibung des verwendeten Medikament | Medikation | Medikation, die verarbreicht wurde. Code oder Referenz auf Medication-Objekt. |
-| `medication[x]:medicationReference` | Medikament | Beschreibung des verwendeten Medikament | Medikation | Verweis auf das Medikament oder die Medikation. |
-| `medication[x]:medicationCodeableConcept` | Medikament | Beschreibung des verwendeten Medikament | Medikation | Verweis auf das Medikament oder die Medikation. |
+| `medication[x]` | Medikament | Beschreibung des verwendeten Medikament | Medikation | Verweis auf das Medikament oder die Medikation. |
+| `medication[x]:medicationReference` | Medikament | Beschreibung des verwendeten Medikament | What was administered | Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication ... |
+| `medication[x]:medicationCodeableConcept` | Medikament | Beschreibung des verwendeten Medikament | What was administered | Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication ... |
 | `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | Medikament | Beschreibung des verwendeten Medikament | PZN Code | Ein Verweis auf einen von der Pharmazentralnummer definierten Code |
 | `medication[x]:medicationCodeableConcept.coding:atcClassDe` | Medikament | Beschreibung des verwendeten Medikament | ATC Code | Ein Verweis auf einen von der deutschen Fassung der Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code |
 | `medication[x]:medicationCodeableConcept.coding:atcClassEn` | Medikament | Beschreibung des verwendeten Medikament | ATC WHO Code | Ein Verweis auf einen von der WHO Anatomisch-Therapeutisch-Chemischen Klassifikation definierten Code |
@@ -128,7 +128,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonReference` |  |  | Grund Referenz | Grund für die Medikationsverabreichung als Referenz auf Condition- oder Observation-Objekt. |
 | `request` |  |  | Verordnung | Verordnung zur Medikationsverabreichung. |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Medikationsverabreichung als Freitext. |
-| `dosage` | Dosierung | Dosierung der Medikation | Dosierung | Details der Medikamentendosierung, wie Dosis, Menge, Applikationsort, Verabreichungsweg, etc. |
+| `dosage` | Dosierung | Dosierung der Medikation | Dosierung |  |
 | `dosage.rate[x]:rateRatio` | Dosierung | Dosierung der Medikation | Dose quantity per unit of time | Identifies the speed with which the medication was or will be introduced into the patient. Typically, the rate for an infusion e.g. 100 ml per 1 hour or 100 ml/hr. May also be expressed as a rate p... |
 | `dosage.rate[x]:rateQuantity` | Dosierung | Dosierung der Medikation | A fixed quantity (no comparator) | The comparator is not used on a SimpleQuantity |
 
@@ -195,8 +195,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Person | Die Person, für die der Befundbericht erstellt wurde. Hier sollte das MII KDS-Modul Person referenziert werden | Person | Person, auf die sich die Befundbericht bezieht |
 | `encounter` | Fall | Referenz über Fall auf den Versorgungsstellenkontakt. Hier soll das MII KDS-Modul Fall in Stufe 3 referenziert werden | Versorgungssstellenkontakt | Fall-Referenz auf den Versorgungssstellenkontakt |
 | `effective[x]` | Zeitpunkt | Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht. | Erstellungsdatum | Zeitpunkt der Erstellung |
-| `effective[x]:effectiveDateTime` | Zeitpunkt | Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
-| `effective[x]:effectivePeriod` | Zeitpunkt | Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `effective[x]:effectiveDateTime` | Zeitpunkt | Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht. | Clinically relevant time/time-period for report | The time or time-period the observed values are related to. When the subject of the report is a patient, this is usually either the time of the procedure or of specimen collection(s), but very ofte... |
+| `effective[x]:effectivePeriod` | Zeitpunkt | Klinisch relevanter Zeitpunkt, auf den sich der Bericht bezieht. | Clinically relevant time/time-period for report | The time or time-period the observed values are related to. When the subject of the report is a patient, this is usually either the time of the procedure or of specimen collection(s), but very ofte... |
 | `issued` | ZeitpunktErstellung | Zeitpunkt der Erstellung des Berichts. | Erstellungszeitpunkt | Zeit an der der Bericht erstellt wurde |
 | `result` | Beobachtung | Referenz auf die generische Beobachtung. | Ergebnis | Ergebnis einer Beobachtung |
 | `imagingStudy` |  |  | Bildgebungsstudie | Studie, die die vollständige Bildgebung umfasst |
@@ -339,8 +339,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | status | in-progress \| not-done \| on-hold \| completed \| entered-in-error \| stopped \| unknown |
 | `category` | Category | A category assigned to the medication administration. |
 | `medication[x]` | medication | The medication that was administered. Code or a reference to a medication resource. |
-| `medication[x]:medicationReference` | Medication | Reference to the medication. |
-| `medication[x]:medicationCodeableConcept` | Medication | Reference to the medication. |
+| `medication[x]:medicationReference` | What was administered | Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication ... |
+| `medication[x]:medicationCodeableConcept` | What was administered | Identifies the medication that was administered. This is either a link to a resource representing the details of the medication or a simple attribute carrying a code that identifies the medication ... |
 | `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | PZN code | A reference to a code defined by Pharmazentralnummer |
 | `medication[x]:medicationCodeableConcept.coding:atcClassDe` | ATC code | A reference to a code defined by the German edition of the Anatomical Therapeutic Chemical classification system |
 | `medication[x]:medicationCodeableConcept.coding:atcClassEn` | ATC WHO code | A reference to a code defined by the WHO edition of the Anatomical Therapeutic Chemical classification system |
@@ -424,8 +424,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | person | person, which this report is about |
 | `encounter` | Encounter | encounter reference |
 | `effective[x]` | effective[x] | date of creation |
-| `effective[x]:effectiveDateTime` | Effective | Date or period the observation refers to. |
-| `effective[x]:effectivePeriod` | Effective | Date or period the observation refers to. |
+| `effective[x]:effectiveDateTime` | Clinically relevant time/time-period for report | The time or time-period the observed values are related to. When the subject of the report is a patient, this is usually either the time of the procedure or of specimen collection(s), but very ofte... |
+| `effective[x]:effectivePeriod` | Clinically relevant time/time-period for report | The time or time-period the observed values are related to. When the subject of the report is a patient, this is usually either the time of the procedure or of specimen collection(s), but very ofte... |
 | `issued` | time of creation | timestamp of creation of the report |
 | `result` | result | result of an observation |
 | `imagingStudy` | imaging study | study with all images |

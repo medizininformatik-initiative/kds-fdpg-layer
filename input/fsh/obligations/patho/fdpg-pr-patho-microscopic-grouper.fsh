@@ -75,6 +75,10 @@ Description: "FDPG Profil - MII_PR_Patho_Microscopic_Grouper"
 * bodySite ^definition = "Indicates the site on the subject's body where the observation was made (i.e. the target site)."
 * insert Translation(bodySite ^definition, de-DE, Körperstelle\, auf die sich die Ressource bezieht.)
 * insert Translation(bodySite ^definition, en-US, Body site the resource refers to.)
+// Observation.bodySite.coding:sct
+* bodySite.coding[sct] ^short = "SNOMED CT coding"
+* insert Translation(bodySite.coding[sct] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(bodySite.coding[sct] ^short, en-US, SNOMED CT coding)
 // Observation.bodySite.coding:sct.system
 * bodySite.coding[sct].system ^short = "SNOMED CT system URL"
 * insert Translation(bodySite.coding[sct].system ^short, de-DE, SNOMED CT-System-URL)

@@ -9,7 +9,10 @@ Description: "FDPG Profil - MII_PR_MTB_Genomic_Study_Analysis"
 * insert Translation(^title, en-US, Genomic study analysis)
 // --- Element Designations ---
 // Procedure.extension
-* extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+* extension ^short = "Extension"
+* insert Translation(extension ^short, de-DE, Erweiterung)
+* insert Translation(extension ^short, en-US, Extension)
+* extension ^definition = "An Extension"
 * insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
 * insert Translation(extension ^definition, en-US, FHIR extension.)
 // Procedure.extension:method-type
@@ -77,6 +80,8 @@ Description: "FDPG Profil - MII_PR_MTB_Genomic_Study_Analysis"
 * insert Translation(extension[device] ^definition, en-US, Complex extension with device type and reference — e.g. sequencer\, library preparation kit\, or bioinformatics pipeline used for this analysis.)
 // Procedure.extension:qc
 * extension[qc] ^short = "MII EX MTB Antrag GenomicsStudyAnalysis Metrics"
+* insert Translation(extension[qc] ^short, de-DE, Antrag GenomicsStudyAnalysis Metrics)
+* insert Translation(extension[qc] ^short, en-US, Quality control metrics)
 // Procedure.identifier
 * identifier ^short = "GenomicStudy.analysis.identifier"
 * insert Translation(identifier ^short, de-DE, Identifikator)

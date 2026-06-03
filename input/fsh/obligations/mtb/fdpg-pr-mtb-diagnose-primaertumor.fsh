@@ -9,11 +9,16 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 * insert Translation(^title, en-US, Primary tumor diagnosis)
 // --- Element Designations ---
 // Condition.extension
+* extension ^short = "Extension"
+* insert Translation(extension ^short, de-DE, Erweiterung)
+* insert Translation(extension ^short, en-US, Extension)
 * extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
 * insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
 * insert Translation(extension ^definition, en-US, FHIR extension.)
 // Condition.extension:ReferenzPrimaerdiagnose
 * extension[ReferenzPrimaerdiagnose] ^short = "Conditions associated with this condition"
+* insert Translation(extension[ReferenzPrimaerdiagnose] ^short, de-DE, Referenz Primaerdiagnose)
+* insert Translation(extension[ReferenzPrimaerdiagnose] ^short, en-US, Primary diagnosis reference)
 // Condition.extension:Feststellungsdatum
 * extension[Feststellungsdatum] ^short = "Feststellungsdatum"
 * insert Translation(extension[Feststellungsdatum] ^short, de-DE, Feststellungsdatum)
@@ -30,6 +35,8 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 * insert Translation(extension[morphology-behavior-icdo3] ^definition, en-US, Morphology of the primary tumor per ICD-O-3 per oBDS §6.3.)
 // Condition.extension:occurredFollowing
 * extension[occurredFollowing] ^short = "Frühere Tumorerkrankungen"
+* insert Translation(extension[occurredFollowing] ^short, de-DE, Frühere Tumorerkrankungen)
+* insert Translation(extension[occurredFollowing] ^short, en-US, Prior tumor diseases)
 // Condition.clinicalStatus
 * clinicalStatus ^short = "Klinischer Status"
 * insert Translation(clinicalStatus ^short, de-DE, Klinischer Status)
@@ -44,6 +51,10 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 * verificationStatus ^definition = "unbestätigt | vorläufig | differential | bestätigt | widerlegt | fehlerhafte Eingabe"
 * insert Translation(verificationStatus ^definition, de-DE, unbestätigt | vorläufig | differential | bestätigt | widerlegt | fehlerhafte Eingabe)
 * insert Translation(verificationStatus ^definition, en-US, unconfirmed | provisional | differential | confirmed | refuted | entered-in-error)
+// Condition.verificationStatus.coding:condition-ver-status
+* verificationStatus.coding[condition-ver-status] ^short = "Verification status coding"
+* insert Translation(verificationStatus.coding[condition-ver-status] ^short, de-DE, Verifizierungsstatus-Kodierung)
+* insert Translation(verificationStatus.coding[condition-ver-status] ^short, en-US, Verification status coding)
 // Condition.verificationStatus.coding:primaertumorDiagnosesicherung
 * verificationStatus.coding[primaertumorDiagnosesicherung] ^short = "Diagnosesicherung gemäß oBDS"
 * insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung] ^short, de-DE, Diagnosesicherung gemäß oBDS)
@@ -191,6 +202,9 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 * insert Translation(bodySite.coding[icd-o-3].code ^short, de-DE, Körperstelle als ICD-O-3)
 * insert Translation(bodySite.coding[icd-o-3].code ^short, en-US, Body site as ICD-O-3)
 // Condition.subject
+* subject ^short = "Patient"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
 * subject ^definition = "Indicates the patient or group who the condition record is associated with."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
 * insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
@@ -267,6 +281,13 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnose_Primaertumor"
 * stage[MolekularesTumorboardZeitpunkt].assessment ^short = "Formal record of assessment"
 // Condition.stage:MolekularesTumorboardZeitpunkt.type
 * stage[MolekularesTumorboardZeitpunkt].type ^short = "Kind of staging"
+// Condition.evidence
+* evidence ^short = "Evidence"
+* insert Translation(evidence ^short, de-DE, Evidenz)
+* insert Translation(evidence ^short, en-US, Evidence)
+* evidence ^definition = "Supporting evidence / manifestations that are the basis of the Condition's verification status, such as evidence that confirmed or refuted the condition."
+* insert Translation(evidence ^definition, de-DE, Hinweise oder Befunde\, die den Verifizierungsstatus der Diagnose stützen.)
+* insert Translation(evidence ^definition, en-US, Manifestations or evidence supporting the verification status of the condition.)
 // Condition.evidence.detail
 * evidence.detail ^short = "Evidenz für Erstdiagnose"
 * insert Translation(evidence.detail ^short, de-DE, Evidenz für Erstdiagnose)

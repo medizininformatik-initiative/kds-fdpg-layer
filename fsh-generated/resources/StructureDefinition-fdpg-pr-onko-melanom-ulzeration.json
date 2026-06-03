@@ -808,6 +808,37 @@
       {
         "id": "Observation.method.coding",
         "path": "Observation.method.coding",
+        "short": "TNM version",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "TNM-Version"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "TNM version"
+                }
+              ]
+            }
+          ]
+        },
         "_definition": {
           "extension": [
             {

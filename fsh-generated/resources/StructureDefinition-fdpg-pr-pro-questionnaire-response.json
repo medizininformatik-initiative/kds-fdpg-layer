@@ -220,7 +220,37 @@
           }
         ],
         "path": "QuestionnaireResponse.questionnaire.extension",
-        "sliceName": "questionnaireDisplay"
+        "sliceName": "questionnaireDisplay",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Fragebogen-Anzeige"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Questionnaire display"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "QuestionnaireResponse.status",

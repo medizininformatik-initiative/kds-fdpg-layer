@@ -1,0 +1,29 @@
+{
+  "_doc": "Module-specific FDPG labels for the 'patho' module.",
+  "elements": {
+    "extension:probenebene": {
+      "de_short": "Ebene",
+      "en_short": "Specimen level"
+    },
+    "collection.extension:einstellungBlutversorgung": {
+      "de_short": "Einstellung Blutversorgung",
+      "en_short": "Blood supply discontinuation"
+    },
+    "collection.bodySite.extension:locationQualifier": {
+      "de_short": "Lokalisationsqualifizierer",
+      "en_short": "Location qualifier"
+    },
+    "collection.bodySite.extension:lateralityQualifier": {
+      "de_short": "Seitenlokalisationsqualifizierer",
+      "en_short": "Laterality qualifier"
+    },
+    "processing.extension:temperaturbedingungen": {
+      "de_short": "temperaturbedingungen",
+      "en_short": "Temperature conditions"
+    },
+    "processing:lagerprozess.extension:temperaturbedingungen": {
+      "de_short": "temperaturbedingungen",
+      "en_short": "Temperature conditions"
+    }
+  }
+}

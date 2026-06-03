@@ -14,20 +14,18 @@ Description: "FDPG Profil - MII_PR_Patho_Specimen"
 * text ^short = "Text summary of the resource, for human interpretation"
 // Specimen.extension:probenebene
 * extension[probenebene] ^short = "MII EX Biobank Ebene"
+* insert Translation(extension[probenebene] ^short, de-DE, Ebene)
+* insert Translation(extension[probenebene] ^short, en-US, Specimen level)
 // Specimen.identifier
 * identifier ^short = "Identifikator"
 * insert Translation(identifier ^short, de-DE, Identifikator)
-* insert Translation(identifier ^short, en-US, Identifier)
+* insert Translation(identifier ^short, en-US, Specimen ID)
 * identifier ^definition = "Eindeutiger Identifikator der Probe"
-* insert Translation(identifier ^definition, de-DE, Eindeutiger Identifikator der Probe)
-* insert Translation(identifier ^definition, en-US, Unique identifier of the specimen)
+* insert Translation(identifier ^definition, de-DE, Identifikator dieser Ressource.)
+* insert Translation(identifier ^definition, en-US, Internal identifier of the specimen at the institution.)
 // Specimen.identifier:Placer-ID
 * identifier[Placer-ID] ^short = "Placer identifier"
-* insert Translation(identifier[Placer-ID] ^short, de-DE, Auftraggeber-ID)
-* insert Translation(identifier[Placer-ID] ^short, en-US, Placer ID)
-* identifier[Placer-ID] ^definition = "Identifier for the placer of the pathology request"
-* insert Translation(identifier[Placer-ID] ^definition, de-DE, Identifikator des Auftraggebers)
-* insert Translation(identifier[Placer-ID] ^definition, en-US, Identifier of the placer)
+* insert Translation(identifier[Placer-ID] ^short, en-US, Specimen ID)
 // Specimen.identifier:Placer-ID.type
 * identifier[Placer-ID].type ^short = "Description of identifier"
 // Specimen.identifier:Placer-ID.system
@@ -36,11 +34,7 @@ Description: "FDPG Profil - MII_PR_Patho_Specimen"
 * identifier[Placer-ID].value ^short = "The value that is unique"
 // Specimen.identifier:Filler-ID
 * identifier[Filler-ID] ^short = "Filler Identifier"
-* insert Translation(identifier[Filler-ID] ^short, de-DE, Auftragnehmer-ID)
-* insert Translation(identifier[Filler-ID] ^short, en-US, Filler ID)
-* identifier[Filler-ID] ^definition = "Identifier for the filler of the pathology request"
-* insert Translation(identifier[Filler-ID] ^definition, de-DE, Identifikator des Auftragnehmers)
-* insert Translation(identifier[Filler-ID] ^definition, en-US, Identifier of the filler)
+* insert Translation(identifier[Filler-ID] ^short, en-US, Specimen ID)
 // Specimen.identifier:Filler-ID.type
 * identifier[Filler-ID].type ^short = "Description of identifier"
 // Specimen.identifier:Filler-ID.system
@@ -68,6 +62,10 @@ Description: "FDPG Profil - MII_PR_Patho_Specimen"
 * type ^definition = "The kind of material that forms the specimen."
 * insert Translation(type ^definition, de-DE, Die Art der Probe\, codiert in SNOMED CT.)
 * insert Translation(type ^definition, en-US, The type of the specimen\, encoded as SNOMED CT code.)
+// Specimen.type.coding:sct
+* type.coding[sct] ^short = "SNOMED CT coding"
+* insert Translation(type.coding[sct] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(type.coding[sct] ^short, en-US, SNOMED CT coding)
 // Specimen.subject
 * subject ^short = "Where the specimen came from. This may be from patient(s), from a location (e.g., the source of an environmental sample), or a sampling of a substance or a device"
 * insert Translation(subject ^short, de-DE, Patient:in)
@@ -100,6 +98,8 @@ Description: "FDPG Profil - MII_PR_Patho_Specimen"
 * insert Translation(collection ^definition, en-US, Information about the specimen collection process\, including collection time and site.)
 // Specimen.collection.extension:einstellungBlutversorgung
 * collection.extension[einstellungBlutversorgung] ^short = "MII EX Biobank Einstellung Blutversorgung"
+* insert Translation(collection.extension[einstellungBlutversorgung] ^short, de-DE, Einstellung Blutversorgung)
+* insert Translation(collection.extension[einstellungBlutversorgung] ^short, en-US, Blood supply discontinuation)
 // Specimen.collection.collected[x]
 * collection.collected[x] ^short = "Collection time"
 * insert Translation(collection.collected[x] ^short, de-DE, Entnahmezeitpunkt)
@@ -150,6 +150,14 @@ Description: "FDPG Profil - MII_PR_Patho_Specimen"
 * collection.bodySite.extension[lateralityQualifier] ^definition = "Qualifikator für die Körperseite"
 * insert Translation(collection.bodySite.extension[lateralityQualifier] ^definition, de-DE, Qualifikator für die Körperseite)
 * insert Translation(collection.bodySite.extension[lateralityQualifier] ^definition, en-US, Qualifier for body side)
+// Specimen.collection.bodySite.coding:sct
+* collection.bodySite.coding[sct] ^short = "SNOMED CT coding"
+* insert Translation(collection.bodySite.coding[sct] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(collection.bodySite.coding[sct] ^short, en-US, SNOMED CT coding)
+// Specimen.collection.bodySite.coding:icd-o-3
+* collection.bodySite.coding[icd-o-3] ^short = "ICD-O-3 coding"
+* insert Translation(collection.bodySite.coding[icd-o-3] ^short, de-DE, ICD-O-3-Kodierung)
+* insert Translation(collection.bodySite.coding[icd-o-3] ^short, en-US, ICD-O-3 coding)
 // Specimen.collection.fastingStatus[x]
 * collection.fastingStatus[x] ^short = "Whether or how long patient abstained from food and/or drink"
 * insert Translation(collection.fastingStatus[x] ^short, de-DE, Nüchternstatus)
@@ -166,6 +174,8 @@ Description: "FDPG Profil - MII_PR_Patho_Specimen"
 * insert Translation(processing ^definition, en-US, Details about the processing of the specimen\, including procedures and processing period.)
 // Specimen.processing.extension:temperaturbedingungen
 * processing.extension[temperaturbedingungen] ^short = "MII EX Biobank Temperaturbedingungen"
+* insert Translation(processing.extension[temperaturbedingungen] ^short, de-DE, temperaturbedingungen)
+* insert Translation(processing.extension[temperaturbedingungen] ^short, en-US, Temperature conditions)
 // Specimen.processing.procedure
 * processing.procedure ^short = "Indicates the treatment step  applied to the specimen"
 * insert Translation(processing.procedure ^short, de-DE, Verarbeitungstyp)
@@ -173,6 +183,10 @@ Description: "FDPG Profil - MII_PR_Patho_Specimen"
 * processing.procedure ^definition = "A coded value specifying the procedure used to process the specimen."
 * insert Translation(processing.procedure ^definition, de-DE, Die angewendete Prozedur zur Verarbeitung der Probe\, z.B. Zentrifugation.)
 * insert Translation(processing.procedure ^definition, en-US, The procedure applied to process the specimen\, e.g. centrifugation.)
+// Specimen.processing.procedure.coding:sct
+* processing.procedure.coding[sct] ^short = "SNOMED CT coding"
+* insert Translation(processing.procedure.coding[sct] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(processing.procedure.coding[sct] ^short, en-US, SNOMED CT coding)
 // Specimen.processing.additive
 * processing.additive ^short = "Material used in the processing step"
 * insert Translation(processing.additive ^short, de-DE, Additive bei Verarbeitung)
@@ -193,13 +207,11 @@ Description: "FDPG Profil - MII_PR_Patho_Specimen"
 * processing[lagerprozess] ^short = "Processing and processing step details"
 // Specimen.processing:lagerprozess.extension:temperaturbedingungen
 * processing[lagerprozess].extension[temperaturbedingungen] ^short = "MII EX Biobank Temperaturbedingungen"
+* insert Translation(processing[lagerprozess].extension[temperaturbedingungen] ^short, de-DE, temperaturbedingungen)
+* insert Translation(processing[lagerprozess].extension[temperaturbedingungen] ^short, en-US, Temperature conditions)
 // Specimen.container
 * container ^short = "Behälter"
-* insert Translation(container ^short, de-DE, Behälter)
-* insert Translation(container ^short, en-US, Container)
-* container ^definition = "Probenbehälter"
-* insert Translation(container ^definition, de-DE, Probenbehälter)
-* insert Translation(container ^definition, en-US, Specimen container)
+* insert Translation(container ^short, en-US, Specimen container)
 // Specimen.container.type
 * container.type ^short = "Kind of container directly associated with specimen"
 * insert Translation(container.type ^short, de-DE, Containertyp)

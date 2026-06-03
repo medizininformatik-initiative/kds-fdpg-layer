@@ -1,6 +1,5 @@
 {
   "_doc": "Module-specific FDPG labels for the 'onkologie' module. Keys use FHIR element-id style (without resource type prefix). Authored per docs/datenkatalog-styleguide-en.md v0.3. oBDS, CTCAE, MedDRA, HGVS, ICD-O-3 kept as acronyms (§5.1).",
-
   "elements": {
     "accessionIdentifier.value": {
       "de_short": "Histologie-Einsendenummer",
@@ -375,6 +374,66 @@
       "en_short": "Diagnosis verification",
       "de_def": "Art der Diagnosesicherung nach oBDS 2021 §5.7.",
       "en_def": "Type of diagnosis verification per oBDS 2021 §5.7."
+    },
+    "extension:ReferenzPrimaerdiagnose": {
+      "de_short": "Referenz zur Primärdiagnose",
+      "en_short": "Primary diagnosis reference",
+      "de_def": "Verweis auf die Primärdiagnose, mit der diese Diagnose assoziiert ist.",
+      "en_def": "Reference to the primary diagnosis this condition is associated with."
+    },
+    "extension:occurredFollowing": {
+      "de_short": "Frühere Tumorerkrankungen",
+      "en_short": "Prior tumor diseases",
+      "de_def": "Verweis auf frühere Tumorerkrankungen, nach denen die aktuelle Diagnose aufgetreten ist.",
+      "en_def": "Reference to prior tumor diseases that preceded the current diagnosis."
+    },
+    "extension:assertedDate": {
+      "de_short": "Diagnosedatum",
+      "en_short": "Asserted date",
+      "de_def": "Diagnosedatum der früheren Tumorerkrankung.",
+      "en_def": "Date the prior tumor disease was diagnosed."
+    },
+    "code.extension:cpPraefix": {
+      "de_short": "TNM c/p-Präfix",
+      "en_short": "TNM c/p prefix",
+      "de_def": "TNM clinical/pathological-Präfix (c = klinisch, p = pathologisch).",
+      "en_def": "TNM clinical/pathological prefix (c = clinical, p = pathological)."
+    },
+    "value[x].extension:itcSuffix": {
+      "de_short": "ITC-Suffix",
+      "en_short": "ITC suffix",
+      "de_def": "Suffix für isolierte Tumorzellen (ITC) im TNM-Staging.",
+      "en_def": "Isolated Tumor Cells (ITC) suffix in TNM staging."
+    },
+    "value[x].extension:snSuffix": {
+      "de_short": "Sentinel-Lymphknoten-Suffix",
+      "en_short": "Sentinel lymph node suffix",
+      "de_def": "Suffix für Schildwächter-Lymphknoten (Sentinel Lymph Node) im TNM-Staging.",
+      "en_def": "Sentinel Lymph Node suffix in TNM staging."
+    },
+    "bodySite.extension:Seitenlokalisation": {
+      "de_short": "Seitenlokalisation",
+      "en_short": "Laterality",
+      "de_def": "Seitenlokalisation der Bestrahlung gemäß oBDS 2021.",
+      "en_def": "Laterality of the radiation site per oBDS 2021."
+    },
+    "extension:Boost": {
+      "de_short": "Boost-Bestrahlung",
+      "en_short": "Boost radiation",
+      "de_def": "Zusätzliche Boost-Bestrahlung des Tumors gemäß oBDS 2021 §14.10.",
+      "en_def": "Additional boost radiation of the tumor per oBDS 2021 §14.10."
+    },
+    "extension:Einzeldosis": {
+      "de_short": "Einzeldosis",
+      "en_short": "Single dose",
+      "de_def": "Einzeldosis der Bestrahlung gemäß oBDS 2021 §14.6.",
+      "en_def": "Single dose of radiation per oBDS 2021 §14.6."
+    },
+    "extension:Gesamtdosis": {
+      "de_short": "Gesamtdosis",
+      "en_short": "Total dose",
+      "de_def": "Gesamtdosis der Bestrahlung gemäß oBDS 2021 §14.5.",
+      "en_def": "Total dose of radiation per oBDS 2021 §14.5."
     }
   }
 }

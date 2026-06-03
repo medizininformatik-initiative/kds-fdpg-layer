@@ -9,11 +9,19 @@ Description: "FDPG Profil - MII_PR_Onko_Fruehere_Tumorerkrankung"
 * insert Translation(^title, en-US, Previous Tumor Disease)
 // --- Element Designations ---
 // Condition.extension
+* extension ^short = "Extension"
+* insert Translation(extension ^short, de-DE, Erweiterung)
+* insert Translation(extension ^short, en-US, Extension)
 * extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
 * insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
 * insert Translation(extension ^definition, en-US, FHIR extension.)
 // Condition.extension:assertedDate
 * extension[assertedDate] ^short = "Diagnosedatum der früheren Tumorerkrankung"
+* insert Translation(extension[assertedDate] ^short, de-DE, Diagnosedatum)
+* insert Translation(extension[assertedDate] ^short, en-US, Asserted date)
+* extension[assertedDate] ^definition = "Datum der früheren Tumorerkrankung"
+* insert Translation(extension[assertedDate] ^definition, de-DE, Diagnosedatum der früheren Tumorerkrankung.)
+* insert Translation(extension[assertedDate] ^definition, en-US, Date the prior tumor disease was diagnosed.)
 // Condition.extension:morphology-behavior-icdo3
 * extension[morphology-behavior-icdo3] ^short = "ICD-O-Morphologie"
 * insert Translation(extension[morphology-behavior-icdo3] ^short, de-DE, ICD-O-Morphologie)
@@ -55,6 +63,8 @@ Description: "FDPG Profil - MII_PR_Onko_Fruehere_Tumorerkrankung"
 * insert Translation(code ^definition, en-US, Coding of the content.)
 // Condition.code.coding:icd10-gm
 * code.coding[icd10-gm] ^short = "ICD-10-GM Kodierung (optional)"
+* insert Translation(code.coding[icd10-gm] ^short, de-DE, ICD-10-GM-Kodierung)
+* insert Translation(code.coding[icd10-gm] ^short, en-US, ICD-10-GM coding)
 // Condition.code.coding:icd10-gm.system
 * code.coding[icd10-gm].system ^short = "ICD-10-GM system URL"
 * insert Translation(code.coding[icd10-gm].system ^short, de-DE, ICD-10-GM-System-URL)
@@ -97,6 +107,9 @@ Description: "FDPG Profil - MII_PR_Onko_Fruehere_Tumorerkrankung"
 * insert Translation(bodySite.coding[icd-o-3].code ^short, de-DE, Körperstelle als ICD-O-3)
 * insert Translation(bodySite.coding[icd-o-3].code ^short, en-US, Body site as ICD-O-3)
 // Condition.subject
+* subject ^short = "Patient"
+* insert Translation(subject ^short, de-DE, Patient*in)
+* insert Translation(subject ^short, en-US, Patient)
 * subject ^definition = "Indicates the patient or group who the condition record is associated with."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
 * insert Translation(subject ^definition, en-US, The patient that the resource relates to.)

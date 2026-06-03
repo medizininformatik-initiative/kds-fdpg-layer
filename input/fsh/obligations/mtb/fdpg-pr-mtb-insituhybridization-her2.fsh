@@ -36,6 +36,10 @@ Description: "FDPG Profil - MII_PR_MTB_INSITUHYBRIDIZATION_HER2"
 * code.coding[generisch] ^definition = "Generischer Code für ISH-Untersuchungen. Wird immer angegeben, um die Interoperabilität zu gewährleisten. Zusätzliche spezifische Codes können über open slicing hinzugefügt werden."
 * insert Translation(code.coding[generisch] ^definition, de-DE, Generischer Code fuer ISH-Untersuchungen. Wird immer angegeben um die Interoperabilitaet zu gewaehrleisten. Zusaetzliche spezifische Codes koennen ueber open slicing hinzugefuegt werden.)
 * insert Translation(code.coding[generisch] ^definition, en-US, Generic code for immunohistochemistry examinations — always provided for interoperability.)
+// Observation.code.coding:spezifisch
+* code.coding[spezifisch] ^short = "LOINC coding"
+* insert Translation(code.coding[spezifisch] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[spezifisch] ^short, en-US, LOINC coding)
 // Observation.subject
 * subject ^short = "Patient"
 * insert Translation(subject ^short, de-DE, Patient)
@@ -123,6 +127,9 @@ Description: "FDPG Profil - MII_PR_MTB_INSITUHYBRIDIZATION_HER2"
 * insert Translation(component ^definition, de-DE, Einzelne Komponenten der Beobachtung)
 * insert Translation(component ^definition, en-US, Sub-observation component.)
 // Observation.component:gene-studied
+* component[gene-studied] ^short = "Gene studied"
+* insert Translation(component[gene-studied] ^short, de-DE, Untersuchtes Gen)
+* insert Translation(component[gene-studied] ^short, en-US, Gene studied)
 * component[gene-studied] ^definition = "Das mit der Target-Sonde untersuchte Gen (z.B. ERBB2)"
 * insert Translation(component[gene-studied] ^definition, de-DE, Das untersuchte Gen\, identifiziert durch HGNC-ID.)
 * insert Translation(component[gene-studied] ^definition, en-US, The gene studied\, identified by HGNC ID.)

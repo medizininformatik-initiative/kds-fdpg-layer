@@ -46,10 +46,16 @@ Description: "FDPG Profil - MII_PR_Onko_Histologie_ICDO3"
 * insert Translation(value[x] ^definition, de-DE, Wert der Beobachtung.)
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
 // Observation.value[x].coding
+* value[x].coding ^short = "Metastasis location"
+* insert Translation(value[x].coding ^short, de-DE, Lokalisation der Fernmetastasen)
+* insert Translation(value[x].coding ^short, en-US, Metastasis location)
 * value[x].coding ^definition = "A reference to a code defined by a terminology system."
 * insert Translation(value[x].coding ^definition, de-DE, Lokalisation der Fernmetastasen gemäß oBDS 2021 §11.1 / TNM-Kodierung.)
 * insert Translation(value[x].coding ^definition, en-US, Location of distant metastases per oBDS 2021 §11.1 / TNM coding.)
 // Observation.bodySite.coding
+* bodySite.coding ^short = "Target site"
+* insert Translation(bodySite.coding ^short, de-DE, Zielgebiet)
+* insert Translation(bodySite.coding ^short, en-US, Target site)
 * bodySite.coding ^definition = "A reference to a code defined by a terminology system."
 * insert Translation(bodySite.coding ^definition, de-DE, Zielgebiet der Strahlentherapie gemäß oBDS 2021 §14.3.)
 * insert Translation(bodySite.coding ^definition, en-US, Target site of radiotherapy per oBDS 2021 §14.3.)

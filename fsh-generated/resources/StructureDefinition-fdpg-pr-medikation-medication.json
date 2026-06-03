@@ -898,7 +898,37 @@
       {
         "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII",
         "path": "Medication.ingredient.item[x].coding",
-        "sliceName": "UNII"
+        "sliceName": "UNII",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "UNII-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "UNII coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Medication.ingredient.item[x]:itemCodeableConcept.coding:UNII.system",

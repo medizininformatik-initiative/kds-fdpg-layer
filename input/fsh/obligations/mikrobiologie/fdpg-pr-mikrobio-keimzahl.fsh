@@ -10,6 +10,8 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Keimzahl"
 // --- Element Designations ---
 // Observation.extension:triggeredBy-r5
 * extension[triggeredBy-r5] ^short = "R5: Triggering observation(s) (new)"
+* insert Translation(extension[triggeredBy-r5] ^short, de-DE, Ausgelöst durch (R5\))
+* insert Translation(extension[triggeredBy-r5] ^short, en-US, Triggered by (R5\))
 // Observation.modifierExtension
 * modifierExtension ^short = "Extensions that cannot be ignored"
 // Observation.modifierExtension:interpretationsbeeinflussendeEigenschaft
@@ -30,6 +32,7 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Keimzahl"
 * identifier[analyseBefundCode] ^short = "Analyse-Befund-Code"
 // Observation.identifier:analyseBefundCode.type
 * identifier[analyseBefundCode].type ^short = "Description of identifier"
+// Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2
 // Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.system
 // Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.code
 // Observation.identifier:analyseBefundCode.system
@@ -54,6 +57,14 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Keimzahl"
 * insert Translation(category ^definition, en-US, Classification of the laboratory test in the diagnostic service section and laboratory group)
 // Observation.category.coding.display
 * category.coding.display ^short = "Representation defined by the system"
+// Observation.category.coding:loinc-observation
+* category.coding[loinc-observation] ^short = "LOINC coding"
+* insert Translation(category.coding[loinc-observation] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(category.coding[loinc-observation] ^short, en-US, LOINC coding)
+// Observation.category.coding:observation-category
+* category.coding[observation-category] ^short = "Observation category coding"
+* insert Translation(category.coding[observation-category] ^short, de-DE, Beobachtungskategorie-Kodierung)
+* insert Translation(category.coding[observation-category] ^short, en-US, Observation category coding)
 // Observation.category:mibi-category
 * category[mibi-category] ^short = "Mikrobiologie-Kategorie"
 * insert Translation(category[mibi-category] ^short, de-DE, Kategorie)
@@ -63,6 +74,18 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Keimzahl"
 * insert Translation(category[mibi-category] ^definition, en-US, Classification of the laboratory test in the diagnostic service section and laboratory group)
 // Observation.category:mibi-category.coding.display
 * category[mibi-category].coding.display ^short = "Representation defined by the system"
+// Observation.category:mibi-category.coding:loinc-observation
+* category[mibi-category].coding[loinc-observation] ^short = "LOINC coding"
+* insert Translation(category[mibi-category].coding[loinc-observation] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(category[mibi-category].coding[loinc-observation] ^short, en-US, LOINC coding)
+// Observation.category:mibi-category.coding:observation-category
+* category[mibi-category].coding[observation-category] ^short = "Observation category coding"
+* insert Translation(category[mibi-category].coding[observation-category] ^short, de-DE, Beobachtungskategorie-Kodierung)
+* insert Translation(category[mibi-category].coding[observation-category] ^short, en-US, Observation category coding)
+// Observation.category:mibi-category.coding:v2-microbiology
+* category[mibi-category].coding[v2-microbiology] ^short = "HL7 v2 Microbiology coding"
+* insert Translation(category[mibi-category].coding[v2-microbiology] ^short, de-DE, HL7 v2 Mikrobiologie-Kodierung)
+* insert Translation(category[mibi-category].coding[v2-microbiology] ^short, en-US, HL7 v2 Microbiology coding)
 // Observation.category:mibi-category.coding:v2-microbiology.system
 * category[mibi-category].coding[v2-microbiology].system ^short = "HL7 v2 Microbiology system URL"
 * insert Translation(category[mibi-category].coding[v2-microbiology].system ^short, de-DE, HL7 v2 Mikrobiologie-System-URL)
@@ -75,6 +98,10 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Keimzahl"
 * category[mibi-category].coding[v2-microbiology].display ^short = "Representation defined by the system"
 * insert Translation(category[mibi-category].coding[v2-microbiology].display ^short, de-DE, HL7 v2 Mikrobiologie-Anzeige)
 * insert Translation(category[mibi-category].coding[v2-microbiology].display ^short, en-US, HL7 v2 Microbiology display)
+// Observation.category:mibi-category.coding:loinc-microbiology-studies
+* category[mibi-category].coding[loinc-microbiology-studies] ^short = "LOINC coding"
+* insert Translation(category[mibi-category].coding[loinc-microbiology-studies] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(category[mibi-category].coding[loinc-microbiology-studies] ^short, en-US, LOINC coding)
 // Observation.category:mibi-category.coding:loinc-microbiology-studies.system
 * category[mibi-category].coding[loinc-microbiology-studies].system ^short = "LOINC system URL"
 * insert Translation(category[mibi-category].coding[loinc-microbiology-studies].system ^short, de-DE, LOINC-System-URL)
@@ -157,6 +184,8 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Keimzahl"
 * value[x][valueQuantity].value ^short = "Numerical value (with implicit precision)"
 // Observation.value[x]:valueQuantity.value.extension:quantityPrecision
 * value[x][valueQuantity].value.extension[quantityPrecision] ^short = "Explicit precision (number of significant decimal places)"
+* insert Translation(value[x][valueQuantity].value.extension[quantityPrecision] ^short, de-DE, Präzision der Quantität)
+* insert Translation(value[x][valueQuantity].value.extension[quantityPrecision] ^short, en-US, Quantity precision)
 // Observation.value[x]:valueQuantity.comparator
 * value[x][valueQuantity].comparator ^short = "< | <= | >= | > - how to understand the value"
 // Observation.value[x]:valueQuantity.unit

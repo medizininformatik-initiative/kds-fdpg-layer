@@ -38,6 +38,11 @@ Description: "FDPG Profil - MII_PR_Onko_Mamma_Rezeptorstatus_Progesteron"
 * value[x] ^definition = "The information determined as a result of making the observation, if the information has a simple value."
 * insert Translation(value[x] ^definition, de-DE, Wert der Beobachtung.)
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
+// Observation.value[x].coding:DefinitionOBDS
+* value[x].coding[DefinitionOBDS] ^short = "LOINC coding"
+* insert Translation(value[x].coding[DefinitionOBDS] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(value[x].coding[DefinitionOBDS] ^short, en-US, LOINC coding)
+// Observation.value[x].coding:DefinitionLeitlinie
 // Observation.component
 * component ^short = "Component results"
 * insert Translation(component ^short, de-DE, Komponente)

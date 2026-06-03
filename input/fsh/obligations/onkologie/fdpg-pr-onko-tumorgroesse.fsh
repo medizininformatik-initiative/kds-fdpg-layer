@@ -15,6 +15,10 @@ Description: "FDPG Profil - MII_PR_Onko_Tumorgroesse"
 * code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\"."
 * insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
+// Observation.code.coding:loinc
+* code.coding[loinc] ^short = "LOINC coding"
+* insert Translation(code.coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[loinc] ^short, en-US, LOINC coding)
 // Observation.code.coding:loinc.system
 * code.coding[loinc].system ^short = "LOINC system URL"
 * insert Translation(code.coding[loinc].system ^short, de-DE, LOINC-System-URL)
@@ -74,6 +78,9 @@ Description: "FDPG Profil - MII_PR_Onko_Tumorgroesse"
 * insert Translation(bodySite ^definition, de-DE, Körperstelle\, auf die sich die Ressource bezieht.)
 * insert Translation(bodySite ^definition, en-US, Body site the resource refers to.)
 // Observation.bodySite.coding
+* bodySite.coding ^short = "Target site"
+* insert Translation(bodySite.coding ^short, de-DE, Zielgebiet)
+* insert Translation(bodySite.coding ^short, en-US, Target site)
 * bodySite.coding ^definition = "A reference to a code defined by a terminology system."
 * insert Translation(bodySite.coding ^definition, de-DE, Zielgebiet der Strahlentherapie gemäß oBDS 2021 §14.3.)
 * insert Translation(bodySite.coding ^definition, en-US, Target site of radiotherapy per oBDS 2021 §14.3.)

@@ -1,0 +1,37 @@
+{
+  "_doc": "Module-specific FDPG labels for the 'studie' module.",
+  "elements": {
+    "extension:Label": {
+      "de_short": "Label",
+      "en_short": "Label"
+    },
+    "extension:AssociatedParty": {
+      "de_short": "Associated Party",
+      "en_short": "Associated party"
+    },
+    "extension:Ethikvotum": {
+      "de_short": "Ethikvotum",
+      "en_short": "Ethics vote"
+    },
+    "extension:Studienregister": {
+      "de_short": "Studienregister",
+      "en_short": "Study registry"
+    },
+    "extension:Eligibility": {
+      "de_short": "Eligibility",
+      "en_short": "Eligibility"
+    },
+    "extension:Akronym": {
+      "de_short": "Akronym",
+      "en_short": "Acronym"
+    },
+    "extension:Rekrutierung": {
+      "de_short": "Rekrutierung",
+      "en_short": "Recruitment"
+    },
+    "extension:Finanzierung": {
+      "de_short": "Finanzierung",
+      "en_short": "Funding"
+    }
+  }
+}

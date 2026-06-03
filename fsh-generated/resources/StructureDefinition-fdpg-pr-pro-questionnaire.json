@@ -96,7 +96,37 @@
           }
         ],
         "path": "Questionnaire.extension",
-        "sliceName": "performerType"
+        "sliceName": "performerType",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Durchführenden-Typ"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Performer type"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Questionnaire.extension:assemble-expectation",
@@ -129,7 +159,37 @@
           }
         ],
         "path": "Questionnaire.extension",
-        "sliceName": "assemble-expectation"
+        "sliceName": "assemble-expectation",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Assemble-Erwartung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Assemble expectation"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Questionnaire.extension:capabilities",
@@ -162,7 +222,37 @@
           }
         ],
         "path": "Questionnaire.extension",
-        "sliceName": "capabilities"
+        "sliceName": "capabilities",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Capabilities"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Capabilities"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Questionnaire.url",

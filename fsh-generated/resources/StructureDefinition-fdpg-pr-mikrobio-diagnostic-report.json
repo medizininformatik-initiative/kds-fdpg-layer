@@ -337,7 +337,38 @@
           }
         ],
         "path": "DiagnosticReport.category.coding",
-        "sliceName": "v2-microbiology"
+        "sliceName": "v2-microbiology",
+        "short": "HL7 v2 Microbiology coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "HL7 v2 Mikrobiologie-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "HL7 v2 Microbiology coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "DiagnosticReport.category:mibi-category.coding:loinc-microbiology-studies",
@@ -370,7 +401,38 @@
           }
         ],
         "path": "DiagnosticReport.category.coding",
-        "sliceName": "loinc-microbiology-studies"
+        "sliceName": "loinc-microbiology-studies",
+        "short": "LOINC coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "DiagnosticReport.category:mibi-sub-category",
@@ -468,7 +530,38 @@
           }
         ],
         "path": "DiagnosticReport.code.coding",
-        "sliceName": "loinc-labReport"
+        "sliceName": "loinc-labReport",
+        "short": "LOINC coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "DiagnosticReport.subject",

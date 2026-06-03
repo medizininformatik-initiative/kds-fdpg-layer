@@ -1,0 +1,65 @@
+{
+  "_doc": "Module-specific FDPG labels for the 'biobank' module.",
+  "elements": {
+    "extension:beschreibung": {
+      "de_short": "beschreibung",
+      "en_short": "beschreibung"
+    },
+    "extension:collectionSetting": {
+      "de_short": "Probenentnahme-Setting",
+      "en_short": "Collection setting"
+    },
+    "extension:collectionDesign": {
+      "de_short": "Sammlungsdesign",
+      "en_short": "Collection design"
+    },
+    "contact:forschungskontakt.extension:rolle": {
+      "de_short": "rolle",
+      "en_short": "Role"
+    },
+    "extension:probenebene": {
+      "de_short": "Ebene",
+      "en_short": "Specimen level"
+    },
+    "collection.extension:einstellungBlutversorgung": {
+      "de_short": "Einstellung Blutversorgung",
+      "en_short": "Blood supply discontinuation"
+    },
+    "processing.extension:temperaturbedingungen": {
+      "de_short": "temperaturbedingungen",
+      "en_short": "Temperature conditions"
+    },
+    "processing:lagerprozess.extension:temperaturbedingungen": {
+      "de_short": "temperaturbedingungen",
+      "en_short": "Temperature conditions"
+    },
+    "extension:festgestellteDiagnose": {
+      "de_short": "festgestellte Diagnose",
+      "en_short": "festgestellte Diagnose"
+    },
+    "extension:gehoertZu": {
+      "de_short": "gehoert Zu",
+      "en_short": "gehoert Zu"
+    },
+    "extension:anzahlAliquots": {
+      "de_short": "Anzahl Aliquots",
+      "en_short": "Number of aliquots"
+    },
+    "processing.extension:temperature-miabis": {
+      "de_short": "temperature-miabis",
+      "en_short": "Temperature (MIABIS)"
+    },
+    "extension:kulturprotokoll": {
+      "de_short": "Kulturprotokoll",
+      "en_short": "Culture protocol"
+    },
+    "extension:modifikationen": {
+      "de_short": "Zelllinien-Modifikationen",
+      "en_short": "Cell line modifications"
+    },
+    "extension:anzahlPassagen": {
+      "de_short": "Anzahl Passagen",
+      "en_short": "Number of passages"
+    }
+  }
+}

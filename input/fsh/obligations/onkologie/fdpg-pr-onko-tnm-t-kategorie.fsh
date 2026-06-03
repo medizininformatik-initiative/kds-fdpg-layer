@@ -24,6 +24,11 @@ Description: "FDPG Profil - MII_PR_Onko_TNM_T_Kategorie"
 * insert Translation(code ^definition, en-US, Coding of the content.)
 // Observation.code.extension:cpPraefix
 * code.extension[cpPraefix] ^short = "TNM c/p-Präfix T"
+* insert Translation(code.extension[cpPraefix] ^short, de-DE, TNM c/p-Präfix)
+* insert Translation(code.extension[cpPraefix] ^short, en-US, TNM c/p prefix)
+* code.extension[cpPraefix] ^definition = "Gibt an, ob die Klassifikation klinisch oder pathologisch erfolgte."
+* insert Translation(code.extension[cpPraefix] ^definition, de-DE, TNM clinical/pathological-Präfix (c = klinisch\, p = pathologisch\).)
+* insert Translation(code.extension[cpPraefix] ^definition, en-US, TNM clinical/pathological prefix (c = clinical\, p = pathological\).)
 // Observation.subject
 * subject ^short = "Who and/or what the observation is about"
 * insert Translation(subject ^short, de-DE, Patient*in)

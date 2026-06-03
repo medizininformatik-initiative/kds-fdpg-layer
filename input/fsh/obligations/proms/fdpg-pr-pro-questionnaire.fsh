@@ -10,10 +10,16 @@ Description: "FDPG Profil - MII_PR_PRO_Questionnaire"
 // --- Element Designations ---
 // Questionnaire.extension:performerType
 * extension[performerType] ^short = "Resource that can record answers to this Questionnaire"
+* insert Translation(extension[performerType] ^short, de-DE, Durchführenden-Typ)
+* insert Translation(extension[performerType] ^short, en-US, Performer type)
 // Questionnaire.extension:assemble-expectation
 * extension[assemble-expectation] ^short = "Questionnaire is modular"
+* insert Translation(extension[assemble-expectation] ^short, de-DE, Assemble-Erwartung)
+* insert Translation(extension[assemble-expectation] ^short, en-US, Assemble expectation)
 // Questionnaire.extension:capabilities
 * extension[capabilities] ^short = "MII PR PRO Questionnaire Capabilities"
+* insert Translation(extension[capabilities] ^short, de-DE, Capabilities)
+* insert Translation(extension[capabilities] ^short, en-US, Capabilities)
 // Questionnaire.url
 * url ^short = "Canonical identifier for this questionnaire, represented as a URI (globally unique)"
 // Questionnaire.version

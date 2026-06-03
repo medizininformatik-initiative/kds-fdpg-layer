@@ -82,6 +82,10 @@ Description: "FDPG Profil - MII_PR_Patho_Finding"
 * bodySite ^definition = "Anatomische Stelle der Einzelbeobachtung"
 * insert Translation(bodySite ^definition, de-DE, Anatomische Stelle der Einzelbeobachtung)
 * insert Translation(bodySite ^definition, en-US, Anatomical site of observation)
+// Observation.bodySite.coding:sct
+* bodySite.coding[sct] ^short = "SNOMED CT coding"
+* insert Translation(bodySite.coding[sct] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(bodySite.coding[sct] ^short, en-US, SNOMED CT coding)
 // Observation.bodySite.coding:sct.system
 * bodySite.coding[sct].system ^short = "SNOMED CT system URL"
 * insert Translation(bodySite.coding[sct].system ^short, de-DE, SNOMED CT-System-URL)

@@ -24,6 +24,7 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Diagnostic_Report"
 * insert Translation(identifier[befund] ^definition, en-US, Identifier assigned by the laboratory information system (Filler\).)
 // DiagnosticReport.identifier:befund.type
 * identifier[befund].type ^short = "Description of identifier"
+// DiagnosticReport.identifier:befund.type.coding:fillerV2
 // DiagnosticReport.identifier:befund.type.coding:fillerV2.system
 // DiagnosticReport.identifier:befund.type.coding:fillerV2.code
 // DiagnosticReport.identifier:befund.system
@@ -68,6 +69,14 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Diagnostic_Report"
 * category[mibi-category] ^definition = "Kategorie-Slice für mikrobiologische Befunde"
 * insert Translation(category[mibi-category] ^definition, de-DE, Klassifikation des Befunds)
 * insert Translation(category[mibi-category] ^definition, en-US, Classification of the report)
+// DiagnosticReport.category:mibi-category.coding:v2-microbiology
+* category[mibi-category].coding[v2-microbiology] ^short = "HL7 v2 Microbiology coding"
+* insert Translation(category[mibi-category].coding[v2-microbiology] ^short, de-DE, HL7 v2 Mikrobiologie-Kodierung)
+* insert Translation(category[mibi-category].coding[v2-microbiology] ^short, en-US, HL7 v2 Microbiology coding)
+// DiagnosticReport.category:mibi-category.coding:loinc-microbiology-studies
+* category[mibi-category].coding[loinc-microbiology-studies] ^short = "LOINC coding"
+* insert Translation(category[mibi-category].coding[loinc-microbiology-studies] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(category[mibi-category].coding[loinc-microbiology-studies] ^short, en-US, LOINC coding)
 // DiagnosticReport.category:mibi-sub-category
 * category[mibi-sub-category] ^short = "Mikrobiologie-Kategorie LOINC"
 * insert Translation(category[mibi-sub-category] ^short, de-DE, Kategorie)
@@ -84,6 +93,10 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Diagnostic_Report"
 * insert Translation(code ^definition, en-US, A LOINC code identifying the report as laboratory report.)
 // DiagnosticReport.code.coding.display
 * code.coding.display ^short = "Representation defined by the system"
+// DiagnosticReport.code.coding:loinc-labReport
+* code.coding[loinc-labReport] ^short = "LOINC coding"
+* insert Translation(code.coding[loinc-labReport] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[loinc-labReport] ^short, en-US, LOINC coding)
 // DiagnosticReport.subject
 * subject ^short = "Subjekt"
 * insert Translation(subject ^short, de-DE, Subjekt)

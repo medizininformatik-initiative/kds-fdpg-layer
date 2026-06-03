@@ -110,7 +110,37 @@
           }
         ],
         "path": "Specimen.extension",
-        "sliceName": "probenebene"
+        "sliceName": "probenebene",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ebene"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Specimen level"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Specimen.extension:festgestellteDiagnose",
@@ -143,7 +173,8 @@
           }
         ],
         "path": "Specimen.extension",
-        "sliceName": "festgestellteDiagnose"
+        "sliceName": "festgestellteDiagnose",
+        "short": "Diagnosed condition"
       },
       {
         "id": "Specimen.extension:gehoertZu",
@@ -176,7 +207,8 @@
           }
         ],
         "path": "Specimen.extension",
-        "sliceName": "gehoertZu"
+        "sliceName": "gehoertZu",
+        "short": "Managing organization"
       },
       {
         "id": "Specimen.extension:anzahlAliquots",
@@ -209,7 +241,37 @@
           }
         ],
         "path": "Specimen.extension",
-        "sliceName": "anzahlAliquots"
+        "sliceName": "anzahlAliquots",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Anzahl Aliquots"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Number of aliquots"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Specimen.extension:kulturprotokoll",
@@ -242,7 +304,37 @@
           }
         ],
         "path": "Specimen.extension",
-        "sliceName": "kulturprotokoll"
+        "sliceName": "kulturprotokoll",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kulturprotokoll"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Culture protocol"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Specimen.extension:modifikationen",
@@ -275,7 +367,37 @@
           }
         ],
         "path": "Specimen.extension",
-        "sliceName": "modifikationen"
+        "sliceName": "modifikationen",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Zelllinien-Modifikationen"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Cell line modifications"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Specimen.extension:anzahlPassagen",
@@ -308,7 +430,37 @@
           }
         ],
         "path": "Specimen.extension",
-        "sliceName": "anzahlPassagen"
+        "sliceName": "anzahlPassagen",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Anzahl Passagen"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Number of passages"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Specimen.identifier",
@@ -437,7 +589,38 @@
           }
         ],
         "path": "Specimen.type.coding",
-        "sliceName": "sct"
+        "sliceName": "sct",
+        "short": "SNOMED CT coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Specimen.type.coding:miabis-type",
@@ -663,7 +846,109 @@
           }
         ],
         "path": "Specimen.collection.extension",
-        "sliceName": "einstellungBlutversorgung"
+        "sliceName": "einstellungBlutversorgung",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Einstellung Blutversorgung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Blood supply discontinuation"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Specimen.collection.bodySite.coding:sct",
+        "path": "Specimen.collection.bodySite.coding",
+        "sliceName": "sct",
+        "short": "SNOMED CT coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT coding"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Specimen.collection.bodySite.coding:icd-o-3",
+        "path": "Specimen.collection.bodySite.coding",
+        "sliceName": "icd-o-3",
+        "short": "ICD-O-3 coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ICD-O-3-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "ICD-O-3 coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Specimen.processing",
@@ -728,7 +1013,37 @@
           }
         ],
         "path": "Specimen.processing.extension",
-        "sliceName": "temperaturbedingungen"
+        "sliceName": "temperaturbedingungen",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "temperaturbedingungen"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Temperature conditions"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Specimen.processing.extension:temperature-miabis",
@@ -761,7 +1076,73 @@
           }
         ],
         "path": "Specimen.processing.extension",
-        "sliceName": "temperature-miabis"
+        "sliceName": "temperature-miabis",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "temperature-miabis"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Temperature (MIABIS)"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Specimen.processing.procedure.coding:sct",
+        "path": "Specimen.processing.procedure.coding",
+        "sliceName": "sct",
+        "short": "SNOMED CT coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Specimen.processing.time[x]:timePeriod",
@@ -865,7 +1246,37 @@
           }
         ],
         "path": "Specimen.processing.extension",
-        "sliceName": "temperaturbedingungen"
+        "sliceName": "temperaturbedingungen",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "temperaturbedingungen"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Temperature conditions"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Specimen.container",

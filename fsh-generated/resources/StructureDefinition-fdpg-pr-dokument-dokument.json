@@ -96,7 +96,37 @@
           }
         ],
         "path": "DocumentReference.extension",
-        "sliceName": "nlp-processing-status"
+        "sliceName": "nlp-processing-status",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "NLP-Verarbeitungsstatus"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "NLP processing status"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "DocumentReference.masterIdentifier",
@@ -469,7 +499,38 @@
           }
         ],
         "path": "DocumentReference.type.coding",
-        "sliceName": "KDL"
+        "sliceName": "KDL",
+        "short": "KDL coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "KDL-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "KDL coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "DocumentReference.type.coding:LNC",
@@ -502,7 +563,38 @@
           }
         ],
         "path": "DocumentReference.type.coding",
-        "sliceName": "LNC"
+        "sliceName": "LNC",
+        "short": "LOINC coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "DocumentReference.type.coding:SCT",
@@ -535,7 +627,38 @@
           }
         ],
         "path": "DocumentReference.type.coding",
-        "sliceName": "SCT"
+        "sliceName": "SCT",
+        "short": "SNOMED CT coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "DocumentReference.type.coding:XDS",
@@ -568,7 +691,38 @@
           }
         ],
         "path": "DocumentReference.type.coding",
-        "sliceName": "XDS"
+        "sliceName": "XDS",
+        "short": "IHE XDS Type Code coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "IHE XDS Type Code-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "IHE XDS Type Code coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "DocumentReference.category",
@@ -693,7 +847,38 @@
           }
         ],
         "path": "DocumentReference.category.coding",
-        "sliceName": "LNC"
+        "sliceName": "LNC",
+        "short": "LOINC coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "LOINC coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "DocumentReference.category.coding:SCT",
@@ -726,7 +911,38 @@
           }
         ],
         "path": "DocumentReference.category.coding",
-        "sliceName": "SCT"
+        "sliceName": "SCT",
+        "short": "SNOMED CT coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "DocumentReference.category.coding:XDS",
@@ -759,7 +975,38 @@
           }
         ],
         "path": "DocumentReference.category.coding",
-        "sliceName": "XDS"
+        "sliceName": "XDS",
+        "short": "IHE XDS Class Code coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "IHE XDS Class Code-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "IHE XDS Class Code coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "DocumentReference.subject",

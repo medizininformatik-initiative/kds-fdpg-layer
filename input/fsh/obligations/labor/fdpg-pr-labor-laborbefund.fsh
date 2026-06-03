@@ -24,6 +24,7 @@ Description: "FDPG Profil - MII_PR_Labor_Laborbefund"
 * insert Translation(identifier[befund] ^definition, en-US, Identifier assigned by the laboratory information system (Filler\).)
 // DiagnosticReport.identifier:befund.type
 * identifier[befund].type ^short = "Description of identifier"
+// DiagnosticReport.identifier:befund.type.coding:fillerV2
 // DiagnosticReport.identifier:befund.type.coding:fillerV2.system
 // DiagnosticReport.identifier:befund.type.coding:fillerV2.code
 // DiagnosticReport.identifier:befund.system
@@ -70,6 +71,10 @@ Description: "FDPG Profil - MII_PR_Labor_Laborbefund"
 * insert Translation(code ^definition, en-US, A LOINC code identifying the report as laboratory report.)
 // DiagnosticReport.code.coding.display
 * code.coding.display ^short = "Representation defined by the system"
+// DiagnosticReport.code.coding:loinc-labReport
+* code.coding[loinc-labReport] ^short = "LOINC coding"
+* insert Translation(code.coding[loinc-labReport] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[loinc-labReport] ^short, en-US, LOINC coding)
 // DiagnosticReport.subject
 * subject ^short = "Subjekt"
 * insert Translation(subject ^short, de-DE, Subjekt)

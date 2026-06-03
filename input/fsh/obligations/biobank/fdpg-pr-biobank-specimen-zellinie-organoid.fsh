@@ -10,28 +10,32 @@ Description: "FDPG Profil - MII_PR_Biobank_Specimen_Zellinie_Organoid"
 // --- Element Designations ---
 // Specimen.extension:probenebene
 * extension[probenebene] ^short = "MII EX Biobank Ebene"
+* insert Translation(extension[probenebene] ^short, de-DE, Ebene)
+* insert Translation(extension[probenebene] ^short, en-US, Specimen level)
 // Specimen.extension:festgestellteDiagnose
-* extension[festgestellteDiagnose] ^short = "MII EX Biobank Diagnose"
+* extension[festgestellteDiagnose] ^short = "Diagnosed condition"
 * insert Translation(extension[festgestellteDiagnose] ^short, de-DE, Festgestellte Diagnose)
 * insert Translation(extension[festgestellteDiagnose] ^short, en-US, Diagnosed condition)
-* extension[festgestellteDiagnose] ^definition = "Mittels dieser Extension kann ausgedrückt werden, dass Material mit der referenzierten Diagnose in der Probe enthalten ist."
-* insert Translation(extension[festgestellteDiagnose] ^definition, de-DE, Verweis auf eine Diagnose\, für die Material in der Probe enthalten ist.)
-* insert Translation(extension[festgestellteDiagnose] ^definition, en-US, Reference to a diagnosis for which material is present in the specimen.)
 // Specimen.extension:gehoertZu
-* extension[gehoertZu] ^short = "MII EX Biobank Verwaltende Organisation"
+* extension[gehoertZu] ^short = "Managing organization"
 * insert Translation(extension[gehoertZu] ^short, de-DE, Verwaltende Organisation)
 * insert Translation(extension[gehoertZu] ^short, en-US, Managing organization)
-* extension[gehoertZu] ^definition = "Die Organisation, die die Probe verwaltet, soll mithilfe dieser Extension referenziert werden. Anfragen zu den Proben sollen mittels dieser Verlinkung und der in der Organization hinterlegten Kontaktinformationen möglich sein."
-* insert Translation(extension[gehoertZu] ^definition, de-DE, Zuordnung der Probe zu einer Sammlung oder Biobank\, die für die Verwaltung verantwortlich ist.)
-* insert Translation(extension[gehoertZu] ^definition, en-US, Assignment of the specimen to a collection or biobank responsible for its management.)
 // Specimen.extension:anzahlAliquots
 * extension[anzahlAliquots] ^short = "MII EX Biobank Anzahl Aliquots"
+* insert Translation(extension[anzahlAliquots] ^short, de-DE, Anzahl Aliquots)
+* insert Translation(extension[anzahlAliquots] ^short, en-US, Number of aliquots)
 // Specimen.extension:kulturprotokoll
 * extension[kulturprotokoll] ^short = "MII EX Biobank Kulturprotokoll"
+* insert Translation(extension[kulturprotokoll] ^short, de-DE, Kulturprotokoll)
+* insert Translation(extension[kulturprotokoll] ^short, en-US, Culture protocol)
 // Specimen.extension:modifikationen
 * extension[modifikationen] ^short = "MII EX Biobank Zelllinien-Modifikation"
+* insert Translation(extension[modifikationen] ^short, de-DE, Zelllinien-Modifikationen)
+* insert Translation(extension[modifikationen] ^short, en-US, Cell line modifications)
 // Specimen.extension:anzahlPassagen
 * extension[anzahlPassagen] ^short = "MII EX Biobank Anzahl Passagen"
+* insert Translation(extension[anzahlPassagen] ^short, de-DE, Anzahl Passagen)
+* insert Translation(extension[anzahlPassagen] ^short, en-US, Number of passages)
 // Specimen.identifier
 * identifier ^short = "External Identifier"
 * insert Translation(identifier ^short, de-DE, Proben-ID)
@@ -53,6 +57,11 @@ Description: "FDPG Profil - MII_PR_Biobank_Specimen_Zellinie_Organoid"
 * type ^definition = "The kind of material that forms the specimen."
 * insert Translation(type ^definition, de-DE, Die Art der Probe\, codiert in SNOMED CT.)
 * insert Translation(type ^definition, en-US, The type of the specimen\, encoded as SNOMED CT code.)
+// Specimen.type.coding:sct
+* type.coding[sct] ^short = "SNOMED CT coding"
+* insert Translation(type.coding[sct] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(type.coding[sct] ^short, en-US, SNOMED CT coding)
+// Specimen.type.coding:miabis-type
 // Specimen.type.coding:miabis-type.system
 // Specimen.type.coding:miabis-type.code
 // Specimen.subject
@@ -87,6 +96,8 @@ Description: "FDPG Profil - MII_PR_Biobank_Specimen_Zellinie_Organoid"
 * insert Translation(collection ^definition, en-US, Information about the specimen collection process\, including collection time and site.)
 // Specimen.collection.extension:einstellungBlutversorgung
 * collection.extension[einstellungBlutversorgung] ^short = "MII EX Biobank Einstellung Blutversorgung"
+* insert Translation(collection.extension[einstellungBlutversorgung] ^short, de-DE, Einstellung Blutversorgung)
+* insert Translation(collection.extension[einstellungBlutversorgung] ^short, en-US, Blood supply discontinuation)
 // Specimen.collection.collected[x]
 * collection.collected[x] ^short = "Collection time"
 * insert Translation(collection.collected[x] ^short, de-DE, Entnahmezeitpunkt)
@@ -118,6 +129,14 @@ Description: "FDPG Profil - MII_PR_Biobank_Specimen_Zellinie_Organoid"
 * collection.bodySite ^definition = "Anatomical location from which the specimen was collected (if subject is a patient). This is the target site.  This element is not used for environmental specimens."
 * insert Translation(collection.bodySite ^definition, de-DE, Die Körperstelle\, von der die Probe entnommen wurde.)
 * insert Translation(collection.bodySite ^definition, en-US, The body site from which the specimen was collected.)
+// Specimen.collection.bodySite.coding:sct
+* collection.bodySite.coding[sct] ^short = "SNOMED CT coding"
+* insert Translation(collection.bodySite.coding[sct] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(collection.bodySite.coding[sct] ^short, en-US, SNOMED CT coding)
+// Specimen.collection.bodySite.coding:icd-o-3
+* collection.bodySite.coding[icd-o-3] ^short = "ICD-O-3 coding"
+* insert Translation(collection.bodySite.coding[icd-o-3] ^short, de-DE, ICD-O-3-Kodierung)
+* insert Translation(collection.bodySite.coding[icd-o-3] ^short, en-US, ICD-O-3 coding)
 // Specimen.collection.fastingStatus[x]
 * collection.fastingStatus[x] ^short = "Whether or how long patient abstained from food and/or drink"
 * insert Translation(collection.fastingStatus[x] ^short, de-DE, Nüchternstatus)
@@ -134,8 +153,12 @@ Description: "FDPG Profil - MII_PR_Biobank_Specimen_Zellinie_Organoid"
 * insert Translation(processing ^definition, en-US, Details about the processing of the specimen\, including procedures and processing period.)
 // Specimen.processing.extension:temperaturbedingungen
 * processing.extension[temperaturbedingungen] ^short = "MII EX Biobank Temperaturbedingungen"
+* insert Translation(processing.extension[temperaturbedingungen] ^short, de-DE, temperaturbedingungen)
+* insert Translation(processing.extension[temperaturbedingungen] ^short, en-US, Temperature conditions)
 // Specimen.processing.extension:temperature-miabis
 * processing.extension[temperature-miabis] ^short = "Sample storage temperature"
+* insert Translation(processing.extension[temperature-miabis] ^short, de-DE, temperature-miabis)
+* insert Translation(processing.extension[temperature-miabis] ^short, en-US, Temperature (MIABIS\))
 // Specimen.processing.procedure
 * processing.procedure ^short = "Indicates the treatment step  applied to the specimen"
 * insert Translation(processing.procedure ^short, de-DE, Verarbeitungstyp)
@@ -143,6 +166,10 @@ Description: "FDPG Profil - MII_PR_Biobank_Specimen_Zellinie_Organoid"
 * processing.procedure ^definition = "A coded value specifying the procedure used to process the specimen."
 * insert Translation(processing.procedure ^definition, de-DE, Die angewendete Prozedur zur Verarbeitung der Probe\, z.B. Zentrifugation.)
 * insert Translation(processing.procedure ^definition, en-US, The procedure applied to process the specimen\, e.g. centrifugation.)
+// Specimen.processing.procedure.coding:sct
+* processing.procedure.coding[sct] ^short = "SNOMED CT coding"
+* insert Translation(processing.procedure.coding[sct] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(processing.procedure.coding[sct] ^short, en-US, SNOMED CT coding)
 // Specimen.processing.additive
 * processing.additive ^short = "Material used in the processing step"
 * insert Translation(processing.additive ^short, de-DE, Additive bei Verarbeitung)
@@ -163,6 +190,8 @@ Description: "FDPG Profil - MII_PR_Biobank_Specimen_Zellinie_Organoid"
 * processing[lagerprozess] ^short = "Processing and processing step details"
 // Specimen.processing:lagerprozess.extension:temperaturbedingungen
 * processing[lagerprozess].extension[temperaturbedingungen] ^short = "MII EX Biobank Temperaturbedingungen"
+* insert Translation(processing[lagerprozess].extension[temperaturbedingungen] ^short, de-DE, temperaturbedingungen)
+* insert Translation(processing[lagerprozess].extension[temperaturbedingungen] ^short, en-US, Temperature conditions)
 // Specimen.container
 * container ^short = "Direct container of specimen (tube/slide, etc.)"
 * insert Translation(container ^short, de-DE, Probenbehältnis)

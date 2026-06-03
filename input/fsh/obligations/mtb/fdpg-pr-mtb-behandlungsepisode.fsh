@@ -10,6 +10,8 @@ Description: "FDPG Profil - MII_PR_MTB_Behandlungsepisode"
 // --- Element Designations ---
 // ClinicalImpression.extension:LeitlinienbehandlungStatus
 * extension[LeitlinienbehandlungStatus] ^short = "MII EX MTB Leitlinienbehandlung Status"
+* insert Translation(extension[LeitlinienbehandlungStatus] ^short, de-DE, Leitlinienbehandlung Status)
+* insert Translation(extension[LeitlinienbehandlungStatus] ^short, en-US, Guideline treatment status)
 // ClinicalImpression.effective[x]:effectivePeriod
 * effective[x][effectivePeriod] ^short = "Zeitraum der Behandlungsepisode"
 * insert Translation(effective[x][effectivePeriod] ^short, de-DE, Zeitraum der Behandlungsepisode)

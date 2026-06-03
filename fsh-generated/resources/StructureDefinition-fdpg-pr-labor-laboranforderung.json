@@ -301,7 +301,38 @@
           }
         ],
         "path": "ServiceRequest.category.coding",
-        "sliceName": "laboratory"
+        "sliceName": "laboratory",
+        "short": "Observation category coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Beobachtungskategorie-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Observation category coding"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "ServiceRequest.code",

@@ -184,6 +184,30 @@ LM_LABEL_OVERRIDES: dict[str, dict] = {
 }
 
 
+def load_module_labels(module_name: str) -> dict:
+    """Load module-specific labels from input/data/element-labels-<module>.json.
+    Returns {} if file doesn't exist. Mirrors enrich-fsh-translations.py."""
+    path = PROJECT_ROOT / "input" / "data" / f"element-labels-{module_name}.json"
+    if not path.exists():
+        return {}
+    with open(path) as f:
+        data = json.load(f)
+    return {k: v for k, v in data.get("elements", {}).items() if not k.startswith("_")}
+
+
+def merge_module_labels(canonical: dict, module_name: str) -> dict:
+    """Return a canonical-shaped dict with module labels overlaid on the
+    'elements' section. Module entries take priority over canonical.
+    """
+    module = load_module_labels(module_name)
+    if not module:
+        return canonical
+    merged = dict(canonical or {})
+    merged_elements = {**(canonical or {}).get("elements", {}), **module}
+    merged["elements"] = merged_elements
+    return merged
+
+
 def load_canonical_labels() -> dict:
     """Load canonical DE+EN labels for fallback when profile/LM lacks translations.
 
@@ -201,15 +225,12 @@ def load_canonical_labels() -> dict:
 def lookup_canonical(canonical: dict, display_path: str) -> dict:
     """Look up canonical labels for a profile element display path.
 
-    Handles slice notation by stripping the slice suffix as fallback.
+    Exact match only. NO slice-strip fallback: 'extension:Dokumentationsdatum'
+    must NOT inherit the generic 'extension' canonical entry — named extensions
+    are semantically specific per slice. Coding-slice harmonisation is handled
+    via the coding_systems table at the call site.
     """
-    elements = canonical.get("elements", {})
-    if display_path in elements:
-        return elements[display_path]
-    base = re.sub(r":[^.]+", "", display_path)
-    if base != display_path and base in elements:
-        return elements[base]
-    return {}
+    return canonical.get("elements", {}).get(display_path, {})
 
 
 def get_coding_system(elem: dict) -> str:
@@ -229,9 +250,47 @@ def get_coding_system(elem: dict) -> str:
     return ""
 
 
+# Fallback display names for coding-slice names (mirrors enrich-fsh-translations.py).
+SLICE_NAME_ALIASES = {
+    "obds":         "oBDS",
+    "sct":          "SNOMED CT",
+    "snomed":       "SNOMED CT",
+    "snomed-ct":    "SNOMED CT",
+    "loinc":        "LOINC",
+    "icd10-gm":     "ICD-10-GM",
+    "icd-10-gm":    "ICD-10-GM",
+    "icd-o-3":      "ICD-O-3",
+    "icdo3":        "ICD-O-3",
+    "alpha-id":     "Alpha-ID",
+    "orphanet":     "Orphanet",
+    "mondo":        "MONDO",
+    "omim":         "OMIM",
+    "hpo":          "HPO",
+    "atc":          "ATC",
+    "ops":          "OPS",
+    "pzn":          "Pharmazentralnummer",
+    "ucum":         "UCUM",
+    "iso-3166":     "ISO 3166",
+    "iso-3166-2":   "ISO 3166-2",
+    "ieee-11073":   "IEEE 11073",
+    "v2-microbiology": "HL7 v2 Microbiology",
+}
+
+
 def lookup_coding_system_labels(canonical: dict, system_url: str) -> dict:
     """Look up DE+EN labels for a coding system URL."""
     return canonical.get("coding_systems", {}).get(system_url, {})
+
+
+def coding_system_display_from_slice(slice_name: str) -> dict:
+    """Return DE+EN display for a slice name from SLICE_NAME_ALIASES.
+    Used as a fallback when the slice's codesystem URL is non-canonical
+    (e.g., MII-specific value-set CSs).
+    """
+    alias = SLICE_NAME_ALIASES.get(slice_name.lower())
+    if not alias:
+        return {}
+    return {"de_short": alias, "en_short": alias}
 
 # Logical model config: module name → LM filenames + FHIR mapping identity strings.
 # Modules without an entry (or without FHIR mappings) simply get no Fachbegriff column.
@@ -813,16 +872,21 @@ def resolve_element_labels(
     canon = lookup_canonical(canonical or {}, display_path)
     coding_label = {}
     if ".coding:" in display_path:
+        cs = {}
         sys_url = get_coding_system(elem)
         if sys_url:
             cs = lookup_coding_system_labels(canonical or {}, sys_url)
-            if cs:
-                coding_label = {
-                    "de_short": cs.get("de_short", ""),
-                    "en_short": cs.get("en_short", ""),
-                    "de_def": f"Kodierung nach {cs.get('de_short', '')}.",
-                    "en_def": f"Coding in {cs.get('en_short', '')}.",
-                }
+        if not cs:
+            # Fallback: derive display from the slice name (e.g. ":obds" -> "oBDS")
+            slice_name = display_path.rsplit(":", 1)[-1]
+            cs = coding_system_display_from_slice(slice_name)
+        if cs:
+            coding_label = {
+                "de_short": cs.get("de_short", ""),
+                "en_short": cs.get("en_short", ""),
+                "de_def": f"Kodierung nach {cs.get('de_short', '')}.",
+                "en_def": f"Coding in {cs.get('en_short', '')}.",
+            }
 
     if not de_short:
         de_short = coding_label.get("de_short") or canon.get("de_short") or elem.get("short", "")
@@ -973,16 +1037,20 @@ def generate_profile_section(
 
         coding_label = {}
         if ".coding:" in display_path:
+            cs = {}
             sys_url = get_coding_system(elem)
             if sys_url:
                 cs = lookup_coding_system_labels(canonical or {}, sys_url)
-                if cs:
-                    coding_label = {
-                        "de_short": cs.get("de_short", ""),
-                        "en_short": cs.get("en_short", ""),
-                        "de_def": f"Kodierung nach {cs.get('de_short', '')}.",
-                        "en_def": f"Coding in {cs.get('en_short', '')}.",
-                    }
+            if not cs:
+                slice_name = display_path.rsplit(":", 1)[-1]
+                cs = coding_system_display_from_slice(slice_name)
+            if cs:
+                coding_label = {
+                    "de_short": cs.get("de_short", ""),
+                    "en_short": cs.get("en_short", ""),
+                    "de_def": f"Kodierung nach {cs.get('de_short', '')}.",
+                    "en_def": f"Coding in {cs.get('en_short', '')}.",
+                }
 
         if not de_short:
             de_short = coding_label.get("de_short") or canon.get("de_short") or elem.get("short", "")
@@ -1055,6 +1123,7 @@ def _profile_display_name(parent_name: str) -> str:
 def generate_module_page(module_name: str, canonical: dict | None = None, field_config: dict | None = None) -> str:
     """Generate the full datenkatalog markdown page for a module."""
     cfg = MODULES[module_name]
+    canonical = merge_module_labels(canonical or {}, module_name)
     package_dir = get_package_dir(cfg)
 
     if not package_dir.is_dir():
@@ -1181,6 +1250,7 @@ def generate_module_page(module_name: str, canonical: dict | None = None, field_
 def collect_module_data(module_name: str, canonical: dict, field_config: dict | None = None) -> dict | None:
     """Collect all profile data for one module (for xlsx output)."""
     cfg = MODULES[module_name]
+    canonical = merge_module_labels(canonical or {}, module_name)
     package_dir = get_package_dir(cfg)
     if not package_dir.is_dir():
         return None

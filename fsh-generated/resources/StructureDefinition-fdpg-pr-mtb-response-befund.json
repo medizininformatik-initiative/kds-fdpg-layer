@@ -1124,6 +1124,76 @@
         }
       },
       {
+        "id": "Observation.value[x]:valueCodeableConcept.coding:oBDS.system",
+        "path": "Observation.value[x].coding.system",
+        "short": "oBDS system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "oBDS-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "oBDS system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.value[x]:valueCodeableConcept.coding:oBDS.code",
+        "path": "Observation.value[x].coding.code",
+        "short": "Coded value as oBDS",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kodierter Wert als oBDS"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Coded value as oBDS"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
         "id": "Observation.value[x]:valueCodeableConcept.coding:MTB",
         "extension": [
           {

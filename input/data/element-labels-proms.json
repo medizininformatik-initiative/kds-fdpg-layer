@@ -1,6 +1,5 @@
 {
   "_doc": "Module-specific FDPG labels for the 'proms' (Patient-Reported Outcome Measures) module. Targeted overrides where the canonical labels are too generic for PROMs context. Profile-specific nuance (BDI-II vs. PROMIS-29 etc.) is not captured here — those distinctions live in the profile title and the upstream profile-specific binding.",
-
   "elements": {
     "code": {
       "de_short": "PROMs-Item",
@@ -31,6 +30,30 @@
       "en_short": "Source questionnaire",
       "de_def": "Verweis auf die QuestionnaireResponse, aus der dieser Score abgeleitet wurde.",
       "en_def": "Reference to the QuestionnaireResponse this score is derived from."
+    },
+    "extension:instantiatesCanonical": {
+      "de_short": "Instanziiert kanonisches Profil",
+      "en_short": "Instantiates canonical"
+    },
+    "questionnaire.extension:questionnaireDisplay": {
+      "de_short": "Fragebogen-Anzeige",
+      "en_short": "Questionnaire display"
+    },
+    "extension:performerType": {
+      "de_short": "Durchführenden-Typ",
+      "en_short": "Performer type"
+    },
+    "extension:assemble-expectation": {
+      "de_short": "Assemble-Erwartung",
+      "en_short": "Assemble expectation"
+    },
+    "extension:capabilities": {
+      "de_short": "Capabilities",
+      "en_short": "Capabilities"
+    },
+    "qualifiedInterval.range.extension:ScoreHealthCorrelation": {
+      "de_short": "Score-Gesundheits-Korrelation",
+      "en_short": "Score-health correlation"
     }
   }
 }

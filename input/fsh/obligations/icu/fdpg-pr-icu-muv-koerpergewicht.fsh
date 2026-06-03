@@ -35,6 +35,10 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Koerpergewicht"
 * code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\"."
 * insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
+// Observation.code.coding:loinc
+* code.coding[loinc] ^short = "LOINC coding"
+* insert Translation(code.coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[loinc] ^short, en-US, LOINC coding)
 // Observation.code.coding:loinc.system
 * code.coding[loinc].system ^short = "LOINC system URL"
 * insert Translation(code.coding[loinc].system ^short, de-DE, LOINC-System-URL)
@@ -47,6 +51,10 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Koerpergewicht"
 * code.coding[loinc].display ^short = "Representation defined by the system"
 * insert Translation(code.coding[loinc].display ^short, de-DE, LOINC-Anzeige)
 * insert Translation(code.coding[loinc].display ^short, en-US, LOINC display)
+// Observation.code.coding:snomed
+* code.coding[snomed] ^short = "SNOMED CT coding"
+* insert Translation(code.coding[snomed] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(code.coding[snomed] ^short, en-US, SNOMED CT coding)
 // Observation.code.coding:snomed.system
 * code.coding[snomed].system ^short = "SNOMED CT system URL"
 * insert Translation(code.coding[snomed].system ^short, de-DE, SNOMED CT-System-URL)

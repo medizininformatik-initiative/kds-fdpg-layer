@@ -41,6 +41,9 @@ Description: "FDPG Profil - MII_PR_Onko_Therapieempfehlung_Medikation"
 // MedicationRequest.medication[x]:medicationCodeableConcept
 * medication[x][medicationCodeableConcept] ^short = "Medication to be taken"
 // MedicationRequest.medication[x]:medicationCodeableConcept.coding
+* medication[x][medicationCodeableConcept].coding ^short = "Active substance"
+* insert Translation(medication[x][medicationCodeableConcept].coding ^short, de-DE, Wirkstoff/Substanz)
+* insert Translation(medication[x][medicationCodeableConcept].coding ^short, en-US, Active substance)
 * medication[x][medicationCodeableConcept].coding ^definition = "A reference to a code defined by a terminology system."
 * insert Translation(medication[x][medicationCodeableConcept].coding ^definition, de-DE, Wirkstoff oder Substanz der systemischen onkologischen Medikation gemäß oBDS 2021 §16.4.)
 * insert Translation(medication[x][medicationCodeableConcept].coding ^definition, en-US, Active substance of the systemic oncologic medication per oBDS 2021 §16.4.)

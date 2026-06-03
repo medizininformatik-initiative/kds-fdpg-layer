@@ -36,6 +36,10 @@ Description: "FDPG Profil - MII_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren
 * category ^definition = "A code that classifies the general type of observation being made."
 * insert Translation(category ^definition, de-DE, Kategorisierung der Ressource.)
 * insert Translation(category ^definition, en-US, Categorization of the resource.)
+// Observation.category.coding:sct
+* category.coding[sct] ^short = "SNOMED CT coding"
+* insert Translation(category.coding[sct] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(category.coding[sct] ^short, en-US, SNOMED CT coding)
 // Observation.category.coding:sct.system
 * category.coding[sct].system ^short = "SNOMED CT system URL"
 * insert Translation(category.coding[sct].system ^short, de-DE, SNOMED CT-System-URL)
@@ -55,6 +59,10 @@ Description: "FDPG Profil - MII_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren
 * code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\"."
 * insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
+// Observation.code.coding:sct
+* code.coding[sct] ^short = "SNOMED CT coding"
+* insert Translation(code.coding[sct] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(code.coding[sct] ^short, en-US, SNOMED CT coding)
 // Observation.code.coding:sct.system
 * code.coding[sct].system ^short = "SNOMED CT system URL"
 * insert Translation(code.coding[sct].system ^short, de-DE, SNOMED CT-System-URL)
@@ -67,6 +75,10 @@ Description: "FDPG Profil - MII_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren
 * code.coding[sct].display ^short = "Representation defined by the system"
 * insert Translation(code.coding[sct].display ^short, de-DE, SNOMED CT-Anzeige)
 * insert Translation(code.coding[sct].display ^short, en-US, SNOMED CT display)
+// Observation.code.coding:loinc
+* code.coding[loinc] ^short = "LOINC coding"
+* insert Translation(code.coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[loinc] ^short, en-US, LOINC coding)
 // Observation.code.coding:loinc.system
 * code.coding[loinc].system ^short = "LOINC system URL"
 * insert Translation(code.coding[loinc].system ^short, de-DE, LOINC-System-URL)
@@ -79,6 +91,10 @@ Description: "FDPG Profil - MII_PR_ICU_Ionisiertes_Kalzium_Nierenersatzverfahren
 * code.coding[loinc].display ^short = "Representation defined by the system"
 * insert Translation(code.coding[loinc].display ^short, de-DE, LOINC-Anzeige)
 * insert Translation(code.coding[loinc].display ^short, en-US, LOINC display)
+// Observation.code.coding:IEEE-11073
+* code.coding[IEEE-11073] ^short = "IEEE 11073 coding"
+* insert Translation(code.coding[IEEE-11073] ^short, de-DE, IEEE 11073-Kodierung)
+* insert Translation(code.coding[IEEE-11073] ^short, en-US, IEEE 11073 coding)
 // Observation.code.coding:IEEE-11073.system
 * code.coding[IEEE-11073].system ^short = "IEEE 11073 system URL"
 * insert Translation(code.coding[IEEE-11073].system ^short, de-DE, IEEE 11073-System-URL)

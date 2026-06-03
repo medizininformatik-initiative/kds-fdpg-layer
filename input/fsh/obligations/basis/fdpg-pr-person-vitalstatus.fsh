@@ -33,6 +33,8 @@ Description: "FDPG Profil - MII_PR_Person_Vitalstatus"
 * insert Translation(code ^definition, en-US, A LOINC code identifying the vital status observation.)
 // Observation.code.coding:loinc
 * code.coding[loinc] ^short = "LOINC Code"
+* insert Translation(code.coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[loinc] ^short, en-US, LOINC coding)
 // Observation.code.coding:loinc.system
 * code.coding[loinc].system ^short = "LOINC system URL"
 * insert Translation(code.coding[loinc].system ^short, de-DE, LOINC-System-URL)

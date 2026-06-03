@@ -24,6 +24,7 @@ Description: "FDPG Profil - MII_PR_Onko_Nebenwirkung_Adverse_Event"
 * event.coding.code ^definition = "Art der Nebenwirkung nach CTCAE / MedDRA.  Abweichend von 15.2 oBDS 2021 kann dieses Feld leer sein falls eine Nebenwirkung des Schweregrads 1 oder 2 vorliegt und keine spezifische Art der Nebenwirkung dokumentiert wurde"
 * insert Translation(event.coding.code ^definition, de-DE, Art der Nebenwirkung nach CTCAE / MedDRA . Abweichend von 15.2 oBDS 2021 kann dieses Feld leer sein falls eine Nebenwirkung des Schweregrads 1 oder 2 vorliegt und keine spezifische Art der Nebenwirkung dokumentiert wurde)
 * insert Translation(event.coding.code ^definition, en-US, Type of adverse event per CTCAE / MedDRA. Diverging from oBDS 2021 §15.2\, this field may be empty for grade 1 or 2 adverse events with no specific type documented.)
+// AdverseEvent.event.coding:meddra
 // AdverseEvent.event.coding:meddra.system
 // AdverseEvent.event.coding:meddra.version
 // AdverseEvent.event.coding:meddra.code

@@ -160,6 +160,37 @@
       {
         "id": "ObservationDefinition.code.coding",
         "path": "ObservationDefinition.code.coding",
+        "short": "Item coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Item-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Item coding"
+                }
+              ]
+            }
+          ]
+        },
         "_definition": {
           "extension": [
             {
@@ -436,6 +467,41 @@
           }
         ],
         "path": "ObservationDefinition.qualifiedInterval"
+      },
+      {
+        "id": "ObservationDefinition.qualifiedInterval.range.extension:ScoreHealthCorrelation",
+        "path": "ObservationDefinition.qualifiedInterval.range.extension",
+        "sliceName": "ScoreHealthCorrelation",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Score-Gesundheits-Korrelation"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Score-health correlation"
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   }

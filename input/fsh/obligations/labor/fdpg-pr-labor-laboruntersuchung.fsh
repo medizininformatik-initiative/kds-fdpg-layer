@@ -28,6 +28,7 @@ Description: "FDPG Profil - MII_PR_Labor_Laboruntersuchung"
 * identifier[analyseBefundCode] ^short = "Analyse-Befund-Code"
 // Observation.identifier:analyseBefundCode.type
 * identifier[analyseBefundCode].type ^short = "Description of identifier"
+// Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2
 // Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.system
 // Observation.identifier:analyseBefundCode.type.coding:observationInstanceV2.code
 // Observation.identifier:analyseBefundCode.system
@@ -52,6 +53,14 @@ Description: "FDPG Profil - MII_PR_Labor_Laboruntersuchung"
 * insert Translation(category ^definition, en-US, Classification of the laboratory test in the diagnostic service section and laboratory group)
 // Observation.category.coding.display
 * category.coding.display ^short = "Representation defined by the system"
+// Observation.category.coding:loinc-observation
+* category.coding[loinc-observation] ^short = "LOINC coding"
+* insert Translation(category.coding[loinc-observation] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(category.coding[loinc-observation] ^short, en-US, LOINC coding)
+// Observation.category.coding:observation-category
+* category.coding[observation-category] ^short = "Observation category coding"
+* insert Translation(category.coding[observation-category] ^short, de-DE, Beobachtungskategorie-Kodierung)
+* insert Translation(category.coding[observation-category] ^short, en-US, Observation category coding)
 // Observation.code
 * code ^short = "Code"
 * insert Translation(code ^short, de-DE, Code)
@@ -122,6 +131,8 @@ Description: "FDPG Profil - MII_PR_Labor_Laboruntersuchung"
 * value[x][valueQuantity].value ^short = "Numerical value (with implicit precision)"
 // Observation.value[x]:valueQuantity.value.extension:quantityPrecision
 * value[x][valueQuantity].value.extension[quantityPrecision] ^short = "Explicit precision (number of significant decimal places)"
+* insert Translation(value[x][valueQuantity].value.extension[quantityPrecision] ^short, de-DE, Präzision der Quantität)
+* insert Translation(value[x][valueQuantity].value.extension[quantityPrecision] ^short, en-US, Quantity precision)
 // Observation.value[x]:valueQuantity.comparator
 * value[x][valueQuantity].comparator ^short = "< | <= | >= | > - how to understand the value"
 // Observation.value[x]:valueQuantity.unit

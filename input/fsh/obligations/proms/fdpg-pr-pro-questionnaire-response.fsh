@@ -21,6 +21,8 @@ Description: "FDPG Profil - MII_PR_PRO_QuestionnaireResponse"
 * questionnaire ^short = "Form being answered"
 // QuestionnaireResponse.questionnaire.extension:questionnaireDisplay
 * questionnaire.extension[questionnaireDisplay] ^short = "Display name for canonical reference"
+* insert Translation(questionnaire.extension[questionnaireDisplay] ^short, de-DE, Fragebogen-Anzeige)
+* insert Translation(questionnaire.extension[questionnaireDisplay] ^short, en-US, Questionnaire display)
 // QuestionnaireResponse.status
 * status ^short = "in-progress | completed | amended | entered-in-error | stopped"
 * insert Translation(status ^short, de-DE, Status)

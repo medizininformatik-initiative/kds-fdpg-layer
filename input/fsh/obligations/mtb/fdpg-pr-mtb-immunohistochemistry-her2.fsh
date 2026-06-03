@@ -36,6 +36,10 @@ Description: "FDPG Profil - MII_PR_MTB_IMMUNOHISTOCHEMISTRY_HER2"
 * code.coding[generisch] ^definition = "Generischer Code für immunhistochemische Untersuchungen. Wird immer angegeben, um die Interoperabilität zu gewährleisten. Zusätzliche spezifische Codes können über open slicing hinzugefügt werden."
 * insert Translation(code.coding[generisch] ^definition, de-DE, Generischer Code fuer immunhistochemische Untersuchungen. Wird immer angegeben um die Interoperabilitaet zu gewaehrleisten. Zusaetzliche spezifische Codes koennen ueber open slicing hinzugefuegt werden.)
 * insert Translation(code.coding[generisch] ^definition, en-US, Generic code for immunohistochemistry examinations — always provided for interoperability.)
+// Observation.code.coding:spezifisch
+* code.coding[spezifisch] ^short = "LOINC coding"
+* insert Translation(code.coding[spezifisch] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[spezifisch] ^short, en-US, LOINC coding)
 // Observation.subject
 * subject ^short = "Patient"
 * insert Translation(subject ^short, de-DE, Patient)

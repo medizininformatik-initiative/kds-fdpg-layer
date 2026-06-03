@@ -34,6 +34,10 @@ Description: "FDPG Profil - MII_PR_Seltene_Kopfumfang"
 * code.coding[loinc].code ^short = "Code as LOINC"
 * insert Translation(code.coding[loinc].code ^short, de-DE, Code als LOINC)
 * insert Translation(code.coding[loinc].code ^short, en-US, Code as LOINC)
+// Observation.code.coding:snomed
+* code.coding[snomed] ^short = "SNOMED CT coding"
+* insert Translation(code.coding[snomed] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(code.coding[snomed] ^short, en-US, SNOMED CT coding)
 // Observation.code.coding:snomed.system
 * code.coding[snomed].system ^short = "SNOMED CT system URL"
 * insert Translation(code.coding[snomed].system ^short, de-DE, SNOMED CT-System-URL)

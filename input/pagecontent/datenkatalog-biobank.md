@@ -55,8 +55,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Kodierung des Inhalts. | ✓ |
 | `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
 | `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. | ✓ |
-| `component:type` | Komponente | Untergeordnete Beobachtungskomponente. |  |
-| `component:result` | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:type` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |  |
+| `component:result` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |  |
 
 #### Observation Wachstumstyp (Observation)
 
@@ -75,8 +75,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
 | `extension:beschreibung` | Beschreibung der Sammlung/Biobank | Eine Freitextbeschreibung der Sammlung/Biobank, die z.B. in einer Suche angezeigt werden kann. |
-| `extension:collectionSetting` | Erweiterung | FHIR-Erweiterung. |
-| `extension:collectionDesign` | Erweiterung | FHIR-Erweiterung. |
+| `extension:collectionSetting` | Probenentnahme-Setting | The context in which the sample collection was/is conducted. |
+| `extension:collectionDesign` | Sammlungsdesign | The overall design of the collection that explains how the collection was/is built up. |
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `identifier:bbmri-eric-id` | BBMRI-ERIC ID | Eindeutige Kennung im BBMRI-ERIC-Netzwerk. |
 | `name` | Name | Der vollständige Name der Sammlung oder Biobank. |
@@ -84,7 +84,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Teil von | Verweist auf eine übergeordnete Sammlung oder Biobank, zu der diese gehört. |
 | `contact` | Contact for the organization for a certain purpose | Contact for the organization for a certain purpose. |
 | `contact:forschungskontakt` | Contact for the organization for a certain purpose | Contact for the organization for a certain purpose. |
-| `contact:forschungskontakt.extension:rolle` | MII EX Biobank Rolle des Kontaktes | Mittels dieser Extension soll die Rolle der Kontaktperson in der probenverwaltenden Organisation angegeben werden, z.B. Principal Investigator, Direktor usw. |
+| `contact:forschungskontakt.extension:rolle` | rolle | Mittels dieser Extension soll die Rolle der Kontaktperson in der probenverwaltenden Organisation angegeben werden, z.B. Principal Investigator, Direktor usw. |
 
 #### Specimen Bioprobe Core (Specimen)
 
@@ -92,22 +92,22 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
 |---|---|---|---|---|---|
-| `extension:probenebene` |  |  | Erweiterung | FHIR-Erweiterung. |  |
+| `extension:probenebene` |  |  | Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |  |
 | `identifier` | Proben-ID | Einrichtungsinterner Identifier der Probe | Proben-ID | Einrichtungsinterner Identifier der Probe. |  |
 | `status` | Verfuegbarkeitsstatus | Status der Probe / des Materials hinsichtlich der Verfügbarkeit | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |  |
 | `type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Probenart | Die Art der Probe, codiert in SNOMED CT. | ✓ |
-| `type.coding:sct` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Code defined by a terminology system | A reference to a code defined by a terminology system. |  |
+| `type.coding:sct` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | SNOMED CT | Kodierung nach SNOMED CT. |  |
 | `subject` |  |  | Patient:in | Verweis auf die Person, von der die Probe stammt. |  |
 | `receivedTime` |  |  | The time when specimen was received for processing | Time when specimen was received for processing or testing. |  |
 | `parent` | Entstanden-aus | Referenz auf Bioprobe | Ist gewonnen aus | Referenz auf eine übergeordnete Probe, aus der diese Probe gewonnen wurde. |  |
 | `request` |  |  | Entnahme-ID | Der Identifier der Probenentnahme. |  |
 | `collection` | Probenentnahme | Informationen zur Entnahme der Probe | Probenentnahme | Informationen über den Prozess der Probenentnahme, einschließlich Entnahmezeitpunkt und -stelle. | ✓ |
-| `collection.extension:einstellungBlutversorgung` | Probenentnahme | Informationen zur Entnahme der Probe | MII EX Biobank Einstellung Blutversorgung | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |  |
+| `collection.extension:einstellungBlutversorgung` | Probenentnahme | Informationen zur Entnahme der Probe | Einstellung Blutversorgung | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |  |
 | `processing` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Probenverarbeitung | Details zur Verarbeitung der Probe, einschließlich Prozeduren und Verarbeitungszeitraum. |  |
-| `processing.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |  |
+| `processing.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |  |
 | `processing.time[x]:timePeriod` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Verarbeitungszeitraum | Der Zeitraum, in dem die Probe verarbeitet wurde. |  |
 | `processing:lagerprozess` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Processing and processing step details | Details concerning processing and processing steps for the specimen. |  |
-| `processing:lagerprozess.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |  |
+| `processing:lagerprozess.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |  |
 | `container` | Container | Probenbehältnis | Probenbehältnis | Informationen über den Behälter, in dem die Probe aufbewahrt wird. |  |
 | `note` | Projektverwendung, SonstigeEigenschaften | Freitextangabe zur Verwendung der Probe in Projekten | Projektnutzung | Freitextangabe zur Verwendung der Probe in spezifischen Projekten. |  |
 
@@ -117,27 +117,27 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `extension:probenebene` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:probenebene` |  |  | Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
 | `extension:festgestellteDiagnose` |  |  | Festgestellte Diagnose | Verweis auf eine Diagnose, für die Material in der Probe enthalten ist. |
 | `extension:gehoertZu` |  |  | Verwaltende Organisation | Zuordnung der Probe zu einer Sammlung oder Biobank, die für die Verwaltung verantwortlich ist. |
-| `extension:anzahlAliquots` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:anzahlAliquots` |  |  | Anzahl Aliquots | Die Extension ermöglicht es, die Anzahl der vorhandenen Aliquots zu einer Aliquot-Gruppe anzugeben. |
 | `identifier` | Proben-ID | Einrichtungsinterner Identifier der Probe | Proben-ID | Einrichtungsinterner Identifier der Probe. |
 | `status` | Verfuegbarkeitsstatus | Status der Probe / des Materials hinsichtlich der Verfügbarkeit | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |
 | `type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Probenart | Die Art der Probe, codiert in SNOMED CT. |
-| `type.coding:sct` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `type.coding:sct` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | SNOMED CT | Kodierung nach SNOMED CT. |
 | `type.coding:miabis-type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
 | `subject` |  |  | Patient:in | Verweis auf die Person, von der die Probe stammt. |
 | `receivedTime` |  |  | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
 | `parent` | Entstanden-aus | Referenz auf Bioprobe | Ist gewonnen aus | Referenz auf eine übergeordnete Probe, aus der diese Probe gewonnen wurde. |
 | `request` |  |  | Entnahme-ID | Der Identifier der Probenentnahme. |
 | `collection` | Probenentnahme | Informationen zur Entnahme der Probe | Probenentnahme | Informationen über den Prozess der Probenentnahme, einschließlich Entnahmezeitpunkt und -stelle. |
-| `collection.extension:einstellungBlutversorgung` | Probenentnahme | Informationen zur Entnahme der Probe | MII EX Biobank Einstellung Blutversorgung | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
+| `collection.extension:einstellungBlutversorgung` | Probenentnahme | Informationen zur Entnahme der Probe | Einstellung Blutversorgung | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
 | `processing` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Probenverarbeitung | Details zur Verarbeitung der Probe, einschließlich Prozeduren und Verarbeitungszeitraum. |
-| `processing.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
-| `processing.extension:temperature-miabis` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Sample storage temperature | The long-term temperature at which the sample is stored after preparation, based on SPREC v3 |
+| `processing.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing.extension:temperature-miabis` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | temperature-miabis | The long-term temperature at which the sample is stored after preparation, based on SPREC v3 |
 | `processing.time[x]:timePeriod` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Verarbeitungszeitraum | Der Zeitraum, in dem die Probe verarbeitet wurde. |
 | `processing:lagerprozess` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
-| `processing:lagerprozess.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing:lagerprozess.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
 | `container` | Container | Probenbehältnis | Probenbehältnis | Informationen über den Behälter, in dem die Probe aufbewahrt wird. |
 | `note` | Projektverwendung, SonstigeEigenschaften | Freitextangabe zur Verwendung der Probe in Projekten | Projektnutzung | Freitextangabe zur Verwendung der Probe in spezifischen Projekten. |
 
@@ -147,30 +147,30 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `extension:probenebene` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:probenebene` |  |  | Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
 | `extension:festgestellteDiagnose` |  |  | Festgestellte Diagnose | Verweis auf eine Diagnose, für die Material in der Probe enthalten ist. |
 | `extension:gehoertZu` |  |  | Verwaltende Organisation | Zuordnung der Probe zu einer Sammlung oder Biobank, die für die Verwaltung verantwortlich ist. |
-| `extension:anzahlAliquots` |  |  | Erweiterung | FHIR-Erweiterung. |
-| `extension:kulturprotokoll` |  |  | Erweiterung | FHIR-Erweiterung. |
-| `extension:modifikationen` |  |  | Erweiterung | FHIR-Erweiterung. |
-| `extension:anzahlPassagen` |  |  | Erweiterung | FHIR-Erweiterung. |
+| `extension:anzahlAliquots` |  |  | Anzahl Aliquots | Die Extension ermöglicht es, die Anzahl der vorhandenen Aliquots zu einer Aliquot-Gruppe anzugeben. |
+| `extension:kulturprotokoll` |  |  | Kulturprotokoll | Protokoll der Kultur der Zellinie oder des Organiods. |
+| `extension:modifikationen` |  |  | Zelllinien-Modifikationen | Erweiterung zur Beschreibung von Modifikationen an Zelllinien, einschließlich Art der Modifikation, Zielgen und Referenz zum Protokoll. |
+| `extension:anzahlPassagen` |  |  | Anzahl Passagen | Zahl der Passagen, die die Zellinie oder das Organiod durchlaufen hat. |
 | `identifier` | Proben-ID | Einrichtungsinterner Identifier der Probe | Proben-ID | Einrichtungsinterner Identifier der Probe. |
 | `status` | Verfuegbarkeitsstatus | Status der Probe / des Materials hinsichtlich der Verfügbarkeit | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |
 | `type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Probenart | Die Art der Probe, codiert in SNOMED CT. |
-| `type.coding:sct` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `type.coding:sct` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | SNOMED CT | Kodierung nach SNOMED CT. |
 | `type.coding:miabis-type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Code defined by a terminology system | A reference to a code defined by a terminology system. |
 | `subject` |  |  | Patient:in | Verweis auf die Person, von der die Probe stammt. |
 | `receivedTime` |  |  | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
 | `parent` | Entstanden-aus | Referenz auf Bioprobe | Ist gewonnen aus | Referenz auf eine übergeordnete Probe, aus der diese Probe gewonnen wurde. |
 | `request` |  |  | Entnahme-ID | Der Identifier der Probenentnahme. |
 | `collection` | Probenentnahme | Informationen zur Entnahme der Probe | Probenentnahme | Informationen über den Prozess der Probenentnahme, einschließlich Entnahmezeitpunkt und -stelle. |
-| `collection.extension:einstellungBlutversorgung` | Probenentnahme | Informationen zur Entnahme der Probe | MII EX Biobank Einstellung Blutversorgung | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
+| `collection.extension:einstellungBlutversorgung` | Probenentnahme | Informationen zur Entnahme der Probe | Einstellung Blutversorgung | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
 | `processing` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Probenverarbeitung | Details zur Verarbeitung der Probe, einschließlich Prozeduren und Verarbeitungszeitraum. |
-| `processing.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
-| `processing.extension:temperature-miabis` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Sample storage temperature | The long-term temperature at which the sample is stored after preparation, based on SPREC v3 |
+| `processing.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing.extension:temperature-miabis` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | temperature-miabis | The long-term temperature at which the sample is stored after preparation, based on SPREC v3 |
 | `processing.time[x]:timePeriod` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Verarbeitungszeitraum | Der Zeitraum, in dem die Probe verarbeitet wurde. |
 | `processing:lagerprozess` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
-| `processing:lagerprozess.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing:lagerprozess.extension:temperaturbedingungen` | Verarbeitungsprozess | Prozedur der Probenbearbeitung | temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
 | `container` | Container | Probenbehältnis | Probenbehältnis | Informationen über den Behälter, in dem die Probe aufbewahrt wird. |
 | `note` | Projektverwendung, SonstigeEigenschaften | Freitextangabe zur Verwendung der Probe in Projekten | Projektnutzung | Freitextangabe zur Verwendung der Probe in spezifischen Projekten. |
 
@@ -242,8 +242,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code` | Code | Coding of the content. |
 | `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `effective[x]` | Effective | Date or period the observation refers to. |
-| `component:type` | Component | Sub-observation component. |
-| `component:result` | Component | Sub-observation component. |
+| `component:type` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
+| `component:result` | Component results | Some observations have multiple component observations. These component observations are expressed as separate code value pairs that share the same attributes. Examples include systolic and diastol... |
 
 </details>
 
@@ -264,8 +264,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension:beschreibung` | Description of the collection/biobank | A free-text description of the collection/biobank, which can be displayed in a search, for example. |
-| `extension:collectionSetting` | Extension | FHIR extension. |
-| `extension:collectionDesign` | Extension | FHIR extension. |
+| `extension:collectionSetting` | Collection setting | The context in which the sample collection was/is conducted. |
+| `extension:collectionDesign` | Collection design | The overall design of the collection that explains how the collection was/is built up. |
 | `identifier` | Identifier | Identifier for this resource. |
 | `identifier:bbmri-eric-id` | BBMRI-ERIC ID | Unique identifier in the BBMRI-ERIC network. |
 | `name` | Name | The full name of the collection or biobank. |
@@ -273,7 +273,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `partOf` | Part of | Refers to a parent collection or biobank to which this belongs. |
 | `contact` | Contact for the organization for a certain purpose | Contact for the organization for a certain purpose. |
 | `contact:forschungskontakt` | Contact for the organization for a certain purpose | Contact for the organization for a certain purpose. |
-| `contact:forschungskontakt.extension:rolle` | MII EX Biobank Rolle des Kontaktes | Mittels dieser Extension soll die Rolle der Kontaktperson in der probenverwaltenden Organisation angegeben werden, z.B. Principal Investigator, Direktor usw. |
+| `contact:forschungskontakt.extension:rolle` | Role | Mittels dieser Extension soll die Rolle der Kontaktperson in der probenverwaltenden Organisation angegeben werden, z.B. Principal Investigator, Direktor usw. |
 
 </details>
 
@@ -282,22 +282,22 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:probenebene` | Extension | FHIR extension. |
+| `extension:probenebene` | Specimen level | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
 | `identifier` | Specimen ID | Internal identifier of the specimen at the institution. |
 | `status` | Availability status | The status of the specimen in terms of its availability for research. |
 | `type` | Specimen type | The type of the specimen, encoded as SNOMED CT code. |
-| `type.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `type.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `subject` | Patient | Reference to the person from whom the specimen was collected. |
 | `receivedTime` | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
 | `parent` | Derived from | Reference to a parent specimen from which this specimen was derived. |
 | `request` | Collection ID | The identifier for the specimen collection. |
 | `collection` | Specimen sampling | Information about the specimen collection process, including collection time and site. |
-| `collection.extension:einstellungBlutversorgung` | MII EX Biobank Einstellung Blutversorgung | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
+| `collection.extension:einstellungBlutversorgung` | Blood supply discontinuation | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
 | `processing` | Specimen processing | Details about the processing of the specimen, including procedures and processing period. |
-| `processing.extension:temperaturbedingungen` | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing.extension:temperaturbedingungen` | Temperature conditions | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
 | `processing.time[x]:timePeriod` | Processing period | The time period during which the specimen was processed. |
 | `processing:lagerprozess` | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
-| `processing:lagerprozess.extension:temperaturbedingungen` | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing:lagerprozess.extension:temperaturbedingungen` | Temperature conditions | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
 | `container` | Specimen container | Information about the container in which the specimen is stored. |
 | `note` | Project usage | Free-text information about the use of the specimen in specific projects. |
 
@@ -308,27 +308,27 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:probenebene` | Extension | FHIR extension. |
+| `extension:probenebene` | Specimen level | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
 | `extension:festgestellteDiagnose` | Diagnosed condition | Reference to a diagnosis for which material is present in the specimen. |
 | `extension:gehoertZu` | Managing organization | Assignment of the specimen to a collection or biobank responsible for its management. |
-| `extension:anzahlAliquots` | Extension | FHIR extension. |
+| `extension:anzahlAliquots` | Number of aliquots | Die Extension ermöglicht es, die Anzahl der vorhandenen Aliquots zu einer Aliquot-Gruppe anzugeben. |
 | `identifier` | Specimen ID | Internal identifier of the specimen at the institution. |
 | `status` | Availability status | The status of the specimen in terms of its availability for research. |
 | `type` | Specimen type | The type of the specimen, encoded as SNOMED CT code. |
-| `type.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `type.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `type.coding:miabis-type` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
 | `subject` | Patient | Reference to the person from whom the specimen was collected. |
 | `receivedTime` | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
 | `parent` | Derived from | Reference to a parent specimen from which this specimen was derived. |
 | `request` | Collection ID | The identifier for the specimen collection. |
 | `collection` | Specimen sampling | Information about the specimen collection process, including collection time and site. |
-| `collection.extension:einstellungBlutversorgung` | MII EX Biobank Einstellung Blutversorgung | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
+| `collection.extension:einstellungBlutversorgung` | Blood supply discontinuation | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
 | `processing` | Specimen processing | Details about the processing of the specimen, including procedures and processing period. |
-| `processing.extension:temperaturbedingungen` | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
-| `processing.extension:temperature-miabis` | Sample storage temperature | The long-term temperature at which the sample is stored after preparation, based on SPREC v3 |
+| `processing.extension:temperaturbedingungen` | Temperature conditions | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing.extension:temperature-miabis` | Temperature (MIABIS) | The long-term temperature at which the sample is stored after preparation, based on SPREC v3 |
 | `processing.time[x]:timePeriod` | Processing period | The time period during which the specimen was processed. |
 | `processing:lagerprozess` | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
-| `processing:lagerprozess.extension:temperaturbedingungen` | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing:lagerprozess.extension:temperaturbedingungen` | Temperature conditions | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
 | `container` | Specimen container | Information about the container in which the specimen is stored. |
 | `note` | Project usage | Free-text information about the use of the specimen in specific projects. |
 
@@ -339,30 +339,30 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
-| `extension:probenebene` | Extension | FHIR extension. |
+| `extension:probenebene` | Specimen level | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
 | `extension:festgestellteDiagnose` | Diagnosed condition | Reference to a diagnosis for which material is present in the specimen. |
 | `extension:gehoertZu` | Managing organization | Assignment of the specimen to a collection or biobank responsible for its management. |
-| `extension:anzahlAliquots` | Extension | FHIR extension. |
-| `extension:kulturprotokoll` | Extension | FHIR extension. |
-| `extension:modifikationen` | Extension | FHIR extension. |
-| `extension:anzahlPassagen` | Extension | FHIR extension. |
+| `extension:anzahlAliquots` | Number of aliquots | Die Extension ermöglicht es, die Anzahl der vorhandenen Aliquots zu einer Aliquot-Gruppe anzugeben. |
+| `extension:kulturprotokoll` | Culture protocol | Protokoll der Kultur der Zellinie oder des Organiods. |
+| `extension:modifikationen` | Cell line modifications | Erweiterung zur Beschreibung von Modifikationen an Zelllinien, einschließlich Art der Modifikation, Zielgen und Referenz zum Protokoll. |
+| `extension:anzahlPassagen` | Number of passages | Zahl der Passagen, die die Zellinie oder das Organiod durchlaufen hat. |
 | `identifier` | Specimen ID | Internal identifier of the specimen at the institution. |
 | `status` | Availability status | The status of the specimen in terms of its availability for research. |
 | `type` | Specimen type | The type of the specimen, encoded as SNOMED CT code. |
-| `type.coding:sct` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
+| `type.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `type.coding:miabis-type` | Code defined by a terminology system | A reference to a code defined by a terminology system. |
 | `subject` | Patient | Reference to the person from whom the specimen was collected. |
 | `receivedTime` | The time when specimen was received for processing | Time when specimen was received for processing or testing. |
 | `parent` | Derived from | Reference to a parent specimen from which this specimen was derived. |
 | `request` | Collection ID | The identifier for the specimen collection. |
 | `collection` | Specimen sampling | Information about the specimen collection process, including collection time and site. |
-| `collection.extension:einstellungBlutversorgung` | MII EX Biobank Einstellung Blutversorgung | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
+| `collection.extension:einstellungBlutversorgung` | Blood supply discontinuation | Zeitpunkt der Einstellung der Bluversorgung während der Entnahme. Wird z.B. für die Berechnung der kalten bzw. warem Ischämiezeiten benötigt. |
 | `processing` | Specimen processing | Details about the processing of the specimen, including procedures and processing period. |
-| `processing.extension:temperaturbedingungen` | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
-| `processing.extension:temperature-miabis` | Sample storage temperature | The long-term temperature at which the sample is stored after preparation, based on SPREC v3 |
+| `processing.extension:temperaturbedingungen` | Temperature conditions | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing.extension:temperature-miabis` | Temperature (MIABIS) | The long-term temperature at which the sample is stored after preparation, based on SPREC v3 |
 | `processing.time[x]:timePeriod` | Processing period | The time period during which the specimen was processed. |
 | `processing:lagerprozess` | Processing and processing step details | Details concerning processing and processing steps for the specimen. |
-| `processing:lagerprozess.extension:temperaturbedingungen` | MII EX Biobank Temperaturbedingungen | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
+| `processing:lagerprozess.extension:temperaturbedingungen` | Temperature conditions | Um zu einer Verabeitung oder Lagerung die jeweils herrschenden Temperaturbedingungen (in °C) anzugeben soll diese Extension verwendet werden. Dabei soll nach Möglichkeit immer ein Wertebereich inkl... |
 | `container` | Specimen container | Information about the container in which the specimen is stored. |
 | `note` | Project usage | Free-text information about the use of the specimen in specific projects. |
 

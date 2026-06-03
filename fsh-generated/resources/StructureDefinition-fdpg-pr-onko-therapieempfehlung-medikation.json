@@ -289,6 +289,37 @@
       {
         "id": "MedicationRequest.medication[x]:medicationCodeableConcept.coding",
         "path": "MedicationRequest.medication[x].coding",
+        "short": "Active substance",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Wirkstoff/Substanz"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Active substance"
+                }
+              ]
+            }
+          ]
+        },
         "_definition": {
           "extension": [
             {

@@ -9,6 +9,9 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie"
 * insert Translation(^title, en-US, Systemic Therapy)
 // --- Element Designations ---
 // Procedure.extension
+* extension ^short = "Extension"
+* insert Translation(extension ^short, de-DE, Erweiterung)
+* insert Translation(extension ^short, en-US, Extension)
 * extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
 * insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
 * insert Translation(extension ^definition, en-US, FHIR extension.)
@@ -181,6 +184,9 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie"
 * insert Translation(bodySite ^definition, de-DE, Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität.)
 * insert Translation(bodySite ^definition, en-US, The body site of the procedure using SNOMED CT including laterality.)
 // Procedure.bodySite.coding
+* bodySite.coding ^short = "Target site"
+* insert Translation(bodySite.coding ^short, de-DE, Zielgebiet)
+* insert Translation(bodySite.coding ^short, en-US, Target site)
 * bodySite.coding ^definition = "A reference to a code defined by a terminology system."
 * insert Translation(bodySite.coding ^definition, de-DE, Zielgebiet der Strahlentherapie gemäß oBDS 2021 §14.3.)
 * insert Translation(bodySite.coding ^definition, en-US, Target site of radiotherapy per oBDS 2021 §14.3.)

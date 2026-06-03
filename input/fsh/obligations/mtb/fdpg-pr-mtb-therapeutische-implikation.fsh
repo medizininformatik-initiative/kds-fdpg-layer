@@ -10,6 +10,8 @@ Description: "FDPG Profil - MII_PR_MTB_Therapeutische_Implikation"
 // --- Element Designations ---
 // Observation.extension:Evidenzgraduierung
 * extension[Evidenzgraduierung] ^short = "MII EX MTB Empfehlung Evidenzgraduierung"
+* insert Translation(extension[Evidenzgraduierung] ^short, de-DE, Empfehlung Evidenzgraduierung)
+* insert Translation(extension[Evidenzgraduierung] ^short, en-US, Evidence grade)
 // Observation.status
 * status ^short = "Status"
 * insert Translation(status ^short, de-DE, Status)

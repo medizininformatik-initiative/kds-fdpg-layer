@@ -96,7 +96,37 @@
           }
         ],
         "path": "Observation.extension",
-        "sliceName": "Evidenzgraduierung"
+        "sliceName": "Evidenzgraduierung",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Empfehlung Evidenzgraduierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Evidence grade"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Observation.status",

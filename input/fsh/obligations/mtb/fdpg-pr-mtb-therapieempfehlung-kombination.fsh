@@ -10,10 +10,16 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung_Kombination"
 // --- Element Designations ---
 // RequestGroup.extension:Prioritaet
 * extension[Prioritaet] ^short = "MII EX MTB Empfehlung Priorität"
+* insert Translation(extension[Prioritaet] ^short, de-DE, Priorität)
+* insert Translation(extension[Prioritaet] ^short, en-US, Priority)
 // RequestGroup.extension:Evidenzgraduierung
 * extension[Evidenzgraduierung] ^short = "MII EX MTB Empfehlung Evidenzgraduierung"
+* insert Translation(extension[Evidenzgraduierung] ^short, de-DE, Empfehlung Evidenzgraduierung)
+* insert Translation(extension[Evidenzgraduierung] ^short, en-US, Evidence grade)
 // RequestGroup.extension:Publikation
 * extension[Publikation] ^short = "MII EX MTB Empfehlung Publikation"
+* insert Translation(extension[Publikation] ^short, de-DE, Empfehlung Publikation)
+* insert Translation(extension[Publikation] ^short, en-US, Publication)
 // RequestGroup.identifier
 * identifier ^short = "Business identifier"
 * insert Translation(identifier ^short, de-DE, Identifikator)
@@ -22,6 +28,9 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung_Kombination"
 * insert Translation(identifier ^definition, de-DE, Identifikator dieser Ressource.)
 * insert Translation(identifier ^definition, en-US, Identifier for this resource.)
 // RequestGroup.status
+* status ^short = "Status"
+* insert Translation(status ^short, de-DE, draft | active | on-hold | revoked | completed | entered-in-error | unknown)
+* insert Translation(status ^short, en-US, Status)
 * status ^definition = "Status der Umsetzung der Therapieempfehlung"
 * insert Translation(status ^definition, de-DE, Status der Umsetzung der Therapieempfehlung)
 * insert Translation(status ^definition, en-US, Status of the resource.)

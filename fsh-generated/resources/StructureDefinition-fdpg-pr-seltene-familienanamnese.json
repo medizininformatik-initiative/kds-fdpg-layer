@@ -96,7 +96,37 @@
           }
         ],
         "path": "FamilyMemberHistory.extension",
-        "sliceName": "vonSEBetroffen"
+        "sliceName": "vonSEBetroffen",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Gibt an, ob das Familienmitglied von der gleichen seltenen Erkrankung betroffen ist"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Affected by same rare disease"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "FamilyMemberHistory.status",
@@ -2173,7 +2203,37 @@
           }
         ],
         "path": "FamilyMemberHistory.condition.extension",
-        "sliceName": "penetrance"
+        "sliceName": "penetrance",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "penetrance"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Penetrance"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "FamilyMemberHistory.condition.code",

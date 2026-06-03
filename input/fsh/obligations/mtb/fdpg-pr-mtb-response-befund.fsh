@@ -88,7 +88,13 @@ Description: "FDPG Profil - MII_PR_MTB_Response_Befund"
 * insert Translation(value[x][valueCodeableConcept].coding[oBDS] ^definition, de-DE, Gesamtbeurteilung im Verlauf gemäß 17.2 oBDS 2021.)
 * insert Translation(value[x][valueCodeableConcept].coding[oBDS] ^definition, en-US, Overall assessment during follow-up per oBDS 2021 §17.2.)
 // Observation.value[x]:valueCodeableConcept.coding:oBDS.system
+* value[x][valueCodeableConcept].coding[oBDS].system ^short = "oBDS system URL"
+* insert Translation(value[x][valueCodeableConcept].coding[oBDS].system ^short, de-DE, oBDS-System-URL)
+* insert Translation(value[x][valueCodeableConcept].coding[oBDS].system ^short, en-US, oBDS system URL)
 // Observation.value[x]:valueCodeableConcept.coding:oBDS.code
+* value[x][valueCodeableConcept].coding[oBDS].code ^short = "Coded value as oBDS"
+* insert Translation(value[x][valueCodeableConcept].coding[oBDS].code ^short, de-DE, Kodierter Wert als oBDS)
+* insert Translation(value[x][valueCodeableConcept].coding[oBDS].code ^short, en-US, Coded value as oBDS)
 // Observation.value[x]:valueCodeableConcept.coding:MTB
 * value[x][valueCodeableConcept].coding[MTB] ^short = "Response Beurteilung nach Recist oder Rano iM Rahmen des MTB"
 * insert Translation(value[x][valueCodeableConcept].coding[MTB] ^short, de-DE, Gesamtbeurteilung im Verlauf)
