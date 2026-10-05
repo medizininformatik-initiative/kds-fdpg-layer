@@ -6,7 +6,7 @@ Das Modul Laborbefund umfasst die Dokumentation von Laboruntersuchungen, deren E
 
 ## Quellmodul
 
-[MII KDS Laborbefund](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund/2026.0.1)
+[MII KDS Laborbefund](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.laborbefund/2027.0.0-ballot)
 
 ## FDPG Profile
 

@@ -79,6 +79,12 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Radiologische_Beobachtung"
 * value[x] ^definition = "Wert der Analyse"
 * insert Translation(value[x] ^definition, de-DE, Wert der Analyse)
 * insert Translation(value[x] ^definition, en-US, Value of the analysis)
+// Observation.value[x]:valueQuantity.unit
+* value[x][valueQuantity].unit ^short = "Unit representation"
+// Observation.value[x]:valueQuantity.system
+* value[x][valueQuantity].system ^short = "System that defines coded unit form"
+// Observation.value[x]:valueQuantity.code
+* value[x][valueQuantity].code ^short = "Coded form of the unit"
 // Observation.bodySite
 * bodySite ^short = "SNOMED CT Code"
 * insert Translation(bodySite ^short, de-DE, SNOMED CT Code)

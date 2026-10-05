@@ -91,6 +91,8 @@ Description: "FDPG Profil - MII_PR_MTB_Diagnostische_Implikation"
 * component[clinical-significance] ^short = "Klinische Signifikanz"
 * insert Translation(component[clinical-significance] ^short, de-DE, Klinische Signifikanz)
 * insert Translation(component[clinical-significance] ^short, en-US, Clinical significance)
+* component[clinical-significance] ^definition = "Interpretation oder Einschätzung einer oder mehrerer genetischer Varianten."
+* insert Translation(component[clinical-significance] ^definition, de-DE, Interpretation oder Einschaetzung einer oder mehrerer genetischer Varianten.)
 // Observation.component:predicted-phenotype
 * component[predicted-phenotype] ^short = "Vorhergesagter Phänotyp"
 * insert Translation(component[predicted-phenotype] ^short, de-DE, Vorhergesagter Phänotyp)

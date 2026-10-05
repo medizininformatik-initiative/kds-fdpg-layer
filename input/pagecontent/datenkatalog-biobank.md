@@ -2,7 +2,7 @@
 
 Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen und englischen Beschreibungen. Die Obligations werden auf der Seite [Obligations](obligations.html) beschrieben.
 
-**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.biobank](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.biobank/2026.0.1)
+**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.biobank](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.biobank/2027.0.0-ballot)
 
 #### Observation DNA Konzentration (Observation)
 
@@ -75,7 +75,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
 | `extension:beschreibung` | Beschreibung der Sammlung/Biobank | Eine Freitextbeschreibung der Sammlung/Biobank, die z.B. in einer Suche angezeigt werden kann. |
-| `extension:collectionSetting` | Probenentnahme-Setting | The context in which the sample collection was/is conducted. |
+| `extension:collectionSetting` | Probenentnahme-Setting | The context in which the Sample Collection was/is conducted. |
 | `extension:collectionDesign` | Sammlungsdesign | The overall design of the collection that explains how the collection was/is built up. |
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `identifier:bbmri-eric-id` | BBMRI-ERIC ID | Eindeutige Kennung im BBMRI-ERIC-Netzwerk. |
@@ -93,6 +93,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
 |---|---|---|---|---|---|
 | `extension:probenebene` |  |  | Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |  |
+| `extension:infektiositaetsstatus` |  |  | MII EX Biobank Infektiositätsstatus | Extension zur Angabe des Infektiositätsstatus einer Probe anhand der Biosafety-Level-Einstufung (BSL-1 bis BSL-4, SNOMED CT) bzw. der Angabe, dass keine Infektionsgefahr bekannt ist. |  |
+| `extension:focus` |  |  | Specimen Focus | Specimen focus, Extension to represent the entity from which the specimen is collected when it is not the subject of record. |  |
 | `identifier` | Proben-ID | Einrichtungsinterner Identifier der Probe | Proben-ID | Einrichtungsinterner Identifier der Probe. |  |
 | `status` | Verfuegbarkeitsstatus | Status der Probe / des Materials hinsichtlich der Verfügbarkeit | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |  |
 | `type` | Probenart | Art der Probe; SCT verpflichtend; Beschränkung auf Specimen ValueSet erwünscht. | Probenart | Die Art der Probe, codiert in SNOMED CT. | ✓ |
@@ -118,6 +120,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
 | `extension:probenebene` |  |  | Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
+| `extension:infektiositaetsstatus` |  |  | MII EX Biobank Infektiositätsstatus | Extension zur Angabe des Infektiositätsstatus einer Probe anhand der Biosafety-Level-Einstufung (BSL-1 bis BSL-4, SNOMED CT) bzw. der Angabe, dass keine Infektionsgefahr bekannt ist. |
+| `extension:focus` |  |  | Specimen Focus | Specimen focus, Extension to represent the entity from which the specimen is collected when it is not the subject of record. |
 | `extension:festgestellteDiagnose` |  |  | Festgestellte Diagnose | Verweis auf eine Diagnose, für die Material in der Probe enthalten ist. |
 | `extension:gehoertZu` |  |  | Verwaltende Organisation | Zuordnung der Probe zu einer Sammlung oder Biobank, die für die Verwaltung verantwortlich ist. |
 | `extension:anzahlAliquots` |  |  | Anzahl Aliquots | Die Extension ermöglicht es, die Anzahl der vorhandenen Aliquots zu einer Aliquot-Gruppe anzugeben. |
@@ -148,6 +152,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
 | `extension:probenebene` |  |  | Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
+| `extension:infektiositaetsstatus` |  |  | MII EX Biobank Infektiositätsstatus | Extension zur Angabe des Infektiositätsstatus einer Probe anhand der Biosafety-Level-Einstufung (BSL-1 bis BSL-4, SNOMED CT) bzw. der Angabe, dass keine Infektionsgefahr bekannt ist. |
+| `extension:focus` |  |  | Specimen Focus | Specimen focus, Extension to represent the entity from which the specimen is collected when it is not the subject of record. |
 | `extension:festgestellteDiagnose` |  |  | Festgestellte Diagnose | Verweis auf eine Diagnose, für die Material in der Probe enthalten ist. |
 | `extension:gehoertZu` |  |  | Verwaltende Organisation | Zuordnung der Probe zu einer Sammlung oder Biobank, die für die Verwaltung verantwortlich ist. |
 | `extension:anzahlAliquots` |  |  | Anzahl Aliquots | Die Extension ermöglicht es, die Anzahl der vorhandenen Aliquots zu einer Aliquot-Gruppe anzugeben. |
@@ -264,7 +270,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension:beschreibung` | Description of the collection/biobank | A free-text description of the collection/biobank, which can be displayed in a search, for example. |
-| `extension:collectionSetting` | Collection setting | The context in which the sample collection was/is conducted. |
+| `extension:collectionSetting` | Collection setting | The context in which the Sample Collection was/is conducted. |
 | `extension:collectionDesign` | Collection design | The overall design of the collection that explains how the collection was/is built up. |
 | `identifier` | Identifier | Identifier for this resource. |
 | `identifier:bbmri-eric-id` | BBMRI-ERIC ID | Unique identifier in the BBMRI-ERIC network. |
@@ -283,6 +289,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension:probenebene` | Specimen level | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
+| `extension:infektiositaetsstatus` | MII EX Biobank Infektiositätsstatus | Extension zur Angabe des Infektiositätsstatus einer Probe anhand der Biosafety-Level-Einstufung (BSL-1 bis BSL-4, SNOMED CT) bzw. der Angabe, dass keine Infektionsgefahr bekannt ist. |
+| `extension:focus` | Specimen Focus | Specimen focus, Extension to represent the entity from which the specimen is collected when it is not the subject of record. |
 | `identifier` | Specimen ID | Internal identifier of the specimen at the institution. |
 | `status` | Availability status | The status of the specimen in terms of its availability for research. |
 | `type` | Specimen type | The type of the specimen, encoded as SNOMED CT code. |
@@ -309,6 +317,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension:probenebene` | Specimen level | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
+| `extension:infektiositaetsstatus` | MII EX Biobank Infektiositätsstatus | Extension zur Angabe des Infektiositätsstatus einer Probe anhand der Biosafety-Level-Einstufung (BSL-1 bis BSL-4, SNOMED CT) bzw. der Angabe, dass keine Infektionsgefahr bekannt ist. |
+| `extension:focus` | Specimen Focus | Specimen focus, Extension to represent the entity from which the specimen is collected when it is not the subject of record. |
 | `extension:festgestellteDiagnose` | Diagnosed condition | Reference to a diagnosis for which material is present in the specimen. |
 | `extension:gehoertZu` | Managing organization | Assignment of the specimen to a collection or biobank responsible for its management. |
 | `extension:anzahlAliquots` | Number of aliquots | Die Extension ermöglicht es, die Anzahl der vorhandenen Aliquots zu einer Aliquot-Gruppe anzugeben. |
@@ -340,6 +350,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension:probenebene` | Specimen level | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
+| `extension:infektiositaetsstatus` | MII EX Biobank Infektiositätsstatus | Extension zur Angabe des Infektiositätsstatus einer Probe anhand der Biosafety-Level-Einstufung (BSL-1 bis BSL-4, SNOMED CT) bzw. der Angabe, dass keine Infektionsgefahr bekannt ist. |
+| `extension:focus` | Specimen Focus | Specimen focus, Extension to represent the entity from which the specimen is collected when it is not the subject of record. |
 | `extension:festgestellteDiagnose` | Diagnosed condition | Reference to a diagnosis for which material is present in the specimen. |
 | `extension:gehoertZu` | Managing organization | Assignment of the specimen to a collection or biobank responsible for its management. |
 | `extension:anzahlAliquots` | Number of aliquots | Die Extension ermöglicht es, die Anzahl der vorhandenen Aliquots zu einer Aliquot-Gruppe anzugeben. |

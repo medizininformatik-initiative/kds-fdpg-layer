@@ -96,10 +96,10 @@ Description: "FDPG Profil - MII_PR_MTB_Copy_Number_Variant"
 * insert Translation(component[conclusion-string] ^definition, en-US, Textual summary of the therapeutic implication.)
 // Observation.component:gene-studied
 * component[gene-studied] ^short = "Reported affected genes"
-* insert Translation(component[gene-studied] ^short, de-DE, Untersuchtes Gen)
+* insert Translation(component[gene-studied] ^short, de-DE, Berichtete betroffene Gene)
 * insert Translation(component[gene-studied] ^short, en-US, Gene studied)
 * component[gene-studied] ^definition = "Reported affected genes"
-* insert Translation(component[gene-studied] ^definition, de-DE, Das untersuchte Gen\, identifiziert durch HGNC-ID.)
+* insert Translation(component[gene-studied] ^definition, de-DE, Berichtete betroffene Gene)
 * insert Translation(component[gene-studied] ^definition, en-US, The gene studied\, identified by HGNC ID.)
 // Observation.component:gene-studied.code
 * component[gene-studied].code ^short = "48018-6"
@@ -124,7 +124,7 @@ Description: "FDPG Profil - MII_PR_MTB_Copy_Number_Variant"
 * insert Translation(component[chromosome-identifier] ^short, de-DE, Chromosom)
 * insert Translation(component[chromosome-identifier] ^short, en-US, Chromosome)
 * component[chromosome-identifier] ^definition = "Chromosome auf dem sich die Variante befindet (chr1 - chr22, chrX, chrY)."
-* insert Translation(component[chromosome-identifier] ^definition, de-DE, Das betroffene Chromosom.)
+* insert Translation(component[chromosome-identifier] ^definition, de-DE, Chromosom auf dem sich die Variante befindet - chr1 - chr22 - chrX - chrY)
 * insert Translation(component[chromosome-identifier] ^definition, en-US, The affected chromosome.)
 // Observation.component:representative-coding-hgvs
 * component[representative-coding-hgvs] ^short = "DNA-Änderung c.HGVS"
@@ -156,10 +156,10 @@ Description: "FDPG Profil - MII_PR_MTB_Copy_Number_Variant"
 * insert Translation(component[representative-transcript-ref-seq] ^definition, en-US, Transcript reference sequence ID\, e.g. NM_004333.4.)
 // Observation.component:exact-start-end
 * component[exact-start-end] ^short = "Positionsbereich"
-* insert Translation(component[exact-start-end] ^short, de-DE, Exakte Start-/Endposition)
+* insert Translation(component[exact-start-end] ^short, de-DE, Positionsbereich)
 * insert Translation(component[exact-start-end] ^short, en-US, Exact start/end position)
 * component[exact-start-end] ^definition = "Positionsbereich der genetischen Variante."
-* insert Translation(component[exact-start-end] ^definition, de-DE, Exakte genomische Koordinaten der Variante — Start und Ende.)
+* insert Translation(component[exact-start-end] ^definition, de-DE, Positionsbereich der genetischen Variante.)
 * insert Translation(component[exact-start-end] ^definition, en-US, Exact genomic coordinates of the variant — start and end.)
 // Observation.component:exact-start-end.code
 * component[exact-start-end].code ^short = "81254-5"
@@ -251,10 +251,10 @@ Description: "FDPG Profil - MII_PR_MTB_Copy_Number_Variant"
 * insert Translation(component[representative-protein-hgvs] ^definition, en-US, Amino acid change in HGVS nomenclature at protein level.)
 // Observation.component:copy-number
 * component[copy-number] ^short = "Total Copy Number"
-* insert Translation(component[copy-number] ^short, de-DE, Kopienzahl)
+* insert Translation(component[copy-number] ^short, de-DE, Gesamtkopienzahl)
 * insert Translation(component[copy-number] ^short, en-US, Copy number)
 * component[copy-number] ^definition = "Total Copy Number"
-* insert Translation(component[copy-number] ^definition, de-DE, Anzahl der Kopien eines genomischen Abschnitts.)
+* insert Translation(component[copy-number] ^definition, de-DE, Gesamtkopienzahl)
 * insert Translation(component[copy-number] ^definition, en-US, Number of copies of a genomic region.)
 // Observation.component:copy-number.code
 * component[copy-number].code ^short = "82155-3"

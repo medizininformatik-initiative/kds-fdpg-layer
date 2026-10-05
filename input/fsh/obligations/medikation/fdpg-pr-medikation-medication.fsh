@@ -87,6 +87,12 @@ Description: "FDPG Profil - MII_PR_Medikation_Medication"
 * insert Translation(form.coding[EDQM].code ^short, en-US, EDQM Standard Terms code)
 // Medication.ingredient
 * ingredient ^short = "Bestandteil"
+// Medication.ingredient.extension
+* ingredient.extension ^short = "Extension"
+// Medication.ingredient.extension:Wirkstofftyp
+* ingredient.extension[Wirkstofftyp] ^short = "MII EX Medikation Wirkstofftyp"
+// Medication.ingredient.extension:Wirkstoffrelation
+* ingredient.extension[Wirkstoffrelation] ^short = "MII EX Medikation Wirkstoffrelation"
 // Medication.ingredient.item[x]:itemReference
 * ingredient.item[x][itemReference] ^short = "The actual ingredient or content"
 // Medication.ingredient.item[x]:itemCodeableConcept

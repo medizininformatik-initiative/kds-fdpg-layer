@@ -22,6 +22,10 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Bildgebungsprozedur"
 * extension[Dokumentationsdatum] ^definition = "Dokumentationsdatum der Prozedur, falls abweichend vom Durchführungsdatum"
 * insert Translation(extension[Dokumentationsdatum] ^definition, de-DE, Dokumentationsdatum der Prozedur\, falls abweichend vom Durchführungsdatum)
 * insert Translation(extension[Dokumentationsdatum] ^definition, en-US, The date the procedure was documented\, if different from the performed date)
+// Procedure.extension:Dokumentationsdatum.url
+* extension[Dokumentationsdatum].url ^short = "identifies the meaning of the extension"
+// Procedure.extension:Dokumentationsdatum.value[x]
+* extension[Dokumentationsdatum].value[x] ^short = "Value of extension"
 // Procedure.extension:durchfuehrungsabsicht
 * extension[durchfuehrungsabsicht] ^short = "Durchführungsabsicht"
 * insert Translation(extension[durchfuehrungsabsicht] ^short, de-DE, Durchführungsabsicht)
@@ -29,6 +33,10 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Bildgebungsprozedur"
 * extension[durchfuehrungsabsicht] ^definition = "therapeutisch | palliativ | diagnostisch | präventiv | rehabilitativ | andere"
 * insert Translation(extension[durchfuehrungsabsicht] ^definition, de-DE, therapeutisch | palliativ | diagnostisch | präventiv | rehabilitativ | andere)
 * insert Translation(extension[durchfuehrungsabsicht] ^definition, en-US, therapeutic | palliative | diagnostic | preventive | rehabilitative | other)
+// Procedure.extension:durchfuehrungsabsicht.url
+* extension[durchfuehrungsabsicht].url ^short = "identifies the meaning of the extension"
+// Procedure.extension:durchfuehrungsabsicht.value[x]
+* extension[durchfuehrungsabsicht].value[x] ^short = "Value of extension"
 // Procedure.basedOn
 * basedOn ^short = "Basiert auf"
 * insert Translation(basedOn ^short, de-DE, Basiert auf)
@@ -70,8 +78,8 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Bildgebungsprozedur"
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
 * code ^definition = "Code aus LOINC"
-* insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
-* insert Translation(code ^definition, en-US, Code from OPS - Operationen- und Prozedurenschlüssel\, SNOMED CT or other.)
+* insert Translation(code ^definition, de-DE, Code aus LOINC)
+* insert Translation(code ^definition, en-US, Code from LOINC)
 // Procedure.code.coding:ops
 * code.coding[ops] ^short = "Operationen- und Prozedurenschlüssel (OPS) Code"
 * insert Translation(code.coding[ops] ^short, de-DE, OPS Code)
@@ -79,6 +87,10 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Bildgebungsprozedur"
 * code.coding[ops] ^definition = "Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel (OPS) definierten Code"
 * insert Translation(code.coding[ops] ^definition, de-DE, Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel definierten Code)
 * insert Translation(code.coding[ops] ^definition, en-US, A reference to a code defined by the German Procedure Classification OPS)
+// Procedure.code.coding:ops.extension:Seitenlokalisation.url
+* code.coding[ops].extension[Seitenlokalisation].url ^short = "identifies the meaning of the extension"
+// Procedure.code.coding:ops.extension:Seitenlokalisation.value[x]
+* code.coding[ops].extension[Seitenlokalisation].value[x] ^short = "Value of extension"
 // Procedure.code.coding:ops.system
 * code.coding[ops].system ^short = "Canonische CodeSystem URL für OPS"
 * insert Translation(code.coding[ops].system ^short, de-DE, OPS-System-URL)
@@ -120,6 +132,8 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Bildgebungsprozedur"
 * subject ^definition = "Person, auf die sich die Prozedur bezieht"
 * insert Translation(subject ^definition, de-DE, Person\, auf die sich die Prozedur bezieht)
 * insert Translation(subject ^definition, en-US, person\, which this procedure is about)
+// Procedure.subject.reference
+* subject.reference ^short = "Literal reference, Relative, internal or absolute URL"
 // Procedure.encounter
 * encounter ^short = "Kontakt (Aufenthaltsbezug)"
 * insert Translation(encounter ^short, de-DE, Kontakt)
@@ -127,6 +141,8 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Bildgebungsprozedur"
 * encounter ^definition = "Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht."
 * insert Translation(encounter ^definition, de-DE, Kontakt\, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht.)
 * insert Translation(encounter ^definition, en-US, The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated.)
+// Procedure.encounter.reference
+* encounter.reference ^short = "Literal reference, Relative, internal or absolute URL"
 // Procedure.performed[x]
 * performed[x] ^short = "Durchführungsdatum"
 * insert Translation(performed[x] ^short, de-DE, Durchführungsdatum)
@@ -134,6 +150,18 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Bildgebungsprozedur"
 * performed[x] ^definition = "Durchführungsdatum oder -zeitraum der Prozedur."
 * insert Translation(performed[x] ^definition, de-DE, Durchführungsdatum oder -zeitraum der Prozedur.)
 * insert Translation(performed[x] ^definition, en-US, The date or period of time the procedure was performed.)
+// Procedure.performed[x]:performedDateTime
+* performed[x][performedDateTime] ^short = "When the procedure was performed"
+* performed[x][performedDateTime] ^definition = "Durchführungsdatum der Prozedur."
+* insert Translation(performed[x][performedDateTime] ^definition, de-DE, Durchführungsdatum der Prozedur.)
+* insert Translation(performed[x][performedDateTime] ^definition, en-US, The date the procedure was performed.)
+// Procedure.performed[x]:performedPeriod
+* performed[x][performedPeriod] ^short = "Durchführungszeitraum"
+* insert Translation(performed[x][performedPeriod] ^short, de-DE, Durchführungszeitraum)
+* insert Translation(performed[x][performedPeriod] ^short, en-US, Performed period)
+* performed[x][performedPeriod] ^definition = "Zeitraum, in dem die Prozedur durchgeführt wurde."
+* insert Translation(performed[x][performedPeriod] ^definition, de-DE, Zeitraum\, in dem die Prozedur durchgeführt wurde.)
+* insert Translation(performed[x][performedPeriod] ^definition, en-US, The period of time the procedure was performed.)
 // Procedure.bodySite
 * bodySite ^short = "Körperstelle"
 * insert Translation(bodySite ^short, de-DE, Körperstelle)
@@ -183,6 +211,8 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Bildgebungsprozedur"
 * insert ObligationConsumerDefault(subject)
 * insert ObligationConsumerDefault(encounter)
 * insert ObligationConsumerDefault(performed[x])
+* insert ObligationConsumerDefault(performed[x][performedDateTime])
+* insert ObligationConsumerDefault(performed[x][performedPeriod])
 * insert ObligationConsumerDefault(bodySite)
 * insert ObligationConsumerDefault(bodySite.coding[snomed-ct])
 * insert ObligationConsumerDefault(note)

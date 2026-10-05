@@ -25,6 +25,13 @@ Description: "FDPG Profil - MII_PR_Patho_Composition"
 * extension[document-version] ^definition = "Versionsnummer des Dokuments"
 * insert Translation(extension[document-version] ^definition, de-DE, Versionsnummer des Dokuments)
 * insert Translation(extension[document-version] ^definition, en-US, Version number of the document)
+// Composition.extension:diagnosticReport
+* extension[diagnosticReport] ^short = "Diagnostikbericht"
+* insert Translation(extension[diagnosticReport] ^short, de-DE, Diagnostikbericht)
+* insert Translation(extension[diagnosticReport] ^short, en-US, Diagnostic report)
+* extension[diagnosticReport] ^definition = "Verweis auf den zugehoerigen DiagnosticReport"
+* insert Translation(extension[diagnosticReport] ^definition, de-DE, Verweis auf den zugehoerigen DiagnosticReport)
+* insert Translation(extension[diagnosticReport] ^definition, en-US, Reference to the associated DiagnosticReport)
 // Composition.identifier
 * identifier ^short = "Identifikator"
 * insert Translation(identifier ^short, de-DE, Identifikator)
@@ -184,12 +191,12 @@ Description: "FDPG Profil - MII_PR_Patho_Composition"
 // Composition.relatesTo.target[x]:targetReference
 * relatesTo.target[x][targetReference] ^short = "Target of the relationship"
 // Composition.event
-* event ^short = "Referenz auf Untersuchungsauftrag"
+* event ^short = "Ereignis"
 * insert Translation(event ^short, de-DE, Ereignis)
 * insert Translation(event ^short, en-US, Event)
-* event ^definition = "Referenz auf den auslösenden Untersuchungsauftrag"
-* insert Translation(event ^definition, de-DE, Referenz auf den auslösenden Untersuchungsauftrag)
-* insert Translation(event ^definition, en-US, Documentation event)
+* event ^definition = "Dokumentiertes Pathologie-Ereignis - die Begutachtung bzw. Befundung auf die sich der Befundbericht bezieht"
+* insert Translation(event ^definition, de-DE, Dokumentiertes Pathologie-Ereignis - die Begutachtung bzw. Befundung auf die sich der Befundbericht bezieht)
+* insert Translation(event ^definition, en-US, Documented pathology event - the reporting act the report refers to)
 // Composition.section
 * section ^short = "Kapitel"
 // Composition.section.title
@@ -215,9 +222,75 @@ Description: "FDPG Profil - MII_PR_Patho_Composition"
 * section[patho-diagnostic-report].text ^short = "Narrativ"
 // Composition.section:patho-diagnostic-report.section
 * section[patho-diagnostic-report].section ^short = "Unterkapitel"
+// Composition.section:makroskopie
+* section[makroskopie] ^short = "Makroskopie"
+* insert Translation(section[makroskopie] ^short, de-DE, Makroskopie)
+* insert Translation(section[makroskopie] ^short, en-US, Macroscopy)
+* section[makroskopie] ^definition = "Abschnitt der makroskopischen Beurteilung"
+* insert Translation(section[makroskopie] ^definition, de-DE, Abschnitt der makroskopischen Beurteilung)
+* insert Translation(section[makroskopie] ^definition, en-US, Macroscopic assessment section)
+// Composition.section:makroskopie.title
+* section[makroskopie].title ^short = "Kapitelbezeichnung"
+// Composition.section:makroskopie.text
+* section[makroskopie].text ^short = "Narrativ"
+// Composition.section:makroskopie.section
+* section[makroskopie].section ^short = "Unterkapitel"
+// Composition.section:mikroskopie
+* section[mikroskopie] ^short = "Mikroskopie"
+* insert Translation(section[mikroskopie] ^short, de-DE, Mikroskopie)
+* insert Translation(section[mikroskopie] ^short, en-US, Microscopy)
+* section[mikroskopie] ^definition = "Abschnitt der mikroskopischen Beurteilung"
+* insert Translation(section[mikroskopie] ^definition, de-DE, Abschnitt der mikroskopischen Beurteilung)
+* insert Translation(section[mikroskopie] ^definition, en-US, Microscopic assessment section)
+// Composition.section:mikroskopie.title
+* section[mikroskopie].title ^short = "Kapitelbezeichnung"
+// Composition.section:mikroskopie.text
+* section[mikroskopie].text ^short = "Narrativ"
+// Composition.section:mikroskopie.section
+* section[mikroskopie].section ^short = "Unterkapitel"
+// Composition.section:intraoperativ
+* section[intraoperativ] ^short = "Intraoperative Beurteilung"
+* insert Translation(section[intraoperativ] ^short, de-DE, Intraoperative Beurteilung)
+* insert Translation(section[intraoperativ] ^short, en-US, Intraoperative assessment)
+* section[intraoperativ] ^definition = "Abschnitt der intraoperativen Beurteilung"
+* insert Translation(section[intraoperativ] ^definition, de-DE, Abschnitt der intraoperativen Beurteilung)
+* insert Translation(section[intraoperativ] ^definition, en-US, Intraoperative assessment section)
+// Composition.section:intraoperativ.title
+* section[intraoperativ].title ^short = "Kapitelbezeichnung"
+// Composition.section:intraoperativ.text
+* section[intraoperativ].text ^short = "Narrativ"
+// Composition.section:intraoperativ.section
+* section[intraoperativ].section ^short = "Unterkapitel"
+// Composition.section:diagnostische-schlussfolgerung
+* section[diagnostische-schlussfolgerung] ^short = "Diagnostische Schlussfolgerung"
+* insert Translation(section[diagnostische-schlussfolgerung] ^short, de-DE, Diagnostische Schlussfolgerung)
+* insert Translation(section[diagnostische-schlussfolgerung] ^short, en-US, Diagnostic conclusion)
+* section[diagnostische-schlussfolgerung] ^definition = "Abschnitt der diagnostischen Schlussfolgerung"
+* insert Translation(section[diagnostische-schlussfolgerung] ^definition, de-DE, Abschnitt der diagnostischen Schlussfolgerung)
+* insert Translation(section[diagnostische-schlussfolgerung] ^definition, en-US, Diagnostic conclusion section)
+// Composition.section:diagnostische-schlussfolgerung.title
+* section[diagnostische-schlussfolgerung].title ^short = "Kapitelbezeichnung"
+// Composition.section:diagnostische-schlussfolgerung.text
+* section[diagnostische-schlussfolgerung].text ^short = "Narrativ"
+// Composition.section:diagnostische-schlussfolgerung.section
+* section[diagnostische-schlussfolgerung].section ^short = "Unterkapitel"
+// Composition.section:zusaetzliche-beobachtung
+* section[zusaetzliche-beobachtung] ^short = "Zusaetzliche Beobachtung"
+* insert Translation(section[zusaetzliche-beobachtung] ^short, de-DE, Zusaetzliche Beobachtung)
+* insert Translation(section[zusaetzliche-beobachtung] ^short, en-US, Additional observation)
+* section[zusaetzliche-beobachtung] ^definition = "Abschnitt fuer zusaetzliche spezifizierte Beobachtungen"
+* insert Translation(section[zusaetzliche-beobachtung] ^definition, de-DE, Abschnitt fuer zusaetzliche spezifizierte Beobachtungen)
+* insert Translation(section[zusaetzliche-beobachtung] ^definition, en-US, Section for additional specified observations)
+// Composition.section:zusaetzliche-beobachtung.title
+* section[zusaetzliche-beobachtung].title ^short = "Kapitelbezeichnung"
+// Composition.section:zusaetzliche-beobachtung.text
+* section[zusaetzliche-beobachtung].text ^short = "Narrativ"
+// Composition.section:zusaetzliche-beobachtung.section
+* section[zusaetzliche-beobachtung].section ^short = "Unterkapitel"
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(extension[document-version])
+* insert ObligationConsumerDefault(extension[diagnosticReport])
 * insert ObligationConsumerDefault(identifier)
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(type)
@@ -242,3 +315,8 @@ Description: "FDPG Profil - MII_PR_Patho_Composition"
 * insert ObligationConsumerDefault(event)
 * insert ObligationConsumerDefault(section)
 * insert ObligationConsumerDefault(section[patho-diagnostic-report])
+* insert ObligationConsumerDefault(section[makroskopie])
+* insert ObligationConsumerDefault(section[mikroskopie])
+* insert ObligationConsumerDefault(section[intraoperativ])
+* insert ObligationConsumerDefault(section[diagnostische-schlussfolgerung])
+* insert ObligationConsumerDefault(section[zusaetzliche-beobachtung])

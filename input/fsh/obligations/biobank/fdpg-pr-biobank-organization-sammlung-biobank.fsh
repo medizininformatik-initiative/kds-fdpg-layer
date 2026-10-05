@@ -12,6 +12,9 @@ Description: "FDPG Profil - MII_PR_Biobank_Organization_Sammlung_Biobank"
 * extension[beschreibung] ^short = "Description of the collection/biobank"
 * insert Translation(extension[beschreibung] ^short, de-DE, Beschreibung der Sammlung/Biobank)
 * insert Translation(extension[beschreibung] ^short, en-US, Description of the collection/biobank)
+* extension[beschreibung] ^definition = "Description of the collection in English."
+* insert Translation(extension[beschreibung] ^definition, de-DE, Eine Freitextbeschreibung der Sammlung/Biobank\, die z.B. in einer Suche angezeigt werden kann.)
+* insert Translation(extension[beschreibung] ^definition, en-US, A free-text description of the collection/biobank\, which can be displayed in a search\, for example.)
 // Organization.extension:collectionSetting
 * extension[collectionSetting] ^short = "Sample Collection Setting Extension"
 * insert Translation(extension[collectionSetting] ^short, de-DE, Probenentnahme-Setting)
@@ -31,18 +34,30 @@ Description: "FDPG Profil - MII_PR_Biobank_Organization_Sammlung_Biobank"
 * identifier[bbmri-eric-id] ^short = "BBMRI-ERIC ID"
 * insert Translation(identifier[bbmri-eric-id] ^short, de-DE, BBMRI-ERIC ID)
 * insert Translation(identifier[bbmri-eric-id] ^short, en-US, BBMRI-ERIC ID)
+* identifier[bbmri-eric-id] ^definition = "Identifier for the organization that is used to identify the organization across multiple disparate systems."
+* insert Translation(identifier[bbmri-eric-id] ^definition, de-DE, Eindeutige Kennung im BBMRI-ERIC-Netzwerk.)
+* insert Translation(identifier[bbmri-eric-id] ^definition, en-US, Unique identifier in the BBMRI-ERIC network.)
 // Organization.name
 * name ^short = "Name"
 * insert Translation(name ^short, de-DE, Name)
 * insert Translation(name ^short, en-US, Name)
+* name ^definition = "A name associated with the organization."
+* insert Translation(name ^definition, de-DE, Der vollständige Name der Sammlung oder Biobank.)
+* insert Translation(name ^definition, en-US, The full name of the collection or biobank.)
 // Organization.alias
 * alias ^short = "Acronym"
 * insert Translation(alias ^short, de-DE, Akronym)
 * insert Translation(alias ^short, en-US, Acronym)
+* alias ^definition = "A list of alternate names that the organization is known as, or was known as in the past."
+* insert Translation(alias ^definition, de-DE, Das Akronym oder der Kurztitel der Sammlung oder Biobank.)
+* insert Translation(alias ^definition, en-US, The acronym or short title of the collection or biobank.)
 // Organization.partOf
 * partOf ^short = "Part of"
 * insert Translation(partOf ^short, de-DE, Teil von)
 * insert Translation(partOf ^short, en-US, Part of)
+* partOf ^definition = "The organization of which this organization forms a part."
+* insert Translation(partOf ^definition, de-DE, Verweist auf eine übergeordnete Sammlung oder Biobank\, zu der diese gehört.)
+* insert Translation(partOf ^definition, en-US, Refers to a parent collection or biobank to which this belongs.)
 // Organization.contact
 * contact ^short = "Contact for the organization for a certain purpose"
 // Organization.contact:forschungskontakt
@@ -56,7 +71,7 @@ Description: "FDPG Profil - MII_PR_Biobank_Organization_Sammlung_Biobank"
 // Organization.contact:forschungskontakt.name.given
 * contact[forschungskontakt].name.given ^short = "Given names (not always 'first'). Includes middle names"
 // Organization.contact:forschungskontakt.address
-* contact[forschungskontakt].address ^short = "Eine Adresse gemäß postalischer Konventionen"
+* contact[forschungskontakt].address ^short = "Visiting or postal addresses for the contact"
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(extension[beschreibung])

@@ -52,6 +52,24 @@ Description: "FDPG Profil - MII_PR_Onko_Fernmetastasen"
 * value[x].coding ^definition = "weitere Lokalisationen sind als einzelne Ressourcen zu kodieren"
 * insert Translation(value[x].coding ^definition, de-DE, Lokalisation der Fernmetastasen laut 11.1 oBDS 2021 / TNM Kodierung)
 * insert Translation(value[x].coding ^definition, en-US, Location of distant metastases per oBDS 2021 §11.1 / TNM coding.)
+// Observation.bodySite
+* bodySite ^short = "Exakter Ort der Fernmetastase (ICD-O-3-Topographie und/oder SNOMED CT)"
+* insert Translation(bodySite ^short, de-DE, Körperstelle)
+* insert Translation(bodySite ^short, en-US, Body site)
+* bodySite ^definition = "Indicates the site on the subject's body where the observation was made (i.e. the target site)."
+* insert Translation(bodySite ^definition, de-DE, Körperstelle\, auf die sich die Ressource bezieht.)
+* insert Translation(bodySite ^definition, en-US, Body site the resource refers to.)
+// Observation.bodySite.coding:icd-o-3
+* bodySite.coding[icd-o-3] ^short = "ICD-O-3 topography"
+* insert Translation(bodySite.coding[icd-o-3] ^short, de-DE, ICD-O-3 Topographie)
+* insert Translation(bodySite.coding[icd-o-3] ^short, en-US, ICD-O-3 topography)
+* bodySite.coding[icd-o-3] ^definition = "A reference to a code defined by a terminology system."
+* insert Translation(bodySite.coding[icd-o-3] ^definition, de-DE, ICD-O-3-Topographie bei vom Primärtumor abweichender Lokalisation in der Verlaufsbeschreibung.)
+* insert Translation(bodySite.coding[icd-o-3] ^definition, en-US, ICD-O-3 topography when the location in follow-up differs from the primary tumor.)
+// Observation.bodySite.coding:snomed
+* bodySite.coding[snomed] ^short = "SNOMED CT coding"
+* insert Translation(bodySite.coding[snomed] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(bodySite.coding[snomed] ^short, en-US, SNOMED CT coding)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(code)
@@ -63,3 +81,6 @@ Description: "FDPG Profil - MII_PR_Onko_Fernmetastasen"
 * insert ObligationConsumerPreSelect(effective[x])
 * insert ObligationConsumerDefault(value[x])
 * insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(bodySite)
+* insert ObligationConsumerDefault(bodySite.coding[icd-o-3])
+* insert ObligationConsumerDefault(bodySite.coding[snomed])

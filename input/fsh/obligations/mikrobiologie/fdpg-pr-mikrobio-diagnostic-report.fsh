@@ -58,10 +58,8 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Diagnostic_Report"
 * category ^definition = "Klassifikation des Befunds"
 * insert Translation(category ^definition, de-DE, Klassifikation des Befunds)
 * insert Translation(category ^definition, en-US, Classification of the report)
-// DiagnosticReport.category:lab-category
-* category[lab-category] ^short = "Labor-Kategorie"
-// DiagnosticReport.category:lab-category.coding.display
-* category[lab-category].coding.display ^short = "Representation defined by the system"
+// DiagnosticReport.category:v2-lab
+* category[v2-lab] ^short = "Labor-Kategorie"
 // DiagnosticReport.category:mibi-category
 * category[mibi-category] ^short = "Mikrobiologie-Kategorie"
 * insert Translation(category[mibi-category] ^short, de-DE, Kategorie)
@@ -69,19 +67,11 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Diagnostic_Report"
 * category[mibi-category] ^definition = "Kategorie-Slice für mikrobiologische Befunde"
 * insert Translation(category[mibi-category] ^definition, de-DE, Klassifikation des Befunds)
 * insert Translation(category[mibi-category] ^definition, en-US, Classification of the report)
-// DiagnosticReport.category:mibi-category.coding:v2-microbiology
-* category[mibi-category].coding[v2-microbiology] ^short = "HL7 v2 Microbiology coding"
-* insert Translation(category[mibi-category].coding[v2-microbiology] ^short, de-DE, HL7 v2 Mikrobiologie-Kodierung)
-* insert Translation(category[mibi-category].coding[v2-microbiology] ^short, en-US, HL7 v2 Microbiology coding)
-// DiagnosticReport.category:mibi-category.coding:loinc-microbiology-studies
-* category[mibi-category].coding[loinc-microbiology-studies] ^short = "LOINC coding"
-* insert Translation(category[mibi-category].coding[loinc-microbiology-studies] ^short, de-DE, LOINC-Kodierung)
-* insert Translation(category[mibi-category].coding[loinc-microbiology-studies] ^short, en-US, LOINC coding)
 // DiagnosticReport.category:mibi-sub-category
 * category[mibi-sub-category] ^short = "Mikrobiologie-Kategorie LOINC"
 * insert Translation(category[mibi-sub-category] ^short, de-DE, Kategorie)
 * insert Translation(category[mibi-sub-category] ^short, en-US, Category)
-* category[mibi-sub-category] ^definition = "Kategorie-Slice für die LOINC-Kodierung von mikrobiologischen Befunden"
+* category[mibi-sub-category] ^definition = "Kategorie-Slice für die LOINC-Kodierung von mikrobiologischen Befunden. Mehrfachangabe zulaessig, wenn der Befund mehrere Studientypen umfasst, z. B. bakteriologisch und mykologisch. Umfasst der Befund keine benennbaren Studientypen oder soll er nur allgemein eingeordnet werden, entfaellt der Subtyp; die allgemeine Einordnung erfolgt dann allein ueber category[mibi-category] mit MB."
 * insert Translation(category[mibi-sub-category] ^definition, de-DE, Klassifikation des Befunds)
 * insert Translation(category[mibi-sub-category] ^definition, en-US, Classification of the report)
 // DiagnosticReport.code
@@ -174,7 +164,7 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Diagnostic_Report"
 // DiagnosticReport.result.reference
 * result.reference ^short = "Literal reference, Relative, internal or absolute URL"
 // DiagnosticReport.conclusion
-* conclusion ^short = "Schlussfolgerung"
+* conclusion ^short = "Zusammenfassende Beurteilung des Labors im Freitext. Fuer serologische Befunde die tragende Stelle, weil sich die Diagnose dort erst aus der Zusammenschau mehrerer Einzelergebnisse ergibt."
 * insert Translation(conclusion ^short, de-DE, Schlussfolgerung)
 * insert Translation(conclusion ^short, en-US, Conclusion)
 * conclusion ^definition = "Klinische Schlussfolgerung/Interpretation der Testergebnisse"
@@ -187,10 +177,8 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Diagnostic_Report"
 * insert ObligationConsumerDefault(basedOn)
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
-* insert ObligationConsumerDefault(category[lab-category])
+* insert ObligationConsumerDefault(category[v2-lab])
 * insert ObligationConsumerDefault(category[mibi-category])
-* insert ObligationConsumerDefault(category[mibi-category].coding[v2-microbiology])
-* insert ObligationConsumerDefault(category[mibi-category].coding[loinc-microbiology-studies])
 * insert ObligationConsumerDefault(category[mibi-sub-category])
 * insert ObligationConsumerDefault(code)
 * insert ObligationConsumerDefault(code.coding[loinc-labReport])

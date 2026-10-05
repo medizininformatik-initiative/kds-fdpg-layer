@@ -6,7 +6,7 @@ Das Modul Einwilligung bildet die Dokumentation von Patienteneinwilligungen ab. 
 
 ## Quellmodul
 
-[MII KDS Consent](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.consent/2026.0.1-rc-1)
+[MII KDS Consent](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.consent/2027.0.0-ballot)
 
 ## FDPG Profile
 

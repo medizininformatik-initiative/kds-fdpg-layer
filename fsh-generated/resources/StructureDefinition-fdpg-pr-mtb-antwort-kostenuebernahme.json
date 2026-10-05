@@ -96,7 +96,6 @@
           }
         ],
         "path": "ClaimResponse.extension",
-        "short": "Extension",
         "_short": {
           "extension": [
             {

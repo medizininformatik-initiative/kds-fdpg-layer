@@ -8,6 +8,9 @@ Description: "FDPG Profil - MII_PR_Onko_Nebenwirkung_Adverse_Event"
 * insert Translation(^title, de-DE, Nebenwirkung von Strahlentherapie und systemischer Therapie)
 * insert Translation(^title, en-US, Adverse Event of Radiation and Systemic Therapy)
 // --- Element Designations ---
+// AdverseEvent.extension:ctcaeVersion
+* extension[ctcaeVersion] ^short = "CTCAE-Version"
+* insert Translation(extension[ctcaeVersion] ^short, de-DE, CTCAE-Version)
 // AdverseEvent.event
 * event ^short = "Type of the event itself in relation to the subject"
 // AdverseEvent.event.coding.version
@@ -27,7 +30,35 @@ Description: "FDPG Profil - MII_PR_Onko_Nebenwirkung_Adverse_Event"
 // AdverseEvent.event.coding:meddra
 // AdverseEvent.event.coding:meddra.system
 // AdverseEvent.event.coding:meddra.version
+* event.coding[meddra].version ^short = "CTCAE-Version"
+* insert Translation(event.coding[meddra].version ^short, de-DE, CTCAE-Version)
+* event.coding[meddra].version ^definition = "Version der für Art der Nebenwirkung verwendeten CTCAE-Klassifikation gemäß 15.3 oBDS 2021."
+* insert Translation(event.coding[meddra].version ^definition, de-DE, Version der für Art der Nebenwirkung verwendeten CTCAE-Klassifikation gemäß 15.3 oBDS 2021.)
 // AdverseEvent.event.coding:meddra.code
+* event.coding[meddra].code ^short = "Art der Nebenwirkung"
+* insert Translation(event.coding[meddra].code ^short, de-DE, Art der Nebenwirkung)
+* event.coding[meddra].code ^definition = "Art der Nebenwirkung nach CTCAE / MedDRA.  Abweichend von 15.2 oBDS 2021 kann dieses Feld leer sein falls eine Nebenwirkung des Schweregrads 1 oder 2 vorliegt und keine spezifische Art der Nebenwirkung dokumentiert wurde"
+* insert Translation(event.coding[meddra].code ^definition, de-DE, Art der Nebenwirkung nach CTCAE / MedDRA . Abweichend von 15.2 oBDS 2021 kann dieses Feld leer sein falls eine Nebenwirkung des Schweregrads 1 oder 2 vorliegt und keine spezifische Art der Nebenwirkung dokumentiert wurde)
+// AdverseEvent.event.coding:snomed
+* event.coding[snomed] ^short = "Art der Nebenwirkung (SNOMED CT)"
+* insert Translation(event.coding[snomed] ^short, de-DE, Art der Nebenwirkung als SNOMED CT)
+* insert Translation(event.coding[snomed] ^short, en-US, SNOMED CT coding)
+// AdverseEvent.event.coding:snomed.system
+* event.coding[snomed].system ^short = "SNOMED CT system URL"
+* insert Translation(event.coding[snomed].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(event.coding[snomed].system ^short, en-US, SNOMED CT system URL)
+// AdverseEvent.event.coding:snomed.version
+* event.coding[snomed].version ^short = "CTCAE-Version"
+* insert Translation(event.coding[snomed].version ^short, de-DE, CTCAE-Version)
+* insert Translation(event.coding[snomed].version ^short, en-US, SNOMED CT version)
+* event.coding[snomed].version ^definition = "Version der für Art der Nebenwirkung verwendeten CTCAE-Klassifikation gemäß 15.3 oBDS 2021."
+* insert Translation(event.coding[snomed].version ^definition, de-DE, Version der für Art der Nebenwirkung verwendeten CTCAE-Klassifikation gemäß 15.3 oBDS 2021.)
+// AdverseEvent.event.coding:snomed.code
+* event.coding[snomed].code ^short = "Art der Nebenwirkung"
+* insert Translation(event.coding[snomed].code ^short, de-DE, Art der Nebenwirkung)
+* insert Translation(event.coding[snomed].code ^short, en-US, SNOMED CT code)
+* event.coding[snomed].code ^definition = "Art der Nebenwirkung nach CTCAE / MedDRA.  Abweichend von 15.2 oBDS 2021 kann dieses Feld leer sein falls eine Nebenwirkung des Schweregrads 1 oder 2 vorliegt und keine spezifische Art der Nebenwirkung dokumentiert wurde"
+* insert Translation(event.coding[snomed].code ^definition, de-DE, Art der Nebenwirkung nach CTCAE / MedDRA . Abweichend von 15.2 oBDS 2021 kann dieses Feld leer sein falls eine Nebenwirkung des Schweregrads 1 oder 2 vorliegt und keine spezifische Art der Nebenwirkung dokumentiert wurde)
 // AdverseEvent.subject
 * subject ^short = "Subject impacted by event"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -57,8 +88,10 @@ Description: "FDPG Profil - MII_PR_Onko_Nebenwirkung_Adverse_Event"
 * suspectEntity.instance ^short = "Refers to the specific entity that caused the adverse event"
 
 // --- Obligations ---
+* insert ObligationConsumerDefault(extension[ctcaeVersion])
 * insert ObligationConsumerDefault(event)
 * insert ObligationConsumerDefault(event.coding[meddra])
+* insert ObligationConsumerDefault(event.coding[snomed])
 * insert ObligationConsumerDefault(subject)
 * insert ObligationConsumerDefault(encounter)
 * insert ObligationConsumerDefault(seriousness)

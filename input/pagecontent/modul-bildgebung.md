@@ -6,7 +6,7 @@ Das Modul Bildgebung bildet radiologische und bildgebende Untersuchungen ab. Es 
 
 ## Quellmodul
 
-[MII KDS Bildgebung](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.bildgebung/2026.0.0)
+[MII KDS Bildgebung](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.bildgebung/2027.0.0-ballot.1)
 
 ## FDPG Profile
 
@@ -23,6 +23,7 @@ Das Modul Bildgebung bildet radiologische und bildgebende Untersuchungen ab. Es 
 | [FDPG_PR_Bildgebung_Geraet](StructureDefinition-fdpg-pr-bildgebung-geraet.html) | MII_PR_Bildgebung_Geraet | Device |
 | [FDPG_PR_Bildgebung_Koerperstruktur](StructureDefinition-fdpg-pr-bildgebung-koerperstruktur.html) | MII_PR_Bildgebung_Koerperstruktur | BodyStructure |
 | [FDPG_PR_Bildgebung_Kontrastmittelgabe](StructureDefinition-fdpg-pr-bildgebung-kontrastmittelgabe.html) | MII_PR_Bildgebung_Kontrastmittelgabe | MedicationAdministration |
+| [FDPG_PR_Bildgebung_Radiologische_Messung](StructureDefinition-fdpg-pr-bildgebung-radiologische-messung.html) | MII_PR_Bildgebung_Radiologische_Messung | Observation |
 
 ## Obligation-Übersicht
 

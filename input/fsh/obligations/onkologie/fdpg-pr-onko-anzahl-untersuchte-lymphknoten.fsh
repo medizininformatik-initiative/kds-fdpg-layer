@@ -63,7 +63,7 @@ Description: "FDPG Profil - MII_PR_Onko_Anzahl_Untersuchte_Lymphknoten"
 * value[x] ^short = "Anzahl untersuchter Lymphknoten"
 * insert Translation(value[x] ^short, de-DE, Anzahl untersuchter Lymphknoten)
 * insert Translation(value[x] ^short, en-US, Value)
-* value[x] ^definition = "Anzahl untersuchter Lymphknoten nach 6.8 oBDS 2021"
+* value[x] ^definition = "Anzahl untersuchter Lymphknoten nach 6.7 oBDS 2021"
 * insert Translation(value[x] ^definition, de-DE, Anzahl untersuchter Lymphknoten nach 6.7 oBDS 2021)
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
 // Observation.value[x].value

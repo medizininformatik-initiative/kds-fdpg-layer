@@ -24,10 +24,10 @@ Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry_PDL1"
 * insert Translation(category ^definition, en-US, Categorization of the resource.)
 // Observation.code
 * code ^short = "Code für Immunhistochemische Untersuchung"
-* insert Translation(code ^short, de-DE, Code)
+* insert Translation(code ^short, de-DE, Code fuer Immunhistochemische Untersuchung)
 * insert Translation(code ^short, en-US, Code)
 * code ^definition = "Kodierung für Immunhistochemische Untersuchung. Enthält immer den generischen IHC-Code. Nach Möglichkeit sind zusätzlich spezifische Codes zu verwenden. Wenn weder in SNOMED noch LOINC spezifische Codes vorhanden sind, ist über gene-studied das untersuchte Gen anzugeben."
-* insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
+* insert Translation(code ^definition, de-DE, Kodierung fuer Immunhistochemische Untersuchung. Enthaelt immer den generischen IHC-Code. Nach Moeglichkeit sind zusaetzlich spezifische Codes zu verwenden. Wenn weder in SNOMED noch LOINC spezifische Codes vorhanden sind ist ueber gene-studied das untersuchte Gen anzugeben.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
 // Observation.code.coding:generisch
 * code.coding[generisch] ^short = "Generischer Immunhistochemischer Untersuchungscode"
@@ -92,7 +92,7 @@ Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry_PDL1"
 * insert Translation(specimen ^short, de-DE, Probe)
 * insert Translation(specimen ^short, en-US, Specimen)
 * specimen ^definition = "Probe"
-* insert Translation(specimen ^definition, de-DE, Verweis auf das Probenmaterial.)
+* insert Translation(specimen ^definition, de-DE, Probe)
 * insert Translation(specimen ^definition, en-US, Reference to the specimen.)
 // Observation.derivedFrom
 * derivedFrom ^short = "Abgeleitet von"
@@ -124,6 +124,9 @@ Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry_PDL1"
 * insert Translation(component[biomarker-category] ^definition, en-US, Category of the molecular biomarker.)
 // Observation.component:tps-score
 * component[tps-score] ^short = "TPS-Score"
+* insert Translation(component[tps-score] ^short, de-DE, TPS-Score)
+* component[tps-score] ^definition = "Tumor Proportion Score (TPS) - Score für PD-L1-Expression in Tumorzellen. Der TPS ist der Anteil der PD-L1-positiven Tumorzellen im Verhältnis zu den Gesamtzellen. Der TPS wird in Prozent angegeben. Ein TPS von 1% oder mehr gilt als positiv."
+* insert Translation(component[tps-score] ^definition, de-DE, Tumor Proportion Score - TPS - Score fuer PD-L1-Expression in Tumorzellen. Der TPS ist der Anteil der PD-L1-positiven Tumorzellen im Verhaeltnis zu den Gesamtzellen. Der TPS wird in Prozent angegeben. Ein TPS von 1 Prozent oder mehr gilt als positiv.)
 // Observation.component:tps-score.code
 * component[tps-score].code ^short = "Type of component observation (code / type)"
 // Observation.component:tps-score.value[x]:valueQuantity
@@ -132,6 +135,9 @@ Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry_PDL1"
 * component[tps-score].interpretation ^short = "High, low, normal, etc."
 // Observation.component:cps-score
 * component[cps-score] ^short = "CPS-Score"
+* insert Translation(component[cps-score] ^short, de-DE, CPS-Score)
+* component[cps-score] ^definition = "Combined Positive Score (CPS) - Score für PD-L1-Expression in Tumorzellen und Immunzellen. Der CPS ist der Anteil der PD-L1-positiven Tumorzellen und Immunzellen im Verhältnis zu den Gesamtzellen. Der CPS wird in Prozent angegeben. Ein CPS von 1% oder mehr gilt als positiv."
+* insert Translation(component[cps-score] ^definition, de-DE, Combined Positive Score - CPS - Score fuer PD-L1-Expression in Tumorzellen und Immunzellen. Der CPS ist der Anteil der PD-L1-positiven Tumorzellen und Immunzellen im Verhaeltnis zu den Gesamtzellen. Der CPS wird in Prozent angegeben. Ein CPS von 1 Prozent oder mehr gilt als positiv.)
 // Observation.component:cps-score.code
 * component[cps-score].code ^short = "Type of component observation (code / type)"
 // Observation.component:cps-score.value[x]:valueQuantity
@@ -140,6 +146,9 @@ Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry_PDL1"
 * component[cps-score].interpretation ^short = "High, low, normal, etc."
 // Observation.component:ics-score
 * component[ics-score] ^short = "ICS-Score"
+* insert Translation(component[ics-score] ^short, de-DE, ICS-Score)
+* component[ics-score] ^definition = "Immune Cell Score (ICS) - Score für PD-L1-Expression in Immunzellen. Der ICS ist der Anteil der PD-L1-positiven Immunzellen im Verhältnis zu den Gesamtzellen. Der ICS wird in Prozent angegeben. Ein ICS von 1% oder mehr gilt als positiv."
+* insert Translation(component[ics-score] ^definition, de-DE, Immune Cell Score - ICS - Score fuer PD-L1-Expression in Immunzellen. Der ICS ist der Anteil der PD-L1-positiven Immunzellen im Verhaeltnis zu den Gesamtzellen. Der ICS wird in Prozent angegeben. Ein ICS von 1 Prozent oder mehr gilt als positiv.)
 // Observation.component:ics-score.code
 * component[ics-score].code ^short = "Type of component observation (code / type)"
 // Observation.component:ics-score.value[x]:valueQuantity
@@ -148,6 +157,9 @@ Description: "FDPG Profil - MII_PR_MTB_Immunohistochemistry_PDL1"
 * component[ics-score].interpretation ^short = "High, low, normal, etc."
 // Observation.component:tc-score
 * component[tc-score] ^short = "TC-Score / TPS-Score"
+* insert Translation(component[tc-score] ^short, de-DE, TC-Score / TPS-Score)
+* component[tc-score] ^definition = "Tumor Cell Score (TC-Score) - Score für PD-L1-Expression in Tumorzellen. Der TC-Score ist der Anteil der PD-L1-positiven Tumorzellen im Verhältnis zu den Gesamtzellen. Der TC-Score wird in Prozent angegeben. Ein TC-Score von 1% oder mehr gilt als positiv."
+* insert Translation(component[tc-score] ^definition, de-DE, Tumor Cell Score - TC-Score - Score fuer PD-L1-Expression in Tumorzellen. Der TC-Score ist der Anteil der PD-L1-positiven Tumorzellen im Verhaeltnis zu den Gesamtzellen. Der TC-Score wird in Prozent angegeben. Ein TC-Score von 1 Prozent oder mehr gilt als positiv.)
 // Observation.component:tc-score.code
 * component[tc-score].code ^short = "Type of component observation (code / type)"
 // Observation.component:tc-score.value[x]:valueQuantity

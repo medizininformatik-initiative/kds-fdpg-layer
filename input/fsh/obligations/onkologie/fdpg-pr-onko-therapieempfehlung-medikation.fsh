@@ -24,7 +24,7 @@ Description: "FDPG Profil - MII_PR_Onko_Therapieempfehlung_Medikation"
 * insert Translation(status ^definition, en-US, active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown)
 // MedicationRequest.intent
 * intent ^short = "proposal | option"
-* insert Translation(intent ^short, de-DE, Intention)
+* insert Translation(intent ^short, de-DE, Absicht)
 * insert Translation(intent ^short, en-US, Intent)
 * intent ^definition = "Verwenden Sie 'proposal' für eigenständige Therapieempfehlungen. Verwenden Sie 'option' wenn die MedicationRequest Teil einer RequestGroup ist (z.B. Kombinationstherapie)."
 * insert Translation(intent ^definition, de-DE, Vorschlag | Plan | Auftrag | Original-Auftrag | ergänzender Auftrag | Erfüllungsauftrag | Vorgangsauftrag | Option)
@@ -36,13 +36,6 @@ Description: "FDPG Profil - MII_PR_Onko_Therapieempfehlung_Medikation"
 * medication[x] ^definition = "Das Medikament, das verordnet wurde. Code oder Referenz auf Medication-Objekt."
 * insert Translation(medication[x] ^definition, de-DE, Medikation\, die verordnet wurde. Code oder Referenz auf Medication-Objekt.)
 * insert Translation(medication[x] ^definition, en-US, The medication that was requested. Code or a reference to a Medication resource.)
-// MedicationRequest.medication[x]:medicationReference
-* medication[x][medicationReference] ^short = "Medication to be taken"
-* insert Translation(medication[x][medicationReference] ^short, de-DE, Medikation (Verweis\))
-* insert Translation(medication[x][medicationReference] ^short, en-US, Medication (reference\))
-* medication[x][medicationReference] ^definition = "Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications."
-* insert Translation(medication[x][medicationReference] ^definition, de-DE, Verweis auf die Medikament-Ressource.)
-* insert Translation(medication[x][medicationReference] ^definition, en-US, Reference to the medication resource.)
 // MedicationRequest.medication[x]:medicationCodeableConcept
 * medication[x][medicationCodeableConcept] ^short = "Medication to be taken"
 * insert Translation(medication[x][medicationCodeableConcept] ^short, de-DE, Medikation (Code\))
@@ -117,6 +110,13 @@ Description: "FDPG Profil - MII_PR_Onko_Therapieempfehlung_Medikation"
 * medication[x][medicationCodeableConcept].coding[UNII].code ^short = "Medication (coded) as UNII"
 * insert Translation(medication[x][medicationCodeableConcept].coding[UNII].code ^short, de-DE, Medikation (Code\) als UNII)
 * insert Translation(medication[x][medicationCodeableConcept].coding[UNII].code ^short, en-US, Medication (coded\) as UNII)
+// MedicationRequest.medication[x]:medicationReference
+* medication[x][medicationReference] ^short = "Medication to be taken"
+* insert Translation(medication[x][medicationReference] ^short, de-DE, Medikation (Verweis\))
+* insert Translation(medication[x][medicationReference] ^short, en-US, Medication (reference\))
+* medication[x][medicationReference] ^definition = "Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications."
+* insert Translation(medication[x][medicationReference] ^definition, de-DE, Verweis auf die Medikament-Ressource.)
+* insert Translation(medication[x][medicationReference] ^definition, en-US, Reference to the medication resource.)
 // MedicationRequest.subject
 * subject ^short = "Who or group medication request is for"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -163,8 +163,6 @@ Description: "FDPG Profil - MII_PR_Onko_Therapieempfehlung_Medikation"
 * insert Translation(reasonReference ^definition, en-US, Condition or observation that supports why the medication was administered.)
 // MedicationRequest.reasonReference:Primaertumor
 * reasonReference[Primaertumor] ^short = "Tumorerkrankung (Pflicht)"
-* insert Translation(reasonReference[Primaertumor] ^short, de-DE, Grund Referenz)
-* insert Translation(reasonReference[Primaertumor] ^short, en-US, Reason reference)
 * reasonReference[Primaertumor] ^definition = "Referenz auf die Primärtumor-Diagnose, auf die sich diese Therapieempfehlung bezieht."
 * insert Translation(reasonReference[Primaertumor] ^definition, de-DE, Grund für die Medikationsverordnung als Referenz auf Condition- oder Observation-Objekt.)
 * insert Translation(reasonReference[Primaertumor] ^definition, en-US, Condition or observation that supports why the medication was administered.)
@@ -342,8 +340,6 @@ Description: "FDPG Profil - MII_PR_Onko_Therapieempfehlung_Medikation"
 * dosageInstruction.doseAndRate ^short = "Menge des verabreichten Medikaments"
 // MedicationRequest.dosageInstruction.doseAndRate.dose[x]
 * dosageInstruction.doseAndRate.dose[x] ^short = "Amount of medication per dose"
-// MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity
-* dosageInstruction.doseAndRate.dose[x][doseQuantity] ^short = "Menge des Medikaments pro Dosis"
 // MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange
 * dosageInstruction.doseAndRate.dose[x][doseRange] ^short = "Amount of medication per dose"
 // MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.low
@@ -366,6 +362,8 @@ Description: "FDPG Profil - MII_PR_Onko_Therapieempfehlung_Medikation"
 * dosageInstruction.doseAndRate.dose[x][doseRange].high.system ^short = "System that defines coded unit form"
 // MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.high.code
 * dosageInstruction.doseAndRate.dose[x][doseRange].high.code ^short = "Coded form of the unit"
+// MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity
+* dosageInstruction.doseAndRate.dose[x][doseQuantity] ^short = "Menge des Medikaments pro Dosis"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]
 * dosageInstruction.doseAndRate.rate[x] ^short = "Amount of medication per unit of time"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRatio
@@ -413,7 +411,7 @@ Description: "FDPG Profil - MII_PR_Onko_Therapieempfehlung_Medikation"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRange.high.code
 * dosageInstruction.doseAndRate.rate[x][rateRange].high.code ^short = "Coded form of the unit"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateQuantity
-* dosageInstruction.doseAndRate.rate[x][rateQuantity] ^short = "A fixed quantity (no comparator)"
+* dosageInstruction.doseAndRate.rate[x][rateQuantity] ^short = "Amount of medication per unit of time"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateQuantity.value
 * dosageInstruction.doseAndRate.rate[x][rateQuantity].value ^short = "Numerical value (with implicit precision)"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateQuantity.unit
@@ -480,12 +478,12 @@ Description: "FDPG Profil - MII_PR_Onko_Therapieempfehlung_Medikation"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(intent)
 * insert ObligationConsumerDefault(medication[x])
-* insert ObligationConsumerDefault(medication[x][medicationReference])
 * insert ObligationConsumerDefault(medication[x][medicationCodeableConcept])
 * insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer])
 * insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[atcClassDe])
 * insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[atcClassEn])
 * insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[UNII])
+* insert ObligationConsumerDefault(medication[x][medicationReference])
 * insert ObligationConsumerDefault(subject)
 * insert ObligationConsumerDefault(encounter)
 * insert ObligationConsumerDefault(supportingInformation)

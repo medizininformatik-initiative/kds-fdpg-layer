@@ -16,16 +16,24 @@ Description: "FDPG Profil - MII_PR_Patho_Specimen"
 * extension[probenebene] ^short = "MII EX Biobank Ebene"
 * insert Translation(extension[probenebene] ^short, de-DE, Ebene)
 * insert Translation(extension[probenebene] ^short, en-US, Specimen level)
+// Specimen.extension:infektiositaetsstatus
+* extension[infektiositaetsstatus] ^short = "MII EX Biobank Infektiositätsstatus"
+// Specimen.extension:focus
+* extension[focus] ^short = "Specimen Focus"
 // Specimen.identifier
 * identifier ^short = "Identifikator"
 * insert Translation(identifier ^short, de-DE, Identifikator)
-* insert Translation(identifier ^short, en-US, Specimen ID)
+* insert Translation(identifier ^short, en-US, Identifier)
 * identifier ^definition = "Eindeutiger Identifikator der Probe"
-* insert Translation(identifier ^definition, de-DE, Identifikator dieser Ressource.)
-* insert Translation(identifier ^definition, en-US, Internal identifier of the specimen at the institution.)
+* insert Translation(identifier ^definition, de-DE, Eindeutiger Identifikator der Probe)
+* insert Translation(identifier ^definition, en-US, Unique identifier of the specimen)
 // Specimen.identifier:Placer-ID
 * identifier[Placer-ID] ^short = "Placer identifier"
-* insert Translation(identifier[Placer-ID] ^short, en-US, Specimen ID)
+* insert Translation(identifier[Placer-ID] ^short, de-DE, Auftraggeber-ID)
+* insert Translation(identifier[Placer-ID] ^short, en-US, Placer ID)
+* identifier[Placer-ID] ^definition = "Identifier for the placer of the pathology request"
+* insert Translation(identifier[Placer-ID] ^definition, de-DE, Identifikator des Auftraggebers)
+* insert Translation(identifier[Placer-ID] ^definition, en-US, Identifier of the placer)
 // Specimen.identifier:Placer-ID.type
 * identifier[Placer-ID].type ^short = "Description of identifier"
 // Specimen.identifier:Placer-ID.system
@@ -34,7 +42,11 @@ Description: "FDPG Profil - MII_PR_Patho_Specimen"
 * identifier[Placer-ID].value ^short = "The value that is unique"
 // Specimen.identifier:Filler-ID
 * identifier[Filler-ID] ^short = "Filler Identifier"
-* insert Translation(identifier[Filler-ID] ^short, en-US, Specimen ID)
+* insert Translation(identifier[Filler-ID] ^short, de-DE, Auftragnehmer-ID)
+* insert Translation(identifier[Filler-ID] ^short, en-US, Filler ID)
+* identifier[Filler-ID] ^definition = "Identifier for the filler of the pathology request"
+* insert Translation(identifier[Filler-ID] ^definition, de-DE, Identifikator des Auftragnehmers)
+* insert Translation(identifier[Filler-ID] ^definition, en-US, Identifier of the filler)
 // Specimen.identifier:Filler-ID.type
 * identifier[Filler-ID].type ^short = "Description of identifier"
 // Specimen.identifier:Filler-ID.system
@@ -136,20 +148,13 @@ Description: "FDPG Profil - MII_PR_Patho_Specimen"
 * collection.bodySite ^definition = "Anatomical location from which the specimen was collected (if subject is a patient). This is the target site.  This element is not used for environmental specimens."
 * insert Translation(collection.bodySite ^definition, de-DE, Die Körperstelle\, von der die Probe entnommen wurde.)
 * insert Translation(collection.bodySite ^definition, en-US, The body site from which the specimen was collected.)
-// Specimen.collection.bodySite.extension:locationQualifier
-* collection.bodySite.extension[locationQualifier] ^short = "Lagequalifikator"
-* insert Translation(collection.bodySite.extension[locationQualifier] ^short, de-DE, Lagequalifikator)
-* insert Translation(collection.bodySite.extension[locationQualifier] ^short, en-US, Location qualifier)
-* collection.bodySite.extension[locationQualifier] ^definition = "Qualifikator für die anatomische Lage"
-* insert Translation(collection.bodySite.extension[locationQualifier] ^definition, de-DE, Qualifikator für die anatomische Lage)
-* insert Translation(collection.bodySite.extension[locationQualifier] ^definition, en-US, Qualifier for anatomical location)
-// Specimen.collection.bodySite.extension:lateralityQualifier
-* collection.bodySite.extension[lateralityQualifier] ^short = "Seitlichkeitsqualifikator"
-* insert Translation(collection.bodySite.extension[lateralityQualifier] ^short, de-DE, Seitlichkeitsqualifikator)
-* insert Translation(collection.bodySite.extension[lateralityQualifier] ^short, en-US, Laterality qualifier)
-* collection.bodySite.extension[lateralityQualifier] ^definition = "Qualifikator für die Körperseite"
-* insert Translation(collection.bodySite.extension[lateralityQualifier] ^definition, de-DE, Qualifikator für die Körperseite)
-* insert Translation(collection.bodySite.extension[lateralityQualifier] ^definition, en-US, Qualifier for body side)
+// Specimen.collection.bodySite.extension:bodyStructure
+* collection.bodySite.extension[bodyStructure] ^short = "Koerperstruktur"
+* insert Translation(collection.bodySite.extension[bodyStructure] ^short, de-DE, Koerperstruktur)
+* insert Translation(collection.bodySite.extension[bodyStructure] ^short, en-US, Body structure)
+* collection.bodySite.extension[bodyStructure] ^definition = "Verweis auf eine BodyStructure-Ressource mit der detaillierten Lokalisation"
+* insert Translation(collection.bodySite.extension[bodyStructure] ^definition, de-DE, Verweis auf eine BodyStructure-Ressource mit der detaillierten Lokalisation)
+* insert Translation(collection.bodySite.extension[bodyStructure] ^definition, en-US, Reference to a BodyStructure resource carrying the detailed location)
 // Specimen.collection.bodySite.coding:sct
 * collection.bodySite.coding[sct] ^short = "SNOMED CT coding"
 * insert Translation(collection.bodySite.coding[sct] ^short, de-DE, SNOMED CT-Kodierung)
@@ -211,7 +216,11 @@ Description: "FDPG Profil - MII_PR_Patho_Specimen"
 * insert Translation(processing[lagerprozess].extension[temperaturbedingungen] ^short, en-US, Temperature conditions)
 // Specimen.container
 * container ^short = "Behälter"
-* insert Translation(container ^short, en-US, Specimen container)
+* insert Translation(container ^short, de-DE, Behälter)
+* insert Translation(container ^short, en-US, Container)
+* container ^definition = "Probenbehälter"
+* insert Translation(container ^definition, de-DE, Probenbehälter)
+* insert Translation(container ^definition, en-US, Specimen container)
 // Specimen.container.type
 * container.type ^short = "Kind of container directly associated with specimen"
 * insert Translation(container.type ^short, de-DE, Containertyp)
@@ -266,6 +275,8 @@ Description: "FDPG Profil - MII_PR_Patho_Specimen"
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(extension[probenebene])
+* insert ObligationConsumerDefault(extension[infektiositaetsstatus])
+* insert ObligationConsumerDefault(extension[focus])
 * insert ObligationConsumerDefault(identifier)
 * insert ObligationConsumerDefault(identifier[Placer-ID])
 * insert ObligationConsumerDefault(identifier[Filler-ID])

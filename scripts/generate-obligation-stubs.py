@@ -22,22 +22,22 @@ from pathlib import Path
 
 # Module -> package mapping. Versions aligned with sushi-config.yaml dependencies.
 MODULES = {
-    "basis":        {"package": "de.medizininformatikinitiative.kerndatensatz.base",        "version": "2026.0.0",          "module_short": "Basis",       "module_label": "Basis"},
-    "labor":        {"package": "de.medizininformatikinitiative.kerndatensatz.laborbefund", "version": "2026.0.1",          "module_short": "Labor",       "module_label": "Labor"},
-    "medikation":   {"package": "de.medizininformatikinitiative.kerndatensatz.medikation",  "version": "2026.0.1",          "module_short": "Medikation",  "module_label": "Medikation"},
-    "biobank":      {"package": "de.medizininformatikinitiative.kerndatensatz.biobank",     "version": "2026.0.1",          "module_short": "Biobank",     "module_label": "Biobank"},
-    "studie":       {"package": "de.medizininformatikinitiative.kerndatensatz.studie",      "version": "2026.0.2",          "module_short": "Studie",      "module_label": "Studie"},
-    "molgen":       {"package": "de.medizininformatikinitiative.kerndatensatz.molgen",      "version": "2026.0.4",          "module_short": "MolGen",      "module_label": "MolGen"},
-    "patho":        {"package": "de.medizininformatikinitiative.kerndatensatz.patho",       "version": "2026.0.1",          "module_short": "Patho",       "module_label": "Patho"},
-    "icu":          {"package": "de.medizininformatikinitiative.kerndatensatz.icu",         "version": "2026.0.2",          "module_short": "ICU",         "module_label": "ICU"},
-    "bildgebung":   {"package": "de.medizininformatikinitiative.kerndatensatz.bildgebung",  "version": "2026.0.0",          "module_short": "Bildgebung",  "module_label": "Bildgebung"},
-    "seltene":      {"package": "de.medizininformatikinitiative.kerndatensatz.seltene",     "version": "2026.0.1",          "module_short": "Seltene",     "module_label": "Seltene"},
-    "onkologie":    {"package": "de.medizininformatikinitiative.kerndatensatz.onkologie",   "version": "2026.0.3",          "module_short": "Onko",        "module_label": "Onko"},
-    "consent":      {"package": "de.medizininformatikinitiative.kerndatensatz.consent",     "version": "2026.0.1-rc-2",     "module_short": "Consent",     "module_label": "Consent"},
-    "dokument":     {"package": "de.medizininformatikinitiative.kerndatensatz.dokument",    "version": "2026.0.1",          "module_short": "Dokument",    "module_label": "Dokument"},
-    "mtb":          {"package": "de.medizininformatikinitiative.kerndatensatz.mtb",         "version": "2026.0.1",          "module_short": "Mtb",         "module_label": "MTB"},
-    "proms":        {"package": "de.medizininformatikinitiative.kerndatensatz.pros",        "version": "2026.3.0",          "module_short": "Pro",         "module_label": "PRO"},
-    "mikrobiologie":{"package": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie","version": "2027.0.0-alpha.3", "module_short": "Mikrobio",    "module_label": "Mikrobio"},
+    "basis":        {"package": "de.medizininformatikinitiative.kerndatensatz.base",        "version": "2027.0.0-ballot",          "module_short": "Basis",       "module_label": "Basis"},
+    "labor":        {"package": "de.medizininformatikinitiative.kerndatensatz.laborbefund", "version": "2027.0.0-ballot",          "module_short": "Labor",       "module_label": "Labor"},
+    "medikation":   {"package": "de.medizininformatikinitiative.kerndatensatz.medikation",  "version": "2027.0.0-ballot",          "module_short": "Medikation",  "module_label": "Medikation"},
+    "biobank":      {"package": "de.medizininformatikinitiative.kerndatensatz.biobank",     "version": "2027.0.0-ballot",          "module_short": "Biobank",     "module_label": "Biobank"},
+    "studie":       {"package": "de.medizininformatikinitiative.kerndatensatz.studie",      "version": "2027.0.0-ballot",          "module_short": "Studie",      "module_label": "Studie"},
+    "molgen":       {"package": "de.medizininformatikinitiative.kerndatensatz.molgen",      "version": "2027.0.0-ballot.1",          "module_short": "MolGen",      "module_label": "MolGen"},
+    "patho":        {"package": "de.medizininformatikinitiative.kerndatensatz.patho",       "version": "2027.0.0-ballot",          "module_short": "Patho",       "module_label": "Patho"},
+    "icu":          {"package": "de.medizininformatikinitiative.kerndatensatz.icu",         "version": "2027.0.0-ballot.3",          "module_short": "ICU",         "module_label": "ICU"},
+    "bildgebung":   {"package": "de.medizininformatikinitiative.kerndatensatz.bildgebung",  "version": "2027.0.0-ballot.1",          "module_short": "Bildgebung",  "module_label": "Bildgebung"},
+    "seltene":      {"package": "de.medizininformatikinitiative.kerndatensatz.seltene",     "version": "2027.0.0-ballot",          "module_short": "Seltene",     "module_label": "Seltene"},
+    "onkologie":    {"package": "de.medizininformatikinitiative.kerndatensatz.onkologie",   "version": "2027.0.0-ballot.1",          "module_short": "Onko",        "module_label": "Onko"},
+    "consent":      {"package": "de.medizininformatikinitiative.kerndatensatz.consent",     "version": "2027.0.0-ballot",     "module_short": "Consent",     "module_label": "Consent"},
+    "dokument":     {"package": "de.medizininformatikinitiative.kerndatensatz.dokument",    "version": "2027.0.0-ballot.2",          "module_short": "Dokument",    "module_label": "Dokument"},
+    "mtb":          {"package": "de.medizininformatikinitiative.kerndatensatz.mtb",         "version": "2027.0.0-ballot.1",          "module_short": "Mtb",         "module_label": "MTB"},
+    "proms":        {"package": "de.medizininformatikinitiative.kerndatensatz.pros",        "version": "2027.0.0-ballot.1",          "module_short": "Pro",         "module_label": "PRO"},
+    "mikrobiologie":{"package": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie","version": "2027.0.0-ballot2", "module_short": "Mikrobio",    "module_label": "Mikrobio"},
 }
 
 FHIR_CACHE = Path.home() / ".fhir" / "packages"

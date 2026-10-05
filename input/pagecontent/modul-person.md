@@ -6,7 +6,7 @@ Das Modul Person umfasst die demografischen und administrativen Daten von Patien
 
 ## Quellmodul
 
-[MII KDS Basismodul (Person)](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base/2026.0.0)
+[MII KDS Basismodul (Person)](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base/2027.0.0-ballot)
 
 ## FDPG Profile
 
@@ -16,6 +16,7 @@ Das Modul Person umfasst die demografischen und administrativen Daten von Patien
 | [FDPG_PR_Person_PatientPseudonymisiert](StructureDefinition-fdpg-pr-person-patient-pseudonymisiert.html) | MII_PR_Person_PatientPseudonymisiert | Patient |
 | [FDPG_PR_Person_Vitalstatus](StructureDefinition-fdpg-pr-person-vitalstatus.html) | MII_PR_Person_Vitalstatus | Observation |
 | [FDPG_PR_Person_Todesursache](StructureDefinition-fdpg-pr-person-todesursache.html) | MII_PR_Person_Todesursache | Condition |
+| [FDPG_PR_Person_AllergieUnvertraeglichkeit](StructureDefinition-fdpg-pr-person-allergie-unvertraeglichkeit.html) | MII_PR_Person_AllergieUnvertraeglichkeit | AllergyIntolerance |
 
 ## Obligation-Übersicht
 

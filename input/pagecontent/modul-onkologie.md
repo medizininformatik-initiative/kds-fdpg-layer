@@ -6,7 +6,7 @@ Das Modul Onkologie bildet die umfassende onkologische Dokumentation ab. Es umfa
 
 ## Quellmodul
 
-[MII KDS Onkologie](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/2026.0.1)
+[MII KDS Onkologie](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/2027.0.0-ballot.1)
 
 ## FDPG Profile
 
@@ -35,6 +35,7 @@ Das Modul Onkologie bildet die umfassende onkologische Dokumentation ab. Es umfa
 | [FDPG_PR_Onko_Tumorgroesse](StructureDefinition-fdpg-pr-onko-tumorgroesse.html) | MII_PR_Onko_Tumorgroesse | Observation |
 | [FDPG_PR_Onko_Genetische_Variante](StructureDefinition-fdpg-pr-onko-genetische-variante.html) | MII_PR_Onko_Genetische_Variante | Observation |
 | [FDPG_PR_Onko_Liste_Evidenz_Erstdiagnose](StructureDefinition-fdpg-pr-onko-liste-evidenz-erstdiagnose.html) | MII_PR_Onko_Liste_Evidenz_Erstdiagnose | List |
+| [FDPG_PR_Onko_TNM_Klassifikation_Synthetisiert](StructureDefinition-fdpg-pr-onko-tnm-klassifikation-synthetisiert.html) | MII_PR_Onko_TNM_Klassifikation_Synthetisiert | Observation |
 
 ### Lymphknoten
 
@@ -79,6 +80,7 @@ Das Modul Onkologie bildet die umfassende onkologische Dokumentation ab. Es umfa
 | [FDPG_PR_Onko_Studienteilnahme](StructureDefinition-fdpg-pr-onko-studienteilnahme.html) | MII_PR_Onko_Studienteilnahme | Observation |
 | [FDPG_PR_Onko_Tod](StructureDefinition-fdpg-pr-onko-tod.html) | MII_PR_Onko_Tod | Observation |
 | [FDPG_PR_Onko_Verlauf](StructureDefinition-fdpg-pr-onko-verlauf.html) | MII_PR_Onko_Verlauf | Observation |
+| [FDPG_PR_Onko_Tumormarker](StructureDefinition-fdpg-pr-onko-tumormarker.html) | MII_PR_Onko_Tumormarker | Observation |
 
 ### Mamma-Karzinom
 
@@ -104,6 +106,7 @@ Das Modul Onkologie bildet die umfassende onkologische Dokumentation ab. Es umfa
 | [FDPG_PR_Onko_Prostata_Anzahl_Positive_Stanzen](StructureDefinition-fdpg-pr-onko-prostate-anzahl-positive-stanzen.html) | MII_PR_Onko_Prostata_Anzahl_Positive_Stanzen | Observation |
 | [FDPG_PR_Onko_Prostata_CA_Befall_Stanze](StructureDefinition-fdpg-pr-onko-prostate-ca-befall-stanze.html) | MII_PR_Onko_Prostata_CA_Befall_Stanze | Observation |
 | [FDPG_PR_Onko_Prostata_Clavien_Dindo](StructureDefinition-fdpg-pr-onko-prostate-clavien-dindo.html) | MII_PR_Onko_Prostata_Clavien_Dindo | Observation |
+| [FDPG_PR_Onko_Prostata_Gleason_Score_Gesamt](StructureDefinition-fdpg-pr-onko-prostata-gleason-score-gesamt.html) | MII_PR_Onko_Prostata_Gleason_Score_Gesamt | Observation |
 
 ### Melanom
 

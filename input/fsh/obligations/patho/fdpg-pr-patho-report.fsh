@@ -19,6 +19,13 @@ Description: "FDPG Profil - MII_PR_Patho_Report"
 * extension[related-report] ^definition = "Verweis auf Vorbefunde"
 * insert Translation(extension[related-report] ^definition, de-DE, Verweis auf Vorbefunde)
 * insert Translation(extension[related-report] ^definition, en-US, Reference to related reports)
+// DiagnosticReport.extension:composition
+* extension[composition] ^short = "Composition"
+* insert Translation(extension[composition] ^short, de-DE, Composition)
+* insert Translation(extension[composition] ^short, en-US, Composition)
+* extension[composition] ^definition = "Verweis auf die zugehoerige Composition"
+* insert Translation(extension[composition] ^definition, de-DE, Verweis auf die zugehoerige Composition)
+* insert Translation(extension[composition] ^definition, en-US, Reference to the associated Composition)
 // DiagnosticReport.identifier
 * identifier ^short = "Business identifier for report"
 * insert Translation(identifier ^short, de-DE, Identifikator)
@@ -202,6 +209,7 @@ Description: "FDPG Profil - MII_PR_Patho_Report"
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(extension[related-report])
+* insert ObligationConsumerDefault(extension[composition])
 * insert ObligationConsumerDefault(identifier)
 * insert ObligationConsumerDefault(identifier[Set-ID])
 * insert ObligationConsumerDefault(basedOn)

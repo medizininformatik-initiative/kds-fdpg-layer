@@ -12,7 +12,7 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Stoma_Markierung"
 * extension ^short = "Extension"
 * insert Translation(extension ^short, de-DE, Erweiterung)
 * insert Translation(extension ^short, en-US, Extension)
-* extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+* extension ^definition = "An Extension"
 * insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
 * insert Translation(extension ^definition, en-US, FHIR extension.)
 // Procedure.extension:Dokumentationsdatum
@@ -22,6 +22,10 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Stoma_Markierung"
 * extension[Dokumentationsdatum] ^definition = "Dokumentationsdatum der Prozedur, falls abweichend vom Durchführungsdatum"
 * insert Translation(extension[Dokumentationsdatum] ^definition, de-DE, Dokumentationsdatum der Prozedur\, falls abweichend vom Durchführungsdatum)
 * insert Translation(extension[Dokumentationsdatum] ^definition, en-US, The date the procedure was documented\, if different from the performed date)
+// Procedure.extension:Dokumentationsdatum.url
+* extension[Dokumentationsdatum].url ^short = "identifies the meaning of the extension"
+// Procedure.extension:Dokumentationsdatum.value[x]
+* extension[Dokumentationsdatum].value[x] ^short = "Value of extension"
 // Procedure.extension:durchfuehrungsabsicht
 * extension[durchfuehrungsabsicht] ^short = "Durchführungsabsicht"
 * insert Translation(extension[durchfuehrungsabsicht] ^short, de-DE, Durchführungsabsicht)
@@ -29,6 +33,10 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Stoma_Markierung"
 * extension[durchfuehrungsabsicht] ^definition = "therapeutisch | palliativ | diagnostisch | präventiv | rehabilitativ | andere"
 * insert Translation(extension[durchfuehrungsabsicht] ^definition, de-DE, therapeutisch | palliativ | diagnostisch | präventiv | rehabilitativ | andere)
 * insert Translation(extension[durchfuehrungsabsicht] ^definition, en-US, therapeutic | palliative | diagnostic | preventive | rehabilitative | other)
+// Procedure.extension:durchfuehrungsabsicht.url
+* extension[durchfuehrungsabsicht].url ^short = "identifies the meaning of the extension"
+// Procedure.extension:durchfuehrungsabsicht.value[x]
+* extension[durchfuehrungsabsicht].value[x] ^short = "Value of extension"
 // Procedure.status
 * status ^short = "Status"
 * insert Translation(status ^short, de-DE, Status)
@@ -81,6 +89,10 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Stoma_Markierung"
 * code.coding[ops] ^definition = "Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel (OPS) definierten Code"
 * insert Translation(code.coding[ops] ^definition, de-DE, Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel definierten Code)
 * insert Translation(code.coding[ops] ^definition, en-US, A reference to a code defined by the German Procedure Classification OPS)
+// Procedure.code.coding:ops.extension:Seitenlokalisation.url
+* code.coding[ops].extension[Seitenlokalisation].url ^short = "identifies the meaning of the extension"
+// Procedure.code.coding:ops.extension:Seitenlokalisation.value[x]
+* code.coding[ops].extension[Seitenlokalisation].value[x] ^short = "Value of extension"
 // Procedure.code.coding:ops.system
 * code.coding[ops].system ^short = "Canonische CodeSystem URL für OPS"
 * insert Translation(code.coding[ops].system ^short, de-DE, OPS-System-URL)
@@ -115,6 +127,8 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Stoma_Markierung"
 * subject ^definition = "The person, animal or group on which the procedure was performed."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
 * insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
+// Procedure.subject.reference
+* subject.reference ^short = "Literal reference, Relative, internal or absolute URL"
 // Procedure.encounter
 * encounter ^short = "Kontakt (Aufenthaltsbezug)"
 * insert Translation(encounter ^short, de-DE, Kontakt)
@@ -122,6 +136,8 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Stoma_Markierung"
 * encounter ^definition = "Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht."
 * insert Translation(encounter ^definition, de-DE, Kontakt\, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht.)
 * insert Translation(encounter ^definition, en-US, The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated.)
+// Procedure.encounter.reference
+* encounter.reference ^short = "Literal reference, Relative, internal or absolute URL"
 // Procedure.performed[x]
 * performed[x] ^short = "Durchführungsdatum"
 * insert Translation(performed[x] ^short, de-DE, Durchführungsdatum)
@@ -133,6 +149,16 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Stoma_Markierung"
 * performed[x][performedDateTime] ^short = "Datum der Stoma-Markierung"
 * insert Translation(performed[x][performedDateTime] ^short, de-DE, Datum der Stoma-Markierung)
 * insert Translation(performed[x][performedDateTime] ^short, en-US, Stoma marking date)
+* performed[x][performedDateTime] ^definition = "Datum der präoperativen Stoma-Markierung"
+* insert Translation(performed[x][performedDateTime] ^definition, de-DE, Datum der präoperativen Markierung der geplanten Stoma-Position)
+* insert Translation(performed[x][performedDateTime] ^definition, en-US, The date the procedure was performed.)
+// Procedure.performed[x]:performedPeriod
+* performed[x][performedPeriod] ^short = "Durchführungszeitraum"
+* insert Translation(performed[x][performedPeriod] ^short, de-DE, Durchführungszeitraum)
+* insert Translation(performed[x][performedPeriod] ^short, en-US, Performed period)
+* performed[x][performedPeriod] ^definition = "Zeitraum, in dem die Prozedur durchgeführt wurde."
+* insert Translation(performed[x][performedPeriod] ^definition, de-DE, Zeitraum\, in dem die Prozedur durchgeführt wurde.)
+* insert Translation(performed[x][performedPeriod] ^definition, en-US, The period of time the procedure was performed.)
 // Procedure.reasonReference
 * reasonReference ^short = "The justification that the procedure was performed"
 * insert Translation(reasonReference ^short, de-DE, Begründung (Verweis\))
@@ -196,6 +222,7 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Stoma_Markierung"
 * insert ObligationConsumerDefault(encounter)
 * insert ObligationConsumerDefault(performed[x])
 * insert ObligationConsumerDefault(performed[x][performedDateTime])
+* insert ObligationConsumerDefault(performed[x][performedPeriod])
 * insert ObligationConsumerDefault(reasonReference)
 * insert ObligationConsumerDefault(bodySite)
 * insert ObligationConsumerDefault(bodySite.coding[snomed-ct])

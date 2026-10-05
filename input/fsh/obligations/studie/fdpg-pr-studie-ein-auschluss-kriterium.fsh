@@ -17,6 +17,18 @@ Description: "FDPG Profil - MII_PR_Studie_EinAuschlussKriterium"
 * insert Translation(status ^definition, en-US, Status of the resource.)
 // EvidenceVariable.characteristic
 * characteristic ^short = "Characteristic"
+// EvidenceVariable.characteristic.extension
+* characteristic.extension ^short = "Extension"
+// EvidenceVariable.characteristic.extension:linkId
+* characteristic.extension[linkId] ^short = "Extension"
+// EvidenceVariable.characteristic.extension:definitionReference
+* characteristic.extension[definitionReference] ^short = "Extension"
+// EvidenceVariable.characteristic.extension:definitionCanonical
+* characteristic.extension[definitionCanonical] ^short = "Extension"
+// EvidenceVariable.characteristic.extension:definitionByTypeAndValue
+* characteristic.extension[definitionByTypeAndValue] ^short = "Extension"
+// EvidenceVariable.characteristic.extension:definitionByCombination
+* characteristic.extension[definitionByCombination] ^short = "Extension"
 // EvidenceVariable.characteristic.description
 * characteristic.description ^short = "Natural language description of the characteristic"
 // EvidenceVariable.characteristic.definition[x]

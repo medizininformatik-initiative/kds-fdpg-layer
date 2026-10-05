@@ -12,7 +12,7 @@ Description: "FDPG Profil - MII_PR_Onko_Prostata_CA_Befall_Stanze"
 * code ^short = "Prozentualer Karzinombefall"
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
-* code ^definition = "Prozentualer Karzinombefall der am stärksten befallenen Stanze einer Prostata-Biopsie oder eines Prostata-Exzisionspräparates."
+* code ^definition = "Prozentualer Karzinombefall der am stärksten befallenen Stanze einer Prostata-Biopsie oder eines Prostata-Exzisionspräparates. "
 * insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
 // Observation.subject

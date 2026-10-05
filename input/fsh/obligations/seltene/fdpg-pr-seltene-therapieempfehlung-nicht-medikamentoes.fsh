@@ -12,10 +12,6 @@ Description: "FDPG Profil - MII_PR_Seltene_TherapieempfehlungNichtMedikamentoes"
 * extension[Prioritaet] ^short = "MII EX SE Empfehlung Priorität"
 * insert Translation(extension[Prioritaet] ^short, de-DE, Priorität)
 * insert Translation(extension[Prioritaet] ^short, en-US, Priority)
-// ServiceRequest.extension:Evidenzgraduierung
-* extension[Evidenzgraduierung] ^short = "MII EX SE Empfehlung Evidenzgraduierung"
-* insert Translation(extension[Evidenzgraduierung] ^short, de-DE, Empfehlung Evidenzgraduierung)
-* insert Translation(extension[Evidenzgraduierung] ^short, en-US, Evidence grade)
 // ServiceRequest.extension:Publikation
 * extension[Publikation] ^short = "MII EX SE Empfehlung Publikation"
 * insert Translation(extension[Publikation] ^short, de-DE, Empfehlung Publikation)
@@ -127,7 +123,6 @@ Description: "FDPG Profil - MII_PR_Seltene_TherapieempfehlungNichtMedikamentoes"
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(extension[Prioritaet])
-* insert ObligationConsumerDefault(extension[Evidenzgraduierung])
 * insert ObligationConsumerDefault(extension[Publikation])
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(intent)

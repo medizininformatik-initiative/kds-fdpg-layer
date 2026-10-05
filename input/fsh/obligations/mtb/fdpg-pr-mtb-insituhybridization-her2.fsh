@@ -24,10 +24,10 @@ Description: "FDPG Profil - MII_PR_MTB_INSITUHYBRIDIZATION_HER2"
 * insert Translation(category ^definition, en-US, Categorization of the resource.)
 // Observation.code
 * code ^short = "Code für In Situ Hybridization Untersuchung"
-* insert Translation(code ^short, de-DE, Code)
+* insert Translation(code ^short, de-DE, Code fuer In Situ Hybridization Untersuchung)
 * insert Translation(code ^short, en-US, Code)
 * code ^definition = "Kodierung für In Situ Hybridization. Nach Möglichkeit sind spezifische Codes zu verwenden. Wenn weder in SNOMED noch LOINC spezifische Codes vorhanden sind, ist der generische Code mit Textbeschreibung zu verwenden."
-* insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
+* insert Translation(code ^definition, de-DE, Kodierung fuer In Situ Hybridization. Nach Moeglichkeit sind spezifische Codes zu verwenden. Wenn weder in SNOMED noch LOINC spezifische Codes vorhanden sind ist der generische Code mit Textbeschreibung zu verwenden.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
 // Observation.code.coding:generisch
 * code.coding[generisch] ^short = "Generischer ISH Code"
@@ -77,6 +77,13 @@ Description: "FDPG Profil - MII_PR_MTB_INSITUHYBRIDIZATION_HER2"
 * value[x] ^definition = "The information determined as a result of making the observation, if the information has a simple value."
 * insert Translation(value[x] ^definition, de-DE, Wert der Beobachtung.)
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
+// Observation.value[x]:valueRatio
+* value[x][valueRatio] ^short = "HER2/CEP17 Ratio"
+* insert Translation(value[x][valueRatio] ^short, de-DE, HER2/CEP17 Verhaeltnis)
+* insert Translation(value[x][valueRatio] ^short, en-US, Ratio value)
+* value[x][valueRatio] ^definition = "The information determined as a result of making the observation, if the information has a simple value."
+* insert Translation(value[x][valueRatio] ^definition, de-DE, Wert als Verhältnis (Zähler/Nenner\).)
+* insert Translation(value[x][valueRatio] ^definition, en-US, Value as ratio (numerator/denominator\).)
 // Observation.value[x]:valueQuantity
 * value[x][valueQuantity] ^short = "Quantitatives Ergebnis (z.B. Signalanzahl)"
 * insert Translation(value[x][valueQuantity] ^short, de-DE, Quantitatives Ergebnis - z.B. Signalanzahl)
@@ -84,13 +91,6 @@ Description: "FDPG Profil - MII_PR_MTB_INSITUHYBRIDIZATION_HER2"
 * value[x][valueQuantity] ^definition = "The information determined as a result of making the observation, if the information has a simple value."
 * insert Translation(value[x][valueQuantity] ^definition, de-DE, Wert als numerische Größe mit Einheit (z.B. mmol/L\).)
 * insert Translation(value[x][valueQuantity] ^definition, en-US, Value as numeric quantity with unit (e.g. mmol/L\).)
-// Observation.value[x]:valueRatio
-* value[x][valueRatio] ^short = "HER2/CEP17 Ratio"
-* insert Translation(value[x][valueRatio] ^short, de-DE, Verhältnis)
-* insert Translation(value[x][valueRatio] ^short, en-US, Ratio value)
-* value[x][valueRatio] ^definition = "The information determined as a result of making the observation, if the information has a simple value."
-* insert Translation(value[x][valueRatio] ^definition, de-DE, Wert als Verhältnis (Zähler/Nenner\).)
-* insert Translation(value[x][valueRatio] ^definition, en-US, Value as ratio (numerator/denominator\).)
 // Observation.value[x]:valueCodeableConcept
 * value[x][valueCodeableConcept] ^short = "Kategorisches Ergebnis (z.B. positiv/negativ)"
 * insert Translation(value[x][valueCodeableConcept] ^short, de-DE, Kategorisches Ergebnis - z.B. positiv/negativ)
@@ -131,7 +131,7 @@ Description: "FDPG Profil - MII_PR_MTB_INSITUHYBRIDIZATION_HER2"
 * insert Translation(component[gene-studied] ^short, de-DE, Untersuchtes Gen)
 * insert Translation(component[gene-studied] ^short, en-US, Gene studied)
 * component[gene-studied] ^definition = "Das mit der Target-Sonde untersuchte Gen (z.B. ERBB2)"
-* insert Translation(component[gene-studied] ^definition, de-DE, Das untersuchte Gen\, identifiziert durch HGNC-ID.)
+* insert Translation(component[gene-studied] ^definition, de-DE, Das mit der Target-Sonde untersuchte Gen - z.B. ERBB2)
 * insert Translation(component[gene-studied] ^definition, en-US, The gene studied\, identified by HGNC ID.)
 // Observation.component:biomarker-category
 * component[biomarker-category] ^short = "Biomarker-Kategorie"
@@ -142,16 +142,19 @@ Description: "FDPG Profil - MII_PR_MTB_INSITUHYBRIDIZATION_HER2"
 * insert Translation(component[biomarker-category] ^definition, en-US, Category of the molecular biomarker.)
 // Observation.component:target-signals
 * component[target-signals] ^short = "ERBB2 Signale pro Zellkern"
+* insert Translation(component[target-signals] ^short, de-DE, ERBB2 Signale pro Zellkern)
 * component[target-signals] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[target-signals] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
 * insert Translation(component[target-signals] ^definition, en-US, Individual components of the observation.)
 // Observation.component:reference-signals
 * component[reference-signals] ^short = "CEP17 Signale pro Zellkern"
+* insert Translation(component[reference-signals] ^short, de-DE, CEP17 Signale pro Zellkern)
 * component[reference-signals] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[reference-signals] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
 * insert Translation(component[reference-signals] ^definition, en-US, Individual components of the observation.)
 // Observation.component:cells-counted
 * component[cells-counted] ^short = "Anzahl gezählter Zellkerne"
+* insert Translation(component[cells-counted] ^short, de-DE, Anzahl gezaehlter Zellkerne)
 * component[cells-counted] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[cells-counted] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
 * insert Translation(component[cells-counted] ^definition, en-US, Individual components of the observation.)
@@ -168,8 +171,8 @@ Description: "FDPG Profil - MII_PR_MTB_INSITUHYBRIDIZATION_HER2"
 * insert ObligationConsumerDefault(effective[x])
 * insert ObligationConsumerDefault(issued)
 * insert ObligationConsumerDefault(value[x])
-* insert ObligationConsumerDefault(value[x][valueQuantity])
 * insert ObligationConsumerDefault(value[x][valueRatio])
+* insert ObligationConsumerDefault(value[x][valueQuantity])
 * insert ObligationConsumerDefault(value[x][valueCodeableConcept])
 * insert ObligationConsumerDefault(interpretation)
 * insert ObligationConsumerDefault(method)

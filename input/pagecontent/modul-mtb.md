@@ -6,7 +6,7 @@ Das Modul Molekulares Tumorboard (MTB) bildet die strukturierte Dokumentation mo
 
 ## Quellmodul
 
-[MII KDS MTB](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.mtb/2026.0.0)
+[MII KDS MTB](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.mtb/2027.0.0-ballot.1)
 
 ## FDPG Profile
 
@@ -61,6 +61,7 @@ Das Modul Molekulares Tumorboard (MTB) bildet die strukturierte Dokumentation mo
 | [FDPG_PR_MTB_Tumorausbreitung](StructureDefinition-fdpg-pr-mtb-tumorausbreitung.html) | MII_PR_MTB_Tumorausbreitung | Observation |
 | [FDPG_PR_MTB_Tumorzellgehalt](StructureDefinition-fdpg-pr-mtb-tumorzellgehalt.html) | MII_PR_MTB_Tumorzellgehalt | Observation |
 | [FDPG_PR_MTB_WHO_Grad_Tumor_ZNS](StructureDefinition-fdpg-pr-mtb-who-grad-tumor-zns.html) | MII_PR_MTB_WHO_Grad_Tumor_ZNS | Observation |
+| [FDPG_PR_MTB_Panel_DeviceDefinition](StructureDefinition-fdpg-pr-mtb-panel-device-definition.html) | MII_PR_MTB_Panel_DeviceDefinition | DeviceDefinition |
 
 ## Obligation-Übersicht
 

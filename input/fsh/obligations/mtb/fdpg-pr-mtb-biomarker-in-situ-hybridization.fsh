@@ -24,10 +24,10 @@ Description: "FDPG Profil - MII_PR_MTB_Biomarker_InSituHybridization"
 * insert Translation(category ^definition, en-US, Categorization of the resource.)
 // Observation.code
 * code ^short = "Code für In Situ Hybridization Untersuchung"
-* insert Translation(code ^short, de-DE, Code)
+* insert Translation(code ^short, de-DE, Code fuer In Situ Hybridization Untersuchung)
 * insert Translation(code ^short, en-US, Code)
 * code ^definition = "Kodierung für In Situ Hybridization. Nach Möglichkeit sind spezifische Codes zu verwenden. Wenn weder in SNOMED noch LOINC spezifische Codes vorhanden sind, ist der generische Code mit Textbeschreibung zu verwenden."
-* insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
+* insert Translation(code ^definition, de-DE, Kodierung fuer In Situ Hybridization. Nach Moeglichkeit sind spezifische Codes zu verwenden. Wenn weder in SNOMED noch LOINC spezifische Codes vorhanden sind ist der generische Code mit Textbeschreibung zu verwenden.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
 // Observation.code.coding:generisch
 * code.coding[generisch] ^short = "Generischer ISH Code"
@@ -127,7 +127,7 @@ Description: "FDPG Profil - MII_PR_MTB_Biomarker_InSituHybridization"
 * insert Translation(component[gene-studied] ^short, de-DE, Untersuchtes Gen)
 * insert Translation(component[gene-studied] ^short, en-US, Gene studied)
 * component[gene-studied] ^definition = "Das mit der Target-Sonde untersuchte Gen (z.B. ERBB2)"
-* insert Translation(component[gene-studied] ^definition, de-DE, Das untersuchte Gen\, identifiziert durch HGNC-ID.)
+* insert Translation(component[gene-studied] ^definition, de-DE, Das mit der Target-Sonde untersuchte Gen - z.B. ERBB2)
 * insert Translation(component[gene-studied] ^definition, en-US, The gene studied\, identified by HGNC ID.)
 // Observation.component:biomarker-category
 * component[biomarker-category] ^short = "Biomarker-Kategorie"

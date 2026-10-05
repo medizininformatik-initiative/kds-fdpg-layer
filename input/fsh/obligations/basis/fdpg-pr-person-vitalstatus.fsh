@@ -50,6 +50,8 @@ Description: "FDPG Profil - MII_PR_Person_Vitalstatus"
 * subject ^definition = "The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
 * insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
+// Observation.subject.reference
+* subject.reference ^short = "Literal reference, Relative, internal or absolute URL"
 // Observation.encounter
 * encounter ^short = "Kontakt (Aufenthaltsbezug)"
 * insert Translation(encounter ^short, de-DE, Kontakt)
@@ -57,6 +59,8 @@ Description: "FDPG Profil - MII_PR_Person_Vitalstatus"
 * encounter ^definition = "Kontakt, bei dem der Vitalstatus festgestellt wurde."
 * insert Translation(encounter ^definition, de-DE, Kontakt\, bei dem der Vitalstatus festgestellt wurde.)
 * insert Translation(encounter ^definition, en-US, Encounter during which the vital status was determined.)
+// Observation.encounter.reference
+* encounter.reference ^short = "Literal reference, Relative, internal or absolute URL"
 // Observation.effective[x]
 * effective[x] ^short = "Zeitpunkt"
 * insert Translation(effective[x] ^short, de-DE, Zeitpunkt)

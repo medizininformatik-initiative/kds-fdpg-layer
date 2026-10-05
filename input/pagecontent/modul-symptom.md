@@ -6,7 +6,7 @@ Das Modul Symptom bildet klinische Symptome und phaenotypische Merkmale von Pati
 
 ## Quellmodul
 
-[MII KDS Symptom](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.symptom/2026.0.0)
+[MII KDS Symptom](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.symptom/2027.0.0-ballot)
 
 ## FDPG Profile
 

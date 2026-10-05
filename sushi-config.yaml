@@ -18,29 +18,29 @@ publisher:
 
 dependencies:
   # FHIR Extensions (REQUIRED for Obligations)
-  hl7.fhir.uv.extensions.r4: 5.1.0
+  hl7.fhir.uv.extensions.r4: 5.3.0
 
   # German Base Profiles
-  de.basisprofil.r4: 1.5.4
+  de.basisprofil.r4: 1.6.0
 
-  # MII Kerndatensatz (Versionen aus KDS Complete 2026.1.0)
-  de.medizininformatikinitiative.kerndatensatz.meta: 2026.0.0
-  de.medizininformatikinitiative.kerndatensatz.base: 2026.0.0
-  de.medizininformatikinitiative.kerndatensatz.laborbefund: 2026.0.1
-  de.medizininformatikinitiative.kerndatensatz.medikation: 2026.0.1
-  de.medizininformatikinitiative.kerndatensatz.biobank: 2026.0.1
-  de.medizininformatikinitiative.kerndatensatz.icu: 2026.0.2
-  de.medizininformatikinitiative.kerndatensatz.mikrobiologie: 2027.0.0-alpha.3
-  de.medizininformatikinitiative.kerndatensatz.molgen: 2026.0.4
-  de.medizininformatikinitiative.kerndatensatz.patho: 2026.0.1
-  de.medizininformatikinitiative.kerndatensatz.studie: 2026.0.2
-  de.medizininformatikinitiative.kerndatensatz.bildgebung: 2026.0.0
-  de.medizininformatikinitiative.kerndatensatz.dokument: 2026.0.1
-  de.medizininformatikinitiative.kerndatensatz.onkologie: 2026.0.3
-  de.medizininformatikinitiative.kerndatensatz.seltene: 2026.0.1
-  de.medizininformatikinitiative.kerndatensatz.mtb: 2026.0.1
-  de.medizininformatikinitiative.kerndatensatz.pros: 2026.3.0
-  de.medizininformatikinitiative.kerndatensatz.consent: 2026.0.1-rc-2
+  # MII Kerndatensatz (Versionen aus KDS Complete 2027.0.0-ballot.19)
+  de.medizininformatikinitiative.kerndatensatz.meta: 2027.0.0-ballot
+  de.medizininformatikinitiative.kerndatensatz.base: 2027.0.0-ballot
+  de.medizininformatikinitiative.kerndatensatz.laborbefund: 2027.0.0-ballot
+  de.medizininformatikinitiative.kerndatensatz.medikation: 2027.0.0-ballot
+  de.medizininformatikinitiative.kerndatensatz.biobank: 2027.0.0-ballot
+  de.medizininformatikinitiative.kerndatensatz.icu: 2027.0.0-ballot.3
+  de.medizininformatikinitiative.kerndatensatz.mikrobiologie: 2027.0.0-ballot2
+  de.medizininformatikinitiative.kerndatensatz.molgen: 2027.0.0-ballot.1
+  de.medizininformatikinitiative.kerndatensatz.patho: 2027.0.0-ballot
+  de.medizininformatikinitiative.kerndatensatz.studie: 2027.0.0-ballot
+  de.medizininformatikinitiative.kerndatensatz.bildgebung: 2027.0.0-ballot.1
+  de.medizininformatikinitiative.kerndatensatz.dokument: 2027.0.0-ballot.2
+  de.medizininformatikinitiative.kerndatensatz.onkologie: 2027.0.0-ballot.1
+  de.medizininformatikinitiative.kerndatensatz.seltene: 2027.0.0-ballot
+  de.medizininformatikinitiative.kerndatensatz.mtb: 2027.0.0-ballot.1
+  de.medizininformatikinitiative.kerndatensatz.pros: 2027.0.0-ballot.1
+  de.medizininformatikinitiative.kerndatensatz.consent: 2027.0.0-ballot
 
 parameters:
   show-inherited-invariants: false

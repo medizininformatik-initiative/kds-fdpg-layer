@@ -2,7 +2,7 @@
 
 Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen und englischen Beschreibungen. Die Obligations werden auf der Seite [Obligations](obligations.html) beschrieben.
 
-**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.medikation](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.medikation/2026.0.1)
+**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.medikation](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.medikation/2027.0.0-ballot)
 
 #### Medikationsverabreichung (MedicationAdministration)
 
@@ -112,8 +112,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `form` | Darreichungsform | Darreichungsform nach EDQM | Darreichungsform | Darreichungsform des Medikaments |  |
 | `form.coding:EDQM` | Darreichungsform | Darreichungsform nach EDQM | EDQM Standard Terms | Kodierung nach EDQM Standard Terms. |  |
 | `ingredient` | Bestandteil | Aktiver oder nicht-aktiver Inhaltsstoff. Identifiziert einen bestimmten Bestandteil der Medikation. | Bestandteil | Ein Bestandteil des Medikaments | ✓ |
-| `ingredient.extension:Wirkstofftyp` | Bestandteil | Aktiver oder nicht-aktiver Inhaltsstoff. Identifiziert einen bestimmten Bestandteil der Medikation. | Optional Extensions Element | Optional Extension Element - found in all resources. |  |
-| `ingredient.extension:Wirkstoffrelation` | Bestandteil | Aktiver oder nicht-aktiver Inhaltsstoff. Identifiziert einen bestimmten Bestandteil der Medikation. | Optional Extensions Element | Optional Extension Element - found in all resources. |  |
+| `ingredient.extension:Wirkstofftyp` | Bestandteil | Aktiver oder nicht-aktiver Inhaltsstoff. Identifiziert einen bestimmten Bestandteil der Medikation. | MII EX Medikation Wirkstofftyp | Extension zur Differenzierung des Wirkstofftyps in allgemeinen, genauen oder Kombinationswirkstoff. |  |
+| `ingredient.extension:Wirkstoffrelation` | Bestandteil | Aktiver oder nicht-aktiver Inhaltsstoff. Identifiziert einen bestimmten Bestandteil der Medikation. | MII EX Medikation Wirkstoffrelation | Die Extension ermöglicht die Zuordnung von einem genauem Wirkstoff (z.B. Salz, Ester) zu einem allgemeinem Wirkstoff. |  |
 | `ingredient.item[x]:itemReference` | Bestandteil | Aktiver oder nicht-aktiver Inhaltsstoff. Identifiziert einen bestimmten Bestandteil der Medikation. | The actual ingredient or content | The actual ingredient - either a substance (simple ingredient) or another medication of a medication. |  |
 | `ingredient.item[x]:itemCodeableConcept` | Bestandteil | Aktiver oder nicht-aktiver Inhaltsstoff. Identifiziert einen bestimmten Bestandteil der Medikation. | The actual ingredient or content | The actual ingredient - either a substance (simple ingredient) or another medication of a medication. |  |
 
@@ -248,8 +248,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `form` | Darreichungsform | Darreichungsform des Medikaments |
 | `form.coding:EDQM` | EDQM Standard Terms | Coding in EDQM Standard Terms. |
 | `ingredient` | Bestandteil | Ein Bestandteil des Medikaments |
-| `ingredient.extension:Wirkstofftyp` | Optional Extensions Element | Optional Extension Element - found in all resources. |
-| `ingredient.extension:Wirkstoffrelation` | Optional Extensions Element | Optional Extension Element - found in all resources. |
+| `ingredient.extension:Wirkstofftyp` | MII EX Medikation Wirkstofftyp | Extension zur Differenzierung des Wirkstofftyps in allgemeinen, genauen oder Kombinationswirkstoff. |
+| `ingredient.extension:Wirkstoffrelation` | MII EX Medikation Wirkstoffrelation | Die Extension ermöglicht die Zuordnung von einem genauem Wirkstoff (z.B. Salz, Ester) zu einem allgemeinem Wirkstoff. |
 | `ingredient.item[x]:itemReference` | The actual ingredient or content | The actual ingredient - either a substance (simple ingredient) or another medication of a medication. |
 | `ingredient.item[x]:itemCodeableConcept` | The actual ingredient or content | The actual ingredient - either a substance (simple ingredient) or another medication of a medication. |
 

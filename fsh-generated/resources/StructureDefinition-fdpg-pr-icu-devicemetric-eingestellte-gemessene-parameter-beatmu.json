@@ -61,7 +61,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "DeviceMetric",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-devicemetric-eingestellte-gemessene-parameter-beatmung",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-dm-eingestellte-gemessene-parameter-beatmung",
   "derivation": "constraint",
   "differential": {
     "element": [

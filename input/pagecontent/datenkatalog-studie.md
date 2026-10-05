@@ -2,7 +2,7 @@
 
 Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen und englischen Beschreibungen. Die Obligations werden auf der Seite [Obligations](obligations.html) beschrieben.
 
-**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.studie](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.studie/2026.0.2)
+**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.studie](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.studie/2027.0.0-ballot)
 
 #### Beteiligte Person (PractitionerRole)
 
@@ -35,11 +35,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|
 | `status` | Status | Status der Ressource. |
 | `characteristic` | Characteristic | Eine Eigenschaft, die die Mitglieder des Evidence-Elements definiert. Mehrere Eigenschaften werden mit einer “und”-Semantik angewendet. |
-| `characteristic.extension:linkId` | Optional Extensions Element | Optional Extension Element - found in all resources. |
-| `characteristic.extension:definitionReference` | Optional Extensions Element | Optional Extension Element - found in all resources. |
-| `characteristic.extension:definitionCanonical` | Optional Extensions Element | Optional Extension Element - found in all resources. |
-| `characteristic.extension:definitionByTypeAndValue` | Optional Extensions Element | Optional Extension Element - found in all resources. |
-| `characteristic.extension:definitionByCombination` | Optional Extensions Element | Optional Extension Element - found in all resources. |
+| `characteristic.extension:linkId` | Extension | An Extension |
+| `characteristic.extension:definitionReference` | Extension | An Extension |
+| `characteristic.extension:definitionCanonical` | Extension | An Extension |
+| `characteristic.extension:definitionByTypeAndValue` | Extension | An Extension |
+| `characteristic.extension:definitionByCombination` | Extension | An Extension |
 
 #### Proband / Probandin (ResearchSubject)
 
@@ -141,11 +141,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `status` | Status | Status of the resource. |
 | `characteristic` | Characteristic | Eine Eigenschaft, die die Mitglieder des Evidence-Elements definiert. Mehrere Eigenschaften werden mit einer “und”-Semantik angewendet. |
-| `characteristic.extension:linkId` | Optional Extensions Element | Optional Extension Element - found in all resources. |
-| `characteristic.extension:definitionReference` | Optional Extensions Element | Optional Extension Element - found in all resources. |
-| `characteristic.extension:definitionCanonical` | Optional Extensions Element | Optional Extension Element - found in all resources. |
-| `characteristic.extension:definitionByTypeAndValue` | Optional Extensions Element | Optional Extension Element - found in all resources. |
-| `characteristic.extension:definitionByCombination` | Optional Extensions Element | Optional Extension Element - found in all resources. |
+| `characteristic.extension:linkId` | Extension | An Extension |
+| `characteristic.extension:definitionReference` | Extension | An Extension |
+| `characteristic.extension:definitionCanonical` | Extension | An Extension |
+| `characteristic.extension:definitionByTypeAndValue` | Extension | An Extension |
+| `characteristic.extension:definitionByCombination` | Extension | An Extension |
 
 </details>
 

@@ -410,6 +410,39 @@
         "sliceName": "consentCategory"
       },
       {
+        "id": "Consent.category:mii",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "Consent.category",
+        "sliceName": "mii"
+      },
+      {
         "id": "Consent.category:resultType",
         "extension": [
           {
@@ -474,72 +507,6 @@
         ],
         "path": "Consent.category",
         "sliceName": "templateType"
-      },
-      {
-        "id": "Consent.category:loinc",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
-            "extension": [
-              {
-                "url": "code",
-                "valueCode": "handle"
-              },
-              {
-                "url": "actor",
-                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
-              }
-            ]
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
-            "extension": [
-              {
-                "url": "code",
-                "valueCode": "display"
-              },
-              {
-                "url": "actor",
-                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
-              }
-            ]
-          }
-        ],
-        "path": "Consent.category",
-        "sliceName": "loinc"
-      },
-      {
-        "id": "Consent.category:mii",
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
-            "extension": [
-              {
-                "url": "code",
-                "valueCode": "handle"
-              },
-              {
-                "url": "actor",
-                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
-              }
-            ]
-          },
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
-            "extension": [
-              {
-                "url": "code",
-                "valueCode": "display"
-              },
-              {
-                "url": "actor",
-                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
-              }
-            ]
-          }
-        ],
-        "path": "Consent.category",
-        "sliceName": "mii"
       },
       {
         "id": "Consent.patient",

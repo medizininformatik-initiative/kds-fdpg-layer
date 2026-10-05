@@ -17,10 +17,10 @@ Description: "FDPG Profil - MII_PR_MTB_Ploidie"
 * insert Translation(category ^definition, en-US, Categorization of the resource.)
 // Observation.code
 * code ^short = "Ploidie"
-* insert Translation(code ^short, de-DE, Code)
+* insert Translation(code ^short, de-DE, Ploidie)
 * insert Translation(code ^short, en-US, Code)
 * code ^definition = "Ploidie der Tumorprobe"
-* insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
+* insert Translation(code ^definition, de-DE, Ploidie der Tumorprobe)
 * insert Translation(code ^definition, en-US, Coding of the content.)
 // Observation.code.coding:NCIT
 * code.coding[NCIT] ^short = "NCIt coding"

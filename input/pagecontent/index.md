@@ -59,28 +59,31 @@ Die MII KDS-Module werden von verschiedenen Arbeitsgruppen gepflegt. Eine zentra
 
 ## Module Coverage
 
-Diese Layer deckt 16 MII Kerndatensatz Module mit insgesamt 244 Profilen ab (1 weiteres Modul ist ausstehend):
+Diese Layer deckt 16 MII Kerndatensatz Module mit insgesamt 368 Profilen ab (Stand KDS Complete 2027.0.0-ballot.19; Symptom ist ausstehend):
 
 | Modul | Profile | Quellpaket-Version | Status |
 |-------|---------|-------------------|--------|
-| [Person](modul-person.html) | 4 | base 2026.0.0 | Aktiv |
-| [Diagnose](modul-diagnose.html) | 1 | base 2026.0.0 | Aktiv |
-| [Prozedur](modul-prozedur.html) | 1 | base 2026.0.0 | Aktiv |
-| [Fall](modul-fall.html) | 1 | base 2026.0.0 | Aktiv |
-| [Laborbefund](modul-labor.html) | 3 | laborbefund 2026.0.1 | Aktiv |
-| [Medikation](modul-medikation.html) | 5 | medikation 2026.0.0 | Aktiv |
-| [Biobank](modul-biobank.html) | 11 | biobank 2026.0.0 | Aktiv |
-| [Studie](modul-studie.html) | 7 | studie 2026.0.2 | Aktiv |
-| [Molekulargenetik](modul-molgen.html) | 16 | molgen 2026.0.4 | Aktiv |
-| [Pathologiebefund](modul-patho.html) | 17 | patho 2026.0.1 | Aktiv |
-| [Intensivmedizin](modul-icu.html) | 72 | icu 2026.0.1-rc1 | Aktiv |
-| [Bildgebung](modul-bildgebung.html) | 11 | bildgebung 2026.0.0 | Aktiv |
-| [Seltene Erkrankungen](modul-seltene.html) | 18 | seltene 2026.0.0 | Aktiv |
-| [Onkologie](modul-onkologie.html) | 73 | onkologie 2026.0.1 | Aktiv |
-| [Einwilligung](modul-consent.html) | 3 | consent 2026.0.1-rc-1 | Aktiv |
-| [Dokument](modul-dokument.html) | 1 | dokument 2026.0.0 | Aktiv |
-| [Symptom](modul-symptom.html) | -- | symptom 2026.0.0 | Ausstehend |
-| **Gesamt** | **244** | | |
+| [Person](modul-person.html) | 5 | base 2027.0.0-ballot | Aktiv |
+| [Diagnose](modul-diagnose.html) | 1 | base 2027.0.0-ballot | Aktiv |
+| [Prozedur](modul-prozedur.html) | 1 | base 2027.0.0-ballot | Aktiv |
+| [Fall](modul-fall.html) | 1 | base 2027.0.0-ballot | Aktiv |
+| [Laborbefund](modul-labor.html) | 3 | laborbefund 2027.0.0-ballot | Aktiv |
+| [Medikation](modul-medikation.html) | 5 | medikation 2027.0.0-ballot | Aktiv |
+| [Biobank](modul-biobank.html) | 11 | biobank 2027.0.0-ballot | Aktiv |
+| [Studie](modul-studie.html) | 7 | studie 2027.0.0-ballot | Aktiv |
+| [Molekulargenetik](modul-molgen.html) | 16 | molgen 2027.0.0-ballot.1 | Aktiv |
+| [Pathologiebefund](modul-patho.html) | 15 | patho 2027.0.0-ballot | Aktiv |
+| [Intensivmedizin](modul-icu.html) | 94 | icu 2027.0.0-ballot.3 | Aktiv |
+| [Bildgebung](modul-bildgebung.html) | 12 | bildgebung 2027.0.0-ballot.1 | Aktiv |
+| [Seltene Erkrankungen](modul-seltene.html) | 23 | seltene 2027.0.0-ballot | Aktiv |
+| [Onkologie](modul-onkologie.html) | 76 | onkologie 2027.0.0-ballot.1 | Aktiv |
+| [Einwilligung](modul-consent.html) | 3 | consent 2027.0.0-ballot | Aktiv |
+| [Dokument](modul-dokument.html) | 1 | dokument 2027.0.0-ballot.2 | Aktiv |
+| [Molekulares Tumorboard](modul-mtb.html) | 50 | mtb 2027.0.0-ballot.1 | Aktiv |
+| [PROMs](modul-pros.html) | 23 | pros 2027.0.0-ballot.1 | Aktiv |
+| [Mikrobiologie](modul-mikrobio.html) | 21 | mikrobiologie 2027.0.0-ballot2 | Aktiv |
+| [Symptom](modul-symptom.html) | -- | symptom 2027.0.0-ballot | Ausstehend |
+| **Gesamt** | **368** | | |
 
 ## Verwendung
 

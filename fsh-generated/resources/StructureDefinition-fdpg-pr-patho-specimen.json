@@ -3,6 +3,14 @@
   "id": "fdpg-pr-patho-specimen",
   "extension": [
     {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver",
+        "display": "SemVer"
+      }
+    },
+    {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
       "valueCodeableConcept": {
         "coding": [
@@ -143,6 +151,72 @@
         }
       },
       {
+        "id": "Specimen.extension:infektiositaetsstatus",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "Specimen.extension",
+        "sliceName": "infektiositaetsstatus"
+      },
+      {
+        "id": "Specimen.extension:focus",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "Specimen.extension",
+        "sliceName": "focus"
+      },
+      {
         "id": "Specimen.identifier",
         "extension": [
           {
@@ -172,67 +246,7 @@
             ]
           }
         ],
-        "path": "Specimen.identifier",
-        "_short": {
-          "extension": [
-            {
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Identifikator"
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/translation"
-            },
-            {
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Specimen ID"
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/translation"
-            }
-          ]
-        },
-        "_definition": {
-          "extension": [
-            {
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "de-DE"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Identifikator dieser Ressource."
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/translation"
-            },
-            {
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Internal identifier of the specimen at the institution."
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/translation"
-            }
-          ]
-        }
+        "path": "Specimen.identifier"
       },
       {
         "id": "Specimen.identifier:Placer-ID",
@@ -265,37 +279,7 @@
           }
         ],
         "path": "Specimen.identifier",
-        "sliceName": "Placer-ID",
-        "_short": {
-          "extension": [
-            {
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Specimen ID"
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/translation"
-            },
-            {
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Specimen ID"
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/translation"
-            }
-          ]
-        }
+        "sliceName": "Placer-ID"
       },
       {
         "id": "Specimen.identifier:Filler-ID",
@@ -328,37 +312,7 @@
           }
         ],
         "path": "Specimen.identifier",
-        "sliceName": "Filler-ID",
-        "_short": {
-          "extension": [
-            {
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Specimen ID"
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/translation"
-            },
-            {
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Specimen ID"
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/translation"
-            }
-          ]
-        }
+        "sliceName": "Filler-ID"
       },
       {
         "id": "Specimen.accessionIdentifier",
@@ -1110,37 +1064,7 @@
             ]
           }
         ],
-        "path": "Specimen.container",
-        "_short": {
-          "extension": [
-            {
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Specimen container"
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/translation"
-            },
-            {
-              "extension": [
-                {
-                  "url": "lang",
-                  "valueCode": "en-US"
-                },
-                {
-                  "url": "content",
-                  "valueString": "Specimen container"
-                }
-              ],
-              "url": "http://hl7.org/fhir/StructureDefinition/translation"
-            }
-          ]
-        }
+        "path": "Specimen.container"
       },
       {
         "id": "Specimen.note",

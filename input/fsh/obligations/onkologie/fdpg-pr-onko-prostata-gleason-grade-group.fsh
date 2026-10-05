@@ -15,6 +15,30 @@ Description: "FDPG Profil - MII_PR_Onko_Prostata_Gleason_Grade_Group"
 * code ^definition = "Gleason Grade Group. Die Gleason Grade Group ist aus dem Gleason Grade abgeleitet. Score ist ein histopathologisches Klassifikationssystem zur Beurteilung der Morphologie von Adenokarzinomen der Prostata und wird aus der Summe von primären und sekundärem Pattern berechnet."
 * insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
+// Observation.code.coding:snomed
+* code.coding[snomed] ^short = "SNOMED CT coding"
+* insert Translation(code.coding[snomed] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(code.coding[snomed] ^short, en-US, SNOMED CT coding)
+// Observation.code.coding:snomed.system
+* code.coding[snomed].system ^short = "SNOMED CT system URL"
+* insert Translation(code.coding[snomed].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(code.coding[snomed].system ^short, en-US, SNOMED CT system URL)
+// Observation.code.coding:snomed.code
+* code.coding[snomed].code ^short = "Code as SNOMED CT"
+* insert Translation(code.coding[snomed].code ^short, de-DE, Code als SNOMED CT)
+* insert Translation(code.coding[snomed].code ^short, en-US, Code as SNOMED CT)
+// Observation.code.coding:loinc
+* code.coding[loinc] ^short = "LOINC coding"
+* insert Translation(code.coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[loinc] ^short, en-US, LOINC coding)
+// Observation.code.coding:loinc.system
+* code.coding[loinc].system ^short = "LOINC system URL"
+* insert Translation(code.coding[loinc].system ^short, de-DE, LOINC-System-URL)
+* insert Translation(code.coding[loinc].system ^short, en-US, LOINC system URL)
+// Observation.code.coding:loinc.code
+* code.coding[loinc].code ^short = "Code as LOINC"
+* insert Translation(code.coding[loinc].code ^short, de-DE, Code als LOINC)
+* insert Translation(code.coding[loinc].code ^short, en-US, Code as LOINC)
 // Observation.subject
 * subject ^short = "Who and/or what the observation is about"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -49,6 +73,8 @@ Description: "FDPG Profil - MII_PR_Onko_Prostata_Gleason_Grade_Group"
 // --- Obligations ---
 * insert ObligationConsumerDefault(code)
 * insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(code.coding[snomed])
+* insert ObligationConsumerDefault(code.coding[loinc])
 * insert ObligationConsumerDefault(subject)
 * insert ObligationConsumerDefault(focus)
 * insert ObligationConsumerDefault(encounter)

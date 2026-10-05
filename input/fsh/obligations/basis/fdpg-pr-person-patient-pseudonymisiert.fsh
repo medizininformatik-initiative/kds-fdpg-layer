@@ -17,6 +17,9 @@ Description: "FDPG Profil - MII_PR_Person_PatientPseudonymisiert"
 * insert Translation(identifier ^definition, en-US, An identifier for this patient)
 // Patient.identifier:PseudonymisierterIdentifier
 * identifier[PseudonymisierterIdentifier] ^short = "Pseudonymisierter Identifikator"
+// Patient.identifier:PseudonymisierterIdentifier.type
+* identifier[PseudonymisierterIdentifier].type ^short = "Description of identifier"
+// Patient.identifier:PseudonymisierterIdentifier.type.coding:pseuded
 // Patient.identifier:AnonymisierterIdentifier
 * identifier[AnonymisierterIdentifier] ^short = "Anonymisierter Identifikator"
 // Patient.identifier:MaskierterVersichertenIdentifer
@@ -39,7 +42,7 @@ Description: "FDPG Profil - MII_PR_Person_PatientPseudonymisiert"
 // Patient.identifier:MaskierterVersichertenIdentifer.assigner
 * identifier[MaskierterVersichertenIdentifer].assigner ^short = "Organization that issued id (may be just text)"
 // Patient.identifier:MaskierterVersichertenIdentifer.assigner.identifier
-* identifier[MaskierterVersichertenIdentifer].assigner.identifier ^short = "An identifier intended for computation"
+* identifier[MaskierterVersichertenIdentifer].assigner.identifier ^short = "Logical reference, when literal reference is not known"
 // Patient.identifier:MaskierterVersichertenIdentifer.assigner.identifier.type
 * identifier[MaskierterVersichertenIdentifer].assigner.identifier.type ^short = "Description of identifier"
 // Patient.identifier:MaskierterVersichertenIdentifer.assigner.identifier.system

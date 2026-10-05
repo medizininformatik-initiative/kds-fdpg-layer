@@ -35,8 +35,17 @@ Description: "FDPG Profil - MII_PR_ICU_Bilanz_Ausfuhr_Haemofiltration_Einzelmess
 * insert Translation(category.coding[hl7-category].code ^short, de-DE, Kategorie als Beobachtungskategorie)
 * insert Translation(category.coding[hl7-category].code ^short, en-US, Category as Observation category)
 // Observation.category.coding:kdsicu-category
+* category.coding[kdsicu-category] ^short = "SNOMED CT coding"
+* insert Translation(category.coding[kdsicu-category] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(category.coding[kdsicu-category] ^short, en-US, SNOMED CT coding)
 // Observation.category.coding:kdsicu-category.system
+* category.coding[kdsicu-category].system ^short = "SNOMED CT system URL"
+* insert Translation(category.coding[kdsicu-category].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(category.coding[kdsicu-category].system ^short, en-US, SNOMED CT system URL)
 // Observation.category.coding:kdsicu-category.code
+* category.coding[kdsicu-category].code ^short = "Category as SNOMED CT"
+* insert Translation(category.coding[kdsicu-category].code ^short, de-DE, Kategorie als SNOMED CT)
+* insert Translation(category.coding[kdsicu-category].code ^short, en-US, Category as SNOMED CT)
 // Observation.code
 * code ^short = "Type of observation (code / type)"
 * insert Translation(code ^short, de-DE, Code)

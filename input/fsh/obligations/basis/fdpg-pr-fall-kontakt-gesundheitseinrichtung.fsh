@@ -22,6 +22,10 @@ Description: "FDPG Profil - MII_PR_Fall_KontaktGesundheitseinrichtung"
 * extension[Aufnahmegrund].extension[ErsteUndZweiteStelle] ^definition = "OPTIONAL, Aufnahmegrund (1. und 2. Stelle), Datenübermittlung nach § 301 Abs. 3 SGB V."
 * insert Translation(extension[Aufnahmegrund].extension[ErsteUndZweiteStelle] ^definition, de-DE, Aufnahmegrund 1. und 2. Stelle)
 * insert Translation(extension[Aufnahmegrund].extension[ErsteUndZweiteStelle] ^definition, en-US, Admission reason 1st and 2nd position)
+// Encounter.extension:Aufnahmegrund.extension:ErsteUndZweiteStelle.url
+* extension[Aufnahmegrund].extension[ErsteUndZweiteStelle].url ^short = "identifies the meaning of the extension"
+// Encounter.extension:Aufnahmegrund.extension:ErsteUndZweiteStelle.value[x]
+* extension[Aufnahmegrund].extension[ErsteUndZweiteStelle].value[x] ^short = "Value of extension"
 // Encounter.extension:Aufnahmegrund.extension:DritteStelle
 * extension[Aufnahmegrund].extension[DritteStelle] ^short = "3. Stelle"
 * insert Translation(extension[Aufnahmegrund].extension[DritteStelle] ^short, de-DE, 3. Stelle)
@@ -29,6 +33,10 @@ Description: "FDPG Profil - MII_PR_Fall_KontaktGesundheitseinrichtung"
 * extension[Aufnahmegrund].extension[DritteStelle] ^definition = "OPTIONAL, Aufnahmegrund (3. Stelle), Datenübermittlung nach § 301 Abs. 3 SGB V."
 * insert Translation(extension[Aufnahmegrund].extension[DritteStelle] ^definition, de-DE, Aufnahmegrund 3. Stelle)
 * insert Translation(extension[Aufnahmegrund].extension[DritteStelle] ^definition, en-US, Admission reason 3rd position)
+// Encounter.extension:Aufnahmegrund.extension:DritteStelle.url
+* extension[Aufnahmegrund].extension[DritteStelle].url ^short = "identifies the meaning of the extension"
+// Encounter.extension:Aufnahmegrund.extension:DritteStelle.value[x]
+* extension[Aufnahmegrund].extension[DritteStelle].value[x] ^short = "Value of extension"
 // Encounter.extension:Aufnahmegrund.extension:VierteStelle
 * extension[Aufnahmegrund].extension[VierteStelle] ^short = "4. Stelle"
 * insert Translation(extension[Aufnahmegrund].extension[VierteStelle] ^short, de-DE, 4. Stelle)
@@ -36,6 +44,10 @@ Description: "FDPG Profil - MII_PR_Fall_KontaktGesundheitseinrichtung"
 * extension[Aufnahmegrund].extension[VierteStelle] ^definition = "OPTIONAL, Aufnahmegrund (4. Stelle), Datenübermittlung nach § 301 Abs. 3 SGB V."
 * insert Translation(extension[Aufnahmegrund].extension[VierteStelle] ^definition, de-DE, Aufnahmegrund 4. Stelle)
 * insert Translation(extension[Aufnahmegrund].extension[VierteStelle] ^definition, en-US, Admission reason 4th position)
+// Encounter.extension:Aufnahmegrund.extension:VierteStelle.url
+* extension[Aufnahmegrund].extension[VierteStelle].url ^short = "identifies the meaning of the extension"
+// Encounter.extension:Aufnahmegrund.extension:VierteStelle.value[x]
+* extension[Aufnahmegrund].extension[VierteStelle].value[x] ^short = "Value of extension"
 // Encounter.identifier
 * identifier ^short = "Identifikator"
 * insert Translation(identifier ^short, de-DE, Identifikator)
@@ -138,6 +150,8 @@ Description: "FDPG Profil - MII_PR_Fall_KontaktGesundheitseinrichtung"
 * subject ^definition = "VERPFLICHTEND, Referenz auf Patient:in."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
 * insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
+// Encounter.subject.reference
+* subject.reference ^short = "Literal reference, Relative, internal or absolute URL"
 // Encounter.period
 * period ^short = "Zeitraum des Kontaktes"
 * insert Translation(period ^short, de-DE, Zeitraum des Kontaktes)
@@ -162,8 +176,12 @@ Description: "FDPG Profil - MII_PR_Fall_KontaktGesundheitseinrichtung"
 * diagnosis.use ^short = "Diagnosetyp"
 // Encounter.diagnosis.use.coding:Diagnosetyp
 * diagnosis.use.coding[Diagnosetyp] ^short = "Diagnosetyp"
+// Encounter.diagnosis.use.coding:Diagnosetyp.system
+// Encounter.diagnosis.use.coding:Diagnosetyp.code
 // Encounter.diagnosis.use.coding:DiagnosesubTyp
 * diagnosis.use.coding[DiagnosesubTyp] ^short = "Diagnosesubtyp"
+// Encounter.diagnosis.use.coding:DiagnosesubTyp.system
+// Encounter.diagnosis.use.coding:DiagnosesubTyp.code
 // Encounter.diagnosis.rank
 * diagnosis.rank ^short = "Rangfolge"
 // Encounter.account
@@ -173,6 +191,12 @@ Description: "FDPG Profil - MII_PR_Fall_KontaktGesundheitseinrichtung"
 * account ^definition = "OPTIONAL. Referenz auf den Abrechnungsfall. Eine logische Referenz ist ausreichend zur Abbildung des Abrechnungskontextes."
 * insert Translation(account ^definition, de-DE, Referenz auf den Abrechnungsfall.)
 * insert Translation(account ^definition, en-US, Reference to the billing case.)
+// Encounter.account.identifier
+* account.identifier ^short = "Logical reference, when literal reference is not known"
+// Encounter.account.identifier.system
+* account.identifier.system ^short = "The namespace for the identifier value"
+// Encounter.account.identifier.value
+* account.identifier.value ^short = "The value that is unique"
 // Encounter.hospitalization
 * hospitalization ^short = "Klinikaufenthalt"
 * insert Translation(hospitalization ^short, de-DE, Klinikaufenthalt)
@@ -188,12 +212,45 @@ Description: "FDPG Profil - MII_PR_Fall_KontaktGesundheitseinrichtung"
 * hospitalization.dischargeDisposition.extension[Entlassungsgrund] ^short = "Entlassungsgrund"
 * insert Translation(hospitalization.dischargeDisposition.extension[Entlassungsgrund] ^short, de-DE, Entlassungsgrund)
 * insert Translation(hospitalization.dischargeDisposition.extension[Entlassungsgrund] ^short, en-US, Discharge reason)
+// Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:ErsteUndZweiteStelle
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[ErsteUndZweiteStelle] ^short = "Extension"
+// Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:ErsteUndZweiteStelle.url
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[ErsteUndZweiteStelle].url ^short = "identifies the meaning of the extension"
+// Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:ErsteUndZweiteStelle.value[x]
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[ErsteUndZweiteStelle].value[x] ^short = "Value of extension"
+// Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:DritteStelle
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[DritteStelle] ^short = "Extension"
+// Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:DritteStelle.url
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[DritteStelle].url ^short = "identifies the meaning of the extension"
+// Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.extension:DritteStelle.value[x]
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].extension[DritteStelle].value[x] ^short = "Value of extension"
+// Encounter.hospitalization.dischargeDisposition.extension:Entlassungsgrund.url
+* hospitalization.dischargeDisposition.extension[Entlassungsgrund].url ^short = "identifies the meaning of the extension"
+// Encounter.location
+* location ^short = "Kontaktort"
+* insert Translation(location ^short, de-DE, Kontaktort)
+* insert Translation(location ^short, en-US, Location)
+* location ^definition = "OPTIONAL, Details zum Kontaktort wie Zimmer, Bett, Station"
+* insert Translation(location ^definition, de-DE, Details zum Kontaktort wie Zimmer\, Bett\, Station)
+* insert Translation(location ^definition, en-US, Details about location such as room\, bed\, ward)
+// Encounter.location:Zimmer
+* location[Zimmer] ^short = "Zimmer"
 // Encounter.location:Zimmer.status
 * location[Zimmer].status ^short = "planned | active | reserved | completed"
+// Encounter.location:Zimmer.physicalType
+* location[Zimmer].physicalType ^short = "Kontaktorttyp"
+// Encounter.location:Bett
+* location[Bett] ^short = "Bett"
 // Encounter.location:Bett.status
 * location[Bett].status ^short = "planned | active | reserved | completed"
+// Encounter.location:Bett.physicalType
+* location[Bett].physicalType ^short = "Kontaktorttyp"
+// Encounter.location:Station
+* location[Station] ^short = "Station"
 // Encounter.location:Station.status
 * location[Station].status ^short = "planned | active | reserved | completed"
+// Encounter.location:Station.physicalType
+* location[Station].physicalType ^short = "Kontaktorttyp"
 // Encounter.partOf
 * partOf ^short = "Teil von Kontakt"
 * insert Translation(partOf ^short, de-DE, Teil von Kontakt)
@@ -201,6 +258,8 @@ Description: "FDPG Profil - MII_PR_Fall_KontaktGesundheitseinrichtung"
 * partOf ^definition = "OPTIONAL. Abbildung der Hierarchie zwischen Kontaktebenen durch Referenz auf weitere Kontakte,  wenn bspw. ein Versorgungsstellenkontakt Teil eines Abteilungskontaktes  oder ein Abteilungskontakt Teil eines Einrichtungskontaktes ist."
 * insert Translation(partOf ^definition, de-DE, Abbildung der Hierarchie zwischen Kontaktebenen durch Referenz auf weitere Kontakte.)
 * insert Translation(partOf ^definition, en-US, Hierarchy between encounter levels by referencing further encounters.)
+// Encounter.partOf.reference
+* partOf.reference ^short = "Literal reference, Relative, internal or absolute URL"
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(extension[Aufnahmegrund])
@@ -227,4 +286,8 @@ Description: "FDPG Profil - MII_PR_Fall_KontaktGesundheitseinrichtung"
 * insert ObligationConsumerDefault(diagnosis)
 * insert ObligationConsumerDefault(account)
 * insert ObligationConsumerDefault(hospitalization)
+* insert ObligationConsumerDefault(location)
+* insert ObligationConsumerDefault(location[Zimmer])
+* insert ObligationConsumerDefault(location[Bett])
+* insert ObligationConsumerDefault(location[Station])
 * insert ObligationConsumerDefault(partOf)

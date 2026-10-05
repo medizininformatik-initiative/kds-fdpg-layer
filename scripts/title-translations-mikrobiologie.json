@@ -23,7 +23,7 @@
     "de-DE": "Antikörper-Avidität",
     "en-US": "Antibody avidity"
   },
-  "MII_PR_Mikrobio_Barlett_Score": {
+  "MII_PR_Mikrobio_Bartlett_Score": {
     "de-DE": "Bartlett-Score",
     "en-US": "Bartlett score"
   },
@@ -43,17 +43,9 @@
     "de-DE": "Keimzahl",
     "en-US": "Bacterial count"
   },
-  "MII_PR_Mikrobio_Mikroskopie": {
-    "de-DE": "Mikroskopischer Befund",
-    "en-US": "Microscopic finding"
-  },
   "MII_PR_Mikrobio_Molekulare_Pathogenlast": {
     "de-DE": "Molekulare Pathogenlast",
     "en-US": "Molecular pathogen load"
-  },
-  "MII_PR_Mikrobio_MRE_Klasse": {
-    "de-DE": "MRE-Klassifikation",
-    "en-US": "MDRO classification"
   },
   "MII_PR_Mikrobio_MRGN_Klasse": {
     "de-DE": "MRGN-Klassifikation",

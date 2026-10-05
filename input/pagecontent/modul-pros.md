@@ -6,7 +6,7 @@ Das Modul Patient-Reported Outcomes (PRO) bildet die strukturierte Erfassung pat
 
 ## Quellmodul
 
-[MII KDS PRO](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.pros/2026.0.1)
+[MII KDS PRO](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.pros/2027.0.0-ballot.1)
 
 ## FDPG Profile
 
@@ -32,6 +32,9 @@ Das Modul Patient-Reported Outcomes (PRO) bildet die strukturierte Erfassung pat
 | [FDPG_PR_PRO_QuestionnaireResponse](StructureDefinition-fdpg-pr-pro-questionnaireresponse.html) | MII_PR_PRO_QuestionnaireResponse | QuestionnaireResponse |
 | [FDPG_PR_PRO_Score_Blueprint](StructureDefinition-fdpg-pr-pro-score-blueprint.html) | MII_PR_PRO_Score_Blueprint | ObservationDefinition |
 | [FDPG_PR_PRO_Score_Instance](StructureDefinition-fdpg-pr-pro-score-instance.html) | MII_PR_PRO_Score_Instance | Observation |
+| [FDPG_PR_PRO_Observation_WHODAS_12](StructureDefinition-fdpg-pr-pro-observation-whodas-12.html) | MII_PR_PRO_Observation_WHODAS_12 | Observation |
+| [FDPG_PR_PRO_Observation_PHQ_9](StructureDefinition-fdpg-pr-pro-observation-phq-9.html) | MII_PR_PRO_Observation_PHQ_9 | Observation |
+| [FDPG_PR_PRO_Observation_PHQ_15](StructureDefinition-fdpg-pr-pro-observation-phq-15.html) | MII_PR_PRO_Observation_PHQ_15 | Observation |
 
 ## Obligation-Übersicht
 

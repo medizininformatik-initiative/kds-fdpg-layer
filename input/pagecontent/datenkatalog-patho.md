@@ -2,7 +2,7 @@
 
 Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen und englischen Beschreibungen. Die Obligations werden auf der Seite [Obligations](obligations.html) beschrieben.
 
-**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.patho](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.patho/2026.0.1)
+**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.patho](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.patho/2027.0.0-ballot)
 
 #### Aktive Problemliste (List)
 
@@ -79,6 +79,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
 | `extension:document-version` | Dokumentversion | Versionsnummer des Dokuments |
+| `extension:diagnosticReport` | Diagnostikbericht | Verweis auf den zugehoerigen DiagnosticReport |
 | `identifier` | Identifikator | Eindeutiger Identifikator |
 | `status` | Status | Status der Ressource. |
 | `type` | Typ | Typ oder Art der Ressource. |
@@ -100,9 +101,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `custodian` | Verwalter | Verwaltende Organisation |
 | `relatesTo` | Bezieht sich auf | Beziehung zu anderen Dokumenten z.B. Vor- Zusatz- und/oder Korrekturbefunde |
 | `relatesTo.target[x]:targetReference` | Target of the relationship | The target composition/document of this relationship. |
-| `event` | Ereignis | Referenz auf den auslösenden Untersuchungsauftrag |
+| `event` | Ereignis | Dokumentiertes Pathologie-Ereignis - die Begutachtung bzw. Befundung auf die sich der Befundbericht bezieht |
 | `section` | Kapitel | The root of the sections that make up the composition. |
 | `section:patho-diagnostic-report` | Pathologie-Diagnostikbericht | Pathologie-Diagnostikbericht |
+| `section:makroskopie` | Makroskopie | Abschnitt der makroskopischen Beurteilung |
+| `section:mikroskopie` | Mikroskopie | Abschnitt der mikroskopischen Beurteilung |
+| `section:intraoperativ` | Intraoperative Beurteilung | Abschnitt der intraoperativen Beurteilung |
+| `section:diagnostische-schlussfolgerung` | Diagnostische Schlussfolgerung | Abschnitt der diagnostischen Schlussfolgerung |
+| `section:zusaetzliche-beobachtung` | Zusaetzliche Beobachtung | Abschnitt fuer zusaetzliche spezifizierte Beobachtungen |
 
 #### Diagnostische Schlussfolgerung (Grouper\ (Observation)
 
@@ -258,13 +264,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
 | `extension:related-report` | Verwandter Bericht | Verweis auf Vorbefunde |
+| `extension:composition` | Composition | Verweis auf die zugehoerige Composition |
 | `identifier` | Identifikator | Identifikator dieser Ressource. |
 | `identifier:Set-ID` | Set-ID | Befundnummer oder Eingangsnummer des Befundes |
 | `basedOn` | Untersuchungsauftrag | Verweis auf den zugehörigen Untersuchungsauftrag |
 | `status` | Status | Status des Befundes |
 | `category` | Kategorie | Kategorisierung des Befundes |
 | `code` | Code | Code des Pathologie-Befundes |
-| `code.coding:pathology-report` | LOINC | Kodierung nach LOINC. |
+| `code.coding:pathology-report` | Pathologie-Befund Code | Spezifischer Code für Pathologie-Befunde |
 | `subject` | Patient | Verweis auf den Patienten |
 | `encounter` | Fall | Verweis auf den Fall |
 | `effective[x]` | Dokumentationsdatum | Zeitpunkt der Befunderstellung |
@@ -314,9 +321,11 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
 | `extension:probenebene` | Ebene | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
-| `identifier` | Identifikator | Identifikator dieser Ressource. |
-| `identifier:Placer-ID` | Identifikator | Identifikator dieser Ressource. |
-| `identifier:Filler-ID` | Identifikator | Identifikator dieser Ressource. |
+| `extension:infektiositaetsstatus` | MII EX Biobank Infektiositätsstatus | Extension zur Angabe des Infektiositätsstatus einer Probe anhand der Biosafety-Level-Einstufung (BSL-1 bis BSL-4, SNOMED CT) bzw. der Angabe, dass keine Infektionsgefahr bekannt ist. |
+| `extension:focus` | Specimen Focus | Specimen focus, Extension to represent the entity from which the specimen is collected when it is not the subject of record. |
+| `identifier` | Identifikator | Eindeutiger Identifikator der Probe |
+| `identifier:Placer-ID` | Auftraggeber-ID | Identifikator des Auftraggebers |
+| `identifier:Filler-ID` | Auftragnehmer-ID | Identifikator des Auftragnehmers |
 | `accessionIdentifier` | Labor-ID | Laborinterner Identifikator |
 | `status` | Verfügbarkeitsstatus | Der Status der Probe in Bezug auf die Verfügbarkeit für Forschung. |
 | `type` | Probenart | Die Art der Probe, codiert in SNOMED CT. |
@@ -417,6 +426,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension:document-version` | Document version | Version number of the document |
+| `extension:diagnosticReport` | Diagnostic report | Reference to the associated DiagnosticReport |
 | `identifier` | Identifier | Unique identifier |
 | `status` | Status | Status of the resource. |
 | `type` | Type | Type or kind of the resource. |
@@ -438,9 +448,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `custodian` | Custodian | Managing organization |
 | `relatesTo` | Relates to | Relationship to other documents |
 | `relatesTo.target[x]:targetReference` | Target of the relationship | The target composition/document of this relationship. |
-| `event` | Event | Documentation event |
+| `event` | Event | Documented pathology event - the reporting act the report refers to |
 | `section` | Kapitel | The root of the sections that make up the composition. |
 | `section:patho-diagnostic-report` | Pathology diagnostic report | Pathology diagnostic report |
+| `section:makroskopie` | Macroscopy | Macroscopic assessment section |
+| `section:mikroskopie` | Microscopy | Microscopic assessment section |
+| `section:intraoperativ` | Intraoperative assessment | Intraoperative assessment section |
+| `section:diagnostische-schlussfolgerung` | Diagnostic conclusion | Diagnostic conclusion section |
+| `section:zusaetzliche-beobachtung` | Additional observation | Section for additional specified observations |
 
 </details>
 
@@ -604,13 +619,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension:related-report` | Related report | Reference to related reports |
+| `extension:composition` | Composition | Reference to the associated Composition |
 | `identifier` | Identifier | Identifier for this resource. |
 | `identifier:Set-ID` | Set-ID | Accession number of the report |
 | `basedOn` | Request | Reference to the respective examination request |
 | `status` | Status | Status of the report |
 | `category` | Category | Categorization of the report |
 | `code` | Code | Code of the pathology report |
-| `code.coding:pathology-report` | LOINC | Coding in LOINC. |
+| `code.coding:pathology-report` | Pathology report code | Specific code for pathology report |
 | `subject` | Subject | Reference to the patient |
 | `encounter` | Encounter | Reference to the encounter |
 | `effective[x]` | Effective date | Time of report creation |
@@ -662,6 +678,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension:probenebene` | Specimen level | Mittels dieser Extension kann ausgedrückt werden, welcher Probenebene dieses Specimen zuzuordnen ist. |
+| `extension:infektiositaetsstatus` | MII EX Biobank Infektiositätsstatus | Extension zur Angabe des Infektiositätsstatus einer Probe anhand der Biosafety-Level-Einstufung (BSL-1 bis BSL-4, SNOMED CT) bzw. der Angabe, dass keine Infektionsgefahr bekannt ist. |
+| `extension:focus` | Specimen Focus | Specimen focus, Extension to represent the entity from which the specimen is collected when it is not the subject of record. |
 | `identifier` | Identifier | Unique identifier of the specimen |
 | `identifier:Placer-ID` | Placer ID | Identifier of the placer |
 | `identifier:Filler-ID` | Filler ID | Identifier of the filler |

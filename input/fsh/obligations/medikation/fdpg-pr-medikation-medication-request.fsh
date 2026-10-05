@@ -326,8 +326,6 @@ Description: "FDPG Profil - MII_PR_Medikation_MedicationRequest"
 * dosageInstruction.doseAndRate ^short = "Menge des verabreichten Medikaments"
 // MedicationRequest.dosageInstruction.doseAndRate.dose[x]
 * dosageInstruction.doseAndRate.dose[x] ^short = "Amount of medication per dose"
-// MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity
-* dosageInstruction.doseAndRate.dose[x][doseQuantity] ^short = "Menge des Medikaments pro Dosis"
 // MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange
 * dosageInstruction.doseAndRate.dose[x][doseRange] ^short = "Amount of medication per dose"
 // MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.low
@@ -350,6 +348,8 @@ Description: "FDPG Profil - MII_PR_Medikation_MedicationRequest"
 * dosageInstruction.doseAndRate.dose[x][doseRange].high.system ^short = "System that defines coded unit form"
 // MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.high.code
 * dosageInstruction.doseAndRate.dose[x][doseRange].high.code ^short = "Coded form of the unit"
+// MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity
+* dosageInstruction.doseAndRate.dose[x][doseQuantity] ^short = "Menge des Medikaments pro Dosis"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]
 * dosageInstruction.doseAndRate.rate[x] ^short = "Amount of medication per unit of time"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRatio
@@ -397,7 +397,7 @@ Description: "FDPG Profil - MII_PR_Medikation_MedicationRequest"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRange.high.code
 * dosageInstruction.doseAndRate.rate[x][rateRange].high.code ^short = "Coded form of the unit"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateQuantity
-* dosageInstruction.doseAndRate.rate[x][rateQuantity] ^short = "A fixed quantity (no comparator)"
+* dosageInstruction.doseAndRate.rate[x][rateQuantity] ^short = "Amount of medication per unit of time"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateQuantity.value
 * dosageInstruction.doseAndRate.rate[x][rateQuantity].value ^short = "Numerical value (with implicit precision)"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateQuantity.unit

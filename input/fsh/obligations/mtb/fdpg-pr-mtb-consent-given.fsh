@@ -43,6 +43,14 @@ Description: "FDPG Profil - MII_PR_MTB_Consent_Given"
 * value[x].coding ^definition = "Dokumentation der Zustimmung der Ablehnung eines Consents"
 * insert Translation(value[x].coding ^definition, de-DE, Dokumentation der Zustimmung der Ablehnung eines Consents)
 * insert Translation(value[x].coding ^definition, en-US, Documentation of consent or refusal.)
+// Observation.value[x].coding:SCT.system
+* value[x].coding[SCT].system ^short = "SNOMED CT system URL"
+* insert Translation(value[x].coding[SCT].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(value[x].coding[SCT].system ^short, en-US, SNOMED CT system URL)
+// Observation.value[x].coding:SCT.code
+* value[x].coding[SCT].code ^short = "Value as SNOMED CT"
+* insert Translation(value[x].coding[SCT].code ^short, de-DE, Messwert als SNOMED CT)
+* insert Translation(value[x].coding[SCT].code ^short, en-US, Value as SNOMED CT)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(code)

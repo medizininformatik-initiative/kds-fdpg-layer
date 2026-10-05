@@ -27,7 +27,8 @@ Description: "FDPG Profil - MII_PR_Onko_Studienteilnahme"
 // Observation.focus:primaertumor
 * focus[primaertumor] ^short = "Referenz zum Primärtumor"
 // Observation.focus:studie
-* focus[studie] ^short = "Referenz zur Studie"
+* focus[studie] ^short = "Referenz zur Studie (KDS-Modul Medizinisches Forschungsvorhaben)"
+* insert Translation(focus[studie] ^short, de-DE, Referenz zur Studie - KDS-Modul Medizinisches Forschungsvorhaben)
 // Observation.encounter
 * encounter ^short = "Healthcare event during which this observation is made"
 * insert Translation(encounter ^short, de-DE, Behandlungsfall)

@@ -6,7 +6,7 @@ Das Modul Prozedur erfasst medizinische Massnahmen und Eingriffe, die an Patient
 
 ## Quellmodul
 
-[MII KDS Basismodul (Prozedur)](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base/2026.0.0)
+[MII KDS Basismodul (Prozedur)](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base/2027.0.0-ballot)
 
 ## FDPG Profile
 

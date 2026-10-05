@@ -12,7 +12,7 @@ Description: "FDPG Profil - MII_PR_Onko_Fruehere_Tumorerkrankung"
 * extension ^short = "Extension"
 * insert Translation(extension ^short, de-DE, Erweiterung)
 * insert Translation(extension ^short, en-US, Extension)
-* extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+* extension ^definition = "An Extension"
 * insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
 * insert Translation(extension ^definition, en-US, FHIR extension.)
 // Condition.extension:assertedDate
@@ -54,6 +54,9 @@ Description: "FDPG Profil - MII_PR_Onko_Fruehere_Tumorerkrankung"
 * category[oncology] ^short = "Kategorisierung als onkologische Diagnose"
 * insert Translation(category[oncology] ^short, de-DE, Kategorisierung als onkologische Diagnose)
 * insert Translation(category[oncology] ^short, en-US, Classification as oncologic diagnosis)
+// Condition.category:onkologie
+* category[onkologie] ^short = "Onkologie-Kennzeichnung"
+* insert Translation(category[onkologie] ^short, de-DE, Onkologie-Kennzeichnung)
 // Condition.code
 * code ^short = "Identification of the condition, problem or diagnosis"
 * insert Translation(code ^short, de-DE, Code)
@@ -145,6 +148,7 @@ Description: "FDPG Profil - MII_PR_Onko_Fruehere_Tumorerkrankung"
 * insert ObligationConsumerPreSelect(verificationStatus)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[oncology])
+* insert ObligationConsumerDefault(category[onkologie])
 * insert ObligationConsumerDefault(code)
 * insert ObligationConsumerPreSelect(code)
 * insert ObligationConsumerDefault(code.coding[icd10-gm])

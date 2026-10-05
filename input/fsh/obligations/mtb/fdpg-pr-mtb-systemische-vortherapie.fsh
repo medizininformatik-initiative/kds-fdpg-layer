@@ -12,7 +12,7 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * extension ^short = "Extension"
 * insert Translation(extension ^short, de-DE, Erweiterung)
 * insert Translation(extension ^short, en-US, Extension)
-* extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+* extension ^definition = "An Extension"
 * insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
 * insert Translation(extension ^definition, en-US, FHIR extension.)
 // Procedure.extension:Dokumentationsdatum
@@ -22,6 +22,10 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * extension[Dokumentationsdatum] ^definition = "Dokumentationsdatum der Prozedur, falls abweichend vom Durchführungsdatum"
 * insert Translation(extension[Dokumentationsdatum] ^definition, de-DE, Dokumentationsdatum der Prozedur\, falls abweichend vom Durchführungsdatum)
 * insert Translation(extension[Dokumentationsdatum] ^definition, en-US, The date the procedure was documented\, if different from the performed date)
+// Procedure.extension:Dokumentationsdatum.url
+* extension[Dokumentationsdatum].url ^short = "identifies the meaning of the extension"
+// Procedure.extension:Dokumentationsdatum.value[x]
+* extension[Dokumentationsdatum].value[x] ^short = "Value of extension"
 // Procedure.extension:durchfuehrungsabsicht
 * extension[durchfuehrungsabsicht] ^short = "Durchführungsabsicht"
 * insert Translation(extension[durchfuehrungsabsicht] ^short, de-DE, Durchführungsabsicht)
@@ -29,6 +33,10 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * extension[durchfuehrungsabsicht] ^definition = "therapeutisch | palliativ | diagnostisch | präventiv | rehabilitativ | andere"
 * insert Translation(extension[durchfuehrungsabsicht] ^definition, de-DE, therapeutisch | palliativ | diagnostisch | präventiv | rehabilitativ | andere)
 * insert Translation(extension[durchfuehrungsabsicht] ^definition, en-US, therapeutic | palliative | diagnostic | preventive | rehabilitative | other)
+// Procedure.extension:durchfuehrungsabsicht.url
+* extension[durchfuehrungsabsicht].url ^short = "identifies the meaning of the extension"
+// Procedure.extension:durchfuehrungsabsicht.value[x]
+* extension[durchfuehrungsabsicht].value[x] ^short = "Value of extension"
 // Procedure.extension:Intention
 * extension[Intention] ^short = "MII EX Onko Systemische Therapie Intention"
 * insert Translation(extension[Intention] ^short, de-DE, Systemische Therapie Intention)
@@ -48,13 +56,11 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * basedOn ^definition = "A reference to a resource that contains details of the request for this procedure."
 * insert Translation(basedOn ^definition, de-DE, Verweis auf die Anforderung\, auf der diese Ressource basiert.)
 * insert Translation(basedOn ^definition, en-US, Reference to the request that this resource is based on.)
-// Procedure.basedOn:Therapieplan
-* basedOn[Therapieplan] ^short = "Therpieplan"
-* insert Translation(basedOn[Therapieplan] ^short, de-DE, Therapieplan)
-* insert Translation(basedOn[Therapieplan] ^short, en-US, Therapy plan)
-* basedOn[Therapieplan] ^definition = "Verweis auf den im Molekularen Tumorboard beschlossenen Therpieplan"
-* insert Translation(basedOn[Therapieplan] ^definition, de-DE, Verweis auf den im Molekularen Tumorboard beschlossenen Therapieplan)
-* insert Translation(basedOn[Therapieplan] ^definition, en-US, Reference to the therapy plan decided by the MTB.)
+// Procedure.basedOn:tumorkonferenz
+* basedOn[tumorkonferenz] ^short = "Therapieplan"
+* insert Translation(basedOn[tumorkonferenz] ^short, de-DE, Therapieplan)
+* basedOn[tumorkonferenz] ^definition = "Verweis auf den im Molekularen Tumorboard beschlossenen Therapieplan"
+* insert Translation(basedOn[tumorkonferenz] ^definition, de-DE, Verweis auf den im Molekularen Tumorboard beschlossenen Therapieplan)
 // Procedure.partOf
 * partOf ^short = "Part of referenced event"
 * insert Translation(partOf ^short, de-DE, Teil von)
@@ -83,6 +89,8 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * statusReason.coding[Therapiestatusgrund] ^definition = "Grund für den Status der Systemischen Therapie"
 * insert Translation(statusReason.coding[Therapiestatusgrund] ^definition, de-DE, Grund für den Status der Systemischen Therapie)
 * insert Translation(statusReason.coding[Therapiestatusgrund] ^definition, en-US, Reason for the status of the systemic therapy.)
+// Procedure.statusReason.coding:Therapiestatusgrund.system
+// Procedure.statusReason.coding:Therapiestatusgrund.code
 // Procedure.category
 * category ^short = "Kategorie"
 * insert Translation(category ^short, de-DE, Kategorie)
@@ -90,6 +98,13 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * category ^definition = "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen"
 * insert Translation(category ^definition, de-DE, Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen)
 * insert Translation(category ^definition, en-US, Diagnostic procedures | Imaging procedures | Operations | Medications | Non-operative therapeutic procedures | Other procedures)
+// Procedure.category.coding
+* category.coding ^short = "Tumor board type"
+* insert Translation(category.coding ^short, de-DE, Art der Tumorkonferenz)
+* insert Translation(category.coding ^short, en-US, Tumor board type)
+* category.coding ^definition = "A reference to a code defined by a terminology system."
+* insert Translation(category.coding ^definition, de-DE, Art der Tumorkonferenz oder Therapieplanung gemäß oBDS 2021 §18.2.)
+* insert Translation(category.coding ^definition, en-US, Type of tumor board or therapy planning per oBDS 2021 §18.2.)
 // Procedure.category.coding:sct
 * category.coding[sct] ^short = "SNOMED CT Code"
 * insert Translation(category.coding[sct] ^short, de-DE, SNOMED CT Code)
@@ -119,6 +134,10 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * code.coding[ops] ^definition = "Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel (OPS) definierten Code"
 * insert Translation(code.coding[ops] ^definition, de-DE, Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel definierten Code)
 * insert Translation(code.coding[ops] ^definition, en-US, A reference to a code defined by the German Procedure Classification OPS)
+// Procedure.code.coding:ops.extension:Seitenlokalisation.url
+* code.coding[ops].extension[Seitenlokalisation].url ^short = "identifies the meaning of the extension"
+// Procedure.code.coding:ops.extension:Seitenlokalisation.value[x]
+* code.coding[ops].extension[Seitenlokalisation].value[x] ^short = "Value of extension"
 // Procedure.code.coding:ops.system
 * code.coding[ops].system ^short = "Canonische CodeSystem URL für OPS"
 * insert Translation(code.coding[ops].system ^short, de-DE, OPS-System-URL)
@@ -160,6 +179,8 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * subject ^definition = "The person, animal or group on which the procedure was performed."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
 * insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
+// Procedure.subject.reference
+* subject.reference ^short = "Literal reference, Relative, internal or absolute URL"
 // Procedure.encounter
 * encounter ^short = "Kontakt (Aufenthaltsbezug)"
 * insert Translation(encounter ^short, de-DE, Kontakt)
@@ -167,6 +188,8 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * encounter ^definition = "Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht."
 * insert Translation(encounter ^definition, de-DE, Kontakt\, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht.)
 * insert Translation(encounter ^definition, en-US, The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated.)
+// Procedure.encounter.reference
+* encounter.reference ^short = "Literal reference, Relative, internal or absolute URL"
 // Procedure.performed[x]
 * performed[x] ^short = "Durchführungsdatum"
 * insert Translation(performed[x] ^short, de-DE, Durchführungsdatum)
@@ -174,12 +197,19 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * performed[x] ^definition = "Durchführungsdatum oder -zeitraum der Prozedur."
 * insert Translation(performed[x] ^definition, de-DE, Durchführungsdatum oder -zeitraum der Prozedur.)
 * insert Translation(performed[x] ^definition, en-US, The date or period of time the procedure was performed.)
+// Procedure.performed[x]:performedPeriod
+* performed[x][performedPeriod] ^short = "Durchführungszeitraum"
+* insert Translation(performed[x][performedPeriod] ^short, de-DE, Durchführungszeitraum)
+* insert Translation(performed[x][performedPeriod] ^short, en-US, Performed period)
+* performed[x][performedPeriod] ^definition = "Zeitraum, in dem die Prozedur durchgeführt wurde."
+* insert Translation(performed[x][performedPeriod] ^definition, de-DE, Zeitraum\, in dem die Prozedur durchgeführt wurde.)
+* insert Translation(performed[x][performedPeriod] ^definition, en-US, The period of time the procedure was performed.)
 // Procedure.performed[x]:performedPeriod.start
 * performed[x][performedPeriod].start ^short = "Startdatum der systemischen oder abwartenden Therapie"
 * insert Translation(performed[x][performedPeriod].start ^short, de-DE, Startdatum der systemischen oder abwartenden Therapie)
 * insert Translation(performed[x][performedPeriod].start ^short, en-US, Therapy start date)
-* performed[x][performedPeriod].start ^definition = "Startdatum der systemischen oder abwartenden Therapie gemäß 16.6 oBDS 2021."
-* insert Translation(performed[x][performedPeriod].start ^definition, de-DE, Startdatum der systemischen oder abwartenden Therapie gemäß 16.6 oBDS 2021.)
+* performed[x][performedPeriod].start ^definition = "Startdatum der systemischen oder abwartenden Therapie gemäß 16.5 oBDS 2021."
+* insert Translation(performed[x][performedPeriod].start ^definition, de-DE, Startdatum der systemischen oder abwartenden Therapie gemäß 16.5 oBDS 2021.)
 * insert Translation(performed[x][performedPeriod].start ^definition, en-US, Start date of systemic or watchful-waiting therapy per oBDS 2021 §16.6.)
 // Procedure.performed[x]:performedPeriod.end
 * performed[x][performedPeriod].end ^short = "Enddatum der systemischen oder abwartenden Therapie"
@@ -188,6 +218,11 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * performed[x][performedPeriod].end ^definition = "Enddatum der systemischen oder abwartenden Therapie gemäß 16.8 oBDS 2021."
 * insert Translation(performed[x][performedPeriod].end ^definition, de-DE, Enddatum der systemischen oder abwartenden Therapie - wenn vorhanden -  gemäß 16.8 oBDS 2021.)
 * insert Translation(performed[x][performedPeriod].end ^definition, en-US, End date of systemic or watchful-waiting therapy\, if applicable\, per oBDS 2021 §16.8.)
+// Procedure.performed[x]:performedDateTime
+* performed[x][performedDateTime] ^short = "When the procedure was performed"
+* performed[x][performedDateTime] ^definition = "Durchführungsdatum der Prozedur."
+* insert Translation(performed[x][performedDateTime] ^definition, de-DE, Durchführungsdatum der Prozedur.)
+* insert Translation(performed[x][performedDateTime] ^definition, en-US, The date the procedure was performed.)
 // Procedure.reasonReference
 * reasonReference ^short = "The justification that the procedure was performed"
 * insert Translation(reasonReference ^short, de-DE, Begründung (Verweis\))
@@ -251,7 +286,7 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * insert ObligationConsumerDefault(extension[StellungZurOp])
 * insert ObligationConsumerDefault(extension[Leitlinie])
 * insert ObligationConsumerDefault(basedOn)
-* insert ObligationConsumerDefault(basedOn[Therapieplan])
+* insert ObligationConsumerDefault(basedOn[tumorkonferenz])
 * insert ObligationConsumerDefault(partOf)
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(statusReason)
@@ -265,6 +300,8 @@ Description: "FDPG Profil - MII_PR_MTB_Systemische_Vortherapie"
 * insert ObligationConsumerDefault(subject)
 * insert ObligationConsumerDefault(encounter)
 * insert ObligationConsumerDefault(performed[x])
+* insert ObligationConsumerDefault(performed[x][performedPeriod])
+* insert ObligationConsumerDefault(performed[x][performedDateTime])
 * insert ObligationConsumerDefault(reasonReference)
 * insert ObligationConsumerDefault(bodySite)
 * insert ObligationConsumerDefault(bodySite.coding[snomed-ct])

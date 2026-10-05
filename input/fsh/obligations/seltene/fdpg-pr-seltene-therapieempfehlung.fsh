@@ -12,10 +12,6 @@ Description: "FDPG Profil - MII_PR_Seltene_Therapieempfehlung"
 * extension[Prioritaet] ^short = "MII EX SE Empfehlung Priorität"
 * insert Translation(extension[Prioritaet] ^short, de-DE, Priorität)
 * insert Translation(extension[Prioritaet] ^short, en-US, Priority)
-// MedicationRequest.extension:Evidenzgraduierung
-* extension[Evidenzgraduierung] ^short = "MII EX SE Empfehlung Evidenzgraduierung"
-* insert Translation(extension[Evidenzgraduierung] ^short, de-DE, Empfehlung Evidenzgraduierung)
-* insert Translation(extension[Evidenzgraduierung] ^short, en-US, Evidence grade)
 // MedicationRequest.extension:Publikation
 * extension[Publikation] ^short = "MII EX SE Empfehlung Publikation"
 * insert Translation(extension[Publikation] ^short, de-DE, Empfehlung Publikation)
@@ -36,7 +32,7 @@ Description: "FDPG Profil - MII_PR_Seltene_Therapieempfehlung"
 * insert Translation(status ^definition, en-US, active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown)
 // MedicationRequest.intent
 * intent ^short = "proposal | option"
-* insert Translation(intent ^short, de-DE, Intention)
+* insert Translation(intent ^short, de-DE, Absicht)
 * insert Translation(intent ^short, en-US, Intent)
 * intent ^definition = "Da nur Empfehlungen abgegeben werden, wird hier typischerweise 'proposal' stehen. Es sei denn,         diese Therapieempfehlung ist Teil einer RequestGroup (z.B. Kombinationstherapie). In dem Fall muss hier 'option' stehen."
 * insert Translation(intent ^definition, de-DE, Vorschlag | Plan | Auftrag | Original-Auftrag | ergänzender Auftrag | Erfüllungsauftrag | Vorgangsauftrag | Option)
@@ -349,8 +345,6 @@ Description: "FDPG Profil - MII_PR_Seltene_Therapieempfehlung"
 * dosageInstruction.doseAndRate ^short = "Menge des verabreichten Medikaments"
 // MedicationRequest.dosageInstruction.doseAndRate.dose[x]
 * dosageInstruction.doseAndRate.dose[x] ^short = "Amount of medication per dose"
-// MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity
-* dosageInstruction.doseAndRate.dose[x][doseQuantity] ^short = "Menge des Medikaments pro Dosis"
 // MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange
 * dosageInstruction.doseAndRate.dose[x][doseRange] ^short = "Amount of medication per dose"
 // MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.low
@@ -373,6 +367,8 @@ Description: "FDPG Profil - MII_PR_Seltene_Therapieempfehlung"
 * dosageInstruction.doseAndRate.dose[x][doseRange].high.system ^short = "System that defines coded unit form"
 // MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.high.code
 * dosageInstruction.doseAndRate.dose[x][doseRange].high.code ^short = "Coded form of the unit"
+// MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity
+* dosageInstruction.doseAndRate.dose[x][doseQuantity] ^short = "Menge des Medikaments pro Dosis"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]
 * dosageInstruction.doseAndRate.rate[x] ^short = "Amount of medication per unit of time"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRatio
@@ -420,7 +416,7 @@ Description: "FDPG Profil - MII_PR_Seltene_Therapieempfehlung"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRange.high.code
 * dosageInstruction.doseAndRate.rate[x][rateRange].high.code ^short = "Coded form of the unit"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateQuantity
-* dosageInstruction.doseAndRate.rate[x][rateQuantity] ^short = "A fixed quantity (no comparator)"
+* dosageInstruction.doseAndRate.rate[x][rateQuantity] ^short = "Amount of medication per unit of time"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateQuantity.value
 * dosageInstruction.doseAndRate.rate[x][rateQuantity].value ^short = "Numerical value (with implicit precision)"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateQuantity.unit
@@ -484,7 +480,6 @@ Description: "FDPG Profil - MII_PR_Seltene_Therapieempfehlung"
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(extension[Prioritaet])
-* insert ObligationConsumerDefault(extension[Evidenzgraduierung])
 * insert ObligationConsumerDefault(extension[Publikation])
 * insert ObligationConsumerDefault(identifier)
 * insert ObligationConsumerDefault(status)

@@ -6,7 +6,7 @@ Das Modul Diagnose bildet klinische Diagnosen ab, die im Rahmen der Patientenver
 
 ## Quellmodul
 
-[MII KDS Basismodul (Diagnose)](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base/2026.0.0)
+[MII KDS Basismodul (Diagnose)](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base/2027.0.0-ballot)
 
 ## FDPG Profile
 

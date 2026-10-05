@@ -99,7 +99,7 @@ Description: "FDPG Profil - MII_PR_MTB_Einfache_Variante"
 * insert Translation(component[gene-studied] ^short, de-DE, Untersuchtes Gen)
 * insert Translation(component[gene-studied] ^short, en-US, Gene studied)
 * component[gene-studied] ^definition = "Gen auf dem sich die Variante befindet."
-* insert Translation(component[gene-studied] ^definition, de-DE, Das untersuchte Gen\, identifiziert durch HGNC-ID.)
+* insert Translation(component[gene-studied] ^definition, de-DE, Gen auf dem sich die Variante befindet.)
 * insert Translation(component[gene-studied] ^definition, en-US, The gene studied\, identified by HGNC ID.)
 // Observation.component:cytogenetic-location
 * component[cytogenetic-location] ^short = "Zytogenetische Lokalisation"
@@ -120,14 +120,14 @@ Description: "FDPG Profil - MII_PR_MTB_Einfache_Variante"
 * insert Translation(component[chromosome-identifier] ^short, de-DE, Chromosom)
 * insert Translation(component[chromosome-identifier] ^short, en-US, Chromosome)
 * component[chromosome-identifier] ^definition = "Chromosome auf dem sich die Variante befindet (chr1 - chr22, chrX, chrY)."
-* insert Translation(component[chromosome-identifier] ^definition, de-DE, Das betroffene Chromosom.)
+* insert Translation(component[chromosome-identifier] ^definition, de-DE, Chromosom auf dem sich die Variante befindet - chr1 - chr22 - chrX - chrY)
 * insert Translation(component[chromosome-identifier] ^definition, en-US, The affected chromosome.)
 // Observation.component:representative-coding-hgvs
 * component[representative-coding-hgvs] ^short = "DNA-Änderung c.HGVS"
 * insert Translation(component[representative-coding-hgvs] ^short, de-DE, DNA-Änderung c.HGVS)
 * insert Translation(component[representative-coding-hgvs] ^short, en-US, DNA change (c.HGVS\))
 * component[representative-coding-hgvs] ^definition = "HGVS-kodierte Variantenbeschreibung im kodierenden Bereich auf DNA-Baseneben."
-* insert Translation(component[representative-coding-hgvs] ^definition, de-DE, cDNA-Änderung in HGVS-Nomenklatur auf Transkriptebene.)
+* insert Translation(component[representative-coding-hgvs] ^definition, de-DE, HGVS-kodierte Variantenbeschreibung im kodierenden Bereich auf DNA-Basenebene.)
 * insert Translation(component[representative-coding-hgvs] ^definition, en-US, cDNA change in HGVS nomenclature at transcript level.)
 // Observation.component:genomic-hgvs
 * component[genomic-hgvs] ^short = "Genomische DNA-Änderung g.HGVS"
@@ -145,17 +145,17 @@ Description: "FDPG Profil - MII_PR_MTB_Einfache_Variante"
 * insert Translation(component[genomic-ref-seq] ^definition, en-US, Genomic reference sequence ID\, e.g. NC_000007.14.)
 // Observation.component:representative-transcript-ref-seq
 * component[representative-transcript-ref-seq] ^short = "Transcript ID"
-* insert Translation(component[representative-transcript-ref-seq] ^short, de-DE, Transkript-Referenzsequenz)
+* insert Translation(component[representative-transcript-ref-seq] ^short, de-DE, Transkript-ID)
 * insert Translation(component[representative-transcript-ref-seq] ^short, en-US, Transcript reference sequence)
 * component[representative-transcript-ref-seq] ^definition = "Ensemble Transcript ID ('ENST...')."
-* insert Translation(component[representative-transcript-ref-seq] ^definition, de-DE, Transkript-Referenzsequenz-ID\, z.B. NM_004333.4.)
+* insert Translation(component[representative-transcript-ref-seq] ^definition, de-DE, Ensemble Transkript-ID - ENST...)
 * insert Translation(component[representative-transcript-ref-seq] ^definition, en-US, Transcript reference sequence ID\, e.g. NM_004333.4.)
 // Observation.component:exact-start-end
 * component[exact-start-end] ^short = "Position"
-* insert Translation(component[exact-start-end] ^short, de-DE, Exakte Start-/Endposition)
+* insert Translation(component[exact-start-end] ^short, de-DE, Position)
 * insert Translation(component[exact-start-end] ^short, en-US, Exact start/end position)
 * component[exact-start-end] ^definition = "Genaue Position der genetischen Variante."
-* insert Translation(component[exact-start-end] ^definition, de-DE, Exakte genomische Koordinaten der Variante — Start und Ende.)
+* insert Translation(component[exact-start-end] ^definition, de-DE, Genaue Position der genetischen Variante.)
 * insert Translation(component[exact-start-end] ^definition, en-US, Exact genomic coordinates of the variant — start and end.)
 // Observation.component:exact-start-end.code
 * component[exact-start-end].code ^short = "81254-5"
@@ -180,14 +180,14 @@ Description: "FDPG Profil - MII_PR_MTB_Einfache_Variante"
 * insert Translation(component[ref-allele] ^short, de-DE, Referenz-Allel)
 * insert Translation(component[ref-allele] ^short, en-US, Reference allele)
 * component[ref-allele] ^definition = "Referenzsequenz am Ort der genetischen Variante."
-* insert Translation(component[ref-allele] ^definition, de-DE, Nukleotidsequenz des Referenz-Allels.)
+* insert Translation(component[ref-allele] ^definition, de-DE, Referenzsequenz am Ort der genetischen Variante.)
 * insert Translation(component[ref-allele] ^definition, en-US, Nucleotide sequence of the reference allele.)
 // Observation.component:alt-allele
 * component[alt-allele] ^short = "Alternatives Allel"
 * insert Translation(component[alt-allele] ^short, de-DE, Alternatives Allel)
 * insert Translation(component[alt-allele] ^short, en-US, Alternative allele)
 * component[alt-allele] ^definition = "Veränderte Sequenz."
-* insert Translation(component[alt-allele] ^definition, de-DE, Nukleotidsequenz des alternativen (mutierten\) Allels.)
+* insert Translation(component[alt-allele] ^definition, de-DE, Veraenderte Sequenz.)
 * insert Translation(component[alt-allele] ^definition, en-US, Nucleotide sequence of the alternative (mutated\) allele.)
 // Observation.component:coding-change-type
 * component[coding-change-type] ^short = "DNA-Änderungstyp"
@@ -208,14 +208,14 @@ Description: "FDPG Profil - MII_PR_MTB_Einfache_Variante"
 * insert Translation(component[sample-allelic-frequency] ^short, de-DE, Allelfrequenz in der Probe)
 * insert Translation(component[sample-allelic-frequency] ^short, en-US, Sample allelic frequency)
 * component[sample-allelic-frequency] ^definition = "Relative Häufigkeit des Allels am Ort der Variante."
-* insert Translation(component[sample-allelic-frequency] ^definition, de-DE, Häufigkeit des varianten Allels in der untersuchten Probe.)
+* insert Translation(component[sample-allelic-frequency] ^definition, de-DE, Relative Haeufigkeit des Allels am Ort der Variante.)
 * insert Translation(component[sample-allelic-frequency] ^definition, en-US, Frequency of the variant allele in the examined sample.)
 // Observation.component:allelic-read-depth
 * component[allelic-read-depth] ^short = "Allelische Lesetiefe"
 * insert Translation(component[allelic-read-depth] ^short, de-DE, Allelische Lesetiefe)
 * insert Translation(component[allelic-read-depth] ^short, en-US, Allelic read depth)
 * component[allelic-read-depth] ^definition = "Lesetiefe am Ort der Variante."
-* insert Translation(component[allelic-read-depth] ^definition, de-DE, Anzahl der Reads\, die das Allel unterstützen.)
+* insert Translation(component[allelic-read-depth] ^definition, de-DE, Lesetiefe am Ort der Variante.)
 * insert Translation(component[allelic-read-depth] ^definition, en-US, Number of reads supporting the allele.)
 // Observation.component:allelic-state
 * component[allelic-state] ^short = "Allelstatus"
@@ -236,14 +236,14 @@ Description: "FDPG Profil - MII_PR_MTB_Einfache_Variante"
 * insert Translation(component[variation-code] ^short, de-DE, Varianten-Code)
 * insert Translation(component[variation-code] ^short, en-US, Variation code)
 * component[variation-code] ^definition = "Code der Variante in einer öffentlichen Datenbank (z.B. ClinVar)."
-* insert Translation(component[variation-code] ^definition, de-DE, Eindeutiger Variantenidentifikator aus externen Datenbanken\, z.B. ClinVar oder dbSNP.)
+* insert Translation(component[variation-code] ^definition, de-DE, Code der Variante in einer oeffentlichen Datenbank - z.B. ClinVar)
 * insert Translation(component[variation-code] ^definition, en-US, Unique variant identifier from external databases\, e.g. ClinVar or dbSNP.)
 // Observation.component:representative-protein-hgvs
 * component[representative-protein-hgvs] ^short = "Aminosäure-Änderung p.HGVS"
 * insert Translation(component[representative-protein-hgvs] ^short, de-DE, Aminosäure-Änderung p.HGVS)
 * insert Translation(component[representative-protein-hgvs] ^short, en-US, Amino acid change (p.HGVS\))
 * component[representative-protein-hgvs] ^definition = "HGVS-kodierte Variantenbeschreibung im kodierenden Bereich auf Aminosäuren-Ebene."
-* insert Translation(component[representative-protein-hgvs] ^definition, de-DE, Aminosäure-Änderung in HGVS-Nomenklatur auf Proteinebene.)
+* insert Translation(component[representative-protein-hgvs] ^definition, de-DE, HGVS-kodierte Variantenbeschreibung im kodierenden Bereich auf Aminosaeuren-Ebene.)
 * insert Translation(component[representative-protein-hgvs] ^definition, en-US, Amino acid change in HGVS nomenclature at protein level.)
 // Observation.component:copy-number
 * component[copy-number] ^short = "Kopienzahl"
@@ -261,10 +261,10 @@ Description: "FDPG Profil - MII_PR_MTB_Einfache_Variante"
 * insert Translation(component[variant-confidence-status] ^definition, en-US, Confidence status of the variant call.)
 // Observation.component:dna-region
 * component[dna-region] ^short = "Exon"
-* insert Translation(component[dna-region] ^short, de-DE, DNA-Regionsname)
+* insert Translation(component[dna-region] ^short, de-DE, Exon)
 * insert Translation(component[dna-region] ^short, en-US, DNA region name)
 * component[dna-region] ^definition = "Menschenlesbarer Name des Exons als Text, typischeweise Exon #"
-* insert Translation(component[dna-region] ^definition, de-DE, Lesbarer Name für die untersuchte Region — typischerweise Exon # oder Intron #.)
+* insert Translation(component[dna-region] ^definition, de-DE, Menschenlesbarer Name des Exons als Text - typischerweise Exon #)
 * insert Translation(component[dna-region] ^definition, en-US, Human-readable name of the examined region — typically Exon # or Intron #.)
 // Observation.component:gene-fusion
 * component[gene-fusion] ^short = "Genfusion"

@@ -2,7 +2,7 @@
 
 Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen und englischen Beschreibungen. Die Obligations werden auf der Seite [Obligations](obligations.html) beschrieben.
 
-**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.bildgebung](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.bildgebung/2026.0.0)
+**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.bildgebung](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.bildgebung/2027.0.0-ballot.1)
 
 #### Anforderung Bildgebung (ServiceRequest)
 
@@ -51,13 +51,15 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Status | Status der Befundungsprozedur | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` | Kategorie | Kategorisiert die Prozedur | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
 | `category.coding:sct` | Kategorie | Kategorisiert die Prozedur | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code` | Code | Definiert einen spezifischen Code für die Prozedur nach LOINC | Code | Kodierung des Inhalts. |
+| `code` | Code | Definiert einen spezifischen Code für die Prozedur nach LOINC | Code | Code aus LOINC |
 | `code.coding:ops` | Code | Definiert einen spezifischen Code für die Prozedur nach LOINC | OPS | Kodierung nach OPS. |
 | `code.coding:sct` | Code | Definiert einen spezifischen Code für die Prozedur nach LOINC | SNOMED CT | Kodierung nach SNOMED CT. |
 | `code.coding:loinc` | Code | Definiert einen spezifischen Code für die Prozedur nach LOINC | LOINC | Kodierung nach LOINC. |
 | `subject` | Person | Zu untersuchende Person. Hier soll das MII KDS-Profil Person verwendet werden. | Person | Person, auf die sich die Prozedur bezieht |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | Zeitpunkt | Zeitpunkt an dem die Prozedur durchgeführt wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]:performedDateTime` | Zeitpunkt | Zeitpunkt an dem die Prozedur durchgeführt wurde. | Durchführungsdatum | Durchführungsdatum der Prozedur. |
+| `performed[x]:performedPeriod` | Zeitpunkt | Zeitpunkt an dem die Prozedur durchgeführt wurde. | Durchführungszeitraum | Zeitraum, in dem die Prozedur durchgeführt wurde. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
@@ -109,10 +111,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
 | `identifier` |  |  | Identifikator | Ein Identifikator für die Medikationsverabreichung |
-| `partOf` | TeilVon | Teil einer Prozedur oder einer Medikationsgabe | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
+| `partOf` | TeilVon | Teil einer Prozedur oder einer Medikationsgabe | Teil von | Teil einer weiteren Medikationsverabreichung |
 | `status` | Status | Status der Kontrastmittelgabe | Status | in Durchführung \| nicht durchgeführt \| in Wartestellung \| abgeschlossen \| Eingabe fehlerhaft \| abgebrochen \| unbekannt |
 | `category` |  |  | Kategorie | Eine Kategorie, die der Medikationsverabreichung zugeordnet ist. |
-| `medication[x]` | Medikament | Beschreibung des verwendeten Medikament | Medikation | Verweis auf das Medikament oder die Medikation. |
+| `medication[x]` | Medikament | Beschreibung des verwendeten Medikament | Medikation | Medikation, die verarbreicht wurde. Code oder Referenz auf Medication-Objekt. |
 | `medication[x]:medicationReference` | Medikament | Beschreibung des verwendeten Medikament | Medikation (Verweis) | Verweis auf die Medikament-Ressource. |
 | `medication[x]:medicationCodeableConcept` | Medikament | Beschreibung des verwendeten Medikament | Medikation (Code) | Inline-Kodierung der Medikation. |
 | `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | Medikament | Beschreibung des verwendeten Medikament | Pharmazentralnummer | Kodierung nach Pharmazentralnummer. |
@@ -128,7 +130,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `reasonReference` |  |  | Grund Referenz | Grund für die Medikationsverabreichung als Referenz auf Condition- oder Observation-Objekt. |
 | `request` |  |  | Verordnung | Verordnung zur Medikationsverabreichung. |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Medikationsverabreichung als Freitext. |
-| `dosage` | Dosierung | Dosierung der Medikation | Dosierung |  |
+| `dosage` | Dosierung | Dosierung der Medikation | Dosierung | Details der Medikamentendosierung, wie Dosis, Menge, Applikationsort, Verabreichungsweg, etc. |
 | `dosage.rate[x]:rateRatio` | Dosierung | Dosierung der Medikation | Verabreichungsrate (Verhältnis) | Verabreichungsrate als Verhältnis (z.B. mg / Stunde). |
 | `dosage.rate[x]:rateQuantity` | Dosierung | Dosierung der Medikation | Verabreichungsrate (Quantität) | Verabreichungsrate als Quantität. |
 
@@ -150,6 +152,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Person | Zu untersuchende Person. Hier soll das MII KDS-Profil Person verwendet werden. | Person | Person, auf die sich die Befundungprozedur bezieht |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | Zeitpunkt | Zeitpunkt an dem die Prozedur durchgeführt wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]:performedDateTime` | Zeitpunkt | Zeitpunkt an dem die Prozedur durchgeführt wurde. | Durchführungsdatum | Durchführungsdatum der Prozedur. |
+| `performed[x]:performedPeriod` | Zeitpunkt | Zeitpunkt an dem die Prozedur durchgeführt wurde. | Durchführungszeitraum | Zeitraum, in dem die Prozedur durchgeführt wurde. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
 | `report` | Bericht | Referenz auf den Bericht | Bericht | Referenz auf den Bericht |
@@ -175,6 +179,30 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `hasMember` | WeitereBeobachtung | Weitere Beobachtung(en) als Referenz auf weitere Observation(s). | weitere Beobachtungen | Referenzierung weiterer Beobachtungen |  |
 | `derivedFrom` |  |  | abgeleitet | Abgeleitet von ImagingStudy, ect. |  |
 | `component` | ErweiterteBeschreibung | Kann mehrere Beschreibungen strukturiert abbilden. | Bestandteile | detailierte Bestandteile der Beobachtung |  |
+
+#### radiologische Messung (Observation)
+
+**FDPG Profil:** [FDPG_PR_Bildgebung_Radiologische_Messung](StructureDefinition-fdpg-pr-bildgebung-radiologische-messung.html) · **MII Elternprofil:** MII_PR_Bildgebung_Radiologische_Messung
+
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|---|---|
+| `partOf` | TeilEinerBefundungsprozedur | Hier soll auf das MII KDS-Modul Prozedur referenziert werden | Teil von | Teil einer Befundungprozedur |
+| `status` | Status | Status der Beobachtung. | Status | angemeldet \| vorläufig \| endgültig \| geändert \| korrigiert \| abgebrochen \| fehlerhafte Eingabe \| unbekannt |
+| `category` | Beobachtungsklassifizierung | Klassifiziert eine Beobachtung | Kategorie | Klassifikation in diagnostischen Fachbereich und Gruppe |
+| `category.coding:loinc` | Beobachtungsklassifizierung | Klassifiziert eine Beobachtung | LOINC | Kodierung nach LOINC. |
+| `category.coding:sct` | Beobachtungsklassifizierung | Klassifiziert eine Beobachtung | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Beobachtungstyp | Typ der Beobachtung. | Code | Ein Code für die zu befundende Beoabchtung |
+| `code.coding:sct` | Beobachtungstyp | Typ der Beobachtung. | SNOMED CT | Kodierung nach SNOMED CT. |
+| `subject` | Person | Person, auf die sich die Beobachtung bezieht. Hier soll das MII KDS-Modul Person verwendet werden. | Person | Person, auf die sich die Beobachtung bezieht |
+| `issued` | Beobachtungszeitpunkt | Zeitpunkt an dem die Beobachtung gemacht wird. | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde |
+| `value[x]` | Beschreibung | Detaillierte Beschreibung der Beobachtung mit value[x]. | Messwert | Wert der Analyse |
+| `bodySite` | Koerperregion | Codierte Körperregion der Beobachtung | Anatomie | betrachtete Anatomie der Beobachtung |
+| `bodySite.extension:bodyStructure` | Koerperregion | Codierte Körperregion der Beobachtung | Körperstruktur | Referenz auf eine Körperstruktur |
+| `method` |  |  | Methode | detaillierte Messmethode |
+| `method.coding:sct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
+| `hasMember` | WeitereBeobachtung | Weitere Beobachtung(en) als Referenz auf weitere Observation(s). | weitere Beobachtungen | Referenzierung weiterer Beobachtungen |
+| `derivedFrom` |  |  | abgeleitet | Abgeleitet von ImagingStudy, ect. |
+| `component` | ErweiterteBeschreibung | Kann mehrere Beschreibungen strukturiert abbilden. | Bestandteile | detailierte Bestandteile der Beobachtung |
 
 #### Befundbericht (DiagnosticReport)
 
@@ -280,6 +308,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | person | person, which this procedure is about |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
+| `performed[x]:performedDateTime` | Performed | The date the procedure was performed. |
+| `performed[x]:performedPeriod` | Performed period | The period of time the procedure was performed. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
 | `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
 | `note` | Note | Additional information about the procedure as free text. |
@@ -377,6 +407,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | person | person, which this read procedure is about |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
+| `performed[x]:performedDateTime` | Performed | The date the procedure was performed. |
+| `performed[x]:performedPeriod` | Performed period | The period of time the procedure was performed. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
 | `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
 | `report` | report | reference on the report |
@@ -400,6 +432,31 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Value | Value of the analysis |
 | `bodySite` | body site | inspected body site in this observation |
 | `bodySite.extension:bodyStructure` | body structure | reference on a body structure |
+| `hasMember` | additional observation | reference on additional observations |
+| `derivedFrom` | derived from | derived from an imagingStud, etc. |
+| `component` | components | detailed components of this observation |
+
+</details>
+
+<details>
+<summary>English translations - radiologische Messung</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `partOf` | part of | part of a read procedure |
+| `status` | status | registered \| preliminary \| final \| amended \| corrected \| cancelled \| entered-in-error \| unknown |
+| `category` | Category | Classification of the diagnostic service section |
+| `category.coding:loinc` | LOINC | Coding in LOINC. |
+| `category.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `code` | Code | A code identifying the inspected observation |
+| `code.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
+| `subject` | person | person, which this observation is about |
+| `issued` | Issued | The point in time when the laboratory result was documented |
+| `value[x]` | Value | Value of the analysis |
+| `bodySite` | body site | inspected body site in this observation |
+| `bodySite.extension:bodyStructure` | body structure | reference on a body structure |
+| `method` | Method | detailed method of this measurement |
+| `method.coding:sct` | SNOMED CT | Coding in SNOMED CT. |
 | `hasMember` | additional observation | reference on additional observations |
 | `derivedFrom` | derived from | derived from an imagingStud, etc. |
 | `component` | components | detailed components of this observation |

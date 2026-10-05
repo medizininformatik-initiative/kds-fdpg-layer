@@ -24,10 +24,10 @@ Description: "FDPG Profil - MII_PR_MTB_IMMUNOHISTOCHEMISTRY_HER2"
 * insert Translation(category ^definition, en-US, Categorization of the resource.)
 // Observation.code
 * code ^short = "Code für Immunhistochemische Untersuchung"
-* insert Translation(code ^short, de-DE, Code)
+* insert Translation(code ^short, de-DE, Code fuer Immunhistochemische Untersuchung)
 * insert Translation(code ^short, en-US, Code)
 * code ^definition = "Kodierung für Immunhistochemische Untersuchung. Enthält immer den generischen IHC-Code. Nach Möglichkeit sind zusätzlich spezifische Codes zu verwenden. Wenn weder in SNOMED noch LOINC spezifische Codes vorhanden sind, ist über gene-studied das untersuchte Gen anzugeben."
-* insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
+* insert Translation(code ^definition, de-DE, Kodierung fuer Immunhistochemische Untersuchung. Enthaelt immer den generischen IHC-Code. Nach Moeglichkeit sind zusaetzlich spezifische Codes zu verwenden. Wenn weder in SNOMED noch LOINC spezifische Codes vorhanden sind ist ueber gene-studied das untersuchte Gen anzugeben.)
 * insert Translation(code ^definition, en-US, Coding of the content.)
 // Observation.code.coding:generisch
 * code.coding[generisch] ^short = "Generischer Immunhistochemischer Untersuchungscode"

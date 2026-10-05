@@ -19,7 +19,7 @@ Description: "FDPG Profil - MII_PR_MTB_Genomic_Study"
 * status ^short = "GenomicStudy.status"
 * insert Translation(status ^short, de-DE, Status)
 * insert Translation(status ^short, en-US, Status)
-* status ^definition = "GenomicStudy.status is different from Procedure.status, see [mapping](ConceptMap-GenomicStudyStatusMap.html)"
+* status ^definition = "GenomicStudy.status is different from Procedure.status, see [mapping](http://hl7.org/fhir/uv/genomics-reporting/STU3/ConceptMap-GenomicStudyStatusMap.html)"
 * insert Translation(status ^definition, de-DE, Status der Ressource.)
 * insert Translation(status ^definition, en-US, Status of the resource.)
 // Procedure.code

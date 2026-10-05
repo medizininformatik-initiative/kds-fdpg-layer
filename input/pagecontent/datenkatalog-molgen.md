@@ -2,7 +2,7 @@
 
 Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen und englischen Beschreibungen. Die Obligations werden auf der Seite [Obligations](obligations.html) beschrieben.
 
-**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.molgen](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.molgen/2026.0.4)
+**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.molgen](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.molgen/2027.0.0-ballot.1)
 
 #### Anforderung genetischer Test (ServiceRequest)
 

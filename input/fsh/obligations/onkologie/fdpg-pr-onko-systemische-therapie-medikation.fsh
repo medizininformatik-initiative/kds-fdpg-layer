@@ -22,6 +22,20 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie_Medikation"
 * basedOn ^definition = "Referenz auf den CarePlan (Therapieplan) oder MedicationRequest (Therapieempfehlung) auf dem diese Medikation basiert."
 * insert Translation(basedOn ^definition, de-DE, Ein Plan oder eine Anforderung\, die durch den Medikationseintrag erfüllt wird.)
 * insert Translation(basedOn ^definition, en-US, A plan\, proposal or order that is fulfilled in whole or in part by this event.)
+// MedicationStatement.basedOn:tumorkonferenz
+* basedOn[tumorkonferenz] ^short = "Basiert auf"
+* insert Translation(basedOn[tumorkonferenz] ^short, de-DE, Basiert auf)
+* insert Translation(basedOn[tumorkonferenz] ^short, en-US, Based on)
+* basedOn[tumorkonferenz] ^definition = "Ein Plan oder eine Anforderung, die durch den Medikationseintrag erfüllt wird."
+* insert Translation(basedOn[tumorkonferenz] ^definition, de-DE, Ein Plan oder eine Anforderung\, die durch den Medikationseintrag erfüllt wird.)
+* insert Translation(basedOn[tumorkonferenz] ^definition, en-US, A plan\, proposal or order that is fulfilled in whole or in part by this event.)
+// MedicationStatement.basedOn:therapieempfehlung
+* basedOn[therapieempfehlung] ^short = "Basiert auf"
+* insert Translation(basedOn[therapieempfehlung] ^short, de-DE, Basiert auf)
+* insert Translation(basedOn[therapieempfehlung] ^short, en-US, Based on)
+* basedOn[therapieempfehlung] ^definition = "Ein Plan oder eine Anforderung, die durch den Medikationseintrag erfüllt wird."
+* insert Translation(basedOn[therapieempfehlung] ^definition, de-DE, Ein Plan oder eine Anforderung\, die durch den Medikationseintrag erfüllt wird.)
+* insert Translation(basedOn[therapieempfehlung] ^definition, en-US, A plan\, proposal or order that is fulfilled in whole or in part by this event.)
 // MedicationStatement.partOf
 * partOf ^short = "Teil von"
 * insert Translation(partOf ^short, de-DE, Teil von)
@@ -58,10 +72,10 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie_Medikation"
 * insert Translation(medication[x] ^definition, de-DE, Medikation\, welche Gegenstand des Eintrags ist. Code oder Referenz auf Medication-Objekt.)
 * insert Translation(medication[x] ^definition, en-US, The medication that the statement is about. Code or a reference to a Medication resource.)
 // MedicationStatement.medication[x]:medicationReference
-* medication[x][medicationReference] ^short = "Medikation Referenz"
-* insert Translation(medication[x][medicationReference] ^short, de-DE, Medikation Referenz)
+* medication[x][medicationReference] ^short = "Referenz auf Medication (Alternative zur Inline-Codierung)"
+* insert Translation(medication[x][medicationReference] ^short, de-DE, Referenz auf Medication als Alternative zur Inline-Codierung)
 * insert Translation(medication[x][medicationReference] ^short, en-US, Medication Reference)
-* medication[x][medicationReference] ^definition = "Referenz auf ein Medication-Ressource."
+* medication[x][medicationReference] ^definition = "Alternative zur Inline-Codierung: Referenz auf eine Medication-Ressource gemäß MII-Modul Medikation. Die Substanz ist dort über Medication.code (ATC/UNII) bzw. Medication.ingredient codiert."
 * insert Translation(medication[x][medicationReference] ^definition, de-DE, Referenz auf eine Medication-Ressource.)
 * insert Translation(medication[x][medicationReference] ^definition, en-US, Reference to a Medication resource.)
 // MedicationStatement.medication[x]:medicationCodeableConcept
@@ -76,7 +90,7 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie_Medikation"
 * insert Translation(medication[x][medicationCodeableConcept].coding ^short, de-DE, Wirkstoff/ Substanz der systemischen Medikation)
 * insert Translation(medication[x][medicationCodeableConcept].coding ^short, en-US, Active substance)
 * medication[x][medicationCodeableConcept].coding ^definition = "Wirkstoff der systemischen onkologischen Medikation. Nach Möglichkeit als ATC-kodiert anzugeben. Wirkstoffe sind einzeln zu kodieren. Kombinationstherapien können über MedicationStatement.partOf in übergeordneten MedicationStatements gruppiert werden - in diesem Fall ist bei jedem Wirkstoff unter `MedicationStatement.note.text` das Kürzel des (z.B. chemotherapeutischen) Protokolls zu hinterlegen."
-* insert Translation(medication[x][medicationCodeableConcept].coding ^definition, de-DE, Wirkstoff / Substanz der systemischen onkologischen Medikation gemäß 16.4  oBDS 2021.)
+* insert Translation(medication[x][medicationCodeableConcept].coding ^definition, de-DE, Wirkstoff / Substanz der systemischen onkologischen Medikation gemäß 16.6 oBDS 2021.)
 * insert Translation(medication[x][medicationCodeableConcept].coding ^definition, en-US, Active substance of the systemic oncologic medication per oBDS 2021 §16.4.)
 // MedicationStatement.medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer
 * medication[x][medicationCodeableConcept].coding[Pharmazentralnummer] ^short = "PZN Code"
@@ -159,13 +173,6 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie_Medikation"
 * effective[x] ^definition = "Die Zeitspanne, in der angegeben wird, dass der Patient das Medikament eingenommen hat oder einnehmen wird."
 * insert Translation(effective[x] ^definition, de-DE, Die Zeitspanne\, in der angegeben wird\, dass der Patient das Medikament eingenommen hat oder einnehmen wird.)
 * insert Translation(effective[x] ^definition, en-US, The interval of time during which it is being asserted that the patient is/was/will be taking the medication.)
-// MedicationStatement.effective[x]:effectiveDateTime
-* effective[x][effectiveDateTime] ^short = "Zeitpunkt"
-* insert Translation(effective[x][effectiveDateTime] ^short, de-DE, Zeitpunkt)
-* insert Translation(effective[x][effectiveDateTime] ^short, en-US, Date time)
-* effective[x][effectiveDateTime] ^definition = "Der Zeitpunkt, an dem der Patient das Medikament eingenommen hat oder einnehmen wird."
-* insert Translation(effective[x][effectiveDateTime] ^definition, de-DE, Der Zeitpunkt\, an dem der Patient das Medikament eingenommen hat oder einnehmen wird.)
-* insert Translation(effective[x][effectiveDateTime] ^definition, en-US, The date time when the medication was or will be taken.)
 // MedicationStatement.effective[x]:effectivePeriod
 * effective[x][effectivePeriod] ^short = "Zeitraum"
 * insert Translation(effective[x][effectivePeriod] ^short, de-DE, Zeitraum)
@@ -177,16 +184,23 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie_Medikation"
 * effective[x][effectivePeriod].start ^short = "Startdatum der systemischen Medikation"
 * insert Translation(effective[x][effectivePeriod].start ^short, de-DE, Startdatum der systemischen Medikation)
 * insert Translation(effective[x][effectivePeriod].start ^short, en-US, Systemic medication start date)
-* effective[x][effectivePeriod].start ^definition = "Startdatum der systemischen Medikation gemäß 16.7 oBDS 2021."
-* insert Translation(effective[x][effectivePeriod].start ^definition, de-DE, Startdatum der systemischen Medikation gemäß 16.7 oBDS 2021.)
+* effective[x][effectivePeriod].start ^definition = "Startdatum der systemischen Medikation gemäß 16.5 oBDS 2021."
+* insert Translation(effective[x][effectivePeriod].start ^definition, de-DE, Startdatum der systemischen Medikation gemäß 16.5 oBDS 2021.)
 * insert Translation(effective[x][effectivePeriod].start ^definition, en-US, Start date of systemic medication per oBDS 2021 §16.7.)
 // MedicationStatement.effective[x]:effectivePeriod.end
 * effective[x][effectivePeriod].end ^short = "Enddatum der systemischen Medikation"
 * insert Translation(effective[x][effectivePeriod].end ^short, de-DE, Enddatum der systemischen Medikation)
 * insert Translation(effective[x][effectivePeriod].end ^short, en-US, Systemic medication end date)
-* effective[x][effectivePeriod].end ^definition = "Enddatum der systemischen Medikation gemäß 16.9 oBDS 2021."
-* insert Translation(effective[x][effectivePeriod].end ^definition, de-DE, Enddatum der systemischen Medikation gemäß 16.9 oBDS 2021.)
+* effective[x][effectivePeriod].end ^definition = "Enddatum der systemischen Medikation gemäß 16.8 oBDS 2021."
+* insert Translation(effective[x][effectivePeriod].end ^definition, de-DE, Enddatum der systemischen Medikation gemäß 16.8 oBDS 2021.)
 * insert Translation(effective[x][effectivePeriod].end ^definition, en-US, End date of systemic medication per oBDS 2021 §16.9.)
+// MedicationStatement.effective[x]:effectiveDateTime
+* effective[x][effectiveDateTime] ^short = "Zeitpunkt"
+* insert Translation(effective[x][effectiveDateTime] ^short, de-DE, Zeitpunkt)
+* insert Translation(effective[x][effectiveDateTime] ^short, en-US, Date time)
+* effective[x][effectiveDateTime] ^definition = "Der Zeitpunkt, an dem der Patient das Medikament eingenommen hat oder einnehmen wird."
+* insert Translation(effective[x][effectiveDateTime] ^definition, de-DE, Der Zeitpunkt\, an dem der Patient das Medikament eingenommen hat oder einnehmen wird.)
+* insert Translation(effective[x][effectiveDateTime] ^definition, en-US, The date time when the medication was or will be taken.)
 // MedicationStatement.dateAsserted
 * dateAsserted ^short = "Datum Bestätigung"
 * insert Translation(dateAsserted ^short, de-DE, Datum Bestätigung)
@@ -226,8 +240,8 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie_Medikation"
 * note.text ^short = "Protokoll"
 * insert Translation(note.text ^short, de-DE, Protokoll der systemischen Medikation)
 * insert Translation(note.text ^short, en-US, Systemic medication protocol)
-* note.text ^definition = "Protokoll der systemischen Medikation. Bei Angabe eines Schemas sind alle Wirkstoffe in einzelnen Ressourcen unter MedicationStatement.medication[x] gesondert zu kodieren"
-* insert Translation(note.text ^definition, de-DE, Protokoll der systemischen Medikation gemäß 16.6 oBDS 2021.)
+* note.text ^definition = "Protokoll der systemischen Medikation. Bei Angabe eines Schemas sind alle Wirkstoffe in einzelnen Ressourcen unter MedicationStatement.medication[x] gesondert zu kodieren "
+* insert Translation(note.text ^definition, de-DE, Protokoll der systemischen Medikation gemäß 16.4 oBDS 2021.)
 * insert Translation(note.text ^definition, en-US, Protocol of the systemic medication per oBDS 2021 §16.6.)
 // MedicationStatement.dosage
 * dosage ^short = "Dosierung"
@@ -466,7 +480,7 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie_Medikation"
 // MedicationStatement.dosage.doseAndRate.rate[x]:rateRange.high.code
 * dosage.doseAndRate.rate[x][rateRange].high.code ^short = "Coded form of the unit"
 // MedicationStatement.dosage.doseAndRate.rate[x]:rateQuantity
-* dosage.doseAndRate.rate[x][rateQuantity] ^short = "A fixed quantity (no comparator)"
+* dosage.doseAndRate.rate[x][rateQuantity] ^short = "Amount of medication per unit of time"
 // MedicationStatement.dosage.doseAndRate.rate[x]:rateQuantity.value
 * dosage.doseAndRate.rate[x][rateQuantity].value ^short = "Numerical value (with implicit precision)"
 // MedicationStatement.dosage.doseAndRate.rate[x]:rateQuantity.unit
@@ -511,6 +525,8 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie_Medikation"
 // --- Obligations ---
 * insert ObligationConsumerDefault(identifier)
 * insert ObligationConsumerDefault(basedOn)
+* insert ObligationConsumerDefault(basedOn[tumorkonferenz])
+* insert ObligationConsumerDefault(basedOn[therapieempfehlung])
 * insert ObligationConsumerDefault(partOf)
 * insert ObligationConsumerDefault(partOf[systemischeTherapie])
 * insert ObligationConsumerDefault(status)
@@ -525,8 +541,8 @@ Description: "FDPG Profil - MII_PR_Onko_Systemische_Therapie_Medikation"
 * insert ObligationConsumerDefault(subject)
 * insert ObligationConsumerDefault(context)
 * insert ObligationConsumerDefault(effective[x])
-* insert ObligationConsumerDefault(effective[x][effectiveDateTime])
 * insert ObligationConsumerDefault(effective[x][effectivePeriod])
+* insert ObligationConsumerDefault(effective[x][effectiveDateTime])
 * insert ObligationConsumerDefault(dateAsserted)
 * insert ObligationConsumerDefault(informationSource)
 * insert ObligationConsumerDefault(reasonCode)

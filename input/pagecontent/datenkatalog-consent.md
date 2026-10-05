@@ -2,7 +2,7 @@
 
 Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen und englischen Beschreibungen. Die Obligations werden auf der Seite [Obligations](obligations.html) beschrieben.
 
-**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.consent](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.consent/2026.0.1-rc-2)
+**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.consent](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.consent/2027.0.0-ballot)
 
 #### Einwilligungsdokument (DocumentReference)
 
@@ -21,14 +21,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|
 | `extension:domainReference` | Domänen-Verweis | Verweis auf eine assoziierte Domäne (Behandlungseinrichtung, Fall, Studie). |
-| `extension:domainReference.extension:domain` | Additional content defined by implementations | May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance appli... |
+| `extension:domainReference.extension:domain` | Extension | An Extension |
 | `status` | Status | Status der Ressource. |
 | `category` | Kategorie | Kategorisierung der Ressource. |
 | `category:consentCategory` | Kategorie | Kategorisierung der Ressource. |
+| `category:mii` | Kategorie | Kategorisierung der Ressource. |
 | `category:resultType` | Kategorie | Kategorisierung der Ressource. |
 | `category:templateType` | Kategorie | Kategorisierung der Ressource. |
-| `category:loinc` | Kategorie | Kategorisierung der Ressource. |
-| `category:mii` | Kategorie | Kategorisierung der Ressource. |
 | `patient` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `dateTime` | Erstellungszeitpunkt der Einwilligung | Dieser Zeitpunkt sollte in der Praxis, zumindest bei vollelektronischer Verarbeitung, identisch mit dem Unterschriftsdatum des Fragebogens sein (Provenance.signature.when des Patienten) |
 | `organization` | Organisation, in der die Einwilligung erfasst wurde. | Dies ist die Organisation, die den Consent erfasst hat. |
@@ -72,14 +71,13 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `extension:domainReference` | Domain reference | Reference to an associated domain (treatment facility, encounter, study). |
-| `extension:domainReference.extension:domain` | Additional content defined by implementations | May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance appli... |
+| `extension:domainReference.extension:domain` | Extension | An Extension |
 | `status` | Status | Status of the resource. |
 | `category` | Category | Categorization of the resource. |
 | `category:consentCategory` | Category | Categorization of the resource. |
+| `category:mii` | Category | Categorization of the resource. |
 | `category:resultType` | Category | Categorization of the resource. |
 | `category:templateType` | Category | Categorization of the resource. |
-| `category:loinc` | Category | Categorization of the resource. |
-| `category:mii` | Category | Categorization of the resource. |
 | `patient` | Patient | The patient that the resource relates to. |
 | `dateTime` | Erstellungszeitpunkt der Einwilligung | Dieser Zeitpunkt sollte in der Praxis, zumindest bei vollelektronischer Verarbeitung, identisch mit dem Unterschriftsdatum des Fragebogens sein (Provenance.signature.when des Patienten) |
 | `organization` | Organisation, in der die Einwilligung erfasst wurde. | Dies ist die Organisation, die den Consent erfasst hat. |

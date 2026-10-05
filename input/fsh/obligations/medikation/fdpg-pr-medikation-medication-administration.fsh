@@ -300,10 +300,10 @@ Description: "FDPG Profil - MII_PR_Medikation_MedicationAdministration"
 // MedicationAdministration.dosage.rate[x]:rateRatio.denominator.code
 * dosage.rate[x][rateRatio].denominator.code ^short = "Coded form of the unit"
 // MedicationAdministration.dosage.rate[x]:rateQuantity
-* dosage.rate[x][rateQuantity] ^short = "A fixed quantity (no comparator)"
+* dosage.rate[x][rateQuantity] ^short = "Dose quantity per unit of time"
 * insert Translation(dosage.rate[x][rateQuantity] ^short, de-DE, Verabreichungsrate (Quantität\))
 * insert Translation(dosage.rate[x][rateQuantity] ^short, en-US, Administration rate (quantity\))
-* dosage.rate[x][rateQuantity] ^definition = "The comparator is not used on a SimpleQuantity"
+* dosage.rate[x][rateQuantity] ^definition = "Identifies the speed with which the medication was or will be introduced into the patient.  Typically, the rate for an infusion e.g. 100 ml per 1 hour or 100 ml/hr.  May also be expressed as a rate per unit of time, e.g. 500 ml per 2 hours.  Other examples:  200 mcg/min or 200 mcg/1 minute; 1 liter/8 hours."
 * insert Translation(dosage.rate[x][rateQuantity] ^definition, de-DE, Verabreichungsrate als Quantität.)
 * insert Translation(dosage.rate[x][rateQuantity] ^definition, en-US, Administration rate as quantity.)
 // MedicationAdministration.dosage.rate[x]:rateQuantity.value

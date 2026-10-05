@@ -8,6 +8,12 @@ Description: "FDPG Profil - MII_PR_Onko_TNM_M_Kategorie"
 * insert Translation(^title, de-DE, TNM M-Kategorie)
 * insert Translation(^title, en-US, TNM M-Category)
 // --- Element Designations ---
+// Observation.modifierExtension:yPraefix
+* modifierExtension[yPraefix] ^short = "TNM y-Präfix (während/nach multimodaler Therapie)"
+// Observation.modifierExtension:rPraefix
+* modifierExtension[rPraefix] ^short = "TNM r-Präfix (Rezidiv)"
+// Observation.modifierExtension:aPraefix
+* modifierExtension[aPraefix] ^short = "TNM a-Präfix (Autopsie)"
 // Observation.partOf
 * partOf ^short = "Part of referenced event"
 * insert Translation(partOf ^short, de-DE, Teil von)
@@ -73,6 +79,21 @@ Description: "FDPG Profil - MII_PR_Onko_TNM_M_Kategorie"
 * value[x].extension[itcSuffix] ^definition = "Die Extension verleiht TNM N- und M-Kategorien isolierte Tumorzellen (ITC) Suffixe."
 * insert Translation(value[x].extension[itcSuffix] ^definition, de-DE, Suffix für isolierte Tumorzellen (ITC\) im TNM-Staging.)
 * insert Translation(value[x].extension[itcSuffix] ^definition, en-US, Isolated Tumor Cells (ITC\) suffix in TNM staging.)
+// Observation.value[x].coding:uicc
+// Observation.value[x].coding:uicc.system
+// Observation.value[x].coding:uicc.code
+// Observation.value[x].coding:snomed-ct
+* value[x].coding[snomed-ct] ^short = "SNOMED CT coding"
+* insert Translation(value[x].coding[snomed-ct] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(value[x].coding[snomed-ct] ^short, en-US, SNOMED CT coding)
+// Observation.value[x].coding:snomed-ct.system
+* value[x].coding[snomed-ct].system ^short = "SNOMED CT system URL"
+* insert Translation(value[x].coding[snomed-ct].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(value[x].coding[snomed-ct].system ^short, en-US, SNOMED CT system URL)
+// Observation.value[x].coding:snomed-ct.code
+* value[x].coding[snomed-ct].code ^short = "Value as SNOMED CT"
+* insert Translation(value[x].coding[snomed-ct].code ^short, de-DE, Messwert als SNOMED CT)
+* insert Translation(value[x].coding[snomed-ct].code ^short, en-US, Value as SNOMED CT)
 // Observation.method
 * method ^short = "How it was done"
 * insert Translation(method ^short, de-DE, Methode)
@@ -104,5 +125,7 @@ Description: "FDPG Profil - MII_PR_Onko_TNM_M_Kategorie"
 * insert ObligationConsumerDefault(value[x])
 * insert ObligationConsumerPreSelect(value[x])
 * insert ObligationConsumerDefault(value[x].extension[itcSuffix])
+* insert ObligationConsumerDefault(value[x].coding[uicc])
+* insert ObligationConsumerDefault(value[x].coding[snomed-ct])
 * insert ObligationConsumerDefault(method)
 * insert ObligationConsumerDefault(hasMember)

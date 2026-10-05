@@ -23,7 +23,7 @@ Description: "FDPG Profil - MII_PR_Seltene_Hueftumfang"
 * insert Translation(category ^definition, de-DE, Kategorisierung der Ressource.)
 * insert Translation(category ^definition, en-US, Categorization of the resource.)
 // Observation.code
-* code ^short = "Hüftumfang an der maximalen Gesäßprotuberanz"
+* code ^short = "Hüftumfang"
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
 * code ^definition = "Describes what was observed. Sometimes this is called the observation \"name\"."

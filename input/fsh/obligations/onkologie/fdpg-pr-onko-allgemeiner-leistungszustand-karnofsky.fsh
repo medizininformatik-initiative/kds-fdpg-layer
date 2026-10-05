@@ -38,6 +38,8 @@ Description: "FDPG Profil - MII_PR_Onko_Allgemeiner_Leistungszustand_Karnofsky"
 * subject ^definition = "The patient, or group of patients, location, or device this observation is about and into whose record the observation is placed. If the actual focus of the observation is different from the subject (or a sample of, part, or region of the subject), the `focus` element or the `code` itself specifies the actual focus of the observation."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
 * insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
+// Observation.focus
+* focus ^short = "What the observation is about, when it is not about the subject of record"
 // Observation.encounter
 * encounter ^short = "Healthcare event during which this observation is made"
 * insert Translation(encounter ^short, de-DE, Behandlungsfall)
@@ -78,6 +80,7 @@ Description: "FDPG Profil - MII_PR_Onko_Allgemeiner_Leistungszustand_Karnofsky"
 * insert ObligationConsumerDefault(code.coding[snomed])
 * insert ObligationConsumerDefault(code.coding[loinc])
 * insert ObligationConsumerDefault(subject)
+* insert ObligationConsumerDefault(focus)
 * insert ObligationConsumerDefault(encounter)
 * insert ObligationConsumerDefault(value[x])
 * insert ObligationConsumerPreSelect(value[x])

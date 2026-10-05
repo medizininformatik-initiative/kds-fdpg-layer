@@ -3,6 +3,14 @@
   "id": "fdpg-pr-biobank-specimen-zellinie-organoid",
   "extension": [
     {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver",
+        "display": "SemVer"
+      }
+    },
+    {
       "url": "https://www.medizininformatik-initiative.de/fhir/modul-meta/StructureDefinition/mii-ex-meta-license-codeable",
       "valueCodeableConcept": {
         "coding": [
@@ -141,6 +149,72 @@
             }
           ]
         }
+      },
+      {
+        "id": "Specimen.extension:infektiositaetsstatus",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "Specimen.extension",
+        "sliceName": "infektiositaetsstatus"
+      },
+      {
+        "id": "Specimen.extension:focus",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "Specimen.extension",
+        "sliceName": "focus"
       },
       {
         "id": "Specimen.extension:festgestellteDiagnose",
@@ -492,7 +566,8 @@
             ]
           }
         ],
-        "path": "Specimen.identifier"
+        "path": "Specimen.identifier",
+        "short": "Specimen ID"
       },
       {
         "id": "Specimen.status",
@@ -524,7 +599,8 @@
             ]
           }
         ],
-        "path": "Specimen.status"
+        "path": "Specimen.status",
+        "short": "Availability status"
       },
       {
         "id": "Specimen.type",
@@ -556,7 +632,8 @@
             ]
           }
         ],
-        "path": "Specimen.type"
+        "path": "Specimen.type",
+        "short": "Specimen type"
       },
       {
         "id": "Specimen.type.coding:sct",
@@ -685,7 +762,8 @@
             ]
           }
         ],
-        "path": "Specimen.subject"
+        "path": "Specimen.subject",
+        "short": "Patient"
       },
       {
         "id": "Specimen.receivedTime",
@@ -749,7 +827,8 @@
             ]
           }
         ],
-        "path": "Specimen.parent"
+        "path": "Specimen.parent",
+        "short": "Derived from"
       },
       {
         "id": "Specimen.request",
@@ -781,7 +860,8 @@
             ]
           }
         ],
-        "path": "Specimen.request"
+        "path": "Specimen.request",
+        "short": "Collection ID"
       },
       {
         "id": "Specimen.collection",
@@ -813,7 +893,8 @@
             ]
           }
         ],
-        "path": "Specimen.collection"
+        "path": "Specimen.collection",
+        "short": "Specimen sampling"
       },
       {
         "id": "Specimen.collection.extension:einstellungBlutversorgung",
@@ -877,6 +958,21 @@
             }
           ]
         }
+      },
+      {
+        "id": "Specimen.collection.collected[x]",
+        "path": "Specimen.collection.collected[x]",
+        "short": "Sampling time"
+      },
+      {
+        "id": "Specimen.collection.quantity",
+        "path": "Specimen.collection.quantity",
+        "short": "Specimen quantity"
+      },
+      {
+        "id": "Specimen.collection.bodySite",
+        "path": "Specimen.collection.bodySite",
+        "short": "anatomical localisation"
       },
       {
         "id": "Specimen.collection.bodySite.coding:sct",
@@ -951,6 +1047,11 @@
         }
       },
       {
+        "id": "Specimen.collection.fastingStatus[x]",
+        "path": "Specimen.collection.fastingStatus[x]",
+        "short": "Fasting status"
+      },
+      {
         "id": "Specimen.processing",
         "extension": [
           {
@@ -980,7 +1081,8 @@
             ]
           }
         ],
-        "path": "Specimen.processing"
+        "path": "Specimen.processing",
+        "short": "Specimen processing"
       },
       {
         "id": "Specimen.processing.extension:temperaturbedingungen",
@@ -1109,6 +1211,11 @@
         }
       },
       {
+        "id": "Specimen.processing.procedure",
+        "path": "Specimen.processing.procedure",
+        "short": "Processing procedure"
+      },
+      {
         "id": "Specimen.processing.procedure.coding:sct",
         "path": "Specimen.processing.procedure.coding",
         "sliceName": "sct",
@@ -1145,6 +1252,11 @@
         }
       },
       {
+        "id": "Specimen.processing.additive",
+        "path": "Specimen.processing.additive",
+        "short": "Processing additives"
+      },
+      {
         "id": "Specimen.processing.time[x]:timePeriod",
         "extension": [
           {
@@ -1176,6 +1288,7 @@
         ],
         "path": "Specimen.processing.time[x]",
         "sliceName": "timePeriod",
+        "short": "Processing period",
         "type": [
           {
             "code": "Period"
@@ -1308,7 +1421,28 @@
             ]
           }
         ],
-        "path": "Specimen.container"
+        "path": "Specimen.container",
+        "short": "Specimen container"
+      },
+      {
+        "id": "Specimen.container.type",
+        "path": "Specimen.container.type",
+        "short": "Container type"
+      },
+      {
+        "id": "Specimen.container.capacity",
+        "path": "Specimen.container.capacity",
+        "short": "Capacity"
+      },
+      {
+        "id": "Specimen.container.specimenQuantity",
+        "path": "Specimen.container.specimenQuantity",
+        "short": "Specimen quantity"
+      },
+      {
+        "id": "Specimen.container.additive[x]",
+        "path": "Specimen.container.additive[x]",
+        "short": "Additives"
       },
       {
         "id": "Specimen.note",
@@ -1340,7 +1474,8 @@
             ]
           }
         ],
-        "path": "Specimen.note"
+        "path": "Specimen.note",
+        "short": "Project usage"
       }
     ]
   }

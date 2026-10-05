@@ -17,23 +17,26 @@ The MII KDS modules are maintained by various working groups across 20+ reposito
 
 | Module | Profiles | Package Version |
 |--------|----------|-----------------|
-| Person | 4 | base 2026.0.0 |
-| Diagnose | 1 | base 2026.0.0 |
-| Prozedur | 1 | base 2026.0.0 |
-| Fall | 1 | base 2026.0.0 |
-| Laborbefund | 3 | laborbefund 2026.0.1 |
-| Medikation | 5 | medikation 2026.0.0 |
-| Biobank | 11 | biobank 2026.0.0 |
-| Studie | 7 | studie 2026.0.2 |
-| Molekulargenetik | 16 | molgen 2026.0.4 |
-| Pathologiebefund | 17 | patho 2026.0.1 |
-| Intensivmedizin | 72 | icu 2026.0.1-rc1 |
-| Bildgebung | 11 | bildgebung 2026.0.0 |
-| Seltene Erkrankungen | 18 | seltene 2026.0.0 |
-| Onkologie | 73 | onkologie 2026.0.1 |
-| Einwilligung | 3 | consent 2026.0.1-rc-1 |
-| Dokument | 1 | dokument 2026.0.0 |
-| **Total** | **244** | |
+| Person | 5 | base 2027.0.0-ballot |
+| Diagnose | 1 | base 2027.0.0-ballot |
+| Prozedur | 1 | base 2027.0.0-ballot |
+| Fall | 1 | base 2027.0.0-ballot |
+| Laborbefund | 3 | laborbefund 2027.0.0-ballot |
+| Medikation | 5 | medikation 2027.0.0-ballot |
+| Biobank | 11 | biobank 2027.0.0-ballot |
+| Studie | 7 | studie 2027.0.0-ballot |
+| Molekulargenetik | 16 | molgen 2027.0.0-ballot.1 |
+| Pathologiebefund | 15 | patho 2027.0.0-ballot |
+| Intensivmedizin | 94 | icu 2027.0.0-ballot.3 |
+| Bildgebung | 12 | bildgebung 2027.0.0-ballot.1 |
+| Seltene Erkrankungen | 23 | seltene 2027.0.0-ballot |
+| Onkologie | 76 | onkologie 2027.0.0-ballot.1 |
+| Einwilligung | 3 | consent 2027.0.0-ballot |
+| Dokument | 1 | dokument 2027.0.0-ballot.2 |
+| Molekulares Tumorboard | 50 | mtb 2027.0.0-ballot.1 |
+| PROMs | 23 | pros 2027.0.0-ballot.1 |
+| Mikrobiologie | 21 | mikrobiologie 2027.0.0-ballot2 |
+| **Total** | **368** | |
 
 ## Prerequisites
 

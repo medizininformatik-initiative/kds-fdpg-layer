@@ -61,7 +61,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Device",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-icu-device",
+  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-device",
   "derivation": "constraint",
   "differential": {
     "element": [

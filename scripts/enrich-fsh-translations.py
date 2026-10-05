@@ -21,67 +21,67 @@ from pathlib import Path
 MODULES = {
     "basis": {
         "package": "de.medizininformatikinitiative.kerndatensatz.base",
-        "version": "2026.0.0",
+        "version": "2027.0.0-ballot",
     },
     "labor": {
         "package": "de.medizininformatikinitiative.kerndatensatz.laborbefund",
-        "version": "2026.0.1",
+        "version": "2027.0.0-ballot",
     },
     "medikation": {
         "package": "de.medizininformatikinitiative.kerndatensatz.medikation",
-        "version": "2026.0.1",
+        "version": "2027.0.0-ballot",
     },
     "biobank": {
         "package": "de.medizininformatikinitiative.kerndatensatz.biobank",
-        "version": "2026.0.1",
+        "version": "2027.0.0-ballot",
     },
     "studie": {
         "package": "de.medizininformatikinitiative.kerndatensatz.studie",
-        "version": "2026.0.2",
+        "version": "2027.0.0-ballot",
     },
     "molgen": {
         "package": "de.medizininformatikinitiative.kerndatensatz.molgen",
-        "version": "2026.0.4",
+        "version": "2027.0.0-ballot.1",
     },
     "patho": {
         "package": "de.medizininformatikinitiative.kerndatensatz.patho",
-        "version": "2026.0.1",
+        "version": "2027.0.0-ballot",
     },
     "icu": {
         "package": "de.medizininformatikinitiative.kerndatensatz.icu",
-        "version": "2026.0.2",
+        "version": "2027.0.0-ballot.3",
     },
     "bildgebung": {
         "package": "de.medizininformatikinitiative.kerndatensatz.bildgebung",
-        "version": "2026.0.0",
+        "version": "2027.0.0-ballot.1",
     },
     "seltene": {
         "package": "de.medizininformatikinitiative.kerndatensatz.seltene",
-        "version": "2026.0.1",
+        "version": "2027.0.0-ballot",
     },
     "onkologie": {
         "package": "de.medizininformatikinitiative.kerndatensatz.onkologie",
-        "version": "2026.0.3",
+        "version": "2027.0.0-ballot.1",
     },
     "consent": {
         "package": "de.medizininformatikinitiative.kerndatensatz.consent",
-        "version": "2026.0.1-rc-2",
+        "version": "2027.0.0-ballot",
     },
     "dokument": {
         "package": "de.medizininformatikinitiative.kerndatensatz.dokument",
-        "version": "2026.0.1",
+        "version": "2027.0.0-ballot.2",
     },
     "mtb": {
         "package": "de.medizininformatikinitiative.kerndatensatz.mtb",
-        "version": "2026.0.1",
+        "version": "2027.0.0-ballot.1",
     },
     "proms": {
         "package": "de.medizininformatikinitiative.kerndatensatz.pros",
-        "version": "2026.3.0",
+        "version": "2027.0.0-ballot.1",
     },
     "mikrobiologie": {
         "package": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
-        "version": "2027.0.0-alpha.3",
+        "version": "2027.0.0-ballot2",
     },
 }
 

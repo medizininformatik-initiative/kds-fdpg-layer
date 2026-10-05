@@ -12,7 +12,7 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 * extension ^short = "Extension"
 * insert Translation(extension ^short, de-DE, Erweiterung)
 * insert Translation(extension ^short, en-US, Extension)
-* extension ^definition = "May be used to represent additional information that is not part of the basic definition of the resource. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."
+* extension ^definition = "An Extension"
 * insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
 * insert Translation(extension ^definition, en-US, FHIR extension.)
 // Condition.extension:ReferenzPrimaerdiagnose
@@ -22,13 +22,21 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 * extension[ReferenzPrimaerdiagnose] ^definition = "This condition has an unspecified relationship with another condition."
 * insert Translation(extension[ReferenzPrimaerdiagnose] ^definition, de-DE, Verweis auf die Primärdiagnose\, mit der diese Diagnose assoziiert ist.)
 * insert Translation(extension[ReferenzPrimaerdiagnose] ^definition, en-US, Reference to the primary diagnosis this condition is associated with.)
+// Condition.extension:ReferenzPrimaerdiagnose.url
+* extension[ReferenzPrimaerdiagnose].url ^short = "identifies the meaning of the extension"
+// Condition.extension:ReferenzPrimaerdiagnose.value[x]
+* extension[ReferenzPrimaerdiagnose].value[x] ^short = "Value of extension"
 // Condition.extension:Feststellungsdatum
-* extension[Feststellungsdatum] ^short = "Feststellungsdatum"
+* extension[Feststellungsdatum] ^short = "Date the condition was first asserted"
 * insert Translation(extension[Feststellungsdatum] ^short, de-DE, Feststellungsdatum)
 * insert Translation(extension[Feststellungsdatum] ^short, en-US, Asserted date)
-* extension[Feststellungsdatum] ^definition = "Datum, an dem die Diagnose erstmals festgestellt wurde"
+* extension[Feststellungsdatum] ^definition = "The date on which the existence of the Condition was first asserted or acknowledged."
 * insert Translation(extension[Feststellungsdatum] ^definition, de-DE, Datum\, an dem die Diagnose erstmals festgestellt wurde)
 * insert Translation(extension[Feststellungsdatum] ^definition, en-US, Date the condition was first asserted)
+// Condition.extension:Feststellungsdatum.url
+* extension[Feststellungsdatum].url ^short = "identifies the meaning of the extension"
+// Condition.extension:Feststellungsdatum.value[x]
+* extension[Feststellungsdatum].value[x] ^short = "Value of extension"
 // Condition.extension:morphology-behavior-icdo3
 * extension[morphology-behavior-icdo3] ^short = "ICD-O-Morphologie"
 * insert Translation(extension[morphology-behavior-icdo3] ^short, de-DE, ICD-O-Morphologie)
@@ -37,12 +45,29 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 * insert Translation(extension[morphology-behavior-icdo3] ^definition, de-DE, Morphologie des Primärtumors nach ICD-O-3 nach 6.3 oBDS)
 * insert Translation(extension[morphology-behavior-icdo3] ^definition, en-US, Morphology of the primary tumor per ICD-O-3 per oBDS §6.3.)
 // Condition.extension:occurredFollowing
-* extension[occurredFollowing] ^short = "Frühere Tumorerkrankungen"
+* extension[occurredFollowing] ^short = "Frühere Tumorerkrankungen (zeitliche Abfolge)"
 * insert Translation(extension[occurredFollowing] ^short, de-DE, Frühere Tumorerkrankungen)
 * insert Translation(extension[occurredFollowing] ^short, en-US, Prior tumor diseases)
-* extension[occurredFollowing] ^definition = "Verweis auf frühere Tumorerkrankungen, nach denen die aktuelle Diagnose aufgetreten ist"
+* extension[occurredFollowing] ^definition = "Verweis auf frühere Tumorerkrankungen, nach denen die aktuelle Diagnose aufgetreten ist — als registrierte onkologische Diagnose oder als nur anamnestisch bekannte frühere Tumorerkrankung. Rein zeitliche Abfolge; für Transformationen derselben Tumor-Linie ist die Extension transformationVon zu verwenden."
 * insert Translation(extension[occurredFollowing] ^definition, de-DE, Verweis auf frühere Tumorerkrankungen\, nach denen die aktuelle Diagnose aufgetreten ist.)
 * insert Translation(extension[occurredFollowing] ^definition, en-US, Reference to prior tumor diseases that preceded the current diagnosis.)
+// Condition.extension:dueTo
+* extension[dueTo] ^short = "Verursacht durch (therapieassoziierte Sekundärmalignome)"
+* insert Translation(extension[dueTo] ^short, de-DE, Verursacht durch — therapieassoziierte Sekundärmalignome)
+// Condition.extension:transformationVon
+* extension[transformationVon] ^short = "Transformation aus registriertem Primärtumor"
+* insert Translation(extension[transformationVon] ^short, de-DE, Transformation aus registriertem Primärtumor)
+// Condition.identifier
+* identifier ^short = "Tumor-ID (Tumoridentität)"
+* insert Translation(identifier ^short, de-DE, Identifikator)
+* insert Translation(identifier ^short, en-US, Identifier)
+* identifier ^definition = "Lokale Tumor-Identität zur Bündelung aller Ressourcen eines Tumors (Therapie/Verlauf via reasonReference/focus) und zur Unterscheidung bei Mehrfachtumoren. In Primärsystemen als Klartext-ID nutzbar; für die MII-Nutzung MUSS dieser Identifier ebenfalls pseudonymisiert werden (analog zur Patienten-Pseudonymisierung, MII Base). Der Wert ist NICHT bundesweit eindeutig — 'system' ist standort-/quellspezifisch zu vergeben."
+* insert Translation(identifier ^definition, de-DE, Identifikator dieser Ressource.)
+* insert Translation(identifier ^definition, en-US, Identifier for this resource.)
+// Condition.identifier.system
+* identifier.system ^short = "The namespace for the identifier value"
+// Condition.identifier.value
+* identifier.value ^short = "The value that is unique"
 // Condition.clinicalStatus
 * clinicalStatus ^short = "Klinischer Status"
 * insert Translation(clinicalStatus ^short, de-DE, Klinischer Status)
@@ -61,6 +86,14 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 * verificationStatus.coding[condition-ver-status] ^short = "Verification status coding"
 * insert Translation(verificationStatus.coding[condition-ver-status] ^short, de-DE, Verifizierungsstatus-Kodierung)
 * insert Translation(verificationStatus.coding[condition-ver-status] ^short, en-US, Verification status coding)
+// Condition.verificationStatus.coding:condition-ver-status.system
+* verificationStatus.coding[condition-ver-status].system ^short = "Verification status system URL"
+* insert Translation(verificationStatus.coding[condition-ver-status].system ^short, de-DE, Verifizierungsstatus-System-URL)
+* insert Translation(verificationStatus.coding[condition-ver-status].system ^short, en-US, Verification status system URL)
+// Condition.verificationStatus.coding:condition-ver-status.code
+* verificationStatus.coding[condition-ver-status].code ^short = "Verification status as Verification status"
+* insert Translation(verificationStatus.coding[condition-ver-status].code ^short, de-DE, Verifizierungsstatus als Verifizierungsstatus)
+* insert Translation(verificationStatus.coding[condition-ver-status].code ^short, en-US, Verification status as Verification status)
 // Condition.verificationStatus.coding:primaertumorDiagnosesicherung
 * verificationStatus.coding[primaertumorDiagnosesicherung] ^short = "Diagnosesicherung gemäß oBDS"
 * insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung] ^short, de-DE, Diagnosesicherung gemäß oBDS)
@@ -76,6 +109,9 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 * verificationStatus.coding[primaertumorDiagnosesicherung].code ^short = "Verification status as MII Onko diagnosis confirmation"
 * insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung].code ^short, de-DE, Verifizierungsstatus als MII Onko Diagnosesicherung)
 * insert Translation(verificationStatus.coding[primaertumorDiagnosesicherung].code ^short, en-US, Verification status as MII Onko diagnosis confirmation)
+// Condition.category:onkologie
+* category[onkologie] ^short = "Onkologie-Kennzeichnung"
+* insert Translation(category[onkologie] ^short, de-DE, Onkologie-Kennzeichnung)
 // Condition.code
 * code ^short = "Code"
 * insert Translation(code ^short, de-DE, Code)
@@ -90,6 +126,18 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 * code.coding[icd10-gm] ^definition = "Ein Verweis auf einen von der ICD-10-GM definierten Code"
 * insert Translation(code.coding[icd10-gm] ^definition, de-DE, Ein Verweis auf einen von der ICD-10-GM definierten Code)
 * insert Translation(code.coding[icd10-gm] ^definition, en-US, A reference to a code defined by the ICD-10-GM)
+// Condition.code.coding:icd10-gm.extension:Mehrfachcodierungs-Kennzeichen.url
+* code.coding[icd10-gm].extension[Mehrfachcodierungs-Kennzeichen].url ^short = "identifies the meaning of the extension"
+// Condition.code.coding:icd10-gm.extension:Mehrfachcodierungs-Kennzeichen.value[x]
+* code.coding[icd10-gm].extension[Mehrfachcodierungs-Kennzeichen].value[x] ^short = "Value of extension"
+// Condition.code.coding:icd10-gm.extension:Seitenlokalisation.url
+* code.coding[icd10-gm].extension[Seitenlokalisation].url ^short = "identifies the meaning of the extension"
+// Condition.code.coding:icd10-gm.extension:Seitenlokalisation.value[x]
+* code.coding[icd10-gm].extension[Seitenlokalisation].value[x] ^short = "Value of extension"
+// Condition.code.coding:icd10-gm.extension:Diagnosesicherheit.url
+* code.coding[icd10-gm].extension[Diagnosesicherheit].url ^short = "identifies the meaning of the extension"
+// Condition.code.coding:icd10-gm.extension:Diagnosesicherheit.value[x]
+* code.coding[icd10-gm].extension[Diagnosesicherheit].value[x] ^short = "Value of extension"
 // Condition.code.coding:icd10-gm.system
 * code.coding[icd10-gm].system ^short = "Canonische CodeSystem URL für ICD-10-GM"
 * insert Translation(code.coding[icd10-gm].system ^short, de-DE, ICD-10-GM-System-URL)
@@ -113,6 +161,10 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 * code.coding[alpha-id].system ^short = "Canonische CodeSystem URL für Alpha-ID"
 * insert Translation(code.coding[alpha-id].system ^short, de-DE, Alpha-ID-System-URL)
 * insert Translation(code.coding[alpha-id].system ^short, en-US, Alpha-ID system URL)
+// Condition.code.coding:alpha-id.version
+* code.coding[alpha-id].version ^short = "Die Jahresversion von Alpha-ID. Angegeben wird immer die vierstellige Jahreszahl (z.B. \"2017\")"
+* insert Translation(code.coding[alpha-id].version ^short, de-DE, Alpha-ID-Version)
+* insert Translation(code.coding[alpha-id].version ^short, en-US, Alpha-ID version)
 // Condition.code.coding:alpha-id.code
 * code.coding[alpha-id].code ^short = "Der Alpha-ID-Code"
 * insert Translation(code.coding[alpha-id].code ^short, de-DE, Code als Alpha-ID)
@@ -221,6 +273,8 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 * subject ^definition = "Indicates the patient or group who the condition record is associated with."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
 * insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
+// Condition.subject.reference
+* subject.reference ^short = "Literal reference, Relative, internal or absolute URL"
 // Condition.encounter
 * encounter ^short = "Kontakt (Aufenthaltsbezug)"
 * insert Translation(encounter ^short, de-DE, Kontakt)
@@ -228,19 +282,33 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 * encounter ^definition = "Kontakt, während dem die Diagnose erstellt wurde oder mit dem die Diagnose in Zusammenhang steht."
 * insert Translation(encounter ^definition, de-DE, Kontakt\, während dem die Diagnose erstellt wurde oder mit dem die Diagnose in Zusammenhang steht.)
 * insert Translation(encounter ^definition, en-US, The Encounter during which this Condition was created or to which the creation of this record is tightly associated.)
+// Condition.encounter.reference
+* encounter.reference ^short = "Literal reference, Relative, internal or absolute URL"
 // Condition.onset[x]
 * onset[x] ^short = "Beginn"
 * insert Translation(onset[x] ^short, de-DE, Beginn)
 * insert Translation(onset[x] ^short, en-US, Onset)
-* onset[x] ^definition = "Geschätztes oder tatsächliches Datum oder Zeitraum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers."
-* insert Translation(onset[x] ^definition, de-DE, Geschätztes oder tatsächliches Datum oder Zeitraum\, an dem die Erkrankung begonnen hat\, nach Meinung des Klinikers.)
-* insert Translation(onset[x] ^definition, en-US, Estimated or actual date or date-time the condition began\, in the opinion of the clinician.)
-// Condition.onset[x]:onsetPeriod
-* onset[x][onsetPeriod] ^short = "Beginn Zeitraum"
+* onset[x] ^definition = "Geschätztes oder tatsächliches Datum oder Alter, an dem die Erkrankung begonnen hat."
+* insert Translation(onset[x] ^definition, de-DE, Geschätztes oder tatsächliches Datum oder Alter\, an dem die Erkrankung begonnen hat.)
+* insert Translation(onset[x] ^definition, en-US, Estimated or actual date\, date-time\, or age when the condition began.)
 // Condition.onset[x]:onsetDateTime
 * onset[x][onsetDateTime] ^short = "Beginn Datum"
 // Condition.onset[x]:onsetAge
 * onset[x][onsetAge] ^short = "Erkrankungsbeginn als Alter"
+// Condition.onset[x]:onsetAge.extension:Lebensphase-Beginn.url
+* onset[x][onsetAge].extension[Lebensphase-Beginn].url ^short = "identifies the meaning of the extension"
+// Condition.onset[x]:onsetAge.extension:Lebensphase-Beginn.value[x]
+* onset[x][onsetAge].extension[Lebensphase-Beginn].value[x] ^short = "Value of extension"
+// Condition.abatement[x]
+* abatement[x] ^short = "Ende"
+// Condition.abatement[x]:abatementDateTime
+* abatement[x][abatementDateTime] ^short = "Ende Datum"
+// Condition.abatement[x]:abatementAge
+* abatement[x][abatementAge] ^short = "Erkrankungsende als Alter"
+// Condition.abatement[x]:abatementAge.extension:Lebensphase-Ende.url
+* abatement[x][abatementAge].extension[Lebensphase-Ende].url ^short = "identifies the meaning of the extension"
+// Condition.abatement[x]:abatementAge.extension:Lebensphase-Ende.value[x]
+* abatement[x][abatementAge].extension[Lebensphase-Ende].value[x] ^short = "Value of extension"
 // Condition.recordedDate
 * recordedDate ^short = "Aufzeichnungsdatum"
 * insert Translation(recordedDate ^short, de-DE, Aufzeichnungsdatum)
@@ -276,10 +344,14 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 * insert ObligationConsumerDefault(extension[Feststellungsdatum])
 * insert ObligationConsumerDefault(extension[morphology-behavior-icdo3])
 * insert ObligationConsumerDefault(extension[occurredFollowing])
+* insert ObligationConsumerDefault(extension[dueTo])
+* insert ObligationConsumerDefault(extension[transformationVon])
+* insert ObligationConsumerDefault(identifier)
 * insert ObligationConsumerDefault(clinicalStatus)
 * insert ObligationConsumerDefault(verificationStatus)
 * insert ObligationConsumerDefault(verificationStatus.coding[condition-ver-status])
 * insert ObligationConsumerDefault(verificationStatus.coding[primaertumorDiagnosesicherung])
+* insert ObligationConsumerDefault(category[onkologie])
 * insert ObligationConsumerDefault(code)
 * insert ObligationConsumerDefault(code.coding[icd10-gm])
 * insert ObligationConsumerDefault(code.coding[alpha-id])
@@ -292,9 +364,11 @@ Description: "FDPG Profil - MII_PR_Onko_Diagnose_Primaertumor"
 * insert ObligationConsumerDefault(subject)
 * insert ObligationConsumerDefault(encounter)
 * insert ObligationConsumerDefault(onset[x])
-* insert ObligationConsumerDefault(onset[x][onsetPeriod])
 * insert ObligationConsumerDefault(onset[x][onsetDateTime])
 * insert ObligationConsumerDefault(onset[x][onsetAge])
+* insert ObligationConsumerDefault(abatement[x])
+* insert ObligationConsumerDefault(abatement[x][abatementDateTime])
+* insert ObligationConsumerDefault(abatement[x][abatementAge])
 * insert ObligationConsumerDefault(recordedDate)
 * insert ObligationConsumerDefault(evidence)
 * insert ObligationConsumerDefault(note)

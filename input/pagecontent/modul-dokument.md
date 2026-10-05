@@ -6,7 +6,7 @@ Das Modul Dokument bildet die Referenzierung klinischer Dokumente ab. Es ermoegl
 
 ## Quellmodul
 
-[MII KDS Dokument](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.dokument/2026.0.0)
+[MII KDS Dokument](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.dokument/2027.0.0-ballot.2)
 
 ## FDPG Profile
 

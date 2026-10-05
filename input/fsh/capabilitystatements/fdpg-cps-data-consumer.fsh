@@ -29,6 +29,7 @@ andere Systeme, die Daten aus dem FDPG abrufen.
 // === Resource-type-based RuleSets (one per FHIR resource type) ===
 * insert FDPG_CPS_Patient
 * insert FDPG_CPS_Condition
+* insert FDPG_CPS_AllergyIntolerance
 * insert FDPG_CPS_Procedure
 * insert FDPG_CPS_Encounter
 * insert FDPG_CPS_Observation
@@ -55,6 +56,7 @@ andere Systeme, die Daten aus dem FDPG abrufen.
 * insert FDPG_CPS_Composition
 * insert FDPG_CPS_Media
 * insert FDPG_CPS_Device
+* insert FDPG_CPS_DeviceDefinition
 * insert FDPG_CPS_DeviceMetric
 * insert FDPG_CPS_BodyStructure
 * insert FDPG_CPS_CarePlan

@@ -16,10 +16,10 @@ Description: "FDPG Profil - MII_PR_MTB_Genomic_Study_Analysis"
 * insert Translation(extension ^definition, de-DE, FHIR-Erweiterung.)
 * insert Translation(extension ^definition, en-US, FHIR extension.)
 // Procedure.extension:method-type
-* extension[method-type] ^short = "Analysemethode"
+* extension[method-type] ^short = "Genomic Study Analysis Method Type"
 * insert Translation(extension[method-type] ^short, de-DE, Analysemethode)
 * insert Translation(extension[method-type] ^short, en-US, Analysis method)
-* extension[method-type] ^definition = "Art der durchgeführten Analysemethode wie z.B. Sequenzierung oder PCR oder Array-CGH"
+* extension[method-type] ^definition = "Defines a method type for a genomic analysis"
 * insert Translation(extension[method-type] ^definition, de-DE, Art der durchgeführten Analysemethode wie z.B. Sequenzierung oder PCR oder Array-CGH)
 * insert Translation(extension[method-type] ^definition, en-US, Type of analysis method used — e.g. sequencing\, PCR or array CGH.)
 // Procedure.extension:change-type

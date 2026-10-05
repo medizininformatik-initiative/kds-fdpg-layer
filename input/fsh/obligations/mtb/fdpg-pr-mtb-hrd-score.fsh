@@ -110,6 +110,7 @@ Description: "FDPG Profil - MII_PR_MTB_HRD_Score"
 * insert Translation(component[biomarker-category] ^definition, en-US, Category of the molecular biomarker.)
 // Observation.component:LOH
 * component[LOH] ^short = "Loss of heterozygosity"
+* insert Translation(component[LOH] ^short, de-DE, Verlust der Heterozygotie)
 * component[LOH] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[LOH] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
 * insert Translation(component[LOH] ^definition, en-US, Individual components of the observation.)
@@ -117,6 +118,7 @@ Description: "FDPG Profil - MII_PR_MTB_HRD_Score"
 * component[LOH].value[x] ^short = "Actual component result"
 // Observation.component:TAI
 * component[TAI] ^short = "Telomeric allelic imbalance"
+* insert Translation(component[TAI] ^short, de-DE, Telomere allelische Imbalance)
 * component[TAI] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[TAI] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
 * insert Translation(component[TAI] ^definition, en-US, Individual components of the observation.)
@@ -124,6 +126,7 @@ Description: "FDPG Profil - MII_PR_MTB_HRD_Score"
 * component[TAI].value[x] ^short = "Actual component result"
 // Observation.component:LST
 * component[LST] ^short = "Large-scale state transitions"
+* insert Translation(component[LST] ^short, de-DE, Grossflaechige Zustandsuebergaenge)
 * component[LST] ^definition = "Einzelne Komponenten der Beobachtung"
 * insert Translation(component[LST] ^definition, de-DE, Einzelne Komponenten der Beobachtung)
 * insert Translation(component[LST] ^definition, en-US, Individual components of the observation.)

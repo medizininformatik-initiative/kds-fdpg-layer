@@ -6,7 +6,7 @@ Das Modul Biobank beschreibt die Verwaltung und Dokumentation von Bioproben, Sam
 
 ## Quellmodul
 
-[MII KDS Biobank](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.biobank/2026.0.0)
+[MII KDS Biobank](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.biobank/2027.0.0-ballot)
 
 ## FDPG Profile
 

@@ -41,18 +41,50 @@ Description: "FDPG Profil - MII_PR_Dokument_Dokument"
 * type.coding[KDL] ^short = "KDL coding"
 * insert Translation(type.coding[KDL] ^short, de-DE, KDL-Kodierung)
 * insert Translation(type.coding[KDL] ^short, en-US, KDL coding)
+// DocumentReference.type.coding:KDL.system
+* type.coding[KDL].system ^short = "KDL system URL"
+* insert Translation(type.coding[KDL].system ^short, de-DE, KDL-System-URL)
+* insert Translation(type.coding[KDL].system ^short, en-US, KDL system URL)
+// DocumentReference.type.coding:KDL.code
+* type.coding[KDL].code ^short = "Type as KDL"
+* insert Translation(type.coding[KDL].code ^short, de-DE, Typ als KDL)
+* insert Translation(type.coding[KDL].code ^short, en-US, Type as KDL)
 // DocumentReference.type.coding:LNC
 * type.coding[LNC] ^short = "LOINC coding"
 * insert Translation(type.coding[LNC] ^short, de-DE, LOINC-Kodierung)
 * insert Translation(type.coding[LNC] ^short, en-US, LOINC coding)
+// DocumentReference.type.coding:LNC.system
+* type.coding[LNC].system ^short = "LOINC system URL"
+* insert Translation(type.coding[LNC].system ^short, de-DE, LOINC-System-URL)
+* insert Translation(type.coding[LNC].system ^short, en-US, LOINC system URL)
+// DocumentReference.type.coding:LNC.code
+* type.coding[LNC].code ^short = "Type as LOINC"
+* insert Translation(type.coding[LNC].code ^short, de-DE, Typ als LOINC)
+* insert Translation(type.coding[LNC].code ^short, en-US, Type as LOINC)
 // DocumentReference.type.coding:SCT
 * type.coding[SCT] ^short = "SNOMED CT coding"
 * insert Translation(type.coding[SCT] ^short, de-DE, SNOMED CT-Kodierung)
 * insert Translation(type.coding[SCT] ^short, en-US, SNOMED CT coding)
+// DocumentReference.type.coding:SCT.system
+* type.coding[SCT].system ^short = "SNOMED CT system URL"
+* insert Translation(type.coding[SCT].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(type.coding[SCT].system ^short, en-US, SNOMED CT system URL)
+// DocumentReference.type.coding:SCT.code
+* type.coding[SCT].code ^short = "Type as SNOMED CT"
+* insert Translation(type.coding[SCT].code ^short, de-DE, Typ als SNOMED CT)
+* insert Translation(type.coding[SCT].code ^short, en-US, Type as SNOMED CT)
 // DocumentReference.type.coding:XDS
 * type.coding[XDS] ^short = "IHE XDS Type Code coding"
 * insert Translation(type.coding[XDS] ^short, de-DE, IHE XDS Type Code-Kodierung)
 * insert Translation(type.coding[XDS] ^short, en-US, IHE XDS Type Code coding)
+// DocumentReference.type.coding:XDS.system
+* type.coding[XDS].system ^short = "IHE XDS Type Code system URL"
+* insert Translation(type.coding[XDS].system ^short, de-DE, IHE XDS Type Code-System-URL)
+* insert Translation(type.coding[XDS].system ^short, en-US, IHE XDS Type Code system URL)
+// DocumentReference.type.coding:XDS.code
+* type.coding[XDS].code ^short = "Type as IHE XDS Type Code"
+* insert Translation(type.coding[XDS].code ^short, de-DE, Typ als IHE XDS Type Code)
+* insert Translation(type.coding[XDS].code ^short, en-US, Type as IHE XDS Type Code)
 // DocumentReference.category
 * category ^short = "Charakterisierung der Dokumentenart in Übersicht"
 * insert Translation(category ^short, de-DE, Kategorie)
@@ -64,14 +96,38 @@ Description: "FDPG Profil - MII_PR_Dokument_Dokument"
 * category.coding[LNC] ^short = "LOINC coding"
 * insert Translation(category.coding[LNC] ^short, de-DE, LOINC-Kodierung)
 * insert Translation(category.coding[LNC] ^short, en-US, LOINC coding)
+// DocumentReference.category.coding:LNC.system
+* category.coding[LNC].system ^short = "LOINC system URL"
+* insert Translation(category.coding[LNC].system ^short, de-DE, LOINC-System-URL)
+* insert Translation(category.coding[LNC].system ^short, en-US, LOINC system URL)
+// DocumentReference.category.coding:LNC.code
+* category.coding[LNC].code ^short = "Category as LOINC"
+* insert Translation(category.coding[LNC].code ^short, de-DE, Kategorie als LOINC)
+* insert Translation(category.coding[LNC].code ^short, en-US, Category as LOINC)
 // DocumentReference.category.coding:SCT
 * category.coding[SCT] ^short = "SNOMED CT coding"
 * insert Translation(category.coding[SCT] ^short, de-DE, SNOMED CT-Kodierung)
 * insert Translation(category.coding[SCT] ^short, en-US, SNOMED CT coding)
+// DocumentReference.category.coding:SCT.system
+* category.coding[SCT].system ^short = "SNOMED CT system URL"
+* insert Translation(category.coding[SCT].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(category.coding[SCT].system ^short, en-US, SNOMED CT system URL)
+// DocumentReference.category.coding:SCT.code
+* category.coding[SCT].code ^short = "Category as SNOMED CT"
+* insert Translation(category.coding[SCT].code ^short, de-DE, Kategorie als SNOMED CT)
+* insert Translation(category.coding[SCT].code ^short, en-US, Category as SNOMED CT)
 // DocumentReference.category.coding:XDS
 * category.coding[XDS] ^short = "IHE XDS Class Code coding"
 * insert Translation(category.coding[XDS] ^short, de-DE, IHE XDS Class Code-Kodierung)
 * insert Translation(category.coding[XDS] ^short, en-US, IHE XDS Class Code coding)
+// DocumentReference.category.coding:XDS.system
+* category.coding[XDS].system ^short = "IHE XDS Class Code system URL"
+* insert Translation(category.coding[XDS].system ^short, de-DE, IHE XDS Class Code-System-URL)
+* insert Translation(category.coding[XDS].system ^short, en-US, IHE XDS Class Code system URL)
+// DocumentReference.category.coding:XDS.code
+* category.coding[XDS].code ^short = "Category as IHE XDS Class Code"
+* insert Translation(category.coding[XDS].code ^short, de-DE, Kategorie als IHE XDS Class Code)
+* insert Translation(category.coding[XDS].code ^short, en-US, Category as IHE XDS Class Code)
 // DocumentReference.subject
 * subject ^short = "Referenz auf den Patient des Dokumentes"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -104,27 +160,27 @@ Description: "FDPG Profil - MII_PR_Dokument_Dokument"
 // DocumentReference.content:Binaerdaten
 * content[Binaerdaten] ^short = "Document referenced"
 // DocumentReference.content:Binaerdaten.attachment
-* content[Binaerdaten].attachment ^short = "Where to access the document"
+* content[Binaerdaten].attachment ^short = "Zugang zum Dokument"
 // DocumentReference.content:Binaerdaten.attachment.contentType
-* content[Binaerdaten].attachment.contentType ^short = "Mime type of the content, with charset etc."
+* content[Binaerdaten].attachment.contentType ^short = "MIME-Typ des Dokumenteninhalts"
 // DocumentReference.content:Binaerdaten.attachment.language
-* content[Binaerdaten].attachment.language ^short = "Human language of the content (BCP-47)"
+* content[Binaerdaten].attachment.language ^short = "Verwendete Sprache in dem Dokument"
 // DocumentReference.content:Binaerdaten.attachment.creation
-* content[Binaerdaten].attachment.creation ^short = "Date attachment was first created"
+* content[Binaerdaten].attachment.creation ^short = "Datum der Erstellung des Dokumentes"
 // DocumentReference.content:Binaerdaten.format
-* content[Binaerdaten].format ^short = "Format/content rules for the document"
+* content[Binaerdaten].format ^short = "Komplexe Formatangabe"
 // DocumentReference.content:Verweis
 * content[Verweis] ^short = "Document referenced"
 // DocumentReference.content:Verweis.attachment
-* content[Verweis].attachment ^short = "Where to access the document"
+* content[Verweis].attachment ^short = "Zugang zum Dokument"
 // DocumentReference.content:Verweis.attachment.contentType
-* content[Verweis].attachment.contentType ^short = "Mime type of the content, with charset etc."
+* content[Verweis].attachment.contentType ^short = "MIME-Typ des Dokumenteninhalts"
 // DocumentReference.content:Verweis.attachment.language
-* content[Verweis].attachment.language ^short = "Human language of the content (BCP-47)"
+* content[Verweis].attachment.language ^short = "Verwendete Sprache in dem Dokument"
 // DocumentReference.content:Verweis.attachment.creation
-* content[Verweis].attachment.creation ^short = "Date attachment was first created"
+* content[Verweis].attachment.creation ^short = "Datum der Erstellung des Dokumentes"
 // DocumentReference.content:Verweis.format
-* content[Verweis].format ^short = "Format/content rules for the document"
+* content[Verweis].format ^short = "Komplexe Formatangabe"
 // DocumentReference.context
 * context ^short = "Erzeugungskontext des Dokumentes"
 // DocumentReference.context.encounter

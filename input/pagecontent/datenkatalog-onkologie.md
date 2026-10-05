@@ -2,7 +2,7 @@
 
 Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen und englischen Beschreibungen. Die Obligations werden auf der Seite [Obligations](obligations.html) beschrieben.
 
-**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.onkologie](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/2026.0.3)
+**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.onkologie](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.onkologie/2027.0.0-ballot.1)
 
 ### Diagnose und Staging
 
@@ -17,10 +17,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Feststellungsdatum` | Hauptdiagnosedatum | Datum der Erstdiagnose der Hauptdiagnose. Wenn Tag unbekannt -> 15. des Monats | Feststellungsdatum | Datum, an dem die Diagnose erstmals festgestellt wurde |
 | `extension:morphology-behavior-icdo3` | MorphologieCode, MorphologieICDOBlueBookVersion, ... | Gibt an, welche Histologie der Tumor aufweist. | ICD-O-Morphologie | Morphologie des Primärtumors nach ICD-O-3 nach 6.3 oBDS |
 | `extension:occurredFollowing` |  |  | Frühere Tumorerkrankungen | Verweis auf frühere Tumorerkrankungen, nach denen die aktuelle Diagnose aufgetreten ist. |
+| `extension:dueTo` |  |  | Verursacht durch — therapieassoziierte Sekundärmalignome | Verursachung dieser Diagnose durch eine frühere Erkrankung oder Therapie (HL7-Standardextension condition-dueTo) — z. B. therapiebedingte myeloische Neoplasie (9920/3) nach Chemotherapie (Verweis a... |
+| `extension:transformationVon` |  |  | Transformation aus registriertem Primärtumor | Kennzeichnet diese Diagnose als Transformation aus einem bereits registrierten Primärtumor derselben Tumor-Linie — für Konstellationen, in denen das Krebsregister-Regelwerk eine neue Tumor-Entität ... |
+| `identifier` |  |  | Identifikator | Identifikator dieser Ressource. |
 | `clinicalStatus` |  |  | Klinischer Status | aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen |
 | `verificationStatus` | PrimaertumorDiagnosesicherung | Höchste erreichte Diagnosesicherheit der Diagnose. | Verifizierungsstatus | unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe |
 | `verificationStatus.coding:condition-ver-status` | PrimaertumorDiagnosesicherung | Höchste erreichte Diagnosesicherheit der Diagnose. | Verifizierungsstatus | Kodierung nach Verifizierungsstatus. |
 | `verificationStatus.coding:primaertumorDiagnosesicherung` | PrimaertumorDiagnosesicherung | Höchste erreichte Diagnosesicherheit der Diagnose. | MII Onko Diagnosesicherung | Kodierung nach MII Onko Diagnosesicherung. |
+| `category:onkologie` |  |  | Onkologie-Kennzeichnung | Kategorisierung der Ressource. |
 | `code` | PrimaertumorTumordiagnoseICDCode, PrimaertumorTumordiagnoseICDVersion, ... | Kodierung einer meldepflichtigen Erkrankung nach der aktuellen ICD-GM Version. | Code | Ein ICD-10-, Alpha-ID-, SNOMED-, Orpha- oder anderer Code, der die Diagnose identifiziert. |
 | `code.coding:icd10-gm` | PrimaertumorTumordiagnoseICDCode, PrimaertumorTumordiagnoseICDVersion, ... | Kodierung einer meldepflichtigen Erkrankung nach der aktuellen ICD-GM Version. | ICD-10-GM | Kodierung nach ICD-10-GM. |
 | `code.coding:alpha-id` | PrimaertumorTumordiagnoseICDCode, PrimaertumorTumordiagnoseICDVersion, ... | Kodierung einer meldepflichtigen Erkrankung nach der aktuellen ICD-GM Version. | Alpha-ID | Kodierung nach Alpha-ID. |
@@ -32,10 +36,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `bodySite.coding:icd-o-3` | PrimaertumorTopographieICDO, PrimaertumorTopographieICDOVersion, ... | Bezeichnung der Topographie einer Erkrankung nach der aktuellen ICD-O Version. | ICD-O-3 | Kodierung nach ICD-O-3. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Diagnose erstellt wurde oder mit dem die Diagnose in Zusammenhang steht. |
-| `onset[x]` |  |  | Beginn | Geschätztes oder tatsächliches Datum oder Zeitraum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. |
-| `onset[x]:onsetPeriod` |  |  | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
+| `onset[x]` |  |  | Beginn | Geschätztes oder tatsächliches Datum oder Alter, an dem die Erkrankung begonnen hat. |
 | `onset[x]:onsetDateTime` |  |  | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
 | `onset[x]:onsetAge` |  |  | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
+| `abatement[x]` |  |  | Ende | Geschätztes oder tatsächliches Datum oder Alter, an dem die Erkrankung beendet wurde. |
+| `abatement[x]:abatementDateTime` |  |  | Ende Datum | Das Datum, an dem die Erkrankung beendet wurde. |
+| `abatement[x]:abatementAge` |  |  | Erkrankungsende als Alter | The date or estimated date that the condition resolved or went into remission. This is called "abatement" because of the many overloaded connotations associated with "remission" or "resolution" - C... |
 | `recordedDate` |  |  | Aufzeichnungsdatum | Datum, an dem die Diagnose erstmals dokumentiert wurde. |
 | `evidence` |  |  | Evidenz | Hinweise oder Befunde, die den Verifizierungsstatus der Diagnose stützen. |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Diagnose als Freitext. |
@@ -53,6 +59,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `verificationStatus` | PrimaertumorDiagnosesicherung | Höchste erreichte Diagnosesicherheit der Diagnose. | Verifizierungsstatus | Verifizierungsstatus: unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe. | ✓ |
 | `category` |  |  | Kategorie | Kategorisierung der Ressource. |  |
 | `category:oncology` |  |  | Kategorisierung als onkologische Diagnose | A category assigned to the condition. |  |
+| `category:onkologie` |  |  | Onkologie-Kennzeichnung | Kategorisierung der Ressource. |  |
 | `code` | PrimaertumorTumordiagnoseICDCode, PrimaertumorTumordiagnoseICDVersion, ... | Kodierung einer meldepflichtigen Erkrankung nach der aktuellen ICD-GM Version. | Code | Kodierung des Inhalts. | ✓ |
 | `code.coding:icd10-gm` | PrimaertumorTumordiagnoseICDCode, PrimaertumorTumordiagnoseICDVersion, ... | Kodierung einer meldepflichtigen Erkrankung nach der aktuellen ICD-GM Version. | ICD-10-GM | Kodierung nach ICD-10-GM. |  |
 | `bodySite` | PrimaertumorTopographieICDO, PrimaertumorTopographieICDOVersion, ... | Bezeichnung der Topographie einer Erkrankung nach der aktuellen ICD-O Version. | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |  |
@@ -93,7 +100,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
 | `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 | ✓ |
 | `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `value[x].coding:uicc` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Lokalisation der Fernmetastasen | Lokalisation der Fernmetastasen gemäß oBDS 2021 §11.1 / TNM-Kodierung. |  |
+| `value[x].coding:snomed-ct` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | SNOMED CT | Kodierung nach SNOMED CT. |  |
 | `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
+| `component:multipleTumoren` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Multiple Primaertumoren - m-Suffix | Untergeordnete Beobachtungskomponente. |  |
 
 #### TNM N-Kategorie (Observation)
 
@@ -111,6 +121,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 | `value[x].extension:itcSuffix` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | ITC-Suffix | Suffix für isolierte Tumorzellen (ITC) im TNM-Staging. |  |
 | `value[x].extension:snSuffix` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Sentinel-Lymphknoten-Suffix | Suffix für Schildwächter-Lymphknoten (Sentinel Lymph Node) im TNM-Staging. |  |
+| `value[x].coding:uicc` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Lokalisation der Fernmetastasen | Lokalisation der Fernmetastasen gemäß oBDS 2021 §11.1 / TNM-Kodierung. |  |
+| `value[x].coding:snomed-ct` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | SNOMED CT | Kodierung nach SNOMED CT. |  |
 | `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
 | `hasMember` |  |  | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |  |
 
@@ -130,6 +142,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | TNM-Datum | Datum der TNM-Klassifikation nach 8.1 oBDS 2021 | ✓ |
 | `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 | `value[x].extension:itcSuffix` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | ITC-Suffix | Suffix für isolierte Tumorzellen (ITC) im TNM-Staging. |  |
+| `value[x].coding:uicc` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Lokalisation der Fernmetastasen | Lokalisation der Fernmetastasen gemäß oBDS 2021 §11.1 / TNM-Kodierung. |  |
+| `value[x].coding:snomed-ct` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | SNOMED CT | Kodierung nach SNOMED CT. |  |
 | `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |  |
 | `hasMember` |  |  | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |  |
 
@@ -308,6 +322,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
 | `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der diagnostischen Sicherung von Fernmetastasen | Gibt an wann die Fernmetastase festgestellt wurde. | ✓ |
 | `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `bodySite` | LokalisationFernmetastase | Lokalisation der Fernmetastase(n). | Körperstelle | Körperstelle, auf die sich die Ressource bezieht. |  |
+| `bodySite.coding:icd-o-3` | LokalisationFernmetastase | Lokalisation der Fernmetastase(n). | ICD-O-3 | Kodierung nach ICD-O-3. |  |
+| `bodySite.coding:snomed` | LokalisationFernmetastase | Lokalisation der Fernmetastase(n). | SNOMED CT | Kodierung nach SNOMED CT. |  |
 
 #### Tumorgröße (Observation)
 
@@ -346,33 +363,33 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Die verwendete Untersuchungsmethode |
 | `specimen` |  |  | Probe | Die untersuchte Probe |
 | `device` |  |  | Gerät | Das verwendete Analysegerät |
-| `component:conclusion-string` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Schlussfolgerung - Text | Textuelle Zusammenfassung oder Schlussfolgerung zur Variante |
-| `component:gene-studied` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Untersuchtes Gen | Das untersuchte Gen identifiziert durch HGNC-ID |
-| `component:cytogenetic-location` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Zytogenetische Lokalisation | Chromosomale Position der Variante in Bandennomenklatur |
-| `component:reference-sequence-assembly` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Referenzgenom-Assembly | Die verwendete Referenzgenom-Version wie z.B. GRCh37 oder GRCh38 |
-| `component:chromosome-identifier` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Chromosom | Das betroffene Chromosom |
-| `component:representative-coding-hgvs` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | DNA-Änderung c.HGVS | Die cDNA-Änderung in HGVS-Nomenklatur auf Transkriptebene |
-| `component:genomic-hgvs` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Genomische DNA-Änderung g.HGVS | Die genomische DNA-Änderung in HGVS-Nomenklatur |
-| `component:genomic-ref-seq` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Genomische Referenzsequenz | Die genomische Referenzsequenz-ID wie z.B. NC_000007.14 |
-| `component:representative-transcript-ref-seq` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Transkript-Referenzsequenz | Die Transkript-Referenzsequenz-ID wie z.B. NM_004333.4 |
-| `component:exact-start-end` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Exakte Start-End-Position | Die exakten genomischen Koordinaten der Variante - Start und Ende |
-| `component:inner-start-end` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Innere Start-End-Position | Der innere Bereich bei strukturellen Varianten |
-| `component:outer-start-end` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Äußere Start-End-Position | Der äußere Bereich bei strukturellen Varianten |
-| `component:ref-allele` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Referenz-Allel | Die Nukleotidsequenz des Referenz-Allels |
-| `component:alt-allele` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Alternatives Allel | Die Nukleotidsequenz des alternativen - mutierten - Allels |
-| `component:coding-change-type` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | DNA-Änderungstyp | Der Typ der DNA-Änderung wie z.B. Substitution oder Deletion |
-| `component:genomic-source-class` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Genomische Herkunftsklasse | Die Herkunft der Variante wie z.B. somatisch oder Keimbahn |
-| `component:sample-allelic-frequency` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Allelfrequenz in der Probe | Die Häufigkeit des varianten Allels in der untersuchten Probe |
-| `component:allelic-read-depth` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Allelische Lesetiefe | Die Anzahl der Reads die das Allel unterstützen |
-| `component:allelic-state` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Allelstatus | Der Allelstatus wie z.B. heterozygot oder homozygot |
-| `component:variant-inheritance` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Varianten-Vererbung | Die Vererbungsart der Variante wie z.B. maternal oder paternal |
-| `component:variation-code` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Varianten-Code | Eindeutiger Identifikator der Variante aus externen Datenbanken wie z.B. ClinVar oder dbSNP |
-| `component:representative-protein-hgvs` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Aminosäure-Änderung p.HGVS | Die Aminosäure-Änderung in HGVS-Nomenklatur auf Proteinebene |
-| `component:copy-number` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Kopienzahl | Die Anzahl der Kopien eines genomischen Abschnitts |
-| `component:variant-confidence-status` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Konfidenzstatus der Variante | Der Vertrauensstatus der Variantendetektion |
-| `component:dna-region` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | DNA-Regionsname | Ein lesbarer Name für die untersuchte Region. Typischerweise Exon # oder Intron # oder andere. |
-| `component:gene-fusion` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Genfusion | Details zur Genfusion in Blut oder Gewebe mittels molekulargenetischer Methode |
-| `component:detection-limit` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Nachweisgrenze | Die Nachweisgrenze des Laborgeräts |
+| `component:conclusion-string` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Schlussfolgerung - Text | Textuelle Zusammenfassung oder Schlussfolgerung zur Variante |
+| `component:gene-studied` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Untersuchtes Gen | Das untersuchte Gen identifiziert durch HGNC-ID |
+| `component:cytogenetic-location` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Zytogenetische Lokalisation | Chromosomale Position der Variante in Bandennomenklatur |
+| `component:reference-sequence-assembly` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Referenzgenom-Assembly | Die verwendete Referenzgenom-Version wie z.B. GRCh37 oder GRCh38 |
+| `component:chromosome-identifier` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Chromosom | Das betroffene Chromosom |
+| `component:representative-coding-hgvs` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | DNA-Änderung c.HGVS | Die cDNA-Änderung in HGVS-Nomenklatur auf Transkriptebene |
+| `component:genomic-hgvs` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Genomische DNA-Änderung g.HGVS | Die genomische DNA-Änderung in HGVS-Nomenklatur |
+| `component:genomic-ref-seq` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Genomische Referenzsequenz | Die genomische Referenzsequenz-ID wie z.B. NC_000007.14 |
+| `component:representative-transcript-ref-seq` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Transkript-Referenzsequenz | Die Transkript-Referenzsequenz-ID wie z.B. NM_004333.4 |
+| `component:exact-start-end` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Exakte Start-End-Position | Die exakten genomischen Koordinaten der Variante - Start und Ende |
+| `component:inner-start-end` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Innere Start-End-Position | Der innere Bereich bei strukturellen Varianten |
+| `component:outer-start-end` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Äußere Start-End-Position | Der äußere Bereich bei strukturellen Varianten |
+| `component:ref-allele` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Referenz-Allel | Die Nukleotidsequenz des Referenz-Allels |
+| `component:alt-allele` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Alternatives Allel | Die Nukleotidsequenz des alternativen - mutierten - Allels |
+| `component:coding-change-type` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | DNA-Änderungstyp | Der Typ der DNA-Änderung wie z.B. Substitution oder Deletion |
+| `component:genomic-source-class` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Genomische Herkunftsklasse | Die Herkunft der Variante wie z.B. somatisch oder Keimbahn |
+| `component:sample-allelic-frequency` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Allelfrequenz in der Probe | Die Häufigkeit des varianten Allels in der untersuchten Probe |
+| `component:allelic-read-depth` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Allelische Lesetiefe | Die Anzahl der Reads die das Allel unterstützen |
+| `component:allelic-state` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Allelstatus | Der Allelstatus wie z.B. heterozygot oder homozygot |
+| `component:variant-inheritance` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Varianten-Vererbung | Die Vererbungsart der Variante wie z.B. maternal oder paternal |
+| `component:variation-code` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Varianten-Code | Eindeutiger Identifikator der Variante aus externen Datenbanken wie z.B. ClinVar oder dbSNP |
+| `component:representative-protein-hgvs` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Aminosäure-Änderung p.HGVS | Die Aminosäure-Änderung in HGVS-Nomenklatur auf Proteinebene |
+| `component:copy-number` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Kopienzahl | Die Anzahl der Kopien eines genomischen Abschnitts |
+| `component:variant-confidence-status` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Konfidenzstatus der Variante | Der Vertrauensstatus der Variantendetektion |
+| `component:dna-region` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | DNA-Regionsname | Ein lesbarer Name für die untersuchte Region. Typischerweise Exon # oder Intron # oder andere. |
+| `component:gene-fusion` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Genfusion | Details zur Genfusion in Blut oder Gewebe mittels molekulargenetischer Methode |
+| `component:detection-limit` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Nachweisgrenze | Die Nachweisgrenze des Laborgeräts |
 
 #### Evidenz für Erstdiagnose (List)
 
@@ -386,6 +403,26 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
 | `entry` | Entries in the list | Entries in this list. |
+
+#### MII PR Onkologie TNM-Klassifikation (synthetisiert\ (Observation)
+
+**FDPG Profil:** [FDPG_PR_Onko_TNM_Klassifikation_Synthetisiert](StructureDefinition-fdpg-pr-onko-tnm-klassifikation-synthetisiert.html) · **MII Elternprofil:** MII_PR_Onko_TNM_Klassifikation_Synthetisiert
+
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|---|---|
+| `status` |  |  | Status | Status der Ressource. |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Entscheidungsdatum | Datum der Tumorkonferenz oder Therapieentscheidung |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. |
+| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |
+| `device` |  |  | Erzeugendes System bei automatisierter Synthese | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+| `hasMember` |  |  | Auswahl der gewinnenden T/N/M/L/V/Pn/S/a/r/y-Beobachtungen | Referenzen auf die per UICC-Regel ausgewählten Per-Kategorie-Beobachtungen aus den derivedFrom-Quellen. |
+| `derivedFrom` |  |  | Quell-Klassifikationen | Pflicht-Referenzen auf die zugrunde liegenden Meldungs-bezogenen TNM-Klassifikationen |
+| `component:tnmFormel` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Generierte TNM-Gesamtformel | Untergeordnete Beobachtungskomponente. |
 
 ### Lymphknoten
 
@@ -467,16 +504,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Intention` |  |  | Intention der OP | Intention der OP gemäß 13.1 oBDS 2021 |
 | `extension:Urgency` |  |  | Art des Eingriffs | Modalität der Eingriffsdurchführung - Elektiveingriff vs. Notfalleingriff - gemäß KR6 oBDS 2021 |
 | `basedOn` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `basedOn:tumorkonferenz` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
-| `status` | Status | Status der präoperativen Stoma-Markierung. | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
+| `status` | Status | Status der präoperativen Stoma-Markierung. oBDS KR7 | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` |  |  | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
 | `category.coding:sct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code` | Operationstyp | Art der Mamma-Operation. | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. | OPS | Kodierung nach OPS. |
-| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
+| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | OPS | Kodierung nach OPS. |
+| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]:performedDateTime` | OPDatum | Datum der OP | Datum der Stoma-Markierung | Durchführungsdatum der Prozedur. |
+| `performed[x]:performedPeriod` | OPDatum | Datum der OP | Durchführungszeitraum | Zeitraum, in dem die Prozedur durchgeführt wurde. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
@@ -498,23 +538,26 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Intention` |  |  | Intention der Strahlentherapie | Intention der Strahlentherapie gemäß oBDS 2021 §14.1. |
 | `extension:StellungZurOp` |  |  | Stellung der Strahlentherapie zur OP | Stellung der Strahlentherapie zu einer Operation gemäß oBDS 2021 §14.2. |
 | `basedOn` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `basedOn:tumorkonferenz` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
-| `status` | Status | Status der präoperativen Stoma-Markierung. | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
+| `status` | Status | Status der präoperativen Stoma-Markierung. oBDS KR7 | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` |  |  | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
 | `category.coding:sct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code` | Operationstyp | Art der Mamma-Operation. | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. | OPS | Kodierung nach OPS. |
-| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code.coding:systemische_therapie_art` | Operationstyp | Art der Mamma-Operation. | Art der systemischen oder abwartenden Therapie | Art der systemischen oder abwartenden Therapie gemäß 16.3 oBDS 2021. |
+| `code` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
+| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | OPS | Kodierung nach OPS. |
+| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code.coding:systemische_therapie_art` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | Art der systemischen oder abwartenden Therapie | Art der systemischen oder abwartenden Therapie gemäß 16.3 oBDS 2021. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]:performedPeriod` | OPDatum | Datum der OP | Durchführungszeitraum | Zeitraum, in dem die Prozedur durchgeführt wurde. |
+| `performed[x]:performedDateTime` | OPDatum | Datum der OP | Datum der Stoma-Markierung | Durchführungsdatum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
 | `outcome` | LokalerResidualstatus, EndeGrund | Lokale Beurteilung der Residualklassifikation nach Resektion, bezieht sich auf das, was reseziert wurde, meist Primärtumor, aber z. B. auch Lebermetastasen. | The result of procedure | The outcome of the procedure - did it resolve the reasons for the procedure being performed? |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
-| `usedCode` | IntraoperativeBildgebung | Intraoperatives Imagung und weitere Markierungen und Hilfsmittel während der Operation. | Verwendete Items | Kodierte Items, die im Rahmen der Prozedur verwendet wurden. |
+| `usedCode` | IntraoperativeBildgebung | Intraoperative Präparatkontrolle mittels Röntgen/Sonografie. oBDS M6 (XSD: IntraopPraeparatkontrolle) | Verwendete Items | Kodierte Items, die im Rahmen der Prozedur verwendet wurden. |
 
 #### Systemische Therapie Medikation (MedicationStatement)
 
@@ -524,12 +567,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|---|---|
 | `identifier` |  |  | Identifikator | Ein Identifikator für den Medikationseintrag |
 | `basedOn` |  |  | Basiert auf | Ein Plan oder eine Anforderung, die durch den Medikationseintrag erfüllt wird. |
+| `basedOn:tumorkonferenz` |  |  | Basiert auf | Ein Plan oder eine Anforderung, die durch den Medikationseintrag erfüllt wird. |
+| `basedOn:therapieempfehlung` |  |  | Basiert auf | Ein Plan oder eine Anforderung, die durch den Medikationseintrag erfüllt wird. |
 | `partOf` |  |  | Teil von | Ein größeres Ereignis, von dem dieses spezielle Ereignis ein Bestandteil oder Schritt ist. |
 | `partOf:systemischeTherapie` |  |  | Teil von | Ein größeres Ereignis, von dem dieses spezielle Ereignis ein Bestandteil oder Schritt ist. |
 | `status` |  |  | Status | aktiv \| abgeschlossen \| Eingabe fehlerhaft \| intendiert \| gestoppt \| pausiert \| unbekannt\| nicht eingenommen |
 | `category` |  |  | Kategorie | Eine Kategorie, die dem Medikationseintrag zugeordnet ist. |
 | `medication[x]` | SystemischeTherapieProtokoll | Gibt an, nach welchem Protokoll die Systemtherapie durchgeführt wurde. | Medikation | Medikation, welche Gegenstand des Eintrags ist. Code oder Referenz auf Medication-Objekt. |
-| `medication[x]:medicationReference` | SystemischeTherapieProtokoll | Gibt an, nach welchem Protokoll die Systemtherapie durchgeführt wurde. | Medikation Referenz | Referenz auf eine Medication-Ressource. |
+| `medication[x]:medicationReference` | SystemischeTherapieProtokoll | Gibt an, nach welchem Protokoll die Systemtherapie durchgeführt wurde. | Referenz auf Medication als Alternative zur Inline-Codierung | Referenz auf eine Medication-Ressource. |
 | `medication[x]:medicationCodeableConcept` | SystemischeTherapieProtokoll | Gibt an, nach welchem Protokoll die Systemtherapie durchgeführt wurde. | Medikation Code | Code für das Medikament, welches Gegenstand des Eintrags ist. |
 | `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | SystemischeTherapieProtokoll | Gibt an, nach welchem Protokoll die Systemtherapie durchgeführt wurde. | Pharmazentralnummer | Kodierung nach Pharmazentralnummer. |
 | `medication[x]:medicationCodeableConcept.coding:atcClassDe` | SystemischeTherapieProtokoll | Gibt an, nach welchem Protokoll die Systemtherapie durchgeführt wurde. | ATC (BfArM) | Kodierung nach ATC (BfArM). |
@@ -538,8 +583,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `context` |  |  | Kontext | Fall oder Kontakt in Verbindung mit dem Medikationseintrag |
 | `effective[x]` |  |  | Zeitpunkt oder Zeitraum | Die Zeitspanne, in der angegeben wird, dass der Patient das Medikament eingenommen hat oder einnehmen wird. |
-| `effective[x]:effectiveDateTime` |  |  | Zeitpunkt | Der Zeitpunkt, an dem der Patient das Medikament eingenommen hat oder einnehmen wird. |
 | `effective[x]:effectivePeriod` |  |  | Zeitraum | Der Zeitraum, in dem der Patient das Medikament eingenommen hat oder einnehmen wird. |
+| `effective[x]:effectiveDateTime` |  |  | Zeitpunkt | Der Zeitpunkt, an dem der Patient das Medikament eingenommen hat oder einnehmen wird. |
 | `dateAsserted` |  |  | Datum Bestätigung | Das Datum, an dem der Medikationseintrag von der Informationsquelle bestätigt wurde. |
 | `informationSource` |  |  | Informationsquelle | Die Person oder Organisation, die die Information über die Einnahme dieses Medikaments bereitgestellt hat. |
 | `reasonCode` |  |  | Grund Code | Grund für den Medikationseintrag als Code. |
@@ -561,16 +606,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Intention` |  |  | Intention der Strahlentherapie | Intention der Strahlentherapie gemäß 14.1 oBDS 2021. |
 | `extension:StellungZurOp` |  |  | Stellung der Strahlentherapie zu einer Operation | Stellung der Strahlentherapie zu einer Operation gemäß 14.2 oBDS 2021. |
 | `basedOn` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `basedOn:tumorkonferenz` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
-| `status` | Status | Status der präoperativen Stoma-Markierung. | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
+| `status` | Status | Status der präoperativen Stoma-Markierung. oBDS KR7 | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` |  |  | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
 | `category.coding:sct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code` | Operationstyp | Art der Mamma-Operation. | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. | OPS | Kodierung nach OPS. |
-| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
+| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | OPS | Kodierung nach OPS. |
+| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]:performedPeriod` | OPDatum | Datum der OP | Durchführungszeitraum | Zeitraum, in dem die Prozedur durchgeführt wurde. |
+| `performed[x]:performedDateTime` | OPDatum | Datum der OP | Datum der Stoma-Markierung | Durchführungsdatum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
@@ -592,22 +640,24 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Applikationsart` |  |  | Applikationsart | Applikationsart der Bestrahlung gemäß 14.7 oBDS 2021. |
 | `basedOn` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
-| `status` | Status | Status der präoperativen Stoma-Markierung. | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
+| `status` | Status | Status der präoperativen Stoma-Markierung. oBDS KR7 | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` |  |  | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
 | `category.coding:sct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code` | Operationstyp | Art der Mamma-Operation. | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. | OPS | Kodierung nach OPS. |
-| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
+| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | OPS | Kodierung nach OPS. |
+| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]:performedPeriod` | OPDatum | Datum der OP | Durchführungszeitraum | Zeitraum, in dem die Prozedur durchgeführt wurde. |
+| `performed[x]:performedDateTime` | OPDatum | Datum der OP | Datum der Stoma-Markierung | Durchführungsdatum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.extension:Seitenlokalisation` |  |  | Seitenlokalisation | Seitenlokalisation der Bestrahlung gemäß oBDS 2021. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
-| `usedCode` | IntraoperativeBildgebung | Intraoperatives Imagung und weitere Markierungen und Hilfsmittel während der Operation. | Verwendete Items | Kodierte Items, die im Rahmen der Prozedur verwendet wurden. |
-| `usedCode:Strahlenart` | IntraoperativeBildgebung | Intraoperatives Imagung und weitere Markierungen und Hilfsmittel während der Operation. | Strahlenart | Strahlenart der Bestrahlung gemäß 14.8 oBDS 2021. |
+| `usedCode` | IntraoperativeBildgebung | Intraoperative Präparatkontrolle mittels Röntgen/Sonografie. oBDS M6 (XSD: IntraopPraeparatkontrolle) | Verwendete Items | Kodierte Items, die im Rahmen der Prozedur verwendet wurden. |
+| `usedCode:Strahlenart` | IntraoperativeBildgebung | Intraoperative Präparatkontrolle mittels Röntgen/Sonografie. oBDS M6 (XSD: IntraopPraeparatkontrolle) | Strahlenart | Strahlenart der Bestrahlung gemäß 14.8 oBDS 2021. |
 
 #### Strahlentherapie Bestrahlung Nuklearmedizin (Procedure)
 
@@ -624,22 +674,24 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Boost` |  |  | Boost-Bestrahlung | Zusätzliche Boost-Bestrahlung des Tumors gemäß oBDS 2021 §14.10. |
 | `basedOn` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
-| `status` | Status | Status der präoperativen Stoma-Markierung. | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
+| `status` | Status | Status der präoperativen Stoma-Markierung. oBDS KR7 | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` |  |  | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
 | `category.coding:sct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code` | Operationstyp | Art der Mamma-Operation. | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. | OPS | Kodierung nach OPS. |
-| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
+| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | OPS | Kodierung nach OPS. |
+| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]:performedPeriod` | OPDatum | Datum der OP | Durchführungszeitraum | Zeitraum, in dem die Prozedur durchgeführt wurde. |
+| `performed[x]:performedDateTime` | OPDatum | Datum der OP | Datum der Stoma-Markierung | Durchführungsdatum der Prozedur. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.extension:Seitenlokalisation` |  |  | Seitenlokalisation | Seitenlokalisation der Bestrahlung gemäß oBDS 2021. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
-| `usedCode` | IntraoperativeBildgebung | Intraoperatives Imagung und weitere Markierungen und Hilfsmittel während der Operation. | Verwendete Items | Kodierte Items, die im Rahmen der Prozedur verwendet wurden. |
-| `usedCode:Strahlenart` | IntraoperativeBildgebung | Intraoperatives Imagung und weitere Markierungen und Hilfsmittel während der Operation. | Strahlenart | Strahlenart der Bestrahlung gemäß 14.8 oBDS 2021. |
+| `usedCode` | IntraoperativeBildgebung | Intraoperative Präparatkontrolle mittels Röntgen/Sonografie. oBDS M6 (XSD: IntraopPraeparatkontrolle) | Verwendete Items | Kodierte Items, die im Rahmen der Prozedur verwendet wurden. |
+| `usedCode:Strahlenart` | IntraoperativeBildgebung | Intraoperative Präparatkontrolle mittels Röntgen/Sonografie. oBDS M6 (XSD: IntraopPraeparatkontrolle) | Strahlenart | Strahlenart der Bestrahlung gemäß 14.8 oBDS 2021. |
 
 #### Residualstatus (Observation)
 
@@ -663,8 +715,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|---|---|---|
 | `accessionIdentifier` | HistologieEinsendenummer | Die Histologie-Einsendenummer/Auftragsnummer wird vom Pathologischen Institut beim Eingang des Präparates vergeben. | Identifier assigned by the lab | The identifier assigned by the lab when accessioning specimen(s). This is not necessarily the same as the specimen identifier, depending on local lab procedures. |  |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
-| `collection` | TumorHistologiedatum | Datum, an dem die Gewebeprobe entnommen wurde. | Collection details | Details concerning the specimen collection. | ✓ |
-| `collection.collected[x]:collectedDateTime` | TumorHistologiedatum | Datum, an dem die Gewebeprobe entnommen wurde. | Datum der Probenentnahme | Datum der Probenentnahme entspricht oBDS 6.1 Tumor Histologiedatum |  |
+| `collection` | TumorHistologiedatum, DatumStanzen | Datum, an dem die Gewebeprobe entnommen wurde. | Collection details | Details concerning the specimen collection. | ✓ |
+| `collection.collected[x]:collectedDateTime` | TumorHistologiedatum, DatumStanzen | Datum, an dem die Gewebeprobe entnommen wurde. | Datum der Probenentnahme | Datum der Probenentnahme entspricht oBDS 6.1 Tumor Histologiedatum |  |
 
 ### Therapieempfehlung und Tumorkonferenz
 
@@ -708,14 +760,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|---|---|
 | `identifier` |  |  | Identifikator | Ein Identifikator für die Medikationsverordnung |
 | `status` |  |  | Status | aktiv \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| abgebrochen \| Entwurf \| unbekannt |
-| `intent` |  |  | Intention | Vorschlag \| Plan \| Auftrag \| Original-Auftrag \| ergänzender Auftrag \| Erfüllungsauftrag \| Vorgangsauftrag \| Option |
+| `intent` |  |  | Absicht | Vorschlag \| Plan \| Auftrag \| Original-Auftrag \| ergänzender Auftrag \| Erfüllungsauftrag \| Vorgangsauftrag \| Option |
 | `medication[x]` | TumorkonferenzTherapieempfehlungMedikation | Einzelne empfohlene Medikamente/Substanzen der Therapie (z.B. ATC-kodiert). Bei Kombinationstherapien werden mehrere Medikamente angegeben. | Medikation | Medikation, die verordnet wurde. Code oder Referenz auf Medication-Objekt. |
-| `medication[x]:medicationReference` | TumorkonferenzTherapieempfehlungMedikation | Einzelne empfohlene Medikamente/Substanzen der Therapie (z.B. ATC-kodiert). Bei Kombinationstherapien werden mehrere Medikamente angegeben. | Medikation (Verweis) | Verweis auf die Medikament-Ressource. |
 | `medication[x]:medicationCodeableConcept` | TumorkonferenzTherapieempfehlungMedikation | Einzelne empfohlene Medikamente/Substanzen der Therapie (z.B. ATC-kodiert). Bei Kombinationstherapien werden mehrere Medikamente angegeben. | Medikation (Code) | Inline-Kodierung der Medikation. |
 | `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | TumorkonferenzTherapieempfehlungMedikation | Einzelne empfohlene Medikamente/Substanzen der Therapie (z.B. ATC-kodiert). Bei Kombinationstherapien werden mehrere Medikamente angegeben. | Pharmazentralnummer | Kodierung nach Pharmazentralnummer. |
 | `medication[x]:medicationCodeableConcept.coding:atcClassDe` | TumorkonferenzTherapieempfehlungMedikation | Einzelne empfohlene Medikamente/Substanzen der Therapie (z.B. ATC-kodiert). Bei Kombinationstherapien werden mehrere Medikamente angegeben. | ATC (BfArM) | Kodierung nach ATC (BfArM). |
 | `medication[x]:medicationCodeableConcept.coding:atcClassEn` | TumorkonferenzTherapieempfehlungMedikation | Einzelne empfohlene Medikamente/Substanzen der Therapie (z.B. ATC-kodiert). Bei Kombinationstherapien werden mehrere Medikamente angegeben. | ATC (WHO) | Kodierung nach ATC (WHO). |
 | `medication[x]:medicationCodeableConcept.coding:UNII` | TumorkonferenzTherapieempfehlungMedikation | Einzelne empfohlene Medikamente/Substanzen der Therapie (z.B. ATC-kodiert). Bei Kombinationstherapien werden mehrere Medikamente angegeben. | UNII | Kodierung nach UNII. |
+| `medication[x]:medicationReference` | TumorkonferenzTherapieempfehlungMedikation | Einzelne empfohlene Medikamente/Substanzen der Therapie (z.B. ATC-kodiert). Bei Kombinationstherapien werden mehrere Medikamente angegeben. | Medikation (Verweis) | Verweis auf die Medikament-Ressource. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Fall / Kontakt | Fall oder Kontakt, bei dem die Medikation verordnet wurde. |
 | `supportingInformation` |  |  | Information to support ordering of the medication | Include additional information (for example, patient height and weight) that supports the ordering of the medication. |
@@ -723,7 +775,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `requester` |  |  | Anforderer | Die Person, Organisation oder das Gerät, die die Verordnung initiiert hat und für deren Aktivierung verantwortlich ist. |
 | `reasonCode` |  |  | Grund Code | Grund für die Medikationverordnung als Code. |
 | `reasonReference` |  |  | Grund Referenz | Grund für die Medikationsverordnung als Referenz auf Condition- oder Observation-Objekt. |
-| `reasonReference:Primaertumor` |  |  | Grund Referenz | Grund für die Medikationsverordnung als Referenz auf Condition- oder Observation-Objekt. |
+| `reasonReference:Primaertumor` |  |  | Begründung (Verweis) | Grund für die Medikationsverordnung als Referenz auf Condition- oder Observation-Objekt. |
 | `basedOn` |  |  | Basiert auf | Ein Plan oder eine Anforderung, die ganz oder teilweise durch diese Medikationsverordnung erfüllt wird. |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Medikationsverordnung als Freitext. |
 | `dosageInstruction` |  |  | Dosierungsanweisung | Gibt an, wie das Medikament vom Patienten zu verwenden ist. |
@@ -762,6 +814,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:snomed` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | SNOMED CT | Kodierung nach SNOMED CT. |  |
 | `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |  |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
 | `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 | `value[x].coding:obds` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | oBDS | Kodierung nach oBDS. |  |
@@ -777,6 +830,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:snomed` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | SNOMED CT | Kodierung nach SNOMED CT. |  |
 | `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |  |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
 | `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 | `value[x].coding:obds` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | oBDS | Kodierung nach oBDS. |  |
@@ -816,8 +870,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
 |---|---|---|---|---|
-| `event` | NebenwirkungenCTCAEArt, NebenwirkungenCTCAEVersion | Gibt an, zu welcher Nebenwirkung es bei der Bestrahlung oder der systemischen Therapie gekommen ist. Bei der Bestrahlung sind sogenannte akute Nebenwirkungen bis zum 90. Tag nach Bestrahlungsbeginn... | Type of the event itself in relation to the subject | This element defines the specific type of event that occurred or that was prevented from occurring. |
-| `event.coding:meddra` | NebenwirkungenCTCAEArt, NebenwirkungenCTCAEVersion | Gibt an, zu welcher Nebenwirkung es bei der Bestrahlung oder der systemischen Therapie gekommen ist. Bei der Bestrahlung sind sogenannte akute Nebenwirkungen bis zum 90. Tag nach Bestrahlungsbeginn... | MedDRA | Kodierung nach MedDRA. |
+| `extension:ctcaeVersion` | NebenwirkungenCTCAEVersion | Für den medizinischen Katalog gültige Versionsbezeichnungen (4, 4.03, 5.0, Sonstige). Gemeint ist die Version des CTCAE-Katalogs, nicht die des MedDRA-Katalogs, aus dem die Codes stammen — CTCAE v4... | CTCAE-Version | Version des CTCAE-Katalogs nach 15.3 oBDS 2021 |
+| `event` | NebenwirkungenCTCAEArt | Gibt an, zu welcher Nebenwirkung es bei der Bestrahlung oder der systemischen Therapie gekommen ist. Bei der Bestrahlung sind sogenannte akute Nebenwirkungen bis zum 90. Tag nach Bestrahlungsbeginn... | Type of the event itself in relation to the subject | This element defines the specific type of event that occurred or that was prevented from occurring. |
+| `event.coding:meddra` | NebenwirkungenCTCAEArt | Gibt an, zu welcher Nebenwirkung es bei der Bestrahlung oder der systemischen Therapie gekommen ist. Bei der Bestrahlung sind sogenannte akute Nebenwirkungen bis zum 90. Tag nach Bestrahlungsbeginn... | MedDRA | Kodierung nach MedDRA. |
+| `event.coding:snomed` | NebenwirkungenCTCAEArt | Gibt an, zu welcher Nebenwirkung es bei der Bestrahlung oder der systemischen Therapie gekommen ist. Bei der Bestrahlung sind sogenannte akute Nebenwirkungen bis zum 90. Tag nach Bestrahlungsbeginn... | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
 | `seriousness` | NebenwirkungenCTCAEGrad | Gibt an, zu welchem Schweregrad von Nebenwirkungen es bei der Bestrahlung oder der systemischen Therapie gekommen ist. | Seriousness of the event | Assessment whether this event was of real importance. |
@@ -833,7 +889,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
 | `focus:primaertumor` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | Referenz zum Primärtumor | Referenz zur Primärtumordiagnose, auf die sich die Studienteilnahme bezieht |  |
-| `focus:studie` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | Referenz zur Studie | Referenz zur konkreten Studie (ResearchStudy), an der der Patient teilnimmt |  |
+| `focus:studie` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | Referenz zur Studie - KDS-Modul Medizinisches Forschungsvorhaben | Referenz zur konkreten Studie, an der die Patientin oder der Patient teilnimmt. SOLL auf das Profil MII_PR_Studie_Studie des KDS-Moduls Medizinisches Forschungsvorhaben verweisen; eine generische R... |  |
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
 | `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Studienteilnahme Datum | Studienteilnahme Datum gemäß 24.2 oBDS 2021 | ✓ |
 | `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
@@ -867,10 +923,43 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]:effectiveDateTime` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |  |
 | `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 | `hasMember` |  |  | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |  |
-| `component` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
-| `component:Tumor_Verlauf` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
-| `component:Lymphknoten_Verlauf` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
-| `component:Fernmetastasen_Verlauf` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:Tumor_Verlauf` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:Lymphknoten_Verlauf` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:Fernmetastasen_Verlauf` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Komponente | Untergeordnete Beobachtungskomponente. |  |
+
+#### MII PR Onkologie Tumormarker (Observation)
+
+**FDPG Profil:** [FDPG_PR_Onko_Tumormarker](StructureDefinition-fdpg-pr-onko-tumormarker.html) · **MII Elternprofil:** MII_PR_Onko_Tumormarker
+
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|---|---|
+| `identifier` |  |  | Identifikator | Kennung/en, unter der/denen diese Laboruntersuchung bekannt ist. |
+| `identifier:analyseBefundCode` |  |  | Identifikator | Identifikator dieser Ressource. |
+| `basedOn` |  |  | Basiert auf | Bezug zum Laborauftrag, auf dem diese Laboruntersuchung basiert. |
+| `status` |  |  | Status | abgeschlossen |
+| `category` |  |  | Kategorie | Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe |
+| `category:observation-category` |  |  | Kategorie | Kategorisierung der Ressource. |
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | LOINC-Code, der den gemessenen Laborparameter bzw. durchgeführten Labortest beschreibt. |
+| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |
+| `subject` |  |  | Subjekt | Subjekt auf welches sich die Laboruntersuchung bezieht. |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | Bezug zur onkologischen Diagnose | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
+| `encounter` |  |  | Fall oder Kontakt | Fall oder Kontakt, in dem die Laboruntersuchung durchgeführt wurde. |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Untersuchungszeitpunkt | Klinischer Bezugszeitpunkt der Laboruntersuchung |
+| `effective[x].extension:QuelleKlinischesBezugsdatum` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Quelle klinisches Bezugsdatum | Datum der Probenentnahme \| Datum des Eingangs der Probe im Labor |
+| `issued` |  |  | Dokumentationsdatum | Zeitpunkt, an dem das Ergebnis der Laboruntersuchung dokumentiert wurde. |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Analyse |
+| `value[x]:valueQuantity` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `value[x]:valueCodeableConcept` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Kodierter Wert | Wert als kodierter Begriff aus einer Terminologie. |
+| `value[x]:valueRange` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Wertebereich | Wert als Bereich von Unter- zu Obergrenze. |
+| `value[x]:valueRatio` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Verhältnis | Wert als Verhältnis (Zähler/Nenner). |
+| `dataAbsentReason` |  |  | Grund für fehlende Daten | unbekannt \| maskiert \| nicht anwendbar \| Fehler \| nicht durchgeführt |
+| `interpretation` | GenetischeVarianteAuspraegung, Bewertung | Ausprägung der genetischen Variante nach oBDS | Interpretation | Eine kategorische Bewertung des Messwertes. Zum Beispiel hoch, niedrig, normal. |
+| `note` | GenetischeVarianteName | Name der genetischen Variante (z.B. K-ras, BRAFV600, NRAS, C-KIT) | Hinweis | Zusätzliche Informationen zur Laboruntersuchung als Freitext. |
+| `method` | TNMVersion | Gibt an, nach welcher Version des TNM klassifiziert wurde. | Untersuchungsmethode | Konkrete Untersuchungsmethode, wenn der verwendete LOINC-Code für den Laborparameter keine Methode enthält. |
+| `specimen` |  |  | Probenmaterial | Probe, auf deren Basis die Laboruntersuchungen angefertigt werden |
+| `device` |  |  | Gerät | Gerät, das zur Generierung der Messwerte verwendet wurde. |
+| `referenceRange` |  |  | Referenzbereich | Bereich, in dem der Messwert als normal oder empfohlen betrachtet wird. |
 
 ### Mamma-Karzinom
 
@@ -886,17 +975,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Intention` |  |  | Intention der OP | Intention der OP gemäß 13.1 oBDS 2021 |
 | `extension:Urgency` |  |  | Art des Eingriffs | Modalität der Eingriffsdurchführung - Elektiveingriff vs. Notfalleingriff - gemäß KR6 oBDS 2021 |
 | `basedOn` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `basedOn:tumorkonferenz` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
-| `status` | Status | Status der präoperativen Stoma-Markierung. | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
+| `status` | Status | Status der präoperativen Stoma-Markierung. oBDS KR7 | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` |  |  | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
 | `category.coding:sct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code` | Operationstyp | Art der Mamma-Operation. | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. | OPS | Kodierung nach OPS. |
-| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
+| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | OPS | Kodierung nach OPS. |
+| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `performed[x]:performedDateTime` | OPDatum | Datum der OP | Datum der Stoma-Markierung | Durchführungsdatum der Prozedur. |
+| `performed[x]:performedPeriod` | OPDatum | Datum der OP | Durchführungszeitraum | Zeitraum, in dem die Prozedur durchgeführt wurde. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
@@ -905,9 +996,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `complication:compl_obds` | OPKomplikation | Gibt an, ob eine oder keine Komplikation aufgetreten ist, bzw. wenn eine aufgetreten ist welche. | Complication following the procedure | Any complications that occurred during the procedure, or in the immediate post-performance period. These are generally tracked separately from the notes, which will typically describe the procedure... |
 | `complication:compl_icd10` | OPKomplikation | Gibt an, ob eine oder keine Komplikation aufgetreten ist, bzw. wenn eine aufgetreten ist welche. | Complication following the procedure | Any complications that occurred during the procedure, or in the immediate post-performance period. These are generally tracked separately from the notes, which will typically describe the procedure... |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
-| `usedCode` | IntraoperativeBildgebung | Intraoperatives Imagung und weitere Markierungen und Hilfsmittel während der Operation. | Verwendete Items | Kodierte Items, die im Rahmen der Prozedur verwendet wurden. |
-| `usedCode:IntraoperativesImaging` | IntraoperativeBildgebung | Intraoperatives Imagung und weitere Markierungen und Hilfsmittel während der Operation. | Verwendete Items | Kodierte Items, die im Rahmen der Prozedur verwendet wurden. |
-| `usedCode:PraeoperativeMarkierung` | IntraoperativeBildgebung | Intraoperatives Imagung und weitere Markierungen und Hilfsmittel während der Operation. | Verwendete Items | Kodierte Items, die im Rahmen der Prozedur verwendet wurden. |
+| `usedCode` | IntraoperativeBildgebung | Intraoperative Präparatkontrolle mittels Röntgen/Sonografie. oBDS M6 (XSD: IntraopPraeparatkontrolle) | Verwendete Items | Kodierte Items, die im Rahmen der Prozedur verwendet wurden. |
+| `usedCode:IntraoperativesImaging` | IntraoperativeBildgebung | Intraoperative Präparatkontrolle mittels Röntgen/Sonografie. oBDS M6 (XSD: IntraopPraeparatkontrolle) | Verwendete Items | Kodierte Items, die im Rahmen der Prozedur verwendet wurden. |
+| `usedCode:PraeoperativeMarkierung` | IntraoperativeBildgebung | Intraoperative Präparatkontrolle mittels Röntgen/Sonografie. oBDS M6 (XSD: IntraopPraeparatkontrolle) | Verwendete Items | Kodierte Items, die im Rahmen der Prozedur verwendet wurden. |
 
 #### Präoperative Markierung Mamma (Procedure)
 
@@ -916,8 +1007,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
 |---|---|---|---|---|---|
 | `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |  |
-| `status` | Status | Status der präoperativen Stoma-Markierung. | Status | Status der Ressource. | ✓ |
-| `code` | Operationstyp | Art der Mamma-Operation. | Code | Kodierung des Inhalts. | ✓ |
+| `status` | Status | Status der präoperativen Stoma-Markierung. oBDS KR7 | Status | Status der Ressource. | ✓ |
+| `code` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | Code | Kodierung des Inhalts. | ✓ |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. | ✓ |
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
 
@@ -933,17 +1024,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Intention` |  |  | Intention der OP | Intention der OP gemäß 13.1 oBDS 2021 |
 | `extension:Urgency` |  |  | Art des Eingriffs | Modalität der Eingriffsdurchführung - Elektiveingriff vs. Notfalleingriff - gemäß KR6 oBDS 2021 |
 | `basedOn` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `basedOn:tumorkonferenz` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
-| `status` | Status | Status der präoperativen Stoma-Markierung. | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
+| `status` | Status | Status der präoperativen Stoma-Markierung. oBDS KR7 | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` |  |  | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
 | `category.coding:sct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code` | Operationstyp | Art der Mamma-Operation. | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. | OPS | Kodierung nach OPS. |
-| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
+| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | OPS | Kodierung nach OPS. |
+| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
 | `performed[x]:performedDateTime` | OPDatum | Datum der OP | Datum der Stoma-Markierung | Durchführungsdatum der Prozedur. |
+| `performed[x]:performedPeriod` | OPDatum | Datum der OP | Durchführungszeitraum | Zeitraum, in dem die Prozedur durchgeführt wurde. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
@@ -966,9 +1059,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 | `value[x].coding:DefinitionOBDS` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Lokalisation der Fernmetastasen | Lokalisation der Fernmetastasen gemäß oBDS 2021 §11.1 / TNM-Kodierung. |  |
 | `value[x].coding:DefinitionLeitlinie` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Lokalisation der Fernmetastasen | Lokalisation der Fernmetastasen gemäß oBDS 2021 §11.1 / TNM-Kodierung. |  |
-| `component` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
-| `component:AnteilPositiveZellen` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
-| `component:Faerbeintensitaet` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:AnteilPositiveZellen` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:Faerbeintensitaet` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Komponente | Untergeordnete Beobachtungskomponente. |  |
 
 #### Rezeptorstatus Progesteron (Observation)
 
@@ -983,9 +1076,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 | `value[x].coding:DefinitionOBDS` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Lokalisation der Fernmetastasen | Lokalisation der Fernmetastasen gemäß oBDS 2021 §11.1 / TNM-Kodierung. |  |
 | `value[x].coding:DefinitionLeitlinie` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Lokalisation der Fernmetastasen | Lokalisation der Fernmetastasen gemäß oBDS 2021 §11.1 / TNM-Kodierung. |  |
-| `component` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
-| `component:AnteilPositiveZellen` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
-| `component:Faerbeintensitaet` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:AnteilPositiveZellen` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:Faerbeintensitaet` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Komponente | Untergeordnete Beobachtungskomponente. |  |
 
 #### HER2/neu-Status (Observation)
 
@@ -1000,9 +1093,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
 | `value[x].coding:DefinitionOBDS` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Lokalisation der Fernmetastasen | Lokalisation der Fernmetastasen gemäß oBDS 2021 §11.1 / TNM-Kodierung. |  |
 | `value[x].coding:DefinitionLeitlinie` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Lokalisation der Fernmetastasen | Lokalisation der Fernmetastasen gemäß oBDS 2021 §11.1 / TNM-Kodierung. |  |
-| `component` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
-| `component:IHCScore` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
-| `component:ISHResult` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:IHCScore` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Komponente | Untergeordnete Beobachtungskomponente. |  |
+| `component:ISHResult` | AnteilPositiveZellen, Faerbeintensitaet, ... | Quantitative Bestimmung in Prozent. Komponente zu oBDS M2 (keine eigene Feldnummer, S3-Leitlinie). | Komponente | Untergeordnete Beobachtungskomponente. |  |
 
 #### Menopausenstatus (Observation)
 
@@ -1030,16 +1123,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Intention` |  |  | Intention der OP | Intention der OP gemäß 13.1 oBDS 2021 |
 | `extension:Urgency` |  |  | Art des Eingriffs | Modalität der Eingriffsdurchführung - Elektiveingriff vs. Notfalleingriff - gemäß KR6 oBDS 2021 |
 | `basedOn` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `basedOn:tumorkonferenz` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
-| `status` | Status | Status der präoperativen Stoma-Markierung. | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
+| `status` | Status | Status der präoperativen Stoma-Markierung. oBDS KR7 | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` |  |  | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
 | `category.coding:sct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code` | Operationstyp | Art der Mamma-Operation. | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. | OPS | Kodierung nach OPS. |
-| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
+| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | OPS | Kodierung nach OPS. |
+| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]:performedDateTime` | OPDatum | Datum der OP | Datum der Stoma-Markierung | Durchführungsdatum der Prozedur. |
+| `performed[x]:performedPeriod` | OPDatum | Datum der OP | Durchführungszeitraum | Zeitraum, in dem die Prozedur durchgeführt wurde. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
@@ -1068,6 +1164,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
 |---|---|---|---|---|---|
 | `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:snomed` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | SNOMED CT | Kodierung nach SNOMED CT. |  |
+| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |  |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
@@ -1081,6 +1179,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
 |---|---|---|---|---|---|
 | `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:snomed` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | SNOMED CT | Kodierung nach SNOMED CT. |  |
+| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |  |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
@@ -1144,6 +1244,22 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x].coding:OBDSPostOPKompl` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Lokalisation der Fernmetastasen | Lokalisation der Fernmetastasen gemäß oBDS 2021 §11.1 / TNM-Kodierung. |  |
 | `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |  |
 
+#### MII PR Onkologie Prostata Gleason Score Gesamt (Observation)
+
+**FDPG Profil:** [FDPG_PR_Onko_Prostata_Gleason_Score_Gesamt](StructureDefinition-fdpg-pr-onko-prostata-gleason-score-gesamt.html) · **MII Elternprofil:** MII_PR_Onko_Prostata_Gleason_Score_Gesamt
+
+| Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
+|---|---|---|---|---|---|
+| `code` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | Code | Kodierung des Inhalts. | ✓ |
+| `code.coding:snomed` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | SNOMED CT | Kodierung nach SNOMED CT. |  |
+| `code.coding:loinc` | MusterTyp | Primäres, sekundäres oder tertiäres Gleason Pattern. | LOINC | Kodierung nach LOINC. |  |
+| `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
+| `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
+| `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
+| `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Probenentnahme | Datum der Probenentnahme der Prostata-Biopise oder des Prostata-Exzisats | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Messwert | Wert der Beobachtung. | ✓ |
+| `specimen` |  |  | Probe | Verweis auf das Probenmaterial. |  |
+
 ### Melanom
 
 #### Melanom Exzision (Procedure)
@@ -1158,16 +1274,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Intention` |  |  | Intention der OP | Intention der OP gemäß 13.1 oBDS 2021 |
 | `extension:Urgency` |  |  | Art des Eingriffs | Modalität der Eingriffsdurchführung - Elektiveingriff vs. Notfalleingriff - gemäß KR6 oBDS 2021 |
 | `basedOn` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `basedOn:tumorkonferenz` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
-| `status` | Status | Status der präoperativen Stoma-Markierung. | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
+| `status` | Status | Status der präoperativen Stoma-Markierung. oBDS KR7 | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` |  |  | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
 | `category.coding:sct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code` | Operationstyp | Art der Mamma-Operation. | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. | OPS | Kodierung nach OPS. |
-| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
+| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | OPS | Kodierung nach OPS. |
+| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]:performedDateTime` | OPDatum | Datum der OP | Datum der Stoma-Markierung | Durchführungsdatum der Prozedur. |
+| `performed[x]:performedPeriod` | OPDatum | Datum der OP | Durchführungszeitraum | Zeitraum, in dem die Prozedur durchgeführt wurde. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
@@ -1251,16 +1370,19 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Intention` |  |  | Intention der OP | Intention der OP gemäß 13.1 oBDS 2021 |
 | `extension:Urgency` |  |  | Art des Eingriffs | Modalität der Eingriffsdurchführung - Elektiveingriff vs. Notfalleingriff - gemäß KR6 oBDS 2021 |
 | `basedOn` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
+| `basedOn:tumorkonferenz` |  |  | Basiert auf | Verweis auf die Anforderung, auf der diese Ressource basiert. |
 | `partOf` |  |  | Teil von | Verweis auf eine übergeordnete Ressource, von der diese ein Teil ist. |
-| `status` | Status | Status der präoperativen Stoma-Markierung. | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
+| `status` | Status | Status der präoperativen Stoma-Markierung. oBDS KR7 | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
 | `category` |  |  | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
 | `category.coding:sct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code` | Operationstyp | Art der Mamma-Operation. | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. | OPS | Kodierung nach OPS. |
-| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
+| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | OPS | Kodierung nach OPS. |
+| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
+| `performed[x]:performedDateTime` | OPDatum | Datum der OP | Datum der Stoma-Markierung | Durchführungsdatum der Prozedur. |
+| `performed[x]:performedPeriod` | OPDatum | Datum der OP | Durchführungszeitraum | Zeitraum, in dem die Prozedur durchgeführt wurde. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
@@ -1269,7 +1391,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `complication:compl_obds` | OPKomplikation | Gibt an, ob eine oder keine Komplikation aufgetreten ist, bzw. wenn eine aufgetreten ist welche. | Complication following the procedure | Any complications that occurred during the procedure, or in the immediate post-performance period. These are generally tracked separately from the notes, which will typically describe the procedure... |
 | `complication:compl_icd10` | OPKomplikation | Gibt an, ob eine oder keine Komplikation aufgetreten ist, bzw. wenn eine aufgetreten ist welche. | Complication following the procedure | Any complications that occurred during the procedure, or in the immediate post-performance period. These are generally tracked separately from the notes, which will typically describe the procedure... |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |
-| `usedCode` | IntraoperativeBildgebung | Intraoperatives Imagung und weitere Markierungen und Hilfsmittel während der Operation. | Verwendete Items | Kodierte Items, die im Rahmen der Prozedur verwendet wurden. |
+| `usedCode` | IntraoperativeBildgebung | Intraoperative Präparatkontrolle mittels Röntgen/Sonografie. oBDS M6 (XSD: IntraopPraeparatkontrolle) | Verwendete Items | Kodierte Items, die im Rahmen der Prozedur verwendet wurden. |
 
 #### KRK Stoma-Markierung (Procedure)
 
@@ -1280,17 +1402,18 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension` |  |  | Erweiterung | FHIR-Erweiterung. |
 | `extension:Dokumentationsdatum` |  |  | Dokumentationsdatum | Dokumentationsdatum der Prozedur, falls abweichend vom Durchführungsdatum |
 | `extension:durchfuehrungsabsicht` |  |  | Durchführungsabsicht | therapeutisch \| palliativ \| diagnostisch \| präventiv \| rehabilitativ \| andere |
-| `status` | Status | Status der präoperativen Stoma-Markierung. | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
-| `statusReason` | StatusGrund | Grund für Markierungsstatus (geplant/nicht geplant/abgelehnt). | Reason for current status | Captures the reason for the current state of the procedure. |
+| `status` | Status | Status der präoperativen Stoma-Markierung. oBDS KR7 | Status | Vorbereitung \| in Arbeit \| nicht durchgeführt \| pausiert \| abgebrochen \| abgeschlossen \| Eingabe fehlerhaft \| unbekannt |
+| `statusReason` | StatusGrund | Grund für Markierungsstatus (geplant/nicht geplant/abgelehnt). Komponente zu oBDS KR7. | Reason for current status | Captures the reason for the current state of the procedure. |
 | `category` |  |  | Kategorie | Diagnostische Maßnahmen \| Bildgebende Diagnostik \| Operationen \| Medikamente \| Nichtoperative therapeutische Maßnahmen \| Ergänzende Maßnahmen |
 | `category.coding:sct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
-| `code` | Operationstyp | Art der Mamma-Operation. | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
-| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. | OPS | Kodierung nach OPS. |
-| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. | SNOMED CT | Kodierung nach SNOMED CT. |
+| `code` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | Code | Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere. |
+| `code.coding:ops` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | OPS | Kodierung nach OPS. |
+| `code.coding:sct` | Operationstyp | Art der Mamma-Operation. Kein oBDS-Modulfeld (OPS, oBDS Kapitel 13). | SNOMED CT | Kodierung nach SNOMED CT. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |
 | `performed[x]` | OPDatum | Datum der OP | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. |
-| `performed[x]:performedDateTime` | OPDatum | Datum der OP | Datum der Stoma-Markierung | Datum der präoperativen Stoma-Markierung |
+| `performed[x]:performedDateTime` | OPDatum | Datum der OP | Datum der Stoma-Markierung | Datum der präoperativen Markierung der geplanten Stoma-Position |
+| `performed[x]:performedPeriod` | OPDatum | Datum der OP | Durchführungszeitraum | Zeitraum, in dem die Prozedur durchgeführt wurde. |
 | `reasonReference` |  |  | Begründung (Verweis) | Verweis auf eine Ressource, die die Begründung enthält. |
 | `bodySite` |  |  | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. |
 | `bodySite.coding:snomed-ct` |  |  | SNOMED CT | Kodierung nach SNOMED CT. |
@@ -1304,8 +1427,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---|---|---|---|---|
 | `accessionIdentifier` | HistologieEinsendenummer | Die Histologie-Einsendenummer/Auftragsnummer wird vom Pathologischen Institut beim Eingang des Präparates vergeben. | Identifier assigned by the lab | The identifier assigned by the lab when accessioning specimen(s). This is not necessarily the same as the specimen identifier, depending on local lab procedures. |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
-| `collection` | TumorHistologiedatum | Datum, an dem die Gewebeprobe entnommen wurde. | Collection details | Details concerning the specimen collection. |
-| `collection.collected[x]:collectedDateTime` | TumorHistologiedatum | Datum, an dem die Gewebeprobe entnommen wurde. | Tumor Histologiedatum | Histologiedatum nach 6.1 oBDS 2021 |
+| `collection` | TumorHistologiedatum, DatumStanzen | Datum, an dem die Gewebeprobe entnommen wurde. | Collection details | Details concerning the specimen collection. |
+| `collection.collected[x]:collectedDateTime` | TumorHistologiedatum, DatumStanzen | Datum, an dem die Gewebeprobe entnommen wurde. | Tumor Histologiedatum | Histologiedatum nach 6.1 oBDS 2021 |
 | `condition` |  |  | State of the specimen | A mode or state of being that describes the nature of the specimen. |
 
 #### Abstand zum aboralen Resektionsrand (Observation)
@@ -1345,7 +1468,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `focus` | StudienteilnahmeStudienreferenz | Referenz zur konkreten Studie (ResearchStudy) | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |  |
 | `encounter` |  |  | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |  |
 | `effective[x]` | TNMDatum, WeitereKlassifikationDatum, ... | Gibt an, auf welches Datum sich die TNM-Klassifikation bezieht. | Datum der Untersuchung | Datum der Untersuchung | ✓ |
-| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Minimaler Abstand Tumorrand circumferell | Minimaler Abstand des aboralen Tumorrandes zum aboralen Resektionsrand in mm. gemäß oBDS 2021 KR2 | ✓ |
+| `value[x]` | WeitereKlassifikationEinstufung, ECOGKarnofsky | Einstufung gemäß der verwendeten hämatoonkologischen oder sonstigen Klassifikationen. | Minimaler Abstand Tumorrand circumferell | Minimaler Abstand des Tumorrandes zur circumferentiellen Resektionsebene in mm. gemäß oBDS 2021 KR3 | ✓ |
 
 #### KRK Anastomoseninsuffizienz (Observation)
 
@@ -1389,10 +1512,14 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Feststellungsdatum` | Asserted date | Date the condition was first asserted |
 | `extension:morphology-behavior-icdo3` | ICD-O morphology | Morphology of the primary tumor per ICD-O-3 per oBDS §6.3. |
 | `extension:occurredFollowing` | Prior tumor diseases | Reference to prior tumor diseases that preceded the current diagnosis. |
+| `extension:dueTo` | Verursacht durch (therapieassoziierte Sekundärmalignome) | Verursachung dieser Diagnose durch eine frühere Erkrankung oder Therapie (HL7-Standardextension condition-dueTo) — z. B. therapiebedingte myeloische Neoplasie (9920/3) nach Chemotherapie (Verweis a... |
+| `extension:transformationVon` | Transformation aus registriertem Primärtumor | Kennzeichnet diese Diagnose als Transformation aus einem bereits registrierten Primärtumor derselben Tumor-Linie — für Konstellationen, in denen das Krebsregister-Regelwerk eine neue Tumor-Entität ... |
+| `identifier` | Identifier | Identifier for this resource. |
 | `clinicalStatus` | Clinical status | active \| recurrence \| relapse \| inactive \| remission \| resolved |
 | `verificationStatus` | Verification status | unconfirmed \| provisional \| differential \| confirmed \| refuted \| entered-in-error |
 | `verificationStatus.coding:condition-ver-status` | Verification status | Coding in Verification status. |
 | `verificationStatus.coding:primaertumorDiagnosesicherung` | MII Onko diagnosis confirmation | Coding in MII Onko diagnosis confirmation. |
+| `category:onkologie` | Category | Categorization of the resource. |
 | `code` | Code | An ICD-10-, Alpha-ID-, SNOMED-, Orpha- or other code that identifies the diagnosis. |
 | `code.coding:icd10-gm` | ICD-10-GM | Coding in ICD-10-GM. |
 | `code.coding:alpha-id` | Alpha-ID | Coding in Alpha-ID. |
@@ -1404,10 +1531,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `bodySite.coding:icd-o-3` | ICD-O-3 | Coding in ICD-O-3. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Condition was created or to which the creation of this record is tightly associated. |
-| `onset[x]` | Onset | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
-| `onset[x]:onsetPeriod` | Onset | Date or period when the condition first appeared. |
+| `onset[x]` | Onset | Estimated or actual date, date-time, or age when the condition began. |
 | `onset[x]:onsetDateTime` | Onset | Date or period when the condition first appeared. |
 | `onset[x]:onsetAge` | Onset | Date or period when the condition first appeared. |
+| `abatement[x]` | Ende | Geschätztes oder tatsächliches Datum oder Alter, an dem die Erkrankung beendet wurde. |
+| `abatement[x]:abatementDateTime` | Ende Datum | Das Datum, an dem die Erkrankung beendet wurde. |
+| `abatement[x]:abatementAge` | Erkrankungsende als Alter | The date or estimated date that the condition resolved or went into remission. This is called "abatement" because of the many overloaded connotations associated with "remission" or "resolution" - C... |
 | `recordedDate` | Recorded date | Date when the diagnosis was first recorded. |
 | `evidence` | Evidence | Manifestations or evidence supporting the verification status of the condition. |
 | `note` | Note | Additional information about the diagnosis as free text. |
@@ -1426,6 +1555,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `verificationStatus` | Verification status | Verification status: unconfirmed \| provisional \| differential \| confirmed \| refuted \| entered-in-error. |
 | `category` | Category | Categorization of the resource. |
 | `category:oncology` | Classification as oncologic diagnosis | A category assigned to the condition. |
+| `category:onkologie` | Category | Categorization of the resource. |
 | `code` | Code | Coding of the content. |
 | `code.coding:icd10-gm` | ICD-10-GM | Coding in ICD-10-GM. |
 | `bodySite` | Body site | Body site the resource refers to. |
@@ -1468,7 +1598,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
 | `value[x]` | Value | Value of the observation. |
+| `value[x].coding:uicc` | Metastasis location | Location of distant metastases per oBDS 2021 §11.1 / TNM coding. |
+| `value[x].coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
 | `method` | Method | Method used to make the observation. |
+| `component:multipleTumoren` | Component | Sub-observation component. |
 
 </details>
 
@@ -1487,6 +1620,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `value[x]` | Value | Value of the observation. |
 | `value[x].extension:itcSuffix` | ITC suffix | Isolated Tumor Cells (ITC) suffix in TNM staging. |
 | `value[x].extension:snSuffix` | Sentinel lymph node suffix | Sentinel Lymph Node suffix in TNM staging. |
+| `value[x].coding:uicc` | Metastasis location | Location of distant metastases per oBDS 2021 §11.1 / TNM coding. |
+| `value[x].coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
 | `method` | Method | Method used to make the observation. |
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 
@@ -1507,6 +1642,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `effective[x]` | Effective | Date or period the observation refers to. |
 | `value[x]` | Value | Value of the observation. |
 | `value[x].extension:itcSuffix` | ITC suffix | Isolated Tumor Cells (ITC) suffix in TNM staging. |
+| `value[x].coding:uicc` | Metastasis location | Location of distant metastases per oBDS 2021 §11.1 / TNM coding. |
+| `value[x].coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
 | `method` | Method | Method used to make the observation. |
 | `hasMember` | Related resource that belongs to the Observation group | This observation is a group observation (e.g. a battery, a panel of tests, a set of vital sign measurements) that includes the target as a member of the group. |
 
@@ -1697,6 +1834,9 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
 | `value[x]` | Value | Value of the observation. |
+| `bodySite` | Body site | Body site the resource refers to. |
+| `bodySite.coding:icd-o-3` | ICD-O-3 | Coding in ICD-O-3. |
+| `bodySite.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
 
 </details>
 
@@ -1782,6 +1922,27 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
+<summary>English translations - MII PR Onkologie TNM-Klassifikation (synthetisiert\</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `status` | Status | Status of the resource. |
+| `code` | Code | Coding of the content. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `method` | Method | Method used to make the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+| `device` | Device | Device used to make the observation. |
+| `hasMember` | Auswahl der gewinnenden T/N/M/L/V/Pn/S/a/r/y-Beobachtungen | Referenzen auf die per UICC-Regel ausgewählten Per-Kategorie-Beobachtungen aus den derivedFrom-Quellen. |
+| `derivedFrom` | Derived from | Reference to the resource this is derived from. |
+| `component:tnmFormel` | Component | Sub-observation component. |
+
+</details>
+
+<details>
 <summary>English translations - Anzahl der befallenen Lymphknoten</summary>
 
 | Element | Short (en) | Definition (en) |
@@ -1860,6 +2021,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Intention` | Radiotherapy intent | Intent of the radiotherapy per oBDS 2021 §14.1. |
 | `extension:Urgency` | Procedure urgency | Procedure modality — elective vs. emergency — per oBDS 2021 KR6. |
 | `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `basedOn:tumorkonferenz` | Based on | Reference to the request that this resource is based on. |
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
@@ -1870,6 +2032,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
+| `performed[x]:performedDateTime` | Stoma marking date | The date the procedure was performed. |
+| `performed[x]:performedPeriod` | Performed period | The period of time the procedure was performed. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
 | `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
@@ -1892,6 +2056,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Intention` | Radiotherapy intent | Intent of the radiotherapy per oBDS 2021 §14.1. |
 | `extension:StellungZurOp` | Radiotherapy position relative to surgery | Position of the radiotherapy relative to surgery per oBDS 2021 §14.2. |
 | `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `basedOn:tumorkonferenz` | Based on | Reference to the request that this resource is based on. |
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
@@ -1903,6 +2068,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
+| `performed[x]:performedPeriod` | Performed period | The period of time the procedure was performed. |
+| `performed[x]:performedDateTime` | Stoma marking date | The date the procedure was performed. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
 | `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
@@ -1919,6 +2086,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 |---------|-----------|-----------------|
 | `identifier` | Identifier | An identifier for this medication statement |
 | `basedOn` | Based on | A plan, proposal or order that is fulfilled in whole or in part by this event. |
+| `basedOn:tumorkonferenz` | Based on | A plan, proposal or order that is fulfilled in whole or in part by this event. |
+| `basedOn:therapieempfehlung` | Based on | A plan, proposal or order that is fulfilled in whole or in part by this event. |
 | `partOf` | Part of | A larger event of which this particular event is a component or step. |
 | `partOf:systemischeTherapie` | Part of | A larger event of which this particular event is a component or step. |
 | `status` | Status | active \| completed \| entered-in-error \| intended \| stopped \| on-hold \| unknown \| not-taken |
@@ -1933,8 +2102,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `context` | Context | Encounter / Episode associated with MedicationStatement |
 | `effective[x]` | Date or period | The interval of time during which it is being asserted that the patient is/was/will be taking the medication. |
-| `effective[x]:effectiveDateTime` | Date time | The date time when the medication was or will be taken. |
 | `effective[x]:effectivePeriod` | Period | The interval of time during which the patient is/was/will be taking the medication. |
+| `effective[x]:effectiveDateTime` | Date time | The date time when the medication was or will be taken. |
 | `dateAsserted` | Date asserted | The date when the medication statement was asserted by the information source. |
 | `informationSource` | Information source | The person or organization that provided the information about the taking of this medication. |
 | `reasonCode` | Reason code | Reason for the medication statement as a code. |
@@ -1957,6 +2126,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Intention` | Radiotherapy intent | Intent of the radiotherapy per oBDS 2021 §14.1. |
 | `extension:StellungZurOp` | Radiotherapy position relative to surgery | Position of the radiotherapy relative to surgery per oBDS 2021 §14.2. |
 | `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `basedOn:tumorkonferenz` | Based on | Reference to the request that this resource is based on. |
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
@@ -1967,6 +2137,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
+| `performed[x]:performedPeriod` | Performed period | The period of time the procedure was performed. |
+| `performed[x]:performedDateTime` | Stoma marking date | The date the procedure was performed. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
 | `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
@@ -1998,6 +2170,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
+| `performed[x]:performedPeriod` | Performed period | The period of time the procedure was performed. |
+| `performed[x]:performedDateTime` | Stoma marking date | The date the procedure was performed. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
 | `bodySite.extension:Seitenlokalisation` | Laterality | Laterality of the radiation site per oBDS 2021. |
@@ -2031,6 +2205,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
+| `performed[x]:performedPeriod` | Performed period | The period of time the procedure was performed. |
+| `performed[x]:performedDateTime` | Stoma marking date | The date the procedure was performed. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
 | `bodySite.extension:Seitenlokalisation` | Laterality | Laterality of the radiation site per oBDS 2021. |
@@ -2111,12 +2287,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `status` | Status | active \| on-hold \| cancelled \| completed \| entered-in-error \| stopped \| draft \| unknown |
 | `intent` | Intent | proposal \| plan \| order \| original-order \| reflex-order \| filler-order \| instance-order \| option |
 | `medication[x]` | Medication | The medication that was requested. Code or a reference to a Medication resource. |
-| `medication[x]:medicationReference` | Medication (reference) | Reference to the medication resource. |
 | `medication[x]:medicationCodeableConcept` | Medication (coded) | Inline coding of the medication. |
 | `medication[x]:medicationCodeableConcept.coding:Pharmazentralnummer` | PZN | Coding in PZN. |
 | `medication[x]:medicationCodeableConcept.coding:atcClassDe` | ATC (BfArM) | Coding in ATC (BfArM). |
 | `medication[x]:medicationCodeableConcept.coding:atcClassEn` | ATC (WHO) | Coding in ATC (WHO). |
 | `medication[x]:medicationCodeableConcept.coding:UNII` | UNII | Coding in UNII. |
+| `medication[x]:medicationReference` | Medication (reference) | Reference to the medication resource. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | Encounter or episode of care during which the medication was requested. |
 | `supportingInformation` | Information to support ordering of the medication | Include additional information (for example, patient height and weight) that supports the ordering of the medication. |
@@ -2124,7 +2300,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `requester` | Requester | The individual, organization, or device that initiated the request and has responsibility for its activation. |
 | `reasonCode` | Reason code | Reason for the medication request as a code. |
 | `reasonReference` | Reason reference | Condition or observation that supports why the medication was administered. |
-| `reasonReference:Primaertumor` | Reason reference | Condition or observation that supports why the medication was administered. |
+| `reasonReference:Primaertumor` | Reason (reference) | Condition or observation that supports why the medication was administered. |
 | `basedOn` | Based on | A plan or request that is fulfilled in whole or in part by this medication request. |
 | `note` | Note | Additional information about the medication request as free text. |
 | `dosageInstruction` | Dosage instruction | Indicates how the medication is to be used by the patient. |
@@ -2163,6 +2339,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
 | `subject` | Patient | The patient that the resource relates to. |
+| `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `value[x]` | Value | Value of the observation. |
 | `value[x].coding:obds` | oBDS | Coding in oBDS. |
@@ -2179,6 +2356,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `code.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
 | `code.coding:loinc` | LOINC | Coding in LOINC. |
 | `subject` | Patient | The patient that the resource relates to. |
+| `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `value[x]` | Value | Value of the observation. |
 | `value[x].coding:obds` | oBDS | Coding in oBDS. |
@@ -2221,8 +2399,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
+| `extension:ctcaeVersion` | CTCAE-Version | Version des CTCAE-Katalogs nach 15.3 oBDS 2021 |
 | `event` | Type of the event itself in relation to the subject | This element defines the specific type of event that occurred or that was prevented from occurring. |
 | `event.coding:meddra` | MedDRA | Coding in MedDRA. |
+| `event.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `seriousness` | Seriousness of the event | Assessment whether this event was of real importance. |
@@ -2239,7 +2419,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `focus:primaertumor` | Referenz zum Primärtumor | Referenz zur Primärtumordiagnose, auf die sich die Studienteilnahme bezieht |
-| `focus:studie` | Referenz zur Studie | Referenz zur konkreten Studie (ResearchStudy), an der der Patient teilnimmt |
+| `focus:studie` | Referenz zur Studie (KDS-Modul Medizinisches Forschungsvorhaben) | Referenz zur konkreten Studie, an der die Patientin oder der Patient teilnimmt. SOLL auf das Profil MII_PR_Studie_Studie des KDS-Moduls Medizinisches Forschungsvorhaben verweisen; eine generische R... |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
 | `effective[x]` | Effective | Date or period the observation refers to. |
 | `value[x]` | Value | Value of the observation. |
@@ -2283,6 +2463,40 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
+<summary>English translations - MII PR Onkologie Tumormarker</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `identifier` | Identifier | Identifier/s by which this laboratory test is known. |
+| `identifier:analyseBefundCode` | Identifier | Identifier for this resource. |
+| `basedOn` | Based on | Reference to the laboratory order on which this laboratory test is based. |
+| `status` | Status | completed |
+| `category` | Category | Classification of the laboratory test in the diagnostic service section and laboratory group |
+| `category:observation-category` | Category | Categorization of the resource. |
+| `code` | Code | A LOINC code identifying the laboratory test that was performed. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `subject` | Subject | The subject the laboratory test is about. |
+| `focus` | Bezug zur onkologischen Diagnose | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
+| `encounter` | Encounter | Encounter during which the laboratory test was performed. |
+| `effective[x]` | Effective time | Clinical reference time for the laboratory test. |
+| `effective[x].extension:QuelleKlinischesBezugsdatum` | Source of clinical reference date | Specimen collection date \| Date sample received in laboratory |
+| `issued` | Issued | The point in time when the laboratory result was documented. |
+| `value[x]` | Value | Value of the analysis |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `value[x]:valueCodeableConcept` | Coded value | Value as a coded concept from a terminology. |
+| `value[x]:valueRange` | Range value | Value as range from lower to upper bound. |
+| `value[x]:valueRatio` | Ratio value | Value as ratio (numerator/denominator). |
+| `dataAbsentReason` | Data absent reason | unknown \| masked \| not-applicable \| error \| not-performed |
+| `interpretation` | Interpretation | A categorical assessment of the value. For example, high, low, normal. |
+| `note` | Note | Additional information about the laboratory test as free text. |
+| `method` | Method | Specific examination method, if the LOINC code for the laboratory test does not contain a method |
+| `specimen` | Specimen | Specimen on which the laboratory tests are performed |
+| `device` | Device | The device used to generate the test data. |
+| `referenceRange` | Reference range | Guidance on how to interpret the value by comparison to a normal or recommended range. |
+
+</details>
+
+<details>
 <summary>English translations - Mamma-Operation</summary>
 
 | Element | Short (en) | Definition (en) |
@@ -2293,6 +2507,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Intention` | Radiotherapy intent | Intent of the radiotherapy per oBDS 2021 §14.1. |
 | `extension:Urgency` | Procedure urgency | Procedure modality — elective vs. emergency — per oBDS 2021 KR6. |
 | `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `basedOn:tumorkonferenz` | Based on | Reference to the request that this resource is based on. |
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
@@ -2304,6 +2519,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
 | `performed[x]:performedDateTime` | Stoma marking date | The date the procedure was performed. |
+| `performed[x]:performedPeriod` | Performed period | The period of time the procedure was performed. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
 | `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
@@ -2342,6 +2558,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Intention` | Radiotherapy intent | Intent of the radiotherapy per oBDS 2021 §14.1. |
 | `extension:Urgency` | Procedure urgency | Procedure modality — elective vs. emergency — per oBDS 2021 KR6. |
 | `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `basedOn:tumorkonferenz` | Based on | Reference to the request that this resource is based on. |
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
@@ -2353,6 +2570,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
 | `performed[x]:performedDateTime` | Stoma marking date | The date the procedure was performed. |
+| `performed[x]:performedPeriod` | Performed period | The period of time the procedure was performed. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
 | `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
@@ -2442,6 +2660,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Intention` | Radiotherapy intent | Intent of the radiotherapy per oBDS 2021 §14.1. |
 | `extension:Urgency` | Procedure urgency | Procedure modality — elective vs. emergency — per oBDS 2021 KR6. |
 | `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `basedOn:tumorkonferenz` | Based on | Reference to the request that this resource is based on. |
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
@@ -2452,6 +2671,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
+| `performed[x]:performedDateTime` | Stoma marking date | The date the procedure was performed. |
+| `performed[x]:performedPeriod` | Performed period | The period of time the procedure was performed. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
 | `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
@@ -2482,6 +2703,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `code` | Code | Coding of the content. |
+| `code.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
@@ -2496,6 +2719,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
 | `code` | Code | Coding of the content. |
+| `code.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
 | `encounter` | Encounter | Encounter in which the resource was recorded. |
@@ -2566,6 +2791,23 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
+<summary>English translations - MII PR Onkologie Prostata Gleason Score Gesamt</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `code` | Code | Coding of the content. |
+| `code.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `focus` | What the observation is about, when it is not about the subject of record | The actual focus of an observation when it is not the patient of record representing something or someone associated with the patient such as a spouse, parent, fetus, or donor. For example, fetus o... |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `value[x]` | Value | Value of the observation. |
+| `specimen` | Specimen | Reference to the specimen. |
+
+</details>
+
+<details>
 <summary>English translations - Melanom Exzision</summary>
 
 | Element | Short (en) | Definition (en) |
@@ -2576,6 +2818,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Intention` | Radiotherapy intent | Intent of the radiotherapy per oBDS 2021 §14.1. |
 | `extension:Urgency` | Procedure urgency | Procedure modality — elective vs. emergency — per oBDS 2021 KR6. |
 | `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `basedOn:tumorkonferenz` | Based on | Reference to the request that this resource is based on. |
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
@@ -2586,6 +2829,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
+| `performed[x]:performedDateTime` | Stoma marking date | The date the procedure was performed. |
+| `performed[x]:performedPeriod` | Performed period | The period of time the procedure was performed. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
 | `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
@@ -2672,6 +2917,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `extension:Intention` | Radiotherapy intent | Intent of the radiotherapy per oBDS 2021 §14.1. |
 | `extension:Urgency` | Procedure urgency | Procedure modality — elective vs. emergency — per oBDS 2021 KR6. |
 | `basedOn` | Based on | Reference to the request that this resource is based on. |
+| `basedOn:tumorkonferenz` | Based on | Reference to the request that this resource is based on. |
 | `partOf` | Part of | Reference to a parent resource that this is part of. |
 | `status` | Status | preparation \| in-progress \| not-done \| on-hold \| stopped \| completed \| entered-in-error \| unknown |
 | `category` | Category | Diagnostic procedures \| Imaging procedures \| Operations \| Medications \| Non-operative therapeutic procedures \| Other procedures |
@@ -2682,6 +2928,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
+| `performed[x]:performedDateTime` | Stoma marking date | The date the procedure was performed. |
+| `performed[x]:performedPeriod` | Performed period | The period of time the procedure was performed. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
 | `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
@@ -2713,6 +2961,7 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
 | `performed[x]:performedDateTime` | Stoma marking date | The date the procedure was performed. |
+| `performed[x]:performedPeriod` | Performed period | The period of time the procedure was performed. |
 | `reasonReference` | Reason (reference) | Reference to a resource containing the reason. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
 | `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |

@@ -431,7 +431,7 @@ Description: "FDPG Profil - MII_PR_Medikation_MedicationStatement"
 // MedicationStatement.dosage.doseAndRate.rate[x]:rateRange.high.code
 * dosage.doseAndRate.rate[x][rateRange].high.code ^short = "Coded form of the unit"
 // MedicationStatement.dosage.doseAndRate.rate[x]:rateQuantity
-* dosage.doseAndRate.rate[x][rateQuantity] ^short = "A fixed quantity (no comparator)"
+* dosage.doseAndRate.rate[x][rateQuantity] ^short = "Amount of medication per unit of time"
 // MedicationStatement.dosage.doseAndRate.rate[x]:rateQuantity.value
 * dosage.doseAndRate.rate[x][rateQuantity].value ^short = "Numerical value (with implicit precision)"
 // MedicationStatement.dosage.doseAndRate.rate[x]:rateQuantity.unit

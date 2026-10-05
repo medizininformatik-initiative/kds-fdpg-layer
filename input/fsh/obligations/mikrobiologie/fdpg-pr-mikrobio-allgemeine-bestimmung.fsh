@@ -41,6 +41,13 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Allgemeine_Bestimmung"
 * identifier[analyseBefundCode].value ^short = "The value that is unique"
 // Observation.identifier:analyseBefundCode.assigner
 * identifier[analyseBefundCode].assigner ^short = "Organization that issued id (may be just text)"
+// Observation.basedOn
+* basedOn ^short = "Basiert auf"
+* insert Translation(basedOn ^short, de-DE, Basiert auf)
+* insert Translation(basedOn ^short, en-US, Based on)
+* basedOn ^definition = "Bezug zum Laborauftrag, auf dem diese Laboruntersuchung basiert."
+* insert Translation(basedOn ^definition, de-DE, Bezug zum Laborauftrag\, auf dem diese Laboruntersuchung basiert.)
+* insert Translation(basedOn ^definition, en-US, Reference to the laboratory order on which this laboratory test is based.)
 // Observation.status
 * status ^short = "Status"
 * insert Translation(status ^short, de-DE, Status)
@@ -52,19 +59,13 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Allgemeine_Bestimmung"
 * category ^short = "Kategorie"
 * insert Translation(category ^short, de-DE, Kategorie)
 * insert Translation(category ^short, en-US, Category)
-* category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe der Laboruntersuchung"
+* category ^definition = "Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe"
 * insert Translation(category ^definition, de-DE, Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe)
 * insert Translation(category ^definition, en-US, Classification of the laboratory test in the diagnostic service section and laboratory group)
 // Observation.category.coding.display
 * category.coding.display ^short = "Representation defined by the system"
-// Observation.category.coding:loinc-observation
-* category.coding[loinc-observation] ^short = "LOINC coding"
-* insert Translation(category.coding[loinc-observation] ^short, de-DE, LOINC-Kodierung)
-* insert Translation(category.coding[loinc-observation] ^short, en-US, LOINC coding)
-// Observation.category.coding:observation-category
-* category.coding[observation-category] ^short = "Observation category coding"
-* insert Translation(category.coding[observation-category] ^short, de-DE, Beobachtungskategorie-Kodierung)
-* insert Translation(category.coding[observation-category] ^short, en-US, Observation category coding)
+// Observation.category:observation-category
+* category[observation-category] ^short = "Labor-Kategorie"
 // Observation.category:mibi-category
 * category[mibi-category] ^short = "Mikrobiologie-Kategorie"
 * insert Translation(category[mibi-category] ^short, de-DE, Kategorie)
@@ -74,48 +75,8 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Allgemeine_Bestimmung"
 * insert Translation(category[mibi-category] ^definition, en-US, Classification of the laboratory test in the diagnostic service section and laboratory group)
 // Observation.category:mibi-category.coding.display
 * category[mibi-category].coding.display ^short = "Representation defined by the system"
-// Observation.category:mibi-category.coding:loinc-observation
-* category[mibi-category].coding[loinc-observation] ^short = "LOINC coding"
-* insert Translation(category[mibi-category].coding[loinc-observation] ^short, de-DE, LOINC-Kodierung)
-* insert Translation(category[mibi-category].coding[loinc-observation] ^short, en-US, LOINC coding)
-// Observation.category:mibi-category.coding:observation-category
-* category[mibi-category].coding[observation-category] ^short = "Observation category coding"
-* insert Translation(category[mibi-category].coding[observation-category] ^short, de-DE, Beobachtungskategorie-Kodierung)
-* insert Translation(category[mibi-category].coding[observation-category] ^short, en-US, Observation category coding)
-// Observation.category:mibi-category.coding:v2-microbiology
-* category[mibi-category].coding[v2-microbiology] ^short = "HL7 v2 Microbiology coding"
-* insert Translation(category[mibi-category].coding[v2-microbiology] ^short, de-DE, HL7 v2 Mikrobiologie-Kodierung)
-* insert Translation(category[mibi-category].coding[v2-microbiology] ^short, en-US, HL7 v2 Microbiology coding)
-// Observation.category:mibi-category.coding:v2-microbiology.system
-* category[mibi-category].coding[v2-microbiology].system ^short = "HL7 v2 Microbiology system URL"
-* insert Translation(category[mibi-category].coding[v2-microbiology].system ^short, de-DE, HL7 v2 Mikrobiologie-System-URL)
-* insert Translation(category[mibi-category].coding[v2-microbiology].system ^short, en-US, HL7 v2 Microbiology system URL)
-// Observation.category:mibi-category.coding:v2-microbiology.code
-* category[mibi-category].coding[v2-microbiology].code ^short = "Category as HL7 v2 Microbiology"
-* insert Translation(category[mibi-category].coding[v2-microbiology].code ^short, de-DE, Kategorie als HL7 v2 Mikrobiologie)
-* insert Translation(category[mibi-category].coding[v2-microbiology].code ^short, en-US, Category as HL7 v2 Microbiology)
-// Observation.category:mibi-category.coding:v2-microbiology.display
-* category[mibi-category].coding[v2-microbiology].display ^short = "Representation defined by the system"
-* insert Translation(category[mibi-category].coding[v2-microbiology].display ^short, de-DE, HL7 v2 Mikrobiologie-Anzeige)
-* insert Translation(category[mibi-category].coding[v2-microbiology].display ^short, en-US, HL7 v2 Microbiology display)
-// Observation.category:mibi-category.coding:loinc-microbiology-studies
-* category[mibi-category].coding[loinc-microbiology-studies] ^short = "LOINC coding"
-* insert Translation(category[mibi-category].coding[loinc-microbiology-studies] ^short, de-DE, LOINC-Kodierung)
-* insert Translation(category[mibi-category].coding[loinc-microbiology-studies] ^short, en-US, LOINC coding)
-// Observation.category:mibi-category.coding:loinc-microbiology-studies.system
-* category[mibi-category].coding[loinc-microbiology-studies].system ^short = "LOINC system URL"
-* insert Translation(category[mibi-category].coding[loinc-microbiology-studies].system ^short, de-DE, LOINC-System-URL)
-* insert Translation(category[mibi-category].coding[loinc-microbiology-studies].system ^short, en-US, LOINC system URL)
-// Observation.category:mibi-category.coding:loinc-microbiology-studies.code
-* category[mibi-category].coding[loinc-microbiology-studies].code ^short = "Category as LOINC"
-* insert Translation(category[mibi-category].coding[loinc-microbiology-studies].code ^short, de-DE, Kategorie als LOINC)
-* insert Translation(category[mibi-category].coding[loinc-microbiology-studies].code ^short, en-US, Category as LOINC)
-// Observation.category:mibi-category.coding:loinc-microbiology-studies.display
-* category[mibi-category].coding[loinc-microbiology-studies].display ^short = "Representation defined by the system"
-* insert Translation(category[mibi-category].coding[loinc-microbiology-studies].display ^short, de-DE, LOINC-Anzeige)
-* insert Translation(category[mibi-category].coding[loinc-microbiology-studies].display ^short, en-US, LOINC display)
 // Observation.code
-* code ^short = "Code"
+* code ^short = "Bevorzugt 41852-5 'Microorganism or agent identified in Specimen'. Benennt das Labor die Erregergruppe (Bakterien, Pilze, Viren) oder das Sequenzierziel (16S, 18S rRNA) im Code, sind die entsprechenden Codes gleichwertig zulaessig. Es werden bevorzugt LOINC-Codes ohne praekoordinierte Specimentype-Angabe verwendet (System = XXX); der Specimentype wird separat ueber Specimen.type kodiert."
 * insert Translation(code ^short, de-DE, Code)
 * insert Translation(code ^short, en-US, Code)
 * code ^definition = "LOINC-Code, der den gemessenen Laborparameter bzw. durchgeführten Labortest beschreibt."
@@ -123,6 +84,10 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Allgemeine_Bestimmung"
 * insert Translation(code ^definition, en-US, A LOINC code identifying the laboratory test that was performed.)
 // Observation.code.coding.display
 * code.coding.display ^short = "Representation defined by the system"
+// Observation.code.coding:loinc
+* code.coding[loinc] ^short = "LOINC coding"
+* insert Translation(code.coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[loinc] ^short, en-US, LOINC coding)
 // Observation.subject
 * subject ^short = "Subjekt"
 * insert Translation(subject ^short, de-DE, Subjekt)
@@ -195,7 +160,7 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Allgemeine_Bestimmung"
 // Observation.value[x]:valueQuantity.code
 * value[x][valueQuantity].code ^short = "Coded form of the unit"
 // Observation.value[x]:valueCodeableConcept
-* value[x][valueCodeableConcept] ^short = "Actual result"
+* value[x][valueCodeableConcept] ^short = "Identifizierter Mikroorganismus oder 'Not detected', wenn kein Erreger identifiziert wurde. Ein unbestimmbares Ergebnis wird ueber dataAbsentReason abgebildet."
 * insert Translation(value[x][valueCodeableConcept] ^short, de-DE, Kodierter Wert)
 * insert Translation(value[x][valueCodeableConcept] ^short, en-US, Coded value)
 * value[x][valueCodeableConcept] ^definition = "The information determined as a result of making the observation, if the information has a simple value."
@@ -283,16 +248,13 @@ Description: "FDPG Profil - MII_PR_Mikrobio_Allgemeine_Bestimmung"
 * insert ObligationConsumerDefault(extension[triggeredBy-r5])
 * insert ObligationConsumerDefault(identifier)
 * insert ObligationConsumerDefault(identifier[analyseBefundCode])
+* insert ObligationConsumerDefault(basedOn)
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
-* insert ObligationConsumerDefault(category.coding[loinc-observation])
-* insert ObligationConsumerDefault(category.coding[observation-category])
+* insert ObligationConsumerDefault(category[observation-category])
 * insert ObligationConsumerDefault(category[mibi-category])
-* insert ObligationConsumerDefault(category[mibi-category].coding[loinc-observation])
-* insert ObligationConsumerDefault(category[mibi-category].coding[observation-category])
-* insert ObligationConsumerDefault(category[mibi-category].coding[v2-microbiology])
-* insert ObligationConsumerDefault(category[mibi-category].coding[loinc-microbiology-studies])
 * insert ObligationConsumerDefault(code)
+* insert ObligationConsumerDefault(code.coding[loinc])
 * insert ObligationConsumerDefault(subject)
 * insert ObligationConsumerDefault(encounter)
 * insert ObligationConsumerDefault(effective[x])

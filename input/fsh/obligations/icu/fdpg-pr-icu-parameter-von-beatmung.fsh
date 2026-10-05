@@ -16,10 +16,10 @@ Description: "FDPG Profil - MII_PR_ICU_Parameter_Von_Beatmung"
 * insert Translation(identifier ^definition, de-DE, Identifikator dieser Ressource.)
 * insert Translation(identifier ^definition, en-US, Identifier for this resource.)
 // Observation.partOf
-* partOf ^short = "Observation belongs to a specific extracorporeal procedure."
+* partOf ^short = "Die Beobachtung gehört zu einem spezifischen Beatmungsverfahren."
 * insert Translation(partOf ^short, de-DE, Teil von)
 * insert Translation(partOf ^short, en-US, Part of)
-* partOf ^definition = "Dasjenige extrakorporale Verfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden."
+* partOf ^definition = "Dasjenige Beatmungsverfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden."
 * insert Translation(partOf ^definition, de-DE, Verweis auf eine übergeordnete Ressource\, von der diese ein Teil ist.)
 * insert Translation(partOf ^definition, en-US, Reference to a parent resource that this is part of.)
 // Observation.status
@@ -122,8 +122,12 @@ Description: "FDPG Profil - MII_PR_ICU_Parameter_Von_Beatmung"
 * value[x] ^definition = "The information determined as a result of making the observation, if the information has a simple value."
 * insert Translation(value[x] ^definition, de-DE, Wert der Beobachtung.)
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
+// Observation.value[x].value
+* value[x].value ^short = "Numerical value (with implicit precision)"
 // Observation.value[x].unit
 * value[x].unit ^short = "Unit representation"
+// Observation.value[x].system
+* value[x].system ^short = "System that defines coded unit form"
 // Observation.value[x].code
 * value[x].code ^short = "Coded form of the unit"
 // Observation.dataAbsentReason

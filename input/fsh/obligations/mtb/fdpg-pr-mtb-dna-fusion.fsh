@@ -208,7 +208,7 @@ Description: "FDPG Profil - MII_PR_MTB_DNA_Fusion"
 * insert Translation(component[sample-allelic-frequency] ^definition, en-US, Frequency of the variant allele in the examined sample.)
 // Observation.component:allelic-read-depth
 * component[allelic-read-depth] ^short = "Number reported reads"
-* insert Translation(component[allelic-read-depth] ^short, de-DE, Allelische Lesetiefe)
+* insert Translation(component[allelic-read-depth] ^short, de-DE, Anzahl berichteter Lesevorgaenge)
 * insert Translation(component[allelic-read-depth] ^short, en-US, Allelic read depth)
 * component[allelic-read-depth] ^definition = "Die Anzahl der Reads die das Allel unterstützen"
 * insert Translation(component[allelic-read-depth] ^definition, de-DE, Die Anzahl der Reads die das Allel unterstützen)

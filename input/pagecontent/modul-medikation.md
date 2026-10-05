@@ -6,7 +6,7 @@ Das Modul Medikation bildet den gesamten Medikationsprozess ab, von der Verordnu
 
 ## Quellmodul
 
-[MII KDS Medikation](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.medikation/2026.0.0)
+[MII KDS Medikation](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.medikation/2027.0.0-ballot)
 
 ## FDPG Profile
 

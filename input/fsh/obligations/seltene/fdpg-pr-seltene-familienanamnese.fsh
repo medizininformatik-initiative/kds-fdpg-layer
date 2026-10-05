@@ -309,7 +309,7 @@ Description: "FDPG Profil - MII_PR_Seltene_Familienanamnese"
 * insert Translation(condition.code.coding[orphanet].code ^definition, en-US, The Orphanet code.)
 // FamilyMemberHistory.condition.code.coding:mondo
 * condition.code.coding[mondo] ^short = "MONDO Code für die Erkrankung"
-* insert Translation(condition.code.coding[mondo] ^short, de-DE, Kodierung)
+* insert Translation(condition.code.coding[mondo] ^short, de-DE, MONDO-Kodierung)
 * insert Translation(condition.code.coding[mondo] ^short, en-US, MONDO coding)
 * condition.code.coding[mondo] ^definition = "Monarch Disease Ontology (MONDO) Code für internationale Interoperabilität. MONDO harmonisiert SNOMED, ORDO, OMIM und ICD automatisch."
 * insert Translation(condition.code.coding[mondo] ^definition, de-DE, Kodierung der Erkrankung)

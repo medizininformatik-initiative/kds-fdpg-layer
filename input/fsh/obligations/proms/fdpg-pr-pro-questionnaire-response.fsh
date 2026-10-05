@@ -9,7 +9,7 @@ Description: "FDPG Profil - MII_PR_PRO_QuestionnaireResponse"
 * insert Translation(^title, en-US, Questionnaire response)
 // --- Element Designations ---
 // QuestionnaireResponse.language
-* language ^short = "Language of the resource content"
+* language ^short = "Sprache der Antwortinhalte"
 // QuestionnaireResponse.identifier
 * identifier ^short = "Unique id for this set of answers"
 * insert Translation(identifier ^short, de-DE, Identifikator)
@@ -56,11 +56,19 @@ Description: "FDPG Profil - MII_PR_PRO_QuestionnaireResponse"
 // QuestionnaireResponse.item.linkId
 * item.linkId ^short = "Pointer to specific item from Questionnaire"
 // QuestionnaireResponse.item.text
-* item.text ^short = "Name for group or question text"
+* item.text ^short = "Wortlaut des Items, wie er der antwortenden Person präsentiert wurde"
+// QuestionnaireResponse.item.text.extension:translation
+* item.text.extension[translation] ^short = "Language Translation (Localization)"
 // QuestionnaireResponse.item.answer
 * item.answer ^short = "The response(s) to the question"
 // QuestionnaireResponse.item.answer.value[x]
 * item.answer.value[x] ^short = "Single-valued answer to the question"
+// QuestionnaireResponse.item.answer.value[x]:valueCoding
+* item.answer.value[x][valueCoding] ^short = "Single-valued answer to the question"
+// QuestionnaireResponse.item.answer.value[x]:valueCoding.display
+* item.answer.value[x][valueCoding].display ^short = "Wortlaut der gewählten Antwort"
+// QuestionnaireResponse.item.answer.value[x]:valueCoding.display.extension:translation
+* item.answer.value[x][valueCoding].display.extension[translation] ^short = "Language Translation (Localization)"
 // QuestionnaireResponse.item.answer.item
 * item.answer.item ^short = "Nested groups and questions"
 // QuestionnaireResponse.item.item

@@ -59,10 +59,10 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 * insert Translation(encounter ^definition, en-US, Encounter in which the resource was recorded.)
 // CarePlan.created
 * created ^short = "Erstellungsdatum"
-* insert Translation(created ^short, de-DE, Datum der Zusage / des Widerspruchs)
+* insert Translation(created ^short, de-DE, Erstellungsdatum)
 * insert Translation(created ^short, en-US, Approval / objection date)
 * created ^definition = "Erstellungsdatum des Therapieplans gemäß Beschluss des Molekularen Tumorboards"
-* insert Translation(created ^definition, de-DE, Datum der Antragstellung.)
+* insert Translation(created ^definition, de-DE, Erstellungsdatum des Therapieplans gemäß Beschluss des Molekularen Tumorboards)
 * insert Translation(created ^definition, en-US, Date the application was filed.)
 // CarePlan.addresses
 * addresses ^short = "Health issues this plan addresses"
@@ -121,10 +121,8 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 * activity[extended/Therapieempfehlung] ^definition = "Therapieempfehlung für eine medikamentöse Systemische Therapie"
 * insert Translation(activity[extended/Therapieempfehlung] ^definition, de-DE, Therapieempfehlung für eine medikamentöse Systemische Therapie)
 * insert Translation(activity[extended/Therapieempfehlung] ^definition, en-US, Recommendation for a pharmacologic systemic therapy.)
-// CarePlan.activity:extended/Therapieempfehlung.progress
-* activity[extended/Therapieempfehlung].progress ^short = "Progress notes for recommendation implementation"
 // CarePlan.activity:extended/Therapieempfehlung.reference
-* activity[extended/Therapieempfehlung].reference ^short = "Detailed therapy recommendation - RequestGroup, MedicationRequest, or ServiceRequest"
+* activity[extended/Therapieempfehlung].reference ^short = "Activity details defined in specific resource"
 // CarePlan.activity:extended/HumangenetischeBeratung
 * activity[extended/HumangenetischeBeratung] ^short = "Empfehlung Human-genetische Beratung"
 * insert Translation(activity[extended/HumangenetischeBeratung] ^short, de-DE, Empfehlung Human-genetische Beratung)
@@ -132,10 +130,8 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 * activity[extended/HumangenetischeBeratung] ^definition = "Auftrag zur (erneuten) Human-genetischen Beratung"
 * insert Translation(activity[extended/HumangenetischeBeratung] ^definition, de-DE, Auftrag zur erneuten Human-genetischen Beratung)
 * insert Translation(activity[extended/HumangenetischeBeratung] ^definition, en-US, Order for genetic counseling.)
-// CarePlan.activity:extended/HumangenetischeBeratung.progress
-* activity[extended/HumangenetischeBeratung].progress ^short = "Progress notes for recommendation implementation"
 // CarePlan.activity:extended/HumangenetischeBeratung.reference
-* activity[extended/HumangenetischeBeratung].reference ^short = "Detailed therapy recommendation - RequestGroup, MedicationRequest, or ServiceRequest"
+* activity[extended/HumangenetischeBeratung].reference ^short = "Activity details defined in specific resource"
 // CarePlan.activity:extended/HistologieEvaluation
 * activity[extended/HistologieEvaluation] ^short = "Empfehlung Histologie-Evaluation"
 * insert Translation(activity[extended/HistologieEvaluation] ^short, de-DE, Empfehlung Histologie-Evaluation)
@@ -143,10 +139,8 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 * activity[extended/HistologieEvaluation] ^definition = "Auftrag zur (erneuten) Histologie-Evaluation"
 * insert Translation(activity[extended/HistologieEvaluation] ^definition, de-DE, Auftrag zur erneuten Histologie-Evaluation)
 * insert Translation(activity[extended/HistologieEvaluation] ^definition, en-US, Order for a repeat histology evaluation.)
-// CarePlan.activity:extended/HistologieEvaluation.progress
-* activity[extended/HistologieEvaluation].progress ^short = "Progress notes for recommendation implementation"
 // CarePlan.activity:extended/HistologieEvaluation.reference
-* activity[extended/HistologieEvaluation].reference ^short = "Detailed therapy recommendation - RequestGroup, MedicationRequest, or ServiceRequest"
+* activity[extended/HistologieEvaluation].reference ^short = "Activity details defined in specific resource"
 // CarePlan.activity:extended/Biopsie
 * activity[extended/Biopsie] ^short = "Empfehlung Biopsie"
 * insert Translation(activity[extended/Biopsie] ^short, de-DE, Empfehlung Biopsie)
@@ -154,10 +148,8 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 * activity[extended/Biopsie] ^definition = "Auftrag zur (erneuten) Biopsie"
 * insert Translation(activity[extended/Biopsie] ^definition, de-DE, Auftrag zur erneuten Biopsie)
 * insert Translation(activity[extended/Biopsie] ^definition, en-US, Order for a repeat biopsy.)
-// CarePlan.activity:extended/Biopsie.progress
-* activity[extended/Biopsie].progress ^short = "Progress notes for recommendation implementation"
 // CarePlan.activity:extended/Biopsie.reference
-* activity[extended/Biopsie].reference ^short = "Detailed therapy recommendation - RequestGroup, MedicationRequest, or ServiceRequest"
+* activity[extended/Biopsie].reference ^short = "Activity details defined in specific resource"
 // CarePlan.activity:extended/Studieneinschlussempfehlung
 * activity[extended/Studieneinschlussempfehlung] ^short = "Studieneinschlussempfehlung"
 * insert Translation(activity[extended/Studieneinschlussempfehlung] ^short, de-DE, Studieneinschlussempfehlung)
@@ -165,10 +157,8 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieplan"
 * activity[extended/Studieneinschlussempfehlung] ^definition = "Anfrage zum Studieneinschluss"
 * insert Translation(activity[extended/Studieneinschlussempfehlung] ^definition, de-DE, Anfrage zum Studieneinschluss)
 * insert Translation(activity[extended/Studieneinschlussempfehlung] ^definition, en-US, Request for study enrollment.)
-// CarePlan.activity:extended/Studieneinschlussempfehlung.progress
-* activity[extended/Studieneinschlussempfehlung].progress ^short = "Progress notes for recommendation implementation"
 // CarePlan.activity:extended/Studieneinschlussempfehlung.reference
-* activity[extended/Studieneinschlussempfehlung].reference ^short = "Detailed therapy recommendation - RequestGroup, MedicationRequest, or ServiceRequest"
+* activity[extended/Studieneinschlussempfehlung].reference ^short = "Activity details defined in specific resource"
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(status)

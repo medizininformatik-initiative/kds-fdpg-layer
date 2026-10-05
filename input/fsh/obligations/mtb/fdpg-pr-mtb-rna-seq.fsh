@@ -89,7 +89,7 @@ Description: "FDPG Profil - MII_PR_MTB_RNA_Seq"
 * insert Translation(component[conclusion-string] ^definition, en-US, Textual summary of the therapeutic implication.)
 // Observation.component:gene-studied
 * component[gene-studied] ^short = "Gen"
-* insert Translation(component[gene-studied] ^short, de-DE, Untersuchtes Gen)
+* insert Translation(component[gene-studied] ^short, de-DE, Gen)
 * insert Translation(component[gene-studied] ^short, en-US, Gene studied)
 * component[gene-studied] ^definition = "Das untersuchte Gen identifiziert durch HGNC-ID"
 * insert Translation(component[gene-studied] ^definition, de-DE, Das untersuchte Gen identifiziert durch HGNC-ID)
@@ -222,7 +222,7 @@ Description: "FDPG Profil - MII_PR_MTB_RNA_Seq"
 * insert Translation(component[variant-inheritance] ^definition, en-US, Inheritance pattern of the variant\, e.g. maternal or paternal.)
 // Observation.component:variation-code
 * component[variation-code] ^short = "Entrez ID & Ensemble ID"
-* insert Translation(component[variation-code] ^short, de-DE, Varianten-Code)
+* insert Translation(component[variation-code] ^short, de-DE, Entrez ID und Ensemble ID)
 * insert Translation(component[variation-code] ^short, en-US, Variation code)
 * component[variation-code] ^definition = "Eindeutiger Identifikator der Variante aus externen Datenbanken wie z.B. ClinVar oder dbSNP"
 * insert Translation(component[variation-code] ^definition, de-DE, Eindeutiger Identifikator der Variante aus externen Datenbanken wie z.B. ClinVar oder dbSNP)

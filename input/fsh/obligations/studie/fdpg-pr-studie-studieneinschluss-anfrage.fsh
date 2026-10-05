@@ -16,7 +16,7 @@ Description: "FDPG Profil - MII_PR_Studie_Studieneinschluss_Anfrage"
 * insert Translation(status ^definition, de-DE, Status der Ressource.)
 * insert Translation(status ^definition, en-US, Status of the resource.)
 // ServiceRequest.intent
-* intent ^short = "Vorschlag | Plan | Direktive | Auftrag | Originalauftrag | Reflexauftrag | Füllerauftrag | Instanzauftrag | Option"
+* intent ^short = "Vorschlag | Plan | Direktive | Auftrag | Originalauftrag | Reflexauftrag | Füllerauftrag | Instanzauftrag | Option "
 * insert Translation(intent ^short, de-DE, Absicht)
 * insert Translation(intent ^short, en-US, Intent)
 * intent ^definition = "Ob die Anfrage ein Vorschlag, ein Plan, ein Originalauftrag oder ein Reflexauftrag ist."

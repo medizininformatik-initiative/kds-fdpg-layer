@@ -1,6 +1,117 @@
 {
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-mtb-copy-number-variant",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-usage",
+      "valueMarkdown": "Use this profile as the technical FHIR representation of the corresponding Medical Informatics Initiative logical model. The profile constrains a base FHIR resource for the MII module context by specifying how elements are used, which elements are required or not used, which extensions and terminology bindings apply, and how the resource maps to the module-specific content model. Implementers should produce and consume resource instances that conform to this profile when exchanging data for the corresponding MII module."
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version": "3.0.0",
+            "code": "package",
+            "display": "Package"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "code": "C17457"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-author",
+      "valueContactDetail": {
+        "telecom": [
+          {
+            "system": "email",
+            "value": "thomas.debertshaeuser@charite.de"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+      "valueContactDetail": {
+        "name": "Taskforce Core Data Set"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+      "valueContactDetail": {
+        "name": "Interoperability Working Group",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+      "valueContactDetail": {
+        "name": "National Steering Committee",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+      "valueContactDetail": {
+        "name": "Interoperability Working Group",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+      "valueContactDetail": {
+        "name": "National Steering Committee",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver",
+        "display": "SemVer"
+      }
+    }
+  ],
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-copy-number-variant",
   "version": "2026.1.2",
   "name": "FDPG_PR_MTB_Copy_Number_Variant",
@@ -1245,13 +1356,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Untersuchtes Gen"
+                  "valueString": "Berichtete betroffene Gene"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -1261,7 +1371,8 @@
                   "url": "content",
                   "valueString": "Gene studied"
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         },
@@ -1275,13 +1386,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Das untersuchte Gen, identifiziert durch HGNC-ID."
+                  "valueString": "Berichtete betroffene Gene"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -1291,7 +1401,8 @@
                   "url": "content",
                   "valueString": "The gene studied, identified by HGNC ID."
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         }
@@ -1554,13 +1665,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Das betroffene Chromosom."
+                  "valueString": "Chromosom auf dem sich die Variante befindet - chr1 - chr22 - chrX - chrY"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -1570,7 +1680,8 @@
                   "url": "content",
                   "valueString": "The affected chromosome."
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         }
@@ -1989,13 +2100,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Exakte Start-/Endposition"
+                  "valueString": "Positionsbereich"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -2005,7 +2115,8 @@
                   "url": "content",
                   "valueString": "Exact start/end position"
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         },
@@ -2019,13 +2130,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Exakte genomische Koordinaten der Variante — Start und Ende."
+                  "valueString": "Positionsbereich der genetischen Variante."
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -2035,7 +2145,8 @@
                   "url": "content",
                   "valueString": "Exact genomic coordinates of the variant — start and end."
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         }
@@ -3198,13 +3309,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Kopienzahl"
+                  "valueString": "Gesamtkopienzahl"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -3214,7 +3324,8 @@
                   "url": "content",
                   "valueString": "Copy number"
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         },
@@ -3228,13 +3339,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Anzahl der Kopien eines genomischen Abschnitts."
+                  "valueString": "Gesamtkopienzahl"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -3244,7 +3354,8 @@
                   "url": "content",
                   "valueString": "Number of copies of a genomic region."
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         }

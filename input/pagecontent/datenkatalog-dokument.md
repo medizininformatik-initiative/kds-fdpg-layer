@@ -2,7 +2,7 @@
 
 Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen und englischen Beschreibungen. Die Obligations werden auf der Seite [Obligations](obligations.html) beschrieben.
 
-**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.dokument](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.dokument/2026.0.1)
+**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.dokument](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.dokument/2027.0.0-ballot.2)
 
 #### Dokument (DocumentReference)
 

@@ -39,11 +39,11 @@ Description: "FDPG Profil - MII_PR_Onko_KRK_Abstand_Circumferelle_Resektionseben
 * insert Translation(effective[x] ^definition, de-DE, Datum der Untersuchung)
 * insert Translation(effective[x] ^definition, en-US, Date or period the observation refers to.)
 // Observation.value[x]
-* value[x] ^short = "Minimaler Abstand Tumorrand aboral"
+* value[x] ^short = "Minimaler Abstand Tumorrand circumferentiell"
 * insert Translation(value[x] ^short, de-DE, Minimaler Abstand Tumorrand circumferell)
 * insert Translation(value[x] ^short, en-US, Value)
-* value[x] ^definition = "Minimaler Abstand des aboralen Tumorrandes zum aboralen Resektionsrand in mm. gemäß oBDS 2021 KR2"
-* insert Translation(value[x] ^definition, de-DE, Minimaler Abstand des aboralen Tumorrandes zum aboralen Resektionsrand in mm. gemäß oBDS 2021 KR2)
+* value[x] ^definition = "Minimaler Abstand des Tumorrandes zur circumferentiellen Resektionsebene in mm. gemäß oBDS 2021 KR3"
+* insert Translation(value[x] ^definition, de-DE, Minimaler Abstand des Tumorrandes zur circumferentiellen Resektionsebene in mm. gemäß oBDS 2021 KR3)
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
 // Observation.value[x].value
 * value[x].value ^short = "Numerical value (with implicit precision)"

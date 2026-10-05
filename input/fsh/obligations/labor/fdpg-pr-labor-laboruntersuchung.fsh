@@ -37,6 +37,13 @@ Description: "FDPG Profil - MII_PR_Labor_Laboruntersuchung"
 * identifier[analyseBefundCode].value ^short = "The value that is unique"
 // Observation.identifier:analyseBefundCode.assigner
 * identifier[analyseBefundCode].assigner ^short = "Organization that issued id (may be just text)"
+// Observation.basedOn
+* basedOn ^short = "Basiert auf"
+* insert Translation(basedOn ^short, de-DE, Basiert auf)
+* insert Translation(basedOn ^short, en-US, Based on)
+* basedOn ^definition = "Bezug zum Laborauftrag, auf dem diese Laboruntersuchung basiert."
+* insert Translation(basedOn ^definition, de-DE, Bezug zum Laborauftrag\, auf dem diese Laboruntersuchung basiert.)
+* insert Translation(basedOn ^definition, en-US, Reference to the laboratory order on which this laboratory test is based.)
 // Observation.status
 * status ^short = "Status"
 * insert Translation(status ^short, de-DE, Status)
@@ -48,19 +55,13 @@ Description: "FDPG Profil - MII_PR_Labor_Laboruntersuchung"
 * category ^short = "Kategorie"
 * insert Translation(category ^short, de-DE, Kategorie)
 * insert Translation(category ^short, en-US, Category)
-* category ^definition = "Klassifikation in diagnostischen Fachbereich und Gruppe der Laboruntersuchung"
+* category ^definition = "Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe"
 * insert Translation(category ^definition, de-DE, Klassifikation der Laboruntersuchung im diagnostischen Fachbereich und der Laborgruppe)
 * insert Translation(category ^definition, en-US, Classification of the laboratory test in the diagnostic service section and laboratory group)
 // Observation.category.coding.display
 * category.coding.display ^short = "Representation defined by the system"
-// Observation.category.coding:loinc-observation
-* category.coding[loinc-observation] ^short = "LOINC coding"
-* insert Translation(category.coding[loinc-observation] ^short, de-DE, LOINC-Kodierung)
-* insert Translation(category.coding[loinc-observation] ^short, en-US, LOINC coding)
-// Observation.category.coding:observation-category
-* category.coding[observation-category] ^short = "Observation category coding"
-* insert Translation(category.coding[observation-category] ^short, de-DE, Beobachtungskategorie-Kodierung)
-* insert Translation(category.coding[observation-category] ^short, en-US, Observation category coding)
+// Observation.category:observation-category
+* category[observation-category] ^short = "Labor-Kategorie"
 // Observation.code
 * code ^short = "Code"
 * insert Translation(code ^short, de-DE, Code)
@@ -70,6 +71,10 @@ Description: "FDPG Profil - MII_PR_Labor_Laboruntersuchung"
 * insert Translation(code ^definition, en-US, A LOINC code identifying the laboratory test that was performed.)
 // Observation.code.coding.display
 * code.coding.display ^short = "Representation defined by the system"
+// Observation.code.coding:loinc
+* code.coding[loinc] ^short = "LOINC coding"
+* insert Translation(code.coding[loinc] ^short, de-DE, LOINC-Kodierung)
+* insert Translation(code.coding[loinc] ^short, en-US, LOINC coding)
 // Observation.subject
 * subject ^short = "Subjekt"
 * insert Translation(subject ^short, de-DE, Subjekt)
@@ -229,12 +234,13 @@ Description: "FDPG Profil - MII_PR_Labor_Laboruntersuchung"
 // --- Obligations ---
 * insert ObligationConsumerDefault(identifier)
 * insert ObligationConsumerDefault(identifier[analyseBefundCode])
+* insert ObligationConsumerDefault(basedOn)
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
-* insert ObligationConsumerDefault(category.coding[loinc-observation])
-* insert ObligationConsumerDefault(category.coding[observation-category])
+* insert ObligationConsumerDefault(category[observation-category])
 * insert ObligationConsumerDefault(code)
 * insert ObligationConsumerPreSelect(code)
+* insert ObligationConsumerDefault(code.coding[loinc])
 * insert ObligationConsumerDefault(subject)
 * insert ObligationConsumerDefault(encounter)
 * insert ObligationConsumerDefault(effective[x])

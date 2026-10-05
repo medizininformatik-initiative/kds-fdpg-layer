@@ -15,13 +15,21 @@ Description: "FDPG Profil - MII_PR_Seltene_ClinicalDiagnosis"
 * extension[ReferenzPrimaerdiagnose] ^definition = "This condition has an unspecified relationship with another condition."
 * insert Translation(extension[ReferenzPrimaerdiagnose] ^definition, de-DE, Verweis auf die Primärdiagnose\, mit der diese Diagnose assoziiert ist.)
 * insert Translation(extension[ReferenzPrimaerdiagnose] ^definition, en-US, Reference to the primary diagnosis this condition is associated with.)
+// Condition.extension:ReferenzPrimaerdiagnose.url
+* extension[ReferenzPrimaerdiagnose].url ^short = "identifies the meaning of the extension"
+// Condition.extension:ReferenzPrimaerdiagnose.value[x]
+* extension[ReferenzPrimaerdiagnose].value[x] ^short = "Value of extension"
 // Condition.extension:Feststellungsdatum
-* extension[Feststellungsdatum] ^short = "Feststellungsdatum"
+* extension[Feststellungsdatum] ^short = "Date the condition was first asserted"
 * insert Translation(extension[Feststellungsdatum] ^short, de-DE, Feststellungsdatum)
 * insert Translation(extension[Feststellungsdatum] ^short, en-US, Asserted date)
-* extension[Feststellungsdatum] ^definition = "Datum, an dem die Diagnose erstmals festgestellt wurde"
+* extension[Feststellungsdatum] ^definition = "The date on which the existence of the Condition was first asserted or acknowledged."
 * insert Translation(extension[Feststellungsdatum] ^definition, de-DE, Datum\, an dem die Diagnose erstmals festgestellt wurde)
 * insert Translation(extension[Feststellungsdatum] ^definition, en-US, Date the condition was first asserted)
+// Condition.extension:Feststellungsdatum.url
+* extension[Feststellungsdatum].url ^short = "identifies the meaning of the extension"
+// Condition.extension:Feststellungsdatum.value[x]
+* extension[Feststellungsdatum].value[x] ^short = "Value of extension"
 // Condition.clinicalStatus
 * clinicalStatus ^short = "Klinischer Status"
 * insert Translation(clinicalStatus ^short, de-DE, Klinischer Status)
@@ -59,6 +67,18 @@ Description: "FDPG Profil - MII_PR_Seltene_ClinicalDiagnosis"
 * code.coding[icd10-gm] ^definition = "Ein Verweis auf einen von der ICD-10-GM definierten Code"
 * insert Translation(code.coding[icd10-gm] ^definition, de-DE, Ein Verweis auf einen von der ICD-10-GM definierten Code)
 * insert Translation(code.coding[icd10-gm] ^definition, en-US, A reference to a code defined by the ICD-10-GM)
+// Condition.code.coding:icd10-gm.extension:Mehrfachcodierungs-Kennzeichen.url
+* code.coding[icd10-gm].extension[Mehrfachcodierungs-Kennzeichen].url ^short = "identifies the meaning of the extension"
+// Condition.code.coding:icd10-gm.extension:Mehrfachcodierungs-Kennzeichen.value[x]
+* code.coding[icd10-gm].extension[Mehrfachcodierungs-Kennzeichen].value[x] ^short = "Value of extension"
+// Condition.code.coding:icd10-gm.extension:Seitenlokalisation.url
+* code.coding[icd10-gm].extension[Seitenlokalisation].url ^short = "identifies the meaning of the extension"
+// Condition.code.coding:icd10-gm.extension:Seitenlokalisation.value[x]
+* code.coding[icd10-gm].extension[Seitenlokalisation].value[x] ^short = "Value of extension"
+// Condition.code.coding:icd10-gm.extension:Diagnosesicherheit.url
+* code.coding[icd10-gm].extension[Diagnosesicherheit].url ^short = "identifies the meaning of the extension"
+// Condition.code.coding:icd10-gm.extension:Diagnosesicherheit.value[x]
+* code.coding[icd10-gm].extension[Diagnosesicherheit].value[x] ^short = "Value of extension"
 // Condition.code.coding:icd10-gm.system
 * code.coding[icd10-gm].system ^short = "Canonische CodeSystem URL für ICD-10-GM"
 * insert Translation(code.coding[icd10-gm].system ^short, de-DE, ICD-10-GM-System-URL)
@@ -82,6 +102,10 @@ Description: "FDPG Profil - MII_PR_Seltene_ClinicalDiagnosis"
 * code.coding[alpha-id].system ^short = "Canonische CodeSystem URL für Alpha-ID"
 * insert Translation(code.coding[alpha-id].system ^short, de-DE, Alpha-ID-System-URL)
 * insert Translation(code.coding[alpha-id].system ^short, en-US, Alpha-ID system URL)
+// Condition.code.coding:alpha-id.version
+* code.coding[alpha-id].version ^short = "Die Jahresversion von Alpha-ID. Angegeben wird immer die vierstellige Jahreszahl (z.B. \"2017\")"
+* insert Translation(code.coding[alpha-id].version ^short, de-DE, Alpha-ID-Version)
+* insert Translation(code.coding[alpha-id].version ^short, en-US, Alpha-ID version)
 // Condition.code.coding:alpha-id.code
 * code.coding[alpha-id].code ^short = "Der Alpha-ID-Code"
 * insert Translation(code.coding[alpha-id].code ^short, de-DE, Code als Alpha-ID)
@@ -169,6 +193,8 @@ Description: "FDPG Profil - MII_PR_Seltene_ClinicalDiagnosis"
 * subject ^definition = "Indicates the patient or group who the condition record is associated with."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
 * insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
+// Condition.subject.reference
+* subject.reference ^short = "Literal reference, Relative, internal or absolute URL"
 // Condition.encounter
 * encounter ^short = "Kontakt (Aufenthaltsbezug)"
 * insert Translation(encounter ^short, de-DE, Kontakt)
@@ -176,21 +202,33 @@ Description: "FDPG Profil - MII_PR_Seltene_ClinicalDiagnosis"
 * encounter ^definition = "Kontakt, während dem die Diagnose erstellt wurde oder mit dem die Diagnose in Zusammenhang steht."
 * insert Translation(encounter ^definition, de-DE, Kontakt\, während dem die Diagnose erstellt wurde oder mit dem die Diagnose in Zusammenhang steht.)
 * insert Translation(encounter ^definition, en-US, The Encounter during which this Condition was created or to which the creation of this record is tightly associated.)
+// Condition.encounter.reference
+* encounter.reference ^short = "Literal reference, Relative, internal or absolute URL"
 // Condition.onset[x]
 * onset[x] ^short = "Beginn"
 * insert Translation(onset[x] ^short, de-DE, Beginn)
 * insert Translation(onset[x] ^short, en-US, Onset)
-* onset[x] ^definition = "Geschätztes oder tatsächliches Datum oder Zeitraum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers."
-* insert Translation(onset[x] ^definition, de-DE, Geschätztes oder tatsächliches Datum oder Zeitraum\, an dem die Erkrankung begonnen hat\, nach Meinung des Klinikers.)
-* insert Translation(onset[x] ^definition, en-US, Estimated or actual date or date-time the condition began\, in the opinion of the clinician.)
-// Condition.onset[x]:onsetPeriod
-* onset[x][onsetPeriod] ^short = "Beginn Zeitraum"
+* onset[x] ^definition = "Geschätztes oder tatsächliches Datum oder Alter, an dem die Erkrankung begonnen hat."
+* insert Translation(onset[x] ^definition, de-DE, Geschätztes oder tatsächliches Datum oder Alter\, an dem die Erkrankung begonnen hat.)
+* insert Translation(onset[x] ^definition, en-US, Estimated or actual date\, date-time\, or age when the condition began.)
 // Condition.onset[x]:onsetDateTime
 * onset[x][onsetDateTime] ^short = "Beginn Datum"
 // Condition.onset[x]:onsetAge
 * onset[x][onsetAge] ^short = "Erkrankungsbeginn als Alter"
+// Condition.onset[x]:onsetAge.extension:Lebensphase-Beginn.url
+* onset[x][onsetAge].extension[Lebensphase-Beginn].url ^short = "identifies the meaning of the extension"
+// Condition.onset[x]:onsetAge.extension:Lebensphase-Beginn.value[x]
+* onset[x][onsetAge].extension[Lebensphase-Beginn].value[x] ^short = "Value of extension"
 // Condition.abatement[x]
-* abatement[x] ^short = "When in resolution/remission"
+* abatement[x] ^short = "Ende"
+// Condition.abatement[x]:abatementDateTime
+* abatement[x][abatementDateTime] ^short = "Ende Datum"
+// Condition.abatement[x]:abatementAge
+* abatement[x][abatementAge] ^short = "Erkrankungsende als Alter"
+// Condition.abatement[x]:abatementAge.extension:Lebensphase-Ende.url
+* abatement[x][abatementAge].extension[Lebensphase-Ende].url ^short = "identifies the meaning of the extension"
+// Condition.abatement[x]:abatementAge.extension:Lebensphase-Ende.value[x]
+* abatement[x][abatementAge].extension[Lebensphase-Ende].value[x] ^short = "Value of extension"
 // Condition.recordedDate
 * recordedDate ^short = "Aufzeichnungsdatum"
 * insert Translation(recordedDate ^short, de-DE, Aufzeichnungsdatum)
@@ -223,7 +261,7 @@ Description: "FDPG Profil - MII_PR_Seltene_ClinicalDiagnosis"
 // Condition.evidence.code
 * evidence.code ^short = "Manifestation/symptom supporting the diagnosis"
 // Condition.evidence.detail
-* evidence.detail ^short = "Reference to Observation resources containing HPO-coded symptoms"
+* evidence.detail ^short = "Reference to the findings supporting or refuting the diagnosis"
 * insert Translation(evidence.detail ^short, de-DE, Belege)
 * insert Translation(evidence.detail ^short, en-US, Supporting observations)
 * evidence.detail ^definition = "Links to other relevant information, including pathology reports."
@@ -255,10 +293,11 @@ Description: "FDPG Profil - MII_PR_Seltene_ClinicalDiagnosis"
 * insert ObligationConsumerDefault(subject)
 * insert ObligationConsumerDefault(encounter)
 * insert ObligationConsumerDefault(onset[x])
-* insert ObligationConsumerDefault(onset[x][onsetPeriod])
 * insert ObligationConsumerDefault(onset[x][onsetDateTime])
 * insert ObligationConsumerDefault(onset[x][onsetAge])
 * insert ObligationConsumerDefault(abatement[x])
+* insert ObligationConsumerDefault(abatement[x][abatementDateTime])
+* insert ObligationConsumerDefault(abatement[x][abatementAge])
 * insert ObligationConsumerDefault(recordedDate)
 * insert ObligationConsumerDefault(recorder)
 * insert ObligationConsumerDefault(asserter)

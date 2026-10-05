@@ -6,7 +6,7 @@ Das Modul Seltene Erkrankungen deckt die spezifischen Anforderungen der Dokument
 
 ## Quellmodul
 
-[MII KDS Seltene Erkrankungen](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.seltene/2026.0.0)
+[MII KDS Seltene Erkrankungen](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.seltene/2027.0.0-ballot)
 
 ## FDPG Profile
 
@@ -23,13 +23,18 @@ Das Modul Seltene Erkrankungen deckt die spezifischen Anforderungen der Dokument
 | [FDPG_PR_Seltene_TherapieempfehlungNichtMedikamentoes](StructureDefinition-fdpg-pr-seltene-therapieempfehlung-nicht-medikamentoes.html) | MII_PR_Seltene_TherapieempfehlungNichtMedikamentoes | ServiceRequest |
 | [FDPG_PR_Seltene_Therapieempfehlung_Kombination](StructureDefinition-fdpg-pr-seltene-therapieempfehlung-kombination.html) | MII_PR_Seltene_Therapieempfehlung_Kombination | RequestGroup |
 | [FDPG_PR_Seltene_TherapieDurchgefuehrt](StructureDefinition-fdpg-pr-seltene-therapie-durchgefuehrt.html) | MII_PR_Seltene_TherapieDurchgefuehrt | Procedure |
-| [FDPG_PR_Seltene_Studie](StructureDefinition-fdpg-pr-seltene-studie.html) | MII_PR_Seltene_Studie | ResearchStudy |
 | [FDPG_PR_Seltene_Studieneinschluss_Anfrage](StructureDefinition-fdpg-pr-seltene-studieneinschluss-anfrage.html) | MII_PR_Seltene_Studieneinschluss_Anfrage | ServiceRequest |
 | [FDPG_PR_Seltene_Blutgruppe](StructureDefinition-fdpg-pr-seltene-blutgruppe.html) | MII_PR_Seltene_Blutgruppe | Observation |
 | [FDPG_PR_Seltene_Bodymassindex](StructureDefinition-fdpg-pr-seltene-bodymassindex.html) | MII_PR_Seltene_Bodymassindex | Observation |
 | [FDPG_PR_Seltene_Kopfumfang](StructureDefinition-fdpg-pr-seltene-kopfumfang.html) | MII_PR_Seltene_Kopfumfang | Observation |
 | [FDPG_PR_Seltene_Hueftumfang](StructureDefinition-fdpg-pr-seltene-hueftumfang.html) | MII_PR_Seltene_Hueftumfang | Observation |
 | [FDPG_PR_Seltene_Taillenumfang](StructureDefinition-fdpg-pr-seltene-taillenumfang.html) | MII_PR_Seltene_Taillenumfang | Observation |
+| [FDPG_PR_Seltene_Consanguinity](StructureDefinition-fdpg-pr-seltene-consanguinity.html) | MII_PR_Seltene_Consanguinity | Observation |
+| [FDPG_PR_Seltene_Geburtsgewicht](StructureDefinition-fdpg-pr-seltene-geburtsgewicht.html) | MII_PR_Seltene_Geburtsgewicht | Observation |
+| [FDPG_PR_Seltene_Geburtslaenge](StructureDefinition-fdpg-pr-seltene-geburtslaenge.html) | MII_PR_Seltene_Geburtslaenge | Observation |
+| [FDPG_PR_Seltene_Gestationsalter](StructureDefinition-fdpg-pr-seltene-gestationsalter.html) | MII_PR_Seltene_Gestationsalter | Observation |
+| [FDPG_PR_Seltene_ICFAssessment](StructureDefinition-fdpg-pr-seltene-icfassessment.html) | MII_PR_Seltene_ICFAssessment | Observation |
+| [FDPG_PR_Seltene_Registerteilnahme](StructureDefinition-fdpg-pr-seltene-registerteilnahme.html) | MII_PR_Seltene_Registerteilnahme | ResearchSubject |
 
 ## Obligation-Übersicht
 

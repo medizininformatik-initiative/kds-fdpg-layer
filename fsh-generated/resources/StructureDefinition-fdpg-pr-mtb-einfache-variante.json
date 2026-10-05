@@ -1,6 +1,117 @@
 {
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-mtb-einfache-variante",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-usage",
+      "valueMarkdown": "Use this profile as the technical FHIR representation of the corresponding Medical Informatics Initiative logical model. The profile constrains a base FHIR resource for the MII module context by specifying how elements are used, which elements are required or not used, which extensions and terminology bindings apply, and how the resource maps to the module-specific content model. Implementers should produce and consume resource instances that conform to this profile when exchanging data for the corresponding MII module."
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "version": "3.0.0",
+            "code": "package",
+            "display": "Package"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "code": "C17457"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-author",
+      "valueContactDetail": {
+        "telecom": [
+          {
+            "system": "email",
+            "value": "thomas.debertshaeuser@charite.de"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+      "valueContactDetail": {
+        "name": "Taskforce Core Data Set"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+      "valueContactDetail": {
+        "name": "Interoperability Working Group",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+      "valueContactDetail": {
+        "name": "National Steering Committee",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+      "valueContactDetail": {
+        "name": "Interoperability Working Group",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+      "valueContactDetail": {
+        "name": "National Steering Committee",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver",
+        "display": "SemVer"
+      }
+    }
+  ],
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-einfache-variante",
   "version": "2026.1.2",
   "name": "FDPG_PR_MTB_Einfache_Variante",
@@ -1275,13 +1386,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Das untersuchte Gen, identifiziert durch HGNC-ID."
+                  "valueString": "Gen auf dem sich die Variante befindet."
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -1291,7 +1401,8 @@
                   "url": "content",
                   "valueString": "The gene studied, identified by HGNC ID."
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         }
@@ -1554,13 +1665,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Das betroffene Chromosom."
+                  "valueString": "Chromosom auf dem sich die Variante befindet - chr1 - chr22 - chrX - chrY"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -1570,7 +1680,8 @@
                   "url": "content",
                   "valueString": "The affected chromosome."
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         }
@@ -1647,13 +1758,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "cDNA-Änderung in HGVS-Nomenklatur auf Transkriptebene."
+                  "valueString": "HGVS-kodierte Variantenbeschreibung im kodierenden Bereich auf DNA-Basenebene."
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -1663,7 +1773,8 @@
                   "url": "content",
                   "valueString": "cDNA change in HGVS nomenclature at transcript level."
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         }
@@ -1896,13 +2007,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Transkript-Referenzsequenz"
+                  "valueString": "Transkript-ID"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -1912,7 +2022,8 @@
                   "url": "content",
                   "valueString": "Transcript reference sequence"
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         },
@@ -1926,13 +2037,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Transkript-Referenzsequenz-ID, z.B. NM_004333.4."
+                  "valueString": "Ensemble Transkript-ID - ENST..."
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -1942,7 +2052,8 @@
                   "url": "content",
                   "valueString": "Transcript reference sequence ID, e.g. NM_004333.4."
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         }
@@ -1989,13 +2100,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Exakte Start-/Endposition"
+                  "valueString": "Position"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -2005,7 +2115,8 @@
                   "url": "content",
                   "valueString": "Exact start/end position"
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         },
@@ -2019,13 +2130,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Exakte genomische Koordinaten der Variante — Start und Ende."
+                  "valueString": "Genaue Position der genetischen Variante."
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -2035,7 +2145,8 @@
                   "url": "content",
                   "valueString": "Exact genomic coordinates of the variant — start and end."
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         }
@@ -2298,13 +2409,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Nukleotidsequenz des Referenz-Allels."
+                  "valueString": "Referenzsequenz am Ort der genetischen Variante."
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -2314,7 +2424,8 @@
                   "url": "content",
                   "valueString": "Nucleotide sequence of the reference allele."
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         }
@@ -2391,13 +2502,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Nukleotidsequenz des alternativen (mutierten) Allels."
+                  "valueString": "Veraenderte Sequenz."
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -2407,7 +2517,8 @@
                   "url": "content",
                   "valueString": "Nucleotide sequence of the alternative (mutated) allele."
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         }
@@ -2670,13 +2781,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Häufigkeit des varianten Allels in der untersuchten Probe."
+                  "valueString": "Relative Haeufigkeit des Allels am Ort der Variante."
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -2686,7 +2796,8 @@
                   "url": "content",
                   "valueString": "Frequency of the variant allele in the examined sample."
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         }
@@ -2763,13 +2874,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Anzahl der Reads, die das Allel unterstützen."
+                  "valueString": "Lesetiefe am Ort der Variante."
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -2779,7 +2889,8 @@
                   "url": "content",
                   "valueString": "Number of reads supporting the allele."
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         }
@@ -3042,13 +3153,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Eindeutiger Variantenidentifikator aus externen Datenbanken, z.B. ClinVar oder dbSNP."
+                  "valueString": "Code der Variante in einer oeffentlichen Datenbank - z.B. ClinVar"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -3058,7 +3168,8 @@
                   "url": "content",
                   "valueString": "Unique variant identifier from external databases, e.g. ClinVar or dbSNP."
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         }
@@ -3135,13 +3246,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Aminosäure-Änderung in HGVS-Nomenklatur auf Proteinebene."
+                  "valueString": "HGVS-kodierte Variantenbeschreibung im kodierenden Bereich auf Aminosaeuren-Ebene."
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -3151,7 +3261,8 @@
                   "url": "content",
                   "valueString": "Amino acid change in HGVS nomenclature at protein level."
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         }
@@ -3384,13 +3495,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "DNA-Regionsname"
+                  "valueString": "Exon"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -3400,7 +3510,8 @@
                   "url": "content",
                   "valueString": "DNA region name"
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         },
@@ -3414,13 +3525,12 @@
                 },
                 {
                   "url": "content",
-                  "valueString": "Lesbarer Name für die untersuchte Region — typischerweise Exon # oder Intron #."
+                  "valueString": "Menschenlesbarer Name des Exons als Text - typischerweise Exon #"
                 }
               ],
               "url": "http://hl7.org/fhir/StructureDefinition/translation"
             },
             {
-              "url": "http://hl7.org/fhir/StructureDefinition/translation",
               "extension": [
                 {
                   "url": "lang",
@@ -3430,7 +3540,8 @@
                   "url": "content",
                   "valueString": "Human-readable name of the examined region — typically Exon # or Intron #."
                 }
-              ]
+              ],
+              "url": "http://hl7.org/fhir/StructureDefinition/translation"
             }
           ]
         }

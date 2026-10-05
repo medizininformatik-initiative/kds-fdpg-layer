@@ -15,6 +15,8 @@ Description: "FDPG Profil - MII_PR_Consent_Einwilligung"
 * extension[domainReference] ^definition = "Optional Extension Element - found in all resources."
 * insert Translation(extension[domainReference] ^definition, de-DE, Verweis auf eine assoziierte Domäne (Behandlungseinrichtung\, Fall\, Studie\).)
 * insert Translation(extension[domainReference] ^definition, en-US, Reference to an associated domain (treatment facility\, encounter\, study\).)
+// Consent.extension:domainReference.extension:domain
+* extension[domainReference].extension[domain] ^short = "Extension"
 // Consent.status
 * status ^short = "draft | proposed | active | rejected | inactive | entered-in-error"
 * insert Translation(status ^short, de-DE, Status)
@@ -31,14 +33,12 @@ Description: "FDPG Profil - MII_PR_Consent_Einwilligung"
 * insert Translation(category ^definition, en-US, Categorization of the resource.)
 // Consent.category:consentCategory
 * category[consentCategory] ^short = "Classification of the consent statement - for indexing/retrieval"
+// Consent.category:mii
+* category[mii] ^short = "Classification of the consent statement - for indexing/retrieval"
 // Consent.category:resultType
 * category[resultType] ^short = "Classification of the consent statement - for indexing/retrieval"
 // Consent.category:templateType
 * category[templateType] ^short = "Classification of the consent statement - for indexing/retrieval"
-// Consent.category:loinc
-* category[loinc] ^short = "Classification of the consent statement - for indexing/retrieval"
-// Consent.category:mii
-* category[mii] ^short = "Classification of the consent statement - for indexing/retrieval"
 // Consent.patient
 * patient ^short = "Who the consent applies to"
 * insert Translation(patient ^short, de-DE, Patient*in)
@@ -94,10 +94,9 @@ Description: "FDPG Profil - MII_PR_Consent_Einwilligung"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[consentCategory])
+* insert ObligationConsumerDefault(category[mii])
 * insert ObligationConsumerDefault(category[resultType])
 * insert ObligationConsumerDefault(category[templateType])
-* insert ObligationConsumerDefault(category[loinc])
-* insert ObligationConsumerDefault(category[mii])
 * insert ObligationConsumerDefault(patient)
 * insert ObligationConsumerDefault(dateTime)
 * insert ObligationConsumerDefault(organization)

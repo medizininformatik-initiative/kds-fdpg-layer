@@ -29,17 +29,17 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * insert Translation(identifier ^definition, en-US, An identifier for this medication request)
 // MedicationRequest.status
 * status ^short = "active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown"
-* insert Translation(status ^short, de-DE, Status)
+* insert Translation(status ^short, de-DE, active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown)
 * insert Translation(status ^short, en-US, Status)
 * status ^definition = "Status der Umsetzung der Therapieempfehlung"
-* insert Translation(status ^definition, de-DE, Status der Ressource.)
+* insert Translation(status ^definition, de-DE, Status der Umsetzung der Therapieempfehlung)
 * insert Translation(status ^definition, en-US, active | on-hold | cancelled | completed | entered-in-error | stopped | draft | unknown)
 // MedicationRequest.intent
 * intent ^short = "Intent"
-* insert Translation(intent ^short, de-DE, Absicht)
+* insert Translation(intent ^short, de-DE, proposal | option)
 * insert Translation(intent ^short, en-US, Intent)
 * intent ^definition = "Da das MTB nur Empfehlungen abgibt, wird hier typischerweise 'proposal' stehen. Es sei denn,         diese Therapieempfehlung ist Teil einer RequestGroup (z.B. Kombinationstherapie). In dem Fall muss hier 'option' stehen."
-* insert Translation(intent ^definition, de-DE, Absicht der Anforderung: Vorschlag | Plan | Auftrag.)
+* insert Translation(intent ^definition, de-DE, Da das MTB nur Empfehlungen abgibt wird hier typischerweise proposal stehen. Es sei denn diese Therapieempfehlung ist Teil einer RequestGroup - z.B. Kombinationstherapie. In dem Fall muss hier option stehen.)
 * insert Translation(intent ^definition, en-US, proposal | plan | order | original-order | reflex-order | filler-order | instance-order | option)
 // MedicationRequest.medication[x]
 * medication[x] ^short = "Medikation"
@@ -48,13 +48,6 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * medication[x] ^definition = "Das Medikament, das verordnet wurde. Code oder Referenz auf Medication-Objekt."
 * insert Translation(medication[x] ^definition, de-DE, Medikation\, die verordnet wurde. Code oder Referenz auf Medication-Objekt.)
 * insert Translation(medication[x] ^definition, en-US, The medication that was requested. Code or a reference to a Medication resource.)
-// MedicationRequest.medication[x]:medicationReference
-* medication[x][medicationReference] ^short = "Medication to be taken"
-* insert Translation(medication[x][medicationReference] ^short, de-DE, Medikation (Verweis\))
-* insert Translation(medication[x][medicationReference] ^short, en-US, Medication (reference\))
-* medication[x][medicationReference] ^definition = "Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications."
-* insert Translation(medication[x][medicationReference] ^definition, de-DE, Verweis auf die Medikament-Ressource.)
-* insert Translation(medication[x][medicationReference] ^definition, en-US, Reference to the medication resource.)
 // MedicationRequest.medication[x]:medicationCodeableConcept
 * medication[x][medicationCodeableConcept] ^short = "Medication to be taken"
 * insert Translation(medication[x][medicationCodeableConcept] ^short, de-DE, Medikation (Code\))
@@ -129,6 +122,13 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * medication[x][medicationCodeableConcept].coding[UNII].code ^short = "Medication (coded) as UNII"
 * insert Translation(medication[x][medicationCodeableConcept].coding[UNII].code ^short, de-DE, Medikation (Code\) als UNII)
 * insert Translation(medication[x][medicationCodeableConcept].coding[UNII].code ^short, en-US, Medication (coded\) as UNII)
+// MedicationRequest.medication[x]:medicationReference
+* medication[x][medicationReference] ^short = "Medication to be taken"
+* insert Translation(medication[x][medicationReference] ^short, de-DE, Medikation (Verweis\))
+* insert Translation(medication[x][medicationReference] ^short, en-US, Medication (reference\))
+* medication[x][medicationReference] ^definition = "Identifies the medication being requested. This is a link to a resource that represents the medication which may be the details of the medication or simply an attribute carrying a code that identifies the medication from a known list of medications."
+* insert Translation(medication[x][medicationReference] ^definition, de-DE, Verweis auf die Medikament-Ressource.)
+* insert Translation(medication[x][medicationReference] ^definition, en-US, Reference to the medication resource.)
 // MedicationRequest.subject
 * subject ^short = "Who or group medication request is for"
 * insert Translation(subject ^short, de-DE, Patient*in)
@@ -175,14 +175,15 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * insert Translation(reasonReference ^definition, en-US, Condition or observation that supports why the medication was administered.)
 // MedicationRequest.reasonReference:Primaertumor
 * reasonReference[Primaertumor] ^short = "Tumorerkrankung (Pflicht)"
-* insert Translation(reasonReference[Primaertumor] ^short, de-DE, Grund Referenz)
-* insert Translation(reasonReference[Primaertumor] ^short, en-US, Reason reference)
 * reasonReference[Primaertumor] ^definition = "Referenz auf die Primärtumor-Diagnose, auf die sich diese Therapieempfehlung bezieht."
 * insert Translation(reasonReference[Primaertumor] ^definition, de-DE, Grund für die Medikationsverordnung als Referenz auf Condition- oder Observation-Objekt.)
 * insert Translation(reasonReference[Primaertumor] ^definition, en-US, Condition or observation that supports why the medication was administered.)
 // MedicationRequest.reasonReference:StuetzendeMolekulareAlteration
 * reasonReference[StuetzendeMolekulareAlteration] ^short = "Stützende molekulare Alteration(en)"
-* insert Translation(reasonReference[StuetzendeMolekulareAlteration] ^short, en-US, Reason reference)
+* insert Translation(reasonReference[StuetzendeMolekulareAlteration] ^short, de-DE, Stützende molekulare Alterationen)
+* reasonReference[StuetzendeMolekulareAlteration] ^definition = "Verweis auf entsprechendes Feld in NGS Bericht und/oder IHC (Verweis auf KDS Molekular-Pathologischer Befundbericht)"
+* insert Translation(reasonReference[StuetzendeMolekulareAlteration] ^definition, de-DE, Verweis auf entsprechendes Feld in NGS Bericht und/oder IHC - Verweis auf KDS Molekular-Pathologischer Befundbericht)
+* insert Translation(reasonReference[StuetzendeMolekulareAlteration] ^definition, en-US, Condition or observation that supports why the medication was administered.)
 // MedicationRequest.basedOn
 * basedOn ^short = "Basiert auf"
 * insert Translation(basedOn ^short, de-DE, Basiert auf)
@@ -357,8 +358,6 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * dosageInstruction.doseAndRate ^short = "Menge des verabreichten Medikaments"
 // MedicationRequest.dosageInstruction.doseAndRate.dose[x]
 * dosageInstruction.doseAndRate.dose[x] ^short = "Amount of medication per dose"
-// MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity
-* dosageInstruction.doseAndRate.dose[x][doseQuantity] ^short = "Menge des Medikaments pro Dosis"
 // MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange
 * dosageInstruction.doseAndRate.dose[x][doseRange] ^short = "Amount of medication per dose"
 // MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.low
@@ -381,6 +380,8 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * dosageInstruction.doseAndRate.dose[x][doseRange].high.system ^short = "System that defines coded unit form"
 // MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.high.code
 * dosageInstruction.doseAndRate.dose[x][doseRange].high.code ^short = "Coded form of the unit"
+// MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity
+* dosageInstruction.doseAndRate.dose[x][doseQuantity] ^short = "Menge des Medikaments pro Dosis"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]
 * dosageInstruction.doseAndRate.rate[x] ^short = "Amount of medication per unit of time"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRatio
@@ -428,7 +429,7 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateRange.high.code
 * dosageInstruction.doseAndRate.rate[x][rateRange].high.code ^short = "Coded form of the unit"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateQuantity
-* dosageInstruction.doseAndRate.rate[x][rateQuantity] ^short = "A fixed quantity (no comparator)"
+* dosageInstruction.doseAndRate.rate[x][rateQuantity] ^short = "Amount of medication per unit of time"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateQuantity.value
 * dosageInstruction.doseAndRate.rate[x][rateQuantity].value ^short = "Numerical value (with implicit precision)"
 // MedicationRequest.dosageInstruction.doseAndRate.rate[x]:rateQuantity.unit
@@ -498,12 +499,12 @@ Description: "FDPG Profil - MII_PR_MTB_Therapieempfehlung"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(intent)
 * insert ObligationConsumerDefault(medication[x])
-* insert ObligationConsumerDefault(medication[x][medicationReference])
 * insert ObligationConsumerDefault(medication[x][medicationCodeableConcept])
 * insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[Pharmazentralnummer])
 * insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[atcClassDe])
 * insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[atcClassEn])
 * insert ObligationConsumerDefault(medication[x][medicationCodeableConcept].coding[UNII])
+* insert ObligationConsumerDefault(medication[x][medicationReference])
 * insert ObligationConsumerDefault(subject)
 * insert ObligationConsumerDefault(encounter)
 * insert ObligationConsumerDefault(supportingInformation)

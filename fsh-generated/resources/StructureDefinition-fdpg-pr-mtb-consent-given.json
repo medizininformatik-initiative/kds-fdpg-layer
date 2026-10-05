@@ -528,6 +528,81 @@
             }
           ]
         }
+      },
+      {
+        "id": "Observation.value[x].coding:SCT",
+        "path": "Observation.value[x].coding",
+        "sliceName": "SCT"
+      },
+      {
+        "id": "Observation.value[x].coding:SCT.system",
+        "path": "Observation.value[x].coding.system",
+        "short": "SNOMED CT system URL",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.value[x].coding:SCT.code",
+        "path": "Observation.value[x].coding.code",
+        "short": "Value as SNOMED CT",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Messwert als SNOMED CT"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Value as SNOMED CT"
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   }

@@ -6,7 +6,7 @@ Das Modul Pathologiebefund bildet den vollstaendigen Workflow der pathologischen
 
 ## Quellmodul
 
-[MII KDS Pathologiebefund](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.patho/2026.0.1)
+[MII KDS Pathologiebefund](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.patho/2027.0.0-ballot)
 
 ## FDPG Profile
 

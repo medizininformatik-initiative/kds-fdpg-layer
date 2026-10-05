@@ -8,6 +8,12 @@ Description: "FDPG Profil - MII_PR_Onko_TNM_T_Kategorie"
 * insert Translation(^title, de-DE, TNM T-Kategorie)
 * insert Translation(^title, en-US, TNM T-Category)
 // --- Element Designations ---
+// Observation.modifierExtension:yPraefix
+* modifierExtension[yPraefix] ^short = "TNM y-Präfix (während/nach multimodaler Therapie)"
+// Observation.modifierExtension:rPraefix
+* modifierExtension[rPraefix] ^short = "TNM r-Präfix (Rezidiv)"
+// Observation.modifierExtension:aPraefix
+* modifierExtension[aPraefix] ^short = "TNM a-Präfix (Autopsie)"
 // Observation.status
 * status ^short = "registered | preliminary | final | amended +"
 * insert Translation(status ^short, de-DE, Status)
@@ -59,6 +65,21 @@ Description: "FDPG Profil - MII_PR_Onko_TNM_T_Kategorie"
 * value[x] ^definition = "The information determined as a result of making the observation, if the information has a simple value."
 * insert Translation(value[x] ^definition, de-DE, Wert der Beobachtung.)
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
+// Observation.value[x].coding:uicc
+// Observation.value[x].coding:uicc.system
+// Observation.value[x].coding:uicc.code
+// Observation.value[x].coding:snomed-ct
+* value[x].coding[snomed-ct] ^short = "SNOMED CT coding"
+* insert Translation(value[x].coding[snomed-ct] ^short, de-DE, SNOMED CT-Kodierung)
+* insert Translation(value[x].coding[snomed-ct] ^short, en-US, SNOMED CT coding)
+// Observation.value[x].coding:snomed-ct.system
+* value[x].coding[snomed-ct].system ^short = "SNOMED CT system URL"
+* insert Translation(value[x].coding[snomed-ct].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(value[x].coding[snomed-ct].system ^short, en-US, SNOMED CT system URL)
+// Observation.value[x].coding:snomed-ct.code
+* value[x].coding[snomed-ct].code ^short = "Value as SNOMED CT"
+* insert Translation(value[x].coding[snomed-ct].code ^short, de-DE, Messwert als SNOMED CT)
+* insert Translation(value[x].coding[snomed-ct].code ^short, en-US, Value as SNOMED CT)
 // Observation.method
 * method ^short = "How it was done"
 * insert Translation(method ^short, de-DE, Methode)
@@ -73,6 +94,9 @@ Description: "FDPG Profil - MII_PR_Onko_TNM_T_Kategorie"
 * method.coding ^definition = "Gibt an, nach welcher Version des TNM klassifiziert wurde."
 * insert Translation(method.coding ^definition, de-DE, Version nach 8.2 oBDS 2021)
 * insert Translation(method.coding ^definition, en-US, Version per oBDS 2021 §8.2.)
+// Observation.component:multipleTumoren
+* component[multipleTumoren] ^short = "Multiple Primaertumoren als m-Suffix"
+* insert Translation(component[multipleTumoren] ^short, de-DE, Multiple Primaertumoren - m-Suffix)
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(status)
@@ -86,4 +110,7 @@ Description: "FDPG Profil - MII_PR_Onko_TNM_T_Kategorie"
 * insert ObligationConsumerPreSelect(effective[x])
 * insert ObligationConsumerDefault(value[x])
 * insert ObligationConsumerPreSelect(value[x])
+* insert ObligationConsumerDefault(value[x].coding[uicc])
+* insert ObligationConsumerDefault(value[x].coding[snomed-ct])
 * insert ObligationConsumerDefault(method)
+* insert ObligationConsumerDefault(component[multipleTumoren])

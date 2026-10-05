@@ -24,10 +24,10 @@ Description: "FDPG Profil - MII_PR_MTB_BRCAness"
 * insert Translation(category ^definition, en-US, Categorization of the resource.)
 // Observation.code
 * code ^short = "BRCAness"
-* insert Translation(code ^short, de-DE, Code)
+* insert Translation(code ^short, de-DE, BRCAness)
 * insert Translation(code ^short, en-US, Code)
 * code ^definition = "BRCAness der Tumormutationsmuster"
-* insert Translation(code ^definition, de-DE, Kodierung des Inhalts.)
+* insert Translation(code ^definition, de-DE, BRCAness der Tumormutationsmuster)
 * insert Translation(code ^definition, en-US, Coding of the content.)
 // Observation.subject
 * subject ^short = "Patient"

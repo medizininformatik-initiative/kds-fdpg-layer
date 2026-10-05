@@ -58,10 +58,8 @@ Description: "FDPG Profil - MII_PR_Labor_Laborbefund"
 * category ^definition = "Klassifikation des Befunds"
 * insert Translation(category ^definition, de-DE, Klassifikation des Befunds)
 * insert Translation(category ^definition, en-US, Classification of the report)
-// DiagnosticReport.category:lab-category
-* category[lab-category] ^short = "Labor-Kategorie"
-// DiagnosticReport.category:lab-category.coding.display
-* category[lab-category].coding.display ^short = "Representation defined by the system"
+// DiagnosticReport.category:v2-lab
+* category[v2-lab] ^short = "Labor-Kategorie"
 // DiagnosticReport.code
 * code ^short = "Code"
 * insert Translation(code ^short, de-DE, Code)
@@ -163,7 +161,7 @@ Description: "FDPG Profil - MII_PR_Labor_Laborbefund"
 * insert ObligationConsumerDefault(basedOn)
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
-* insert ObligationConsumerDefault(category[lab-category])
+* insert ObligationConsumerDefault(category[v2-lab])
 * insert ObligationConsumerDefault(code)
 * insert ObligationConsumerDefault(code.coding[loinc-labReport])
 * insert ObligationConsumerDefault(subject)

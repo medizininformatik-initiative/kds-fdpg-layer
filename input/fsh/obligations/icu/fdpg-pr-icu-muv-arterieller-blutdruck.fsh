@@ -323,6 +323,22 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Arterieller_Blutdruck"
 * insert Translation(component[meanBP].code.coding[IEEE-11073].display ^short, en-US, IEEE 11073 display)
 // Observation.component:meanBP.value[x]
 * component[meanBP].value[x] ^short = "Actual component result"
+// Observation.component:meanBP.value[x].value
+* component[meanBP].value[x].value ^short = "Numerical value (with implicit precision)"
+// Observation.component:meanBP.value[x].unit
+* component[meanBP].value[x].unit ^short = "Unit representation"
+// Observation.component:meanBP.value[x].system
+* component[meanBP].value[x].system ^short = "System that defines coded unit form"
+// Observation.component:meanBP.value[x].code
+* component[meanBP].value[x].code ^short = "Coded form of the unit"
+// Observation.component:meanBP.value[x]:valueQuantity.value
+* component[meanBP].value[x][valueQuantity].value ^short = "Numerical value (with implicit precision)"
+// Observation.component:meanBP.value[x]:valueQuantity.unit
+* component[meanBP].value[x][valueQuantity].unit ^short = "Unit representation"
+// Observation.component:meanBP.value[x]:valueQuantity.system
+* component[meanBP].value[x][valueQuantity].system ^short = "System that defines coded unit form"
+// Observation.component:meanBP.value[x]:valueQuantity.code
+* component[meanBP].value[x][valueQuantity].code ^short = "Coded form of the unit"
 // Observation.component:meanBP.dataAbsentReason
 * component[meanBP].dataAbsentReason ^short = "Why the component result is missing"
 

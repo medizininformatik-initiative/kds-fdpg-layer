@@ -4,7 +4,7 @@
 
 Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen und englischen Beschreibungen. Die Obligations werden auf der Seite [Obligations](obligations.html) beschrieben.
 
-**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.base](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base/2026.0.0)
+**Quellpaket:** [de.medizininformatikinitiative.kerndatensatz.base](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base/2027.0.0-ballot)
 
 ### Person
 
@@ -14,6 +14,17 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Konzept (LM) | Beschreibung (LM) | Kurzbeschreibung (de) | Definition (de) | Vorausgewählt |
 |---|---|---|---|---|---|
+| `extension:birthPlace` |  |  | Geburtsort | The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements. |  |
+| `extension:patient-citizenship` |  |  | Staatsbürgerschaft | The patient's legal status as citizen of a country. |  |
+| `extension:patient-citizenship.extension:code` |  |  | Extension | An Extension |  |
+| `extension:patient-citizenship.extension:period` |  |  | Extension | An Extension |  |
+| `extension:patient-nationality` |  |  | Nationalität | The nationality of the patient. |  |
+| `extension:patient-nationality.extension:code` |  |  | Extension | An Extension |  |
+| `extension:patient-nationality.extension:period` |  |  | Extension | An Extension |  |
+| `extension:recordedSexOrGender` |  |  | Dokumentiertes Geschlecht | A sex or gender property for the individual from a document or other record |  |
+| `extension:recordedSexOrGender.extension:value` |  |  | Extension | An Extension |  |
+| `extension:recordedSexOrGender.extension:type` |  |  | Extension | An Extension |  |
+| `extension:recordedSexOrGender.extension:acquisitionDate` |  |  | Extension | An Extension |  |
 | `identifier` | PatientenIdentifikator, Pseudonym | Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als "Codesystem" gesehen werden, und Patienten-Identifikator als "Code" | Identifikator | Ein Identifikator für den/die Patient\*in |  |
 | `identifier:versichertenId` | PatientenIdentifikator, Pseudonym | Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als "Codesystem" gesehen werden, und Patienten-Identifikator als "Code" | Krankenversichertennummer | 10-stellige KVID |  |
 | `identifier:pid` | PatientenIdentifikator, Pseudonym | Identifikation des Patienten in Verschiedenen Gesundheitseinrichtungen, Einrichtungskennzeichen kann als "Codesystem" gesehen werden, und Patienten-Identifikator als "Code" | Organisationsinterner Patienten-Identifikator | Führende ID der Patient\*in in der Organisation |  |
@@ -25,6 +36,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `birthDate` | Geburtsdatum | Geburtsdatum des Person. | Geburtsdatum | Das Geburtsdatum der Patientin oder des Patienten |  |
 | `birthDate.extension:data-absent-reason` | Geburtsdatum | Geburtsdatum des Person. | Grund für fehlende Angabe | Provides a reason why the expected value or elements in the element that is extended are missing. |  |
 | `deceased[x]` | PatientVerstorben, Todeszeitpunkt | Gibt an, ob der Patient am Leben oder verstorben ist. | Verstorben | Gibt an, ob die Person verstorben ist oder nicht | ✓ |
+| `deceased[x]:deceasedBoolean` | PatientVerstorben, Todeszeitpunkt | Gibt an, ob der Patient am Leben oder verstorben ist. | Verstorben | Gibt an, ob die Patient\*in verstorben ist. |  |
+| `deceased[x]:deceasedDateTime` | PatientVerstorben, Todeszeitpunkt | Gibt an, ob der Patient am Leben oder verstorben ist. | Verstorben | Gibt an, ob die Patient\*in verstorben ist. |  |
 | `address` | Adresse | Vollständige Anschrift einer Person für die postlische Kommunikation. | Adresse | Eine Adresse der Patientin oder des Patienten |  |
 | `address:Strassenanschrift` | Adresse | Vollständige Anschrift einer Person für die postlische Kommunikation. | Straßenanschrift | Eine Straßenanschrift der Patientin oder des Patienten |  |
 | `address:Strassenanschrift.extension:Stadtteil` | Adresse | Vollständige Anschrift einer Person für die postlische Kommunikation. | Stadtteil | A subsection of a municipality. |  |
@@ -86,6 +99,26 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `recordedDate` | Dokumentationsdatum | Das Datum ist der Zeitpunkt, an dem eine Krankheit z. B. durch einen Arzt dokumentiert wurde. Hinweis: Wenn zwischen Feststellung der Diagnose und Dokumentationsdatum nicht unterschieden werden mus... | Aufzeichnungsdatum | Datum, an dem die Todesursache erstmals dokumentiert wurde. | ✓ |
 | `note` | Diagnoseerlaeuterung | Damit soll dem Arzt die Möglichkeit gegeben werden, umfangreichere Angaben zusätzlich zu einer Diagnose abzufassen. | Hinweis | Zusätzliche Informationen zur Todesursache als Freitext. |  |
 
+#### MII PR Person Allergy Intolerance (AllergyIntolerance)
+
+**FDPG Profil:** [FDPG_PR_Person_AllergieUnvertraeglichkeit](StructureDefinition-fdpg-pr-person-allergie-unvertraeglichkeit.html) · **MII Elternprofil:** MII_PR_Person_AllergieUnvertraeglichkeit
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `extension:abatement.value[x]:valueDateTime` | End date | Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list). |
+| `clinicalStatus` | Klinischer Status | Klinischer Status der Diagnose: aktiv \| Rezidiv \| Rückfall \| inaktiv \| Remission \| abgeklungen. |
+| `verificationStatus` | Verifizierungsstatus | Verifizierungsstatus: unbestätigt \| vorläufig \| differential \| bestätigt \| widerlegt \| fehlerhafte Eingabe. |
+| `type` | Typ | Typ oder Art der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `criticality` | Criticality | Estimate of the potential clinical harm or seriousness of a reaction to the identified substance. |
+| `code` | Code | Kodierung des Inhalts. |
+| `patient` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `onset[x]` | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
+| `onset[x]:onsetDateTime` | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |
+| `recordedDate` | Aufzeichnungsdatum | Datum, an dem die Ressource aufgezeichnet wurde. |
+| `reaction` | Adverse reaction events linked to substance exposure | Details of each adverse reaction event linked to exposure to the identified substance. |
+
 ### Diagnose
 
 #### Diagnose (Condition)
@@ -107,10 +140,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `bodySite.coding:snomed-ct` | Koerperstelle | Über die Körperstelle kann angegeben werden, in welchem Bereich des Körpers eine Krankheit diagnostiziert wurde (Topografische Informatiomn) | SNOMED CT | Kodierung nach SNOMED CT. |  |
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |  |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Diagnose erstellt wurde oder mit dem die Diagnose in Zusammenhang steht. |  |
-| `onset[x]` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Beginn | Geschätztes oder tatsächliches Datum oder Zeitraum, an dem die Erkrankung begonnen hat, nach Meinung des Klinikers. | ✓ |
-| `onset[x]:onsetPeriod` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |  |
-| `onset[x]:onsetDateTime` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |  |
-| `onset[x]:onsetAge` | KlinischRelevanterZeitraum | Hier kann der Klinisch Relevante Zeitraum beziehungsweise die Lebensphase einer Erkrankung angegeben werden. Datumsangaben zu Diagnosen können in unterschiedlicher Präzision vorhanden sein. | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |  |
+| `onset[x]` | von | In welcher Lebensphase die Krankheit began | Beginn | Geschätztes oder tatsächliches Datum oder Alter, an dem die Erkrankung begonnen hat. | ✓ |
+| `onset[x]:onsetDateTime` | von | In welcher Lebensphase die Krankheit began | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |  |
+| `onset[x]:onsetAge` | von | In welcher Lebensphase die Krankheit began | Erkrankungsbeginn | Zeitpunkt oder Zeitraum, an dem die Diagnose erstmals auftrat. |  |
+| `abatement[x]` | bis | In welcher Lebensphase die Krankheit endete | Ende | Geschätztes oder tatsächliches Datum oder Alter, an dem die Erkrankung beendet wurde. | ✓ |
+| `abatement[x]:abatementDateTime` | bis | In welcher Lebensphase die Krankheit endete | Ende Datum | Das Datum, an dem die Erkrankung beendet wurde. |  |
+| `abatement[x]:abatementAge` | bis | In welcher Lebensphase die Krankheit endete | Erkrankungsende als Alter | The date or estimated date that the condition resolved or went into remission. This is called "abatement" because of the many overloaded connotations associated with "remission" or "resolution" - C... |  |
 | `recordedDate` | Dokumentationsdatum | Das Datum ist der Zeitpunkt, an dem eine Krankheit z. B. durch einen Arzt dokumentiert wurde. Hinweis: Wenn zwischen Feststellung der Diagnose und Dokumentationsdatum nicht unterschieden werden mus... | Aufzeichnungsdatum | Datum, an dem die Diagnose erstmals dokumentiert wurde. | ✓ |
 | `note` | Diagnoseerlaeuterung | Damit soll dem Arzt die Möglichkeit gegeben werden, umfangreichere Angaben zusätzlich zu einer Diagnose abzufassen. | Hinweis | Zusätzliche Informationen zur Diagnose als Freitext. |  |
 
@@ -134,6 +169,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` |  |  | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. | ✓ |
 | `encounter` |  |  | Kontakt | Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht. |  |
 | `performed[x]` | Durchfuehrungsdatum | Das Datum ist der Zeitpunkt, an dem eine Prozedur durchgeführt wurde. | Durchführungsdatum | Durchführungsdatum oder -zeitraum der Prozedur. | ✓ |
+| `performed[x]:performedDateTime` | Durchfuehrungsdatum | Das Datum ist der Zeitpunkt, an dem eine Prozedur durchgeführt wurde. | Durchführungsdatum | Durchführungsdatum der Prozedur. |  |
+| `performed[x]:performedPeriod` | Durchfuehrungsdatum | Das Datum ist der Zeitpunkt, an dem eine Prozedur durchgeführt wurde. | Durchführungszeitraum | Zeitraum, in dem die Prozedur durchgeführt wurde. |  |
 | `bodySite` | Koerperstelle | Körperstelle der Prozedur mittels SNOMED CT inkl. Lateralität (R, L, B) | Körperstelle | Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität. | ✓ |
 | `bodySite.coding:snomed-ct` | Koerperstelle | Körperstelle der Prozedur mittels SNOMED CT inkl. Lateralität (R, L, B) | SNOMED CT | Kodierung nach SNOMED CT. |  |
 | `note` |  |  | Hinweis | Zusätzliche Informationen zur Prozedur als Freitext. |  |
@@ -165,6 +202,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `diagnosis` |  |  | Diagnosen | Angaben zu für den Kontakt relevanten Diagnosen |  |
 | `account` |  |  | Abrechnungskontext | Referenz auf den Abrechnungsfall. |  |
 | `hospitalization` | Aufnahmeanlass, Entlassungsgrund | Gemäß §21 KHEntgG | Klinikaufenthalt | Details zur Aufnahme und Entlassung |  |
+| `location` |  |  | Kontaktort | Details zum Kontaktort wie Zimmer, Bett, Station |  |
+| `location:Zimmer` |  |  | Zimmer | Von Patient oder Patientin während des Kontaktes belegtes Zimmer auf einer Station. |  |
+| `location:Bett` |  |  | Bett | Von Patient oder Patientin während des Kontaktes belegter Bettenstellplatz. |  |
+| `location:Station` |  |  | Station | Die Station, auf welcher der Patient oder die Patientin während des Kontaktes behandelt wurde. |  |
 | `partOf` |  |  | Teil von Kontakt | Abbildung der Hierarchie zwischen Kontaktebenen durch Referenz auf weitere Kontakte. |  |
 
 ---
@@ -176,6 +217,17 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 
 | Element | Short (en) | Definition (en) |
 |---------|-----------|-----------------|
+| `extension:birthPlace` | Birth Place | The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements. |
+| `extension:patient-citizenship` | Citizenship | The patient's legal status as citizen of a country. |
+| `extension:patient-citizenship.extension:code` | Extension | An Extension |
+| `extension:patient-citizenship.extension:period` | Extension | An Extension |
+| `extension:patient-nationality` | Nationality | The nationality of the patient. |
+| `extension:patient-nationality.extension:code` | Extension | An Extension |
+| `extension:patient-nationality.extension:period` | Extension | An Extension |
+| `extension:recordedSexOrGender` | Recorded Sex or Gender | A sex or gender property for the individual from a document or other record |
+| `extension:recordedSexOrGender.extension:value` | Extension | An Extension |
+| `extension:recordedSexOrGender.extension:type` | Extension | An Extension |
+| `extension:recordedSexOrGender.extension:acquisitionDate` | Extension | An Extension |
 | `identifier` | Identifier | An identifier for this patient |
 | `identifier:versichertenId` | Health insurance number | 10-digit health insurance number |
 | `identifier:pid` | Organization-internal patient identifier | Medical record number of the patient in the organization |
@@ -187,6 +239,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `birthDate` | Date of birth | The date of birth for the individual |
 | `birthDate.extension:data-absent-reason` | Data absent reason | Provides a reason why the expected value or elements in the element that is extended are missing. |
 | `deceased[x]` | Deceased | Indicates if the individual is deceased or not |
+| `deceased[x]:deceasedBoolean` | Deceased | Indicates whether the patient is deceased. |
+| `deceased[x]:deceasedDateTime` | Deceased | Indicates whether the patient is deceased. |
 | `address` | Address | An address for the individual |
 | `address:Strassenanschrift` | Street address | A street address for the individual |
 | `address:Strassenanschrift.extension:Stadtteil` | District | A subsection of a municipality. |
@@ -254,6 +308,27 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 </details>
 
 <details>
+<summary>English translations - MII PR Person Allergy Intolerance</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `extension:abatement.value[x]:valueDateTime` | End date | Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list). |
+| `clinicalStatus` | Clinical status | Clinical status of the condition: active \| recurrence \| relapse \| inactive \| remission \| resolved. |
+| `verificationStatus` | Verification status | Verification status: unconfirmed \| provisional \| differential \| confirmed \| refuted \| entered-in-error. |
+| `type` | Type | Type or kind of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `criticality` | Criticality | Estimate of the potential clinical harm or seriousness of a reaction to the identified substance. |
+| `code` | Code | Coding of the content. |
+| `patient` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `onset[x]` | Onset | Date or period when the condition first appeared. |
+| `onset[x]:onsetDateTime` | Onset | Date or period when the condition first appeared. |
+| `recordedDate` | Recorded date | Date when the resource was recorded. |
+| `reaction` | Adverse reaction events linked to substance exposure | Details of each adverse reaction event linked to exposure to the identified substance. |
+
+</details>
+
+<details>
 <summary>English translations - Diagnose</summary>
 
 | Element | Short (en) | Definition (en) |
@@ -271,10 +346,12 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Condition was created or to which the creation of this record is tightly associated. |
-| `onset[x]` | Onset | Estimated or actual date or date-time the condition began, in the opinion of the clinician. |
-| `onset[x]:onsetPeriod` | Onset | Date or period when the condition first appeared. |
+| `onset[x]` | Onset | Estimated or actual date, date-time, or age when the condition began. |
 | `onset[x]:onsetDateTime` | Onset | Date or period when the condition first appeared. |
 | `onset[x]:onsetAge` | Onset | Date or period when the condition first appeared. |
+| `abatement[x]` | Ende | Geschätztes oder tatsächliches Datum oder Alter, an dem die Erkrankung beendet wurde. |
+| `abatement[x]:abatementDateTime` | Ende Datum | Das Datum, an dem die Erkrankung beendet wurde. |
+| `abatement[x]:abatementAge` | Erkrankungsende als Alter | The date or estimated date that the condition resolved or went into remission. This is called "abatement" because of the many overloaded connotations associated with "remission" or "resolution" - C... |
 | `recordedDate` | Recorded date | Date when the diagnosis was first recorded. |
 | `note` | Note | Additional information about the diagnosis as free text. |
 
@@ -297,6 +374,8 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `subject` | Patient | The patient that the resource relates to. |
 | `encounter` | Encounter | The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated. |
 | `performed[x]` | Performed date | The date or period of time the procedure was performed. |
+| `performed[x]:performedDateTime` | Performed | The date the procedure was performed. |
+| `performed[x]:performedPeriod` | Performed period | The period of time the procedure was performed. |
 | `bodySite` | Body site | The body site of the procedure using SNOMED CT including laterality. |
 | `bodySite.coding:snomed-ct` | SNOMED CT | Coding in SNOMED CT. |
 | `note` | Note | Additional information about the procedure as free text. |
@@ -327,6 +406,10 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `diagnosis` | Diagnoses | Information about diagnoses relevant for the encounter |
 | `account` | Billing Context | Reference to the billing case. |
 | `hospitalization` | Hospitalization | Details about admission and discharge |
+| `location` | Location | Details about location such as room, bed, ward |
+| `location:Zimmer` | Zimmer | Von Patient oder Patientin während des Kontaktes belegtes Zimmer auf einer Station. |
+| `location:Bett` | Bett | Von Patient oder Patientin während des Kontaktes belegter Bettenstellplatz. |
+| `location:Station` | Station | Die Station, auf welcher der Patient oder die Patientin während des Kontaktes behandelt wurde. |
 | `partOf` | Part of encounter | Hierarchy between encounter levels by referencing further encounters. |
 
 </details>

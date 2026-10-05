@@ -6,7 +6,7 @@ Das Modul Molekulargenetik bildet die Ergebnisse genetischer Analysen und deren 
 
 ## Quellmodul
 
-[MII KDS Molekulargenetik](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.molgen/2026.0.4)
+[MII KDS Molekulargenetik](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.molgen/2027.0.0-ballot.1)
 
 ## FDPG Profile
 

@@ -35,10 +35,26 @@ Description: "FDPG Profil - MII_PR_Person_Todesursache"
 * category[todesDiagnose].coding[snomed] ^short = "SNOMED CT coding"
 * insert Translation(category[todesDiagnose].coding[snomed] ^short, de-DE, SNOMED CT-Kodierung)
 * insert Translation(category[todesDiagnose].coding[snomed] ^short, en-US, SNOMED CT coding)
+// Condition.category:todesDiagnose.coding:snomed.system
+* category[todesDiagnose].coding[snomed].system ^short = "SNOMED CT system URL"
+* insert Translation(category[todesDiagnose].coding[snomed].system ^short, de-DE, SNOMED CT-System-URL)
+* insert Translation(category[todesDiagnose].coding[snomed].system ^short, en-US, SNOMED CT system URL)
+// Condition.category:todesDiagnose.coding:snomed.code
+* category[todesDiagnose].coding[snomed].code ^short = "SNOMED CT code"
+* insert Translation(category[todesDiagnose].coding[snomed].code ^short, de-DE, SNOMED CT-Code)
+* insert Translation(category[todesDiagnose].coding[snomed].code ^short, en-US, SNOMED CT code)
 // Condition.category:todesDiagnose.coding:loinc
 * category[todesDiagnose].coding[loinc] ^short = "LOINC coding"
 * insert Translation(category[todesDiagnose].coding[loinc] ^short, de-DE, LOINC-Kodierung)
 * insert Translation(category[todesDiagnose].coding[loinc] ^short, en-US, LOINC coding)
+// Condition.category:todesDiagnose.coding:loinc.system
+* category[todesDiagnose].coding[loinc].system ^short = "LOINC system URL"
+* insert Translation(category[todesDiagnose].coding[loinc].system ^short, de-DE, LOINC-System-URL)
+* insert Translation(category[todesDiagnose].coding[loinc].system ^short, en-US, LOINC system URL)
+// Condition.category:todesDiagnose.coding:loinc.code
+* category[todesDiagnose].coding[loinc].code ^short = "LOINC code"
+* insert Translation(category[todesDiagnose].coding[loinc].code ^short, de-DE, LOINC-Code)
+* insert Translation(category[todesDiagnose].coding[loinc].code ^short, en-US, LOINC code)
 // Condition.code
 * code ^short = "Code"
 * insert Translation(code ^short, de-DE, Code)
@@ -69,6 +85,8 @@ Description: "FDPG Profil - MII_PR_Person_Todesursache"
 * subject ^definition = "Indicates the patient or group who the condition record is associated with."
 * insert Translation(subject ^definition, de-DE, Patientin oder Patient\, auf die sich die Ressource bezieht.)
 * insert Translation(subject ^definition, en-US, The patient that the resource relates to.)
+// Condition.subject.reference
+* subject.reference ^short = "Literal reference, Relative, internal or absolute URL"
 // Condition.encounter
 * encounter ^short = "Kontakt (Aufenthaltsbezug)"
 * insert Translation(encounter ^short, de-DE, Kontakt)
@@ -76,6 +94,8 @@ Description: "FDPG Profil - MII_PR_Person_Todesursache"
 * encounter ^definition = "Kontakt, während dem die Todesursache festgestellt wurde."
 * insert Translation(encounter ^definition, de-DE, Kontakt\, bei dem die Todesursache festgestellt wurde.)
 * insert Translation(encounter ^definition, en-US, Encounter during which the cause of death was determined.)
+// Condition.encounter.reference
+* encounter.reference ^short = "Literal reference, Relative, internal or absolute URL"
 // Condition.recordedDate
 * recordedDate ^short = "Aufzeichnungsdatum"
 * insert Translation(recordedDate ^short, de-DE, Aufzeichnungsdatum)

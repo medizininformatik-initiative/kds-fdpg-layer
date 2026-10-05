@@ -6,7 +6,7 @@ Das Modul Fall bildet Kontakte mit Gesundheitseinrichtungen ab. Es umfasst ambul
 
 ## Quellmodul
 
-[MII KDS Basismodul (Fall)](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base/2026.0.0)
+[MII KDS Basismodul (Fall)](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.base/2027.0.0-ballot)
 
 ## FDPG Profile
 

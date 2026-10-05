@@ -6,7 +6,7 @@ Das Modul Studie erfasst Informationen zu klinischen und Forschungsstudien, an d
 
 ## Quellmodul
 
-[MII KDS Studie](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.studie/2026.0.2)
+[MII KDS Studie](https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.studie/2027.0.0-ballot)
 
 ## FDPG Profile
 
