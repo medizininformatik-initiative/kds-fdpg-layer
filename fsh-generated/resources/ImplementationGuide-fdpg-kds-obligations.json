@@ -150,6 +150,12 @@
       "version": "2027.0.0-ballot",
       "uri": "https://www.medizininformatik-initiative.de/fhir/modul-consent/ImplementationGuide/mii-ig-consent",
       "id": "de_medizininformatikinitiative_kerndatensatz_consent"
+    },
+    {
+      "packageId": "de.gematik.isik",
+      "version": "6.0.0",
+      "uri": "http://fhir.org/packages/de.gematik.isik/ImplementationGuide/de.gematik.isik",
+      "id": "de_gematik_isik"
     }
   ],
   "definition": {
@@ -1216,6 +1222,414 @@
         },
         "name": "FDPG PR ICU VENT Zeitverhaeltnis Ein Ausatmung",
         "description": "FDPG Profil - MII_PR_ICU_VENT_Zeitverhaeltnis_Ein_Ausatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-gcs"
+        },
+        "name": "FDPG PR ISiK GCS",
+        "description": "FDPG Profil - ISiKGCS",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-herzzeitvolumen"
+        },
+        "name": "FDPG PR ISiK Herzzeitvolumen",
+        "description": "FDPG Profil - SD_MII_ICU_Herzzeitvolumen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-ideales-koerpergewicht"
+        },
+        "name": "FDPG PR ISiK Ideales Koerpergewicht",
+        "description": "FDPG Profil - SD_MII_ICU_Ideales_Koerpergewicht",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-intrakranieller-druck-icp"
+        },
+        "name": "FDPG PR ISiK Intrakranieller Druck Icp",
+        "description": "FDPG Profil - SD_MII_ICU_Intrakranieller_Druck_Icp",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpergewicht-percentil-altersabhaengig"
+        },
+        "name": "FDPG PR ISiK Koerpergewicht Percentil Altersabhaengig",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpergewicht_Percentil_Altersabhaengig",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpergroesse-percentil-altersabhaengig"
+        },
+        "name": "FDPG PR ISiK Koerpergroesse Percentil Altersabhaengig",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpergroesse_Percentil_Altersabhaengig",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerperkerntemperatur-stirn"
+        },
+        "name": "FDPG PR ISiK Koerperkerntemperatur Stirn",
+        "description": "FDPG Profil - SD_MII_ICU_Koerperkerntemperatur_Stirn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-achsel"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Achsel",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Achsel",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-atemwege"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Atemwege",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Atemwege",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-blut"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Blut",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Blut",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-brust"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Brust",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Brust",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-brustwirbelsaeule"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Brustwirbelsaeule",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Brustwirbelsaeule",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-gelenk"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Gelenk",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Gelenk",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-halswirbelsaeule"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Halswirbelsaeule",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Halswirbelsaeule",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-harnblase"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Harnblase",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Harnblase",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-kern"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Kern",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Kern",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-leiste"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Leiste",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Leiste",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-lendenwirbelsaeule"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Lendenwirbelsaeule",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Lendenwirbelsaeule",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-myokard"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Myokard",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Myokard",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-nasal"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Nasal",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Nasal",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-nasen-rachen-raum"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Nasen Rachen Raum",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Nasen_Rachen_Raum",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-oral"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Oral",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Oral",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-rektal"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Rektal",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Rektal",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-speiseroehre"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Speiseroehre",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Speiseroehre",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-stirn"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Stirn",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Stirn",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-trommelfell"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Trommelfell",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Trommelfell",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-koerpertemperatur-vaginal"
+        },
+        "name": "FDPG PR ISiK Koerpertemperatur Vaginal",
+        "description": "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Vaginal",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-laboruntersuchung-serumnatrium"
+        },
+        "name": "FDPG PR ISiK Laboruntersuchung Serumnatrium",
+        "description": "FDPG Profil - ISiKLaboruntersuchungSerumnatrium",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-linksatrialer-druck"
+        },
+        "name": "FDPG PR ISiK Linksatrialer Druck",
+        "description": "FDPG Profil - SD_MII_ICU_Linksatrialer_Druck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-linksventrikulaerer-druck"
+        },
+        "name": "FDPG PR ISiK Linksventrikulaerer Druck",
+        "description": "FDPG Profil - SD_MII_ICU_Linksventrikulaerer_Druck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-linksventrikulaerer-herzindex"
+        },
+        "name": "FDPG PR ISiK Linksventrikulaerer Herzindex",
+        "description": "FDPG Profil - SD_MII_ICU_Linksventrikulaerer_Herzindex",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-herzindex-indikatorverduennung"
+        },
+        "name": "FDPG PR ISiK Linksventrikulaerer Herzindex Durch Indikatorverduennung",
+        "description": "FDPG Profil - SD_MII_ICU_Linksventrikulaerer_Herzindex_Durch_Indikatorverduennung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-schlagvolumenindex-indikatorverduennung"
+        },
+        "name": "FDPG PR ISiK Linksventrikulaerer Schlagvolumenindex Durch Indikatorverduennung",
+        "description": "FDPG Profil - SD_MII_ICU_Linksventrikulaerer_Schlagvolumenindex_Durch_Indikatorverduennung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-herzzeitvolumen-indikatorverduennung"
+        },
+        "name": "FDPG PR ISiK Linksventrikulaeres Herzzeitvolumen Durch Indikatorverduennung",
+        "description": "FDPG Profil - SD_MII_ICU_Linksventrikulaeres_Herzzeitvolumen_Durch_Indikatorverduennung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-linksventrikulaeres-schlagvolumen"
+        },
+        "name": "FDPG PR ISiK Linksventrikulaeres Schlagvolumen",
+        "description": "FDPG Profil - SD_MII_ICU_Linksventrikulaeres_Schlagvolumen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-schlagvolumen-indikatorverduennung"
+        },
+        "name": "FDPG PR ISiK Linksventrikulaeres Schlagvolumen Durch Indikatorverduennung",
+        "description": "FDPG Profil - SD_MII_ICU_Linksventrikulaeres_Schlagvolumen_Durch_Indikatorverduennung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-linksventrikulaeres-schlagvolumenindex"
+        },
+        "name": "FDPG PR ISiK Linksventrikulaeres Schlagvolumenindex",
+        "description": "FDPG Profil - SD_MII_ICU_Linksventrikulaeres_Schlagvolumenindex",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-muv-zerebraler-perfusionsdruck"
+        },
+        "name": "FDPG PR ISiK MUV zerebraler Perfusionsdruck",
+        "description": "FDPG Profil - MII_PR_ICU_MUV_zerebraler_Perfusionsdruck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-prozedur-beatmung"
+        },
+        "name": "FDPG PR ISiK Prozedur Beatmung",
+        "description": "FDPG Profil - ISiKProzedurBeatmung",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-prozedur-reanimation"
+        },
+        "name": "FDPG PR ISiK Prozedur Reanimation",
+        "description": "FDPG Profil - ISiKProzedurReanimation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-pulmonalarterieller-blutdruck"
+        },
+        "name": "FDPG PR ISiK Pulmonalarterieller Blutdruck",
+        "description": "FDPG Profil - SD_MII_ICU_Pulmonalarterieller_Blutdruck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-pulmonalarterieller-wedge-druck"
+        },
+        "name": "FDPG PR ISiK Pulmonalarterieller Wedge Druck",
+        "description": "FDPG Profil - SD_MII_ICU_Pulmonalarterieller_Wedge_Druck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-pulmonalvaskulaerer-widerstandsindex"
+        },
+        "name": "FDPG PR ISiK Pulmonalvaskulaerer Widerstandsindex",
+        "description": "FDPG Profil - SD_MII_ICU_Pulmonalvaskulaerer_Widerstandsindex",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-puls"
+        },
+        "name": "FDPG PR ISiK Puls",
+        "description": "FDPG Profil - SD_MII_ICU_Puls",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-rechtsatrialer-druck"
+        },
+        "name": "FDPG PR ISiK Rechtsatrialer Druck",
+        "description": "FDPG Profil - SD_MII_ICU_Rechtsatrialer_Druck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-rechtsventrikulaerer-druck"
+        },
+        "name": "FDPG PR ISiK Rechtsventrikulaerer Druck",
+        "description": "FDPG Profil - SD_MII_ICU_Rechtsventrikulaerer_Druck",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-spo2-arteriell"
+        },
+        "name": "FDPG PR ISiK Sauerstoffsaettigung Im Arteriellen Blut Durch Pulsoxymetrie",
+        "description": "FDPG Profil - SD_MII_ICU_Sauerstoffsaettigung_Im_Arteriellen_Blut_Durch_Pulsoxymetrie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-spo2-postduktal"
+        },
+        "name": "FDPG PR ISiK Sauerstoffsaettigung Im Blut Postduktal Durch Pulsoxymetrie",
+        "description": "FDPG Profil - SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Postduktal_Durch_Pulsoxymetrie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-spo2-preduktal"
+        },
+        "name": "FDPG PR ISiK Sauerstoffsaettigung Im Blut Preduktal Durch Pulsoxymetrie",
+        "description": "FDPG Profil - SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Preduktal_Durch_Pulsoxymetrie",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-systemischer-vaskulaerer-widerstandsindex"
+        },
+        "name": "FDPG PR ISiK Systemischer Vaskulaerer Widerstandsindex",
+        "description": "FDPG Profil - SD_MII_ICU_Systemischer_Vaskulaerer_Widerstandsindex",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-zentralvenoeser-blutdruck"
+        },
+        "name": "FDPG PR ISiK Zentralvenoeser Blutdruck",
+        "description": "FDPG Profil - SD_MII_ICU_Zentralvenoeser_Blutdruck",
         "exampleBoolean": false
       },
       {
@@ -3260,6 +3674,11 @@
           "generation": "markdown"
         },
         {
+          "nameUrl": "modul-isik.html",
+          "title": "Modul ISiK",
+          "generation": "markdown"
+        },
+        {
           "nameUrl": "datenkatalog-basis.html",
           "title": "Datenkatalog Basisdaten",
           "generation": "markdown"
@@ -3337,6 +3756,11 @@
         {
           "nameUrl": "datenkatalog-mikrobiologie.html",
           "title": "Datenkatalog Mikrobiologie",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "datenkatalog-isik.html",
+          "title": "Datenkatalog ISiK",
           "generation": "markdown"
         },
         {

@@ -83,6 +83,10 @@ MODULES = {
         "package": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie",
         "version": "2027.0.0-ballot2",
     },
+    "isik": {
+        "package": "de.gematik.isik",
+        "version": "6.0.0",
+    },
 }
 
 FHIR_CACHE = Path.home() / ".fhir" / "packages"

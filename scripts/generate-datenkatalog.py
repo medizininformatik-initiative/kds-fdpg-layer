@@ -127,6 +127,13 @@ MODULES = {
         "title": "Mikrobiologie",
         "simplifier_url": "https://simplifier.net/packages/de.medizininformatikinitiative.kerndatensatz.mikrobiologie/2027.0.0-ballot2",
     },
+    "isik": {
+        "package": "de.gematik.isik",
+        "version": "6.0.0",
+        "title": "ISiK",
+        "subtitle": "ICU-Profile in gematik-Governance, Organspendeerkennung",
+        "simplifier_url": "https://simplifier.net/packages/de.gematik.isik/6.0.0",
+    },
 }
 
 # Sub-section groupings for large modules.  Extracted from existing modul-*.md.
@@ -834,6 +841,8 @@ def parse_module_sections(module_name: str) -> list[tuple[str, list[str]]]:
         "dokument": "modul-dokument.md",
         "mtb": "modul-mtb.md",
         "proms": "modul-pros.md",
+        "mikrobiologie": "modul-mikrobio.md",
+        "isik": "modul-isik.md",
     }
 
     page_filename = page_map.get(module_name, "")

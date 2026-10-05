@@ -87,9 +87,14 @@
       "code": "mikrobiologie",
       "display": "Mikrobiologie",
       "definition": "MII KDS Modul Mikrobiologie."
+    },
+    {
+      "code": "isik",
+      "display": "ISiK",
+      "definition": "gematik ISiK Stufe 6: ehemalige MII-ICU-Profile in gematik-Governance (Haemodynamik, Koerpertemperatur, Monitoring) sowie Datenpunkte der Organspendeerkennung."
     }
   ],
   "experimental": false,
   "caseSensitive": true,
-  "count": 16
+  "count": 17
 }

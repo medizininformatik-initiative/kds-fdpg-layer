@@ -1,0 +1,1576 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "fdpg-pr-isik-prozedur-beatmung",
+  "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-prozedur-beatmung",
+  "version": "2027.0.0-ballot-rc.1",
+  "name": "FDPG_PR_ISiK_Prozedur_Beatmung",
+  "title": "FDPG PR ISiK Prozedur Beatmung",
+  "_title": {
+    "extension": [
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "de-DE"
+          },
+          {
+            "url": "content",
+            "valueString": "Prozedur Beatmung"
+          }
+        ]
+      },
+      {
+        "url": "http://hl7.org/fhir/StructureDefinition/translation",
+        "extension": [
+          {
+            "url": "lang",
+            "valueCode": "en-US"
+          },
+          {
+            "url": "content",
+            "valueString": "Procedure Mechanical Ventilation"
+          }
+        ]
+      }
+    ]
+  },
+  "status": "active",
+  "experimental": false,
+  "date": "2025-01-16",
+  "publisher": "FDPG / Medizininformatik-Initiative",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://forschen-fuer-gesundheit.de"
+        }
+      ]
+    }
+  ],
+  "description": "FDPG Profil - ISiKProzedurBeatmung",
+  "copyright": "CC-BY-4.0: Medizininformatik-Initiative / FDPG",
+  "keyword": [
+    {
+      "code": "isik",
+      "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-module-cs"
+    }
+  ],
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Procedure",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/ISiKProzedurBeatmung",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Procedure.id",
+        "path": "Procedure.id",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Technische ID"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Technical ID"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Technische Ressourcen-ID; kein fachlicher Datenpunkt."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Technical resource id; not a clinical data point."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.extension",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "Procedure.extension",
+        "short": "Extension",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Erweiterung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Extension"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "FHIR-Erweiterung."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "FHIR extension."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.extension:Dokumentationsdatum",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "Procedure.extension",
+        "sliceName": "Dokumentationsdatum",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Dokumentationsdatum"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Documentation Date"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Datum der Dokumentation der Prozedur."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Date the procedure was documented."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.status",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "Procedure.status",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Status"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Status"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Status der Ressource."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Status of the resource."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.category",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "Procedure.category",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kategorie"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Category"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kategorisierung der Ressource."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Categorization of the resource."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.category.coding:SNOMED-CT",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "Procedure.category.coding",
+        "sliceName": "SNOMED-CT",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT coding"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.code",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "Procedure.code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kodierung des Inhalts."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Coding of the content."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.code.coding",
+        "path": "Procedure.code.coding",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code (Coding)"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code (Coding)"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kodierte Bezeichnung des Messwerts."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Coded designation of the observation."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.code.coding:OPS",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "Procedure.code.coding",
+        "sliceName": "OPS",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "OPS-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "OPS coding"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.code.coding:OPS.extension:Seitenlokalisation",
+        "path": "Procedure.code.coding.extension",
+        "sliceName": "Seitenlokalisation",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "OPS: Seitenlokalisation"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "OPS: Laterality"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Seitenlokalisation zum OPS-Code."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Laterality qualifier for the OPS code."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.code.coding:OPS.system",
+        "path": "Procedure.code.coding.system",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "OPS-System-URL"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "OPS system URL"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.code.coding:OPS.version",
+        "path": "Procedure.code.coding.version",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "OPS-Version"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "OPS version"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.code.coding:OPS.code",
+        "path": "Procedure.code.coding.code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code als OPS"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code as OPS"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.code.coding:SNOMED-CT",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "Procedure.code.coding",
+        "sliceName": "SNOMED-CT",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT-Kodierung"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT coding"
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.code.text",
+        "path": "Procedure.code.text",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code: Freitext"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code: Text"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Freitextbezeichnung der Prozedur."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Free-text designation of the procedure."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.subject",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "Procedure.subject",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Patient*in"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Patient"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Patientin oder Patient, auf die sich die Ressource bezieht."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "The patient that the resource relates to."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.subject.reference",
+        "path": "Procedure.subject.reference",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Patient (Referenz)"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Patient (Reference)"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Referenz auf die Patientin oder den Patienten."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Reference to the patient."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.encounter",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "Procedure.encounter",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Behandlungsfall"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Encounter"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Fall oder Kontakt, in dem die Ressource erfasst wurde."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Encounter in which the resource was recorded."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.encounter.reference",
+        "path": "Procedure.encounter.reference",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Fall (Referenz)"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Encounter (Reference)"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Referenz auf den Versorgungskontakt."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Reference to the encounter."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.performed[x]",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "Procedure.performed[x]",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Durchführungsdatum"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Performed"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Zeitpunkt oder Zeitraum der Durchführung."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Date or period when the procedure was performed."
+                }
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "id": "Procedure.note",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "handle"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "display"
+              },
+              {
+                "url": "actor",
+                "valueCanonical": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/ActorDefinition/fdpg-actor-fhir-ontology-extractor"
+              }
+            ]
+          }
+        ],
+        "path": "Procedure.note",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Hinweis"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Note"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Freitextkommentar zur Ressource."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Free-text comment on the resource."
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

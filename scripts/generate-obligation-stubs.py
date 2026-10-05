@@ -38,6 +38,20 @@ MODULES = {
     "mtb":          {"package": "de.medizininformatikinitiative.kerndatensatz.mtb",         "version": "2027.0.0-ballot.1",          "module_short": "Mtb",         "module_label": "MTB"},
     "proms":        {"package": "de.medizininformatikinitiative.kerndatensatz.pros",        "version": "2027.0.0-ballot.1",          "module_short": "Pro",         "module_label": "PRO"},
     "mikrobiologie":{"package": "de.medizininformatikinitiative.kerndatensatz.mikrobiologie","version": "2027.0.0-ballot2", "module_short": "Mikrobio",    "module_label": "Mikrobio"},
+    # ISiK 6: ICU-Profile in gematik-Governance (VitalSignICU-Rollen) + Organspendeerkennung.
+    # Positivliste in INCLUDED_PROFILES_BY_MODULE; Namensschema FDPG_PR_ISiK_<Rest>.
+    "isik":         {"package": "de.gematik.isik",                                         "version": "6.0.0",                "module_short": "ISiK",        "module_label": "ISiK",
+                     "name_strip": [r"^SD_MII_ICU_", r"^MII_?PR_ICU_", r"^ISiK"], "fdpg_prefix": "ISiK",
+                     # Ids, die sonst die 64-Zeichen-Grenze reissen
+                     "id_overrides": {
+                         "SD_MII_ICU_Linksventrikulaerer_Herzindex_Durch_Indikatorverduennung": "fdpg-pr-isik-herzindex-indikatorverduennung",
+                         "SD_MII_ICU_Linksventrikulaeres_Herzzeitvolumen_Durch_Indikatorverduennung": "fdpg-pr-isik-herzzeitvolumen-indikatorverduennung",
+                         "SD_MII_ICU_Linksventrikulaerer_Schlagvolumenindex_Durch_Indikatorverduennung": "fdpg-pr-isik-schlagvolumenindex-indikatorverduennung",
+                         "SD_MII_ICU_Linksventrikulaeres_Schlagvolumen_Durch_Indikatorverduennung": "fdpg-pr-isik-schlagvolumen-indikatorverduennung",
+                         "SD_MII_ICU_Sauerstoffsaettigung_Im_Arteriellen_Blut_Durch_Pulsoxymetrie": "fdpg-pr-isik-spo2-arteriell",
+                         "SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Postduktal_Durch_Pulsoxymetrie": "fdpg-pr-isik-spo2-postduktal",
+                         "SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Preduktal_Durch_Pulsoxymetrie": "fdpg-pr-isik-spo2-preduktal",
+                     }},
 }
 
 FHIR_CACHE = Path.home() / ".fhir" / "packages"
@@ -242,6 +256,44 @@ MODULE_NAME_FIXES = {
 # Profile, die wir aus upstream KDS-Modulen NICHT in den FDPG-Layer übernehmen
 # (z.B. abstrakte Grouper-Container, die im Antragsportal keine sinnvolle
 # Auswahl-Granularität haben).
+# Positivlisten: nur diese Parent-Profile werden fuer das Modul generiert.
+# ISiK: die nach ISiK 6 uebergegangenen ICU-Profile, die ISiK in den
+# VitalSignICU-Rollen fuehrt (Haemodynamik, Koerpertemperatur, Monitoring),
+# plus die Organspendeerkennungs-Datenpunkte, die es im MII-KDS nicht gibt.
+# Nicht enthalten: ISiK-Standardvitalwerte, Labor, Stammdaten sowie alles,
+# was ueber die MII-URL bereits im Modul ICU liegt (Bilanz, Pupillen, RASS, VENT_*).
+INCLUDED_PROFILES_BY_MODULE = {
+    "isik": {
+        # Organspendeerkennung
+        "ISiKGCS", "ISiKLaboruntersuchungSerumnatrium", "ISiKProzedurBeatmung", "ISiKProzedurReanimation",
+        "SD_MII_ICU_Intrakranieller_Druck_Icp", "MII_PR_ICU_MUV_zerebraler_Perfusionsdruck",
+        # Monitoring und Vitaldaten
+        "SD_MII_ICU_Puls", "SD_MII_ICU_Ideales_Koerpergewicht",
+        "SD_MII_ICU_Koerpergewicht_Percentil_Altersabhaengig", "SD_MII_ICU_Koerpergroesse_Percentil_Altersabhaengig",
+        "SD_MII_ICU_Sauerstoffsaettigung_Im_Arteriellen_Blut_Durch_Pulsoxymetrie",
+        "SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Postduktal_Durch_Pulsoxymetrie",
+        "SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Preduktal_Durch_Pulsoxymetrie",
+        # Koerpertemperatur
+        "SD_MII_ICU_Koerperkerntemperatur_Stirn", "SD_MII_ICU_Koerpertemperatur_Achsel", "SD_MII_ICU_Koerpertemperatur_Atemwege",
+        "SD_MII_ICU_Koerpertemperatur_Blut", "SD_MII_ICU_Koerpertemperatur_Brust", "SD_MII_ICU_Koerpertemperatur_Brustwirbelsaeule",
+        "SD_MII_ICU_Koerpertemperatur_Gelenk", "SD_MII_ICU_Koerpertemperatur_Halswirbelsaeule", "SD_MII_ICU_Koerpertemperatur_Harnblase",
+        "SD_MII_ICU_Koerpertemperatur_Kern", "SD_MII_ICU_Koerpertemperatur_Leiste", "SD_MII_ICU_Koerpertemperatur_Lendenwirbelsaeule",
+        "SD_MII_ICU_Koerpertemperatur_Myokard", "SD_MII_ICU_Koerpertemperatur_Nasal", "SD_MII_ICU_Koerpertemperatur_Nasen_Rachen_Raum",
+        "SD_MII_ICU_Koerpertemperatur_Oral", "SD_MII_ICU_Koerpertemperatur_Rektal", "SD_MII_ICU_Koerpertemperatur_Speiseroehre",
+        "SD_MII_ICU_Koerpertemperatur_Stirn", "SD_MII_ICU_Koerpertemperatur_Trommelfell", "SD_MII_ICU_Koerpertemperatur_Vaginal",
+        # Haemodynamik
+        "SD_MII_ICU_Herzzeitvolumen", "SD_MII_ICU_Linksatrialer_Druck", "SD_MII_ICU_Linksventrikulaerer_Druck",
+        "SD_MII_ICU_Linksventrikulaerer_Herzindex", "SD_MII_ICU_Linksventrikulaerer_Herzindex_Durch_Indikatorverduennung",
+        "SD_MII_ICU_Linksventrikulaerer_Schlagvolumenindex_Durch_Indikatorverduennung",
+        "SD_MII_ICU_Linksventrikulaeres_Herzzeitvolumen_Durch_Indikatorverduennung",
+        "SD_MII_ICU_Linksventrikulaeres_Schlagvolumen", "SD_MII_ICU_Linksventrikulaeres_Schlagvolumen_Durch_Indikatorverduennung",
+        "SD_MII_ICU_Linksventrikulaeres_Schlagvolumenindex", "SD_MII_ICU_Pulmonalarterieller_Blutdruck",
+        "SD_MII_ICU_Pulmonalarterieller_Wedge_Druck", "SD_MII_ICU_Pulmonalvaskulaerer_Widerstandsindex",
+        "SD_MII_ICU_Rechtsatrialer_Druck", "SD_MII_ICU_Rechtsventrikulaerer_Druck",
+        "SD_MII_ICU_Systemischer_Vaskulaerer_Widerstandsindex", "SD_MII_ICU_Zentralvenoeser_Blutdruck",
+    },
+}
+
 EXCLUDED_PROFILES_BY_MODULE = {
     # Patho: nur die upstream-abstrakten Observations weglassen
     # (Base_Observation + Section_Grouper). Die konkreten Grouper bleiben
@@ -281,6 +333,29 @@ def generate_fdpg_name(parent_name):
     return re.sub(r'^MII_?PR_', 'FDPG_PR_', parent_name)
 
 
+def derive_names(parent_name, module_config):
+    """(fdpg_name, fdpg_id, fdpg_title) fuer ein Parent-Profil.
+
+    Standard: MII_PR_<Modul>_<Rest> -> FDPG_PR_<Modul>_<Rest>. Module mit
+    `name_strip` (z.B. ISiK, dessen Profile SD_MII_ICU_*, MII_PR_ICU_* und
+    ISiK* heissen) bekommen ein einheitliches FDPG_PR_<fdpg_prefix>_<Rest>.
+    """
+    strips = module_config.get("name_strip")
+    if not strips:
+        return (generate_fdpg_name(parent_name), generate_fdpg_id(parent_name),
+                generate_fdpg_title(parent_name, module_config["module_label"]))
+    rest = parent_name
+    for rx in strips:
+        rest = re.sub(rx, "", rest)
+    rest = re.sub(r'([a-z])([A-Z])', r'\1_\2', rest)  # CamelCase -> Camel_Case
+    prefix = module_config["fdpg_prefix"]
+    fdpg_name = f"FDPG_PR_{prefix}_{rest}"
+    fdpg_id = module_config.get("id_overrides", {}).get(parent_name) or \
+        f"fdpg-pr-{prefix.lower()}-" + rest.replace("_", "-").lower()
+    fdpg_title = f"FDPG PR {module_config['module_label']} {rest.replace('_', ' ')}"
+    return fdpg_name, fdpg_id, fdpg_title
+
+
 def generate_fdpg_title(parent_name, module_label):
     """Generate FDPG profile title."""
     # Remove MII_PR_MODULE_ prefix and convert underscores to spaces
@@ -296,10 +371,7 @@ def generate_fdpg_title(parent_name, module_label):
 def generate_fsh_file(parent_sd, module_config, field_config=None, module_key=None):
     """Generate complete FSH file content for one profile."""
     parent_name = parent_sd["name"]
-    fdpg_name = generate_fdpg_name(parent_name)
-    fdpg_id = generate_fdpg_id(parent_name)
-    module_label = module_config["module_label"]
-    fdpg_title = generate_fdpg_title(parent_name, module_label)
+    fdpg_name, fdpg_id, fdpg_title = derive_names(parent_name, module_config)
 
     # Check ID length (FHIR limit: 64)
     if len(fdpg_id) > 64:
@@ -421,6 +493,15 @@ def process_module(module_name, generate_files=True, print_aliases=False, print_
 
     config = MODULES[module_name]
     profiles = load_profiles_from_package(config["package"], config["version"])
+
+    included = INCLUDED_PROFILES_BY_MODULE.get(module_name)
+    if included:
+        found = {p["name"] for p in profiles}
+        missing = sorted(included - found)
+        if missing:
+            print(f"  WARNING: {len(missing)} Positivlisten-Profile nicht im Paket: {missing}")
+        profiles = [p for p in profiles if p["name"] in included]
+        print(f"  Positivliste: {len(profiles)} von {len(found)} Profilen im Paket")
 
     excluded = EXCLUDED_PROFILES_BY_MODULE.get(module_name, set())
     if excluded:

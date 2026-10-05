@@ -1,0 +1,641 @@
+{
+  "_doc": "Module-specific FDPG labels for the 'isik' module (gematik ISiK 6). ISiK ships no DE/EN designations, so generic Observation/Procedure sub-elements (value[x].*, component.*, referenceRange.*, category slices, GCS and blood pressure components) are labelled here. Keys use FHIR element-id style without resource type prefix. Priority-2 override after canonical-labels.json (enrich-fsh-translations.py).",
+  "elements": {
+    "id": {
+      "de_short": "Technische ID",
+      "en_short": "Technical ID",
+      "de_def": "Technische Ressourcen-ID; kein fachlicher Datenpunkt.",
+      "en_def": "Technical resource id; not a clinical data point."
+    },
+    "category:vs-cat": {
+      "de_short": "Kategorie: Vitalparameter",
+      "en_short": "Category: Vital Signs",
+      "de_def": "Kategorie-Slice, der die Beobachtung als Vitalparameter kennzeichnet.",
+      "en_def": "Category slice marking the observation as a vital sign."
+    },
+    "category:VSCat": {
+      "de_short": "Kategorie: Vitalparameter",
+      "en_short": "Category: Vital Signs",
+      "de_def": "Kategorie-Slice, der die Beobachtung als Vitalparameter kennzeichnet.",
+      "en_def": "Category slice marking the observation as a vital sign."
+    },
+    "category:observation-category": {
+      "de_short": "Kategorie (HL7)",
+      "en_short": "Category (HL7)",
+      "de_def": "Kategorie nach HL7 Observation-Category.",
+      "en_def": "Category per HL7 observation category code system."
+    },
+    "category:sct": {
+      "de_short": "Kategorie (SNOMED CT)",
+      "en_short": "Category (SNOMED CT)",
+      "de_def": "Kategorie als SNOMED-CT-Code.",
+      "en_def": "Category as SNOMED CT code."
+    },
+    "category:survey": {
+      "de_short": "Kategorie: Erhebung",
+      "en_short": "Category: Survey",
+      "de_def": "Kategorie-Slice für Erhebungsinstrumente (Scores).",
+      "en_def": "Category slice for survey instruments (scores)."
+    },
+    "code.coding": {
+      "de_short": "Code (Coding)",
+      "en_short": "Code (Coding)",
+      "de_def": "Kodierte Bezeichnung des Messwerts.",
+      "en_def": "Coded designation of the observation."
+    },
+    "code.coding.code": {
+      "de_short": "Code",
+      "en_short": "Code",
+      "de_def": "Code im Codesystem.",
+      "en_def": "Code within the code system."
+    },
+    "code.coding.system": {
+      "de_short": "Codesystem",
+      "en_short": "Code System",
+      "de_def": "URI des Codesystems.",
+      "en_def": "URI of the code system."
+    },
+    "code.coding.display": {
+      "de_short": "Anzeigetext",
+      "en_short": "Display",
+      "de_def": "Anzeigetext zum Code.",
+      "en_def": "Display text for the code."
+    },
+    "code.coding:specific-loinc": {
+      "de_short": "Code (LOINC)",
+      "en_short": "Code (LOINC)",
+      "de_def": "LOINC-Code des Messwerts.",
+      "en_def": "LOINC code of the observation."
+    },
+    "code.coding:specific-IEEE-11073": {
+      "de_short": "Code (IEEE 11073)",
+      "en_short": "Code (IEEE 11073)",
+      "de_def": "Gerätenaher Code nach IEEE 11073-10101.",
+      "en_def": "Device-level code per IEEE 11073-10101."
+    },
+    "effective[x]:effectiveDateTime": {
+      "de_short": "Zeitpunkt",
+      "en_short": "Date/Time",
+      "de_def": "Zeitpunkt der Messung.",
+      "en_def": "Date and time of the measurement."
+    },
+    "encounter.reference": {
+      "de_short": "Fall (Referenz)",
+      "en_short": "Encounter (Reference)",
+      "de_def": "Referenz auf den Versorgungskontakt.",
+      "en_def": "Reference to the encounter."
+    },
+    "subject.reference": {
+      "de_short": "Patient (Referenz)",
+      "en_short": "Patient (Reference)",
+      "de_def": "Referenz auf die Patientin oder den Patienten.",
+      "en_def": "Reference to the patient."
+    },
+    "specimen.reference": {
+      "de_short": "Probe (Referenz)",
+      "en_short": "Specimen (Reference)",
+      "de_def": "Referenz auf die Probe.",
+      "en_def": "Reference to the specimen."
+    },
+    "specimen.identifier": {
+      "de_short": "Proben-Identifikator",
+      "en_short": "Specimen Identifier",
+      "de_def": "Identifikator der Probe.",
+      "en_def": "Identifier of the specimen."
+    },
+    "specimen.identifier.system": {
+      "de_short": "Proben-Identifikator: System",
+      "en_short": "Specimen Identifier: System",
+      "de_def": "Namensraum des Proben-Identifikators.",
+      "en_def": "Namespace of the specimen identifier."
+    },
+    "specimen.identifier.value": {
+      "de_short": "Proben-Identifikator: Wert",
+      "en_short": "Specimen Identifier: Value",
+      "de_def": "Wert des Proben-Identifikators.",
+      "en_def": "Value of the specimen identifier."
+    },
+    "identifier.system": {
+      "de_short": "Identifikator: System",
+      "en_short": "Identifier: System",
+      "de_def": "Namensraum des Identifikators.",
+      "en_def": "Namespace of the identifier."
+    },
+    "identifier.value": {
+      "de_short": "Identifikator: Wert",
+      "en_short": "Identifier: Value",
+      "de_def": "Wert des Identifikators.",
+      "en_def": "Value of the identifier."
+    },
+    "identifier.type": {
+      "de_short": "Identifikator: Typ",
+      "en_short": "Identifier: Type",
+      "de_def": "Typ des Identifikators.",
+      "en_def": "Type of the identifier."
+    },
+    "identifier.type.coding": {
+      "de_short": "Identifikator: Typ (Coding)",
+      "en_short": "Identifier: Type (Coding)",
+      "de_def": "Kodierter Typ des Identifikators.",
+      "en_def": "Coded type of the identifier."
+    },
+    "identifier:analyseBefundCode": {
+      "de_short": "Analyse-Befund-Code",
+      "en_short": "Analysis Result Code",
+      "de_def": "Identifikator des Laborbefunds (Analyse-Befund-Code).",
+      "en_def": "Identifier of the lab result (analysis result code)."
+    },
+    "value[x].value": {
+      "de_short": "Wert: Zahl",
+      "en_short": "Value: Number",
+      "de_def": "Numerischer Messwert.",
+      "en_def": "Numeric measured value."
+    },
+    "value[x].unit": {
+      "de_short": "Wert: Einheit",
+      "en_short": "Value: Unit",
+      "de_def": "Einheit des Messwerts (Anzeige).",
+      "en_def": "Unit of the measured value (display)."
+    },
+    "value[x].system": {
+      "de_short": "Wert: Einheitensystem",
+      "en_short": "Value: Unit System",
+      "de_def": "Codesystem der Einheit (UCUM).",
+      "en_def": "Code system of the unit (UCUM)."
+    },
+    "value[x].code": {
+      "de_short": "Wert: Einheitencode",
+      "en_short": "Value: Unit Code",
+      "de_def": "UCUM-Code der Einheit.",
+      "en_def": "UCUM code of the unit."
+    },
+    "value[x]:valueQuantity.value": {
+      "de_short": "Messwert (Quantity): Zahl",
+      "en_short": "Measured Value (Quantity): Number",
+      "de_def": "Numerischer Messwert.",
+      "en_def": "Numeric measured value."
+    },
+    "value[x]:valueQuantity.unit": {
+      "de_short": "Messwert (Quantity): Einheit",
+      "en_short": "Measured Value (Quantity): Unit",
+      "de_def": "Einheit des Messwerts (Anzeige).",
+      "en_def": "Unit of the measured value (display)."
+    },
+    "value[x]:valueQuantity.system": {
+      "de_short": "Messwert (Quantity): Einheitensystem",
+      "en_short": "Measured Value (Quantity): Unit System",
+      "de_def": "Codesystem der Einheit (UCUM).",
+      "en_def": "Code system of the unit (UCUM)."
+    },
+    "value[x]:valueQuantity.code": {
+      "de_short": "Messwert (Quantity): Einheitencode",
+      "en_short": "Measured Value (Quantity): Unit Code",
+      "de_def": "UCUM-Code der Einheit.",
+      "en_def": "UCUM code of the unit."
+    },
+    "component.code": {
+      "de_short": "Komponente: Code",
+      "en_short": "Component: Code",
+      "de_def": "Kodierte Bezeichnung der Komponente.",
+      "en_def": "Coded designation of the component."
+    },
+    "component.code.coding": {
+      "de_short": "Komponente: Code (Coding)",
+      "en_short": "Component: Code (Coding)",
+      "de_def": "Kodierte Bezeichnung der Komponente.",
+      "en_def": "Coded designation of the component."
+    },
+    "component.value[x]": {
+      "de_short": "Komponente: Wert",
+      "en_short": "Component: Value",
+      "de_def": "Wert der Komponente.",
+      "en_def": "Value of the component."
+    },
+    "component.value[x]:valueCodeableConcept": {
+      "de_short": "Komponente: Wert (kodiert)",
+      "en_short": "Component: Value (coded)",
+      "de_def": "Kodierter Wert der Komponente.",
+      "en_def": "Coded value of the component."
+    },
+    "component.value[x]:valueCodeableConcept.coding": {
+      "de_short": "Komponente: Wert (Coding)",
+      "en_short": "Component: Value (Coding)",
+      "de_def": "Kodierter Wert der Komponente.",
+      "en_def": "Coded value of the component."
+    },
+    "component.value[x]:valueCodeableConcept.coding.code": {
+      "de_short": "Komponente: Wert-Code",
+      "en_short": "Component: Value Code",
+      "de_def": "Code des Komponentenwerts.",
+      "en_def": "Code of the component value."
+    },
+    "component.value[x]:valueCodeableConcept.coding.system": {
+      "de_short": "Komponente: Wert-Codesystem",
+      "en_short": "Component: Value Code System",
+      "de_def": "Codesystem des Komponentenwerts.",
+      "en_def": "Code system of the component value."
+    },
+    "component.dataAbsentReason": {
+      "de_short": "Komponente: Grund für fehlenden Wert",
+      "en_short": "Component: Data Absent Reason",
+      "de_def": "Grund, warum der Komponentenwert fehlt.",
+      "en_def": "Reason why the component value is missing."
+    },
+    "component.interpretation": {
+      "de_short": "Komponente: Interpretation",
+      "en_short": "Component: Interpretation",
+      "de_def": "Interpretation des Komponentenwerts (z. B. hoch, niedrig).",
+      "en_def": "Interpretation of the component value (e.g. high, low)."
+    },
+    "component.referenceRange": {
+      "de_short": "Komponente: Referenzbereich",
+      "en_short": "Component: Reference Range",
+      "de_def": "Referenzbereich des Komponentenwerts.",
+      "en_def": "Reference range of the component value."
+    },
+    "component:SystolicBP": {
+      "de_short": "Systolischer Blutdruck",
+      "en_short": "Systolic Blood Pressure",
+      "de_def": "Komponente Systolischer Blutdruck.",
+      "en_def": "Component systolic blood pressure."
+    },
+    "component:SystolicBP.dataAbsentReason": {
+      "de_short": "Systolischer Blutdruck: Grund für fehlenden Wert",
+      "en_short": "Systolic Blood Pressure: Data Absent Reason",
+      "de_def": "Grund, warum der Wert fehlt.",
+      "en_def": "Reason why the value is missing."
+    },
+    "component:SystolicBP.value[x]": {
+      "de_short": "Systolischer Blutdruck: Wert",
+      "en_short": "Systolic Blood Pressure: Value",
+      "de_def": "Messwert.",
+      "en_def": "Measured value."
+    },
+    "component:SystolicBP.value[x].value": {
+      "de_short": "Systolischer Blutdruck: Zahl",
+      "en_short": "Systolic Blood Pressure: Number",
+      "de_def": "Numerischer Messwert.",
+      "en_def": "Numeric measured value."
+    },
+    "component:SystolicBP.value[x].unit": {
+      "de_short": "Systolischer Blutdruck: Einheit",
+      "en_short": "Systolic Blood Pressure: Unit",
+      "de_def": "Einheit (Anzeige).",
+      "en_def": "Unit (display)."
+    },
+    "component:SystolicBP.value[x].system": {
+      "de_short": "Systolischer Blutdruck: Einheitensystem",
+      "en_short": "Systolic Blood Pressure: Unit System",
+      "de_def": "Codesystem der Einheit (UCUM).",
+      "en_def": "Code system of the unit (UCUM)."
+    },
+    "component:SystolicBP.value[x].code": {
+      "de_short": "Systolischer Blutdruck: Einheitencode",
+      "en_short": "Systolic Blood Pressure: Unit Code",
+      "de_def": "UCUM-Code der Einheit.",
+      "en_def": "UCUM code of the unit."
+    },
+    "component:DiastolicBP": {
+      "de_short": "Diastolischer Blutdruck",
+      "en_short": "Diastolic Blood Pressure",
+      "de_def": "Komponente Diastolischer Blutdruck.",
+      "en_def": "Component diastolic blood pressure."
+    },
+    "component:DiastolicBP.dataAbsentReason": {
+      "de_short": "Diastolischer Blutdruck: Grund für fehlenden Wert",
+      "en_short": "Diastolic Blood Pressure: Data Absent Reason",
+      "de_def": "Grund, warum der Wert fehlt.",
+      "en_def": "Reason why the value is missing."
+    },
+    "component:DiastolicBP.value[x]": {
+      "de_short": "Diastolischer Blutdruck: Wert",
+      "en_short": "Diastolic Blood Pressure: Value",
+      "de_def": "Messwert.",
+      "en_def": "Measured value."
+    },
+    "component:DiastolicBP.value[x].value": {
+      "de_short": "Diastolischer Blutdruck: Zahl",
+      "en_short": "Diastolic Blood Pressure: Number",
+      "de_def": "Numerischer Messwert.",
+      "en_def": "Numeric measured value."
+    },
+    "component:DiastolicBP.value[x].unit": {
+      "de_short": "Diastolischer Blutdruck: Einheit",
+      "en_short": "Diastolic Blood Pressure: Unit",
+      "de_def": "Einheit (Anzeige).",
+      "en_def": "Unit (display)."
+    },
+    "component:DiastolicBP.value[x].system": {
+      "de_short": "Diastolischer Blutdruck: Einheitensystem",
+      "en_short": "Diastolic Blood Pressure: Unit System",
+      "de_def": "Codesystem der Einheit (UCUM).",
+      "en_def": "Code system of the unit (UCUM)."
+    },
+    "component:DiastolicBP.value[x].code": {
+      "de_short": "Diastolischer Blutdruck: Einheitencode",
+      "en_short": "Diastolic Blood Pressure: Unit Code",
+      "de_def": "UCUM-Code der Einheit.",
+      "en_def": "UCUM code of the unit."
+    },
+    "component:meanBP": {
+      "de_short": "Mittlerer arterieller Druck",
+      "en_short": "Mean Arterial Pressure",
+      "de_def": "Komponente Mittlerer arterieller Druck.",
+      "en_def": "Component mean arterial pressure."
+    },
+    "component:meanBP.dataAbsentReason": {
+      "de_short": "Mittlerer arterieller Druck: Grund für fehlenden Wert",
+      "en_short": "Mean Arterial Pressure: Data Absent Reason",
+      "de_def": "Grund, warum der Wert fehlt.",
+      "en_def": "Reason why the value is missing."
+    },
+    "component:meanBP.value[x]": {
+      "de_short": "Mittlerer arterieller Druck: Wert",
+      "en_short": "Mean Arterial Pressure: Value",
+      "de_def": "Messwert.",
+      "en_def": "Measured value."
+    },
+    "component:meanBP.value[x].value": {
+      "de_short": "Mittlerer arterieller Druck: Zahl",
+      "en_short": "Mean Arterial Pressure: Number",
+      "de_def": "Numerischer Messwert.",
+      "en_def": "Numeric measured value."
+    },
+    "component:meanBP.value[x].unit": {
+      "de_short": "Mittlerer arterieller Druck: Einheit",
+      "en_short": "Mean Arterial Pressure: Unit",
+      "de_def": "Einheit (Anzeige).",
+      "en_def": "Unit (display)."
+    },
+    "component:meanBP.value[x].system": {
+      "de_short": "Mittlerer arterieller Druck: Einheitensystem",
+      "en_short": "Mean Arterial Pressure: Unit System",
+      "de_def": "Codesystem der Einheit (UCUM).",
+      "en_def": "Code system of the unit (UCUM)."
+    },
+    "component:meanBP.value[x].code": {
+      "de_short": "Mittlerer arterieller Druck: Einheitencode",
+      "en_short": "Mean Arterial Pressure: Unit Code",
+      "de_def": "UCUM-Code der Einheit.",
+      "en_def": "UCUM code of the unit."
+    },
+    "component:Eye": {
+      "de_short": "GCS Augenöffnen",
+      "en_short": "GCS Eye Opening",
+      "de_def": "Teilscore GCS Augenöffnen.",
+      "en_def": "Sub-score gcs eye opening."
+    },
+    "component:Eye.code": {
+      "de_short": "GCS Augenöffnen: Code",
+      "en_short": "GCS Eye Opening: Code",
+      "de_def": "Kodierte Bezeichnung des Teilscores.",
+      "en_def": "Coded designation of the sub-score."
+    },
+    "component:Eye.code.coding": {
+      "de_short": "GCS Augenöffnen: Code",
+      "en_short": "GCS Eye Opening: Code",
+      "de_def": "Kodierte Bezeichnung des Teilscores.",
+      "en_def": "Coded designation of the sub-score."
+    },
+    "component:Eye.value[x]": {
+      "de_short": "GCS Augenöffnen: Wert",
+      "en_short": "GCS Eye Opening: Value",
+      "de_def": "Kodierter Teilscore-Wert.",
+      "en_def": "Coded sub-score value."
+    },
+    "component:Eye.value[x].coding": {
+      "de_short": "GCS Augenöffnen: Wert",
+      "en_short": "GCS Eye Opening: Value",
+      "de_def": "Kodierter Teilscore-Wert.",
+      "en_def": "Coded sub-score value."
+    },
+    "component:Eye.value[x].coding.code": {
+      "de_short": "GCS Augenöffnen: Wert-Code",
+      "en_short": "GCS Eye Opening: Value Code",
+      "de_def": "Code des Teilscore-Werts.",
+      "en_def": "Code of the sub-score value."
+    },
+    "component:Eye.value[x].coding.system": {
+      "de_short": "GCS Augenöffnen: Wert-Codesystem",
+      "en_short": "GCS Eye Opening: Value Code System",
+      "de_def": "Codesystem des Teilscore-Werts.",
+      "en_def": "Code system of the sub-score value."
+    },
+    "component:Motor": {
+      "de_short": "GCS motorische Reaktion",
+      "en_short": "GCS Motor Response",
+      "de_def": "Teilscore GCS motorische Reaktion.",
+      "en_def": "Sub-score gcs motor response."
+    },
+    "component:Motor.code": {
+      "de_short": "GCS motorische Reaktion: Code",
+      "en_short": "GCS Motor Response: Code",
+      "de_def": "Kodierte Bezeichnung des Teilscores.",
+      "en_def": "Coded designation of the sub-score."
+    },
+    "component:Motor.code.coding": {
+      "de_short": "GCS motorische Reaktion: Code",
+      "en_short": "GCS Motor Response: Code",
+      "de_def": "Kodierte Bezeichnung des Teilscores.",
+      "en_def": "Coded designation of the sub-score."
+    },
+    "component:Motor.value[x]": {
+      "de_short": "GCS motorische Reaktion: Wert",
+      "en_short": "GCS Motor Response: Value",
+      "de_def": "Kodierter Teilscore-Wert.",
+      "en_def": "Coded sub-score value."
+    },
+    "component:Motor.value[x].coding": {
+      "de_short": "GCS motorische Reaktion: Wert",
+      "en_short": "GCS Motor Response: Value",
+      "de_def": "Kodierter Teilscore-Wert.",
+      "en_def": "Coded sub-score value."
+    },
+    "component:Motor.value[x].coding.code": {
+      "de_short": "GCS motorische Reaktion: Wert-Code",
+      "en_short": "GCS Motor Response: Value Code",
+      "de_def": "Code des Teilscore-Werts.",
+      "en_def": "Code of the sub-score value."
+    },
+    "component:Motor.value[x].coding.system": {
+      "de_short": "GCS motorische Reaktion: Wert-Codesystem",
+      "en_short": "GCS Motor Response: Value Code System",
+      "de_def": "Codesystem des Teilscore-Werts.",
+      "en_def": "Code system of the sub-score value."
+    },
+    "component:Verbal": {
+      "de_short": "GCS verbale Reaktion",
+      "en_short": "GCS Verbal Response",
+      "de_def": "Teilscore GCS verbale Reaktion.",
+      "en_def": "Sub-score gcs verbal response."
+    },
+    "component:Verbal.code": {
+      "de_short": "GCS verbale Reaktion: Code",
+      "en_short": "GCS Verbal Response: Code",
+      "de_def": "Kodierte Bezeichnung des Teilscores.",
+      "en_def": "Coded designation of the sub-score."
+    },
+    "component:Verbal.code.coding": {
+      "de_short": "GCS verbale Reaktion: Code",
+      "en_short": "GCS Verbal Response: Code",
+      "de_def": "Kodierte Bezeichnung des Teilscores.",
+      "en_def": "Coded designation of the sub-score."
+    },
+    "component:Verbal.value[x]": {
+      "de_short": "GCS verbale Reaktion: Wert",
+      "en_short": "GCS Verbal Response: Value",
+      "de_def": "Kodierter Teilscore-Wert.",
+      "en_def": "Coded sub-score value."
+    },
+    "component:Verbal.value[x].coding": {
+      "de_short": "GCS verbale Reaktion: Wert",
+      "en_short": "GCS Verbal Response: Value",
+      "de_def": "Kodierter Teilscore-Wert.",
+      "en_def": "Coded sub-score value."
+    },
+    "component:Verbal.value[x].coding.code": {
+      "de_short": "GCS verbale Reaktion: Wert-Code",
+      "en_short": "GCS Verbal Response: Value Code",
+      "de_def": "Code des Teilscore-Werts.",
+      "en_def": "Code of the sub-score value."
+    },
+    "component:Verbal.value[x].coding.system": {
+      "de_short": "GCS verbale Reaktion: Wert-Codesystem",
+      "en_short": "GCS Verbal Response: Value Code System",
+      "de_def": "Codesystem des Teilscore-Werts.",
+      "en_def": "Code system of the sub-score value."
+    },
+    "referenceRange.low": {
+      "de_short": "Referenzbereich: untere Grenze",
+      "en_short": "Reference Range: Low",
+      "de_def": "Untere Grenze des Referenzbereichs.",
+      "en_def": "Lower bound of the reference range."
+    },
+    "referenceRange.high": {
+      "de_short": "Referenzbereich: obere Grenze",
+      "en_short": "Reference Range: High",
+      "de_def": "Obere Grenze des Referenzbereichs.",
+      "en_def": "Upper bound of the reference range."
+    },
+    "referenceRange.low.value": {
+      "de_short": "Referenzbereich untere Grenze: Zahl",
+      "en_short": "Reference Range Low: Number",
+      "de_def": "Numerischer Grenzwert.",
+      "en_def": "Numeric bound."
+    },
+    "referenceRange.low.unit": {
+      "de_short": "Referenzbereich untere Grenze: Einheit",
+      "en_short": "Reference Range Low: Unit",
+      "de_def": "Einheit (Anzeige).",
+      "en_def": "Unit (display)."
+    },
+    "referenceRange.low.system": {
+      "de_short": "Referenzbereich untere Grenze: Einheitensystem",
+      "en_short": "Reference Range Low: Unit System",
+      "de_def": "Codesystem der Einheit (UCUM).",
+      "en_def": "Code system of the unit (UCUM)."
+    },
+    "referenceRange.low.code": {
+      "de_short": "Referenzbereich untere Grenze: Einheitencode",
+      "en_short": "Reference Range Low: Unit Code",
+      "de_def": "UCUM-Code der Einheit.",
+      "en_def": "UCUM code of the unit."
+    },
+    "referenceRange.high.value": {
+      "de_short": "Referenzbereich obere Grenze: Zahl",
+      "en_short": "Reference Range High: Number",
+      "de_def": "Numerischer Grenzwert.",
+      "en_def": "Numeric bound."
+    },
+    "referenceRange.high.unit": {
+      "de_short": "Referenzbereich obere Grenze: Einheit",
+      "en_short": "Reference Range High: Unit",
+      "de_def": "Einheit (Anzeige).",
+      "en_def": "Unit (display)."
+    },
+    "referenceRange.high.system": {
+      "de_short": "Referenzbereich obere Grenze: Einheitensystem",
+      "en_short": "Reference Range High: Unit System",
+      "de_def": "Codesystem der Einheit (UCUM).",
+      "en_def": "Code system of the unit (UCUM)."
+    },
+    "referenceRange.high.code": {
+      "de_short": "Referenzbereich obere Grenze: Einheitencode",
+      "en_short": "Reference Range High: Unit Code",
+      "de_def": "UCUM-Code der Einheit.",
+      "en_def": "UCUM code of the unit."
+    },
+    "referenceRange.type": {
+      "de_short": "Referenzbereich: Typ",
+      "en_short": "Reference Range: Type",
+      "de_def": "Art des Referenzbereichs.",
+      "en_def": "Kind of reference range."
+    },
+    "referenceRange.type.coding.display": {
+      "de_short": "Referenzbereich: Typ (Anzeigetext)",
+      "en_short": "Reference Range: Type (Display)",
+      "de_def": "Anzeigetext des Referenzbereichstyps.",
+      "en_def": "Display text of the reference range type."
+    },
+    "referenceRange.appliesTo": {
+      "de_short": "Referenzbereich: gilt für",
+      "en_short": "Reference Range: Applies To",
+      "de_def": "Population, für die der Referenzbereich gilt.",
+      "en_def": "Population the reference range applies to."
+    },
+    "referenceRange.appliesTo.coding": {
+      "de_short": "Referenzbereich: gilt für",
+      "en_short": "Reference Range: Applies To",
+      "de_def": "Population, für die der Referenzbereich gilt.",
+      "en_def": "Population the reference range applies to."
+    },
+    "referenceRange.appliesTo.coding.display": {
+      "de_short": "Referenzbereich: gilt für (Anzeigetext)",
+      "en_short": "Reference Range: Applies To (Display)",
+      "de_def": "Anzeigetext der Zielpopulation.",
+      "en_def": "Display text of the target population."
+    },
+    "referenceRange.age": {
+      "de_short": "Referenzbereich: Altersbereich",
+      "en_short": "Reference Range: Age",
+      "de_def": "Altersbereich, für den der Referenzbereich gilt.",
+      "en_def": "Age range the reference range applies to."
+    },
+    "referenceRange.age.low": {
+      "de_short": "Referenzbereich: Alter von",
+      "en_short": "Reference Range: Age From",
+      "de_def": "Untere Altersgrenze.",
+      "en_def": "Lower age bound."
+    },
+    "referenceRange.age.high": {
+      "de_short": "Referenzbereich: Alter bis",
+      "en_short": "Reference Range: Age To",
+      "de_def": "Obere Altersgrenze.",
+      "en_def": "Upper age bound."
+    },
+    "referenceRange.text": {
+      "de_short": "Referenzbereich: Text",
+      "en_short": "Reference Range: Text",
+      "de_def": "Referenzbereich als Freitext.",
+      "en_def": "Reference range as free text."
+    },
+    "code.text": {
+      "de_short": "Code: Freitext",
+      "en_short": "Code: Text",
+      "de_def": "Freitextbezeichnung der Prozedur.",
+      "en_def": "Free-text designation of the procedure."
+    },
+    "code.coding:OPS.extension:Seitenlokalisation": {
+      "de_short": "OPS: Seitenlokalisation",
+      "en_short": "OPS: Laterality",
+      "de_def": "Seitenlokalisation zum OPS-Code.",
+      "en_def": "Laterality qualifier for the OPS code."
+    },
+    "extension:Dokumentationsdatum": {
+      "de_short": "Dokumentationsdatum",
+      "en_short": "Documentation Date",
+      "de_def": "Datum der Dokumentation der Prozedur.",
+      "en_def": "Date the procedure was documented."
+    }
+  }
+}

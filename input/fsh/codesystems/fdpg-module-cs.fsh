@@ -24,3 +24,4 @@ Description: "Codes für die Zuordnung eines FDPG-Profils zum ursprünglichen MI
 * #mtb "Molekulares Tumorboard" "MII KDS Modul Molekulares Tumorboard (MTB)."
 * #proms "Patient-Reported Outcomes" "MII KDS Modul Patient-Reported Outcomes (PRO/PROMs)."
 * #mikrobiologie "Mikrobiologie" "MII KDS Modul Mikrobiologie."
+* #isik "ISiK" "gematik ISiK Stufe 6: ehemalige MII-ICU-Profile in gematik-Governance (Haemodynamik, Koerpertemperatur, Monitoring) sowie Datenpunkte der Organspendeerkennung."

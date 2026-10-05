@@ -59,7 +59,7 @@ Die MII KDS-Module werden von verschiedenen Arbeitsgruppen gepflegt. Eine zentra
 
 ## Module Coverage
 
-Diese Layer deckt 16 MII Kerndatensatz Module mit insgesamt 368 Profilen ab (Stand KDS Complete 2027.0.0-ballot.19; Symptom ist ausstehend):
+Diese Layer deckt 16 MII Kerndatensatz Module plus ISiK 6 mit insgesamt 419 Profilen ab (Stand KDS Complete 2027.0.0-ballot.19; Symptom ist ausstehend):
 
 | Modul | Profile | Quellpaket-Version | Status |
 |-------|---------|-------------------|--------|
@@ -82,8 +82,9 @@ Diese Layer deckt 16 MII Kerndatensatz Module mit insgesamt 368 Profilen ab (Sta
 | [Molekulares Tumorboard](modul-mtb.html) | 50 | mtb 2027.0.0-ballot.1 | Aktiv |
 | [PROMs](modul-pros.html) | 23 | pros 2027.0.0-ballot.1 | Aktiv |
 | [Mikrobiologie](modul-mikrobio.html) | 21 | mikrobiologie 2027.0.0-ballot2 | Aktiv |
+| [ISiK](modul-isik.html) | 51 | isik 6.0.0 | Aktiv |
 | [Symptom](modul-symptom.html) | -- | symptom 2027.0.0-ballot | Ausstehend |
-| **Gesamt** | **368** | | |
+| **Gesamt** | **419** | | |
 
 ## Verwendung
 

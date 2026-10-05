@@ -42,6 +42,9 @@ dependencies:
   de.medizininformatikinitiative.kerndatensatz.pros: 2027.0.0-ballot.1
   de.medizininformatikinitiative.kerndatensatz.consent: 2027.0.0-ballot
 
+  # gematik ISiK 6 (ICU-Profile in gematik-Governance + Organspendeerkennung)
+  de.gematik.isik: 6.0.0
+
 parameters:
   show-inherited-invariants: false
   apply-jurisdiction: true
@@ -102,6 +105,8 @@ pages:
     title: Modul PRO
   modul-mikrobio.md:
     title: Modul Mikrobiologie
+  modul-isik.md:
+    title: Modul ISiK
   datenkatalog-basis.md:
     title: Datenkatalog Basisdaten
   datenkatalog-labor.md:
@@ -134,6 +139,8 @@ pages:
     title: Datenkatalog PRO
   datenkatalog-mikrobiologie.md:
     title: Datenkatalog Mikrobiologie
+  datenkatalog-isik.md:
+    title: Datenkatalog ISiK
   pre-select-rationale.md:
     title: Pre-Select-Rationale
   changelog.md:
@@ -164,6 +171,7 @@ menu:
     MTB: modul-mtb.html
     PRO: modul-pros.html
     Mikrobiologie: modul-mikrobio.html
+    ISiK: modul-isik.html
   Datenkatalog:
     Basisdaten: datenkatalog-basis.html
     Laborbefund: datenkatalog-labor.html
@@ -181,6 +189,7 @@ menu:
     MTB: datenkatalog-mtb.html
     PRO: datenkatalog-pros.html
     Mikrobiologie: datenkatalog-mikrobiologie.html
+    ISiK: datenkatalog-isik.html
   Pre-Select: pre-select-rationale.html
   Changelog: changelog.html
   Artifacts: artifacts.html

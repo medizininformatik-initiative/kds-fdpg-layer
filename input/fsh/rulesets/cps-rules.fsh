@@ -102,7 +102,7 @@ RuleSet: FDPG_CPS_AllergyIntolerance
 * insert SupportSearchParam(code, http://hl7.org/fhir/SearchParameter/clinical-code, #token, #SHALL)
 * insert SupportSearchParam(clinical-status, http://hl7.org/fhir/SearchParameter/AllergyIntolerance-clinical-status, #token, #SHALL)
 
-// --- Procedure (from: Basis, MolGen, ICU, Bildgebung, Seltene Erkrankungen, Onkologie, MTB) ---
+// --- Procedure (from: Basis, MolGen, ICU, Bildgebung, Seltene Erkrankungen, Onkologie, MTB, ISiK) ---
 
 RuleSet: FDPG_CPS_Procedure
 * insert SupportResource(Procedure, #SHALL)
@@ -137,6 +137,9 @@ RuleSet: FDPG_CPS_Procedure
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-genomic-study)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-systemische-therapie)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-systemische-vortherapie)
+// ISiK
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-prozedur-beatmung)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-prozedur-reanimation)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams
@@ -162,7 +165,7 @@ RuleSet: FDPG_CPS_Encounter
 * insert SupportSearchParam(status, http://hl7.org/fhir/SearchParameter/Encounter-status, #token, #SHALL)
 * insert SupportSearchParam(type, http://hl7.org/fhir/SearchParameter/clinical-type, #token, #SHALL)
 
-// --- Observation (from: Basis, Labor, Biobank, MolGen, Patho, ICU, Bildgebung, Seltene Erkrankungen, Onkologie, MTB, PRO, Mikrobio) ---
+// --- Observation (from: Basis, Labor, Biobank, MolGen, Patho, ICU, Bildgebung, Seltene Erkrankungen, Onkologie, MTB, PRO, Mikrobio, ISiK) ---
 
 RuleSet: FDPG_CPS_Observation
 * insert SupportResource(Observation, #SHALL)
@@ -421,6 +424,56 @@ RuleSet: FDPG_CPS_Observation
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mikrobio-titer)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mikrobio-virulenzfaktor)
 * insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mikrobio-voraussichtliche-empfindlichkeit)
+// ISiK
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-gcs)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-herzindex-indikatorverduennung)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-herzzeitvolumen-indikatorverduennung)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-herzzeitvolumen)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-ideales-koerpergewicht)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-intrakranieller-druck-icp)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpergewicht-percentil-altersabhaengig)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpergroesse-percentil-altersabhaengig)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerperkerntemperatur-stirn)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-achsel)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-atemwege)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-blut)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-brust)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-brustwirbelsaeule)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-gelenk)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-halswirbelsaeule)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-harnblase)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-kern)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-leiste)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-lendenwirbelsaeule)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-myokard)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-nasal)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-nasen-rachen-raum)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-oral)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-rektal)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-speiseroehre)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-stirn)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-trommelfell)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-koerpertemperatur-vaginal)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-laboruntersuchung-serumnatrium)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-linksatrialer-druck)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-linksventrikulaerer-druck)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-linksventrikulaerer-herzindex)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-linksventrikulaeres-schlagvolumen)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-linksventrikulaeres-schlagvolumenindex)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-muv-zerebraler-perfusionsdruck)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-pulmonalarterieller-blutdruck)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-pulmonalarterieller-wedge-druck)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-pulmonalvaskulaerer-widerstandsindex)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-puls)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-rechtsatrialer-druck)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-rechtsventrikulaerer-druck)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-schlagvolumen-indikatorverduennung)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-schlagvolumenindex-indikatorverduennung)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-spo2-arteriell)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-spo2-postduktal)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-spo2-preduktal)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-systemischer-vaskulaerer-widerstandsindex)
+* insert SupportProfile(https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-isik-zentralvenoeser-blutdruck)
 * insert SupportInteraction(#read, #SHALL)
 * insert SupportInteraction(#search-type, #SHALL)
 * insert CommonSearchParams

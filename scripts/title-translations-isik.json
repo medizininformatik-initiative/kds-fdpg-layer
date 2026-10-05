@@ -1,0 +1,207 @@
+{
+  "_doc": "Kuratierte DE/EN-Titel fuer das Modul ISiK (gematik ISiK 6). ISiK liefert keine Translation-Designations, daher vollstaendig von Hand gepflegt. Keys = Parent-Profilname im ISiK-Paket.",
+  "ISiKGCS": {
+    "de-DE": "Glasgow Coma Scale (GCS)",
+    "en-US": "Glasgow Coma Scale (GCS)"
+  },
+  "ISiKLaboruntersuchungSerumnatrium": {
+    "de-DE": "Serumnatrium",
+    "en-US": "Serum Sodium"
+  },
+  "ISiKProzedurBeatmung": {
+    "de-DE": "Prozedur Beatmung",
+    "en-US": "Procedure Mechanical Ventilation"
+  },
+  "ISiKProzedurReanimation": {
+    "de-DE": "Prozedur Reanimation",
+    "en-US": "Procedure Resuscitation"
+  },
+  "SD_MII_ICU_Intrakranieller_Druck_Icp": {
+    "de-DE": "Intrakranieller Druck (ICP)",
+    "en-US": "Intracranial Pressure (ICP)"
+  },
+  "MII_PR_ICU_MUV_zerebraler_Perfusionsdruck": {
+    "de-DE": "Zerebraler Perfusionsdruck (CPP)",
+    "en-US": "Cerebral Perfusion Pressure (CPP)"
+  },
+  "SD_MII_ICU_Puls": {
+    "de-DE": "Puls",
+    "en-US": "Pulse Rate"
+  },
+  "SD_MII_ICU_Ideales_Koerpergewicht": {
+    "de-DE": "Ideales Körpergewicht",
+    "en-US": "Ideal Body Weight"
+  },
+  "SD_MII_ICU_Koerpergewicht_Percentil_Altersabhaengig": {
+    "de-DE": "Körpergewicht-Perzentile (altersabhängig)",
+    "en-US": "Body Weight Percentile (Age-Dependent)"
+  },
+  "SD_MII_ICU_Koerpergroesse_Percentil_Altersabhaengig": {
+    "de-DE": "Körpergröße-Perzentile (altersabhängig)",
+    "en-US": "Body Height Percentile (Age-Dependent)"
+  },
+  "SD_MII_ICU_Sauerstoffsaettigung_Im_Arteriellen_Blut_Durch_Pulsoxymetrie": {
+    "de-DE": "Sauerstoffsättigung arteriell (Pulsoxymetrie)",
+    "en-US": "Arterial Oxygen Saturation by Pulse Oximetry"
+  },
+  "SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Postduktal_Durch_Pulsoxymetrie": {
+    "de-DE": "Sauerstoffsättigung postduktal (Pulsoxymetrie)",
+    "en-US": "Postductal Oxygen Saturation by Pulse Oximetry"
+  },
+  "SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Preduktal_Durch_Pulsoxymetrie": {
+    "de-DE": "Sauerstoffsättigung präduktal (Pulsoxymetrie)",
+    "en-US": "Preductal Oxygen Saturation by Pulse Oximetry"
+  },
+  "SD_MII_ICU_Koerperkerntemperatur_Stirn": {
+    "de-DE": "Körperkerntemperatur Stirn",
+    "en-US": "Core Body Temperature Forehead"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Achsel": {
+    "de-DE": "Körpertemperatur axillär",
+    "en-US": "Body Temperature Axillary"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Atemwege": {
+    "de-DE": "Körpertemperatur Atemwege",
+    "en-US": "Body Temperature Airway"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Blut": {
+    "de-DE": "Körpertemperatur Blut",
+    "en-US": "Body Temperature Blood"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Brust": {
+    "de-DE": "Körpertemperatur Brust",
+    "en-US": "Body Temperature Chest"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Brustwirbelsaeule": {
+    "de-DE": "Körpertemperatur Brustwirbelsäule",
+    "en-US": "Body Temperature Thoracic Spine"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Gelenk": {
+    "de-DE": "Körpertemperatur Gelenk",
+    "en-US": "Body Temperature Joint"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Halswirbelsaeule": {
+    "de-DE": "Körpertemperatur Halswirbelsäule",
+    "en-US": "Body Temperature Cervical Spine"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Harnblase": {
+    "de-DE": "Körpertemperatur Harnblase",
+    "en-US": "Body Temperature Urinary Bladder"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Kern": {
+    "de-DE": "Körperkerntemperatur",
+    "en-US": "Core Body Temperature"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Leiste": {
+    "de-DE": "Körpertemperatur Leiste",
+    "en-US": "Body Temperature Groin"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Lendenwirbelsaeule": {
+    "de-DE": "Körpertemperatur Lendenwirbelsäule",
+    "en-US": "Body Temperature Lumbar Spine"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Myokard": {
+    "de-DE": "Körpertemperatur Myokard",
+    "en-US": "Body Temperature Myocardium"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Nasal": {
+    "de-DE": "Körpertemperatur nasal",
+    "en-US": "Body Temperature Nasal"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Nasen_Rachen_Raum": {
+    "de-DE": "Körpertemperatur Nasen-Rachen-Raum",
+    "en-US": "Body Temperature Nasopharynx"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Oral": {
+    "de-DE": "Körpertemperatur oral",
+    "en-US": "Body Temperature Oral"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Rektal": {
+    "de-DE": "Körpertemperatur rektal",
+    "en-US": "Body Temperature Rectal"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Speiseroehre": {
+    "de-DE": "Körpertemperatur ösophageal",
+    "en-US": "Body Temperature Esophageal"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Stirn": {
+    "de-DE": "Körpertemperatur Stirn",
+    "en-US": "Body Temperature Forehead"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Trommelfell": {
+    "de-DE": "Körpertemperatur tympanal",
+    "en-US": "Body Temperature Tympanic"
+  },
+  "SD_MII_ICU_Koerpertemperatur_Vaginal": {
+    "de-DE": "Körpertemperatur vaginal",
+    "en-US": "Body Temperature Vaginal"
+  },
+  "SD_MII_ICU_Herzzeitvolumen": {
+    "de-DE": "Herzzeitvolumen",
+    "en-US": "Cardiac Output"
+  },
+  "SD_MII_ICU_Linksatrialer_Druck": {
+    "de-DE": "Linksatrialer Druck",
+    "en-US": "Left Atrial Pressure"
+  },
+  "SD_MII_ICU_Linksventrikulaerer_Druck": {
+    "de-DE": "Linksventrikulärer Druck",
+    "en-US": "Left Ventricular Pressure"
+  },
+  "SD_MII_ICU_Linksventrikulaerer_Herzindex": {
+    "de-DE": "Herzindex",
+    "en-US": "Cardiac Index"
+  },
+  "SD_MII_ICU_Linksventrikulaerer_Herzindex_Durch_Indikatorverduennung": {
+    "de-DE": "Herzindex (Indikatorverdünnung)",
+    "en-US": "Cardiac Index by Indicator Dilution"
+  },
+  "SD_MII_ICU_Linksventrikulaerer_Schlagvolumenindex_Durch_Indikatorverduennung": {
+    "de-DE": "Schlagvolumenindex (Indikatorverdünnung)",
+    "en-US": "Stroke Volume Index by Indicator Dilution"
+  },
+  "SD_MII_ICU_Linksventrikulaeres_Herzzeitvolumen_Durch_Indikatorverduennung": {
+    "de-DE": "Herzzeitvolumen (Indikatorverdünnung)",
+    "en-US": "Cardiac Output by Indicator Dilution"
+  },
+  "SD_MII_ICU_Linksventrikulaeres_Schlagvolumen": {
+    "de-DE": "Schlagvolumen",
+    "en-US": "Stroke Volume"
+  },
+  "SD_MII_ICU_Linksventrikulaeres_Schlagvolumen_Durch_Indikatorverduennung": {
+    "de-DE": "Schlagvolumen (Indikatorverdünnung)",
+    "en-US": "Stroke Volume by Indicator Dilution"
+  },
+  "SD_MII_ICU_Linksventrikulaeres_Schlagvolumenindex": {
+    "de-DE": "Schlagvolumenindex",
+    "en-US": "Stroke Volume Index"
+  },
+  "SD_MII_ICU_Pulmonalarterieller_Blutdruck": {
+    "de-DE": "Pulmonalarterieller Blutdruck",
+    "en-US": "Pulmonary Artery Pressure"
+  },
+  "SD_MII_ICU_Pulmonalarterieller_Wedge_Druck": {
+    "de-DE": "Pulmonalarterieller Verschlussdruck (Wedge)",
+    "en-US": "Pulmonary Artery Wedge Pressure"
+  },
+  "SD_MII_ICU_Pulmonalvaskulaerer_Widerstandsindex": {
+    "de-DE": "Pulmonalvaskulärer Widerstandsindex",
+    "en-US": "Pulmonary Vascular Resistance Index"
+  },
+  "SD_MII_ICU_Rechtsatrialer_Druck": {
+    "de-DE": "Rechtsatrialer Druck",
+    "en-US": "Right Atrial Pressure"
+  },
+  "SD_MII_ICU_Rechtsventrikulaerer_Druck": {
+    "de-DE": "Rechtsventrikulärer Druck",
+    "en-US": "Right Ventricular Pressure"
+  },
+  "SD_MII_ICU_Systemischer_Vaskulaerer_Widerstandsindex": {
+    "de-DE": "Systemischer vaskulärer Widerstandsindex",
+    "en-US": "Systemic Vascular Resistance Index"
+  },
+  "SD_MII_ICU_Zentralvenoeser_Blutdruck": {
+    "de-DE": "Zentralvenöser Druck (ZVD)",
+    "en-US": "Central Venous Pressure (CVP)"
+  }
+}

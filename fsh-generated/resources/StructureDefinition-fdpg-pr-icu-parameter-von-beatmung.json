@@ -61,7 +61,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/ext/modul-icu/StructureDefinition/mii-pr-icu-parameter-von-beatmung",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-vent-icu-parameter-von-beatmung",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -188,6 +188,7 @@
           }
         ],
         "path": "Observation.partOf",
+        "short": "Die Beobachtung gehört zu einem spezifischen Beatmungsverfahren.",
         "_short": {
           "extension": [
             {
@@ -218,6 +219,7 @@
             }
           ]
         },
+        "definition": "Dasjenige Beatmungsverfahren, im Rahmen dessen der vorliegende Parameter (die Daten dieser Observation-Ressource) erhoben wurden.",
         "_definition": {
           "extension": [
             {

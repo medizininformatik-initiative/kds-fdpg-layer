@@ -67,6 +67,9 @@ jobs:
 
       - name: Run SUSHI
         run: sushi .
+        env:
+          # ISiK 6 + transitive Pakete sprengen den 4-GB-Standard-Heap von Node
+          NODE_OPTIONS: --max-old-space-size=6144
 
       - name: Download IG Publisher
         run: |

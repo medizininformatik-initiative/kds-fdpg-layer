@@ -1,117 +1,6 @@
 {
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-prozedur-procedure",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
-      "valueCoding": {
-        "system": "http://hl7.org/fhir/version-algorithm",
-        "code": "semver",
-        "display": "SemVer"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
-      "valueCode": "shareable"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
-      "valueCode": "publishable"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
-            "version": "3.0.0",
-            "code": "package",
-            "display": "Package"
-          }
-        ]
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/artifact-usage",
-      "valueMarkdown": "Use this profile as the technical FHIR representation of the corresponding Medical Informatics Initiative logical model. The profile constrains a base FHIR resource for the MII module context by specifying how elements are used, which elements are required or not used, which extensions and terminology bindings apply, and how the resource maps to the module-specific content model. Implementers should produce and consume resource instances that conform to this profile when exchanging data for the corresponding MII module."
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/artifact-topic",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-            "code": "C25218"
-          }
-        ]
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/artifact-author",
-      "valueContactDetail": {
-        "telecom": [
-          {
-            "system": "email",
-            "value": "julian.sass@charite.de"
-          }
-        ]
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/artifact-editor",
-      "valueContactDetail": {
-        "name": "Taskforce Core Data Set"
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
-      "valueContactDetail": {
-        "name": "Interoperability Working Group",
-        "telecom": [
-          {
-            "system": "url",
-            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
-          }
-        ]
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
-      "valueContactDetail": {
-        "name": "National Steering Committee",
-        "telecom": [
-          {
-            "system": "url",
-            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
-          }
-        ]
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
-      "valueContactDetail": {
-        "name": "Interoperability Working Group",
-        "telecom": [
-          {
-            "system": "url",
-            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
-          }
-        ]
-      }
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
-      "valueContactDetail": {
-        "name": "National Steering Committee",
-        "telecom": [
-          {
-            "system": "url",
-            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
-          }
-        ]
-      }
-    }
-  ],
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-prozedur-procedure",
   "version": "2027.0.0-ballot-rc.1",
   "name": "FDPG_PR_Prozedur_Procedure",
@@ -172,7 +61,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Procedure",
-  "baseDefinition": "https://www.medizininformatik-initiative.de/fhir/core/modul-prozedur/StructureDefinition/Procedure",
+  "baseDefinition": "https://gematik.de/fhir/isik/StructureDefinition/mii-pr-prozedur-procedure",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -207,6 +96,7 @@
           }
         ],
         "path": "Procedure.extension",
+        "short": "Extension",
         "_short": {
           "extension": [
             {
@@ -237,6 +127,7 @@
             }
           ]
         },
+        "definition": "An Extension",
         "_definition": {
           "extension": [
             {
@@ -299,7 +190,67 @@
           }
         ],
         "path": "Procedure.extension",
-        "sliceName": "Dokumentationsdatum"
+        "sliceName": "Dokumentationsdatum",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Dokumentationsdatum"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Recorded date"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Dokumentationsdatum der Prozedur, falls abweichend vom Durchführungsdatum"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "The date the procedure was documented, if different from the performed date"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Procedure.extension:durchfuehrungsabsicht",
@@ -332,7 +283,69 @@
           }
         ],
         "path": "Procedure.extension",
-        "sliceName": "durchfuehrungsabsicht"
+        "sliceName": "durchfuehrungsabsicht",
+        "short": "Durchführungsabsicht",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Durchführungsabsicht"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Intention"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "therapeutisch | palliativ | diagnostisch | präventiv | rehabilitativ | andere",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "therapeutisch | palliativ | diagnostisch | präventiv | rehabilitativ | andere"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "therapeutic | palliative | diagnostic | preventive | rehabilitative | other"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Procedure.status",
@@ -380,7 +393,67 @@
             ]
           }
         ],
-        "path": "Procedure.status"
+        "path": "Procedure.status",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Status"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Status"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Vorbereitung | in Arbeit | nicht durchgeführt | pausiert | abgebrochen | abgeschlossen | Eingabe fehlerhaft | unbekannt"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "preparation | in-progress | not-done | on-hold | stopped | completed | entered-in-error | unknown"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Procedure.category",
@@ -412,7 +485,67 @@
             ]
           }
         ],
-        "path": "Procedure.category"
+        "path": "Procedure.category",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kategorie"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Category"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Diagnostische Maßnahmen | Bildgebende Diagnostik | Operationen | Medikamente | Nichtoperative therapeutische Maßnahmen | Ergänzende Maßnahmen"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Diagnostic procedures | Imaging procedures | Operations | Medications | Non-operative therapeutic procedures | Other procedures"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Procedure.category.coding:sct",
@@ -445,7 +578,69 @@
           }
         ],
         "path": "Procedure.category.coding",
-        "sliceName": "sct"
+        "sliceName": "sct",
+        "short": "SNOMED CT Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen von SNOMED CT definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von SNOMED CT definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by SNOMED CT"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Procedure.category.coding:sct.system",
@@ -563,7 +758,67 @@
             ]
           }
         ],
-        "path": "Procedure.code"
+        "path": "Procedure.code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code aus OPS - Operationen- und Prozedurenschlüssel, SNOMED CT oder andere."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Code from OPS - Operationen- und Prozedurenschlüssel, SNOMED CT or other."
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Procedure.code.coding:ops",
@@ -596,7 +851,69 @@
           }
         ],
         "path": "Procedure.code.coding",
-        "sliceName": "ops"
+        "sliceName": "ops",
+        "short": "Operationen- und Prozedurenschlüssel (OPS) Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "OPS Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "OPS code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel (OPS) definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen vom Operationen- und Prozedurenschlüssel definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by the German Procedure Classification OPS"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Procedure.code.coding:ops.system",
@@ -731,7 +1048,69 @@
           }
         ],
         "path": "Procedure.code.coding",
-        "sliceName": "sct"
+        "sliceName": "sct",
+        "short": "SNOMED CT Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen von SNOMED CT definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von SNOMED CT definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by SNOMED CT"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Procedure.code.coding:sct.system",
@@ -941,7 +1320,69 @@
             ]
           }
         ],
-        "path": "Procedure.encounter"
+        "path": "Procedure.encounter",
+        "short": "Kontakt (Aufenthaltsbezug)",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kontakt"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Encounter"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht.",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Kontakt, während dem die Prozedur durchgeführt wurde oder mit dem die Prozedur in Zusammenhang steht."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "The Encounter during which this Procedure was performed or to which the creation of this record is tightly associated."
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Procedure.performed[x]",
@@ -989,7 +1430,67 @@
             ]
           }
         ],
-        "path": "Procedure.performed[x]"
+        "path": "Procedure.performed[x]",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Durchführungsdatum"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Performed date"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Durchführungsdatum oder -zeitraum der Prozedur."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "The date or period of time the procedure was performed."
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Procedure.performed[x]:performedDateTime",
@@ -1027,7 +1528,37 @@
           {
             "code": "dateTime"
           }
-        ]
+        ],
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Durchführungsdatum der Prozedur."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "The date the procedure was performed."
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Procedure.performed[x]:performedPeriod",
@@ -1065,7 +1596,67 @@
           {
             "code": "Period"
           }
-        ]
+        ],
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Durchführungszeitraum"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Performed period"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Zeitraum, in dem die Prozedur durchgeführt wurde."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "The period of time the procedure was performed."
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Procedure.bodySite",
@@ -1113,7 +1704,67 @@
             ]
           }
         ],
-        "path": "Procedure.bodySite"
+        "path": "Procedure.bodySite",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Körperstelle"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Body site"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Körperstelle der Prozedur mittels SNOMED CT inklusive Lateralität."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "The body site of the procedure using SNOMED CT including laterality."
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Procedure.bodySite.coding:snomed-ct",
@@ -1146,7 +1797,69 @@
           }
         ],
         "path": "Procedure.bodySite.coding",
-        "sliceName": "snomed-ct"
+        "sliceName": "snomed-ct",
+        "short": "SNOMED CT Code",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "SNOMED CT code"
+                }
+              ]
+            }
+          ]
+        },
+        "definition": "Ein Verweis auf einen von SNOMED CT definierten Code",
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Ein Verweis auf einen von SNOMED CT definierten Code"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "A reference to a code defined by SNOMED CT"
+                }
+              ]
+            }
+          ]
+        }
       },
       {
         "id": "Procedure.bodySite.coding:snomed-ct.system",
@@ -1283,7 +1996,67 @@
             ]
           }
         ],
-        "path": "Procedure.note"
+        "path": "Procedure.note",
+        "_short": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Hinweis"
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Note"
+                }
+              ]
+            }
+          ]
+        },
+        "_definition": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "de-DE"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Zusätzliche Informationen zur Prozedur als Freitext."
+                }
+              ]
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/translation",
+              "extension": [
+                {
+                  "url": "lang",
+                  "valueCode": "en-US"
+                },
+                {
+                  "url": "content",
+                  "valueString": "Additional information about the procedure as free text."
+                }
+              ]
+            }
+          ]
+        }
       }
     ]
   }
