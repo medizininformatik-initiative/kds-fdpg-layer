@@ -149,7 +149,7 @@
     }
   ],
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-studie",
-  "version": "2026.1.2",
+  "version": "2027.0.0-ballot-rc.1",
   "name": "FDPG_PR_MTB_Studie",
   "title": "FDPG PR MTB Studie",
   "_title": {

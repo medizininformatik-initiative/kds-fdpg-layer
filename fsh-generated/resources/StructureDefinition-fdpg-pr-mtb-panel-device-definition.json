@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-mtb-panel-device-definition",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-mtb-panel-device-definition",
-  "version": "2026.1.2",
+  "version": "2027.0.0-ballot-rc.1",
   "name": "FDPG_PR_MTB_Panel_DeviceDefinition",
   "title": "FDPG PR MTB Panel DeviceDefinition",
   "_title": {

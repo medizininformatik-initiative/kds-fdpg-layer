@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-bilanz-einfuhr-spendermilch",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-bilanz-einfuhr-spendermilch",
-  "version": "2026.1.2",
+  "version": "2027.0.0-ballot-rc.1",
   "name": "FDPG_PR_ICU_Bilanz_Einfuhr_Spendermilch",
   "title": "FDPG PR ICU Bilanz Einfuhr Spendermilch",
   "_title": {

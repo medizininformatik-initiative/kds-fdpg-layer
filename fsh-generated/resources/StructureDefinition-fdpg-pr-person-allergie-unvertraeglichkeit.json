@@ -124,7 +124,7 @@
     }
   ],
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-person-allergie-unvertraeglichkeit",
-  "version": "2026.1.2",
+  "version": "2027.0.0-ballot-rc.1",
   "name": "FDPG_PR_Person_AllergieUnvertraeglichkeit",
   "title": "FDPG PR Basis AllergieUnvertraeglichkeit",
   "_title": {

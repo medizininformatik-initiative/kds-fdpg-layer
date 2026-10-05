@@ -3,7 +3,7 @@
 // ============================================================================
 
 RuleSet: FDPGVersion
-* ^version = "2026.1.2"
+* ^version = "2027.0.0-ballot-rc.1"
 
 RuleSet: FDPGPublisher
 * ^publisher = "FDPG / Medizininformatik-Initiative"

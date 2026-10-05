@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-score-wong-baker-faces-schmerzskala",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-score-wong-baker-faces-schmerzskala",
-  "version": "2026.1.2",
+  "version": "2027.0.0-ballot-rc.1",
   "name": "FDPG_PR_ICU_Score_Wong_Baker_Faces_Schmerzskala",
   "title": "FDPG PR ICU Score Wong Baker Faces Schmerzskala",
   "_title": {

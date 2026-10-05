@@ -2,7 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "fdpg-pr-icu-vent-maximaler-beatmungsdruck",
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-icu-vent-maximaler-beatmungsdruck",
-  "version": "2026.1.2",
+  "version": "2027.0.0-ballot-rc.1",
   "name": "FDPG_PR_ICU_VENT_Maximaler_Beatmungsdruck",
   "title": "FDPG PR ICU VENT Maximaler Beatmungsdruck",
   "_title": {

@@ -104,7 +104,7 @@
     }
   ],
   "url": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/StructureDefinition/fdpg-pr-seltene-taillenumfang",
-  "version": "2026.1.2",
+  "version": "2027.0.0-ballot-rc.1",
   "name": "FDPG_PR_Seltene_Taillenumfang",
   "title": "FDPG PR Seltene Taillenumfang",
   "_title": {
