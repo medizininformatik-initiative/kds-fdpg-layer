@@ -203,5 +203,9 @@
   "SD_MII_ICU_Zentralvenoeser_Blutdruck": {
     "de-DE": "Zentralvenöser Druck (ZVD)",
     "en-US": "Central Venous Pressure (CVP)"
+  },
+  "ISiKKopfumfang": {
+    "de-DE": "Kopfumfang",
+    "en-US": "Head Circumference"
   }
 }

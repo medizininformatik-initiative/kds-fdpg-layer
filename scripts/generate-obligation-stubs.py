@@ -267,8 +267,8 @@ INCLUDED_PROFILES_BY_MODULE = {
         # Organspendeerkennung
         "ISiKGCS", "ISiKLaboruntersuchungSerumnatrium", "ISiKProzedurBeatmung", "ISiKProzedurReanimation",
         "SD_MII_ICU_Intrakranieller_Druck_Icp", "MII_PR_ICU_MUV_zerebraler_Perfusionsdruck",
-        # Monitoring und Vitaldaten
-        "SD_MII_ICU_Puls", "SD_MII_ICU_Ideales_Koerpergewicht",
+        # Monitoring und Vitaldaten (ISiKKopfumfang ersetzt MII_PR_Seltene_Kopfumfang, das upstream kein MS mehr hat)
+        "SD_MII_ICU_Puls", "SD_MII_ICU_Ideales_Koerpergewicht", "ISiKKopfumfang",
         "SD_MII_ICU_Koerpergewicht_Percentil_Altersabhaengig", "SD_MII_ICU_Koerpergroesse_Percentil_Altersabhaengig",
         "SD_MII_ICU_Sauerstoffsaettigung_Im_Arteriellen_Blut_Durch_Pulsoxymetrie",
         "SD_MII_ICU_Sauerstoffsaettigung_Im_Blut_Postduktal_Durch_Pulsoxymetrie",

@@ -1442,6 +1442,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/fdpg-pr-isik-kopfumfang"
+        },
+        "name": "FDPG PR ISiK Kopfumfang",
+        "description": "FDPG Profil - ISiKKopfumfang",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/fdpg-pr-isik-laboruntersuchung-serumnatrium"
         },
         "name": "FDPG PR ISiK Laboruntersuchung Serumnatrium",

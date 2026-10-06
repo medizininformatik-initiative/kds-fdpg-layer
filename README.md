@@ -36,8 +36,8 @@ The MII KDS modules are maintained by various working groups across 20+ reposito
 | Molekulares Tumorboard | 50 | mtb 2027.0.0-ballot.1 |
 | PROMs | 23 | pros 2027.0.0-ballot.1 |
 | Mikrobiologie | 21 | mikrobiologie 2027.0.0-ballot2 |
-| ISiK | 51 | isik 6.0.0 |
-| **Total** | **419** | |
+| ISiK | 52 | isik 6.0.0 |
+| **Total** | **420** | |
 
 ## Prerequisites
 

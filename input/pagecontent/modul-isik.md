@@ -7,7 +7,7 @@ Das Modul ISiK bündelt Datenpunkte, die nicht mehr im MII-Kerndatensatz, sonder
 1. **Ehemalige MII-ICU-Profile in gematik-Governance.** Mit ISiK 6 sind die Profile für Hämodynamik, Körpertemperatur (nach Messort) und erweitertes Monitoring aus dem KDS-Modul Intensivmedizin in die ISiK-Rollen *VitalSignICU Minimal/Extended* übergegangen. Aufgenommen sind genau die Profile, die ISiK 6 in diesen Rollen als `supportedProfile` führt.
 2. **Datenpunkte der Organspendeerkennung.** Die ISiK-Rolle *Organspendeerkennung Source* ergänzt Glasgow Coma Scale, intrakraniellen Druck, zerebralen Perfusionsdruck, Serumnatrium sowie die Prozeduren Beatmung und Reanimation. Pupillenbefunde, RASS und Beatmungsparameter aus derselben Rolle liegen bereits im [Modul Intensivmedizin](modul-icu.html), weil sie dort weiterhin unter MII-URL publiziert werden.
 
-Nicht aufgenommen sind ISiK-Standardvitalwerte (Herzfrequenz, Blutdruck, EKG, Körpergewicht …), die ISiK-Laborprofile und die Stammdaten (Patient, Kontakt, Standort). Für diese existieren Entsprechungen im MII-Kerndatensatz oder sie sind keine Forschungsdatenpunkte.
+Nicht aufgenommen sind ISiK-Standardvitalwerte (Herzfrequenz, Blutdruck, EKG, Körpergewicht …) mit Ausnahme des Kopfumfangs, dessen MII-Profil im Modul Seltene Erkrankungen seit der Ballot-Version keine Must-Support-Elemente mehr trägt, die ISiK-Laborprofile und die Stammdaten (Patient, Kontakt, Standort). Für diese existieren Entsprechungen im MII-Kerndatensatz oder sie sind keine Forschungsdatenpunkte.
 
 > **Hinweis:** ISiK liefert keine deutsch/englischen Designations an den Elementen. Die Titel sind im FDPG-Layer kuratiert; die Elementbeschriftungen stammen aus dem kanonischen Label-Katalog des Layers.
 
@@ -33,6 +33,7 @@ Nicht aufgenommen sind ISiK-Standardvitalwerte (Herzfrequenz, Blutdruck, EKG, K�
 | FDPG Profil | MII Elternprofil | FHIR Ressource |
 |-------------|------------------|----------------|
 | [FDPG_PR_ISiK_Ideales_Koerpergewicht](StructureDefinition-fdpg-pr-isik-ideales-koerpergewicht.html) | SD_MII_ICU_Ideales_Koerpergewicht | Observation |
+| [FDPG_PR_ISiK_Kopfumfang](StructureDefinition-fdpg-pr-isik-kopfumfang.html) | ISiKKopfumfang | Observation |
 | [FDPG_PR_ISiK_Koerpergewicht_Percentil_Altersabhaengig](StructureDefinition-fdpg-pr-isik-koerpergewicht-percentil-altersabhaengig.html) | SD_MII_ICU_Koerpergewicht_Percentil_Altersabhaengig | Observation |
 | [FDPG_PR_ISiK_Koerpergroesse_Percentil_Altersabhaengig](StructureDefinition-fdpg-pr-isik-koerpergroesse-percentil-altersabhaengig.html) | SD_MII_ICU_Koerpergroesse_Percentil_Altersabhaengig | Observation |
 | [FDPG_PR_ISiK_Puls](StructureDefinition-fdpg-pr-isik-puls.html) | SD_MII_ICU_Puls | Observation |

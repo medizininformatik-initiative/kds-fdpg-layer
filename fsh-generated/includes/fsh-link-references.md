@@ -158,6 +158,7 @@
 [FDPG_PR_ISiK_Koerpertemperatur_Stirn]: StructureDefinition-fdpg-pr-isik-koerpertemperatur-stirn.html
 [FDPG_PR_ISiK_Koerpertemperatur_Trommelfell]: StructureDefinition-fdpg-pr-isik-koerpertemperatur-trommelfell.html
 [FDPG_PR_ISiK_Koerpertemperatur_Vaginal]: StructureDefinition-fdpg-pr-isik-koerpertemperatur-vaginal.html
+[FDPG_PR_ISiK_Kopfumfang]: StructureDefinition-fdpg-pr-isik-kopfumfang.html
 [FDPG_PR_ISiK_Laboruntersuchung_Serumnatrium]: StructureDefinition-fdpg-pr-isik-laboruntersuchung-serumnatrium.html
 [FDPG_PR_ISiK_Linksatrialer_Druck]: StructureDefinition-fdpg-pr-isik-linksatrialer-druck.html
 [FDPG_PR_ISiK_Linksventrikulaerer_Druck]: StructureDefinition-fdpg-pr-isik-linksventrikulaerer-druck.html

@@ -187,6 +187,28 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `referenceRange` | Referenzbereich | Klinischer Referenzbereich für den Messwert. |
 | `component` | Komponente | Untergeordnete Beobachtungskomponente. |
 
+#### Kopfumfang (Observation)
+
+**FDPG Profil:** [FDPG_PR_ISiK_Kopfumfang](StructureDefinition-fdpg-pr-isik-kopfumfang.html) · **MII Elternprofil:** ISiKKopfumfang
+
+| Element | Kurzbeschreibung (de) | Definition (de) |
+|---|---|---|
+| `status` | Status | Status der Ressource. |
+| `category` | Kategorie | Kategorisierung der Ressource. |
+| `category:VSCat` | Kategorie: Vitalparameter | Kategorie-Slice, der die Beobachtung als Vitalparameter kennzeichnet. |
+| `code` | Code | Kodierung des Inhalts. |
+| `code.coding:loinc` | LOINC | Kodierung nach LOINC. |
+| `code.coding:snomed` | SNOMED CT | Kodierung nach SNOMED CT. |
+| `subject` | Patient\*in | Patientin oder Patient, auf die sich die Ressource bezieht. |
+| `encounter` | Behandlungsfall | Fall oder Kontakt, in dem die Ressource erfasst wurde. |
+| `effective[x]` | Klinisch relevanter Zeitpunkt | Zeitpunkt oder Zeitraum, auf den sich die Beobachtung bezieht. |
+| `performer` | Durchführende\*r | Person oder Organisation, die die Maßnahme durchgeführt hat. |
+| `value[x]` | Messwert | Wert der Beobachtung. |
+| `value[x]:valueQuantity` | Quantitativer Wert | Wert als numerische Größe mit Einheit (z.B. mmol/L). |
+| `dataAbsentReason` | Grund für fehlende Angabe | Grund, warum kein Wert angegeben ist. |
+| `method` | Methode | Methode, mit der die Beobachtung durchgeführt wurde. |
+| `device` | Gerät | Gerät, mit dem die Beobachtung durchgeführt wurde. |
+
 #### Körpergewicht-Perzentile (altersabhängig\ (Observation)
 
 **FDPG Profil:** [FDPG_PR_ISiK_Koerpergewicht_Percentil_Altersabhaengig](StructureDefinition-fdpg-pr-isik-koerpergewicht-percentil-altersabhaengig.html) · **MII Elternprofil:** SD_MII_ICU_Koerpergewicht_Percentil_Altersabhaengig
@@ -1574,6 +1596,29 @@ Diese Seite listet alle MustSupport-Elemente der MII-Elternprofile mit deutschen
 | `device` | Device | Device used to make the observation. |
 | `referenceRange` | Reference range | Clinical reference range for the value. |
 | `component` | Component | Sub-observation component. |
+
+</details>
+
+<details>
+<summary>English translations - Kopfumfang</summary>
+
+| Element | Short (en) | Definition (en) |
+|---------|-----------|-----------------|
+| `status` | Status | Status of the resource. |
+| `category` | Category | Categorization of the resource. |
+| `category:VSCat` | Category: Vital Signs | Category slice marking the observation as a vital sign. |
+| `code` | Code | Coding of the content. |
+| `code.coding:loinc` | LOINC | Coding in LOINC. |
+| `code.coding:snomed` | SNOMED CT | Coding in SNOMED CT. |
+| `subject` | Patient | The patient that the resource relates to. |
+| `encounter` | Encounter | Encounter in which the resource was recorded. |
+| `effective[x]` | Effective | Date or period the observation refers to. |
+| `performer` | Performer | Person or organization that performed the procedure. |
+| `value[x]` | Value | Value of the observation. |
+| `value[x]:valueQuantity` | Quantity value | Value as numeric quantity with unit (e.g. mmol/L). |
+| `dataAbsentReason` | Data absent reason | Reason why no value is provided. |
+| `method` | Method | Method used to make the observation. |
+| `device` | Device | Device used to make the observation. |
 
 </details>
 

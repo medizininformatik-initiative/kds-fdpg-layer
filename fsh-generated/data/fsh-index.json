@@ -1256,6 +1256,14 @@
     "endLine": 183
   },
   {
+    "outputFile": "StructureDefinition-fdpg-pr-isik-kopfumfang.json",
+    "fshName": "FDPG_PR_ISiK_Kopfumfang",
+    "fshType": "Profile",
+    "fshFile": "obligations/isik/fdpg-pr-isik-kopfumfang.fsh",
+    "startLine": 1,
+    "endLine": 175
+  },
+  {
     "outputFile": "StructureDefinition-fdpg-pr-isik-laboruntersuchung-serumnatrium.json",
     "fshName": "FDPG_PR_ISiK_Laboruntersuchung_Serumnatrium",
     "fshType": "Profile",
