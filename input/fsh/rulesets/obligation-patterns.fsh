@@ -34,6 +34,9 @@ RuleSet: ObligationConsumerDefault(path)
 RuleSet: ObligationConsumerPreSelect(path)
 * {path} ^extension[+].url = $obligation
 * {path} ^extension[=].extension[+].url = "code"
-* {path} ^extension[=].extension[=].valueCoding = $fdpg-obligation#pre-select
+// Typ der obligation.code-Subextension ist `code` (extensions.r4 5.x), kein Coding.
+// Das System (FDPGObligationCS) steht damit nicht im Instanzwert; Binding an
+// http://hl7.org/fhir/ValueSet/obligation ist required — siehe Beads kds-fdpg-layer (Pre-Select-Design).
+* {path} ^extension[=].extension[=].valueCode = #pre-select
 * {path} ^extension[=].extension[+].url = "actor"
 * {path} ^extension[=].extension[=].valueCanonical = $fdpg-extractor

@@ -108,6 +108,7 @@ Description: "FDPG Profil - MII_PR_MolGen_Genotyp"
 * insert Translation(component[reference-sequence-assembly] ^definition, en-US, Reference genome version used\, e.g. GRCh37 or GRCh38.)
 
 // --- Obligations ---
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(code)

@@ -92,6 +92,13 @@ jobs:
           jq -r '[.snapshot.element[]?.id] | length as $n | "snapshot-elemente: \($n), performedDateTime-slice: \(index("Procedure.performed[x]:performedDateTime") != null)"' "$f" || true
           ls ~/.fhir/packages | grep -E "kerndatensatz.(base|icu)|isik" || true
 
+      # Die ImplementationGuide-Ressource traegt IG-Publisher-Parameter
+      # (i18n-lang, show-inherited-invariants, releaselabel, ...), die nicht im
+      # R4-ValueSet guide-parameter-code liegen — fuer den .NET-Validator nur
+      # Rauschen. Der IG-Build-Job erzeugt sie ohnehin neu.
+      - name: ImplementationGuide aus der .NET-Validierung ausnehmen
+        run: rm -f fsh-generated/resources/ImplementationGuide-*.json
+
       - name: Firely.Terminal (GitHub Actions)
         id: firely-terminal
         uses: FirelyTeam/firely-terminal-pipeline@v0.6.7

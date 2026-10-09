@@ -130,6 +130,7 @@ Description: "FDPG Profil - MII_PR_Patho_Finding"
 // --- Obligations ---
 * insert ObligationConsumerDefault(identifier)
 * insert ObligationConsumerDefault(basedOn)
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[laboratory-category])

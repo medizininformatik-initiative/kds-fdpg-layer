@@ -343,6 +343,7 @@ Description: "FDPG Profil - MII_PR_MTB_RNA_Fusion"
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(identifier)
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(code)

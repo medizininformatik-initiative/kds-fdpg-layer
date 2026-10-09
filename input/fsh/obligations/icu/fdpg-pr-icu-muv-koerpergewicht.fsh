@@ -116,6 +116,7 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Koerpergewicht"
 * insert Translation(component ^definition, en-US, Sub-observation component.)
 
 // --- Obligations ---
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[sct])

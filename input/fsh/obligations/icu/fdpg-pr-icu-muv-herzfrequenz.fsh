@@ -189,6 +189,7 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Herzfrequenz"
 // --- Obligations ---
 * insert ObligationConsumerDefault(identifier)
 * insert ObligationConsumerDefault(basedOn)
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[vs-cat])

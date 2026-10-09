@@ -87,6 +87,7 @@ Description: "FDPG Profil - MII_PR_Onko_TNM_Klassifikation_Synthetisiert"
 * insert Translation(component[tnmFormel] ^short, de-DE, Generierte TNM-Gesamtformel)
 
 // --- Obligations ---
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(code)
 * insert ObligationConsumerDefault(subject)

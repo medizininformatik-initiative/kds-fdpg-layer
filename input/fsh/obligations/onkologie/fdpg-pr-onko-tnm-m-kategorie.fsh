@@ -113,6 +113,7 @@ Description: "FDPG Profil - MII_PR_Onko_TNM_M_Kategorie"
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(partOf)
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(code)
 * insert ObligationConsumerPreSelect(code)

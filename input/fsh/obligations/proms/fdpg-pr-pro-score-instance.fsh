@@ -96,6 +96,7 @@ Description: "FDPG Profil - MII_PR_PRO_Score_Instance"
 * insert ObligationConsumerDefault(extension)
 * insert ObligationConsumerDefault(extension[instantiatesCanonical])
 * insert ObligationConsumerDefault(identifier)
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(code)
 * insert ObligationConsumerPreSelect(code)

@@ -98,6 +98,7 @@ Description: "FDPG Profil - MII_PR_PRO_Observation_EQ5D5L_VAS"
 * insert ObligationConsumerDefault(extension)
 * insert ObligationConsumerDefault(extension[instantiatesCanonical])
 * insert ObligationConsumerDefault(identifier)
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(code)
 * insert ObligationConsumerDefault(focus)

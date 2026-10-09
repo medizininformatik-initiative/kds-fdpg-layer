@@ -91,6 +91,8 @@ Description: "FDPG Profil - MII_PR_Consent_Einwilligung"
 // --- Obligations ---
 * insert ObligationConsumerDefault(extension[domainReference])
 * insert ObligationConsumerDefault(extension[domainReference].extension[domain])
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* status ^extension[1].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[consentCategory])
@@ -98,6 +100,8 @@ Description: "FDPG Profil - MII_PR_Consent_Einwilligung"
 * insert ObligationConsumerDefault(category[resultType])
 * insert ObligationConsumerDefault(category[templateType])
 * insert ObligationConsumerDefault(patient)
+* dateTime ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* dateTime ^extension[1].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"
 * insert ObligationConsumerDefault(dateTime)
 * insert ObligationConsumerDefault(organization)
 * insert ObligationConsumerDefault(source[x])

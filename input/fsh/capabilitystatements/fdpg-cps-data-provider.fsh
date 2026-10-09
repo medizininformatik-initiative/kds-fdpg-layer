@@ -21,8 +21,8 @@ FDPG-spezifische Obligations.
 * jurisdiction = urn:iso:std:iso:3166#DE "Germany"
 * kind = #requirements
 * fhirVersion = #4.0.1
-* format[+] = #xml
-* format[+] = #json
+* format[+] = #application/fhir+xml
+* format[+] = #application/fhir+json
 * rest.mode = #server
 * rest.documentation = "FDPG Datenlieferanten-Endpunkt für MII Kerndatensatz"
 

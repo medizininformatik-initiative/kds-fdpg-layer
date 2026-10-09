@@ -158,6 +158,7 @@ Description: "FDPG Profil - ISiKKopfumfang"
 * insert Translation(device ^definition, en-US, Device used to make the observation.)
 
 // --- Obligations ---
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[VSCat])

@@ -171,8 +171,11 @@
         "id": "Observation.status",
         "extension": [
           {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint",
+            "valueString": "default: final"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/obligation",
-            "valueString": "default: final",
             "extension": [
               {
                 "url": "code",
@@ -419,10 +422,7 @@
             "extension": [
               {
                 "url": "code",
-                "valueCoding": {
-                  "code": "pre-select",
-                  "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-obligation-cs"
-                }
+                "valueCode": "pre-select"
               },
               {
                 "url": "actor",
@@ -745,10 +745,7 @@
             "extension": [
               {
                 "url": "code",
-                "valueCoding": {
-                  "code": "pre-select",
-                  "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-obligation-cs"
-                }
+                "valueCode": "pre-select"
               },
               {
                 "url": "actor",
@@ -929,10 +926,7 @@
             "extension": [
               {
                 "url": "code",
-                "valueCoding": {
-                  "code": "pre-select",
-                  "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-obligation-cs"
-                }
+                "valueCode": "pre-select"
               },
               {
                 "url": "actor",

@@ -196,8 +196,10 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Bildgebungsstudie"
 // --- Obligations ---
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(modality)
+* subject ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(subject)
 * insert ObligationConsumerDefault(encounter)
+* started ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(started)
 * insert ObligationConsumerDefault(basedOn)
 * insert ObligationConsumerDefault(endpoint)

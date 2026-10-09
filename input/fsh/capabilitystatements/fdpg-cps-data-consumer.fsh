@@ -21,8 +21,8 @@ andere Systeme, die Daten aus dem FDPG abrufen.
 * jurisdiction = urn:iso:std:iso:3166#DE "Germany"
 * kind = #requirements
 * fhirVersion = #4.0.1
-* format[+] = #xml
-* format[+] = #json
+* format[+] = #application/fhir+xml
+* format[+] = #application/fhir+json
 * rest.mode = #client
 * rest.documentation = "FDPG Datenkonsumenten-Client für MII Kerndatensatz"
 

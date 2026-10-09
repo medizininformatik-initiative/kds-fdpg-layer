@@ -70,6 +70,7 @@ Description: "FDPG Profil - MII_PR_Onko_TNM_Klassifikation"
 * hasMember ^short = "Related resource that belongs to the Observation group"
 
 // --- Obligations ---
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(code)
 * insert ObligationConsumerPreSelect(code)

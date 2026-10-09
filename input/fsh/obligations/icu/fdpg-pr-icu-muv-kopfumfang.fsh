@@ -100,6 +100,7 @@ Description: "FDPG Profil - MII_PR_ICU_MUV_Kopfumfang"
 * insert Translation(bodySite ^definition, en-US, Body site the resource refers to.)
 
 // --- Obligations ---
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category[sct])
 * insert ObligationConsumerDefault(code)

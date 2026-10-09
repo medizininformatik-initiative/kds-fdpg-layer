@@ -295,6 +295,7 @@ Description: "FDPG Profil - MII_PR_MTB_RNA_Seq"
 * insert Translation(component[cohort-ranking] ^short, en-US, Cohort ranking)
 
 // --- Obligations ---
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(code)

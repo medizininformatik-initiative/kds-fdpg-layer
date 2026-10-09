@@ -101,6 +101,7 @@ Description: "FDPG Profil - MII_PR_MolGen_Mutationslast"
 * insert Translation(component[biomarker-category] ^definition, en-US, Category of the molecular biomarker.)
 
 // --- Obligations ---
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(code)

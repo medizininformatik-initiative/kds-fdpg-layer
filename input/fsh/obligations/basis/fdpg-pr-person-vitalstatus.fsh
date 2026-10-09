@@ -88,6 +88,7 @@ Description: "FDPG Profil - MII_PR_Person_Vitalstatus"
 * insert Translation(note ^definition, en-US, Additional information about the vital status as free text.)
 
 // --- Obligations ---
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[survey])

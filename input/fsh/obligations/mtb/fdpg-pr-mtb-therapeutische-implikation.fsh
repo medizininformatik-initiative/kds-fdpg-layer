@@ -129,6 +129,7 @@ Description: "FDPG Profil - MII_PR_MTB_Therapeutische_Implikation"
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(extension[Evidenzgraduierung])
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(code)

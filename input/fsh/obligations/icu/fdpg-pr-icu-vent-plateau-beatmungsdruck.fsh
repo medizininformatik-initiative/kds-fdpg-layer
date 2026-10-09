@@ -150,6 +150,7 @@ Description: "FDPG Profil - MII_PR_ICU_VENT_Plateau_Beatmungsdruck"
 // --- Obligations ---
 * insert ObligationConsumerDefault(identifier)
 * insert ObligationConsumerDefault(partOf)
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[kuenstlicheBeatmung])

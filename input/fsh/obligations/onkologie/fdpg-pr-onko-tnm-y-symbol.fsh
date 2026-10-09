@@ -54,6 +54,7 @@ Description: "FDPG Profil - MII_PR_Onko_TNM_y_Symbol"
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
 
 // --- Obligations ---
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(code)
 * insert ObligationConsumerPreSelect(code)

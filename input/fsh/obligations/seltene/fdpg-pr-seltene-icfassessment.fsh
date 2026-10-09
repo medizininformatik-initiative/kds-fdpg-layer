@@ -84,6 +84,7 @@ Description: "FDPG Profil - MII_PR_Seltene_ICFAssessment"
 * component[facilitator] ^short = "Environmental factors (e): extent to which the factor acts as a facilitator"
 
 // --- Obligations ---
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[survey])

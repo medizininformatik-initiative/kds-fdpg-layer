@@ -52,6 +52,7 @@ Description: "FDPG Profil - MII_PR_Seltene_Taillenumfang"
 * insert Translation(value[x] ^definition, en-US, Value of the observation.)
 
 // --- Obligations ---
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(code)

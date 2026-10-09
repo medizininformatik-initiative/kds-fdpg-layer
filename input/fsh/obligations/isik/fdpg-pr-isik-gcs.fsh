@@ -354,6 +354,7 @@ Description: "FDPG Profil - ISiKGCS"
 * insert Translation(component[Verbal].value[x].coding.code ^definition, en-US, Code of the sub-score value.)
 
 // --- Obligations ---
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[survey])

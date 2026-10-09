@@ -125,6 +125,7 @@ Description: "FDPG Profil - MII_PR_Patho_Additional_Specified_Grouper"
 // --- Obligations ---
 * insert ObligationConsumerDefault(identifier)
 * insert ObligationConsumerDefault(basedOn)
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[laboratory-category])

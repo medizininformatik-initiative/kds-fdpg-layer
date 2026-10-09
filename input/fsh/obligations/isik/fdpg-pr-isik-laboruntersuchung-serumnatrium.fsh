@@ -436,6 +436,7 @@ Description: "FDPG Profil - ISiKLaboruntersuchungSerumnatrium"
 // --- Obligations ---
 * insert ObligationConsumerDefault(identifier)
 * insert ObligationConsumerDefault(identifier[analyseBefundCode])
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[observation-category])

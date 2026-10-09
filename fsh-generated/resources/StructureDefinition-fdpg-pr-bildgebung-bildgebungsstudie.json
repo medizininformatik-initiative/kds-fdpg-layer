@@ -147,8 +147,11 @@
         "id": "ImagingStudy.subject",
         "extension": [
           {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint",
+            "valueString": "dicom=http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.2.2.html"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/obligation",
-            "valueString": "dicom=http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.2.2.html",
             "extension": [
               {
                 "url": "code",
@@ -212,8 +215,11 @@
         "id": "ImagingStudy.started",
         "extension": [
           {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint",
+            "valueString": "dicom=http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.2.html#sect_C.7.2.1"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/obligation",
-            "valueString": "dicom=http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.2.html#sect_C.7.2.1",
             "extension": [
               {
                 "url": "code",

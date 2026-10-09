@@ -210,7 +210,10 @@ def get_ms_elements_for_obligations(sd):
         fsh_path = element_id_to_fsh_path(el_id, resource_type)
         if not fsh_path:
             continue
-        elements.append({"id": el_id, "fsh_path": fsh_path})
+        elements.append({
+            "id": el_id, "fsh_path": fsh_path,
+            "existing_extensions": [x.get("url") for x in el.get("extension", []) if x.get("url")],
+        })
     return elements
 
 
@@ -440,6 +443,14 @@ def generate_fsh_file(parent_sd, module_config, field_config=None, module_key=No
         lines.append("// --- Obligations ---")
         for el in obligation_elements:
             fsh_path = el["fsh_path"]
+            # SUSHI zaehlt `^extension[+]` ab 0, auch wenn das Element aus dem
+            # Parent-Snapshot bereits Extensions erbt (z.B. structuredefinition-
+            # display-hint "default: final" an Observation.status). Ohne Anker
+            # wird die geerbte Extension[0] mit der Obligation-URL ueberschrieben
+            # (ext-1-Verletzung, Firely 2026-10-09). Daher vorhandene Extensions
+            # erst per Index re-assertieren, dann haengt [+] korrekt dahinter an.
+            for k, ext in enumerate(el.get("existing_extensions", [])):
+                lines.append(f'* {fsh_path} ^extension[{k}].url = "{ext}"')
             lines.append(f"* insert ObligationConsumerDefault({fsh_path})")
             if el["id"] in pre_select_ids:
                 lines.append(f"* insert ObligationConsumerPreSelect({fsh_path})")

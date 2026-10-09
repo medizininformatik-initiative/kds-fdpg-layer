@@ -293,10 +293,7 @@
             "extension": [
               {
                 "url": "code",
-                "valueCoding": {
-                  "code": "pre-select",
-                  "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-obligation-cs"
-                }
+                "valueCode": "pre-select"
               },
               {
                 "url": "actor",
@@ -401,10 +398,7 @@
             "extension": [
               {
                 "url": "code",
-                "valueCoding": {
-                  "code": "pre-select",
-                  "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-obligation-cs"
-                }
+                "valueCode": "pre-select"
               },
               {
                 "url": "actor",
@@ -633,10 +627,7 @@
             "extension": [
               {
                 "url": "code",
-                "valueCoding": {
-                  "code": "pre-select",
-                  "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-obligation-cs"
-                }
+                "valueCode": "pre-select"
               },
               {
                 "url": "actor",
@@ -1405,10 +1396,7 @@
             "extension": [
               {
                 "url": "code",
-                "valueCoding": {
-                  "code": "pre-select",
-                  "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-obligation-cs"
-                }
+                "valueCode": "pre-select"
               },
               {
                 "url": "actor",
@@ -1513,10 +1501,7 @@
             "extension": [
               {
                 "url": "code",
-                "valueCoding": {
-                  "code": "pre-select",
-                  "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-obligation-cs"
-                }
+                "valueCode": "pre-select"
               },
               {
                 "url": "actor",
@@ -1561,10 +1546,7 @@
             "extension": [
               {
                 "url": "code",
-                "valueCoding": {
-                  "code": "pre-select",
-                  "system": "https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/CodeSystem/fdpg-obligation-cs"
-                }
+                "valueCode": "pre-select"
               },
               {
                 "url": "actor",

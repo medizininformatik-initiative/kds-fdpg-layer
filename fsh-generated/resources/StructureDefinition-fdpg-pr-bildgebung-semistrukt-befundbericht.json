@@ -378,6 +378,9 @@
         "id": "Composition.section",
         "extension": [
           {
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+          },
+          {
             "url": "http://hl7.org/fhir/StructureDefinition/obligation",
             "extension": [
               {

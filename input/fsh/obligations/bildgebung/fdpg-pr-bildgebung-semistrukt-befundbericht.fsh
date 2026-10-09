@@ -140,4 +140,5 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Semistrukt_Befundbericht"
 * insert ObligationConsumerDefault(date)
 * insert ObligationConsumerDefault(author)
 * insert ObligationConsumerDefault(title)
+* section ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
 * insert ObligationConsumerDefault(section)

@@ -68,6 +68,7 @@ Description: "FDPG Profil - MII_PR_Onko_TNM_Pn_Kategorie"
 * insert Translation(method.coding ^definition, en-US, Version per oBDS 2021 §8.2.)
 
 // --- Obligations ---
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(code)
 * insert ObligationConsumerPreSelect(code)

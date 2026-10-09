@@ -99,6 +99,7 @@ Description: "FDPG Profil - MII_PR_Onko_TNM_T_Kategorie"
 * insert Translation(component[multipleTumoren] ^short, de-DE, Multiple Primaertumoren - m-Suffix)
 
 // --- Obligations ---
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(code)
 * insert ObligationConsumerPreSelect(code)

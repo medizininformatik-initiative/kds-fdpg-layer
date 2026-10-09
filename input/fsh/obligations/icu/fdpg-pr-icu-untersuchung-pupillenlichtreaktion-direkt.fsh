@@ -64,6 +64,7 @@ Description: "FDPG Profil - MII_PR_ICU_Untersuchung_Pupillenlichtreaktion_Direkt
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(identifier)
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(code)

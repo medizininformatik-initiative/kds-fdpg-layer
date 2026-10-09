@@ -493,6 +493,7 @@ Description: "FDPG Profil - SD_MII_ICU_Rechtsventrikulaerer_Druck"
 
 // --- Obligations ---
 * insert ObligationConsumerDefault(identifier)
+* status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(code)
