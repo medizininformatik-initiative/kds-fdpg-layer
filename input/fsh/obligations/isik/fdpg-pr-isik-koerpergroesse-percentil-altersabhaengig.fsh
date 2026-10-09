@@ -252,6 +252,7 @@ Description: "FDPG Profil - SD_MII_ICU_Koerpergroesse_Percentil_Altersabhaengig"
 * insert ObligationConsumerDefault(identifier)
 * insert ObligationConsumerDefault(basedOn)
 * status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
+* status ^extension[0].valueString = "default: final"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[vs-cat])

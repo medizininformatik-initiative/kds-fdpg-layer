@@ -1410,7 +1410,8 @@
         "id": "Composition.section",
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/obligation",
@@ -1445,7 +1446,8 @@
         "id": "Composition.section:patho-diagnostic-report",
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/obligation",
@@ -1481,7 +1483,8 @@
         "id": "Composition.section:makroskopie",
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/obligation",
@@ -1517,7 +1520,8 @@
         "id": "Composition.section:mikroskopie",
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/obligation",
@@ -1553,7 +1557,8 @@
         "id": "Composition.section:intraoperativ",
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/obligation",
@@ -1589,7 +1594,8 @@
         "id": "Composition.section:diagnostische-schlussfolgerung",
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/obligation",
@@ -1625,7 +1631,8 @@
         "id": "Composition.section:zusaetzliche-beobachtung",
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name",
+            "valueString": "Section"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/obligation",

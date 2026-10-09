@@ -166,6 +166,7 @@ Description: "FDPG Profil - SD_MII_ICU_Koerpertemperatur_Oral"
 
 // --- Obligations ---
 * status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
+* status ^extension[0].valueString = "default: final"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[VSCat])

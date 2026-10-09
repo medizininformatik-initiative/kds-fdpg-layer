@@ -196,10 +196,12 @@
         "id": "Consent.status",
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
           },
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/obligation",
@@ -610,10 +612,12 @@
         "id": "Consent.dateTime",
         "extension": [
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+            "valueCode": "normative"
           },
           {
-            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"
+            "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
+            "valueCode": "4.0.0"
           },
           {
             "url": "http://hl7.org/fhir/StructureDefinition/obligation",

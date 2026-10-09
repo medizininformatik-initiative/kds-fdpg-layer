@@ -314,16 +314,23 @@ Description: "FDPG Profil - MII_PR_Patho_Composition"
 * insert ObligationConsumerDefault(relatesTo.target[x][targetReference])
 * insert ObligationConsumerDefault(event)
 * section ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section ^extension[0].valueString = "Section"
 * insert ObligationConsumerDefault(section)
 * section[patho-diagnostic-report] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[patho-diagnostic-report] ^extension[0].valueString = "Section"
 * insert ObligationConsumerDefault(section[patho-diagnostic-report])
 * section[makroskopie] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[makroskopie] ^extension[0].valueString = "Section"
 * insert ObligationConsumerDefault(section[makroskopie])
 * section[mikroskopie] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[mikroskopie] ^extension[0].valueString = "Section"
 * insert ObligationConsumerDefault(section[mikroskopie])
 * section[intraoperativ] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[intraoperativ] ^extension[0].valueString = "Section"
 * insert ObligationConsumerDefault(section[intraoperativ])
 * section[diagnostische-schlussfolgerung] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[diagnostische-schlussfolgerung] ^extension[0].valueString = "Section"
 * insert ObligationConsumerDefault(section[diagnostische-schlussfolgerung])
 * section[zusaetzliche-beobachtung] ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-explicit-type-name"
+* section[zusaetzliche-beobachtung] ^extension[0].valueString = "Section"
 * insert ObligationConsumerDefault(section[zusaetzliche-beobachtung])

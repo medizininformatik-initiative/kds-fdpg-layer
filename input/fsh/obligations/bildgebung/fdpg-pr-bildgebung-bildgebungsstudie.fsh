@@ -197,9 +197,11 @@ Description: "FDPG Profil - MII_PR_Bildgebung_Bildgebungsstudie"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(modality)
 * subject ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
+* subject ^extension[0].valueString = "dicom=http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.2.2.html"
 * insert ObligationConsumerDefault(subject)
 * insert ObligationConsumerDefault(encounter)
 * started ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
+* started ^extension[0].valueString = "dicom=http://dicom.nema.org/medical/dicom/current/output/chtml/part03/sect_C.7.2.html#sect_C.7.2.1"
 * insert ObligationConsumerDefault(started)
 * insert ObligationConsumerDefault(basedOn)
 * insert ObligationConsumerDefault(endpoint)

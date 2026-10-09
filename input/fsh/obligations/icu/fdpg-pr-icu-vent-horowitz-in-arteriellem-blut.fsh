@@ -153,6 +153,7 @@ Description: "FDPG Profil - MII_PR_ICU_VENT_Horowitz_In_Arteriellem_Blut"
 * insert ObligationConsumerDefault(identifier)
 * insert ObligationConsumerDefault(partOf)
 * status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
+* status ^extension[0].valueString = "default: final"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[kuenstlicheBeatmung])

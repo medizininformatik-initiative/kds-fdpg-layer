@@ -159,6 +159,7 @@ Description: "FDPG Profil - ISiKKopfumfang"
 
 // --- Obligations ---
 * status ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint"
+* status ^extension[0].valueString = "default: final"
 * insert ObligationConsumerDefault(status)
 * insert ObligationConsumerDefault(category)
 * insert ObligationConsumerDefault(category[VSCat])

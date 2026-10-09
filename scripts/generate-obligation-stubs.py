@@ -212,7 +212,7 @@ def get_ms_elements_for_obligations(sd):
             continue
         elements.append({
             "id": el_id, "fsh_path": fsh_path,
-            "existing_extensions": [x.get("url") for x in el.get("extension", []) if x.get("url")],
+            "existing_extensions": [x for x in el.get("extension", []) if x.get("url")],
         })
     return elements
 
@@ -450,7 +450,18 @@ def generate_fsh_file(parent_sd, module_config, field_config=None, module_key=No
             # (ext-1-Verletzung, Firely 2026-10-09). Daher vorhandene Extensions
             # erst per Index re-assertieren, dann haengt [+] korrekt dahinter an.
             for k, ext in enumerate(el.get("existing_extensions", [])):
-                lines.append(f'* {fsh_path} ^extension[{k}].url = "{ext}"')
+                lines.append(f'* {fsh_path} ^extension[{k}].url = "{ext["url"]}"')
+                # Wert mitfuehren, sonst landet die Extension nur mit url im
+                # Differential (ext-1 / value[x] 1..1, Firely 2026-10-09).
+                vkey = next((kk for kk in ext if kk.startswith("value")), None)
+                if vkey == "valueString":
+                    lines.append(f'* {fsh_path} ^extension[{k}].valueString = "{escape_fsh_string(ext[vkey])}"')
+                elif vkey in ("valueCode", "valueUri", "valueUrl", "valueCanonical", "valueBoolean", "valueInteger"):
+                    val = ext[vkey]
+                    lit = f"#{val}" if vkey == "valueCode" else (str(val).lower() if vkey == "valueBoolean" else (f'"{val}"' if vkey != "valueInteger" else val))
+                    lines.append(f'* {fsh_path} ^extension[{k}].{vkey} = {lit}')
+                elif vkey:
+                    print(f"  WARNING: {parent_name} {el['id']}: geerbte Extension {ext['url']} mit {vkey} nicht re-assertierbar")
             lines.append(f"* insert ObligationConsumerDefault({fsh_path})")
             if el["id"] in pre_select_ids:
                 lines.append(f"* insert ObligationConsumerPreSelect({fsh_path})")
