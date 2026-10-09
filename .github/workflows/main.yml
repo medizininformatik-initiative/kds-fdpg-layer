@@ -11,13 +11,54 @@ on:
     types: [published]
 
 jobs:
+  # Eigener Job statt kerndatensatz-meta/ci_dotnet_validation.yml: der
+  # geteilte Workflow laesst sich nicht mit dem Paket-Cache primen, SUSHI
+  # bricht dort an den snapshotlosen ISiK-Parents ab. Schritte wie upstream.
   DOTNET_FHIR_VALIDATION:
     if: github.event_name != 'release'
-    uses: medizininformatik-initiative/kerndatensatz-meta/.github/workflows/ci_dotnet_validation.yml@master
-    with:
-      ref: ${{ github.event.pull_request.head.ref || github.ref }}
-      SUSHI_VERSION: ${{ vars.SUSHI_VERSION }}
-    secrets: inherit
+    runs-on: ubuntu-latest
+    env:
+      # ISiK 6 + transitive Pakete sprengen den 4-GB-Standard-Heap von Node;
+      # ubuntu-latest (public repo) hat 16 GB RAM.
+      NODE_OPTIONS: --max-old-space-size=12288
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref || github.ref }}
+
+      # de.gematik.isik 6.0.0 liefert im Registry keine Snapshots (0/158);
+      # SUSHI kann die ISiK-Parents des Moduls ISiK sonst nicht importieren.
+      # Priming aus dem cache-store-Branch des fhir-package-store (gebakte
+      # Pakete mit Snapshots) — gleicher Mechanismus wie im ICU-Modul.
+      - name: FHIR-Paket-Cache aus dem fhir-package-store laden (ISiK-Snapshots)
+        uses: actions/checkout@v4
+        with:
+          repository: medizininformatik-initiative/fhir-package-store
+          ref: cache-store
+          path: .fhir-package-store
+          persist-credentials: false
+
+      - name: Paket-Cache nach ~/.fhir übernehmen
+        run: |
+          mkdir -p ~/.fhir/packages
+          cp -r .fhir-package-store/packages/* ~/.fhir/packages/
+          rm -rf .fhir-package-store
+          ls ~/.fhir/packages | grep -c . 
+
+      - name: Firely.Terminal (GitHub Actions)
+        id: firely-terminal
+        uses: FirelyTeam/firely-terminal-pipeline@v0.6.7
+        with:
+          PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
+          PATH_TO_EXAMPLES: fsh-generated/resources
+          DOTNET_VALIDATION_ENABLED: true
+          JAVA_VALIDATION_ENABLED: false
+          SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
+          SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
+          SUSHI_ENABLED: true
+          SUSHI_VERSION: ${{ vars.SUSHI_VERSION || '3.20.1' }}
+
 
   JAVA_FHIR_VALIDATION:
     if: github.event_name != 'release'
@@ -65,11 +106,31 @@ jobs:
       - name: Install SUSHI
         run: npm install -g fsh-sushi
 
+      # de.gematik.isik 6.0.0 liefert im Registry keine Snapshots (0/158);
+      # SUSHI kann die ISiK-Parents des Moduls ISiK sonst nicht importieren.
+      # Priming aus dem cache-store-Branch des fhir-package-store (gebakte
+      # Pakete mit Snapshots) — gleicher Mechanismus wie im ICU-Modul.
+      - name: FHIR-Paket-Cache aus dem fhir-package-store laden (ISiK-Snapshots)
+        uses: actions/checkout@v4
+        with:
+          repository: medizininformatik-initiative/fhir-package-store
+          ref: cache-store
+          path: .fhir-package-store
+          persist-credentials: false
+
+      - name: Paket-Cache nach ~/.fhir übernehmen
+        run: |
+          mkdir -p ~/.fhir/packages
+          cp -r .fhir-package-store/packages/* ~/.fhir/packages/
+          rm -rf .fhir-package-store
+          ls ~/.fhir/packages | grep -c . 
+
       - name: Run SUSHI
         run: sushi .
         env:
-          # ISiK 6 + transitive Pakete sprengen den 4-GB-Standard-Heap von Node
-          NODE_OPTIONS: --max-old-space-size=6144
+          # ISiK 6 + transitive Pakete sprengen den 4-GB-Standard-Heap von Node;
+          # ubuntu-latest (public repo) hat 16 GB RAM.
+          NODE_OPTIONS: --max-old-space-size=12288
 
       - name: Download IG Publisher
         run: |
