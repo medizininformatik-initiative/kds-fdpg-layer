@@ -7,6 +7,7 @@ Usage: #definition
 * name = "FHIROntologyExtractor"
 * title = "FHIR Ontology Extractor"
 * status = #active
+* version = "2027.0.0-ballot-rc.1"
 * type = #system
 * description = "FDPG-Tool, das aus den MII/FDPG-Profilen die Antragsportal-UI, die Feasibility-Queries und die Extraktions-Mappings ableitet."
 * documentation = """

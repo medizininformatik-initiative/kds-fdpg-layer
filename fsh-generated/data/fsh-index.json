@@ -5,7 +5,7 @@
     "fshType": "Instance",
     "fshFile": "actors/fdpg-actor-fhir-ontology-extractor.fsh",
     "startLine": 1,
-    "endLine": 12
+    "endLine": 13
   },
   {
     "outputFile": "CapabilityStatement-fdpg-cps-data-consumer.json",
@@ -29,7 +29,7 @@
     "fshType": "CodeSystem",
     "fshFile": "codesystems/fdpg-module-cs.fsh",
     "startLine": 1,
-    "endLine": 27
+    "endLine": 28
   },
   {
     "outputFile": "CodeSystem-fdpg-obligation-cs.json",
@@ -37,7 +37,7 @@
     "fshType": "CodeSystem",
     "fshFile": "codesystems/fdpg-obligation-cs.fsh",
     "startLine": 1,
-    "endLine": 11
+    "endLine": 12
   },
   {
     "outputFile": "StructureDefinition-fdpg-pr-bildgebung-anforderung-bildgebung.json",

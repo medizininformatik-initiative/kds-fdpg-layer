@@ -7,5 +7,6 @@ Description: "FDPG-spezifische Obligation-Codes ergänzend zum FHIR-R5-Standard.
 * ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
+* insert FDPGVersion
 
 * #pre-select "Vorauswahl Antragsportal" "Element wird in der Merkmalselektion des FDPG-Antragsportals standardmäßig vorausgewählt (Checkbox aktiviert). Quelle der Auswahl: field_config.json im fhir-ontology-generator."

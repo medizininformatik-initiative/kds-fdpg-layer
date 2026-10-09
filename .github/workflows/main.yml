@@ -105,6 +105,10 @@ jobs:
         with:
           PATH_TO_CONFORMANCE_RESOURCES: fsh-generated/resources
           PATH_TO_EXAMPLES: fsh-generated/resources
+          # Eigene QC-Regeln (qc/custom.rules.yaml) statt Firely-Standardset:
+          # kein claims-check (braucht ein Simplifier-Projekt), Validierung
+          # nur auf fsh-generated/resources.
+          PATH_TO_QUALITY_CONTROL_RULES: qc/custom
           DOTNET_VALIDATION_ENABLED: true
           JAVA_VALIDATION_ENABLED: false
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}

@@ -7,6 +7,7 @@ Description: "Codes für die Zuordnung eines FDPG-Profils zum ursprünglichen MI
 * ^experimental = false
 * ^content = #complete
 * ^caseSensitive = true
+* insert FDPGVersion
 
 * #basis "Basis" "MII KDS Modul Basis (Person, Diagnose, Prozedur, Vitalstatus)."
 * #labor "Laborbefund" "MII KDS Modul Laborbefund."

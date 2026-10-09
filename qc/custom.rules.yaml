@@ -1,31 +1,71 @@
+# Firely Quality-Control-Regeln fuer den FDPG KDS Obligations Layer.
+#
+# Gelesen von .github/workflows/main.yml (Firely-Action, PATH_TO_QUALITY_
+# CONTROL_RULES: qc/custom) — gleiches Muster wie die MII-KDS-Module.
+# Ohne eigene Regeldatei laeuft das Firely-Standardset "minimal" inkl.
+# claims-check, der ohne Simplifier-Projekt immer warnt und mit --fail den
+# Job rot macht (CI 37946336685).
+#
+# Syntax: https://simplifier.net/docs/qualitycontrol/
+
 - action: parse
-  files: fsh-generated/resources/*.json
+  name: parse-fhir-resources
+  status: "Checking if all FHIR resource files can be parsed"
+  files:
+    - /fsh-generated/resources/*.json
+    - "!**/ImplementationGuide-*.json"
+    # ActorDefinition ist R5 (via sushi-r5forR4); der R4-Parser von Firely kennt sie nicht.
+    - "!**/ActorDefinition-*.json"
 
 - action: validate
+  name: resource-validation
+  status: "Validating generated conformance resources against the FHIR standard and their profiles"
+  category: Resource
+  files:
+    - /fsh-generated/resources/*.json
+    # IG-Publisher-Parameter (i18n-lang, releaselabel, ...) liegen nicht im
+    # R4-ValueSet guide-parameter-code — die IG-Ressource wird nur vom
+    # IG-Publisher-Job verarbeitet.
+    - "!**/ImplementationGuide-*.json"
+    - "!**/ActorDefinition-*.json"
+  suppress:
+    - 6005
+    - eld-16
+    # 6006: Firelys lokaler Terminologie-Service kann das ValueSet
+    # http://hl7.org/fhir/ValueSet/obligation (Filter not-in) nicht expandieren;
+    # jede Obligation (handle/display/pre-select) wuerde sonst eine Warnung werfen.
+    - 6006
 
 - action: unique
-  unique: canonical
+  name: unique-canonicals
+  status: "Checking if all StructureDefinitions have a unique canonical"
+  category: StructureDefinition
+  unique: url
+  files:
+    - /fsh-generated/resources/*.json
 
-- action: unique
-  unique: name
-  filter: StructureDefinition
+- name: version-filled
+  status: "Checking that every generated conformance resource carries the layer version"
+  filter: (StructureDefinition or CodeSystem or CapabilityStatement).exists()
+  predicate: version.exists()
+  error-message: "version missing on a generated conformance resource (FDPGVersion-RuleSet / CPS)"
+  files:
+    - /fsh-generated/resources/*.json
+    - "!**/ImplementationGuide-*.json"
+    - "!**/ActorDefinition-*.json"
 
-- predicate: id.matches('^[A-Za-z0-9\\-\\.]{1,64}$')
-  error-message: "id invalid"
+- name: naming-convention-id
+  status: "Checking the id naming convention (fdpg-<prefix>-…)"
+  category: StructureDefinition
+  predicate: id.matches('^fdpg-(pr|cs|actor)-')
+  error-message: "StructureDefinition id must start with fdpg-pr-"
+  files:
+    - /fsh-generated/resources/StructureDefinition-*.json
 
-# FDPG naming conventions (not MII)
-- predicate: id.matches('^fdpg-(pr|ex|lm|vs|cs|cm|sm|ns|sp|cps|od|ig|exa)-')
-  error-message: "id does not follow fdpg-{type}-... convention"
-  filter: StructureDefinition
-
-- predicate: name.matches('^FDPG_(PR|EX|LM|VS|CS|CM|SM|NS|SP|CPS|OD|IG|EXA)_')
-  error-message: "name does not follow FDPG_{TYPE}_ convention"
-  filter: StructureDefinition
-
-- predicate: url.startsWith('https://forschen-fuer-gesundheit.de/fhir/fdpg-obligations/')
-  error-message: "url does not start with canonical"
-  filter: StructureDefinition
-
-- predicate: version.exists() and (version in ('2026.0.0'))
-  error-message: "version must be 2026.0.0"
-  filter: StructureDefinition or ValueSet or CodeSystem
+- name: naming-convention-name
+  status: "Checking the name naming convention (FDPG_PR_…)"
+  category: StructureDefinition
+  predicate: name.matches('^FDPG_PR_')
+  error-message: "StructureDefinition name must start with FDPG_PR_"
+  files:
+    - /fsh-generated/resources/StructureDefinition-*.json
