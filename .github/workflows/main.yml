@@ -70,6 +70,28 @@ jobs:
             mkdir -p "$dest" && tar xzf /tmp/pkg.tgz -C "$dest" && echo "geladen: $pv"
           done
 
+      # SUSHI laeuft VOR der Firely-Action auf dem unberuehrten Paket-Cache.
+      # Mit SUSHI innerhalb der Action (nach `fhir restore` mit regenerate on)
+      # kamen in Run 37915454231 44 Fehler an ICU-Procedure-Slices, die
+      # lokal und in Run 37906216366 mit identischen Paketen nicht auftreten.
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: SUSHI
+        run: |
+          npm install -g fsh-sushi@${{ vars.SUSHI_VERSION || '3.20.1' }}
+          sushi .
+
+      - name: Diagnose bei SUSHI-Fehler (ICU-Parent-Snapshot im Runner-Cache)
+        if: failure()
+        run: |
+          f=~/.fhir/packages/de.medizininformatikinitiative.kerndatensatz.icu#2027.0.0-ballot.3/package/StructureDefinition-mii-pr-icu-beatmung.json
+          ls -la "$f" || true
+          jq -r '[.snapshot.element[]?.id] | length as $n | "snapshot-elemente: \($n), performedDateTime-slice: \(index("Procedure.performed[x]:performedDateTime") != null)"' "$f" || true
+          ls ~/.fhir/packages | grep -E "kerndatensatz.(base|icu)|isik" || true
+
       - name: Firely.Terminal (GitHub Actions)
         id: firely-terminal
         uses: FirelyTeam/firely-terminal-pipeline@v0.6.7
@@ -80,8 +102,7 @@ jobs:
           JAVA_VALIDATION_ENABLED: false
           SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
-          SUSHI_ENABLED: true
-          SUSHI_VERSION: ${{ vars.SUSHI_VERSION || '3.20.1' }}
+          SUSHI_ENABLED: false
 
 
   JAVA_FHIR_VALIDATION:
