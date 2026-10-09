@@ -46,6 +46,30 @@ jobs:
           rm -rf .fhir-package-store
           ls ~/.fhir/packages | grep -c . 
 
+      # Firely Terminal findet die MII-Ballot-Pakete (ballot.N / ballot2) im
+      # Registry nicht und laesst sie beim Restore still aus (Run 37906216366:
+      # dokument/mtb/pros/mikrobio fehlten, danach 427 Aufloesungsfehler im
+      # .NET-Validator). SUSHI laedt sie problemlos. Daher vorab per
+      # Direkt-Download in den Cache; Restore sieht sie dann als installiert.
+      - name: MII-Ballot-Pakete direkt aus dem Registry in den Cache laden
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.fhir/packages
+          for pv in \
+            de.medizininformatikinitiative.kerndatensatz.dokument@2027.0.0-ballot.2 \
+            de.medizininformatikinitiative.kerndatensatz.mtb@2027.0.0-ballot.1 \
+            de.medizininformatikinitiative.kerndatensatz.pros@2027.0.0-ballot.1 \
+            de.medizininformatikinitiative.kerndatensatz.mikrobiologie@2027.0.0-ballot2 \
+            ihe.formatcode.fhir@1.4.0 \
+            hl7.fhir.uv.xver-r5.r4@0.1.0; do
+            name="${pv%@*}"; ver="${pv#*@}"; dest="$HOME/.fhir/packages/${name}#${ver}"
+            if [ -d "$dest/package" ]; then echo "vorhanden: $pv"; continue; fi
+            url="https://packages.simplifier.net/${name}/${ver}"
+            [ "$name" = "hl7.fhir.uv.xver-r5.r4" ] && url="https://packages2.fhir.org/packages/${name}/${ver}"
+            curl -fsSL --retry 5 --retry-delay 10 --retry-all-errors "$url" -o /tmp/pkg.tgz
+            mkdir -p "$dest" && tar xzf /tmp/pkg.tgz -C "$dest" && echo "geladen: $pv"
+          done
+
       - name: Firely.Terminal (GitHub Actions)
         id: firely-terminal
         uses: FirelyTeam/firely-terminal-pipeline@v0.6.7
@@ -124,6 +148,30 @@ jobs:
           cp -r .fhir-package-store/packages/* ~/.fhir/packages/
           rm -rf .fhir-package-store
           ls ~/.fhir/packages | grep -c . 
+
+      # Firely Terminal findet die MII-Ballot-Pakete (ballot.N / ballot2) im
+      # Registry nicht und laesst sie beim Restore still aus (Run 37906216366:
+      # dokument/mtb/pros/mikrobio fehlten, danach 427 Aufloesungsfehler im
+      # .NET-Validator). SUSHI laedt sie problemlos. Daher vorab per
+      # Direkt-Download in den Cache; Restore sieht sie dann als installiert.
+      - name: MII-Ballot-Pakete direkt aus dem Registry in den Cache laden
+        run: |
+          set -euo pipefail
+          mkdir -p ~/.fhir/packages
+          for pv in \
+            de.medizininformatikinitiative.kerndatensatz.dokument@2027.0.0-ballot.2 \
+            de.medizininformatikinitiative.kerndatensatz.mtb@2027.0.0-ballot.1 \
+            de.medizininformatikinitiative.kerndatensatz.pros@2027.0.0-ballot.1 \
+            de.medizininformatikinitiative.kerndatensatz.mikrobiologie@2027.0.0-ballot2 \
+            ihe.formatcode.fhir@1.4.0 \
+            hl7.fhir.uv.xver-r5.r4@0.1.0; do
+            name="${pv%@*}"; ver="${pv#*@}"; dest="$HOME/.fhir/packages/${name}#${ver}"
+            if [ -d "$dest/package" ]; then echo "vorhanden: $pv"; continue; fi
+            url="https://packages.simplifier.net/${name}/${ver}"
+            [ "$name" = "hl7.fhir.uv.xver-r5.r4" ] && url="https://packages2.fhir.org/packages/${name}/${ver}"
+            curl -fsSL --retry 5 --retry-delay 10 --retry-all-errors "$url" -o /tmp/pkg.tgz
+            mkdir -p "$dest" && tar xzf /tmp/pkg.tgz -C "$dest" && echo "geladen: $pv"
+          done
 
       - name: Run SUSHI
         run: sushi .
