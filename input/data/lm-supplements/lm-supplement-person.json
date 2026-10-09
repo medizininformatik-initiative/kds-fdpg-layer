@@ -22,7 +22,14 @@
         "id": "Person",
         "path": "Person",
         "short": "-- Überschrift --",
-        "definition": "Logische Repräsentation des Basismoduls Person"
+        "definition": "Logische Repräsentation des Basismoduls Person",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Name",
@@ -34,7 +41,14 @@
             "identity": "FHIR",
             "map": "Patient.name"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Name",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Name.Vorname",
@@ -46,7 +60,14 @@
             "identity": "FHIR",
             "map": "Patient.name.given"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Name.Vorname",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Name.Nachname",
@@ -58,7 +79,14 @@
             "identity": "FHIR",
             "map": "Patient.name.family"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Name.Nachname",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Name.Familienname",
@@ -70,7 +98,14 @@
             "identity": "FHIR",
             "map": "Patient.name.family"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Name.Familienname",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Name.Vorsatzwort",
@@ -82,7 +117,14 @@
             "identity": "FHIR",
             "map": "Patient.name.family.extension('http://hl7.org/fhir/StructureDefinition/humanname-own-prefix')"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Name.Vorsatzwort",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Name.Namenszusatz",
@@ -94,7 +136,14 @@
             "identity": "FHIR",
             "map": "Patient.name.family.extension('http://fhir.de/StructureDefinition/humanname-namenszusatz')"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Name.Namenszusatz",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Name.Praefix",
@@ -106,7 +155,14 @@
             "identity": "FHIR",
             "map": "Patient.name.prefix"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Name.Praefix",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Name.Geburtsname",
@@ -118,7 +174,14 @@
             "identity": "FHIR",
             "map": "Patient.name.where(use='maiden')"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Name.Geburtsname",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.AdministrativesGeschlecht",
@@ -130,7 +193,14 @@
             "identity": "FHIR",
             "map": "Patient.gender"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.AdministrativesGeschlecht",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.Geburtsdatum",
@@ -142,7 +212,14 @@
             "identity": "FHIR",
             "map": "Patient.birthDate"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.Geburtsdatum",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.Adresse",
@@ -154,7 +231,14 @@
             "identity": "FHIR",
             "map": "Patient.address"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.Adresse",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.Adresse.Strassenanschrift",
@@ -166,7 +250,14 @@
             "identity": "FHIR",
             "map": "Patient.address.where(type='both')"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.Adresse.Strassenanschrift",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.Adresse.Strassenanschrift.Land",
@@ -178,7 +269,14 @@
             "identity": "FHIR",
             "map": "Patient.address.country"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.Adresse.Strassenanschrift.Land",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.Adresse.Strassenanschrift.PLZ",
@@ -190,7 +288,14 @@
             "identity": "FHIR",
             "map": "Patient.address.postalCode"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.Adresse.Strassenanschrift.PLZ",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.Adresse.Strassenanschrift.Wohnort",
@@ -202,7 +307,14 @@
             "identity": "FHIR",
             "map": "Patient.address.city"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.Adresse.Strassenanschrift.Wohnort",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.Adresse.Strassenanschrift.Strasse",
@@ -214,7 +326,14 @@
             "identity": "FHIR",
             "map": "Patient.address.line"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.Adresse.Strassenanschrift.Strasse",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.Adresse.Postfach",
@@ -226,7 +345,14 @@
             "identity": "FHIR",
             "map": "Patient.address.where(type='postal')"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.Adresse.Postfach",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.Adresse.Postfach.Land",
@@ -238,7 +364,14 @@
             "identity": "FHIR",
             "map": "Patient.address.country"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.Adresse.Postfach.Land",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.Adresse.Postfach.PLZ",
@@ -250,7 +383,14 @@
             "identity": "FHIR",
             "map": "Patient.address.postalCode"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.Adresse.Postfach.PLZ",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.Adresse.Postfach.Wohnort",
@@ -262,7 +402,14 @@
             "identity": "FHIR",
             "map": "Patient.address.city"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.Adresse.Postfach.Wohnort",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.Adresse.Postfach.Strasse",
@@ -274,7 +421,14 @@
             "identity": "FHIR",
             "map": "Patient.address.line"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.Adresse.Postfach.Strasse",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.Vitalstatus",
@@ -286,7 +440,14 @@
             "identity": "FHIR",
             "map": "Observation.value[x]"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.Vitalstatus",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.Vitalstatus.PatientVerstorben",
@@ -302,7 +463,14 @@
             "identity": "FHIR",
             "map": "Observation.value[x]"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.Vitalstatus.PatientVerstorben",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.Vitalstatus.Todeszeitpunkt",
@@ -314,7 +482,14 @@
             "identity": "FHIR",
             "map": "Patient.deceased[x]"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.Vitalstatus.Todeszeitpunkt",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.Vitalstatus.ZeitpunktFeststellungDesVitalstatus",
@@ -326,7 +501,14 @@
             "identity": "FHIR",
             "map": "Observation.effective[x]"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.Vitalstatus.ZeitpunktFeststellungDesVitalstatus",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.Demographie.Vitalstatus.Todesursache",
@@ -338,7 +520,14 @@
             "identity": "FHIR",
             "map": "Condition.code.coding"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.Demographie.Vitalstatus.Todesursache",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.PatientIn.PatientenIdentifikator",
@@ -350,7 +539,14 @@
             "identity": "FHIR",
             "map": "Patient.identifier"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.PatientIn.PatientenIdentifikator",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.PatientIn.PatientenIdentifikator.PatientenIdentifikator",
@@ -362,7 +558,14 @@
             "identity": "FHIR",
             "map": "Patient.identifier.value"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.PatientIn.PatientenIdentifikator.PatientenIdentifikator",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.PatientIn.PatientenIdentifikator.PatientenIdentifikatorKontext",
@@ -374,7 +577,14 @@
             "identity": "FHIR",
             "map": "Patient.identifier.assigner"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.PatientIn.PatientenIdentifikator.PatientenIdentifikatorKontext",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.PatientIn.Versicherung.VersichertenIDGKV",
@@ -386,7 +596,14 @@
             "identity": "FHIR",
             "map": "Patient.identifier.where(type.coding.code='GKV')"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.PatientIn.Versicherung.VersichertenIDGKV",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.PatientIn.Versicherung.VersichertennummerPKV",
@@ -398,7 +615,14 @@
             "identity": "FHIR",
             "map": "Patient.identifier.where(type.coding.code='PKV')"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.PatientIn.Versicherung.VersichertennummerPKV",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.PatientIn.Versicherung.InstitutionskennzeichenDerKrankenkasse",
@@ -410,7 +634,14 @@
             "identity": "FHIR",
             "map": "Patient.identifier.assigner.identifier"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.PatientIn.Versicherung.InstitutionskennzeichenDerKrankenkasse",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Person.PatientInPseudonym.Pseudonym",
@@ -422,7 +653,14 @@
             "identity": "FHIR",
             "map": "Patient.identifier"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Person.PatientInPseudonym.Pseudonym",
+          "min": 0,
+          "max": "*"
+        }
       }
     ]
   }

@@ -22,7 +22,14 @@
         "id": "Fall",
         "path": "Fall",
         "short": "MII LM Fall",
-        "definition": "Logische Repräsentation des Basismoduls Fall"
+        "definition": "Logische Repräsentation des Basismoduls Fall",
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Einrichtungskontakt.KontaktEbene",
@@ -34,7 +41,14 @@
             "identity": "FHIR",
             "map": "Encounter.type"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Einrichtungskontakt.KontaktEbene",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Einrichtungskontakt.KontaktKlasse",
@@ -46,7 +60,14 @@
             "identity": "FHIR",
             "map": "Encounter.class"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Einrichtungskontakt.KontaktKlasse",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Einrichtungskontakt.KontaktArt",
@@ -58,7 +79,14 @@
             "identity": "FHIR",
             "map": "Encounter.type"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Einrichtungskontakt.KontaktArt",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Einrichtungskontakt.PatientenIdentifikator",
@@ -70,7 +98,14 @@
             "identity": "FHIR",
             "map": "Encounter.subject"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Einrichtungskontakt.PatientenIdentifikator",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Einrichtungskontakt.Aufnahmenummer",
@@ -82,7 +117,14 @@
             "identity": "FHIR",
             "map": "Encounter.identifier"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Einrichtungskontakt.Aufnahmenummer",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Einrichtungskontakt.Aufnahmeanlass",
@@ -94,7 +136,14 @@
             "identity": "FHIR",
             "map": "Encounter.hospitalization.admitSource"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Einrichtungskontakt.Aufnahmeanlass",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Einrichtungskontakt.Aufnahmegrund",
@@ -106,7 +155,14 @@
             "identity": "FHIR",
             "map": "Encounter.extension.where(url='http://fhir.de/StructureDefinition/Aufnahmegrund')"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Einrichtungskontakt.Aufnahmegrund",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Einrichtungskontakt.Beginndatum",
@@ -118,7 +174,14 @@
             "identity": "FHIR",
             "map": "Encounter.period.start"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Einrichtungskontakt.Beginndatum",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Einrichtungskontakt.Enddatum",
@@ -130,7 +193,14 @@
             "identity": "FHIR",
             "map": "Encounter.period.end"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Einrichtungskontakt.Enddatum",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Einrichtungskontakt.Entlassungsgrund",
@@ -142,7 +212,14 @@
             "identity": "FHIR",
             "map": "Encounter.hospitalization.dischargeDisposition"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Einrichtungskontakt.Entlassungsgrund",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Abteilungskontakt.KontaktEbene",
@@ -154,7 +231,14 @@
             "identity": "FHIR",
             "map": "Encounter.type"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Abteilungskontakt.KontaktEbene",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Abteilungskontakt.KontaktArt",
@@ -166,7 +250,14 @@
             "identity": "FHIR",
             "map": "Encounter.type"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Abteilungskontakt.KontaktArt",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Abteilungskontakt.PatientenIdentifikator",
@@ -178,7 +269,14 @@
             "identity": "FHIR",
             "map": "Encounter.subject"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Abteilungskontakt.PatientenIdentifikator",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Abteilungskontakt.Aufnahmenummer",
@@ -190,7 +288,14 @@
             "identity": "FHIR",
             "map": "Encounter.identifier"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Abteilungskontakt.Aufnahmenummer",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Abteilungskontakt.Beginndatum",
@@ -202,7 +307,14 @@
             "identity": "FHIR",
             "map": "Encounter.period.start"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Abteilungskontakt.Beginndatum",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Abteilungskontakt.Enddatum",
@@ -214,7 +326,14 @@
             "identity": "FHIR",
             "map": "Encounter.period.end"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Abteilungskontakt.Enddatum",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Abteilungskontakt.Fachabteilungsschluessel",
@@ -226,7 +345,14 @@
             "identity": "FHIR",
             "map": "Encounter.serviceType"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Abteilungskontakt.Fachabteilungsschluessel",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Versorgungsstellenkontakt.KontaktEbene",
@@ -238,7 +364,14 @@
             "identity": "FHIR",
             "map": "Encounter.type"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Versorgungsstellenkontakt.KontaktEbene",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Versorgungsstellenkontakt.KontaktArt",
@@ -250,7 +383,14 @@
             "identity": "FHIR",
             "map": "Encounter.type"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Versorgungsstellenkontakt.KontaktArt",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Versorgungsstellenkontakt.PatientenIdentifikator",
@@ -262,7 +402,14 @@
             "identity": "FHIR",
             "map": "Encounter.subject"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Versorgungsstellenkontakt.PatientenIdentifikator",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Versorgungsstellenkontakt.Aufnahmenummer",
@@ -274,7 +421,14 @@
             "identity": "FHIR",
             "map": "Encounter.identifier"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Versorgungsstellenkontakt.Aufnahmenummer",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Versorgungsstellenkontakt.Beginndatum",
@@ -286,7 +440,14 @@
             "identity": "FHIR",
             "map": "Encounter.period.start"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Versorgungsstellenkontakt.Beginndatum",
+          "min": 0,
+          "max": "*"
+        }
       },
       {
         "id": "Fall.Versorgungsstellenkontakt.Enddatum",
@@ -298,7 +459,14 @@
             "identity": "FHIR",
             "map": "Encounter.period.end"
           }
-        ]
+        ],
+        "min": 0,
+        "max": "*",
+        "base": {
+          "path": "Fall.Versorgungsstellenkontakt.Enddatum",
+          "min": 0,
+          "max": "*"
+        }
       }
     ]
   }
